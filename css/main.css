@@ -1,17 +1,29 @@
-:root{ scrollbar-color: rgb(210,210,210) transparent; scrollbar-width: thin }
+:root{ color: rgb(50,54,68); scrollbar-color: currentColor transparent; scrollbar-width: thin }
 
-body{ background: rgb(50,54,68); color: rgb(220,220,200); font-family: segoe UI; overflow-wrap: break-word; max-width: 110ch }
+body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break-word; max-width: 110ch }
+body > div{ background: rgba(0,0,0,0.1); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
 
+a:hover{ color: purple }
+a + span{ color: darkgreen; }
 
-body > div{ background: rgba(0,0,0,0.2); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
+.logline.even{ background: rgba(70,60,70,0.1) }
 
-a{ color:coral }
-a:visited{ color:orchid }
-a:hover{ color: orange }
+@media (prefers-color-scheme:dark){
+  :root{ color: rgb(220,220,200); }
+  body{ background: rgb(50,54,68); }
+  
+  a{ color:coral }
+  a:visited{ color:orchid }
+  a:hover{ color: orange }
+  a + span{ color: darkseagreen }
+  
+  body > div{ background: rgba(0,0,0,0.2) }
+  .logline.even{ background: rgba(170,160,170,0.1) }
+  
+}
 
-a + span{ color: darkseagreen }
 .logline{ padding: 2px 3px }
-.logline.even{ background: rgba(170,160,170,0.1) }
+
 
 #infobar::after{ content:":" }
 
