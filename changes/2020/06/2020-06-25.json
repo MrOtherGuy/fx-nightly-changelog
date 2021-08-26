@@ -1,0 +1,712 @@
+{
+ "bugs": [
+  {
+   "bugid": "1647717",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Fix audio thread registration in AudioStream.cpp"
+  },
+  {
+   "bugid": "1642715",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Activate media controller when media enters fullscreen"
+  },
+  {
+   "bugid": "1645416",
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Investigate the struct layout of  `MPSCQueue<T>::Message` on Windows"
+  },
+  {
+   "bugid": "1562932",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /css/css-ui/appearance-meter-001.html | Testing http://web-platform.test:8000/css/css-ui/appearance-meter-001.html == http://web-platform.test:8000/css/css-ui/appearance-auto-ref.html"
+  },
+  {
+   "bugid": "1565997",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "CanvasPattern.setTransform does not support DOMMatrix"
+  },
+  {
+   "bugid": "1648287",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Restore changes from bug 1646926 lost via bug 1644895"
+  },
+  {
+   "bugid": "1647976",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Remove stray gfx/layers/AsyncCanvasRenderer.cpp file"
+  },
+  {
+   "bugid": "1626362",
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "DocumentLoadListener should not perform process switching for HTTP 204 requests or canceled requests"
+  },
+  {
+   "bugid": "1637035",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Window global should only inherit COEP for http or initial about:blank documents"
+  },
+  {
+   "bugid": "1647496",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make ContentIsCrossDocDescendantOf handle interstitial OOP frames"
+  },
+  {
+   "bugid": "1646325",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` create `WSFragment`s only when needed"
+  },
+  {
+   "bugid": "1646211",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "clang-11 warnings -Wvoid-pointer-to-int-cast in ContentParent.cpp"
+  },
+  {
+   "bugid": "1645588",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Perma Beta TEST-UNEXPECTED-FAIL | /fetch/http-cache/split-cache.tentative.html | HTTP Cache - Partioning by top-level origin 1 - assert_equals: Response 3 header server-request-count is \"2\", not \"3\" expected when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1633710",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Replace nsIPrincipal.uri functions with new Principal counterparts in js"
+  },
+  {
+   "bugid": "1614969",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Consider blocking mixed content downloads"
+  },
+  {
+   "bugid": "1646476",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix `aOuterWindow->GetInProcessScriptableParent() == aOuterWindow` assertion in LoadInfo"
+  },
+  {
+   "bugid": "1644627",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WebAuthn: AppID Extension gets set true even if not exercised"
+  },
+  {
+   "bugid": "1647066",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Permafailing test_<anything>_interfaces.html | false: If this is failing: DANGER, are you sure you want to expose the new interface AggregateError to all webpages as a property on the worker? when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1647666",
+   "status": "REOPENED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/mochitest/states/test_doc_busy.html | Test timed out."
+  },
+  {
+   "bugid": "1648076",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Use AndroidSurfaceTexture related files only on Android"
+  },
+  {
+   "bugid": "1647299",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Store a single array of primitives per prim list instead of per cluster"
+  },
+  {
+   "bugid": "1645621",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "macOS text rendering worse with WebRender"
+  },
+  {
+   "bugid": "1647222",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Picture caching doesn't create slice for scrolled content at certain zoom levels"
+  },
+  {
+   "bugid": "1642629",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Various frame building optimizations"
+  },
+  {
+   "bugid": "1648289",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move gen8 gt2+ into modern rolloout so that it reaches release."
+  },
+  {
+   "bugid": "1646835",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support software compositing for SWGL"
+  },
+  {
+   "bugid": "1648304",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Record WebRender compositor status in telemetry."
+  },
+  {
+   "bugid": "1648288",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let WebRender ride on AMD regardless of battery."
+  },
+  {
+   "bugid": "1647742",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Break prim_store/mod.rs into multiple modules"
+  },
+  {
+   "bugid": "1642052",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "GeckoChildProcessHost has some dead code"
+  },
+  {
+   "bugid": "1646317",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: errorObj->type() == JSEXN_AGGREGATEERR, at builtin/Promise.cpp:3896"
+  },
+  {
+   "bugid": "1502355",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement ReadableStream.prototype.pipeTo and pipeThrough"
+  },
+  {
+   "bugid": "1647118",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: false (Failed to read StructuredCloneData. Data incomplete), at vm/StructuredClone.cpp:203"
+  },
+  {
+   "bugid": "1646302",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[warp] Crash [@ js::jit::CacheIRWriter::copyStubData] or Crash [@ void js::TenuringTracer::traverse] or Assertion failure: isObject(), at js/Value.h:745"
+  },
+  {
+   "bugid": "1646036",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: fix repeated bailouts from redundant bounds check elimination"
+  },
+  {
+   "bugid": "1647895",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove inputType from MTypeof"
+  },
+  {
+   "bugid": "1638764",
+   "status": "REOPENED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent AddressSanitizer: SEGV /build/glibc-6V9RKT/glibc-2.19/string/../sysdeps/x86_64/multiarch/memcpy-ssse3-back.S:131"
+  },
+  {
+   "bugid": "1644111",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "We shouldn't send promotion rate telemetry when the nursery was empty"
+  },
+  {
+   "bugid": "1642940",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Change to exception behavior when exceeding table and memory limits"
+  },
+  {
+   "bugid": "1637884",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Reference types: Ship it"
+  },
+  {
+   "bugid": "1528294",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Bulk-memory-operations: Ship it"
+  },
+  {
+   "bugid": "1615434",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "MaxMemoryInitialPages is incorrect"
+  },
+  {
+   "bugid": "1647871",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Simplify the code to get the composition bounds on android to not rely on the widget size."
+  },
+  {
+   "bugid": "1645987",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "New style sheet cache should use partitioned principal"
+  },
+  {
+   "bugid": "1633737",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Assertion failure: kMaxLine > numTracks, at /builds/worker/checkouts/gecko/layout/generic/nsGridContainerFrame.cpp:1166"
+  },
+  {
+   "bugid": "1630935",
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Add use counter and deprecation warning for STIXGeneral fonts"
+  },
+  {
+   "bugid": "1647638",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add nsStandardURL assertions"
+  },
+  {
+   "bugid": "1648132",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::extensions::StreamFilterParent::Init]"
+  },
+  {
+   "bugid": "1640612",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "socket process gets killed due to sandboxing"
+  },
+  {
+   "bugid": "1645901",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Send necessary cookie through pBackground before OnStartRequest"
+  },
+  {
+   "bugid": "1648193",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make MobileViewportManager::UpdateResolution easier to understand"
+  },
+  {
+   "bugid": "1646136",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate prefetch/preload channels per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1628486",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable Dynamic FPI in Nightly"
+  },
+  {
+   "bugid": "1634304",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[Dynamic FPI] TEST-UNEXPECTED-FAIL | browser/components/sessionstore/test/browser_sessionStorage.js"
+  },
+  {
+   "bugid": "1645896",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a console log origins that have their cookies partitioned by dFPI"
+  },
+  {
+   "bugid": "1647101",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Move SVGTextFrame SVGViewFrame SVGFEContainerFrame SVGFEImageFrame SVGFELeafFrame SVGFEUnstyledLeafFrame into the mozilla namespace"
+  },
+  {
+   "bugid": "1648093",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Rename hasFlags variable to something more descriptive within nsScirptSecurityManager"
+  },
+  {
+   "bugid": "1645082",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove or update probes expiring in Firefox 80: TLS_DELEGATED_CREDENTIALS_TIME_UNTIL_READY_MS"
+  },
+  {
+   "bugid": "1642687",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 79 to use NSS 3.54"
+  },
+  {
+   "bugid": "1645943",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Extensions stop working after visiting site if root zone is included in FQDN"
+  },
+  {
+   "bugid": "1647750",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Intermittent SUMMARY: AddressSanitizer: SEGV /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:418 after audioworkletprocessor-process-frozen-array.https.html ran"
+  },
+  {
+   "bugid": "1618225",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "In AudioBufferSourceNode when loop is true, duration is not taken into account"
+  },
+  {
+   "bugid": "1645663",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /webrtc/RTCRtpSender-replaceTrack.https.html | ReplaceTrack transmits the new track not the old track - Test timed out"
+  },
+  {
+   "bugid": "1636011",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Remove or update probes expiring in Firefox 79: FXRPC_*"
+  },
+  {
+   "bugid": "1646499",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "GTK_USE_PORTAL evaluated incorrectly"
+  },
+  {
+   "bugid": "1645776",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ g_log_writer_default]"
+  },
+  {
+   "bugid": "1400317",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsUXThemeData uses win32k APIs in content process"
+  },
+  {
+   "bugid": "1337953",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsDeque \"a bit more\" typesafe"
+  },
+  {
+   "bugid": "1631991",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Startupcache gtest StartupWriteRead sits and waits 60 seconds for the write to happen"
+  },
+  {
+   "bugid": "1647408",
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Rust logs in Firefox Desktop are now available via MOZ_LOG"
+  },
+  {
+   "bugid": "1598016",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Make highlighter able to highlight accessible objects even in oop iframes"
+  },
+  {
+   "bugid": "1647625",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Undo temporary fix for blocking the request only if the there is a reason or an extension id"
+  },
+  {
+   "bugid": "1603204",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable windowless-service-workers for Release"
+  },
+  {
+   "bugid": "1621713",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Convert ActorPool to protocol.js Pool in devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm"
+  },
+  {
+   "bugid": "1495728",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remove ActorPool"
+  },
+  {
+   "bugid": "1647603",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Update MDN compat data (2020 June 4th week)"
+  },
+  {
+   "bugid": "1645748",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "MDN link missing for status code"
+  },
+  {
+   "bugid": "1643093",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove references to \"whitelist\" in browser/components/urlbar"
+  },
+  {
+   "bugid": "1647699",
+   "status": "RESOLVED",
+   "component": "Firefox:Distributions",
+   "summary": "[Acer builds] The default search engine changes on some of the locale builds"
+  },
+  {
+   "bugid": "1639945",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add session cookies support for domains"
+  },
+  {
+   "bugid": "1647787",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove whitelist/blacklist from frontend performance tests"
+  },
+  {
+   "bugid": "1646582",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove RemoteWebProgressManager"
+  },
+  {
+   "bugid": "1647238",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace Services.profiler.AddMarker with ChromeUtils.addProfilerMarker in browser/"
+  },
+  {
+   "bugid": "1598111",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Document full install ping"
+  },
+  {
+   "bugid": "1640027",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add zap style to highlight word in multistage about:welcome screen title"
+  },
+  {
+   "bugid": "1644639",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Add ability for FeatureGate descriptions to include links"
+  },
+  {
+   "bugid": "1645088",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Remove or update probes expiring in Firefox 80: contentblocking.trackers_blocked_count"
+  },
+  {
+   "bugid": "1630093",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "TRR canary check returns \"disable_doh\" if the DNS request fails"
+  },
+  {
+   "bugid": "1647994",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Sync ping may submit with an empty UID"
+  },
+  {
+   "bugid": "1647762",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Interaction telemetry includes add-on IDs"
+  },
+  {
+   "bugid": "1645986",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Inefficiency when there are multiple GeneratedFile in a directory"
+  },
+  {
+   "bugid": "1644553",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma mozbuild.configure.options.InvalidOptionError: --enable-profile-use is not available in this configuration on Android artifact builds."
+  },
+  {
+   "bugid": "1647873",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove \"mach bootstrap is not fully implemented in MozillaBuild\" message"
+  },
+  {
+   "bugid": "1640515",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox 79 should pick up NSPR 4.26"
+  },
+  {
+   "bugid": "1647265",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make rejected-words lint case-insensitive"
+  },
+  {
+   "bugid": "1647383",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable chunking in the taskgraph for web-platform-tests-crashtest/wdspec"
+  },
+  {
+   "bugid": "1639873",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Backfill action to support manifest based scheduling"
+  },
+  {
+   "bugid": "1647880",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "LLVM 12 will require cmake 3.13.4 or later"
+  },
+  {
+   "bugid": "1645264",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Using redirectUrl to a moz-extension URL in a webRequest.onBeforeRequest works on GVE and desktop, but not Fenix"
+  },
+  {
+   "bugid": "1647858",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable dom.manifest.enabled for all channels"
+  },
+  {
+   "bugid": "1646923",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "puppeteer-expected.json doesn't list all the tests from the Puppeteer 3.1 upgrade"
+  },
+  {
+   "bugid": "1647207",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Permafailing esr78 toolkit/mozapps/extensions/test/xpcshell/test_sideloads_after_rebuild.js | test_sideloads_after_rebuild - [test_sideloads_after_rebuild : 55] addons remain installed - 5 == 4 after xpcshell return code: 0"
+  },
+  {
+   "bugid": "1647727",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Dropdown menu on Add-on Manager wont show up"
+  },
+  {
+   "bugid": "1647935",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "cleanup test_updatecheck.js"
+  },
+  {
+   "bugid": "1645089",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Remove or update probes expiring in Firefox 80: datasanitization.*"
+  },
+  {
+   "bugid": "1647944",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add Bitwarden matching rules to autofill heuristics"
+  },
+  {
+   "bugid": "1648187",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "User is prompted for OS-level authentication to fill credit card information even if `extensions.formautofill.reauth.enabled` is false"
+  },
+  {
+   "bugid": "1642059",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card autofill dropdown only appears on the 2nd click"
+  },
+  {
+   "bugid": "1647692",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "about:support should include information on language packs and dictionaries"
+  },
+  {
+   "bugid": "1647141",
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Entering edit mode for prefs makes the text shift a bit to the side"
+  },
+  {
+   "bugid": "1647378",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "ThreadSanitizer: data race [@ mozilla::scache::StartupCache::MaybeWriteOffMainThread] vs. [@ malloc]"
+  },
+  {
+   "bugid": "1645862",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Don't load most of TelemetryController.jsm in content processes"
+  },
+  {
+   "bugid": "1648251",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent TV browser/modules/test/browser/browser_UsageTelemetry_interaction.js | Expected to see the correct value for addon0 in keyboard. - \"undefined\" == 1"
+  },
+  {
+   "bugid": "1648178",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Stop loading TelemetryUtils in content processes"
+  },
+  {
+   "bugid": "1635255",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "IPC Implementation for Project FOG"
+  },
+  {
+   "bugid": "1647704",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Telemetry stop watch measurements would be useful as profiler markers"
+  },
+  {
+   "bugid": "1635781",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Cannot replace frame-ancestors directive of the Content-Security-Policy HTTP Header via the webRequest API"
+  }
+ ],
+ "date": "2020-06-25",
+ "cset": "db74cdf9afe797ced554aaf7e79b9bdc3e86f719",
+ "buildid": "20200625094452",
+ "fixed": 101,
+ "total": 117,
+ "restricted": 2
+}

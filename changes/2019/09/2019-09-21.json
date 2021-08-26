@@ -1,0 +1,478 @@
+{
+ "bugs": [
+  {
+   "bugid": "1435915",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Migrate Preferences::General JS to .ftl"
+  },
+  {
+   "bugid": "1494680",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Inspector Extensions should use the current reps"
+  },
+  {
+   "bugid": "1508156",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Use fluent for the default application choice section of about:preferences"
+  },
+  {
+   "bugid": "1514584",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Intermittent columns/column-balancing-overflow-003.html == columns/column-balancing-overflow-003.ref.html | image comparison, max difference: 78, number of differing pixels: 87"
+  },
+  {
+   "bugid": "1541256",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add automated tests for accessibility stuff where elements are in out-of-process iframes in deck"
+  },
+  {
+   "bugid": "1542830",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Telemetry",
+   "summary": "Move collection of Untrusted Modules telemetry into the launcher process"
+  },
+  {
+   "bugid": "1550631",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "Record telemetry for direct navigation to about:logins"
+  },
+  {
+   "bugid": "1553546",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Gather telemetry environment CPU and isWoW and installYear data off-main-thread and later on startup, off an idle task, instead of on the main thread during startup"
+  },
+  {
+   "bugid": "1553804",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Shouldn't try to send Chrome BC to Content Process"
+  },
+  {
+   "bugid": "1563063",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Cross-process idle handling"
+  },
+  {
+   "bugid": "1564920",
+   "status": "NEW",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Intermittent gv-safebrowsing remoteautomation.py | application crashed [@ mozilla::net::nsSocketTransport::InitiateSocket()]"
+  },
+  {
+   "bugid": "1570115",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Allow Actors to set |loadURIDelegate| and |webBrowserChrome| on docShell"
+  },
+  {
+   "bugid": "1571559",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "add support for a --with-wasi-sysroot option"
+  },
+  {
+   "bugid": "1572281",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Doesn't switch the mic automatically when unplugging the mic"
+  },
+  {
+   "bugid": "1572468",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add telemetryId's to engines.json"
+  },
+  {
+   "bugid": "1575438",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Don't use colon as argument separator on generate-sdk-bindings task"
+  },
+  {
+   "bugid": "1576189",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Discard unsaved changes\" pop-up is wrongly displayed after an edited login is deleted in \"Edit\" mode"
+  },
+  {
+   "bugid": "1576303",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "crash entering into URL bar on ppc64le"
+  },
+  {
+   "bugid": "1576900",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Wasm FuncType has a vector of return values"
+  },
+  {
+   "bugid": "1576990",
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Slack video frames get stuck"
+  },
+  {
+   "bugid": "1577317",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Telemetry for fix update directory permissions"
+  },
+  {
+   "bugid": "1577508",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Allow WebAssembly blocks to return multiple values"
+  },
+  {
+   "bugid": "1577757",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Add a compile-time option for multi-value"
+  },
+  {
+   "bugid": "1578125",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Animation",
+   "summary": "Perma Windows 7 debug Assertion failure: (aA != 9223372036854775807i64 || aB != (-9223372036854775807i64 - 1) when Gecko 70 merges to Beta on 2019-08-26"
+  },
+  {
+   "bugid": "1578337",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent dom/serviceworkers/test/browser_storage_permission.js | Test timed out -"
+  },
+  {
+   "bugid": "1578355",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Provide a way to consume transient user gesture activation flag"
+  },
+  {
+   "bugid": "1578464",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Wayland backend does not set opaque region"
+  },
+  {
+   "bugid": "1578475",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Cleanup Remote Canvas 2D IPC classes when not used for certain duration."
+  },
+  {
+   "bugid": "1579222",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Fennec Crash in [@ JSAutoRealm::JSAutoRealm]"
+  },
+  {
+   "bugid": "1580020",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer GC allocation of BigInts until afer parse is finished."
+  },
+  {
+   "bugid": "1580196",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "GV Streaming Telemetry doesn't properly handle expiry"
+  },
+  {
+   "bugid": "1580302",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "XUL Box frames don't stretch as grid items"
+  },
+  {
+   "bugid": "1580334",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Hovering on the timeline should update the debugger"
+  },
+  {
+   "bugid": "1580378",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add a command line switch to enable/disable deferred allocation mode in the parser"
+  },
+  {
+   "bugid": "1580538",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Make OverflowableToolbar work without overflow:hidden (drag-select from unfocused state and click-selects-all are broken in megabar due to reframing)"
+  },
+  {
+   "bugid": "1580541",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Implement new side panel for blocking specific resources"
+  },
+  {
+   "bugid": "1580631",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "[Inactive CSS] Tooltip should hang off to right side in LTR mode"
+  },
+  {
+   "bugid": "1580690",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ gfxFontEntry::HasCharacter]"
+  },
+  {
+   "bugid": "1580750",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Enable necko mochitests in fission runs"
+  },
+  {
+   "bugid": "1580854",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Allow blocking only level 1 lists with ETP in GV"
+  },
+  {
+   "bugid": "1580936",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Inactive CSS: Final visual polish, Part Two (_final_final.jpg)"
+  },
+  {
+   "bugid": "1581206",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "Intermittent editor/libeditor/tests/browser_bug629172.js | reftest comparison: == Textarea after switching the direction from ltr Reference rtl textarea - false == true -"
+  },
+  {
+   "bugid": "1581232",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Log important errors to stdout"
+  },
+  {
+   "bugid": "1581574",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate removing Heap<T>'s pre write barrier"
+  },
+  {
+   "bugid": "1581614",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Extract service container"
+  },
+  {
+   "bugid": "1581933",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Hovering on a marker in the timeline should highlight the message in the console"
+  },
+  {
+   "bugid": "1581958",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add a new \"Break on...\" submenu for the watchpoints context menu"
+  },
+  {
+   "bugid": "1581964",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "left shift of 1 by 31 places cannot be represented in type 'int' in media/webrtc/signaling/src/sdp/sipcc/sdp_attr.c:1483:33"
+  },
+  {
+   "bugid": "1582039",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Clean up JSContext::runningWithTrustedPrincipals"
+  },
+  {
+   "bugid": "1582051",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use Buffer.from and Buffer.alloc in moz-http2.js & friends"
+  },
+  {
+   "bugid": "1582086",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "toolkit/components/search/tests/xpcshell/test_json_cache_good.js and toolkit/components/search/tests/xpcshell/test_json_cache_broken.js fail when run as part of the Thunderbird Xpcshell tests"
+  },
+  {
+   "bugid": "1582124",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Investigate breaking Document cycles when they are destroyed"
+  },
+  {
+   "bugid": "1582140",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Improve high level docs for the profiler popup"
+  },
+  {
+   "bugid": "1582150",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "`RuntimeSettingsTest.aboutConfig` disabled"
+  },
+  {
+   "bugid": "1582156",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Fix docshell/test/navigation/browser_test-content-chromeflags.js to work with Fission"
+  },
+  {
+   "bugid": "1582205",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "add wasm sandboxing configuration options"
+  },
+  {
+   "bugid": "1582221",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Convert Android PGO build to use geckoview-androidTest.apk instead of Fennec"
+  },
+  {
+   "bugid": "1582227",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove unnecessary `-moz-binding: none` rules"
+  },
+  {
+   "bugid": "1582229",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enable eval security and let it ride the trains"
+  },
+  {
+   "bugid": "1582231",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Remove Moz2D dependency on Cairo glyph extents"
+  },
+  {
+   "bugid": "1582288",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "15,500 instances of \"Attempting to get a displayport from a content with no primary frame!\" emitted from layout/base/nsLayoutUtils.cpp during linux64 debug testing"
+  },
+  {
+   "bugid": "1582316",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Fix CSS broken by un-blockification of display: -moz-box - round 2"
+  },
+  {
+   "bugid": "1582342",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Don't duplicate \"overlay-step-buttons\" pref value"
+  },
+  {
+   "bugid": "1582445",
+   "status": "VERIFIED",
+   "component": "DevTools:Console",
+   "summary": "Perma devtools/client/webconsole/test/browser/browser_webconsole_worklet_error.js | Test timed out -, when Gecko 71 merges to Beta on 2019-10-14"
+  },
+  {
+   "bugid": "1582471",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel]  The focus indicator overlaps the toggle button"
+  },
+  {
+   "bugid": "1582505",
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "When openViewOnFocus is enabled, focusing the urlbar with a shortcut on the new tab page opens the view"
+  },
+  {
+   "bugid": "1582506",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove some pointless null-checks in DOMSVGLengthList"
+  },
+  {
+   "bugid": "1582518",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add an IsEmpty() method to IntervalSet"
+  },
+  {
+   "bugid": "1582534",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "Password overwritten with space characters after editing a login in about:logins"
+  },
+  {
+   "bugid": "1582567",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "webidl-example shouldn't generate virtual and override at the same time"
+  },
+  {
+   "bugid": "1582639",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "TypeError: controller is null searchbar.js:944:11 ,  \"Clear Search History\" stops working"
+  },
+  {
+   "bugid": "1582714",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Remove \"#undef LOG\" from nsClipboard.h"
+  },
+  {
+   "bugid": "1582763",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel] Remove blue badge from shield and toogle when Tracking Protection is off"
+  },
+  {
+   "bugid": "1582768",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Add UITour target for Logins and Passwords in the main menu"
+  },
+  {
+   "bugid": "1582776",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "FuncHookCrossProcess should not store the child process's stub function in mOrigFunc"
+  },
+  {
+   "bugid": "1582810",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Drop clipped group bounds hack"
+  },
+  {
+   "bugid": "1582812",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "fix some dom/media/ header cargo-culting"
+  },
+  {
+   "bugid": "1582823",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Watch for null outparams in HIThemeDraw methods"
+  }
+ ],
+ "date": "2019-09-21",
+ "cset": "5ac55079c87e4cd25eafafa8662594b4a2917dcc",
+ "buildid": "20190921100259",
+ "fixed": 66,
+ "total": 78,
+ "restricted": 5
+}

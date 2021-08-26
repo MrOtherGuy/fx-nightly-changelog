@@ -1,0 +1,514 @@
+{
+ "bugs": [
+  {
+   "bugid": "1322095",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "replace nsAutoPtr with UniquePtr in media code base"
+  },
+  {
+   "bugid": "1432303",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Enable AudioIPC on Windows"
+  },
+  {
+   "bugid": "1614225",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "createPattern should throw \"InvalidStateError\" when image's current request state is \"broken\""
+  },
+  {
+   "bugid": "1616173",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Revendor the WebGL CTS in 75"
+  },
+  {
+   "bugid": "1617223",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused mPostMessageEventQueue from nsGlobalWindowOuter"
+  },
+  {
+   "bugid": "1609475",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Regression when navigating multiple subframes through history simultaneously"
+  },
+  {
+   "bugid": "1597495",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix uses of nsHtml5TreeOpExecutor::MaybeComplainAboutCharset in parser/html/nsHtml5TreeOpExecutor.cpp"
+  },
+  {
+   "bugid": "1615480",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash due to SetSandboxFlags on BrowsingContext when !EverAttached()"
+  },
+  {
+   "bugid": "1607364",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "CrashReporting API"
+  },
+  {
+   "bugid": "1609665",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ mozilla::dom::ServiceWorkerRegistrationInfo::MaybeScheduleTimeCheckAndUpdate]"
+  },
+  {
+   "bugid": "1577507",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ nsAppShellInit]"
+  },
+  {
+   "bugid": "1616892",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[Wayland] Use VAAPIFrameHolder* instead of void** at WaylandDMABUFSurfaceImage"
+  },
+  {
+   "bugid": "1540776",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Move GetICMProfileW calls from content to parent"
+  },
+  {
+   "bugid": "1617156",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Store snapped reference frame offset in prim rect to minimize quantization effects"
+  },
+  {
+   "bugid": "1616326",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "skewed image masks create junk on their edges"
+  },
+  {
+   "bugid": "1615575",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender + Profiler on Fenix breaks about:config"
+  },
+  {
+   "bugid": "1617148",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Re-enable WebRender for Intel Haswell on Linux nightly"
+  },
+  {
+   "bugid": "1617160",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fold raster scale and device pixel scale into font transform, not font size"
+  },
+  {
+   "bugid": "1617083",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix race condition with memory pressure events"
+  },
+  {
+   "bugid": "1610017",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Generated calls to IPC Recv methods that pass Tainted data"
+  },
+  {
+   "bugid": "1616999",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Minor cleanups around language identifier parsing in int/locale"
+  },
+  {
+   "bugid": "1616912",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Remove unused locale related code from nsChromeRegistry."
+  },
+  {
+   "bugid": "1615729",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Can we make CompileOptions return us a JSScript::ImmutableFlags"
+  },
+  {
+   "bugid": "1616516",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Simplify ObjectGroup::defaultNewGroup a bit"
+  },
+  {
+   "bugid": "1617146",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Don't unconditionally emit the extra-var scope for generators with default parameters"
+  },
+  {
+   "bugid": "1616597",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Align MCheckObjCoercible with other MCheck* definitions"
+  },
+  {
+   "bugid": "1616537",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "img broken shown even with alt=\"\""
+  },
+  {
+   "bugid": "1584035",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Inserting an element in DOM cancel smooth scrolling upwards"
+  },
+  {
+   "bugid": "1617172",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in text-transform-capitalize- wpt tests on try due to graphite sandbox"
+  },
+  {
+   "bugid": "1617216",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "TestPoisonArea.cpp shouldn't use IsBadXPtr"
+  },
+  {
+   "bugid": "1611290",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add Windows sandboxing to socket process"
+  },
+  {
+   "bugid": "1616591",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make APZ logging enable-able at runtime (use moz log)"
+  },
+  {
+   "bugid": "1614532",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "fix layout/reftests/async-scrolling/disable-apz-for-sle-pages.html"
+  },
+  {
+   "bugid": "1600793",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make the scrolling input latency telemetry work for Webrender"
+  },
+  {
+   "bugid": "267645",
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Page can obtain path to Mozilla installation or possibly profile by examining JavaScript exceptions"
+  },
+  {
+   "bugid": "1617132",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Remove FileInfo pessimization"
+  },
+  {
+   "bugid": "1615998",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Remove nsIQuotaOriginsResult interface"
+  },
+  {
+   "bugid": "1617213",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "MOZ_LOG doesn't allow module names with the dot character"
+  },
+  {
+   "bugid": "1615921",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Advance the toolkit.shutdown.lateWriteChecksStage pref to before xpcom-shutdown-threads"
+  },
+  {
+   "bugid": "1601136",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Intermittent devtools/client/accessibility/test/browser/browser_accessibility_panel_highlighter.js | When accessibility service is running, accessibility panel shouldbe highlighted when toolbox opens -"
+  },
+  {
+   "bugid": "1616505",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "browser_jsterm_autocomplete_width.js is not really accurate"
+  },
+  {
+   "bugid": "1616654",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Browser console goes blank (TypeError: highlightDomElement is not a function)"
+  },
+  {
+   "bugid": "1615611",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove PseudoArray previewer"
+  },
+  {
+   "bugid": "1601533",
+   "status": "NEW",
+   "component": "DevTools:Debugger",
+   "summary": "Indicate that function references in tooltips can be clicked to jump"
+  },
+  {
+   "bugid": "1616380",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Refactor frame helpers to use fronts"
+  },
+  {
+   "bugid": "1583397",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Resend request forgets headers"
+  },
+  {
+   "bugid": "1607148",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Reps bundle was reverted to a previous version (but original files were not)"
+  },
+  {
+   "bugid": "1616820",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry for browser.urlbar.openViewOnFocus"
+  },
+  {
+   "bugid": "1608461",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Determine what kind of telemetry in-product Search Tips should collect"
+  },
+  {
+   "bugid": "1616284",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update telemetry docs for tips"
+  },
+  {
+   "bugid": "1616152",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Intermittent browser/components/downloads/test/browser/browser_about_downloads.js | Uncaught exception - at chrome://mochitests/content/browser/browser/components/downloads/test/browser/browser_about_downloads.js:28"
+  },
+  {
+   "bugid": "1612403",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "File extensions are duplicated for file inputs with custom 'accept'"
+  },
+  {
+   "bugid": "1614911",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Focus menu for search results displayed on Wikipedia when focus is restored to the webpage after accessing options from address bar"
+  },
+  {
+   "bugid": "1615081",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Collections Design Refinement"
+  },
+  {
+   "bugid": "1612088",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protection Report] Update the design of the lockwise app card"
+  },
+  {
+   "bugid": "1616052",
+   "status": "NEW",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Add low-lever helpers for debugging and testing"
+  },
+  {
+   "bugid": "1616637",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Generalize appinfo attribute in JEXL environments"
+  },
+  {
+   "bugid": "1613308",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Cannot drag and drop the padlock icon to make a bookmark when the site specifies an invalid favicon"
+  },
+  {
+   "bugid": "1617095",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "\"mach bootstrap\" fails with \"TypeError: 'odict_items' object does not support indexing\""
+  },
+  {
+   "bugid": "1617207",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "2.71% raptor-tp6m-google-maps-geckoview-cold fcp (android-hw-g5-7-0-arm7-api-16) regression on push 12c9312e15bb4de1a989351d273c3866c5603462 (Wed February 19 2020)"
+  },
+  {
+   "bugid": "1617131",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "21.76 - 89.83% build times (android-*,  linux64, linux64-aarch64, osx-cross, windows2012-32, windows2012-64, windows2012-aarch64) regression on push 7302618003983e94d9bc5b91930e96aa0deb7ff4 (Fri February 21 2020)"
+  },
+  {
+   "bugid": "1615902",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "When running the mozlint test, enforce the debug mode"
+  },
+  {
+   "bugid": "1615903",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add unit tests for rustfmt"
+  },
+  {
+   "bugid": "1617186",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Reformat the fuzzing rust files"
+  },
+  {
+   "bugid": "1613985",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make constructors/destructors/assignment operators use =default"
+  },
+  {
+   "bugid": "1613256",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "VariableLengthPrefixSet.cpp: redundant return statement at the end of a function with a void return type"
+  },
+  {
+   "bugid": "1617143",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Don't build openssl ourselves along sccache"
+  },
+  {
+   "bugid": "1617149",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Enable WOW64 support for Wine"
+  },
+  {
+   "bugid": "1617229",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Remove preset migration code"
+  },
+  {
+   "bugid": "1616902",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "AttributeError: module 'selectors' has not attribute 'SelectSelector' in `mach try fuzzy` preview pane"
+  },
+  {
+   "bugid": "1617279",
+   "status": "RESOLVED",
+   "component": "GeckoView:GeckoViewExample",
+   "summary": "GVE is not aware of extensions at startup"
+  },
+  {
+   "bugid": "1616563",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ mozilla::ipc::BaseProcessLauncher::FinishLaunch]"
+  },
+  {
+   "bugid": "1617245",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Move service definitions out of GeckoServiceChildProcess into their own class"
+  },
+  {
+   "bugid": "1617244",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Make IXPCOMEventTarget implement the Executor interface"
+  },
+  {
+   "bugid": "1610939",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "The camera can't be accessed by the Fenix app on a fresh install"
+  },
+  {
+   "bugid": "1614999",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Rename devedition-nightly to just devedition."
+  },
+  {
+   "bugid": "1616945",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Don't check field.value !== field.defaultValue for fields which aren't relevant to usernames/passwords"
+  },
+  {
+   "bugid": "1617256",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Remove two unused safe browsing error codes"
+  },
+  {
+   "bugid": "1616896",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "inline ifdefs in SqliteMutex.h"
+  },
+  {
+   "bugid": "1611247",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "fogotype.<pid>  directory is created at every startup of Nightly, but not deleted when the browser closes"
+  },
+  {
+   "bugid": "1601118",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Desktop",
+   "summary": "Mana page's Find/Replace feature no longer works in Firefox 63+"
+  },
+  {
+   "bugid": "1581886",
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/browser/browser_ext_themes_dynamic_getCurrent.js | {"
+  },
+  {
+   "bugid": "1313401",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Storage",
+   "summary": "Background Page LocalStorage is cleared along with site storage"
+  },
+  {
+   "bugid": "1595431",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "browsingdata.remove removes browsing data from subdomains of hostnames passed"
+  }
+ ],
+ "date": "2020-02-22",
+ "cset": "bd65ac107627408a01cf1faf62e59665ba37cf20",
+ "buildid": "20200222095208",
+ "fixed": 72,
+ "total": 84,
+ "restricted": 1
+}

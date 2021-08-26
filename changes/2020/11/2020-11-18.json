@@ -1,0 +1,406 @@
+{
+ "bugs": [
+  {
+   "bugid": "1677817",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "GMPParent::Init() crash due to Preferences::GetBool() call off main thread"
+  },
+  {
+   "bugid": "1674832",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Use the AAudio backend by default"
+  },
+  {
+   "bugid": "1626555",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make `dom/` buildable outside of `unified-build` environment"
+  },
+  {
+   "bugid": "1677483",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Reenable some tests that are now succeeding with Fission"
+  },
+  {
+   "bugid": "1677799",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Re-enable fission tests in dom/html/test/*"
+  },
+  {
+   "bugid": "1675486",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /mixed-content/tentative/autoupgrades/audio-upgrade.https.sub.html | Audio autoupgraded - Test timed out"
+  },
+  {
+   "bugid": "1674702",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Additional pair of blur and focus event gets fired while calling window.focus() on OOP iframe"
+  },
+  {
+   "bugid": "1586455",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: mSuspended, at src/dom/workers/sharedworkers/SharedWorkerParent.cpp:87"
+  },
+  {
+   "bugid": "1649711",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Preferences: VoiceOver speaks items in the Preferences category list as dimmed."
+  },
+  {
+   "bugid": "1677385",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Make qcms_transform_precacheLUT_float safe."
+  },
+  {
+   "bugid": "1666566",
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Bump the profile format version to launch Marker Schema"
+  },
+  {
+   "bugid": "1675409",
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Migrate remaining marker payloads to 2.0 API"
+  },
+  {
+   "bugid": "1677724",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Perma dom/webgpu/mochitest/test_buffer_mapping.html | Pref should be enabled."
+  },
+  {
+   "bugid": "1674443",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Investigate tighter texture atlas packing for glyphs"
+  },
+  {
+   "bugid": "1676559",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve render task graph"
+  },
+  {
+   "bugid": "1675414",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "With WebRender enabled, when pressing arrow keys in scrollable textarea, text cursor doesn't move until it blinks"
+  },
+  {
+   "bugid": "1531819",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ OOM | large | mozalloc_abort | mozalloc_handle_oom | gkrust_shared::oom_hook::hook | std::alloc::rust_oom | webrender_bindings::bindings::wr_state_new]"
+  },
+  {
+   "bugid": "1677293",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to all non-accelerated Linux nightly users with small screens as an experiment"
+  },
+  {
+   "bugid": "1677818",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow running WebRender on ANGLE in the parent process outside of Nightly"
+  },
+  {
+   "bugid": "1658755",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "add MOZ_LIST_FIND to IPC Tainting macros"
+  },
+  {
+   "bugid": "1676990",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Call UpdateStateInternal after we reset an animation because that can discard frames and change the state"
+  },
+  {
+   "bugid": "1677657",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make js::BaseScript::{extent,immutableFlags} const"
+  },
+  {
+   "bugid": "1677689",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make layout/base/tests/test_bug851485.html more reliable so it works with Fission too"
+  },
+  {
+   "bugid": "1677092",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add `constexpr` `AnyOf`"
+  },
+  {
+   "bugid": "1676953",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Show echConfig as hex string in about:networking"
+  },
+  {
+   "bugid": "1677746",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Move NetDashboard.webidl to dom/chrome-webidl"
+  },
+  {
+   "bugid": "1677086",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Update how we parse SvcParamKeyAlpn"
+  },
+  {
+   "bugid": "1674088",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "[Experiment] The \"TRR_DISABLED_FLAG\" and  \"TRR_NOT_CONFIRMED\" buckets of the \"TRR_SKIP_REASON_TRR_FIRST\" histogram are larger than expected"
+  },
+  {
+   "bugid": "1677743",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update neqo (0.4.15)"
+  },
+  {
+   "bugid": "1676771",
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Panning isn't smooth on some Android devices, for example on the Moto G5 - consider doing touch interpolation / resampling to reduce jitter"
+  },
+  {
+   "bugid": "1634065",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Intermittent netwerk/test/unit/test_tls_server.js | Assertion failure: ss->opt.noLocks || !ssl_HaveRecvBufLock(ss), at /builds/worker/checkouts/gecko/security/nss/lib/ssl/sslsecur.c:37"
+  },
+  {
+   "bugid": "1671369",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Migrate error handling to CACHE_TRY"
+  },
+  {
+   "bugid": "1671367",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Migrate error handling to LS_TRY/SDB_TRY"
+  },
+  {
+   "bugid": "1443212",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Assertion failure: !mConsumers.Contains(aConsumer), at /builds/worker/workspace/build/src/dom/media/MediaStreamTrack.cpp:436"
+  },
+  {
+   "bugid": "1675015",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Add support for Windows high contrast mode in non-native theme"
+  },
+  {
+   "bugid": "1577900",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Button to pretty-print editor input"
+  },
+  {
+   "bugid": "1676808",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Expose WatcherFront via TargetList (instead of ResourceWatcher)"
+  },
+  {
+   "bugid": "1677587",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Enable damp | inspector/complicated.js on non-fission platforms"
+  },
+  {
+   "bugid": "1676769",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Opening browser toolbox with the print dialog open with OOP iframes fails (Mismatch between DevToolsFrameParent and DevToolsFrameChild  DevToolsFrameParent)."
+  },
+  {
+   "bugid": "1677693",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "-moz-outline-radius + outline-style: auto should warn when used together."
+  },
+  {
+   "bugid": "1592498",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/tests/browser/browser_urlbar_matchBuckets_migration60.js | Test timed out -"
+  },
+  {
+   "bugid": "1660810",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Setting a theme via policy should make it the default"
+  },
+  {
+   "bugid": "1677625",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "WNPanel devtools \"Open What's New Panel\" and \"Render Selected Messages\" buttons aren't working"
+  },
+  {
+   "bugid": "1671937",
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create Fly-Out customize component"
+  },
+  {
+   "bugid": "1671935",
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a Parent pref to turn on/off the entire new new tab experience"
+  },
+  {
+   "bugid": "1613620",
+   "status": "ASSIGNED",
+   "component": "Firefox:about:logins",
+   "summary": "allow to remove/delete all stored logins/passwords"
+  },
+  {
+   "bugid": "1677651",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Report exact version of clang for last known Xcode"
+  },
+  {
+   "bugid": "1667170",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox Nightlies for macOS no longer include symbols"
+  },
+  {
+   "bugid": "1677826",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Don't send notifications at the end of the build on automation"
+  },
+  {
+   "bugid": "1676514",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Fix some clippy warnings"
+  },
+  {
+   "bugid": "1677430",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "mozlint/license: Handle the error when cannot open a file"
+  },
+  {
+   "bugid": "1676513",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "mozlint/clippy: Add a --fix option"
+  },
+  {
+   "bugid": "1676533",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Automatically determine \"base revision\" hashes during |mach artifact|"
+  },
+  {
+   "bugid": "1666550",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update clang tools (tidy, format) to 11.0"
+  },
+  {
+   "bugid": "1677794",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Try syntax linux64 fails in decision task: Unknown platform(s) [sm-nowarp-linux64]"
+  },
+  {
+   "bugid": "1675160",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "macOS artifact try-c-c builds do not include librnp.dylib (OSX --artifact builds for OpenPGP will fail)"
+  },
+  {
+   "bugid": "1677725",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Content prompt text is not vertically centered"
+  },
+  {
+   "bugid": "1675557",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Update browser_deleteLoginsBackup test due to new remove all logins functionality"
+  },
+  {
+   "bugid": "1674611",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "nsNavHistoryResult.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1677701",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Update glean-core and enable rkv safe-mode migration"
+  },
+  {
+   "bugid": "1677712",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Simplify some in-content/common.inc.css selectors using :is()."
+  },
+  {
+   "bugid": "1677705",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "about:config textbox has an outline by default after bug 1618639"
+  },
+  {
+   "bugid": "1662372",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "The buttons from the \"Set browser as default\" notification bar are not visibly focused using keyboard navigation (macOS and Linux only)"
+  },
+  {
+   "bugid": "1666637",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "[RTL] The new PIP toggle points in the wrong direction, even for RTL documents"
+  },
+  {
+   "bugid": "1595858",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "support extension selection for homepage and newtab"
+  },
+  {
+   "bugid": "1390611",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Convert WebExtensions code to use Services.prefs instead of Preferences.jsm"
+  }
+ ],
+ "date": "2020-11-18",
+ "cset": "42e7e98c701d3e8c8c66a5acca0f0aeeb5076661",
+ "buildid": "20201118041908",
+ "fixed": 52,
+ "total": 66,
+ "restricted": 1
+}

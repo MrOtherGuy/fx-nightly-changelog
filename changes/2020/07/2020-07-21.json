@@ -1,0 +1,538 @@
+{
+ "bugs": [
+  {
+   "bugid": "1651446",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "ThreadSanitizer: data race [@ free] vs. [@ posix_memalign] in FFmpegDataDecoder"
+  },
+  {
+   "bugid": "1578042",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Skipped frame count is inaccurate, at least on non-WebRender macOS: We're dropping *more* frames than we think we are"
+  },
+  {
+   "bugid": "1652698",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Frog test website performs very poorly relative to Chrome"
+  },
+  {
+   "bugid": "1654048",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "ImplCycleCollectionUnlink(std::shared_ptr<webgl::NotLostData>&) doesn't release the object"
+  },
+  {
+   "bugid": "1654107",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Fix non-unified build errors in CompositorAnimationStorage.{h,cpp}"
+  },
+  {
+   "bugid": "1652000",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "about:processes uses too much CPU"
+  },
+  {
+   "bugid": "921504",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement the HTML inert attribute"
+  },
+  {
+   "bugid": "1653199",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Web Share should be controlled by permission policy"
+  },
+  {
+   "bugid": "1646899",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use DocumentChannel to for object/embed loads - Pt 1"
+  },
+  {
+   "bugid": "1653485",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Avoid unnecessary copy of stack only classes"
+  },
+  {
+   "bugid": "1652452",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Consider to disable browser.navigation.requireUserInteraction on Nightly until regressions have been fixed"
+  },
+  {
+   "bugid": "1649121",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Fortify code for copy&paste"
+  },
+  {
+   "bugid": "1653922",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Crash in [@ nsFocusManager::WindowHidden]"
+  },
+  {
+   "bugid": "1653039",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support text word boundaries API in mac"
+  },
+  {
+   "bugid": "1654106",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Assertions because TimeStamp::IsNull() in ImageComposite::DetectTimeStampJitter"
+  },
+  {
+   "bugid": "1654060",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix comments in ImageComposite::UpdateBias"
+  },
+  {
+   "bugid": "1622846",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU IDL to the upstream changes"
+  },
+  {
+   "bugid": "1582954",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Avoid SIGBUS from shared memory allocation failures on Linux/BSD"
+  },
+  {
+   "bugid": "1649528",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender to more users in 80"
+  },
+  {
+   "bugid": "1654032",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Roll out webrender on Adreno 6xx"
+  },
+  {
+   "bugid": "1650990",
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: layout_visible_range.end >= layout_visible_range.start) at gfx/wr/webrender_api/src/image_tiling.rs:354"
+  },
+  {
+   "bugid": "1653649",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ webrender::render_task::render_task_sanity_check]"
+  },
+  {
+   "bugid": "1572421",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Display list dump does not include all items"
+  },
+  {
+   "bugid": "1653544",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Generate comments with information about the shader during optimization"
+  },
+  {
+   "bugid": "1653569",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Avoid allocating memory when computing the area of occluders"
+  },
+  {
+   "bugid": "1623792",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Optimize primitive dependency handling, taking advantage of spatial information from tile assignment."
+  },
+  {
+   "bugid": "1653587",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Fix \"Genreate\" typo"
+  },
+  {
+   "bugid": "1652744",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add browser pref for private fields support"
+  },
+  {
+   "bugid": "1606568",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "No public API for creating/managing BigInt values."
+  },
+  {
+   "bugid": "1642493",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Irregexp: Tidy up loose ends"
+  },
+  {
+   "bugid": "1644160",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Proxy Support for Private Fields"
+  },
+  {
+   "bugid": "1653956",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Link errors in Debugger.cpp in non-unified, optimised builds"
+  },
+  {
+   "bugid": "1653246",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize DataView get/set methods in CacheIR and Warp"
+  },
+  {
+   "bugid": "1653962",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Transpile GuardToBigInt, GuardToUint8Clamped, Double(Inc|Dec)Result, and CompareSymbolResult"
+  },
+  {
+   "bugid": "1653502",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Crash [@ ??] with SIGILL in Cranelift"
+  },
+  {
+   "bugid": "1637130",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "rename visual overflow to ink overflow"
+  },
+  {
+   "bugid": "1653905",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "propagate the fix from bug 1645762 to nsDisplayMasksAndClipPaths::PaintMask"
+  },
+  {
+   "bugid": "1647520",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Maybe stop searching for optimal column balancing block-size within a certain threshold"
+  },
+  {
+   "bugid": "1558509",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Various multicol reftest failures on geckoview (x86-64 Android 7.0 emulator)"
+  },
+  {
+   "bugid": "1652762",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/netwerk/dns/TRRServiceBase.cpp:71:22 in CheckURIPrefs"
+  },
+  {
+   "bugid": "1596741",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Emit warning to console when rejecting to set cookie (from cross-site/foreign domain)"
+  },
+  {
+   "bugid": "1653642",
+   "status": "NEW",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Crash in [@ mozilla::net::CallOnStop::~CallOnStop]"
+  },
+  {
+   "bugid": "1540988",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Doing CMD+two finger scroll to zoom breaks layout and looses sync with browser-fullZoom with apz.allow_zooming"
+  },
+  {
+   "bugid": "1652877",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add ctrl-shift-minus keymap for zooming out like zooming in works"
+  },
+  {
+   "bugid": "1653686",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Cleanup of CUPS shim"
+  },
+  {
+   "bugid": "1652927",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Improve URL Classifier logging"
+  },
+  {
+   "bugid": "1653848",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Make SVGPaintServer and SVGGradientFrames queryable"
+  },
+  {
+   "bugid": "1649545",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 80 to use NSS 3.55"
+  },
+  {
+   "bugid": "1604316",
+   "status": "ASSIGNED",
+   "component": "Core:Web Audio",
+   "summary": "Intermittent /webaudio/the-audio-api/the-mediaelementaudiosourcenode-interface/cors-check.https.html | X Recorded channel #0 should have contain at least one value different from 0. - assert_true: expected true got false"
+  },
+  {
+   "bugid": "1653362",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Can't build with macOS 10.15.6 SDK"
+  },
+  {
+   "bugid": "1617002",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Webrender][X11] Opaque region does not get set / gets reset"
+  },
+  {
+   "bugid": "1651630",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Hide Start/Debug buttons instead of disabling them"
+  },
+  {
+   "bugid": "1653598",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Add a \"CSS Parser\" constant"
+  },
+  {
+   "bugid": "1653785",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "[RTL] The twisty for the stack trace in the exception tooltip is pointing the wrong direction when collapsed"
+  },
+  {
+   "bugid": "1652828",
+   "status": "ASSIGNED",
+   "component": "DevTools:General",
+   "summary": "High frequency devtools/client/application/test/browser/browser_application_panel_telemetry-workers.js | Test timed out -"
+  },
+  {
+   "bugid": "1650901",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "Center the `open-inspector` button in the Layout panel"
+  },
+  {
+   "bugid": "1653436",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Some characters getting clobbered if I type too fast"
+  },
+  {
+   "bugid": "1595340",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent fission browser/components/extensions/test/browser/browser_ext_urlbar.js | \"about:blank\" == \"http://example.com/\" - JS frame :: chrome://mochitests/content/browser/browser/components/extensions/test/browser/browser_ext_urlbar.js"
+  },
+  {
+   "bugid": "1653541",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "WebExtensions tabs.update API cannot open mailto links"
+  },
+  {
+   "bugid": "1651165",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Rename and improve documentation around _scheduleArbitrarilyLateIdleTasks"
+  },
+  {
+   "bugid": "1652811",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Use nimbus-shared repo for schema validation"
+  },
+  {
+   "bugid": "1654029",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "When only the search box is enabled in Firefox newtab, the Firefox logo is no longer displayed"
+  },
+  {
+   "bugid": "1620409",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Dismiss on collection needs slightly different logic"
+  },
+  {
+   "bugid": "1649250",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Populate the FeatureGates list with the features listed on MDN's Experimental Features page"
+  },
+  {
+   "bugid": "1651330",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add Ubuntu's distribution configuration to the modern search engine configuration"
+  },
+  {
+   "bugid": "1652609",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "jwcrypto:generateJWE should include `kid` in the JWE header, if available"
+  },
+  {
+   "bugid": "1648194",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Enable \"identity.sync.useOAuthForSyncToken\" in Firefox 80"
+  },
+  {
+   "bugid": "1652641",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "tab context menu when multiple tabs are selected has menu items with conflicting accelerator keys"
+  },
+  {
+   "bugid": "1647806",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Document Python 3 installation steps"
+  },
+  {
+   "bugid": "1647814",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Verify that python 3 is installed and up-to-date"
+  },
+  {
+   "bugid": "1653440",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "TypeError when running much build on latest m-c"
+  },
+  {
+   "bugid": "1652870",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "use new dump_syms for Android builds"
+  },
+  {
+   "bugid": "1653195",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "eslint is conflicted about what version of eslint-visitor-keys to require"
+  },
+  {
+   "bugid": "1652039",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Fix clang-tidy with External and Alpha Checkers"
+  },
+  {
+   "bugid": "1485588",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[clang-tidy] Prohibit the use of the C standard library for character classification"
+  },
+  {
+   "bugid": "1653717",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Fix handling of composite task descriptions"
+  },
+  {
+   "bugid": "1650406",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "upload-symbols tasks showing up and causing builds with |mach try auto| again"
+  },
+  {
+   "bugid": "1638990",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Convert 'mach taskgraph' to run with Python 3"
+  },
+  {
+   "bugid": "1640982",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "rust 1.45 error: options `-C embed-bitcode=no` and `-C lto` are incompatible"
+  },
+  {
+   "bugid": "1486004",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Testing",
+   "summary": "Support unrooted Android devices in our Unit tests"
+  },
+  {
+   "bugid": "1652190",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Can't zoom in to the initial minimum-scale once after zoom out to some extent"
+  },
+  {
+   "bugid": "1631839",
+   "status": "REOPENED",
+   "component": "Release Engineering:General",
+   "summary": "mobile: Change indexes to not contain the `project.` prefix"
+  },
+  {
+   "bugid": "1649046",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Requests",
+   "summary": "Setup WNP for users coming from <79.0 and receiving the 79.0 release"
+  },
+  {
+   "bugid": "1641805",
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Stop calling nsIWebBrowserPrint.print() in DownloadCore.jsm"
+  },
+  {
+   "bugid": "1652861",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Printing",
+   "summary": "Create initial, minimal UI to select and adjust printer & print settings"
+  },
+  {
+   "bugid": "1653568",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Add testcase to make sure WebSocket is classified by URL Classifier"
+  },
+  {
+   "bugid": "1482089",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove GCTelemetry to reduce memory usage in content process"
+  },
+  {
+   "bugid": "1651261",
+   "status": "NEW",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_url_overrides_newtab.js | Test timed out -"
+  }
+ ],
+ "date": "2020-07-21",
+ "cset": "501791d4676eebcb4c5db3be72754066c5780064",
+ "buildid": "20200721094241",
+ "fixed": 66,
+ "total": 88,
+ "restricted": 4
+}

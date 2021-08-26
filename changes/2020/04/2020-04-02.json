@@ -1,0 +1,790 @@
+{
+ "bugs": [
+  {
+   "bugid": "1623486",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Always control the media being used in PIP"
+  },
+  {
+   "bugid": "1626697",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update cubeb-pulse to 72f813a and cubeb-coreaudio to 432259a"
+  },
+  {
+   "bugid": "1622322",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Improve performance for printing when multiple shadow roots share adopted style sheets"
+  },
+  {
+   "bugid": "1557118",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Support group in registerWindowActor"
+  },
+  {
+   "bugid": "1626096",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Lock the dom.ipc.processCount.webIsolated pref"
+  },
+  {
+   "bugid": "1622420",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Can't get top-level WindowContext in the cross-origin iframe"
+  },
+  {
+   "bugid": "1625839",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ nsGlobalWindowOuter::MaybeTabGroupOuter]"
+  },
+  {
+   "bugid": "1597268",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove registerContentHandler() and dom.registerContentHandler.enabled"
+  },
+  {
+   "bugid": "1626705",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use mozalloc_handle_oom to handle OOM for DOMArena"
+  },
+  {
+   "bugid": "1615109",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Could not map contract ID '@mozilla.org/sharepicker;1' to CID {1201d357-8417-4926-a694-e6408fbedcf8} because no implementation of the CID is registered."
+  },
+  {
+   "bugid": "1612839",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "test_credman_iframes.html fails with Fission focus changes"
+  },
+  {
+   "bugid": "1624011",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: firstRange, at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditSubActionHandler.cpp:835"
+  },
+  {
+   "bugid": "1626417",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable DocumentChannel for about:privatebrowsing"
+  },
+  {
+   "bugid": "1625530",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Test for bug 1528305 continuously spawns processes in fission."
+  },
+  {
+   "bugid": "1597442",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix uses of nsJSContext::MaybeRunNextCollectorSlice in dom/base/nsJSEnvironment.cpp"
+  },
+  {
+   "bugid": "1616727",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: NodePrincipal()->GetIsNullPrincipal() (srcdoc without null principal as toplevel!), at src/dom/base/Document.cpp:3576"
+  },
+  {
+   "bugid": "1625448",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS Only Mode - Add tests for console logging"
+  },
+  {
+   "bugid": "1589275",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make DocumentChannel CSP handling work entirely in the parent process"
+  },
+  {
+   "bugid": "1623858",
+   "status": "REOPENED",
+   "component": "Core:DOM: Selection",
+   "summary": "Document and simplify some Selection related code"
+  },
+  {
+   "bugid": "1618539",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove content-process use of nsIFocusManager::GetActiveWindow"
+  },
+  {
+   "bugid": "1620173",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "WindowHidden reads mActiveWindow from a content process"
+  },
+  {
+   "bugid": "1613031",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "toolkit/content/tests/mochitest/test_mousecapture.xhtml times out with Fission focus code"
+  },
+  {
+   "bugid": "1623092",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Avoid setting mActiveWindow in content processes"
+  },
+  {
+   "bugid": "1612844",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WebAuthn tests fail with Fission focus code"
+  },
+  {
+   "bugid": "1625832",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver \"Show context menu\" clicks in the wrong place"
+  },
+  {
+   "bugid": "1626802",
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Avoid cross-thread QueryInterface calls for interfaces we know aren't supported"
+  },
+  {
+   "bugid": "1625856",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Implement ProfileBufferChunkManagerWithLocalLimit"
+  },
+  {
+   "bugid": "1626563",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove some redundant user-provided copy constructors in gfx/thebes"
+  },
+  {
+   "bugid": "1626659",
+   "status": "NEW",
+   "component": "Core:Graphics: Layers",
+   "summary": "Make gfx/layers buildable outside of unified build environment"
+  },
+  {
+   "bugid": "1626113",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Use mozilla::Span in Matrix4x4::TransformAndClipRect"
+  },
+  {
+   "bugid": "1626111",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Fix two variable names in Matrix4x4TypedFlagged::TransformAndClipBounds"
+  },
+  {
+   "bugid": "1626550",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update graphite to version 1.3.14"
+  },
+  {
+   "bugid": "1624468",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add a fast path for more gradient types in WR"
+  },
+  {
+   "bugid": "1625816",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Position of background rectangles is affected by the current display port"
+  },
+  {
+   "bugid": "1624817",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ webrender::renderer::Renderer::draw_frame] (internal error: entered unreachable code)"
+  },
+  {
+   "bugid": "1622360",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove document splitting code"
+  },
+  {
+   "bugid": "1626496",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Round down for nearest filtering in SWGL"
+  },
+  {
+   "bugid": "1624016",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add memory reporting to WR display item cache"
+  },
+  {
+   "bugid": "1622589",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add SMDOC for js::BaseScript"
+  },
+  {
+   "bugid": "1567157",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JIT simplifications after JSScript/LazyScript unification"
+  },
+  {
+   "bugid": "1626351",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support mach jstests and mach jit-test for android devices"
+  },
+  {
+   "bugid": "1626634",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Minor fixups to new JSScript/BaseScript model"
+  },
+  {
+   "bugid": "1594545",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement NativeRegExpMacroAssembler for new regexp import based on irregexp/NativeRegExpMacroAssembler.cpp"
+  },
+  {
+   "bugid": "1502355",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement ReadableStream.prototype.pipeTo and pipeThrough"
+  },
+  {
+   "bugid": "1626201",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support OSR in WarpBuilder"
+  },
+  {
+   "bugid": "1607986",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Clicking \"play\" on paper.io is extremely slow on Firefox, smooth on Chrome"
+  },
+  {
+   "bugid": "1626075",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "IonBuilder::arithTryBinaryStub can't fail"
+  },
+  {
+   "bugid": "1617851",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add basic location information for Ion aborts in non-debug builds"
+  },
+  {
+   "bugid": "1625734",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "AddressSanitizer: attempting to call malloc_usable_size() for pointer which is not owned: 0x7f6453a00628 [@ malloc_usable_size] with byteSize"
+  },
+  {
+   "bugid": "1625212",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate giving GC cells an explicit header field to store the GC flags"
+  },
+  {
+   "bugid": "1622828",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Implement wasm->js multi-value calls"
+  },
+  {
+   "bugid": "1625887",
+   "status": "REOPENED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Implement js->wasm multi-value calls"
+  },
+  {
+   "bugid": "1625885",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Consolidate use of ToWebAssemblyValue / ToJSValue in WasmInstance"
+  },
+  {
+   "bugid": "1625805",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Don't look at image state for content: url() images."
+  },
+  {
+   "bugid": "1626155",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "nsLayoutUtils::TransformAncestorPointToFrame passes null for ancestor frame"
+  },
+  {
+   "bugid": "1614268",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Land a mochitest for bug 1550800"
+  },
+  {
+   "bugid": "1597786",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent bugs/1553571-1.html == bugs/1553571-1-ref.html | load failed: timed out waiting for pending paint count to reach zero (waiting for MozAfterPaint) (waiting for updateCanvasPending)"
+  },
+  {
+   "bugid": "40545",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "LABELs don't work for OPTIONs (<option label> in selects) (standards mode only!)"
+  },
+  {
+   "bugid": "1619349",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Add telemetry to determine potential impact of anti-font-fingerprinting measures"
+  },
+  {
+   "bugid": "1619350",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Distinguish OS-provided from user-installed fonts in the system font list"
+  },
+  {
+   "bugid": "1626267",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add std::transform-like algorithms with error handling based on mozilla::Result"
+  },
+  {
+   "bugid": "1597954",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add a class template for objects that can only be initialized once"
+  },
+  {
+   "bugid": "1626359",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Crash in [@ mozilla::net::Http3Stream::WriteSegments]"
+  },
+  {
+   "bugid": "1626799",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update Neqo to 0.2.3"
+  },
+  {
+   "bugid": "1625198",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Number of bytes read reported n HttpConnectionUDP::OnSocketReadable is bogus"
+  },
+  {
+   "bugid": "1626318",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Crash in [@ OOM | large | mozalloc_abort | mozalloc_handle_oom | moz_xmalloc | std::basic_string<T>::_Reallocate_grow_by<T>]"
+  },
+  {
+   "bugid": "1623044",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Crash in [@ (anonymous namespace)::NotifyBlockingDecision] via AntiTracking"
+  },
+  {
+   "bugid": "1626540",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix a crash in the anti-tracking redirect heuristic"
+  },
+  {
+   "bugid": "1626495",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Re-enable TLS 1.0 in Firefox 76 and 77 (Release)"
+  },
+  {
+   "bugid": "1623278",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Prototype reduction of raw pointer usage"
+  },
+  {
+   "bugid": "1620273",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Add SafeRefPtr as a safer variant of a RefPtr"
+  },
+  {
+   "bugid": "1536796",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Getting NS_ERROR_FILE_NOT_FOUND error while the file path exceeds the path limit on Windows"
+  },
+  {
+   "bugid": "1618170",
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "Perma [tier2] browser/base/content/test/webrtc/browser_devices_get_user_media_in_frame.js | Uncaught exception - at chrome://mochitests/content/browser/browser/base/content/test/webrtc/browser_devices_get_user_media_in_frame.js:521 - TypeError: gBrowser"
+  },
+  {
+   "bugid": "1613717",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "test_getUserMedia_basicScreenshare.html fails with Fission focus code"
+  },
+  {
+   "bugid": "1609124",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "ICE mode 2 implementation on dual stack configurations is prone to fail"
+  },
+  {
+   "bugid": "1620448",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "addIceCandidate doesn't detect InvalidStateError synchronously when chain is empty"
+  },
+  {
+   "bugid": "1616245",
+   "status": "REOPENED",
+   "component": "Core:Widget",
+   "summary": "Intermittent toolkit/mozapps/extensions/test/xpinstall/browser_doorhanger_installs.js | Main Thread] ###!!! ASSERTION: Negative height passed to nsWindow::Resize: '(height >= 0)', file z:/build/build/src/widget/windows/nsWindow.cpp, line 1834"
+  },
+  {
+   "bugid": "1595038",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS] 1px horizontal line flickering glitch when scrolling"
+  },
+  {
+   "bugid": "1626206",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "nsTArrayBackInserter defines bad operator++"
+  },
+  {
+   "bugid": "1626043",
+   "status": "RESOLVED",
+   "component": "DevTools:CSS and Themes",
+   "summary": "Stop packaging toolbars.css as both chrome:// and resource://"
+  },
+  {
+   "bugid": "1625814",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Update addLineClass and removeLineClass parameters"
+  },
+  {
+   "bugid": "1626508",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The debugger should have flow definitions for redux"
+  },
+  {
+   "bugid": "1616301",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "context switching should refer to target instead of thread"
+  },
+  {
+   "bugid": "1626575",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove Loader.jsm exceptions from Android allowed-dupes.mn"
+  },
+  {
+   "bugid": "1626210",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Connecting to remote device fails `Cc is not defined`"
+  },
+  {
+   "bugid": "1623944",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "\"Okay, got it\" button from Search tips and search Interventions is not easily visible in dark theme"
+  },
+  {
+   "bugid": "1622476",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement about:welcome termination telemetry ping"
+  },
+  {
+   "bugid": "1625938",
+   "status": "VERIFIED",
+   "component": "Firefox:Migration",
+   "summary": "The buttons of the import wizard dialog are incorrectly displayed for the \"pave-over\"and Reinstall install method (stub installers)"
+  },
+  {
+   "bugid": "1621355",
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Un-hardcode dismiss tooltip"
+  },
+  {
+   "bugid": "1586933",
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Make Normandy constants easier to search for"
+  },
+  {
+   "bugid": "1625773",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Preferences UI manual socks proxy port cannot be modified"
+  },
+  {
+   "bugid": "1584280",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Intermittent toolkit/components/certviewer/tests/browser/browser_handleMultipleCertsURL.js | Subject Name must be the selected item - \"\" == \"Subject Name\" -"
+  },
+  {
+   "bugid": "1622730",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Support principals `file://` for the site permission setting"
+  },
+  {
+   "bugid": "1616772",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Re-enable browser/base/content/test/fullscreen/browser_bug1557041.js for Fission"
+  },
+  {
+   "bugid": "1573758",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Consider dropping or extending tabs TTL"
+  },
+  {
+   "bugid": "1626125",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Vendor `sync15_traits` in m-c"
+  },
+  {
+   "bugid": "1626265",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Don't hide the status panel (status bar) while a link's context menu is open"
+  },
+  {
+   "bugid": "1602808",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "3.06 - 7.93% startup_about_home_paint / tabswitch (linux64-shippable-qr, windows10-64-shippable, windows10-64-shippable-qr) regression on push bff9eef8191f12cee9af275966a563517dcdf429 (Fri November 22 2019)"
+  },
+  {
+   "bugid": "1626485",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Clean up some prefs styling"
+  },
+  {
+   "bugid": "1626138",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add a pref to disable the OS authentication prompt"
+  },
+  {
+   "bugid": "1626413",
+   "status": "ASSIGNED",
+   "component": "Firefox:about:logins",
+   "summary": "Sorting by \"Alerts\" is broken when there are no vulnerable passwords"
+  },
+  {
+   "bugid": "1625967",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \u201cLearn more\u201d and the \u201cGo to <website_name>\u201d links overlap with the elements from the \u201cVulnerable Password\u201d/\u201dBreached Website\u201d notification when the browser is resized"
+  },
+  {
+   "bugid": "1626344",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "only use -O2 for android builds on nightly"
+  },
+  {
+   "bugid": "1626340",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix some mozconfigs where mozconfig.common.override is not at the end"
+  },
+  {
+   "bugid": "1623523",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Switch Windows devedition and add-on-devel builds to cross-builds"
+  },
+  {
+   "bugid": "1626640",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "[Coverity] For modules that are compatible with the non unified build environment stop using the unified files for analysis"
+  },
+  {
+   "bugid": "1622654",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "the 'empty' method should be used to check for emptiness instead of 'size'"
+  },
+  {
+   "bugid": "1624231",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "nsUrlClassifierDBService.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1624902",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Limit the number of platforms bugbug manifests run on"
+  },
+  {
+   "bugid": "1607552",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "DevEd aarch64 build should have Widevine enabled"
+  },
+  {
+   "bugid": "1624649",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch android emulator to be pulled via toolchain instead of tooltool"
+  },
+  {
+   "bugid": "1626283",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "The mingw mozconfigs include mozconfig.cache twice"
+  },
+  {
+   "bugid": "1626393",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "OSError: No such file or directory '.../target_task_set'"
+  },
+  {
+   "bugid": "1624280",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Allow specifying custom routes in `mach try fuzzy`"
+  },
+  {
+   "bugid": "1626670",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Never build with MOZ_UPDATER=1"
+  },
+  {
+   "bugid": "1626526",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Network",
+   "summary": "TypeError: can't access property \"spec\", topFrame.currentURI is null: _onRequest@chrome://remote/content/domains/parent/Network.jsm:383:20"
+  },
+  {
+   "bugid": "1559392",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "[about:addons] Support installing non-.xpi files with drag and drop"
+  },
+  {
+   "bugid": "1608347",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Master password dialog pops up every time the browser starts when the site that requires login is at the top site"
+  },
+  {
+   "bugid": "1619851",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Login doorhanger telemetry counts impressions when updating/replacing a doorhanger for the same document"
+  },
+  {
+   "bugid": "1625028",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add plain mochitest coverage for new-password heuristics"
+  },
+  {
+   "bugid": "1618587",
+   "status": "VERIFIED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Don't allow revealing autofilled passwords in the dismissed login capture doorhanger from an edit"
+  },
+  {
+   "bugid": "1626619",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove `browser.in-content.dark-mode` preference"
+  },
+  {
+   "bugid": "1624960",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Simplify some margin/padding values"
+  },
+  {
+   "bugid": "1615544",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Re-enable test_videocontrols.html for Fission"
+  },
+  {
+   "bugid": "1626662",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove warning from xul.css and minimal-xul.css"
+  },
+  {
+   "bugid": "1626539",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove the dlgType property from XUL buttons"
+  },
+  {
+   "bugid": "1626804",
+   "status": "RESOLVED",
+   "component": "Toolkit:about:memory",
+   "summary": "Clarify about:memory's `explicit` description"
+  },
+  {
+   "bugid": "1610141",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "\"Find as You Type\" blocks typing in devtool extensions inputs"
+  },
+  {
+   "bugid": "1613590",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser_ext_search.js leaks an about:neterror window with Fission focus code"
+  },
+  {
+   "bugid": "1625006",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Include information about webRequest blocking handlers in profiles"
+  }
+ ],
+ "date": "2020-04-02",
+ "cset": "95ddb3213aecaf87c0a4f2d3559bd17e0194148c",
+ "buildid": "20200402095145",
+ "fixed": 108,
+ "total": 130,
+ "restricted": 2
+}

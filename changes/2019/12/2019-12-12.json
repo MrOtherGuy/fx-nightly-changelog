@@ -1,0 +1,568 @@
+{
+ "bugs": [
+  {
+   "bugid": "1602163",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "VideoPlaybackQuality corruptedFrames deprecated"
+  },
+  {
+   "bugid": "1602366",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::ipc::IPDLParamTraits<T>::Write | mozilla::ipc::WriteIPDLParam<T> | mozilla::dom::PContentChild::SendWindowClose]"
+  },
+  {
+   "bugid": "1526725",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Should we make default of \"wheel\" (and \"DOMMouseScroll\", \"MozPixelMouseScroll\") event listeners on root \"passive\"?"
+  },
+  {
+   "bugid": "1603194",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "nsDocShell::mAllowKeywordFixup isn't preserved across process switches"
+  },
+  {
+   "bugid": "1594288",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix usage of nsIDocShellTreeItem in nsDocShell::FindChildWithName"
+  },
+  {
+   "bugid": "1589123",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Fission] Crash in [@ mozilla::dom::PWindowGlobalParent::SendLoadURIInChild]"
+  },
+  {
+   "bugid": "1530230",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Content-type header lingers after redirecting from 302 response to POST while using Fetch API"
+  },
+  {
+   "bugid": "1601941",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Refactor GetURI usage in nsScriptSecurityManager.cpp"
+  },
+  {
+   "bugid": "1581499",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Replace LoadFrameScript() with JSWindowActors in dom/serviceworkers/test/browser_force_refresh.js for Fission"
+  },
+  {
+   "bugid": "1598619",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Firefox detects 2 consecutive shift keyup events when screenshot is taken on os x"
+  },
+  {
+   "bugid": "1556380",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "[meta] Enable more ESLint rules for extensions/"
+  },
+  {
+   "bugid": "1586411",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Intermittent netwerk/test/mochitests/test_different_domain_in_hierarchy.html (finished) | application crashed [@ mozilla::dom::BrowserBridgeParent::RecvShow(mozilla::gfx::IntSizeTyped<mozilla::ScreenPixel> const&, bool const&, nsSizeMode const&)]"
+  },
+  {
+   "bugid": "1602813",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Crash in [@ objc_exception_throw | -[NSObject doesNotRecognizeSelector:]]"
+  },
+  {
+   "bugid": "1602992",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add power profiling modes to example-compositor application."
+  },
+  {
+   "bugid": "1603015",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Firefox is unusable (doesn't load pages) on Intel 620 with webrender.compositor"
+  },
+  {
+   "bugid": "1594524",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Debug overlays / profiler drawing is included in GPU measurements"
+  },
+  {
+   "bugid": "1603207",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Only white page is displayed with topbar with gfx.webrender.picture-caching=false and gfx.webrender.compositor=true"
+  },
+  {
+   "bugid": "1603172",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Increase fuzz on split-batch.yaml test so that it pass on github CI"
+  },
+  {
+   "bugid": "1603256",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Un-template various public GC tracing/marking functions"
+  },
+  {
+   "bugid": "1602882",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move array-related operations to a new js/Array.h header"
+  },
+  {
+   "bugid": "1602878",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use a consistent definition of BaseScript::enclosingScript()"
+  },
+  {
+   "bugid": "1603036",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "LeakSanitizer: [@ XDRBufferObject::create] or [@ CodeModule]"
+  },
+  {
+   "bugid": "1592307",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create shim definitions for V8-specific code in new regexp implementation"
+  },
+  {
+   "bugid": "1591515",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Avoid delazification in js::FunctionToString"
+  },
+  {
+   "bugid": "1603304",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Unreachable |return Ok();| after a while-true loop in IonBuilder.cpp with no breaks out of it"
+  },
+  {
+   "bugid": "1602190",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Differential Testing: Different output message involving Math.fround"
+  },
+  {
+   "bugid": "1602390",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: numValueSlots >= frame->script()->nfixed(), at js/src/jit/JitFrames.cpp:299"
+  },
+  {
+   "bugid": "1602720",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Tidy up IonBuilder JSOP_INITELEM_ARRAY/JSOP_INITELEM_INC code"
+  },
+  {
+   "bugid": "1602741",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Shell drainJobQueue function may not drain the job queue if FinalizationGroups queue jobs"
+  },
+  {
+   "bugid": "1511958",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "[meta] Implement i64<>JavaScript\u2019s BigInt conversions proposal"
+  },
+  {
+   "bugid": "1543315",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Mark methods of nsIPresShell and mozilla::PresShell as MOZ_CAN_RUN_SCRIPT (or at least MOZ_CAN_RUN_SCRIPT_BOUNDARY) if necessary"
+  },
+  {
+   "bugid": "1594099",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "readability backplate spills out left side of text"
+  },
+  {
+   "bugid": "1602767",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make layout debugger's paged mode use the same setup as reftest-paged"
+  },
+  {
+   "bugid": "1561860",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add rust-url based nsIURI implementation"
+  },
+  {
+   "bugid": "1572573",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Printing page with large table fails to display anything after the first page."
+  },
+  {
+   "bugid": "1601824",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "InvalidArrayIndex_CRASH in [@ SVGTextFrame::DoTextPathLayout]"
+  },
+  {
+   "bugid": "1600906",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Reduce state in dom/indexedDB classes"
+  },
+  {
+   "bugid": "1497007",
+   "status": "REOPENED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Implement IDBTransaction commit() method"
+  },
+  {
+   "bugid": "1592934",
+   "status": "REOPENED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add new telemetry probes for tracking initialization success rates"
+  },
+  {
+   "bugid": "1474608",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Storage folders of containers removed with contextualIdentities.remove aren't deleted"
+  },
+  {
+   "bugid": "1601992",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Crash in [@ shutdownhang | mdns_service::mdns_service_stop]"
+  },
+  {
+   "bugid": "1580567",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Implement XR device access permission UI"
+  },
+  {
+   "bugid": "1602972",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Keep FxR PC window on top"
+  },
+  {
+   "bugid": "1602309",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Firefox unsets opaque region when unfocused"
+  },
+  {
+   "bugid": "1573742",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[CSD] Tiled mode on GTK/mutter shows round corners and unnecessary space"
+  },
+  {
+   "bugid": "1599393",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Use dmabuf for basic compositor under preference"
+  },
+  {
+   "bugid": "1602167",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make it possible to pass more than just NS_DISPATCH_AT_END from a TaskQueue"
+  },
+  {
+   "bugid": "1592858",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Right-click \"Inspect Accessibility Properties\" doesn't scroll Accessibility view"
+  },
+  {
+   "bugid": "1603102",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove openNewBrowserWindow helper from webconsole head"
+  },
+  {
+   "bugid": "1582266",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Never show incorrect source contents"
+  },
+  {
+   "bugid": "1583550",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Support additional targets in the OBT when we highlight the dock icon in case of breakpoints"
+  },
+  {
+   "bugid": "1598180",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Heavy Angular app slows Debugger and Console load"
+  },
+  {
+   "bugid": "1596114",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Migrate server unit tests to async/await"
+  },
+  {
+   "bugid": "1565200",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Use JSWindowActor API instead of message manager in DebuggerServer.connectToFrame"
+  },
+  {
+   "bugid": "1525966",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Error message missing \"Error while detaching the browsing context target front: undefined\""
+  },
+  {
+   "bugid": "1588963",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Show a message in case of no issues"
+  },
+  {
+   "bugid": "1596166",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "UA input disappears from toolbar when window width is small"
+  },
+  {
+   "bugid": "1598841",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "tooltips are blank when mouse hover over icons in addressbar"
+  },
+  {
+   "bugid": "1601450",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Select location bar plus type while in about:config no longer deletes location bar contents"
+  },
+  {
+   "bugid": "1322542",
+   "status": "NEW",
+   "component": "Firefox:Address Bar",
+   "summary": "[RTL] LTR behavior with the cursor when typing RTL characters in the URL bar"
+  },
+  {
+   "bugid": "1599840",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Pass the QueryContext to unifiedComplete"
+  },
+  {
+   "bugid": "1603132",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Rename \"value\" to \"event_context\" for Snippets telemetry in ASRouter"
+  },
+  {
+   "bugid": "1600779",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Caching in ASRouterTargeting for attachedFxAOAuthClients"
+  },
+  {
+   "bugid": "1602858",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.4.176"
+  },
+  {
+   "bugid": "1602947",
+   "status": "VERIFIED",
+   "component": "Firefox:Preferences",
+   "summary": "The \"Done\" button in a container preferences is ~3x bigger"
+  },
+  {
+   "bugid": "1602015",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Add telemetry to protection panel milestone message"
+  },
+  {
+   "bugid": "1601784",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "The \"third-party trackers\" link on the storage access API prompt is no longer clickable"
+  },
+  {
+   "bugid": "1598979",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Device name not reported when using synced tabs menu with a screen reader"
+  },
+  {
+   "bugid": "1601180",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "UITour's `fxa` configuration request fails if the fxa account is in a bad state."
+  },
+  {
+   "bugid": "1602961",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "./mach clobber gradle should clean up $topobjdir/gradle"
+  },
+  {
+   "bugid": "1602312",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "sixgill fails on XIL_GetFunctionFields"
+  },
+  {
+   "bugid": "1603300",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix configure toolchain test helper regex"
+  },
+  {
+   "bugid": "1603181",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mozbuild/preprocessor.py and test_preprocessor.py support Python3"
+  },
+  {
+   "bugid": "1543853",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Evaluate using stylebench for PGO training"
+  },
+  {
+   "bugid": "1603141",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused option --enable-cross-pgo"
+  },
+  {
+   "bugid": "1590745",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[mozbuild] Make the $PYTHON3 build var use a venv instead of a raw python binary"
+  },
+  {
+   "bugid": "1601859",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move crates that are developed out-of-tree to being vendored."
+  },
+  {
+   "bugid": "1600089",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Write a contribute page for windows"
+  },
+  {
+   "bugid": "1601681",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Prettier formatting should specify Unix line endings"
+  },
+  {
+   "bugid": "1602863",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ubuntu1804 - migrate tasks, tests and other jobs that use desktop1604-test to use ubuntu1804-test image"
+  },
+  {
+   "bugid": "1500321",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Don't run always-targets as part of nightly, cron or rel-pro graphs."
+  },
+  {
+   "bugid": "1601704",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent make[4]: *** [../../../dist/bin/gdb-tests] Error 1"
+  },
+  {
+   "bugid": "1583353",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Test path chunking in the taskgraph"
+  },
+  {
+   "bugid": "1599927",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "WebXR permission support in GeckoSession"
+  },
+  {
+   "bugid": "1603106",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "automatically scheduled ship phase for daily betas"
+  },
+  {
+   "bugid": "1597879",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.addScriptToEvaluateOnNewDocument"
+  },
+  {
+   "bugid": "1602758",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Close an existing abuse report dialog instead of rejecting a new mozAddonManager.reportAbuse"
+  },
+  {
+   "bugid": "1603050",
+   "status": "RESOLVED",
+   "component": "Toolkit:Autocomplete",
+   "summary": "Remove unused displayurl and lookslikeurl attributes from autocomplete-richlistitem.js"
+  },
+  {
+   "bugid": "1595154",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Support form autofill in out-of-process iframes"
+  },
+  {
+   "bugid": "1434405",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Clean up unnecessary if statements in Safe Browsing preferences"
+  },
+  {
+   "bugid": "1602939",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "\"Delete Profile\" dialog glitch"
+  },
+  {
+   "bugid": "1601093",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Rename remaining .xul files to .xhtml in toolkit/"
+  },
+  {
+   "bugid": "1602646",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent GECKO(3512) | Assertion failure: mThread, at z:/build/build/src/xpcom/threads/nsThread.cpp:837"
+  }
+ ],
+ "date": "2019-12-12",
+ "cset": "192e0e33eb597e8d923eb89f6d49bf42654e9d11",
+ "buildid": "20191212095326",
+ "fixed": 80,
+ "total": 93,
+ "restricted": 1
+}

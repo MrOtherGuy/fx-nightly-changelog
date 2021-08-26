@@ -1,0 +1,706 @@
+{
+ "bugs": [
+  {
+   "bugid": "1636408",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "RLBox - RLBox ported components use MOZ_ASSERT instead of MOZ_RELEASE_ASSERT to check for malloc failures"
+  },
+  {
+   "bugid": "1636252",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Report OOM/etc. better in EME event code in various when JSAPI operations fail"
+  },
+  {
+   "bugid": "1637753",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "GMPService::GetCDM should check if getting the CDM fails"
+  },
+  {
+   "bugid": "1633010",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Simplify the responsibility of media controller"
+  },
+  {
+   "bugid": "1635446",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.gecko.media.Codec$OutputProcessor.onFormatChanged(Codec.java)]"
+  },
+  {
+   "bugid": "1332588",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "ASSERTION: Unexpected UpdateTransformLayer hint: '!(aChange & nsChangeHint_UpdateTransformLayer) || aFrame->IsTransformed() || aFrame->StyleDisplay()->HasTransformStyle()', file RestyleManagerBase.cpp, line 915"
+  },
+  {
+   "bugid": "1634357",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "2dcontext/wide-gamut-canvas/canvas-colorManaged-convertToBlob-roundtrip.html is marked as timeout"
+  },
+  {
+   "bugid": "1637559",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "about:processes overestimates CPU usage"
+  },
+  {
+   "bugid": "1637212",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent [TV] dom/ipc/tests/JSProcessActor/browser_getActor.js | Test timed out -"
+  },
+  {
+   "bugid": "1637783",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Relax crash assertion in DocumentChannel::SetLoadFlags"
+  },
+  {
+   "bugid": "1636903",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Two versions of FrameLoader.webidl in tree."
+  },
+  {
+   "bugid": "1636905",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "3 /html/cross-origin-embedder-policy/ tests are expected TIMEOUT"
+  },
+  {
+   "bugid": "1636747",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Whitespace unexpectedly disappears when typing in contenteditable"
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1637159",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "remove public DOMEventTargetHelper::BindToOwner() rebind methods"
+  },
+  {
+   "bugid": "1570255",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make session history in the parent process use asynchronous IPC"
+  },
+  {
+   "bugid": "1629866",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Store ChildSHistory on the BrowsingContext"
+  },
+  {
+   "bugid": "1632045",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Content-Type and related headers not stripped for certain redirects when using XMLHttpRequest"
+  },
+  {
+   "bugid": "1632869",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "/html/semantics/embedded-content/media-elements/autoplay*feature-policy* are expected TIMEOUT"
+  },
+  {
+   "bugid": "1637487",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Refactor MixedContentBlocker::ShouldLoad to remove duplicated logic"
+  },
+  {
+   "bugid": "1570243",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "window.isSecureContext is incorrect in fission when child frame is https"
+  },
+  {
+   "bugid": "1636900",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove TYPE_XBL from nsIContentPolicy and remove all the associated dead code"
+  },
+  {
+   "bugid": "1635709",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Clean up code around `nsFrameSelection::HandleDrag`"
+  },
+  {
+   "bugid": "1636147",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "RuntimeService::CrashIfHanging reports dead workers as active"
+  },
+  {
+   "bugid": "1635527",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "role=status elements need a proper role and subrole"
+  },
+  {
+   "bugid": "1637474",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "COM objects which aren't interfaces of Accessibles are never released in content processes"
+  },
+  {
+   "bugid": "1625184",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support dialog role in mac"
+  },
+  {
+   "bugid": "1635538",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Image maps get AXUnknown roles in mac"
+  },
+  {
+   "bugid": "1628582",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Fission a11y: Set DocAccessibleParent::mDocProxyStream on child doc, not parent doc"
+  },
+  {
+   "bugid": "1637806",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Don't set CanSkipCompose::IfPossible if we don't have the previous composite value in AnimationHelper::SampleAnimationForEachNode"
+  },
+  {
+   "bugid": "1637152",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL fails wrench reftest text/bg-color.yaml"
+  },
+  {
+   "bugid": "1541511",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove webrender::prim_store::image::Image::sub_rect"
+  },
+  {
+   "bugid": "1637524",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move DestroyRenderTexture() to TextureHost"
+  },
+  {
+   "bugid": "1635610",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Scrolling YouTube has a lot of invalidation gfx.webrender.quality.force-disable-sacrificing-subpixel-aa=false"
+  },
+  {
+   "bugid": "1636841",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "3.74 - 19.01% displaylist_mutate / tp5o_scroll / tscrollx (linux64-shippable-qr) regression on push a2e7394fa81156d56b0440d756873ebbbd805d20 (Thu May 7 2020)"
+  },
+  {
+   "bugid": "1637157",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "3.61 - 23.95% displaylist_mutate / tp5o_scroll (linux64-shippable-qr, windows10-64-shippable-qr) regression on push 22227ba866f7e720947856905d092242cfc8f8f0 (Mon May 11 2020)"
+  },
+  {
+   "bugid": "1625474",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender Compositor is no longer displayed in About:support"
+  },
+  {
+   "bugid": "1637433",
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Stop using Runnable in BackgroundImpl.cpp"
+  },
+  {
+   "bugid": "1629293",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Expose js::ErrorReport in public JSAPI"
+  },
+  {
+   "bugid": "1636064",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "SpiderMonkey build error: Undefined symbol: js::BytecodeLocation::isValid"
+  },
+  {
+   "bugid": "1506323",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Expose js::PrintError in JSAPI"
+  },
+  {
+   "bugid": "1636495",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix error handling in nsContentUtils::IsPatternMatching"
+  },
+  {
+   "bugid": "1634135",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable new regexp engine"
+  },
+  {
+   "bugid": "1505129",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js::PrintError should probably print its data as UTF-8"
+  },
+  {
+   "bugid": "1637665",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "./mach run doesn't work on Mac with --enable-application=js"
+  },
+  {
+   "bugid": "1637704",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove unused bailoutKind parameter from MGuardShape"
+  },
+  {
+   "bugid": "1636869",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "TypedArray \"length\" getter no longer inlined in Ion"
+  },
+  {
+   "bugid": "1636870",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add CodeGenerator::emitCreateBigInt"
+  },
+  {
+   "bugid": "1637220",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile SetTypedArrayElement"
+  },
+  {
+   "bugid": "1629796",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Replace finalization iterator with multiple callback calls"
+  },
+  {
+   "bugid": "1607784",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "High per-function import cost (was: WebAssembly.instantiate is slower by 20x for larger number of imports/exports)"
+  },
+  {
+   "bugid": "1637418",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Change ref.func global initializers to declare function as valid ref.func target"
+  },
+  {
+   "bugid": "1637564",
+   "status": "REOPENED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma js/src/wasm/WasmOpIter.h:1724:13: error: no member named 'readRefType' in 'js::wasm::Decoder'; did you mean 'readValType'? when Gecko 78 merges to Beta on 2020-06-01"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1636931",
+   "status": "VERIFIED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Cutted borders around the form control buttons"
+  },
+  {
+   "bugid": "1636998",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "no focus ring on radios and checkboxes in some themes."
+  },
+  {
+   "bugid": "1637599",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Simplify propagation of errors with mozilla::Result"
+  },
+  {
+   "bugid": "1631518",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Page shouldn't scroll while dragging (WR-specific)"
+  },
+  {
+   "bugid": "1635261",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "AntiTrackingUtils::HasStoragePermissionInParent() returns a wrong value in Fission"
+  },
+  {
+   "bugid": "1633851",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "The nsContentUtils::IsThirdPartyWindowOrChannel could get a wrong result in Fission"
+  },
+  {
+   "bugid": "935056",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "In SVG, small font-sizes are not honored: \"minimum font size\" limit is enforced"
+  },
+  {
+   "bugid": "1609663",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVG elements won't display text if a text element in a pattern is removed and a new text element is appended"
+  },
+  {
+   "bugid": "1636316",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Intermittent dom/indexedDB/test/test_upgrade_add_index.html | application terminated with exit code 1 | application crashed [@ mozilla::dom::AutoJSAPI::Init()]"
+  },
+  {
+   "bugid": "1634267",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Handle kDevicePathSpecifier in IsBlockedUNCPaths"
+  },
+  {
+   "bugid": "1625372",
+   "status": "ASSIGNED",
+   "component": "Core:Web Audio",
+   "summary": "Interrupt JS infinite loops on worklet thread"
+  },
+  {
+   "bugid": "1637801",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Very minor cleanups in nsDisplayTransform handling"
+  },
+  {
+   "bugid": "1534466",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "implement getSynchronizationSources for Video"
+  },
+  {
+   "bugid": "1625694",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "getDisplayMedia media stream is missing cursor on Linux"
+  },
+  {
+   "bugid": "1632489",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Add support for repaired-stream-id (rrid)"
+  },
+  {
+   "bugid": "1635872",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Add telemetry to measure usage of WebVR, independently of WebXR"
+  },
+  {
+   "bugid": "1636921",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Check fallible uses of FallibleTArray::AppendElement within loops in dom/vr/*"
+  },
+  {
+   "bugid": "1636456",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Implement idle detection in WebXR render loop"
+  },
+  {
+   "bugid": "1637380",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "WebVR/WebXR gamepads have one frame of latency"
+  },
+  {
+   "bugid": "1636509",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Add ProbablyShortLivingWrapper annotation to short living WebXR objects"
+  },
+  {
+   "bugid": "1635362",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Split mozcontainer implementation for X11 and Wayland"
+  },
+  {
+   "bugid": "1635787",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Windows are restored in seemingly random workspaces after a restart under Gnome 3"
+  },
+  {
+   "bugid": "1636624",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Intermittent leakcheck | tab 464 bytes leaked (BackstagePass, XPCNativeInterface, XPCNativeMember, XPCNativeSet, XPCWrappedNative, ...)"
+  },
+  {
+   "bugid": "1633748",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Generate console stubs using the ResourceWatcher"
+  },
+  {
+   "bugid": "1619622",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use the TargetList for listening to and retrieving process targets"
+  },
+  {
+   "bugid": "1309824",
+   "status": "ASSIGNED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Selecting a storage type shows incorrect message"
+  },
+  {
+   "bugid": "1637469",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Rename browser_aboutdebugging_navigate_to_url.js"
+  },
+  {
+   "bugid": "1636887",
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:General",
+   "summary": "how_to_contribute_firefox : additional information required for windows build procedure"
+  },
+  {
+   "bugid": "1634650",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Whitelisting domain suffixes for search queries"
+  },
+  {
+   "bugid": "1631122",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Convert URL bar dtd strings in browser.xhtml to fluent"
+  },
+  {
+   "bugid": "1487529",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Disabling the installation of add-ons should disable Sync installing add-ons"
+  },
+  {
+   "bugid": "1635825",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Separate startpage locking from homepage locking"
+  },
+  {
+   "bugid": "1596481",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Should be able to update extension via policy"
+  },
+  {
+   "bugid": "1196151",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Custom protocol handler (registerProtocolHandler) can't be opened in iframe"
+  },
+  {
+   "bugid": "1636324",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Show messaging-experiments messages in devtool"
+  },
+  {
+   "bugid": "1637689",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "enableAppmenuButton test fails"
+  },
+  {
+   "bugid": "1636706",
+   "status": "ASSIGNED",
+   "component": "Firefox:Migration",
+   "summary": "Intermittent TEST-UNEXPECTED-ERROR | browser/components/migration/tests/marionette/test_refresh_firefox.py TestFirefoxRefresh.testResetEverything | IOError: Process has been unexpectedly closed (Exit code: 11)"
+  },
+  {
+   "bugid": "1624971",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protections Dashboard 1.5] Update purple boxes on monitor card"
+  },
+  {
+   "bugid": "1637537",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Perma build failure line anyhow 1.0.28] error[E0554]: `#![feature]` may not be used on the stable release channel"
+  },
+  {
+   "bugid": "1637809",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Remove weird use of `try_fold` in Golden Gate"
+  },
+  {
+   "bugid": "1558635",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Avoid initializing CE in the customization palette"
+  },
+  {
+   "bugid": "1636797",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap fails installing minidump stackwalk"
+  },
+  {
+   "bugid": "1634391",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Could we improve documentation for --build-peers-said-large-imports-were-ok?"
+  },
+  {
+   "bugid": "1637409",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix stray SyntaxWarning in dom/bindings/Codegen.py"
+  },
+  {
+   "bugid": "1448428",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Split generated JNI wrappers into multiple .h and .cpp files"
+  },
+  {
+   "bugid": "1637140",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Intermittent TEST-UNEXPECTED-FAIL | firefox/libxul.so differs. See the diff.html or diff.txt artifact"
+  },
+  {
+   "bugid": "1636494",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Move some linting jobs to tier-2"
+  },
+  {
+   "bugid": "1637383",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Ensure fuzzing builds are caught by the 10th push backstop"
+  },
+  {
+   "bugid": "1637343",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Replace SETA with the 'bugbug_reduced' algorithm on autoland"
+  },
+  {
+   "bugid": "1637718",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Test tasks are being optimized on mozilla-central"
+  },
+  {
+   "bugid": "1633101",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Slow first startup of 64bit Firefox builds on ubuntu1804-test workers due to missing font cache"
+  },
+  {
+   "bugid": "1637324",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Update documentation to use installBuiltIn instead of registerWebExtension"
+  },
+  {
+   "bugid": "1633931",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Add-Ons: Extensions API",
+   "summary": "Toolkit WebExtensions XPCShell tests are not run on Thunderbird"
+  },
+  {
+   "bugid": "1628240",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clear site data doesn't remove the quota storage for different ports"
+  },
+  {
+   "bugid": "1633974",
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Find toolbar's contents get cleared when navigation causes a change in process for the tab"
+  },
+  {
+   "bugid": "1226236",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Allow user to remove saved login/password when being asked to update it"
+  },
+  {
+   "bugid": "1637498",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Don't hardcode Pocket in Reader Mode string"
+  },
+  {
+   "bugid": "1591469",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "[Fission] Port AboutReaderChild.jsm to JSWindowActors"
+  },
+  {
+   "bugid": "1594752",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "[Fission] Switch to fission-compatible JSWindowActor for DOMTitleChanged"
+  },
+  {
+   "bugid": "1635475",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Make notification bars obey prefers-reduced-motion"
+  },
+  {
+   "bugid": "1637165",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Expose quota constants and getBytesInUse to mozIExtensionStorageArea"
+  },
+  {
+   "bugid": "1635490",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Reddit Enhancement Suite Neverending Reddit Broken on Nightly"
+  }
+ ],
+ "date": "2020-05-14",
+ "cset": "8af03d77567d3104c00efc5e6161e4910d835504",
+ "buildid": "20200514094044",
+ "fixed": 99,
+ "total": 116,
+ "restricted": 2
+}

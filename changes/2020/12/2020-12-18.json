@@ -1,0 +1,562 @@
+{
+ "bugs": [
+  {
+   "bugid": "1682174",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove layout.css.moz-any-is-is.enabled."
+  },
+  {
+   "bugid": "1683116",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Flicker and artifacts over entire window on https://www.vsynctester.com/ caused by remote canvas with WebRender"
+  },
+  {
+   "bugid": "1680473",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::gfx::DrawTargetRecording::DrawTargetRecording]"
+  },
+  {
+   "bugid": "1674776",
+   "status": "REOPENED",
+   "component": "Core:DOM: Animation",
+   "summary": "ThreadSanitizer: data race [@ DocumentTimeline::GetCurrentTimeAsDuration]"
+  },
+  {
+   "bugid": "1682003",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Use UTF8String for CSSOM serialization."
+  },
+  {
+   "bugid": "1656107",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix uses of Document::FindContentForSubDocument to use BrowsingContext embedderElement"
+  },
+  {
+   "bugid": "1657404",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Cleanup Gamepad-related code"
+  },
+  {
+   "bugid": "1681250",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Relax the check for webCOOP+COEP remote types by only checking the prefix matches"
+  },
+  {
+   "bugid": "1612928",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Assertion failure: !mSyncLoopTarget, at /builds/worker/workspace/build/src/dom/xhr/XMLHttpRequestWorker.cpp:839"
+  },
+  {
+   "bugid": "1676221",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Improve Unblock UI user experience."
+  },
+  {
+   "bugid": "1682103",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make nsContentPolicyType a CEnum type"
+  },
+  {
+   "bugid": "1680405",
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Mouse capture doesn't work well on OOP iframe"
+  },
+  {
+   "bugid": "1677747",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: !IsShutDown(), at /builds/worker/checkouts/gecko/dom/base/EventSource.cpp:1740"
+  },
+  {
+   "bugid": "1664894",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add VO usage to a11y telemetry"
+  },
+  {
+   "bugid": "1681166",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: have empty chain of parents! when navigating XUL content"
+  },
+  {
+   "bugid": "1681072",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Slack: Opening the Keyboard Shortcuts listing in the side bar causes Firefox to freeze if VoiceOver is active."
+  },
+  {
+   "bugid": "1682829",
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Automate a fuzzing smoke test in the CI"
+  },
+  {
+   "bugid": "1683029",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Reintroduce f() and f_1()"
+  },
+  {
+   "bugid": "1682969",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Remove a bunch of manual dereferences."
+  },
+  {
+   "bugid": "1683154",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Make chain transform functions safe."
+  },
+  {
+   "bugid": "1682840",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent GeckoProfiler.Markers | Expected equality of these values:"
+  },
+  {
+   "bugid": "1683108",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "YCbCrUtils.cpp:263:22: error: \u2018srcData\u2019 was not declared in this scope; did you mean \u2018aData\u2019?"
+  },
+  {
+   "bugid": "1682636",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't let blocklist rules that apply to all features, apply to WebRender Software"
+  },
+  {
+   "bugid": "1682365",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve render task graph v2"
+  },
+  {
+   "bugid": "1675244",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Intermittent bugs/585598-2.xhtml == bugs/585598-2-ref.xhtml | image comparison, max difference: 1, number of differing pixels: 33"
+  },
+  {
+   "bugid": "1682566",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "macOS 11 arm startup crash in [@ core::ops::function::Fn::call]"
+  },
+  {
+   "bugid": "1682498",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Intermittent reftests/text/shadow-transforms.yaml == reftests/text/shadow-transforms.png | image comparison, max difference: 1, number of differing pixels: 140 | 140 differences > 0 and <= 2 (allowed 135);"
+  },
+  {
+   "bugid": "1683117",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender to release for AMD Kaveri and R700 users"
+  },
+  {
+   "bugid": "1683038",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Suppress IDXGISwapChain::GetBuffer error"
+  },
+  {
+   "bugid": "1682966",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable WebRender on Baytrail in Nightly/Early Beta."
+  },
+  {
+   "bugid": "1682995",
+   "status": "ASSIGNED",
+   "component": "Core:ImageLib",
+   "summary": "Enable AVIF support by default"
+  },
+  {
+   "bugid": "1682584",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assert pointer is aligned to Value size in Poison functions"
+  },
+  {
+   "bugid": "1682767",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove IonBuilder and TI, part deux"
+  },
+  {
+   "bugid": "1681771",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma [tier2] tests/jit-test/jit-test/tests/gc/pretenuring.js | /data/local/tmp/test_root/tests/tests/tests/gc/pretenuring.js:32:9 Error: Assertion failed: got true, expected false (code 3, args \"\") [0.5 s]"
+  },
+  {
+   "bugid": "1681533",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Major GC collects the nursery more often than necessary"
+  },
+  {
+   "bugid": "1682500",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Split the SIMD ad-hack tests"
+  },
+  {
+   "bugid": "1682465",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier 2] async-scrolling/perspective-scrolling-1.html == async-scrolling/perspective-scrolling-1-ref.html | image comparison, max difference: 5, number of differing pixels: 1672"
+  },
+  {
+   "bugid": "1682473",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-PASS | svg/filters/css-filter-chains/same-filter.html == svg/filters/css-filter-chains/same-filter-ref.html | image comparison, max difference: 15, number of differing pixels: 7675"
+  },
+  {
+   "bugid": "1577530",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "No space should be between the username string and the truncation points"
+  },
+  {
+   "bugid": "1682204",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "arena_t::mId is uninitialised in the constructor"
+  },
+  {
+   "bugid": "1590671",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Make the mobile version of about:networking look nice"
+  },
+  {
+   "bugid": "1602956",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Get layout/reftests/async-scrolling/position-fixed-iframe-{1,2}.html to pass with Fission"
+  },
+  {
+   "bugid": "1670555",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Include nsresult value when reporting an error via QM_TRY* macros"
+  },
+  {
+   "bugid": "1682536",
+   "status": "NEW",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Use NotNull more in quota manager and quota clients"
+  },
+  {
+   "bugid": "1682639",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Crash in [@ mozilla::dom::(anonymous namespace)::PrepareDatastoreOp::NestedRun]"
+  },
+  {
+   "bugid": "1615506",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Support reftest-displayport-x/y/w/h attributes in fission iframes"
+  },
+  {
+   "bugid": "1615507",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Support reftest-async-scroll--x/y attributes in fission iframes"
+  },
+  {
+   "bugid": "1682210",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "non-native theme unchecked, indeterminate checkboxes aren't rendered correctly"
+  },
+  {
+   "bugid": "1683026",
+   "status": "VERIFIED",
+   "component": "Core:Widget: Gtk",
+   "summary": "prefers-color-scheme media query fails with the RemoteLookAndFeel"
+  },
+  {
+   "bugid": "1679087",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Remove ability to create non-Unicode widgets"
+  },
+  {
+   "bugid": "1679987",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Allow nsTCharSeparatedTokenizer to be used in a range-based for loop"
+  },
+  {
+   "bugid": "1583109",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add utility function for joining a sequence of strings with a separator"
+  },
+  {
+   "bugid": "1682848",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Pausing in a content process script in the Browser Toolbox throws an error"
+  },
+  {
+   "bugid": "1683121",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Disable blocking CSP test for fission"
+  },
+  {
+   "bugid": "1683119",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Stop setting the targetFront on _onResourcUpdated and _onResourceDestroyed"
+  },
+  {
+   "bugid": "1683107",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Query the nsIHttpChannel to make sure we get the sourceMapURL"
+  },
+  {
+   "bugid": "1683152",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Handle netmonitor pause/resume on the client"
+  },
+  {
+   "bugid": "1679043",
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Style editor editing deletes lines and jumps around"
+  },
+  {
+   "bugid": "1644240",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ mciwindow] with PROCOMP INDUSTRIA ELETRONICA (Diebold Brazil) / Kaspersky"
+  },
+  {
+   "bugid": "1683206",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent TV browser/components/places/tests/browser/browser_toolbar_other_bookmarks.js | Uncaught exception - Other Bookmarks folder failed to show in other window. - threw exception: TypeError: can't access property \"hidden\", otherBookmarks is null"
+  },
+  {
+   "bugid": "1674840",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "[New Bookmarks performance] Only add Other Bookmarks button when needed"
+  },
+  {
+   "bugid": "1464322",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent browser/components/places/tests/browser/browser_toolbar_overflow.js | The first bookmark is visible - \"\" == \"visible\" - JS frame :: chrome://mochitests/content/browser/browser/components/places/tests/browser/browser_toolbar_overflow.js"
+  },
+  {
+   "bugid": "1683003",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Update comedy-rs to remove failure dependency"
+  },
+  {
+   "bugid": "1635507",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Consider expiration for default browser agent scheduled task"
+  },
+  {
+   "bugid": "1678728",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add help copy component to the about:welcome template"
+  },
+  {
+   "bugid": "1682821",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix content blocking milestone message test and trigger"
+  },
+  {
+   "bugid": "1681392",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove unused ReturnToAMo css file"
+  },
+  {
+   "bugid": "1682311",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Customize menu animation is not smooth"
+  },
+  {
+   "bugid": "1682379",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Deprecate Spocs Fill ping"
+  },
+  {
+   "bugid": "1678829",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Perma [tier2] browser/components/preferences/tests/browser_search_subdialogs_within_preferences_1.js | no-results-message should not be in search results -"
+  },
+  {
+   "bugid": "1646128",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rename SearchService.getDefaultEngines to SearchService.getAppProvidedEngines"
+  },
+  {
+   "bugid": "1682264",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Clean up search telemetry autocomplete handling now that it is a separate widget"
+  },
+  {
+   "bugid": "1671271",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Add telemetry around how often we show about:sessionrestore"
+  },
+  {
+   "bugid": "1665942",
+   "status": "ASSIGNED",
+   "component": "Firefox:Session Restore",
+   "summary": "Container tabs with twitter.com open with the default container after session restore"
+  },
+  {
+   "bugid": "1681322",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Keyboard navigation in meatball menu is inconsistent"
+  },
+  {
+   "bugid": "1681560",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Ad-hoc installation of pip dependencies should include SHA"
+  },
+  {
+   "bugid": "1681540",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Regenerate linker order files, December 2020 edition"
+  },
+  {
+   "bugid": "1682565",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove unused remained Fennec L10N resources."
+  },
+  {
+   "bugid": "1683186",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "Intermittently unable to check for updates via the About dialog"
+  },
+  {
+   "bugid": "1682411",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Intermittent browser/modules/test/browser/browser_UnsubmittedCrashHandler.js | A promise chain failed to handle a rejection: Could not get children of file(/tmp/tmpHOXkSX.mozrunner/UAppData/Crash Reports/events) because it does not exist - stack: (No stac"
+  },
+  {
+   "bugid": "1649611",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "DownloadIntegration.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649613",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "Sqlite.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1682031",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "PathUtils should support joining relative paths"
+  },
+  {
+   "bugid": "1682128",
+   "status": "VERIFIED",
+   "component": "Toolkit:Printing",
+   "summary": "The checkboxes on the new print UI do not match the checkboxes on e.g. about:preferences"
+  },
+  {
+   "bugid": "1670122",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Implement a \"Print selection only\" checkbox in the new print preview UI"
+  },
+  {
+   "bugid": "1678488",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Firefox shows skeleton UI indefinitely when \"Choose User Profile\" dialog is shown on startup"
+  },
+  {
+   "bugid": "1682960",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Ping name is not yet optional in JS and C++ Testing APIs"
+  },
+  {
+   "bugid": "1682638",
+   "status": "VERIFIED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Frequent Beta Crash in [@ core::option::expect_failed | core::ops::function::FnOnce::call_once<T>]"
+  },
+  {
+   "bugid": "1682758",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Intermittent toolkit/content/tests/widgets/test_videocontrols_focus.html | Controls shown after focus"
+  },
+  {
+   "bugid": "1253129",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Support focused=false in the browser.windows.create"
+  },
+  {
+   "bugid": "1458764",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove the extensions.webextensions.tabhide.enabled pref"
+  },
+  {
+   "bugid": "1676956",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "webRequest streamfilter tests are run with in-process extensions only, not oop extensions"
+  }
+ ],
+ "date": "2020-12-18",
+ "cset": "2231d839f1e7b268d7d4b14ba571e0f4a8917051",
+ "buildid": "20201218095607",
+ "fixed": 73,
+ "total": 92,
+ "restricted": null
+}

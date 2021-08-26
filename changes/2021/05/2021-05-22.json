@@ -1,0 +1,292 @@
+{
+ "bugs": [
+  {
+   "bugid": "1712218",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Refactor fetching the content frame from nsPageFrame"
+  },
+  {
+   "bugid": "1709715",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Take advantage of CTAD for GetParticularProcessPriorityManager()"
+  },
+  {
+   "bugid": "1712006",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Speed up browser_gc_schedule.js with Promise.all and removing unnecessary waitForNewTab calls"
+  },
+  {
+   "bugid": "1712299",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "AddEventListenerOptions.signal shouldn't be nullable"
+  },
+  {
+   "bugid": "1710975",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "OuterDocAccessible::ChildCount probably returns wrong value on non-Windows platforms"
+  },
+  {
+   "bugid": "1567222",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "[network markers] Network loads that went to a service worker never get a \"stop\" marker in the content process"
+  },
+  {
+   "bugid": "1711926",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Spew out WebGPU validation errors to the console"
+  },
+  {
+   "bugid": "1699588",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "RenderCompositorOGLSWGL does not use external compositing for WebGL rendering on Android"
+  },
+  {
+   "bugid": "1700434",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Animations on goliath-entertainment.com are shaking with WebRender software enabled"
+  },
+  {
+   "bugid": "1712147",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Permanent gecko/image/build/nsImageModule.cpp:62:29: error: no member named 'image_jxl_enabled' in namespace 'mozilla::StaticPrefs' when Gecko 90 merges to Beta on 2021-05-31"
+  },
+  {
+   "bugid": "1711366",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "firefox-90 branch is broken in third_party/highway on armv7 + neon"
+  },
+  {
+   "bugid": "1707733",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Backfill FluentBundle tests for DATETIME()"
+  },
+  {
+   "bugid": "1711476",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Enable chardetng for the .jp TLD"
+  },
+  {
+   "bugid": "1711959",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Greatly reduce PropertyDescriptor attribute usage"
+  },
+  {
+   "bugid": "1685260",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: next == JSOp::CheckThis || next == JSOp::CheckReturn || next == JSOp::CheckThisReinit || next == JSOp::CheckLexical, at vm/Interpreter.cpp:3715 or Assertion failure: v.isSymbol() || v.isBigInt(), at jsnum.cpp:1944"
+  },
+  {
+   "bugid": "1684020",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: next == JSOp::CheckThis || next == JSOp::CheckReturn || next == JSOp::CheckThisReinit || next == JSOp::CheckLexical, at vm/Interpreter.cpp:3715 or Assertion failure: v.isSymbol() || v.isBigInt(), at jsnum.cpp:1944"
+  },
+  {
+   "bugid": "1645835",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !iter->hasLiveDefUses(), at jit/IonAnalysis.cpp:2927 with ES6 Class"
+  },
+  {
+   "bugid": "1712172",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "`mach hazards bootstrap` uses out of date gcc compared to automation"
+  },
+  {
+   "bugid": "1645115",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Enable dayPeriod support in Intl.DateTimeFormat"
+  },
+  {
+   "bugid": "1710024",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "ARM64: Avoid defineReuseInput"
+  },
+  {
+   "bugid": "1710116",
+   "status": "VERIFIED",
+   "component": "Core:Layout: Tables",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Attempted to subtract [n - nscoord_MAX]), at /builds/worker/workspace/obj-build/dist/include/nsCoord.h:199"
+  },
+  {
+   "bugid": "1712165",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "MOZ_RELEASE_ASSERT(SharedFontList()->NumFamilies() > 0) crash in [@ gfxPlatformFontList::GetDefaultFont]"
+  },
+  {
+   "bugid": "1700968",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Problems loading images on youtube.com, wikipedia.org, and some images opened from discord"
+  },
+  {
+   "bugid": "1553353",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | netwerk/test/unit/test_cookies_async_failure.js | Test timed out"
+  },
+  {
+   "bugid": "1710638",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket-process] Re-enable sandboxing for xpcshell tests"
+  },
+  {
+   "bugid": "1710641",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Improve http3 fast fallback mechanism"
+  },
+  {
+   "bugid": "1708042",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Consider to have very high priority (\"control\") for DidComposite tasks"
+  },
+  {
+   "bugid": "1711181",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Introduce QM_OR_ELSE_LOG and use it in places where QM_OR_ELSE_WARN would spam the reports"
+  },
+  {
+   "bugid": "1702899",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "White-on-white text in <input type=\"date\"> popup in Dark Mode, if widget.macos.respect-system-appearance is true"
+  },
+  {
+   "bugid": "1711346",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Taking screenshot of web page and putting it directly into clipboard should not create image file with screenshot"
+  },
+  {
+   "bugid": "1709717",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Update download indicator badges"
+  },
+  {
+   "bugid": "1712275",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Crash in [@ nsExternalAppHandler::GetBrowsingContextId]"
+  },
+  {
+   "bugid": "1709050",
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Focus ring displayed by default on C2A for some about:pages"
+  },
+  {
+   "bugid": "1706487",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"Open Image in New Tab\" should load images in a background (rather than foreground) tab, like Chrome"
+  },
+  {
+   "bugid": "1705500",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "FxA \"sent tab to another device\" menu should wrap device names"
+  },
+  {
+   "bugid": "1706963",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The browser's \"Close tabs and exit?\" confirmation message is not displayed if the browser's \"Close\" button is clicked while the existing users Onboarding modal is displayed"
+  },
+  {
+   "bugid": "1711634",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Crash in [@ AsyncShutdownTimeout | profile-before-change | PageThumbs: removing all thumbnails]"
+  },
+  {
+   "bugid": "1711498",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Remove checks for protonAppMenuEnabled or protonToolbarEnabled smart pref getters from tests"
+  },
+  {
+   "bugid": "1712379",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "sTreatMouseAsTouch needs to be initialized lazily"
+  },
+  {
+   "bugid": "1706403",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove deprecated onTouchEventForResult"
+  },
+  {
+   "bugid": "1705181",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.SessionLifecycleTest.asyncScriptsSuspendedWhileInactive | java.lang.AssertionError: requestAnimationFrame should be called about once a second"
+  },
+  {
+   "bugid": "1712150",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "bug list in release-started notification is wrong when a branch is used"
+  },
+  {
+   "bugid": "1709687",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "NotFoundError: Could not open the file webext.sc.lz4"
+  },
+  {
+   "bugid": "1711791",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Ensure the debug log includes the full set of print settings"
+  },
+  {
+   "bugid": "1697878",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Nested lists in Reader Mode shouldn't all use numbers"
+  },
+  {
+   "bugid": "1641503",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Update tier and tests on MDN page for telemetry-tests-client"
+  },
+  {
+   "bugid": "1711361",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "eluminate.js shim can be made to execute random functions"
+  }
+ ],
+ "date": "2021-05-22",
+ "cset": "f2d7667fc838510b83ccda7b757f91b9d958b275",
+ "buildid": "20210522093129",
+ "fixed": 42,
+ "total": 47,
+ "restricted": 1
+}

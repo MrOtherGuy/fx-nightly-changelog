@@ -1,34 +1,41 @@
 :root{ color: rgb(50,54,68); scrollbar-color: currentColor transparent; scrollbar-width: thin }
 
 body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break-word; max-width: 110ch }
-body > div{ background: rgba(0,0,0,0.1); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
-
+#list,#bugList,#statuslog{ background: rgba(0,0,0,0.1); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
+.hidden{ display: none }
+.flex{ display: flex }
+.flex > :first-child{ flex-grow: 1 }
+.controls{ display: flex; flex-direction: column; justify-content: center }
 a:hover{ color: purple }
 a + span{ color: darkgreen; }
+cr-buginfo{ display: block }
 
+cr-buginfo:nth-child(2n),
 .logline.even{ background: rgba(70,60,70,0.1) }
 
 @media (prefers-color-scheme:dark){
   :root{ color: rgb(220,220,200); }
   body{ background: rgb(50,54,68); }
-  
+  #list,#bugList{ background: rgba(0,0,0,0.2) }
   a{ color:coral }
   a:visited{ color:orchid }
   a:hover{ color: orange }
   a + span{ color: darkseagreen }
   
-  body > div{ background: rgba(0,0,0,0.2) }
+  input{ background: #282b36; color: inherit; border-radius: 4px }
+  
+  cr-buginfo:nth-child(2n),
   .logline.even{ background: rgba(170,160,170,0.1) }
   
 }
-
+cr-buginfo,
 .logline{ padding: 2px 3px }
 
-
-#infobar::after{ content:":" }
-
-#infobar:not(:empty)::before{ content: " in " }
-
+#buildId:not(:empty)::before{ content: " in build id: " }
+#buildId{ margin-inline-start: 0.5ch }
+#changeset{ height: 2em }
+#changeset:not(:empty)::before{ content: "Built from: " }
+cr-buginfo > span,
 div > span{ padding-inline-start: 2ch }
 
 @keyframes anim{
@@ -39,12 +46,17 @@ div > span{ padding-inline-start: 2ch }
   80%{ transform: scale(1.1) }
 }
 
+#statuslog > .logline::before{ content: "> " }
+#bugList.hideContent > cr-buginfo{ display:none }
+
+#bugList{ min-height: 60px; }
+
 #bugList.busy::before{ 
   content: "";
   display: block;
-  height: 60px;
   width: 60px;
   margin: auto;
   background-image: radial-gradient(transparent 30%,white 40%,transparent 50%);
   animation: anim 2500ms infinite;
 }
+

@@ -1,0 +1,784 @@
+{
+ "bugs": [
+  {
+   "bugid": "1645852",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "crash near null in [@ mozilla::dom::BrowsingContext::Get]"
+  },
+  {
+   "bugid": "1646348",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Fix audio thread registration in GraphDriver.cpp"
+  },
+  {
+   "bugid": "1647492",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[MediaControl-Linux] Expose MediaSession's album data to MPRIS"
+  },
+  {
+   "bugid": "1623444",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Intermittent css/cssom-view/scrollIntoView-smooth.html.ini WPT FAIL with Fission"
+  },
+  {
+   "bugid": "1647795",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove some uses of \"blacklist\" from dom/ipc/"
+  },
+  {
+   "bugid": "1647624",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::dom::ContentParent::WaitForLaunchSync | mozilla::dom::ContentParent::GetNewOrUsedBrowserProcess]"
+  },
+  {
+   "bugid": "1646563",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Simplify how we handle BrowserIds on frame elements"
+  },
+  {
+   "bugid": "1647470",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "E10S process selectors do not respect dom.ipc.keepProcessesAlive"
+  },
+  {
+   "bugid": "1643205",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Navigator's share() must consume user activation"
+  },
+  {
+   "bugid": "1490661",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Support enterkeyhint and deprecate mozactionhint"
+  },
+  {
+   "bugid": "1646890",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Add new test for bug 1645983"
+  },
+  {
+   "bugid": "1646325",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` create `WSFragment`s only when needed"
+  },
+  {
+   "bugid": "1646296",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Group `WSRunScanner` members with stack only classes"
+  },
+  {
+   "bugid": "1645313",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Instantiate mozilla::JapaneseDetector only when needed"
+  },
+  {
+   "bugid": "1626507",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove the document channel exception for about:newtab"
+  },
+  {
+   "bugid": "1645946",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ nsFrameLoader::TryRemoteBrowserInternal]"
+  },
+  {
+   "bugid": "1590762",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix nsDocShell::OnLinkClickSync to work with fission"
+  },
+  {
+   "bugid": "1642193",
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "3 /xhr/ web-platform tests are expected TIMEOUT"
+  },
+  {
+   "bugid": "1646776",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "https://webxr.today fails to reload (because of <link rel=preload> not firing load events when in the stylesheet cache)."
+  },
+  {
+   "bugid": "1641905",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "ThirdPartyUtil::IsThirdPartyWindow returns different values in fission"
+  },
+  {
+   "bugid": "1614969",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Consider blocking mixed content downloads"
+  },
+  {
+   "bugid": "1643721",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Factor code relevant for serializing ranges out from `nsDocumentEncoder`"
+  },
+  {
+   "bugid": "1630176",
+   "status": "REOPENED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent dom/serviceworkers/test/test_notification_openWindow.html | Test timed out."
+  },
+  {
+   "bugid": "1642676",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Workers",
+   "summary": "Select an explicit remoteType for remote workers and then check that it matches the one set on the child process"
+  },
+  {
+   "bugid": "1626851",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/mochitest/states/test_docarticle.html | Test timed out."
+  },
+  {
+   "bugid": "1647828",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "AXPress is available on all nodes"
+  },
+  {
+   "bugid": "1647483",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Include selected text ranges in text selection change events"
+  },
+  {
+   "bugid": "1639048",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "wikipedia menu doesn't work with talkback"
+  },
+  {
+   "bugid": "1642726",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Deadlock while profiling allocations on macOS, freezing UI"
+  },
+  {
+   "bugid": "1646280",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Improve Rust build docs"
+  },
+  {
+   "bugid": "1647225",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Use blocklisting terminology more consistently"
+  },
+  {
+   "bugid": "1647253",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Remove unused CreateSharedRGBImage()"
+  },
+  {
+   "bugid": "1641370",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Validate WebGPU shader requirements against the pipelines"
+  },
+  {
+   "bugid": "1647742",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Break prim_store/mod.rs into multiple modules"
+  },
+  {
+   "bugid": "1618013",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable backdrop-filter by default when WebRender is enabled"
+  },
+  {
+   "bugid": "1647299",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Store a single array of primitives per prim list instead of per cluster"
+  },
+  {
+   "bugid": "1647761",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Remove some outdated terms from ipc/"
+  },
+  {
+   "bugid": "1645122",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Intermittent image/test/reftest/jpeg/webcam-simulacrum.mjpg == image/test/reftest/jpeg/blue.jpg | image comparison, max difference: 224, number of differing pixels: 799999"
+  },
+  {
+   "bugid": "1550710",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "SVG containing downsized image displayed with img tag has pixel aliasing (flutter.dev logo)"
+  },
+  {
+   "bugid": "1608256",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: startOfUninitialized <= nfixed, at js/src/jit/MacroAssembler.cpp:1074"
+  },
+  {
+   "bugid": "1645439",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add eager AsyncIterator helper methods"
+  },
+  {
+   "bugid": "1647242",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Tidy up and optimize some WarpOracle code"
+  },
+  {
+   "bugid": "1646975",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile ToString instructions"
+  },
+  {
+   "bugid": "1647054",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[warp] Assertion failure: use.def()->id() <= mostRecentUse->id(), at jit/MIR.cpp:791"
+  },
+  {
+   "bugid": "1647734",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix a clang-11 snprintf complaint in JitSpewer.cpp"
+  },
+  {
+   "bugid": "1647319",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Create an abstraction for nested iteration"
+  },
+  {
+   "bugid": "1647295",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Multi-value return code does not obey softFP ARM ABI for instance calls"
+  },
+  {
+   "bugid": "1647525",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Use nsIFrame::HasAnyStateBits() whenever possible instead of GetStateBits()"
+  },
+  {
+   "bugid": "1644997",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make nsIFrame::ShouldApplyOverflowClipping as const member method"
+  },
+  {
+   "bugid": "1647332",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Use a better first guess to reduce the range for the binary search in column balancing"
+  },
+  {
+   "bugid": "1637648",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket process] Forward observer notifications in nsHttpHandler to socket process"
+  },
+  {
+   "bugid": "1641222",
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Follow CNAME/AliasForm chains"
+  },
+  {
+   "bugid": "1647769",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update Neqo to 0.4.4+"
+  },
+  {
+   "bugid": "1643515",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::HttpTransactionParent::DoNotifyListener]"
+  },
+  {
+   "bugid": "1633935",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Allow sending onStartRequest via pHttpBackgroundChannel"
+  },
+  {
+   "bugid": "1644271",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add a pref to always create the MVM, and turn it on"
+  },
+  {
+   "bugid": "1622353",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/painting/marker-004.svg.ini WPT FAIL with Fission"
+  },
+  {
+   "bugid": "1642687",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 79 to use NSS 3.54"
+  },
+  {
+   "bugid": "1644780",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Crash in [@ mozilla::dom::cache::Connection::Close]"
+  },
+  {
+   "bugid": "1636050",
+   "status": "REOPENED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Replace the use of raw pointers with SafeRefPtr in CacheAPI"
+  },
+  {
+   "bugid": "1623278",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Prototype reduction of raw pointer usage"
+  },
+  {
+   "bugid": "1645943",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Extensions stop working after visiting site if root zone is included in FQDN"
+  },
+  {
+   "bugid": "1647750",
+   "status": "ASSIGNED",
+   "component": "Core:Web Audio",
+   "summary": "Intermittent SUMMARY: AddressSanitizer: SEGV /build/glibc-OTsEL5/glibc-2.27/string/../sysdeps/x86_64/multiarch/memmove-vec-unaligned-erms.S:418 after audioworkletprocessor-process-frozen-array.https.html ran"
+  },
+  {
+   "bugid": "1646887",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Intermittent PROCESS-CRASH | Main app process exited normally | application crashed [@ MergeState::ProcessItemFromNewList(nsDisplayItem*, mozilla::Maybe<Index<MergedListUnits> > const&)]"
+  },
+  {
+   "bugid": "1647368",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Move objc video capture code to dom/media/systemservices"
+  },
+  {
+   "bugid": "1643058",
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "webrtc web-platform-tests need a cleanup"
+  },
+  {
+   "bugid": "1643464",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Rename MouseEvent::eLeft/eRight as ePrimary/eSecondary"
+  },
+  {
+   "bugid": "1567505",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] drag and drop multiple files into google drive doesn't work"
+  },
+  {
+   "bugid": "1645734",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Move gbm library interface from nsWaylandDisplay"
+  },
+  {
+   "bugid": "1647133",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Use nsISerialEventTarget where possible"
+  },
+  {
+   "bugid": "1632099",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "do_QueryObject should work with const smart pointer"
+  },
+  {
+   "bugid": "1637500",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "GetCurrentThreadSerialEventTarget() doesn't return what you expect"
+  },
+  {
+   "bugid": "1337953",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsDeque \"a bit more\" typesafe"
+  },
+  {
+   "bugid": "1646803",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "The parent process' main thread doesn't have a name"
+  },
+  {
+   "bugid": "1647739",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Fix a clang-11 snprintf complaint in XPCConvert.cpp"
+  },
+  {
+   "bugid": "1647650",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Replace the reference to the old profiler server by the new one"
+  },
+  {
+   "bugid": "1644044",
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-old-breakpoint.js | Test timed out -"
+  },
+  {
+   "bugid": "1646456",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Some pools are not destroyed when the DevToolsServerConnection is closed"
+  },
+  {
+   "bugid": "1646678",
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Add a mechanism to test server-side Resource listener while they're not enabled yet"
+  },
+  {
+   "bugid": "1644357",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove unused WebExtensionDescriptor properties isAPIExtension & type"
+  },
+  {
+   "bugid": "1639893",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Stub API of GetOverflowingChildrenOfElement to report causes of overflow cases"
+  },
+  {
+   "bugid": "1646636",
+   "status": "REOPENED",
+   "component": "DevTools:Inspector",
+   "summary": "Perma fision [tier 2] devtools/client/inspector/test/browser_inspector_inspect_node_contextmenu.js | Uncaught exception - at resource://devtools/client/fronts/inspector.js:212 - TypeError: can't access property \"getFront\", target is null"
+  },
+  {
+   "bugid": "1591307",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Localization for web compatibility panel"
+  },
+  {
+   "bugid": "1603542",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "[rel=preload] Log a warning when preloaded resources are not used"
+  },
+  {
+   "bugid": "1498336",
+   "status": "NEW",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Intermittent devtools/client/responsive/test/browser/browser_toolbox_rule_view_reload.js | Rule view still has two rules and is not empty. - Got 0, expected 2"
+  },
+  {
+   "bugid": "1646267",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Extraneous reporting of \"list\" by screen readers in Dev Tools autocompletes"
+  },
+  {
+   "bugid": "1644907",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent Tier 2 Test Verify browser/components/urlbar/tests/browser/browser_top_sites.js | Test timed out -"
+  },
+  {
+   "bugid": "1632105",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement dynamic result types"
+  },
+  {
+   "bugid": "1646582",
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Remove RemoteWebProgressManager"
+  },
+  {
+   "bugid": "1622144",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Intermittent toolkit/content/tests/browser/browser_bug1170531.js | menu_cut should be enabled - Got true, expected false | menu_copy should be enabled - Got true, expected false"
+  },
+  {
+   "bugid": "1643780",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement theme screen in multistage about:welcome"
+  },
+  {
+   "bugid": "1645078",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove or update probes expiring in Firefox 80: BROWSER_ATTRIBUTION_ERRORS"
+  },
+  {
+   "bugid": "1645837",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.6.47"
+  },
+  {
+   "bugid": "1647586",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Fix nits in FeatureGates localization file"
+  },
+  {
+   "bugid": "1644631",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Add a restart prompt if a restart-required=true FeatureGate preference is changed"
+  },
+  {
+   "bugid": "1647215",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Remove doorhanger code from doh-rollout extension"
+  },
+  {
+   "bugid": "1646780",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Lazify the identity panel popup"
+  },
+  {
+   "bugid": "1647865",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrap should bail out if not invoked with Python 3"
+  },
+  {
+   "bugid": "1646427",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "|mach vendor python| should exclude tests and docs"
+  },
+  {
+   "bugid": "1645986",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Inefficiency when there are multiple GeneratedFile in a directory"
+  },
+  {
+   "bugid": "1644371",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`nom` has it's `.travis.yml` file deleted and re-created when doing `mach vendor rust`"
+  },
+  {
+   "bugid": "1643819",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Prevent Copy button to copy \"$\" in firefox docs"
+  },
+  {
+   "bugid": "1647265",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make rejected-words lint case-insensitive"
+  },
+  {
+   "bugid": "1647629",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Make infer static-analysis compatible with python3"
+  },
+  {
+   "bugid": "1629419",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "ClientWebGLContext.cpp: the 'empty' method should be used to check for emptiness instead of 'size'"
+  },
+  {
+   "bugid": "1622660",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "MediaSystemResourceService.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1647383",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable chunking in the taskgraph for web-platform-tests-crashtest/wdspec"
+  },
+  {
+   "bugid": "1646813",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Write some tests for chunking and TestResolver"
+  },
+  {
+   "bugid": "1647498",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Set default docker-image value for test tasks to ubuntu1804-test"
+  },
+  {
+   "bugid": "1645728",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "All android-em opt tests are now tier 2"
+  },
+  {
+   "bugid": "1635564",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Add a version of installBuiltIn that doesn't install if already exists"
+  },
+  {
+   "bugid": "1645725",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove chatsetMenu.properties l10n resource"
+  },
+  {
+   "bugid": "1599342",
+   "status": "RESOLVED",
+   "component": "Infrastructure & Operations:RelOps: General",
+   "summary": "Add hostutils for Windows host."
+  },
+  {
+   "bugid": "1647558",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Add esr78 balrog scopes"
+  },
+  {
+   "bugid": "1647749",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "When testing esr-*-next updates for esr78, don't test from esr52"
+  },
+  {
+   "bugid": "1647634",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "esr78 should update balrog rules on test channels"
+  },
+  {
+   "bugid": "1644222",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Requests",
+   "summary": "Setup WNP for users coming from <78.0 and receiving the 78.0 release"
+  },
+  {
+   "bugid": "1647580",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Add-Ons: Extensions API",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | toolkit/components/extensions/test/xpcshell/test_ext_webRequest_download.js | Test timed out"
+  },
+  {
+   "bugid": "1646843",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "Port bug 1646588: Taskcluster support for Thunderbird esr78"
+  },
+  {
+   "bugid": "1646119",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "UpdateManager: Remove transient _updates getter"
+  },
+  {
+   "bugid": "1645922",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fields are not saved after choosing to save the credit card from the doorhanger"
+  },
+  {
+   "bugid": "1645862",
+   "status": "NEW",
+   "component": "Toolkit:Telemetry",
+   "summary": "Don't load most of TelemetryController.jsm in content processes"
+  },
+  {
+   "bugid": "1647254",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "parse_scalars.py: Undefined variable 'MAX_LENGTH_COUNT'  E0602 (pylint)"
+  },
+  {
+   "bugid": "1634219",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Remove or update probes expiring in Firefox 78: pictureinpicture.*"
+  },
+  {
+   "bugid": "1637672",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Ship v12.0.0 of webcompat system addon"
+  },
+  {
+   "bugid": "1647655",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Document \"webcompat-reviewers\" group in the Firefox Source docs"
+  },
+  {
+   "bugid": "1647065",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Permafailing toolkit/components/extensions/test/xpcshell/test_extension_permissions_migration.js | xpcshell return code: 0 when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1629299",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/toolkit/components/extensions/webrequest/StreamFilterParent.cpp:609:7 in mozilla::extensions::StreamFilterParent::OnDataAvailable(nsIRequest*, nsIInputStream*"
+  },
+  {
+   "bugid": "1645941",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "data race StreamFilterParent::mState in OnStartRequest and ODA"
+  }
+ ],
+ "date": "2020-06-24",
+ "cset": "e858eb7ffebab87cc1902efc7f7d17dd083ebc8e",
+ "buildid": "20200624093107",
+ "fixed": 99,
+ "total": 129,
+ "restricted": 4
+}

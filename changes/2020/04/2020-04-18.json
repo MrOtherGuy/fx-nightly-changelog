@@ -1,0 +1,502 @@
+{
+ "bugs": [
+  {
+   "bugid": "1627818",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Media Keys don't work on soundcloud.com"
+  },
+  {
+   "bugid": "1629735",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement parsing and selector-matching for :is() and :where()"
+  },
+  {
+   "bugid": "1630835",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Constructable stylesheets should probably notify the constructor document from the NOTIFY macro"
+  },
+  {
+   "bugid": "1630837",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Optimize CC of rules from constructable stylesheets."
+  },
+  {
+   "bugid": "1631154",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Cherry-pick some recent Servo style system changes."
+  },
+  {
+   "bugid": "1630304",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Intermittent Assertion failure: lockedCanvasThreadHolder.ref() ->mCanvasWorkers.forget() .take() ->Release() == 0 (There should be no other references to mCanvasWorkers.), at /builds/worker/checkouts/gecko/gfx/layers/ipc/CanvasThread.cpp:88"
+  },
+  {
+   "bugid": "1629994",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Minor Cleanups in Constructable StyleSheets Code"
+  },
+  {
+   "bugid": "1605209",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add memory region to crash reports containing current actor/message manager message being processed"
+  },
+  {
+   "bugid": "1597267",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.registerProtocolHandler.insecure.enabled"
+  },
+  {
+   "bugid": "1630947",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Expose ReportingObserver to workers"
+  },
+  {
+   "bugid": "1449522",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Remove nsIEditorStyleSheets"
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1630168",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Suppress adding same runners for handling content change in HTMLEditor"
+  },
+  {
+   "bugid": "1598131",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Cross-Origin-Embedder-Policy isn't passed to content process BrowsingContext"
+  },
+  {
+   "bugid": "1628961",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in docshell and uriloader"
+  },
+  {
+   "bugid": "1627206",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS Only Mode - Upgrade failure telemetry"
+  },
+  {
+   "bugid": "1627689",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::DrawTargetCairo::DrawSurfaceWithShadow]"
+  },
+  {
+   "bugid": "1630389",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Enable WaitForVBlank by default on Windows 10"
+  },
+  {
+   "bugid": "1607322",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable Webrender for Pixel 2 and 3 on Release Channel"
+  },
+  {
+   "bugid": "1611372",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "nsWindow::OnExposeEvent() does not trigger WR rendering"
+  },
+  {
+   "bugid": "1625250",
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Intermittent linux 18.04 qr <test-name> | application crashed [@ libglib-2.0.so.0 + 0x51ea1]"
+  },
+  {
+   "bugid": "1627739",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "With WebRender enabled, off-screen GIFs cause memory leak"
+  },
+  {
+   "bugid": "1630142",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement linear-filter for SWGL glBlitFramebuffer"
+  },
+  {
+   "bugid": "1630629",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender on Intel battery if we don't have DirectComposition"
+  },
+  {
+   "bugid": "1631070",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL spams unused parameter warnings"
+  },
+  {
+   "bugid": "1629315",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in ipc"
+  },
+  {
+   "bugid": "949220",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Object creation should be an atomic operation, such that if it succeeds, and reserved slots are immediately written to, finalizers can depend upon those writes having happened"
+  },
+  {
+   "bugid": "1502355",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement ReadableStream.prototype.pipeTo and pipeThrough"
+  },
+  {
+   "bugid": "1618631",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make BCEScriptStencil own the pieces it requires to initialize a script"
+  },
+  {
+   "bugid": "1624266",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Conditionally hide the SharedArrayBuffer constructor"
+  },
+  {
+   "bugid": "1629791",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Try to auto-generate CacheIR boilerplate"
+  },
+  {
+   "bugid": "1630346",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move PlainObject-centric stuff into vm/PlainObject*.*"
+  },
+  {
+   "bugid": "1629503",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !doneValue.isMagic(), at jit/JitFrames.cpp:118"
+  },
+  {
+   "bugid": "1630779",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix DefinitelyDifferentValue"
+  },
+  {
+   "bugid": "1630855",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Duplicate CraneliftFreeReusableData symbol error when building with --disable-cranelift"
+  },
+  {
+   "bugid": "1629732",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Make layout/* buildable outside of a unified build environment"
+  },
+  {
+   "bugid": "1630928",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove dead code in layout/xul/nsSprocketLayout.cpp"
+  },
+  {
+   "bugid": "1630964",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Intermittent image/test/reftest/downscaling/downscale-orient.html == image/test/reftest/downscaling/downscale-orient-ref.html | image comparison, max difference: 4, number of differing pixels: 18"
+  },
+  {
+   "bugid": "1630511",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in netwerk"
+  },
+  {
+   "bugid": "1630899",
+   "status": "RESOLVED",
+   "component": "Core:Networking: FTP",
+   "summary": "Update NETWORK_PAC_URL_SCHEME probe to collect data on release"
+  },
+  {
+   "bugid": "1619625",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Purge site data if the site has only quota storage"
+  },
+  {
+   "bugid": "1624268",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implementing using the HasStoragePermission flag to check storage permission."
+  },
+  {
+   "bugid": "1627220",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "First-party cookies are not removed after a daily cleanup"
+  },
+  {
+   "bugid": "1581691",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "add a presentation attribute for transform-origin"
+  },
+  {
+   "bugid": "1630031",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Use MOZ_WIDGET_ANDROID instead of ANDROID for the enterprise roots for geckoview"
+  },
+  {
+   "bugid": "1630991",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | security/manager/ssl/tests/unit/test_osreauthenticator.js | xpcshell return code: 1 when Gecko 77 merges to release on 2020-05-04"
+  },
+  {
+   "bugid": "1631067",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Fixes a typo of Pico Neo 2 controller profile name"
+  },
+  {
+   "bugid": "1631113",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "XRNativeOriginLocalFloor does not use a default height for 3DOF devices"
+  },
+  {
+   "bugid": "1629843",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Crash in [@ CheckZoneTracer::checkZone]"
+  },
+  {
+   "bugid": "1630777",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Allow passing non-`const` spans to nsTArray methods"
+  },
+  {
+   "bugid": "1620226",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove Cu.permitCPOWsInScope and Cu.getCrossProcessWrapperTag"
+  },
+  {
+   "bugid": "1628201",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "HelperThreadTaskHandler should use UniquePtr for mOffThreadTask"
+  },
+  {
+   "bugid": "1629112",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Group sameSite invalid value console logs"
+  },
+  {
+   "bugid": "1625942",
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use the ResourceWatcher API to fetch DocumentEvents"
+  },
+  {
+   "bugid": "1631055",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Add AsyncCubebTask thread in media profiler preset"
+  },
+  {
+   "bugid": "1618769",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Increase max chars for search suggestions (Adding numbers in the URL bar gives incorrect answer as a suggestion)"
+  },
+  {
+   "bugid": "1609562",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Migrate popup-notifications.inc to Fluent"
+  },
+  {
+   "bugid": "1616280",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Investigate using shadow DOM to hide Remote L10n translations for from local translations"
+  },
+  {
+   "bugid": "1620021",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement ExperimentManager and API that can integrate with MS and Normandy"
+  },
+  {
+   "bugid": "1624309",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add persistent storage for ExperimentStore"
+  },
+  {
+   "bugid": "1614502",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a mechanism for producing a static version of about:home periodically that can be cached for startup."
+  },
+  {
+   "bugid": "1618051",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Firefox logo at about:newtab is not scalable or retina/HiDPI"
+  },
+  {
+   "bugid": "1630806",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.5.95"
+  },
+  {
+   "bugid": "1629680",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Switching between localisations of Firefox can end up with the wrong default engine"
+  },
+  {
+   "bugid": "1630167",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Loading spinner animates forever if tabs is discarded while loading"
+  },
+  {
+   "bugid": "908954",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Remove try\u2026catch inside wrapWidgetEventHandler once bug 503244 is fixed"
+  },
+  {
+   "bugid": "1629832",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "The titlebar-button buttons don't have a tooltip or accessible label"
+  },
+  {
+   "bugid": "1622687",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "toolkit/crashreporter/: Make it flake8 compliant"
+  },
+  {
+   "bugid": "1625500",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Tell people to use `.finally()` instead of `.then(foo, foo)` when `foo` is the same thing for both arguments"
+  },
+  {
+   "bugid": "1629431",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "AppWindow.cpp: converting integer literal to bool, use bool literal instead"
+  },
+  {
+   "bugid": "1608837",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable chunking in the taskgraph for all web-platform-test suites"
+  },
+  {
+   "bugid": "1630009",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Multiple shippable build jobs per platform on mozilla-central"
+  },
+  {
+   "bugid": "1630708",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Increase confidence thresholds for the bugbug shadow schedulers"
+  },
+  {
+   "bugid": "1631054",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Disable extension process in GV beta"
+  },
+  {
+   "bugid": "1599413",
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.frameAttached"
+  },
+  {
+   "bugid": "1628012",
+   "status": "RESOLVED",
+   "component": "Shield:Shield Study",
+   "summary": "[Experiment]: Generic Experiment: Delegated Credentials Nightly Breakage Study V2"
+  },
+  {
+   "bugid": "1523736",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "Migrate updates.dtd to fluent"
+  },
+  {
+   "bugid": "1434933",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Intermittent Assertion failure: !pd->minidump, at z:/build/build/src/toolkit/crashreporter/nsExceptionHandler.cpp:3292"
+  },
+  {
+   "bugid": "1532377",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Avoid saving a munged password in login storage"
+  },
+  {
+   "bugid": "1629143",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager: Site Compatibility",
+   "summary": "Password manager not enabled on CostCoPharmacy.ca"
+  },
+  {
+   "bugid": "1611622",
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Desktop",
+   "summary": "LEGO SPEED CHAMPIONS game is unplayable on Firefox Nightly"
+  },
+  {
+   "bugid": "1630995",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "\"Report Site Issues\" in location bar does not work with the error \"browser.browserInfo.getGPUInfo is not a function\""
+  }
+ ],
+ "date": "2020-04-18",
+ "cset": "a6a5a4f31ea26906e584e162b8d9485e6cacca32",
+ "buildid": "20200418094905",
+ "fixed": 65,
+ "total": 82,
+ "restricted": 2
+}

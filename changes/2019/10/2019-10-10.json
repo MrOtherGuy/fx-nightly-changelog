@@ -1,0 +1,604 @@
+{
+ "bugs": [
+  {
+   "bugid": "1102175",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "<body> with writing-mode: vertical-rl doesn't align children to the right"
+  },
+  {
+   "bugid": "1308286",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Scroll less to give more context with page down/page up"
+  },
+  {
+   "bugid": "1312422",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "DOM implementation of Web Share API"
+  },
+  {
+   "bugid": "1430977",
+   "status": "NEW",
+   "component": "Firefox:Session Restore",
+   "summary": "Intermittent browser/components/sessionstore/test/browser_625016.js | observe1: 1 window in data written to disk - Got 2, expected 1"
+  },
+  {
+   "bugid": "1446153",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/new/test/mochitest/browser_dbg-outline.js | Natural first function is first listed - Got doEval(), expected main()"
+  },
+  {
+   "bugid": "1456995",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "enable e10s service workers pref on nightly"
+  },
+  {
+   "bugid": "1509316",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "MediaCodec decoder not usable on Android somehow."
+  },
+  {
+   "bugid": "1512500",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Record parent docshell in profile JSON pages array"
+  },
+  {
+   "bugid": "1513325",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove textbox binding"
+  },
+  {
+   "bugid": "1528961",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent LeakSanitizer | leak at operator=, WeakPtr, emplace, mozilla::ContentPrincipal::AddonPolicy, mozilla::dom::Document::InitCSP, mozilla::dom::Document::StartDocumentLoad, nsHTMLDocument::StartDocumentLoad"
+  },
+  {
+   "bugid": "1536153",
+   "status": "ASSIGNED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "gecko_migration.py script should use `ffxbld-merge` username as default in the configs"
+  },
+  {
+   "bugid": "1562146",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: uncompressedStart < uncompressedLimit (subtraction below requires a non-empty range), at js/src/vm/Compression.h:79 with ES6 classes"
+  },
+  {
+   "bugid": "1565263",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Support process switching without closing the toolbox"
+  },
+  {
+   "bugid": "1566795",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "In Outlook - Ctrl+B doesn't work on already embolden pasted input"
+  },
+  {
+   "bugid": "1568126",
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Fetch the inspector and its related fronts (walker, highlighter, selection) via the nodeFront rather than from toolbox or inspector panel singleton"
+  },
+  {
+   "bugid": "1569696",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "CFR: recommend send tab on popular recipe sites"
+  },
+  {
+   "bugid": "1571446",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use a union for jitScript_ and warmUpCount_ fields in JSScript"
+  },
+  {
+   "bugid": "1572006",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Replace use of JSRuntime with GCRuntime where possible inside the GC component"
+  },
+  {
+   "bugid": "1573062",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use BytecodeLocation and BytecodeIterator in JitScript::printTypes"
+  },
+  {
+   "bugid": "1573836",
+   "status": "RESOLVED",
+   "component": "Toolkit:Autocomplete",
+   "summary": "Make autocomplete fillin work in out of process iframes"
+  },
+  {
+   "bugid": "1575163",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "[Fission] Crash in [@ mozilla::ipc::IPDLParamTraits<T>::Write]"
+  },
+  {
+   "bugid": "1576276",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Sort value should be saved when reloading about:logins"
+  },
+  {
+   "bugid": "1577149",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Additional preferences for enteprise policies"
+  },
+  {
+   "bugid": "1577446",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Display better image info in the Manifest"
+  },
+  {
+   "bugid": "1577566",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "filter is not rendering in SVG (with the default hardware-accelerated graphics backend on Windows)"
+  },
+  {
+   "bugid": "1578624",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use BrowsingContext::LoadURI for frontend document loads"
+  },
+  {
+   "bugid": "1579738",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "HTTP auth realm is cut in about:logins"
+  },
+  {
+   "bugid": "1580168",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Display PID instead of incremental number in the thread list"
+  },
+  {
+   "bugid": "1580962",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "For extensions that can't be removed, show message and link to SUMO"
+  },
+  {
+   "bugid": "1581052",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Make getHuffmanLookup faster"
+  },
+  {
+   "bugid": "1581245",
+   "status": "REOPENED",
+   "component": "Core:Web Replay",
+   "summary": "Replay should show a Frame Timeline"
+  },
+  {
+   "bugid": "1581670",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Remove XUL grid from browser/components/preferences/connection.xul"
+  },
+  {
+   "bugid": "1581925",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "In-process content JSWindowActors cannot observe \"load\" event"
+  },
+  {
+   "bugid": "1582467",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Cannot select \"Prevent accessibility features from accessing your browser\""
+  },
+  {
+   "bugid": "1582802",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable new audio focus management between tabs on Fenix"
+  },
+  {
+   "bugid": "1582886",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_pseudo-visited.js | Rule of a:visited is shown -"
+  },
+  {
+   "bugid": "1583161",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The FxA avatar's hover effect is hardly visible on dark mode"
+  },
+  {
+   "bugid": "1583271",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Change the ID fields of PageInformation class to properly refer to pages"
+  },
+  {
+   "bugid": "1583665",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Cannot install addon when running Firefox in a full screen window"
+  },
+  {
+   "bugid": "1584103",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "[Windows]  \"Learn more about this breach\" hyperlink from the warning panel is not bolded"
+  },
+  {
+   "bugid": "1584109",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add graphics telemetry metrics for geckoview streaming"
+  },
+  {
+   "bugid": "1584162",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \u201cSort by: Name (A-Z)\u201d dropdown menu has not an hover effect on the \u201cabout:logins\u201d page"
+  },
+  {
+   "bugid": "1584174",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "nsChannelClassifier log module and macros is defined twice"
+  },
+  {
+   "bugid": "1584176",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \u201cx\u201d button from the Breach warning  doesn't have a hover effect in Dark Mode"
+  },
+  {
+   "bugid": "1584256",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Add IPDLParamTraits for Variant"
+  },
+  {
+   "bugid": "1584787",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Incorrect code found via PVS-Studio Static Analyzer - https://www.viva64.com/en/b/0672/#ID0ESNEK"
+  },
+  {
+   "bugid": "1585236",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Conservative TLS settings prevent connecting to a TLS 1.3-only proxy"
+  },
+  {
+   "bugid": "1585278",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add option of enabling performance debugging counters of DirectComposition"
+  },
+  {
+   "bugid": "1585373",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "Investigate Bug 1441558  and see if it can be backed out"
+  },
+  {
+   "bugid": "1585603",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Switch to new GCP addons workers"
+  },
+  {
+   "bugid": "1585725",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Blocked resource icon should be white in selected rows"
+  },
+  {
+   "bugid": "1585807",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity and Permission Panels",
+   "summary": "[Protections Panel] Update Gradient on Dark Theme"
+  },
+  {
+   "bugid": "1585808",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add UTM parameters to the \"Learn more about this breach\" link in breach notifications."
+  },
+  {
+   "bugid": "1585823",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove MayNeedToLoadXBLBinding"
+  },
+  {
+   "bugid": "1585902",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Type `paused` event via protocol.js specification and use emit() instead of sendActorEvent"
+  },
+  {
+   "bugid": "1585921",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Make it harder to misuse GC containers"
+  },
+  {
+   "bugid": "1585998",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Add task duration features to 'mach try fuzzy'"
+  },
+  {
+   "bugid": "1586006",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Replace mentions of `preEvent` with `before` in protocol.js.md"
+  },
+  {
+   "bugid": "1586050",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Don't blow away progress listeners when switching between local and remote processes"
+  },
+  {
+   "bugid": "1586216",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Translations from language pack are not fully loaded in firefox 70.0"
+  },
+  {
+   "bugid": "1586220",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "2.22 - 6.15% Explicit Memory / JS (linux64, macosx1014-64-shippable, windows10-64, windows7-32) regression on push c36eedede55882d7d5d2f811f448f824126612bf (Mon September 30 2019)"
+  },
+  {
+   "bugid": "1586254",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma browser/base/content/test/performance/browser_urlbar_search.js | unexpected changed rect: ({x1:0, x2:1279, y1:39, y2:199, w:1280, h:161}), window width: 1280"
+  },
+  {
+   "bugid": "1586266",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.4.15"
+  },
+  {
+   "bugid": "1586344",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Update textbox tests in testing/ to use input"
+  },
+  {
+   "bugid": "1586355",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "\"Applications\" section blank in about:preferences"
+  },
+  {
+   "bugid": "1586387",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Crash in [@ mozilla::MediaTrackGraphImpl::AppendMessage]"
+  },
+  {
+   "bugid": "1586468",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "ProcessActorList only listens for new processes"
+  },
+  {
+   "bugid": "1586512",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Perma fail Tier 2 Central TEST-UNEXPECTED-PASS | chrome://reftest/content/forms/textbox/accesskey-4.xul == chrome://reftest/content/forms/textbox/accesskey-4-ref.xul | image comparison, max difference: 0, number of differing pixels: 0"
+  },
+  {
+   "bugid": "1586573",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "checkbox is drawn with bad image when WebRender enabled"
+  },
+  {
+   "bugid": "1586589",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Replace obsolete <textbox> comments in urlbar code"
+  },
+  {
+   "bugid": "1586590",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "'Delete this login?': buttons 'Delete' and 'Cancel' don't have same distance to borders (mirror each other) if text above is longer due to localization"
+  },
+  {
+   "bugid": "1586601",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Long, localized texts can force the app promo in about:logins to push app store buttons on new line and make scrollbar necessary"
+  },
+  {
+   "bugid": "1586658",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "bundle files are out of sync"
+  },
+  {
+   "bugid": "1586671",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Broken profile creation in about:profiles"
+  },
+  {
+   "bugid": "1586680",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Fix devtools issues when toolbox uses a <browser> element instead of a content <iframe>"
+  },
+  {
+   "bugid": "1586713",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_postMessage.js' working in Fission"
+  },
+  {
+   "bugid": "1586779",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable dom/tests/mochitest/general/test_interfaces_secureContext.html for fission"
+  },
+  {
+   "bugid": "1586882",
+   "status": "REOPENED",
+   "component": "Firefox:Tracking Protection",
+   "summary": "Add parameters to the Lockwise link in Protection Report"
+  },
+  {
+   "bugid": "1586913",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add a policy for DisablePasswordReveal"
+  },
+  {
+   "bugid": "1587066",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Call native abort in TSan builds"
+  },
+  {
+   "bugid": "1587069",
+   "status": "RESOLVED",
+   "component": "Core:Selection",
+   "summary": "Simplify `RangeBoundaryBase` constructors"
+  },
+  {
+   "bugid": "1587084",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender does not display anything if picture caching is disabled"
+  },
+  {
+   "bugid": "1587130",
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Fix nsContentBlocker telemetry adding scalar values instead of setting them"
+  },
+  {
+   "bugid": "1587185",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Megabar] Regression: The Resultlist Drop Down items (icons and text) are 1px too far left"
+  },
+  {
+   "bugid": "1587199",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "netwerk/test/unit/test_parse_content_type.js fails when run as part of the Thunderbird Xpcshell tests"
+  },
+  {
+   "bugid": "1587210",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ mozilla::layers::DIGroup::ClearImageKey]"
+  },
+  {
+   "bugid": "1587221",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Fix test_ext_async_clipboard.html with Fission"
+  },
+  {
+   "bugid": "1587227",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "First click on \"send tab to device\" does nothing if sync hasn't yet loaded."
+  },
+  {
+   "bugid": "1587312",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "possible infinite loop when finding non anonymous content"
+  },
+  {
+   "bugid": "1587316",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity and Permission Panels",
+   "summary": "[Protections Panel] Category items are inaccessible using the mouse"
+  },
+  {
+   "bugid": "1587368",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Sync servo stuff."
+  },
+  {
+   "bugid": "1587378",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove TraceCallbacks method that takes raw JSObject pointers"
+  },
+  {
+   "bugid": "1587384",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Fix extension controlled UI for connection settings"
+  },
+  {
+   "bugid": "1587417",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add about:logo to allowlist of CSP assertion"
+  },
+  {
+   "bugid": "1587468",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Update syn and quote to 1.0"
+  },
+  {
+   "bugid": "1587486",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Update object dependency in the profiler."
+  },
+  {
+   "bugid": "1587491",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Update try commands for pushing to Talos/DAMP in DevTools documentation"
+  },
+  {
+   "bugid": "1587497",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Resume lands on the same location when location has both a breakpoint and watchpoint"
+  },
+  {
+   "bugid": "1587636",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Original browser size is not restored when closing RDM"
+  }
+ ],
+ "date": "2019-10-10",
+ "cset": "f20fa8068ec25d685914a5945f2c54e36c89bc65",
+ "buildid": "20191010092637",
+ "fixed": 87,
+ "total": 99,
+ "restricted": 2
+}

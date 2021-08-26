@@ -1,0 +1,556 @@
+{
+ "bugs": [
+  {
+   "bugid": "1702363",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Replace `AbstractThread` with `nsISerialEventTarget` in `MediaTrackGraph`"
+  },
+  {
+   "bugid": "1702362",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Remove dead code 'AbstractMainThread()' in MediaTrackGraph"
+  },
+  {
+   "bugid": "1701276",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HTML5 video currentSrc is always an empty string"
+  },
+  {
+   "bugid": "1701395",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "performance regression in chalkboard benchmark (https://testdrive-archive.azurewebsites.net/performance/chalkboard/)"
+  },
+  {
+   "bugid": "1697084",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "TexImage(pboOffset) always uploads as if pboOffset:0."
+  },
+  {
+   "bugid": "1702382",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "conformance/attribs/gl-vertexattribpointer.html failure: vertexAttribPointer should not accept GL_FIXED"
+  },
+  {
+   "bugid": "1702175",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Add dummy getPredictedEvents"
+  },
+  {
+   "bugid": "1701327",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /content-security-policy/inheritance/history-iframe.sub.html | History navigation in iframe: \"about:blank\" document is navigated back from history cross-origin. - Test timed out"
+  },
+  {
+   "bugid": "1696908",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Enforce focused BrowsingContext ordering by action id"
+  },
+  {
+   "bugid": "1037709",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Investigate if accesskeys should be handled when element is in a shadow dom bound to in-doc shadow host"
+  },
+  {
+   "bugid": "1701412",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Very frequent browser_test_selection_urlbar.js | autofilled value as expected - \"a\" == \"addons.mozilla.org/\" - JS frame :: /accessible/tests/browser/events/browser_test_selection when Gecko 89 merges to Beta on 2021-04-19"
+  },
+  {
+   "bugid": "1678989",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "360 Videos on Youtube are not displayed correctly anymore. The colors are wrong. It started with the update yesterday. I'm on OS Catalina 10.15.7, my firefox version: 83.0."
+  },
+  {
+   "bugid": "1702463",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "glxtest should try choosing both single and double buffered visuals"
+  },
+  {
+   "bugid": "1702479",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for GFX10_3 (Navi 2x) GPUs."
+  },
+  {
+   "bugid": "1680128",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[webrender] no compositor flips/inverts y axis on macOS"
+  },
+  {
+   "bugid": "1700475",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Asan build failing - \"failed to run custom build command for `webrender v0.61.0...`\""
+  },
+  {
+   "bugid": "1681046",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable Top Level Await"
+  },
+  {
+   "bugid": "1701904",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change GetOwnPropertyDescriptor to return Maybe<PropertyDescriptor>"
+  },
+  {
+   "bugid": "1701787",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make NewObject ICs shareable"
+  },
+  {
+   "bugid": "1702489",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Move logical float/clear reftests to WPT"
+  },
+  {
+   "bugid": "1684921",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Column separator moves wrong column"
+  },
+  {
+   "bugid": "1700801",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[M-fis-xorig] TEST-UNEXPECTED-PASS | layout/generic/test/test_bug756984.html | fail-if condition in manifest - We expected at least one failure"
+  },
+  {
+   "bugid": "1659430",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Intermittent /css/css-multicol/increase-prev-sibling-height.html | Testing http://web-platform.test:8000/css/css-multicol/increase-prev-sibling-height.html == http://web-platform.test:8000/css/css-multicol/increase-prev-sibling-height-ref.html"
+  },
+  {
+   "bugid": "1702398",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Flexbox WPT test \"align-items-baseline-overflow-non-visible.html\" fails due to antialiasing issue"
+  },
+  {
+   "bugid": "1702282",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "<input type=\"checkbox\" checked=\"\" disabled=\"\" name=\"Test\"> should have more contrast"
+  },
+  {
+   "bugid": "1677525",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Intermittent /css/css-backgrounds/border-image-shorthand-001.htm | Testing http://web-platform.test:8000/css/css-backgrounds/border-image-shorthand-001.htm == http://web-platform.test:8000/css/css-backgrounds/reference/border-image-shorthand-001-ref.html"
+  },
+  {
+   "bugid": "1694123",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "The font will fallback to Segoe UI with src:local() when the platform font list is reinitialized"
+  },
+  {
+   "bugid": "1693030",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "\"Alternate Service Mapping found\" spam in Browser Console"
+  },
+  {
+   "bugid": "1695717",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Unexpectedly long delay when searching via Google"
+  },
+  {
+   "bugid": "1616239",
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "Turn on HTTP/3 tests on ASan builds"
+  },
+  {
+   "bugid": "1701232",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Enable HTTP/3 on Android"
+  },
+  {
+   "bugid": "1681019",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent  gfx/layers/apz/test/mochitest/test_group_zoomToFocusedInput.html | helper_zoomToFocusedInput_iframe.html | scroll position is different from first line of textarea"
+  },
+  {
+   "bugid": "1701460",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove expired Telemetry probe security.client_cert"
+  },
+  {
+   "bugid": "1702233",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Test the behaviour of AudioWorkletProcessor when its `onmessage` handler throws."
+  },
+  {
+   "bugid": "1702216",
+   "status": "NEW",
+   "component": "Core:Web Painting",
+   "summary": "Paint auto style outline with WebRender if possible"
+  },
+  {
+   "bugid": "1702380",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "NS_ASSERTION \"Layer shouldn't be the child of some other container\" in ContainerState::Finish() while running helper_hittest_overscroll_subframe.html"
+  },
+  {
+   "bugid": "1695378",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add call length telemetry for A/V calls"
+  },
+  {
+   "bugid": "1701809",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Firefox maintains v4l device files open after end of video session"
+  },
+  {
+   "bugid": "1702676",
+   "status": "NEW",
+   "component": "Core:Widget",
+   "summary": "Change public LookAndFeel color APIs to take a color scheme."
+  },
+  {
+   "bugid": "1702039",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove @\"NSAppearanceNameDarkAqua\" from codebase"
+  },
+  {
+   "bugid": "1702351",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Stop overriding NSApp.appearance, and make native context menus / file picker / emoji picker follow system Dark Mode even if widget.macos.respect-system-appearance is false"
+  },
+  {
+   "bugid": "1702602",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Clarify handling of dynamic changes to accessibilityDisplayShouldReduceMotion and accessibilityDisplayShouldIncreaseContrast"
+  },
+  {
+   "bugid": "1702584",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Collect some SDK declarations in the same header"
+  },
+  {
+   "bugid": "1702387",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Put native context menus behind main proton pref"
+  },
+  {
+   "bugid": "1593390",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Use NSApplication::effectiveAppearance and/or NSRequiresAquaSystemAppearance to detect dark mode instead of standardUserDefaults"
+  },
+  {
+   "bugid": "1702596",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Clean up some outdated macOS version checks in accessibility-related nsLookAndFeel code"
+  },
+  {
+   "bugid": "1693472",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Menu items under the cursor usually aren't highlighted in Firefox 86.0a1-87.0a1 on Wayland in Plasma"
+  },
+  {
+   "bugid": "1686405",
+   "status": "UNCONFIRMED",
+   "component": "Core:mozglue",
+   "summary": "Undefined symbol: (anonymous namespace)::NowIncludingSuspendMs() ../../mozglue/misc/Uptime.o"
+  },
+  {
+   "bugid": "1644397",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Create tab targets on process change via the Watcher Actor"
+  },
+  {
+   "bugid": "1631451",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remove \"tabDetached\" event from DevToolsFrameParent and instead destroy the target from the TargetList"
+  },
+  {
+   "bugid": "1701423",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Intermittent devtools/client/storage/test/browser_storage_fission_cookies.js | Table row has an entry for: lorem2 with value: ipsum2 - Got undefined, expected \"ipsum2\""
+  },
+  {
+   "bugid": "1699226",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update colours in bookmark/tabs icons"
+  },
+  {
+   "bugid": "1702486",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "[Proton]  The arrows from Bookmarks Panel are bolded and too big"
+  },
+  {
+   "bugid": "1701723",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Downloads Panel shows focus ring around footer element when opening via mouse"
+  },
+  {
+   "bugid": "1702348",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Fixing serialization of cookieJarSettings for DownloadCore"
+  },
+  {
+   "bugid": "1702526",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Windows build docs shouldn't specify using curl as it doesn't exist in mozillabuild"
+  },
+  {
+   "bugid": "1659101",
+   "status": "REOPENED",
+   "component": "Firefox:General",
+   "summary": "Intermittent browser/modules/test/browser/browser_preloading_tab_moving.js | Uncaught exception - AbortError: Actor 'SpecialPowers' destroyed before query 'Spawn' was resolved"
+  },
+  {
+   "bugid": "1702626",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Win10 Proton context menu and dropdown select dark mode is not applied outside of in-content pages"
+  },
+  {
+   "bugid": "1698062",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton] Hamburger Menu is too wide using DE builds"
+  },
+  {
+   "bugid": "1701493",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton] The drop-down background of the select box in the extension inline options page is transparent."
+  },
+  {
+   "bugid": "1699642",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Update context menu navigation item styling for proton"
+  },
+  {
+   "bugid": "1702258",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Fix browser_selectpopup_colors.js which fails on Win10 with browser.proton.contextmenus.enabled"
+  },
+  {
+   "bugid": "1664259",
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Misspelled constant \"CAPABILITES_MISMATCH\" in Normandy"
+  },
+  {
+   "bugid": "1699517",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Dry out iframe panel js files"
+  },
+  {
+   "bugid": "1701756",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "images for search bar setting in about:preferences are stretched"
+  },
+  {
+   "bugid": "1701950",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Replace addTestEngines and installTestEngine in search tests with SearchTestUtils.promiseNewSearchEngine"
+  },
+  {
+   "bugid": "1701707",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fix tabs-related tests that fail with browser.proton.enabled"
+  },
+  {
+   "bugid": "1700141",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use proton checkbox styling in in-content pages (so they look OK in modals)"
+  },
+  {
+   "bugid": "1702044",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Tabs without a favicon show a blank area on the tab when audio is playing and the mouse isn't in the tabstrip"
+  },
+  {
+   "bugid": "1702195",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Pocket is not working if it was deactivated once and reactivated from about:config"
+  },
+  {
+   "bugid": "1702220",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Screenshot button doesn't have a hover effect if placed in Overflow Menu"
+  },
+  {
+   "bugid": "1696284",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "FxA Finish Account Setup badge should automatically select the right icon"
+  },
+  {
+   "bugid": "1702254",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Update toolbar buttons to use \"Settings\" and \"Add-ons and themes\""
+  },
+  {
+   "bugid": "740148",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Allow hiding toolbars for presentations"
+  },
+  {
+   "bugid": "1702336",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "Disable \"signon.management.page.fileImport.enabled\" for all channels"
+  },
+  {
+   "bugid": "1701576",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Improve OpenSUSE/SUSE detection during bootstrap"
+  },
+  {
+   "bugid": "1702279",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Sentry report is incorrectly using absolute paths for mach command files"
+  },
+  {
+   "bugid": "1702353",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Sentry is reporting a couple issues with release \"hg-rev-None\""
+  },
+  {
+   "bugid": "1702212",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Move LLVM from 12.0-rc2 to 12.0-rc4"
+  },
+  {
+   "bugid": "1702406",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Rename targets to targetList when relevant"
+  },
+  {
+   "bugid": "1686743",
+   "status": "NEW",
+   "component": "Remote Protocol:CDP: Page",
+   "summary": "Add support for new modal dialog"
+  },
+  {
+   "bugid": "1702059",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Modals from Addon Manager preferences pages no longer work"
+  },
+  {
+   "bugid": "1702183",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Perma toolkit/mozapps/update/tests/unit_aus_update/canCheckForAndCanApplyUpdates.js | assertNoUncaughtRejections - [assertNoUncaughtRejections : 285] when Gecko 89 merges to Beta on 2021-04-19"
+  },
+  {
+   "bugid": "1701502",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/base/content/test/static/browser_all_files_referenced.js | there should be no unreferenced files - Got 2, expected +0 when Gecko 89 merges to Beta on 2021-04-19"
+  },
+  {
+   "bugid": "1693577",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Fallback menupopup for input elements should include a triggerNode"
+  },
+  {
+   "bugid": "1700221",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Fix origin display in modal dialogs to account for IDN domains properly"
+  },
+  {
+   "bugid": "1701051",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Include domain name in Password Update string"
+  },
+  {
+   "bugid": "1702139",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "about:performance - close button [ x ]  icon not centered"
+  },
+  {
+   "bugid": "1702350",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Clean up findbar styling"
+  },
+  {
+   "bugid": "1699493",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Migrate WebExtInspectedWindow front to a command"
+  },
+  {
+   "bugid": "1701062",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Horizontal gap between add-on icon and text is too large with Proton enabled"
+  }
+ ],
+ "date": "2021-04-02",
+ "cset": "6f3a9007793c5f356522b8d283e9e2bc4a4f6b4f",
+ "buildid": "20210402094809",
+ "fixed": 79,
+ "total": 91,
+ "restricted": 1
+}

@@ -1,0 +1,736 @@
+{
+ "bugs": [
+  {
+   "bugid": "969322",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": ":-moz-window-inactive triggers on window drag"
+  },
+  {
+   "bugid": "1212237",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "WebRTC: Error recording remote media stream (Security Error: operation is insecure)"
+  },
+  {
+   "bugid": "1247260",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Histogram bucket limit should allow for n_values 100 for enumerated histograms"
+  },
+  {
+   "bugid": "1438272",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Move Session History State into the Parent Process"
+  },
+  {
+   "bugid": "1457865",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Load localizable name and description for WebExtensions from fluent files"
+  },
+  {
+   "bugid": "1484780",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Cache the gfx::Path built from StyleSVGPath to avoid rebuilding it too many times"
+  },
+  {
+   "bugid": "1536468",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Make retrieval of WebBrowserPersistDocumentAttrs.cacheKey async in SessionHistory"
+  },
+  {
+   "bugid": "1536471",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Consolidate calls to nsISHEntry::GetChildAt"
+  },
+  {
+   "bugid": "1539238",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Modify nsSHEntry::Create to consolidate setter calls on nsSHEntry in nsDocShell::AddToSessionHistory"
+  },
+  {
+   "bugid": "1539482",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Reduce the number of IPC calls on nsISHEntry in nsDocShell::LoadHistoryEntry"
+  },
+  {
+   "bugid": "1541515",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Consolidate IPC calls to nsISHEntry inside of nsDocShell::GetChildSHEntry"
+  },
+  {
+   "bugid": "1545474",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Change nsSHistory::EvictContentViewerForEntry to accommodate session history changes"
+  },
+  {
+   "bugid": "1546356",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Allow ManagedEndPoints as members of unions/structs"
+  },
+  {
+   "bugid": "1546761",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Consolidate IPC calls to nsISHistory inside of nsDocShell::OnNewURI"
+  },
+  {
+   "bugid": "1556657",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "SHistoryParent::RecvFindEntryForBFCache should fill in all its outparams"
+  },
+  {
+   "bugid": "1560940",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Change tests that use session history listeners to listen in the parent process"
+  },
+  {
+   "bugid": "1560941",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Stop trying to call session history listeners for reload in the child process"
+  },
+  {
+   "bugid": "1563607",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Show active service workers in threads pane"
+  },
+  {
+   "bugid": "1570124",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Enable mouse scrolling in FxR window"
+  },
+  {
+   "bugid": "1570253",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Make session history sync IPC messages that don't return anything async"
+  },
+  {
+   "bugid": "1571003",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Basic auth confirmation prompt spam / DOS"
+  },
+  {
+   "bugid": "1571656",
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Use Assert.jsm numeric comparison functions in tests"
+  },
+  {
+   "bugid": "1571704",
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Make ThreadActor.frames return Frame fronts instead of JSON objects"
+  },
+  {
+   "bugid": "1571972",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[wr-intro] Re-export RendererError as a public type."
+  },
+  {
+   "bugid": "1575144",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "update Geolocation implementation to match latest spec"
+  },
+  {
+   "bugid": "1575258",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Text blurry after expanding tiles on microsoftedgeinsider.com site"
+  },
+  {
+   "bugid": "1575648",
+   "status": "REOPENED",
+   "component": "Taskcluster:Operations and Service Requests",
+   "summary": "Migrate webrender to community taskcluster deployment"
+  },
+  {
+   "bugid": "1575785",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "There should be a confirmation prompt when the user tries to Report a Broken site from the Tracking Protection panel"
+  },
+  {
+   "bugid": "1579093",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Fix failing test docshell/test/navigation/test_load_history_entry.html on ash"
+  },
+  {
+   "bugid": "1580212",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Make dom.ipc.keepProcessesAlive.webIsolated work with Fission content processes"
+  },
+  {
+   "bugid": "1580338",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer GC allocation of RegExp objects until parse is finished"
+  },
+  {
+   "bugid": "1580742",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[ARM64] Widevine plugin crashes on Netflix and Amazon Prime"
+  },
+  {
+   "bugid": "1581040",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Fission a11y: Correctly handle late creation/re-creation of OuterDocAccessible for OOP iframe"
+  },
+  {
+   "bugid": "1581240",
+   "status": "NEW",
+   "component": "Core:Graphics: Layers",
+   "summary": "Add async API for fetching composition recording frames"
+  },
+  {
+   "bugid": "1582348",
+   "status": "REOPENED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Start implementing WritableStream, behind a pref, often with stubbed-out functions that just throw"
+  },
+  {
+   "bugid": "1582610",
+   "status": "REOPENED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Intermittent toolkit/content/tests/chrome/test_popup_button.xhtml,test_popup_button.xul | test_popup_attribute.xul | open popup anchored before_start height - got 198, expected 190"
+  },
+  {
+   "bugid": "1582716",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Remove nsDocShell::GetIsOnlyToplevelInTabGroup"
+  },
+  {
+   "bugid": "1582751",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "In the  \"Report a Broken Site\" sub panel the input text still remains even after is was submitted."
+  },
+  {
+   "bugid": "1583321",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Allow passing the same session history entry multiple times in an IPC call"
+  },
+  {
+   "bugid": "1583568",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Add a getter for the BFCache id on nsISHEntry"
+  },
+  {
+   "bugid": "1583706",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_location_logpoint_debugger_link.js | Test timed out -"
+  },
+  {
+   "bugid": "1587539",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Launcher Process is disabled when IObit Malware Fighter 5 is installed"
+  },
+  {
+   "bugid": "1588055",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Clear MediaPipeline static-analysis warnings"
+  },
+  {
+   "bugid": "1588193",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fix BrowserTestUtils.waitForContentEvent with Fission"
+  },
+  {
+   "bugid": "1588311",
+   "status": "NEW",
+   "component": "Core:DOM: Events",
+   "summary": "Click event not fired when changing input placeholder on focus"
+  },
+  {
+   "bugid": "1588489",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Fix for getting the BFCache ID from an entry in the parent process"
+  },
+  {
+   "bugid": "1588491",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Associate session history entries with a session history object from creation"
+  },
+  {
+   "bugid": "1588603",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "candidate-exchange.https.html has a new crash"
+  },
+  {
+   "bugid": "1588817",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Enable mDNS hostname obfuscation"
+  },
+  {
+   "bugid": "1588840",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Add WPT for HTMLMediaElement ending as its MediaStream becomes inactive/inaudible"
+  },
+  {
+   "bugid": "1589042",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Update expiry for APPLICATION_REPUTATION_SERVER_VERDICT_2 telemetry"
+  },
+  {
+   "bugid": "1589666",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable picture caching when async zooming"
+  },
+  {
+   "bugid": "1589706",
+   "status": "NEW",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "Migrate all firefox-ci related jobs to use AWS Provider"
+  },
+  {
+   "bugid": "1589883",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "The new about:certificates incorrectly reports the OCSP Must-Staple extension"
+  },
+  {
+   "bugid": "1589913",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Update FxR Desktop default home page"
+  },
+  {
+   "bugid": "1590231",
+   "status": "NEW",
+   "component": "Firefox:Sync",
+   "summary": "Replace login/registration calls-to-action on sync preferences with a single button"
+  },
+  {
+   "bugid": "1590385",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Permafailing TestScriptPreloader.test_preloader_requests_histogram | browser_startupcache_telemetry.js  when Gecko version increases to 73 on 2019-12-02"
+  },
+  {
+   "bugid": "1590550",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Intermittent /css/css-overflow/dynamic-visible-to-clip-001.html | Testing http://web-platform.test:8000/css/css-overflow/dynamic-visible-to-clip-001.html == http://web-platform.test:8000/css/css-overflow/clip-001-ref.html"
+  },
+  {
+   "bugid": "1590608",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_partitionedSharedWorkers.js | We have first-party set on storagePrincipal - \"\" == \"example.net\" -"
+  },
+  {
+   "bugid": "1590641",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve the byteSize-of-string.js test"
+  },
+  {
+   "bugid": "1591259",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "BrowserGlue.jsm triggeres console log of Unhandled NS_ERROR_NOT_AVAILABLE (0x80040111, 2147746065) exception thrown from PushService lazy getter during \"sessionstore-windows-restored\" observer notification when dom.push.enabled == false"
+  },
+  {
+   "bugid": "1591432",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in [@ TFont::FindColourBitmapForGlyph]"
+  },
+  {
+   "bugid": "1591891",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Make the fix for bug 1536468 work with session history in the parent turned off"
+  },
+  {
+   "bugid": "1591899",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Make various docshell tests work with session history in the parent turned off"
+  },
+  {
+   "bugid": "1591943",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Merge Fission session history changes from ash to central"
+  },
+  {
+   "bugid": "1591982",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Page",
+   "summary": "Don't add `timestamp` for navigation events beside Page.domContentEventFired and Page.loadEventFired"
+  },
+  {
+   "bugid": "1592166",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[fission] toolkit/content/tests/browser/browser_autoplay_policy_iframe_hierarchy.js"
+  },
+  {
+   "bugid": "1592510",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make partial updates with WebRender OS compositor work on Windows"
+  },
+  {
+   "bugid": "1592616",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Don't show breakage report link when we're not blocking anything"
+  },
+  {
+   "bugid": "1592787",
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "[motion-1] Check the creation of the stacking context if we don't have offset-path animation and its value is none."
+  },
+  {
+   "bugid": "1592829",
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Make browser_privatebrowsing_context_and_chromeFlags.js Fission compatible"
+  },
+  {
+   "bugid": "1592926",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Adapt wasmTextToBinary for multi-value"
+  },
+  {
+   "bugid": "1592933",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Manage scale factor at nsWindow level only"
+  },
+  {
+   "bugid": "1592964",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "jsdoc: add minimal version"
+  },
+  {
+   "bugid": "1592972",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent /css/vendor-imports/mozilla/mozilla-central-reftests/text3/segment-break-transformation-removable-3.html | Testing http://web-platform.test:8000/css/vendor-imports/mozilla/mozilla-central-reftests/text3/segment-break-transformation-removable"
+  },
+  {
+   "bugid": "1593009",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS \"zoom: 0\" behaves differently from other browsers"
+  },
+  {
+   "bugid": "1593084",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Update the presentation of the \"Mozilla Source Tree Documentation\" page"
+  },
+  {
+   "bugid": "1593092",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Remove the fennec doc reference in the moz.build"
+  },
+  {
+   "bugid": "1593119",
+   "status": "RESOLVED",
+   "component": "Core:XBL",
+   "summary": "Unifdef MOZ_XBL"
+  },
+  {
+   "bugid": "1593183",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Restore the AbandonBFCacheEntry call that bug 1536471 removed"
+  },
+  {
+   "bugid": "1593222",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Split notifying mutation observers code off from `nsNodeUtils`"
+  },
+  {
+   "bugid": "1593321",
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Blocked by X-Frame-Options Policy"
+  },
+  {
+   "bugid": "1593344",
+   "status": "NEW",
+   "component": "Mozilla Localizations:pl / Polish",
+   "summary": "Misleading translation for \"Autofill logins and passwords\""
+  },
+  {
+   "bugid": "1593366",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Select popup shows up on keydown even when event is default prevented."
+  },
+  {
+   "bugid": "1593386",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "abuse report grammar cleanup (bullet points)"
+  },
+  {
+   "bugid": "1593388",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "SpiderMonkey GDB pretty-printer: ExecutableAllocator is out of date"
+  },
+  {
+   "bugid": "1593475",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add a test that verifies that template fragments are not eagerly localized by Fluent"
+  },
+  {
+   "bugid": "1593486",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ./mach jit-tests command"
+  },
+  {
+   "bugid": "1593560",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Enable DocumentChannel for data URIs"
+  },
+  {
+   "bugid": "1593621",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix browser_keywordSearch.js and browser_keywordSearch_postData.js to work with fission"
+  },
+  {
+   "bugid": "1593622",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Write a JsPropertyProvider test for the new nullish coalescing operator"
+  },
+  {
+   "bugid": "1593690",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Start visited queries from an idle timer."
+  },
+  {
+   "bugid": "1593703",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "MOZ_IMPLICIT seems to be busted with clang 5"
+  },
+  {
+   "bugid": "1593726",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Extend expiry of Touch Bar telemetry to version 77"
+  },
+  {
+   "bugid": "1593766",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: IsOnWorkletThread(), at /builds/worker/workspace/build/src/dom/worklet/WorkletThread.cpp:405"
+  },
+  {
+   "bugid": "1593812",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "add i/o awareness for the background thread target"
+  },
+  {
+   "bugid": "1593844",
+   "status": "NEW",
+   "component": "Core:General",
+   "summary": "Add moz.configure bits to specify a LUCETC binary"
+  },
+  {
+   "bugid": "1593884",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Assertion failure: newLeaf->IsElement() && newLeaf->AsElement()->State().HasState(aState), at dom/events/EventStateManager.cpp:5528"
+  },
+  {
+   "bugid": "1593920",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "Clean up `HTMLEditor::TabInTable()`"
+  },
+  {
+   "bugid": "1593929",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make invalidate_rendered_frame triggers force redraw"
+  },
+  {
+   "bugid": "1593959",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Introduce a visual gap between results"
+  },
+  {
+   "bugid": "1593972",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update the update-breakpad.sh script to work with python3"
+  },
+  {
+   "bugid": "1594091",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make the layout of glyph instance attribute match brush instances"
+  },
+  {
+   "bugid": "1594114",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add SurfaceFormat for OS/endian-specific preferred format"
+  },
+  {
+   "bugid": "1594125",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow showing remote triplets with different header"
+  },
+  {
+   "bugid": "1594236",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Use real result principal for DocumentChannel process selection"
+  },
+  {
+   "bugid": "1594267",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Make OutOfLinePoisoner::poison be MOZ_NEVER_INLINE"
+  },
+  {
+   "bugid": "1594275",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Parse the exportparts attribute."
+  },
+  {
+   "bugid": "1594276",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix browser_keepStateAcrossTabSwitches.js to work with Fission"
+  },
+  {
+   "bugid": "1594305",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Only allocate compositor surfaces for tiles that are not occluded"
+  },
+  {
+   "bugid": "1594356",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove browser_moz_action_link.js, that is failing with Fission"
+  },
+  {
+   "bugid": "1594399",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Rename render_time telemetry probe to framebuild_time"
+  },
+  {
+   "bugid": "1594401",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Enable hashtable assertions on fuzzing builds."
+  },
+  {
+   "bugid": "1594452",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Gathering pause data should be low priority"
+  },
+  {
+   "bugid": "1594472",
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Don't update the tab label / window title for same-document onLocationChange"
+  },
+  {
+   "bugid": "1594516",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use baseScript() in lieu of nonLazyScript() where possible"
+  },
+  {
+   "bugid": "1594524",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Debug overlays / profiler drawing is included in GPU measurements"
+  },
+  {
+   "bugid": "1594529",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "OOP frames loaded as TYPE_DOCUMENT with fission enabled"
+  },
+  {
+   "bugid": "1594530",
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Make tooltool via the taskcluster proxy work on both legacy and firefox-ci clusters at the same time"
+  },
+  {
+   "bugid": "1594567",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Tiles are incorrectly being occluded on ProtonMail home page"
+  },
+  {
+   "bugid": "1594598",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Some PHC tweaks"
+  }
+ ],
+ "date": "2019-11-07",
+ "cset": "d271c572a9bcd008ed14bf104b2eb81949952e4c",
+ "buildid": "20191107094905",
+ "fixed": 103,
+ "total": 121,
+ "restricted": 1
+}

@@ -1,0 +1,418 @@
+{
+ "bugs": [
+  {
+   "bugid": "1671931",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "ThreadSanitizer: data race on VideoFrameContainer::mFrameID"
+  },
+  {
+   "bugid": "1595994",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Move WMF and FFmpeg decoding into RDD process."
+  },
+  {
+   "bugid": "1670917",
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to revision a7e83aa (and associated repos/crates)"
+  },
+  {
+   "bugid": "1672075",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Don't collect MEMORY_UNIQUE_CONTENT_STARTUP for the privileged process"
+  },
+  {
+   "bugid": "1651802",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Replace all uses of JSWindowActor willDestroy with didDestroy"
+  },
+  {
+   "bugid": "1668875",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[Fission] Lots of tab spinners"
+  },
+  {
+   "bugid": "1672163",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Microsoft/history/history_000.htm should not rely on a 50ms timer"
+  },
+  {
+   "bugid": "1660968",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Remove uses of GetInProcessScriptableTop in WebSocketImpl::GetLoadingPrincipal"
+  },
+  {
+   "bugid": "1633469",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Notifications",
+   "summary": "Crash in [@ mozilla::dom::`anonymous namespace'::GetSubscriptionCallback::OnPushSubscription]"
+  },
+  {
+   "bugid": "1460740",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: !aRoot || aNotInsertedYet || (nsContentUtils::ContentIsDescendantOf(aStart.Container(), aRoot) && ...  (Wrong root), at src/dom/base/nsRange.cpp:976"
+  },
+  {
+   "bugid": "1672088",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Avoid creating CTFonts from CGFonts when using NativeFontResourceMac"
+  },
+  {
+   "bugid": "1671535",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Increase 10 bit reftest coverage."
+  },
+  {
+   "bugid": "1672196",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable webrender on Nightly for Mali-Txxx devices"
+  },
+  {
+   "bugid": "1656211",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Popup windows from toolbar draws incorrectly"
+  },
+  {
+   "bugid": "1672077",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Calculation of device_valid_rect can be stale"
+  },
+  {
+   "bugid": "1670809",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add wrench infrastructure for testing expected picture invalidation invalidation scenarios"
+  },
+  {
+   "bugid": "1671289",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make WebRender's integrated profiler more configurable"
+  },
+  {
+   "bugid": "1664719",
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Optimize handling of shared / compositor clips for picture caching"
+  },
+  {
+   "bugid": "1672268",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Stop using CustomAutoRooter for Parser"
+  },
+  {
+   "bugid": "1639153",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize indirect calls"
+  },
+  {
+   "bugid": "1671583",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma wasm/jsapi/global/type.tentative.any.js | can't access property \"value\", myglobal.type is undefined [0.1 s] when Gecko 83 merges to Beta on 2020-10-19"
+  },
+  {
+   "bugid": "499229",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Floats",
+   "summary": "Should the warning \"nsBlockFrame::CheckFloats: Explicit float list is out of sync with float cache\" become an assertion?"
+  },
+  {
+   "bugid": "1671619",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Wiki page flickers when the user switches between this and Customize Firefox page"
+  },
+  {
+   "bugid": "1665411",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Hard to explain macOS-specific use-after-free crashes"
+  },
+  {
+   "bugid": "1324247",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Strip whitespace from queries in URL setters"
+  },
+  {
+   "bugid": "1670820",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "HSTS cache not working for subresources when privacy.partition.network_state=true"
+  },
+  {
+   "bugid": "1672127",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Fix browser_fall_back_to_https.js to use actual host"
+  },
+  {
+   "bugid": "1619673",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Disable appcache in release"
+  },
+  {
+   "bugid": "1668828",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Active connections to site higher than network.http.max-persistent-connections-per-server , website no longer works until restart of Firefox"
+  },
+  {
+   "bugid": "1672171",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Perma toolkit/components/printing/tests/browser_modal_print.js | Uncaught exception - Wait for dialog - timed out after 50 tries when Gecko 84 switches to Late Beta on 2020-11-28"
+  },
+  {
+   "bugid": "821955",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGPointList shouldn't throw when methods are called with points that are not DOMSVGPoint"
+  },
+  {
+   "bugid": "1671860",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "test that SVG <cursor> element is not implemented"
+  },
+  {
+   "bugid": "1671692",
+   "status": "RESOLVED",
+   "component": "Core:Sanitizers",
+   "summary": "Organize and properly label the TSan supression list"
+  },
+  {
+   "bugid": "1671713",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 84 to use NSS 3.59"
+  },
+  {
+   "bugid": "1664143",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Introduce ExecuteSimpleSQLSequence helper function"
+  },
+  {
+   "bugid": "1663924",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Further migration to IDB_TRY* and Result in IndexedDB"
+  },
+  {
+   "bugid": "1671612",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Fix `runtest.py` for python3"
+  },
+  {
+   "bugid": "1670856",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Don't switch ICE gathering state on empty offers"
+  },
+  {
+   "bugid": "1667319",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Safari interop: invalid rtpmap when rtx is enabled and roles are reversed"
+  },
+  {
+   "bugid": "1672044",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Use Moz2D (via Skia DrawTarget) instead of CGContext to draw scrollbar parts on macOS"
+  },
+  {
+   "bugid": "1660393",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Introduce async access to Resource Protocol from Rust"
+  },
+  {
+   "bugid": "1672055",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Mismatch between priorities in nsIRunnable.idl and EventQueue.h"
+  },
+  {
+   "bugid": "1672132",
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "remove isFirefoxPanel check in boostrapApp"
+  },
+  {
+   "bugid": "1671676",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove unused setupInChild helper"
+  },
+  {
+   "bugid": "1671609",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove all DevTools:BrowserSwap support from the codebase"
+  },
+  {
+   "bugid": "1671973",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Add a test to check that DevTools forceReload bypasses the cache"
+  },
+  {
+   "bugid": "1623667",
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Update panels other than Inspector to use Fission-ready node highlighter"
+  },
+  {
+   "bugid": "1671045",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent TV browser/components/urlbar/tests/browser/browser_searchMode_sessionStore.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1665442",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Show an \"import\" button on the bookmarks toolbar when few bookmarks exist [and some exist in another browser?]"
+  },
+  {
+   "bugid": "1668284",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Automatic file handling (open/save) setting labeling is no longer accurate"
+  },
+  {
+   "bugid": "1667787",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "[macOS] Save image as... stores `image/webp` as `jpeg` file, breaking opening in other applications"
+  },
+  {
+   "bugid": "1461690",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Create an uninstaller telemetry ping"
+  },
+  {
+   "bugid": "1671314",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "MMPolicyBase::FindRegion fails to find a free region"
+  },
+  {
+   "bugid": "1658828",
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Change profile count to use IOUtils"
+  },
+  {
+   "bugid": "1672115",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "module 'distutils' has no attribute 'spawn' in genpgocert.py"
+  },
+  {
+   "bugid": "1671424",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Set the `PYTHON3` environment variable where appropriate for the build"
+  },
+  {
+   "bugid": "1672306",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Don't enable rust \"global\" LTO when cross LTO is enabled"
+  },
+  {
+   "bugid": "1615884",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "clang-format mercurial extension won't respect .clang-format-ignore"
+  },
+  {
+   "bugid": "1644624",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.47"
+  },
+  {
+   "bugid": "1671555",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade all toolchains using rust 1.41 to 1.47"
+  },
+  {
+   "bugid": "1672285",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "GV now needs to set browser.tabs.remote.autostart in its default prefs"
+  },
+  {
+   "bugid": "1672247",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Duplicate start events in onProgressChange"
+  },
+  {
+   "bugid": "1646810",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView needs to start using DocumentChannel process switching (instead of E10SUtils)"
+  },
+  {
+   "bugid": "1672221",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Missing null check in NPZCSupport::InputEvent::Run"
+  },
+  {
+   "bugid": "1665476",
+   "status": "NEW",
+   "component": "Thunderbird:General",
+   "summary": "LW-theme background images aren't shown"
+  },
+  {
+   "bugid": "1672267",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Change the updater's downloadUpdate functions to return success rather than update state"
+  },
+  {
+   "bugid": "1661304",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add an API for privileged front-end code to add BHR annotations"
+  },
+  {
+   "bugid": "1356031",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove toolkit error-16.png and replace usages with respective SVGs"
+  }
+ ],
+ "date": "2020-10-21",
+ "cset": "d8861d51b01e9489672f998648d67662a60a8b3a",
+ "buildid": "20201021095128",
+ "fixed": 58,
+ "total": 68,
+ "restricted": 4
+}

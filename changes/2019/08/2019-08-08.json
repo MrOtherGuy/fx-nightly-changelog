@@ -1,0 +1,616 @@
+{
+ "bugs": [
+  {
+   "bugid": "1538933",
+   "status": "REOPENED",
+   "component": "Core:Audio/Video",
+   "summary": "Intermittent VideoFrameConverterTest.Duplication | Expected: (frames[1].second()) > (now + TimeDuration::FromMilliseconds(1100)), actual: 24-byte object <69-8E 86-9A DA-02 00-00 D0-58 22-B9 DA-02 00-00 00-00 01-E4 FF-7F 00-00> vs 24-byte object"
+  },
+  {
+   "bugid": "1562910",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Reduce Shmem thrashing on RDD audio decoding by using ShmemPool"
+  },
+  {
+   "bugid": "1555865",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "adding support for text-decoration subproperty text-decoration-width (or rather, text-decoration-thickness) in the style system"
+  },
+  {
+   "bugid": "1572007",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused nsPresContext::IsTopLevelWindowInactive"
+  },
+  {
+   "bugid": "1570436",
+   "status": "NEW",
+   "component": "Core:DOM: Events",
+   "summary": "Intermittent /pointerevents/pointerlock/pointerevent_movementxy_with_pointerlock.html | mouse pointerevent movementX/Y with pointerlock test - assert_equals: expected X but got Y"
+  },
+  {
+   "bugid": "1569262",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Rename nsIDocShellTreeItem::GetRootTreeItem to GetInProcessRootTreeItem for Fission marking"
+  },
+  {
+   "bugid": "1571063",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Simplify BrowsingContext field sync logic"
+  },
+  {
+   "bugid": "1376309",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Don't block mixed worker/WebSockets content from localhost"
+  },
+  {
+   "bugid": "1572153",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix recording of Telemetry Events for Eval Usage"
+  },
+  {
+   "bugid": "1528239",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /workers/SharedWorker-exception-propagation.html | Uncaught error in shared worker should not propagate to window - expected FAIL"
+  },
+  {
+   "bugid": "1572027",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make BlocksRingBuffer::EntryReader move-only"
+  },
+  {
+   "bugid": "1561792",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | w3c-css/submitted/variables/variable-font-face-01.html == w3c-css/submitted/variables/variable-font-face-01-ref.html | image comparison, max difference: 0, number of differing pixels: 0"
+  },
+  {
+   "bugid": "1567577",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Handle large texture workingsets better"
+  },
+  {
+   "bugid": "1564168",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[jsdbg2] Debugger.prototype.enabled should be removed"
+  },
+  {
+   "bugid": "1569197",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Deactivate Brotli decompression"
+  },
+  {
+   "bugid": "1569315",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer allocation of JSFunctions until after Parsing is done."
+  },
+  {
+   "bugid": "1570883",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "2.13 - 2.15% Base Content Heap Unclassified (windows10-64-shippable-qr) regression on push 0eff8ea5dbf102b07f111fabac7ffe63d6eb9502 (Mon July 29 2019)"
+  },
+  {
+   "bugid": "1570886",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove enableBigInt run-time flag"
+  },
+  {
+   "bugid": "1571289",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !fun->containsPure(cx->names().name), at js/src/vm/JSFunction.cpp:2483"
+  },
+  {
+   "bugid": "1572259",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused JSScript::initFunctionPrototype"
+  },
+  {
+   "bugid": "1527148",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Differential Testing: Different output message involving Array.prototype"
+  },
+  {
+   "bugid": "1544386",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Spidermonkey: IonMonkey incorrectly predicts return type of Array.prototype.pop, leading to type confusions"
+  },
+  {
+   "bugid": "1571464",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Bump Cranelift to c927680fd42a56efcc9a5ee59e814d9eef6c5b4f"
+  },
+  {
+   "bugid": "1571732",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Cranelift: out of range vector access for IONFLAGS=codegen disassembly"
+  },
+  {
+   "bugid": "1572114",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "shape-image code can request reflow from reflow if the shape image is complete."
+  },
+  {
+   "bugid": "1411922",
+   "status": "VERIFIED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "[css-text-decor-4] Implement text-decoration-skip-ink"
+  },
+  {
+   "bugid": "1569252",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Move HasColumnSpanSiblings boolean property into nsIFrame"
+  },
+  {
+   "bugid": "1558915",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use infallible nsIURI::SchemeIs"
+  },
+  {
+   "bugid": "1570950",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash in [@ mozilla::ipc::MessageChannel::Clear | mozilla::ipc::MessageChannel::~MessageChannel | mozilla::ipc::IToplevelProtocol::~IToplevelProtocol]"
+  },
+  {
+   "bugid": "1572082",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused params in HttpChannelOpenArgs"
+  },
+  {
+   "bugid": "1572012",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Perma /cookies/http-state/comma-tests.html,general-tests.html failing due to cookie expiration date in the past"
+  },
+  {
+   "bugid": "1563555",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Improve ergonomics to use Gecko prefs from rust"
+  },
+  {
+   "bugid": "1571961",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Shrink InitAll()"
+  },
+  {
+   "bugid": "1570801",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add an automated test for bug 1566825"
+  },
+  {
+   "bugid": "1570802",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Consider relaxing the Storage Access API rules to allow calling the API from private browsing mode"
+  },
+  {
+   "bugid": "1570805",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[stp] Turn on Social Tracking Protection Prefs"
+  },
+  {
+   "bugid": "1571770",
+   "status": "VERIFIED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "URLDecorationAnnotationsService.jsm should not load Preferences.jsm"
+  },
+  {
+   "bugid": "1571893",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove the footgun prefs that can disable the content blocking allow list"
+  },
+  {
+   "bugid": "1570953",
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Intermittent (SimpleTest/TestRunner.js) | /tests/docshell/test/navigation/test_reserved.html - finished in a non-clean fashion, probably because it didn't call SimpleTest.finish()"
+  },
+  {
+   "bugid": "1571934",
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Inline security-prefs.js into all.js"
+  },
+  {
+   "bugid": "1563849",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Get btoa(getDERString(cert)) from an API"
+  },
+  {
+   "bugid": "1564499",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 70 to use NSS 3.46"
+  },
+  {
+   "bugid": "1559368",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Firefox doesn't handle the X server named socket (but not the directory) being nonexistent or inaccessible"
+  },
+  {
+   "bugid": "1572227",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Warp should wait for pause events"
+  },
+  {
+   "bugid": "1570673",
+   "status": "VERIFIED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "No black video sent out if track is muted before MediaPipeline is activated"
+  },
+  {
+   "bugid": "1570151",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "WebXR - Implement VRManagerEventObserver"
+  },
+  {
+   "bugid": "1570230",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Crash in [@ mozilla::gfx::VRShMem::JoinShMem]"
+  },
+  {
+   "bugid": "1561326",
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "Support min / max size for top level windows that have <html> root element"
+  },
+  {
+   "bugid": "1571875",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Update DynamicallyLinkedFunctionPtr to take advantage of new MOZ_STATIC_LOCAL_CLASS annotation"
+  },
+  {
+   "bugid": "1571349",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Hovering console message causes a reflow"
+  },
+  {
+   "bugid": "1571606",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Perma Tier 2 fission devtools/client/webconsole/test/mochitest/browser_webconsole_websocket.js | Test timed out -"
+  },
+  {
+   "bugid": "1571992",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "isScrolledToBottom isn't used properly"
+  },
+  {
+   "bugid": "1172572",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "debugger will not step in to a function after stepping out of another function"
+  },
+  {
+   "bugid": "1547385",
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "[meta] Inline Variable Preview"
+  },
+  {
+   "bugid": "1568160",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Disable breakpoints should register on devtools open"
+  },
+  {
+   "bugid": "1571582",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Simplify disabled breakpoint colors"
+  },
+  {
+   "bugid": "1570604",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Rename DebuggerClient.getActor to getFront"
+  },
+  {
+   "bugid": "1567497",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Gather data about ctrl+P usage with devtools"
+  },
+  {
+   "bugid": "1568157",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Replace toolbox.{inspector,walker,selection,highlighter} with something based on target.getInspector() or target.getFront(\"inspector\")"
+  },
+  {
+   "bugid": "1571237",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Color picker broken for RTL locales"
+  },
+  {
+   "bugid": "1559347",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Implement generic search across all resources"
+  },
+  {
+   "bugid": "1570819",
+   "status": "VERIFIED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Update blocked resource UX to use icon instead of \"blocked\" text"
+  },
+  {
+   "bugid": "1571449",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Invalid \"Response has been truncated\" message displayed when devtools.netmonitor.responseBodyLimit=0"
+  },
+  {
+   "bugid": "1569574",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Rename responsive.html/ to responsive/ and format using Prettier"
+  },
+  {
+   "bugid": "1567377",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Accessibility broken due to aria-owns on address bar input"
+  },
+  {
+   "bugid": "1570663",
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Regression? Favicons in Drop-Down have a wrong position after clicking on the arrow button and typing an address"
+  },
+  {
+   "bugid": "1571913",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Keyword offer (search shortcut) improvements for top sites experiment extension"
+  },
+  {
+   "bugid": "1568866",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Update `Send Tab to Device` for Skyline"
+  },
+  {
+   "bugid": "1571793",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "browser_startup.js and browser_startup_content.js should record the correct stacks with failures"
+  },
+  {
+   "bugid": "1569135",
+   "status": "VERIFIED",
+   "component": "Firefox:Headless",
+   "summary": "--screenshot option in Firefox headless mode stopped working"
+  },
+  {
+   "bugid": "1567522",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Show message in the Protection panel"
+  },
+  {
+   "bugid": "1571115",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Export] Add context message, react-transition-group package and bug fixes to New Tab Page"
+  },
+  {
+   "bugid": "1567624",
+   "status": "VERIFIED",
+   "component": "Firefox:Page Info Window",
+   "summary": "Can't close Page Info window with Ctrl+w"
+  },
+  {
+   "bugid": "1559452",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "update UI for tabs on ETP card"
+  },
+  {
+   "bugid": "1571729",
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "\"Sign up for Breach Alerts\" button doesn't take an unsubscribed user to Monitor's sign-up page"
+  },
+  {
+   "bugid": "1572019",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Give the new protection panel an accessible name"
+  },
+  {
+   "bugid": "1572029",
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "Give the tracking protection toggler an accessible label"
+  },
+  {
+   "bugid": "1570973",
+   "status": "VERIFIED",
+   "component": "Firefox:Security",
+   "summary": "Missing certificate chain information in about:certificate"
+  },
+  {
+   "bugid": "1571427",
+   "status": "VERIFIED",
+   "component": "Firefox:Security",
+   "summary": "adjustCertInformation function is throwing an error when a section is not defined (about:certificate)"
+  },
+  {
+   "bugid": "1555233",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel] Split Content Blocking category items into \"Blocking\" and \"Not Blocking\" sections"
+  },
+  {
+   "bugid": "1570402",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "[RTL] Warning icon overlapping text on the screen sharing popup prompt"
+  },
+  {
+   "bugid": "1570751",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "insecure page UI shown for no good reason"
+  },
+  {
+   "bugid": "1571271",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "protections.etpON.header notification is cut off in French"
+  },
+  {
+   "bugid": "1571733",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Add context fill to the popup-subitem.svg for dark mode"
+  },
+  {
+   "bugid": "1571463",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"New Login\" item is not added to the \"Login list\" when creating the first login"
+  },
+  {
+   "bugid": "1473498",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[mach] Add support for Python 3"
+  },
+  {
+   "bugid": "1572017",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "build times are not collected anymore"
+  },
+  {
+   "bugid": "1572046",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow to build libxul and libxul-gtest in parallel"
+  },
+  {
+   "bugid": "1570661",
+   "status": "VERIFIED",
+   "component": "Firefox for Android:General",
+   "summary": "Crash upon session restore"
+  },
+  {
+   "bugid": "1572139",
+   "status": "VERIFIED",
+   "component": "Firefox for Android:General",
+   "summary": "Enable sending UI notifications for ETP on mobile"
+  },
+  {
+   "bugid": "1568999",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "geckoview-only perma-fail dom/media/tests/mochitest/test_fingerprinting_resistance.html | Test timed out."
+  },
+  {
+   "bugid": "1571088",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add LOAD_FLAGS_REPLACE_HISTORY to GeckoSession LoadFlags"
+  },
+  {
+   "bugid": "1564731",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Include distribution id in the api_url for html discopane"
+  },
+  {
+   "bugid": "1571885",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Intermittent tier 2 FATAL ERROR: Non-local network connections are disabled and a connection attempt to services.addons.mozilla.org (52.35.252.165) was made."
+  },
+  {
+   "bugid": "1572131",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add back the role=\"option\" on the login-list-items"
+  },
+  {
+   "bugid": "1564346",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Refine Safe Browsing gtest"
+  },
+  {
+   "bugid": "1571881",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Change DllServices to use StaticLocalRefPtr"
+  },
+  {
+   "bugid": "1572265",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Wrong background color for content type at Download dialog on MacOS"
+  },
+  {
+   "bugid": "1566548",
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "onAuthRequired doesn't fire for HTTPS proxy requiring auth"
+  },
+  {
+   "bugid": "1570700",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser.search.get() fails on ubuntu 18.04 FF68.0.1"
+  },
+  {
+   "bugid": "1570697",
+   "status": "RESOLVED",
+   "component": "mozilla.org:Licensing",
+   "summary": "BSD 3-Clause license."
+  }
+ ],
+ "date": "2019-08-08",
+ "cset": "a28a338396c3e05c6b7b944832984e591d92ff0c",
+ "buildid": "20190808093310",
+ "fixed": 76,
+ "total": 101,
+ "restricted": 4
+}

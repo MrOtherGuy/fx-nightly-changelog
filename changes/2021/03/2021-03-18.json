@@ -1,0 +1,724 @@
+{
+ "bugs": [
+  {
+   "bugid": "1698718",
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Crash in [@ mozilla::gmp::GMPChild::RecvPreloadLibs]"
+  },
+  {
+   "bugid": "1698982",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Print the error reason and code in `MediaSource::SetDuration()`"
+  },
+  {
+   "bugid": "1699135",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove BrowsingContext::SessionHistoryChanged()"
+  },
+  {
+   "bugid": "1698767",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Investigate internal content policy type in SecFetch::IsUserTriggeredForSecFetchSite"
+  },
+  {
+   "bugid": "1647128",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Fetch Metadata Headers contain invalid value for Sec-Fetch-Site for meta redirects"
+  },
+  {
+   "bugid": "1614658",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[MacOS] consider making accessibility.mouse_focuses_formcontrol true by default (was: form controls do not match `:focus` pseudo-selectors when you click on an input, but do when you tab to it.)"
+  },
+  {
+   "bugid": "1698769",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "browser_alt_keyup_in_content.js should not rely on the implicit 100ms initial timer from TestUtils.waitForCondition"
+  },
+  {
+   "bugid": "1698097",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ $_31::__invoke]"
+  },
+  {
+   "bugid": "1699036",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "ld: fatal: symbol 'profiler_is_locked_on_current_thread()' is multiply-defined after Bug 1698493"
+  },
+  {
+   "bugid": "1699209",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ensure we release shmems if we exit early in WebRenderBridgeParent messages"
+  },
+  {
+   "bugid": "1699337",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Simplify prepare_prim_for_render logic"
+  },
+  {
+   "bugid": "1699306",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Define __VERSION__ in SWGL GLSL"
+  },
+  {
+   "bugid": "1699242",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't ship Software WebRender to 32-bit users to late beta/release"
+  },
+  {
+   "bugid": "1699001",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rename RenderThread::SharedGL()"
+  },
+  {
+   "bugid": "1697724",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "GeckoView example app crash with Software WebRender"
+  },
+  {
+   "bugid": "1697673",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "NativeSurface does not support surface_origin_is_top_left option"
+  },
+  {
+   "bugid": "1699265",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove ClusterFlags::IS_PICTURE"
+  },
+  {
+   "bugid": "1699363",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[MIPS] Fix MIPS64 compilation"
+  },
+  {
+   "bugid": "1698984",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Perma tier 2 tests\\jit-test\\jit-test\\tests\\wasm\\large-memory.js | tests\\jit-test\\jit-test\\tests\\wasm\\large-memory.js:185:17 uncaught exception: out of memory (code 3, args \"<any>\") [1.1 s]"
+  },
+  {
+   "bugid": "1699085",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma js/src/util/Utility.cpp:99:10: error: no member named 'gExtraPoisoningEnabled' in namespace 'js'  when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1699213",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Wasm compilation options bag parser must check the right wormhole/simd override"
+  },
+  {
+   "bugid": "1691490",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Implement SIMD i64x2.{gt,lt,ge,le}_s instructions"
+  },
+  {
+   "bugid": "1696718",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "context menu in addon popup misplaced with fission"
+  },
+  {
+   "bugid": "1699327",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add nsIFrame::GetMarginRect, and comparison operator for LogicalMargin"
+  },
+  {
+   "bugid": "1699302",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Convert some GetCrossDocParentFrame callers to use its \"InProcess\" version, in nsIFrame.cpp"
+  },
+  {
+   "bugid": "1699029",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "s/GetCrossDocParentFrame/GetCrossDocParentFrameInProcess/ in LocalAccessible.cpp"
+  },
+  {
+   "bugid": "1699186",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Perma Android x64 forms/input/number/number-spinbox-disabled.html != layout/reftests/forms/input/number/number-spinbox-disabled-notref.html | image comparison, max difference: 0, number of differing pixels: 0 when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1699031",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "s/GetCrossDocParentFrame/GetCrossDocParentFrameInProcess/ in ImageLoader.cpp"
+  },
+  {
+   "bugid": "1698353",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "[fission] Some content gets clipped when navigating in an iframe, with e.g. Yahoo Mail and w3.org, with fission enabled"
+  },
+  {
+   "bugid": "1699317",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Minor refactor related to methods computing block frame's overflow areas"
+  },
+  {
+   "bugid": "1699000",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "s/GetCrossDocParentFrame/GetCrossDocParentFrameInProcess/ in TextOverflow.cpp"
+  },
+  {
+   "bugid": "1697666",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "non-Japanese font is used for monospace, on Japanese website"
+  },
+  {
+   "bugid": "1571631",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Replace MOZ_MUST_USE macro with C++17 attribute [[nodiscard]]"
+  },
+  {
+   "bugid": "1697970",
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Permafailing tier 2 netwerk/test/mochitests/test_arraybufferinputstream_large.html | out of memory - Should not throw any errors"
+  },
+  {
+   "bugid": "1698438",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update neqo to 0.4.22"
+  },
+  {
+   "bugid": "1698785",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Double-tap to zoom is available inside print preview"
+  },
+  {
+   "bugid": "1697091",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Scrolling does not continue after scrolling up/down on nightly"
+  },
+  {
+   "bugid": "1698841",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Crash in [@ mozilla::layers::AsyncPanZoomController::OnDoubleTap]"
+  },
+  {
+   "bugid": "1697588",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Perma toolkit/components/printing/tests/browser_modal_print.js | leaked 2 window(s) until shutdown [url = about:blank]"
+  },
+  {
+   "bugid": "1699240",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Intermittent TV layout/reftests/printing/testcase-1696844.html print layout/reftests/printing/testcase-1696844.html | Expected page 1 to contain text '3/17/21, 17:46' but found '3/17/21, 17:45' instead"
+  },
+  {
+   "bugid": "1665786",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Intermittent security/manager/ssl/tests/mochitest/browser/browser_certificateManager.js | Expected override to have field (Not Stored) - \"\" == \"(Not Stored)\" - JS frame :: browser_certificateManager.js"
+  },
+  {
+   "bugid": "1699130",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "GetPlatformDisplayInfo fails under win32k lockdown."
+  },
+  {
+   "bugid": "1698786",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Extend logging around `mozInlineSpellChecker`"
+  },
+  {
+   "bugid": "1697115",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Rationalize method arguments"
+  },
+  {
+   "bugid": "1699026",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Preparation for selectAudioOutput() boilerplate"
+  },
+  {
+   "bugid": "1697336",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make various toolbar-related -moz-default-appearance values adapt to the system appearance"
+  },
+  {
+   "bugid": "1698209",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Dark Mode support for -moz-default-appearance: listbox, if widget.macos.respect-system-appearance is set to true"
+  },
+  {
+   "bugid": "1698662",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Cleanup in native menu code, round 3"
+  },
+  {
+   "bugid": "1699232",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Dark Mode support for multi-line text fields, if widget.macos.respect-system-appearance is on"
+  },
+  {
+   "bugid": "1697565",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Default buttons don't respect the system accent color"
+  },
+  {
+   "bugid": "1697338",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make context menus, tooltips, and vibrant sidebars adapt to the system appearance, if widget.respect-system-appearance is set to true"
+  },
+  {
+   "bugid": "1699075",
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ gbm_bo_get_fd]"
+  },
+  {
+   "bugid": "1695162",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsBaseHashtable iterators safer"
+  },
+  {
+   "bugid": "1642599",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Enable console message listening from the server side for process and worker targets"
+  },
+  {
+   "bugid": "1631451",
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Remove \"tabDetached\" event from DevToolsFrameParent and instead destroy the target from the TargetList"
+  },
+  {
+   "bugid": "1698842",
+   "status": "NEW",
+   "component": "DevTools:Framework",
+   "summary": "Prevent TargetCommand from notifying about new target that are already destroyed"
+  },
+  {
+   "bugid": "1699146",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Fix typo in error message created by Front base class"
+  },
+  {
+   "bugid": "1553097",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_autocomplete_a11y_label.js | (Check) Result label should be: <search term>\u2014 Search with <engine name> - \"\u2014\" == \"foo\u2014 Search with browser_searchSuggestionEngine searchSuggestionEngine.xml\" -"
+  },
+  {
+   "bugid": "1698692",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add engine symbol overlaps text in Urlbar context menu"
+  },
+  {
+   "bugid": "1696469",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tweak panel design to better match spec"
+  },
+  {
+   "bugid": "1696479",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tweak chiclet and urlbar-label-box colors in dark mode"
+  },
+  {
+   "bugid": "1698572",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Shorten background updater string"
+  },
+  {
+   "bugid": "1698774",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "browser_PageActions.js should not rely on the implicit initial TestUtils.waitForCondition timer"
+  },
+  {
+   "bugid": "1679114",
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Intermittent browser/base/content/test/keyboard/browser_toolbarKeyNav.js | Uncaught exception - at chrome://mochitests/content/browser/browser/base/content/test/keyboard/head.js:14 - TypeError: can't access property \"setAttribute\", aElem is undefined"
+  },
+  {
+   "bugid": "1691140",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Move \"Task Manager\" to Tools/More tools"
+  },
+  {
+   "bugid": "1698962",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land \"Pin Firefox\" onboarding strings in nightly ahead of changing default in beta"
+  },
+  {
+   "bugid": "1698977",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Use size=\"large\" menulists for the WebRTC permission panel"
+  },
+  {
+   "bugid": "1647012",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/components/newtab/test/xpcshell/test_AboutHomeStartupCacheWorker.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1699219",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable JS support in PDF.js for 88"
+  },
+  {
+   "bugid": "1697781",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Perma test_FeatureGate.js | testAllDefaultsMatchSettings - [testAllDefaultsMatchSettings : 440] Feature browser.startup.homepage.abouthome_cache.enabled should match runtime value. - true == false when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1691464",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Remove Take a Screenshot from the pageActions menu"
+  },
+  {
+   "bugid": "1698771",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "browser_PartnerLinkAttribution.js should wait for a rebuild event on the oneOffButtons instead of relying on the implicit initial TestUtils.waitForCondition timer"
+  },
+  {
+   "bugid": "1689570",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Intermittent [OS X] browser/components/sessionstore/test/browser_590563.js | The total number of tabs should be 3 after restoring 2 tabs by middle click. - Got 2, expected 3"
+  },
+  {
+   "bugid": "1597499",
+   "status": "REOPENED",
+   "component": "Firefox:Session Restore",
+   "summary": "[Fission] Fix session restore to work for cross-origin iframes"
+  },
+  {
+   "bugid": "1571163",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Intermittent browser/base/content/test/permissions/browser_temporary_permissions_navigation.js | Test timed out -"
+  },
+  {
+   "bugid": "1697800",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "webrtcUI.getActiveStreams should not throw during tab closing"
+  },
+  {
+   "bugid": "1690567",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Only show \"Send Link/Tab/Page to device\" items on tab / content context menus when you are signed in and have at least 1 other device available to send to"
+  },
+  {
+   "bugid": "1512339",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Intermittent browser/base/content/test/tabs/browser_overflowScroll.js | Scrolled one page of tabs with a double click - Got -737, expected 175"
+  },
+  {
+   "bugid": "1698342",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make tab audio indicator appear only on tab bar hover"
+  },
+  {
+   "bugid": "1698777",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Refresh forget panel styling for proton"
+  },
+  {
+   "bugid": "1697863",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Add preliminary Proton styles for browser UI menulists"
+  },
+  {
+   "bugid": "1698956",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Proton AppMenu is extremely difficult to read with Proton Dark theme enabled"
+  },
+  {
+   "bugid": "1688653",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add telemetry in LoginCSVImport.jsm for results of imported logins"
+  },
+  {
+   "bugid": "1688213",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Enable \"signon.management.page.fileImport.enabled\" for all channels"
+  },
+  {
+   "bugid": "1697956",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Missing M4 after bootstrap on Ubuntu 20.04 LTS"
+  },
+  {
+   "bugid": "1698706",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "MozStackWalk doesn't work in Linux ASAN builds"
+  },
+  {
+   "bugid": "1699188",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Pre-commit linting hook  ModuleNotFoundError: No module named 'jsmin'"
+  },
+  {
+   "bugid": "1696251",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Allow Mach commands as standalone functions"
+  },
+  {
+   "bugid": "1696944",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update Python used in decision task to at least 3.6"
+  },
+  {
+   "bugid": "1696041",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Investigate removing `fission-run-on-projects` and `webrender-run-on-projects`"
+  },
+  {
+   "bugid": "1699167",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Increase the confidence threshold used for chunking in the taskgraph"
+  },
+  {
+   "bugid": "1699022",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Set surrounding text on onCreateInputConnection"
+  },
+  {
+   "bugid": "1696206",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Vendor new version of fluent.migrate into mozilla-central"
+  },
+  {
+   "bugid": "1697991",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The crash reporter window should support Dark Mode on macOS"
+  },
+  {
+   "bugid": "1698827",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "about:crashes padding-bottom on table no longer appears"
+  },
+  {
+   "bugid": "1596165",
+   "status": "REOPENED",
+   "component": "Toolkit:General",
+   "summary": "Consider removing the initial wait from TestUtils.waitForCondition."
+  },
+  {
+   "bugid": "1696397",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Avoid shutdown hangs caused by Prompter.jsm"
+  },
+  {
+   "bugid": "1697711",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Permafailing [fg] 0:06.68 toolkit/components/featuregates/test/python/test_gen_feature_definitions.py::TestProcessFiles::test_valid_file TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "893934",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Flatten /toolkit/components/alerts/resources/content/*"
+  },
+  {
+   "bugid": "1425879",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Intermittent toolkit/components/passwordmgr/test/browser/browser_autocomplete_insecure_warning.js | Uncaught exception - Wait for warning to show - timed out after 50 tries."
+  },
+  {
+   "bugid": "1680289",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_contextMenus.js | Test timed out -"
+  },
+  {
+   "bugid": "1697804",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Password manager tests (especially browser_context_menu_generated_password.js) should not rely on the initial implicit timer from waitForCondition"
+  },
+  {
+   "bugid": "1686265",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG only really needs two GeneratedFile directives"
+  },
+  {
+   "bugid": "1612531",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_TelemetryEnvironment.js doesn't run under the debugger and is too big to easily debug sections of it"
+  },
+  {
+   "bugid": "1699061",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove sort-asc-classic.png and sort-dsc-classic.png"
+  },
+  {
+   "bugid": "1699017",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove toolkit/themes/{osx,windows}/global/arrow/arrow-up.gif"
+  },
+  {
+   "bugid": "1699097",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Stop setting appearance: none for :root:-moz-lwtheme on Linux"
+  },
+  {
+   "bugid": "1699062",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Flatten toolkit/themes/*/global/alerts/"
+  },
+  {
+   "bugid": "1699119",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove toolkit/themes/windows/global/icons/question-64.png"
+  },
+  {
+   "bugid": "1699074",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Move defaultFavicon.svg to toolkit/themes/shared/icons"
+  },
+  {
+   "bugid": "1699083",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove blocklist_favicon.png and use blocked.svg instead"
+  },
+  {
+   "bugid": "1699124",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove toolkit/themes/windows/global/icons/Error.png"
+  },
+  {
+   "bugid": "1693824",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Ship v21.0.0 of webcompat system addon"
+  },
+  {
+   "bugid": "1697622",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Update copy for WebExtension install confirmation panel"
+  },
+  {
+   "bugid": "1695353",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "WebExtension permission list should suppress the bullet if the list is only 1 item long"
+  },
+  {
+   "bugid": "1626365",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "FTP removal and testing with addons"
+  },
+  {
+   "bugid": "1581859",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Rewrite WebNavigationContent.js in Fission-compatible C++"
+  },
+  {
+   "bugid": "1474941",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove browser.search.context.loadInBackground pref from the browser.search.search WebExtension flow."
+  },
+  {
+   "bugid": "1698296",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Make the 2nd parameter of test.assertRejects/assertThrows non-optional"
+  }
+ ],
+ "date": "2021-03-18",
+ "cset": "8076082c6ed9dfac47115fe1766ebab510149acb",
+ "buildid": "20210318093109",
+ "fixed": 102,
+ "total": 119,
+ "restricted": 2
+}

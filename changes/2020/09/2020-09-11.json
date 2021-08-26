@@ -1,0 +1,532 @@
+{
+ "bugs": [
+  {
+   "bugid": "1663917",
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to  f39ce8a"
+  },
+  {
+   "bugid": "1661364",
+   "status": "REOPENED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent runner.py | application crashed [@ mozilla::dom::ContentParent::AssertNotInPool()]"
+  },
+  {
+   "bugid": "1663300",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove MessageChannel::IsInTransaction()"
+  },
+  {
+   "bugid": "1606499",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent Assertion failure: aTerminated || mDocument->GetReadyStateEnum() == Document::READYSTATE_LOADING (Bad readyState), at src/dom/base/nsContentSink.cpp:1376"
+  },
+  {
+   "bugid": "1663921",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Speculative parser should pre-fetch SVG scripts using href (in contrast to xlink:href)"
+  },
+  {
+   "bugid": "1664274",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Call SetDocCurrentStateObj for session history in the parent too"
+  },
+  {
+   "bugid": "1663238",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: originalPrincipalToInherit->Equals(flattenedPrincipalToInherit), at src/ipc/glue/BackgroundUtils.cpp:629"
+  },
+  {
+   "bugid": "1660342",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ mozilla::dom::BrowsingContextGroup::Unsubscribe]"
+  },
+  {
+   "bugid": "1652481",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "expose tiny shim around nsTreeSanitizer that accepts document/documentfragment/string"
+  },
+  {
+   "bugid": "1613054",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Figure out what to do if SetFocus ends up being called for an iframe element hosting an out-of-process iframe"
+  },
+  {
+   "bugid": "1664298",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.3.0"
+  },
+  {
+   "bugid": "1661758",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add attributes for getting MOX accessibles from text markers and vice versa"
+  },
+  {
+   "bugid": "1663554",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Convert PROFILER_ADD_TEXT_MARKER to PROFILER_MARKER_TEXT"
+  },
+  {
+   "bugid": "1664122",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Improve MarkerOptions accessors"
+  },
+  {
+   "bugid": "1663894",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Perma [tier 2] mingGW /builds/worker/checkouts/gecko/gfx/thebes/DeviceManagerDx.cpp:435:44: error: use of undeclared identifier 'COMPOSITIONOBJECT_ALL_ACCESS'"
+  },
+  {
+   "bugid": "1654475",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add comment to SharedSurface_SurfaceTexture::ProducerReadReleaseImpl()"
+  },
+  {
+   "bugid": "1649088",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add SharedSurface support with AHardwareBuffer support on android"
+  },
+  {
+   "bugid": "1664208",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add BaseMargin::EnsureAtLeast and BaseMargin::EnsureAtMost."
+  },
+  {
+   "bugid": "1654723",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Scrolling is very laggy on image gallery on drive.google.com"
+  },
+  {
+   "bugid": "1664084",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve glyph rasterization worker thread usage"
+  },
+  {
+   "bugid": "1663003",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "regression: Black border around shaped popups with MOZ_X11_EGL=1"
+  },
+  {
+   "bugid": "1664105",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Upgrade `ron` to 0.6.2"
+  },
+  {
+   "bugid": "1663889",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS::CompileForNonSyntacticScope"
+  },
+  {
+   "bugid": "1663962",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add JS::CompileAndStartIncrementalEncoding and JS::FinishOffThreadScriptAndStartIncrementalEncoding"
+  },
+  {
+   "bugid": "1664281",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add missing xdrEncodeTopLevel for !useOffThreadParseGlobal case"
+  },
+  {
+   "bugid": "1651322",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add a simple Thread Pool interface for HelperThreadState"
+  },
+  {
+   "bugid": "1664182",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Store javascript.options.off_thread_parse_global pref value in static, instead of ContextOption"
+  },
+  {
+   "bugid": "1663741",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: slots == calculateDynamicSlots(), at src/js/src/vm/JSObject-inl.h:43"
+  },
+  {
+   "bugid": "1662763",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Document how to compile/debug Spidermonkey on android aarch64"
+  },
+  {
+   "bugid": "1656588",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Create a disnative command for the JS Shell that provides the disassembly of a jitted function"
+  },
+  {
+   "bugid": "1662688",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: support specialized calls and inlining of lambda clones"
+  },
+  {
+   "bugid": "1662915",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Refactor InitFromBailout"
+  },
+  {
+   "bugid": "1662146",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash [@ js::jit::InlineFrameIterator::findNextFrame] or Assertion failure: GET_ARGC(pc_) > 0, at jit/JitFrames.cpp:2054"
+  },
+  {
+   "bugid": "1205132",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Remove AutoKeepAtoms and use proper rooting instead of suppression"
+  },
+  {
+   "bugid": "1663938",
+   "status": "REOPENED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assert that the collector doesn't trigger barriers during marking"
+  },
+  {
+   "bugid": "1639153",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize indirect calls"
+  },
+  {
+   "bugid": "1663919",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Report cranelift verifier errors as panics in debug builds"
+  },
+  {
+   "bugid": "1663898",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Has Cranelift really shipped on aarch64?"
+  },
+  {
+   "bugid": "1663895",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "arm64: don't assume the build machine has a kernel >4.16"
+  },
+  {
+   "bugid": "1651725",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Add support for Type Reflections in the WASM JS-API (js-types)"
+  },
+  {
+   "bugid": "1623764",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Control+ArrowRight jumps multiple lines in textarea"
+  },
+  {
+   "bugid": "1662703",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[css-ui] Change appearance: button to only apply to buttons"
+  },
+  {
+   "bugid": "1663963",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Remove SCROLL_ANCHOR_ADJUSTMENT_LENGTH and SCROLL_ANCHOR_ADJUSTMENT_COUNT probes"
+  },
+  {
+   "bugid": "1650388",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add support for 0RTT for HTTP3"
+  },
+  {
+   "bugid": "1659470",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "[Windows][parent process about pages][print-to-pdf] Print preview infinite loading state and wrong output"
+  },
+  {
+   "bugid": "1664172",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "firefox crashes if print is selected"
+  },
+  {
+   "bugid": "1664227",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "The default page margin should be at least the unwriteable section, but not added on top."
+  },
+  {
+   "bugid": "1664205",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Simplify rect getters in nsIPrintSettings."
+  },
+  {
+   "bugid": "1664184",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Minor content code cleanup in SVG"
+  },
+  {
+   "bugid": "1664100",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in caps"
+  },
+  {
+   "bugid": "1662961",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in security/sandbox/linux"
+  },
+  {
+   "bugid": "1663924",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Further migration to IDB_TRY* and Result in IndexedDB"
+  },
+  {
+   "bugid": "1663611",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Factor schema upgrade code out of ActorsParent.cpp"
+  },
+  {
+   "bugid": "1661711",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Handle the remaining cases that if the origin stored in the metadata file mismatches the origin directory name"
+  },
+  {
+   "bugid": "1308104",
+   "status": "NEW",
+   "component": "Core:String",
+   "summary": "Replace PL_strchr with a safer Gecko string class or function"
+  },
+  {
+   "bugid": "1649010",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Firefox parent process shows up as \"MainThread\" in top"
+  },
+  {
+   "bugid": "1616381",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_console_clear_cache.js | A promise chain failed to handle a rejection: can't access property \"send\", this.transport is null - stack: send@resource://devtools/server/devtools-server-connection.js"
+  },
+  {
+   "bugid": "1663974",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Eventually stop watching for resources from the Debugger frontend"
+  },
+  {
+   "bugid": "1664177",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Load all images in devtools/client/debugger/images using chrome:"
+  },
+  {
+   "bugid": "1663896",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Simultaneous calls to watchResources lead to missing resources from targets"
+  },
+  {
+   "bugid": "1663941",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "ResourceWatcher can call onAvailable callbacks with an empty array of resources"
+  },
+  {
+   "bugid": "1663873",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Eventually stop watching for resources from the Inspector frontend"
+  },
+  {
+   "bugid": "1646028",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Make the BoxModelHighlighter compatible with Fission"
+  },
+  {
+   "bugid": "1663899",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Intermittent browser/components/enterprisepolicies/tests/browser/managedbookmarks/browser_policy_managedbookmarks.js | Test timed out -"
+  },
+  {
+   "bugid": "1659150",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove about:welcome trailhead, full page and ReturnToAMO templates"
+  },
+  {
+   "bugid": "1662806",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add a session counter for openURL trigger"
+  },
+  {
+   "bugid": "1662609",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix hover state of secondary button on multistage about:welcome"
+  },
+  {
+   "bugid": "1661727",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Messaging System action to allow configuration of the new tab page"
+  },
+  {
+   "bugid": "1663028",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Deleted cards are still displayed in Pocket list"
+  },
+  {
+   "bugid": "1664190",
+   "status": "REOPENED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.7.37"
+  },
+  {
+   "bugid": "1664265",
+   "status": "RESOLVED",
+   "component": "Firefox:Pioneer",
+   "summary": "Default study install needs to check for Pioneer ID"
+  },
+  {
+   "bugid": "1663857",
+   "status": "NEW",
+   "component": "Firefox:Pioneer",
+   "summary": "Manage Pioneer v2 consent in about:pioneer"
+  },
+  {
+   "bugid": "1662578",
+   "status": "RESOLVED",
+   "component": "Firefox:Pioneer",
+   "summary": "Land Privacy Notice Text for Pioneer panel enrollment modal"
+  },
+  {
+   "bugid": "1656508",
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Fix blocking of default top sites with %YYYYMMDDHH% in their URL"
+  },
+  {
+   "bugid": "1662797",
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Implement live update for top site remote settings"
+  },
+  {
+   "bugid": "1664083",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove support for external source directories"
+  },
+  {
+   "bugid": "1651424",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Gather build telemetry using Glean"
+  },
+  {
+   "bugid": "1663959",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Remove references to autoconf from documentation"
+  },
+  {
+   "bugid": "1663916",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Import some Windows & Debugging info"
+  },
+  {
+   "bugid": "1659073",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Expose a new \"RepostPrompt\" PromptRequest type"
+  },
+  {
+   "bugid": "1662704",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove traces of MOZ_ALLOW_LEGACY_EXTENSIONS from source code"
+  },
+  {
+   "bugid": "1662879",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "credit card autofill: card type not labeled for screen reader users."
+  },
+  {
+   "bugid": "1663217",
+   "status": "RESOLVED",
+   "component": "Toolkit:NSIS Installer",
+   "summary": "Remove MOZ_MUST_USE comment from NSIS BitsUtils.cpp"
+  },
+  {
+   "bugid": "1664332",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Derive the prepopulated filename for save-to-PDF from the system print dialog from the document title"
+  },
+  {
+   "bugid": "1664339",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Stop incrementing the legacy printing UI telemetry counts when the new printing UI is in use"
+  },
+  {
+   "bugid": "1658359",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Instrument FOG for validation"
+  },
+  {
+   "bugid": "1636508",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Make captureTab work with Fission iframes, expand API to cover drawWindow() usecases"
+  }
+ ],
+ "date": "2020-09-11",
+ "cset": "3618085622203ef418c62c3d99199485c99e0e51",
+ "buildid": "20200911093056",
+ "fixed": 72,
+ "total": 87,
+ "restricted": 4
+}

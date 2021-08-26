@@ -1,0 +1,430 @@
+{
+ "bugs": [
+  {
+   "bugid": "1597642",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-transforms] Have scale function and scale property accept percentage value"
+  },
+  {
+   "bugid": "1595395",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::ipc::ProcessLink::SendMessage | IPC_Message_Name=PWindowGlobal::Reply_DrawSnapshot]"
+  },
+  {
+   "bugid": "1599006",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[fission] Redirect page history and frecency data not passed around when process switching"
+  },
+  {
+   "bugid": "1594449",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement <link rel=\"preload\"> in the content process as a speculative load with higher priority"
+  },
+  {
+   "bugid": "1596262",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent LeakSanitizer | leak at nsDynamicAtom::Create, nsAtomTable::Atomize, mozilla::BasePrincipal::FinishInit, mozilla::ContentPrincipal::Init"
+  },
+  {
+   "bugid": "1423959",
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent docshell/test/browser/browser_loadURI.js | post data was submitted correctly - \"\" == \"postdata=true\" -"
+  },
+  {
+   "bugid": "1597704",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in nsContentSecurityManager.cpp"
+  },
+  {
+   "bugid": "1599083",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "privacy.firstparty.isolate;true: Crash in [@ IPCError-browser | invalid ClientSourceParent actor] when opening https://[::1]/"
+  },
+  {
+   "bugid": "1589690",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add to nsIPrincipal an API for query if it Holds an .Onion URI"
+  },
+  {
+   "bugid": "1599418",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_blockingLocalStorage.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1599733",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Document `SELECTION_NORMAL` and `SELECTION_SPELLCHECK` in nsISelectionController.idl"
+  },
+  {
+   "bugid": "1577073",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "accessible/tests/mochitest/role/test_aria.html contains XHTML even though the file is HTML"
+  },
+  {
+   "bugid": "1572677",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "An html:input or html:textarea which is pointed to by a xul:label's control attribute does not receive the label text as accessible name"
+  },
+  {
+   "bugid": "1599745",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Opening remote profiling panel throws some preference related errors on debuggee"
+  },
+  {
+   "bugid": "1599843",
+   "status": "NEW",
+   "component": "Core:General",
+   "summary": "Make more functions that are really infallible not return an nsresult."
+  },
+  {
+   "bugid": "1596786",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Arrow keys support for reftest-analyzer"
+  },
+  {
+   "bugid": "1599632",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Firefox no longer starts on older versions of macOS - XPCOMGlueLoad error for Metal"
+  },
+  {
+   "bugid": "1596086",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "linear-gradient rendering issue"
+  },
+  {
+   "bugid": "1594128",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow a single shader to decode several kinds of brush and segment data from the GPU cache"
+  },
+  {
+   "bugid": "1600184",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "test multipart images that aren't loaded at the toplevel"
+  },
+  {
+   "bugid": "1599936",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Cleanup JSFunction non-lazy <-> lazy transistions"
+  },
+  {
+   "bugid": "1600017",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: index <= initialLength, at js/src/builtin/FinalizationGroupObject.cpp:594"
+  },
+  {
+   "bugid": "1587534",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "ASAN failure: ERROR: AddressSanitizer: requested allocation size 0x7ffaf606e0f0 (0x7ffaf606f0f0 after adjustments for alignment, red zones etc.) exceeds maximum supported size of 0x10000000000"
+  },
+  {
+   "bugid": "1582647",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Crash in [@ mozilla::ipc::PrincipalInfoToPrincipal]"
+  },
+  {
+   "bugid": "1595578",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Multipart POSTs with non-binary data > ~1MB crash the current tab"
+  },
+  {
+   "bugid": "1597956",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add telemetry to know the performance improvement of using external session cache"
+  },
+  {
+   "bugid": "1598164",
+   "status": "REOPENED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Make transactions inactive during clone"
+  },
+  {
+   "bugid": "1596129",
+   "status": "REOPENED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Make use of more abstract algorithms in IndexedDB code"
+  },
+  {
+   "bugid": "1560660",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "prefers-color-scheme media query doesn't reflect user's preference, after the theme has changed away from dark"
+  },
+  {
+   "bugid": "1592300",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Remove all uses of gToolbox from accessibility panel."
+  },
+  {
+   "bugid": "1590493",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Audit places where actorHasMethod and remove all uses that were added prior to Fx69."
+  },
+  {
+   "bugid": "1599694",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_object_inspector_key_sorting.js | Test timed out -"
+  },
+  {
+   "bugid": "1599386",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console API call strip first argument if it is an empty string and there are more than 1 argument"
+  },
+  {
+   "bugid": "1599037",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "The Browser Browser Toolbox fails to open when devtools.browsertoolbox.fission pref is true"
+  },
+  {
+   "bugid": "1599641",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Un-formatted stack traces for event-emitter errors in Browser Console"
+  },
+  {
+   "bugid": "1600084",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Allow to edit a ShadowRoot's html."
+  },
+  {
+   "bugid": "1598944",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Can't copy the innerHTML of a shadow root"
+  },
+  {
+   "bugid": "1590982",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Show unsupported browsers' icon"
+  },
+  {
+   "bugid": "1599468",
+   "status": "RESOLVED",
+   "component": "DevTools:Memory",
+   "summary": "Text is not centered when viewing individuals"
+  },
+  {
+   "bugid": "1593831",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "WebSockets: Display separate uploaded and downloaded transfer size"
+  },
+  {
+   "bugid": "1597221",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use the urlbar width instead of the screen width for the 2-lines layout"
+  },
+  {
+   "bugid": "1595155",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Support click handler (ClickHandlerChild.jsm) in out of process frames"
+  },
+  {
+   "bugid": "1600116",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "convert sessionstore/test/browser_590563.js to using add_task"
+  },
+  {
+   "bugid": "1599711",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add TP blocked events by category to targeting attributes"
+  },
+  {
+   "bugid": "1599113",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for What's New Panel content in Firefox 72"
+  },
+  {
+   "bugid": "1599762",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add filtering and sorting by score to ASRouterTargeting.jsm"
+  },
+  {
+   "bugid": "1592671",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] Add static triplet branch to support 72 dynamic triplets experiment"
+  },
+  {
+   "bugid": "1595869",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add model version number to all pings for personalized CFR experiment"
+  },
+  {
+   "bugid": "1598571",
+   "status": "NEW",
+   "component": "Firefox:Search",
+   "summary": "Make it so that preference based MozParams can be updated dynamically"
+  },
+  {
+   "bugid": "1600000",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Simplify functions to select a search engine list in search's xpcshell head.js"
+  },
+  {
+   "bugid": "1589493",
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make it possible for the front-end to determine that a frame crash was caused by an OOM"
+  },
+  {
+   "bugid": "1586108",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "[Fission][MSU capstone] convert UITour / UITourChild.jsm to be fission-compatible"
+  },
+  {
+   "bugid": "1598013",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Write a simple contribute page"
+  },
+  {
+   "bugid": "1536103",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Fix sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1599749",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Split the coding style documentation"
+  },
+  {
+   "bugid": "1599101",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "For clang-tidy based analysis add checker `clang-analyzer-cplusplus.Move`"
+  },
+  {
+   "bugid": "1600048",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Clang-Tidy] Json exporter is broken"
+  },
+  {
+   "bugid": "1600033",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Clang-Tidy] Diagnostic messages should be changed from errors to warnings"
+  },
+  {
+   "bugid": "1598055",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Reduce size of docker image used by Linux CI tests"
+  },
+  {
+   "bugid": "1597258",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Make l10n-lint report to phabricator with warnings on"
+  },
+  {
+   "bugid": "1597873",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Requests",
+   "summary": "change whatsnewpage list of locales on the *beta* channel for users coming from <72.0"
+  },
+  {
+   "bugid": "1599996",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Master password dialog should be wider"
+  },
+  {
+   "bugid": "1597803",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "PingSender runs in the install directory, prevents staged update replacement"
+  },
+  {
+   "bugid": "1365529",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Allow restricting scalar keys to a known set in Scalars.yaml"
+  },
+  {
+   "bugid": "1599198",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "\"deletion-request\" documentation lacks information on why it is necessary (and forcefully delivered to the Telemetry Service)"
+  },
+  {
+   "bugid": "1599919",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Bug 1596911 reverted the pictureinpicture.svg to an older version of the asset"
+  },
+  {
+   "bugid": "1599421",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "There is no minimum size for the PiP video frame on Ubuntu"
+  },
+  {
+   "bugid": "1575162",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Attempting to connect to a native host that does not allow messages from content scripts"
+  },
+  {
+   "bugid": "1584391",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/browser/browser_ext_themes_ntp_colors_perwindow.js | leaked 1 window(s) until shutdown [url = chrome://browser/content/browser.xhtml]"
+  },
+  {
+   "bugid": "1590759",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Themes",
+   "summary": "Ensure webextension theme's toolbar_field_text_focus is visible when overriding toolbar_field_focus' alpha value"
+  }
+ ],
+ "date": "2019-11-29",
+ "cset": "79c674504d23705095f572227f1f167dabede843",
+ "buildid": "20191129094247",
+ "fixed": 61,
+ "total": 70,
+ "restricted": 2
+}

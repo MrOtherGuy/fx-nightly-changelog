@@ -1,0 +1,580 @@
+{
+ "bugs": [
+  {
+   "bugid": "1598968",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "MediaControlUtils.h contains headers and symbols, leading to a failed linking process when used elsewhere"
+  },
+  {
+   "bugid": "1599026",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::ipc::WriteIPDLParam<T> | mozilla::dom::PContentChild::SendNotifyMediaActiveChanged]"
+  },
+  {
+   "bugid": "1598528",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "convert  NS_STYLE_TEXT_ORIENTATION_* to an enum class in nsStyleConsts.h"
+  },
+  {
+   "bugid": "1599324",
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Popup doesn't appear in the center, can't scroll to click the buttons"
+  },
+  {
+   "bugid": "1565116",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /css/css-ui/appearance-searchfield-001.html | Testing http://web-platform.test:8000/css/css-ui/appearance-searchfield-001.html == http://web-platform.test:8000/css/css-ui/appearance-auto-ref.html"
+  },
+  {
+   "bugid": "1599286",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Assertion failure: cachedStyles[i]->EqualForCachedAnonymousContentStyle(*cs) (cached anonymous content styles should be identical to those we would compute normally), at src/layout/base/nsCSSFrameConstructor.cpp:4026"
+  },
+  {
+   "bugid": "1584031",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add an option to force data: URIs into their own process"
+  },
+  {
+   "bugid": "1598472",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "MOZ_CRASH(\"Origin must be available when deserialized\") impedes fuzzing"
+  },
+  {
+   "bugid": "1599062",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Remove `ContentEventHandler::RawRange::IsValidBoundary` (doesn't have definition)"
+  },
+  {
+   "bugid": "1581192",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Crash in [@ mozilla::PresShell::EventHandler::HandleEventWithTarget]"
+  },
+  {
+   "bugid": "1423959",
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent docshell/test/browser/browser_loadURI.js | post data was submitted correctly - \"\" == \"postdata=true\" -"
+  },
+  {
+   "bugid": "1580228",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix usage of nsIDocShellTreeItem in nsDocShell::EndPageLoad"
+  },
+  {
+   "bugid": "1598601",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Perma Beta TEST-UNEXPECTED-FAIL | toolkit/components/remotebrowserutils/tests/browser/browser_httpToFileHistory.js | Test timed out -  when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1588106",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Fission] Navigating away from the about:compat page via address or search bar leads to tab closure"
+  },
+  {
+   "bugid": "1598647",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Set Origin to null with network.http.referer.hideOnionSource"
+  },
+  {
+   "bugid": "1597704",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in nsContentSecurityManager.cpp"
+  },
+  {
+   "bugid": "1598529",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Empty Base Profiler profile makes Gecko Profiler profile JSON ill-formed"
+  },
+  {
+   "bugid": "1598531",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Base Profiler logging is not synchronized with MOZ_LOG"
+  },
+  {
+   "bugid": "1598992",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "On Linux the starting Gecko Profiler tries to handle Base Profiler signals too early"
+  },
+  {
+   "bugid": "1599264",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "lucetc must be declared as a prerequisite for automation Linux builds"
+  },
+  {
+   "bugid": "1596219",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Augment wasi sysroot from bug 1582192 with bits necessary to perform wasm builds"
+  },
+  {
+   "bugid": "1599016",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[Wayland] Don't use GL_TEXTURE_EXTERNAL_OES textures with dmabuf backend"
+  },
+  {
+   "bugid": "1542808",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Wayland: Use frame callbacks as per-surface VsyncSource"
+  },
+  {
+   "bugid": "1594145",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add gfx telemetry scalars to geckoview_streaming"
+  },
+  {
+   "bugid": "1596086",
+   "status": "UNCONFIRMED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "linear-gradient rendering issue"
+  },
+  {
+   "bugid": "1594128",
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow a single shader to decode several kinds of brush and segment data from the GPU cache"
+  },
+  {
+   "bugid": "1597822",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "intl.l10n.pseudo = bidi doesn't bidi-ify all of the UI text"
+  },
+  {
+   "bugid": "1599163",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Nullish coalescing operator returns undefined for void expressions"
+  },
+  {
+   "bugid": "1567327",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !used(), at js/src/jit/Label.h:86 with Baseline Interpreter"
+  },
+  {
+   "bugid": "1598784",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "LeakSanitizer: [@ js::jit::PendingBlock]"
+  },
+  {
+   "bugid": "1599104",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "More JSFunction cleanups to support LazyScript/JSScript merge"
+  },
+  {
+   "bugid": "1598082",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ModuleObject::instantiateFunctionDeclarations should be clearer about ownership of |funDecls|"
+  },
+  {
+   "bugid": "1590907",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js-confdefs.h should not export symbols like \"HAVE_UNISTD_H\""
+  },
+  {
+   "bugid": "1599117",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix some issues with improveTypesAtTest"
+  },
+  {
+   "bugid": "1598289",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "MacroAssembler::cmp32LoadPtr not defined on mips{32|64}"
+  },
+  {
+   "bugid": "1597925",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Moving a HeapPtr asserts the contents are not gray"
+  },
+  {
+   "bugid": "1515934",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "findDebuggerInVector<T> triggers read barriers when T=ReadBarriered<Debugger*>"
+  },
+  {
+   "bugid": "1599071",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "FinalizationGroupObject::construct shouldn't need to call getOrCreateFinalizationGroupPrototype"
+  },
+  {
+   "bugid": "1598149",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Track bounds checking changes for bulk-memory-operations, again"
+  },
+  {
+   "bugid": "1594004",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Enable Top-Level Origin Based HTTP-Cache Splitting in Nightly72"
+  },
+  {
+   "bugid": "1528850",
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "ws-over-h2 receive seems unreliable"
+  },
+  {
+   "bugid": "1598809",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_blockingSessionStorage.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1584723",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Permafail TV security/manager/ssl/tests/mochitest/browser/browser_certViewer.js | should have successful verification message - {\"args\":null,\"id\":\"cert-not-verified-cert-revoked\"} deepEqual {\"id\":\"cert-verified\",\"args\":null} - JS frame :: chrome"
+  },
+  {
+   "bugid": "1592007",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 72 to use NSS 3.48"
+  },
+  {
+   "bugid": "1595085",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Implement use of preloaded elements with IDBCursor.continuePrimaryKey"
+  },
+  {
+   "bugid": "1599420",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Refactor IndexedDB cursor creation"
+  },
+  {
+   "bugid": "1592934",
+   "status": "REOPENED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add new telemetry probes for tracking initialization success rates"
+  },
+  {
+   "bugid": "1599356",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "correct math in AudioWorkletGlobalScope.currentTime"
+  },
+  {
+   "bugid": "1565956",
+   "status": "NEW",
+   "component": "Core:Web Audio",
+   "summary": "Initialize AudioWorkletNode.port and AudioWorkletProcessor.port"
+  },
+  {
+   "bugid": "1599265",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Intermittent browser/components/touchbar/tests/browser/browser_touchbar_searchrestrictions.js | The search restriction token should have cleared out the URL. - \"^ moz    illa  \" == \"^ \" - JS frame :: chrome://mochitests/content/browser/browser/"
+  },
+  {
+   "bugid": "1417772",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Perma Tier 2 Central TestDllInterceptor.exe | test failed with return code 2147483651 after Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Unrecognized opcode sequence)"
+  },
+  {
+   "bugid": "1598060",
+   "status": "NEW",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Fetch the accessibility and its related fronts (walker, highlighter, etc) via the accessible front rather than from panel's singleton"
+  },
+  {
+   "bugid": "1067710",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "console.table() column limit should match Chrome's"
+  },
+  {
+   "bugid": "1599027",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove http inspector doc"
+  },
+  {
+   "bugid": "1375752",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Visualize console.log empty string output"
+  },
+  {
+   "bugid": "1536523",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Make `console.table` work with `performance.getEntries()`"
+  },
+  {
+   "bugid": "1214556",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Add \"open in new tab\" context menu entry for links"
+  },
+  {
+   "bugid": "1594988",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "UI sub nodes in Watch expressions should not be editable"
+  },
+  {
+   "bugid": "1597946",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Browser debugger goes blank"
+  },
+  {
+   "bugid": "1599405",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Fix scrolling at narrow widths in the Rules View"
+  },
+  {
+   "bugid": "1580431",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Start time, end time of request"
+  },
+  {
+   "bugid": "1594810",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Remove DevTools support for IndexedDB \"persistent\" storage"
+  },
+  {
+   "bugid": "1597698",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "move all megabar related prefs (stripHttps, searchIcon, ...) prefs under a common branch"
+  },
+  {
+   "bugid": "1599123",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rename instances of \"search icon\" to \"search button\""
+  },
+  {
+   "bugid": "1597985",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Windows mime info gathering from the OS should prioritize file extensions over mimetypes when looking up handler information"
+  },
+  {
+   "bugid": "1496380",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Firefox opens multiple tabs if set as default mail client"
+  },
+  {
+   "bugid": "1599277",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Fix documentation location for uriloader and helper app service"
+  },
+  {
+   "bugid": "1596709",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Toggling titlebar no longer shows/hides it for existing windows"
+  },
+  {
+   "bugid": "1594035",
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "The \"unenroll\" telemetry events are no longer registered in about:telemetry if a client unenrolls after updating the browser to an incremented version"
+  },
+  {
+   "bugid": "1598435",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.4.152"
+  },
+  {
+   "bugid": "1599283",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "\"Your browser is being managed by your organization\" info icon is not vertically centered"
+  },
+  {
+   "bugid": "1599172",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Reload the search service when modern config preference changes"
+  },
+  {
+   "bugid": "1591751",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Firefox Snap doesn't respect or use the SNAP Theming API"
+  },
+  {
+   "bugid": "1598273",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox build system failed when configure for 'mips64el-unknown-linux-gnu'"
+  },
+  {
+   "bugid": "1590745",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[mozbuild] Make the $PYTHON3 build var use a venv instead of a raw python binary"
+  },
+  {
+   "bugid": "1598417",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update six to 1.13.0"
+  },
+  {
+   "bugid": "1599372",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Integrate web-platform doc into https://firefox-source-docs.mozilla.org/"
+  },
+  {
+   "bugid": "1599397",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Improve the contribution tutorial + add new job doc"
+  },
+  {
+   "bugid": "1598963",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Improve markdown support"
+  },
+  {
+   "bugid": "1519636",
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Reformat recent changes to the Google coding style"
+  },
+  {
+   "bugid": "1596911",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Activate the license lint on more extensions"
+  },
+  {
+   "bugid": "1598971",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Enable codespell on more directories"
+  },
+  {
+   "bugid": "1599578",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Add API stub for Managing extensions."
+  },
+  {
+   "bugid": "1599452",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Javadoc naming is incorrect on website"
+  },
+  {
+   "bugid": "1590354",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent Android Automation Error: No crash directory (/sdcard/tests/profile/minidumps) found on remote device"
+  },
+  {
+   "bugid": "1598436",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Bouncer",
+   "summary": "automate check_bouncer.py in taskcluster cron"
+  },
+  {
+   "bugid": "1598901",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "[RTL] Toggle icon looks off when enabled"
+  },
+  {
+   "bugid": "1599511",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "[RTL] Mirror the card theme images"
+  },
+  {
+   "bugid": "1403893",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "toolkit crashreport mips"
+  },
+  {
+   "bugid": "1599449",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add bug 1371390 to the breakpad patches we apply locally to prevent updates from clobbering it"
+  },
+  {
+   "bugid": "1583925",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Remove XUL grid from toolkit/components/prompts/content/commonDialog.xul"
+  },
+  {
+   "bugid": "1579581",
+   "status": "NEW",
+   "component": "Toolkit:Telemetry",
+   "summary": "Gather remaining CPU and OS info in telemetry environment off-main-thread and later on startup."
+  },
+  {
+   "bugid": "1593635",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Expose TLS min/max versions in browser-settings"
+  },
+  {
+   "bugid": "1599406",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Permafailing browser/components/extensions/test/browser/browser_ext_urlbar.js | Test timed out - when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1599205",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "ExtensionPreferencesManager API captiveURL created but addSetting was not called."
+  }
+ ],
+ "date": "2019-11-27",
+ "cset": "440eac58d324fd982a89a21c25a6c9d2a9c8ccf6",
+ "buildid": "20191127114233",
+ "fixed": 82,
+ "total": 95,
+ "restricted": null
+}

@@ -1,0 +1,556 @@
+{
+ "bugs": [
+  {
+   "bugid": "1642749",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Reduce the iterations on the attr-selector-1.html perf test"
+  },
+  {
+   "bugid": "1626532",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Make `dom/animation` buildable outside of `unified-build` environment"
+  },
+  {
+   "bugid": "1583247",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Tab crashes don't allow Ubuntu users to submit tab crash reports"
+  },
+  {
+   "bugid": "1643156",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Cleanup nsMultiplexInputStream"
+  },
+  {
+   "bugid": "1642595",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add more wpt tests for EventSource lastEventId"
+  },
+  {
+   "bugid": "1643051",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ mozilla::dom::ClientSource::WindowExecutionReady]"
+  },
+  {
+   "bugid": "1643075",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused message manager usage from browser_test_performance_metrics.js"
+  },
+  {
+   "bugid": "1643488",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove unused DocShell::mFullscreenAllowed."
+  },
+  {
+   "bugid": "1634252",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Named popup window is opened in duplicate when open it from file: protocol"
+  },
+  {
+   "bugid": "1638248",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "EventSource lastEventId is not consistent with spec"
+  },
+  {
+   "bugid": "1642980",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Perma /html/cross-origin-opener-policy/coep.https.html | Bonus: window.crossOriginIsolated - assert_true: expected true got false when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1592776",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Notifications",
+   "summary": "Fix dom/notification/test/mochitest/test_notification_tag.html for fission"
+  },
+  {
+   "bugid": "1635709",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Clean up code around `nsFrameSelection::HandleDrag`"
+  },
+  {
+   "bugid": "1642677",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "profiler_pause doesn't pause the android sampler"
+  },
+  {
+   "bugid": "1633937",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add Windows OS Build info to about:support"
+  },
+  {
+   "bugid": "1643143",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "PlanarYCbCrImage doc comment values are inconsistent between text and diagram"
+  },
+  {
+   "bugid": "1643348",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow gen7.5 gt2/3 on early beta."
+  },
+  {
+   "bugid": "1631593",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Make Localization.jsm stateless"
+  },
+  {
+   "bugid": "1642503",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix the name and type gdb uses to catch wasm's SIGSEGV handler"
+  },
+  {
+   "bugid": "1642493",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Irregexp: Tidy up loose ends"
+  },
+  {
+   "bugid": "1642332",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[MIPS] Number.NaN returns 0 on MIPS"
+  },
+  {
+   "bugid": "1639612",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Factor *Scope::Data structures into GC, Non-GC, and NamesList components."
+  },
+  {
+   "bugid": "1643273",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Disable consistency check for opcodes, in SM non-unified job"
+  },
+  {
+   "bugid": "1640587",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.pow in CacheIR and Warp"
+  },
+  {
+   "bugid": "1642067",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Performance regression in calculating fractals, influenced by try-catch block"
+  },
+  {
+   "bugid": "1643082",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize String.fromCharCode in CacheIR and Warp"
+  },
+  {
+   "bugid": "1642610",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.random in CacheIR and Warp"
+  },
+  {
+   "bugid": "1643455",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile Load(Double|BigInt)Result"
+  },
+  {
+   "bugid": "1643283",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Don't optimize certain cross-realm natives in CacheIR"
+  },
+  {
+   "bugid": "1643393",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Profiler associates JS_IteratorCompartment and related functions with the GC"
+  },
+  {
+   "bugid": "1639178",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Add missing argument to intl_ValidateAndCanonicalizeUnicodeExtensionType call in InitializeDisplayNames"
+  },
+  {
+   "bugid": "1642962",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Add toStringTag to Intl prototypes referring to the constructor name"
+  },
+  {
+   "bugid": "1643279",
+   "status": "VERIFIED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "<select size=\"1\"> does not show dropdown arrow"
+  },
+  {
+   "bugid": "1641139",
+   "status": "NEW",
+   "component": "Core:Layout: Ruby",
+   "summary": "Absolutely-positioned element in <ruby> is not shown"
+  },
+  {
+   "bugid": "1642869",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "layout/generic/test/test_page_scroll_with_fixed_pos.html fails with apz.allow_zooming = true"
+  },
+  {
+   "bugid": "1640816",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "The Arial Black font will fallback to Bahnschrift"
+  },
+  {
+   "bugid": "1630935",
+   "status": "REOPENED",
+   "component": "Core:MathML",
+   "summary": "Add use counter and deprecation warning for STIXGeneral fonts"
+  },
+  {
+   "bugid": "1641496",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "[socket process] Investigate disabled xpcshell tests"
+  },
+  {
+   "bugid": "1637512",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Loss of network connections when IPv6 and DoH enabled"
+  },
+  {
+   "bugid": "1643264",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Failed ResolveWithTRR requests should not be retried to get the TTL"
+  },
+  {
+   "bugid": "1643381",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Inline the contents of BrowserChild::ProcessUpdateFrame"
+  },
+  {
+   "bugid": "1641733",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Re-engineer the reftest harness to initiate printing via the parent process"
+  },
+  {
+   "bugid": "1643418",
+   "status": "VERIFIED",
+   "component": "Core:Printing: Setup",
+   "summary": "[macOS] Selected range is ignored and Firefox prints all the pages"
+  },
+  {
+   "bugid": "1628653",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[DynamicFirstPartyIsolation] Add test cases for the redirect-heuristic"
+  },
+  {
+   "bugid": "1640135",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Consider using separate attribute to store first-party domain for dFPI"
+  },
+  {
+   "bugid": "1638389",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Crash in [@ nsGlobalWindowInner::ObserveStorageNotification]"
+  },
+  {
+   "bugid": "1642006",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add non-tracker requirement to dFPI interaction heuristic"
+  },
+  {
+   "bugid": "1643169",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "media/mtransport/third_party/nICEr/src/stun/addrs-bsd.c:43:18: error: subscripted value is not an array, pointer, or vector"
+  },
+  {
+   "bugid": "1641600",
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Re-enable RTX with pref that disables it for broken sites"
+  },
+  {
+   "bugid": "1639398",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "VRManager allocated in every process even though it can't be accessed"
+  },
+  {
+   "bugid": "1643149",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Firefox hangs when a second window is opened (with software rendering)"
+  },
+  {
+   "bugid": "1641033",
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Wayland vsync implementation has unnecessary threading"
+  },
+  {
+   "bugid": "1610134",
+   "status": "REOPENED",
+   "component": "Core:XPCOM",
+   "summary": "Investigate impact of reducing nsTerminator's crash timeout"
+  },
+  {
+   "bugid": "1641866",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "XUL prototype cache preference ( `nglayout.debug.disable_xul_cache`) is not updated correctly if deleted at runtime"
+  },
+  {
+   "bugid": "1598076",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Make the accessibility audit is Fission-ready"
+  },
+  {
+   "bugid": "1642811",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Rename UI references of \"blackbox\" to \"ignore\" in Debugger"
+  },
+  {
+   "bugid": "1581708",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Inline preview for exceptions"
+  },
+  {
+   "bugid": "1642371",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The SourceMapURLService should use actor ID as often as possible"
+  },
+  {
+   "bugid": "1642470",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Devtools should use LoadInfo.browsingContextID.top.id instead of LoadInfo.topOuterWindowID when matching requests in network-observer"
+  },
+  {
+   "bugid": "1636418",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Rename WebSockets codebase to Messages"
+  },
+  {
+   "bugid": "1638118",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Opening Responsive Design Mode while Zoomed resets Zoom to 100%, but doesn't update URL Bar Zoom chiclet"
+  },
+  {
+   "bugid": "1628325",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Handle session restore (\"zombie\") tabs when connecting to remote Firefox Desktop"
+  },
+  {
+   "bugid": "1638420",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "about:debugging tab list no longer shows tab titles for Firefox Preview"
+  },
+  {
+   "bugid": "1643154",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Migrate browser.urlbar.openViewOnFocus to browser.urlbar.suggest.topsites"
+  },
+  {
+   "bugid": "1628948",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URL bar results won't close when clicking empty toolbar space reserved for window dragging"
+  },
+  {
+   "bugid": "1466512",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Policies: Make Master Password mandatory"
+  },
+  {
+   "bugid": "1642688",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Move `canCloseWindow` out of BrowserUtils.jsm, since it has only one caller and isn't Fission-compatible"
+  },
+  {
+   "bugid": "1642880",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Test names in mochitest.sh are incorrect"
+  },
+  {
+   "bugid": "1640136",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "JSON dump not found when using preview collection"
+  },
+  {
+   "bugid": "1641939",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Signature failed when updating whilst application is running"
+  },
+  {
+   "bugid": "1643465",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "browser/base/content/test/about/browser_aboutCertError.js has high level of intermittents"
+  },
+  {
+   "bugid": "1642723",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Pref-off automatic TRR-selection by default e.g. so it can be controlled by Normandy"
+  },
+  {
+   "bugid": "1640709",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "TRR auto-selection should be rollback-able"
+  },
+  {
+   "bugid": "1641335",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove framescripts and message manager usage from browser_tabfocus.js test"
+  },
+  {
+   "bugid": "1643370",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Add POP!_OS to supported debian distros"
+  },
+  {
+   "bugid": "1643158",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "`six` module imported by bootstrap.py not part of the python standard library"
+  },
+  {
+   "bugid": "1642658",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Android SDK/NDK root should replace file separator with '/'"
+  },
+  {
+   "bugid": "1642630",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Built-in French Hunspell spellchecker is missing"
+  },
+  {
+   "bugid": "1641806",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "configure does not check for libclang 5"
+  },
+  {
+   "bugid": "1643295",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Firefox doc - add a favicon"
+  },
+  {
+   "bugid": "1643347",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[-Werror,-Wuninitialized-const-reference] on ContentPrincipal.cpp"
+  },
+  {
+   "bugid": "1639406",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Automated review] Reviewbot generated patch is missing a leading slash in the name of the file"
+  },
+  {
+   "bugid": "1643452",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use median value in writeruntimes"
+  },
+  {
+   "bugid": "1641948",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "remove android opt builds from non-mozilla-central branches; reduce frequency of fat-aar builds"
+  },
+  {
+   "bugid": "1642713",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "allow diff-artifact tasks to be optimized by push interval"
+  },
+  {
+   "bugid": "1637544",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable sccache on instrumented builds"
+  },
+  {
+   "bugid": "1633866",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Dynamically select which tests run during taskgraph generation"
+  },
+  {
+   "bugid": "1642323",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Make alert.js obey prefers-reduced-motion"
+  },
+  {
+   "bugid": "1642166",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Vertically align the Reader control hover labels"
+  },
+  {
+   "bugid": "1642956",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Rename extension.whiteListedHosts to allowedHosts"
+  },
+  {
+   "bugid": "1634615",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Flip the preference to enable the new browser.storage.sync implementation"
+  }
+ ],
+ "date": "2020-06-05",
+ "cset": "fecffba489bd447d60c2930f9d55ef834b1b20da",
+ "buildid": "20200605043926",
+ "fixed": 77,
+ "total": 91,
+ "restricted": 3
+}

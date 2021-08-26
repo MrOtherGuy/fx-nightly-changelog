@@ -1,0 +1,622 @@
+{
+ "bugs": [
+  {
+   "bugid": "1634170",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Playing DRM Video on Android breaks non-DRM video sites."
+  },
+  {
+   "bugid": "1633904",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "add tag 'mediacontrol' for related test configs."
+  },
+  {
+   "bugid": "1628041",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Use fill length rather than index to indicate a repeat(auto) in subgrid from Servo"
+  },
+  {
+   "bugid": "1632794",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Bare bones about:processes"
+  },
+  {
+   "bugid": "1633839",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Don't try to fall back to nsIWindowCreator in the content process"
+  },
+  {
+   "bugid": "1635733",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/html/reftests/autofocus/<select-create.html/select-load.html> == dom/html/reftests/autofocus/select-ref.html | image comparison, max difference: 10, number of differing pixels: 5"
+  },
+  {
+   "bugid": "1633797",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Perma Late beta TEST-UNEXPECTED-FAIL | editor/libeditor/tests/test_bug1425997.html | uncaught exception - NS_ERRO R_FAILURE: at @http://mochi.test:8888/tests/editor/libeditor/tests/test_bug1425997.html:49:12 when Gecko 77 merges to Beta on 2020-05-04"
+  },
+  {
+   "bugid": "1633820",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Streamline uses of LoadContext now that BrowsingContext implements the interface"
+  },
+  {
+   "bugid": "1623383",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Cleanup URIFixup.jsm"
+  },
+  {
+   "bugid": "1629882",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "COEP requires a secure context"
+  },
+  {
+   "bugid": "1632160",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove GetAllowMixedContentAndConnectionData from nsIDocShell and expose similar functionality on BrowsingContext"
+  },
+  {
+   "bugid": "1635011",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "resistFingerprinting: Bump spoofed OS versions to macOS 10.15 and Android 9"
+  },
+  {
+   "bugid": "1634569",
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "window.open() windows created from a mousedown handler immediately lose focus"
+  },
+  {
+   "bugid": "1634205",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Support Gecko Profiler on FreeBSD"
+  },
+  {
+   "bugid": "1635338",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Native Allocations create a recursive ProfileChunkedBuffer call"
+  },
+  {
+   "bugid": "1635809",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix github-sync to properly sync file deletions"
+  },
+  {
+   "bugid": "1635142",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update sync-to-github script for upcoming Github API deprecation"
+  },
+  {
+   "bugid": "1635710",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "end gfx/tests/gtest/TestVsync.cpp by leaving vsync disabled"
+  },
+  {
+   "bugid": "1633628",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender causes driver resets on gen6 on startup"
+  },
+  {
+   "bugid": "1635807",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rollout WebRender to Intel apollolake and geminilake."
+  },
+  {
+   "bugid": "1635472",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move the display port in larger increments when webrender is enabled"
+  },
+  {
+   "bugid": "1504168",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "mozIntl seems to create a new class whenever requesting an Intl constructor"
+  },
+  {
+   "bugid": "1635635",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use ScriptThingsVector for FunctionCreationData"
+  },
+  {
+   "bugid": "1635432",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create FunctionBox without a FunctionCreationData"
+  },
+  {
+   "bugid": "1634135",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable new regexp engine in Nightly"
+  },
+  {
+   "bugid": "1631123",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Correct SourceExtent diagram"
+  },
+  {
+   "bugid": "1628761",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Document expectation for lineno and column of SourceExtent"
+  },
+  {
+   "bugid": "1635505",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change signature of `isNamedLambda` on FunctionFlags to take a boolean argument intead of a JSAtom-pointer"
+  },
+  {
+   "bugid": "1635395",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JSOp::CheckIsCallable"
+  },
+  {
+   "bugid": "1536699",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Enable TypedArray JIT optimizations for Big(U)Int64Array"
+  },
+  {
+   "bugid": "1635589",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile more double operations"
+  },
+  {
+   "bugid": "1635431",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add MDefinition::definitelyType"
+  },
+  {
+   "bugid": "1635375",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Improve WarpBuilder IC logic"
+  },
+  {
+   "bugid": "1635692",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Store the cell's trace kind in the nursery cell header"
+  },
+  {
+   "bugid": "1635087",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Experiment with storing a header before all cells in the nursery"
+  },
+  {
+   "bugid": "1633176",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Enable incremental weakmap marking by default"
+  },
+  {
+   "bugid": "1628321",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Ship multi-value"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1635941",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Drop debug printf in DOMIntersectionObserver.cpp"
+  },
+  {
+   "bugid": "1635822",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Crash in [@ mozilla::ViewportUtils::GetVisualToLayoutTransform<T>]"
+  },
+  {
+   "bugid": "1311444",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Text input with author styles (e.g. border) lacks focus indicator (non-natively styled inputs don't have outline by default)"
+  },
+  {
+   "bugid": "1629575",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Grid",
+   "summary": "InvalidArrayIndex_CRASH @ nsGridContainerFrame::LineNameMap::GetLineNamesAt"
+  },
+  {
+   "bugid": "1365806",
+   "status": "NEW",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "empty element has an offsetheight if given overflow-y:scroll, unlike other browsers"
+  },
+  {
+   "bugid": "1505500",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "SPDY_REQUEST_PER_CONN data is misleading"
+  },
+  {
+   "bugid": "1625249",
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Hit-testing produces incorrect result with SVG over iframe element"
+  },
+  {
+   "bugid": "1627010",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "User can zoom out further than initial zoom"
+  },
+  {
+   "bugid": "1631676",
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable dfpi when privacy.firstparty.isolate=true"
+  },
+  {
+   "bugid": "1635047",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Incorrect classification of Curve25519 KEA in telemetry"
+  },
+  {
+   "bugid": "1630038",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "remove HPKP (http public key pinning) entirely (not built-in pins)"
+  },
+  {
+   "bugid": "1632583",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Intermittent <test-name>  | application crashed [@ NS_DebugBreak(unsigned int, char const*, char const*, char const*, int)] | ASSERTION: Could not register taskbar button creation message: 'sTaskbarButtonCreatedMsg'"
+  },
+  {
+   "bugid": "1347710",
+   "status": "REOPENED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable sandbox protections for the Windows GPU process"
+  },
+  {
+   "bugid": "1623278",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Prototype reduction of raw pointer usage"
+  },
+  {
+   "bugid": "1634145",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "nr_ice_socket can be leaked on some types of error"
+  },
+  {
+   "bugid": "1628730",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "webrtc/simulcast/basic.https.html wpt fails because SDPUtils is not being pulled in"
+  },
+  {
+   "bugid": "1635990",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "TEST-UNEXPECTED-FAIL | valgrind-test | 29 bytes in 1 blocks are definitely lost at malloc / g_malloc / g_strdup / value_lcopy_string"
+  },
+  {
+   "bugid": "1635757",
+   "status": "NEW",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Dragging and dropping tab outside application windows does not create new window for tab sometimes"
+  },
+  {
+   "bugid": "1400317",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsUXThemeData uses win32k APIs in content process"
+  },
+  {
+   "bugid": "1635229",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "output relative-ish paths in XPIDL-generated files"
+  },
+  {
+   "bugid": "1626570",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Cannot declare nsTArray<IncompleteType> anymore / nsTArray should not be copyable in most contexts"
+  },
+  {
+   "bugid": "1635634",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Do not check root document when calculating accessibility relations."
+  },
+  {
+   "bugid": "1602075",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Switch to lazily turning a11y services on/off when using accessibility panel."
+  },
+  {
+   "bugid": "1598026",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Make the accessibility tree Fission-ready"
+  },
+  {
+   "bugid": "1635645",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Simulation reducer swallows a lot of errors that are unrelated to it."
+  },
+  {
+   "bugid": "1635646",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Make fetch children action error less verbose."
+  },
+  {
+   "bugid": "1551574",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Disable and remove accessibility panel \"beta\" code in release 69"
+  },
+  {
+   "bugid": "1635632",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Check if node exists when trying to select/inspect it's accessible object."
+  },
+  {
+   "bugid": "1635641",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "When retrieving accessibility document, it sometimes does not exist yet when checking if it's stale."
+  },
+  {
+   "bugid": "1633422",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Enable Application panel on DevEdition"
+  },
+  {
+   "bugid": "1621551",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "DevTools collapses spaces in debugger value display"
+  },
+  {
+   "bugid": "1610562",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Update inspect browser context functionality to take into account a potential list of remote targets."
+  },
+  {
+   "bugid": "1631728",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Removing a remote frame in the content document should remove it from the context selector menu"
+  },
+  {
+   "bugid": "1620098",
+   "status": "ASSIGNED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Can't access all items in drop down list of device sizes"
+  },
+  {
+   "bugid": "1635823",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Telemetry",
+   "summary": "Crash in [@ nvd3d9wrap.dll | SharedLibraryInfo::GetInfoForSelf]"
+  },
+  {
+   "bugid": "1635419",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Make saved-to-library animations obey prefers-reduced-motion"
+  },
+  {
+   "bugid": "1633790",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Firefox opens infinite tabs when set as the OS default file handler for PDFs"
+  },
+  {
+   "bugid": "1624868",
+   "status": "REOPENED",
+   "component": "Firefox:General",
+   "summary": "Perma linux ccov TEST-UNEXPECTED-TIMEOUT | automation.py | application timed out after 370 seconds with no output  [browser/base/content/test/performance/io]"
+  },
+  {
+   "bugid": "1633365",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "TypeError: WeakMap key must be an object, got permanentKey"
+  },
+  {
+   "bugid": "1627538",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Create Region.jsm"
+  },
+  {
+   "bugid": "1633374",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "On Nightly, disable eval() in the parent process"
+  },
+  {
+   "bugid": "1634093",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Intermittent services/sync/tests/unit/test_telemetry.js | test_deletion_request_ping - [test_deletion_request_ping : 265] A promise chain failed to handle a rejection: Error(s) encountered during statement execution: database mirror is locked"
+  },
+  {
+   "bugid": "1625696",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Intermittent autowinchecksec.py | Winchecksec returned error code -11:"
+  },
+  {
+   "bugid": "1636003",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "TEST-UNEXPECTED-FAIL | valgrind-test | 128 bytes in 1 blocks are definitely lost at malloc / FcGetPrgname / FcConfigSubstituteWithPat / gfxFcPlatformFontList::FindGenericFamilie"
+  },
+  {
+   "bugid": "1634204",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Investigate upgrading runtime requirements on Linux"
+  },
+  {
+   "bugid": "1635585",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Delete python2.ini and run compilation/test_warnings.py under Python 3"
+  },
+  {
+   "bugid": "1634864",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "xpidl.xpidl.IDLError: error: Unexpected parameter attribute"
+  },
+  {
+   "bugid": "1635664",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "ensure_android_packages hides important output in case or error"
+  },
+  {
+   "bugid": "1635671",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "error[E0428]: the name `U1024` is defined multiple times"
+  },
+  {
+   "bugid": "1635803",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "error: exception specification in declaration does not match previous declaration malloc|calloc|realloc on Fedroa 32"
+  },
+  {
+   "bugid": "1635795",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "clang-tidy and coverity based static-analysis fail"
+  },
+  {
+   "bugid": "1629425",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "DocumentLoadListener.cpp: redundant return statement at the end of a function with a void return type"
+  },
+  {
+   "bugid": "1635732",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch web platform tests from packet.net to AWS"
+  },
+  {
+   "bugid": "1624649",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch android emulator to be pulled via toolchain instead of tooltool"
+  },
+  {
+   "bugid": "1635695",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [taskcluster:error] exit status 101 | error: failed to get `goblin` as a dependency of package"
+  },
+  {
+   "bugid": "1634545",
+   "status": "RESOLVED",
+   "component": "GeckoView:GeckoViewExample",
+   "summary": "Tracking Protection setting in GVE controls the wrong thing"
+  },
+  {
+   "bugid": "1635914",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "browser.docShellIsActive is false by default"
+  },
+  {
+   "bugid": "1623631",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Snap",
+   "summary": "Don't bundle mimeapps.list in snap"
+  },
+  {
+   "bugid": "1631089",
+   "status": "REOPENED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Perma TEST-UNEXPECTED-FAIL Firefox Browser Page ElementHandle.screenshot should take into account padding and border"
+  },
+  {
+   "bugid": "1619145",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add missing locale to app.update.url.* in firefox-branding.js"
+  },
+  {
+   "bugid": "1635569",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Properly set flags on dlls opened and mapped for prefetching"
+  },
+  {
+   "bugid": "1632162",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement the event metric type for Project FOG"
+  },
+  {
+   "bugid": "1635637",
+   "status": "VERIFIED",
+   "component": "WebExtensions:Compatibility",
+   "summary": "[Urgent] Our Firefox extension, Amazon Assistant (official Amazon.com extension), is broken for customers after the Version 76 release."
+  },
+  {
+   "bugid": "1635688",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Don't expose wipe_all to mozIExtensionStorageArea"
+  }
+ ],
+ "date": "2020-05-07",
+ "cset": "52cf30bf74473e78c0baf8c4d6055910f67a0a37",
+ "buildid": "20200507085231",
+ "fixed": 80,
+ "total": 102,
+ "restricted": 1
+}

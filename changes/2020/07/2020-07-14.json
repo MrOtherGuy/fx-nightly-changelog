@@ -1,0 +1,604 @@
+{
+ "bugs": [
+  {
+   "bugid": "1265275",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[Presentation WebAPI] Remove \"using namespace\" from dom/presentation cpp files"
+  },
+  {
+   "bugid": "1644466",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Convert dom.storage.next_gen from a VarCache pref to something else"
+  },
+  {
+   "bugid": "1649980",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` and `WSRunObject` stop taking DOM points at construction"
+  },
+  {
+   "bugid": "1652397",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ nsFrameLoader::GetExtantBrowsingContext]"
+  },
+  {
+   "bugid": "1650562",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ mozilla::dom::BrowsingContext::GetParent]"
+  },
+  {
+   "bugid": "1644140",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove nsDocShell::AddChildSHEntryInternal and make some session history code in nsDocShell work with fission"
+  },
+  {
+   "bugid": "1633710",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Replace nsIPrincipal.uri functions with new Principal counterparts in js"
+  },
+  {
+   "bugid": "1652351",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "IsHTMLDocument check in FeaturePolicy looks wrong."
+  },
+  {
+   "bugid": "1649121",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Fortify code for copy&paste"
+  },
+  {
+   "bugid": "1615164",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent dom/serviceworkers/test/test_abrupt_completion.html | Correct message handler - got \"handler-after-throw\", expected \"handler-before-throw\""
+  },
+  {
+   "bugid": "1640606",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Throw while de-serializing instead of serializing if message contains a shared memory object"
+  },
+  {
+   "bugid": "1651597",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[TSF][ChangJie] IME candidate list not showing when inputting on webpage"
+  },
+  {
+   "bugid": "1650462",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "role=\"tree\" should not include child treeitems in name when expanded"
+  },
+  {
+   "bugid": "1651086",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash in [@ locked_register_thread]"
+  },
+  {
+   "bugid": "1650981",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Do not send TIME_TO_FIRST_INTERACTION_MS from cross process iframes"
+  },
+  {
+   "bugid": "1652406",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in [@ gfxUserFontSet::UserFontCache::Entry::KeyEquals]"
+  },
+  {
+   "bugid": "1652124",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Elaborate FEATURE_FAILURE_UNKNOWN_DEVICE_VENDOR."
+  },
+  {
+   "bugid": "1651910",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Pre-cleanup for partial pre-render on WebRender"
+  },
+  {
+   "bugid": "1652597",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Stability issues with RenderCompositorNativeSWGL"
+  },
+  {
+   "bugid": "1652376",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Reduce size of interning handles"
+  },
+  {
+   "bugid": "1640960",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Stop using instancing in WebRender"
+  },
+  {
+   "bugid": "1651977",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "add MOZ_NO_VALIDATE to IPC Tainting macros"
+  },
+  {
+   "bugid": "1635572",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Remove FakeShmOpen when minimum MacOS version is 10.12"
+  },
+  {
+   "bugid": "1651512",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: key->isKind(ParseNodeKind::StringExpr) || key->isKind(ParseNodeKind::NumberExpr) || key->isKind(ParseNodeKind::BigIntExpr), at builtin/ReflectParse.cpp:3180"
+  },
+  {
+   "bugid": "1651750",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove ParserAtomId and ParserNameId, replace with pointers-to-parser-atoms."
+  },
+  {
+   "bugid": "1652153",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at vm/Interpreter.cpp:487 with OOM"
+  },
+  {
+   "bugid": "1651944",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ParseTaskVector should store UniquePtr"
+  },
+  {
+   "bugid": "1614041",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow parsing modules using stencils rather than GC objects."
+  },
+  {
+   "bugid": "1652176",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change parser code to use `parserNames()` alias for `cx->names()`, in preparation for ParserAtoms landing"
+  },
+  {
+   "bugid": "1651709",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Miscellaneous bugfixes in disabled ParserAtom code"
+  },
+  {
+   "bugid": "1646378",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Trial Inlining Prototype"
+  },
+  {
+   "bugid": "1651000",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CacheIR.cpp: Wrong null check in jit::NewWrapperWithObjectShape()"
+  },
+  {
+   "bugid": "1652425",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: lock_.ownedByCurrentThread(), at gc/StoreBuffer.h:397"
+  },
+  {
+   "bugid": "1640844",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate nursery performance in the ARES-6 benchmark"
+  },
+  {
+   "bugid": "1652447",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Remove IsAboutToBeFinalizedDuringSweep"
+  },
+  {
+   "bugid": "1652188",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Return struct from nsILineIterator::GetLine()"
+  },
+  {
+   "bugid": "1652228",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma layout/style/test/test_flexbox_reflow_counts.html | bug in test; 'childToPreserve' should be child of 'parent' when Gecko 80 switches to late beta on 2020-08-07"
+  },
+  {
+   "bugid": "1650703",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Select dropdown doesn't zoom correctly based on text zoom"
+  },
+  {
+   "bugid": "1644896",
+   "status": "ASSIGNED",
+   "component": "Core:Permission Manager",
+   "summary": "PermissionManager is never shut down/destroyed; leaks a thread"
+  },
+  {
+   "bugid": "1652209",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Clean up 'virtual' annotations in print-related frame classes"
+  },
+  {
+   "bugid": "1652205",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Fix obsolete mentions of \"simple page sequence frame\" in printing frame classes"
+  },
+  {
+   "bugid": "1652368",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Clean up nsDocumentViewer::Print"
+  },
+  {
+   "bugid": "1650886",
+   "status": "ASSIGNED",
+   "component": "Core:Printing: Setup",
+   "summary": "Add available paper size information to nsIPrinter interface"
+  },
+  {
+   "bugid": "1652275",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Workers cause crash inside cross-origin iframe"
+  },
+  {
+   "bugid": "1652254",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove svg from some moz.build local includes"
+  },
+  {
+   "bugid": "1652430",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Fix some clang warnings in SVG"
+  },
+  {
+   "bugid": "1650751",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ __fcntl64_nocancel_adjusted]"
+  },
+  {
+   "bugid": "1651701",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Sandbox is incompatible with rseq registration"
+  },
+  {
+   "bugid": "1652409",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Crash in [@ mozilla::dom::indexedDB::(anonymous namespace)::ReadCompressedNumber]"
+  },
+  {
+   "bugid": "1651698",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Display about:webrtc remote and local SDP history in columns"
+  },
+  {
+   "bugid": "1651601",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent Assertion failed: (0), function nr_ice_media_stream_start_checks, file /builds/worker/checkouts/gecko/media/mtransport/third_party/nICEr/src/ice/ice_media_stream.c, line 414."
+  },
+  {
+   "bugid": "1530052",
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "WM class usage inconsistent"
+  },
+  {
+   "bugid": "1635402",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "UX polish: empty pages"
+  },
+  {
+   "bugid": "1643130",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Update disabled-pause button to clearer style"
+  },
+  {
+   "bugid": "1650658",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Can't jump to debugger tab from performance tab in call tree view"
+  },
+  {
+   "bugid": "1625909",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use the ResourceWatcher API to fetch Network Event"
+  },
+  {
+   "bugid": "1478688",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "See if we can stop fetching netmonitor response content from the stylesheet actor"
+  },
+  {
+   "bugid": "1634497",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Remove `browser.outerBrowser` checks once the old RDM is removed"
+  },
+  {
+   "bugid": "1649910",
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Perma [tier2] devtools/client/<test> | A promise chain failed to handle a rejection: Connection closed, pending request to server0.conn14.tabDescriptor1, type getWatcher failed"
+  },
+  {
+   "bugid": "1652040",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make UrlbarProviderOpenTabs instantiable with static methods"
+  },
+  {
+   "bugid": "1652213",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "File | Email Link\u2026 shows none of the mail handlers defined for mailto: when \"Always Ask\" is selected"
+  },
+  {
+   "bugid": "1652136",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Change device.name to device.id logging on desktop"
+  },
+  {
+   "bugid": "1644778",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Add performance metrics for the size of the browser.xhtml main window DOM"
+  },
+  {
+   "bugid": "1651429",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add \"getting started, step 1 of n\" to the \"Welcome To {brand}\" aria-label on multistage about:welcome"
+  },
+  {
+   "bugid": "1651430",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add aria-labels to topsites icons on import screen of multistage about:welcome"
+  },
+  {
+   "bugid": "1650200",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Turn on SPOCs in CA by default"
+  },
+  {
+   "bugid": "1644890",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Turn on newtab stories v2 targeting by default"
+  },
+  {
+   "bugid": "1651807",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "resource:///modules/BrowserGlue.jsm, line 1290: NS_ERROR_FILE_NOT_FOUND on startup in local builds because pdfjs moved"
+  },
+  {
+   "bugid": "1651194",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add a telemetry probe to register if the SearchService initialisation fails."
+  },
+  {
+   "bugid": "1639843",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Add a \"reason\" field to command-received telemetry events"
+  },
+  {
+   "bugid": "1651952",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Ctrl-Tab previews have bogus space on their right"
+  },
+  {
+   "bugid": "1625281",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "RUST_PROGRAMS are not kept up to date in dist/bin"
+  },
+  {
+   "bugid": "1652149",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Run mozwebidlcodegen unit test as part of mozbuild suite"
+  },
+  {
+   "bugid": "1652565",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use fcrash-diagnostics-dir on mingw builds"
+  },
+  {
+   "bugid": "1652158",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "make_dafsa.py: replace usage of tuple-based node representation to new class-based node representation"
+  },
+  {
+   "bugid": "1652173",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "make it easy to run the exact Node/NPM binaries used by the build system"
+  },
+  {
+   "bugid": "1613998",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "'SourceRepository' is missing from application.ini on fuzzing builds"
+  },
+  {
+   "bugid": "1652448",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Rust code continually rebuilds on release builds."
+  },
+  {
+   "bugid": "1652087",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "add dump_syms to bootstrap-installable things on Linux"
+  },
+  {
+   "bugid": "1652089",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "update dump_syms version"
+  },
+  {
+   "bugid": "1652130",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Switch the Mozilla eslint parser to use multi-ini"
+  },
+  {
+   "bugid": "1651867",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Permafailing tier 2 mozlint E: fixture 'root' not found"
+  },
+  {
+   "bugid": "1627766",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add eslint-plugin-html to eslint-plugin-mozilla's package.json"
+  },
+  {
+   "bugid": "1652184",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Report to perherder stats about bugbug timings"
+  },
+  {
+   "bugid": "1652100",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "use job-defaults for macosx builds"
+  },
+  {
+   "bugid": "1652095",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "don't repeatedly look up values when merging dicts"
+  },
+  {
+   "bugid": "1616694",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Use the 10.12 SDK to build clang 11 for Mac"
+  },
+  {
+   "bugid": "1652142",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "add binutils toolchain to {fuzzing-,}ccov builds"
+  },
+  {
+   "bugid": "1652339",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Testing",
+   "summary": "mozdevice pip requirement specifications should specify compatible releases not minimum ones"
+  },
+  {
+   "bugid": "1650897",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "tabs.query failing (returning undefined) in browser action popup"
+  },
+  {
+   "bugid": "1649168",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Automatically run scriptworker tasks on newly deployed versions."
+  },
+  {
+   "bugid": "1646834",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "partials are broken in `mach try scriptworker`"
+  },
+  {
+   "bugid": "1647652",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card entries are not deduped if the same CC number is used with additional fields (manual fill)"
+  },
+  {
+   "bugid": "1652630",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Thunderbird build broken: \"error: redefinition of 'srv' with a different type\""
+  },
+  {
+   "bugid": "1650201",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Investigate if we can fallback to non-exclusive when we fail to get an exclusive lock"
+  },
+  {
+   "bugid": "1652500",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "ExtensionXPCSellUtils ContentPage browser should set CHROME_REMOTE_WINDOW chromeFlag if the extension is remote"
+  },
+  {
+   "bugid": "1651628",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "ExtensionPermissions.jsm uses deprecated FileUtils.getDir (main thread I/O on startup)"
+  },
+  {
+   "bugid": "1587541",
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "Make content scripts work in Fission iframes"
+  },
+  {
+   "bugid": "1651665",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "chrome_settings_overrides permits insecure search providers"
+  }
+ ],
+ "date": "2020-07-14",
+ "cset": "23131da780b50130e3430dbdc7b121bfe896bb3a",
+ "buildid": "20200714083249",
+ "fixed": 84,
+ "total": 99,
+ "restricted": 5
+}

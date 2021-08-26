@@ -1,0 +1,574 @@
+{
+ "bugs": [
+  {
+   "bugid": "1705194",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add `inline` for MediaCache's static members to avoid out-of-class defintion"
+  },
+  {
+   "bugid": "1705267",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Split codes in `MediaCache::Update()` to smaller functions"
+  },
+  {
+   "bugid": "1705877",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Incorrect cursor size when using image-set()"
+  },
+  {
+   "bugid": "1706510",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "WebGLContext::FrontBufferSnapshotInto might ReadPixels from a multisampled mFB"
+  },
+  {
+   "bugid": "1701512",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Add a separate pref for clipboard.read"
+  },
+  {
+   "bugid": "1689835",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "clipboard.write: Sanitize HTML"
+  },
+  {
+   "bugid": "1705660",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove nsIDOMWindowUtils::deprecatedOuterWindowID"
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1706301",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Fix inert-node-is-unselectable.tentative.html"
+  },
+  {
+   "bugid": "1703561",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: rangeToDelete.EndRef().EqualsOrIsBefore( replaceRangeDataAtEnd.EndRef()), at /builds/worker/checkouts/gecko/editor/libeditor/WSRunObject.cpp:1905"
+  },
+  {
+   "bugid": "1704948",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Allow obtaining the mouse button for menuitem clicks from the command event"
+  },
+  {
+   "bugid": "1705489",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "update docshell/test/browser/browser_bug1328501.js to pass on Fission+BFCache"
+  },
+  {
+   "bugid": "1704502",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Create https-first and https-only test setting all combinations of prefs"
+  },
+  {
+   "bugid": "1705340",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Ensure localhost and .onion are handled properly within HTTPS-First Mode"
+  },
+  {
+   "bugid": "1637259",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Consider generating touch event for WM_POINTER* messages"
+  },
+  {
+   "bugid": "1705433",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Box shadows are rendered as triangles on Adreno 3xx"
+  },
+  {
+   "bugid": "1706267",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Roll out webrender to Adreno 3xx"
+  },
+  {
+   "bugid": "1706277",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove blit_workaround_buffer from webrender"
+  },
+  {
+   "bugid": "1706198",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Possible accuracy issue with sw-wr compositing alpha + scaled surfaces + nearest filtering"
+  },
+  {
+   "bugid": "1705363",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Fixes to unified intl NumberFormatterSkeleton implementation"
+  },
+  {
+   "bugid": "1648090",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement Ergonomic brand checks"
+  },
+  {
+   "bugid": "1705762",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ TraverseInnerLazyScriptsForLazyScript]"
+  },
+  {
+   "bugid": "1702278",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Manage Debug Metadata separately from CompileOptions"
+  },
+  {
+   "bugid": "1705197",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove uses of JSID_TO_ATOM in js/src/vm directory"
+  },
+  {
+   "bugid": "1701787",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make NewObject ICs shareable"
+  },
+  {
+   "bugid": "1703105",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Vendor the SIMD spec test suite"
+  },
+  {
+   "bugid": "1691034",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent layout/generic/crashtests/370174-3.html | load failed: timed out waiting for pending paint count to reach zero (waiting for updateCanvasPending)"
+  },
+  {
+   "bugid": "1706200",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Rename childrenInflowBounds to flexItemMarginBoxBounds in nsFlexContainerFrame::Reflow()"
+  },
+  {
+   "bugid": "1704466",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "24.29 - 3.27% yahoo-mail LastVisualChange / bing-search PerceptualSpeedIndex + 5 more (Linux) regression on Fri April 9 2021"
+  },
+  {
+   "bugid": "1706077",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "'opsz' value applied by font-optical-sizing should respect any size-adjust in effect"
+  },
+  {
+   "bugid": "1692592",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "High frequency TEST-UNEXPECTED-TIMEOUT | netwerk/test/unit_ipc/test_trr_httpssvc_wrap.js | Test timed out"
+  },
+  {
+   "bugid": "1669892",
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "High frequency TEST-UNEXPECTED-TIMEOUT | netwerk/test/unit/test_http3.js | Test timed out"
+  },
+  {
+   "bugid": "1703705",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Overscroll gets stuck by pressing Ctrl (Command) during pan (or pan momentum maybe)"
+  },
+  {
+   "bugid": "1705826",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Apply the overscroll effect to fixed content (non-WebRender)"
+  },
+  {
+   "bugid": "1704503",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[Proton] The overscroll effect ignores site fixed headers (with WebRender)"
+  },
+  {
+   "bugid": "1705927",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Do not go into overscroll if prefers-reduced-motion is specified"
+  },
+  {
+   "bugid": "1703437",
+   "status": "NEW",
+   "component": "Core:Performance",
+   "summary": "Frequent mostly win /navigation-timing/nav2_test_redirect_server.html | Navigation Timing 2 WPT - uncaught exception: Error: assert_true: Expected startTime to be no greater than redirectStart. expected true got false"
+  },
+  {
+   "bugid": "1704784",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Use of unknown property Ci.nsIObjectLoadingContent.PLUGIN_*"
+  },
+  {
+   "bugid": "1700051",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Reduce accessbility of `mozInlineSpellStatus`'s members"
+  },
+  {
+   "bugid": "1634684",
+   "status": "NEW",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent leakcheck | default 555944 bytes leaked (AsyncFreeSnowWhite, BackstagePass, BrowsingContext, BrowsingContextGroup, CacheObserver, ...)"
+  },
+  {
+   "bugid": "1689741",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "WebRTC - Automatic Ear Detection freezes realtime (unbuffered) video, confusing users"
+  },
+  {
+   "bugid": "1706409",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Tab-crash allowing camera+microphone with MOZ_LOG=MediaManager:4"
+  },
+  {
+   "bugid": "1706454",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make remaining passwordmgr tests work with native menus"
+  },
+  {
+   "bugid": "1706433",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Native context menus open at the wrong position if layout.css.devPixelsPerPx is overridden"
+  },
+  {
+   "bugid": "1704628",
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make devtools context menu tests work with macOS native context menus"
+  },
+  {
+   "bugid": "1706472",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make activateItem throw an exception if it's called before the menu has opened"
+  },
+  {
+   "bugid": "1706434",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make devtools/client/framework/test/browser_toolbox_zoom_popup.js pass with native context menus"
+  },
+  {
+   "bugid": "1704879",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Add support for specifying a mouse button in XULMenuPopup.activateItem"
+  },
+  {
+   "bugid": "1704883",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "In native context menus, report the mouse button which was used to click the menu item, to support a WebExtension API"
+  },
+  {
+   "bugid": "1705257",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/base/content/test/backforward/browser_history_menu.js work with native context menus"
+  },
+  {
+   "bugid": "1706463",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make misc. devtools/client tests work with native context menus"
+  },
+  {
+   "bugid": "1706389",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Disable context menu parts of accessible/tests/mochitest/events/test_focus_general.html"
+  },
+  {
+   "bugid": "1706022",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Use GdkIsWaylandDisplay()/GdkIsX11Display() instead of gfxPlatformGtk::GetPlatform() variants."
+  },
+  {
+   "bugid": "1418792",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Cannot move window with touch in GNOME"
+  },
+  {
+   "bugid": "1706097",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "AUTO_PROFILER_LABEL_DYNAMIC_NSCSTRING_NONSENSITIVE doesn't record BHR label frames when the profiler is not running"
+  },
+  {
+   "bugid": "1706242",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Rename devtools/shared/commands/target-configuration/tests/doc_media_queries.sjs as it's not only about media queries"
+  },
+  {
+   "bugid": "1693494",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Introduce a command for inspector node search"
+  },
+  {
+   "bugid": "1705753",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Stop using testActor for setStyle/getStyle helpers in  boxmodel test suite"
+  },
+  {
+   "bugid": "1705769",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove get/set/removeAttribute helpers on test-actor"
+  },
+  {
+   "bugid": "1666532",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Add IndexedDB resource"
+  },
+  {
+   "bugid": "1703590",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Proton: Custom theme missing border and search suggestion/oneoffs separator."
+  },
+  {
+   "bugid": "1706112",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The closed Urlbar doesn't have a border when clicking a search tip"
+  },
+  {
+   "bugid": "1706363",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Redirect Search Tips aren't the right color"
+  },
+  {
+   "bugid": "1702298",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Cannot scroll fully expanded bookmarks panel"
+  },
+  {
+   "bugid": "789550",
+   "status": "NEW",
+   "component": "Firefox:File Handling",
+   "summary": "data:image/gif URI `Save Page As` and `Save Image As` do not use the same filename"
+  },
+  {
+   "bugid": "1704373",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Re-enable pre-spawn CIG and automatic injection prevention"
+  },
+  {
+   "bugid": "1704040",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Odd shadow appearance on context menu with DPI set to 200% or above"
+  },
+  {
+   "bugid": "1706489",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow for calculating upgrade dialog funnel by first screen primary action"
+  },
+  {
+   "bugid": "1705882",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Adjust checkbox styling with faded text and top-aligned box"
+  },
+  {
+   "bugid": "1705744",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Remove myshots code from screenshots"
+  },
+  {
+   "bugid": "1682719",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "[meta] Enable eslint on browser/extensions/screenshots"
+  },
+  {
+   "bugid": "1644719",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "Add basic support to display offline support pages when SUMO is unreachable"
+  },
+  {
+   "bugid": "1702797",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Crash in [@ mozilla::dom::sessionstore::FormEntryValue::AssertSanity]"
+  },
+  {
+   "bugid": "1705321",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Refresh the remaining permissions icons"
+  },
+  {
+   "bugid": "1704865",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update the bookmark icon and animation"
+  },
+  {
+   "bugid": "1706325",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Minor updates to the vim docs."
+  },
+  {
+   "bugid": "1507272",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Enable build telemetry by default for Mozilla employees"
+  },
+  {
+   "bugid": "1706253",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "For clang-trunk only trigger it from cron job"
+  },
+  {
+   "bugid": "1696145",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Consider supporting silent flag for web notifications"
+  },
+  {
+   "bugid": "1701168",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Perma [tier2] TEST-UNEXPECTED-TIMEOUT | Launcher specs Puppeteer Puppeteer.connect should be able to reconnect to a disconnected browser (launcher.spec.ts) | expected PASS"
+  },
+  {
+   "bugid": "1635327",
+   "status": "REOPENED",
+   "component": "Taskcluster:Workers",
+   "summary": "Intermittent LeakSanitizer | LeakSanitizer has encountered a fatal error."
+  },
+  {
+   "bugid": "1561538",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Extensions manager empty state displays the \u2018Manage Your Extensions\u2019 title"
+  },
+  {
+   "bugid": "1702116",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Addon Manager has races"
+  },
+  {
+   "bugid": "1705396",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add the `StartupTime` annotation to crashes intercepted via the WER runtime exception module"
+  },
+  {
+   "bugid": "1685402",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support Custom Ping Unit Tests in FOG's JS and C++ languages"
+  },
+  {
+   "bugid": "1685502",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add a timestamp/duration class pair that only ticks when the computer is awake"
+  },
+  {
+   "bugid": "1633701",
+   "status": "NEW",
+   "component": "Toolkit:Themes",
+   "summary": "Checkbox and text for [Prevent this page from creating additional dialogs] are not vertically aligned on MacOS"
+  },
+  {
+   "bugid": "1704975",
+   "status": "ASSIGNED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Perma [tier 2] toolkit/content/tests/chrome/test_arrowpanel.xhtml | anchored on right"
+  },
+  {
+   "bugid": "1701059",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Addon install confirmation panel \"Okay\" button is too wide with Proton enabled"
+  },
+  {
+   "bugid": "1699298",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "crash near null in [@ mozilla::extensions::MatchPattern::Init]"
+  },
+  {
+   "bugid": "1692813",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support container-level isolation of the Proxy API"
+  },
+  {
+   "bugid": "1690736",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support container-level isolation of the WebNavigation API"
+  },
+  {
+   "bugid": "1683058",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support container-level isolation of the tabs API"
+  },
+  {
+   "bugid": "1697764",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Support container-level isolation of the webRequest API"
+  }
+ ],
+ "date": "2021-04-21",
+ "cset": "e99e7e2c43c8ae2b91b85cdec5360811ca11cdd0",
+ "buildid": "20210421095627",
+ "fixed": 75,
+ "total": 94,
+ "restricted": 3
+}

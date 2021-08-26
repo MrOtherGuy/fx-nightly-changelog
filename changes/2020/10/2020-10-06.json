@@ -1,0 +1,508 @@
+{
+ "bugs": [
+  {
+   "bugid": "1666805",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove watermarks in MediaCache"
+  },
+  {
+   "bugid": "1668824",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "On macOS and Windows, prefer ffmpeg to decode mp3s"
+  },
+  {
+   "bugid": "1618529",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Encrypted subsamples with clear ranges near UINT16_MAX can overflow clear ranges during AnnexB conversion"
+  },
+  {
+   "bugid": "1668414",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Saving a wikipedia page is missing images used from the page (because srcset attribute is not scanned/re-written)"
+  },
+  {
+   "bugid": "1669197",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use Element in PointerCaptureInfo"
+  },
+  {
+   "bugid": "1668990",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Perma dom/html/test/forms/test_input_event.html | beforeinput event should've been dispatched on text input element - got +0, expected 1 when Gecko 83 turns into Late Beta on 2020-10-30"
+  },
+  {
+   "bugid": "1669133",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Get rid of a telemetry probe and pref for the legacy `text` event"
+  },
+  {
+   "bugid": "1669183",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[SHIP] Calling pushState while handling the popstate event produces the wrong history.length."
+  },
+  {
+   "bugid": "1669175",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ std::_Func_impl_no_alloc<T>::_Do_call | mozilla::dom::BrowsingContext::PreOrderWalk]"
+  },
+  {
+   "bugid": "1655866",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "beforeunload event is not fired in OOP iframes when reloading documents"
+  },
+  {
+   "bugid": "1669287",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Ensure AddPendingHistoryChange is called even when doing same document navigations in iframes"
+  },
+  {
+   "bugid": "1665252",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Payments",
+   "summary": "allowpaymentrequest attribute on iframe is deprecated"
+  },
+  {
+   "bugid": "1668653",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add support for navigation by heading level with VO"
+  },
+  {
+   "bugid": "1668663",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add support for navigation by blockquote using VO"
+  },
+  {
+   "bugid": "1668655",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add support for navigating by graphic"
+  },
+  {
+   "bugid": "1524625",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "DLL loads should show an I/O marker in profiles with mainthreadio enabled"
+  },
+  {
+   "bugid": "1668808",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add \"JS Helper\" thread to settings UI"
+  },
+  {
+   "bugid": "1667918",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove clipped_world_rect from PrimitiveVisibility"
+  },
+  {
+   "bugid": "1651882",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(called `Option::unwrap()` on a `None` value) at src/third_party/rust/euclid/src/point.rs:393"
+  },
+  {
+   "bugid": "1668237",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "EvalStencilXDR should handle decoding failure properly"
+  },
+  {
+   "bugid": "1666983",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "`SourceExtent.toStringEnd` isn't set to correct value when delazifying class constructor"
+  },
+  {
+   "bugid": "1667697",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "XDRParserAtoms should not transcode tiny or well-known atoms"
+  },
+  {
+   "bugid": "1668763",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove IonInstrumentation and GeckoProfilerInstrumentation"
+  },
+  {
+   "bugid": "1669012",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make MToString hoistable"
+  },
+  {
+   "bugid": "1661256",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Create a jsapi-test test case to collect all CallWithABI signatures."
+  },
+  {
+   "bugid": "1668825",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Refactor public tracing interface to remove details of heap storage"
+  },
+  {
+   "bugid": "1669003",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma [Tier2] js\\src\\jit-test\\tests\\wasm\\memory-partial-oob-store.js | z:\\task_1601721669\\src\\js\\src\\jit-test\\tests\\wasm\\memory-partial-oob-store.js:62:17 Error: Assertion failed: got 33, expected 0 (code 3, args \"\") [0.1 s]"
+  },
+  {
+   "bugid": "1667209",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Crash in [@ mozilla::PresShell::DoFlushPendingNotifications] with MOZ_DIAGNOSTIC_ASSERT(!mDocument->GetPresShell())"
+  },
+  {
+   "bugid": "1662017",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Handle multiple paint-skip scroll updates within a single transaction"
+  },
+  {
+   "bugid": "1668467",
+   "status": "REOPENED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Very Frequent TEST-UNEXPECTED-TIMEOUT | /css/css-font-loading/fontface-override-descriptor-getter-setter.sub.html | Initialize lineGapOverride with a negative percentage should fail - Test timed out"
+  },
+  {
+   "bugid": "1666981",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove or update probes expiring in Firefox 84: REL_PRELOAD_MISS_RATIO"
+  },
+  {
+   "bugid": "1666678",
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "[cookie] rejected cookie when domain have ipv6 address"
+  },
+  {
+   "bugid": "1669203",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "MaybeRenewHostRecord should hold the resolver lock."
+  },
+  {
+   "bugid": "1668721",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Perma Windows mingw /builds/worker/checkouts/gecko/netwerk/dns/TRRService.cpp:26:12: fatal error: 'shlobj_core.h' file not found"
+  },
+  {
+   "bugid": "1667351",
+   "status": "REOPENED",
+   "component": "Core:Networking: HTTP",
+   "summary": "After the cert authentication we do not call neqo's process immediately"
+  },
+  {
+   "bugid": "1668513",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Extend back-pressure telemetry probes"
+  },
+  {
+   "bugid": "1652677",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Use ECH keys from HTTPSSVC records"
+  },
+  {
+   "bugid": "1666774",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Can no longer stop mid-smooth scrolling by clicking"
+  },
+  {
+   "bugid": "1668966",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "only clear PresShell::mResolutionUpdated after the apz transaction"
+  },
+  {
+   "bugid": "1648934",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/as-image/list-simple-1.html == svg/as-image/list-simple-1-ref.html | image comparison, max difference: 8, number of differing pixels: 1"
+  },
+  {
+   "bugid": "1661176",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/as-image/img-simple-3.html == svg/as-image/img-simple-3-ref.html | image comparison, max difference: 255, number of differing pixels: 4042"
+  },
+  {
+   "bugid": "1592866",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/svg-integration/clip-path/clip-path-circle-010.html == svg/svg-integration/clip-path/clip-path-circle-004-ref.html | image comparison, max difference: 70, number of differing pixels: 736"
+  },
+  {
+   "bugid": "1669161",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove dead SVG event code"
+  },
+  {
+   "bugid": "1668895",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Perma dom/indexedDB/ActorsParent.cpp:1239:5: error: bad implicit conversion constructor for 'BorrowedStatement' when Gecko 83 turns into Late Beta on 2020-10-30"
+  },
+  {
+   "bugid": "1566389",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "decodeAudioData doesn't skip information frames in MP3 audio"
+  },
+  {
+   "bugid": "1668862",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add script to extract our local modifications to libwebrtc to apply upstream"
+  },
+  {
+   "bugid": "1668771",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Use timeout for frame callbacks for basic compositor"
+  },
+  {
+   "bugid": "1669092",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "nsWindow.cpp:1604:8: error: variable \u2018hasAnchorRect\u2019 set but not used [-Werror=unused-but-set-variable]"
+  },
+  {
+   "bugid": "1669135",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "collect telemetry on Gtk theme scrollbar button usage"
+  },
+  {
+   "bugid": "1669131",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "size and paint non-native theme scrollbars to emulate native non-overlay Gtk scrollbars"
+  },
+  {
+   "bugid": "1669173",
+   "status": "VERIFIED",
+   "component": "Core:Widget: Gtk",
+   "summary": "When dragging the non-native themed scrollbar it should keep its pressed/focused state"
+  },
+  {
+   "bugid": "1667485",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Crash in [@ shutdownhang | nsThreadManager::SpinEventLoopUntilInternal]"
+  },
+  {
+   "bugid": "1664547",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "ThreadSanitizer: data race [@ mozilla::ScriptPreloader::InvalidateCache] vs. [@ mozilla::ScriptPreloader::Run] on mCacheInvalidated"
+  },
+  {
+   "bugid": "1668916",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Perma tier2 devtools/client/webconsole/test/browser/browser_jsterm_evaluation_context_selector_inspector.js | Test timed out -"
+  },
+  {
+   "bugid": "1620280",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use the ResourceWatcher API to fetch Sources"
+  },
+  {
+   "bugid": "1668615",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove debugger devtools-config package"
+  },
+  {
+   "bugid": "1660973",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Overflow badge hides part of the DOM"
+  },
+  {
+   "bugid": "1669113",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Prevent the markup tree from expanding when a scrollable badge is clicked"
+  },
+  {
+   "bugid": "1664185",
+   "status": "VERIFIED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Persist selected columns for SSE / Websocket Events in the Response panel"
+  },
+  {
+   "bugid": "1667362",
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Style Editor is not showing stylesheets from remote frame when enableServerWatcher=true"
+  },
+  {
+   "bugid": "1668212",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Clearing search mode should also clear one-off selection, if present"
+  },
+  {
+   "bugid": "1668370",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Cycling through local one-offs changes the engine name in keywordoffer results"
+  },
+  {
+   "bugid": "1668982",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma browser_searchMode_preview.js | Found one-off button for search mode - \"undefined\" == true - JS frame :: resource://testing-common/UrlbarTestUtils.jsm :: enterSearchMode :: line 567 when Gecko 83 merges to Beta on 2020-10-19"
+  },
+  {
+   "bugid": "1489259",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Intermittent browser/base/content/test/performance/browser_appmenu.js | reflow at adjustArrowPosition@chrome://global/content/bindings/popup.xml was encountered 5 times,"
+  },
+  {
+   "bugid": "1667381",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement a doorhanger to notify Fission experiment users"
+  },
+  {
+   "bugid": "1668507",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "The old \"Set browser as default\" notification is no longer displayed on Beta and Nightly"
+  },
+  {
+   "bugid": "1668935",
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add UTM codes to on-save recs"
+  },
+  {
+   "bugid": "1666575",
+   "status": "UNCONFIRMED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Searching for terms in large PDFs doesn't find all results"
+  },
+  {
+   "bugid": "1668307",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Two suggestions remain displayed in the Pocket doorhanger when clicking the greyed-out Save button after focusing the tags input field"
+  },
+  {
+   "bugid": "1668838",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "When the global sharing indicator has any tooltip appear and then close, the indicator goes blank"
+  },
+  {
+   "bugid": "1626764",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Sign in to Firefox\" button should not have the label wrap to two lines"
+  },
+  {
+   "bugid": "1667436",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix up docs/setup/mach.rst"
+  },
+  {
+   "bugid": "1668718",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "sitecustomize.py in mach virtualenv import mach_bootstrap which is not available"
+  },
+  {
+   "bugid": "1669170",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "For Coverity static-analysis use clang-10 and not default clang versions"
+  },
+  {
+   "bugid": "1638447",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Drop `build-fuzzing` optimization strategy and use `backstop` instead"
+  },
+  {
+   "bugid": "1639164",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Try",
+   "summary": "\"mach try auto\" should select the best platforms to run manifests on"
+  },
+  {
+   "bugid": "1666497",
+   "status": "ASSIGNED",
+   "component": "Thunderbird:General",
+   "summary": "Fix a couple issues with anchored popups uncovered by bug 1665476."
+  },
+  {
+   "bugid": "1667411",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Perma shippable xpcshell.ini:toolkit/mozapps/extensions/test/xpcshell/test_system_upgrades.js | xpcshell return code: 0. when Gecko 83 merges to Beta on 2020-10-19"
+  },
+  {
+   "bugid": "1660231",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Enable MASTER_PASSWORD_ENABLED probe on release"
+  },
+  {
+   "bugid": "1668641",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Can't switch to preset margins after setting custom margins"
+  },
+  {
+   "bugid": "1668279",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Ensure that changing metrics.yaml cause a rebuild"
+  },
+  {
+   "bugid": "1668884",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Replace -moz-Field/-moz-FieldText with Field/FieldText across the field"
+  },
+  {
+   "bugid": "1653496",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Picture-in-Picture option not shown for VideoHTMLElement with VideoTrack from Twilio"
+  }
+ ],
+ "date": "2020-10-06",
+ "cset": "7ba9ec4d39f320689e4fdb2b42e4a311ae882438",
+ "buildid": "20201006041051",
+ "fixed": 66,
+ "total": 83,
+ "restricted": 1
+}

@@ -1,0 +1,634 @@
+{
+ "bugs": [
+  {
+   "bugid": "1610375",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "crash at null [@ mozilla::WebMContainerParser::ParseStartAndEndTimestamps]"
+  },
+  {
+   "bugid": "1619780",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update audioipc to 7019efc6"
+  },
+  {
+   "bugid": "1619114",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Convert ThrowErrorMessage to using JS_ReportErrorNumberUTF8Array"
+  },
+  {
+   "bugid": "1605085",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Make ClientManagerService::OpenWindow use non-blocking process opening"
+  },
+  {
+   "bugid": "1620613",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fission WebRender info bar appears with Fission enabled even if WebRender is enabled"
+  },
+  {
+   "bugid": "1621313",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "remove stray semicolon in nsINode.cpp"
+  },
+  {
+   "bugid": "1228882",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "\"ASSERTION: element already removed from map\" or heap-buffer-overflow with <bdi>, dir=auto"
+  },
+  {
+   "bugid": "1621218",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix a typo in fullscreen scrollbar test"
+  },
+  {
+   "bugid": "1621203",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Stop using IsEqualNode in focus manager"
+  },
+  {
+   "bugid": "745494",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "\"ASSERTION: Didn't restore state properly?\""
+  },
+  {
+   "bugid": "848644",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Use-after-free caused by us replacing the nsHTMLEditor's edit rules object while running scripts from the flush happening in nsEditor::IsPreformatted triggered by execCommand from web content"
+  },
+  {
+   "bugid": "1620504",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Improve warning under libeditor for making investigation of web-compat and regressions easier"
+  },
+  {
+   "bugid": "1620669",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Separate CONTAINS_REMOTE_SUBFRAMES into its own label in BFCACHE_COMBO telemetry"
+  },
+  {
+   "bugid": "1546759",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Change nsSHistory::WalkHistoryEntries to walk browsing context tree instead of doc shell tree"
+  },
+  {
+   "bugid": "1621002",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in ContentParent.cpp"
+  },
+  {
+   "bugid": "1620928",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove unecessary null checks for loadinfo within ReferrerInfo"
+  },
+  {
+   "bugid": "1620684",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in nsJSEnvironment.cpp"
+  },
+  {
+   "bugid": "1620624",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in nsUrlClassifierUtils.cpp"
+  },
+  {
+   "bugid": "1621001",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in DataTransfer.cpp"
+  },
+  {
+   "bugid": "1620952",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Merge `nsFrameSelection`'s constructor and its `Init` method"
+  },
+  {
+   "bugid": "1407276",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Avoid full ResetInterception when we skip FetchEvent dispatch due to no fetch handler being registered"
+  },
+  {
+   "bugid": "1589749",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Assertion failure mChannel == chan in HttpChannelParent.cpp"
+  },
+  {
+   "bugid": "1621346",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.2.10 (Fixes for mips64el, s390x)"
+  },
+  {
+   "bugid": "1615630",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Payments",
+   "summary": "Error handling in PaymentRequestManager::RespondPayment doesn't make sense"
+  },
+  {
+   "bugid": "1618712",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "aria heading level is not announced in VoiceOver"
+  },
+  {
+   "bugid": "1618716",
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "aria-invalid is not announced in VoiceOver"
+  },
+  {
+   "bugid": "1621232",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Merge and de-virtualize gfxPlatform::CreateFontGroup methods"
+  },
+  {
+   "bugid": "1621248",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "The various gfxPlatform and gfxPlatformFontList implementations should be declared 'final'"
+  },
+  {
+   "bugid": "1621371",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update servo-fontconfig-sys to avoid intermittent build errors"
+  },
+  {
+   "bugid": "1621212",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't use square texture cache pages for very thin items"
+  },
+  {
+   "bugid": "1617808",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Re-deliver PREFER_COMPOSITOR_SURFACE flag to WebRender"
+  },
+  {
+   "bugid": "1618132",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Avoid redundant hit test tree rebuilds"
+  },
+  {
+   "bugid": "1560038",
+   "status": "ASSIGNED",
+   "component": "Core:Internationalization",
+   "summary": "Replace Fluent.jsm with fluent-rs in Gecko"
+  },
+  {
+   "bugid": "1620923",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "No longer possible to run jstests locally: \"six\" missing"
+  },
+  {
+   "bugid": "1619641",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement a callback in JS whenever a blocking call is executed"
+  },
+  {
+   "bugid": "1621193",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "./mach jit-test --debug test selection menu no longer works"
+  },
+  {
+   "bugid": "1619001",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer Allocation of RegExp objects in BinAST parsing"
+  },
+  {
+   "bugid": "1621080",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rename `rustFrontend` to `smoosh` in the differential testing fuzz-test."
+  },
+  {
+   "bugid": "1621056",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "mismatching opcode format for NewInit"
+  },
+  {
+   "bugid": "873229",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js_ErrorFromException handling of same-origin cross-compartment wrappers allows bypass of onerror sanitization"
+  },
+  {
+   "bugid": "1620587",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Duplicate JOF_IC"
+  },
+  {
+   "bugid": "1608034",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Clean up EnvironmentObject shape teleporting code"
+  },
+  {
+   "bugid": "1618198",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support more JSOps in WarpBuilder"
+  },
+  {
+   "bugid": "1621265",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !script()->jitScript()->modifiesArguments(), at jit/IonBuilder.cpp:8803"
+  },
+  {
+   "bugid": "1620215",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Unexpected instruction), at jit/BaselineInspector.cpp:1515"
+  },
+  {
+   "bugid": "1621333",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "<img loading=lazy> doesn't infer aspect ratio because of bug 1602047"
+  },
+  {
+   "bugid": "1620873",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Move MotionPathData in TransformData"
+  },
+  {
+   "bugid": "1566632",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Buttons aren't properly resized for font inflation"
+  },
+  {
+   "bugid": "1620778",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Keyboard shortcuts Alt+\u2191, Alt+\u2193 should display the list without value increment/decrement (input type=\"number\" with an associated datalist)"
+  },
+  {
+   "bugid": "1537761",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Make AlternateServices work when socket process is enabled"
+  },
+  {
+   "bugid": "1618042",
+   "status": "UNCONFIRMED",
+   "component": "Core:Networking: DNS",
+   "summary": "early DNS lookups fail with network.trr.mode=3 using network.trr.uri with hostname in it"
+  },
+  {
+   "bugid": "1620824",
+   "status": "UNCONFIRMED",
+   "component": "Core:Networking: DNS",
+   "summary": "Tabs do not load after restart with network.trr.fetch_off_main_thread=true and under specific condition"
+  },
+  {
+   "bugid": "1620924",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove null checks for loadinfo within nsHttpBaseChannel"
+  },
+  {
+   "bugid": "1621170",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable capping the maximum life-time of client-side cookies to seven days on Nightly"
+  },
+  {
+   "bugid": "1620602",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make callsites of AntiTrackingCommon::AddFirstPartyStorageAccessGrantedFor fission-compatible"
+  },
+  {
+   "bugid": "1621323",
+   "status": "ASSIGNED",
+   "component": "Core:Sanitizers",
+   "summary": "Linux x64 tsan mochitest 20 M(20) frequently retried and failing,"
+  },
+  {
+   "bugid": "865550",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "WebAudio use-after-free [@mozilla::dom::AudioBufferSourceNode::Stop]"
+  },
+  {
+   "bugid": "1598114",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "implement AudioWorkletNode.parameters"
+  },
+  {
+   "bugid": "865004",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Crash on shutdown with many ScriptProcessorNodes (AudioContext.createJavaScriptNode)"
+  },
+  {
+   "bugid": "873335",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Use-after-free with expando on WebAudio script processor node"
+  },
+  {
+   "bugid": "1621258",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Too many warnings:  Main Thread] WARNING: Missing GtkWidget 87 ,   file .../mozilla/widget/gtk/WidgetStyleCache.cpp, line 763"
+  },
+  {
+   "bugid": "1614585",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Crash in [@ IPCError-browser | ShutDownKill | RtlpWalkFrameChain | RtlWalkFrameChain | RtlCaptureStackBackTrace | CDeviceEnumerator::UnregisterEndpointNotificationCallback]"
+  },
+  {
+   "bugid": "1621126",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Advance toolkit.shutdown.fastShutdownStage pref to 2 on Nightly"
+  },
+  {
+   "bugid": "1613367",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Calls to Cu.reportError() from chrome JS shouldn't be treated as \"web content\" messages"
+  },
+  {
+   "bugid": "1589132",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Using debugger yarn setup installed \"husky\" pre-commit hook"
+  },
+  {
+   "bugid": "1615102",
+   "status": "NEW",
+   "component": "DevTools:Netmonitor",
+   "summary": "Double-clicking table resizes handles should resize column to fit content"
+  },
+  {
+   "bugid": "1618600",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Scrollbar for Request payload is overlaying text"
+  },
+  {
+   "bugid": "1621311",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Profiler shortcuts are broken by the recent about:profiling changes"
+  },
+  {
+   "bugid": "1617333",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "top sites list version of megabar shows incorrect favicon for some sites"
+  },
+  {
+   "bugid": "1598216",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Saving images in Firefox sometimes produces \".jpg-large\" files which are difficult to work with"
+  },
+  {
+   "bugid": "675428",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "register firefox as default OS mail client on Windows"
+  },
+  {
+   "bugid": "1619952",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove message manager usage and frame script from browser_windowactivation.js"
+  },
+  {
+   "bugid": "1620948",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace BrowserTestUtils.waitForCondition with TestUtils.waitForCondition in browser_page_action_menu_add_search_engine.js"
+  },
+  {
+   "bugid": "1620731",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Extra argument passed to loadProcessScript in MainProcessSingleton.jsm"
+  },
+  {
+   "bugid": "1619949",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove message manager usage from browser_backButtonFitts.js"
+  },
+  {
+   "bugid": "1619950",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove message manager usage from browser_documentnavigation.js"
+  },
+  {
+   "bugid": "1619951",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove message manager usage from browser_tab_dragdrop.js"
+  },
+  {
+   "bugid": "1621298",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Remove messageManager use in nsContextMenu.js"
+  },
+  {
+   "bugid": "1621096",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land WNPanel message for 75"
+  },
+  {
+   "bugid": "1619529",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The \u201cDismiss\u201d button from the \u201cCollection\u201d section does not have a tooltip displayed when hovered"
+  },
+  {
+   "bugid": "1618555",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent TV browser/components/newtab/test/browser/browser_asrouter_momentspagehub.js | Correct value set - Got https://www.mozilla.org/#mochitest, expected https://www.mozilla.org/%LOCALE%/etc/firefox/retention/thank-you-a/"
+  },
+  {
+   "bugid": "1584096",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Windows] \u201cLearn more\u201d is not bolded in the Privacy Panel"
+  },
+  {
+   "bugid": "1589493",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make it possible for the front-end to determine that a frame crash was caused by an OOM"
+  },
+  {
+   "bugid": "1506602",
+   "status": "ASSIGNED",
+   "component": "Firefox:WebPayments UI",
+   "summary": "The user can interact with the payment widget while the OS password prompt is displayed"
+  },
+  {
+   "bugid": "1194529",
+   "status": "ASSIGNED",
+   "component": "Firefox:about:logins",
+   "summary": "Ask the user for their OS account password before showing the passwords in the password manager"
+  },
+  {
+   "bugid": "1620744",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Convert manual py_action's in Makefiles to py3_action"
+  },
+  {
+   "bugid": "1621070",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "\"KeyError: u'RUST_TARGET' \"in build-win64-aarch64-shippable with RUST_PROGRAM"
+  },
+  {
+   "bugid": "1619460",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Subsequent runs of `./mach build-backend` under Python 3 don't produce consistent results"
+  },
+  {
+   "bugid": "1621044",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update nom 4 users to nom 5"
+  },
+  {
+   "bugid": "1613985",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make constructors/destructors/assignment operators use =default"
+  },
+  {
+   "bugid": "1619956",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "./mach static-analysis  --help should link to documentation"
+  },
+  {
+   "bugid": "1620343",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ubuntu1804 - migrate auxiliary tasks to linux1804 label"
+  },
+  {
+   "bugid": "1619554",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Improve performance of 'mach try fuzzy' preview pane with show-estimates, take 2"
+  },
+  {
+   "bugid": "1614760",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Make sure telemetryInfo are going to be set for the extensions installed from the GeckoView Android API"
+  },
+  {
+   "bugid": "1608301",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "bindService abstraction"
+  },
+  {
+   "bugid": "1608302",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Manage multiple content processes in GeckoProcessManager"
+  },
+  {
+   "bugid": "1621074",
+   "status": "NEW",
+   "component": "Release Engineering:Release Automation: Flatpak",
+   "summary": "fix l10n in Flatpaks"
+  },
+  {
+   "bugid": "1607474",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Promote remote(pup) to Treeherder tier-2"
+  },
+  {
+   "bugid": "1619837",
+   "status": "REOPENED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Eliminate use of `fix_{linux,macosx}_stack.py` in `utils.py`"
+  },
+  {
+   "bugid": "1614933",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Don't use shared memory to send annotations from child processes"
+  },
+  {
+   "bugid": "1609825",
+   "status": "NEW",
+   "component": "Toolkit:General",
+   "summary": "Make about:memory an HTML file"
+  },
+  {
+   "bugid": "1609822",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Make about:checkboard an HTML file"
+  },
+  {
+   "bugid": "1620630",
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "The OS.File worker should record markers indicating which operation it is performing on which file"
+  },
+  {
+   "bugid": "1607882",
+   "status": "NEW",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Double clicking the picture-in-picture popout doesn't send it to fullscreen"
+  }
+ ],
+ "date": "2020-03-11",
+ "cset": "884162af76f5225bbf4efe486959d2fa9757bc56",
+ "buildid": "20200311041149",
+ "fixed": 80,
+ "total": 104,
+ "restricted": 2
+}

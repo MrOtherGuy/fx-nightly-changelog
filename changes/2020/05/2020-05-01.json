@@ -1,0 +1,634 @@
+{
+ "bugs": [
+  {
+   "bugid": "1627305",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Remove non-trivial macros from WebGL CommandQueue code"
+  },
+  {
+   "bugid": "1621762",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Add IpdlQueue option for remote WebGL"
+  },
+  {
+   "bugid": "1580448",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Consider introducing JSProcessActors (JSWindowActor for PContent)"
+  },
+  {
+   "bugid": "1634153",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "focus({preventScroll: true}); does not work on textareas"
+  },
+  {
+   "bugid": "1634218",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove the zoom actors."
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1540037",
+   "status": "NEW",
+   "component": "Core:DOM: Editor",
+   "summary": "Split TextEditor and HTMLEditor"
+  },
+  {
+   "bugid": "1634339",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ nsDOMNavigationTiming::nsDOMNavigationTiming]"
+  },
+  {
+   "bugid": "1634289",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "IsSecure field on BrowsingContext is missing a CanSet"
+  },
+  {
+   "bugid": "1632079",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "content-security-policy/navigation/to-javascript-parent-initiated-parent-csp.html is always TIMEOUT"
+  },
+  {
+   "bugid": "1632726",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Make `*ExtendForDelete()` of `nsISelectionController` and `nsFrameSelection` just return extended range instead of updating selection ranges"
+  },
+  {
+   "bugid": "1622451",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "New Firefox Release 74.0 made a function not work with Cisco WebVPN"
+  },
+  {
+   "bugid": "1582293",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "11,500 instances of \"Workers don't support the 'mem.mem.' preference!\" emitted from dom/workers/RuntimeService.cpp during linux64 debug testing"
+  },
+  {
+   "bugid": "1634395",
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "BroadcastChannel should not expose originAttributes in the MessageEvent/MessageEventError"
+  },
+  {
+   "bugid": "1634411",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Relax principal checks in PostMessageEvent"
+  },
+  {
+   "bugid": "1624954",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support other aria-haspopup values besides \"true\""
+  },
+  {
+   "bugid": "1634275",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update glslopt to 0.1.2 to remove dependency on bindgen"
+  },
+  {
+   "bugid": "1634130",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL's `draw_quad_spans` will divide by zero on some quads"
+  },
+  {
+   "bugid": "1634452",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow SWGL vertex shaders and fragment shaders to share data"
+  },
+  {
+   "bugid": "1632705",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Simplify the WR public clip API"
+  },
+  {
+   "bugid": "1633953",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL accidentally terminates polygons at duplicate vertices"
+  },
+  {
+   "bugid": "1634447",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow SWGL shaders to run both with and without perspective"
+  },
+  {
+   "bugid": "1627809",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Clean up Localization initialization"
+  },
+  {
+   "bugid": "1633145",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Some JSAPI cleanup"
+  },
+  {
+   "bugid": "1633360",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at js/src/jsexn.cpp:479 with async function"
+  },
+  {
+   "bugid": "1501608",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Investigate reducing size of ScriptSourceObject by moving DOM related fields outside the engine"
+  },
+  {
+   "bugid": "1634519",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove more uses of FunctionBox::function"
+  },
+  {
+   "bugid": "1633683",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: isMemberExpression || isCallExpression || isOptionalExpression (Unknown ParseNodeKind for OptionalChain), at frontend/BytecodeEmitter.cpp:7982"
+  },
+  {
+   "bugid": "1634139",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix compile errors when FILES_PER_UNIFIED_FILE=1 in js/src/moz.build"
+  },
+  {
+   "bugid": "1633752",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Increase non-incremental threshold for small heaps"
+  },
+  {
+   "bugid": "1633457",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Rename high frequency heap growth parameters to clarify their meaning"
+  },
+  {
+   "bugid": "1618595",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Cranelift: update Baldrdash for new isel backend"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1633434",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: *this, at /builds/worker/workspace/obj-build/dist/include/mozilla/AspectRatio.h:32"
+  },
+  {
+   "bugid": "1633732",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Intermittent first-letter/23605-5.html == first-letter/23605-5-ref.html | image comparison, max difference: 63, number of differing pixels: 1"
+  },
+  {
+   "bugid": "1633720",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid] A subgrid inside a parent grid with some repeat(auto-fit) tracks removed crashes in some cases"
+  },
+  {
+   "bugid": "1632098",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable ParentProcessDocumentChannel"
+  },
+  {
+   "bugid": "1598145",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "longines.com does not adjust to the screen size in portrait mode"
+  },
+  {
+   "bugid": "1629707",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "sessionStorage is not covered by the StoragePrincipal, and thus not isolated by dfpi"
+  },
+  {
+   "bugid": "1634169",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[Dynamic FPI] disable dFPI for web-platform-tests"
+  },
+  {
+   "bugid": "1633546",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[Dynamic FPI] ERROR dom/security/test/csp/test_service_worker.html - called finish() multiple times"
+  },
+  {
+   "bugid": "1634470",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make  OriginAttributes assertion in nsWindowWatcher::OpenWindowInternal compatible with FPI"
+  },
+  {
+   "bugid": "1634251",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Propagate the StoragePrincipal when cloning a document"
+  },
+  {
+   "bugid": "1632417",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable cookie purging by default in early beta"
+  },
+  {
+   "bugid": "1634303",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[Dynamic FPI] TEST-UNEXPECTED-FAIL | browser/base/content/test/protectionsUI/browser_protectionsUI_state.js | TPC.enabled is based on the original pref value - Got true, expected false"
+  },
+  {
+   "bugid": "1633401",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "The Document.HasStorageAccess() would throw NS_ERROR_NOT_AVAILABLE in Fission mode"
+  },
+  {
+   "bugid": "1629594",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 77 to use NSS 3.52"
+  },
+  {
+   "bugid": "1633879",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "check for smart card changes less frequently"
+  },
+  {
+   "bugid": "1633613",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Intermittent TEST-UNEXPECTED-NOTRUN | /webauthn/getcredential-rk-passing.https.html | undefined allowCredentials - expected FAIL"
+  },
+  {
+   "bugid": "1634098",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Fix a few `clang-tidy` warnings in `AudioNodeEngine.cpp` and vector sibling files"
+  },
+  {
+   "bugid": "1634547",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Incorrect unscrolled clip for top layer items"
+  },
+  {
+   "bugid": "1405495",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Handling receiving MID in the rtp demuxer"
+  },
+  {
+   "bugid": "1622384",
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "assert_equals: 42 transceivers on side B expected 42 but got 41"
+  },
+  {
+   "bugid": "1633718",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "ThemeSupportsWidget is extremely slow when WindowBlinds is installed"
+  },
+  {
+   "bugid": "1630655",
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "toolkit.shutdown.lateWriteChecksStage is not properly set on Nightly"
+  },
+  {
+   "bugid": "1626570",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Cannot declare nsTArray<IncompleteType> anymore."
+  },
+  {
+   "bugid": "1631799",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "When remote debugging messages can appear in the wrong order"
+  },
+  {
+   "bugid": "1593937",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Watch for additional remote frame targets in the case of the content toolbox"
+  },
+  {
+   "bugid": "1633850",
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent devtools/client/framework/test/browser_ignore_toolbox_network_requests.js | No network requests appear in the network panel - Got 1, expected 0"
+  },
+  {
+   "bugid": "1634238",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove CONSOLE_MESSAGES added by mistake from ResourceWatcher"
+  },
+  {
+   "bugid": "1634216",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "PROFILE_ENTRY_SIZE should be 8"
+  },
+  {
+   "bugid": "1634234",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "about:profiling buffer size should be a power of 2, as actually used by the profiler"
+  },
+  {
+   "bugid": "1633885",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "When unfocused, the urlbar's placeholder in a new tab can get the wrong direction, flipping the text on RTL locales"
+  },
+  {
+   "bugid": "1632073",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[RTL] When the 2-lines layout is activated, the url is displayed beneath the favicon instead of the title"
+  },
+  {
+   "bugid": "1630281",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Content process fails to start if IAT is modified after the browser process's entrypoint"
+  },
+  {
+   "bugid": "1634487",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "ph signup component is not filtered out if pocket content is turned off"
+  },
+  {
+   "bugid": "1629951",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Personality Provider worker should terminate"
+  },
+  {
+   "bugid": "1631595",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Make it possible to cache the about:home document at shutdown"
+  },
+  {
+   "bugid": "1619517",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Tooltip missing for the the \"X\" button inside the cards"
+  },
+  {
+   "bugid": "1634058",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "services.settings.load_dump isn't used when a get() triggers the call"
+  },
+  {
+   "bugid": "1633502",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Remote settings spamming console with HTTP 400 errors from Kinto"
+  },
+  {
+   "bugid": "1630766",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Add \"abort\" event handlers to remote settings's Database.jsm"
+  },
+  {
+   "bugid": "1634203",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Fix test_remote_settings_poll.js and test_remote_settings_worker.js to correctly access the RemoteSettings database"
+  },
+  {
+   "bugid": "1633514",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rework test_paramSubstitution.js to work with WebExtensions rather than a manually added one"
+  },
+  {
+   "bugid": "1632805",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "ModalPrompter falls back to window prompts for subframe BrowsingContexts"
+  },
+  {
+   "bugid": "1630732",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Window gets restored outside of view and can't be reached"
+  },
+  {
+   "bugid": "1633635",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make tab animations obey prefers-reduced-motion"
+  },
+  {
+   "bugid": "1634076",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove redundant .PanelUI-subView toolbarseparator rule"
+  },
+  {
+   "bugid": "1634449",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "White text on white background in the Find text box"
+  },
+  {
+   "bugid": "1634026",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Lazify panic/forget button confirmation panel"
+  },
+  {
+   "bugid": "1632786",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Canceling the OS auth dialog is wrongly counted as an invalid login attempt"
+  },
+  {
+   "bugid": "1634187",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Turn xpcom/idl-parser/xpidl in a proper python 3-ready module"
+  },
+  {
+   "bugid": "1634374",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Rename the doc title from Mozilla to Firefox"
+  },
+  {
+   "bugid": "1633969",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": ".hg-annotate-ignore-revs and .git-blame-ignore-revs missing commits"
+  },
+  {
+   "bugid": "1633782",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma cram(try) No build detected, test metadata may be incomplete."
+  },
+  {
+   "bugid": "1608837",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable chunking in the taskgraph for all web-platform-test suites"
+  },
+  {
+   "bugid": "1633866",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Dynamically select which tests run during taskgraph generation"
+  },
+  {
+   "bugid": "1631990",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Additional filters for mach try task blacklist to filter tasks unless --full is specified"
+  },
+  {
+   "bugid": "1634226",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Testing",
+   "summary": "update android host-utils"
+  },
+  {
+   "bugid": "1630066",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "test_ext_sendmessage_reply2.html is busted on Android with extension process enabled."
+  },
+  {
+   "bugid": "1630073",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "WebExtensionText.loadWebExtensionPage is busted on Android with extension process enabled"
+  },
+  {
+   "bugid": "1630229",
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ java.lang.AssertionError: at org.mozilla.gecko.process.GeckoProcessManager$ChildConnection.bind(GeckoProcessManager.java)]"
+  },
+  {
+   "bugid": "1596920",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Text entry in Gecko is broken on the Oculus Go in Firefox Reality"
+  },
+  {
+   "bugid": "1621633",
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "make ./mach fluent-migration-test work for Thunderbird"
+  },
+  {
+   "bugid": "557710",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Check over behaviour w.r.t multiple install locations"
+  },
+  {
+   "bugid": "1632884",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Update bits_client readme after bug 1586996"
+  },
+  {
+   "bugid": "1620621",
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "Use cascade bloom filters in add-on blocklist"
+  },
+  {
+   "bugid": "1629789",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Perma Linux x64 QR debug W-fis(wpt5) fix-stacks error: failed to read breakpad symbols dir `/builds/worker/workspace/build/symbols/libpthread.so.0` for `/lib/x86_64-linux-gnu/libpthread.so.0`"
+  },
+  {
+   "bugid": "1634344",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Perma build bustage make[4]: *** [libxul.so] Error 1 when Gecko 77 merges to Beta on 2020-05-04"
+  },
+  {
+   "bugid": "1632154",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement the timespan metric type for Project FOG"
+  },
+  {
+   "bugid": "1632156",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement the timing distribution metric type for Project FOG"
+  },
+  {
+   "bugid": "1628033",
+   "status": "RESOLVED",
+   "component": "Toolkit:about:memory",
+   "summary": "About:Memory does not list a PID for Main Process and Socket Process"
+  },
+  {
+   "bugid": "1606862",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Make devtools an optional permission"
+  },
+  {
+   "bugid": "1634257",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Expose wipe_all to mozIExtensionStorageArea"
+  }
+ ],
+ "date": "2020-05-01",
+ "cset": "29e888a9270c6d38ffaa30efd0d297f5163613f1",
+ "buildid": "20200501094247",
+ "fixed": 85,
+ "total": 104,
+ "restricted": 1
+}

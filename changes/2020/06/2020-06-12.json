@@ -1,0 +1,658 @@
+{
+ "bugs": [
+  {
+   "bugid": "1643375",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Remove YCbCrBuffer::Plane::mOffset"
+  },
+  {
+   "bugid": "1638243",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Intermittent Assertion failure: promises->IsEmpty(), at /builds/worker/checkouts/gecko/dom/media/GraphDriver.cpp"
+  },
+  {
+   "bugid": "1644647",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Linearize AudioContextOperation resolution"
+  },
+  {
+   "bugid": "1644524",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Intermittent TestAudioTrackGraph.SetOutputDeviceID | Expected equality of these values:"
+  },
+  {
+   "bugid": "1640623",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Use more enum classes in LookAndFeel"
+  },
+  {
+   "bugid": "1599160",
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Cache parsed stylesheets across documents"
+  },
+  {
+   "bugid": "1644404",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "3 - 3.28% compiler_metrics num_static_constructors (linux64) regression on push 801f886cf1b608a2cb697ffa02067ef1d42c9d1f (Tue June 2 2020)"
+  },
+  {
+   "bugid": "1643175",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fission JSWindowActor observer documentation does not accurately reflect how observers work"
+  },
+  {
+   "bugid": "1621677",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Have some mochitest or wpt tests to ensure getting a correct precision when a page is Cross Origin Isolated"
+  },
+  {
+   "bugid": "1645095",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-OK | /html/cross-origin-embedder-policy/report-only-require-corp.https.html | expected TIMEOUT"
+  },
+  {
+   "bugid": "1555523",
+   "status": "VERIFIED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Incorrect parsing of style tag leads to XSS if HTML+CSS is allowed but no JS"
+  },
+  {
+   "bugid": "1562033",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "title.innerHTML = \"</title><foo>\" parses <foo> as a tag"
+  },
+  {
+   "bugid": "1636607",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "some DOCTYPEs that should lead to limited-quirks mode lead to no-quirks mode"
+  },
+  {
+   "bugid": "1644797",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add a WindowContext getter to Document"
+  },
+  {
+   "bugid": "1531971",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent docshell/test/mochitest/test_bfcache_plus_hash.html | Got unexpected load 1"
+  },
+  {
+   "bugid": "1642303",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Networking",
+   "summary": "ourworldindata graph not shown"
+  },
+  {
+   "bugid": "1644868",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Make sure Selection::GetPrimaryFrameForFocusNode returns a frame when NS_OK"
+  },
+  {
+   "bugid": "1346261",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "font-language-override value is not case-sensitive"
+  },
+  {
+   "bugid": "1638819",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Skip SyncObjectD3D11Host::Synchronize() when RenderTextureHosts do not use ID3D11Texture2D"
+  },
+  {
+   "bugid": "1636645",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Consolidate WebRender instance data uploading"
+  },
+  {
+   "bugid": "1641682",
+   "status": "ASSIGNED",
+   "component": "Core:ImageLib",
+   "summary": "Assertion failure: !isSome(), at /builds/worker/workspace/obj-build/dist/include/mozilla/Maybe.h:795"
+  },
+  {
+   "bugid": "1645045",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Intl_Locale_LocaleService.GetAppLocalesAsLangTags_lastIsEnUS fails on android multilocale builds"
+  },
+  {
+   "bugid": "1644243",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Specify heap (nursery/tenured) when allocating strings"
+  },
+  {
+   "bugid": "1640034",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Capturing a SavedFrame stack from inside a Debugger eval can cause assertion failures"
+  },
+  {
+   "bugid": "1601179",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[jsdbg2] Always capture async stacks when DevTools is open"
+  },
+  {
+   "bugid": "1505387",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: target.hasCachedSavedFrame(), at js/src/vm/SavedStacks.cpp:1690 with Debugger"
+  },
+  {
+   "bugid": "1599634",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle AsmJS Parsing without allocating on the GC"
+  },
+  {
+   "bugid": "1630706",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow Atomics methods on ArrayBuffers"
+  },
+  {
+   "bugid": "1641517",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "FinalizationRegistry cleanupSome method should not be present in the browser"
+  },
+  {
+   "bugid": "1644472",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize some RegExp intrinsics in CacheIR and Warp"
+  },
+  {
+   "bugid": "1644425",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Math.{min,max} optimization slows down ToLength"
+  },
+  {
+   "bugid": "1645163",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile LoadUndefinedResult"
+  },
+  {
+   "bugid": "1644393",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma js/src/jit-test/tests/gc/bug-1643913.js | Error: Invalid long option: --no-ti (code 1, args \"--enable-weak-refs --no-ti\") [0.0 s] when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1568923",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Deduplicate nursery strings"
+  },
+  {
+   "bugid": "1644763",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Enable weak references by default in the JS shell"
+  },
+  {
+   "bugid": "1645018",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Self-hosted String.prototype.concat"
+  },
+  {
+   "bugid": "1641504",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Cranelift aarch64: support multi-values"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1637788",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Add some reftests for fragmenting multi-line row-oriented flex containers"
+  },
+  {
+   "bugid": "1645132",
+   "status": "NEW",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Text layout of very big text nodes can end up causing negative isize assertions to fire."
+  },
+  {
+   "bugid": "1643196",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsIMultiPartChannelListener should be implementable by script"
+  },
+  {
+   "bugid": "1625866",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Wrong text in status bar when opening new tab"
+  },
+  {
+   "bugid": "1593476",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add button to clear DNS cache to about:networking"
+  },
+  {
+   "bugid": "1644694",
+   "status": "RESOLVED",
+   "component": "Core:Networking: File",
+   "summary": "Do not call mozilla::dom::FallbackEncoding::FromLocale() in nsIndexedToHTML.cpp"
+  },
+  {
+   "bugid": "1643604",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "2.59 - 48.3% displaylist_mutate / tabswitch / tp5o / tp5o_scroll / tscrollx (linux64-shippable|-qr, windows10-64-shippable|-qr, windows7-32-shippable) regression on push 5a874f1887ff0644f19936203132cc05ff346ec7 (Wed June 3 2020)"
+  },
+  {
+   "bugid": "1644271",
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add a pref to always create the MVM, and turn it on"
+  },
+  {
+   "bugid": "1642721",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Convert the security.sandbox.* VarCache prefs"
+  },
+  {
+   "bugid": "1642667",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate alt-srv and connection pool per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1644421",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "renew INTERMEDIATE_PRELOADING_* telemetry"
+  },
+  {
+   "bugid": "1634436",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Add an encrypted IPC serializable stream implementation"
+  },
+  {
+   "bugid": "1621916",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Ignore unknown files in client directories during temporary storage initialization"
+  },
+  {
+   "bugid": "1641512",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Improve GetUsageForOrigin* functions"
+  },
+  {
+   "bugid": "1644468",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "XUL trees should invalidate on window focus changes"
+  },
+  {
+   "bugid": "1645077",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Remove or update probes expiring in Firefox 80: WEBRTC_DTLS_CIPHER          *"
+  },
+  {
+   "bugid": "1644579",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Allow VR backends to be enabled and disabled without restarting"
+  },
+  {
+   "bugid": "1634765",
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Drop support for macOS < 10.12"
+  },
+  {
+   "bugid": "1644940",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Wrap the compositor CALayers inside another CALayer"
+  },
+  {
+   "bugid": "1644640",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Rename RemoveElementsAt(const_iterator, const_iterator) to RemoveElementsRange"
+  },
+  {
+   "bugid": "1596018",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Extraneous tab stop between Accessibility tree and Checks heading"
+  },
+  {
+   "bugid": "1644662",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "autocomplete element access with autoclose bracket enabled insert extra closing quote and bracket"
+  },
+  {
+   "bugid": "1644158",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Devtools console autocompletion corrects perfectly reasonable code to nonsense"
+  },
+  {
+   "bugid": "1624531",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Selected text changes selection when switching to multi-line editor mode"
+  },
+  {
+   "bugid": "1620569",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console - Selected input not cleared if selecting the preview or another expression"
+  },
+  {
+   "bugid": "1601073",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger \"Paused\" banner polish: Move info icon from right side to left of text"
+  },
+  {
+   "bugid": "1644568",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove instance of WhyPaused that is not useful to the user from debugger/src/components/App.js."
+  },
+  {
+   "bugid": "1644820",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "breakpoints map should be keyed by pending breakpoint"
+  },
+  {
+   "bugid": "1642376",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Content Security Policy violation on devtools launch"
+  },
+  {
+   "bugid": "1625957",
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Changes",
+   "summary": "Use the ResourceWatcher API to fetch CSS Changes"
+  },
+  {
+   "bugid": "1645013",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Fix typo, wrong localization entity referenced."
+  },
+  {
+   "bugid": "1569715",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "CORS preflight requests are cached when 'Disable cache' is checked."
+  },
+  {
+   "bugid": "1637867",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "UI support for Server side events"
+  },
+  {
+   "bugid": "1642330",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Non-active Profiler toolbar icon and text are mirrored incorrectly when placed in overflow menu"
+  },
+  {
+   "bugid": "1407712",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in guard64.dll@0x49bb (Comodo Internet Security DLL)"
+  },
+  {
+   "bugid": "1642943",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Introduce a pref controlling post-facto dns resolution of single word hosts"
+  },
+  {
+   "bugid": "1642710",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Split UrlbarProviderOmnibox out from UnifiedComplete"
+  },
+  {
+   "bugid": "1643638",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove update1.searchTips and update1.interventions"
+  },
+  {
+   "bugid": "1644900",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Open Edge in a toolbar-less window when Edge it is selected as an opener of any file type"
+  },
+  {
+   "bugid": "1611058",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Rethink how send-tab falls back to the sync-based sendtab mechanism"
+  },
+  {
+   "bugid": "1639672",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add SVG versions of logos for use in in-product message (and elsewhere)"
+  },
+  {
+   "bugid": "1642519",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement navigating between screens in multistage about:welcome"
+  },
+  {
+   "bugid": "1645149",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Cleanup the telemetry prefs for Activity Stream"
+  },
+  {
+   "bugid": "1644153",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Search Engines are missing in staging main-preview. Dump not loading"
+  },
+  {
+   "bugid": "1627560",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement Geocoding"
+  },
+  {
+   "bugid": "1627551",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement call to getLocation"
+  },
+  {
+   "bugid": "1627550",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Trigger download of map"
+  },
+  {
+   "bugid": "1642078",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Decouple DoH preferences from automated heuristics signalling"
+  },
+  {
+   "bugid": "1643826",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "TypeError: can't access property \"uninstall\", this._historyListener is null"
+  },
+  {
+   "bugid": "1643032",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Enable the global sharing indicator with notification silencing by default on Nightly"
+  },
+  {
+   "bugid": "1640973",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Global Sharing Overlay has a title bar with a close option"
+  },
+  {
+   "bugid": "1645036",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Link to \"Windows prerequisites\" in Firefox source docs Contributors\u2019 Quick Reference should be updated"
+  },
+  {
+   "bugid": "1617369",
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "[rust] Reformat the tree using rustfmt"
+  },
+  {
+   "bugid": "1644799",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "mozlint/clippy Add a debug message containing the clippy version"
+  },
+  {
+   "bugid": "1644809",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "mach lint -l clippy fails with \"IndexError: list index out of range\""
+  },
+  {
+   "bugid": "1636251",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Report mach errors to Sentry"
+  },
+  {
+   "bugid": "1645097",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Hand over ownership of the mach commands in python/mozbuild/mozbuild/code-analysis to Firefox Build System :: Source Code Analysis"
+  },
+  {
+   "bugid": "1638985",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Convert 'mach static-analysis' to run with Python 3"
+  },
+  {
+   "bugid": "1641948",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "remove android opt builds from non-mozilla-central branches; reduce frequency of fat-aar builds"
+  },
+  {
+   "bugid": "1638430",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Decision task's 'tests-by-manifests.json' artifact doesn't use proper WPT group ids"
+  },
+  {
+   "bugid": "1645001",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Bouncer",
+   "summary": "remove vanilla bouncer jobs as blocking deps"
+  },
+  {
+   "bugid": "1644913",
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "Intermittent devtools/server/tests/xpcshell/test_extension_storage_actor.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1642064",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Modal should say \"add credit card\" instead of edit credit card when user clicks add"
+  },
+  {
+   "bugid": "1644642",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Simplify Erase function in Hashstore.cpp"
+  },
+  {
+   "bugid": "1476609",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Display labels for categorical keyed histograms in about:telemetry"
+  },
+  {
+   "bugid": "1640080",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent browser/modules/test/browser/browser_Telemetry_numberOfSiteOriginsPerDocument.js | Test timed out -"
+  },
+  {
+   "bugid": "1597562",
+   "status": "NEW",
+   "component": "Toolkit:about:memory",
+   "summary": "Better support for Fission content processes in about:memory"
+  },
+  {
+   "bugid": "1630710",
+   "status": "RESOLVED",
+   "component": "Tree Management:Treeherder: Frontend",
+   "summary": "Support selectedTask in querystring that works like selectedJob"
+  },
+  {
+   "bugid": "1623176",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Setting a CSP with 'self' or 'none' with createHttpServer() makes xpcshell test hang"
+  },
+  {
+   "bugid": "1643896",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "The pop-up bubble for ImTranslator extension for Firefox stopped working"
+  }
+ ],
+ "date": "2020-06-12",
+ "cset": "fea1e502ea281a9b86b821957e622f0b0d081ce7",
+ "buildid": "20200612094620",
+ "fixed": 89,
+ "total": 108,
+ "restricted": 2
+}

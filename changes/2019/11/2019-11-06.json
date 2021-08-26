@@ -1,0 +1,844 @@
+{
+ "bugs": [
+  {
+   "bugid": "1168606",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: IndexedDB",
+   "summary": "Implement preloading cursors for IndexedDB"
+  },
+  {
+   "bugid": "1212237",
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "WebRTC: Error recording remote media stream (Security Error: operation is insecure)"
+  },
+  {
+   "bugid": "1318858",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "e10s crash in dgapi.dll"
+  },
+  {
+   "bugid": "1470510",
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "Merge nsXULWindow and nsWebShellWindow"
+  },
+  {
+   "bugid": "1488583",
+   "status": "RESOLVED",
+   "component": "Core:DOM: IndexedDB",
+   "summary": "Remove unsupported, misleading \"dom.indexedDB.enabled\" preference"
+  },
+  {
+   "bugid": "1519517",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Don't animate window maximize / resizes when restoring session"
+  },
+  {
+   "bugid": "1522054",
+   "status": "NEW",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "nsUrlClassifierDBService::Lookup does not exec the callback if the param is systemPrincipal"
+  },
+  {
+   "bugid": "1544231",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Missing 'image/webp' in default navigation value of the 'Accept' header"
+  },
+  {
+   "bugid": "1544724",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "DoH Privacy Enhancement: Do not set the 'accept-language' header for DoH requests"
+  },
+  {
+   "bugid": "1554499",
+   "status": "REOPENED",
+   "component": "Core:Web Painting",
+   "summary": "Refactor display item building so that building function knows the item index beforehand"
+  },
+  {
+   "bugid": "1554761",
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Find in page value reappearing"
+  },
+  {
+   "bugid": "1555337",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Indicate if a URL change has been caused by a user interaction."
+  },
+  {
+   "bugid": "1563380",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "[WebExtensions] When using tabs.duplicate() on a pinned tab, Firefox create an unpinned tab then pin it"
+  },
+  {
+   "bugid": "1568600",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Better batching when dual source blending is unavailable"
+  },
+  {
+   "bugid": "1573560",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "invoke nsinstall once for INSTALL_TARGETS, rather than N times"
+  },
+  {
+   "bugid": "1575008",
+   "status": "NEW",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Copy https://github.com/gfx-rs/wgpu in tree and vendor its dependencies"
+  },
+  {
+   "bugid": "1575258",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Text blurry after expanding tiles on microsoftedgeinsider.com site"
+  },
+  {
+   "bugid": "1575785",
+   "status": "ASSIGNED",
+   "component": "Firefox:Protections UI",
+   "summary": "There should be a confirmation prompt when the user tries to Report a Broken site from the Tracking Protection panel"
+  },
+  {
+   "bugid": "1576733",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "[macOS] Disclaim native messaging helper applications when launching"
+  },
+  {
+   "bugid": "1577192",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ java.lang.OutOfMemoryError: at dalvik.system.VMRuntime.newNonMovableArray(Native Method)]"
+  },
+  {
+   "bugid": "1577413",
+   "status": "RESOLVED",
+   "component": "Core:DOM: IndexedDB",
+   "summary": "Define process to evolve and implement component-specific coding style"
+  },
+  {
+   "bugid": "1578241",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of dom.promise_rejection_events.enabled"
+  },
+  {
+   "bugid": "1579367",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "User prefs are loaded after creating the first JSContext in the parent process"
+  },
+  {
+   "bugid": "1580338",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer GC allocation of RegExp objects until parse is finished"
+  },
+  {
+   "bugid": "1581040",
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Fission a11y: Correctly handle late creation/re-creation of OuterDocAccessible for OOP iframe"
+  },
+  {
+   "bugid": "1582195",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "provide a job to build lucetc"
+  },
+  {
+   "bugid": "1582263",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Move 'devices' to the top-level of the sync ping"
+  },
+  {
+   "bugid": "1582348",
+   "status": "REOPENED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Start implementing WritableStream, behind a pref, often with stubbed-out functions that just throw"
+  },
+  {
+   "bugid": "1582751",
+   "status": "ASSIGNED",
+   "component": "Firefox:Protections UI",
+   "summary": "In the  \"Report a Broken Site\" sub panel the input text still remains even after is was submitted."
+  },
+  {
+   "bugid": "1583546",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Ensure that pausing on a breakpoint without the debugger open is covered by a test"
+  },
+  {
+   "bugid": "1584040",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent layout/generic/crashtests/outline-on-frameset.xhtml | assertion count 2 is more than expected 0 assertions"
+  },
+  {
+   "bugid": "1584397",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_trr.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1584743",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_http2-proxy.js | proxy_success_isolated_session - [proxy_success_isolated_session : 358] Just one new session seen after changing the isolation key - 3 == 2"
+  },
+  {
+   "bugid": "1585000",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make same-site-cookies work with fission enabled"
+  },
+  {
+   "bugid": "1586667",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "NetMonitor blocking - uppercase text on first letter for tooltip text from status column on blocked requests"
+  },
+  {
+   "bugid": "1586686",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent docshell/test/navigation/test_triggeringprincipal_iframe_iframe_window_open.html | Test timed out."
+  },
+  {
+   "bugid": "1587142",
+   "status": "RESOLVED",
+   "component": "Core:XBL",
+   "summary": "Remove XBL related tests"
+  },
+  {
+   "bugid": "1587176",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "call to function mozilla::pref_CompareFileNames(nsIFile*, nsIFile*, void*) through pointer to incorrect function type  in xpcom/ds/nsCOMArray.cpp:103"
+  },
+  {
+   "bugid": "1587713",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove the late blob rasterization code path"
+  },
+  {
+   "bugid": "1588017",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Clean up the naming for IntrinsicISizeOffsetData"
+  },
+  {
+   "bugid": "1588055",
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Clear MediaPipeline static-analysis warnings"
+  },
+  {
+   "bugid": "1588193",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fix BrowserTestUtils.waitForContentEvent with Fission"
+  },
+  {
+   "bugid": "1588817",
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Enable mDNS hostname obfuscation"
+  },
+  {
+   "bugid": "1589134",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Move <script> tags out of <wizard>s"
+  },
+  {
+   "bugid": "1589135",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Write Touch Bar documentation"
+  },
+  {
+   "bugid": "1589333",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Enable ESLint for all of devtools/client/shared/"
+  },
+  {
+   "bugid": "1589601",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Picture-in-picture window fails to be created with \"screen is null\" error"
+  },
+  {
+   "bugid": "1589826",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove the megabar's \"focused & collapsed\" state"
+  },
+  {
+   "bugid": "1589913",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Update FxR Desktop default home page"
+  },
+  {
+   "bugid": "1590138",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "UI not properly restored when exiting fullscreen by going back in history"
+  },
+  {
+   "bugid": "1590550",
+   "status": "NEW",
+   "component": "Core:Web Painting",
+   "summary": "Intermittent /css/css-overflow/dynamic-visible-to-clip-001.html | Testing http://web-platform.test:8000/css/css-overflow/dynamic-visible-to-clip-001.html == http://web-platform.test:8000/css/css-overflow/clip-001-ref.html"
+  },
+  {
+   "bugid": "1590649",
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_partitionedCookies.js | We have first-party set on storagePrincipal - \"\" == \"example.net\" -"
+  },
+  {
+   "bugid": "1590756",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Fix unregister service worker"
+  },
+  {
+   "bugid": "1590824",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Jump to definition button jumps to buggy view-source: link"
+  },
+  {
+   "bugid": "1590864",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[fission] test_autoplay_policy_activation.html fails with fission enabled"
+  },
+  {
+   "bugid": "1591174",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Out-of-date comments refer to nsIDOMWindow::openDialog"
+  },
+  {
+   "bugid": "1591359",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Optimize HuffmanDictionary.{fields_,listLengths_} initialization code"
+  },
+  {
+   "bugid": "1591406",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Use infallible methods for already allocated Vector"
+  },
+  {
+   "bugid": "1591758",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Full tile repaint seems broken during video playback with OS compositor"
+  },
+  {
+   "bugid": "1591770",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /html/interaction/focus/the-autofocus-attribute/first.html | The first autofocus element in the document should win. - assert_equals: expected Element node <input autofocus=\"\"></input> but got Element node <body><input autofocus=\"\">"
+  },
+  {
+   "bugid": "1591873",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "browser_mixedcontent_aboutblocked.js fails to run when fission is enabled"
+  },
+  {
+   "bugid": "1591987",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "ElementWrapper::is_link is broken."
+  },
+  {
+   "bugid": "1591990",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Storage",
+   "summary": "Enable some local storage tests for Fission"
+  },
+  {
+   "bugid": "1592007",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 72 to use NSS 3.48"
+  },
+  {
+   "bugid": "1592140",
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Flip the H.264 Platform encoder prefs on Android"
+  },
+  {
+   "bugid": "1592167",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[fission] toolkit/content/tests/browser/browser_autoplay_videoDocument.js fails with fission enabled"
+  },
+  {
+   "bugid": "1592172",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Don't reuse tip results or try to update the overflow state of their nonexistent URLs"
+  },
+  {
+   "bugid": "1592268",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmark animation is not displayed in about:newtab"
+  },
+  {
+   "bugid": "1592290",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Propagate aLookForCallerOnJSStack in nsGlobalWindowOuter::WindowExists to BrowsingContext::FindWithName."
+  },
+  {
+   "bugid": "1592596",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[Fission] Make dom/ipc/tests/browser_domainPolicy.js Fission-compatible"
+  },
+  {
+   "bugid": "1592616",
+   "status": "ASSIGNED",
+   "component": "Firefox:Protections UI",
+   "summary": "Don't show breakage report link when we're not blocking anything"
+  },
+  {
+   "bugid": "1592718",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable WatchPoints in Nightly and DevEdition"
+  },
+  {
+   "bugid": "1592739",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "macOS vibrancy doesn't work in WebRender + OS compositor configuration"
+  },
+  {
+   "bugid": "1592783",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Revert trapping semantics of bulk-memory-operations"
+  },
+  {
+   "bugid": "1592818",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add unit tests for IPCMarkerPayload"
+  },
+  {
+   "bugid": "1592826",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Blacklist Windows on ARM C630 driver 25.18.10440.0 for video decode"
+  },
+  {
+   "bugid": "1592855",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mach - run vendor with python3"
+  },
+  {
+   "bugid": "1592973",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix WebAssembly ABIResultIter for stack arguments"
+  },
+  {
+   "bugid": "1592974",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Spill registers before emitting an interrupt check"
+  },
+  {
+   "bugid": "1592975",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "2.99 - 8.02% raptor-tp6-instagram-firefox-cold / raptor-tp6-instagram-firefox-cold fcp / raptor-tp6-twitch-firefox fcp (linux64-shippable, linux64-shippable-qr) regression on push e66da643d9bcbc594a9c09a99271ae4d9415e388 (Wed October 30 2019)"
+  },
+  {
+   "bugid": "1593001",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "TypeError from MacTouchBar.js: BrowserWindowTracker.getTopWindow(...) is null, TouchBarHelper.window is null"
+  },
+  {
+   "bugid": "1593007",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "MOZ_LOG doesn't write files from content processes (again) when sandboxing is enabled"
+  },
+  {
+   "bugid": "1593015",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix WebAssembly baseline codegen for if/then/else with parameters"
+  },
+  {
+   "bugid": "1593073",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Update RDM test functions to test with and without devtools.responsive.browserUI.enabled pref."
+  },
+  {
+   "bugid": "1593084",
+   "status": "NEW",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Update the presentation of the \"Mozilla Source Tree Documentation\" page"
+  },
+  {
+   "bugid": "1593104",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Linker errors when building for Android under higher optimization levels"
+  },
+  {
+   "bugid": "1593112",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Responsiveness is wrongly copied into duplicated samples (when thread is sleeping)"
+  },
+  {
+   "bugid": "1593161",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Camera does not work in Firefox on some non-PRO MacBooks"
+  },
+  {
+   "bugid": "1593218",
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Show the geckoview doc in https://firefox-source-docs.mozilla.org/"
+  },
+  {
+   "bugid": "1593260",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "GCVector::sweep calls std::remove_if with a predicate that modifies its argument"
+  },
+  {
+   "bugid": "1593301",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix batch decoding support added to RemoteDecoder"
+  },
+  {
+   "bugid": "1593319",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "DCLayerTree::Bind should set its aFboId outparameter"
+  },
+  {
+   "bugid": "1593325",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Use NextSurfaceAsDrawTarget in nsChildView"
+  },
+  {
+   "bugid": "1593339",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove unneeded \"vibrancy fill color\" drawing"
+  },
+  {
+   "bugid": "1593383",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix REFTEST failures with partial present"
+  },
+  {
+   "bugid": "1593393",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "SpiderMonkey GDB pretty-printer: JSObject printer is broken"
+  },
+  {
+   "bugid": "1593394",
+   "status": "VERIFIED",
+   "component": "Core:Networking",
+   "summary": "New build of Firefox grinds to a halt with 200% CPU usage in main process when SOCKS proxy is enabled (OnSocketReady/EnsureNPNComplete + locks/polls)"
+  },
+  {
+   "bugid": "1593415",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: false, at js/src/builtin/ReflectParse.cpp:3092 with nullish coalescing"
+  },
+  {
+   "bugid": "1593420",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Fix a sphinx warning: sphinx.build_main has moved"
+  },
+  {
+   "bugid": "1593426",
+   "status": "VERIFIED",
+   "component": "Core:Security: PSM",
+   "summary": "Perma build bustage at src/security/manager/ssl/CertBlocklist.cpp when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1593442",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent TEST-UNEXPECTED-NOTRUN | /visual-viewport/viewport-no-resize-event-on-overflow-recalc.html | Resize event not fired at window.visualViewport when content is added - expected PASS"
+  },
+  {
+   "bugid": "1593446",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::Http3Session::IsReused]"
+  },
+  {
+   "bugid": "1593447",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma Assertion failure: false (COOP+COEP not in webCOOP+COEP process), at /builds/worker/workspace/build/src/dom/base/nsGlobalWindowInner.cpp:2426 when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1593462",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Cleanup preferences.inc.css to fix RTL and remove unused rules"
+  },
+  {
+   "bugid": "1593486",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ./mach jit-tests command"
+  },
+  {
+   "bugid": "1593533",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "getAllWindowDebuggees should be robust against exceptions"
+  },
+  {
+   "bugid": "1593566",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Improve efficiency when finding execution points where the frame depth changes"
+  },
+  {
+   "bugid": "1593614",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Fix event DataReadable loop"
+  },
+  {
+   "bugid": "1593615",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma tier2 async-scrolling/perspective-scrolling-1.html  | image comparison, max difference: 5, number of differing pixels: 1503 | clipped-mixblendmode-containing-unclipped-stuff.html | image comparison, max difference: 3, number of differing pixels: 849"
+  },
+  {
+   "bugid": "1593651",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "expose respectBeConservative as a property in browser.proxy.settings"
+  },
+  {
+   "bugid": "1593654",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Can't expand CSS messages"
+  },
+  {
+   "bugid": "1593658",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "network ID: ID is different after restart on the same network"
+  },
+  {
+   "bugid": "1593665",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Increase text weight of highlighted parts"
+  },
+  {
+   "bugid": "1593690",
+   "status": "ASSIGNED",
+   "component": "Core:Document Navigation",
+   "summary": "Start visited queries from an idle timer."
+  },
+  {
+   "bugid": "1593691",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update outdated comment about dual source blending support."
+  },
+  {
+   "bugid": "1593695",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "\"Target is already registered in the TargetList\" error message when opening the OBT"
+  },
+  {
+   "bugid": "1593752",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Scrolling down is buggy using Nightly channel"
+  },
+  {
+   "bugid": "1593794",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "updateGridPanel can also throw outside of onReflow"
+  },
+  {
+   "bugid": "1593802",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "don't drop dispatch flags in TaskQueue's EventTargetWrapper"
+  },
+  {
+   "bugid": "1593803",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "rename NS_DispatchToBackgroundThread to NS_DispatchBackgroundTask"
+  },
+  {
+   "bugid": "1593810",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Http3Stream is not  marked done when stream has picked up FIN/RESET"
+  },
+  {
+   "bugid": "1593888",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Bootlegging in jsrtfuzzing.cpp"
+  },
+  {
+   "bugid": "1593892",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Fission a11y: Reorder event not fired on iframe accessible after OOP iframe is loaded on platforms other than Windows"
+  },
+  {
+   "bugid": "1593901",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support debug / profiler overlays in native compositor mode."
+  },
+  {
+   "bugid": "1593903",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Change RenderCompositor::SurfaceIsYFlipped() to SurfaceOriginIsTopLeft()"
+  },
+  {
+   "bugid": "1593928",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Browser Content Toolbox fails with: this.target.listRemoteFrames is not a function"
+  },
+  {
+   "bugid": "1593953",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make Touch Bar telemetry optional in execCommand"
+  },
+  {
+   "bugid": "1593966",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add minimal support for the DW_FORM_GNU_ref_alt and DW_FORM_GNU_strp_alt operand forms to dump_syms"
+  },
+  {
+   "bugid": "1593974",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "\"See All\" button has a white line in the upper part"
+  },
+  {
+   "bugid": "1593975",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: CurrentThreadCanAccessRuntime(cx->runtime()), at js/src/threading/ProtectedData.cpp:65"
+  },
+  {
+   "bugid": "1593984",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Tracker milestone celebration section in Protections Panel has incorrect hover effect on linux"
+  },
+  {
+   "bugid": "1594023",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Should not log targetFront when target list detects a duplicated target registration"
+  },
+  {
+   "bugid": "1594025",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"This isn't a deceptive site...\"  hamburger menu item is unreadable"
+  },
+  {
+   "bugid": "1594042",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Improve logpoint performance"
+  },
+  {
+   "bugid": "1594055",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update telemetry email for ex-necko people"
+  },
+  {
+   "bugid": "1594061",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: cx->realm() == group->realm() using FinalizationGroup from another realm"
+  },
+  {
+   "bugid": "1594110",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Remove unused searchPrefsLink UI Tour target"
+  },
+  {
+   "bugid": "1594123",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fix lookup of toolbarbutton-icon in TabsList to not use getAnonymousElementByAttribute"
+  },
+  {
+   "bugid": "1594194",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "make rebuild_check.py work better for massive file changes"
+  }
+ ],
+ "date": "2019-11-06",
+ "cset": "d73cfe3a04e90b5dff64f6d4e3c3a9183aec4ec5",
+ "buildid": "20191106095742",
+ "fixed": 112,
+ "total": 139,
+ "restricted": 1
+}

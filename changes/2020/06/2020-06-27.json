@@ -1,0 +1,436 @@
+{
+ "bugs": [
+  {
+   "bugid": "1648363",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Remove AbstractThread use from GMP code"
+  },
+  {
+   "bugid": "1647816",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "MP4 fail to play in macOS Big Sur 11.0 Beta (20A4299v)"
+  },
+  {
+   "bugid": "1641887",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libdav1d to be1fe18"
+  },
+  {
+   "bugid": "1304480",
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent dom/media/test/test_background_video_suspend.html | Test timed out."
+  },
+  {
+   "bugid": "1648059",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Switch to async tracing in AudioStream.cpp and GraphDriver.cpp"
+  },
+  {
+   "bugid": "1648270",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Get rid of content parent Opener field"
+  },
+  {
+   "bugid": "1648284",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add a telemetry probe to record the number of pending input events when a timeout handler is about to run"
+  },
+  {
+   "bugid": "1648712",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/base/test/chrome/test_bug884693.xhtml | Got expected message count - got 1, expected +0"
+  },
+  {
+   "bugid": "1591329",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "[GamePad] Require secure context for getGamePads()"
+  },
+  {
+   "bugid": "1628249",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Delay setting nsFrameLoader's mPendingBrowsingContext to null a bit"
+  },
+  {
+   "bugid": "1647972",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add a new PlatformOverride field onto BrowsingContext"
+  },
+  {
+   "bugid": "1648033",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Call session history listener for reload in the parent process if session history in the parent is on"
+  },
+  {
+   "bugid": "1644146",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Change HTTPS Only Mode error copy to give the sense of \"protection\""
+  },
+  {
+   "bugid": "1648440",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Various cleanups of dom/workers code"
+  },
+  {
+   "bugid": "1630292",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Line breaks should not be read aloud by VoiceOver"
+  },
+  {
+   "bugid": "1642707",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Firefox no longer sends VoiceOver a notification that the page finished loading."
+  },
+  {
+   "bugid": "1641722",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::GPUParent::RecvInit]"
+  },
+  {
+   "bugid": "1647953",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "DataSourceSurface::MappedSurface does not have a constructor and fails linting"
+  },
+  {
+   "bugid": "1647774",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "clang-11 -Werror,-Wnon-c-typedef-for-linkage about FNCMapEntry in gfxFT2FontList.cpp"
+  },
+  {
+   "bugid": "1648356",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in [@ mozilla::fontlist::FontList::ShareBlocksToProcess]"
+  },
+  {
+   "bugid": "1648631",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "L10nRegistryService._synchronizeSharedData does not flush until the main thread is idle"
+  },
+  {
+   "bugid": "621061",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "shell: need primitive for returning integer-valued double"
+  },
+  {
+   "bugid": "1648790",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "annotate AutoProfilerCallInstrumentation as MOZ_RAII"
+  },
+  {
+   "bugid": "1648272",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Hit MOZ_CRASH(Mutex ordering violation) at js/src/threading/Mutex.cpp:32 with WebAssembly in Worker: StoreBuffer"
+  },
+  {
+   "bugid": "1647702",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "ThreadSanitizer: data race [@ isForwarded] vs. [@ unsafeSetPtr]"
+  },
+  {
+   "bugid": "1648697",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Neuter the --enable-avx flag and remove from fuzz-flags.txt"
+  },
+  {
+   "bugid": "1648623",
+   "status": "VERIFIED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma SM asserts.js:65:27 Error: Assertion failed: expected /ref/, got at offset 25: bad type when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1648824",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix build dependency for FrameClasses.py (to fix incremental rebuild errors such as \"no member named 'SVGImageFrame_id' in 'nsQueryFrame'\")"
+  },
+  {
+   "bugid": "1648673",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Remove duplicate CSSOrderAwareFrameIteratorT typedefs in nsGridContainerFrame.h"
+  },
+  {
+   "bugid": "1623964",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Intermittent /html/rendering/non-replaced-elements/the-page/iframe-scrolling-attribute-values.html | Testing http://web-platform.test:8000/html/rendering/non-replaced-elements/the-page/iframe-scrolling-attribute-values.html == http://web-platform.test:8"
+  },
+  {
+   "bugid": "1648189",
+   "status": "VERIFIED",
+   "component": "Core:Networking",
+   "summary": "[socket process] Perma Assertion failure: tqParent, at /builds/worker/checkouts/gecko/netwerk/protocol/http/HttpTransactionParent.cpp:173"
+  },
+  {
+   "bugid": "1646318",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "test_post and test_patch in netwerk/test/unit/test_http3.js time out"
+  },
+  {
+   "bugid": "1648532",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add support for HTTP3 draft 29 and draft 28"
+  },
+  {
+   "bugid": "1648796",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Mark WPT tests that rely on scrollport size with user-scalable=no"
+  },
+  {
+   "bugid": "1648737",
+   "status": "ASSIGNED",
+   "component": "Core:SVG",
+   "summary": "Move SVGAFrame SVGGFrame SVGGenericContainerFrame SVGInnerSVGFrame SVGMarkerFrame SVGMaskFrame SVGSymbolFrame SVGViewportFrame to the mozilla namespace"
+  },
+  {
+   "bugid": "1642687",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 79 to use NSS 3.54"
+  },
+  {
+   "bugid": "1645192",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for \"certSIGN Root CA G2\" root certificate"
+  },
+  {
+   "bugid": "1555557",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Cert override service does main-thread I/O"
+  },
+  {
+   "bugid": "1646774",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Apply pointer guideline to DatabaseInfo and TransactionInfo"
+  },
+  {
+   "bugid": "1648432",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Simplify some indexedDB code"
+  },
+  {
+   "bugid": "1648123",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Crash in webrtc::videocapturemodule::DeviceInfoAndroid::BuildDeviceList()"
+  },
+  {
+   "bugid": "1647689",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland/Sway] Clipboard only works across Gtk apps"
+  },
+  {
+   "bugid": "1648554",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Use of undeclared identifier 'GetDMABufDevice' in gfxPlatformGtk.cpp when building only for X11"
+  },
+  {
+   "bugid": "1400317",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsUXThemeData uses win32k APIs in content process"
+  },
+  {
+   "bugid": "1645510",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Create the unprivileged junk scope lazily, and hold it weakly"
+  },
+  {
+   "bugid": "1648458",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Add test for checking that resource watcher are destroyed when target is destroyed"
+  },
+  {
+   "bugid": "1637793",
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent devtools/client/framework/*.js | A promise chain failed to handle a rejection: Connection closed, pending request to root, type listWorkers failed"
+  },
+  {
+   "bugid": "1648740",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "remove webreplay telemetry"
+  },
+  {
+   "bugid": "1648011",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "[a11y]The All Tabs overflow button is missing an accessible label"
+  },
+  {
+   "bugid": "1648538",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Displayed zap image size should stay same irrespective of text width"
+  },
+  {
+   "bugid": "1648223",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Enable the Experimental Features section by default"
+  },
+  {
+   "bugid": "1646178",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Search header not visible when searching for featuregates in about:preferences"
+  },
+  {
+   "bugid": "1646423",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Experimental features should be hidden if is-public resolves to false"
+  },
+  {
+   "bugid": "1644544",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Include experimental features in crash stats"
+  },
+  {
+   "bugid": "1643428",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Remove or update probes expiring in Firefox 80: security.ui.protections*"
+  },
+  {
+   "bugid": "1643715",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protections Dashboard 1.5] Monitor elements give no visual feedback when tabbing"
+  },
+  {
+   "bugid": "1647267",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "21.07 - 29.38% startup_about_home_paint / startup_about_home_paint_realworld_webextensions (linux64-shippable, windows10-64-shippable|-qr, windows7-32-shippable) regression on push 9e61cb1a6d0f31634a9abf0e5507dd804f4efe11 (Thu June 18 2020)"
+  },
+  {
+   "bugid": "1627555",
+   "status": "ASSIGNED",
+   "component": "Firefox:Search",
+   "summary": "Implement basic region cache busting"
+  },
+  {
+   "bugid": "1648519",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "clang-11 Windows instrumented builds need the PGO runtime path"
+  },
+  {
+   "bugid": "1648651",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Building with --disable-compile-environment fails"
+  },
+  {
+   "bugid": "1646936",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Multiple RunCbindgen running in parallel are blocking each other"
+  },
+  {
+   "bugid": "1646155",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make artifact builds much less verbose by default"
+  },
+  {
+   "bugid": "1648393",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Move Linux 32bits Firefox compilation on 64bits OS to in-tree-docs from MDN, and update them"
+  },
+  {
+   "bugid": "1646813",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Write some tests for chunking and TestResolver"
+  },
+  {
+   "bugid": "1392914",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Remove updatev2.manifest support from the mar generation scripts after the next watershed."
+  },
+  {
+   "bugid": "1647360",
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "cleanup require builtin cert logic for install/update"
+  },
+  {
+   "bugid": "1646149",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "use RemoteSettings for metadata about Pioneer studies"
+  },
+  {
+   "bugid": "1648617",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Extract `wineventlog` crate from updateagent for more general use"
+  },
+  {
+   "bugid": "1599567",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add event telemetry for when logins.json.corrupt is created"
+  },
+  {
+   "bugid": "1648430",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "string_ipc Rust test failing in ccov builds"
+  },
+  {
+   "bugid": "1625455",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Perma toolkit/components/extensions/test/xpcshell/test_ext_privacy.js | test_privacy - [test_privacy : 226] Older extension regained control. - false == true"
+  }
+ ],
+ "date": "2020-06-27",
+ "cset": "0a4b3f99d2d1b0a6aa73754e38da82a3b58f5635",
+ "buildid": "20200627093832",
+ "fixed": 59,
+ "total": 71,
+ "restricted": 4
+}

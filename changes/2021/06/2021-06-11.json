@@ -1,0 +1,484 @@
+{
+ "bugs": [
+  {
+   "bugid": "737785",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement 'tab-size' (dropping the -moz- prefix)"
+  },
+  {
+   "bugid": "1308113",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "'tab-size' should account for letter and word spacing"
+  },
+  {
+   "bugid": "1715409",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent [tier2] TEST-UNEXPECTED-PASS | /css/css-properties-values-api/at-property.html | Non-universal registration are invalid without an initial value - expected FAIL"
+  },
+  {
+   "bugid": "1714614",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS Visited Styling design results in excessive notifications to content processes"
+  },
+  {
+   "bugid": "1715690",
+   "status": "NEW",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Bucket WebGL RENDERER strings"
+  },
+  {
+   "bugid": "1715705",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Don't run multiple MEMORY_PRESSURE GCs concurrently in different processes"
+  },
+  {
+   "bugid": "1715311",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ (anonymous namespace)::ParticularProcessPriorityManager::ActivityChanged]"
+  },
+  {
+   "bugid": "1711367",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /the-img-element/not-rendered-image-loading-lazy.html | In-viewport loading=lazy not-rendered images should never load - assert_unreached: The not-rendered in-viewport loading=lazy images should not attempt to load. Reached unreachable code"
+  },
+  {
+   "bugid": "1714918",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Sort out accessors of editor concrete classes"
+  },
+  {
+   "bugid": "1713760",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor` directly inherit `EditorBase` rather than `TextEditor`"
+  },
+  {
+   "bugid": "1715865",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make BrowsingContext skippable"
+  },
+  {
+   "bugid": "1715300",
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable BFCache in parent when Fission is enabled"
+  },
+  {
+   "bugid": "1714966",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update PBM portion of test toolkit/components/extensions/test/xpcshell/test_ext_contentscript_context.js to work with https-first enabled"
+  },
+  {
+   "bugid": "1564235",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Expose NavigationPreloadManager interface"
+  },
+  {
+   "bugid": "1714390",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Slim accessibility attributes"
+  },
+  {
+   "bugid": "1714326",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Reduce Wayland overhead"
+  },
+  {
+   "bugid": "1715746",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Work around Adreno shader compilation crash and re-enable webrender"
+  },
+  {
+   "bugid": "1715663",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove fractional device offset invalidation"
+  },
+  {
+   "bugid": "1711648",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Transition from rectangles to min/max representation"
+  },
+  {
+   "bugid": "1715895",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable sw-wr on non-x86 Linux in late beta and release."
+  },
+  {
+   "bugid": "1711244",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement proper frame callback handling in NativeLayerWayland"
+  },
+  {
+   "bugid": "1664151",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Crash in [@ mozilla::ipc::FatalError | mozilla::ipc::IProtocol::HandleFatalError | mozilla::dom::PContentChild::OnMessageReceived] IPDL error: \"Error deserializing 'SharedMemoryHandle[]'\". abort()ing as a result."
+  },
+  {
+   "bugid": "1711902",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Use mozilla::intl::DateTimeFormat in SpiderMonkey"
+  },
+  {
+   "bugid": "1715731",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update stencil for multiple bugs"
+  },
+  {
+   "bugid": "1713335",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Dispatch helper tasks to an external thread pool if one is supplied"
+  },
+  {
+   "bugid": "1715004",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add SMDOC for bytecode emission"
+  },
+  {
+   "bugid": "1699271",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[meta] Auto generate MIR, LIR, and WarpCacheIRTranspiler boilerplate"
+  },
+  {
+   "bugid": "1711073",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Refactor WasmTypes.h"
+  },
+  {
+   "bugid": "1715494",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Use dmb ish, not dmb ishst, as beforeStore fence for atomic ops"
+  },
+  {
+   "bugid": "1714594",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier2] fission xorig TEST-UNEXPECTED-TIMEOUT | layout/base/tests/test_reftests_with_caret.html | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": "1663740",
+   "status": "VERIFIED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: cachedStyles[i]->EqualForCachedAnonymousContentStyle(*cs) (cached anonymous content styles should be identical to those we would compute normally), at /builds/worker/checkouts/gecko/layout/base/nsCSSFrameConstructor.cpp:3964"
+  },
+  {
+   "bugid": "1714543",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Fonts with non-alphabetical names disappeared from selection dropbox"
+  },
+  {
+   "bugid": "1714307",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Fix static-analysis warnings in netwerk/"
+  },
+  {
+   "bugid": "1700405",
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_trr_confirmation.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1695509",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "many empty pages when printing pages with multiple tall floats inside of flex containers (and layout.display-list.improve-fragmentation enabled, the default in Firefox 86+)"
+  },
+  {
+   "bugid": "1706616",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add telemetry for URL query string stripping"
+  },
+  {
+   "bugid": "1713766",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 91 to use NSS 3.67"
+  },
+  {
+   "bugid": "1715142",
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "separate public key pinning implementation from HSTS implementation"
+  },
+  {
+   "bugid": "1710164",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "White-on-white text on in-content pages when using macOS Dark Mode + High Contrast Mode, if widget.macos.respect-system-appearance is enabled"
+  },
+  {
+   "bugid": "1713532",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "widget/gtk/nsPrintDialogGTK.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1672591",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[fractional scaling] main menu do not fit screen size under fractional scaling (gnome/wayland)"
+  },
+  {
+   "bugid": "1707872",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Sidebar does not follow Firefox theme"
+  },
+  {
+   "bugid": "1713530",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "widget/gtk/nsClipboard.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1712557",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Source code not available when pausing at a breakpoint"
+  },
+  {
+   "bugid": "1715877",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Disable bfcache-in-parent when running devtools/client/application/test/browser/browser_application_panel_list-domain-workers.js"
+  },
+  {
+   "bugid": "1715662",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "High frequency devtools/shared/commands/target-configuration/tests/browser_target_configuration_command_color_scheme.js | A promise chain failed to handle a rejection:"
+  },
+  {
+   "bugid": "1715880",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Disable bfcache-in-parent when running devtools/client/application/test/browser/browser_application_panel_list-several-workers.js"
+  },
+  {
+   "bugid": "1715448",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove testActor#zoomPageTo and testActor#changeZoomLevel"
+  },
+  {
+   "bugid": "1715802",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove testActor#getStyleSheetsInfoForNode"
+  },
+  {
+   "bugid": "1708106",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Update or stop using testActor in test reloading the test page"
+  },
+  {
+   "bugid": "1715574",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove testActor#scrollIntoView"
+  },
+  {
+   "bugid": "1715577",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove testActor#reloadFrame"
+  },
+  {
+   "bugid": "1715436",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Convert defer to Promise in devtools/client/shared/test/browser_treeWidget_keyboard_interaction.js"
+  },
+  {
+   "bugid": "1715326",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Convert defer to Promise in devtools/client/shared/test/browser_treeWidget_mouse_interaction.js"
+  },
+  {
+   "bugid": "1686727",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Refactor tests using the storage actor directly to use it via resourceWatcher.watchResources([STORAGE_TYPES...])"
+  },
+  {
+   "bugid": "1713810",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "openTabAndSetupStorage and clearStorage test helpers are throwing with fission"
+  },
+  {
+   "bugid": "1714885",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Cleanup css added for dark mode support in about debugging"
+  },
+  {
+   "bugid": "1715484",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Stop syncing browser.urlbar.resultBuckets"
+  },
+  {
+   "bugid": "1713325",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Exclude time when the user is idle from the page view time for history metadata"
+  },
+  {
+   "bugid": "1713889",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Tests skipped in 'browser/base/content/test/general/browser.ini' for new Fission platform triage"
+  },
+  {
+   "bugid": "1715348",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Telemetry Measurement for macOS os.environment.is_kept_in_dock"
+  },
+  {
+   "bugid": "1715264",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Fix test failures introduced by the Fission session restore work"
+  },
+  {
+   "bugid": "1713956",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Optimize the stop-to-reload and reload-to-stop animations"
+  },
+  {
+   "bugid": "1714788",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Fix more sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1524662",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Support gcc/clang-like build path prefix map in generated code"
+  },
+  {
+   "bugid": "1715584",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Update FF to NSPR 4.32"
+  },
+  {
+   "bugid": "1713610",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove \"./mach vendor python [package]\", mandate that package is in \"requirements.in\""
+  },
+  {
+   "bugid": "1715111",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "backstop push changes for Thunderbird"
+  },
+  {
+   "bugid": "1699794",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Extend the GV Autocomplete API to support addresses"
+  },
+  {
+   "bugid": "1714673",
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "toolkit/mozapps/extensions/test/xpcshell/rs-blocklist/test_gfxBlacklist_*.js test failures on Android"
+  },
+  {
+   "bugid": "1703761",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Flag crashes captured via WER so that they can be easily identified"
+  },
+  {
+   "bugid": "1711418",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add the OOMAllocationSize field to crashes captured by WER"
+  },
+  {
+   "bugid": "1697895",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Register the WER runtime exception module at runtime in child processes"
+  },
+  {
+   "bugid": "1682518",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Make the WER runtime exception module inform the main browser about the minidumps it has generated"
+  },
+  {
+   "bugid": "1713914",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Tests skipped in 'toolkit/content/tests/browser/browser.ini' for new Fission platform triage"
+  },
+  {
+   "bugid": "1704584",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add \"password-rules\" data in tree"
+  },
+  {
+   "bugid": "1713111",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Add initial expiration to Places Metadata"
+  },
+  {
+   "bugid": "1714573",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Reduce the (theoretical) risk of races during profile deletion"
+  },
+  {
+   "bugid": "1682632",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Expose in extension background service workers WebExtensions API webidl bindings"
+  }
+ ],
+ "date": "2021-06-11",
+ "cset": "47cad7171df3d3c42ee430049c76da2272ae372a",
+ "buildid": "20210611094205",
+ "fixed": 60,
+ "total": 79,
+ "restricted": null
+}

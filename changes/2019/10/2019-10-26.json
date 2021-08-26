@@ -1,0 +1,442 @@
+{
+ "bugs": [
+  {
+   "bugid": "1238810",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Move WEAVE_CONFIGURED and FXA_CONFIGURED into the telemetry environment"
+  },
+  {
+   "bugid": "1422056",
+   "status": "ASSIGNED",
+   "component": "Core:Permission Manager",
+   "summary": "Isolate site permissions by OriginAttributes"
+  },
+  {
+   "bugid": "1447807",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Error: browser.ownerGlobal is null"
+  },
+  {
+   "bugid": "1453190",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "Assertion failure: !mIsBeingDestroyed, at src/docshell/base/nsDocShell.cpp:12970"
+  },
+  {
+   "bugid": "1491811",
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Rules: replace custom checkbox with -moz-appearance:checkbox"
+  },
+  {
+   "bugid": "1540340",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Re-locking non-recursive mutex in profiler_shutdown -> MOZ_LOG -> WriteFile -> IOInterposer -> profiler_get_backtrace"
+  },
+  {
+   "bugid": "1540903",
+   "status": "RESOLVED",
+   "component": "Core:DOM: IndexedDB",
+   "summary": "Intermittent dom/indexedDB/test/unit/<testname> | application crashed [@ static void `anonymous namespace'::ScriptErrorRunnable::Dump(const class nsTSubstring<char16_t> & const, const class nsTSubstring<char16_t> & const, unsigned int, unsigned int, un"
+  },
+  {
+   "bugid": "1550804",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add color scheme simulation to the inspector"
+  },
+  {
+   "bugid": "1561227",
+   "status": "ASSIGNED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "RDM should correctly handle full-page zoom and resolution zooming together."
+  },
+  {
+   "bugid": "1564700",
+   "status": "NEW",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent <test-name> | application crashed [@ mozilla::dom::WorkerPrivate::ModifyBusyCount(bool)]"
+  },
+  {
+   "bugid": "1566109",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Firefox crashes every time I try to attach a file to an email (related to SolidWorks PDM)"
+  },
+  {
+   "bugid": "1570159",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "URL classifier doesn't classify URL when its top level window is about page"
+  },
+  {
+   "bugid": "1571425",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Sync Options\" notification is wrongly re-displayed after page refresh, even if it was manually dismissed by the user"
+  },
+  {
+   "bugid": "1575051",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Fix usage of nsIDocShellTreeItem in nsDocShell::FindItemWithName"
+  },
+  {
+   "bugid": "1576593",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Quota Manager",
+   "summary": "Crash in [@ mozilla::dom::quota::OriginInfo::LockedDecreaseUsage]"
+  },
+  {
+   "bugid": "1578493",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Misc. sccache-dist doc updates"
+  },
+  {
+   "bugid": "1579761",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "ERROR: Couldn't execute `cargo metadata` with manifest \"/builds/worker/workspace/build/src/toolkit/library/rust/Cargo.toml\""
+  },
+  {
+   "bugid": "1580323",
+   "status": "NEW",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-quick-open.js | Test timed out -"
+  },
+  {
+   "bugid": "1581157",
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Intermittent gtest Return code: -11"
+  },
+  {
+   "bugid": "1583466",
+   "status": "NEW",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "[Linux] Load policies per user from system"
+  },
+  {
+   "bugid": "1583575",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Use something better than 1x1 for initial window size"
+  },
+  {
+   "bugid": "1584524",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"No Logins\" screen should offer importing logins from another browser on supporting OS"
+  },
+  {
+   "bugid": "1586110",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "VRManager should only be called in parent process or GPU process."
+  },
+  {
+   "bugid": "1586716",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_windowOpenerRestriction.js' working in Fission"
+  },
+  {
+   "bugid": "1586719",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_firstPartyIsolation.js' working in Fission"
+  },
+  {
+   "bugid": "1586721",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_firstPartyIsolation_aboutPages.js' working in Fission"
+  },
+  {
+   "bugid": "1586723",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_firstPartyIsolation_blobURI.js' working in Fission"
+  },
+  {
+   "bugid": "1586725",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Making the test 'browser/components/originattributes/test/browser/browser_firstPartyIsolation_js_uri.js' working in Fission"
+  },
+  {
+   "bugid": "1587142",
+   "status": "ASSIGNED",
+   "component": "Core:XBL",
+   "summary": "Remove XBL related tests"
+  },
+  {
+   "bugid": "1587645",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Remove ScrollFrameHelper::GetFrameForDir()"
+  },
+  {
+   "bugid": "1587750",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "The JSON section is empty even if there are content"
+  },
+  {
+   "bugid": "1588444",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Show formatted message content over collapsed raw"
+  },
+  {
+   "bugid": "1588461",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Add OriginAttributes StripAttributes flag for privateBrowsingId"
+  },
+  {
+   "bugid": "1588860",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | update-the-rendering.html | \"Flush autofocus candidates\" should be happen after the first animation frame callbacks, and before a resize event in the next iteration of window event loop. expected FAIL"
+  },
+  {
+   "bugid": "1589346",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Prettified file from Console links to buggy view-source: link"
+  },
+  {
+   "bugid": "1589376",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Warning: Failed prop type: The prop `compactToolbar` is marked as required in `ConsoleSettings`, but its value is `undefined`."
+  },
+  {
+   "bugid": "1589390",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Ensure Gecko metrics marked for geckoview_streaming are actually supported"
+  },
+  {
+   "bugid": "1589407",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "document.referrer leaks the full referrer URL even when the referrer URL has been trimmed due to ETP restrictions"
+  },
+  {
+   "bugid": "1589652",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Long sync engine choice translations cause issues about:preferences#sync and \u201cChoose what to sync\u201d dialog"
+  },
+  {
+   "bugid": "1589904",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove LazyScript/JSScript::functionDelazifying and friends"
+  },
+  {
+   "bugid": "1589938",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Convert FormSubmit/FormHistory to handle fission"
+  },
+  {
+   "bugid": "1590044",
+   "status": "VERIFIED",
+   "component": "DevTools:Console",
+   "summary": "Every time Browser Console is re-opened, its window size will be reduced."
+  },
+  {
+   "bugid": "1590132",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Intermittent LeakSanitizer | leak at mozilla::SchedulerGroup::Runnable::Run, init, js::Shape::cachify, maybeCreateCacheForLookup"
+  },
+  {
+   "bugid": "1590176",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Relazified scripts should not revive without updating canonical function"
+  },
+  {
+   "bugid": "1590180",
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Remove nsGroupBoxFrame (display: -moz-groupbox)"
+  },
+  {
+   "bugid": "1590362",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Incorrect web address string is displayed for identical username/password entries for origin and subdomain"
+  },
+  {
+   "bugid": "1590479",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "getDisplayMedia cannot succeed in Private Browsing or inside of cross-origin iframe"
+  },
+  {
+   "bugid": "1590633",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove Reps launchpad"
+  },
+  {
+   "bugid": "1590683",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Simplify HuffmanTableValue variant"
+  },
+  {
+   "bugid": "1590709",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Crash in [@ mozilla::psm::TransportSecurityInfo::ReadCertList]"
+  },
+  {
+   "bugid": "1590722",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent layout/style/test/test_area_url_cursor.html | [SimpleTest.finish()] waitForFocus() was called a different number of times from the number of callbacks run.  Maybe the test terminated prematurely -- be sure to use SimpleTest"
+  },
+  {
+   "bugid": "1590755",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "[Certificate Viewer] The security.aboutcertificate.enabled pref is not enabled in Fx beta"
+  },
+  {
+   "bugid": "1590780",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Original video listeners are not cleaned when PIP player is closed"
+  },
+  {
+   "bugid": "1590816",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Unify link coloring code in history implementations."
+  },
+  {
+   "bugid": "1590820",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Improve performance of 'mach try fuzzy' preview pane with show-estimates"
+  },
+  {
+   "bugid": "1590904",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: gc->currentSweepGroup, at js/src/gc/GC.cpp:5990"
+  },
+  {
+   "bugid": "1590911",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Forwarding fullscreen events to VR host API"
+  },
+  {
+   "bugid": "1590932",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remote debugging can't pause at breakpoints since FF 71"
+  },
+  {
+   "bugid": "1591043",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Addition of search icon pushed the Hover for Tracking Protection shield a few pixels to right"
+  },
+  {
+   "bugid": "1591061",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Enable browser_toolbox_console_new_process.js on debug builds"
+  },
+  {
+   "bugid": "1591087",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add some more HTML*Element sizeof assertions"
+  },
+  {
+   "bugid": "1591209",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add JSFunction::baseScript()"
+  },
+  {
+   "bugid": "1591226",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Convert the prefs in ReferrerInfo.cpp to static prefs"
+  },
+  {
+   "bugid": "1591227",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Enable Picture-in-Picture feature on Nightly for macOS and Linux"
+  },
+  {
+   "bugid": "1591242",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "search icon appears in toolbar of popups (and doesn't work)"
+  },
+  {
+   "bugid": "1591254",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "set WorkletNodeEngine::ProcessBlocksOnPorts() input and output span lengths appropriately for zero inputs and outputs"
+  },
+  {
+   "bugid": "1591262",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "clang cross-compiling to windows changed linkage behavior with clang 9 breaking sccache-dist"
+  },
+  {
+   "bugid": "1591338",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add an API to call an object's finalizer"
+  },
+  {
+   "bugid": "1591340",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Add our code review docs"
+  },
+  {
+   "bugid": "1591341",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Always close the client connection in add_task() for browser chrome tests"
+  },
+  {
+   "bugid": "1591446",
+   "status": "NEW",
+   "component": "DevTools:Debugger",
+   "summary": "Can't cancel file search in OBT"
+  },
+  {
+   "bugid": "1591486",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "New search icon is too contrasted when address bar is focused"
+  }
+ ],
+ "date": "2019-10-26",
+ "cset": "0b9d0a86ebfd89cfb89b8044a72e89ce743aeeee",
+ "buildid": "20191026094546",
+ "fixed": 57,
+ "total": 72,
+ "restricted": 1
+}

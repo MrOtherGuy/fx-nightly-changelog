@@ -1,0 +1,604 @@
+{
+ "bugs": [
+  {
+   "bugid": "1647845",
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Geckolib/glue changes to support @page rule size attribute"
+  },
+  {
+   "bugid": "1698600",
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "CSS animation profiler markers should also be added for animations that run to completion"
+  },
+  {
+   "bugid": "1696967",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Web games are slow since v86, solved by disabling gfx.canvas.remote"
+  },
+  {
+   "bugid": "1697078",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make `Document::ExecCommand` not throw exception when editor returns error"
+  },
+  {
+   "bugid": "1698477",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma focus-handling.html and input-number.html failures when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1698829",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma html/rendering/replaced-elements/attributes-for-embedded-content-and-images/picture-aspect-ratio.html | Make sure style gets invalidated correctly when the source gets removed. when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1669342",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent Assertion failure: !aRootNode || aNotInsertedYet || (aStartBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && aEndBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && aRootNode == RangeUtils::ComputeRootNode(aStartBoundary.Co"
+  },
+  {
+   "bugid": "1697680",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Disable Presentation API on GeckoView Nightly"
+  },
+  {
+   "bugid": "1698813",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma  /html/rendering/non-replaced-elements/flow-content-0/dialog.html | Modal dialog in width: 540px iframe - assert_equals: position expected \"fixed\" but got \"absolute\" when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1698582",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "CoalescedMouseMoveFlusher::GetRefreshDriver method can be simplified"
+  },
+  {
+   "bugid": "1698734",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "GetOrCreateListenerManager() is used to just check existence of an event listener"
+  },
+  {
+   "bugid": "1646561",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix GetInProcessParentDocshell usage in DocShell::GetVisibility"
+  },
+  {
+   "bugid": "1698705",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Double-click doesn't select the last word of the line if there is no end punctuation and next element is inline-block"
+  },
+  {
+   "bugid": "1633570",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make AXValue settable for incrementable types"
+  },
+  {
+   "bugid": "1698493",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "ProfilerState.h should define no-op inline functions to avoid MOZ_GECKO_PROFILER ifdefs in code adding markers"
+  },
+  {
+   "bugid": "1698427",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Refactor JS frame extraction out of MergeStacks"
+  },
+  {
+   "bugid": "1697670",
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "YUVColorSpace::UNKNOWN should be Maybe<YUVColorSpace>"
+  },
+  {
+   "bugid": "1696581",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add a moz.yaml file for Angle and update the update-angle script to keep it up to date"
+  },
+  {
+   "bugid": "1696071",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add DMABuf support to the gfx blocklist"
+  },
+  {
+   "bugid": "1683002",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Intermittent Assertion failure: zoomedMetrics->GetApzc(), at /builds/worker/checkouts/gecko/gfx/layers/composite/AsyncCompositionManager.cpp:733"
+  },
+  {
+   "bugid": "1697509",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU examples crash on macOS and Windows, but not Linux"
+  },
+  {
+   "bugid": "1697899",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add fast path version of composite shader"
+  },
+  {
+   "bugid": "1687977",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render all gradients as cached images"
+  },
+  {
+   "bugid": "1698869",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add pref to force unaccelerated widgets (e.g. popups) to use full WebRender"
+  },
+  {
+   "bugid": "1698295",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Build glsl with opt-level=2 to improve build times."
+  },
+  {
+   "bugid": "1698872",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Assert if native compositing toggled while SwCompositor is running"
+  },
+  {
+   "bugid": "1698953",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Force disabling WebRender should override Fission settings"
+  },
+  {
+   "bugid": "1698711",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unused SwCompositor native GL mode"
+  },
+  {
+   "bugid": "1697223",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support static binding across strict direct eval scopes"
+  },
+  {
+   "bugid": "1697803",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "6.71 - 8.22% raptor-assorted-dom-firefox (linux64-shippable, linux64-shippable-qr) regression on push a0ee10a962a025723bcf5eb8c92a2412ad54c55f (Fri March 5 2021)"
+  },
+  {
+   "bugid": "1698077",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure when running the shell with --nursery-size=0"
+  },
+  {
+   "bugid": "1697479",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Consider not poisoning the nursery in nightly opt builds"
+  },
+  {
+   "bugid": "1692069",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Update existing GC instructions/types to match V8's milestone 3"
+  },
+  {
+   "bugid": "1678097",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Ion for wasm on ARM64 - base functionality (was: Plan B)"
+  },
+  {
+   "bugid": "1676441",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Allow Wasm memories to grow past 2GB on 64-bit systems"
+  },
+  {
+   "bugid": "1691489",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Implement SIMD population count instruction"
+  },
+  {
+   "bugid": "1698987",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Use GetCrossDocParentFrameInProcess in nsSubDocumentFrame"
+  },
+  {
+   "bugid": "1698680",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add nsLayoutUtils::GetCrossDocParentFrameInProcess()"
+  },
+  {
+   "bugid": "1698044",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Investigate if OOPIF could use longer paint suppression"
+  },
+  {
+   "bugid": "1698821",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Arrows are not visible in input type \"number\" in the print dialog"
+  },
+  {
+   "bugid": "1698807",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Block TRR on confirmation by default until we can complete a performance study."
+  },
+  {
+   "bugid": "1698742",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Fix reporting of CryptoAlert codes in HTTP3"
+  },
+  {
+   "bugid": "1697776",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Enable network.dns.use_https_rr_as_altsvc on nightly"
+  },
+  {
+   "bugid": "1689555",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Turn on the Prefer Address feature"
+  },
+  {
+   "bugid": "1698546",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Double-tap to zoom can be performed while a context menu is open"
+  },
+  {
+   "bugid": "1668322",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Prevent window.print() stunlocking tech support scam"
+  },
+  {
+   "bugid": "1696792",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Firefox doesn't render tspan tag in SVG correctly"
+  },
+  {
+   "bugid": "1698969",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Headless mode doesn't render checkboxes etc, which causes tests to fail with MOZ_HEADLESS=1"
+  },
+  {
+   "bugid": "1698284",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Minor non-native-theme high-contrast fixes."
+  },
+  {
+   "bugid": "1698949",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Scrollbars in chrome windows are invisible"
+  },
+  {
+   "bugid": "1698704",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Objective C exceptions in nsMacSharingService::GetSharingProviders: NSInvalidArgumentException: *** -[__NSPlaceholderArray initWithObjects:count:]: attempt to insert nil object from objects[0]"
+  },
+  {
+   "bugid": "1661572",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ DMABufSurfaceYUV::UpdateYUVData]"
+  },
+  {
+   "bugid": "1680402",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make printf_stderr work on Windows when it's been redirected"
+  },
+  {
+   "bugid": "1698697",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "error: call to implicitly-deleted copy constructor of 'mozilla::BlockingResourceBase::AcquisitionState'"
+  },
+  {
+   "bugid": "1698752",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix bindgen workaround following hashtable refactorings"
+  },
+  {
+   "bugid": "1698191",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Convert IdleTaskRunner to use TaskController"
+  },
+  {
+   "bugid": "1698989",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "s/GetCrossDocParentFrame/GetCrossDocParentFrameInProcess/ in nsTreeBodyFrame.cpp"
+  },
+  {
+   "bugid": "1698719",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Remove aSkipFrames argument to both FramePointerStackWalk and MozStackWalkThread"
+  },
+  {
+   "bugid": "1687954",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Pause on JS exceptions doesn't work properly in Fission"
+  },
+  {
+   "bugid": "1698553",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Update the DevTools release documentation about smoke tests"
+  },
+  {
+   "bugid": "1698565",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Actually do a target switch in devtools/client/framework/test/browser_toolbox_backward_forward_navigation.js"
+  },
+  {
+   "bugid": "1694352",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent devtools/client/framework/test/browser_target_parents.js | Uncaught exception - at chrome://browser/devtools/client/framework/test/browser_target_parents.js:65 - TypeError: can't access property \"descriptorFront\", addonFront is null"
+  },
+  {
+   "bugid": "1698681",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove unused DevTools module non-react-subscriber.js"
+  },
+  {
+   "bugid": "1694274",
+   "status": "ASSIGNED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Intermittent devtools/client/storage/test/browser_storage_indexeddb_navigation.js | Test timed out -"
+  },
+  {
+   "bugid": "1697596",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Remove ecosystem_anon_id and other AET infra from FxA client code"
+  },
+  {
+   "bugid": "1665420",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Remove BrowserId code and conditional prefs"
+  },
+  {
+   "bugid": "1697083",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Help > Troubleshoot Mode should end with an ellipsis"
+  },
+  {
+   "bugid": "1698492",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "FxA Sync Now string is not updated accordingly while syncing"
+  },
+  {
+   "bugid": "1698556",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] The \"expose\" telemetry ping for the \"Pin Firefox to Taskbar During Onboarding\" experiment experiment is not displayed in the \"about:telemetry\" page"
+  },
+  {
+   "bugid": "1694257",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Roll-out winning treatment from pin about:welcome experiment"
+  },
+  {
+   "bugid": "1693568",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Intermittent toolkit/components/messaging-system/test/browser/browser_experiment_evaluate_jexl.js | Uncaught exception - at resource://gre/modules/JSONFile.jsm:196 - Error: Data is not ready."
+  },
+  {
+   "bugid": "1615612",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "about:certificate chain download gives entire encoding on one line"
+  },
+  {
+   "bugid": "1697903",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Remove checkbox from Persistent Storage permission panel"
+  },
+  {
+   "bugid": "1698000",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Grace periods should disappear on block, not when blocks are cleared."
+  },
+  {
+   "bugid": "1693795",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Flatten tab scroll element so it's on the same plane as the tab"
+  },
+  {
+   "bugid": "1698244",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Reconsider how much vertical space Proton toolbars consume"
+  },
+  {
+   "bugid": "1697947",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Extend Proton button styles to more panels"
+  },
+  {
+   "bugid": "1698408",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Clean up about:compat desktop CSS and refresh its mobile CSS"
+  },
+  {
+   "bugid": "1697863",
+   "status": "NEW",
+   "component": "Firefox:Theme",
+   "summary": "Add preliminary Proton styles for browser UI menulists"
+  },
+  {
+   "bugid": "1698499",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Simplify --toolbarbutton-{hover/active}-background's implementation"
+  },
+  {
+   "bugid": "1698272",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "in hcm, date and time subfields should be highlighted when focused"
+  },
+  {
+   "bugid": "1678630",
+   "status": "REOPENED",
+   "component": "Firefox:Tours",
+   "summary": "Intermittent browser/components/uitour/test/browser_UITour2.js | Test timed out -"
+  },
+  {
+   "bugid": "1697950",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Partial support for mach bootstrap on arm64 mac"
+  },
+  {
+   "bugid": "1694371",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update FF to NSPR 4.30"
+  },
+  {
+   "bugid": "1698706",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "MozStackWalk doesn't work in Linux ASAN builds"
+  },
+  {
+   "bugid": "1698889",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Windows usernames aren't always scrubbed from Sentry paths"
+  },
+  {
+   "bugid": "1696041",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Investigate removing `fission-run-on-projects` and `webrender-run-on-projects`"
+  },
+  {
+   "bugid": "1573860",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Fenix/GeckoView does not send samesite=strict cookies when opening a site directly from the location bar"
+  },
+  {
+   "bugid": "1698453",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Perma funsize update generator failure: Intermittent ModuleNotFoundError: No module named 'importlib.metadata'"
+  },
+  {
+   "bugid": "1698152",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Perma [tier 2] remote-puppeteer TEST-UNEXPECTED-ERROR Page \"after each\" hook for \"should run beforeunload if asked for\" (page.spec.ts)"
+  },
+  {
+   "bugid": "1692309",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Surface the GetLastError() value in Windows minidumps"
+  },
+  {
+   "bugid": "1166995",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Run login capture code when a form or a formless password field is removed from the document tree"
+  },
+  {
+   "bugid": "1697546",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove yzen from a11y probe notifications"
+  },
+  {
+   "bugid": "1696916",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Expired metrics failing the build is bombastic, but counterproductive"
+  },
+  {
+   "bugid": "1698406",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Clean up --in-content-box-background-* variables"
+  },
+  {
+   "bugid": "1698415",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove --in-content-warning-container variable"
+  },
+  {
+   "bugid": "1698416",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove --in-content-tab-color variable"
+  },
+  {
+   "bugid": "1698398",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Switch webNavigation.getAllFrames implementation to use BrowsingContexts"
+  },
+  {
+   "bugid": "1698158",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add Services to the globals provided to the WebExtensions API modules global"
+  }
+ ],
+ "date": "2021-03-17",
+ "cset": "9ad67cd4d216ffec61bbaf8430d5fb9dfb537407",
+ "buildid": "20210317095331",
+ "fixed": 87,
+ "total": 99,
+ "restricted": 4
+}

@@ -1,0 +1,616 @@
+{
+ "bugs": [
+  {
+   "bugid": "1694634",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Audio file doesn\u2019t restart if skipping to the end of the seekbar while in loop mode"
+  },
+  {
+   "bugid": "1698401",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Seeking to non-round number causes all WebVTT cues to fire between currentTime and seekTime."
+  },
+  {
+   "bugid": "1697988",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent dom/ipc/tests/test_browsingcontext_currenturi.html | curURI has expected value - got \"https://tls1.example.com/\", expected \"about:blank\""
+  },
+  {
+   "bugid": "1703472",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "\"Opening multiple popups was blocked due to lack of user activation\" when JS-focussing user activated popup window"
+  },
+  {
+   "bugid": "1703144",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of `MOZ_KnownLive` for `EditorBase::SelectionRefPtr()`"
+  },
+  {
+   "bugid": "1677334",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Control-click on a link with a scripted click handler shows the context menu, but also is interpreted as a normal click"
+  },
+  {
+   "bugid": "1700004",
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "FuzzingFunctions.synthesizeKeyboardEvents() fails"
+  },
+  {
+   "bugid": "1695761",
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Patch libFuzzer to return instead of exit()"
+  },
+  {
+   "bugid": "1698524",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Clear memory counter each time we re-enable the profiler"
+  },
+  {
+   "bugid": "1703717",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash on address 0x88 in mozilla::AnimationEventInfo::AnimationEventInfo"
+  },
+  {
+   "bugid": "1688716",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "ThreadSanitizer: data race ../src/util/u_thread.h:197:4 in iris_dri.so"
+  },
+  {
+   "bugid": "1703534",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Bus error in gfxSparseBitSet::Union"
+  },
+  {
+   "bugid": "1685183",
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Remove contentsScaleFactor handling from MacIOSurface"
+  },
+  {
+   "bugid": "1622846",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU IDL to the upstream changes"
+  },
+  {
+   "bugid": "1703532",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let webrender ride the trains on Adreno 4xx"
+  },
+  {
+   "bugid": "1700151",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Example-compositor fixes"
+  },
+  {
+   "bugid": "1703524",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable Software WebRender popups on Windows"
+  },
+  {
+   "bugid": "1703502",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Perma Android bustage widget/android/GfxInfo.cpp:678:62: error: function definition is not allowed here when Gecko 89 merges to Beta on 2021-04-19"
+  },
+  {
+   "bugid": "1699985",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement basic native Wayland compositor backend"
+  },
+  {
+   "bugid": "1699013",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: stride.width > 0.0) at gfx/wr/webrender/src/image_tiling.rs:96"
+  },
+  {
+   "bugid": "1703731",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Set correct flags for checkerboard images in wrench"
+  },
+  {
+   "bugid": "1695937",
+   "status": "ASSIGNED",
+   "component": "Core:Internationalization",
+   "summary": "Add intl::NumberFormat and use it to format numbers in Fluent"
+  },
+  {
+   "bugid": "1701827",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow multiple JS::Stencil instantiations while source-compression is pending"
+  },
+  {
+   "bugid": "1681046",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable Top Level Await"
+  },
+  {
+   "bugid": "1697952",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ js::frontend::CompilationStencil::instantiateStencilAfterPreparation]"
+  },
+  {
+   "bugid": "1698105",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused PropOpEmitter::Kind::Set and ElemOpEmitter::Kind::Set"
+  },
+  {
+   "bugid": "1699468",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: aspectRatioUsage == AspectRatioUsage::None, at /builds/worker/checkouts/gecko/layout/generic/nsIFrame.cpp:6248"
+  },
+  {
+   "bugid": "1703644",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Intermittent toolkit/mozapps/extensions/test/browser/browser_panel_item_accesskey.js | application crashed [@ MergeState::AddNewNode ...]"
+  },
+  {
+   "bugid": "1703691",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "osx perma  [tier2] pagination/820496-1.html == pagination/820496-1-ref.html | image comparison, max difference: 204, number of differing pixels: 15000"
+  },
+  {
+   "bugid": "1698428",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Firefox overflow-top-left.html starts to fail after 1697349"
+  },
+  {
+   "bugid": "1702873",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Frequent tier 2 CRITICAL Client requested name \".AlBayanPUA\", it will get Times-Roman rather than the intended font. All system UI font access should be through proper APIs such as CTFontCreateUIFontForLanguage() or +[NSFont systemFontOfSize:]."
+  },
+  {
+   "bugid": "1703614",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ InvalidArrayIndex_CRASH | gfxUserFontEntry::GetFamilyNameAndURIForLogging]"
+  },
+  {
+   "bugid": "1699691",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "More TRR confirmation tests"
+  },
+  {
+   "bugid": "1698661",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Verify network.http.active_tab_priority prioritizes iframe networking appropriately with Fission"
+  },
+  {
+   "bugid": "1700375",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Double-tap to zoom is not working on (some) textareas"
+  },
+  {
+   "bugid": "1702855",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Pinch gesture for zoom conflicts with Gnome Shell"
+  },
+  {
+   "bugid": "1701597",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "when zooming to a rect horizontally center it"
+  },
+  {
+   "bugid": "1694200",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Using OS client certs on macOS doesn't respect identity preference keychain items"
+  },
+  {
+   "bugid": "1703702",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Add nsMenuPopupFrame::IsNativeMenu()"
+  },
+  {
+   "bugid": "1590854",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Non-overlay scrollbars are light under dark mode"
+  },
+  {
+   "bugid": "1703526",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Deadlock in mozilla::WaylandVsyncSource::WaylandDisplay::Shutdown()"
+  },
+  {
+   "bugid": "1701182",
+   "status": "UNCONFIRMED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux, Wayland, Snap] Firefox 87: clicks do not work & more"
+  },
+  {
+   "bugid": "1703490",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Remove duplicate D&D handlers"
+  },
+  {
+   "bugid": "1687636",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Can't Pinch Zoom with Touchpad & Touchscreen"
+  },
+  {
+   "bugid": "1703604",
+   "status": "NEW",
+   "component": "Core:Widget: Win32",
+   "summary": "scrollbar-color: <something> transparent prevents scroll arrows from showing up."
+  },
+  {
+   "bugid": "1703108",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Cycle collector edge name logging isn't working"
+  },
+  {
+   "bugid": "1703083",
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Use the lazy pref getter workaround for SHOW_OTHER_BOOKMARKS."
+  },
+  {
+   "bugid": "1702078",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "a11y panel should emit ready event after rendering the UI"
+  },
+  {
+   "bugid": "1702124",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "about:devtools - focus ring of checkbox for GDPR conrifmation truncated when TAB-selected"
+  },
+  {
+   "bugid": "1703574",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "When enabling Proton, TEST-UNEXPECTED-FAIL | devtools/client/inspector/markup/test/browser_markup_screenshot_node_about_page.js | The screenshot was taken - Got \"rgb(255, 255, 255)\", expected \"rgb(249, 249, 250)\""
+  },
+  {
+   "bugid": "1703300",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent browser_rules_color_scheme_simulation.js | A promise chain failed to handle a rejection: can't access property \"on\", walker is undefined - stack: registerWalkerListeners@resource://devtools/client/framework/actions/dom-mutation-breakpoints.js"
+  },
+  {
+   "bugid": "1703178",
+   "status": "ASSIGNED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Set RDM-related BrowsingContext flags in parent process instead of ResponsiveActor (which lives in content process)"
+  },
+  {
+   "bugid": "1703384",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Failure in browser/components/urlbar/tests/browser/browser_autocomplete_a11y_label.js with proton urlbar"
+  },
+  {
+   "bugid": "1703647",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Change tab-to-search results to use a Primary Blue search glass icon instead of an inverted one"
+  },
+  {
+   "bugid": "1703385",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Failure in browser/components/urlbar/tests/browser/browser_searchMode_no_results.js with proton urlbar"
+  },
+  {
+   "bugid": "1703116",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add more tests for suggestedIndex results during view updates."
+  },
+  {
+   "bugid": "1702525",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Urlbar divider is thicker when search mode is opened"
+  },
+  {
+   "bugid": "1703036",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search mode chiclet has unreadable close button in High Contrast Mode"
+  },
+  {
+   "bugid": "1703390",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Failure in browser/modules/test/browser/browser_UsageTelemetry_interaction.js with proton urlbar"
+  },
+  {
+   "bugid": "1703128",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace BrowserTestUtils.waitForCondition with TestUtils.waitForCondition in browser_bookmarks_shortcut.js"
+  },
+  {
+   "bugid": "1702371",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace BrowserTestUtils.waitForCondition with TestUtils.waitForCondition in browser_aboutDialog_distribution.js"
+  },
+  {
+   "bugid": "1703511",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Perma browser/base/content/test/sync/browser_contextmenu_sendpage.js | Ids in context menu match expected values when Gecko 89 merges to Beta on 2021-04-19"
+  },
+  {
+   "bugid": "1703398",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Remove \"the\" from \"Close tabs to the Left\" and \"Close tabs to the Right\" tab strip context menu items"
+  },
+  {
+   "bugid": "1701379",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fullscreen/pointer lock warning has wrong stack order"
+  },
+  {
+   "bugid": "1698457",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update newtab dependencies for 89"
+  },
+  {
+   "bugid": "1703661",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update syntax for newtab webpack-cli env=development"
+  },
+  {
+   "bugid": "1703221",
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "Notification displayed when enabling/disabling tracking protection is cut"
+  },
+  {
+   "bugid": "1702532",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/assertIsBlankDocument.js passes eslint check"
+  },
+  {
+   "bugid": "1702579",
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/test/browser/injection-page.html passes eslint check"
+  },
+  {
+   "bugid": "1692018",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove support for installing OpenSearch engines via ftp"
+  },
+  {
+   "bugid": "1702474",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search bar panel is missing shadow on light themes"
+  },
+  {
+   "bugid": "1602687",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "[meta] Fix browser/components/sessionstore tests for Fission and SHIP"
+  },
+  {
+   "bugid": "1699053",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "[macOS VoiceOver] The Screen Reader has inconsistent behaviour with the webRTC permission panel"
+  },
+  {
+   "bugid": "1694661",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Update repeat prompt and tab switch checkbox labels for content prompts"
+  },
+  {
+   "bugid": "1703623",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Fix reftests that fail with browser.proton.enabled set to true"
+  },
+  {
+   "bugid": "1703560",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Test failure when browser.proton.enabled is true: TEST-UNEXPECTED-FAIL | browser/base/content/test/performance/browser_tabopen.js | unexpected changed rect: ({x1:427, x2:476, y1:12, y2:47, w:50, h:36}), window width: 1280"
+  },
+  {
+   "bugid": "1700109",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Set browser.proton.enabled to true by default on Nightly"
+  },
+  {
+   "bugid": "1703458",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Fix some theme issues after bug 1701448"
+  },
+  {
+   "bugid": "1703649",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Force gfx/layers/apz/test/mochitest/test_group_zoom-2.html to use proton disabled"
+  },
+  {
+   "bugid": "1703500",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Proton: make tab bar scroll buttons slimmer and increase hit area"
+  },
+  {
+   "bugid": "1702837",
+   "status": "NEW",
+   "component": "Firefox:Theme",
+   "summary": "Refresh the permissions icons"
+  },
+  {
+   "bugid": "1699892",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Hook up the server-side generated default FxA icons"
+  },
+  {
+   "bugid": "1703405",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "browser/base/content/test/performance/browser_appmenu.js fails under proton"
+  },
+  {
+   "bugid": "1686527",
+   "status": "NEW",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Refresh navbar toolbar icons"
+  },
+  {
+   "bugid": "1703558",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "browser/components/uitour/test/browser_UITour_availableTargets.js fails with proton enabled"
+  },
+  {
+   "bugid": "1703305",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Mach bootstrap for openSUSE will try to install pip/mercurial as root. maby use --user instead?"
+  },
+  {
+   "bugid": "1702896",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Mach bootstrap does not work on openSUSE Leap 15.2 (anymore)"
+  },
+  {
+   "bugid": "1703039",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Warn against `hg commit --amend -m` in the contribution docs"
+  },
+  {
+   "bugid": "1703336",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "`mach lint -l black` scans vcs files"
+  },
+  {
+   "bugid": "1695018",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "taskgraph changes to support comm-central as single repo"
+  },
+  {
+   "bugid": "1655896",
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.TextInputDelegateTest.inputConnection_deleteSurroundingText[#<test>] | java.lang.AssertionError: Can delete empty text"
+  },
+  {
+   "bugid": "1703487",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Bad alignment of about:addons menu in small window"
+  },
+  {
+   "bugid": "1703320",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Ensure Background Task is scheduled if and only if it ought to be scheduled"
+  },
+  {
+   "bugid": "1682516",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Make the WER runtime exception module launch the crash reporter client when the browser crashes"
+  },
+  {
+   "bugid": "1701623",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Don't build minidump_writer_linux if crashreporter is disabled"
+  },
+  {
+   "bugid": "1682514",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Register the WER runtime exception module at runtime"
+  },
+  {
+   "bugid": "1682511",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Record the WER runtime exception module in the Windows registry"
+  },
+  {
+   "bugid": "1682509",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Write a WER runtime exception module capable of writing out minidumps"
+  },
+  {
+   "bugid": "1703411",
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "toolkit/components/extensions/test/browser/browser_ext_themes_findbar.js failing after Find bar styling changes"
+  },
+  {
+   "bugid": "1700212",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Permission doorhangers keep displaying when the Identity panel opens"
+  },
+  {
+   "bugid": "1703509",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Action buttons in about:performance have bad contrast when their row is selected"
+  }
+ ],
+ "date": "2021-04-08",
+ "cset": "83a21ab93aff939d348468e69249a3a33ccfca88",
+ "buildid": "20210408095111",
+ "fixed": 82,
+ "total": 101,
+ "restricted": 3
+}

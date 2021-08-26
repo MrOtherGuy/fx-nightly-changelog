@@ -1,0 +1,616 @@
+{
+ "bugs": [
+  {
+   "bugid": "1714303",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update various things about Media Playback and WebRTC telemetry probes"
+  },
+  {
+   "bugid": "1716248",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Change `AppendAndConsumeChunk`'s input type from `AudioChunk*` to `AudioChunk&&`"
+  },
+  {
+   "bugid": "1716453",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update dav1d to new version ddbbfde for Firefox 91"
+  },
+  {
+   "bugid": "1717381",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Deal with Uint8ClampedArray::Init failure in canvas code."
+  },
+  {
+   "bugid": "1717466",
+   "status": "RESOLVED",
+   "component": "Core:DMD",
+   "summary": "A few minor fixes for block_analyzer.py"
+  },
+  {
+   "bugid": "1717072",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement window.clientInformation as an alias of window.navigator"
+  },
+  {
+   "bugid": "1717612",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Hide window.sidebar behind a flag on nightly/early beta"
+  },
+  {
+   "bugid": "1717156",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of some unused `nsIEditor` flags"
+  },
+  {
+   "bugid": "1711544",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make dom/tests/browser/browser_bug1685807.js work with Fission and BFCache"
+  },
+  {
+   "bugid": "1715300",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable BFCache in parent when Fission is enabled"
+  },
+  {
+   "bugid": "1715884",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "ASSERTION: Overwriting an existing document channel!: '(loadFlags & nsIChannel::LOAD_REPLACE) || !(mDocumentRequest.get())',"
+  },
+  {
+   "bugid": "1714299",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Correct ORB's opaque response implementation"
+  },
+  {
+   "bugid": "1713894",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "browser_originattrs_reopenin.js test skipped in 'browser/components/contextualidentity/test/browser/browser.ini' for Fission"
+  },
+  {
+   "bugid": "1715253",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS-First ends up in an redirecting endless loop for  https://radio.garden/visit/berlin/6lcXHtKK"
+  },
+  {
+   "bugid": "1716991",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enable HTTPS-First Mode in PBM Mode"
+  },
+  {
+   "bugid": "1717435",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Permanent html/semantics/forms/textfieldselection/select-event.html when Gecko 91 merges to Beta on 2021-07-12"
+  },
+  {
+   "bugid": "1716549",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Improve MsaaAccessible::QueryInterface when the underlying Accessible is dead"
+  },
+  {
+   "bugid": "1715321",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Report the type of redirection in network markers"
+  },
+  {
+   "bugid": "1715922",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Busy processes don't get sampled at the expected rate"
+  },
+  {
+   "bugid": "1655639",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for transforms in the Draw compositor."
+  },
+  {
+   "bugid": "1703142",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "(Snap) WebRender disable by default in FF87 in Ubuntu 20.10"
+  },
+  {
+   "bugid": "1715515",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Switch mingwclang and Windows 32 tests to WebRender"
+  },
+  {
+   "bugid": "1706374",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Use a message router for primary child process channels"
+  },
+  {
+   "bugid": "1713148",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Use the message router for all channels"
+  },
+  {
+   "bugid": "1712855",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Assertion failure: aThebesContext->CurrentOp() == CompositionOp::OP_OVER, at src/layout/base/PresShell.cpp:4542"
+  },
+  {
+   "bugid": "1713627",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Remove code that is no longer relevant without the Text Encoding submenu"
+  },
+  {
+   "bugid": "1715222",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Permanent smoosh subprocess.CalledProcessError: Command '['/builds/worker/checkouts/gecko/mach', 'build']' returned non-zero exit status 2."
+  },
+  {
+   "bugid": "1716901",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Minimize bindings on the self-hosted global"
+  },
+  {
+   "bugid": "1717279",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JSID_IS_SYMBOL and JSID_TO_SYMBOL"
+  },
+  {
+   "bugid": "1717465",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused FunctionSynaxKind argument from skipInnerLazyFunction."
+  },
+  {
+   "bugid": "1717606",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Some follow-up changes for bug 1715512"
+  },
+  {
+   "bugid": "1716134",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "TEST-UNEXPECTED-FAIL | js/src/jit/MIROpsGenerated.h differs. See the diff.html or diff.txt artifact"
+  },
+  {
+   "bugid": "1717405",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: map->asLinked()->canSkipMarkingTable(), at gc/Marking.cpp:1569"
+  },
+  {
+   "bugid": "1697371",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Templatize most/all vanilla baseline emitters"
+  },
+  {
+   "bugid": "1716041",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Remove `unwind` instruction for Wasm exception handling"
+  },
+  {
+   "bugid": "1716043",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Support bare `try` block in Wasm exception handling"
+  },
+  {
+   "bugid": "1716869",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix imports in tests in order to vendor latest \"wat\" crate"
+  },
+  {
+   "bugid": "1717425",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Do not email lhansen when CL fails to build on inbound"
+  },
+  {
+   "bugid": "1717430",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix some coverity annoyances in the baseline compiler"
+  },
+  {
+   "bugid": "1717442",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix name of type definition ControlFlowPatchsVector to ControlFlowPatchVectorVector"
+  },
+  {
+   "bugid": "1678089",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier2][fission] layout/base/tests/test_bug851485.html | Scrolling after load works. | Reloading keeps scroll position - got 4904, expected 500"
+  },
+  {
+   "bugid": "1715783",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Black on black printing occurs with custom colors set in preferences and \"High Contrast Black\" color scheme in Windows 7 or 10"
+  },
+  {
+   "bugid": "1716675",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "audio element without control should be display:none even if we set display to other values"
+  },
+  {
+   "bugid": "1717245",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Printing buttons with high-contrast-dark on windows but without printing backgrounds causes black-on-black text"
+  },
+  {
+   "bugid": "1708007",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "AddressSanitizer: SEGV /builds/worker/workspace/obj-build/dist/include/nsIFrame.h:1761:5 in nsIFrame::ChildLists() const"
+  },
+  {
+   "bugid": "1570786",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[@ mozilla::ContentPrincipal::GetURI ] null deref"
+  },
+  {
+   "bugid": "1708729",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Port 65535 can no longer be unblocked"
+  },
+  {
+   "bugid": "1708673",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Dooming cache via asyncVisitAllStorages while resetting networkPredictor leads to inconsistent cache state"
+  },
+  {
+   "bugid": "1717253",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Many web pages open very slowly or not at all."
+  },
+  {
+   "bugid": "1713547",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Handle zero display port scroll frame gracefully in the checkerboard telemetry"
+  },
+  {
+   "bugid": "1714703",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Permanent [Tier 2] components/resistfingerprinting/test/mochitest/test_hide_gamepad_info.html | Test timed out. -"
+  },
+  {
+   "bugid": "1672421",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "XDG_CONFIG_PATH is not a thing"
+  },
+  {
+   "bugid": "1700534",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Coalesce RLBox wasmboxed libraries"
+  },
+  {
+   "bugid": "1701770",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Invalid Win32k use in content process [USER32!SetProcessDpiAwarenessContext]"
+  },
+  {
+   "bugid": "1717599",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "21f95d1f0e316e2bc8000613a0350cb1102572b3 causes crash when attempting to start any profile"
+  },
+  {
+   "bugid": "1717161",
+   "status": "NEW",
+   "component": "Core:Web Painting",
+   "summary": "Clamp perspective() values to 1px for interpolation"
+  },
+  {
+   "bugid": "1717129",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "activateItem sometimes does not activate the item, and instead gets stuck in the NSMenu's tracking event loop"
+  },
+  {
+   "bugid": "1717182",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Make nsWindows::mIsRTL dynamic on Windows"
+  },
+  {
+   "bugid": "1713525",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "xpcom/base/nsTraceRefcnt.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1714226",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Return the number of removed elements from nsTArray::RemoveElementsBy"
+  },
+  {
+   "bugid": "1717386",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "ThreadStackHelper::CollectProfilingStackFrame should not allocate memory"
+  },
+  {
+   "bugid": "1682921",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_stubs_evaluation_result.js | \"asdf()\" packet has expected value - Got \"{\\n  \\\"errorMessageName\\\": \\\"JSMSG_NOT_DEFINED\\\",\\n  \\\"exception\\\": {\\n    \\\"_grip\\\": {\\n      \\\"type\\\": \\\"objec"
+  },
+  {
+   "bugid": "1712737",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Messages and errors from previous window globals may be notified twice"
+  },
+  {
+   "bugid": "1714082",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Only attach one message listener in WorkerDispatcher"
+  },
+  {
+   "bugid": "1716314",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger panel should be auto-selected when JS execution is paused"
+  },
+  {
+   "bugid": "1715904",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Use DOCUMENT_EVENT's will-navigate event in all tests"
+  },
+  {
+   "bugid": "1714544",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove redundant eslint-disable directives in devtools/server/tests"
+  },
+  {
+   "bugid": "1716964",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Expose defaultLoadFlags on the BrowsingContext for use by devtools"
+  },
+  {
+   "bugid": "1713301",
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "The response panel should show raw response when clicking on search results"
+  },
+  {
+   "bugid": "1716924",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "\"The Network panel has crashed. File Bug Report\" always displayed for any site"
+  },
+  {
+   "bugid": "1713587",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Unable to see path column when devtools are docked to the side"
+  },
+  {
+   "bugid": "1713662",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tab-to-search engines unrelated to the autofilled domain sometimes appear"
+  },
+  {
+   "bugid": "1713901",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tests skipped in 'browser/components/urlbar/tests/browser/browser.ini' for new Fission platform triage"
+  },
+  {
+   "bugid": "1717169",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Collect value of browser.urlbar.showSearchSuggestionsFirst"
+  },
+  {
+   "bugid": "1716025",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add blocklist of sites to exclude from history metadata"
+  },
+  {
+   "bugid": "1717424",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Loading a non-http page (e.g. about: page) after a normal web page still updates the interaction for the web page"
+  },
+  {
+   "bugid": "1712838",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Monitor",
+   "summary": "Remove Firefox Monitor doorhanger notification component from desktop Firefox"
+  },
+  {
+   "bugid": "1716982",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Replace waitForEvent use in preferences tests with BrowserTestUtils.waitForEvent"
+  },
+  {
+   "bugid": "1713938",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "\"toggle-screenshot-disable\" notification disables/enables screenshot toolbar button in all windows"
+  },
+  {
+   "bugid": "1715838",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Create preference for new screenshots component work"
+  },
+  {
+   "bugid": "1682361",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_tabs_remove.js | SessionStore of second window should know that multiple tabs were closed - Got +0, expected 2"
+  },
+  {
+   "bugid": "1717497",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Crash in [@ mozilla::dom::SessionStoreDataCollector::CollectSessionStoreData]"
+  },
+  {
+   "bugid": "1716912",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Switch --enable-bootstrap on by default on Windows builds on central"
+  },
+  {
+   "bugid": "1714688",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove `if PY2`/`if PY3` logic now that we never use Python 2 with Mach"
+  },
+  {
+   "bugid": "1715584",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Update FF to NSPR 4.32"
+  },
+  {
+   "bugid": "1716600",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "The devtools debugger build uses my system's node instead of the one in mozbuild"
+  },
+  {
+   "bugid": "1717447",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Update codespell to 2.1.0"
+  },
+  {
+   "bugid": "1717569",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Upgrade sanitizer builds to first rust 1.54.0 nightly"
+  },
+  {
+   "bugid": "1673511",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Bug] weird sticky keyboard pop up behaviour"
+  },
+  {
+   "bugid": "1714998",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.TextInputDelegateTest.editorInfo_defaultByInputType[#input] | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms"
+  },
+  {
+   "bugid": "1691481",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Share Marionette's errors module with WebDriver BiDi"
+  },
+  {
+   "bugid": "1708717",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Proton: About:addons and customize toolbar show outdated theme pictures"
+  },
+  {
+   "bugid": "1035892",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "All 64-bit mode crashes on OS X with reason EXC_BAD_ACCESS have crash addresses truncated to 32-bits"
+  },
+  {
+   "bugid": "1717602",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Enable places.forgetThisSite.clearByBaseDomain for all channels"
+  },
+  {
+   "bugid": "1701078",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent browser/extensions/formautofill/test/browser/browser_remoteiframe.js | Test timed out -"
+  },
+  {
+   "bugid": "1717103",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Fix test_autocomplete_https_downgrade.html in cross origin mode"
+  },
+  {
+   "bugid": "1672577",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove or update probes expiring in Firefox 85: NUMBER_OF_PROFILES"
+  },
+  {
+   "bugid": "1717559",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.36.0"
+  },
+  {
+   "bugid": "1683171",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Expose test_get_num_recorded_errors in FOG metrics' JS and C++ APIs"
+  },
+  {
+   "bugid": "1717201",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Allow changing the mapping between WebExtension permission names and their description keys"
+  },
+  {
+   "bugid": "1714428",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add support for querying/setting colorManagement in browserSettings"
+  }
+ ],
+ "date": "2021-06-22",
+ "cset": "536a892dd51f394af6c0638166e8cb7e467ae88c",
+ "buildid": "20210622212907",
+ "fixed": 92,
+ "total": 101,
+ "restricted": 2
+}

@@ -1,0 +1,550 @@
+{
+ "bugs": [
+  {
+   "bugid": "1615035",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Stop using NS_ERROR_DOM_TYPE_ERR in CDM code"
+  },
+  {
+   "bugid": "1616455",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "readPixels should accept Uint8Clamped without error"
+  },
+  {
+   "bugid": "1615487",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Motionmark WebGL test slower than Chrome"
+  },
+  {
+   "bugid": "1610981",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "[web-animations-1] Dependency on CSSPseudoElement"
+  },
+  {
+   "bugid": "1607214",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Interfaces that return XULControllers can return null yet the webidl declarations don't allow null values"
+  },
+  {
+   "bugid": "1615741",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Interaction of lack of AllowShared and unions seems to not follow the spec"
+  },
+  {
+   "bugid": "1605072",
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Make CanonicalBrowsingContext::ChangeFrameRemoteness async"
+  },
+  {
+   "bugid": "1611374",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Refuse nested `Document.execCommand()` calls by default in Nightly channel and early Beta"
+  },
+  {
+   "bugid": "1556627",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsFocusManager::SetFocus doesn't work for OOP iframes when the iframe isn't focused"
+  },
+  {
+   "bugid": "1607460",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Align with Cross-Origin-Opener-Policy changes"
+  },
+  {
+   "bugid": "1359404",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "HTMLEditor::IsEmptyNode() and HTMLEditor::IsEmptyNodeImpl() should return bool"
+  },
+  {
+   "bugid": "1609324",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Fission] Weirdness when going back in some cases (temporarily disable bfcache for Fission-enabled tabs)"
+  },
+  {
+   "bugid": "1615581",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Factor out table selection functionality in `nsFrameSelection`"
+  },
+  {
+   "bugid": "1603484",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Walmart Grocery service worker fails to launch after initial run"
+  },
+  {
+   "bugid": "1610585",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: aIncrease || mBusyCount (Mismatched busy count mods!), at dom/workers/WorkerPrivate.cpp:1760"
+  },
+  {
+   "bugid": "1596007",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "NVDA screen reader not getting focus and read image ALT text"
+  },
+  {
+   "bugid": "1616146",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Notify platform when accessibility focus boundaries are reached."
+  },
+  {
+   "bugid": "1581475",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::DrawTargetD2D1::CreateBrushForPattern] in void mozilla::SVGGeometryFrame::Render"
+  },
+  {
+   "bugid": "1615590",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "10-second long startup hangs on developer machines after each update because of the sanity test \"snapshot\" checks, if webrender compositor is enabled"
+  },
+  {
+   "bugid": "1595420",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "OOM in GPUProcessManager::OnPreferenceChange and RDDProcessManager::OnPreferenceChange on macOS"
+  },
+  {
+   "bugid": "1616386",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Quaternion z value is lost in the copy constructor"
+  },
+  {
+   "bugid": "1616174",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Do not create unnecessary compositor window"
+  },
+  {
+   "bugid": "1579235",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "YouTube is drawn into the picture cache and then onto the screen"
+  },
+  {
+   "bugid": "1612620",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "\"#1 Best Seller\" badge on Amazon has blocky points (due to border painting incorrectly), on Fenix on Android with WebRender enabled"
+  },
+  {
+   "bugid": "1615694",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Declare our render targets up front to ANGLE"
+  },
+  {
+   "bugid": "1614377",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Use the new blocklist rollout rules to control WebRender deployment"
+  },
+  {
+   "bugid": "1615155",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Remove default Recv__delete__ implementations if there are any arguments"
+  },
+  {
+   "bugid": "1615836",
+   "status": "VERIFIED",
+   "component": "Core:Internationalization",
+   "summary": "wrong encoding, unable to set default"
+  },
+  {
+   "bugid": "1615718",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make the \"not enough arguments\" error message have a ':' after {0}"
+  },
+  {
+   "bugid": "1378189",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support derived constructors in Ion"
+  },
+  {
+   "bugid": "1605143",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Derived class constructors always marked as having unknown properties"
+  },
+  {
+   "bugid": "1615900",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Stop using CreateFileA in netwerk/"
+  },
+  {
+   "bugid": "1614637",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "ThreadSanitizer: data race [@ assign_assuming_AddRef] vs. [@ operator bool] in CacheStorageService"
+  },
+  {
+   "bugid": "1614646",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "ThreadSanitizer: data race [@ nsCookieService::CountCookiesFromHostInternal] vs. [@ operator]"
+  },
+  {
+   "bugid": "1615389",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Pass cookie sameSite=lax-by-default WPTs"
+  },
+  {
+   "bugid": "1543331",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Crash in [@ @0x0 | nsHostResolver::FlushCache]"
+  },
+  {
+   "bugid": "1606927",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 74 to use NSS 3.50"
+  },
+  {
+   "bugid": "1556568",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "firstPaint metric is broken"
+  },
+  {
+   "bugid": "1615481",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Fix exceptions through from DataChannel.send() when the message is too big"
+  },
+  {
+   "bugid": "1609675",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "[TSF][TS_E_NOLAYOUT] MS-IME candidate window sometimes appears and flickers at top-left corner of display on Nightly or early Beta"
+  },
+  {
+   "bugid": "1615607",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Consider to always treat high priority runnables as the highest priority runnables"
+  },
+  {
+   "bugid": "1616186",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Crash in [@ mozilla::scache::StartupCache::MaybeInitShutdownWrite]"
+  },
+  {
+   "bugid": "1596490",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove NS_ERROR_XBL_BLOCKED from xpcom/base/ErrorList.py"
+  },
+  {
+   "bugid": "1616327",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Crash in [@ OOM | large | NS_ABORT_OOM | Gecko_SetLengthCString | XPCConvert::JSData2Native]"
+  },
+  {
+   "bugid": "1615982",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "accessibility.description.oldVersion should be removed or updated"
+  },
+  {
+   "bugid": "1615973",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "\"Invoke getter\" prompt in console sticks around too long"
+  },
+  {
+   "bugid": "1592277",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "ES6 classes are displayed as functions"
+  },
+  {
+   "bugid": "1609426",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Some DOM methods don't work with eager evaluation"
+  },
+  {
+   "bugid": "1616270",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Undefine --theme-icon-extreme-dimmed-color"
+  },
+  {
+   "bugid": "1614549",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Highlight DOM elements from instant evaluation"
+  },
+  {
+   "bugid": "1616264",
+   "status": "RESOLVED",
+   "component": "DevTools:DOM",
+   "summary": "Replace read-only.svg with lock.svg"
+  },
+  {
+   "bugid": "1613578",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "remove -m from command when updating a patch"
+  },
+  {
+   "bugid": "1614793",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Rename DebuggerServerConnection to DevToolsServerConnection"
+  },
+  {
+   "bugid": "1613802",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Rules toolbar has become 2px taller than Markup/3rd-pane  toolbars"
+  },
+  {
+   "bugid": "1598730",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "align-content:baseline is wrongly greyed out on grid/flex items and table cells"
+  },
+  {
+   "bugid": "1523049",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Implement the context menu for the new rules view"
+  },
+  {
+   "bugid": "1613882",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use Accordion for the Params Panel"
+  },
+  {
+   "bugid": "1591908",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Limit tooltip for WS payload in Messages panel"
+  },
+  {
+   "bugid": "1615436",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Allow capturing profiles if the profiler was started by another tool, to allow startup profiling on Android"
+  },
+  {
+   "bugid": "1615418",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Glitchy disconnect behavior on about:debugging"
+  },
+  {
+   "bugid": "1603494",
+   "status": "NEW",
+   "component": "Firefox:Disability Access",
+   "summary": "Global zoom functions incorrectly with disabled site-specific zoom"
+  },
+  {
+   "bugid": "1612352",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "TRR: Whitelist individual domains via enterprise policy"
+  },
+  {
+   "bugid": "1616007",
+   "status": "ASSIGNED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Policies set via GPO can be bypassed/canceled by using an invalid policies.json file"
+  },
+  {
+   "bugid": "1613801",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "macOS' Window menu has the brand-full-name suffix repeated at the end of every browser window title"
+  },
+  {
+   "bugid": "1612270",
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable spocs per region via a pref"
+  },
+  {
+   "bugid": "1597888",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Default topsites tailored for \"CN\" region"
+  },
+  {
+   "bugid": "1611778",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "On slower machines, the \"Firefox Home Content\" flickers when opening/reloading about:preferences#home"
+  },
+  {
+   "bugid": "1615705",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "spocs displayed in ds devtools broken"
+  },
+  {
+   "bugid": "1596981",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Fission: JS errors running automated tests - InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable\" {file: \"resource:///actors/ContentMetaChild.jsm line 167}"
+  },
+  {
+   "bugid": "1596486",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Remove the XBL workaround for setting checkbox disabled state in browser/components/preferences/in-content/privacy.js"
+  },
+  {
+   "bugid": "1613530",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Intermittent ccov [tier2] browser/components/preferences/in-content/tests/browser_extension_controlled.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as"
+  },
+  {
+   "bugid": "1587031",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Removed unused browser.contentblocking.control-center.ui prefs"
+  },
+  {
+   "bugid": "1495394",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Add a mach command to install moz-phab"
+  },
+  {
+   "bugid": "1616396",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Install rust 1.41.0 in |./mach bootstrap|"
+  },
+  {
+   "bugid": "1614994",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "74.0b1: ImportError: No module named shutil_which"
+  },
+  {
+   "bugid": "1530057",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Disable Android LTO for non-PGO (opt) builds"
+  },
+  {
+   "bugid": "1611326",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Default to py3_action for all GeneratedFiles"
+  },
+  {
+   "bugid": "1530058",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Disable macOS LTO for non-PGO (opt) builds"
+  },
+  {
+   "bugid": "1614908",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Perma doc-upload | botocore.exceptions.ClientError: An error occurred (InvalidRequest) when calling the PutBucketWebsite operation"
+  },
+  {
+   "bugid": "1616172",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "mach fluent-migration-test broken with `TypeError: write() argument must be str, not bytes`"
+  },
+  {
+   "bugid": "1615174",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "`ulimit -n` is too high in jobs happening in docker"
+  },
+  {
+   "bugid": "1614367",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "clang 10 thinks mac builds don't have zlib support"
+  },
+  {
+   "bugid": "1304268",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Audio/Video",
+   "summary": "Permanently record telemetry data for MEDIA_DECODING_PROCESS_CRASH"
+  },
+  {
+   "bugid": "1609407",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "key events do not trigger when oninput is also assigned to input"
+  },
+  {
+   "bugid": "1603673",
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "enable dom.manifest.enabled for GeckoView"
+  },
+  {
+   "bugid": "1583575",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use something better than 1x1 for initial window size"
+  },
+  {
+   "bugid": "1616006",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Intermittent ModuleNotFoundError: No module named 'setuptools'"
+  },
+  {
+   "bugid": "1587504",
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Make DownloadPlatform use the dedicated low-priority background thread for macOS metafile work rather than a LazyIdleThread"
+  },
+  {
+   "bugid": "1616179",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "\"Clear Recent History\" dialog no longer remembers position"
+  },
+  {
+   "bugid": "1616281",
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Searchfox mac indexing builds need lucetc"
+  }
+ ],
+ "date": "2020-02-19",
+ "cset": "1effb11e8e178a9b1f25ba171f4d52f857ebb713",
+ "buildid": "20200219095352",
+ "fixed": 82,
+ "total": 90,
+ "restricted": 2
+}

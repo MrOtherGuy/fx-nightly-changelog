@@ -1,0 +1,544 @@
+{
+ "bugs": [
+  {
+   "bugid": "1597681",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[RemVidParent] ###!!! ASSERTION: Can only add a reference on the main thread: 'NS_IsMainThread() in ImageContainer.h, line 85"
+  },
+  {
+   "bugid": "1599876",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make some string handling in the bindings a bit less terrible."
+  },
+  {
+   "bugid": "1599324",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Popup doesn't appear in the center, can't scroll to click the buttons"
+  },
+  {
+   "bugid": "1599818",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "web-platform-test logs frequently too big to parse due to process switch logging"
+  },
+  {
+   "bugid": "1202706",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "DOM APIs UseCounter should work on web workers"
+  },
+  {
+   "bugid": "1587013",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable test_navigator_buildID.html in Fission"
+  },
+  {
+   "bugid": "1599614",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make some DOM code less nsresult-happy"
+  },
+  {
+   "bugid": "1599445",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Investigate refactoring CCRunnerFired to make it easier to follow"
+  },
+  {
+   "bugid": "1599318",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "HTML textarea accepts \\r character, when it should be replaced with \\n"
+  },
+  {
+   "bugid": "1596763",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove unused ParentSHistory"
+  },
+  {
+   "bugid": "1593995",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "2.43 - 9.53% raptor-tp6-wikipedia-firefox-cold loadtime (linux64-shippable, linux64-shippable-qr, macosx1014-64-shippable, windows10-64-shippable-qr) regression on push af790c1efe5d6e0ee45fad4c02f247467f11db0e (Mon November 4 2019)"
+  },
+  {
+   "bugid": "1593832",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enforce XFO and frame-ancestors in parent process if fission is enabled and in content if running in regular mode until we can determine whether a load results in a download in the parent process"
+  },
+  {
+   "bugid": "1599418",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_blockingLocalStorage.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1590706",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add browsing context ID of current tab inside the profiler"
+  },
+  {
+   "bugid": "1594867",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Add moz.build/backend bits to specify files that should be built as a sandboxed wasm library"
+  },
+  {
+   "bugid": "1599607",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "lucetc toolchain artifact should unpack to a directory called \"lucetc\""
+  },
+  {
+   "bugid": "1599843",
+   "status": "NEW",
+   "component": "Core:General",
+   "summary": "Make more functions that are really infallible not return an nsresult."
+  },
+  {
+   "bugid": "1589198",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "backdrop-filter causes blurring due to incorrect pixel snapping"
+  },
+  {
+   "bugid": "1598477",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable Webrender for Pixel 3 and Pixel 3 XL"
+  },
+  {
+   "bugid": "1599672",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unmaintained json writer in wrench"
+  },
+  {
+   "bugid": "1599605",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Tighten assertion in RenderCompositorOGL::DestroySurface"
+  },
+  {
+   "bugid": "1599671",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove lazy_static dependency from wrench"
+  },
+  {
+   "bugid": "1599609",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove printf debug logging from RenderCompositorOGL and use profiler text markers instead"
+  },
+  {
+   "bugid": "1596086",
+   "status": "UNCONFIRMED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "linear-gradient rendering issue"
+  },
+  {
+   "bugid": "1599644",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Debug build of Wrench panics when pressing H for Help"
+  },
+  {
+   "bugid": "1599532",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Hit MOZ_CRASH(called `Result::unwrap()` on an `Err` value: NonAscii) at src/libcore/result.rs:1084 (from unic_langid_impl::subtags::parse_variant_subtag)"
+  },
+  {
+   "bugid": "1524590",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS::CloneFunctionObject"
+  },
+  {
+   "bugid": "1599416",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused TypedObject functions"
+  },
+  {
+   "bugid": "1587007",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve error messages when we fail to clone shared memory for policy reasons"
+  },
+  {
+   "bugid": "1596718",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Improve codegen for MIsNullOrUndefined"
+  },
+  {
+   "bugid": "1599743",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma Beta /builds/worker/workspace/build/src/js/src/gc/RootMarking.cpp:157:10: error: enumeration value 'BinASTParser' not handled in switch [-Werror=switch] when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1598869",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Perma Beta /builds/worker/workspace/build/src/js/src/builtin/Promise.cpp:3546:13: error: unused function 'Promise_static_any' [-Werror,-Wunused-function] -  when Gecko 72 merges to Beta on 2019-12-02"
+  },
+  {
+   "bugid": "1599518",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !mResizeObservers.Contains(&aObserver), at src/obj-firefox/dist/include/mozilla/dom/ResizeObserverController.h:77"
+  },
+  {
+   "bugid": "1594595",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Enable PHC on early beta 72 builds"
+  },
+  {
+   "bugid": "1599651",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Don't disable DocumentChannel in tests"
+  },
+  {
+   "bugid": "1541389",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "When performing a process switch BrowserTestUtils.browserStopped fires before the channel is reloaded in the new process"
+  },
+  {
+   "bugid": "1582318",
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "Intermittent [fission] netwerk/cookie/test/browser/browser_sharedWorker.js | Test timed out -"
+  },
+  {
+   "bugid": "1598676",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "[OSX] Domains that are part of the DNS suffix list are being handled via TRR"
+  },
+  {
+   "bugid": "1598809",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_blockingSessionStorage.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1599633",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Stop looking for more permissions once we've found one that matches our lookup criteria"
+  },
+  {
+   "bugid": "1599619",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "ubuntu1804 - svg/smil/style/anim-css-font-1.svg == svg/smil/style/anim-css-font-1-ref.svg | image comparison, max difference: 255, number of differing pixels: 1520"
+  },
+  {
+   "bugid": "1599569",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "member call on null pointer of type 'nsScriptSecurityManager' in js/xpconnect/src/XPCJSRuntime.cpp:1124"
+  },
+  {
+   "bugid": "1599801",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "NullPrincipal::Init is infallible"
+  },
+  {
+   "bugid": "1599470",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "NullPrincipalURI::Init should not exist"
+  },
+  {
+   "bugid": "1599809",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Parenthesis bug in Mac content sandbox policy for com.apple.universalaccess.plist"
+  },
+  {
+   "bugid": "1597191",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Avoid errors in processing preloaded cursor entries to cause an overall error"
+  },
+  {
+   "bugid": "1598164",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Make transactions inactive during clone"
+  },
+  {
+   "bugid": "1599606",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Too many picture cache slices with background-attachment:fixed due to scrolled background color"
+  },
+  {
+   "bugid": "1590493",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Audit places where actorHasMethod and remove all uses that were added prior to Fx69."
+  },
+  {
+   "bugid": "1592300",
+   "status": "NEW",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Remove all uses of gToolbox from accessibility panel."
+  },
+  {
+   "bugid": "1571994",
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma Tier 1 Central devtools/client/debugger/test/mochitest/browser_dbg-wasm-sourcemaps.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/debugger/test/mochitest/helpers.js:616 - Error: Unable to find source: fib.c"
+  },
+  {
+   "bugid": "1598557",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Move BrowserToolbox codebase to a dedicated folder"
+  },
+  {
+   "bugid": "1599135",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Don't load the whole Reps bundle"
+  },
+  {
+   "bugid": "1589320",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Open the inspector using inspectNode in custom.inspector DAMP test"
+  },
+  {
+   "bugid": "1592763",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Changes",
+   "summary": "ChangesView should use TargetList API to list to changes coming from actors from all the frames"
+  },
+  {
+   "bugid": "1599792",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "\"focused & collapsed\" state is still used when selecting text in previously unfocused megabar"
+  },
+  {
+   "bugid": "1599785",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Temporarily remove urlbar.update1.searchButton pref"
+  },
+  {
+   "bugid": "1532501",
+   "status": "NEW",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Intermittent browser/base/content/test/keyboard/browser_toolbarButtonKeyPress.js | Test timed out -"
+  },
+  {
+   "bugid": "1594227",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Add menu item to open non-Fission window when Fission is enabled (and vice versa?)"
+  },
+  {
+   "bugid": "1592671",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] Add static triplet branch to support 72 dynamic triplets experiment"
+  },
+  {
+   "bugid": "1599116",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "WNPanel messages need detailed access to TP blocked resources"
+  },
+  {
+   "bugid": "1598769",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Dynamic triplets card click should not request new cards on the same tab"
+  },
+  {
+   "bugid": "1599546",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add personalization and modelVersion to provider schema, message data"
+  },
+  {
+   "bugid": "1558330",
+   "status": "NEW",
+   "component": "Firefox:Migration",
+   "summary": "OSX Mojave (10.14) - browser/components/migration/tests/unit/test_MigrationUtils_timedRetry.js | testgetRowsFromDBWithoutLocksRetries - [testgetRowsFromDBWithoutLocksRetries : 263] A promise chain failed to handle a rejection:"
+  },
+  {
+   "bugid": "1597878",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "One-off search is not one-off"
+  },
+  {
+   "bugid": "1588776",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "[Certificate Viewer] The modulus field content can't be selected without causing it to change state"
+  },
+  {
+   "bugid": "1570502",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "typo in aboutNetError.js: `failedCertInfo.erroCodeString`"
+  },
+  {
+   "bugid": "1599221",
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "Object in Scopes pane won't expand after setting and removing its watchpoint"
+  },
+  {
+   "bugid": "1599744",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 0: ordinal not in range(128)"
+  },
+  {
+   "bugid": "1599928",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma tier2 0:46.74 python/mozbuild/mozbuild/test/configure/lint.py::Lint::test_browser TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1599648",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add a py3_action build action"
+  },
+  {
+   "bugid": "1536103",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Fix sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1569472",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Fix the errors in `mach lint -l rst` after removing the directories from exclude list in rst linter"
+  },
+  {
+   "bugid": "1599643",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "List number of tasks with `mach try again --list`"
+  },
+  {
+   "bugid": "1599587",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Testing",
+   "summary": "Intermittent Android 7.0 reftest No tests run or test summary not found"
+  },
+  {
+   "bugid": "1594905",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoInputStream read() method not throwing IOException"
+  },
+  {
+   "bugid": "1596888",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[Puppeteer] Add recommended automation preferences to profile setup when launching Firefox"
+  },
+  {
+   "bugid": "1593402",
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Intermittent toolkit/mozapps/extensions/test/browser/browser_about_debugging_link.js | A promise chain failed to handle a rejection: this.transport is null - stack: send@resource://devtools/server/debugger-server-connection.js:89:5"
+  },
+  {
+   "bugid": "1599070",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "sanitizing formdata error with search bar in toolbar"
+  },
+  {
+   "bugid": "1599237",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Add a cookie manager API for deleting cookies by a time range, and use it in the clear data service"
+  },
+  {
+   "bugid": "1596663",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Switch to async login search APIs to support GeckoView storage queries"
+  },
+  {
+   "bugid": "1599752",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Revert the addition of subdomain logins in the context menu"
+  },
+  {
+   "bugid": "1579581",
+   "status": "NEW",
+   "component": "Toolkit:Telemetry",
+   "summary": "Gather remaining CPU and OS info in telemetry environment off-main-thread and later on startup."
+  },
+  {
+   "bugid": "1599697",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Keyword input text size in preferences And Edit folder name in New Bookmark arrow panel becomes small when editing"
+  },
+  {
+   "bugid": "1599919",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Bug 1596911 reverted the pictureinpicture.svg to an older version of the asset"
+  },
+  {
+   "bugid": "1599529",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "PictureInPicture keyboard shortcut code uses message manager instead of JSWindowActors"
+  },
+  {
+   "bugid": "1595908",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Migrate xul test files in dom/ to .xhtml"
+  },
+  {
+   "bugid": "1599708",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser.newtab.privateAllowed and .extensionControlled are cleared when an unrelated add-on is disabled/removed"
+  },
+  {
+   "bugid": "1578513",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "disabling/uninstalling extension in safe-mode leaks settings/prefs"
+  }
+ ],
+ "date": "2019-11-28",
+ "cset": "90701a3e29e1a2b75d93596166a95c9a7aacf592",
+ "buildid": "20191128094109",
+ "fixed": 74,
+ "total": 89,
+ "restricted": 4
+}

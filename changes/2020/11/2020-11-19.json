@@ -1,0 +1,574 @@
+{
+ "bugs": [
+  {
+   "bugid": "1518344",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Investigate using async for PBackground::EnsureRDDProcessAndCreateBridge"
+  },
+  {
+   "bugid": "1673509",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "For MediaController, its first event should be `activated` and its last event should be `deactivated`"
+  },
+  {
+   "bugid": "1672704",
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "4.83 - 28.14% displaylist_mutate / glvideo Mean / perf_reftest_singleton (linux64, macosx1014, windows10, windows7) regression on push 4c3e6fb95aa6184651f215d466e702ff7d1660d3 (Wed October 21 2020)"
+  },
+  {
+   "bugid": "1677766",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Crash in [@ cubeb_coreaudio::backend::aggregate_device::AggregateDevice::new]"
+  },
+  {
+   "bugid": "1607940",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "WebGL out-of-process prototype"
+  },
+  {
+   "bugid": "1676709",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Dispatch \"browsing-context-attached\" notification when attaching a BrowsingContext"
+  },
+  {
+   "bugid": "1650095",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Implement SessionHistoryEntry::Get/SetHasUserInteraction"
+  },
+  {
+   "bugid": "1335347",
+   "status": "REOPENED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[e10s] `keyup` event for Alt key is not fired when menubar is activated by the Alt key press"
+  },
+  {
+   "bugid": "1673530",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/pointerevents/test_pointercapture_xorigin_iframe.html | Test timed out."
+  },
+  {
+   "bugid": "1677668",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[TSF] When composition start is not 0 and typing characters with Japanse IME, there are a lot of warnings in debug builds"
+  },
+  {
+   "bugid": "1676298",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Can do nothing with mouse in OOP iframe if Fission enabled and `layers.async-pan-zoom.enabled` is set to `false`"
+  },
+  {
+   "bugid": "1660752",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Make test_bug238987.html pass with cross-origin and Fission enabled"
+  },
+  {
+   "bugid": "1669724",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "window_composition_text_querycontent.xhtml is not correctly testing relative insertion points"
+  },
+  {
+   "bugid": "1678019",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Re-add handling of lut creation failure."
+  },
+  {
+   "bugid": "1661172",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Capture C++ stacks and markers from the Android UI thread"
+  },
+  {
+   "bugid": "1677868",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Rename \"Java Main Thread\" to \"AndroidUI (Java)\""
+  },
+  {
+   "bugid": "1666566",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Bump the profile format version to launch Marker Schema"
+  },
+  {
+   "bugid": "1675409",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Migrate remaining marker payloads to 2.0 API"
+  },
+  {
+   "bugid": "1676299",
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Modify BaseMatrix::ScaleFactors() to return a ScaleFactors2D"
+  },
+  {
+   "bugid": "1677293",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to all non-accelerated Linux nightly users with small screens as an experiment"
+  },
+  {
+   "bugid": "1677744",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make ScaleToOutsidePixelsOffset return a LayerIntRect"
+  },
+  {
+   "bugid": "1675990",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "video on twitter is slow with sw-wr"
+  },
+  {
+   "bugid": "1677825",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "On Linux, losing WebRender falls back to OpenGL without the GPU process"
+  },
+  {
+   "bugid": "1678058",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender to release on Big Sur / OSX 10.16"
+  },
+  {
+   "bugid": "1677835",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Drop Intel driver 23.20.16.4973 blocking."
+  },
+  {
+   "bugid": "1677872",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Reduce division usage in brush shaders"
+  },
+  {
+   "bugid": "1678186",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix up draw call timing and move under PRINT_TIMINGS."
+  },
+  {
+   "bugid": "1676172",
+   "status": "VERIFIED",
+   "component": "Core:ImageLib",
+   "summary": "Assertion failure: aState.GetHasRequestedDecode() && !aState.GetIsCurrentlyDecoded(), at /builds/worker/checkouts/gecko/image/FrameAnimator.cpp:369"
+  },
+  {
+   "bugid": "1678074",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "jitsrc fails running arm32 simulator"
+  },
+  {
+   "bugid": "1673553",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove IonBuilder and TI"
+  },
+  {
+   "bugid": "1677396",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "KeyPress composition payload tracking could be more reliable (it's not handling pending style / layout flushes)"
+  },
+  {
+   "bugid": "1677920",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "remove writing mode argument from CalcAndCacheConsumedBSize"
+  },
+  {
+   "bugid": "1677635",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Modernize nsOverflowAreas"
+  },
+  {
+   "bugid": "1678098",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove redundant writing mode conversion after calling ReflowOutput::Size()"
+  },
+  {
+   "bugid": "1677893",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "CONFIG[\"CXX_TYPE\"] is not a thing"
+  },
+  {
+   "bugid": "1677726",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Perma memory/replace/dmd/test/test_dmd.js | test - [test : 118] complete-full1-live - false == true"
+  },
+  {
+   "bugid": "1670867",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Perma [Tier 2] [Fission] netwerk/test/browser/browser_child_resource.js | Browser should be in the right process - Got \"false\", expected \"true\""
+  },
+  {
+   "bugid": "1675503",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Measure page performance over HTTP3"
+  },
+  {
+   "bugid": "1676771",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Panning isn't smooth on some Android devices, for example on the Moto G5 - consider doing touch interpolation / resampling to reduce jitter"
+  },
+  {
+   "bugid": "1675709",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "only call NotifyApzTransaction on scroll frames after the paint transaction is finished in the webrender case"
+  },
+  {
+   "bugid": "1675349",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Disable plugin support"
+  },
+  {
+   "bugid": "1675376",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Tab is unresponsive if dialog is closed while initial preview is rendering"
+  },
+  {
+   "bugid": "1677144",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add anti-tracking partitionedHosts interventions to fix several instances of Level 2 cookie blocking breakage"
+  },
+  {
+   "bugid": "1677849",
+   "status": "RESOLVED",
+   "component": "Core:Sanitizers",
+   "summary": "Remove TSAN suppressions for resolved NSS bug"
+  },
+  {
+   "bugid": "1663924",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Further migration to IDB_TRY* and Result in IndexedDB"
+  },
+  {
+   "bugid": "1619592",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Get rid of QuotaManager::EnsureStorageAndOriginIsInitialized"
+  },
+  {
+   "bugid": "1671367",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Migrate error handling to LS_TRY/SDB_TRY"
+  },
+  {
+   "bugid": "1677520",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Assertion failure: (buffering - mLiveBufferingAppended) == mPacketizerInput->mPacketSize with off-while-disabled for microphones"
+  },
+  {
+   "bugid": "1677948",
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Pref Webrtc-SDP to be the only parser in Nightly"
+  },
+  {
+   "bugid": "1678194",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Only paint focusrings in the non-native theme when the focusring pseudo-classes apply."
+  },
+  {
+   "bugid": "1677470",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Polish Wayland environment detection"
+  },
+  {
+   "bugid": "1677489",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Use static mutex for delayed commits"
+  },
+  {
+   "bugid": "1678111",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsMemoryReporterManager::GetOrCreate return the add-reffed reference."
+  },
+  {
+   "bugid": "1677676",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix clippy lints for nsstring crate"
+  },
+  {
+   "bugid": "1525737",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove XUL grid implementation"
+  },
+  {
+   "bugid": "1677659",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "When accessibility is force disabled, a11y panel's icon is too big."
+  },
+  {
+   "bugid": "1676810",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Introduce a shared module to maintain cross-process/cross-thread \"watched data\""
+  },
+  {
+   "bugid": "1678023",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Perma late beta TEST-UNEXPECTED-FAIL | devtools/client/framework/browser-toolbox/test/browser_browser_toolbox_print_preview.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/... when Gecko 85 merges to Beta on 2020-12-14"
+  },
+  {
+   "bugid": "1677660",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Remove backwards-compat methods from Compatibility front"
+  },
+  {
+   "bugid": "1677546",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Rename and re-purpose the Network Actors"
+  },
+  {
+   "bugid": "1677697",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Fix storage actors being instanced twice"
+  },
+  {
+   "bugid": "1676038",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "frequently used subdomain shouldn't be autocomplete if full domain name entered"
+  },
+  {
+   "bugid": "1678054",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Enable bookmark toolbar upon bookmark import by default"
+  },
+  {
+   "bugid": "1535169",
+   "status": "VERIFIED",
+   "component": "Firefox:General",
+   "summary": "Private browsing mode is excluded from URI count, tab count metrics"
+  },
+  {
+   "bugid": "1676913",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "GetDependentModulePaths should check its caller is xul.dll"
+  },
+  {
+   "bugid": "1676437",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Collect browser attribution for onboarding telemetry"
+  },
+  {
+   "bugid": "1671937",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create Fly-Out customize component"
+  },
+  {
+   "bugid": "1671935",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a Parent pref to turn on/off the entire new new tab experience"
+  },
+  {
+   "bugid": "1676831",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent [tier2] TV browser/components/newtab/test/browser/browser_asrouter_experimentsAPILoader.js | Uncaught exception - ExperimentAPI should return an experiment - timed out after 50 tries."
+  },
+  {
+   "bugid": "1674711",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The \"source\" event is not displayed in the \"MENU_COLLAPSE\"/\"MENU_EXPAND\" telemetry pings for the \"Recommended by Pocket\" section"
+  },
+  {
+   "bugid": "1672344",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Add telemetry for measuring usage of external protocol navigations initiated by third-party iframes"
+  },
+  {
+   "bugid": "1613620",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "allow to remove/delete all stored logins/passwords"
+  },
+  {
+   "bugid": "1677839",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Re-allow new pass manager in aarch64-windows builds"
+  },
+  {
+   "bugid": "1519636",
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Reformat recent changes to the Google coding style"
+  },
+  {
+   "bugid": "1677914",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "update taskgraph configs to support the new native big sur builders"
+  },
+  {
+   "bugid": "1665844",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Mutter fails to start in Wayland mode in Mozilla automation"
+  },
+  {
+   "bugid": "1677738",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma [Windows 2012 x64 asan reporter opt BoR] TypeError: environment can only contain strings"
+  },
+  {
+   "bugid": "1673681",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "ANR typing in a textbox on a Huawei phone"
+  },
+  {
+   "bugid": "1672277",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Requests",
+   "summary": "Setup WNP for users coming from <83.0 and receiving the 83.0 release"
+  },
+  {
+   "bugid": "1674890",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove XUL decks from toolkit/mozapps/extensions/content/extensions.xhtml"
+  },
+  {
+   "bugid": "1677582",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove \"shutdown\" calls from gViewController.viewObjects"
+  },
+  {
+   "bugid": "1677526",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Simplify isLoading property in gViewController"
+  },
+  {
+   "bugid": "1675018",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "When clearing history, avoid clearing user interaction permissions for sites that still have cookies"
+  },
+  {
+   "bugid": "1649616",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "ContextualIdentityService.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649624",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "AddonRepository.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649590",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "XPIProvider.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649615",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "PlacesBackups.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1675557",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Update browser_deleteLoginsBackup test due to new remove all logins functionality"
+  },
+  {
+   "bugid": "1670222",
+   "status": "VERIFIED",
+   "component": "Toolkit:Printing",
+   "summary": "The \"Print using system dialog...\" link should not wait for the print preview to be ready"
+  },
+  {
+   "bugid": "1677931",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Make about:certificate more consistent with other about: pages"
+  },
+  {
+   "bugid": "1672623",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Closing the picture-in-picture window pauses the cloned video element which is questionable for video conferences"
+  },
+  {
+   "bugid": "1661225",
+   "status": "VERIFIED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "[PI-713] The \u201cmove\u201d PiP telemetry event is registered when the PiP window is opened or closed"
+  },
+  {
+   "bugid": "1672967",
+   "status": "RESOLVED",
+   "component": "Tree Management:Treeherder: Job Triggering & Cancellation",
+   "summary": "retriggering backfill task (*-bk) creates non-backfill version of chunk containing different tests"
+  },
+  {
+   "bugid": "1640746",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_slow_script.js | Test timed out - Extension left running at test shutdown"
+  }
+ ],
+ "date": "2020-11-19",
+ "cset": "36ef6c97da5bbabfa3d65ad493d1872bfb77b355",
+ "buildid": "20201119095716",
+ "fixed": 77,
+ "total": 94,
+ "restricted": 2
+}

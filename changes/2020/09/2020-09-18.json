@@ -1,0 +1,448 @@
+{
+ "bugs": [
+  {
+   "bugid": "1615444",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Remove media playback telemetry that expired in 74"
+  },
+  {
+   "bugid": "1656438",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Enhance MockCubeb class to simulate audio input and verify audio output"
+  },
+  {
+   "bugid": "1663227",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "100% RAM and VRAM usage"
+  },
+  {
+   "bugid": "1663917",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to b66d915"
+  },
+  {
+   "bugid": "1665289",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Convert kDefaultCmdsShmemSize to a pref"
+  },
+  {
+   "bugid": "1661552",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Sorting about:processes by Name sorts only the subitems"
+  },
+  {
+   "bugid": "1635494",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Kill processes from about:processes"
+  },
+  {
+   "bugid": "1664214",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "In about:processes, hide in-process subframes"
+  },
+  {
+   "bugid": "1664216",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "In about:processes, don't pick a favicon if it can cause confusion"
+  },
+  {
+   "bugid": "1665640",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "A few CSS changes for about:processes"
+  },
+  {
+   "bugid": "1658702",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "[Input Events] Set \"affected\" ranges to the result of `getTargetRanges()` at dispatching `beforeinput` event"
+  },
+  {
+   "bugid": "1664329",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make HandleSameDocumentNavigation handle loads from session history"
+  },
+  {
+   "bugid": "1665502",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Update session history entry names also in the parent process"
+  },
+  {
+   "bugid": "1665165",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Disable some bfcache tests on Fission"
+  },
+  {
+   "bugid": "1574261",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make nsDocShell::MaybeHandleSubFrameHistory work with session history in parent"
+  },
+  {
+   "bugid": "1649121",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Fortify code for copy&paste"
+  },
+  {
+   "bugid": "1657418",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add links to VoiceOver Rotor"
+  },
+  {
+   "bugid": "1665009",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "MOZ_CRASH(index out of bounds) in update_texture_crash on memory pressure event if gfx.webrender.debug.texture-cache is enabled"
+  },
+  {
+   "bugid": "1663355",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Tab gets visually corrupted on Mali-G76"
+  },
+  {
+   "bugid": "1665648",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ensure initialize GPU process config before WebRender config"
+  },
+  {
+   "bugid": "1665267",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "scrollbars drawn incorrectly"
+  },
+  {
+   "bugid": "1665687",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ParserAtomEntry::dump"
+  },
+  {
+   "bugid": "1638966",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Convert 'mach hazards' to run with Python 3"
+  },
+  {
+   "bugid": "1665415",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add Warp to Nightly Experiments in about:preferences"
+  },
+  {
+   "bugid": "1665432",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash [@ ??] with new.target"
+  },
+  {
+   "bugid": "1665465",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "--enable-perf is broken (allows dumping linux 'perf'-compatible files for JIT code)"
+  },
+  {
+   "bugid": "1664786",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: tweak inlining heuristics"
+  },
+  {
+   "bugid": "1665396",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CacheIR support for DOM setters"
+  },
+  {
+   "bugid": "1663260",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support Number toString and String toString/valueOf in CacheIR"
+  },
+  {
+   "bugid": "1664990",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile LoadWrapperTarget"
+  },
+  {
+   "bugid": "1662894",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent css-blending/mix-blend-mode-and-filter.svg == css-blending/mix-blend-mode-and-filter-ref.svg | image comparison, max difference: 1, number of differing pixels: 6"
+  },
+  {
+   "bugid": "1662841",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove `nsDocumentViewer::AppendSubtree`"
+  },
+  {
+   "bugid": "1665326",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "make the APZ pure relative scroll path in ScrollFrameHelper::ScrollBy handle ScrollUnit::WHOLE scrolls as well"
+  },
+  {
+   "bugid": "1664844",
+   "status": "ASSIGNED",
+   "component": "Core:MFBT",
+   "summary": "Add a DebugOnly<T>::inspect member function"
+  },
+  {
+   "bugid": "1663902",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "185.53% compiler_metrics num_static_constructors (linux64) regression on push 9ec978a54e8d0afd37ab51c12ba20ccca16af92a (Thu September 3 2020)"
+  },
+  {
+   "bugid": "1629825",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Add test for removing appcache data"
+  },
+  {
+   "bugid": "1589781",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: DNS",
+   "summary": "DoH in mode 3 (no fallback) needs work to support ipv6-only clients contacting v4-only servers"
+  },
+  {
+   "bugid": "1665284",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "GV Nightly busted: GleanGeckoMetricsMapping.kt: Duplicate label in when"
+  },
+  {
+   "bugid": "1661984",
+   "status": "ASSIGNED",
+   "component": "Core:Printing: Output",
+   "summary": "Add a browser mochitest for the crash on printing when using container tab"
+  },
+  {
+   "bugid": "1662538",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Implement localization of paper names in the fallback paper-sizes list"
+  },
+  {
+   "bugid": "1665706",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Use length of first DeviceCapabilities array count for paper information to allocate space for the others"
+  },
+  {
+   "bugid": "1665402",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGGeometry.getTotalLength does not work on non-rendered elements"
+  },
+  {
+   "bugid": "1665270",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in PSM security manager"
+  },
+  {
+   "bugid": "1654531",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Expect a few cache web-platform tests to pass"
+  },
+  {
+   "bugid": "1663924",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Further migration to IDB_TRY* and Result in IndexedDB"
+  },
+  {
+   "bugid": "1665565",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Replace ToResultInvoke<T> uses with MOZ_TO_RESULT_INVOKE_TYPED"
+  },
+  {
+   "bugid": "1664770",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Use QM_TRY* for storage initialization code"
+  },
+  {
+   "bugid": "1663565",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Introduce QM_TRY_RETURN/QM_TRY_DEBUG_RETURN macros and quota client specific equivalents"
+  },
+  {
+   "bugid": "1380795",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "WebRTC defaults to back camera instead of front on Android"
+  },
+  {
+   "bugid": "1611933",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Consider supporting [infallible] on XPCOM methods"
+  },
+  {
+   "bugid": "1665293",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Call WebConsoleWrapper methods only once from WebConsoleUI.onResourceAvailable/Updated"
+  },
+  {
+   "bugid": "1665306",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Process \"network updates\" in console with only one `networkUpdateRequest` action call"
+  },
+  {
+   "bugid": "1665305",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Process \"message network updates\" in console with only one `networkMessageUpdate` action call"
+  },
+  {
+   "bugid": "1657676",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update keywordoffer results for search mode"
+  },
+  {
+   "bugid": "1663686",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Convert question mark into search mode"
+  },
+  {
+   "bugid": "1665617",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Perma [tier2] mingw /builds/worker/checkouts/gecko/browser/app/winlauncher/DllBlocklistInit.cpp:31:20: error: use of undeclared identifier 'nt'; did you mean 'mozilla::nt'?"
+  },
+  {
+   "bugid": "1657618",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Enhancement] Consider adding a name under each static Top Sites in the \u201cImport\u201d slide of the \u201cabout:welcome\u201d page"
+  },
+  {
+   "bugid": "1659152",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support zero onboarding flow"
+  },
+  {
+   "bugid": "1658787",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Save to Pocket button on save recs telemetry"
+  },
+  {
+   "bugid": "1664800",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove some more redundant distribution code from the search service"
+  },
+  {
+   "bugid": "1642999",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Ensure the search service xpcshell-tests have no console errors"
+  },
+  {
+   "bugid": "1665131",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search Settings may attempt to be written whilst the search service is still initialising"
+  },
+  {
+   "bugid": "1665208",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix documentation header for search configuration schema docs"
+  },
+  {
+   "bugid": "1664723",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make REGION_LOCATION_SERVICES_DIFFERENCE opt out"
+  },
+  {
+   "bugid": "1664516",
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Default topsites with %YYYYMMDDHH% should take current datetime regardless of the frecent/recent history"
+  },
+  {
+   "bugid": "1665558",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove -Wno-noexcept-type"
+  },
+  {
+   "bugid": "1660371",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox 82 should pick up NSPR 4.29"
+  },
+  {
+   "bugid": "1536103",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Fix sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1665509",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "|mach install-moz-phab| doesn't work on Windows"
+  },
+  {
+   "bugid": "1643689",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable manifest-scheduling on autoland"
+  },
+  {
+   "bugid": "1650108",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove Parcelable from GeckoSession"
+  },
+  {
+   "bugid": "1659109",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Move FOG initialization off the main thread & provide pre-init buffer"
+  },
+  {
+   "bugid": "1664522",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "tabs.captureVisibleTab() fails with \"this.nativeTab.ownerGlobal is undefined\""
+  }
+ ],
+ "date": "2020-09-18",
+ "cset": "8084c8793a55caac6ad788d626c21dc2b2f24187",
+ "buildid": "20200918094500",
+ "fixed": 60,
+ "total": 73,
+ "restricted": null
+}

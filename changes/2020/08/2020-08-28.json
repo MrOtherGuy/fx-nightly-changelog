@@ -1,0 +1,538 @@
+{
+ "bugs": [
+  {
+   "bugid": "1634494",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Calling default action handler for `pause/stop` on those windows which doesn't have active action handlers or its media session is not active"
+  },
+  {
+   "bugid": "1660886",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Release PWebGL when ClientWebGLContext is done"
+  },
+  {
+   "bugid": "1661384",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove probe expiring in Firefox 83: dom.ipc.rejected_window_actor_message"
+  },
+  {
+   "bugid": "1646537",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use BrowsingContext (and IPC) in place of GetInProcessParent usage in nsGlobalWindowOuter::FocusOuter"
+  },
+  {
+   "bugid": "1656347",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make session history getters to work with history in parent"
+  },
+  {
+   "bugid": "1661462",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add a pref to control min timeout delays in background windows before throttling has started"
+  },
+  {
+   "bugid": "1653160",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "focus handling seems to be broken in fission window"
+  },
+  {
+   "bugid": "1653949",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "mouseout/mouseleave event doesn't work properly on the root element in Fission oop iframe"
+  },
+  {
+   "bugid": "1661281",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Format the body of an if statement on a different line than the condition in nsFocusManager"
+  },
+  {
+   "bugid": "1656294",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Enable all ESLint rules on accessible/tests/mochitest/*.xhtml files"
+  },
+  {
+   "bugid": "1660359",
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Print Preview document isn't included in the a11y tree"
+  },
+  {
+   "bugid": "1660364",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support text marker indexes"
+  },
+  {
+   "bugid": "1659404",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Broken build in browser/app/nsBrowserApp.cpp if MOZ_GECKO_PROFILER is not defined"
+  },
+  {
+   "bugid": "1661531",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Ensure we always update the failure reason for gfx features"
+  },
+  {
+   "bugid": "1661135",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Zoom stutters with Webrender on Mali-G71"
+  },
+  {
+   "bugid": "1661408",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Clean up wrench's command line handling"
+  },
+  {
+   "bugid": "1661368",
+   "status": "ASSIGNED",
+   "component": "Core:ImageLib",
+   "summary": "Slow testcase impacts AVIF fuzzing performance"
+  },
+  {
+   "bugid": "1635185",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Consider storing an object's dynamic slot count directly in a header"
+  },
+  {
+   "bugid": "1647437",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow accessing private fields via Debugger.Frame.prototype.eval"
+  },
+  {
+   "bugid": "1649968",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Split CompilationInfo into input, state, and output"
+  },
+  {
+   "bugid": "1651208",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Set a bit in the UsedNameTracker to determine if there are any private names"
+  },
+  {
+   "bugid": "1653974",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !js::UninlinedIsCrossCompartmentWrapper(this), at vm/JSObject.h:437 with Debugger"
+  },
+  {
+   "bugid": "1655110",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Provide isPrivateName method to replace JSID manipulations."
+  },
+  {
+   "bugid": "1658556",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Stop using \"stencil\" variable name for ScriptStencil type variable"
+  },
+  {
+   "bugid": "1658720",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Combine ScriptStencil topLevel/funcData structures"
+  },
+  {
+   "bugid": "1660699",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Store JSAtom in CompilationInfo instead of ParserAtom"
+  },
+  {
+   "bugid": "1660768",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix jsapi.h SMDOC"
+  },
+  {
+   "bugid": "1660882",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable test262 tests for private methods"
+  },
+  {
+   "bugid": "1660891",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove tracing code from Stencil data structures"
+  },
+  {
+   "bugid": "1661348",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix CacheIRSpewer"
+  },
+  {
+   "bugid": "1661454",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: false (tryDeclareVarHelper<DryRunInnermostScopeOnly>( name, kind, DeclaredNameInfo::npos, &redeclaredKind, &unused)), at /builds/worker/checkouts/gecko/js/src/frontend/ParseContext.cpp:383"
+  },
+  {
+   "bugid": "1650501",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "LeakSanitizer: [@ NewString]"
+  },
+  {
+   "bugid": "1660592",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add a --semi-eager shell flag"
+  },
+  {
+   "bugid": "1661211",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: transpile getter/setter calls"
+  },
+  {
+   "bugid": "1661426",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: add a browser pref"
+  },
+  {
+   "bugid": "1493223",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Allow fuzzers to fuzz print preview."
+  },
+  {
+   "bugid": "1548753",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "list numbering recovery with wrong markup has changed behavior."
+  },
+  {
+   "bugid": "1645052",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Do not store number of bytes written to the cache in preferences"
+  },
+  {
+   "bugid": "1659699",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "HTTPSSVC: Special handling of \".\" in TargetName"
+  },
+  {
+   "bugid": "1656128",
+   "status": "RESOLVED",
+   "component": "Core:Networking: FTP",
+   "summary": "Remove or update probes expiring in Firefox 82: NETWORK_PAC_URL_SCHEME"
+  },
+  {
+   "bugid": "1660361",
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Crash in [@ mozilla::ipc::MessageChannel::Send | mozilla::ipc::IProtocol::ChannelSend | IPC_Message_Name=PWebSocket::Msg_OnMessageAvailable]"
+  },
+  {
+   "bugid": "1518999",
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "implement PerformancePaintTiming"
+  },
+  {
+   "bugid": "1661043",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Visual issues with plugin crash notification"
+  },
+  {
+   "bugid": "1660857",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "In black&white print mode, there's an unexpected border around the page content"
+  },
+  {
+   "bugid": "1661388",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Print preview progress dialog appears when window.print is called if print.show_print_progress is true."
+  },
+  {
+   "bugid": "1661436",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Fix documentation of nsIPrintSettingsService.globalPrintSettings"
+  },
+  {
+   "bugid": "1661437",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "print.show_print_progress should be a static pref."
+  },
+  {
+   "bugid": "1661509",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Left and right arrow navigation still doesn't work on photo grid demo at codinginparadise.org"
+  },
+  {
+   "bugid": "1661543",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Thread contention between nsNSSComponent's background task queue and NSS"
+  },
+  {
+   "bugid": "1659959",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Introduce QM_FAIL macro and quota client specific equivalents"
+  },
+  {
+   "bugid": "1660485",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Write a test to verify the fix in bug 1593246 works"
+  },
+  {
+   "bugid": "1658353",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Allow front-end to mute/unmute all microphone tracks"
+  },
+  {
+   "bugid": "1660100",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "The \"Firefox is already running\" and \"Profile missing\" startup error dialogs are suddenly much taller than necessary (and so are various other dialogs)"
+  },
+  {
+   "bugid": "1661569",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "The web console is broken when browser console or browser toolbox is opened"
+  },
+  {
+   "bugid": "1660892",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Browser toolbox fails opening with \"Permission denied to access property 'windowUtils' on cross-origin object\" exception"
+  },
+  {
+   "bugid": "1660895",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Browser toolbox fail opening with \"watchTargets can't access property 'browsingContext', windowGlobal is null\" exception"
+  },
+  {
+   "bugid": "1660847",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add test for scrollable badge click functionality"
+  },
+  {
+   "bugid": "1659589",
+   "status": "ASSIGNED",
+   "component": "DevTools:Style Editor",
+   "summary": "Get rid of a dependant of stylesheet actor from StyleEditor (to resource based)"
+  },
+  {
+   "bugid": "1657526",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Copy from URLbar adds extra http:// with decodeURLsOnCopy"
+  },
+  {
+   "bugid": "1658605",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enter search mode when token alias autofill is confirmed"
+  },
+  {
+   "bugid": "1660259",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Accessibility fixes for multistage about:welcome, round 2"
+  },
+  {
+   "bugid": "1661005",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Windows] An extra scrollbar is displayed in the Password Autocomplete dropdown the first time it is displayed in a session"
+  },
+  {
+   "bugid": "1661066",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The default browser notification should appear on the first about:home or about:newtab page"
+  },
+  {
+   "bugid": "1659736",
+   "status": "ASSIGNED",
+   "component": "Firefox:Migration",
+   "summary": "FX_MIGRATION_BOOKMARKS_ROOTS telemetry shows wrong value when importing bookmarks from Internet Explorer"
+  },
+  {
+   "bugid": "1661131",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "PDF Forms - fill login option should not be displayed in context menu"
+  },
+  {
+   "bugid": "1660998",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Option to save logins does not keep state in private mode"
+  },
+  {
+   "bugid": "1643027",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "[UX] The \"Mute Mic\" and \"Mute Camera\" buttons open the \"Permissions\" tab instead of muting the mic/camera"
+  },
+  {
+   "bugid": "1661475",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Add a \"Manage devices\" item in the Send Tab menu"
+  },
+  {
+   "bugid": "1661631",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Disable `toolkit.telemetry.ecosystemtelemetry.enabled` pending additional reviews"
+  },
+  {
+   "bugid": "1661123",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "LightweightThemeConsumer.jsm:_sanitizeCSSColor slows down first-time about:welcome theme enables"
+  },
+  {
+   "bugid": "1620133",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Lack of parallelism when running MIDL in accessible/interfaces/ia1"
+  },
+  {
+   "bugid": "1646794",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Investigate addition of infrastructure for collecting data on the performance of individual build actions"
+  },
+  {
+   "bugid": "1660396",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Wildcards in FinalTargetFiles are broken in the recursivemake backend"
+  },
+  {
+   "bugid": "1661391",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Various problems in the output from setting up virtualenvs"
+  },
+  {
+   "bugid": "1657121",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Objects uploaded to the S3 bucket http://gecko-docs.mozilla.org-l1.s3-website.us-west-2.amazonaws.com/<UUID> gets deleted everytime a new UUID is generated"
+  },
+  {
+   "bugid": "1660278",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma toolchain custom-v8 error while loading shared libraries: libtinfo.so.5: cannot open shared object file: No such file or directory"
+  },
+  {
+   "bugid": "1660964",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Upgrade skopeo and kaniko"
+  },
+  {
+   "bugid": "1641674",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Linker section GC is throwing away lots of PGO data"
+  },
+  {
+   "bugid": "1660340",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update to clang 11.0.0 rc2"
+  },
+  {
+   "bugid": "1660896",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "wpt6 failures with clang 11"
+  },
+  {
+   "bugid": "1661346",
+   "status": "VERIFIED",
+   "component": "GeckoView:General",
+   "summary": "Disable AV1 on Android"
+  },
+  {
+   "bugid": "1630809",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Support partner repacks which add attribution to Windows full installers"
+  },
+  {
+   "bugid": "1653476",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Improvements to partner repacks script"
+  },
+  {
+   "bugid": "1660328",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "Implement directory iterator for IOUtils"
+  },
+  {
+   "bugid": "1660835",
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "Support reading/writing with lz4 compression in IOUtils"
+  },
+  {
+   "bugid": "1659219",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Notification that password formfill has completed for tests to continue is sent to top frame instead of child frame."
+  },
+  {
+   "bugid": "1659340",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "\u201cPrint preview\u201d option is displayed inside the menu bar (File) even though the print preview will always open as the default option with the new print UI"
+  },
+  {
+   "bugid": "1661488",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "The \"Set as Default\" sting is barely visible when the button is hovered on Linux using light OS themes"
+  }
+ ],
+ "date": "2020-08-28",
+ "cset": "56166cae2e26429f4786ad1013adae78189a12e8",
+ "buildid": "20200828153126",
+ "fixed": 74,
+ "total": 88,
+ "restricted": 1
+}

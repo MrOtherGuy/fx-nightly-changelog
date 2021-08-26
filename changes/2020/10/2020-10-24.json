@@ -1,0 +1,484 @@
+{
+ "bugs": [
+  {
+   "bugid": "1672444",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "crash at null in [@ mozilla::dom::BrowserChild::RecvLoadURL]"
+  },
+  {
+   "bugid": "1626555",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make `dom/base` buildable outside of `unified-build` environment"
+  },
+  {
+   "bugid": "1671556",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Redesign `nsITableEditor.getFirstSelectedCell()` and relatives"
+  },
+  {
+   "bugid": "1669479",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: mStart.EqualsOrIsBefore(mEnd), at EditorDOMPoint.h:1039 when replacing/deleting table cells"
+  },
+  {
+   "bugid": "1667767",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Expose the BC's HistoryID field through WebIDL"
+  },
+  {
+   "bugid": "1670848",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "wpt  traverse_the_history_*.html tests failing with fission/sessionHistoryInParent"
+  },
+  {
+   "bugid": "1672964",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Fission] enable test_viewport_resize.html"
+  },
+  {
+   "bugid": "1460740",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: !aRoot || aNotInsertedYet || (nsContentUtils::ContentIsDescendantOf(aStart.Container(), aRoot) && ...  (Wrong root), at src/dom/base/nsRange.cpp:976"
+  },
+  {
+   "bugid": "1653470",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Cleanup of PServiceWorker, PServiceWorkerContainer, and PServiceWorkerRegistration"
+  },
+  {
+   "bugid": "1670939",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Make PImageBridge::WillClose async instead of sync"
+  },
+  {
+   "bugid": "1346601",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Assertion failure: aSurface ? aSurfaceRect.Size() == aSurface->GetSize() : aSurfaceRect.IsEmpty()"
+  },
+  {
+   "bugid": "1672565",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit EGL_NO_SURFACE in RenderCompositorEGL::BeginFrame()"
+  },
+  {
+   "bugid": "1672489",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't restrict DirectComposition to Win10 on Nightly."
+  },
+  {
+   "bugid": "1672464",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Block WebRender for NVIDIA users with mixed refresh rates"
+  },
+  {
+   "bugid": "1673095",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Include Intel gen6 gt1 in rollout."
+  },
+  {
+   "bugid": "1672743",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rollout to R700 on Nightly"
+  },
+  {
+   "bugid": "1672139",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Addons overlays not painted on webrender"
+  },
+  {
+   "bugid": "1673088",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let Stoneyridge ride to release."
+  },
+  {
+   "bugid": "1672779",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "mozIntl and intlUtils report the wrong direction when intl.uidirection is forcing direction"
+  },
+  {
+   "bugid": "1672172",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make SrcNotes relative to initial line/column"
+  },
+  {
+   "bugid": "1672729",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: line >= sc->extent().lineno, at frontend/BytecodeEmitter.cpp:570"
+  },
+  {
+   "bugid": "1673049",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "jitsrc can break if a register breakpoint is set."
+  },
+  {
+   "bugid": "1669914",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at vm/Interpreter.cpp:511 with disassemble"
+  },
+  {
+   "bugid": "1668489",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent hazards | unrooted 'se' of type 'js::frontend::SwitchEmitter' live across GC call at js/src/frontend/BytecodeEmitter.cpp:2217 + other unrooted failures"
+  },
+  {
+   "bugid": "1673125",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | scrolling/frame-scrolling-attr-2.html == scrolling/frame-scrolling-attr-ref.html | image comparison, max difference: 0, number of differing pixels: 0"
+  },
+  {
+   "bugid": "1673127",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent scrolling/iframe-scrolling-attr-1.html == scrolling/iframe-scrolling-attr-ref.html | image comparison, max difference: 1, number of differing pixels: 110"
+  },
+  {
+   "bugid": "1672284",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "High frequency scrolling/iframe-scrolling-attr-2.html == scrolling/iframe-scrolling-attr-ref.html | image comparison, max difference: 1, number of differing pixels: 44"
+  },
+  {
+   "bugid": "1673056",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove nsLayoutUtils::MIN_ISIZE and nsLayoutUtils::PREF_ISIZE"
+  },
+  {
+   "bugid": "1664938",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Remove reftests flexbox-intrinsic-ratio*html that have been duplicated-with-rewrites to use JS-based testing"
+  },
+  {
+   "bugid": "1672807",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid-3] Enable masonry layout by default in Nightly"
+  },
+  {
+   "bugid": "1666723",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remember whether a server is speaking HTTP3"
+  },
+  {
+   "bugid": "1518999",
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "implement PerformancePaintTiming"
+  },
+  {
+   "bugid": "1673026",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "TaskController sequencing is not atomic"
+  },
+  {
+   "bugid": "1672856",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "crash near null in [@ mozilla::dom::GetCorrespondingNodeInDocument]"
+  },
+  {
+   "bugid": "1667053",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Convert nsPrintSettingsX to do something like nsPrintSettingsWin::CopyFromNative/CopyToNative"
+  },
+  {
+   "bugid": "1670943",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Black and White printing support for macOS"
+  },
+  {
+   "bugid": "1670985",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add a CRLite preference/mode to not evaluate OCSP"
+  },
+  {
+   "bugid": "1670984",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Fix CRLite telemetry when encountering a stashed revocation"
+  },
+  {
+   "bugid": "1672482",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ __getdents64] on the RDD process when watching H264 video."
+  },
+  {
+   "bugid": "1672918",
+   "status": "RESOLVED",
+   "component": "Core:Spelling checker",
+   "summary": "Add words to en-US dictionary"
+  },
+  {
+   "bugid": "1669943",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Crash in [@ OOM | large | mozalloc_abort | moz_xmalloc | nsTArray_base<T>::EnsureCapacity<T> | mozilla::dom::indexedDB::BackgroundRequestChild::HandleResponse]"
+  },
+  {
+   "bugid": "1663924",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Further migration to IDB_TRY* and Result in IndexedDB"
+  },
+  {
+   "bugid": "1346880",
+   "status": "NEW",
+   "component": "Core:Web Audio",
+   "summary": "Sound is briefly audible in tab even if the tab is muted"
+  },
+  {
+   "bugid": "1672869",
+   "status": "NEW",
+   "component": "Core:Web Audio",
+   "summary": "Mda jobs thrown as exceptions - Claim expired"
+  },
+  {
+   "bugid": "1673046",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Tweak menu separator line color on Big Sur some more"
+  },
+  {
+   "bugid": "1673053",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Vibrancy is gated on x86_64 CPU architecture"
+  },
+  {
+   "bugid": "1672364",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove defer usage in devtools/server"
+  },
+  {
+   "bugid": "1623667",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Update panels other than Inspector to use Fission-ready node highlighter"
+  },
+  {
+   "bugid": "1672333",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove defer usage in devtools/client/shared/test/browser_inplace-editor-02.js"
+  },
+  {
+   "bugid": "1672339",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove defer usage in devtools/shared/discovery/tests/xpcshell/test_discovery.js"
+  },
+  {
+   "bugid": "1671163",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Move object-inspector outside of the reps folder"
+  },
+  {
+   "bugid": "1672245",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove defer usage in devtools/client/shared/test/browser_inplace-editor-01.js"
+  },
+  {
+   "bugid": "1672220",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove defer usage in devtools/client/shared/test/browser_dbg_listtabs-01.js"
+  },
+  {
+   "bugid": "1666519",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Add localStorage resource"
+  },
+  {
+   "bugid": "1667766",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Typing a url and then keyboard navigating search one-offs doesn't properly update the heuristic"
+  },
+  {
+   "bugid": "1672533",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dedupe SERPs in history whose query parameters are a subset of a generated search URL"
+  },
+  {
+   "bugid": "1672680",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search shortcuts can not use IDEOGRAPHIC SPACE(U+3000)"
+  },
+  {
+   "bugid": "1465847",
+   "status": "ASSIGNED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "WebsiteFilter policy does not block view-source"
+  },
+  {
+   "bugid": "1672517",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable the about:home startup cache on Nightly (only) by default"
+  },
+  {
+   "bugid": "1671186",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Include event sources in telemetry events sent by new tab section menus."
+  },
+  {
+   "bugid": "1659692",
+   "status": "RESOLVED",
+   "component": "Firefox:Pioneer",
+   "summary": "Pioneer toolbar icon has no tooltip"
+  },
+  {
+   "bugid": "1672571",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Remove or update probes expiring in Firefox 85: intl.ui.browserLanguage.manage#action"
+  },
+  {
+   "bugid": "1669862",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build errors for pushing patches when forgetting to `hg add` or `git add` new files are mystifying"
+  },
+  {
+   "bugid": "1654103",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "autoformat entire repo with black"
+  },
+  {
+   "bugid": "1672940",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Doing osx cross builds fails with biplist.InvalidPlistException: module 'plistlib' has no attribute 'Data'"
+  },
+  {
+   "bugid": "1664365",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "Update MinGW to support COMPOSITIONOBJECT_ALL_ACCESS and remove the workout in Bug 1663894"
+  },
+  {
+   "bugid": "1672023",
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Remove excluded files from black.yml"
+  },
+  {
+   "bugid": "1668304",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Bump mingw-clang builds to clang 11"
+  },
+  {
+   "bugid": "1672889",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add a mac nasm toolchain"
+  },
+  {
+   "bugid": "1672095",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Inputting character isn't inserted at caret position."
+  },
+  {
+   "bugid": "1672262",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Avoid sending multiple events in onProgressChanges when switching process"
+  },
+  {
+   "bugid": "1672420",
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "UI is unusable in latest Daily (2020-10-21) on Windows - flickering, blocks of black text, lots of blinking, uneven scrolling, ghosting of buttons"
+  },
+  {
+   "bugid": "1663119",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Remove workaround for intermittently failing updater failures when compiled with mingw-w64"
+  },
+  {
+   "bugid": "1672908",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "nsSigHandlers.cpp:153:15: error: unused variable 'uc' [-Werror,-Wunused-variable]"
+  },
+  {
+   "bugid": "1671487",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Intermittent toolkit/content/tests/browser/browser_datetime_datepicker.js | datepicker x position: 204 should be equal(-ish) to 214 -"
+  },
+  {
+   "bugid": "1671468",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement dispatcher & IPC for String Lists in FOG"
+  },
+  {
+   "bugid": "1671466",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement dispatcher & IPC for Memory Distributions in FOG"
+  },
+  {
+   "bugid": "1673013",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "toolkit/components/pictureinpicture/tests/browser_contextMenu.js test failure on small screens"
+  },
+  {
+   "bugid": "1628642",
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/mochitest/test_ext_streamfilter_multiple.html | Correctly intercepted page content - got \"Start Middle\\n\", expected \"Start Middle\\n End\""
+  }
+ ],
+ "date": "2020-10-24",
+ "cset": "78130fed97b782e51d3da1ce1395a2bdb2d83db4",
+ "buildid": "20201024094139",
+ "fixed": 65,
+ "total": 79,
+ "restricted": 5
+}

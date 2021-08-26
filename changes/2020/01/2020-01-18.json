@@ -1,0 +1,364 @@
+{
+ "bugs": [
+  {
+   "bugid": "1609861",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Stop using NS_ERROR_DOM_TYPE_ERR in mediasource"
+  },
+  {
+   "bugid": "1609573",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Large (>1MB) embedded cover art causes AAC audio in M4A container playback failure: \"Parse MP4 metadata failed\""
+  },
+  {
+   "bugid": "1606690",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Let audiounit-rust ride the train"
+  },
+  {
+   "bugid": "1609819",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "bindFramebuffer+getParameter(DRAW_BUFFERn) fails to fetch newly-current FB's state"
+  },
+  {
+   "bugid": "1609858",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Stop using NS_ERROR_DOM_TYPE_ERR in TimingParams"
+  },
+  {
+   "bugid": "1602989",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "322,500 instances of \"we only accept nsIURI interface type, patch welcome\" emitted from dom/ipc/PropertyBagUtils.cpp during linux64 debug testing"
+  },
+  {
+   "bugid": "1609110",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Follow up fixes on async process creation introduced in Bug 1602712 and Bug 1605086"
+  },
+  {
+   "bugid": "1609367",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent TEST-UNEXPECTED-OK | /screen-orientation/lock-unlock-check.html | expected ERROR"
+  },
+  {
+   "bugid": "1602898",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Rename Window.getWindowGlobalChild() to .windowGlobalChild"
+  },
+  {
+   "bugid": "1597414",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix uses of mozilla::dom::ScreenOrientation::GetLockOrientationPermission in dom/base/ScreenOrientation.cpp"
+  },
+  {
+   "bugid": "1597480",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix uses of nsPresContext::Init in layout/base/nsPresContext.cpp"
+  },
+  {
+   "bugid": "1602363",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Let Cross-Origin-Resource-Policy ride the trains"
+  },
+  {
+   "bugid": "1607483",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Disallow loading http(s) scripts into system privileged contexts"
+  },
+  {
+   "bugid": "1306634",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Long-pressing on an iframe which doesn't have focus puts selection in unexpected place"
+  },
+  {
+   "bugid": "1609665",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ mozilla::dom::ServiceWorkerRegistrationInfo::MaybeScheduleTimeCheckAndUpdate]"
+  },
+  {
+   "bugid": "1597742",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "atk_text_scroll_substring_to_point() only works if the accessible object is offscreen"
+  },
+  {
+   "bugid": "1606743",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::dom::PBrowserBridgeChild::SendSetEmbedderAccessible]"
+  },
+  {
+   "bugid": "1609598",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Composition recording on WebRender could have a skew on Windows"
+  },
+  {
+   "bugid": "1605283",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve support for invalidation debugging and testing"
+  },
+  {
+   "bugid": "1604535",
+   "status": "REOPENED",
+   "component": "Core:ImageLib",
+   "summary": "Crash in [@ OOM | large | mozalloc_abort | mozalloc_handle_oom | moz_xmalloc | mozilla::gfx::SourceSurfaceRawData::GuaranteePersistance]"
+  },
+  {
+   "bugid": "1609585",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Migrate all possible uses from AppLocalesAsLangTag(s) to AppLocale(s)AsBCP47"
+  },
+  {
+   "bugid": "1607111",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Lockwise UI is not translated in Japanese on Mac"
+  },
+  {
+   "bugid": "1608183",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move ScopeCreationData into js::frontend namespace"
+  },
+  {
+   "bugid": "1543315",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Mark methods of nsIPresShell and mozilla::PresShell as MOZ_CAN_RUN_SCRIPT (or at least MOZ_CAN_RUN_SCRIPT_BOUNDARY) if necessary"
+  },
+  {
+   "bugid": "1583135",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Entered text scrolled out of view after Ctrl+Home on long document followed by entering text and hitting enter"
+  },
+  {
+   "bugid": "1608444",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "MOZ_CRASH(Blocking classifier error 805d0029 need to be handled by CancelByURLClassifier()) at /builds/worker/workspace/build/src/netwerk/protocol/http/nsHttpChannel.cpp:6189"
+  },
+  {
+   "bugid": "1606901",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash in [@ mozilla::net::PDocumentChannelParent::SendRedirectToRealChannel]"
+  },
+  {
+   "bugid": "1609753",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "RemoteWebProgress failed to call onContentBlockingEvent"
+  },
+  {
+   "bugid": "1497007",
+   "status": "REOPENED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Implement IDBTransaction commit() method"
+  },
+  {
+   "bugid": "1609837",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "nsDisplayRemote mixes up content rect offsets"
+  },
+  {
+   "bugid": "1609859",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Stop throwing incorrect exceptions from PeerConnection"
+  },
+  {
+   "bugid": "1609356",
+   "status": "ASSIGNED",
+   "component": "DevTools:Application Panel",
+   "summary": "Enable the Application panel on Nightly"
+  },
+  {
+   "bugid": "1607923",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Logpoints do not work for workers"
+  },
+  {
+   "bugid": "1551585",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "[Inactive CSS] Display a warning when z-index, top, right, bottom or left is used on a non-positioned element"
+  },
+  {
+   "bugid": "1569626",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Pres shell resolution leaks when user exits RDM, causing clipped rendering with WebRender"
+  },
+  {
+   "bugid": "1609224",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Failed to load module resource://gre/modules/PlacesUtils.jsm"
+  },
+  {
+   "bugid": "1607574",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Telemetry",
+   "summary": "Crash in [@ nvd3d9wrapx.dll | trunc | nvd3d9wrapx.dll | FindModule]"
+  },
+  {
+   "bugid": "1609699",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rename browser.urlbar.searchTips pref to browser.urlbar.update1.searchTips"
+  },
+  {
+   "bugid": "1603316",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "repeating . and a letter (s) causes firefox to hang in browser"
+  },
+  {
+   "bugid": "1609937",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Get test_UrlbarQueryContext_restrictSource.js working with the search modern configuration"
+  },
+  {
+   "bugid": "1605889",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Reset address bar scroll position on blur to show LTR origins"
+  },
+  {
+   "bugid": "1608597",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Nudges] Top sites will conflict with the nudges/tips experiment on 74"
+  },
+  {
+   "bugid": "1609898",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "about:downloads shows an XML error"
+  },
+  {
+   "bugid": "1605467",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Migrate command keys for text actions"
+  },
+  {
+   "bugid": "1609037",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "DoH Rollout Extension: Wait until a top-level location change to show the doorhanger"
+  },
+  {
+   "bugid": "1608320",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "DoH Rollout Extension: Don't show the doorhanger if the user has seen the post-DoH privacy statement."
+  },
+  {
+   "bugid": "1600109",
+   "status": "REOPENED",
+   "component": "Firefox:Security",
+   "summary": "Fix captive portal and network change handling"
+  },
+  {
+   "bugid": "1609966",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Enable ESLint for services/sync/modules/constants.js"
+  },
+  {
+   "bugid": "1607718",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make setTabAttributes and updateTabPosition private methods"
+  },
+  {
+   "bugid": "616130",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Need pref to disable tab tear off"
+  },
+  {
+   "bugid": "1610028",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build target.crashreporter-symbols-full.zip for use with Pernosco"
+  },
+  {
+   "bugid": "1608783",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Intermittent /builds/worker/checkouts/gecko/editor/libeditor/tests/browserscope/lib/richtext2/richtext2/handlers.py:63 | Trailing whitespace (file-whitespace)"
+  },
+  {
+   "bugid": "1602863",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ubuntu1804 - migrate tasks, tests and other jobs that use desktop1604-test to use ubuntu1804-test image"
+  },
+  {
+   "bugid": "1534287",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Crash in [@ java.lang.IllegalStateException: at android.view.accessibility.AccessibilityManager.sendAccessibilityEvent(AccessibilityManager.java)]"
+  },
+  {
+   "bugid": "1609750",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Debugging extension from about:debugging throws"
+  },
+  {
+   "bugid": "1609019",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "browser.privatebrowsing.autostart not defined on Android"
+  },
+  {
+   "bugid": "1511700",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Replace nsINavBookmarksService::onItemRemoved with \"bookmark-removed\""
+  },
+  {
+   "bugid": "1609226",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "can't access property \"getExtensionPolicy\", Services.policies is undefined"
+  },
+  {
+   "bugid": "1609979",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Follow up for Bug 1602230 (BrowserAction Badge text wrapping)"
+  }
+ ],
+ "date": "2020-01-18",
+ "cset": "29c9a00754c183c83c7c378eae4aa82accd21b34",
+ "buildid": "20200118092217",
+ "fixed": 47,
+ "total": 59,
+ "restricted": null
+}

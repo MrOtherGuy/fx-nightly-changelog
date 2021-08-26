@@ -1,0 +1,544 @@
+{
+ "bugs": [
+  {
+   "bugid": "1715648",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update mp4parse-rust to 1bb484e"
+  },
+  {
+   "bugid": "1714125",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Mp4s with multiple sample description entries containing crypto are rejected by parser"
+  },
+  {
+   "bugid": "1713890",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Relax pref reading constraints for browser_preferences_usage.js skipped in 'browser/base/content/test/performance/browser.ini' for Fission"
+  },
+  {
+   "bugid": "1712644",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent Fission debug failures html/browsers/history/the-history-interface/001.html"
+  },
+  {
+   "bugid": "1681983",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Audit uses of Document::GetSubDocumentFor"
+  },
+  {
+   "bugid": "1713757",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `mozInlineSpellChecker` use `EditorBase` instead of `TextEditor`"
+  },
+  {
+   "bugid": "1713756",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EditorCommand` classes use `EditorBase` instead of `TextEditor`"
+  },
+  {
+   "bugid": "1713821",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Caret not shown when setting document.designMode = 'on' in a keyboard event listener"
+  },
+  {
+   "bugid": "1713758",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EventStateManager`, `nsCopySupport`, `nsContentUtils` and `Document` use `EditorBase` instead of `TextEditor`"
+  },
+  {
+   "bugid": "1714916",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor::InsertFromDataTransfer` take `uint32_t` as index of `DataTransfer` items"
+  },
+  {
+   "bugid": "1715252",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Permanent Assertion failure: StaticPrefs::dom_events_coalesce_touchmove(), at /builds/worker/checkouts/gecko/dom/ipc/BrowserChild.cpp:1476 when Gecko 91 merges to Beta on 2021-07-12"
+  },
+  {
+   "bugid": "1715300",
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable BFCache in parent when Fission is enabled"
+  },
+  {
+   "bugid": "1643998",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent browser/base/content/test/tabs/browser_new_tab_in_privilegedabout_process_pref.js | Check that about:newtab is in privileged about: content process after location change. - Got 11269, expected 8122"
+  },
+  {
+   "bugid": "1712648",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent Fission debug failures html/browsers/history/the-history-interface/002.html | history.state should also reference a clone of the original object (2)"
+  },
+  {
+   "bugid": "1714950",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix test loadWithHTTPSOnlyMode with https-first-mode enabled"
+  },
+  {
+   "bugid": "1704473",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove <head> requirement for <meta name=referrer>"
+  },
+  {
+   "bugid": "1564235",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Expose NavigationPreloadManager interface"
+  },
+  {
+   "bugid": "1713624",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Focusing parent when two sibling subframes have been focused results in inconsistent focus state"
+  },
+  {
+   "bugid": "1715151",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::HTMLLIAccessible::BoundsInAppUnits]"
+  },
+  {
+   "bugid": "1690624",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Registering a rust thread with the profiler should be easy"
+  },
+  {
+   "bugid": "1715655",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Dispatch Vsync events with right/higher priority in VsyncParent"
+  },
+  {
+   "bugid": "1715335",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add annotations for reftest-snapshot + WR"
+  },
+  {
+   "bugid": "1715058",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender crash report annotations for shaders by default"
+  },
+  {
+   "bugid": "1715245",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Regression: WebRender support on Nvidia Binary"
+  },
+  {
+   "bugid": "1715560",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove low powered NVIDIA blocklist rule on Windows"
+  },
+  {
+   "bugid": "1715523",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Perma valgrind-test | 32,896 (256 direct, 32,640 indirect) bytes in 8 blocks are definitely lost at malloc / moz_xmalloc / operator / MakeNotNull"
+  },
+  {
+   "bugid": "1714275",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Establish raster roots for picture cache tiles"
+  },
+  {
+   "bugid": "1715144",
+   "status": "REOPENED",
+   "component": "Core:IPC",
+   "summary": "Stop adding ipc/glue to LOCAL_INCLUDES in chromium-config.mozbuild"
+  },
+  {
+   "bugid": "1707954",
+   "status": "ASSIGNED",
+   "component": "Core:IPC: MSCOM",
+   "summary": "Make ProcessRuntime guarantee that all non-main threads are implicit members of the MTA"
+  },
+  {
+   "bugid": "1704509",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add intl::PluralRules implementation"
+  },
+  {
+   "bugid": "1715299",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS_FASTCALL attribute"
+  },
+  {
+   "bugid": "1713335",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Dispatch helper tasks to an external thread pool if one is supplied"
+  },
+  {
+   "bugid": "1714532",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: isIncremental, at gc/GC.cpp:6976 with OOM"
+  },
+  {
+   "bugid": "1715570",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Update wasm_generate_spectests dependency"
+  },
+  {
+   "bugid": "1714219",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Properly serialize Wasm TypeDef"
+  },
+  {
+   "bugid": "1713287",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Parallel wasm compilation makes assumptions about the number of helper threads"
+  },
+  {
+   "bugid": "1706853",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[M-fis-xorig] High intermittent layout/style/test/test_animations_effect_timing_enddelay.html | OMTA should work"
+  },
+  {
+   "bugid": "1713811",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Tweak lazy-loading root margin defaults to 1000px in all directions"
+  },
+  {
+   "bugid": "1714307",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Fix static-analysis warnings in netwerk/"
+  },
+  {
+   "bugid": "1705065",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "ConnectionEntry should not hold raw pointer of DnsAndConnectSocket"
+  },
+  {
+   "bugid": "1708070",
+   "status": "REOPENED",
+   "component": "Core:Performance",
+   "summary": "Still having some crashes after having dom.input_events.strict_input_vsync_alignment enabled again"
+  },
+  {
+   "bugid": "1714513",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Video suggestions from youtube are shown out of page during print preview"
+  },
+  {
+   "bugid": "1695509",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "many empty pages when printing pages with multiple tall floats inside of flex containers (and layout.display-list.improve-fragmentation enabled, the default in Firefox 86+)"
+  },
+  {
+   "bugid": "1699837",
+   "status": "NEW",
+   "component": "Core:Printing: Output",
+   "summary": "Remote frames are zoomed in or out when printing to PDF"
+  },
+  {
+   "bugid": "1340422",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Implement path() on `d` property on SVG path element"
+  },
+  {
+   "bugid": "1687570",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "remove keyUsages from nsIX509Cert"
+  },
+  {
+   "bugid": "1714263",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove or update probes expiring in Firefox 92: CRLITE_RESULT"
+  },
+  {
+   "bugid": "1715461",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Linux/ARM64 syscall list re-generation"
+  },
+  {
+   "bugid": "1715254",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Sandbox doesn't work with clone3"
+  },
+  {
+   "bugid": "1653659",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Sandbox hunspell using RLBox"
+  },
+  {
+   "bugid": "1703584",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "about:webrtc can cause the browser to become unresponsive"
+  },
+  {
+   "bugid": "1714577",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Teach WebRTC.org to use the Gecko Profiler"
+  },
+  {
+   "bugid": "1715619",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Enable widget.macos.support-dark-appearance by default on Nightly and Early Beta"
+  },
+  {
+   "bugid": "1710164",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "White-on-white text on in-content pages when using macOS Dark Mode + High Contrast Mode, if widget.macos.respect-system-appearance is enabled"
+  },
+  {
+   "bugid": "1715477",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Content menu is opened on wrong position when bookmark menu is shown"
+  },
+  {
+   "bugid": "1713528",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "widget/GfxInfoBase.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1715453",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove unused devtools/client/debugger/src/utils/defer.js"
+  },
+  {
+   "bugid": "1712557",
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Source code not available when pausing at a breakpoint"
+  },
+  {
+   "bugid": "1715049",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Convert devtools/docs/tests/writing-tests.md to async/await"
+  },
+  {
+   "bugid": "1505301",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove unused devtools/shared/poller module"
+  },
+  {
+   "bugid": "1641551",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Node/AccessibleFront should check contenttoolbox.fission pref for the remoteFrame getter"
+  },
+  {
+   "bugid": "1691611",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Fix and re-enable devtools/client/inspector/test/browser_inspector_fission_frame_navigation.js test for Fission"
+  },
+  {
+   "bugid": "1710909",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "DevTools in DevEdition crashed unexpectedly"
+  },
+  {
+   "bugid": "1710077",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Support target switching in the Storage Panel"
+  },
+  {
+   "bugid": "1565448",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar result text is cut off at the bottom within rows"
+  },
+  {
+   "bugid": "1708263",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Proton Address Bar] Focus Ring flickers/appears when focussing the Addressbar by clicking on the Address Bar border"
+  },
+  {
+   "bugid": "1714144",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent browser/components/places/tests/browser/interactions/browser_interactions_view_time.js | Should not have recorded any interactions. - 1 == 0 - JS frame :: chrome://places/tests/browser/interactions/browser_interactions_view_time.js"
+  },
+  {
+   "bugid": "1714254",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove or update probes expiring in Firefox 92: PLACES_BOOKMARKS_TOOLBAR_RENDER_DELAY_MS"
+  },
+  {
+   "bugid": "1713714",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"Show All Bookmarks\" is inconsistent with appmenu (Manage Bookmarks)"
+  },
+  {
+   "bugid": "1682022",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Use sentence casing for most of the App Menu"
+  },
+  {
+   "bugid": "1712215",
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update drop shadows on all card elements"
+  },
+  {
+   "bugid": "1715638",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.10.87"
+  },
+  {
+   "bugid": "1710635",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Save visible does not always capture visible view port"
+  },
+  {
+   "bugid": "1712898",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Add a basic prompt for selectAudioOutput()"
+  },
+  {
+   "bugid": "1688896",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Reorder case statements in \"AboutLoginsChromeToContent\" switch in aboutLogins.js"
+  },
+  {
+   "bugid": "1715493",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "TypeError: should_replace_task() missing 1 required positional argument: 'index_paths' when running bootstrap"
+  },
+  {
+   "bugid": "1714788",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Fix more sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1714641",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove \"python2\" items from virtualenv_packages files."
+  },
+  {
+   "bugid": "1715553",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [ccov][tier2] check> make[4]: *** [Makefile:50: check] Error 1  | Target 'recurse_check' not remade because of errors"
+  },
+  {
+   "bugid": "1715612",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Remove usage of six in tools/tryselect"
+  },
+  {
+   "bugid": "1677197",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable mochitests/reftests/WPT for Android Fission and add necessary skip-if/fail-if annotations"
+  },
+  {
+   "bugid": "1691414",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Refactor WebDriver session module to be shareable with WebDriver BiDi"
+  },
+  {
+   "bugid": "1715223",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Upstream Synchronization",
+   "summary": "Intermittent toolkit/components/downloads/test/unit/test_DownloadList.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1686071",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Use Apple's password rules data to improve password generation experience"
+  },
+  {
+   "bugid": "1704584",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add \"password-rules\" data in tree"
+  },
+  {
+   "bugid": "1714776",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "NewPasswordModel.jsm has unusual \">\"s in regexp literals"
+  },
+  {
+   "bugid": "1715656",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Add meta charset tag to helper HTML files in toolkit/components/printing/tests/"
+  },
+  {
+   "bugid": "1713122",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document \"thunderbird\" product value for Telemetry probes"
+  },
+  {
+   "bugid": "1682632",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Expose in extension background service workers WebExtensions API webidl bindings"
+  }
+ ],
+ "date": "2021-06-10",
+ "cset": "3ee20501e5d618a8444079e9509c06794bfcc46f",
+ "buildid": "20210610094936",
+ "fixed": 73,
+ "total": 89,
+ "restricted": null
+}

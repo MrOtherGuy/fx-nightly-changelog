@@ -1,0 +1,580 @@
+{
+ "bugs": [
+  {
+   "bugid": "1644647",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Linearize AudioContextOperation resolution"
+  },
+  {
+   "bugid": "1626918",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Allow capturing real-time traces in the Firefox Profiler"
+  },
+  {
+   "bugid": "1508306",
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Disable the Large-Allocation header for Fission, and migrate to DocumentLoadListener"
+  },
+  {
+   "bugid": "1645109",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash [@ mozilla::dom::Document::Sanitize()]"
+  },
+  {
+   "bugid": "1645257",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Add mochitest of bug 1636747"
+  },
+  {
+   "bugid": "1636823",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Mixed BLOB objects can't be downloaded correctly"
+  },
+  {
+   "bugid": "1644119",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "CanonicalBrowsingContext::SessionHistoryCommit doesn't seem to ever find a loading entry"
+  },
+  {
+   "bugid": "1644439",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ nsFrameLoader::TryRemoteBrowserInternal]"
+  },
+  {
+   "bugid": "1640019",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Support DocumentLoadListener-triggered toplevel process switches outside of tabbrowser"
+  },
+  {
+   "bugid": "1587743",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Moving GetPermission to parent to get correct top level principal when fission enabled"
+  },
+  {
+   "bugid": "1643721",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Factor code relevant for serializing ranges out from `nsDocumentEncoder`"
+  },
+  {
+   "bugid": "1622372",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent serviceworker/cache-storage.https.html.ini WPT TIMEOUT with Fission"
+  },
+  {
+   "bugid": "1642922",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Scroll-padding implementation ignores keyboard focus"
+  },
+  {
+   "bugid": "1645067",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::DocAccessibleChild::GetNativeWindowHandle]"
+  },
+  {
+   "bugid": "1645042",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Revert bug 1631615 / color manage untagged images"
+  },
+  {
+   "bugid": "1642629",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Various frame building optimizations"
+  },
+  {
+   "bugid": "1642495",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Lots of time spent  in buffer_data_untyped|gleGetFreeOrphanNode on macOS"
+  },
+  {
+   "bugid": "1628657",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "White Line Flickers on https://www.miragefestival.com/ with WebRender on when scrolling"
+  },
+  {
+   "bugid": "1645405",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove window jumping blocklist."
+  },
+  {
+   "bugid": "1645428",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let gen6 and gen7 ride into early beta."
+  },
+  {
+   "bugid": "1645124",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Frequent batch breaks caused by glyphs in different texture cache arrays"
+  },
+  {
+   "bugid": "1635472",
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move the display port in larger increments when webrender is enabled"
+  },
+  {
+   "bugid": "1623792",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Optimize primitive dependency handling, taking advantage of spatial information from tile assignment."
+  },
+  {
+   "bugid": "1645412",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let WebRender on Win7,8,8.1 ride into early beta."
+  },
+  {
+   "bugid": "1641594",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Assertion failure: mParent->mRecycleLockCount > 0, at /builds/worker/checkouts/gecko/image/imgFrame.cpp:967"
+  },
+  {
+   "bugid": "1642268",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Octal literals must use '0o' in strict mode"
+  },
+  {
+   "bugid": "1644412",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[s390x] - Segfault on startup in new-regexp/regexp-bytecode-peephole.cc"
+  },
+  {
+   "bugid": "1640284",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create a tool for easily discovering and diagnosing costly CacheIR stubs"
+  },
+  {
+   "bugid": "1644472",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize some RegExp intrinsics in CacheIR and Warp"
+  },
+  {
+   "bugid": "1645515",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Tiny getTemplateObjectForScripted cleanup"
+  },
+  {
+   "bugid": "1645113",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Don't sweep arenas that were allocated during marking"
+  },
+  {
+   "bugid": "1636984",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Add workarounds for ICU/CLDR issues with display names and append items"
+  },
+  {
+   "bugid": "1413504",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Consider supporting more numbering systems for Intl.NumberFormat"
+  },
+  {
+   "bugid": "1642934",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Automatically determine current CLDR version when updating langtags"
+  },
+  {
+   "bugid": "1405813",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !childNIF || mFrames.ContainsFrame(childNIF) || (pifEOC && pifEOC->ContainsFrame(childNIF)) || (oc && oc->ContainsFrame(childNIF)) || (eoc && eoc->ContainsFrame(childNIF)) in [@ nsGridContainerFrame::SanityCheckGridItemsBeforeReflow]"
+  },
+  {
+   "bugid": "1640051",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !childNIF || mFrames.ContainsFrame(childNIF) || (pifEOC && pifEOC->ContainsFrame(childNIF)) || (oc && oc->ContainsFrame(childNIF)) || (eoc && eoc->ContainsFrame(childNIF)), at src/layout/generic/nsContainerFrame.cpp:2452"
+  },
+  {
+   "bugid": "1644638",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "ScrollFrameHelper::ReflowFinished should use GetVisualScrollRange instead of trying to calculate it itself"
+  },
+  {
+   "bugid": "1644285",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Wrong Arimo fonts selected on anandtech.com"
+  },
+  {
+   "bugid": "1645482",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "DirectWrite shared-font-list code may leak font table references"
+  },
+  {
+   "bugid": "1645328",
+   "status": "ASSIGNED",
+   "component": "Core:MFBT",
+   "summary": "Add in-place constructor to Maybe"
+  },
+  {
+   "bugid": "1641737",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Have ADocumentChannelBridge <-> DocumentLoadListener communicate via MozPromise"
+  },
+  {
+   "bugid": "1644945",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add an nsIParentChannel wrapper class for ParentProcessDocumentChannel so that we can share code"
+  },
+  {
+   "bugid": "1645254",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove dead redirection IPC for process switching"
+  },
+  {
+   "bugid": "1643884",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "cmd_close crashes browser"
+  },
+  {
+   "bugid": "1643115",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Propagate storage permission to same-origin frames in the same agent-cluster"
+  },
+  {
+   "bugid": "1642687",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 79 to use NSS 3.54"
+  },
+  {
+   "bugid": "1286250",
+   "status": "UNCONFIRMED",
+   "component": "Core:Security: PSM",
+   "summary": "crypto.subtle.generateKey throws wrong error for bad AES key length"
+  },
+  {
+   "bugid": "1612116",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Crash in [@ mozilla::psm::GetXPCOMFromNSSError]"
+  },
+  {
+   "bugid": "1642849",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Interrupt worklet thread JS on document unload"
+  },
+  {
+   "bugid": "1400317",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsUXThemeData uses win32k APIs in content process"
+  },
+  {
+   "bugid": "1644009",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Split direct task dispatching from AbstractThread"
+  },
+  {
+   "bugid": "1386838",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Give nsTObserverArray standard iterator types"
+  },
+  {
+   "bugid": "1640929",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Advance toolkit.shutdown.fastShutdownStage to 1 on Beta / Release"
+  },
+  {
+   "bugid": "1643086",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Do not call reset on props updated in MainFrame."
+  },
+  {
+   "bugid": "1596018",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Extraneous tab stop between Accessibility tree and Checks heading"
+  },
+  {
+   "bugid": "1643091",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Simplify listening to accessibility lifecycle events."
+  },
+  {
+   "bugid": "1598026",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Make the accessibility tree Fission-ready"
+  },
+  {
+   "bugid": "1644966",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Make ConsoleApiListener and ConsoleServiceListener take a function instead of an object"
+  },
+  {
+   "bugid": "1594467",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add \"Restart frame\""
+  },
+  {
+   "bugid": "1644813",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove references to autoBlackbox"
+  },
+  {
+   "bugid": "1644808",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove references to wasmBinarySource"
+  },
+  {
+   "bugid": "1625957",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Changes",
+   "summary": "Use the ResourceWatcher API to fetch CSS Changes"
+  },
+  {
+   "bugid": "1644693",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "[a11y]Make the grid inspector more accessible to screen readers"
+  },
+  {
+   "bugid": "1644669",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "[a11y]Make the flex view in the layout accordeon more accessible to screen readers."
+  },
+  {
+   "bugid": "1644343",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "[a11y]Make the Layout view's box model section more accessible to screen readers"
+  },
+  {
+   "bugid": "1645237",
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "Load JSONView converter-observer lazily via static component registration"
+  },
+  {
+   "bugid": "1642076",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Unwanted vertical scrollbars in Cookies panel"
+  },
+  {
+   "bugid": "1643687",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search bar becomes unresponsive if using paste and go context menu option with a string while search tip is displayed"
+  },
+  {
+   "bugid": "1630391",
+   "status": "RESOLVED",
+   "component": "Firefox:Disability Access",
+   "summary": "Update expiry of accessibility telemetry for zoom, backplate, and HCM scalars."
+  },
+  {
+   "bugid": "1627676",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Add telemetry for usage of file downloads and download panel"
+  },
+  {
+   "bugid": "1644155",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove some leftover unused message listeners from /browser"
+  },
+  {
+   "bugid": "1644361",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Adjust What's New panel message body width"
+  },
+  {
+   "bugid": "1645069",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add mochitest coverage for targeting context"
+  },
+  {
+   "bugid": "1644230",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The prefs and devtools icons on newtab are not visible if the system's \"High Contrast\" mode is enabled (windows)"
+  },
+  {
+   "bugid": "1645165",
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Migration Wizard shows the default (\"Introduction\") title on the source selection page"
+  },
+  {
+   "bugid": "1630050",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "A race condition on startup can lead to the wrong engine being set as default"
+  },
+  {
+   "bugid": "1643595",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Add a learn more link on XFO/CSP error pages"
+  },
+  {
+   "bugid": "1643503",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "The new Camera/mic Global Sharing Overlay obscures Google Meet's camera/mic/leave-call buttons"
+  },
+  {
+   "bugid": "1626215",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Lockwise app focus ring for GooglePlay differs from AppStore"
+  },
+  {
+   "bugid": "1645047",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "`mach bootstrap` in a git repo suggests adding git-cinnabar to your path even if it's already there"
+  },
+  {
+   "bugid": "1645020",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Developer Environment Integration",
+   "summary": "Add `rust-analyzer` as a default plugin to `vscode`"
+  },
+  {
+   "bugid": "1645384",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "\"More Information\" link of \"Install dependencies (non-Windows)\" in Firefox source docs Contributors\u2019 Quick Reference is broken"
+  },
+  {
+   "bugid": "1644665",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "client.py: clean up flake8/pylint warnings"
+  },
+  {
+   "bugid": "1645228",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Perma tier 2 0:36.76 python/mach/mach/test/test_conditions.py::TestConditions::test_conditions_pass TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1632429",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "mach try should use Python 3"
+  },
+  {
+   "bugid": "1644447",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove GeckoView Telemetry Snapshot API"
+  },
+  {
+   "bugid": "1645162",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Partial generation fails MAR signature check on Oak (dep instead of nightly)"
+  },
+  {
+   "bugid": "1643625",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Clear up references to MAR_OLD_FORMAT in update tools"
+  },
+  {
+   "bugid": "1636971",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Message Compose Window",
+   "summary": "Clicking on inserted image in compose window doubles it"
+  },
+  {
+   "bugid": "1644519",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Intermittent toolkit/mozapps/extensions/test/browser/<anything>.js | Private browsing permission removed -"
+  },
+  {
+   "bugid": "1645487",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Update Form Autofill Preferences \"Learn More\" link for Credit Cards"
+  },
+  {
+   "bugid": "1645331",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Catch asyncClose exceptions and mark the database as closed"
+  },
+  {
+   "bugid": "1640441",
+   "status": "NEW",
+   "component": "Web Compatibility:Desktop",
+   "summary": "Slack hangs indefinitely in a onResize loop"
+  },
+  {
+   "bugid": "1643928",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Intermittent org.mozilla.geckoview.test.WebExtensionTest.testBrowserRuntimeOpenOptionsPageInNewTab | org.mozilla.geckoview.GeckoResult$UncaughtException: java.lang.AssertionError: expected:<WebExtension {location=resource://android/assets/web_extensions"
+  },
+  {
+   "bugid": "1587541",
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "Make content scripts work in Fission iframes"
+  }
+ ],
+ "date": "2020-06-13",
+ "cset": "fe147898a052291f6796dd8ff28c80c1358899d6",
+ "buildid": "20200613093747",
+ "fixed": 79,
+ "total": 95,
+ "restricted": 2
+}

@@ -1,0 +1,610 @@
+{
+ "bugs": [
+  {
+   "bugid": "1639905",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Minor parsing cleanups."
+  },
+  {
+   "bugid": "1635939",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support \"auto | <ratio>\" syntax for aspect-ratio"
+  },
+  {
+   "bugid": "1632646",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable :is() / :where() on all release channels."
+  },
+  {
+   "bugid": "1639689",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support 'field_bound' field attribute for the custom derive parse"
+  },
+  {
+   "bugid": "1639664",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "::first-letter/::first-line pseudo selector does not support opacity"
+  },
+  {
+   "bugid": "1639634",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ RtlAcquireSRWLockExclusive | mozilla::TaskQueue::BeginShutdown]"
+  },
+  {
+   "bugid": "1638873",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "CanvasEventRingBuffer::ReadNextEvent can loop if ReadElement fails after checkpoint."
+  },
+  {
+   "bugid": "1639675",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ memcpy_repmovs | mozilla::layers::CanvasEventRingBuffer::ReturnWrite]"
+  },
+  {
+   "bugid": "1639626",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::layers::CanvasTranslator::CreateDrawTarget]"
+  },
+  {
+   "bugid": "1639599",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::layers::CanvasChild::ShouldBeCleanedUp]"
+  },
+  {
+   "bugid": "1630919",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Animations / transitions of opacity and visibility together are incorrectly throttled."
+  },
+  {
+   "bugid": "1632439",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Make CallbackObject methods return JSObject pointers rather than handles"
+  },
+  {
+   "bugid": "1615564",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Lots of time spend in Window.clearTimeout after watching movies on https://www.tvnow.de"
+  },
+  {
+   "bugid": "1639161",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Create ReplaceTextTransaction to avoid creating both InsertTextTransaction and DeleteTextTransaction"
+  },
+  {
+   "bugid": "1002724",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fall back to HTTPS in URL fixup (including location bar) (like for hosts that refuse a connection on port 80 via HTTP, but accepts connections via HTTPS on port 443)"
+  },
+  {
+   "bugid": "1557386",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Beacon should not be restricted by CORS"
+  },
+  {
+   "bugid": "1639824",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "A lot of \"IInputPane2::TryHide is failure\" warnings"
+  },
+  {
+   "bugid": "1633344",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Payments",
+   "summary": "Disallow duplicate PMIs when creating request"
+  },
+  {
+   "bugid": "1624909",
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Position of radio button and required attribute not reported"
+  },
+  {
+   "bugid": "1639062",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "DrawTargetD2D1::OptimizeSourceSurface should support RGBX/RGBA"
+  },
+  {
+   "bugid": "1639874",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Fix YCbCrTextureClientAllocationHelper::IsCompatible()"
+  },
+  {
+   "bugid": "1639385",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "memory report mozilla::gfx::NativeFontResourceMac::Create"
+  },
+  {
+   "bugid": "1639813",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Missing glyphs in font from pdf2htmlex converter in Mac OS 10.15"
+  },
+  {
+   "bugid": "1617524",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ core::option::expect_failed | webrender::spatial_tree::SpatialTree::get_relative_transform]"
+  },
+  {
+   "bugid": "1637067",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Blurred SVG - Background-image regression after 75.0b9"
+  },
+  {
+   "bugid": "1637953",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Picture caching doesn't work on gmail"
+  },
+  {
+   "bugid": "1636085",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "GL errors running dom/media/mediasession/test/test_active_mediasession_within_page.html on android webrender"
+  },
+  {
+   "bugid": "1639563",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Sanitize fonts before we use them"
+  },
+  {
+   "bugid": "1638154",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: is_uint24(cp_offset + eats_at_least), at new-regexp/regexp-bytecode-generator.cc:183"
+  },
+  {
+   "bugid": "1639898",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "More cleanups of NaN in JS::Value"
+  },
+  {
+   "bugid": "1639534",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.floor in CacheIR and Warp"
+  },
+  {
+   "bugid": "1639839",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile JSOp::New"
+  },
+  {
+   "bugid": "1637937",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Replace JS_DIAGNOSTICS_ASSERT with MOZ_DIAGNOSTIC_ASSERT?"
+  },
+  {
+   "bugid": "1639547",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Perma SM(cgc) line Assertion failure: source->hasUncompressedSource(), at /builds/worker/workspace/build/src/js/src/vm/JSScript.cpp:2625 even for successful tasks"
+  },
+  {
+   "bugid": "1621645",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix failing 'multi-value' spec-tests"
+  },
+  {
+   "bugid": "1638446",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Remove bottom-type and align validation of ref.func again"
+  },
+  {
+   "bugid": "1639486",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix baseline compilation of fac-ssa"
+  },
+  {
+   "bugid": "1584890",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "abspos root element (html) ignores top/right/bottom/left properties, if it has \"display:flex\" or \"display:grid\""
+  },
+  {
+   "bugid": "1588418",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ gfxFontEntry::HasCharacter]"
+  },
+  {
+   "bugid": "1638172",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "avoid name hiding for handling multipart channel in HttpChannelChild"
+  },
+  {
+   "bugid": "1456626",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: JAR",
+   "summary": "nsJARChannel::asyncOpen can still block"
+  },
+  {
+   "bugid": "1639819",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Local macOS run of APZ mochitests hangs"
+  },
+  {
+   "bugid": "1639448",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "clicking on scrollbar track after pinch zoom on scroll frame without overflow scrolls too far"
+  },
+  {
+   "bugid": "1603185",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "We want a telemetry for optimizing content process creation for typical sites."
+  },
+  {
+   "bugid": "1596855",
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Enable browser_permmgr_sync.js with Fission"
+  },
+  {
+   "bugid": "1639154",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate network cache per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1639807",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate image cache per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1636656",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 78 to use NSS 3.53"
+  },
+  {
+   "bugid": "1609024",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Audit whether we need mPrefersReducedMotionCached or not in these days"
+  },
+  {
+   "bugid": "1592416",
+   "status": "REOPENED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Right click opens context menu on wrong monitor or virtual desktop (mac OS Catalina)"
+  },
+  {
+   "bugid": "1639391",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Flashing of new windows is annoying during session restore"
+  },
+  {
+   "bugid": "1638427",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Do not call walker's highlight accessible directly, instead move this into accessibility-proxy."
+  },
+  {
+   "bugid": "1639305",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Perma devtools/client/webconsole/test/browser/browser_webconsole_promise_rejected_object.js | Uncaught exception when Gecko 78 merges to Beta on 2020-06-01"
+  },
+  {
+   "bugid": "1578594",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Perma failing [tier2 fission] devtools/client/webconsole/test/browser/browser_webconsole_warning_group_multiples.js | Test timed out -"
+  },
+  {
+   "bugid": "1638313",
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Cross-Origin request blocked is not visible in Network panel"
+  },
+  {
+   "bugid": "1637955",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Vertical scrollbar not available anymore in Firefox Nightly for Network/JSON content"
+  },
+  {
+   "bugid": "1398416",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add ability to recall previous search terms and history to Address Bar"
+  },
+  {
+   "bugid": "1639917",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Disabling browser.urlbar.richSuggestions.tail should hide all tail suggestions"
+  },
+  {
+   "bugid": "1619658",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Design and implement an Enterprise Policy to control Picture-in-Picture"
+  },
+  {
+   "bugid": "1639606",
+   "status": "ASSIGNED",
+   "component": "Firefox:File Handling",
+   "summary": "Opening PDF in system default always opens in new tab"
+  },
+  {
+   "bugid": "1506416",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Enable setting Firefox as default PDF reader on Windows"
+  },
+  {
+   "bugid": "1629636",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Remove registration for FTP support on Windows"
+  },
+  {
+   "bugid": "1638101",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support GetStarted and Import Screens UI theme in multistage about:welcome"
+  },
+  {
+   "bugid": "1639177",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Checkbox in What\u2019s New panel is cut out on macOS in French"
+  },
+  {
+   "bugid": "1619381",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "fix tables in Markdown documentation"
+  },
+  {
+   "bugid": "1606276",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Spocs from cache load optimization"
+  },
+  {
+   "bugid": "1610081",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "The non-scrolling sidebar in about:addons and about:preferences is a potential migraine trigger"
+  },
+  {
+   "bugid": "1592544",
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Enable browser_privatebrowsing_about.js on Fission and test-verify"
+  },
+  {
+   "bugid": "1590687",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[meta] [Fission] Update protectionsUI tests for Fission"
+  },
+  {
+   "bugid": "1639684",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Report server_error on HTTP 5XX when polling for changes"
+  },
+  {
+   "bugid": "1635231",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement allow overriding specific search engines according to an allowlist"
+  },
+  {
+   "bugid": "1639727",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "`trackRemainingChanges` is a method on the engine, not the store"
+  },
+  {
+   "bugid": "1639942",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Switching between the Kinto and Rust extension storage engines doesn't work"
+  },
+  {
+   "bugid": "1432725",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Make library window black when using preinstalled Dark Theme"
+  },
+  {
+   "bugid": "1639788",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "update IRC reference in mach bootstrap output"
+  },
+  {
+   "bugid": "1639569",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "checking whether removing dead symbols breaks debugging... .../mozilla/old-configure: 1: -m: not found"
+  },
+  {
+   "bugid": "1639341",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build breakage unless MOZ_WAYLAND is defined"
+  },
+  {
+   "bugid": "1639986",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add hack to bootstrap to install Python 2 on macOS"
+  },
+  {
+   "bugid": "1639815",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move old-configure options to python configure, part 1"
+  },
+  {
+   "bugid": "1638574",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow to use widl when cross-compiling clang-cl builds."
+  },
+  {
+   "bugid": "1636574",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Setting PYTHON3 in mozconfig causes unconditional configure failure"
+  },
+  {
+   "bugid": "1623355",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Rename Android PGO builds to Android Shippable"
+  },
+  {
+   "bugid": "1639483",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove \"mach search\" and the sub component (dxr, mdn, searchfox, google)"
+  },
+  {
+   "bugid": "1639812",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Decision task failing with `TypeError: 'NoneType' object is not iterable`"
+  },
+  {
+   "bugid": "1640057",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma condprof Exception: Download failed, no more retries!"
+  },
+  {
+   "bugid": "1633866",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Dynamically select which tests run during taskgraph generation"
+  },
+  {
+   "bugid": "1638050",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Disable mingw operation on m-b & m-r"
+  },
+  {
+   "bugid": "1639318",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "aarch64-windows builds fail CFG with clang 10"
+  },
+  {
+   "bugid": "1637379",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Optimize android toolchains"
+  },
+  {
+   "bugid": "1637381",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Use zst for toolchain archives"
+  },
+  {
+   "bugid": "1634585",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Android implementation of mozilla::GetProcInfo returns nullptr"
+  },
+  {
+   "bugid": "1639275",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in mozilla::widget::Base64UtilsSupport::Encode"
+  },
+  {
+   "bugid": "1630229",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ java.lang.AssertionError: at org.mozilla.gecko.process.GeckoProcessManager$ChildConnection.bind(GeckoProcessManager.java)]"
+  },
+  {
+   "bugid": "1636635",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Update Devedition shippable to more closely match other shippable types"
+  },
+  {
+   "bugid": "1636637",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Make geckoview promotable/shippable"
+  },
+  {
+   "bugid": "1617481",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Remove dead code from taskcluster/ci that relates to nightly jobs"
+  },
+  {
+   "bugid": "1638927",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Replace dedicated `XULStore` thread with background tasks"
+  },
+  {
+   "bugid": "1639658",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "make AsyncExecuteStatements use mozilla::Runnable"
+  },
+  {
+   "bugid": "1633968",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "contextMenus.onClicked does not provide the correct tab when clicked in the tab manager menu"
+  },
+  {
+   "bugid": "1636784",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Allow WebExtensions to clear cache and pluginData by hostname"
+  }
+ ],
+ "date": "2020-05-22",
+ "cset": "fbf71e4d2e2142f823ac5d64679448443e25ec99",
+ "buildid": "20200522094316",
+ "fixed": 87,
+ "total": 100,
+ "restricted": 5
+}

@@ -1,0 +1,634 @@
+{
+ "bugs": [
+  {
+   "bugid": "1626794",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Make Animation::CommitStyles safer"
+  },
+  {
+   "bugid": "1638151",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Failure to generate event getter code for nullable sequences"
+  },
+  {
+   "bugid": "1620679",
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "crashtest layout/printing/crashtests/793844.html consistently asserts with Fission (Overwriting an existing document channel, Wrong Document Channel)"
+  },
+  {
+   "bugid": "1634779",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Re-enable browser.tabs.remote.allowLinkedWebInFileUriProcess in Firefox 76"
+  },
+  {
+   "bugid": "1606624",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ship SharedArrayBuffer (and atomics) to Release (potentially with throwing postMessage())"
+  },
+  {
+   "bugid": "1618548",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[rel=preload] Let `Link:` HTTP response header use Document.PreloadService"
+  },
+  {
+   "bugid": "1635885",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix up or remove `this == fl->GetBrowserChildMessageManager()` assertion in `InProcessBrowserChildMessageManager::GetEventTargetParent`"
+  },
+  {
+   "bugid": "1637813",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /secure-contexts/basic-dedicated-worker.html | HTTPS worker from HTTPS subframe - expected FAIL"
+  },
+  {
+   "bugid": "1637856",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` stop storing editable text nodes at initialization, instead, make it look for text node when it's necessary"
+  },
+  {
+   "bugid": "1637865",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Clean up methods handling whitespace sequence in `WSRunObject`"
+  },
+  {
+   "bugid": "1002724",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fall back to HTTPS in URL fixup (including location bar) (like for hosts that refuse a connection on port 80 via HTTP, but accepts connections via HTTPS on port 443)"
+  },
+  {
+   "bugid": "1618543",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "[rel=preload] Let `fetch()` use \"fetch\" preloads"
+  },
+  {
+   "bugid": "1613609",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "system-principal restrictions should check for allowed ui resources rather than blacklisting based on uri scheme"
+  },
+  {
+   "bugid": "1632811",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "content-security-policy/frame-src/frame-src-redirect.html is expected TIMEOUT"
+  },
+  {
+   "bugid": "1633710",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Replace nsIPrincipal.uri functions with new Principal counterparts in js"
+  },
+  {
+   "bugid": "1636118",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "3 /mixed-content/gen/*/link-prefetch-tag.https.html tests are expected timeout"
+  },
+  {
+   "bugid": "1636178",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "14 /service-worker/service-worker/ tests are marked as expected TIMEOUT"
+  },
+  {
+   "bugid": "1638127",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Linux applying :-moz-focusring to buttons even without keyboard interaction feels off"
+  },
+  {
+   "bugid": "1629604",
+   "status": "RESOLVED",
+   "component": "Core:Find Backend",
+   "summary": "Find in this page: Phrase not found in visible (display:block) <script>, <head>"
+  },
+  {
+   "bugid": "1638251",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove unused member from GeckoJavaSampler"
+  },
+  {
+   "bugid": "1637873",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Destroy RenderTextureHost in TextureHost::Finalize()"
+  },
+  {
+   "bugid": "1637953",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Picture caching doesn't work on gmail"
+  },
+  {
+   "bugid": "1638413",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "gfx.webrender.compositor pref not honored on macOS after bug 1632259"
+  },
+  {
+   "bugid": "1638469",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender on Windows 7 without DWM composition"
+  },
+  {
+   "bugid": "1638742",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unnecessary mFeatureWrPartial->UserEnable(\"Enabled\") call"
+  },
+  {
+   "bugid": "1638750",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unnecessary virtual from RenderTextureHost derived classes"
+  },
+  {
+   "bugid": "1638905",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable WebRender on gen6 gt2 on Nightly."
+  },
+  {
+   "bugid": "1622166",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Consider using C++17 fold expressions to implement variadic Read/WriteParams()"
+  },
+  {
+   "bugid": "1637890",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Crash in [@ mozilla::MozPromise<T>::ThenValueBase::Dispatch]"
+  },
+  {
+   "bugid": "651482",
+   "status": "ASSIGNED",
+   "component": "Core:ImageLib",
+   "summary": "Yellow layered Bitmaps"
+  },
+  {
+   "bugid": "1638787",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change JSRT fuzzing interface to return int32 and handle timeouts"
+  },
+  {
+   "bugid": "1638811",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use replaceAll in EscapeAttributeValue"
+  },
+  {
+   "bugid": "1637946",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fold MUnbox with Int32 MBox input"
+  },
+  {
+   "bugid": "1638460",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Support transpiling Calls to known natives"
+  },
+  {
+   "bugid": "1638761",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Transpile DoubleNegationResult"
+  },
+  {
+   "bugid": "1638779",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CacheIRCompiler::emitMathAbsNumberResult has dubious float register uses"
+  },
+  {
+   "bugid": "1627711",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Remove the incremental GC status from about:support"
+  },
+  {
+   "bugid": "1623628",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Remove the command-line switch (and any about:config option) for bigint<->int64"
+  },
+  {
+   "bugid": "1628352",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Make sure devtools works with multi-value WebAssembly"
+  },
+  {
+   "bugid": "1637328",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "SetupABIArguments and StackCopy must handle v128 stack arguments"
+  },
+  {
+   "bugid": "1632789",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "teach PresShell::ProcessSynthMouseMoveEvent to understand desktop zooming"
+  },
+  {
+   "bugid": "1638917",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Use std::tuple instead of mozilla::Tuple in layout/"
+  },
+  {
+   "bugid": "1636998",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "no focus ring on radios and checkboxes in some themes."
+  },
+  {
+   "bugid": "1638263",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Intermittent layout/forms/test/test_bug665540.html | Test timed out."
+  },
+  {
+   "bugid": "1539819",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "[socket process] TRR is not working in socket process"
+  },
+  {
+   "bugid": "1638789",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Also log originAttributes in nsHostResolver::ResolveHost"
+  },
+  {
+   "bugid": "1636911",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Content disappears on the left side of the viewport when zooming in"
+  },
+  {
+   "bugid": "1638458",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Long-pressing seems busted on Android"
+  },
+  {
+   "bugid": "1638655",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Perfherder test-suite drop down is broken on mobile"
+  },
+  {
+   "bugid": "1628399",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Intermittent browser/base/content/test/plugins/browser_pluginCrashCommentAndURL.js | The crash UI should be visible - false == true - got false, expected true (operator ==)"
+  },
+  {
+   "bugid": "1624269",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make mHasStorageAccess in nsGlobalWindowOuter Fission-Compatible"
+  },
+  {
+   "bugid": "1638831",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Directory traversals prematurely finish if a directory entry is modified and then deleted"
+  },
+  {
+   "bugid": "1638020",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Avoid checking display port twice while computing RDL rebuild region"
+  },
+  {
+   "bugid": "1635716",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Device Permissions blocking eachother(?) in particular case with Google Meet"
+  },
+  {
+   "bugid": "1637676",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "RTCRtpTransceiver-with-OfferToReceive-options.https.html intermittent timeout on fission?"
+  },
+  {
+   "bugid": "1637992",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Remove gtk2xtbin as it's not used"
+  },
+  {
+   "bugid": "1634264",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Intermittent toolkit/components/places/tests/browser/browser_redirect.js or browser_redirect_self.js | application crashed [@ mozilla::MozPromise<unsigned long, nsresult, true>::AssertIsDead()]"
+  },
+  {
+   "bugid": "1584935",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Enable lazy frame construction from XUL elements."
+  },
+  {
+   "bugid": "1421659",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console scrolls up when output changes size"
+  },
+  {
+   "bugid": "1546394",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Add a `:block <url>` command which matches Netmonitor's \"Block URL\" context menu entry"
+  },
+  {
+   "bugid": "1631775",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Cached messages should have the same shape as \"live\" ones"
+  },
+  {
+   "bugid": "1637969",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "React error when rendering an error rep"
+  },
+  {
+   "bugid": "1638533",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Show (in promise) for uncaught promise rejections"
+  },
+  {
+   "bugid": "1636798",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Icon in the sources pane does not revert to its original state after closing pretty printed tab"
+  },
+  {
+   "bugid": "1637561",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Use dictionary argument in ResourceWatcher.watch"
+  },
+  {
+   "bugid": "1596091",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Implement the ability to drag and drop requests in order to block them"
+  },
+  {
+   "bugid": "1631230",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "headers are shown with ellipsis in network analysis although the space is big enough"
+  },
+  {
+   "bugid": "1636769",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "TypeError: \"can't access property \"setOption\", cm is undefined\""
+  },
+  {
+   "bugid": "1576728",
+   "status": "NEW",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in oly64.dll (FYunZip)"
+  },
+  {
+   "bugid": "1191591",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Opening PDFs from Firefox's download panel should open the PDF within Firefox"
+  },
+  {
+   "bugid": "1633270",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "pdfs with content-type application/octet-stream are downloaded without confirmation, even though Preview in Firefox is enabled"
+  },
+  {
+   "bugid": "1638682",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Enable the 'Open in Firefox' option in the Unknown Content Type dialog"
+  },
+  {
+   "bugid": "1633641",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Provide a method to fetch an OAuth token and its key in a single operation"
+  },
+  {
+   "bugid": "1637615",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protections Dashboard 1.5] Add link to settings."
+  },
+  {
+   "bugid": "1637827",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Disconnected from my account when syncing with an expired OAuth token"
+  },
+  {
+   "bugid": "1638493",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Delete telemetry definition for WEAVE_CONFIGURED_MASTER_PASSWORD"
+  },
+  {
+   "bugid": "1636229",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Popup javascript window is now tabbed (v76 32 bit)"
+  },
+  {
+   "bugid": "1634048",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Only create UI Tour popups in the DOM when they are needed"
+  },
+  {
+   "bugid": "1637459",
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Intermittent browser/components/uitour/test/browser_UITour2.js | Menu should be visible after showMenu() -"
+  },
+  {
+   "bugid": "1638783",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrapping fails to install mercurial if no pip2"
+  },
+  {
+   "bugid": "1638799",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "`install-moz-phab` failed with `pip3` is not installed on ArchLinux"
+  },
+  {
+   "bugid": "1623355",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Rename Android PGO builds to Android Shippable"
+  },
+  {
+   "bugid": "1638870",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "add unicode/uniset.h to system headers (fix `--with-system-icu`)"
+  },
+  {
+   "bugid": "1638759",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "./mach run for android build doesn't wok due to failure of telnet verification"
+  },
+  {
+   "bugid": "1626754",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "ContentBlocking.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1638576",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Fix typo in mozilla-central: depricated -> deprecated"
+  },
+  {
+   "bugid": "1617481",
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Remove dead code from taskcluster/ci that relates to nightly jobs"
+  },
+  {
+   "bugid": "1617482",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Rename *-asan-reporter-nightly to *-asan-reporter-shippable to reduce confusion"
+  },
+  {
+   "bugid": "1617484",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Rename android-*-nightly jobs to <something>-shippable"
+  },
+  {
+   "bugid": "1618033",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Cleanup some dead code in mozharness relating to nightly"
+  },
+  {
+   "bugid": "1623081",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Cleanup dead code that was used for Fennec Nightlies"
+  },
+  {
+   "bugid": "1623082",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Miscelaneous changes to support shippable where nightly is referenced"
+  },
+  {
+   "bugid": "1636635",
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Update Devedition shippable to more closely match other shippable types"
+  },
+  {
+   "bugid": "1636637",
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Make geckoview promotable/shippable"
+  },
+  {
+   "bugid": "1617089",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: L10N",
+   "summary": "weird task labels for ja-JP-mac addonscript jobs"
+  },
+  {
+   "bugid": "1599413",
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.frameAttached"
+  },
+  {
+   "bugid": "1599773",
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.frameDetached"
+  },
+  {
+   "bugid": "1631197",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "make ./mach valgrind-test work for thunderbird"
+  },
+  {
+   "bugid": "1638288",
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "Builds busted (if clang-plugin enabled): mailnews/base/src/nsMsgContentPolicy.cpp:155:23: error: Principal->GetURI is depricated and will be removed soon. Please consider using the new helper functions of nsIPrincipal"
+  },
+  {
+   "bugid": "1637993",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Buttons in reader view \"type controls\" popover are sensitive to user input even when user input is not available"
+  },
+  {
+   "bugid": "1636968",
+   "status": "RESOLVED",
+   "component": "Toolkit:View Source",
+   "summary": "reloading a view source tab will auto select the tab, if not focused"
+  },
+  {
+   "bugid": "1638581",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "ChannelWrapper.matches throws on webRequest listeners with \"xbl\" filter.type"
+  },
+  {
+   "bugid": "1636792",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Rename `StorageOp` to `Punt` or `Ferry`"
+  },
+  {
+   "bugid": "1638557",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/base/content/test/static/browser_all_files_referenced.js | there should be no unreferenced files - Got 1, expected 0 when Gecko 78 merges to beta on 2020-06-01"
+  }
+ ],
+ "date": "2020-05-19",
+ "cset": "96c90df47bdab0cebeed56e31dbaf2d9ed5b97f6",
+ "buildid": "20200519094847",
+ "fixed": 87,
+ "total": 104,
+ "restricted": 3
+}

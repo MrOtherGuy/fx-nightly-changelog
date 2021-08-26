@@ -1,0 +1,532 @@
+{
+ "bugs": [
+  {
+   "bugid": "1022386",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Fix and re-enable satchel tests on Linux"
+  },
+  {
+   "bugid": "1230453",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add a hidden preference to change the number of folders in the recent list of the \"bookmark this page\" popup"
+  },
+  {
+   "bugid": "1383436",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add support for ToInteger when called with undefined and doubles"
+  },
+  {
+   "bugid": "1476339",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "--enable-coverage should set appropriate cflags/ldflags"
+  },
+  {
+   "bugid": "1543231",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/html/test/test_bug1472426.html | assertion count 1 is more than expected 0 assertions"
+  },
+  {
+   "bugid": "1543234",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Emulation front shows error \"this.targetActor.docShell is null\" when closing RDM."
+  },
+  {
+   "bugid": "1560770",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add-on popups are tiny and unusable with apz.allow_zooming=true"
+  },
+  {
+   "bugid": "1564127",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Crash in [@ mozilla::ipc::IToplevelProtocol::OtherPid]"
+  },
+  {
+   "bugid": "1564136",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate performing sweep phase marking in parallel with sweeping"
+  },
+  {
+   "bugid": "1574506",
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Migrate usage of gripNodeToFront to toolbox's new getNodeFrontFromNodeGrip function"
+  },
+  {
+   "bugid": "1574926",
+   "status": "NEW",
+   "component": "WebExtensions:Frontend",
+   "summary": "Several browser tests, including browser_ext_pageAction_title.js disabled because timeouts with fission"
+  },
+  {
+   "bugid": "1576707",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Allow \"absolute\" fetch artifacts to ignore `artifact_prefix`"
+  },
+  {
+   "bugid": "1578418",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Use a WasmABIResults iterator to place block and function results"
+  },
+  {
+   "bugid": "1578465",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Make BrowserTestUtils.browserLoaded Fission-compatible"
+  },
+  {
+   "bugid": "1579334",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Slow appearance of suggestions in address bar"
+  },
+  {
+   "bugid": "1579992",
+   "status": "RESOLVED",
+   "component": "Core:Document Navigation",
+   "summary": "Create a new process type for COOP+COEP frames"
+  },
+  {
+   "bugid": "1581239",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Regression tests to verify that sandboxed processes' access to /proc/self/fd is blocked"
+  },
+  {
+   "bugid": "1581918",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Add a badge in settings"
+  },
+  {
+   "bugid": "1582200",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable wpt tests for bug 1562663"
+  },
+  {
+   "bugid": "1582892",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Expose the size of the enum items in the webidl"
+  },
+  {
+   "bugid": "1583269",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Update our in-tree ICU to 65"
+  },
+  {
+   "bugid": "1583353",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Test path chunking in the taskgraph"
+  },
+  {
+   "bugid": "1583430",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "No-sampling profiling follow-up: Show \"nostacksampling\" feature in popup"
+  },
+  {
+   "bugid": "1583431",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "No-sampling profiling follow-up: Write regression test for \"nostacksampling\""
+  },
+  {
+   "bugid": "1583553",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "[Fission] CORS console warnings do not show up for cross origin iframes: browser_CORS-console-warnings.js"
+  },
+  {
+   "bugid": "1583700",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable DocumentChannel by default"
+  },
+  {
+   "bugid": "1584101",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "2.91 - 3.03% Explicit Memory (windows7-32) regression on push 517c9efa9592ad0c103ec2542e4bc7fcaf06c505 (Fri September 20 2019)"
+  },
+  {
+   "bugid": "1584283",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Stop using xul:wizard as a root element and migrate consumers to xul:window[role=dialog] with the wizard as the only child"
+  },
+  {
+   "bugid": "1584511",
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Wayland][WebRender] Toggling titlebar breaks remote content rendering for existing tabs"
+  },
+  {
+   "bugid": "1584993",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make CSP frame-ancestors work with fission enabled"
+  },
+  {
+   "bugid": "1585664",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add to nsIPrincipal an API for fetching the URL Spec for Logging Purposes"
+  },
+  {
+   "bugid": "1585880",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "\"pointer-events: none\" does not affect to scrollbars generated by \"overflow\" property"
+  },
+  {
+   "bugid": "1585974",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "DAMP profile recorded via `./mach try fuzzy --gecko-profile` misses most of the test data"
+  },
+  {
+   "bugid": "1585990",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Fix multi-value codegen for Ion"
+  },
+  {
+   "bugid": "1586975",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Optimize NaiveHuffmanTable for 2-entry table"
+  },
+  {
+   "bugid": "1586996",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "use upstream winapi instead of frodynj's aarch64 branch"
+  },
+  {
+   "bugid": "1587007",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve error messages when we fail to clone shared memory for policy reasons"
+  },
+  {
+   "bugid": "1587463",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Consider using builtin suppression lists for LSan and TSan"
+  },
+  {
+   "bugid": "1587678",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] Use simpler container than Vector when fixed-size"
+  },
+  {
+   "bugid": "1587742",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Distinguish out-of-band non-CDP methods"
+  },
+  {
+   "bugid": "1587907",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent tools/profiler/tests/browser/browser_test_profile_single_frame_page_info.js | Uncaught exception - at chrome://mochitests/content/browser/tools/profiler/tests/browser/browser_test_profile_single_frame_page_info.js:30 - TypeError: contentProce"
+  },
+  {
+   "bugid": "1588118",
+   "status": "ASSIGNED",
+   "component": "Core:Document Navigation",
+   "summary": "Investigate why URIFixup may fixup to a search when only FIXUP_FLAG_FIX_SCHEME_TYPOS is passed-in"
+  },
+  {
+   "bugid": "1588123",
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libdav1d to head"
+  },
+  {
+   "bugid": "1588219",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Expose DNS suffix list (Linux)"
+  },
+  {
+   "bugid": "1588326",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Make test_subresources_prompts.html test pass with Fission enabled"
+  },
+  {
+   "bugid": "1588726",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Closing crazygames page throws NS_ERROR_UNEXPECTED errors in browser console"
+  },
+  {
+   "bugid": "1588778",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable dom/tests/mochitest/bugs/test_bug369306.html for fission debug build"
+  },
+  {
+   "bugid": "1589054",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ IPCError-content | RecvMakeFrameRemote No embedder element in this process]"
+  },
+  {
+   "bugid": "1589122",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "The interval in a new profile is 0.001ms but it should be 1ms."
+  },
+  {
+   "bugid": "1589285",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Provide a safer API for indexing into Web IDL enum string lists"
+  },
+  {
+   "bugid": "1589301",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Use async/await in InspectorFront"
+  },
+  {
+   "bugid": "1589514",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Crash in [@ coreaudio_sys_utils::string::utf8_from_cfstringref]"
+  },
+  {
+   "bugid": "1589706",
+   "status": "NEW",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "Migrate all firefox-ci related jobs to use AWS Provider"
+  },
+  {
+   "bugid": "1589717",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "GCVector<T>::sweep depends on T supported unbarrieredGet method"
+  },
+  {
+   "bugid": "1589844",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Perma [tier 2] remote/test/browser/browser_input_dispatchKeyEvent.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1589864",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Optionally copy over prefs when starting the browser toolbox"
+  },
+  {
+   "bugid": "1589865",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "\"Search with ... in a Private Window\" appears for the search restriction token"
+  },
+  {
+   "bugid": "1589923",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Strip https:// instead of http:// from URLs in the results view"
+  },
+  {
+   "bugid": "1590022",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Use union return value for FileReader.result"
+  },
+  {
+   "bugid": "1590029",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Request blocking toolbar button isn't available"
+  },
+  {
+   "bugid": "1590034",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use MOZ_CRASH_UNSAFE_PRINTF in AutoEnterOOMUnsafeRegion::crash"
+  },
+  {
+   "bugid": "1590075",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Enable browser_bug1004814.js for Fission"
+  },
+  {
+   "bugid": "1590081",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Various SpiderMonkey build fixes"
+  },
+  {
+   "bugid": "1590083",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Disable multi-value in Webassembly.validate for Cranelift"
+  },
+  {
+   "bugid": "1590101",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Bump Cranelift to da179e4fd83d49b7ad6c9f286b1ea04d4f64907e"
+  },
+  {
+   "bugid": "1590119",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "NetMonitor blocking - manually added, disabled patterns are still blocking requests"
+  },
+  {
+   "bugid": "1590135",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "asynclogger destructor is missing a null-check for somewhere"
+  },
+  {
+   "bugid": "1590150",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Turn off ESR60 cron jobs"
+  },
+  {
+   "bugid": "1590187",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Remove actorhasMethod check for getIsPrintSimulationEnabled"
+  },
+  {
+   "bugid": "1590214",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Crash in [@ mozilla::extensions::ChannelWrapper::GetUrlClassification]"
+  },
+  {
+   "bugid": "1590241",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Enable WebReplay appears in DevEdition"
+  },
+  {
+   "bugid": "1590278",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Cleanup scrollframe virtual / override / final declarations."
+  },
+  {
+   "bugid": "1590281",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Don't propagate overscroll-behavior from body to viewport."
+  },
+  {
+   "bugid": "1590314",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Document 'Attach new jobs from the review'"
+  },
+  {
+   "bugid": "1590318",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Rewrite test browser_test_FTP_console_warning.js to work with fission enabled"
+  },
+  {
+   "bugid": "1590324",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix hardcoded messaging system font sizes"
+  },
+  {
+   "bugid": "1590335",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Skip unnecessary loadinfo checks"
+  },
+  {
+   "bugid": "1590357",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Bug 1590203 missed to update overflow areas."
+  },
+  {
+   "bugid": "1590366",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Remove accessibility.heading-element-level-changes.enabled and code it guards"
+  },
+  {
+   "bugid": "1590387",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove remaining usages of XUL textboxes (old cert viewer broken)"
+  },
+  {
+   "bugid": "1590399",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "permanent failure lines on OS X (Return code: 127) and Windows (Return code: 1)"
+  },
+  {
+   "bugid": "1590414",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "For C++ static analysis cleanup the running scripts."
+  },
+  {
+   "bugid": "1590415",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Remove deprecated code from the Coverity model file."
+  },
+  {
+   "bugid": "1590491",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use --toolbarbutton-icon-fill-opacity for the megabar search icon"
+  },
+  {
+   "bugid": "1590504",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Modal variant with 'Start Here' and 'Meet the rest of Firefox' UI"
+  },
+  {
+   "bugid": "1590553",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Stop building synstructure twice"
+  },
+  {
+   "bugid": "1590554",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Improve caching of tabbrowser-tabs fragment"
+  }
+ ],
+ "date": "2019-10-23",
+ "cset": "ad7a152bc66c0d411a6fb0b210d675abed9693c7",
+ "buildid": "20191023094816",
+ "fixed": 76,
+ "total": 87,
+ "restricted": null
+}

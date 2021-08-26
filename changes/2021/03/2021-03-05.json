@@ -1,0 +1,550 @@
+{
+ "bugs": [
+  {
+   "bugid": "1693045",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "AddressSanitizer: SEGV /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:310:45 in operator bool [@ mozilla::MediaEncoder::DisconnectTracks]"
+  },
+  {
+   "bugid": "1696282",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Remove cubeb_stream_reset_default_device from MockCubeb"
+  },
+  {
+   "bugid": "1696215",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add tests for page-size parsing"
+  },
+  {
+   "bugid": "1360715",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "instanceof behavior cross-contexts doesn't match any other browser"
+  },
+  {
+   "bugid": "1696348",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove redundant nullptr checks of return value of infallible new in dom/[file,xhr]"
+  },
+  {
+   "bugid": "1639376",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent LeakSanitizer | leak at mozilla::dom::ProtoAndIfaceCache::PageTableCache::EntrySlotOrCreate, mozilla::dom::ContentProcessMessageManager_Binding::CreateInterfaceObjects, mozilla::dom::GetPerInterfaceObjectHandle, GetProtoObjectHandle"
+  },
+  {
+   "bugid": "1673931",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up some includes in dom/base, dom/bindings, dom/events and dom/script"
+  },
+  {
+   "bugid": "941356",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Drag & Drop",
+   "summary": "drag image not correctly created when parent has css transform"
+  },
+  {
+   "bugid": "1696391",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Expand IPC Principal Permission check for RecvStoreUserInteractionAsPermission based on telemetry info"
+  },
+  {
+   "bugid": "1696347",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Remove redundant nullptr checks of return value of infallible new in dom/workers"
+  },
+  {
+   "bugid": "1676361",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Clean up GeckoProfiler includes"
+  },
+  {
+   "bugid": "1622846",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU IDL to the upstream changes"
+  },
+  {
+   "bugid": "1696066",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hide WebGPU Queue operations in Rust-encoded commands over IPC"
+  },
+  {
+   "bugid": "1696495",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender to KDE/XFCE Intel/AMD users to release"
+  },
+  {
+   "bugid": "1695405",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove texture array support from SWGL"
+  },
+  {
+   "bugid": "1696545",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender capture commands by default on nightly"
+  },
+  {
+   "bugid": "1694916",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "AddressSanitizer: SEGV or Assertion failure: !warmUpData_.isEnclosingScript() (Enclosing scope is not computed yet), at vm/JSScript.cpp:705"
+  },
+  {
+   "bugid": "1696205",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "rewind CompilationState.scriptExtra field"
+  },
+  {
+   "bugid": "1696433",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove stale GC comment from JSScript::fullyInitFromStencil"
+  },
+  {
+   "bugid": "1687095",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Merge delazification stencil into initial stencil before encoding"
+  },
+  {
+   "bugid": "1688055",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Refactor LexicalEnvironmentObject into several subclasses"
+  },
+  {
+   "bugid": "1696046",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Clean up use of JS_ExtensibleLexicalEnvironment in JS::ExecuteInJSMEnvironment"
+  },
+  {
+   "bugid": "1688033",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use scalar replacement to optimize the arguments object in Warp"
+  },
+  {
+   "bugid": "1696378",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "uneven border width for focused and unstyled <input type=\"text\"> with non-native theme on Windows"
+  },
+  {
+   "bugid": "1696256",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Intermittent /css/css-position/sticky/position-sticky-large-top-2.tentative.html | Testing http://web-platform.test:8000/css/css-position/sticky/position-sticky-large-top-2.tentative.html == http://web-platform.test:8000/css/css-position/sticky"
+  },
+  {
+   "bugid": "1696349",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove redundant nullptr checks of return value of infallible new in netwerk"
+  },
+  {
+   "bugid": "1696429",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "ThreadSanitizer: data race /builds/worker/checkouts/gecko/netwerk/protocol/http/nsHttpHandler.cpp:2314:27 in mozilla::net::nsHttpHandler::Observe(nsISupports*, char const*, char16_t const*)"
+  },
+  {
+   "bugid": "1696193",
+   "status": "RESOLVED",
+   "component": "Core:Networking: FTP",
+   "summary": "Stop setting Firefox as default handler for FTP"
+  },
+  {
+   "bugid": "1695665",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Skip upgrading to https with HTTPS RR for internal requests"
+  },
+  {
+   "bugid": "1695185",
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "WebSocketEventService does not listen for events from Iframes"
+  },
+  {
+   "bugid": "1684520",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Scrolling via keyboard visibly stutters more than before"
+  },
+  {
+   "bugid": "1695903",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add PersistenceTypeFromFile method"
+  },
+  {
+   "bugid": "1686191",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Have a way to specifically report warnings around QM_TRY"
+  },
+  {
+   "bugid": "1686031",
+   "status": "NEW",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Simplify structures and naming related to directory metadata"
+  },
+  {
+   "bugid": "1695752",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Support vibrancy inside translation transforms"
+  },
+  {
+   "bugid": "1696437",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Android",
+   "summary": "Use the new non-native theme on Android too."
+  },
+  {
+   "bugid": "1695873",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Finish removing @mozilla.org/widget/nativemenuservice;1"
+  },
+  {
+   "bugid": "1696307",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove code for 10.9 that dealt with not having NSWindowStyleMaskFullSizeContentView"
+  },
+  {
+   "bugid": "1695162",
+   "status": "REOPENED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsBaseHashtable iterators safer"
+  },
+  {
+   "bugid": "1696406",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Nested event loops should be visible in the Firefox Profiler"
+  },
+  {
+   "bugid": "1634281",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Unify various ns*Hashtable classes that are subclasses of nsBaseHashtable"
+  },
+  {
+   "bugid": "1685105",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "XHR Breakpoint should work in remote frames"
+  },
+  {
+   "bugid": "1644197",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Implement SSE Data listening via the ResourceWatcher API on the actor side"
+  },
+  {
+   "bugid": "1644196",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Implement WebSocket data listening via the ResourceWatcher API on the actor side"
+  },
+  {
+   "bugid": "1695036",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Code and style improvements to about:profiling"
+  },
+  {
+   "bugid": "1696267",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Typing a trailing space causes search history and suggestions that match the input/heuristic query to go from hidden to shown"
+  },
+  {
+   "bugid": "1691533",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the search mode chiclet"
+  },
+  {
+   "bugid": "1691531",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the Urlbar label box to be a floating chiclet"
+  },
+  {
+   "bugid": "1691545",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update identity box icons and style"
+  },
+  {
+   "bugid": "1696322",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Move the formatted tab and bookmarks tooltip behind its own Proton pref"
+  },
+  {
+   "bugid": "1695087",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Branding updates"
+  },
+  {
+   "bugid": "1692628",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Update labeling and ordering of developer items in the content context menu"
+  },
+  {
+   "bugid": "1686931",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Unify \"View Background Image\" with \"View Image\""
+  },
+  {
+   "bugid": "1696450",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Right click contextmenu shows several unneeded separators at the top of the menu when opened with pocket disabled"
+  },
+  {
+   "bugid": "1696288",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Move \"Troubleshoot Mode\" above \"More Troubleshooting Information\" in the Help menu"
+  },
+  {
+   "bugid": "1695614",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The blue border of a selected theme card is cut off by its image in the Arabic about:welcome \u201cTheme\u201d slide"
+  },
+  {
+   "bugid": "1693550",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update about:welcome to use ExperimentFeature"
+  },
+  {
+   "bugid": "1693301",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Test utility for automatic enrollment and cleanup"
+  },
+  {
+   "bugid": "1689502",
+   "status": "ASSIGNED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Make all Normandy test decorators three layer decorators, for consistency"
+  },
+  {
+   "bugid": "1693581",
+   "status": "ASSIGNED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Switch Normandy decorators to use a named arguments object instead of positional arguments"
+  },
+  {
+   "bugid": "1696058",
+   "status": "NEW",
+   "component": "Firefox:Normandy Client",
+   "summary": "Normandy should not attempt to unenroll expired preference experiments who's filters don't match"
+  },
+  {
+   "bugid": "1694189",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Talos test pdfpaint Error: Expected page 1 got 2"
+  },
+  {
+   "bugid": "1582769",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Improve `syncIfEmpty` documentation"
+  },
+  {
+   "bugid": "1696306",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Fix telemetry for javascript load restrictions"
+  },
+  {
+   "bugid": "1692772",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Vertically align the Export button on about:certificate"
+  },
+  {
+   "bugid": "1498432",
+   "status": "ASSIGNED",
+   "component": "Firefox:Session Restore",
+   "summary": "A tab discarded immediately after creation, loaded, and then discarded again has an incorrect URL when queried."
+  },
+  {
+   "bugid": "1696356",
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Remove redundant nullptr checks of return value of infallible new in toolkit/system/gnome"
+  },
+  {
+   "bugid": "1695084",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Update copy for permission panel: Persistent Storage"
+  },
+  {
+   "bugid": "1695356",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "permissions panel icon does not show"
+  },
+  {
+   "bugid": "1695351",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab tooltip should wrap title instead of truncating"
+  },
+  {
+   "bugid": "1690186",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Proton Tab Styling Conflicts with Container Tabs Indicator"
+  },
+  {
+   "bugid": "1379174",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When closing multiple tabs, the PermitUnload message should be sent to each tab in parallel"
+  },
+  {
+   "bugid": "1695568",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Strip https from hover tooltips and use broken lock indicators for http URLs"
+  },
+  {
+   "bugid": "1685883",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "building with --disable-marionette fails with compile error"
+  },
+  {
+   "bugid": "1691327",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Update sphinxcontrib-mermaid to v0.6.0 by renovate"
+  },
+  {
+   "bugid": "1693584",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Deprecate GeckoView MediaElement API"
+  },
+  {
+   "bugid": "1675730",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Mail Window Front End",
+   "summary": "\"Security Error: Content at about:certificate?cert=<CERTIFICATE> may not load or link to chrome://browser/skin/critical.svg.\" exception thrown while vieving certificate in a tab."
+  },
+  {
+   "bugid": "1695797",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "In background task mode, only process updates if we're the only instance running"
+  },
+  {
+   "bugid": "1691486",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Generalize `app.update.auto` to more per-installation preferences"
+  },
+  {
+   "bugid": "1693277",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Implement new modal dialog styling"
+  },
+  {
+   "bugid": "1695184",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "about:processes should use th elements for column headers"
+  },
+  {
+   "bugid": "1695258",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Stop using waitForCondition in about:processes tests"
+  },
+  {
+   "bugid": "1695223",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "It should be possible to select a row in about:processes to follow it when it moves"
+  },
+  {
+   "bugid": "1694844",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "New Print dialog fails to open on Linux with no printer installed (I use print to file)"
+  },
+  {
+   "bugid": "1696354",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Remove redundant nullptr checks of return value of infallible new in toolkit/components/reputationservice"
+  },
+  {
+   "bugid": "1695883",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Add explicit fallible mozStorageTransaction::Start method for starting the transaction"
+  },
+  {
+   "bugid": "1695197",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Unconditionally enable Glean in Firefox builds"
+  },
+  {
+   "bugid": "1695338",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Update copy for WebExtension install approval panel"
+  },
+  {
+   "bugid": "1570868",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Avoid browser hang triggered by extensions bindly passing URLs to `tabs.query` without escaping wildcards"
+  },
+  {
+   "bugid": "1680279",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Allow \"url\" as property filter for tabs.onUpdated"
+  }
+ ],
+ "date": "2021-03-05",
+ "cset": "8f05e804fa6a40e6407cfc604008c3fb66013c77",
+ "buildid": "20210305085604",
+ "fixed": 75,
+ "total": 90,
+ "restricted": 2
+}

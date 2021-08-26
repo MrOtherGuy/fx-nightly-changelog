@@ -1,0 +1,916 @@
+{
+ "bugs": [
+  {
+   "bugid": "1582569",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Implement the \"skipad\" action in the MediaSession interface"
+  },
+  {
+   "bugid": "1650996",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Stop the RemoteDecoderChild from using a dedicated thread"
+  },
+  {
+   "bugid": "1598148",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Use audiounit-rust as default cubeb backend on mac without setting preference"
+  },
+  {
+   "bugid": "1648839",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "matchMedia matches object not fully updated before first listener fired in Windows Firefox"
+  },
+  {
+   "bugid": "1648590",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Update crash report remote type annotation for the preallocated process"
+  },
+  {
+   "bugid": "1580811",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add support for testing fission OOP iframes in xpcshell tests"
+  },
+  {
+   "bugid": "1651232",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Re-enable browser/base/content/test/performance/browser_startup_images.js tests for Fission without WebRender"
+  },
+  {
+   "bugid": "1651459",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/fetch/tests/test_invalid_header_exception.html | undefined assertion name - got \"Headers constructor: Cannot convert element of element of sequence<sequence<ByteString>> branch of (sequence<sequence<ByteString>> or  ..."
+  },
+  {
+   "bugid": "1649974",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent leakcheck | rdd 3544 bytes leaked (AbstractThread, ActorLifecycleProxy, CondVar, IPC::Channel, Mutex, ...)"
+  },
+  {
+   "bugid": "1608358",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Problem with allowfullscreen and allow=fullscreen"
+  },
+  {
+   "bugid": "1651089",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use transform instead of translate to position dialog"
+  },
+  {
+   "bugid": "1647556",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` and `WSRunObject` stop using array of `WSFragment`"
+  },
+  {
+   "bugid": "1649980",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` and `WSRunObject` stop taking DOM points at construction"
+  },
+  {
+   "bugid": "1648583",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add BrowsingContext::GetCurentTopByBrowserId to get the BrowsingContext for a particular tab"
+  },
+  {
+   "bugid": "1651482",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Use real remote types in TestUnexpectedPrivilegedLoads"
+  },
+  {
+   "bugid": "1644152",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS Only Mode in about:preferences"
+  },
+  {
+   "bugid": "1651612",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "ArrayBuffer sent to worker is leaked until termination / memory minimised"
+  },
+  {
+   "bugid": "1650462",
+   "status": "REOPENED",
+   "component": "Core:Disability Access APIs",
+   "summary": "role=\"tree\" should not include child treeitems in name when expanded"
+  },
+  {
+   "bugid": "1651077",
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "The ASan debug build should be built with --enable-fuzzing"
+  },
+  {
+   "bugid": "1642994",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gl::SharedSurface_SurfaceTexture::LockProdImpl]"
+  },
+  {
+   "bugid": "1650728",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Don't use sync-dispatch in CompositableClient::GetTextureClientRecycler()"
+  },
+  {
+   "bugid": "1649122",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add basic AHardwareBuffer support to WebRender on android"
+  },
+  {
+   "bugid": "1651889",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash on macOS after pressing Ctrl + Shift + 3"
+  },
+  {
+   "bugid": "1645665",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Scrolling searchfox on android is intermittently a lot less smooth"
+  },
+  {
+   "bugid": "1651594",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Video seems to be looping on first images"
+  },
+  {
+   "bugid": "1650989",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(Content-process DrawTargetRecording can't create requested similar drawtarget) at gfx/2d/DrawTargetRecording.cpp:545"
+  },
+  {
+   "bugid": "1652181",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Only call UpdateBias when the frame changes."
+  },
+  {
+   "bugid": "1652081",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Guarantee that newly created shared memory is zeroed"
+  },
+  {
+   "bugid": "1651587",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Make image::Image releasing on main thread efficient"
+  },
+  {
+   "bugid": "1651880",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Cleanup Stencil structs"
+  },
+  {
+   "bugid": "1651390",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove duplicate js::NewString[DontDeflate] functions"
+  },
+  {
+   "bugid": "1651512",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: key->isKind(ParseNodeKind::StringExpr) || key->isKind(ParseNodeKind::NumberExpr) || key->isKind(ParseNodeKind::BigIntExpr), at builtin/ReflectParse.cpp:3180"
+  },
+  {
+   "bugid": "1651448",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: false (!(strictModeErrorAt(exprOffset, JSMSG_PRIVATE_DELETE))), at frontend/Parser.cpp:9386"
+  },
+  {
+   "bugid": "1649757",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "stop uploading artifacts (the shell, jsapi-tests) for SM that don't have tests"
+  },
+  {
+   "bugid": "1652056",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not use the CompilationInfo::functions array until instantiation"
+  },
+  {
+   "bugid": "1651723",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Investigate storing atom pinned state in the atoms table only"
+  },
+  {
+   "bugid": "1648820",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.hypot in CacheIR and Warp"
+  },
+  {
+   "bugid": "1651345",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "GC issue in jsshell with `addMarkObservers`"
+  },
+  {
+   "bugid": "1651683",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Create an abstraction for sequential iteration of multiple iterators"
+  },
+  {
+   "bugid": "1652019",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Do decommit preparation work off-thread"
+  },
+  {
+   "bugid": "1645459",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Validate list of numbering systems with CLDR data"
+  },
+  {
+   "bugid": "1649441",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Migrate ICU update documentation to firefox-source-docs"
+  },
+  {
+   "bugid": "1649290",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Allow declared segments of any RefType"
+  },
+  {
+   "bugid": "1644976",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "wasmDis double-spaces its output on ARM"
+  },
+  {
+   "bugid": "1637624",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Refactor nsIFrame::PeekOffset for readability"
+  },
+  {
+   "bugid": "1335552",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !aWM.IsOrthogonalTo(GetWritingMode()), at /home/worker/workspace/build/src/layout/generic/nsIFrameInlines.h:134"
+  },
+  {
+   "bugid": "1651171",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Convert NS_SUBTREE_DIRTY to an inline method of nsIFrame"
+  },
+  {
+   "bugid": "1635828",
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Isolate HSTS per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1650613",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "about:cache shows error message: Unrecognized storage name 'appcache' in about:cache URL"
+  },
+  {
+   "bugid": "1651120",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add cookie sameSite schemeful as an experimental feature"
+  },
+  {
+   "bugid": "1651618",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Use 'SameSite' (capital 'S') everywhere"
+  },
+  {
+   "bugid": "1220810",
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Consider hardcoding localhost names to the loopback address"
+  },
+  {
+   "bugid": "1651489",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "update neqo to 0.4.6"
+  },
+  {
+   "bugid": "1642559",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "SPDY_REQUEST_PER_CONN_2 looks broken"
+  },
+  {
+   "bugid": "1650629",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Mozilla Firefox Nightly randomly hangs on opening website pages (TaskController busy-loops in background processes while one process is busy)"
+  },
+  {
+   "bugid": "1651532",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Change systemDefaultPrinter attribute back to systemDefaultPrinterName"
+  },
+  {
+   "bugid": "1647732",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate font cache per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1649673",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Isolate speculative connections per first-party when privacy.partition.network_state is set to true"
+  },
+  {
+   "bugid": "1651134",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "View Source shows source code of login page instead of current webpage on local django server"
+  },
+  {
+   "bugid": "1645234",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "requestStorageAccess really needs a lot more console warnings"
+  },
+  {
+   "bugid": "1651404",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Move nsSVGDisplayableFrame and nsISVGSVGFrame to the mozilla namespace"
+  },
+  {
+   "bugid": "1259861",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove the ns* prefix and move everything into the mozilla:: namespace in layout/svg"
+  },
+  {
+   "bugid": "1651785",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Move IsAnyAtomEqual template functions into SVGOuterSVGFrame.cpp since that's the only place it's used"
+  },
+  {
+   "bugid": "1649545",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 80 to use NSS 3.55"
+  },
+  {
+   "bugid": "1629002",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "osclientcerts: c_sign fails with some private keys"
+  },
+  {
+   "bugid": "1641356",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "security.ssl3.rsa_aes_256_gcm_sha384 and security.ssl3.rsa_aes_128_gcm_sha256 are hidden preferences"
+  },
+  {
+   "bugid": "1651593",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Unchecked return value of db::GetKnownBodyIds()"
+  },
+  {
+   "bugid": "1651757",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Frame rate stats should update dynamically in about:webrtc"
+  },
+  {
+   "bugid": "1585470",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Android cpu-features.c included twice when building GeckoView with --disable-webrtc"
+  },
+  {
+   "bugid": "1649314",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "null pointer passed as argument 2, which is declared to never be null in src/media/mtransport/third_party/nrappkit/src/util/libekr/r_data.c:100"
+  },
+  {
+   "bugid": "1112392",
+   "status": "REOPENED",
+   "component": "Core:WebRTC",
+   "summary": "Desktop support for tab sharing (platform)"
+  },
+  {
+   "bugid": "1193437",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "NrIceCtx::Create() has too many bools; convert to flags"
+  },
+  {
+   "bugid": "1651722",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Enable transport-cc and rtx and let them ride the trains"
+  },
+  {
+   "bugid": "1650714",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Correct Matrix Decompose and SetRotationFromQuaternion"
+  },
+  {
+   "bugid": "1547595",
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "GTK puts \\r\\n line endings into the Wayland Clipboard on Linux"
+  },
+  {
+   "bugid": "1483448",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "White border around window when in 4k"
+  },
+  {
+   "bugid": "1464542",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Migrate Services.jsm to C++ and include common constructors"
+  },
+  {
+   "bugid": "1649221",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Update ChromeUtils.generateQI callers to pass strings rather than interface objects"
+  },
+  {
+   "bugid": "1649554",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Move component registration helpers out of XPCOMUtils"
+  },
+  {
+   "bugid": "1605162",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Pausing in Workers and Remote Frames should update context selector"
+  },
+  {
+   "bugid": "1650658",
+   "status": "UNCONFIRMED",
+   "component": "DevTools:Debugger",
+   "summary": "Can't jump to debugger tab from performance tab in call tree view"
+  },
+  {
+   "bugid": "1651138",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remove framescript from browser_toolbox_options_enable_serviceworkers_testing.js"
+  },
+  {
+   "bugid": "1651141",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remove framescript and message manager usage from browser_toolbox_window_reload_target.js"
+  },
+  {
+   "bugid": "1651667",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "css/lexer.js stringToCodes could be faster"
+  },
+  {
+   "bugid": "1651135",
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "Remove framescript and message manager usage from devtools json tests"
+  },
+  {
+   "bugid": "1646027",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Request mimeType should be sent on response start"
+  },
+  {
+   "bugid": "1651140",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove framescript and message manager usage from devtools netmonitor tests"
+  },
+  {
+   "bugid": "1649771",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "DAMP Perf regression in several tests (+3% overall)"
+  },
+  {
+   "bugid": "1585097",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Delete the devtools.responsive.browserUI.enabled pref"
+  },
+  {
+   "bugid": "1585096",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Clean up the code path separation caused by the devtools.responsive.browserUI.enabled pref"
+  },
+  {
+   "bugid": "1585084",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Remove the inject browser frame scripts (content.js, swap.js, tunnel.js, web-navigation.js)"
+  },
+  {
+   "bugid": "1647735",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "When current simulated viewport is larger than the browser screen, items cannot be clicked successfully with Touch Simulation activated"
+  },
+  {
+   "bugid": "1648616",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Cleanup tests for old-RDM"
+  },
+  {
+   "bugid": "1650099",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unify UrlbarProviders logger boilerplate"
+  },
+  {
+   "bugid": "1647881",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Extension results aren't returned because XPCOM URIs cannot be sent to extensions"
+  },
+  {
+   "bugid": "1645521",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Allow for multiple heuristic providers"
+  },
+  {
+   "bugid": "1634668",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_autocomplete_a11y_label.js | Uncaught exception - at resource://testing-common/UrlbarTestUtils.jsm:125 - TypeError: can't access property \"result\", element is undefined"
+  },
+  {
+   "bugid": "1645324",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move the omnibox heuristic result to the omnibox provider"
+  },
+  {
+   "bugid": "1651244",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Multistage about:welcome - Add l10n strings for import screen tooltip"
+  },
+  {
+   "bugid": "1649407",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The zap image partially covers the \u201cwelcome-text\u201d on the \u201cImport\u201d slide from the \u201cabout:welcome\u201d page on Windows"
+  },
+  {
+   "bugid": "1649883",
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Recommended by Pocket option disappears from setting after unchecking and restarting browser"
+  },
+  {
+   "bugid": "1651735",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.6.103"
+  },
+  {
+   "bugid": "1651682",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "DoH heuristics sometimes don't run when network goes up"
+  },
+  {
+   "bugid": "1603779",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Convert doh-rollout system add-on into a JSM"
+  },
+  {
+   "bugid": "1596738",
+   "status": "NEW",
+   "component": "Firefox:Session Restore",
+   "summary": "Session restore focuses the browser in fission, preventing re-enabling browser_newwindow_focus.js"
+  },
+  {
+   "bugid": "1634032",
+   "status": "ASSIGNED",
+   "component": "Firefox:Site Identity",
+   "summary": "Lazify the protection panel popup"
+  },
+  {
+   "bugid": "1646958",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "The text on the Global Sharing Overlay (when sharing screen) is not displayed correctly when in high contrast on Windows/dark theme on Linux"
+  },
+  {
+   "bugid": "1651727",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The Mobile Promotion banner not wrapping correctly on the \u201cabout:logins\u201d page"
+  },
+  {
+   "bugid": "1645196",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Teach `mach vcs-setup` to tune git configuration in the same way it tunes hg configuration"
+  },
+  {
+   "bugid": "1651696",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "python/mach/mach/test/test_telemetry.py test fails with OSX and --python=python2 when 'mach python-test' runs in python 3"
+  },
+  {
+   "bugid": "1651903",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Stop preprocessing mozglue.def"
+  },
+  {
+   "bugid": "1652097",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Run featuregates Python unit tests in separate task and not in `make check`"
+  },
+  {
+   "bugid": "1651901",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Disable optimizations in dom/bindings/test"
+  },
+  {
+   "bugid": "1652089",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "update dump_syms version"
+  },
+  {
+   "bugid": "1651806",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Warn people against building a specific target with `mach build $A_SPECIFIC_TARGET`"
+  },
+  {
+   "bugid": "1629337",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`make_dafsa.py` is slow"
+  },
+  {
+   "bugid": "1651608",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove leftovers from bug 1557788 (Remove dead PGO code)"
+  },
+  {
+   "bugid": "1652087",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "add dump_syms to bootstrap-installable things on Linux"
+  },
+  {
+   "bugid": "1561207",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "error: undefined reference to 'dbus_error_init' and other symbols with --disable-dbus"
+  },
+  {
+   "bugid": "1651641",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "servo/components/style/build.rs references PYTHON3 environment variable which is not necessarily set"
+  },
+  {
+   "bugid": "1651410",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "include updated binutils for clang 5 toolchain"
+  },
+  {
+   "bugid": "1652102",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mozleak/tests/test_lsan.py should run in the mozbase test suite"
+  },
+  {
+   "bugid": "1651675",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "explicitly use some useful linker options when building clang"
+  },
+  {
+   "bugid": "1651082",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Solaris configure error: AttributeError: symbols_link_arg"
+  },
+  {
+   "bugid": "1651938",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Large number of requests_not_cacheable on Windows instrumented builds"
+  },
+  {
+   "bugid": "1651207",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "sccache-dist builds fail with \"<inline asm>:5:13: error: Could not find incbin file '$SRC/config/external/icu/data/icudt67l.dat'\""
+  },
+  {
+   "bugid": "925350",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove dumbmake"
+  },
+  {
+   "bugid": "1650834",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make tools/lint code black compatible"
+  },
+  {
+   "bugid": "1651731",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Only allow files that are typically executable to have shebang lines override permission check"
+  },
+  {
+   "bugid": "1622692",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "testing/mozbase/rust/mozversion/src/lib.rs: Fix the clippy warning"
+  },
+  {
+   "bugid": "1651323",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Static Analysis][Clang-Plugin] Add an annotation and static analysis for lifetime-bound member functions"
+  },
+  {
+   "bugid": "1652037",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Wire up build_clang_tidy_external in build-clang.py"
+  },
+  {
+   "bugid": "1651677",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma tier 2 0:29.82 taskcluster/taskgraph/test/test_generator.py::TestGenerator::test_always_target_tasks TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1651824",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run `mozboot` unit tests in separate task and not in `make check`"
+  },
+  {
+   "bugid": "1640902",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Create integration tests for ci + taskgraph"
+  },
+  {
+   "bugid": "1648680",
+   "status": "RESOLVED",
+   "component": "NSPR:NSPR",
+   "summary": "Implicit declaration of WSAIoctl in w95sock.c"
+  },
+  {
+   "bugid": "1649168",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Automatically run scriptworker tasks on newly deployed versions."
+  },
+  {
+   "bugid": "1648036",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "`sourceURL` in abuse report has the wrong value when site uses client-side (javascript) navigation"
+  },
+  {
+   "bugid": "1649960",
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "Remove or update probes expiring in Firefox 81: blocklist.mlbf_*"
+  },
+  {
+   "bugid": "1649858",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add SUMO link to re-authentication UI"
+  },
+  {
+   "bugid": "1604807",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Clear form dropdown menu appears right after telephone or credit number are filled"
+  },
+  {
+   "bugid": "1650961",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Restrict the clickjacking delay to credit card fields"
+  },
+  {
+   "bugid": "1648551",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Firefox fails to capture on Stripe checkout for modcloth.com"
+  },
+  {
+   "bugid": "1647652",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card entries are not deduped if the same CC number is used with additional fields (manual fill)"
+  },
+  {
+   "bugid": "1650033",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Diners Club logo is not detect when submit a credit card using a Diners Club CC number"
+  },
+  {
+   "bugid": "1650794",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Refactor subdialogs.js to reusable JSM"
+  },
+  {
+   "bugid": "1651764",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Use of uninitialized variable in Database::EnsureBookmarkRoots()?"
+  },
+  {
+   "bugid": "1651868",
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Convert AsyncPrefs to a JSProcessActor"
+  },
+  {
+   "bugid": "1447935",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Bypasses found for Firefox Tracking Protection"
+  },
+  {
+   "bugid": "1651766",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Fix assertions in extension browser tests which rely on type coercion"
+  },
+  {
+   "bugid": "1649662",
+   "status": "RESOLVED",
+   "component": "bugzilla.mozilla.org:Documentation",
+   "summary": "Update bug handling docs with severity examples"
+  }
+ ],
+ "date": "2020-07-11",
+ "cset": "576f33282a0838c87ffadd52a8271726d86f85a1",
+ "buildid": "20200711092223",
+ "fixed": 131,
+ "total": 151,
+ "restricted": null
+}

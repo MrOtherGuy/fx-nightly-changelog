@@ -1,0 +1,580 @@
+{
+ "bugs": [
+  {
+   "bugid": "1646206",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Fix a vsnprintf lint in ClearKeyUtils.cpp"
+  },
+  {
+   "bugid": "1644479",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::dom::MediaStatusManager::EnableAction]"
+  },
+  {
+   "bugid": "1646019",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "PreloadHashKey for as=\"style\" shouldn't use the whole referrer info as part of the key."
+  },
+  {
+   "bugid": "1580766",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Expose a \"session id\" on CanonicalBrowsingContext, preserved when a tab's top level BC is replaced"
+  },
+  {
+   "bugid": "1646032",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Avoid a silly string copy in PreloadService."
+  },
+  {
+   "bugid": "1645879",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Collapse selection in mixed bidi context falsely goes to the opposite direction"
+  },
+  {
+   "bugid": "1644943",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Expose a single nsIWebProgress on top-level CanonicalBrowsingContext and preserve it across navigations"
+  },
+  {
+   "bugid": "1641905",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "ThirdPartyUtil::IsThirdPartyWindow returns different values in fission"
+  },
+  {
+   "bugid": "1645579",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Bug 1622709 causes regression with certain videos flickering"
+  },
+  {
+   "bugid": "1642629",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Various frame building optimizations"
+  },
+  {
+   "bugid": "1635472",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move the display port in larger increments when webrender is enabled"
+  },
+  {
+   "bugid": "1644173",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Consider making cache-control: must-revalidate not miss the image cache."
+  },
+  {
+   "bugid": "1360369",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Unify implementation of JSOP_CHECKOBJCOERCIBLE and the self-hosted RequireObjectCoercible function"
+  },
+  {
+   "bugid": "1566307",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Error message for relative module URLs not very informative"
+  },
+  {
+   "bugid": "1645530",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent Assertion failure: !CurrentThreadIsPerformingGC(), at /builds/worker/checkouts/gecko/js/src/gc/GC.cpp:2956"
+  },
+  {
+   "bugid": "1645845",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ParserAtoms representation and table implementation (preffed off)"
+  },
+  {
+   "bugid": "1645968",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[MIPS] Fix build failures on MIPS64 caused by recent updates  (cmpPtrSet)"
+  },
+  {
+   "bugid": "1645819",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix Ion spew for WebAssembly functions"
+  },
+  {
+   "bugid": "1645353",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: use template objects for scripted constructor calls"
+  },
+  {
+   "bugid": "1645377",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure in StoreBuffer::put while fuzzing"
+  },
+  {
+   "bugid": "1645379",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent js/src/jit-test/tests/gc/bug-1643913.js | /builds/worker/checkouts/gecko/js/src/jit-test/tests/gc/bug-1643913.js:5:10 Error: Incremental GC already in progress (code 3, args \"\") [1.0 s]"
+  },
+  {
+   "bugid": "1639153",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize indirect calls"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1645645",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ gfxDWriteFontList::CreateFontEntry]"
+  },
+  {
+   "bugid": "1645685",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "gfxPlatformFontList::GetOrCreateFontEntry should not re-try calling CreateFontEntry after caching a nullptr (failure) result"
+  },
+  {
+   "bugid": "1645713",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "FindNearestCommonAncestor does more work than BuildTextRunsScanner::ContinueTextRunAcrossFrames needs"
+  },
+  {
+   "bugid": "1645429",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Replace custom implementation of ReverseIterator by std::reverse_iterator"
+  },
+  {
+   "bugid": "1646171",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Fix vsnprintf complaint in Assertions.cpp"
+  },
+  {
+   "bugid": "1544378",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket process] Implement nsIThreadRetargetableRequest for HttpTransactionParent"
+  },
+  {
+   "bugid": "1645346",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket process] NS_ENSURE_TRUE(mState != STATE_IDLE) failed: file /builds/worker/checkouts/gecko/netwerk/base/nsInputStreamPump.cpp"
+  },
+  {
+   "bugid": "1644374",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Assertion *countWritten > 0 in nsHttpTransaction::WritePipeSegment when running netwerk/test/unit/test_http3.js"
+  },
+  {
+   "bugid": "1640105",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "[socket process] Run mochitest with networking over socket process enabled"
+  },
+  {
+   "bugid": "1642971",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Perma PROCESS-CRASH | browser/components/urlbar/tests/browser/browser_canonizeURL.js | application crashed [@ mozilla::net::CookieCommons::SchemeToSchemeType(nsTSubstring<char> const&)] when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1641222",
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Follow CNAME/AliasForm chains"
+  },
+  {
+   "bugid": "1645527",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove redundant PHttpChannel IPCs"
+  },
+  {
+   "bugid": "1645813",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Package qlog has a non-approved license: BSD-2-Clause."
+  },
+  {
+   "bugid": "1642899",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Consider entity allow lists for cookie purging"
+  },
+  {
+   "bugid": "1622212",
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "hasStorageAccess produces incorrect value"
+  },
+  {
+   "bugid": "1560275",
+   "status": "ASSIGNED",
+   "component": "Core:SVG",
+   "summary": "Intermittent /svg/types/scripted/SVGGeometryElement.isPointInStroke-01.svg | SVGGeometryElement.prototype.isPointInStroke, 'vector-effect'. - assert_true: expected true got false"
+  },
+  {
+   "bugid": "1644265",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Ensure we don't interrupt DataStorage write with fast shutdown"
+  },
+  {
+   "bugid": "1623278",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Prototype reduction of raw pointer usage"
+  },
+  {
+   "bugid": "1592739",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "macOS vibrancy doesn't work in WebRender + OS compositor configuration"
+  },
+  {
+   "bugid": "1646150",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Remove unused webrtc sctp code"
+  },
+  {
+   "bugid": "1645679",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /webrtc/RTCPeerConnection-videoDetectorTest.html | Signal detector detects track change within reasonable time - expected FAIL when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1634765",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Drop support for macOS < 10.12"
+  },
+  {
+   "bugid": "1645996",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "build failure with missing namespace on MakeSpan since 1643474"
+  },
+  {
+   "bugid": "1645450",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Do not search for current element in nsTObserverArray loops to remove the current element"
+  },
+  {
+   "bugid": "1645447",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add ForwardIterator::Remove and EndLimitedIterator::Remove in nsTObserverArray"
+  },
+  {
+   "bugid": "1645982",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Rename some service getters in `Services.py` to better match the types."
+  },
+  {
+   "bugid": "1636244",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Intermittent startupcache/test/browser/browser_startupcache_telemetry.js | 5 < 5 - JS frame :: chrome://mochitests/content/browser/startupcache/test/browser/browser_startupcache_telemetry.js :: <TOP_LEVEL> :: line 43"
+  },
+  {
+   "bugid": "1645339",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Use range-based for with nsTObserverArray where easily possible"
+  },
+  {
+   "bugid": "1625910",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Use the ResourceWatcher API to fetch CSS Warning"
+  },
+  {
+   "bugid": "1644185",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Implement Platform Messages listening via the ResourceWatcher API on the actor side"
+  },
+  {
+   "bugid": "1645731",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Autocomplete panel exposed as an alert for accessibility"
+  },
+  {
+   "bugid": "1646083",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Fix jsdoc in devtools/server/actors/descriptors/watcher/watcher.js"
+  },
+  {
+   "bugid": "1645334",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "ProcessDescriptorActor isn't passing its browsingContext when creating its WatcherActor"
+  },
+  {
+   "bugid": "1641796",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "ServiceWorker targets should be updated when the toplevel target navigates"
+  },
+  {
+   "bugid": "1242856",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Computed",
+   "summary": "[a11y] Add necessary semantics to the computed styles view."
+  },
+  {
+   "bugid": "1645967",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "1.24 - 3.06% ts_paint_webext (windows10-64-shippable) regression on push 6be570e963dec97af0d0ceffd0b3526d284304aa (Wed June 10 2020)"
+  },
+  {
+   "bugid": "1572329",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Show History dropdown from Address Bar in Browsing History mode does not allow the deletion of the top item"
+  },
+  {
+   "bugid": "1645742",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Firefox should retry getting a push subscription if it failed in the past"
+  },
+  {
+   "bugid": "1645834",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Don't keep trying to send tabs if the server has rate-limited us"
+  },
+  {
+   "bugid": "1645267",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "browser-sync.js should use a lazy getter for this._log"
+  },
+  {
+   "bugid": "1643105",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Followup to Bug 1637617: clean up use of 'cfr-whatsnew-panel-header' fluent string"
+  },
+  {
+   "bugid": "1644538",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Add icon to sidebar menu for Experimental Features in about:preferences"
+  },
+  {
+   "bugid": "1644537",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Use FeatureGates for templating the Experimental Features section"
+  },
+  {
+   "bugid": "1644535",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Add section to about:preferences for Experimental Features"
+  },
+  {
+   "bugid": "1643069",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Add telemetry for purple boxes on the monitor card"
+  },
+  {
+   "bugid": "1632471",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Split out search engine cache handling into a separate object"
+  },
+  {
+   "bugid": "1642391",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rewrite _loadEngines to have a modern and legacy sections clearly split"
+  },
+  {
+   "bugid": "1645618",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Improve the global sharing indicator for RTL"
+  },
+  {
+   "bugid": "1644904",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Ensure focus rectangles are obvious when using the keyboard to interact with the new WebRTC sharing indicator"
+  },
+  {
+   "bugid": "1645481",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Open the WebRTC indicator on the same display that the browser window that spawned it is on"
+  },
+  {
+   "bugid": "1644905",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "The \"You are sharing\" label isn't read by screenreaders in the new WebRTC indicator"
+  },
+  {
+   "bugid": "1620358",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Record the current toolbar state in telemetry"
+  },
+  {
+   "bugid": "1642121",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Developer Environment Integration",
+   "summary": "gdb prettyprinters not loaded if running from wrong directory"
+  },
+  {
+   "bugid": "1623520",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Switch Windows asan and fuzzing builds to cross-builds"
+  },
+  {
+   "bugid": "1645889",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`mach clobber` should clobber Python files, not just objdir files"
+  },
+  {
+   "bugid": "1643258",
+   "status": "UNCONFIRMED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox beta 78.0b1 requires glibc 2.18 on Linux, not 2.17 as announced"
+  },
+  {
+   "bugid": "1646127",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove `mach empty-makefiles`"
+  },
+  {
+   "bugid": "1642825",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Prevent further use of black/whitelist in gecko with linting tests"
+  },
+  {
+   "bugid": "1645066",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Perma [tier2] tools/lint/test/test_clippy.py::test_basic TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1519636",
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Reformat recent changes to the Google coding style"
+  },
+  {
+   "bugid": "1646162",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "gfx/wgpu/player/  can be removed from the clippy exclude list"
+  },
+  {
+   "bugid": "1645829",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Add a check for the clippy version"
+  },
+  {
+   "bugid": "1641131",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Stop running shippable and other unnecessary builds with |mach try auto|"
+  },
+  {
+   "bugid": "1645286",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Click on add-on title text in the manager produces a \"The address wasn\u00b4t understood\" error"
+  },
+  {
+   "bugid": "1429322",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Show credit card logos in credit card autofill UI"
+  },
+  {
+   "bugid": "1642059",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card autofill dropdown only appears on the 2nd click"
+  },
+  {
+   "bugid": "1646093",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Modify printing telemetry to add a PDF-catch-all for unknown printer names containing 'PDF'"
+  },
+  {
+   "bugid": "1579840",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent telemetry/marionette/tests/client/test_subsession_management.py TestSubsessionManagement.test_subsession_management | AssertionError: u'c641e2d3-2742-4143-b667-1463c7b7fbc1' is not None"
+  },
+  {
+   "bugid": "1620656",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove GeckoView Telemetry Snapshotting during or after Firefox 79 (June-ish 2020)"
+  },
+  {
+   "bugid": "1644864",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement the labeled counter metric type for Project FOG"
+  },
+  {
+   "bugid": "1637431",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "tabs.query should provide a message more useful than \u201cunexpected error\u201d if url format is invalid"
+  },
+  {
+   "bugid": "1638888",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Disabling and re-enabling a WebExtension which provides a default search engine, doesn't re-set the engine as default"
+  }
+ ],
+ "date": "2020-06-17",
+ "cset": "3155ffead6aefd99f4cef141b19163b881c0e288",
+ "buildid": "20200617093637",
+ "fixed": 77,
+ "total": 95,
+ "restricted": 1
+}

@@ -1,0 +1,388 @@
+{
+ "bugs": [
+  {
+   "bugid": "1723540",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video output is green with SW-WR and VAAPI"
+  },
+  {
+   "bugid": "1687070",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Audio can't be heard (or can't be heard in the beginning) on Linux"
+  },
+  {
+   "bugid": "1723096",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to revision f495dc982"
+  },
+  {
+   "bugid": "1710870",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Investigate why \"cross_origin_pageload\" benchmark is 7-10x slower with Fission than e10s"
+  },
+  {
+   "bugid": "1670644",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent Late Beta and Release Assertion failure: storage->IsForkOf(storageArea), at /builds/worker/checkouts/gecko/dom/base/nsGlobalWindowInner.cpp:5289"
+  },
+  {
+   "bugid": "1723125",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Don't delete normal selection during composition"
+  },
+  {
+   "bugid": "1722535",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Pasting into special input fields not possible since v90 when I have formatted text in clipboard"
+  },
+  {
+   "bugid": "1715482",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Geolocation should gracefully handle Documents that are not fully active"
+  },
+  {
+   "bugid": "1722978",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within docshell/ to work with https-first enabled"
+  },
+  {
+   "bugid": "1722914",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update some devtools tests to work with https-first enabled"
+  },
+  {
+   "bugid": "1714285",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/test_coalesce_mousewheel.html | Should have gotten 1 wheel event - got 2, expected 1"
+  },
+  {
+   "bugid": "1720334",
+   "status": "UNCONFIRMED",
+   "component": "Core:Disability Access APIs",
+   "summary": "aria-checked attribute not announced on role=\"treeitem\" elements within role=\"tree\" elements"
+  },
+  {
+   "bugid": "1722396",
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Refactor DOM attribute change handling"
+  },
+  {
+   "bugid": "1723400",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Can no longer build with mk_add_options MOZ_MAKE_FLAGS=\"-j1\""
+  },
+  {
+   "bugid": "1717151",
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Update ANGLE for FF92"
+  },
+  {
+   "bugid": "1711028",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add new \"markers\" pseudo strategy"
+  },
+  {
+   "bugid": "1613705",
+   "status": "REOPENED",
+   "component": "Core:Internationalization",
+   "summary": "Migrate Localization API to Rust"
+  },
+  {
+   "bugid": "1723187",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Startup Crash in [@ l10nregistry::source::FileSource::fetch_file_sync]"
+  },
+  {
+   "bugid": "1723464",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->runtime()->jitRuntime()->disallowArbitraryCode(), at /js/src/vm/Interpreter.cpp:331"
+  },
+  {
+   "bugid": "1722269",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JSOp::CheckReturn - Validate return type after the function has exited"
+  },
+  {
+   "bugid": "1719194",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "`FullParseHandler` depends on BaseScript pointer."
+  },
+  {
+   "bugid": "1717717",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent js/src/jit-test/tests/gc/bug1717405.js | Timeout (code -6, args \"--no-blinterp --no-baseline --no-ion --more-compartments\") [150.0 s]"
+  },
+  {
+   "bugid": "1723024",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js/src/jit/MacroAssembler.cpp:801:5: error: use of undeclared identifier 'storePrivateValue'"
+  },
+  {
+   "bugid": "1341265",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Inline Map/Set operations"
+  },
+  {
+   "bugid": "1669669",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Arenas containing only permanent things don't need to be swept"
+  },
+  {
+   "bugid": "1717565",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Simplify Zone::sweepEphemeronTablesAfterMinorGC"
+  },
+  {
+   "bugid": "1710524",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: isIncrementalGCInProgress(), at z:/task_1620662894/src/js/src/gc/GC.cpp:7794"
+  },
+  {
+   "bugid": "1714086",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Make wasm debug-code builds not use 40x the time and 10x the memory of normal builds"
+  },
+  {
+   "bugid": "1687673",
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Perma bugs/456219-1a.html == bugs/456219-1-ref.html | image comparison, max difference: 60, number of differing pixels: 618"
+  },
+  {
+   "bugid": "1721223",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Unicode Subscript S  (U+209B) does not render"
+  },
+  {
+   "bugid": "1718045",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Write test for NTLM authentication"
+  },
+  {
+   "bugid": "1718012",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Zoom out and triggering full screen will break DOM rendering"
+  },
+  {
+   "bugid": "1720869",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add telemetry probe for referrer policy"
+  },
+  {
+   "bugid": "1722892",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Replace NS_ASSERTION uses in FileStreams.cpp"
+  },
+  {
+   "bugid": "1719811",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Final cleanup of FirstInitializationAttempts class"
+  },
+  {
+   "bugid": "1723503",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Restore a blank line in QuotaManager::UpgradeFromPersistentStorageDirectoryToDefaultStorageDirectory"
+  },
+  {
+   "bugid": "1721707",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "compile error in current nightly with error: invalid use of incomplete type 'class DataOffer'"
+  },
+  {
+   "bugid": "1722543",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "browser_dbg-windowless-service-workers.js fails with server targets"
+  },
+  {
+   "bugid": "1722456",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Update documentation to find Devtools reviewer (code-reviews-find-reviewer)"
+  },
+  {
+   "bugid": "1723067",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Update MDN compat data (2021 July 5th week)"
+  },
+  {
+   "bugid": "1722805",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "browser_storage_cache_navigation.js fails with server targets"
+  },
+  {
+   "bugid": "1721654",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update chiclet for certificate warning pages to show \"Not Secure\" text and a lock icon with a warning symbol"
+  },
+  {
+   "bugid": "1720520",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Store referrer in interactions database"
+  },
+  {
+   "bugid": "1717314",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Configuring a default app for an external protocol (scheme) handler should work (not prompt / show a dialog) for external links if they are redirects"
+  },
+  {
+   "bugid": "1721627",
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Add code to chrome/jar channels that crashes in debug builds if trying to read non-existent files from omni.ja and similar packages"
+  },
+  {
+   "bugid": "1723392",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Some JSWindowActors use unknown param `group`"
+  },
+  {
+   "bugid": "1722869",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "RTAMO onboarding page is broken when following flow from AMO Stage and Dev."
+  },
+  {
+   "bugid": "1722084",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "critters-postcard.jpg is no longer being used, and is 106k in the omni.jar"
+  },
+  {
+   "bugid": "1714296",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "[sco] Set up search engines for Scots (sco)"
+  },
+  {
+   "bugid": "1546847",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Multi-second UI jank/freeze when serializing SessionStore data over to the SessionFile worker"
+  },
+  {
+   "bugid": "1723107",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Missing breakpad symbols for librlblox"
+  },
+  {
+   "bugid": "1712817",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Improve the header file logic in ./mach vendor"
+  },
+  {
+   "bugid": "1721247",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Improve vendoring directory logic in ./mach vendor"
+  },
+  {
+   "bugid": "1723050",
+   "status": "NEW",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Replace typedef by using from dom/"
+  },
+  {
+   "bugid": "1723016",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.54"
+  },
+  {
+   "bugid": "1718613",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Snap",
+   "summary": "[snap] Cannot read HTML documentation in /usr/share/doc/"
+  },
+  {
+   "bugid": "1723026",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Enable mochitest-remote suite on Fission platforms"
+  },
+  {
+   "bugid": "1722087",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Large unused theme images still in omni.jar"
+  },
+  {
+   "bugid": "1721466",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "The new redesigned Clear recent history window modal lacks title"
+  },
+  {
+   "bugid": "1720262",
+   "status": "VERIFIED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "[Clear Recent History Modal] Please adjust the spacing around the Cancel and OK Button area"
+  },
+  {
+   "bugid": "1723078",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Password manager testcase failures after turning off multi-page login by default"
+  },
+  {
+   "bugid": "1670261",
+   "status": "REOPENED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG Geckoview Implementation"
+  },
+  {
+   "bugid": "1703630",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Update reftests that break when using non-native menulists or checkboxes, when browser.proton.enabled is true and remove non-proton toolkit CSS blocks"
+  }
+ ],
+ "date": "2021-08-03",
+ "cset": "524aef2e3307f6977ba024b560d94441d1c39d05",
+ "buildid": "20210803094710",
+ "fixed": 49,
+ "total": 63,
+ "restricted": null
+}

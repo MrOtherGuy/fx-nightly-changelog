@@ -1,0 +1,520 @@
+{
+ "bugs": [
+  {
+   "bugid": "1703938",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove dead attribute `mMetadataInPartialBlockBuffer` in `MediaCacheStream`"
+  },
+  {
+   "bugid": "1704155",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove dead code for prefers-color-scheme: no-preference"
+  },
+  {
+   "bugid": "1702714",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::dom::CanonicalBrowsingContext::PendingRemotenessChange::FinishSubframe]"
+  },
+  {
+   "bugid": "1698698",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/tests/mochitest/pointerlock/test_pointerlock_xorigin_iframe.html | Test timed out."
+  },
+  {
+   "bugid": "1702297",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/tests/mochitest/general/test_497898.html | Test timed out."
+  },
+  {
+   "bugid": "1691051",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: GetTopLevelEditSubAction() == EditSubAction::eNone (Initializing during an edit action is an error), at /builds/worker/checkouts/gecko/editor/libeditor/EditorBase.cpp:251"
+  },
+  {
+   "bugid": "1703291",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix dom/base/test/test_window_close.html for Fission+BFCache"
+  },
+  {
+   "bugid": "1703464",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "CORP check should be bypassed when the LoadingPrincipal is a SystemPrincipal"
+  },
+  {
+   "bugid": "1703847",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Disable Mixed Content Auto-upgrading in Nightly (and in general)"
+  },
+  {
+   "bugid": "1701190",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Crash in [@ mozilla::dom::WorkerDebugger::ReportPerformanceInfo]"
+  },
+  {
+   "bugid": "1671126",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Encountered an exception during profile symbolication: a bytes-like object is required, not 'str'"
+  },
+  {
+   "bugid": "1658991",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Crash in [@ mozilla::layers::LockD3DTexture<T>]"
+  },
+  {
+   "bugid": "1697751",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Visual glitches occur when the notification window appears"
+  },
+  {
+   "bugid": "1638593",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fenix crashes when playing video on Samsung with WebRender enabled"
+  },
+  {
+   "bugid": "1682195",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "cs_clip_image is slow in SW-WR"
+  },
+  {
+   "bugid": "1697952",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ js::frontend::CompilationStencil::instantiateStencilAfterPreparation]"
+  },
+  {
+   "bugid": "1704042",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove the GetLengthProperty overload that returns uint32_t"
+  },
+  {
+   "bugid": "1704058",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove atexit handler in jsrtfuzzing code"
+  },
+  {
+   "bugid": "1697644",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Naming consistency for CacheIR Health Report"
+  },
+  {
+   "bugid": "1703434",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips] undefined reference to `js::jit::MacroAssembler::branchTestValue"
+  },
+  {
+   "bugid": "1701787",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make NewObject ICs shareable"
+  },
+  {
+   "bugid": "1702259",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Mismatch for float32 size in ARM64 MacroAssembler in MacroAssembler::storeRegsInMask and FloatRegister::GetPushSizeInBytes"
+  },
+  {
+   "bugid": "1690478",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "SIMD optimization x64/x86: Better code for iNxM.compare_u"
+  },
+  {
+   "bugid": "1677204",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Remove feature flags for shipped features and clean up feature logic"
+  },
+  {
+   "bugid": "1669314",
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Intermittent css-grid/grid-fragmentation-dyn2-031.html == css-grid/grid-fragmentation-031-ref.html | image comparison, max difference: 1, number of differing pixels: 3"
+  },
+  {
+   "bugid": "1703853",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /css/css-backgrounds/animations/background-color-animation-with-table3.html | expected PASS"
+  },
+  {
+   "bugid": "1667977",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ mozilla::fontlist::Family::SearchAllFontsForChar]"
+  },
+  {
+   "bugid": "1703984",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Same behavior or alias for text-justify: inter-character and text-justify: distribute"
+  },
+  {
+   "bugid": "1703693",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Misaligned icons in Jira"
+  },
+  {
+   "bugid": "1669892",
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "High frequency TEST-UNEXPECTED-TIMEOUT | netwerk/test/unit/test_http3.js | Test timed out"
+  },
+  {
+   "bugid": "1704079",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Http3Session::SetSecInfo does not set  negotiated NPN"
+  },
+  {
+   "bugid": "1703497",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "fix offset of synthesized double tap gestures on macos"
+  },
+  {
+   "bugid": "1703883",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Limit opt-in URLs for Facebook shim to just the ones required for federated login"
+  },
+  {
+   "bugid": "1703987",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Measure percentage stroke-widths on text/non-text svg content"
+  },
+  {
+   "bugid": "1703592",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Unknown value for meetOrSlice), at /builds/worker/checkouts/gecko/dom/svg/SVGContentUtils.cpp:703"
+  },
+  {
+   "bugid": "1703636",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "FindRootsWithSubject can fail when nssckbi has been replaced with another library"
+  },
+  {
+   "bugid": "1703843",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /webrtc/RTCPeerConnection-iceConnectionState.https.html | ICE can connect in a recvonly usecase - Test timed out"
+  },
+  {
+   "bugid": "1704016",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS] Various dialogs are unreadable (black text on black background), if you have Firefox Dark or Alpenglow theme -- e.g. about:profiles' dialogs, \"clear cookies and site data\""
+  },
+  {
+   "bugid": "1703930",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Native menus don't send DOMMenuItemInactive events"
+  },
+  {
+   "bugid": "1704127",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "When opening a native context menu in the bookmarks sidebar, add-on items are missing"
+  },
+  {
+   "bugid": "1701182",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux, Wayland, Snap] Firefox 87: clicks do not work & more"
+  },
+  {
+   "bugid": "1703763",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Mochitest clipboard failures"
+  },
+  {
+   "bugid": "1703806",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Use the reloaded event in DAMP tests for the a11y panel"
+  },
+  {
+   "bugid": "1699039",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Inspector Animation panel causes a high CPU load (80% for http://www.esprit.de)"
+  },
+  {
+   "bugid": "1701629",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "DRM indicator should not be styled as a chiclet"
+  },
+  {
+   "bugid": "1703838",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Failure in browser/base/content/test/sync/browser_contextmenu_sendtab.js with proton urlbar"
+  },
+  {
+   "bugid": "1703274",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Graduate browser.proton.urlbar.enabled to browser.proton.enabled"
+  },
+  {
+   "bugid": "1699834",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable new tab page handoff by default"
+  },
+  {
+   "bugid": "1703014",
+   "status": "REOPENED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Downloads Panel is missing a number of Proton styles"
+  },
+  {
+   "bugid": "1701529",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "UI isn't loaded completely when the profile is connected to firefox account and running in debug build"
+  },
+  {
+   "bugid": "1704096",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Fix Windows a11y test failure in test_visibility.xhtml with proton enabled"
+  },
+  {
+   "bugid": "1703408",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace BrowserTestUtils.waitForCondition with TestUtils.waitForCondition in browser/base/content/test/pageActions/"
+  },
+  {
+   "bugid": "1702603",
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Enter/Space does not work on buttons inside proton infobars"
+  },
+  {
+   "bugid": "1703810",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton] Items inside about:preferences dropdowns are not visible with dark theme set in Windows 10"
+  },
+  {
+   "bugid": "1695702",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Ensure AppMenu panel position relative to the anchor matches the specification"
+  },
+  {
+   "bugid": "1702117",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove CFR strings using -sync-brand-short-name"
+  },
+  {
+   "bugid": "1701997",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land new strings for default browser prompt"
+  },
+  {
+   "bugid": "1698200",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Multistage AboutWelcome Proton screens background should display noodles"
+  },
+  {
+   "bugid": "1702330",
+   "status": "REOPENED",
+   "component": "Firefox:Messaging System",
+   "summary": "Graduate the infobars to the main proton pref"
+  },
+  {
+   "bugid": "1703172",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Proton info bars need role=\"alert\""
+  },
+  {
+   "bugid": "1703173",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Close button in Proton info bars has no a11y label"
+  },
+  {
+   "bugid": "1699701",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Convert all usages of ExperimentFeature to singleton API"
+  },
+  {
+   "bugid": "1701944",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add slug to remote defaults schema"
+  },
+  {
+   "bugid": "1702562",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/clipboard.js passes eslint check"
+  },
+  {
+   "bugid": "1702564",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/domainFromUrl.js passes eslint check"
+  },
+  {
+   "bugid": "1702574",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/selector/uicontrol.js passes eslint check"
+  },
+  {
+   "bugid": "1702540",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/background/senderror.js passes eslint check"
+  },
+  {
+   "bugid": "1702541",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/background/startBackground.js passes eslint check"
+  },
+  {
+   "bugid": "1702555",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure browser/extensions/screenshots/build/inlineSelectionCss.js passes eslint check"
+  },
+  {
+   "bugid": "1703989",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Add unit test for DoH parental controls heuristic"
+  },
+  {
+   "bugid": "1698601",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Carry-over restore data to the new BrowsingContext after a process swap"
+  },
+  {
+   "bugid": "1703674",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Revoking cam or mic permission doesn't always revoke both."
+  },
+  {
+   "bugid": "1703716",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Enable Proton panels and context menus on Nightly by default"
+  },
+  {
+   "bugid": "1702329",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "tab_line is too thin in Proton using a 3rd party theme"
+  },
+  {
+   "bugid": "1704163",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Proton context menu reftest perma failure - TEST-UNEXPECTED-FAIL | layout/reftests/xul/menulist-shrinkwrap-2.xhtml == layout/reftests/xul/menulist-shrinkwrap-2-ref.xhtml | image comparison, max difference: 237, number of differing pixels: 87"
+  },
+  {
+   "bugid": "1693140",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Mermaid is broken after upgrading to Sphinx 3.5.1 and mermaid to 0.6.0"
+  },
+  {
+   "bugid": "1703664",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Enable showing all warnings from mozlint-based linters in reviewbot"
+  },
+  {
+   "bugid": "1695325",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "GTest gets scheduled using try auto with artifact builds and always fails"
+  },
+  {
+   "bugid": "1668952",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Can't upload photos from the photo gallery on ebay.com"
+  },
+  {
+   "bugid": "1703968",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable COOP+COEP on GeckoView Nightly"
+  },
+  {
+   "bugid": "1700396",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": "1685346",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Opt \"Restart with addons disabled\" dialog into the new window-modal UI"
+  },
+  {
+   "bugid": "1691821",
+   "status": "NEW",
+   "component": "Toolkit:Autocomplete",
+   "summary": "Refactor the Form Autofill system extension for reusable cross-platform components"
+  },
+  {
+   "bugid": "1703708",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Drop middle paragraph of text in safe mode / refresh profile dialog"
+  },
+  {
+   "bugid": "1694679",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Extensions redirecting same-origin requests are blocked by CORS checks"
+  }
+ ],
+ "date": "2021-04-10",
+ "cset": "05337140272cc5fe59e58b9d302fb84eda9acbf3",
+ "buildid": "20210410091448",
+ "fixed": 75,
+ "total": 85,
+ "restricted": 1
+}

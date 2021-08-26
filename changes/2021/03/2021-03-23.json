@@ -1,0 +1,658 @@
+{
+ "bugs": [
+  {
+   "bugid": "1700171",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Suppress some warnings in libtheora"
+  },
+  {
+   "bugid": "1647845",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Geckolib/glue changes to support @page rule size attribute"
+  },
+  {
+   "bugid": "1699905",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /css/css-animations/nested-scale-animations.html when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1699790",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Last 10 cycles of https://www.vsynctester.com/gputest.html are very slow with remote canvas."
+  },
+  {
+   "bugid": "1699321",
+   "status": "RESOLVED",
+   "component": "Core:DMD",
+   "summary": "DMD crashes @HashTable<...>::putNewInfallible on Windows debug builds"
+  },
+  {
+   "bugid": "1697829",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Dark Reader extension only partially working after Bug 1360715"
+  },
+  {
+   "bugid": "1699707",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove DeviceProximityEvent"
+  },
+  {
+   "bugid": "1699870",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent TEST-UNEXPECTED-CRASH | /html/cross-origin-opener-policy/navigate-top-to-aboutblank.https.html | expected OK"
+  },
+  {
+   "bugid": "1646510",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[meta] Audit uses of nsContentUtils::GetCrossDocParentNode"
+  },
+  {
+   "bugid": "1671656",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent [Fission] http://mochi.test:8888/tests/dom/base/test/test_bug1399605.html | called finish() multiple times"
+  },
+  {
+   "bugid": "1699722",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /content-security-policy/inheritance/history-iframe.sub.html | History navigation in iframe: \"about:blank\" document is navigated back from history same-origin. - Test timed out"
+  },
+  {
+   "bugid": "1699872",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /service-workers/service-worker/registration-schedule-job.https.html | different updateViaCache - expected FAIL"
+  },
+  {
+   "bugid": "1700138",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Make wpt keyboard-accesskey-click-event.html pass on Mac"
+  },
+  {
+   "bugid": "1694647",
+   "status": "NEW",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent mozilla/tests/workers/worker_timer_nesting_level.html | Worker timer nesting level  - assert_true: timer nesting level reaches the max nesting level(5), interval time should be clamped at least 3, but got 2 expected true got false"
+  },
+  {
+   "bugid": "1699680",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Regression: AtkText no longer implemented on document"
+  },
+  {
+   "bugid": "1415960",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Broken accessible tree) [@ mozilla::a11y::Accessible::InsertAfter]"
+  },
+  {
+   "bugid": "1700166",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Cleanup obsolete remote interface enum and dependent constructors"
+  },
+  {
+   "bugid": "1699742",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove MOZ_GECKO_PROFILER ifdefs that are no longer needed after bug 1698493"
+  },
+  {
+   "bugid": "1696688",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Set IOSurface color space to sRGB"
+  },
+  {
+   "bugid": "1699352",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix DrawTargetD2D1::mVRAMUsageSS handling"
+  },
+  {
+   "bugid": "1700151",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Example-compositor fixes"
+  },
+  {
+   "bugid": "1700153",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't automatically enable SW-WR popups with the Fission experiment or on early beta"
+  },
+  {
+   "bugid": "1700157",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Force allow Software WebRender for the Fission experiment group"
+  },
+  {
+   "bugid": "1610570",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Support a 'passback' attribute for individual IPC arguments to avoid requiring no-op validations"
+  },
+  {
+   "bugid": "1684316",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "highWaterMark property is not defined on the prototype"
+  },
+  {
+   "bugid": "1699736",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] js\\src\\jit-test\\tests\\gc\\bug-1698543.js | z:\\task_1616148527\\src\\js\\src\\jit-test\\tests\\gc\\bug-1698543.js:30:9 Error: regexp too big (code 3, args \"--ion-eager --ion-offthread-compile=off --ion-check-range-analysis --ion-extra-checks --no"
+  },
+  {
+   "bugid": "1657509",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Always resolve ReadableStream's tee()'s cancel promise after the stream closes or errors"
+  },
+  {
+   "bugid": "1700007",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make some surface changes to ReadableStream required by WebIDL"
+  },
+  {
+   "bugid": "1698791",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add an is-index flag to atoms"
+  },
+  {
+   "bugid": "1699686",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Allow MIPS simulator to ignore unaligned memory accesses"
+  },
+  {
+   "bugid": "1697696",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Fix branch pruning"
+  },
+  {
+   "bugid": "1699155",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Establish invariants about the upper bits of 64-bit registers with 32-bit values"
+  },
+  {
+   "bugid": "1698172",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add descriptions to GC profiler markers"
+  },
+  {
+   "bugid": "1699696",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "MIPS: Wasm baseline compiler unsupported, missing code in IsValidStackMapKey"
+  },
+  {
+   "bugid": "1699689",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "WebAssembly is disabled on MIPS64 simulator because isLockfree8() returns false"
+  },
+  {
+   "bugid": "1699408",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Update SpiderMonkey fuzzing configuration to cover wasm-on-arm64-via-Ion"
+  },
+  {
+   "bugid": "1226305",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "overflow-clip-box:content-box doesn't clip properly in some cases"
+  },
+  {
+   "bugid": "1697349",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "[css-flexbox] Include flex item's margins and flex container's padding in the flex container's overflow area"
+  },
+  {
+   "bugid": "1699878",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Speed up and reduce fuzziness for reftest 966992-1.html"
+  },
+  {
+   "bugid": "1681691",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Implement ascent-override, descent-override, and line-gap-override"
+  },
+  {
+   "bugid": "1699893",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /cookies/name/name.html | URL-encoded cookie name is not decoded - expected FAIL"
+  },
+  {
+   "bugid": "1699904",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Perma xpc test_FeatureGate.js | testAllDefaultsMatchSettings - [testAllDefaultsMatchSettings : 440] Feature network.http.http3.enabled should match runtime value. - false == true when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1697679",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Support snap back animation with PanGestureInput events that have mSimulateMomentum set to false"
+  },
+  {
+   "bugid": "1699601",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make the distinction between promiseApzRepaintsFlushed and promiseApzFlushedRepaints more evident"
+  },
+  {
+   "bugid": "1694311",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Cannot use touchpad pinch to zoom Bing Maps on Linux with apz.gtk.touchpad_pinch.enabled=true"
+  },
+  {
+   "bugid": "1699997",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Remove remaining callback-style functions in apz_test_native_event_utils.js"
+  },
+  {
+   "bugid": "1700064",
+   "status": "VERIFIED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Double-tap to zoom is available inside pdf viewer"
+  },
+  {
+   "bugid": "1693327",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Assertion failure: !rv.Failed(), at /builds/worker/checkouts/gecko/dom/performance/EventCounts.cpp:23"
+  },
+  {
+   "bugid": "1689265",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Remove or update probes expiring in Firefox 88: PRINT_BACKGROUND_TASK_*"
+  },
+  {
+   "bugid": "1653659",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Sandbox hunspell using RLBox"
+  },
+  {
+   "bugid": "1698786",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Extend logging around `mozInlineSpellChecker`"
+  },
+  {
+   "bugid": "1669730",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Add telemetry for number of attempts to open an unknown objectstore"
+  },
+  {
+   "bugid": "1698871",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Use SafeRefPtr instead of RefPtr with hashtables in QM and QM clients"
+  },
+  {
+   "bugid": "1697683",
+   "status": "RESOLVED",
+   "component": "Core:Web Speech",
+   "summary": "Crash on SpeechSynthesisService NullPointerException"
+  },
+  {
+   "bugid": "1696452",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "AddressSanitizer: SEGV /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:286:27 in get"
+  },
+  {
+   "bugid": "1699931",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Different radius for checked and unchecked checkbox."
+  },
+  {
+   "bugid": "1700178",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Attempt to reduce stutter during full-screen menubar reveal animation"
+  },
+  {
+   "bugid": "1700022",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Stop caching duplicate colors"
+  },
+  {
+   "bugid": "1699582",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Improve menu ownership model in the native menu code"
+  },
+  {
+   "bugid": "1699930",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "text-scaling-factor incorrectly affects size of UI elements such as scrollbars"
+  },
+  {
+   "bugid": "1700113",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Use the builtin gettid() on Android."
+  },
+  {
+   "bugid": "1699375",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Stack traces are not printed in all cases one would expect they would"
+  },
+  {
+   "bugid": "1694849",
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Remove or update probes expiring in Firefox 89: devtools.accessibility.tabbing_order_activated"
+  },
+  {
+   "bugid": "1699590",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-scopes-duplicated.js | A promise chain failed to handle a rejection: Actor 'SpecialPowers' destroyed before query 'Spawn' was resolved - stack: (No stack available.)"
+  },
+  {
+   "bugid": "1699497",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "FrameConnector fails if called twice in parallel"
+  },
+  {
+   "bugid": "1699729",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Perma devtools/client/shared/test/browser_theme_switching.js | The main process DevToolsServer has no pending connection when the test ends when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1698212",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/shared/resources/tests/browser_target_list_frames.js | The new target should be the newly loaded document - Got \"about:blank\", expected \"https://example.org/document-builder.sjs?html=org\""
+  },
+  {
+   "bugid": "1691586",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Fix and re-enable dom/tests/browser/browser_ConsoleStorageAPITests.js test for Fission"
+  },
+  {
+   "bugid": "1699806",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement the zoom indicator spec"
+  },
+  {
+   "bugid": "1485529",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Perma [Tier2] browser/components/places/tests/browser/browser_editBookmark_tags_liveUpdate.js | Found expected number of tags in the tags selector - Got 0, expected 1"
+  },
+  {
+   "bugid": "1695700",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Proton Zoom controls styling needs more attention"
+  },
+  {
+   "bugid": "1698859",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Update casing of `appmenu-fxa-sync-and-save-data` to sentence case"
+  },
+  {
+   "bugid": "1699881",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Clean up Preferences strings (menu-preferences)"
+  },
+  {
+   "bugid": "1694277",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "When Proton is enabled, the Developer Tools button should show the \"More Tools\" panel"
+  },
+  {
+   "bugid": "1697659",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "FxA Sign In button has a chevron after signing out"
+  },
+  {
+   "bugid": "1698063",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "The \"Saved to Library!\" toast is displayed connected to the hamburger menu although the new Proton menu no longer has Library section"
+  },
+  {
+   "bugid": "1692669",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton] Replace icon group navigation on macOS page context menu with \"normal\" menu items"
+  },
+  {
+   "bugid": "1689156",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Slow tab switching on pages with long-running requestAnimationFrame handlers, like Slack"
+  },
+  {
+   "bugid": "1697618",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Update organization of Tab Manager submenu"
+  },
+  {
+   "bugid": "1695497",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "the new tooltips look odd on Linux"
+  },
+  {
+   "bugid": "1700023",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Make #detailsPane background transparent"
+  },
+  {
+   "bugid": "1692320",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Alpenglow combined with system dark theme makes it really hard to see which tab is selected"
+  },
+  {
+   "bugid": "1698404",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Refresh customize mode panels for Proton"
+  },
+  {
+   "bugid": "1699397",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Upgrade mach environment to glean-sdk 36.0.0"
+  },
+  {
+   "bugid": "1699808",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [tier 2] 0:27.61 python/mozbuild/mozbuild/test/test_rewrite_mozbuild.py::TestUtils::test_normalize_filename TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1699613",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow the build resources usage report to display arbitrary resource usage json files"
+  },
+  {
+   "bugid": "1699950",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Update to flake8 3.9.0"
+  },
+  {
+   "bugid": "1629420",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "ClientWebGLContext.cpp: the 'empty' method should be used to check for emptiness instead of 'size'"
+  },
+  {
+   "bugid": "1645419",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Start a Firefox Source Docs-thing for how to write static analysis"
+  },
+  {
+   "bugid": "1694046",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.TextInputDelegateTest.inputConnection_bug1650705[#input] | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms"
+  },
+  {
+   "bugid": "1685556",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Move app_tmpdir ($TMPDIR) to cache to allow users to free up space on their Android device"
+  },
+  {
+   "bugid": "1700036",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 83-87"
+  },
+  {
+   "bugid": "1699453",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Updatebot throws error when exclude field is missing in moz.yaml"
+  },
+  {
+   "bugid": "1700057",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Python dependency update funsize update generator busted build"
+  },
+  {
+   "bugid": "1483399",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add option in preferences to disable Background Update Agent"
+  },
+  {
+   "bugid": "1672431",
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Update AsyncShutdown blockers to allow IO until the end of the before profile change phase"
+  },
+  {
+   "bugid": "1700079",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Use lazy getters to avoid loading Log.jsm / TelemetryController.jsm earlier than necessary from CrashManager.jsm"
+  },
+  {
+   "bugid": "1690334",
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Update find in page styling to match proton"
+  },
+  {
+   "bugid": "1699210",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Perma [tier 2] 0:06.23 toolkit/components/featuregates/test/python/test_gen_feature_definitions.py::TestFeatureGateException::test_repr_no_file TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": "1616096",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/base/content/test/popupNotifications/browser_popupNotification_keyboard.js | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": "1693008",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Implement header with small icon for commondialog.xhtml"
+  },
+  {
+   "bugid": "1698779",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document how to use a local Glean SDK for FOG development"
+  },
+  {
+   "bugid": "1698780",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG: Remove check for empty data path"
+  },
+  {
+   "bugid": "1695266",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Create documentation for the Picture-in-Picture addon"
+  },
+  {
+   "bugid": "1699828",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Show web extension context menus above the navigation items on macOS"
+  },
+  {
+   "bugid": "1581859",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Rewrite WebNavigationContent.js in Fission-compatible C++"
+  },
+  {
+   "bugid": "1536094",
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Dynamic module import doesn't work in webextension content scripts"
+  },
+  {
+   "bugid": "1699367",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_popup_select_in_oopif.js | Select popup has the correct x origin - Got 935, expected 1205"
+  }
+ ],
+ "date": "2021-03-23",
+ "cset": "dc17edf47f00eccb4169879b8e8f90657bbc7341",
+ "buildid": "20210323094659",
+ "fixed": 91,
+ "total": 108,
+ "restricted": 1
+}

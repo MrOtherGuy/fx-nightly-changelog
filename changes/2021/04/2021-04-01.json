@@ -1,0 +1,484 @@
+{
+ "bugs": [
+  {
+   "bugid": "1701276",
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HTML5 video currentSrc is always an empty string"
+  },
+  {
+   "bugid": "1701992",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix `MediaQueue::GetElementsAfter()`"
+  },
+  {
+   "bugid": "1697084",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "TexImage(pboOffset) always uploads as if pboOffset:0."
+  },
+  {
+   "bugid": "1699721",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Assertion failure: bc->IsInProcess(), at /builds/worker/checkouts/gecko/dom/ipc/WindowGlobalChild.cpp:128"
+  },
+  {
+   "bugid": "1689683",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Ensure docshell/test/mochitest/test_bug590573.html works with SHIP-BFCache"
+  },
+  {
+   "bugid": "1686884",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent ccov TEST-UNEXPECTED-TIMEOUT | /x-frame-options/multiple.html | <something>"
+  },
+  {
+   "bugid": "1701327",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /content-security-policy/inheritance/history-iframe.sub.html | History navigation in iframe: \"about:blank\" document is navigated back from history cross-origin. - Test timed out"
+  },
+  {
+   "bugid": "1694238",
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent mozilla/tests/focus/focus-next-tick-before-iframe-loaded-different-site.html | Check result - assert_equals: Check verdict expected \"PASS\" but got \"FAIL missing onfocus\""
+  },
+  {
+   "bugid": "1695135",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "New window has no focus by window.open after window.close is called with Fission and xorigin"
+  },
+  {
+   "bugid": "1696908",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Enforce focused BrowsingContext ordering by action id"
+  },
+  {
+   "bugid": "1675484",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "iframe.onfocus invoked upon iframe.focus() for out-of-process iframes"
+  },
+  {
+   "bugid": "1700871",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "submitting a form targetting an iframe results in window changing from background to foreground"
+  },
+  {
+   "bugid": "1702244",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Windows Werror \"ProxyStream.cpp(288,47): error: lambda capture 'manifestPath' is not used\" bustage with --disable-accessibility"
+  },
+  {
+   "bugid": "1702080",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Make RUSTC_BOOTSTRAP usage conditional on 'neon' feature."
+  },
+  {
+   "bugid": "1696819",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Color mapping is off on some cases"
+  },
+  {
+   "bugid": "1701760",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Request sRGB images when drawing an image in Canvas"
+  },
+  {
+   "bugid": "1702308",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Enable WebRender on Qualcomm."
+  },
+  {
+   "bugid": "1702073",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Enable ICCv4 by default in the crate but disable it in Gecko."
+  },
+  {
+   "bugid": "1701758",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Avoid sRGB identity transforms"
+  },
+  {
+   "bugid": "1702086",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash in [@ SharedLibraryInfo::GetInfoForSelf]"
+  },
+  {
+   "bugid": "1701524",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "More markers could have inner window ids"
+  },
+  {
+   "bugid": "1701977",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[wayland] Enable Webrender on all compositors on Mesa Intel/AMD"
+  },
+  {
+   "bugid": "1702133",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::AutoSerializeWithMoz2D::AutoSerializeWithMoz2D]"
+  },
+  {
+   "bugid": "1698885",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update HarfBuzz to 2.8.0"
+  },
+  {
+   "bugid": "1702092",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Separate main filter shader functionality from brush logic"
+  },
+  {
+   "bugid": "1702331",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender Z flattening is sensitive to small transforms"
+  },
+  {
+   "bugid": "1702243",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WR captures can't be replayed because of native compositing"
+  },
+  {
+   "bugid": "1702238",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update gfx.feature.webrender telemetry probe to application lifetime"
+  },
+  {
+   "bugid": "1702318",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Talos jobs missing with SW-WR"
+  },
+  {
+   "bugid": "1700206",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "sw-wr: non-native radio buttons on wiki.mozilla.org have white vertical and horizontal seams"
+  },
+  {
+   "bugid": "1700232",
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: !params.descriptor.size.is_empty()) at gfx/wr/webrender/src/texture_cache.rs:1624"
+  },
+  {
+   "bugid": "1701904",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change GetOwnPropertyDescriptor to return Maybe<PropertyDescriptor>"
+  },
+  {
+   "bugid": "1701859",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: (asBits_ & js::gc::CellAlignMask) == 0 (GC pointer is not aligned. Is this memory corruption?), at js/Value.h:587 or various crashes with Debugger"
+  },
+  {
+   "bugid": "1701895",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Ensure stub fields are properly aligned"
+  },
+  {
+   "bugid": "1699056",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadNondeterministicException(), at jit/WarpOracle.cpp:188"
+  },
+  {
+   "bugid": "1700579",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Differential output with Math functions and baseline"
+  },
+  {
+   "bugid": "1700771",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Expose JIT inlining size threshold as a pref"
+  },
+  {
+   "bugid": "1350237",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "<dialog> should have display:block in UA stylesheet"
+  },
+  {
+   "bugid": "1698606",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Text for date format in input type=date is misplaced"
+  },
+  {
+   "bugid": "1701510",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "(compat) margin for media loaded into iframes should be removed"
+  },
+  {
+   "bugid": "1586236",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Experiment detecting low memory scenarios using memory resource notifications in Windows"
+  },
+  {
+   "bugid": "1609410",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "421 response code from `icloud.com` not handled well with a proxy"
+  },
+  {
+   "bugid": "1700551",
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_serviceWorkersWithStorageAccessGranted.js | uncaught exception - NS_NOINTERFACE: Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsISupports.QueryInterface] at observe@chrome:"
+  },
+  {
+   "bugid": "1691907",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Image downloader extensions fail to use cache with network partitioning enabled, re-download attempts more likely to result in failure"
+  },
+  {
+   "bugid": "1700051",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Reduce accessbility of `mozInlineSpellStatus`'s members"
+  },
+  {
+   "bugid": "1680751",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Change KeyPathType to an enum class"
+  },
+  {
+   "bugid": "1700710",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "With native context menus enabled, right-clicking a bookmark in a bookmarks panel (bookmarks toolbar folder popup or library panel) does not work"
+  },
+  {
+   "bugid": "1700371",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Extremely low contrast on stoplight buttons when Firefox is light and system is dark"
+  },
+  {
+   "bugid": "1702097",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Inconsistent native button drawing in windows with overridden appearance"
+  },
+  {
+   "bugid": "1702041",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "popuphiding / popuphidden events can be dispatched during ShowPopup if the same native context menu is reopened"
+  },
+  {
+   "bugid": "1700622",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make \"Customize toolbar\" page look good in dark mode"
+  },
+  {
+   "bugid": "1702100",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Inherit NSMenu appearance from NSApp instead of NSWindow"
+  },
+  {
+   "bugid": "1701085",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "With native context menus enabled you can't remove buttons from the toolbar"
+  },
+  {
+   "bugid": "1701182",
+   "status": "UNCONFIRMED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux, Wayland, Snap] Firefox 87: clicks do not work & more"
+  },
+  {
+   "bugid": "1701776",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Support reloaded event in accessiblity panel"
+  },
+  {
+   "bugid": "1702053",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Rename all targetList occurence from targetCommand tests"
+  },
+  {
+   "bugid": "1702061",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Review isReady flag and \"ready\" event used on devtools panel instances"
+  },
+  {
+   "bugid": "1699619",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Intermittent browser_aboutdebugging_devtoolstoolbox_reload.js | A promise chain failed to handle a rejection: Can not send request 'getWatcher' because front 'tabDescriptor' is already destroyed. - stack: generateRequestMethods/</frontProto[name]@*/FrontC"
+  },
+  {
+   "bugid": "1702241",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Title separator missing for hovered/selected remote tab results"
+  },
+  {
+   "bugid": "1695696",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Implement AllowedDomainsForApps policy to allow only corporate GSuite policy"
+  },
+  {
+   "bugid": "1696948",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Check if DisablePasswordReveal is affecting creating a new login"
+  },
+  {
+   "bugid": "1702118",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Move more strings for the FxA toolbar button to Fluent"
+  },
+  {
+   "bugid": "1700148",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton][Windows] add Windows native shadow back to context menu"
+  },
+  {
+   "bugid": "1692176",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Proton Menu Update Does Not Allow Easily Restoring Session"
+  },
+  {
+   "bugid": "1700527",
+   "status": "ASSIGNED",
+   "component": "Firefox:Private Browsing",
+   "summary": "[Mostly Linux] High frequency browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | Test timed out -"
+  },
+  {
+   "bugid": "1673269",
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Use more exact timestamps in screenshot filenames"
+  },
+  {
+   "bugid": "1701912",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "[Proton] [Light theme] The checkbox color from the \"Remember this decision\" string does not match Figma spec"
+  },
+  {
+   "bugid": "1701625",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "[Proton] The device name and \"Remember this decision\" strings are not aligned properly in the WebRTC Permission Panel"
+  },
+  {
+   "bugid": "1702257",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "CI Sentry \"mach-release\" task isn't prepending versions with `hg-rev-`"
+  },
+  {
+   "bugid": "1699448",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Allow any valid git reference in moz.yaml revision field"
+  },
+  {
+   "bugid": "1700396",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": "1697530",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Requests",
+   "summary": "Stop showing whatsnew for Firefox Proton release"
+  },
+  {
+   "bugid": "1516423",
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "Crash in mozilla::widget::TaskbarPreview::MainWindowHook. Tray related?"
+  },
+  {
+   "bugid": "1700870",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "MultiInstanceLock handles character encodings incorrectly"
+  },
+  {
+   "bugid": "1701847",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent FOG.TestCppTimingDistWorks | Expected: (data.sum) > ((uint64_t)(15 * NANOS_IN_MILLIS)), actual: 14972253 vs 15000000 @ /builds/worker/checkouts/gecko/toolkit/components/glean/gtest/TestFog.cpp:218"
+  },
+  {
+   "bugid": "1701949",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent toolkit/components/glean/xpcshell/test_GIFFT.js | test_gifft_timespan - [test_gifft_timespan : 238] 9961008 > 10000000"
+  },
+  {
+   "bugid": "1701648",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "2.11 - 4.26% compiler_metrics num_static_constructors (android-5-0-x86_64, linux64, osx-cross, windows2012-32, windows2012-64) regression on push 261f77f6af13bbbfd2df0b7e71098e061853d3c6 (Fri March 26 2021)"
+  },
+  {
+   "bugid": "1700184",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Bump builtin addon version to make reflect the small changes applied in Bug 1698158"
+  },
+  {
+   "bugid": "1685424",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Re-enable toolkit/components/extensions/test/mochitest/test_ext_contentscript_activeTab.html test for Fission"
+  }
+ ],
+ "date": "2021-04-01",
+ "cset": "6159d3fc46c67b3464a26c0b9e22c028b1b12556",
+ "buildid": "20210401094845",
+ "fixed": 66,
+ "total": 79,
+ "restricted": null
+}

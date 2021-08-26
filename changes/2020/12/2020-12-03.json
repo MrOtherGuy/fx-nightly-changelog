@@ -1,0 +1,532 @@
+{
+ "bugs": [
+  {
+   "bugid": "1672222",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libdav1d to 0.8.0 for Firefox 85"
+  },
+  {
+   "bugid": "1660336",
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add VA-API decode path to bundled ffvpx"
+  },
+  {
+   "bugid": "1680313",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Revert media.navigator.mediadatadecoder_vpx_enabled to false"
+  },
+  {
+   "bugid": "1680006",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to 5c2cf2677"
+  },
+  {
+   "bugid": "1679999",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /html/browsers/the-window-object/window-properties.https.html | Window unforgeable attribute: window - expected FAIL when Gecko 85 merges to Beta on 2020-12-14"
+  },
+  {
+   "bugid": "1657404",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Cleanup Gamepad-related code"
+  },
+  {
+   "bugid": "1670530",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash when navigating from about:* to view-source:http(s):* on debug build"
+  },
+  {
+   "bugid": "1605305",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Origin header field is not set to HTTP request in cases where it is required"
+  },
+  {
+   "bugid": "1679461",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "select() is no-op for disconnected text controls"
+  },
+  {
+   "bugid": "1679460",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Changing selectionDirection value does not fire select event when the range is collapsed"
+  },
+  {
+   "bugid": "1677263",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Make select events from input/textarea.select() asynchronous"
+  },
+  {
+   "bugid": "1678553",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Stop using `UINT32_MAX`, `INT32_MAX`, `LONG_MAX`, and `-1` if they mean \"no composition\" in IME handling"
+  },
+  {
+   "bugid": "1678349",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Additional blur and focus event get fired while calling iframe.focus() on OOP iframe"
+  },
+  {
+   "bugid": "1619094",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "dom/webauthn/libudev-sys is third party code"
+  },
+  {
+   "bugid": "1678015",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make alerts fully accessible to VoiceOver"
+  },
+  {
+   "bugid": "1680408",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Redo control flow in qcms_modular_transform_create."
+  },
+  {
+   "bugid": "1680401",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Fix up some of the unstructured control flow."
+  },
+  {
+   "bugid": "1680119",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Cleanup qcms_modular_transform_release."
+  },
+  {
+   "bugid": "1680257",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Use default initialization for qcms_modular_transform."
+  },
+  {
+   "bugid": "1679763",
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Explicitly instantiate often-used profiler templates"
+  },
+  {
+   "bugid": "1680234",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Accelerate font fallback by avoiding freetype face creation where possible"
+  },
+  {
+   "bugid": "1677094",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Assert we don't lose WebRender if we force it on via MOZ_WEBRENDER"
+  },
+  {
+   "bugid": "1680118",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update to mozangle 0.3.2."
+  },
+  {
+   "bugid": "1680161",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender on gen6 on win7"
+  },
+  {
+   "bugid": "1679482",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "RenderDXGITextureHost::MapPlane() is called even when RenderCompositorD3D11SWGL uses external compositing for video rendering(sw-wr)"
+  },
+  {
+   "bugid": "1680403",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Drop now unneeded blocking of WebRender on gen6."
+  },
+  {
+   "bugid": "1680063",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Performance on gen6 win7 is bad"
+  },
+  {
+   "bugid": "1659949",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Several links from the \u201cAbout Firefox\u201d panel are sometimes not working when it is opened for the second/third/nth time"
+  },
+  {
+   "bugid": "1677045",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS_MORE_DETERMINISTIC in favor of a runtime option"
+  },
+  {
+   "bugid": "1679611",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Reproducible WriteStructuredClone crash with MOZ_RELEASE_ASSERT(!Done())"
+  },
+  {
+   "bugid": "1519100",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement the Top-level await proposal"
+  },
+  {
+   "bugid": "1680241",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "script-source-extent.js test is sensitive to GC timing"
+  },
+  {
+   "bugid": "1673553",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove IonBuilder and TI"
+  },
+  {
+   "bugid": "1679736",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Visual Studio 2017 fails to compile SM headers because of StructGCPolicy static assert"
+  },
+  {
+   "bugid": "1680159",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "OOM running hazard analysis on local desktop"
+  },
+  {
+   "bugid": "1679986",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add assertions to check that we don't leak arenas"
+  },
+  {
+   "bugid": "1678226",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Crash in [@ _pthread_join]"
+  },
+  {
+   "bugid": "1673391",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Constant fold SIMD binary operations"
+  },
+  {
+   "bugid": "1679825",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma Tier 2 /css/css-break/block-001-wm-vlr-print.html | Testing http://web-platform.test:8000/css/css-break/block-001-wm-vlr-print.html == http://web-platform.test:8000/css/css-break/block-001-wm-vlr-ref.html"
+  },
+  {
+   "bugid": "1679884",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Intermittent /css/css-grid/grid-items/grid-auto-margin-and-replaced-item-001.html | Testing http://web-platform.test:8000/css/css-grid/grid-items/grid-auto-margin-and-replaced-item-001.html == grid-items/grid-auto-margin-and-replaced-item-001-ref"
+  },
+  {
+   "bugid": "1679913",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /css/css-text-decor/text-underline-offset-overline-vertical.html | Testing css/css-text-decor/text-underline-offset-overline-vertical.html == css/css-text-decor/reference/text-underline-offset-overline-vertical-ref.html"
+  },
+  {
+   "bugid": "1667743",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Clean up unused esni code"
+  },
+  {
+   "bugid": "1607446",
+   "status": "RESOLVED",
+   "component": "Core:Networking: JAR",
+   "summary": "ThreadSanitizer: data race [@ nsJARChannel::Suspend] vs. [@ nsJARChannel::Resume]"
+  },
+  {
+   "bugid": "1679706",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Add platform support to check if page range exceeds the current number of pages"
+  },
+  {
+   "bugid": "1677049",
+   "status": "REOPENED",
+   "component": "Core:Sanitizers",
+   "summary": "[mochitest-bc-tsan] Enable mochitest-bc tests as Tier1 on TSan"
+  },
+  {
+   "bugid": "1678762",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "crlite processes new stashes in O(n^2), whereas it can be O(n)"
+  },
+  {
+   "bugid": "1680166",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Sandbox crashes when building with rustc >= 1.48"
+  },
+  {
+   "bugid": "1680031",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Abort operations for given directory lock ids"
+  },
+  {
+   "bugid": "1626278",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "[wfh] Session statistics disappear from about:webrtc when exiting video-call with close tab"
+  },
+  {
+   "bugid": "1679208",
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "Improve non-native theme with fractional scaling."
+  },
+  {
+   "bugid": "1645528",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Connect nsRefreshDrivers in content processes with a widget-local vsync source"
+  },
+  {
+   "bugid": "1119956",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsCancelableRunnable an abstract class"
+  },
+  {
+   "bugid": "1680040",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove failure check for CheckAndCreateBloatView() and rename it."
+  },
+  {
+   "bugid": "1660841",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Allow querying file creation time in nsIFile"
+  },
+  {
+   "bugid": "1662868",
+   "status": "NEW",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Bring the Rust language binding into the Glean repositories"
+  },
+  {
+   "bugid": "1678385",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Enable legacy listener for targets that watcher actor doesn't support"
+  },
+  {
+   "bugid": "1673897",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remote debugging fails on requests returning arrays"
+  },
+  {
+   "bugid": "1680000",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove backward compatibility code in GridFront"
+  },
+  {
+   "bugid": "1680182",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:OpenH264",
+   "summary": "Symbol dumping silently broken on mac openh264 builds"
+  },
+  {
+   "bugid": "1680178",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:OpenH264",
+   "summary": "Use PATH instead of -B"
+  },
+  {
+   "bugid": "1680185",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:OpenH264",
+   "summary": "Add openh264 builds for Apple silicon mac"
+  },
+  {
+   "bugid": "1678662",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Hiding \"Other Bookmarks\" folder only happens per window leading to unsynced bookmarks toolbar"
+  },
+  {
+   "bugid": "1678921",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "\"No bookmarks\" message on empty bookmarks toolbar cannot be used as a drop target for new bookmarks, making bookmarks creation there error-prone"
+  },
+  {
+   "bugid": "1680171",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "error: attribute should be applied to a function or static"
+  },
+  {
+   "bugid": "1678726",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Cleanup webm/mp4 files that were used in the multistage about:welcome privacy screen experiment"
+  },
+  {
+   "bugid": "1679136",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Firefox Alpenglow] Separators in the Bookmarks toolbar are almost invisible"
+  },
+  {
+   "bugid": "1661153",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove _ensure_zstd()"
+  },
+  {
+   "bugid": "1680152",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Bump macos deployment target to 10.12"
+  },
+  {
+   "bugid": "1680126",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Clean up orphaned if-constexpr patches to clang-tidy"
+  },
+  {
+   "bugid": "1680057",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Windows build bustage with LTO and new pass manager enabled"
+  },
+  {
+   "bugid": "1680183",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Make dump-syms binary compatible with older libstdc++"
+  },
+  {
+   "bugid": "1680172",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.48"
+  },
+  {
+   "bugid": "1680101",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Temporarily force disabling Fission until Remote Agent is compatible"
+  },
+  {
+   "bugid": "1676785",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Address Book",
+   "summary": "Japanese input into input fields semi-broken - IME composition string does not display in Address Book Dialog"
+  },
+  {
+   "bugid": "1647931",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Switching to dark or light theme in the Add-On Manager is broken - Uncaught (in promise) TypeError: addon.userPermissions is null"
+  },
+  {
+   "bugid": "1664144",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "sideloaded updates in the profile directory may not startup correctly"
+  },
+  {
+   "bugid": "1666383",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Missing MOZ_CRASH reason in crash reports from Android"
+  },
+  {
+   "bugid": "1671654",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add JavaException as a crash annotation"
+  },
+  {
+   "bugid": "1676345",
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Win10 .exe file download from WeTransfer picked up and saved with .jpg extension"
+  },
+  {
+   "bugid": "1660843",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Add file creation time to the FileInfo struct returned by IOUtils::stat"
+  },
+  {
+   "bugid": "1673019",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Support setting permissions in IOUtils"
+  },
+  {
+   "bugid": "1678415",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Support setting permissions when we create a directory with IOUtils"
+  },
+  {
+   "bugid": "1679873",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Do not pass already_AddRefed<nsIFile> to IOUtils::RunOnBackgroundThread"
+  },
+  {
+   "bugid": "1678471",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "IOUtils: Add equivalent of OS.File.exists"
+  },
+  {
+   "bugid": "1680158",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Expose focused BrowsingContext to script."
+  },
+  {
+   "bugid": "1674106",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Print modal turns inaccessible when toggling between paper size using static custom values"
+  },
+  {
+   "bugid": "1678068",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Android",
+   "summary": "Most extension xpcshell tests (e.g. xpcshell-common.ini) are skipped on Android x86-64"
+  }
+ ],
+ "date": "2020-12-03",
+ "cset": "d4b21131a094a0819b8856fbf4165cfb32d671c6",
+ "buildid": "20201203094726",
+ "fixed": 67,
+ "total": 87,
+ "restricted": null
+}

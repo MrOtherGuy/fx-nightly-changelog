@@ -1,0 +1,526 @@
+{
+ "bugs": [
+  {
+   "bugid": "1609400",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "ThreadSanitizer: data race [@ get] vs. [@ assign_assuming_AddRef] ([@ CurrentDriver] vs. [@ mozilla::MediaTrackGraphImpl::SetCurrentDriver])"
+  },
+  {
+   "bugid": "1322095",
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "replace nsAutoPtr with UniquePtr in media code base"
+  },
+  {
+   "bugid": "1611021",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add content testing API to simulate media control key events"
+  },
+  {
+   "bugid": "1611187",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma /css/CSS2/backgrounds/background-bg-pos-206.xht | Testing http://web-platform.test:8000/css/CSS2/backgrounds/background-bg-pos-206.xht == http://web-platform.test:8000/css/CSS2/backgrounds/background-bg-pos-204-ref.xht"
+  },
+  {
+   "bugid": "1564882",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent css-valuesandunits/unit-vh-vw-overflow-auto.html == css-valuesandunits/unit-vh-vw-overflow-scroll.html | image comparison, max difference: 1, number of differing pixels: 4"
+  },
+  {
+   "bugid": "1609737",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Forbid accessing the length and percentage parts of a LengthPercentage separately."
+  },
+  {
+   "bugid": "1611044",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Convert stroke-linejoin #defines to an enum class."
+  },
+  {
+   "bugid": "1610383",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Assertion failure: error == 0x0505, at dom/canvas/WebGLBuffer.cpp:133"
+  },
+  {
+   "bugid": "1611125",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "ClientWebGLContext::IsXRCompatible always returns false"
+  },
+  {
+   "bugid": "1609908",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Canvas resize aspect ratio wrong in nightly with webrender"
+  },
+  {
+   "bugid": "1575425",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Support [AllowShared]"
+  },
+  {
+   "bugid": "1597857",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move execCommand(\"cut\"/\"copy\") to new user activation model"
+  },
+  {
+   "bugid": "1610972",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable unimplemented DOM and CSS use counters in all release channels"
+  },
+  {
+   "bugid": "1604152",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/tests/mochitest/general/test_resizeby.html | ending width is 550 - got 500, expected 550"
+  },
+  {
+   "bugid": "1610750",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Remove some nsIEditor methods which are used by neither m-c, c-c nor BlueGriffon"
+  },
+  {
+   "bugid": "1610819",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Remove support for creating some non-standard event types"
+  },
+  {
+   "bugid": "1606043",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Autofill of hidden (display: none) forms gives wrong Form#checkValidity until the next tick"
+  },
+  {
+   "bugid": "1610572",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Disable Feature Policy for FF73"
+  },
+  {
+   "bugid": "1611264",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent TEST-UNEXPECTED-OK | /workers/modules/shared-worker-import.any.html | expected ERROR"
+  },
+  {
+   "bugid": "1609711",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Compute gradient stop positions in css pixels."
+  },
+  {
+   "bugid": "1604800",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::AdjustedPattern::operator mozilla::gfx::Pattern*]"
+  },
+  {
+   "bugid": "1596127",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add CI jobs for Rust tests of \"wgpu\""
+  },
+  {
+   "bugid": "1606771",
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Performance on https://old.reddit.com/r/skyrim/ is really bad with WebRender because of border-image-repeat: round fallback"
+  },
+  {
+   "bugid": "1611176",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Expensive moves of RenderTask into the tasks vector"
+  },
+  {
+   "bugid": "1602643",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make profiler screenshots and frame recording work in the WR OS compositor configuration on Windows"
+  },
+  {
+   "bugid": "1605283",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve support for invalidation debugging and testing"
+  },
+  {
+   "bugid": "1608741",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix reftest failures in DirectComposition mode with virtual surfaces."
+  },
+  {
+   "bugid": "1608156",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "border-image-repeat: repeat is incorrect"
+  },
+  {
+   "bugid": "1607103",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Allow forkserver on FreeBSD"
+  },
+  {
+   "bugid": "1610039",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Create a Tainted<> class and macros to obtain validated raw values"
+  },
+  {
+   "bugid": "1611127",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Optimized surfaces may be invalidated/released, but the frame remains in surface cache"
+  },
+  {
+   "bugid": "1607854",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer allocation of JSScript to just before JSScript::fullyInitFromEmitter"
+  },
+  {
+   "bugid": "1608760",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ js::ErrorObject::init]"
+  },
+  {
+   "bugid": "1606084",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ValueToSource should be useful without toSource methods"
+  },
+  {
+   "bugid": "1610802",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add test code for SparseBitmap"
+  },
+  {
+   "bugid": "1603330",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "WeakRef.deref() makes the target being kept in tbpl mode even ClearKeptObjects() is called"
+  },
+  {
+   "bugid": "1609402",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "jit-test/tests/gc/bug-1505622.js fails on arm64-sim on a sufficiently busy system"
+  },
+  {
+   "bugid": "1604829",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Mark count calculation is wrong in GCMarker::mark"
+  },
+  {
+   "bugid": "1610535",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Update Cranelift to 98633eeb0d249efae23ee69ec03dc35b7d9bec17"
+  },
+  {
+   "bugid": "1611118",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix invalid selectors in forms.css"
+  },
+  {
+   "bugid": "1607045",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "FF crashes on Print Preview when in landscape (archival example URL given); affects other tabs too"
+  },
+  {
+   "bugid": "1609869",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Make about:networking an HTML page"
+  },
+  {
+   "bugid": "1526731",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Saving a PNG image incorrectly uses WebP file extension"
+  },
+  {
+   "bugid": "1545196",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Crash in [@ mozilla::SerializedStructuredCloneBuffer::SerializedStructuredCloneBuffer] due to OOM copying indexedDB::ObjectStoreAddPutParams"
+  },
+  {
+   "bugid": "1543154",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Assertion failure: mGlobal, at /builds/worker/workspace/build/src/dom/indexedDB/IDBFactory.cpp:571"
+  },
+  {
+   "bugid": "1609815",
+   "status": "NEW",
+   "component": "Core:Web Replay",
+   "summary": "Remove Web Replay"
+  },
+  {
+   "bugid": "1611237",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Throw the right SyntaxErrors from PeerConnection.jsm"
+  },
+  {
+   "bugid": "1608505",
+   "status": "NEW",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "whereby.com and appr.tc broken, no audio/video, and browser responsiveness extremely poor"
+  },
+  {
+   "bugid": "1611197",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove dead code from XPCInlines.h"
+  },
+  {
+   "bugid": "1607575",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove all support for and usage of the XUL ordinal attribute"
+  },
+  {
+   "bugid": "1609356",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Enable the Application panel on Nightly"
+  },
+  {
+   "bugid": "1610588",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "AddRDMTask doesn't await tests before altering prefs"
+  },
+  {
+   "bugid": "1609807",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Cookies: Samesite=none should indicate none in UI"
+  },
+  {
+   "bugid": "1604126",
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "getWalker of InspectorFront should wait until the target document was finished to load"
+  },
+  {
+   "bugid": "1605161",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The muxer shouldn't include search shortcuts/keyword offers in the suggestions bucket"
+  },
+  {
+   "bugid": "1590331",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "\"What's New\" message date background should be --arrowpanel-dimmed instead of --toolbar-bgcolor"
+  },
+  {
+   "bugid": "1603549",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Create action to force triggering of the WNPanel from ASRouter"
+  },
+  {
+   "bugid": "1608952",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Ensure spoc based UI is translated"
+  },
+  {
+   "bugid": "1606265",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Swap long press on new tab button to bring up containers menu for right click, and add left click option in preferences"
+  },
+  {
+   "bugid": "1587544",
+   "status": "NEW",
+   "component": "Firefox:Screenshots",
+   "summary": "Migrate screenshots to fluent"
+  },
+  {
+   "bugid": "1575873",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add a test for checking that the change of default private search engine gets notified when reloading engines"
+  },
+  {
+   "bugid": "1611065",
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "extension-storage fails checking if the fxa session is active"
+  },
+  {
+   "bugid": "1611006",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Convert mozbuild/test/action/* to Python 3"
+  },
+  {
+   "bugid": "1611231",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Update in-tree sccache to pick up -frewrite-includes fix"
+  },
+  {
+   "bugid": "1611201",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Split Node toolchains by version (initially, 8 and 10)"
+  },
+  {
+   "bugid": "1610944",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "configure/test_toolchain_configure.py and configure/test_toolchain_helpers.py support Python 3"
+  },
+  {
+   "bugid": "1611298",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "|./mach addtest| fails with TypeError"
+  },
+  {
+   "bugid": "1611088",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Upgrade to autopep8 1.5"
+  },
+  {
+   "bugid": "1608535",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "`./mach lint -l eslint *` intermittently fails to pick up error"
+  },
+  {
+   "bugid": "1609987",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Port bug 1568006 - Allow pulling taskgraph code from Thunderbird tree"
+  },
+  {
+   "bugid": "1611023",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Make taskgraph python3 flake8 clean."
+  },
+  {
+   "bugid": "1608989",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Testing",
+   "summary": "Intermittent INFRA-ERROR: ADBProcessError Failed to install wrench-debug.apk"
+  },
+  {
+   "bugid": "1595834",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Make GeckoProcessManager interface aware of e10s-multi"
+  },
+  {
+   "bugid": "1610338",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Popup blocking is broken"
+  },
+  {
+   "bugid": "1608588",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Restrict notification permission prompts (just like on desktop)"
+  },
+  {
+   "bugid": "1610353",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Extend the Login Storage API to support reporting used logins"
+  },
+  {
+   "bugid": "1605275",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Add a tool to make testing scriptworker changes against mozilla-central easier."
+  },
+  {
+   "bugid": "1587845",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Page",
+   "summary": "Add \"clip\" argument to Page.captureScreenshot"
+  },
+  {
+   "bugid": "1610390",
+   "status": "NEW",
+   "component": "Thunderbird:Security",
+   "summary": "Add Thunderbird specific code to allow master password unlocking at startup time"
+  },
+  {
+   "bugid": "1609649",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Strip the TelemetryClientId and TelemetryServerURL annotations from the crash submissions"
+  },
+  {
+   "bugid": "1595915",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Context Menu: have suggest secure password option at the top of the main list"
+  },
+  {
+   "bugid": "1414737",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "crash in mozilla::dom::quota::QuotaObject::DisableQuotaCheck"
+  },
+  {
+   "bugid": "1607586",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Send all at-shutdown pings in a batch"
+  },
+  {
+   "bugid": "1596169",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Run stopTrackingMouseOverVideos inside of PictureInPictureChild's willDestroy"
+  },
+  {
+   "bugid": "1606716",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "search-textbox focusable area should include area outside the inner input"
+  },
+  {
+   "bugid": "1611037",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_menus_events_after_context_destroy.js | Uncaught exception - [Exception... \"Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIDOMWindowUtils.sendMouseEvent]\"  nsresult:"
+  }
+ ],
+ "date": "2020-01-24",
+ "cset": "a170089a8a033b5a2d8bba365656965aebe3a444",
+ "buildid": "20200124093037",
+ "fixed": 66,
+ "total": 86,
+ "restricted": 1
+}

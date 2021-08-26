@@ -1,0 +1,550 @@
+{
+ "bugs": [
+  {
+   "bugid": "1617033",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Stop listening to media control keys for some media element to prevent intercepting key from other background music apps"
+  },
+  {
+   "bugid": "1620034",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Convert vector-effect #defines to an enum class"
+  },
+  {
+   "bugid": "1612891",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Assertion failure: !Failed(), at /builds/worker/workspace/build/src/obj-firefox/dist/include/mozilla/ErrorResult.h:545"
+  },
+  {
+   "bugid": "1619821",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Turn on dom.animations-api.getAnimations.enabled in release channels"
+  },
+  {
+   "bugid": "1619112",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Convert ThrowTypeError/ThrowRangeError to the new JS_ReportErrorNumberUTF8Array API"
+  },
+  {
+   "bugid": "1618011",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Give binding error messages a consistent prefix"
+  },
+  {
+   "bugid": "1604299",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Sort out existing references to XULDocument in our code"
+  },
+  {
+   "bugid": "1620135",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Clean up trivial constructor and destructor under libeditor"
+  },
+  {
+   "bugid": "1620010",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Clean up BlobImplType string propagation"
+  },
+  {
+   "bugid": "1620292",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in XPCJSRuntime.cpp"
+  },
+  {
+   "bugid": "1619762",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Refactor  GetURI usage for LocationBase.cpp"
+  },
+  {
+   "bugid": "1619617",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Annotate `Selection::RemoveRangeAndUnselectFramesAndNotifyListeners` with `MOZ_CAN_RUN_SCRIPT`"
+  },
+  {
+   "bugid": "1407276",
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Avoid full ResetInterception when we skip FetchEvent dispatch due to no fetch handler being registered"
+  },
+  {
+   "bugid": "1620510",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "If previously focused element is removed after FocusManager queues new focus event but before event is processed, new focus is lost"
+  },
+  {
+   "bugid": "1620549",
+   "status": "UNCONFIRMED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Profiler overflows stack when default thread stack size is < 160 KiB"
+  },
+  {
+   "bugid": "1580176",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Add MOZ_LOG to JSWindowActor messaging"
+  },
+  {
+   "bugid": "1616030",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "firefox on big endian crashes tabs since 72 - unimplemented SwizzleRow in gfx::2d"
+  },
+  {
+   "bugid": "1619475",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Partial conversion of js/src test suites to Python 3"
+  },
+  {
+   "bugid": "1620197",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Enable multiple results from WebAssembly functions"
+  },
+  {
+   "bugid": "1620284",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Bump Cranelift to 135a48ca7e9a45d7d31911753e602e6de8b14e2a"
+  },
+  {
+   "bugid": "1609057",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Add support for stack results in Ion wasm compiler"
+  },
+  {
+   "bugid": "1566427",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Compiler gating is still not good"
+  },
+  {
+   "bugid": "1620359",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Viewport units not correctly updated if a following font-face load doesn't cause a restyle."
+  },
+  {
+   "bugid": "1620239",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "TypeError: can't access property \"externalContentPolicyType\", channel.loadInfo is null"
+  },
+  {
+   "bugid": "1620300",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "TRR: Turn on network.trr.fetch_off_main_thread"
+  },
+  {
+   "bugid": "1620514",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove null checks for loadinfo within nsHttpChannel"
+  },
+  {
+   "bugid": "1613514",
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Perma [tier2] gfx/layers/apz/test/mochitest/browser_test_group_fission.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1620415",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Remove GMPProvider.jsm/GMPInstallManager.jsm from Fenix (and all other Geckoview uses)"
+  },
+  {
+   "bugid": "1620322",
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Refactor AntiTrackingCommon.cpp"
+  },
+  {
+   "bugid": "1614053",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 75 to use NSS 3.51"
+  },
+  {
+   "bugid": "1617170",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Clean up FileInfo/FileManager"
+  },
+  {
+   "bugid": "1620437",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "OpenH264 compiling is broken on android in automation"
+  },
+  {
+   "bugid": "1616290",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Inconsistent naming of the \"Exit fullscreen\" touch bar button"
+  },
+  {
+   "bugid": "1619530",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] ffmpeg/VAAPI video playback fails - missing zwp_linux_dmabuf on AMD rx 550"
+  },
+  {
+   "bugid": "1620623",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Ignore memory-pressure if we've begun to shut down"
+  },
+  {
+   "bugid": "1448992",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Get rid of nsXPCComponentsBase"
+  },
+  {
+   "bugid": "1599806",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Refactor accessibility actor to no use setupInParent."
+  },
+  {
+   "bugid": "1605757",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Decouple accessibility front from the client code as much as possible."
+  },
+  {
+   "bugid": "1620222",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent [TV] devtools/client/webconsole/test/browser/browser_console_eager_eval.js | Test timed out -"
+  },
+  {
+   "bugid": "1609942",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "When eager evaluation is enabled display the autocomplete popup at the top of the input"
+  },
+  {
+   "bugid": "1620557",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | devtools/client/webconsole/test/browser/browser_console_eager_eval.js | Test timed out  when Gecko 75 merges to Beta on 2020-03-09"
+  },
+  {
+   "bugid": "1619993",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Watchpoint properties are restricted"
+  },
+  {
+   "bugid": "1605166",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Selecting non paused thread should switch context and update selector"
+  },
+  {
+   "bugid": "1601533",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Indicate that function references in tooltips can be clicked to jump"
+  },
+  {
+   "bugid": "1118592",
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent browser_tableWidget_mouse_interaction.js | Test timed out"
+  },
+  {
+   "bugid": "1620046",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Tab list no longer updates when using remote debugging"
+  },
+  {
+   "bugid": "1616847",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "HTMLTooltip with xulWrapper can't be moved if not hidden first"
+  },
+  {
+   "bugid": "1424914",
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Intermittent devtools/client/styleeditor/test/browser_styleeditor_bug_1405342_serviceworker_iframes.js | Test timed out"
+  },
+  {
+   "bugid": "1619590",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Warning: Failed prop type: InspectAction: prop type `title` is invalid; it must be a function,"
+  },
+  {
+   "bugid": "1610475",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move URLBarSetURI to UrlbarInput"
+  },
+  {
+   "bugid": "1618662",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Typing 'about:config' has a large jank during autocompletion"
+  },
+  {
+   "bugid": "1618867",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Standardize /urlbar/tests names"
+  },
+  {
+   "bugid": "1592976",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Favicons of redirecting pages may never be expired"
+  },
+  {
+   "bugid": "1620258",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "No telemetry ping is displayed in the \"Browser Console\" if the \"Start Browsing\" button from the simplified \"about:welcome\" page is clicked"
+  },
+  {
+   "bugid": "1620325",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add browser telemetry sessionId  to telemetry pings from about:welcome, about:home and about:newtab"
+  },
+  {
+   "bugid": "1620029",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Simplified about:welcome updates for do no harm experiment in 75"
+  },
+  {
+   "bugid": "1607894",
+   "status": "REOPENED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Intermittent normandy/test/browser/browser_RecipeRunner.js | recipes/all recipes with matching should have their signature verified - [] deepEqual [[{\"name\":\"match\",\"action\":\"matchAction\",\"filter_expression\":\"true\"},{\"signature\":\"abc\"},\""
+  },
+  {
+   "bugid": "1604365",
+   "status": "ASSIGNED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Remove old preference-experiment action"
+  },
+  {
+   "bugid": "1604367",
+   "status": "ASSIGNED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Remove old addon-study action"
+  },
+  {
+   "bugid": "1618408",
+   "status": "ASSIGNED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Remove action alias machinery"
+  },
+  {
+   "bugid": "1605164",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Investigate stop using the Search Engine shortName/identifier for telemetry and maybe removing shortName"
+  },
+  {
+   "bugid": "1616617",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add a distribution id field to the modern configuration"
+  },
+  {
+   "bugid": "1620227",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search service can install extensions after shutdown has started which makes things sad"
+  },
+  {
+   "bugid": "1615901",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Origin header should not be set on OpenSearch POST"
+  },
+  {
+   "bugid": "1620101",
+   "status": "REOPENED",
+   "component": "Firefox:Session Restore",
+   "summary": "Session restore to virtual desktop does not work on KDE Plasma"
+  },
+  {
+   "bugid": "1619651",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Create New Login\" button cannot be focused using the keyboard navigation"
+  },
+  {
+   "bugid": "1620177",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix differences in dependentlibs.list between Windows native and cross builds"
+  },
+  {
+   "bugid": "1620513",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Upgrade psutil to 5.7.0"
+  },
+  {
+   "bugid": "1620449",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Convert gen_cert_header.py to py3"
+  },
+  {
+   "bugid": "1611566",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "taskcluster - support python3 in taskcluster/taskgraph/try_option_syntax.py"
+  },
+  {
+   "bugid": "1619846",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Intermittent OS X 10.14 QuantumRender opt wrench [taskcluster:error] Aborting task... | Task aborted - max run time exceeded"
+  },
+  {
+   "bugid": "1620140",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Convert toolkit/components/telemetry/* to py3"
+  },
+  {
+   "bugid": "1619788",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Ensure files generated by `./mach configure` don't have CRLF line endings, even under Python 3"
+  },
+  {
+   "bugid": "1609278",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "File Android failures in Geckoview"
+  },
+  {
+   "bugid": "1620633",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Code quality docs table have inconsistent sizes"
+  },
+  {
+   "bugid": "1613985",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make constructors/destructors/assignment operators use =default"
+  },
+  {
+   "bugid": "1620635",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "static analysis, linting and coding style - add link to meta bugs"
+  },
+  {
+   "bugid": "1535530",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "It's still possible to fool the MOZ_CAN_RUN_SCRIPT analysis to accept non-stack RefPtrs"
+  },
+  {
+   "bugid": "1620610",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "drop coalescing/superseding of tasks"
+  },
+  {
+   "bugid": "1527313",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable sourcedir caches for Windows generic-worker builds"
+  },
+  {
+   "bugid": "1620165",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch win32, win64, win64-aarch64 opt and debug builds to cross-compiles"
+  },
+  {
+   "bugid": "1560048",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Expose internal web extension ID"
+  },
+  {
+   "bugid": "1599139",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Allow/Disallow extensions to run in private browsing"
+  },
+  {
+   "bugid": "1620364",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "CloseTab is not received when using deprecated TabDelegate"
+  },
+  {
+   "bugid": "1612097",
+   "status": "NEW",
+   "component": "GeckoView:Extensions",
+   "summary": "Provide API to cancel WebExtensionController.install"
+  },
+  {
+   "bugid": "1620105",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView startup causes SafeBrowsing to re-initialize multiple times because it flips pref after SafeBrowsing.init(), taking an extra 130ms"
+  },
+  {
+   "bugid": "1598068",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "SIGSEGV; avc denied open for /dev/ashmem when targeting SDK version 29+"
+  },
+  {
+   "bugid": "1616400",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Every process on Android decompressees omni.ja twice, second decompression takes 78ms on Moto G5"
+  },
+  {
+   "bugid": "1620137",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Small Input in Password Required Pop-up"
+  },
+  {
+   "bugid": "1620482",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Don't treat non-user-triggered autofill into login forms as an edit for capture"
+  }
+ ],
+ "date": "2020-03-07",
+ "cset": "fddaf6472c50b10ed9671f2effe2159964f8cfe5",
+ "buildid": "20200307093221",
+ "fixed": 70,
+ "total": 90,
+ "restricted": null
+}

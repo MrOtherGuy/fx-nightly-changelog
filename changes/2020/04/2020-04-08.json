@@ -1,0 +1,748 @@
+{
+ "bugs": [
+  {
+   "bugid": "1626319",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Log AudioCallbackTracing per thread id"
+  },
+  {
+   "bugid": "1627905",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Add uses of WavDumper to the AudioCallbackDriver"
+  },
+  {
+   "bugid": "1619543",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[Wayland][VA-API] libva symbol lookup errors"
+  },
+  {
+   "bugid": "1627636",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Clean up audioipc dependencies"
+  },
+  {
+   "bugid": "1580565",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent PROCESS-CRASH | Main app process exited normally | application crashed [@ mozilla::dom::BrowsingContext::CreateFromIPC(mozilla::dom::BrowsingContext::IPCInitializer&&, mozilla::dom::BrowsingContextGroup*, mozilla::dom::ContentParent*)]"
+  },
+  {
+   "bugid": "1625609",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Pref on privileged about content process by default on all channels"
+  },
+  {
+   "bugid": "1586761",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Check crossOriginIsolated for all nsRFPService::ReduceTimePrecision* callers"
+  },
+  {
+   "bugid": "1350875",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/html/test/test_fullscreen-api.html | [scrollbar] Should not have vertical scrollbar when [object HTMLDivElement] is in fullscreen - got 500, expected 1600"
+  },
+  {
+   "bugid": "1627723",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move requestPointerLock to new user activation model"
+  },
+  {
+   "bugid": "1627753",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Using signed long for index attribute in Gamepad"
+  },
+  {
+   "bugid": "1424284",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make inputmode available on contenteditable content"
+  },
+  {
+   "bugid": "1496578",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "convert  nsDefaultURIFixup to js and rename it to make it clear it's the only one"
+  },
+  {
+   "bugid": "1616353",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "BrowsingContext should support being used as `nsILoadContext`."
+  },
+  {
+   "bugid": "1620594",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Completely remove TabGroup."
+  },
+  {
+   "bugid": "1626504",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "BrowsingContext / SyncedContext comments refer to non-existent files / methods"
+  },
+  {
+   "bugid": "1262842",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "[CSP] Blocks the use of style attributes inside SVG without generating console errors"
+  },
+  {
+   "bugid": "1627235",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Investigate CSP for images loaded as iframe"
+  },
+  {
+   "bugid": "1613609",
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "system-principal restrictions should check for allowed ui resources rather than blacklisting based on uri scheme"
+  },
+  {
+   "bugid": "1618759",
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[TSF][IMM] Update inputmode support type per current spec on Windows"
+  },
+  {
+   "bugid": "1615732",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "`mousedown` events for Control + left-mouse-button report different `button` value than other browsers on Mac"
+  },
+  {
+   "bugid": "1626143",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "SharedWorker error should not propagate to window"
+  },
+  {
+   "bugid": "1627994",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Fix 'expection' typos"
+  },
+  {
+   "bugid": "1625431",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[Wayland] Enable VAAPI decoding only when hw compositing is enabled"
+  },
+  {
+   "bugid": "1602133",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Implement WebGPU swap chains and presentation"
+  },
+  {
+   "bugid": "1627413",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Software WebRender lacks support for supplying  LOD bias when sampling 2DArrays (reftests/filters/svg-filter-composite.yaml)"
+  },
+  {
+   "bugid": "1627368",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Software WebRender lacks support for `LINEAR_MIPMAP_LINEAR` (reftests/image/downscale.yaml)"
+  },
+  {
+   "bugid": "1621382",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL does not currently support perspective-correct rasterization"
+  },
+  {
+   "bugid": "1622360",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove document splitting code"
+  },
+  {
+   "bugid": "1627355",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Software WebRender needs TEXTURE_RECTANGLE support (reftests/image/texture-rect-ref.yaml)"
+  },
+  {
+   "bugid": "1621674",
+   "status": "ASSIGNED",
+   "component": "Core:Internationalization",
+   "summary": "Unify Localization.jsm, mozILocalization and Localization IDL"
+  },
+  {
+   "bugid": "1627356",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove MatchOnly regexps"
+  },
+  {
+   "bugid": "1627975",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "More ImmutableFlags cleanup in JS frontend"
+  },
+  {
+   "bugid": "1627955",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use fold expressions for JSContext::checkImpl"
+  },
+  {
+   "bugid": "1625823",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement RegExp literals"
+  },
+  {
+   "bugid": "1627902",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace ToNumeric intrinsic with JSOp::ToNumeric"
+  },
+  {
+   "bugid": "1627216",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "WarpBuilder: add some logging"
+  },
+  {
+   "bugid": "1627618",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove no longer used binary arithmetic/binary instructions with no specialisations"
+  },
+  {
+   "bugid": "1627893",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use fold expressions for MixPolicy, ArgSeq, CacheIRSpewer, and CacheIRArgLength"
+  },
+  {
+   "bugid": "1626297",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Consider adding IC support for JSOp::Pos"
+  },
+  {
+   "bugid": "1627255",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Rename the --disable-ion configure option to --disable-jit"
+  },
+  {
+   "bugid": "1627248",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Use placement new to forward cells to work around undefined behaviour"
+  },
+  {
+   "bugid": "1627683",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent GECKO(3580) | SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/js/src/gc/Cell.h:736:19 in unsafeSetPtr"
+  },
+  {
+   "bugid": "1627666",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Remove some unneeded GC telemetry"
+  },
+  {
+   "bugid": "1622757",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Parallel unmarking is slower on 64 bit Linux"
+  },
+  {
+   "bugid": "1626967",
+   "status": "REOPENED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Cranelift: preparatory refactorings for new-isel integration"
+  },
+  {
+   "bugid": "1625927",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Enable multi-value on nightly"
+  },
+  {
+   "bugid": "1627835",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Emit build system dependencies for cranelift build.rs"
+  },
+  {
+   "bugid": "1627568",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make css-grid-with-xul-item-1.xhtml test more resilient to failures"
+  },
+  {
+   "bugid": "1628043",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Some const-correctness improvements in layout code"
+  },
+  {
+   "bugid": "1624684",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "ApplySkipSide can be easier to use if it returns *this"
+  },
+  {
+   "bugid": "1626665",
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Declare some methods around `nsTextFrame` `const` or `static`"
+  },
+  {
+   "bugid": "1579824",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[Android] selected attribute on HTML <option> doesn't work when <select> size is >1 (listbox select)"
+  },
+  {
+   "bugid": "1627785",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Improve CSS style for forms.css"
+  },
+  {
+   "bugid": "1595428",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Firefox doesn't treat \"FULLWIDTH COMMA\" as a line-break opportunity (unlike Chrome)"
+  },
+  {
+   "bugid": "1550037",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Shared memory blocks used by the font list should be impossible for content processes to map with write access"
+  },
+  {
+   "bugid": "1586774",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "network ID: split NetlinkService::CalculateIDForFamily() into multiple methods"
+  },
+  {
+   "bugid": "1582666",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable more ESLint rules for netwerk/"
+  },
+  {
+   "bugid": "1623038",
+   "status": "UNCONFIRMED",
+   "component": "Core:Networking",
+   "summary": "Replace URIParams with nsIURI in PHttpChannel.ipdl"
+  },
+  {
+   "bugid": "1595611",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Consider caching ConnectivityManager in GeckoAppShell.java"
+  },
+  {
+   "bugid": "1584797",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused aProxyService parameter from applyFilter method"
+  },
+  {
+   "bugid": "1625213",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Refactor DNS code to remove OnLookupByTypeComplete"
+  },
+  {
+   "bugid": "1624607",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Do not use topLevelStoragePrincipal in the content process"
+  },
+  {
+   "bugid": "1624812",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Don't need to pass window while notifying content blocking events"
+  },
+  {
+   "bugid": "1611526",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Support WebXR bounded reference spaces"
+  },
+  {
+   "bugid": "1626812",
+   "status": "NEW",
+   "component": "Core:WebVR",
+   "summary": "Dispatch XRSessionEvent \"end\" when exiting  XRSession."
+  },
+  {
+   "bugid": "1611310",
+   "status": "NEW",
+   "component": "Core:WebVR",
+   "summary": "Implement XRInputSource"
+  },
+  {
+   "bugid": "1614499",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Implement XRWebGLLayer"
+  },
+  {
+   "bugid": "1616835",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Implement eye orientation component of rigid transform (WebXR)"
+  },
+  {
+   "bugid": "1617023",
+   "status": "NEW",
+   "component": "Core:WebVR",
+   "summary": "Implement Gamepad for XRInputSource"
+  },
+  {
+   "bugid": "1626053",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Implement XR local to local-floor adjustments"
+  },
+  {
+   "bugid": "1627141",
+   "status": "NEW",
+   "component": "Core:WebVR",
+   "summary": "Implement XRInputSourcesChangeEvent"
+  },
+  {
+   "bugid": "1610613",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make always-on-top windows persist across workspaces"
+  },
+  {
+   "bugid": "1627391",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make xpcom/threads buildable outside of a unified build environment"
+  },
+  {
+   "bugid": "1627390",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make xpcom/io buildable outside of a unified build environment"
+  },
+  {
+   "bugid": "1627393",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make xpcom/tests buildable outside of a unified build environment"
+  },
+  {
+   "bugid": "1612364",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Intermittent JSM shared global leaks when Fission is enabled"
+  },
+  {
+   "bugid": "1627687",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Make console complicated reload test more reliable"
+  },
+  {
+   "bugid": "1627903",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "[RTL] The context selector's dropdown button is located on the wrong side"
+  },
+  {
+   "bugid": "1605331",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Watch expressions should be evaluated in the right context"
+  },
+  {
+   "bugid": "1625583",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-blackbox-all.js | Test timed out -"
+  },
+  {
+   "bugid": "1626992",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Continue Improvement of Flow Coverage"
+  },
+  {
+   "bugid": "1607559",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Slow performance of inline source maps"
+  },
+  {
+   "bugid": "1627108",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Worker threads are accidentally selected at startup"
+  },
+  {
+   "bugid": "1627933",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Fix preference name to disable new perf panel for the Browser Toolbox"
+  },
+  {
+   "bugid": "1553795",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Fix preset input in filter tooltip"
+  },
+  {
+   "bugid": "1464876",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Dynamically load reducers in the inspector"
+  },
+  {
+   "bugid": "1623033",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Introduce DAMP test for the response panel"
+  },
+  {
+   "bugid": "1627138",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Intermittent devtools/client/aboutdebugging/test/browser/browser_aboutdebugging_tab_favicons.js | A promise chain failed to handle a rejection: can't access property \"send\", this.transport is null"
+  },
+  {
+   "bugid": "1627888",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Create about:debugging test helper to update the selected tab"
+  },
+  {
+   "bugid": "1622098",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Intermittent devtools/client/aboutdebugging/test/browser/browser_aboutdebugging_devtoolstoolbox_focus.js | A promise chain failed ... : can't access property \"send\", this.conn is null - stack: writeError@resource://devtools/shared/protocol/Actor.js:98:5"
+  },
+  {
+   "bugid": "1606924",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove now unused WebExtension APIs"
+  },
+  {
+   "bugid": "1622243",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "\"Bookmark pages\" context menu item from Library - History doesn't work"
+  },
+  {
+   "bugid": "1609557",
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Migrate placesContextMenu.inc.xhtml to Fluent"
+  },
+  {
+   "bugid": "1603974",
+   "status": "ASSIGNED",
+   "component": "Firefox:Launcher Process",
+   "summary": "dgapi on the blocklist is still loaded and causes crash"
+  },
+  {
+   "bugid": "1615685",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "CFR Trigger: When a password is updated via the doorhanger"
+  },
+  {
+   "bugid": "1621032",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a mechanism for reading about:home from the HTTP cache if an entry exists at startup"
+  },
+  {
+   "bugid": "1627317",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "If stories are disabled, collections can still show up"
+  },
+  {
+   "bugid": "1571479",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Jank and high CPU usage for tens of seconds, after opening a bunch of new tabs (with browser.tabs.remote.separatePrivilegedContentProcess = true)"
+  },
+  {
+   "bugid": "1624612",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Validation button is not displayed by default in certificate management window"
+  },
+  {
+   "bugid": "1602096",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protection Report] Add/Update 'How it works' link to Firefox Monitor Card"
+  },
+  {
+   "bugid": "1621892",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search Engine settings are lost when a WebExtension based search engine is updated"
+  },
+  {
+   "bugid": "1622978",
+   "status": "NEW",
+   "component": "Firefox:Search",
+   "summary": "Prevent loading distribution engines from filesystem when using modern config"
+  },
+  {
+   "bugid": "1627477",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Convert all relevant uses of left/right to logical properties in browser/"
+  },
+  {
+   "bugid": "1625480",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Convert remaining notifications strings from browser.dtd to fluent"
+  },
+  {
+   "bugid": "1626098",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap fails on Ubuntu 20.04"
+  },
+  {
+   "bugid": "1624670",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrap fails with 32-core / 64-thread processor"
+  },
+  {
+   "bugid": "1326486",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Provide PGO builds of clang"
+  },
+  {
+   "bugid": "1627873",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Stalls during a mach command may not show the last bits of output before stall"
+  },
+  {
+   "bugid": "1627344",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Remove leading and trailing .* from mach try fuzzy.py's TARGET_TASK_FILTERS"
+  },
+  {
+   "bugid": "1621480",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoSession.HistoryDelegate.onHistoryStateChange is not fired unless GeckoSession.ProgressDelegate.onSessionStateChange is set"
+  },
+  {
+   "bugid": "1627782",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable process priority manager in GeckoView"
+  },
+  {
+   "bugid": "1627872",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 74"
+  },
+  {
+   "bugid": "1627780",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "ValueError: Failed to convert value CRASHED of type unicode for field status to type Status"
+  },
+  {
+   "bugid": "1625181",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add-on manager sometimes blocks startup on blocklist checks, leading to slow startups"
+  },
+  {
+   "bugid": "1623310",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "About addons - right click on list item from context menu on addon settings shows context menu"
+  },
+  {
+   "bugid": "1532077",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "label for reconfiguring extension keyboard shortcut for browser action needs improved text, sounds like extension wouldn't do anything if it doesn't get called"
+  },
+  {
+   "bugid": "1627496",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in toolkit/crashreporter"
+  },
+  {
+   "bugid": "1627444",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update bundled protobuf lib to 3.11.4"
+  },
+  {
+   "bugid": "1618236",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Make CollectPerformanceInfo in PerformanceUtils not use TabGroup."
+  },
+  {
+   "bugid": "1621116",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Cache the last application version from compatibility.ini"
+  },
+  {
+   "bugid": "1594230",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use actorCreated callback to listen to 'pageshow' event in https://searchfox.org/mozilla-central/source/browser/actors/FormValidationChild.jsm"
+  },
+  {
+   "bugid": "1530408",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "filterResponseData from the WebRequest API returns script bytecode cache data"
+  },
+  {
+   "bugid": "1623208",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Intermittent tp5o_webext | application crashed [@ mozilla::ipc::MessageChannel::Send(IPC::Message*)]"
+  }
+ ],
+ "date": "2020-04-08",
+ "cset": "6663d3dc883b6ad0d0dfa9346f9ceabf2b2c7967",
+ "buildid": "20200408033650",
+ "fixed": 101,
+ "total": 123,
+ "restricted": 1
+}

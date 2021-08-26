@@ -1,0 +1,634 @@
+{
+ "bugs": [
+  {
+   "bugid": "1628792",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update exoplayer to a more modern version"
+  },
+  {
+   "bugid": "1643230",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS parser isn't reporting first error after good declaration"
+  },
+  {
+   "bugid": "1642261",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "add telemetry for -moz-appearance usage"
+  },
+  {
+   "bugid": "1643635",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "The browser crashes when document.fonts.values() is used as a WeakMap key"
+  },
+  {
+   "bugid": "1643457",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Support ChromeOnly properties on remote proxies."
+  },
+  {
+   "bugid": "1643493",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dead ParentShowInfo::fullScreenAllowed."
+  },
+  {
+   "bugid": "1642270",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EditorBase::MaybeHasMutationEventListeners()` always return `true` on debug builds"
+  },
+  {
+   "bugid": "1642588",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "contenteditable broken for triple-click-selection, if display:inline"
+  },
+  {
+   "bugid": "1643333",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Serializers",
+   "summary": "Factor code relevant for serializing nodes out from `nsDocumentEncoder`"
+  },
+  {
+   "bugid": "1634363",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Focus events fire in both parent and child frames when raising windows with fission enabled."
+  },
+  {
+   "bugid": "1151648",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "The Accessibility Tree doesn't reflect the accessible names that are properly set within individual SVG graphics using the Title or Desc elements."
+  },
+  {
+   "bugid": "1641932",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Transfer Mac subrole mappings into RoleMap.h"
+  },
+  {
+   "bugid": "1641751",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve texture cache eviction policies"
+  },
+  {
+   "bugid": "1642839",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement WebRenderLayerManager::SendInvalidRegion()"
+  },
+  {
+   "bugid": "1643706",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make WR tree printing more android-friendly"
+  },
+  {
+   "bugid": "1642549",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Incorrect rendering for scaled mix-blend pictures with non-zero content offset"
+  },
+  {
+   "bugid": "1642423",
+   "status": "ASSIGNED",
+   "component": "Core:Internationalization",
+   "summary": "document.l10n.formatValues should accept strings as well as L10nKeys"
+  },
+  {
+   "bugid": "1642893",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS shell not building without NSPR anymore"
+  },
+  {
+   "bugid": "1643044",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use bumpalo 3.4.0"
+  },
+  {
+   "bugid": "1599634",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle AsmJS Parsing without allocating on the GC"
+  },
+  {
+   "bugid": "1643171",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add memory reporter for regexp Isolate"
+  },
+  {
+   "bugid": "1643664",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Include delazification in profiler JS_Parsing marker category"
+  },
+  {
+   "bugid": "1643632",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use BaseScopeData"
+  },
+  {
+   "bugid": "1643700",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix v8::Address / js::jit::Address confusion in unified builds"
+  },
+  {
+   "bugid": "1641961",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "jstest harness: shell-option() works in jstests.list but not in |reftest| lines, for wonderful reason"
+  },
+  {
+   "bugid": "1642716",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change scope BindingIter to be abstract on the type of atom"
+  },
+  {
+   "bugid": "1636942",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add an IC for JSOp::ToId"
+  },
+  {
+   "bugid": "1643304",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: fix try-catch support"
+  },
+  {
+   "bugid": "1643350",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "MComputeThis should return an object instead of Value"
+  },
+  {
+   "bugid": "1643135",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile GuardSpecificSymbol"
+  },
+  {
+   "bugid": "1642680",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Share LRandom lowering code"
+  },
+  {
+   "bugid": "1643486",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Transpile LoadDenseElementHole"
+  },
+  {
+   "bugid": "1643519",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.atan2 in CacheIR and Warp"
+  },
+  {
+   "bugid": "1642154",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Compilation error: incomplete type \u2018JSLinearString\u2019 used in nested name specifier"
+  },
+  {
+   "bugid": "1637332",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Implement wasm SIMD for x86 Ion + Baseline"
+  },
+  {
+   "bugid": "1643173",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Unify GetDisplayFlagsForFlexItem and GetDisplayFlagsForGridItem"
+  },
+  {
+   "bugid": "1641496",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket process] Investigate disabled xpcshell tests"
+  },
+  {
+   "bugid": "1643239",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Refactor LoadInfo to support loading non-TYPE_DOCUMENT/TYPE_SUBDOCUMENT in DLL"
+  },
+  {
+   "bugid": "1643042",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make test_relative_update.html pass with apz.allow_zooming=true"
+  },
+  {
+   "bugid": "1643212",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Items behind the Fenix dynamic toolbar cannot be clicked even when made visible by scrolling"
+  },
+  {
+   "bugid": "1619169",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Planet mozilla content gets visibly clipped when dynamic toolbar is hidden on WebRender"
+  },
+  {
+   "bugid": "1643461",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Pinch to Zoom on built-in PDF viewer does not allow zooming out"
+  },
+  {
+   "bugid": "1627708",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add desktop zoom usage telemetry"
+  },
+  {
+   "bugid": "1638027",
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "Intermittent leakcheck | tab 248 bytes leaked (Mutex, PerformanceStorageWorker, WorkerRef)"
+  },
+  {
+   "bugid": "1643818",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Remove kPaperSizeNativeData and kPaperSizeDefined"
+  },
+  {
+   "bugid": "1639816",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Printing local pages via Print Menu fails with In Printing:Print:Done handler, got unexpected rv 2147746065"
+  },
+  {
+   "bugid": "1630434",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "intermediate certificate preloading healer"
+  },
+  {
+   "bugid": "1642687",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 79 to use NSS 3.54"
+  },
+  {
+   "bugid": "1643229",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Disable TLS 1.0 and 1.1 by default in Firefox 78"
+  },
+  {
+   "bugid": "1615191",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add remoteTimestamp to RTCRemoteOutboundRtpStreamStats"
+  },
+  {
+   "bugid": "1641600",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Re-enable RTX with pref that disables it for broken sites"
+  },
+  {
+   "bugid": "1643474",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ raise | abort | __libc_message | __fortify_fail | __stack_chk_fail | nsLookAndFeel::EnsureInit]"
+  },
+  {
+   "bugid": "1641033",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Wayland vsync implementation has unnecessary threading"
+  },
+  {
+   "bugid": "1643509",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ mozilla::dom::PContentParent::SendUpdateMediaControlKeysEvent]"
+  },
+  {
+   "bugid": "1643747",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Setting RUST_LOG=crate=debug on android will emit debug logs for all crates"
+  },
+  {
+   "bugid": "1641271",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Fix the icons for dark mode in the Service Workers in the Application panel"
+  },
+  {
+   "bugid": "1639165",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Errors from content page are logged twice in the Multiprocess Browser Toolbox"
+  },
+  {
+   "bugid": "1643423",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma browser/base/content/test/static/browser_all_files_referenced.js | file only referenced from unreferenced files: resource://gre/modules/jsdebugger.jsm referenced when Gecko 70 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1581708",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Inline preview for exceptions"
+  },
+  {
+   "bugid": "1643180",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Style editor and debugger should always get generated url/line/column for view-source requests"
+  },
+  {
+   "bugid": "1643540",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Finding the type of a Debugger.Source loaded from a <script> is too hard"
+  },
+  {
+   "bugid": "1643629",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Update preferences listed in DevTools \"FIS\" icon-button"
+  },
+  {
+   "bugid": "1643270",
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Arrays/Objects in the Response panel are not expandable"
+  },
+  {
+   "bugid": "1642907",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "AboutDebugging should not modify the form of webextension descriptors"
+  },
+  {
+   "bugid": "1643259",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unhide browser.fixup.dns_first_for_single_words"
+  },
+  {
+   "bugid": "1643475",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable form history / historical searches on 78 release and put them behind the same prefs as remote suggestions"
+  },
+  {
+   "bugid": "1643673",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Crash in [@ nsMIMEInfoWin::LaunchWithFile]"
+  },
+  {
+   "bugid": "1643200",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "klsihk64.dll still causes crash because BLOCK_WIN8_ONLY is not working"
+  },
+  {
+   "bugid": "1637365",
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement pre-importing topsites for multistage onboarding flow"
+  },
+  {
+   "bugid": "1643737",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "WNPanel margins are uneven"
+  },
+  {
+   "bugid": "1633517",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Refinements to DevTools message editing feature"
+  },
+  {
+   "bugid": "1642106",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "\u201cManage Breaches\u201d button in Protections Dashboard has layout issues"
+  },
+  {
+   "bugid": "1643003",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[RTL] The background gradient color of the `.monitor-blocks` is facing the wrong way"
+  },
+  {
+   "bugid": "1640117",
+   "status": "ASSIGNED",
+   "component": "Firefox:Protections UI",
+   "summary": "Request to access cookie: Incorrect message in console when *Content Blocking* is disabled but *Enhanced Tracking Protection* is enabled"
+  },
+  {
+   "bugid": "1643468",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Use a different pref for search engine configuration experiments"
+  },
+  {
+   "bugid": "1627546",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update UrlFormatter to call getRegion"
+  },
+  {
+   "bugid": "1616899",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "add suggestions support to built-in engines where missing"
+  },
+  {
+   "bugid": "1624733",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove addParam from nsISearchEngine"
+  },
+  {
+   "bugid": "1632303",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Replace search service logging with console.createInstance"
+  },
+  {
+   "bugid": "1642300",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove redundant entries from nsISearchService.idl"
+  },
+  {
+   "bugid": "1640709",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "TRR auto-selection should be rollback-able"
+  },
+  {
+   "bugid": "1630327",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "List view in about:certificate not readable on dark theme"
+  },
+  {
+   "bugid": "1642800",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Minimize button is larger when the camera icon is not displayed"
+  },
+  {
+   "bugid": "1641546",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Global Sharing Overlay's position can't be moved on linux and windows"
+  },
+  {
+   "bugid": "1629116",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Identify any additions to sync telemetry we want for rust-webext-storage (and future rust sync engines)"
+  },
+  {
+   "bugid": "1643804",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Errors notifying extension storage listeners can hang the sync"
+  },
+  {
+   "bugid": "1629421",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "ClientWebGLContext.cpp: redundant string initialization"
+  },
+  {
+   "bugid": "1641131",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Stop running shippable and other unnecessary builds with |mach try auto|"
+  },
+  {
+   "bugid": "1640278",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Check run-on-projects values"
+  },
+  {
+   "bugid": "1632429",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "mach try should use Python 3"
+  },
+  {
+   "bugid": "1619766",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Support runtime.openOptionsPage on GeckoView"
+  },
+  {
+   "bugid": "1643458",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove numUnbindFailures from ServiceAllocator.InstanceInfo.updateBindings"
+  },
+  {
+   "bugid": "1642557",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 76"
+  },
+  {
+   "bugid": "1643661",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Fix up shell quoting in scripts when calling 'hg' commands"
+  },
+  {
+   "bugid": "1632710",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Sync vendored puppeteer to v3"
+  },
+  {
+   "bugid": "1637048",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Killing a content process makes the parent process unresponsive, making everything worse"
+  },
+  {
+   "bugid": "1632080",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Stop sending orphaned crash reports"
+  },
+  {
+   "bugid": "1642058",
+   "status": "NEW",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add expiration date in card list view under Preferences"
+  },
+  {
+   "bugid": "1619320",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[Form Autofill] Trying to save Credit Card details without having a Saved Address beforehand might lead to user confusion"
+  },
+  {
+   "bugid": "1569653",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Add button to invalidate startup cache in about:support"
+  },
+  {
+   "bugid": "1643522",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Select dropdowns no longer get zoomed based on full page zoom"
+  },
+  {
+   "bugid": "1641616",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Move PopupNotifications.jsm to a component other than \"Password Manager\""
+  },
+  {
+   "bugid": "1642644",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG needs to watch for changes to the telemetry upload pref"
+  },
+  {
+   "bugid": "1643395",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add test capability for FOG to direct pings to local servers"
+  }
+ ],
+ "date": "2020-06-06",
+ "cset": "6237102f005d965efebc464ce3f93dec32b10268",
+ "buildid": "20200606094603",
+ "fixed": 89,
+ "total": 104,
+ "restricted": 3
+}

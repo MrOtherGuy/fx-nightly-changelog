@@ -1,0 +1,460 @@
+{
+ "bugs": [
+  {
+   "bugid": "1687538",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove activation behavior and :link/:visited/:any-link matching for <link>s"
+  },
+  {
+   "bugid": "1672330",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider moving pointer lock code to its own class"
+  },
+  {
+   "bugid": "1688925",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move DNS prefetch state out of Link into its own super-class."
+  },
+  {
+   "bugid": "1679856",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix and enable browser/components/sessionstore/test/browser_crashedTabs.js for Fission"
+  },
+  {
+   "bugid": "1688715",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Rename BrowsingContext::CheckOnlyOwningProcessCanSet to LegacyCheckOnlyOwningProcessCanSet"
+  },
+  {
+   "bugid": "1683593",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "When accessing ipv6 page address, document.cookie is empty in firefox 84.0"
+  },
+  {
+   "bugid": "1688832",
+   "status": "NEW",
+   "component": "Core:DOM: Serializers",
+   "summary": "Fortify code around `AccessibleCaretManager::UpdateCarets`"
+  },
+  {
+   "bugid": "1648435",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/test_mouse_enterleave_iframe.html | Test timed out."
+  },
+  {
+   "bugid": "1509710",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "\"pointermove\" events should not trigger when dragging a scrollbar handle"
+  },
+  {
+   "bugid": "1688490",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ -[mozMenuItemAccessible moxIgnoreWithParent:]]"
+  },
+  {
+   "bugid": "1688046",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent tools/profiler/tests/xpcshell/test_addProfilerMarker.js | xpcshell return code: 0 | - startTime should be the expected time - 132.594699 == 132.594"
+  },
+  {
+   "bugid": "1629381",
+   "status": "UNCONFIRMED",
+   "component": "Core:Graphics",
+   "summary": "Calling ctx.drawImage throws NS_ERROR_NOT_AVAILABLE when drawing a video on Windows 10"
+  },
+  {
+   "bugid": "1689202",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add a deprecation note to Advanced Layers."
+  },
+  {
+   "bugid": "1689245",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Clean up RenderCompositorSWGL transparent clearing"
+  },
+  {
+   "bugid": "1689186",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to early beta users"
+  },
+  {
+   "bugid": "1688921",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Gpu cache requires GL_EXT_color_buffer_float or GL_EXT_copy_image"
+  },
+  {
+   "bugid": "1689189",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to users with large screens"
+  },
+  {
+   "bugid": "1689112",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Drop the low powered NVIDIA block in nightly and early beta."
+  },
+  {
+   "bugid": "1675590",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve radial gradient performance in swgl"
+  },
+  {
+   "bugid": "1688368",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Crash in [@ chardetng::EncodingDetector::feed ] when charset is manually set to Unicode on files over 1024 bytes."
+  },
+  {
+   "bugid": "1689024",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Cleanup abortIfSyntaxParser calls for js class fields"
+  },
+  {
+   "bugid": "1627111",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support relazifying async/generator functions"
+  },
+  {
+   "bugid": "1687936",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Arm64 simulator misexecutes uminv, umaxv, sminv, smaxv"
+  },
+  {
+   "bugid": "1687441",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support large array buffers in the JITs"
+  },
+  {
+   "bugid": "1687975",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Re-enable the LPowI optimisation"
+  },
+  {
+   "bugid": "1687949",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "ARM64 simulator has no oob handling for SIMD load/store instructions"
+  },
+  {
+   "bugid": "1685588",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Pass through some command-line parameters from `mach analyze`"
+  },
+  {
+   "bugid": "1689039",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: false (chunksToDecommit().append(chunk)), at gc/Nursery.cpp:152"
+  },
+  {
+   "bugid": "1688910",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Replace direct use of barrier tracer with calls to barrier functions"
+  },
+  {
+   "bugid": "1685586",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] GC function explanations in hazards are sometimes truncated"
+  },
+  {
+   "bugid": "1688262",
+   "status": "VERIFIED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Assertion failure: count > 0 (Should have been a MOVE operation), at jit/x86-shared/CodeGenerator-x86-shared.cpp:3134"
+  },
+  {
+   "bugid": "1686652",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Generalize the SIMD wormhole"
+  },
+  {
+   "bugid": "1687928",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "move call to MaybeCreateDisplayPortInFirstScrollFrameEncountered before DecideScrollableLayer in PaintFrame"
+  },
+  {
+   "bugid": "1687618",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove browser.cache.cache_isolation"
+  },
+  {
+   "bugid": "1620713",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Remove Fission skip-if assetions for offline/appcache/appcache-iframe.https.html.ini WPT"
+  },
+  {
+   "bugid": "1684041",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add a test server to test ODoH"
+  },
+  {
+   "bugid": "1688941",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Clean up null checking around PerformanceResourceTiming::mTimingData"
+  },
+  {
+   "bugid": "1688079",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Fission telemetry probe: Active content process highwater mark"
+  },
+  {
+   "bugid": "1688082",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Fission telemetry probe: Content process launch frequency"
+  },
+  {
+   "bugid": "1688078",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Fission telemetry probe: Periodic snapshot of total number of active content processes"
+  },
+  {
+   "bugid": "1686894",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/browser/browser_contentBlockingTelemetry.js | Uncaught exception - undefined - timed out after 50 tries."
+  },
+  {
+   "bugid": "1687701",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove IsCertificateDistrustImminent"
+  },
+  {
+   "bugid": "1663816",
+   "status": "RESOLVED",
+   "component": "Core:Spelling checker",
+   "summary": "Intermittent editor/spellchecker/tests/test_bug1205983.html | some misspelled words expected: heute ist ein guter - got \"German\", expected \"heuteisteinguter\""
+  },
+  {
+   "bugid": "1687878",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "layout/xul/test/test_bug703150.xhtml fails with the non-native theme enabled"
+  },
+  {
+   "bugid": "1689044",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "non-native theme disabled buttons are wider than non-disabled ones"
+  },
+  {
+   "bugid": "1686751",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Tooltip Popups Opening on Wrong Screen"
+  },
+  {
+   "bugid": "1688975",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Remove poll() from DataOffer::GetData()"
+  },
+  {
+   "bugid": "1683075",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Rendering issue on pip window top corners on resize using a certain configuration"
+  },
+  {
+   "bugid": "1687177",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "<input type=\"date/time\"> focused state is overlapping with the input borders, with non-native theming"
+  },
+  {
+   "bugid": "1686831",
+   "status": "NEW",
+   "component": "Core:mozglue",
+   "summary": "nsPrintfCString uses locale-adapted decimal separators when stringifying floats"
+  },
+  {
+   "bugid": "1438979",
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/mochitest/browser_webconsole_network_messages_expand.js | Test timed out -"
+  },
+  {
+   "bugid": "1599917",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Referenced properties are no longer previewed separately"
+  },
+  {
+   "bugid": "1686723",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Refactor tests using WebConsoleFront.startListeners[\"NetworkActivity\"] to use resourceWatcher.watchResources([NETWORK_EVENT])"
+  },
+  {
+   "bugid": "1637920",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use the ResourceWatcher API to fetch SSE data"
+  },
+  {
+   "bugid": "1687923",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Add navigation tests for the storage panel"
+  },
+  {
+   "bugid": "1590880",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_tabMatchesInAwesomebar.js | https://example.com/browser/browser/components/urlbar/tests/browser/dummy_page.html#tabmatch7 was found in autocomplete, was not  expected - false == true-JS frame..."
+  },
+  {
+   "bugid": "1552600",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Local policies.json should augment system policy (not override)"
+  },
+  {
+   "bugid": "1688700",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Add more items to the Proton AppMenu panel"
+  },
+  {
+   "bugid": "1664847",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Log the search access point for ad clicks and searches with ads"
+  },
+  {
+   "bugid": "1680649",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent toolkit/components/search/tests/xpcshell/test_settings_persist.js | xpcshell return code: 0 | Configuration now includes Special but we should remember its removal - false == true"
+  },
+  {
+   "bugid": "1684469",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Basic Auth prompter open in one tab prevents other Basic Auth tabs from loading"
+  },
+  {
+   "bugid": "1688049",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Import Password from CSV dialog has wrong focus"
+  },
+  {
+   "bugid": "1689058",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Rename clang-cl toolchains to clang"
+  },
+  {
+   "bugid": "1689052",
+   "status": "UNCONFIRMED",
+   "component": "Invalid Bugs:General",
+   "summary": "Only get a docshell when the document is visible"
+  },
+  {
+   "bugid": "1682069",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add test ensuring policies engine works for background tasks"
+  },
+  {
+   "bugid": "1667276",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Experiment with a Gecko \"backgroundtask\" mode to allow running UpdateService.jsm at the command line"
+  },
+  {
+   "bugid": "1679440",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add test ensuring crash reporter works for background tasks"
+  },
+  {
+   "bugid": "1689062",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Store Windows third party symbol files without CFI on symbol server"
+  },
+  {
+   "bugid": "1510797",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update about:Webrtc to use Fluent"
+  },
+  {
+   "bugid": "1685801",
+   "status": "ASSIGNED",
+   "component": "Toolkit:General",
+   "summary": "Move most things out of BrowserUtils.jsm"
+  },
+  {
+   "bugid": "1686989",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Inconsistent focus state when opening multiple SubDialogs via SubDialogManager"
+  },
+  {
+   "bugid": "1649611",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "DownloadIntegration.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1683279",
+   "status": "REOPENED",
+   "component": "Toolkit:Printing",
+   "summary": "Intermittent toolkit/components/printing/tests/browser_print_in_container.js | Uncaught exception - Wait for dialog - timed out after 50 tries."
+  },
+  {
+   "bugid": "1686295",
+   "status": "REOPENED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent toolkit/components/telemetry/tests/unit/test_TelemetrySession.js | sessionTimeExcludingAndIncludingSuspend - [sessionTimeExcludingAndIncludingSuspend : 649] The uptime with suspend must always been greater or equal to the uptime"
+  },
+  {
+   "bugid": "1688970",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Update the in-content radio buttons to match the spec better"
+  }
+ ],
+ "date": "2021-01-28",
+ "cset": "37557864a6845bb8068904e44e8a7dd16746d211",
+ "buildid": "20210128094617",
+ "fixed": 59,
+ "total": 75,
+ "restricted": 3
+}

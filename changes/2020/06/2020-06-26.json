@@ -1,0 +1,766 @@
+{
+ "bugs": [
+  {
+   "bugid": "1648541",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Unified build conflict between SPSCQueue.h and task.h"
+  },
+  {
+   "bugid": "1648159",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Avoid unnecessary redirection of promises."
+  },
+  {
+   "bugid": "1513745",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "Intermittent dom/media/test/test_mediarecorder_record_addtracked_stream.html | Error executing test: Error: Audio check failed audioReady<@http://mochi.test:8888/tests/dom/media/test/test_mediarecorder_record_addtracked_stream.html:127:30 ..."
+  },
+  {
+   "bugid": "1645416",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Investigate the struct layout of  `MPSCQueue<T>::Message` on Windows"
+  },
+  {
+   "bugid": "1648095",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Crash in [@ mozilla::SharedStyleSheetCache::StartDeferredLoadsForLoader]"
+  },
+  {
+   "bugid": "1646007",
+   "status": "VERIFIED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "[Wayland] [DMABUF] WebGL Aquarium regressed from 60 fps to 30 fps"
+  },
+  {
+   "bugid": "1626362",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "DocumentLoadListener should not perform process switching for HTTP 204 requests or canceled requests"
+  },
+  {
+   "bugid": "1633379",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Consider in-process JSProcessActors"
+  },
+  {
+   "bugid": "1648270",
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Get rid of content parent Opener field"
+  },
+  {
+   "bugid": "1645046",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable HTML5 dialog in Nightly"
+  },
+  {
+   "bugid": "1648200",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma OSX debug /html/cross-origin-opener-policy/access-reporting/openee-accessed_openee-coop-ro.https.html | w => w.frames - Test timed out when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1619649",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ship COOP+COEP (aka \"resab\")"
+  },
+  {
+   "bugid": "1647728",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Unify kCharsetFromUserForced and kCharsetFromParentForced"
+  },
+  {
+   "bugid": "1648096",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make some nsSHistory methods infallible"
+  },
+  {
+   "bugid": "1647307",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Simplify SessionHistoryInfo ID handling"
+  },
+  {
+   "bugid": "1643798",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Move feature policy check for fullscreen to the right place."
+  },
+  {
+   "bugid": "1627972",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Investigate why dom/security/test/csp/test_upgrade_insecure.html  is not working if we do not enforce contentSecurity Checks in the DocumentChannelChild"
+  },
+  {
+   "bugid": "1648654",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove AutoObjectMapperFaultyLib"
+  },
+  {
+   "bugid": "1463035",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove MOZ_SIGNAL_TRAMPOLINE"
+  },
+  {
+   "bugid": "1630448",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Intermittent PROCESS-CRASH | <talos> | application crashed [unknown top frame]"
+  },
+  {
+   "bugid": "1647987",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Create Rust testing docs"
+  },
+  {
+   "bugid": "1648486",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update gfx telemetry environment documentation"
+  },
+  {
+   "bugid": "1648601",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rollout WebRender to Mac on AMD and Nvidia too."
+  },
+  {
+   "bugid": "1648328",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: combined_local_clip_rect.size.width >= 0.0 && combined_local_clip_rect.size.height >= 0.0) at gfx/wr/webrender/src/prim_store/mod.rs:2148"
+  },
+  {
+   "bugid": "1648587",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rename IntelHDGraphicsToHaswell to IntelHaswell."
+  },
+  {
+   "bugid": "1647862",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(called `Option::unwrap()` on a `None` value) at src/third_party/rust/euclid/src/point.rs:393"
+  },
+  {
+   "bugid": "1618013",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable backdrop-filter by default when WebRender is enabled"
+  },
+  {
+   "bugid": "1644975",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "icons in bookmarks panel are stretched"
+  },
+  {
+   "bugid": "1648320",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Lower the version requirement for WebRender on Intel battery."
+  },
+  {
+   "bugid": "1648579",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add failure id for Disabled instead of Denied. r=aosmond"
+  },
+  {
+   "bugid": "1647370",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Known JSClass analysis based on MIR"
+  },
+  {
+   "bugid": "1568923",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Deduplicate nursery strings"
+  },
+  {
+   "bugid": "1647803",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Move cell header field to the Cell class and remove CellHeader classes"
+  },
+  {
+   "bugid": "1615434",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "MaxMemoryInitialPages is incorrect"
+  },
+  {
+   "bugid": "1642940",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Change to exception behavior when exceeding table and memory limits"
+  },
+  {
+   "bugid": "1647991",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Make wasmDis optionally return a string"
+  },
+  {
+   "bugid": "1648016",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Migrate reftest-paged reftests in layout/reftests/details-summary into wpt"
+  },
+  {
+   "bugid": "1647525",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Use nsIFrame::HasAnyStateBits() whenever possible instead of GetStateBits()"
+  },
+  {
+   "bugid": "1648615",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add hotkeys to dump DOM tree and frame tree in layout debugger"
+  },
+  {
+   "bugid": "1648013",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Migrate reftest-paged reftests in layout/reftests/columns into wpt"
+  },
+  {
+   "bugid": "1647474",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Intermittent layout/forms/test/test_bug564115.html | The page's scroll offset should not have been changed - got 9, expected 5000"
+  },
+  {
+   "bugid": "1647948",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Assertion failure: currentRatio == ComputeAspectRatio(&aImage, hasRequest, aFrame) (aspect-ratio got out of sync during paint? How?), at src/layout/generic/nsImageFrame.cpp:1769"
+  },
+  {
+   "bugid": "1648451",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Don't invalidate scroll anchor on visual viewport size change"
+  },
+  {
+   "bugid": "1648044",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add named comparison functions for Maybe<T&>"
+  },
+  {
+   "bugid": "1648452",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Make construction of NotNull work with MovingNotNull of derived-type"
+  },
+  {
+   "bugid": "1647647",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "InitializedOnce should provide ref/ptr/... methods accessor methods along the lines of Maybe"
+  },
+  {
+   "bugid": "1647605",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "add remoteType to nsIParentChannel"
+  },
+  {
+   "bugid": "1645786",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[socket process] Assertion failure: XRE_IsParentProcess(), at /builds/worker/checkouts/gecko/ipc/glue/InputStreamUtils.cpp:272"
+  },
+  {
+   "bugid": "1648305",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Avoid flip-flopping the resolution and visual viewport size on first paint when shrink-to-fit is needed"
+  },
+  {
+   "bugid": "1627995",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Figure out and write a test if cookie purging still works under dFPI"
+  },
+  {
+   "bugid": "1645896",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a console log origins that have their cookies partitioned by dFPI"
+  },
+  {
+   "bugid": "1648463",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Move SVGForeignObjectFrame SVGImageFrame and SVGUseFrame to the mozilla namespace"
+  },
+  {
+   "bugid": "1555557",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Cert override service does main-thread I/O"
+  },
+  {
+   "bugid": "1648142",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Ensure we flush cert_storage operations during fast shutdown"
+  },
+  {
+   "bugid": "1634436",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Add an encrypted IPC serializable stream implementation"
+  },
+  {
+   "bugid": "1646774",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Apply pointer guideline to DatabaseInfo and TransactionInfo"
+  },
+  {
+   "bugid": "1621920",
+   "status": "NEW",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Ignore unknown directories in client directories during temporary storage initialization"
+  },
+  {
+   "bugid": "1641512",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Improve GetUsageForOrigin* functions"
+  },
+  {
+   "bugid": "1648391",
+   "status": "RESOLVED",
+   "component": "Core:String",
+   "summary": "nsTSubstringTuple<T>::IsDependentOnWithLength is suboptimal"
+  },
+  {
+   "bugid": "1579261",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "IsSameOriginWithAllParentDocs in MediaDevices.cpp probably doesn't work as expected in Fission"
+  },
+  {
+   "bugid": "1643058",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "webrtc web-platform-tests need a cleanup"
+  },
+  {
+   "bugid": "1602072",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Add a gfxInfo flag determine Firefox is embedded by FxR for telemetry."
+  },
+  {
+   "bugid": "1606706",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Land the new scheduler infrastructure on m-c"
+  },
+  {
+   "bugid": "1645339",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Use range-based for with nsTObserverArray where easily possible"
+  },
+  {
+   "bugid": "1648334",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Use less unsafe in gecko_logger."
+  },
+  {
+   "bugid": "1638925",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Extend `events` MOZ_LOG module"
+  },
+  {
+   "bugid": "1648340",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "MOZ_LINKER=1 build broken on Linux"
+  },
+  {
+   "bugid": "1642947",
+   "status": "RESOLVED",
+   "component": "DevTools:Application Panel",
+   "summary": "Enable Application panel on all channels"
+  },
+  {
+   "bugid": "1615625",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable Async Captured Stacks in all channels"
+  },
+  {
+   "bugid": "1648022",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Resources aren't unwatched on target destruction"
+  },
+  {
+   "bugid": "1646678",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Add a mechanism to test server-side Resource listener while they're not enabled yet"
+  },
+  {
+   "bugid": "1647989",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Inspector blank, store does not have a valid reducer"
+  },
+  {
+   "bugid": "1635970",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "XPath search isn't working for some expressions"
+  },
+  {
+   "bugid": "1648069",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Changes",
+   "summary": "[a11y] Make the Changes view a document for screen readers"
+  },
+  {
+   "bugid": "1644789",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Perma devtools/client/inspector/rules/test/browser_rules_flexbox-highlighter-on-mutation.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/inspector/rules/test/browser_rules_flexbox-highlighter-on-mutation.js:24"
+  },
+  {
+   "bugid": "1641719",
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "First click anywhere in the JSON viewer scrolls back to the top"
+  },
+  {
+   "bugid": "1646960",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Duplicated CSP blocked request"
+  },
+  {
+   "bugid": "1585005",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Ship RDM Fission to Firefox Release"
+  },
+  {
+   "bugid": "1628948",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URL bar results won't close when clicking empty toolbar space reserved for window dragging"
+  },
+  {
+   "bugid": "1639069",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Add a context menu item in the Downloads Panel to \"Open in system viewer\" and \"Always open in system viewer\""
+  },
+  {
+   "bugid": "1592658",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "RequestedLocales forces the locale without allowing changes"
+  },
+  {
+   "bugid": "1643133",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Pioneer icon is hard to see in dark mode \"What happens next?\" section"
+  },
+  {
+   "bugid": "1648384",
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Use Result::propagateErr where appropriate"
+  },
+  {
+   "bugid": "1643761",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Measure about:welcome performance"
+  },
+  {
+   "bugid": "1631957",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Clear the about:home startup cache when changing application locales"
+  },
+  {
+   "bugid": "1644296",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/components/newtab/test/browser/browser_asrouter_group_userprefs.js | Uncaught exception - Wait for group config to load - timed out after 50 tries."
+  },
+  {
+   "bugid": "1646126",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "TargetingGetters uses Services.search.getVisibleEngines, but could use getDefaultEngines instead"
+  },
+  {
+   "bugid": "1644544",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Include experimental features in crash stats"
+  },
+  {
+   "bugid": "1646178",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Search header not visible when searching for featuregates in about:preferences"
+  },
+  {
+   "bugid": "1646423",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Experimental features should be hidden if is-public resolves to false"
+  },
+  {
+   "bugid": "1648223",
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Enable the Experimental Features section by default"
+  },
+  {
+   "bugid": "1639284",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Store records, timestamp and metadata in one IndexedDB transaction"
+  },
+  {
+   "bugid": "1648111",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove nightly/beta only warnings at the top of the search engine configuration documentation"
+  },
+  {
+   "bugid": "1647256",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search cache isn't saving the built-in engine list, errors raised when upgrading from old version."
+  },
+  {
+   "bugid": "1646197",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Convert about:certificate to actor-based RPM"
+  },
+  {
+   "bugid": "1600874",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Fix Site Identity mochitests for Fission enabled"
+  },
+  {
+   "bugid": "1639838",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Many send-tab telemetry events are missing metadata about the peer device"
+  },
+  {
+   "bugid": "1627164",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "lockwise edit/delete button line break"
+  },
+  {
+   "bugid": "1648343",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Require rustc 1.43 to build"
+  },
+  {
+   "bugid": "1648575",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Android x86_64 artifact builds fail on try: make[4]: *** No rule to make target 'android_apks', needed by 'export'.  Stop."
+  },
+  {
+   "bugid": "1648271",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "configure fails when setting MOZ_LTO=1 when targeting mac."
+  },
+  {
+   "bugid": "1648278",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Document how DEFINES works with the assembler"
+  },
+  {
+   "bugid": "1648506",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "test_moz_configure.py::TestTargetLinux::test_target fails \"Please use the *system* python to run this script\" on OSX and --python=python2 only, when 'mach python-test' runs in python 3"
+  },
+  {
+   "bugid": "1629419",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "ClientWebGLContext.cpp: the 'empty' method should be used to check for emptiness instead of 'size'"
+  },
+  {
+   "bugid": "822978",
+   "status": "NEW",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Enable -Werror=implicit-function-declaration by default"
+  },
+  {
+   "bugid": "1646767",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Android opt tests completely missing from taskgraph on try"
+  },
+  {
+   "bugid": "1607713",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent Linux 18.04 <test-name> | application terminated with exit code 6 | application crashed [@ libc.so.6 + 0x3ee97] -  (libxul.so!mozilla::ipc::MessagePump::Run)"
+  },
+  {
+   "bugid": "1648455",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Adjust |mach try auto| manifest loader threshold to CT_MEDIUM"
+  },
+  {
+   "bugid": "1648359",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use Debian 10 based docker images for macOS builds"
+  },
+  {
+   "bugid": "1632735",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "(rust 1.43) TEST-UNEXPECTED-FAIL | valgrind-test | Conditional jump or move depends on uninitialised value(s) at selectors::parser::parse_one_simple_selector"
+  },
+  {
+   "bugid": "1648256",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade valgrind to latest release"
+  },
+  {
+   "bugid": "1624993",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Expose an API for adding profiler markers from embedders like Fenix"
+  },
+  {
+   "bugid": "1646923",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "puppeteer-expected.json doesn't list all the tests from the Puppeteer 3.1 upgrade"
+  },
+  {
+   "bugid": "1631409",
+   "status": "RESOLVED",
+   "component": "Taskcluster:Workers",
+   "summary": "Intermittent android-em failures e.g. [test-linux.sh:error] Failed to download and unzip mozharness, [taskcluster:error] Error downloading <something> from <somewhere>"
+  },
+  {
+   "bugid": "1644510",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Update credit card save doorhanger and content dropdown text"
+  },
+  {
+   "bugid": "1527743",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add a checkbox in prefs to toggle extensions.formautofill.reauth.enabled"
+  },
+  {
+   "bugid": "1644448",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Perma | toolkit/modules/tests/xpcshell/test_firstStartup.js | xpcshell return code: 0 when Gecko version increases to 80 on 2020-06-29"
+  },
+  {
+   "bugid": "1648336",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Stop migrating logins from SQLite to JSON via LoginImport.jsm"
+  },
+  {
+   "bugid": "1597358",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "logins.json is a 0-byte file. Create a backup during writes to it."
+  },
+  {
+   "bugid": "1599567",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add event telemetry for when logins.json.corrupt is created"
+  },
+  {
+   "bugid": "1647861",
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.32.3"
+  },
+  {
+   "bugid": "1647760",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Perma debug + asan telemetry/marionette/tests/client/test_fog_deletion_request_ping.py TestDeletionRequestPing.test_deletion_request_ping_across_sessions when Gecko 79 merges to Beta on 2020-06-29"
+  },
+  {
+   "bugid": "1647461",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent telemetry/marionette/tests/client/test_event_ping.py TestEventPing.test_event_ping | ValueError: need more than 5 values to unpack"
+  },
+  {
+   "bugid": "1644834",
+   "status": "RESOLVED",
+   "component": "Toolkit:about:memory",
+   "summary": "about:memory tests fail on my machines (macOS Catalina, Ubuntu 18.04)"
+  },
+  {
+   "bugid": "1402256",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "WebExtension API to 'warm up' a tab"
+  },
+  {
+   "bugid": "1376088",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "tabs.duplicate does not immediately make the duplicated tab active"
+  }
+ ],
+ "date": "2020-06-26",
+ "cset": "9b981fcfb6ac3119837605e3189c5832446c77ab",
+ "buildid": "20200626094540",
+ "fixed": 108,
+ "total": 126,
+ "restricted": 2
+}

@@ -1,0 +1,544 @@
+{
+ "bugs": [
+  {
+   "bugid": "1629389",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Assertion failure: mRawPtr != nullptr (You can't dereference a NULL RefPtr with operator->().), at /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:315"
+  },
+  {
+   "bugid": "1628690",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "H264 HLS stream at Reddit RPAN does not play with widget.wayland-dmabuf-vaapi.enabled = true (unsupported H264 profile) because it fails to fall back to software decoding"
+  },
+  {
+   "bugid": "1630676",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Sync servo stuff."
+  },
+  {
+   "bugid": "1630223",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Intermittent Assertion failure: get() (dereferencing a UniquePtr containing nullptr), at /builds/worker/workspace/obj-build/dist/include/mozilla/UniquePtr.h:281"
+  },
+  {
+   "bugid": "1630521",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::ipc::MessageChannel::Send | mozilla::ipc::IProtocol::ChannelSend]"
+  },
+  {
+   "bugid": "1630361",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Remove [NeedsWindowsUndef] attribute from WebIDL"
+  },
+  {
+   "bugid": "1627104",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Ensure that Constructed StyleSheets return their constructor document as their parent object"
+  },
+  {
+   "bugid": "1626425",
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /html/cross-origin-embedder-policy/cache-storage-reporting-dedicated-worker.https.html | application crashed [@ mozilla::DeadlockDetector<mozilla::BlockingResourceBase>::InTransitiveClosure(mozilla::DeadlockDetector<mozilla::Blocking"
+  },
+  {
+   "bugid": "1628728",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ mozilla::ConsoleReportCollector::FlushReportsToConsole]"
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1614462",
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove support for <iframe mozbrowser> in content"
+  },
+  {
+   "bugid": "1621987",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement Sec-Fetch-User"
+  },
+  {
+   "bugid": "1627206",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS Only Mode - Upgrade failure telemetry"
+  },
+  {
+   "bugid": "1629708",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Port some of the MDN editor docs to the in-tree docs."
+  },
+  {
+   "bugid": "1629602",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Include reason for failure when describing features"
+  },
+  {
+   "bugid": "1619367",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Some tab titles are brighter on macOS"
+  },
+  {
+   "bugid": "1622846",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU IDL to the upstream changes"
+  },
+  {
+   "bugid": "1629776",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Parent with overflow hidden and border-radius don't hide overflowed child content"
+  },
+  {
+   "bugid": "1630212",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove support for non-tiled blob images"
+  },
+  {
+   "bugid": "1587713",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove the late blob rasterization code path"
+  },
+  {
+   "bugid": "1630371",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable DirectComposition when we have a scaled resolution and no hardware stretching."
+  },
+  {
+   "bugid": "1630481",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL fails wrench reftest images/texture-rect.yaml"
+  },
+  {
+   "bugid": "1630629",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable WebRender on Intel battery if we don't have DirectComposition"
+  },
+  {
+   "bugid": "1628279",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS shell module loader is not initialized for additional globals"
+  },
+  {
+   "bugid": "1591276",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in JSRuntime::onOutOfMemory on http://unmatchedstyle.com/news/height-based-media-queries.php"
+  },
+  {
+   "bugid": "1592105",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Parse without creating atoms"
+  },
+  {
+   "bugid": "1630090",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Irregexp: Call regexps from Ion"
+  },
+  {
+   "bugid": "1627373",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "BCE shouldn't have lineno and columno argument, and should instead use the associated FunctionBox::extent()"
+  },
+  {
+   "bugid": "1630788",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Initialize FunctionHasExtraBodyVarScope for lazy BaseScripts"
+  },
+  {
+   "bugid": "1624563",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "ThreadSanitizer: data race [@ fun_resolve] vs. [@ hasFlags]"
+  },
+  {
+   "bugid": "1629569",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Support IONFLAGS=logs"
+  },
+  {
+   "bugid": "1630359",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "On x86 and x64, there is code that assumes JitSupportsSimd() is always true"
+  },
+  {
+   "bugid": "1630205",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Cranelift: reuse compiler data structures across batch compilations"
+  },
+  {
+   "bugid": "1629732",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Make layout/* buildable outside of a unified build environment"
+  },
+  {
+   "bugid": "1627125",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Extend existing flex container APIs to support flex item fragmentation"
+  },
+  {
+   "bugid": "1616411",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "CSS decorative images should respect EXIF-orientation by default"
+  },
+  {
+   "bugid": "1542293",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Rewrite various nsHttpResponseHead::Get* to use Tokenizer"
+  },
+  {
+   "bugid": "1619673",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Disable appcache in release"
+  },
+  {
+   "bugid": "1627326",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make dynamic-toolbar-sticky-top test pass for android and non-QR"
+  },
+  {
+   "bugid": "1630277",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove StorageAccess enum from nsContentUtils.h"
+  },
+  {
+   "bugid": "612118",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGLocatable.getBBox() fails unless the SVG element it is applied to is attached and rendered"
+  },
+  {
+   "bugid": "1628630",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Add RTX support through WebRTC-SDP"
+  },
+  {
+   "bugid": "1621399",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Add perfect negotiation wpt tests"
+  },
+  {
+   "bugid": "1628139",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "onnegotiationneeded still races with onmessage under stress"
+  },
+  {
+   "bugid": "1630512",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "VRDisplay uses old displayInfo after restoring."
+  },
+  {
+   "bugid": "1630739",
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Quest and Focus Plus controller rotate matrix needs a inverse"
+  },
+  {
+   "bugid": "1630655",
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "toolkit.shutdown.lateWriteChecksStage is not properly set on Nightly"
+  },
+  {
+   "bugid": "1628698",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Calling console.dir with an error object should expand it like a regular object"
+  },
+  {
+   "bugid": "1630449",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Stop updating the Editor when the SelectedFrame changes"
+  },
+  {
+   "bugid": "1627795",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove getCssProperties(toobox) helper"
+  },
+  {
+   "bugid": "1615412",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Periodically unable to connect Browser Toolbox, despite numerous process restarts, or toolbox split with error message shown on the left"
+  },
+  {
+   "bugid": "1607755",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Remove setupInParent approach for BoxModelHighlighter"
+  },
+  {
+   "bugid": "1459175",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Introduce UI for Options drop down menu in Network panel"
+  },
+  {
+   "bugid": "1621914",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove custom data rendering in the Response panel"
+  },
+  {
+   "bugid": "1628906",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search from location bar triggers \"Invalid URL\" error page (\"Hmm. That address doesn\u2019t look right\"), if you hit Esc before hitting Enter"
+  },
+  {
+   "bugid": "1618769",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Increase max chars for search suggestions (Adding numbers in the URL bar gives incorrect answer as a suggestion)"
+  },
+  {
+   "bugid": "1629376",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "The downloads view in the Library is broken"
+  },
+  {
+   "bugid": "1519226",
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Intermittent browser/base/content/test/keyboard/browser_toolbarButtonKeyPress.js | Test timed out -"
+  },
+  {
+   "bugid": "1618051",
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Firefox logo at about:newtab is not scalable or retina/HiDPI"
+  },
+  {
+   "bugid": "1630171",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/components/newtab/test/browser/browser_aboutwelcome_observer.js | Uncaught exception - [Exception... \"Component is not available\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: JS frame :: browser_aboutwelcome_observer.js"
+  },
+  {
+   "bugid": "1629939",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search bar calls into SearchService.defaultEngine twice for each call to updateDisplay"
+  },
+  {
+   "bugid": "1615588",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Extend nsIPromptService to support tab modal system prompts"
+  },
+  {
+   "bugid": "1630510",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Clean up .bookmark-item max-width rules"
+  },
+  {
+   "bugid": "1630615",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Combine toolkit/themes/shared/extensions/utilities.svg and browser/themes/shared/icons/settings.svg"
+  },
+  {
+   "bugid": "1385882",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Intermittent browser/base/content/test/pageActions/browser_page_action_menu.js | Test timed out - | Found a tab after previous test timed out: http://example.com/browser_page_action_menu -"
+  },
+  {
+   "bugid": "1628165",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add telemetry probe for clicks on the vulnerable password learn more notification"
+  },
+  {
+   "bugid": "1626661",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Focusing the about:logins searchbox makes the magnifying glass more opaque"
+  },
+  {
+   "bugid": "1628029",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add telemetry events for tracking whether the user authenticated successfully or not with OS auth"
+  },
+  {
+   "bugid": "1623745",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add telemetry probe to see how often people don't have an OS password set"
+  },
+  {
+   "bugid": "1628954",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "[py3.8] third_party/python/gyp/pylib/gyp/input.py:1186: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?"
+  },
+  {
+   "bugid": "1630312",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "lucetc toolchain task broken with latest rust 1.44 nightly"
+  },
+  {
+   "bugid": "1622659",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "HTMLInputElement.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1629432",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Base64.cpp: converting integer literal to bool, use bool literal instead"
+  },
+  {
+   "bugid": "1629427",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "TestRollingNumber.cpp: use unary 'static_assert' when the string literal is an empty string"
+  },
+  {
+   "bugid": "1624649",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch android emulator to be pulled via toolchain instead of tooltool"
+  },
+  {
+   "bugid": "1630661",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "No webaudio data in PGO profiles"
+  },
+  {
+   "bugid": "1630668",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "TypeError when running `./mach try syntax`"
+  },
+  {
+   "bugid": "1629759",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove unused dom.event.touch.coalescing.enabled preference"
+  },
+  {
+   "bugid": "1571412",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Update addon manager browser tests to use pushPrefEnv where appropriate"
+  },
+  {
+   "bugid": "1482147",
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Search in page can't find text in offscreen overflow:hidden containers"
+  },
+  {
+   "bugid": "658544",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Cleanup profiles from old and useless places.sqlite.corrupt files"
+  },
+  {
+   "bugid": "1630105",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Add telemetry scalar to track printing errors"
+  },
+  {
+   "bugid": "1588113",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Only disallow downgrades to a lower major version of Firefox."
+  },
+  {
+   "bugid": "1626590",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "histograms not needed anymore in histogram-allowlists.json should be called out more explicitly"
+  },
+  {
+   "bugid": "1527656",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Consider if `recordEvent` should ever throw"
+  },
+  {
+   "bugid": "1619979",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Picture-in-Picture toggle appears on videos that are laid out with small dimensions"
+  },
+  {
+   "bugid": "1627738",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Expose Graphics Card and Driver info in \"Browser Configuration\" section of webcompat reports"
+  },
+  {
+   "bugid": "1613796",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "browser.permissions.request promise doesn't resolve in extension rendered tab"
+  },
+  {
+   "bugid": "1630419",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "make management an optional permission"
+  }
+ ],
+ "date": "2020-04-17",
+ "cset": "48cefa8cc0584b7184747c73654d1ed3ba778cf3",
+ "buildid": "20200417100143",
+ "fixed": 75,
+ "total": 89,
+ "restricted": 5
+}

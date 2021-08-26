@@ -1,0 +1,364 @@
+{
+ "bugs": [
+  {
+   "bugid": "1102584",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Implement extended TextMetrics object"
+  },
+  {
+   "bugid": "1588980",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Unship HTMLCanvasElement.mozGetAsFile()"
+  },
+  {
+   "bugid": "1583863",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add `WindowContext`, a cross-process `BrowsingContext`-like object for per-window properties."
+  },
+  {
+   "bugid": "1609603",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Drag & Drop",
+   "summary": "Optimize callers of `DataTransfer::GetTypes()`"
+  },
+  {
+   "bugid": "1609877",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Convert prefs for domsecurity to use static prefs"
+  },
+  {
+   "bugid": "1609662",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Extend documentation of methods around `Selection::AddRangeAndSelectFramesAndNotifyListeners`"
+  },
+  {
+   "bugid": "1603020",
+   "status": "VERIFIED",
+   "component": "Core:Find Backend",
+   "summary": "Opening Findbar broke contenteditable caret moving"
+  },
+  {
+   "bugid": "1609674",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add innerWindowID to \"setTimeout\" and \"setTimeout deferred release\" markers"
+  },
+  {
+   "bugid": "1610388",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Replace nsAutoPtr usage in gfx/ with UniquePtr"
+  },
+  {
+   "bugid": "1607836",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "recycle render task graph allocations"
+  },
+  {
+   "bugid": "1608741",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix reftest failures in DirectComposition mode with virtual surfaces."
+  },
+  {
+   "bugid": "1580176",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Add MOZ_LOG to JSWindowActor messaging"
+  },
+  {
+   "bugid": "1598752",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "TypeError: undefined is not a constructor"
+  },
+  {
+   "bugid": "1610165",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "SVG images that fail to get inserted into the cache get stuck in a repaint loop"
+  },
+  {
+   "bugid": "1566143",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement the Optional Chaining operator (?.) proposal"
+  },
+  {
+   "bugid": "1609138",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Various problems with ARM64 register sets"
+  },
+  {
+   "bugid": "1609636",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Support JS WeakRef in browser"
+  },
+  {
+   "bugid": "1608839",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Assertion failure: baseline || ion || cranelift, at wasm/WasmCompile.cpp:139"
+  },
+  {
+   "bugid": "1608941",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Update Cranelift to b01bee7c5269f72196b42e8bdd874425166bf429"
+  },
+  {
+   "bugid": "1608791",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Harden Rabaldr register classes"
+  },
+  {
+   "bugid": "1610152",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "LastPass extension panel appears empty when pinned to overflow menu"
+  },
+  {
+   "bugid": "1609730",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "`text-underline-position:left` and `right` values should be ignored in vertical-sideways writing modes"
+  },
+  {
+   "bugid": "1609996",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove mozilla::Swap in favor of std::swap."
+  },
+  {
+   "bugid": "1610070",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Replace nsAutoPtr usage in netwerk/ with UniquePtr"
+  },
+  {
+   "bugid": "1609491",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Stop accepting cookie name-value pairs without an equal sign"
+  },
+  {
+   "bugid": "1357107",
+   "status": "REOPENED",
+   "component": "Core:Permission Manager",
+   "summary": "Consider removing nsContentBlocker"
+  },
+  {
+   "bugid": "1580546",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "IPC: crash [@mozilla::AntiTrackingCommon::StoreUserInteractionFor]"
+  },
+  {
+   "bugid": "1580759",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent Tier 2 antitracking/test/browser/browser_blockingSharedWorkers.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": "1507055",
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Login with Stackdriver is still broken after bug 1505212"
+  },
+  {
+   "bugid": "1607518",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "ClassifierDummyChannel must implement nsIClassifiedChannel"
+  },
+  {
+   "bugid": "984461",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove nsIDOMSVGLength from the Components shim"
+  },
+  {
+   "bugid": "1610066",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "SafeElementAt on nsTArray<RefPtr<T>> requires complete type T."
+  },
+  {
+   "bugid": "1608645",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Crash in [@ mozilla::nt::PEHeaders::FindExportAddressTableEntry]"
+  },
+  {
+   "bugid": "1607754",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Load about:blank in the DevTools host frame only when switching host"
+  },
+  {
+   "bugid": "1609716",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Unify xpcshell test folders in DevTools folder."
+  },
+  {
+   "bugid": "1609330",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Height of animation graphs is incorrect"
+  },
+  {
+   "bugid": "1609348",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Resizing of SplitBox for summary pane and detail pane does not work"
+  },
+  {
+   "bugid": "1604486",
+   "status": "NEW",
+   "component": "Developer Services:Mercurial: hg.mozilla.org",
+   "summary": "Intermittent [taskcluster:error] Uploading error artifact public/build from file artifacts/ with message \"Could not read directory '/Users/task_1576583400/artifacts'\", after mercurial.error.SignalInterrupt"
+  },
+  {
+   "bugid": "1608631",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma Beta TEST-UNEXPECTED-FAIL | browser_urlbar_event_telemetry.js | value in event urlbar#engagement#enter must match. - \"typed\" matches \"returned\" - JS frame :: TelemetryTestUtils.jsm :: assertEvents :: line 212 when Gecko merges to Beta on 2020-02-10"
+  },
+  {
+   "bugid": "1598726",
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Perma Tier 2 Test Coverage browser/base/content/test/static/browser_all_files_referenced.js | unused whitelist entry: chrome://marionette/content/PerTestCoverageUtils.jsm -"
+  },
+  {
+   "bugid": "1598919",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Adapt Browser:LoadURI message for fission"
+  },
+  {
+   "bugid": "1591725",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Consider optimizing gecko android builds for speed (-O2) rather than size (-Oz)"
+  },
+  {
+   "bugid": "1609832",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap should install rustfmt"
+  },
+  {
+   "bugid": "1609862",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Display more detailed memory info in resource usage report"
+  },
+  {
+   "bugid": "1608399",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Coverity] Use clang-9 for analysis"
+  },
+  {
+   "bugid": "1609864",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[clang-tidy] Disable checker performance-noexcept-move-constructor"
+  },
+  {
+   "bugid": "1609638",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Add a check to clang-plugin identifying unperformant uses of temporary RefPtr's"
+  },
+  {
+   "bugid": "1610069",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ubuntu1804 - remove references to compiz in setup scripts"
+  },
+  {
+   "bugid": "1600663",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "ContentParent::MarkAsDead should alert Android to unbind content process service"
+  },
+  {
+   "bugid": "1594820",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Improve asynchronicity of content process startup"
+  },
+  {
+   "bugid": "1609701",
+   "status": "RESOLVED",
+   "component": "GeckoView:Tracking Protection",
+   "summary": "Inactive GeckoSessions break when reloaded"
+  },
+  {
+   "bugid": "1607823",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Intermittent remote/test/browser/network/browser_setCacheDisabled.js | Uncaught exception - [Exception... \"(null)\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: \"<unknown>\"  data: no]"
+  },
+  {
+   "bugid": "1609163",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.getNavigationHistory"
+  },
+  {
+   "bugid": "1609627",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Page",
+   "summary": "Implement Page.navigateToHistoryEntry"
+  },
+  {
+   "bugid": "1603227",
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Enable removing sideloaded extensions"
+  },
+  {
+   "bugid": "1602840",
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add new bitflag preference that prevents adding new sideload addons"
+  },
+  {
+   "bugid": "1608158",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Consider including runnable name in crash reports"
+  },
+  {
+   "bugid": "1591362",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Removing Cookies and Site Data clears more disk cache than it should"
+  },
+  {
+   "bugid": "1608923",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "PIP feature in Firefox: The PIP video buttons don't announce to NVDA/screen reader"
+  }
+ ],
+ "date": "2020-01-21",
+ "cset": "9fd9eeb8160fe73aa68300b9ddaefef3fbddeec2",
+ "buildid": "20200121093246",
+ "fixed": 47,
+ "total": 59,
+ "restricted": null
+}

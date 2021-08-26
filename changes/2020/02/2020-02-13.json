@@ -1,0 +1,532 @@
+{
+ "bugs": [
+  {
+   "bugid": "1611439",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Shutdown crash with AudioCallbackTracing activate"
+  },
+  {
+   "bugid": "1584319",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "FF streaming does not override sleep mode"
+  },
+  {
+   "bugid": "1614533",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Generate AudioIPC FFI bindings at build time using cbindgen"
+  },
+  {
+   "bugid": "1614547",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Ensure AudioIPC client threads call PROFILER_UNREGISTER_THREAD to avoid leaks"
+  },
+  {
+   "bugid": "1614648",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make GradientItem and ColorStop support angular color stops"
+  },
+  {
+   "bugid": "1614348",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Calling CSSStyleDeclaration.getPropertyValue('font-family') for an unquoted font-family that contains a backslash-escaped space followed by a digit returns unexpected result"
+  },
+  {
+   "bugid": "1542784",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Support <img loading=\"lazy\"> lazy-loading"
+  },
+  {
+   "bugid": "1606562",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Axes on XInput (Gamepad) on Windows are out of the allowed range"
+  },
+  {
+   "bugid": "1588688",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Change using array of nsINode to array of nsIContent in editor"
+  },
+  {
+   "bugid": "1613527",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: NodePrincipal()->GetIsNullPrincipal() (srcdoc without null principal as toplevel!), at src/dom/base/Document.cpp:3557"
+  },
+  {
+   "bugid": "1614359",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Headers constructor with custom iterator"
+  },
+  {
+   "bugid": "1614674",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "frame-ancestors tests time out waiting for load event on CSP-blocked resources"
+  },
+  {
+   "bugid": "1583215",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Move all referrer and referrer policy tests under dom security folder"
+  },
+  {
+   "bugid": "1608862",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Refactor GetURI usage in BlobURLProtocolHandler.cpp"
+  },
+  {
+   "bugid": "1594766",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Decide whether to continue ignoring XCTO Nosniff when Content Type is Empty, or to enforce"
+  },
+  {
+   "bugid": "1613378",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Reduce dependencies from `Selection::MaybeAddTableCellRange` to `mFrameSelection`"
+  },
+  {
+   "bugid": "1614636",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Simplify arguments of `nsFrameSelection::HandleClick`"
+  },
+  {
+   "bugid": "1603484",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Walmart Grocery service worker fails to launch after initial run"
+  },
+  {
+   "bugid": "1614224",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Tab no longer wraps in opening unknown content type dialog (#unknownContentTypeWindow)"
+  },
+  {
+   "bugid": "1614079",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Hit testing does not cross process boundaries in e10s"
+  },
+  {
+   "bugid": "1606392",
+   "status": "RESOLVED",
+   "component": "Core:Find Backend",
+   "summary": "Match Case setting not respected after page reload"
+  },
+  {
+   "bugid": "1610991",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "RLBox - Update rlbox /rlbox_lucet libraries to versions that work on Mac"
+  },
+  {
+   "bugid": "1614890",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Implement conic-gradient for WebRender graphics backend"
+  },
+  {
+   "bugid": "1595014",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Part of search suggestions remain with WR partial present"
+  },
+  {
+   "bugid": "1608717",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support per-tile clip (valid) region for native compositor implementations."
+  },
+  {
+   "bugid": "1608280",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support a per-tile clip (valid) region for compositor tiles"
+  },
+  {
+   "bugid": "1613091",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Stack overflow in Renderer::new when building with --disable-optimize"
+  },
+  {
+   "bugid": "1609881",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Put the fork server behind a preference so we have a simple way to enable it"
+  },
+  {
+   "bugid": "1612096",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Update unic-langid to 0.8 and fluent-langneg to 0.12"
+  },
+  {
+   "bugid": "1614622",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove optimization tracking"
+  },
+  {
+   "bugid": "1614289",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Some more IonBuilder and IonCompileTask cleanup"
+  },
+  {
+   "bugid": "1614650",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assert that finalizers don't rely on the mark state of other cells"
+  },
+  {
+   "bugid": "1571660",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Tidy Zone class definition"
+  },
+  {
+   "bugid": "1614432",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "nsGridContainerFrame.cpp: Remove a nested redundant #if"
+  },
+  {
+   "bugid": "1584035",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Inserting an element in DOM cancel smooth scrolling upwards"
+  },
+  {
+   "bugid": "1614600",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Avoid using FreeType to read font information during cold-start on Android"
+  },
+  {
+   "bugid": "1614267",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Don't proxy URI release to the main thread for HttpBaseChannel"
+  },
+  {
+   "bugid": "1614530",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "member call on null pointer of type 'mozilla::net::nsIOService' in netwerk/base/SSLTokensCache.cpp:70"
+  },
+  {
+   "bugid": "1614637",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Cache",
+   "summary": "ThreadSanitizer: data race [@ assign_assuming_AddRef] vs. [@ operator bool] in CacheStorageService"
+  },
+  {
+   "bugid": "1610371",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Exceptions of cookies, must only apply to the main domain, must not include third parties."
+  },
+  {
+   "bugid": "1614711",
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update Neqo to 0.1.13 or later for draft 25 support"
+  },
+  {
+   "bugid": "1611133",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Firefox(72-0-2) closes automatically after printing."
+  },
+  {
+   "bugid": "1614053",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 75 to use NSS 3.51"
+  },
+  {
+   "bugid": "1608215",
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "[MSU Capstone] Port security/manager/chrome/pippki/pippki.dtd to Fluent"
+  },
+  {
+   "bugid": "1221889",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "\"ASSERTION: Incorrectly ignoring blocking!\": AudioNode creation should fail after AudioContext.close()"
+  },
+  {
+   "bugid": "1614899",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Can't pass a WASM module via `processorOptions` anymore"
+  },
+  {
+   "bugid": "1614038",
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Improve Web Audio API error reporting"
+  },
+  {
+   "bugid": "1609815",
+   "status": "REOPENED",
+   "component": "Core:Web Replay",
+   "summary": "Remove Web Replay"
+  },
+  {
+   "bugid": "1613769",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Don't fire iceconnectionstatechange after pc.close()"
+  },
+  {
+   "bugid": "1615028",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Scrollbar-width and scrollbar-color don't work without the native theme."
+  },
+  {
+   "bugid": "1613364",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Implement YUV surfaces by WaylandDMABUFSurface"
+  },
+  {
+   "bugid": "1353652",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[MediaControl-Linux] Provide MPRIS API for music/video streaming web sites"
+  },
+  {
+   "bugid": "1600414",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "PiP player on YT animates/fades its size down to ~150x80"
+  },
+  {
+   "bugid": "1605657",
+   "status": "RESOLVED",
+   "component": "Core:XML",
+   "summary": "Since Firefox 72, XML files don't pretty print with the React Developer Tools add-on installed"
+  },
+  {
+   "bugid": "1615045",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "ThreadSanitizer: data race [@ mozilla::scache::StartupCache::WriteToDisk] vs. [@ mozilla::scache::StartupCache::WriteToDisk]"
+  },
+  {
+   "bugid": "1607505",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Improve shutdown performance of StartupCache"
+  },
+  {
+   "bugid": "1614366",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Increase number of messages being logged in DAMP bulklog test"
+  },
+  {
+   "bugid": "1614841",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Case-insensitive autocompletes cause reference errors"
+  },
+  {
+   "bugid": "1610416",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Expand the debugger server thread frame list and frame actors to support SavedFrame objects."
+  },
+  {
+   "bugid": "1614925",
+   "status": "VERIFIED",
+   "component": "DevTools:Framework",
+   "summary": "Perma devtools/client/framework/browser-toolbox/test/browser_browser_toolbox_fission_inspector.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/framework/browser-toolbox/test when Gecko 75 merges to Beta on 2020-03-09"
+  },
+  {
+   "bugid": "1614918",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Stop waiting for synchronous removeTab method in inspector init"
+  },
+  {
+   "bugid": "1590348",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Netmonitor blocking - Keep Block resource when URL contains box in focus all the time when reaching bottom side of section"
+  },
+  {
+   "bugid": "1613881",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use Accordion for the Cookies Panel"
+  },
+  {
+   "bugid": "1614712",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Add a requestId to the profiler's WebChannel messages"
+  },
+  {
+   "bugid": "1608240",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Provide a policy for disabling CFR and whatsnew"
+  },
+  {
+   "bugid": "1547693",
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Initial handler service setup does mainthread IO on file paths containing \"microsoft.windowscommunicationapps\" by enumerating protocol handlers"
+  },
+  {
+   "bugid": "1613101",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Enable the What's New panel provider in mochitests to use Remote Settings data"
+  },
+  {
+   "bugid": "1613648",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add Topstories content to the newtab responsiveness test"
+  },
+  {
+   "bugid": "1612984",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable regions that get stories via a pref"
+  },
+  {
+   "bugid": "1607545",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "about_home_topsites_first_paint scalar is recorded on first about:home sighting even if it wasn't the first page loaded"
+  },
+  {
+   "bugid": "1567271",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Sponsored collection component or modifications to existing components"
+  },
+  {
+   "bugid": "1612416",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix failing mochitests/xpcshell tests when the modern configuration is turned on"
+  },
+  {
+   "bugid": "1611484",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Enable browser_popup_frames.js for Fission"
+  },
+  {
+   "bugid": "1602870",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Tabbing not working correctly with toolbar disabled in popup window"
+  },
+  {
+   "bugid": "1613985",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Make constructors/destructors/assignment operators use =default"
+  },
+  {
+   "bugid": "1578058",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add clippy in the CI for Mozlint"
+  },
+  {
+   "bugid": "1611415",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "std::move(x) should be preferred over x.forget() in construction/assignment"
+  },
+  {
+   "bugid": "1614840",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "The \"fopen-usage\" static analysis checker should not warn std::(i|o)?fstream::open(const wchar_t*, ...) overloads"
+  },
+  {
+   "bugid": "1614855",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma valgrind-test | non-zero exit code from Valgrind: -139 due to the fact we use Ubuntu 18.04 in GCP"
+  },
+  {
+   "bugid": "1612711",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable XPCShell tests and Mochitests as Tier1 tests on Linux64 TSan"
+  },
+  {
+   "bugid": "1612559",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "add a test for rejected install extension"
+  },
+  {
+   "bugid": "1614990",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "WebPushController.onSubscriptionChanged should only need the scope"
+  },
+  {
+   "bugid": "1613041",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "NullPointerException in GeckoRuntime.getRunningAppProcesses()"
+  },
+  {
+   "bugid": "1612608",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView Fails to load webpages when multiprocess is turned off"
+  },
+  {
+   "bugid": "1614998",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Rename l10n job kinds to not include 'nightly' in their name."
+  },
+  {
+   "bugid": "1614923",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Disable the FOGotype"
+  },
+  {
+   "bugid": "1613692",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Disable or remove Ecosystem Telemetry"
+  }
+ ],
+ "date": "2020-02-13",
+ "cset": "2f6870dd1b99edaba1de4d2aa97f3910a640c5bf",
+ "buildid": "20200213035745",
+ "fixed": 73,
+ "total": 87,
+ "restricted": 1
+}

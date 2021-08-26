@@ -1,0 +1,568 @@
+{
+ "bugs": [
+  {
+   "bugid": "1604399",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Dead assignment in Sgpd::Parse"
+  },
+  {
+   "bugid": "1604023",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Firefox built with GCC 10 snapshots crashes due to Rust ABi compatibility bug"
+  },
+  {
+   "bugid": "1602712",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Implement ContentParent::GetNewOrUsedBrowserProcessAsync"
+  },
+  {
+   "bugid": "1604609",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Don't send large window actor messages"
+  },
+  {
+   "bugid": "1561715",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove `TabGroup` in favour of `BrowsingContextGroup`"
+  },
+  {
+   "bugid": "1604714",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "ubuntu1804 - TEST-UNEXPECTED-OK | /screen-orientation/ | expected ERROR | multiple test file intermittence"
+  },
+  {
+   "bugid": "1604307",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "null pointer passed as argument 1, which is declared to never be null in parser/html/nsHtml5String.cpp:71"
+  },
+  {
+   "bugid": "1574280",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix usage of nsIDocShellTreeItem in nsDocShell::SetCurrentURI"
+  },
+  {
+   "bugid": "1588259",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: !chan (Why is there a document channel?), at src/toolkit/components/windowwatcher/nsWindowWatcher.cpp:996"
+  },
+  {
+   "bugid": "1605123",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Assertion failure: mKeyword == CSP_UNSAFE_INLINE (should only invalidate unsafe-inline), at /builds/worker/workspace/build/src/dom/security/nsCSPUtils.cpp:845"
+  },
+  {
+   "bugid": "1600267",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Adapt `nsContentUtils::ComparePoints` to return `Maybe<int32_t>`"
+  },
+  {
+   "bugid": "1604701",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Should EventTargetData::mPresShell equal to EventTargetData::mFrame->PresShell?"
+  },
+  {
+   "bugid": "1585239",
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/states/browser_offscreen_element_in_out_of_process_iframe.js | Uncaught exception - OperationError: The operation failed for an operation-specific reason"
+  },
+  {
+   "bugid": "1576052",
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "RLBox - Add configuration/macro definition to selectively enable wasm sandbox for graphite"
+  },
+  {
+   "bugid": "1569369",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "RLBox - Add verifications to tainted data returned by a sandboxed libGraphite"
+  },
+  {
+   "bugid": "1566288",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "RLBox - Port libGraphite usage code to use the RLBox API"
+  },
+  {
+   "bugid": "1604001",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Test harnesses do not know the process type of the fork server"
+  },
+  {
+   "bugid": "1603999",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "libmozsandbox.so are not preloaded properly for the fork server"
+  },
+  {
+   "bugid": "1604000",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Leak statistics logs are not generated for the fork server"
+  },
+  {
+   "bugid": "1604839",
+   "status": "VERIFIED",
+   "component": "Core:Internationalization",
+   "summary": "Update Fluent.jsm to @fluent/bundle 0.14.1"
+  },
+  {
+   "bugid": "1604760",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unreachable code in JSFunction::isDerivedClassConstructor testing for self-hosted lazy scripts"
+  },
+  {
+   "bugid": "1597005",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create a task to test gdb prettyprinters"
+  },
+  {
+   "bugid": "1542803",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "List cases for all prototypes in skipDeselectedConstructor"
+  },
+  {
+   "bugid": "1602392",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ js::jit::MachineState::read] or Crash [@ js::jit::SnapshotIterator::allocationValue] with Debugger"
+  },
+  {
+   "bugid": "1604767",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make AsyncFunction a singleton object"
+  },
+  {
+   "bugid": "1604824",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add deferred parser allocation switch to fuzz-flags.txt"
+  },
+  {
+   "bugid": "1604162",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change BooleanToString to return JSAtom and update Boolean/String spec references"
+  },
+  {
+   "bugid": "1604391",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[MIPS64] Failed on jstests: non262/Array/regress-{157652, 330812}.js and non262/regress/regress-422348.js"
+  },
+  {
+   "bugid": "1604774",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove indirect calls to ThrowUninitializedThis and ThrowInitializedThis"
+  },
+  {
+   "bugid": "1603921",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips] Implement branchTruncate{Double, Float32}ToInt32"
+  },
+  {
+   "bugid": "1605087",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add MIR instruction name to failure message in emitAssertGCThingResult"
+  },
+  {
+   "bugid": "1596830",
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "There don't appear to be any assertions that we only trace cross compartment edges with TraceCrossCompartmentEdge"
+  },
+  {
+   "bugid": "1596317",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make MediaFeatureValuesChangedAllDocuments work in Fission"
+  },
+  {
+   "bugid": "1591613",
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "ubuntu1804 - forms/input/number/number-style-inheritance.html == forms/input/number/number-style-inheritance-ref.html | image comparison, max difference: 255, number of differing pixels: 502"
+  },
+  {
+   "bugid": "1599984",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "ubuntu1804 - layout/forms/test/test_bug549170.html | An inner div should be the target of the event - got \"INPUT\", expected \"DIV\""
+  },
+  {
+   "bugid": "1601500",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "ubuntu1804 - /css/css-grid/grid-model/grid-container-scrollbar-vertical-rl-001.html | Testing http://web-platform.test:8000/css/css-grid/grid-model/grid-container-scrollbar-vertical-rl-001.html"
+  },
+  {
+   "bugid": "1598520",
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Use DocumentChannel for srcdoc loads"
+  },
+  {
+   "bugid": "1601243",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/serviceworkers/test/browser_download.js | Test timed out when Gecko 73 merges to Beta on 2020-01-06"
+  },
+  {
+   "bugid": "1604717",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Skype installer download error: \"dmg.part could not be saved, because the source file could not be read\""
+  },
+  {
+   "bugid": "1598497",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Consider moving nsIHttpChannelInternal.canceled to nsIChannel"
+  },
+  {
+   "bugid": "1599619",
+   "status": "REOPENED",
+   "component": "Core:SVG",
+   "summary": "ubuntu1804 - svg/smil/style/anim-css-font-1.svg == svg/smil/style/anim-css-font-1-ref.svg | image comparison, max difference: 255, number of differing pixels: 1520"
+  },
+  {
+   "bugid": "1602020",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 73 to use NSS 3.49"
+  },
+  {
+   "bugid": "1603767",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Intermittent GECKO(1907) | Assertion failure: mValue == Initial, at /builds/worker/workspace/build/src/dom/indexedDB/FlippedOnce.h:30"
+  },
+  {
+   "bugid": "1600283",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Harmonize pointer usage in IndexedDB code"
+  },
+  {
+   "bugid": "1605041",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Fix static-analysis warnings from bug 1586370"
+  },
+  {
+   "bugid": "1604941",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "AudioContextOperation promises can be left hanging"
+  },
+  {
+   "bugid": "1605150",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Further relax the timing requirements of test_mediarecorder_pause_resume_video.html"
+  },
+  {
+   "bugid": "1548318",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "ICE Restart fails when re-negotiating after switching Wi-Fi networks."
+  },
+  {
+   "bugid": "1489463",
+   "status": "VERIFIED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Maximized windows sometimes get stuck in their initial small creation size when restoring previous session"
+  },
+  {
+   "bugid": "1504021",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Right-click on link immediately opens link in new tab unless button is held"
+  },
+  {
+   "bugid": "1605130",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Disallow calling `forget` on `OwningNonNull` except from CC unlink"
+  },
+  {
+   "bugid": "1601905",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "68.3.0 can`t open attachments with spaces in name"
+  },
+  {
+   "bugid": "1604429",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Component loader doesn't handle uninitialized lexicals correctly"
+  },
+  {
+   "bugid": "1605248",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "LoaderObserver::Clear should make the LoaderObserver stop accumulating further data"
+  },
+  {
+   "bugid": "1605152",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_console_chrome_context_message.js | A promise chain failed to handle a rejection: this.transport is null - stack: send@resource://devtools/server/debugger-server-connection.js:91:5"
+  },
+  {
+   "bugid": "1604411",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Display variables declared in the expression in the autocomplete popup"
+  },
+  {
+   "bugid": "1600680",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Another race condition with autocompletion"
+  },
+  {
+   "bugid": "1239008",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove unused ChromeDebuggerActor"
+  },
+  {
+   "bugid": "1602804",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Removing and setting a set/get watchpoint doesn't work after resuming execution"
+  },
+  {
+   "bugid": "1605046",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "devtools/client/debugger/test/mochitest/browser_dbg-browser-content-toolbox.js fails with devtools.browsertoolbox.fission set to true"
+  },
+  {
+   "bugid": "1588050",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Switch ON the Omniscient Browser Toolbox by default"
+  },
+  {
+   "bugid": "1605231",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "update Yarn to 1.21.1 to close package.json file overwrite vulnerability"
+  },
+  {
+   "bugid": "1595188",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Intermittent Tier 2 Fission TEST-UNEXPECTED-PASS | devtools/client/responsive/test/browser/browser_contextual_identity.js | We expect at least one assertion to fail because this test file is marked as fail-if in the manifest. -"
+  },
+  {
+   "bugid": "1603804",
+   "status": "NEW",
+   "component": "Developer Services:General",
+   "summary": "third_party/python/lldbutils is not third party code"
+  },
+  {
+   "bugid": "1603714",
+   "status": "ASSIGNED",
+   "component": "External Software Affecting Firefox:Telemetry",
+   "summary": "Crash in [@ mozilla::ipc::FatalError | mozilla::ipc::IProtocol::HandleFatalError | mozilla::dom::PContentParent::OnMessageReceived] from deserializing UntrustedModulesData"
+  },
+  {
+   "bugid": "1605094",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Prepare urlbar tests for browser.urlbar.openViewOnFocus=true"
+  },
+  {
+   "bugid": "1578754",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement groups for messaging system"
+  },
+  {
+   "bugid": "1603547",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Create a new endpoint/view for WNPanel tests"
+  },
+  {
+   "bugid": "1605280",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab search handoff fails when browser.tabs.remote.separatePrivelegedContentProcess is true"
+  },
+  {
+   "bugid": "1604198",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Top Sites on multiple rows are displayed on one row under 1122px browser width"
+  },
+  {
+   "bugid": "1604981",
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Branched add-on studies don't setExperimentActive after the browser restarts"
+  },
+  {
+   "bugid": "1601893",
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Perma Release TEST-UNEXPECTED-FAIL | services/settings/test/unit/test_attachments_downloader.js | xpcshell return code: 0 when Gecko 72 merges to Release on 2019-12-30"
+  },
+  {
+   "bugid": "1604929",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Correct multiple locale handling and telemetry Ids in the modern configuration"
+  },
+  {
+   "bugid": "1603002",
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "Intermittent browser/base/content/test/about/browser_aboutCertError_mitm.js | Uncaught exception - Loads the MitM error page. - threw exception: [Exception... \"(null)\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: \"<unknown>\"  data: no]"
+  },
+  {
+   "bugid": "1598221",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Create functional tests for DNS-over-HTTPS Rollout System Add-on"
+  },
+  {
+   "bugid": "1605071",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Hide tab strip buttons using display:none instead of visibility:hidden"
+  },
+  {
+   "bugid": "1480542",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Implement new overflow menu to permanently be visible"
+  },
+  {
+   "bugid": "1605050",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "new-tab-button (tab bar overflows) accepts javascript: and data: URL drops while tabs-newtab-button (tab bar doesn't overflow) doesn't"
+  },
+  {
+   "bugid": "1601334",
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Increase Urlbar min-width"
+  },
+  {
+   "bugid": "1605178",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "AutoScroll shouldn't start when middle clicking on inputs in aboutlogins"
+  },
+  {
+   "bugid": "1581016",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "[mozbuild] convert mozpack to use python3"
+  },
+  {
+   "bugid": "1604881",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Scream at user if they try to set CC or CXX with \"mk_add_options\" in .mozconfig"
+  },
+  {
+   "bugid": "1605215",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "tweak some sandboxed wasm library configuration"
+  },
+  {
+   "bugid": "1605181",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Automated review] Coverity and clang-tidy warnings when using if constexpr"
+  },
+  {
+   "bugid": "1604295",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update NodeJS to latest post 8.17.0 release for npm sec fixes"
+  },
+  {
+   "bugid": "1605246",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Main process is not killed when content process dies during tests"
+  },
+  {
+   "bugid": "1601037",
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Make options parameter default to {}"
+  },
+  {
+   "bugid": "1600959",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Runtime",
+   "summary": "Implement Runtime.executionContextsCleared"
+  },
+  {
+   "bugid": "1564518",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Recommendations message bar should have Close button"
+  },
+  {
+   "bugid": "1601475",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "[MSU Capstone] Remove ImageContentLoaded event and ImageDocumentLoaded message handling code across the tree"
+  },
+  {
+   "bugid": "1604472",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Credentials and generated passwords saved in Private Browsing mode can't be merged"
+  },
+  {
+   "bugid": "1567076",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Toggling \"unwanted and uncommon\" doesn't set the pref back to its default value"
+  },
+  {
+   "bugid": "1605138",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Fix link to Glean debugging"
+  }
+ ],
+ "date": "2019-12-20",
+ "cset": "5a7641c75a2e3d54864c23242f2b986c7ec77796",
+ "buildid": "20191220095035",
+ "fixed": 78,
+ "total": 93,
+ "restricted": null
+}

@@ -1,0 +1,520 @@
+{
+ "bugs": [
+  {
+   "bugid": "1686948",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent  Linux asan LeakSanitizer | leak at mozilla::dom::ScriptLoader::CreateLoadRequest, mozilla::dom::ScriptLoader::ProcessExternalScript, mozilla::dom::ScriptLoader::ProcessScriptElement | after content-security-policy is ran."
+  },
+  {
+   "bugid": "1642621",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "[meta] Ship out of process WebGL for Windows and Mac"
+  },
+  {
+   "bugid": "1684647",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsJSProtocolHandler.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1686625",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsContentUtils::GetButtonsFlagForButton() returns incorrect value in some cases and adds assertions"
+  },
+  {
+   "bugid": "1685807",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "window.name resetting drops name when loading about:blank to a window which had non-about:blank loaded to it"
+  },
+  {
+   "bugid": "1686716",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Calling event.preventDefault in drop event handler causes a crash after target iframe has been removed"
+  },
+  {
+   "bugid": "1648464",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Add a way to trigger the encoding detector from the menu"
+  },
+  {
+   "bugid": "1647310",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Consider not saving the character encoding on cache entries"
+  },
+  {
+   "bugid": "1685900",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Use distinct types for internal and external content policy types"
+  },
+  {
+   "bugid": "1671166",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perform IPC based Principal vetting for ContentParent::Recv(Principal)"
+  },
+  {
+   "bugid": "1685303",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Fortify code around `AccessibleCaretManager::OnSelectionChanged`"
+  },
+  {
+   "bugid": "1686722",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Restructure the pointerevent mochitest which are created for running wpt"
+  },
+  {
+   "bugid": "1625953",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support aria-controls and aria-flowto in OS X."
+  },
+  {
+   "bugid": "1359482",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Don't expose editable state on grid or gridcell"
+  },
+  {
+   "bugid": "1623286",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Missing accessible state-changed events switching active documents (AKA broken mouse review in Orca when switching tabs)"
+  },
+  {
+   "bugid": "1686802",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose OMTP status to telemetry."
+  },
+  {
+   "bugid": "1686750",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Perma Tier 2 Assertion failure: false, at /builds/worker/checkouts/gecko/dom/canvas/TexUnpackBlob.cpp:369"
+  },
+  {
+   "bugid": "1640053",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Implement full EGL support for glxtest"
+  },
+  {
+   "bugid": "1685744",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Scrolling on some pages hits the glyph cache limit, and the resulting churn causes unnecessary growth of the texture cache"
+  },
+  {
+   "bugid": "1686919",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Notify compositor window creation failure to gfxCriticalLog"
+  },
+  {
+   "bugid": "1686862",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix oversights from bug 1685563 (A8 glyphs texture)"
+  },
+  {
+   "bugid": "1686860",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Relax version check for CreateSwapChainForHwnd() in RenderCompositorANGLE::CreateSwapChain()"
+  },
+  {
+   "bugid": "1686810",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "The FPS display in the WR profiler overlay shows confusing values"
+  },
+  {
+   "bugid": "1420335",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "OSPreferenes::ReadDateTimePattern should detect 12h/24h on Android"
+  },
+  {
+   "bugid": "1685836",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use object literal for JSON dump for array where its elements are referred by index"
+  },
+  {
+   "bugid": "1686691",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use actual format in XDR version check"
+  },
+  {
+   "bugid": "1686445",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make structured cloning work with large array buffers"
+  },
+  {
+   "bugid": "1686936",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make more typed array code work with large buffers"
+  },
+  {
+   "bugid": "1686702",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadNondeterministicException(), at jit/WarpOracle.cpp:188"
+  },
+  {
+   "bugid": "1686692",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove unused MIR nodes, MBasicBlock methods, and enums"
+  },
+  {
+   "bugid": "1647791",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "experiment to see whether we could retroactively disallow duplicate imports"
+  },
+  {
+   "bugid": "1685679",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add do_Init function to allow assigning to an InitializedOnce variable once"
+  },
+  {
+   "bugid": "1684637",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "CacheFile.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": "1686421",
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Only enable network.dns.upgrade_with_https_rr on nightly and collect more probes"
+  },
+  {
+   "bugid": "1677951",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Low level HTTP3 telemetry"
+  },
+  {
+   "bugid": "1686828",
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "http://forums.mozillazine.org/ can not be loaded completely with uBlock Origin installed"
+  },
+  {
+   "bugid": "1679933",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Firefox freeze on the startup"
+  },
+  {
+   "bugid": "1685040",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Print preview on about:preferences and about:policies page/subpages previews on only 1 page"
+  },
+  {
+   "bugid": "1686494",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Minutes of delay, when printing a page-range from a long PDF document"
+  },
+  {
+   "bugid": "1683054",
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "RLBox template specialization regression"
+  },
+  {
+   "bugid": "1683826",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Replace SanitizeOriginString by pure functions"
+  },
+  {
+   "bugid": "1685098",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Migrate dom/quota/ActorsParent.cpp to use QM_TRY et al."
+  },
+  {
+   "bugid": "1685279",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Change QuotaManager::ParseOrigin to return a Result<PrincipalInfo, nsresult>"
+  },
+  {
+   "bugid": "1685677",
+   "status": "REOPENED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Refactor QuotaManager to improve maintainability"
+  },
+  {
+   "bugid": "1685277",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Use QM_TRY in dom/localstorage/ActorsParent.cpp"
+  },
+  {
+   "bugid": "1685278",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Change GenerateOriginKey2 to return a Result"
+  },
+  {
+   "bugid": "1683299",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "localStorage.setItem causes  DOMException: The quota has been exceeded without any localStorage"
+  },
+  {
+   "bugid": "1684912",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "The caller of CreateStorageConnection needs to know if the usage file was removed even if the method failed"
+  },
+  {
+   "bugid": "1685963",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "test_scrollbar_colors.html fails with the non-native theme enabled"
+  },
+  {
+   "bugid": "1685985",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Toolbox error count hides the Toolbox Toolbar Chevron"
+  },
+  {
+   "bugid": "1685413",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Re-enable devtools/client/dom/test/browser_dom_fission_target_switching.js test for Fission"
+  },
+  {
+   "bugid": "1685470",
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Intermittent devtools/client/aboutdebugging/test/browser/browser_aboutdebugging_addons_debug_popup.js | Test timed out -"
+  },
+  {
+   "bugid": "1685697",
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:General",
+   "summary": "Permanent failure lines for successful build tasks: [crossbeam-utils 0.8.1] error[E0412]: cannot find type `AtomicU128` in module `core::sync::atomic`"
+  },
+  {
+   "bugid": "1686811",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Call pickResult even when shouldNavigate payload property is set"
+  },
+  {
+   "bugid": "1665066",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove payload.keywordOffer in favor of payload.providesSearchMode"
+  },
+  {
+   "bugid": "1686767",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Give weather extension more time to produce a result"
+  },
+  {
+   "bugid": "1681697",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Private mode offers switch-to-tab option for normal-mode open sites (must be top sites)"
+  },
+  {
+   "bugid": "1673129",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "pressing the spacebar on the Downloads panel is both page-down and toggle-pause"
+  },
+  {
+   "bugid": "1686316",
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "`DOMWillOpenModalDialog` does not send event detail when new the tab modal UI is opened for content modals"
+  },
+  {
+   "bugid": "1686373",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Fix skeleton UI theme inconsistencies"
+  },
+  {
+   "bugid": "1682593",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove the SSB feature"
+  },
+  {
+   "bugid": "1660848",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Add a \"check for updates...\" option to application menus."
+  },
+  {
+   "bugid": "1686977",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Save to Pocket button sign up only shows fxa option if you're signed into fxa"
+  },
+  {
+   "bugid": "1683991",
+   "status": "NEW",
+   "component": "Firefox:Search",
+   "summary": "Built-in eBay search engine just sends people to ebay.com when there are multiple words in a search query"
+  },
+  {
+   "bugid": "1686907",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "$' is replaced to Mozilla Firefox in titles"
+  },
+  {
+   "bugid": "1686735",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Themes drop-down menu from about:customize is shaking sometimes when opened"
+  },
+  {
+   "bugid": "1650835",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Support toolbar buttons that have a default action, and a drop marker to open a panel with more options"
+  },
+  {
+   "bugid": "1686964",
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "0.13 - 0.22% installer size (osx-aarch64-shippable) regression on push 60625635f86daf1eb8d704cc4ec3d80d815c4495 (Wed January 13 2021)"
+  },
+  {
+   "bugid": "1680534",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Re-mask passwords in about:logins after primary password timeout"
+  },
+  {
+   "bugid": "1686646",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Avoid having to set many things in mozconfigs"
+  },
+  {
+   "bugid": "1686510",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add a diff task for linux64 reproducible builds (except wasm sandboxing)"
+  },
+  {
+   "bugid": "1685389",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use callback.resolveTo instead of result.accept(callback.sendSuccess)"
+  },
+  {
+   "bugid": "1685122",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.TextInputDelegateTest.inputConnection_bug1275371[#textarea] | java.lang.AssertionError: Cannot forward delete with shift+backspace"
+  },
+  {
+   "bugid": "1659283",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add-on card in about:addons has update indicator (blue dot) when an unrelated add-on is installed"
+  },
+  {
+   "bugid": "1686888",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Stop building dump_syms"
+  },
+  {
+   "bugid": "1649611",
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "DownloadIntegration.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649610",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "SharedDataMap.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1676942",
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "Add equivalent of CommonUtils.{read,write}JSON to IOUtils"
+  },
+  {
+   "bugid": "1680151",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "IOUtils::ReadUTF8 and IOUTils::WriteAtomicUTF8 should use UTF8String instead of DOMString"
+  },
+  {
+   "bugid": "1678619",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Convert frecency notifications to a PlacesEvent"
+  },
+  {
+   "bugid": "1682316",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Print preview paginator is not responsive to browser window shrink"
+  },
+  {
+   "bugid": "1673663",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement C++ and JS APIs for the Timing Distribution Metric Type"
+  },
+  {
+   "bugid": "1679950",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove the Rust dispatcher from FOG"
+  },
+  {
+   "bugid": "1684792",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Form validation popups appear at a wrong place"
+  },
+  {
+   "bugid": "1686969",
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Make searchfox index both mozilla-central nightlies in order to allow having reliable coverage data without adding undue latency"
+  }
+ ],
+ "date": "2021-01-16",
+ "cset": "46713b21267a0769462b4a0cb6cbff4d3cbee901",
+ "buildid": "20210116092804",
+ "fixed": 74,
+ "total": 85,
+ "restricted": 1
+}

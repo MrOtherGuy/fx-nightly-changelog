@@ -1,0 +1,574 @@
+{
+ "bugs": [
+  {
+   "bugid": "1700075",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Switch MOZ_ASSERT_IF to MOZ_RELEASE_ASSERT in MediaTrack::AppendMessage"
+  },
+  {
+   "bugid": "1301409",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Reenable mediasource-activesourcebuffers test"
+  },
+  {
+   "bugid": "1352050",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "MSE mochitests are disabled on Android"
+  },
+  {
+   "bugid": "1694517",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libdav1d to 6c6d25d3 for Firefox 89"
+  },
+  {
+   "bugid": "1699434",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Do not filter AAC based on sample rate, instead let decoder creation fail if we have a rate we can't handle"
+  },
+  {
+   "bugid": "1693049",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: !aRootNode || aNotInsertedYet || (aStartBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && aEndBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && aRootNode == RangeUtils::ComputeRootNode(aStartBoundary.Container()) &&"
+  },
+  {
+   "bugid": "1693070",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /html/semantics/embedded-content/media-elements/loading-the-media-resource/resource-selection-currentSrc.html | TypeError: can't access property \"apply\", f is undefined"
+  },
+  {
+   "bugid": "1220696",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "textarea execcommand insertText not working properly"
+  },
+  {
+   "bugid": "1528289",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Middle click-hold-release fires paste event after autoscrolling"
+  },
+  {
+   "bugid": "673087",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "XML declaration in text/html not used as an internal character encoding declaration (due to WHATWG HTML compliance)"
+  },
+  {
+   "bugid": "1700241",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "The offset{X|Y} of click mouse event on label element is not 0 when accesskey is pressed"
+  },
+  {
+   "bugid": "1672141",
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/pointerevents/test_wpt_touch_action.html | Test timed out."
+  },
+  {
+   "bugid": "1686662",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Middle mouse click on a result link of DuckDuckGo not only opens the link but also causes auto-scrolling"
+  },
+  {
+   "bugid": "1699683",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Enabling the profiler with the IO interposer to profile tests in debug builds leaks in content processes at shutdown"
+  },
+  {
+   "bugid": "1699768",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "200ms long white frame during navigation on amazon music"
+  },
+  {
+   "bugid": "1699598",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Create GLContext for CompositorOGL when sw-wr is enabled on Android"
+  },
+  {
+   "bugid": "1699603",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Switch dirty region tracking from bitmask to rects"
+  },
+  {
+   "bugid": "1700339",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "__VERSION__ conflicts with a clang built-in macro"
+  },
+  {
+   "bugid": "1678892",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement PBOs and partial clears for RenderCompositorOGLSWGL"
+  },
+  {
+   "bugid": "1610570",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Support a 'passback' attribute for individual IPC arguments to avoid requiring no-op validations"
+  },
+  {
+   "bugid": "1699622",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: targetProto->isUsedAsPrototype(), at gc/GC.cpp:8052"
+  },
+  {
+   "bugid": "1696178",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimize Object.assign more"
+  },
+  {
+   "bugid": "1700034",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use same maximum value for StringIsArrayIndex and  CheckStringIsIndex"
+  },
+  {
+   "bugid": "1692130",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JSFunction::delazifyLazilyInterpretedFunction is treated as \"Interpreter\" or \"Jit\" time in the profiler - would a different category be more appropriate?"
+  },
+  {
+   "bugid": "1700525",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ JS_AssignObject]"
+  },
+  {
+   "bugid": "1697696",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Fix branch pruning"
+  },
+  {
+   "bugid": "1699910",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !args_->block()->info().anyFormalIsAliased(), at jit/ScalarReplacement.cpp:1510"
+  },
+  {
+   "bugid": "1699851",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid allocating for ArrayIteratorNext"
+  },
+  {
+   "bugid": "1687025",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Inline Array#forEach, Array#map etc."
+  },
+  {
+   "bugid": "1688033",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use scalar replacement to optimize the arguments object in Warp"
+  },
+  {
+   "bugid": "1693482",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "SIMD optimization x64/x86: inline constant load in various instructions"
+  },
+  {
+   "bugid": "1690965",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Extend wasm exception handling to full instruction set in proposal"
+  },
+  {
+   "bugid": "1696721",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Ruby",
+   "summary": "Ruby elements with padding have incorrect layout"
+  },
+  {
+   "bugid": "1681691",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Implement ascent-override, descent-override, and line-gap-override"
+  },
+  {
+   "bugid": "1601556",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Result<V, E> should be a literal type if V and E are literal types"
+  },
+  {
+   "bugid": "1698515",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Remove spaces from PerfStats metric names"
+  },
+  {
+   "bugid": "1700472",
+   "status": "NEW",
+   "component": "Core:Printing: Output",
+   "summary": "Remove ::-moz-scrolled-page-sequence"
+  },
+  {
+   "bugid": "1700379",
+   "status": "NEW",
+   "component": "Core:Printing: Output",
+   "summary": "Hit testing on fission iframes in print preview is messed up."
+  },
+  {
+   "bugid": "1700478",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Make nsIFrame::IsTransformed cheaper for non-transformed frames."
+  },
+  {
+   "bugid": "1699812",
+   "status": "ASSIGNED",
+   "component": "Core:SVG",
+   "summary": "Perma Android /svg/text/scripted/getsubstringlength-emoji-ligatures.html | SVGTextContentElement.getSubStringLength on Emoji with ligatures - assert_approx_equals: expected 340.75 +/- 1 but got 330.3458251953125 when Gecko 88 merges to Beta on 2021-03-22"
+  },
+  {
+   "bugid": "1686191",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Have a way to specifically report warnings around QM_TRY"
+  },
+  {
+   "bugid": "1679645",
+   "status": "ASSIGNED",
+   "component": "Core:Web Painting",
+   "summary": "Rendering long pages with text selection takes seconds"
+  },
+  {
+   "bugid": "1700250",
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "dump uri along with display list"
+  },
+  {
+   "bugid": "1698997",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Initial support for native context menus"
+  },
+  {
+   "bugid": "1699792",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Cleanup in native menu code, round 4"
+  },
+  {
+   "bugid": "708901",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "have an nsTHashtable derivative that's designed for storing sets"
+  },
+  {
+   "bugid": "1690326",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Add mappings for NS_ERROR_MODULE_WIN32 errors generated from nsLocalFileWin.cpp"
+  },
+  {
+   "bugid": "1699858",
+   "status": "NEW",
+   "component": "DevTools:CSS and Themes",
+   "summary": "Avoid using chrome://global/skin icons which will get proton treatment in 89."
+  },
+  {
+   "bugid": "1689101",
+   "status": "NEW",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_network_messages_expand_before_updates.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/shared/test/shared-head.js:700 - Error: Failed waitFor():"
+  },
+  {
+   "bugid": "1697147",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/shared/resources/tests/browser_target_list_various_descriptors.js | Test timed out -"
+  },
+  {
+   "bugid": "1700106",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove eslint specific for devtool's mochitests"
+  },
+  {
+   "bugid": "1666386",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Intermittent devtools/client/netmonitor/test/browser_net_block-extensions.js | The request blocked status icon is visible -"
+  },
+  {
+   "bugid": "1693314",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Enable new Performance panel by default on DevEdition"
+  },
+  {
+   "bugid": "1616700",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use the default address bar search mode for new tab search handoff"
+  },
+  {
+   "bugid": "1700137",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Proton] \"Add Search Engine\" missing in address bar context menu after theme is changed."
+  },
+  {
+   "bugid": "1699821",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "No border is shown in \"search Toolbar\""
+  },
+  {
+   "bugid": "1697533",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Update the Bookmarks toolbar button menu organization and style"
+  },
+  {
+   "bugid": "1699552",
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Update default width and font size of the Downloads Panel when Proton is enabled"
+  },
+  {
+   "bugid": "1700001",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Linux][Proton] \"Exit\" appmenu item should be labeled \"Quit\" instead"
+  },
+  {
+   "bugid": "1699673",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[Proton] Hover effect for an item inside context menu that has a submenu looks like one large hover rectangle"
+  },
+  {
+   "bugid": "1694472",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update UrlbarPrefs to use ExperimentFeature"
+  },
+  {
+   "bugid": "1693376",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Move the Pocket button the toolbar"
+  },
+  {
+   "bugid": "1597499",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "[Fission] Fix session restore to work for cross-origin iframes"
+  },
+  {
+   "bugid": "1698104",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Fix session restore for about:reader"
+  },
+  {
+   "bugid": "1698878",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Verify form data URL in the parent"
+  },
+  {
+   "bugid": "1667965",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Incorrect icon for remote non-HTTPS PDF"
+  },
+  {
+   "bugid": "1698981",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Focus rings are not visible in (at least) permission panels when Proton is enabled"
+  },
+  {
+   "bugid": "1699525",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "The gap between the last tab and the New Tab button should be 4px (currently 6px)"
+  },
+  {
+   "bugid": "1699528",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Restyle the password panels to match the Proton spec"
+  },
+  {
+   "bugid": "1699158",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Rename variables related to secondary buttons"
+  },
+  {
+   "bugid": "1698436",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Proton customization - re-center several buttons inside the overflow dropdown menu"
+  },
+  {
+   "bugid": "1698065",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "The Firefox Account icon is displayed in the toolbar overflow menu when the user is not signed in"
+  },
+  {
+   "bugid": "1700195",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Replace BrowserTestUtils.waitForCondition with TestUtils.waitForCondition in browser_fxAccounts.js"
+  },
+  {
+   "bugid": "1700201",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Official branding is missing in the import report detail page"
+  },
+  {
+   "bugid": "1679131",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Remove all confirmation modal - icon and close button icons can be dragged"
+  },
+  {
+   "bugid": "1699380",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Add missing local-toolchain tasks for arm64 mac"
+  },
+  {
+   "bugid": "1698174",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoThread.getProcessName is not compatible with isolatedProcess"
+  },
+  {
+   "bugid": "1700396",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Bump Updatebot Version"
+  },
+  {
+   "bugid": "1699740",
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Make Updatebot run on a cron job in m-c"
+  },
+  {
+   "bugid": "1681985",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Use Fathom to recognize CC fields"
+  },
+  {
+   "bugid": "1693008",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Implement header with small icon for commondialog.xhtml"
+  },
+  {
+   "bugid": "1649604",
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "JSONFile.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649593",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "ExtensionParent.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1649598",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "ProfileAge.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": "1699705",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Allow autocomplete to use related realms credentials"
+  },
+  {
+   "bugid": "1699231",
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "The WebRender rollout is obsolete but still active"
+  },
+  {
+   "bugid": "1678360",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "CreateInstanceWithProfile should not pass -no-remote"
+  },
+  {
+   "bugid": "1638991",
+   "status": "NEW",
+   "component": "Toolkit:Telemetry",
+   "summary": "Convert 'mach telemetry-tests-client' to run with Python 3"
+  },
+  {
+   "bugid": "1686295",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent toolkit/components/telemetry/tests/unit/test_TelemetrySession.js | sessionTimeExcludingAndIncludingSuspend - [sessionTimeExcludingAndIncludingSuspend : 649] The uptime with suspend must always been greater or equal to the uptime"
+  },
+  {
+   "bugid": "1697616",
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "PiP on video with unsupported mimetype shows a tiny window"
+  },
+  {
+   "bugid": "1699828",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Show web extension context menus above the navigation items on macOS"
+  },
+  {
+   "bugid": "1581859",
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "Rewrite WebNavigationContent.js in Fission-compatible C++"
+  },
+  {
+   "bugid": "1536094",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Dynamic module import doesn't work in webextension content scripts"
+  },
+  {
+   "bugid": "1699101",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Annotate content styles injected as data URLs to help gather more meaningful telemetry"
+  }
+ ],
+ "date": "2021-03-24",
+ "cset": "3be60f42358afa252f4e8fba01baba156dbd7ffe",
+ "buildid": "20210324084848",
+ "fixed": 78,
+ "total": 94,
+ "restricted": 2
+}

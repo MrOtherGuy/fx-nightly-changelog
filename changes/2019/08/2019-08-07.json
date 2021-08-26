@@ -1,0 +1,706 @@
+{
+ "bugs": [
+  {
+   "bugid": "1053379",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Reduce amount of boilerplate code required for CodeAddressService"
+  },
+  {
+   "bugid": "1339672",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-grid] grid-auto-columns/rows should accept multiple track-size values"
+  },
+  {
+   "bugid": "1491874",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "pick element keyboard shortcut focuses dev tools window, not viewport"
+  },
+  {
+   "bugid": "1527846",
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent GECKO(9344) | Assertion failure: m_refCount == 1, at z:/build/build/src/js/src/jit/ExecutableAllocator.cpp:50"
+  },
+  {
+   "bugid": "1528239",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /workers/SharedWorker-exception-propagation.html | Uncaught error in shared worker should not propagate to window - expected FAIL"
+  },
+  {
+   "bugid": "1529068",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement CSP 'navigate-to' directive"
+  },
+  {
+   "bugid": "1530996",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Store performance benchmark during decoding for use in MediaCapabilities"
+  },
+  {
+   "bugid": "1533846",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Intermittent leakcheck | default 3038641 bytes leaked (AbstractThread, AbstractWatcher, AnimationTimeline, AsyncFreeSnowWhite, AtomSet, ...)"
+  },
+  {
+   "bugid": "1536103",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Fix sphinx warnings in `mach doc` and make them fail the build"
+  },
+  {
+   "bugid": "1542037",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Crash in [@ mozilla::net::nsIOService::NewChannelFromURIWithProxyFlagsInternal]"
+  },
+  {
+   "bugid": "1545824",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Support attribute inheritance for both light DOM and shadow DOM within a single chrome custom element"
+  },
+  {
+   "bugid": "1547385",
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "[meta] Inline Variable Preview"
+  },
+  {
+   "bugid": "1547784",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "AddressSanitizer: SEGV /builds/worker/workspace/build/src/dom/html/HTMLMediaElement.cpp:4584:15 in mozilla::dom::HTMLMediaElement::FinishDecoderSetup(mozilla::MediaDecoder*)"
+  },
+  {
+   "bugid": "1548734",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_view_resultTypes_display.js | Should not be displaying a separator - false == true - JS frame :: chrome://mochitests/content/browser/browser/components/urlbar/tests/browser/browser_view_result"
+  },
+  {
+   "bugid": "1555454",
+   "status": "RESOLVED",
+   "component": "Infrastructure & Operations:RelOps: Posix OS",
+   "summary": "migrate green test suites over to macosx1014"
+  },
+  {
+   "bugid": "1558915",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use infallible nsIURI::SchemeIs"
+  },
+  {
+   "bugid": "1559410",
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Intermittent browser/base/content/test/general/browser_refreshBlocker.js | Notification should be visible - | Uncaught exception - at chrome://mochitests/content/browser/browser/base/content/test/general/browser_refreshBlocker.js:103 - TypeError: notif"
+  },
+  {
+   "bugid": "1561553",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "WebSocket frame list should hide some columns by default"
+  },
+  {
+   "bugid": "1561762",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Guard against simultaneous use and revocation of expired tokens"
+  },
+  {
+   "bugid": "1563555",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Improve ergonomics to use Gecko prefs from rust"
+  },
+  {
+   "bugid": "1564221",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Make nsITransportSecurityInfo builtinclass"
+  },
+  {
+   "bugid": "1564621",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent <test-name> | application crashed [@ mozilla::dom::ScreenOrientation::~ScreenOrientation()]"
+  },
+  {
+   "bugid": "1564815",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView's CHANGELOG has incorrect links due to reused link references"
+  },
+  {
+   "bugid": "1565273",
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Right click Address bar does not select whole url"
+  },
+  {
+   "bugid": "1565344",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent Assertion failure: NS_IsMainThread(), at /builds/worker/workspace/build/src/caps/nsJSPrincipals.cpp:38"
+  },
+  {
+   "bugid": "1565422",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.ContentDelegateTest.crashContentMultipleSessions | status -2"
+  },
+  {
+   "bugid": "1565507",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "The default system theme is not automatically enabled when an installed theme is Removed"
+  },
+  {
+   "bugid": "1565689",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "centralized media control service in chrome process"
+  },
+  {
+   "bugid": "1566002",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove unnecessary key values and replace componentWillReceiveProps"
+  },
+  {
+   "bugid": "1566367",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Implement a new GV API for Glean streaming telemetry"
+  },
+  {
+   "bugid": "1566450",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Add descriptor metaclass for the process target type"
+  },
+  {
+   "bugid": "1566469",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use 'ms' instead of 'millis' for variables"
+  },
+  {
+   "bugid": "1566775",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "No WS messages are shown, if the request is changed with arrow keys"
+  },
+  {
+   "bugid": "1566825",
+   "status": "VERIFIED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[Pinterest] Login on pinterest using google account while in Private Browsing mode is not possible"
+  },
+  {
+   "bugid": "1567192",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel] Show the blue dot indicator when tracking protection is opt-out for a given site."
+  },
+  {
+   "bugid": "1567238",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Change the bookmark mirror merge triggers to do less work"
+  },
+  {
+   "bugid": "1567422",
+   "status": "VERIFIED",
+   "component": "Firefox:Site Identity",
+   "summary": "\"Tracking Protections\" icon doesn't have hovering tooltip in some cases"
+  },
+  {
+   "bugid": "1567579",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer initialization of LazyScripts until after all parsing is done."
+  },
+  {
+   "bugid": "1567597",
+   "status": "REOPENED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Perma Tier2 TEST-UNEXPECTED-TIMEOUT | devtools/client/performance/test/browser_perf-recording-selected-01.js | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": "1567686",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "(New Password Manager) Passwords imported from IE, usernames and passwords appear as \"MEoEE....\" in Password Manager until reopen the password manager"
+  },
+  {
+   "bugid": "1567706",
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /feature-policy/reporting/encrypted-media-report-only.https.html | Encrypted Media report only mode - Test timed out"
+  },
+  {
+   "bugid": "1568139",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Lockwise and Monitor cards on the protection report load with significant delay"
+  },
+  {
+   "bugid": "1568151",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Replace `target.getInspector()` by `target.getFront(\"inspector\")`"
+  },
+  {
+   "bugid": "1568157",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Replace toolbox.{inspector,walker,selection,highlighter} with something based on target.getInspector() or target.getFront(\"inspector\")"
+  },
+  {
+   "bugid": "1568245",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Unify JSScript::realm_ / LazyScript::function_"
+  },
+  {
+   "bugid": "1568353",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Some FxA related network requests never timeout"
+  },
+  {
+   "bugid": "1568359",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Update about:logins header to match the spec"
+  },
+  {
+   "bugid": "1568361",
+   "status": "RESOLVED",
+   "component": "Core:IPC: MSCOM",
+   "summary": "Intermittent GECKO(4476) | Assertion failure: currentThread->EventQueue() (Shutdown() may only be called from an XPCOM thread), at z:/build/build/src/xpcom/threads/nsThread.cpp:824"
+  },
+  {
+   "bugid": "1568604",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "browser_view_resultTypes_display.js interacts badly with other tests"
+  },
+  {
+   "bugid": "1568610",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Change PEHeaders::GetIATThunksForModule to return Maybe<Span<IMAGE_THUNK_DATA>>"
+  },
+  {
+   "bugid": "1568683",
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Perma [tier2 fis] toolkit/components/thumbnails/test/browser_thumbnails_bg_crash_during_capture.js | leaked 2 window(s) until shutdown [url = chrome://global/content/backgroundPageThumbs.xhtml]"
+  },
+  {
+   "bugid": "1568866",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Update `Send Tab to Device` for Skyline"
+  },
+  {
+   "bugid": "1569060",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "show process IDs in the layout debugger"
+  },
+  {
+   "bugid": "1569146",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Twitter is not saving to history sidebar after one visit"
+  },
+  {
+   "bugid": "1569196",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Support webrtc to do DNS lookup on socket process"
+  },
+  {
+   "bugid": "1569315",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer allocation of JSFunctions until after Parsing is done."
+  },
+  {
+   "bugid": "1569330",
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Decouple Normandy recipe runner from Telemetry"
+  },
+  {
+   "bugid": "1569613",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add surrogate pair handling API to nsTextFragment"
+  },
+  {
+   "bugid": "1569781",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Refreshing Netmonitor and clicking on a WS request shows Accordion"
+  },
+  {
+   "bugid": "1569855",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add \"Sort by: Breached Websites\" option"
+  },
+  {
+   "bugid": "1569982",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "`mach mochitest --verify` does not respect `skip-if = verify`"
+  },
+  {
+   "bugid": "1570088",
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "The bottom margin for the Monitor card is too big when there are no breached saved passwords"
+  },
+  {
+   "bugid": "1570291",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Make heading structure consistent"
+  },
+  {
+   "bugid": "1570293",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Make the link to about:settings#privacy accessible"
+  },
+  {
+   "bugid": "1570492",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser.topSites.get({ newtab: true }) should prefer sites' labels to titles"
+  },
+  {
+   "bugid": "1570541",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Make clang toolchains use git fetches"
+  },
+  {
+   "bugid": "1570624",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Fix font-size values in the protections panel"
+  },
+  {
+   "bugid": "1570626",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Protections panel isn't wide enough"
+  },
+  {
+   "bugid": "1570658",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add Pref for X-Content-Type nosniff navigation"
+  },
+  {
+   "bugid": "1570709",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "about:logins \"three-dots menu\" always/immediately has its first entry focused, with prominent blue focus rect"
+  },
+  {
+   "bugid": "1570717",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "[a11y] The FX Accounts button is missing an accessible label."
+  },
+  {
+   "bugid": "1570725",
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Crashes triggered by MOZ_DIAGNOSTIC_ASSERT say MOZ_RELEASE_ASSERT"
+  },
+  {
+   "bugid": "1570738",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Prevent usage of eval() in any context in the Parent Process"
+  },
+  {
+   "bugid": "1570869",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make RenderThread's mWindowInfo state management easier to understand"
+  },
+  {
+   "bugid": "1570886",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove enableBigInt run-time flag"
+  },
+  {
+   "bugid": "1570945",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"about:logins\" page wrongly shows that your are no longer logged into the FxA account after revealing or coping a password"
+  },
+  {
+   "bugid": "1570970",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Copied!\" string persist when navigating through the saved logins"
+  },
+  {
+   "bugid": "1570985",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Don't create ObjectClient from the ConsoleTable component"
+  },
+  {
+   "bugid": "1570997",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove fetchCacheDescriptor WebConsole trait"
+  },
+  {
+   "bugid": "1570998",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove selectedObjectActor WebConsole trait"
+  },
+  {
+   "bugid": "1570999",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove transferredResponseSize WebConsole trait"
+  },
+  {
+   "bugid": "1571018",
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unable to select part of the url if the whole url was selected"
+  },
+  {
+   "bugid": "1571171",
+   "status": "REOPENED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent tools/profiler/tests/xpcshell/test_merged_stacks.js |  - The stack contains a few frame labels, as well as the JS functions that we called. - false == true"
+  },
+  {
+   "bugid": "1571211",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Animation",
+   "summary": "Permafailing test_running_on_compositor.html | Multiple transform-like properties animation does not runs on the compositor because the motion path exists - when Gecko 70 merges to Beta on 2019-08-26"
+  },
+  {
+   "bugid": "1571253",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Improve how LayerManagerComposite deals with aborted frames"
+  },
+  {
+   "bugid": "1571272",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ nsWindowWatcher::OpenWindow]"
+  },
+  {
+   "bugid": "1571308",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Apilint error message should not include `detail`"
+  },
+  {
+   "bugid": "1571335",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma tier2 windows10-aarch64 /css/vendor-imports/mozilla/mozilla-central-reftests/images3/object-fit-cover-png-002c.html | Testing http://web-platform.test:8000/css/vendor-imports/mozilla/mozilla-central-reftests/images3/object-fit-cover-png-002c.html"
+  },
+  {
+   "bugid": "1571348",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "ProfilerMarkerPayload::Set...() functions are not necessary"
+  },
+  {
+   "bugid": "1571355",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Base Profiler mutex tweaks"
+  },
+  {
+   "bugid": "1571365",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "node tests aren't documented"
+  },
+  {
+   "bugid": "1571390",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add BlocksRingBuffer::GetState() to take a snapshot of the state"
+  },
+  {
+   "bugid": "1571392",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make BlocksRingBuffer::EntryWriter move-only"
+  },
+  {
+   "bugid": "1571502",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix shutdown leaks with Fission enabled"
+  },
+  {
+   "bugid": "1571505",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "Implement/Enable PHC on Win64 Nightly builds for TB (port bug 1569862 and bug 1569864)"
+  },
+  {
+   "bugid": "1571537",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Do not write manual glue code for the order property."
+  },
+  {
+   "bugid": "1571562",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use toolchain fetches for toolchain tasks"
+  },
+  {
+   "bugid": "1571566",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "\"TypeError: cannot use a string pattern on a bytes-like object\" on cmake error while building clang"
+  },
+  {
+   "bugid": "1571568",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make ShemPool work on --disable-webrtc builds for use in RDD"
+  },
+  {
+   "bugid": "1571576",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Things happening before cmake are logged after the cmake output in build-clang"
+  },
+  {
+   "bugid": "1571587",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Remove unused fetches"
+  },
+  {
+   "bugid": "1571589",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Misc improvements for fetch-content"
+  },
+  {
+   "bugid": "1571596",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Repack GCC and related source tarballs"
+  },
+  {
+   "bugid": "1571597",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Use fetches tasks for ninja and cmake, instead of tooltool"
+  },
+  {
+   "bugid": "1571605",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Artifact build is broken after landing bug 1522795"
+  },
+  {
+   "bugid": "1571621",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "Convert VarCache prefs in HTMLEditor.cpp to static prefs"
+  },
+  {
+   "bugid": "1571622",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Worklet script names in Web Console are not linkified"
+  },
+  {
+   "bugid": "1571636",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Expose build resources data from automation build as artifacts"
+  },
+  {
+   "bugid": "1571680",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel] Toggle switch label in \"Site Not Working?\" view is not displayed"
+  },
+  {
+   "bugid": "1571836",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Enable Rust PGO on Linux64"
+  },
+  {
+   "bugid": "1571837",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Avoid sending empty items for hit test items."
+  },
+  {
+   "bugid": "1571844",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "[Protections Panel] \"Number blocked\" description is not aligned correctly in RTL"
+  },
+  {
+   "bugid": "1571855",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Disable warning for Is##name_##Frame() in Clang"
+  },
+  {
+   "bugid": "1571930",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Convert MOZ_ASSERT in nsColumnSetFrame::ReflowChildren() to be non-fatal"
+  },
+  {
+   "bugid": "1571986",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Intermittent PermissionError: [WinError 5] Access is denied: 'Z:\\\\task_1565153946\\\\fetches\\\\vs2017_15.8.4\\\\VC\\\\bin\\\\Hostx64\\\\x64\\\\Microsoft.Diagnostics.Tracing.EventSource.dll'"
+  },
+  {
+   "bugid": "1572012",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Perma /cookies/http-state/comma-tests.html,general-tests.html failing due to cookie expiration date in the past"
+  }
+ ],
+ "date": "2019-08-07",
+ "cset": "b94a6b06c9b9b8e14635e949371582b8fd029308",
+ "buildid": "20190807095705",
+ "fixed": 95,
+ "total": 116,
+ "restricted": 4
+}

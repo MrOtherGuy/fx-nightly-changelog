@@ -1,0 +1,574 @@
+{
+ "bugs": [
+  {
+   "bugid": "1623661",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove CDM interface 9 usage"
+  },
+  {
+   "bugid": "1624057",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update mp4parse-rust to 63ca8c6"
+  },
+  {
+   "bugid": "1625008",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Disable AudioIPC on Windows in beta"
+  },
+  {
+   "bugid": "1624706",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "RunCbindgen.py needs to pass through RUSTC to avoid failures with rust 1.43"
+  },
+  {
+   "bugid": "1624768",
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "DEPTH_STENCIL with samples>0 forbidden"
+  },
+  {
+   "bugid": "1563335",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Implement switch to execute SharedArrayBuffer threads sequentially rather than in parallel"
+  },
+  {
+   "bugid": "1616991",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "WindowGlobalChild::WindowGlobal should probably have a `Get` prefix"
+  },
+  {
+   "bugid": "1624321",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable dom node arena allocation"
+  },
+  {
+   "bugid": "1624588",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Clean up dependencies and namespace issues in dom::file::ipc sources for unification"
+  },
+  {
+   "bugid": "1624325",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent <randomtest> | application crashed [@ NS_ABORT_OOM(uint64_t) + 0x2d]"
+  },
+  {
+   "bugid": "1600051",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in ReferrerInfo.cpp"
+  },
+  {
+   "bugid": "1623858",
+   "status": "REOPENED",
+   "component": "Core:DOM: Selection",
+   "summary": "Document and simplify some Selection related code"
+  },
+  {
+   "bugid": "1584007",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "ClientHandles attaching to ClientSources may race"
+  },
+  {
+   "bugid": "1240285",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "<label> element with tabindex attribute should become focused when element.focus() is called on it (and not forward focus to its control element)"
+  },
+  {
+   "bugid": "1615014",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "ThreadSanitizer: data race [@ get] vs. [@ assign_assuming_AddRef] on mPerformanceCounter"
+  },
+  {
+   "bugid": "1616679",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver doesn't announce clickable item"
+  },
+  {
+   "bugid": "1623399",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Doorhangers remain visible in VO after they are gone."
+  },
+  {
+   "bugid": "1624826",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Accessible name for fieldset has trailing whitespace"
+  },
+  {
+   "bugid": "1622551",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "JavaScript error: resource:///modules/BrowserGlue.jsm, line 2297: TypeError: can't access property \"AddMarker\", Services.profiler is undefined"
+  },
+  {
+   "bugid": "1621803",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Matrix4x4Flagged::operator*(Matrix4x4) implementation is still incorrect"
+  },
+  {
+   "bugid": "1624783",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove redundant XRE_IsParentProcess() check in gfxPlatform::InitWebRenderConfig()"
+  },
+  {
+   "bugid": "1624216",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "URL hover popup on the bottom left of screen doesnt disappear (doesnt invalidate properly)"
+  },
+  {
+   "bugid": "1624858",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender compositor disabled by blocklist when it should not be"
+  },
+  {
+   "bugid": "1618000",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Max blur radius should be applied after scale factors are applied"
+  },
+  {
+   "bugid": "1625002",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow force enabled the WebRender compositor for testing purposes"
+  },
+  {
+   "bugid": "1624571",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !hasScriptCounts(), at vm/JSScript.cpp:4077"
+  },
+  {
+   "bugid": "1624592",
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Permafailing spidermonkey wasm/ion-error-i64.js |  wasm text error: failed to find func named `$add` (code 3, args \"\") when Gecko 76 merges to Beta on 2020-04-06"
+  },
+  {
+   "bugid": "1618198",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Implement all JSOps supported by IonBuilder in WarpBuilder"
+  },
+  {
+   "bugid": "1624490",
+   "status": "NEW",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Allow declared segments to contain ref.null"
+  },
+  {
+   "bugid": "1620284",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Bump Cranelift to 135a48ca7e9a45d7d31911753e602e6de8b14e2a"
+  },
+  {
+   "bugid": "1624655",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Don't backplate behind themed backgrounds."
+  },
+  {
+   "bugid": "1624514",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Provide a convenient API to get a frame's logical content size"
+  },
+  {
+   "bugid": "1624247",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Flexbox refactoring to prepare for caching reflowed sizes of flex items"
+  },
+  {
+   "bugid": "1624752",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Intermittent forms/input/color/margin-padding-1.html == forms/input/color/margin-padding-1-ref.html | image comparison, max difference: 1, number of differing pixels: 2"
+  },
+  {
+   "bugid": "1574390",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Implement guard pages in PHC"
+  },
+  {
+   "bugid": "1608599",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add preloaded status for requests in the Network panel"
+  },
+  {
+   "bugid": "1624279",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Convert nsOnStartRequestEvent* ev to RefPtr<nsOnStartRequestEvent> ev"
+  },
+  {
+   "bugid": "1623039",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Replace URIParams with nsIURI in PWebSocket.ipdl"
+  },
+  {
+   "bugid": "1622797",
+   "status": "UNCONFIRMED",
+   "component": "Core:Networking",
+   "summary": "Replace URIParams with nsIURI in PFTPChannel.ipdl"
+  },
+  {
+   "bugid": "1621557",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "FailDelayManager::mEntries should be a nsTArray<UniquePtr<FailDelay>>"
+  },
+  {
+   "bugid": "1293067",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "(feature request): Implement a cookie limit warning"
+  },
+  {
+   "bugid": "1612350",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Use CookieJarSetting in WindowContext when adding permission"
+  },
+  {
+   "bugid": "1612378",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make CheckContentBlockingAllowList fission compatible"
+  },
+  {
+   "bugid": "1612349",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make SandboxFlags fission compatible"
+  },
+  {
+   "bugid": "1622271",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent bugs/1614788-1.svg == bugs/1614788-1-ref.svg | image comparison, max difference: 123, number of differing pixels: 48536"
+  },
+  {
+   "bugid": "1347710",
+   "status": "REOPENED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable sandbox protections for the Windows GPU process"
+  },
+  {
+   "bugid": "1607975",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | dom/indexedDB/test/browser_bug839193.js | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": "1603887",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "dataChannel closes unexpectedly, after two rounds of negotiation"
+  },
+  {
+   "bugid": "1620308",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove JSImpl for RTCDTMFSender"
+  },
+  {
+   "bugid": "1620632",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "On older gcc, FallibleTArray<E> cannot be move-constructed from nsTArray<E>"
+  },
+  {
+   "bugid": "1624426",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Build is broken when TaskTracer is enabled"
+  },
+  {
+   "bugid": "1605323",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "\"Store as Global Variable\" should switch context and update selector"
+  },
+  {
+   "bugid": "1621553",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console - autocomplete remains stuck in position when swapping between Inline-Multiline mode"
+  },
+  {
+   "bugid": "1622889",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Preview does not show up on expression with optional chaining"
+  },
+  {
+   "bugid": "1624508",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "PrettyPrint icon should supercede all other icons"
+  },
+  {
+   "bugid": "1623607",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Multiple source tabs are opened for the same source file"
+  },
+  {
+   "bugid": "1602468",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Toolbox destruction is doing too much work"
+  },
+  {
+   "bugid": "1561362",
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "\"Expand All\" button missing in JSON Viewer"
+  },
+  {
+   "bugid": "1622599",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Websocket columns options gets rested after clear"
+  },
+  {
+   "bugid": "1572786",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Remove the Gecko profiler add-on and migrate to the profiler popup"
+  },
+  {
+   "bugid": "1621022",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Improve profiler menu button enabling workflow"
+  },
+  {
+   "bugid": "1624889",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Opening RDM from the Style Editor does not set the viewport dimensions specified by the media query"
+  },
+  {
+   "bugid": "1623980",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search interventions : Letters appear cut if window size is small"
+  },
+  {
+   "bugid": "1622474",
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement about:welcome default UX in 76"
+  },
+  {
+   "bugid": "1624500",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.5.23"
+  },
+  {
+   "bugid": "1624847",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "in-use-blink animation name is overloaded"
+  },
+  {
+   "bugid": "1581931",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Cleanup unused identity popup breakage report view styles"
+  },
+  {
+   "bugid": "1442762",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "\"Open Pop-up Windows\" site permissions' drop-down list items are too narrow"
+  },
+  {
+   "bugid": "1583790",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "SitePermissions should validate principal arguments"
+  },
+  {
+   "bugid": "1624598",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Rename MozPlacesPopup's popupbox shadow DOM part to arrowscrollbox"
+  },
+  {
+   "bugid": "1592464",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Add Vulnerable Password Alert icon in sidebar list (and tooltip)"
+  },
+  {
+   "bugid": "1622514",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Consider to move OSKeyStore.jsm to toolkit"
+  },
+  {
+   "bugid": "1623544",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "`mach install-moz-phab` after `mach bootstrap` fails due to missing `python3-pip` on Debian"
+  },
+  {
+   "bugid": "1624980",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "./mach bootstrap for artifact builds doesn't install fix-stacks"
+  },
+  {
+   "bugid": "1624670",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrap fails with 32-core / 64-thread processor"
+  },
+  {
+   "bugid": "1624535",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "check_prog's allow_missing doesn't take a depends function"
+  },
+  {
+   "bugid": "1581062",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "0.21 - 0.25% installer size (android-5-0-aarch64, linux64, osx-shippable, windows2012-64) regression on push b23b78103bc0d1e74e06b9148d5e0999a6f266c3 (Fri September 13 2019)"
+  },
+  {
+   "bugid": "1617748",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Run `./mach build`, `./mach build-backend`, `./mach configure` with Python 3"
+  },
+  {
+   "bugid": "1621439",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update third-party/python/pyasn1 to a version that supports py3"
+  },
+  {
+   "bugid": "1623952",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make remaining tweaks to configure so it works under macOS on Python 3"
+  },
+  {
+   "bugid": "1622168",
+   "status": "VERIFIED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [tier2] OS X Cross Compiled addon bustages timed out after 2400 seconds of no output when Gecko 76 merges to Beta on 2020-04-06"
+  },
+  {
+   "bugid": "1623982",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "indented_repr is super slow on Python 3"
+  },
+  {
+   "bugid": "1623701",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Ensure build system code is compatible with Python 3.5"
+  },
+  {
+   "bugid": "1624236",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "js/src/vm/Shape.cpp: do not use 'else' after 'break'"
+  },
+  {
+   "bugid": "1610886",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Unable to run test-verify on try"
+  },
+  {
+   "bugid": "1625040",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Fix clang-5 toolchain task symbol"
+  },
+  {
+   "bugid": "1623328",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "mach try again | IOError: [Errno 2] No such file or directory"
+  },
+  {
+   "bugid": "1623197",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "tryselects automatic installation of fzf should not try to install outside of MOZ_STATE_PATH"
+  },
+  {
+   "bugid": "1624910",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "eme-free-repack-repackage-win32 don't output artifacts at the right location"
+  },
+  {
+   "bugid": "1624046",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "\"mach puppeteer-test --write-results\" adds white-space after closing brackets"
+  },
+  {
+   "bugid": "1623938",
+   "status": "RESOLVED",
+   "component": "Thunderbird:Theme",
+   "summary": "HighContrast theme broken in web (config) pages"
+  },
+  {
+   "bugid": "1592324",
+   "status": "UNCONFIRMED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Always show a button to go to AMO in extension/theme list views"
+  },
+  {
+   "bugid": "1624953",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Fix negative margin of menupopup scrollbuttons"
+  },
+  {
+   "bugid": "1623015",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Bookmarks menu widget dropdown scroll arrow icon seem to have inverted enabled/disabled state icons with Dark Theme"
+  }
+ ],
+ "date": "2020-03-26",
+ "cset": "3e5a7430c8d7d87bfeff471e62643185393a34c6",
+ "buildid": "20200326093308",
+ "fixed": 81,
+ "total": 94,
+ "restricted": 2
+}

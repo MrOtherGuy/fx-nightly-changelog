@@ -1,0 +1,604 @@
+{
+ "bugs": [
+  {
+   "bugid": "1704179",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Warn for attempts to combine `:host` pseudoclass in ways that never select anything"
+  },
+  {
+   "bugid": "1705509",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hide -moz-outline-radius."
+  },
+  {
+   "bugid": "1704686",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Rename Document::GetTopLevelContentDocument"
+  },
+  {
+   "bugid": "1704183",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Replace GetTopLevelContentDocument() usage in HighPriorityEventPendingForTopLevelDocumentBeforeContentfulPaint with something non-deprecated"
+  },
+  {
+   "bugid": "1676181",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix docshell/test/browser/browser_browsingContext-01.js for Fission"
+  },
+  {
+   "bugid": "1704693",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix weird Hungarian notation in nsDocLoader"
+  },
+  {
+   "bugid": "1705127",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enable more ESLint rules for some more dom/security/test directories"
+  },
+  {
+   "bugid": "1704651",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Make dom/serviceworkers/test/test_openWindow.html to pass with Fission+bfcache"
+  },
+  {
+   "bugid": "1538991",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::NotificationController::CoalesceMutationEvents]"
+  },
+  {
+   "bugid": "1705253",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Partially disable accessible/tests/browser/mac/browser_app.js when native context menus are used"
+  },
+  {
+   "bugid": "1704680",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Annotate crash reports when child-process profiler shuts down"
+  },
+  {
+   "bugid": "1697629",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fission + sw-wr: UNEXPECTED-FAIL | testing/marionette/harness/marionette_harness/tests/unit/test_reftest.py TestReftest.test_cache_multiple_sizes | AssertionError: 'FAIL' != 'PASS'"
+  },
+  {
+   "bugid": "1675375",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support sending polygonal clip-paths to WebRender and hit-testing them accurately"
+  },
+  {
+   "bugid": "1705569",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Prevent non-premultiplied alpha images being promoted to compositor surfaces"
+  },
+  {
+   "bugid": "1705270",
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: sub_slice_index < self.sub_slices.len() - 1) at gfx/wr/webrender/src/picture.rs:3256"
+  },
+  {
+   "bugid": "1705349",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Meaning of supports_texture_storage variable in webrender::Device::new is unclear"
+  },
+  {
+   "bugid": "1704976",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JSID_IS_ATOM from js/src/vm/JSFunction.cpp"
+  },
+  {
+   "bugid": "1704744",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ShapeProperty and start using it for property lookups"
+  },
+  {
+   "bugid": "1703598",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JSID_IS_ATOM from js/src/vm/ArgumentsObject.cpp"
+  },
+  {
+   "bugid": "1704561",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ JS::ThrowOnModuleEvaluationFailure]"
+  },
+  {
+   "bugid": "1704480",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: generator->isAfterAwait(), at vm/AsyncFunction.cpp:150"
+  },
+  {
+   "bugid": "1509094",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add LifoAlloc documentation."
+  },
+  {
+   "bugid": "1705434",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "We support 6 version of H3"
+  },
+  {
+   "bugid": "1702726",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Assertion: MOZ_ASSERT(false, \"transaction not in entry\");"
+  },
+  {
+   "bugid": "1703786",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove nsIHttpChannelInternal.hasNonEmptySandboxingFlag and use nsILoadInfo.sandboxFlags"
+  },
+  {
+   "bugid": "1654899",
+   "status": "NEW",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Crash [@ mozilla::net::nsHttpTransaction::HandleContentStart] or Assertion failure: mConnection, at netwerk/protocol/http/nsHttpTransaction.cpp:1838"
+  },
+  {
+   "bugid": "1705443",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Permanent failure line even for successful builds: ERROR - check> Traceback (most recent call last):"
+  },
+  {
+   "bugid": "1705392",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Disable the new input vsync alignment due to some crashes on Nightly"
+  },
+  {
+   "bugid": "1705452",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Ensure that the decision of when to shim vs when to allow requests is made correctly"
+  },
+  {
+   "bugid": "1699657",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 89 to use NSS 3.64"
+  },
+  {
+   "bugid": "1700051",
+   "status": "NEW",
+   "component": "Core:Spelling checker",
+   "summary": "Reduce accessbility of `mozInlineSpellStatus`'s members"
+  },
+  {
+   "bugid": "1655953",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Remove the mutex for padding file"
+  },
+  {
+   "bugid": "1647316",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Have a test like dom/localstorage/test/unit/test_originInit.js for DOM Cache to test padding files and database"
+  },
+  {
+   "bugid": "1704433",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "[QM_TRY] Failures in dom/quota/ActorsParent.cpp:QuotaManager::EnsureStorageIsInitialized"
+  },
+  {
+   "bugid": "1700676",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Updating if an origin is accessed on the in-memory object is not guaranteed to be done before shutting down storage"
+  },
+  {
+   "bugid": "1648399",
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Add tests for sane behaviour with unexpected LS and Cache files"
+  },
+  {
+   "bugid": "1705221",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_stayopenmenu.js work with native context menus"
+  },
+  {
+   "bugid": "1704628",
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make devtools context menu tests work with macOS native context menus"
+  },
+  {
+   "bugid": "1704938",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_library_new_bookmark.js work with native context menus"
+  },
+  {
+   "bugid": "1705544",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make tests in devtools/client/inspector run with native context menus"
+  },
+  {
+   "bugid": "1705451",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Disable native context menus in browser_tabContextMenu_keyboard.js"
+  },
+  {
+   "bugid": "1705142",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser_policy_managedbookmarks.js work with native context menus"
+  },
+  {
+   "bugid": "1705130",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "DBus introspection gives OpenURL argument as string instead of array-of-bytes"
+  },
+  {
+   "bugid": "1705320",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix some spelling errors in xpcom/threads"
+  },
+  {
+   "bugid": "1619240",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove dom/xul/test/test_bug486990.xhtml test"
+  },
+  {
+   "bugid": "1515229",
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Too many frames are skipped by MozStackWalk"
+  },
+  {
+   "bugid": "1702812",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "URLs containing Unicode are displayed as punycode"
+  },
+  {
+   "bugid": "1357890",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Improve UX of switching between inputs of box model view"
+  },
+  {
+   "bugid": "872078",
+   "status": "REOPENED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Some special treatment should be given to fonts in the Response tab"
+  },
+  {
+   "bugid": "1704733",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Set touchEventOverride BrowsingContext property in the parent process"
+  },
+  {
+   "bugid": "1705055",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Cleanup touch-simulator code"
+  },
+  {
+   "bugid": "1704026",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Adjust 'Edit bookmarks folder' modal title to 'Edit \"bookmarks folder\"'"
+  },
+  {
+   "bugid": "1695011",
+   "status": "REOPENED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent /components/places/tests/browser/browser_bookmarkProperties_folderSelection.js | A promise chain failed to handle a rejection: can't access property \"promise\", this._batchBlockingDeferred is null - stack: beginBatch/<@/content/browser-places"
+  },
+  {
+   "bugid": "1702996",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "\"Show editor when saving\" checkbox in Bookmark Panel should be left aligned with the other form input fields"
+  },
+  {
+   "bugid": "1702150",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "about:policies - TAB select skips the Section links"
+  },
+  {
+   "bugid": "1704853",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Skeleton UI should be disabled if using non-default UI density"
+  },
+  {
+   "bugid": "1705470",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Flip pref for skeleton UI to ride the trains to release"
+  },
+  {
+   "bugid": "1693180",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Skeleton UI does not show up when restarting for update"
+  },
+  {
+   "bugid": "1704425",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove expired Telemetry probe corroborate.omnijar_corrupted"
+  },
+  {
+   "bugid": "1701910",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Search bar focus on about pages not rounded properly at edges appearing cut"
+  },
+  {
+   "bugid": "1702013",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Re-introduce \"view image info\" in the context menu behind a hidden (about:config) pref and enable that pref by default in devedition"
+  },
+  {
+   "bugid": "1705387",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Rename \"open a new tab\" context menu to just \"New Tab\""
+  },
+  {
+   "bugid": "1703880",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Icons from the Hamburger menu are misaligned by a few pixels"
+  },
+  {
+   "bugid": "1703725",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for proton new user onboarding"
+  },
+  {
+   "bugid": "1692021",
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update notification bar stacking"
+  },
+  {
+   "bugid": "1705191",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add targeting attribute to detect major update"
+  },
+  {
+   "bugid": "1705499",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Proton new user onboarding background image to use webp format"
+  },
+  {
+   "bugid": "1701691",
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Infobars light/dark theme should match theme, not OS"
+  },
+  {
+   "bugid": "1700826",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove or update probes expiring in Firefox 90: BROWSER_ATTRIBUTION_ERRORS"
+  },
+  {
+   "bugid": "1705282",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "High frequency browser/components/newtab/test/browser/browser_topsites_section.js | Uncaught exception - No overlay found - timed out after 50 tries."
+  },
+  {
+   "bugid": "1701948",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Early startup cache should work for Nimbus remote defaults"
+  },
+  {
+   "bugid": "1703261",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Remote defaults should be updated when experiments are updated"
+  },
+  {
+   "bugid": "1705327",
+   "status": "NEW",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Remove infobar notification from pdf viewer"
+  },
+  {
+   "bugid": "1698845",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Update Strings for Standard Mode depending on the cookieBehavior PBM pref"
+  },
+  {
+   "bugid": "1693585",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Changing of default search engine broken due to overrides not being correctly handled"
+  },
+  {
+   "bugid": "1701250",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Move browser_search_discovery.js and browser_addKeywordSearch.js to browser/components/search"
+  },
+  {
+   "bugid": "1702454",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Re-enabling an add-on that overrides search engine parameters causes a prompt"
+  },
+  {
+   "bugid": "1676074",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Add learn more link to \"Cross-site cookies\" permission header description"
+  },
+  {
+   "bugid": "1704717",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "[Proton] The words from site permission panel has the first letter of every word in uppercase"
+  },
+  {
+   "bugid": "1676067",
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Rename \"Show blocked pop-up\" to \"Open blocked pop-up\" in site info menu"
+  },
+  {
+   "bugid": "1704873",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update the WebRTC microphone and camera icon used in the tabstrip"
+  },
+  {
+   "bugid": "1705062",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Items inside sidebar hard to see with Dark theme enabled in Firefox"
+  },
+  {
+   "bugid": "1702281",
+   "status": "ASSIGNED",
+   "component": "Firefox:Theme",
+   "summary": "Refresh the stop/reload icon & animation"
+  },
+  {
+   "bugid": "1705347",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "sidebars-right.svg is displayed with the sidebar to the left"
+  },
+  {
+   "bugid": "1704071",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Improve the address bar /search bar elements contrast during toolbar customization"
+  },
+  {
+   "bugid": "1624291",
+   "status": "REOPENED",
+   "component": "Firefox:Tours",
+   "summary": "Intermittent browser/components/uitour/test/browser_UITour3.js | popupshown event did not happen within 5 seconds. -"
+  },
+  {
+   "bugid": "1701689",
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The weight of the link in the \u201cImport Error\u201d modal is smaller than it should be"
+  },
+  {
+   "bugid": "1705296",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Don't create a python2 mach virtualenv"
+  },
+  {
+   "bugid": "1704126",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap on M1 fails with \"killed: 9\""
+  },
+  {
+   "bugid": "1698669",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "target_arch passed to gyp is inaccurate for some tier-3 platforms"
+  },
+  {
+   "bugid": "1704518",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "8.11 - 8.07% build times / build times (Windows) regression on Wed April 7 2021"
+  },
+  {
+   "bugid": "1661534",
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Extension page: \"Clear Cookies and Site Data\" does nothing"
+  },
+  {
+   "bugid": "1705386",
+   "status": "VERIFIED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "The text from the \"Set Firefox as your default browser\" wraps on a second row"
+  },
+  {
+   "bugid": "1694418",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Update http auth modal prompt for proton"
+  },
+  {
+   "bugid": "1705535",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Update helper string for Keyword field"
+  },
+  {
+   "bugid": "1700412",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Refactor \"signon.recipes.remoteRecipesEnabled\" pref"
+  },
+  {
+   "bugid": "1704945",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Land updated warning.svg shared toolkit icon"
+  },
+  {
+   "bugid": "1699889",
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Update shared toolkit icons"
+  },
+  {
+   "bugid": "1702011",
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Ship v22.0.0 of webcompat system addon"
+  }
+ ],
+ "date": "2021-04-16",
+ "cset": "a00cdb29df1f9c9939332094c15c89026f31eb66",
+ "buildid": "20210416093642",
+ "fixed": 81,
+ "total": 99,
+ "restricted": 2
+}

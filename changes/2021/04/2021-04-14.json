@@ -1,0 +1,760 @@
+{
+ "bugs": [
+  {
+   "bugid": "1689368",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.gecko.media.GeckoHLSResourceWrapper$Callbacks.onLoad(Native Method)]"
+  },
+  {
+   "bugid": "1704551",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Poor style calculation performance for attribute selectors compared to class selectors"
+  },
+  {
+   "bugid": "1623717",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Home key does not work in inline contenteditable"
+  },
+  {
+   "bugid": "1704381",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Switching text direction removes the entire text"
+  },
+  {
+   "bugid": "1702399",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Run mochitests in dom/events/test on GeckoView"
+  },
+  {
+   "bugid": "1704660",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Forms",
+   "summary": "crash near null in [@ mozilla::dom::Blob::ToFile]"
+  },
+  {
+   "bugid": "1694974",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove all existing Fission WPT intermittents"
+  },
+  {
+   "bugid": "1703466",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Checks for Sec-Fetch-* should not block the request for adding Opensearch search engine"
+  },
+  {
+   "bugid": "1658924",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement TRY-HTTPS-FIRST and automatically fall back to http if it doesn't work"
+  },
+  {
+   "bugid": "1702675",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: (mIsSelected == nsTextFrame::SelectionState::Selected) == isReallySelected, at src/layout/generic/nsTextFrame.cpp:7446"
+  },
+  {
+   "bugid": "1684842",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Enable implicit pointer capture for touch on early Beta"
+  },
+  {
+   "bugid": "1697769",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "User is unable to scroll using the scroll bar inside the Hamburger menu on Touch devices"
+  },
+  {
+   "bugid": "1703600",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash [@ AttrArray::GetAttr]"
+  },
+  {
+   "bugid": "1704407",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Use a CLU helper like the original C++ code."
+  },
+  {
+   "bugid": "1702303",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to all non-D3D11 Windows users supporting the GPU process"
+  },
+  {
+   "bugid": "1704687",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Refactor visibility flags and how pass-through picture visibility is handled"
+  },
+  {
+   "bugid": "1704944",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add SubSlice struct to picture cache instances"
+  },
+  {
+   "bugid": "1699985",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement basic native Wayland compositor backend"
+  },
+  {
+   "bugid": "1704951",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add SubSliceIndex and allow batch filtering with it"
+  },
+  {
+   "bugid": "1703141",
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "frozen browser (100% cpu) on transition with a hover"
+  },
+  {
+   "bugid": "1675375",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support sending polygonal clip-paths to WebRender and hit-testing them accurately"
+  },
+  {
+   "bugid": "1704927",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Re-enable Software WebRender popups"
+  },
+  {
+   "bugid": "1702302",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Software WebRender to small/medium screens size Linux users"
+  },
+  {
+   "bugid": "1704954",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender without DirectComposition to NVIDIA high/mixed refresh rate monitor users"
+  },
+  {
+   "bugid": "1702301",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship WebRender to all desktop environments, all Mesa and binary driver NVIDIA users"
+  },
+  {
+   "bugid": "1704694",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add BatchFilter struct"
+  },
+  {
+   "bugid": "1702246",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Tolerate unmapped Big5 byte sequences in chardetng"
+  },
+  {
+   "bugid": "1701765",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Inline nsDocumentViewer::CallChildren() calls in HintCharacterSet code"
+  },
+  {
+   "bugid": "1704499",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js/src/tests/README.txt references non-existent documentation"
+  },
+  {
+   "bugid": "1701620",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "wasi support part 4: add wasi branches for memory stuff"
+  },
+  {
+   "bugid": "1704570",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix a few heap-unclassified issues in SpiderMonkey"
+  },
+  {
+   "bugid": "1702601",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Refactor BaseAbstractBindingIter::init to take a struct with compound literals"
+  },
+  {
+   "bugid": "1704451",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: isDouble(), at js/Value.h:863 with createShapeSnapshot"
+  },
+  {
+   "bugid": "1704576",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Handle allocation failure in CacheIR plain object op by calling into the VM"
+  },
+  {
+   "bugid": "1703105",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Vendor the SIMD spec test suite"
+  },
+  {
+   "bugid": "1703735",
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Intermittent Fission layout/svg/tests/test_context_properties_allowed_domains.html | reftest comparison: == http://example.com/tests/layout/svg/tests/file_context_fill_fallback_red.html red"
+  },
+  {
+   "bugid": "1672073",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Ship aspect-ratio"
+  },
+  {
+   "bugid": "1405708",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Mouse over button with a border radius causes it to turn transparent under linux"
+  },
+  {
+   "bugid": "1704494",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Enable the ascent-, descent-, and line-gap-override descriptors on all channels"
+  },
+  {
+   "bugid": "1702975",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Land test for bug 1595886"
+  },
+  {
+   "bugid": "1702179",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsIndexedToHTML generated views - focus ring for directories only shows the right margin"
+  },
+  {
+   "bugid": "1689730",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Server-Timing HTTP header not shown in dev tools timing panel"
+  },
+  {
+   "bugid": "1700119",
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Key TRR HTTP Version telemetry by DoH provider and fix h3 version comparison"
+  },
+  {
+   "bugid": "1704079",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Http3Session::SetSecInfo does not set  negotiated NPN"
+  },
+  {
+   "bugid": "1704338",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "misc double tap test cleanup"
+  },
+  {
+   "bugid": "1702467",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "double tap zoom can make us zoom to a part of an element when we could fit the entire element at the same zoom"
+  },
+  {
+   "bugid": "1704006",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Remove expired Telemetry probe preferences.use_bookmark"
+  },
+  {
+   "bugid": "1661330",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update the content blocking log to show when a resource is allowed by shim heuristics"
+  },
+  {
+   "bugid": "1704912",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_bookmarks_toolbar_context_menu_view_options.js work with native context menus"
+  },
+  {
+   "bugid": "1704907",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/base/content/test/tabs/browser_audioTabIcon.js pass with native context menus"
+  },
+  {
+   "bugid": "1704904",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_bookmarks_change_title.js work with native context menus"
+  },
+  {
+   "bugid": "1704572",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Tweak various tests for native context menus"
+  },
+  {
+   "bugid": "1704902",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_bookmark_remove_tags.js work with native context menus"
+  },
+  {
+   "bugid": "1704950",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make more tests in browser/components/places/tests/browser work with native context menus"
+  },
+  {
+   "bugid": "1704900",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Stop synthesizing context menu events in urlbar mochitests"
+  },
+  {
+   "bugid": "1704569",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Stop synthesizing events on context menus in various tests, round 1"
+  },
+  {
+   "bugid": "1704894",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/base/content/test/sync/browser_contextmenu_sendpage.js pass with native context menus"
+  },
+  {
+   "bugid": "1704215",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "No popuphiding/popuphidden event if a native context menu is hidden during the popupshown event"
+  },
+  {
+   "bugid": "1704890",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Green up browser referrer tests when using native context menus"
+  },
+  {
+   "bugid": "1704885",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/originattributes/test/browser/browser_firstPartyIsolation_saveAs.js work with native context menus"
+  },
+  {
+   "bugid": "1704936",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser/components/places/tests/browser/browser_bookmarks_toolbar_telemetry.js work with native context menus"
+  },
+  {
+   "bugid": "1704691",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Don't synthesize events on menus in browser/base/content/test/about/browser_aboutNewTab_bookmarksToolbar.js"
+  },
+  {
+   "bugid": "1704925",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Stop synthesizing context menu events in search mochitests"
+  },
+  {
+   "bugid": "1704682",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Wrong menu state during popupshown event - got \"showing\", expected \"open\""
+  },
+  {
+   "bugid": "1703482",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "With native context menus enabled VoiceOver doesn\u2019t read the context menu options"
+  },
+  {
+   "bugid": "1704971",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make browser_940307_panel_click_closure_handling.js pass with native context menus"
+  },
+  {
+   "bugid": "1699111",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Clarify code related to transport closing in DevToolsClient"
+  },
+  {
+   "bugid": "1702631",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Fix `navigateTo` helper for bfcache navigations"
+  },
+  {
+   "bugid": "1698876",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Stop listening to DevToolsClient close from TargetFrontMixin"
+  },
+  {
+   "bugid": "1698541",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Stop emitting soon to be unused tabDetached event"
+  },
+  {
+   "bugid": "1704027",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "about:profiling - Checkboxes no longer centered with strings on row"
+  },
+  {
+   "bugid": "1704276",
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ iwprn.dll | nsLocalFile::CopySingleFile] (InfoWatch Device Monitor)"
+  },
+  {
+   "bugid": "1701321",
+   "status": "NEW",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_quicksuggest.js | Test timed out -"
+  },
+  {
+   "bugid": "1703898",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Proton: External theme differences in search bar in toolbar"
+  },
+  {
+   "bugid": "1704474",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Duplicated commands in context menu for icons in address bar"
+  },
+  {
+   "bugid": "1704837",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Don't synthesize events on menus in browser/components/places/tests/browser/browser_library_bookmark_pages.js"
+  },
+  {
+   "bugid": "1703704",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add bookmark modal title should be \"Add bookmark\""
+  },
+  {
+   "bugid": "1703014",
+   "status": "REOPENED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Downloads Panel is missing a number of Proton styles"
+  },
+  {
+   "bugid": "1704581",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Notification Panel - Hamburger menu - Copy should be in Bold"
+  },
+  {
+   "bugid": "1704045",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "FxA toolbar panel is too wide when a long email address account is used"
+  },
+  {
+   "bugid": "1701998",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Change the checkbox behavior for the default browser prompt"
+  },
+  {
+   "bugid": "1703945",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Display sign in link on Proton onboarding"
+  },
+  {
+   "bugid": "1703726",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Proton new user onboarding in RTL mode"
+  },
+  {
+   "bugid": "1704571",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Graduate new user onboarding to the main proton pref"
+  },
+  {
+   "bugid": "1704164",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Dark mode colors set too late in activity stream startup"
+  },
+  {
+   "bugid": "1703941",
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Turn on prefs for new tab design work in Firefox 89"
+  },
+  {
+   "bugid": "1698795",
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add an option to send exposure once per instance"
+  },
+  {
+   "bugid": "1704661",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.9.44"
+  },
+  {
+   "bugid": "1698843",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Mirror cookieBehavior PBM pref with regular cookieBehavior pref in Strict and Custom"
+  },
+  {
+   "bugid": "1699668",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "When any origin in one of the protection panel sub-panels has an \"allowed\" flag, show a warning at the top of the sub-panel."
+  },
+  {
+   "bugid": "1703635",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Protection panel is missing a number of Proton styles"
+  },
+  {
+   "bugid": "1699669",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Add a \"Learn More\" link to the \"allowed\" flag warning in the protections sub-panels."
+  },
+  {
+   "bugid": "1651012",
+   "status": "NEW",
+   "component": "Firefox:Security",
+   "summary": "Organize certerror code into its own directory in browser/base/content/"
+  },
+  {
+   "bugid": "1704152",
+   "status": "NEW",
+   "component": "Firefox:Site Identity",
+   "summary": "Update the tracking protection shield icon and animation in the addressbar."
+  },
+  {
+   "bugid": "1696360",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Background tabs still animate when dragging with prefers-reduced-motion"
+  },
+  {
+   "bugid": "1704781",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Proton: Tab scroll buttons become narrower in touch mode"
+  },
+  {
+   "bugid": "1702285",
+   "status": "ASSIGNED",
+   "component": "Firefox:Theme",
+   "summary": "Refresh the tab strip navigation and tab icons"
+  },
+  {
+   "bugid": "1695963",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Rename \"Default\" theme to \"System\" or a similar name"
+  },
+  {
+   "bugid": "1702958",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Informational infobars have the wrong (i) icon on Proton"
+  },
+  {
+   "bugid": "1476524",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Address bar text selection colors are reversed in Dark theme"
+  },
+  {
+   "bugid": "1699714",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Notification badges on tab need refresh"
+  },
+  {
+   "bugid": "1704828",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "--toolbarbutton-icon-fill-attention should be Primary Blue"
+  },
+  {
+   "bugid": "1703807",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Customize toolbar page - update checkboxes focus rings to respect Proton format"
+  },
+  {
+   "bugid": "1702690",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Refresh the icons of some of the non-default toolbar buttons"
+  },
+  {
+   "bugid": "1498604",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "'./mach doc' should not require globally installed jsdoc (vendor it)"
+  },
+  {
+   "bugid": "1704685",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove leftover from bug 1686888"
+  },
+  {
+   "bugid": "1703223",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Hook stat/stat64 in liblowercase."
+  },
+  {
+   "bugid": "1391106",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "support `mach watch` for non-artifact builds"
+  },
+  {
+   "bugid": "1703092",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Don't report cpu_brand in telemetry if it is None"
+  },
+  {
+   "bugid": "1703055",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove user/system site-packages from import path when running nativecmds"
+  },
+  {
+   "bugid": "1696995",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Drop single match requirement in `evaluate_keyed_by`"
+  },
+  {
+   "bugid": "1685302",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent update-verify Task timeout after 5400 seconds. Force killing container."
+  },
+  {
+   "bugid": "1704646",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Block GTests on try_syntax builds using --artifact"
+  },
+  {
+   "bugid": "1700750",
+   "status": "RESOLVED",
+   "component": "GeckoView:Tracking Protection",
+   "summary": "Add ContentBlocking setting for network.cookie.cookieBehavior.pbmode"
+  },
+  {
+   "bugid": "1704616",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Enable proton modals"
+  },
+  {
+   "bugid": "1686315",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Adapt modal tests so that they work with Proton modals enabled or disabled"
+  },
+  {
+   "bugid": "1701920",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Settle on font size for panels and modals"
+  },
+  {
+   "bugid": "1704482",
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Incorrect documentation of write tmpPath"
+  },
+  {
+   "bugid": "1690865",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Look for username and email keywords in input fields when detecting a username field in a form"
+  },
+  {
+   "bugid": "1700941",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[Proton] Long strings are overlapping the drop down arrow in the username's field"
+  },
+  {
+   "bugid": "1698595",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Remove Places-only sqrt SQL function and use the official one"
+  },
+  {
+   "bugid": "1704184",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG \"baseline\" pings not sent at startup"
+  },
+  {
+   "bugid": "1685806",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove expired Telemetry probe telemetry.about_telemetry_pageload"
+  },
+  {
+   "bugid": "1704870",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Don't synthesize events on menus in browser/components/extensions/test/browser/browser_ext_user_events.js"
+  },
+  {
+   "bugid": "1704875",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Don't synthesize events on menus in browser/components/extensions/test/browser/head.js"
+  }
+ ],
+ "date": "2021-04-14",
+ "cset": "14541ee6ce5e7c9f273e83c0ad3b2ba1c46b02c5",
+ "buildid": "20210414093129",
+ "fixed": 103,
+ "total": 125,
+ "restricted": 3
+}

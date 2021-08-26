@@ -1,0 +1,406 @@
+{
+ "bugs": [
+  {
+   "bugid": "1710969",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Use an enum class for nsDOMCSSDeclaration::eOperation"
+  },
+  {
+   "bugid": "1708384",
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "CSS.supports('-moz-context-properties: none') return true even when pref is disabled"
+  },
+  {
+   "bugid": "1629064",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Closing about a hundred tabs resulted in the parent and all content processes being busy GC'ing"
+  },
+  {
+   "bugid": "1710845",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of NS_ERROR_DOM_INVALID_EXPRESSION_ERR"
+  },
+  {
+   "bugid": "1710840",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of NS_ERROR_DOM_SVG_*"
+  },
+  {
+   "bugid": "1627175",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move some utility methods in editor classes which can be static to EditorUtils or HTMLEditUtils"
+  },
+  {
+   "bugid": "1710790",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Adjust WPT to expect bogo XML decl longer than a kilobyte to be honored"
+  },
+  {
+   "bugid": "1708254",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "move `BrowserElement:CreateAboutBlank` handling into platform"
+  },
+  {
+   "bugid": "1710842",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update PBM tests within toolkit/components/extensions/test to work with https-first-mode enabled"
+  },
+  {
+   "bugid": "1710897",
+   "status": "RESOLVED",
+   "component": "Core:GFX: Color Management",
+   "summary": "Handle matrix inversion failing more gracefully."
+  },
+  {
+   "bugid": "1710757",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "baseprofiler/core/ProfileBufferEntry.cpp#627 : printf(\"%#llx\") doesn't output \"0x<number>\" anymore"
+  },
+  {
+   "bugid": "1710607",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "If not profiling, avoid async ShutdownProfilerChild and forced thread shutdown"
+  },
+  {
+   "bugid": "1710448",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose GPUProcessLaunchCount to crash pings."
+  },
+  {
+   "bugid": "1609191",
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Some Adreno 5xx devices crash during shader compilation"
+  },
+  {
+   "bugid": "1707832",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "macOS Crash in [@ mozilla::layers::NativeLayerCA::NextSurface]"
+  },
+  {
+   "bugid": "1707154",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Broken rendering of elements with clip-path on Wayland Linux"
+  },
+  {
+   "bugid": "1710695",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Clip mask blob to viewport"
+  },
+  {
+   "bugid": "1707499",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Fix a coverity scan warning"
+  },
+  {
+   "bugid": "1698045",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Add IPC glue code for self-hosted XDR content"
+  },
+  {
+   "bugid": "1701695",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Use intl::NumberFormat to format numbers in SpiderMonkey"
+  },
+  {
+   "bugid": "1458339",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Investigate sharing self-hosted compartment across content processes"
+  },
+  {
+   "bugid": "1709135",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Change TranscodeRange to iterate over immutable bytes."
+  },
+  {
+   "bugid": "1710627",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimize TraceCycleCollectorChildren BaseShape tracing"
+  },
+  {
+   "bugid": "1710953",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Prepare to remove self-hosting zone"
+  },
+  {
+   "bugid": "1709491",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Subgrid item's size can be different depend on its container's `overflow` property value"
+  },
+  {
+   "bugid": "1709415",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Support -webkit-image-set()"
+  },
+  {
+   "bugid": "1705065",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "ConnectionEntry should not hold raw pointer of DnsAndConnectSocket"
+  },
+  {
+   "bugid": "1710671",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Prepare HttpHandler AcceptLanguages during process pre-allocation"
+  },
+  {
+   "bugid": "1710816",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Enable HTTP/3 by default"
+  },
+  {
+   "bugid": "1709568",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add test for the response progress notifications with HTTP/3"
+  },
+  {
+   "bugid": "1707605",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[Proton] Elastic overscroll animation gets stuck upon clicking on the blank space from a previous banner/interactable section"
+  },
+  {
+   "bugid": "1710598",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/gfx/layers/apz/src/Axis.cpp:191:15 in mozilla::layers::Axis::RestoreOverscroll(mozilla::gfx::CoordTyped<mozilla::ParentLayerPixel, float>)"
+  },
+  {
+   "bugid": "1709139",
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Change existing JS_*_PROPORTION probes to measure absolute time instead"
+  },
+  {
+   "bugid": "1710887",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Printing an external page without opening it leads to crash of Tab"
+  },
+  {
+   "bugid": "1710822",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Image not visible when printing from iframe with srcdoc"
+  },
+  {
+   "bugid": "1710643",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux, theme-specific] Background tabs and buttons in the tab strip are not readable with Breeze light theme"
+  },
+  {
+   "bugid": "1710176",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Don't release callback surface if wl_container->surface is null"
+  },
+  {
+   "bugid": "1710533",
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Infinite repaint loop  on Windows with transparent panels in test_panel.xhtml"
+  },
+  {
+   "bugid": "1022564",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Border of arrow panels lack contrast when using High Contrast mode"
+  },
+  {
+   "bugid": "1672951",
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Implement the metrics ping scheduler for the RLB"
+  },
+  {
+   "bugid": "1709567",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "variable tooltip does not return values of private properties"
+  },
+  {
+   "bugid": "1710417",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "pretty printing expression with private fields strips out # characters"
+  },
+  {
+   "bugid": "1710647",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "resourceCommand is setting listeners on targetFront that it never removes"
+  },
+  {
+   "bugid": "1710674",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "target-mixin resource cache mechanism is misbehaving"
+  },
+  {
+   "bugid": "1686748",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Create the first top level target from the Watcher Actor"
+  },
+  {
+   "bugid": "1710648",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Phase 2] The QS sponsored URL flickers while typing a keyword if the website was already visited multiple times"
+  },
+  {
+   "bugid": "1708534",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Input text colour should be primary and not secondary colour in Edit Bookmarks panel"
+  },
+  {
+   "bugid": "1702036",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent [TV] browser/components/places/tests/browser/browser_bookmark_remove_tags.js | Bookmark panel title is correct. - \"\" == \"Edit Bookmark\" - JS frame :: chrome://mochitests/content/browser/browser/components/places/tests/browser/browser_..."
+  },
+  {
+   "bugid": "1710903",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove places waitForCondition, and swap browser places mochitests to use the TestUtils version"
+  },
+  {
+   "bugid": "1710273",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Stop using ChromeUtils.import(..., null) for importing EnterprisePolicies.jsm"
+  },
+  {
+   "bugid": "1710756",
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Expose preventFocusRing to error pages."
+  },
+  {
+   "bugid": "1708489",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Customize New User Onboarding flow to use proton background styles for more than 3 screens"
+  },
+  {
+   "bugid": "1707575",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The elements from the second and the third slide of the new users Onboarding page are not automatically recognized by a screen reader software"
+  },
+  {
+   "bugid": "1709984",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Disable Snippets by Default in MR1"
+  },
+  {
+   "bugid": "1709344",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add Nimbus to about:privatebrowsing"
+  },
+  {
+   "bugid": "1709360",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Turn off timer syncing for updating Nimbus experiments"
+  },
+  {
+   "bugid": "1709363",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Nimbus test util for enrollWithFeatureConfig"
+  },
+  {
+   "bugid": "1710700",
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Replace yet more saved.js jQuery code with native DOM"
+  },
+  {
+   "bugid": "1703326",
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Stop relying on ContentSessionStore for \"SessionStore:crashedTabRevived\""
+  },
+  {
+   "bugid": "1707754",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Protections panel subview arrow should be consistent with other subview arrows"
+  },
+  {
+   "bugid": "1709173",
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Extend the pause in the download-complete button before transitioning back to the download icon"
+  },
+  {
+   "bugid": "1709394",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Don't use chunked data to set current editable text in GeckoEditableChild.onTextChange"
+  },
+  {
+   "bugid": "1710847",
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Dark mode modals are unreadable if the OS is using high contrast mode"
+  },
+  {
+   "bugid": "1710441",
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "The about:processes table uses the word \"Process\" too many times"
+  },
+  {
+   "bugid": "1702869",
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Give Reader mode some proton treatment"
+  },
+  {
+   "bugid": "1706839",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 91: WEBEXT_*"
+  }
+ ],
+ "date": "2021-05-13",
+ "cset": "9a633c33737c933e49a5f07990e054a51e2bc43c",
+ "buildid": "20210513093303",
+ "fixed": 61,
+ "total": 66,
+ "restricted": 2
+}

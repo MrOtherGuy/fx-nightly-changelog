@@ -1,0 +1,484 @@
+{
+ "bugs": [
+  {
+   "bugid": "1685099",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "VP9 60fps Youtube-live stream constantly drops frames because webm init data triggers decoder recreation"
+  },
+  {
+   "bugid": "1683016",
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent dom/media/mediacontrol/tests/browser/browser_remove_controllable_media_for_active_controller.js | Test timed out -"
+  },
+  {
+   "bugid": "1637651",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "`nsContentSink::ProcessLinkHeader` can't parse value-less attributes at the end of the value"
+  },
+  {
+   "bugid": "1689868",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Intermittent editor/reftests/input-text-notheme-onfocus-reframe.html == editor/reftests/input-text-notheme-onfocus-reframe-ref.html | image comparison, max difference: 5, number of differing pixels: 1"
+  },
+  {
+   "bugid": "1665530",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "[UI Events][Input Events] Ship `beforeinput` event and `InputEvent.getTargetRanges()` in Release channel and Beta channel"
+  },
+  {
+   "bugid": "1598613",
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Speculative loader should respect the `media` attribute of the <link> tag"
+  },
+  {
+   "bugid": "1643789",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Shouldn't use alternate fixup for links placed in-content when middle-clicking / opening links in new tabs"
+  },
+  {
+   "bugid": "1673617",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Reduce complexity of session restore with SHIP"
+  },
+  {
+   "bugid": "1687891",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add Telemetry for Principal Validation in ContentParent"
+  },
+  {
+   "bugid": "1676970",
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: !aRootNode || aNotInsertedYet || (aStartBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && aEndBoundary.Container()->IsInclusiveDescendantOf(aRootNode) && ... (Wrong root), at src/dom/base/nsRange.cpp:855"
+  },
+  {
+   "bugid": "1103374",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Need tests for arrow-key caret movement and selection in vertical writing modes"
+  },
+  {
+   "bugid": "1688832",
+   "status": "NEW",
+   "component": "Core:DOM: Serializers",
+   "summary": "Fortify code around `AccessibleCaretManager::UpdateCarets`"
+  },
+  {
+   "bugid": "1680651",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "New wpt failures in /pointerevents/pointerevent_capture_suppressing_mouse.html"
+  },
+  {
+   "bugid": "1685491",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Cannot test `Home`, `End`, `PageDown`, `PageUp` etc, on Linux and macOS"
+  },
+  {
+   "bugid": "1688730",
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Layout table status should be cached, invalidated by attr changes on mac"
+  },
+  {
+   "bugid": "1688972",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "FocusedChild fails when focus is in iframe"
+  },
+  {
+   "bugid": "1690124",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Use Skia instead of Cairo for FilterNodeSoftware."
+  },
+  {
+   "bugid": "1689940",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add display adapter info to about:support"
+  },
+  {
+   "bugid": "1690027",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Stop using texelFetchOffset on macOS because it appears to be buggy on macOS Intel"
+  },
+  {
+   "bugid": "1689316",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Simplify if statements generated from switch statements in webrender shaders"
+  },
+  {
+   "bugid": "1675876",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "MOZ_RELEASE_ASSERT(mBuffer != nullptr) Crash in [@ mozilla::wr::RenderBufferTextureHostSWGL::RenderBufferTextureHostSWGL]"
+  },
+  {
+   "bugid": "1689203",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fallback to Software WebRender if disabling WebRender due to runtime error"
+  },
+  {
+   "bugid": "1689880",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Hit MOZ_CRASH(Unexpected MIRType.) at jit/TypePolicy.cpp:294"
+  },
+  {
+   "bugid": "1688913",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Follow-up changes for bug 1687441"
+  },
+  {
+   "bugid": "1688033",
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use scalar replacement to optimize the arguments object in Warp"
+  },
+  {
+   "bugid": "1690022",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Refactor GC statistics in preparation for concurrent marking"
+  },
+  {
+   "bugid": "1689794",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: isIdle(), at gc/Nursery.cpp:144 with gczeal"
+  },
+  {
+   "bugid": "1689950",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Vendor in CL a25399760e9f12b679aa267dd2af7cfedc72bb71"
+  },
+  {
+   "bugid": "1686633",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Check for commutative operator in x86shared::visitBinarySimd128 can't work"
+  },
+  {
+   "bugid": "1683126",
+   "status": "VERIFIED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !kidFrame->IsPlaceholderFrame() (we should never push fixed pos placeholders), at /builds/worker/checkouts/gecko/layout/generic/nsCanvasFrame.cpp:847"
+  },
+  {
+   "bugid": "1689856",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent scrolling/iframe-scrolling-attr-1.html == scrolling/iframe-scrolling-attr-ref.html | image comparison, max difference: 1, number of differing pixels: 80"
+  },
+  {
+   "bugid": "1689371",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Crash in [@ ExpandHeightForDynamicToolbarImpl<T>]"
+  },
+  {
+   "bugid": "1686395",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove [Un]RegisterAccessKey calls in frame code"
+  },
+  {
+   "bugid": "1541915",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent layout/base/tests/test_scroll_per_page.html | Test timed out."
+  },
+  {
+   "bugid": "1689912",
+   "status": "VERIFIED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: found (should have found our rendered legend), at src/layout/base/nsCSSFrameConstructor.cpp:9358"
+  },
+  {
+   "bugid": "1588966",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "The block-end border and padding are always subtracted from available content area if the column container is in paginated context"
+  },
+  {
+   "bugid": "1689719",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Table as flex item has different width after bug 1689045"
+  },
+  {
+   "bugid": "1687426",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "With CSS property \"font-family: serif\", non-CJK lang attributes causes fonts fallback to sans-serif fonts"
+  },
+  {
+   "bugid": "1687413",
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Crash in [@ nsTSubstring<T>::Assign | mozilla::TokenizerBase<T>::Parse]"
+  },
+  {
+   "bugid": "1690000",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "We are not restarting a transaction without Http3 if http3 fails and the origin route has the same hostname and port as the AltSvc route"
+  },
+  {
+   "bugid": "1688475",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Remove uses of waitForApzFlushedRepaints"
+  },
+  {
+   "bugid": "1687886",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "don't request a repaint if it's the first time for an apzc getting metrics (regression from bug 1667475)"
+  },
+  {
+   "bugid": "1687926",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "don't request a repaint if it's the first time for an apzc getting metrics (regression from bug 1627012)"
+  },
+  {
+   "bugid": "1687067",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[Fission] Scrollwheel event hand off is broken on page https://www.dinacon.org/"
+  },
+  {
+   "bugid": "1687927",
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "don't request a repaint if it's the first time for an apzc getting metrics (regression from bug 1662013)"
+  },
+  {
+   "bugid": "1682536",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Use NotNull more in quota manager and quota clients"
+  },
+  {
+   "bugid": "1685677",
+   "status": "REOPENED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Refactor QuotaManager to improve maintainability"
+  },
+  {
+   "bugid": "1689802",
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Perma build bustage /builds/worker/workspace/obj-build/dist/include/mozilla/dom/quota/CheckedUnsafePtr.h:186:64: error: no viable conversion from 'const mozilla::NotNull<mozilla, when Gecko 87 merges to Beta on 2021-02-22"
+  },
+  {
+   "bugid": "1689827",
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Remove length parameter from JS callers of setTransferData"
+  },
+  {
+   "bugid": "1688139",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove \"Some other process has enabled secure event input\" assertion"
+  },
+  {
+   "bugid": "1690043",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Custom scrollbars on Linux can't have transparency."
+  },
+  {
+   "bugid": "1689993",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Non-native theme form elements font size is 13px, should be 13.3333px"
+  },
+  {
+   "bugid": "1690152",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "ppc64 xptcinvoke doesn't account for situation with GPRs overflowed but FPRs still in registers"
+  },
+  {
+   "bugid": "1689854",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Intermittent xul/treetwisty-svg-context-paint-1.xhtml == xul/treetwisty-svg-context-paint-1-ref.xhtml | image comparison, max difference: 1, number of differing pixels: 1"
+  },
+  {
+   "bugid": "1689899",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Allow devtools to toggle the :target pseudo-class"
+  },
+  {
+   "bugid": "1685734",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry for tab-to-search result impressions"
+  },
+  {
+   "bugid": "1686330",
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry for tab-to-search result impressions, per-engine"
+  },
+  {
+   "bugid": "1690051",
+   "status": "NEW",
+   "component": "Firefox:File Handling",
+   "summary": "Make sanitize_non_media_extensions pref work"
+  },
+  {
+   "bugid": "1660198",
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Add installation data to telemetry"
+  },
+  {
+   "bugid": "1685779",
+   "status": "VERIFIED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Change Back button tooltip to mention Alt+Left Arrow (Cmd+Left Arrow) keyboard shortcut"
+  },
+  {
+   "bugid": "1689632",
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Simplify Help menu"
+  },
+  {
+   "bugid": "1689955",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for What's New Panel content in Firefox 86"
+  },
+  {
+   "bugid": "1685525",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update or add a trigger capable of targeting newtab/homepage for messages"
+  },
+  {
+   "bugid": "1690006",
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add an option to not emit an exposure event from isFeatureEnabled"
+  },
+  {
+   "bugid": "1523453",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Remove unused workaround for gAppUpdater in preferences"
+  },
+  {
+   "bugid": "1688643",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Ensure obsolete OpenSearch style application engines are dropped in the search service"
+  },
+  {
+   "bugid": "1689853",
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "Bookmarklet using window.open triggers popup blocker"
+  },
+  {
+   "bugid": "1647259",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "xpidl.py: Value 'list' is unsubscriptable  E1136 (pylint)"
+  },
+  {
+   "bugid": "1607713",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent Linux 18.04 <test-name> | application terminated with exit code 6 | application crashed [@ libc.so.6 + 0x3ee97] -  (libxul.so!mozilla::ipc::MessagePump::Run)"
+  },
+  {
+   "bugid": "1689298",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "macOS DevEdition tasks should not run on mozilla-release"
+  },
+  {
+   "bugid": "1689232",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Signing",
+   "summary": "The openH264 plugin cannot run on Apple Silicon without signing"
+  },
+  {
+   "bugid": "1631462",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Snap",
+   "summary": "Wayland should be enabled in Snap package"
+  },
+  {
+   "bugid": "1683392",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "High CPU load for \"mach puppeteer-test\" since using \"npm ci\""
+  },
+  {
+   "bugid": "1687221",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Refactoring in fix_stacks.py"
+  },
+  {
+   "bugid": "1687622",
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[macOS] Unicode profile shows boxes then \"loads\" itself on Nightly 86"
+  },
+  {
+   "bugid": "1689438",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Instrument IO Errors and inconsistencies in ClientID.jsm"
+  },
+  {
+   "bugid": "1685809",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove expired Scalars `telemetry.profile_directory_scans` and `telemetry.profile_directory_scan_date` and Histogram \"PROFILE_DIRECTORY_FILE_AGE\""
+  },
+  {
+   "bugid": "1688937",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent toolkit/components/telemetry/tests/unit/test_TelemetrySession.js | test_setup - [test_setup : 567] false == true"
+  },
+  {
+   "bugid": "1689830",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Stop using <deck> for .wizard-page-box"
+  }
+ ],
+ "date": "2021-02-02",
+ "cset": "57bcdf857d44b8c95dc8b9382a6e0ab7c2b52e4f",
+ "buildid": "20210202095107",
+ "fixed": 62,
+ "total": 79,
+ "restricted": null
+}

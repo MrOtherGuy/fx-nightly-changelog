@@ -1,0 +1,454 @@
+{
+ "bugs": [
+  {
+   "bugid": "1663819",
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "moz-range-thumb cannot be relatively-positioned"
+  },
+  {
+   "bugid": "1592459",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /html/interaction/focus/the-autofocus-attribute/first-when-later.html | The first autofocus in the document wins, even if elements are inserted later. - assert_equals: expected Element node <input autofocus=\"\"></input> but got Element"
+  },
+  {
+   "bugid": "1663601",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Crash in [@ mozilla::RangeBoundaryBase<T>::GetNextSiblingOfChildAtOffset]"
+  },
+  {
+   "bugid": "1662964",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in dom/file"
+  },
+  {
+   "bugid": "1663792",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove intermittent annotations for tests that are no longer failing"
+  },
+  {
+   "bugid": "1663492",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make nsDocShell::OnNewURI use mActiveEntry instead of mOSHE if session history in the parent is enabled"
+  },
+  {
+   "bugid": "1663487",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Set loading history entry for loads in the parent"
+  },
+  {
+   "bugid": "1663488",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix reloading when session history in the parent is enabled"
+  },
+  {
+   "bugid": "1663491",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix assert in SessionHistoryEntry::AddChild to deal with adding null"
+  },
+  {
+   "bugid": "1663977",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Null out the parent pointer of SessionHistoryEntry objects if their parent dies"
+  },
+  {
+   "bugid": "1663486",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Synchronize ChildSHistory state when sending a browsing context to a new process"
+  },
+  {
+   "bugid": "1663485",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Make RemoteWebNavigation::canGoBack/Forward use history in the parent if it's enabled"
+  },
+  {
+   "bugid": "1663512",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ mozilla::dom::RemoteWorkerManager::GetRemoteType]"
+  },
+  {
+   "bugid": "1613054",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Figure out what to do if SetFocus ends up being called for an iframe element hosting an out-of-process iframe"
+  },
+  {
+   "bugid": "1649099",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Add WPTs for testing the effect on activeElement of the containing doc when calling .focus() and .blur() on an OOP iframe"
+  },
+  {
+   "bugid": "1613899",
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "dom/base/test/test_bug976673.html fails with Fission focus code"
+  },
+  {
+   "bugid": "1663442",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[macOS] Crash in [@ mozilla::a11y::AccessibleOrProxy::Parent]"
+  },
+  {
+   "bugid": "1657576",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support the exposure of web app specific shortcuts to assistive technologies"
+  },
+  {
+   "bugid": "1655983",
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: !GetAccService() || !GetAccService()->HasAccessible(this) (An accessible for this element still exists!), at /builds/worker/checkouts/gecko/dom/base/Element.cpp:1738"
+  },
+  {
+   "bugid": "1663543",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Convert PROFILER_ADD_MARKER and 2-arg profiler_add_marker to PROFILER_MARKER_UNTYPED"
+  },
+  {
+   "bugid": "1663923",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Cover more cases where we need a reason for WebRender initialization failures"
+  },
+  {
+   "bugid": "1612440",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Send transactions directly to the scene builder thread when possible"
+  },
+  {
+   "bugid": "1662827",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove the need for multiple channels on some WebRender threads"
+  },
+  {
+   "bugid": "1654271",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ship Webrender to more users in release in 82"
+  },
+  {
+   "bugid": "1660940",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Cleanup stencil functions"
+  },
+  {
+   "bugid": "1663616",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Helper thread tasks can get deleted while they are still running"
+  },
+  {
+   "bugid": "1639153",
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize indirect calls"
+  },
+  {
+   "bugid": "1623764",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Control+ArrowRight jumps multiple lines in textarea"
+  },
+  {
+   "bugid": "1662703",
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "[css-ui] Change appearance: button to only apply to buttons"
+  },
+  {
+   "bugid": "1663963",
+   "status": "NEW",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Remove SCROLL_ANCHOR_ADJUSTMENT_LENGTH and SCROLL_ANCHOR_ADJUSTMENT_COUNT probes"
+  },
+  {
+   "bugid": "1647868",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Firefox displays glyphs instead of text with gfx.e10s.font-list.shared set to true"
+  },
+  {
+   "bugid": "1663237",
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in mozjemalloc"
+  },
+  {
+   "bugid": "1618849",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "We should store multiple AltSvc entries"
+  },
+  {
+   "bugid": "1648491",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[touchscreen] Pinch zoom on map is not working on flightradar24.com,while using Direct3D compositing"
+  },
+  {
+   "bugid": "1657188",
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "Add probes equivalent to TIME_TO_LOAD_EVENT_{START,END}_MS for loads with rel=preload and without"
+  },
+  {
+   "bugid": "1426269",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Strip comments out of default prefs files"
+  },
+  {
+   "bugid": "1661166",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Profiler shows really long \"First Contentful Paint\" bar, extending from pageload to print-preview's first rendering"
+  },
+  {
+   "bugid": "1662940",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Add back assertion to ensure numPagesOnThisSheet is > 0"
+  },
+  {
+   "bugid": "1662325",
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "New print UI gets stuck when opened via window.print() if privacy.firstparty.isolate=true"
+  },
+  {
+   "bugid": "1664026",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Make nsDeviceContextSpecG not leave stale temporary files in print preview or when the printing fails."
+  },
+  {
+   "bugid": "1659527",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Bad scaling and clipping of Save to PDF output [was: Erratic glyph spacing in Save As PDF output] on Windows"
+  },
+  {
+   "bugid": "1662938",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "UI left open but disabled after printing with Microsoft Print to PDF (PrintUtils.printWindow promise does not resolve)"
+  },
+  {
+   "bugid": "1661157",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Multiple seconds of delay (with little CPU activity) before print dialog appears"
+  },
+  {
+   "bugid": "1662222",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Don't spin the event loop in nsPrintJob::DoCommonPrint when called by extensions"
+  },
+  {
+   "bugid": "1654258",
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Package all activity-stream css files and load them using the internal chrome: protocol"
+  },
+  {
+   "bugid": "1660580",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "avoid CERTCertificate in AppTrustDomain and AppSignatureVerification"
+  },
+  {
+   "bugid": "1663611",
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Factor schema upgrade code out of ActorsParent.cpp"
+  },
+  {
+   "bugid": "1662514",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Racy access to WebrtcMediaDataEncoder::mError"
+  },
+  {
+   "bugid": "1656261",
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Crash in [@ mozilla::ErrorLoadingSheet]"
+  },
+  {
+   "bugid": "1663946",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Comment in nsCOMPtr.h contains a broken link"
+  },
+  {
+   "bugid": "1663690",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Get rid of ComponentLoaderInfo::EnsureKey() and mozJSComponentLoader::ReallyInit"
+  },
+  {
+   "bugid": "1663297",
+   "status": "RESOLVED",
+   "component": "Core:XSLT",
+   "summary": "Replace MOZ_MUST_USE with [[nodiscard]] in dom/xslt"
+  },
+  {
+   "bugid": "1663717",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Eventually stop watching for resources from the WebConsole frontend"
+  },
+  {
+   "bugid": "1635461",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Inspector should read the resource from the onResourceAvailable callback"
+  },
+  {
+   "bugid": "1660778",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unrelated history results when in search mode for a non-generic engine"
+  },
+  {
+   "bugid": "1664056",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "about:welcome should only be able to load in the privileged about process"
+  },
+  {
+   "bugid": "1660723",
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Perma ccov browser/base/content/test/about/browser_aboutNewTab_defaultBrowserNotification.js | Uncaught exception - waiting for notification - timed out after 50 tries."
+  },
+  {
+   "bugid": "1663803",
+   "status": "VERIFIED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.7.26"
+  },
+  {
+   "bugid": "1663852",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "privacy.js: Identical code for different branches"
+  },
+  {
+   "bugid": "1663729",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "[Protections Dashboard] Activate Mobile Promo"
+  },
+  {
+   "bugid": "1663750",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "ETP Custom Content Blocking List choosing UI is broken in Nightly 82"
+  },
+  {
+   "bugid": "1663173",
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "New Print modal is broken inside Customize page"
+  },
+  {
+   "bugid": "1663786",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove \"copy\" support from virtualenv handling"
+  },
+  {
+   "bugid": "1651424",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Gather build telemetry using Glean"
+  },
+  {
+   "bugid": "1663863",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Vendor autoconf 2.13"
+  },
+  {
+   "bugid": "1663850",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused variables in config/config.mk"
+  },
+  {
+   "bugid": "1663755",
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove inherit-from-parent-environment implementation"
+  },
+  {
+   "bugid": "1664058",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Telemetry opt-in isn't being prompted for new dev environments"
+  },
+  {
+   "bugid": "1663159",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add Wayland config to test-linux.sh"
+  },
+  {
+   "bugid": "1661480",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView no longer restoring scroll position"
+  },
+  {
+   "bugid": "1663559",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | browser/extensions/formautofill/test/unit/heuristics/third_party/test_NewEgg.js | Test timed out"
+  },
+  {
+   "bugid": "1662876",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "credit card autofill: card number label not read for existing cards in edit credit card dialog"
+  },
+  {
+   "bugid": "1661004",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Change password manager tests to not use a fixed hostname"
+  },
+  {
+   "bugid": "1661006",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Some password manager tests fail intermittently because the 'passwordmgr-processed-form' notification is delayed."
+  }
+ ],
+ "date": "2020-09-10",
+ "cset": "8948d4a41f23973ebcbeb27daebc8d281c58f31b",
+ "buildid": "20200910093613",
+ "fixed": 56,
+ "total": 74,
+ "restricted": 1
+}

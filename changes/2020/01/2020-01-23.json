@@ -1,0 +1,694 @@
+{
+ "bugs": [
+  {
+   "bugid": "1608286",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Crash in [@ mozilla::dom::MediaKeySystemAccessManager::CheckDoesWindowSupportProtectedMedia]"
+  },
+  {
+   "bugid": "1609417",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Some ogg files don't play"
+  },
+  {
+   "bugid": "1610723",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Implement media controller track selection and seek methods"
+  },
+  {
+   "bugid": "1611028",
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable `dom.media.mediasession.enabled` for testing"
+  },
+  {
+   "bugid": "1610527",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update cubeb from upstream to d4b23d1"
+  },
+  {
+   "bugid": "1610164",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "The adoptedStyleSheets getter shouldn't be marked as throwing"
+  },
+  {
+   "bugid": "1609737",
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Forbid accessing the length and percentage parts of a LengthPercentage separately."
+  },
+  {
+   "bugid": "1610801",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove keyword calc() font-size hack."
+  },
+  {
+   "bugid": "1341018",
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Convert NS_STYLE_TEXT_ALIGN_* and NS_STYLE_VERTICAL_ALIGN_* to an enum class"
+  },
+  {
+   "bugid": "1592822",
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Use serde to serialize more types whose animations could run on the compositor (for IPC layers)"
+  },
+  {
+   "bugid": "1609187",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove now-dead child-initiated process switch code"
+  },
+  {
+   "bugid": "1596187",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "JSWindowActorChild::willDestroy is not called if actor destruction is due to a tab being closed"
+  },
+  {
+   "bugid": "1301399",
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "ASSERTION: no SHEntry for a non-transient viewer?: 'NS_IsAboutBlank(mCurrentURI)"
+  },
+  {
+   "bugid": "1597452",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix uses of mozilla::MediaManager::StopMediaStreams in dom/media/MediaManager.cpp"
+  },
+  {
+   "bugid": "1602333",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "load of value 228, which is not a valid value for type 'bool' in src/dom/fetch/InternalRequest.cpp:161"
+  },
+  {
+   "bugid": "1609877",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Convert prefs for domsecurity to use static prefs"
+  },
+  {
+   "bugid": "1608911",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Reporting API should send a *collection* of reports to endpoint"
+  },
+  {
+   "bugid": "1609973",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "getUserMedia({audio: true}) is broken in JSFiddle by feature policy landing"
+  },
+  {
+   "bugid": "1594781",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove usage of GetURI in nsGlobalWindowOuter"
+  },
+  {
+   "bugid": "1607364",
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "CrashReporting API"
+  },
+  {
+   "bugid": "1600267",
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Adapt `nsContentUtils::ComparePoints` to return `Maybe<int32_t>`"
+  },
+  {
+   "bugid": "1564303",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Green up and re-enable wpt service-worker tests skipped on geckoview"
+  },
+  {
+   "bugid": "1609997",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade to authenticator-0.2.9 (OpenBSD support, ctap packet collision fixes)"
+  },
+  {
+   "bugid": "1610732",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Stop using NS_ERROR_DOM_TYPE_ERR in webauthn"
+  },
+  {
+   "bugid": "1610704",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: IsCanceled() (Subclass Cancel() didn't set IsCanceled()!), at dom/workers/WorkerRunnable.cpp:244"
+  },
+  {
+   "bugid": "1605566",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: postMessage",
+   "summary": "MessagePort should support wasm modules and SharedArrayBuffer when possible"
+  },
+  {
+   "bugid": "1604694",
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Disallow serializing and transferring non-origin-clean ImageBitmap"
+  },
+  {
+   "bugid": "1610596",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "An ARIA role on the top-level body element should not trump document role"
+  },
+  {
+   "bugid": "1610814",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "NEON accelerated RGB unpacking code has compile error with gcc"
+  },
+  {
+   "bugid": "1609711",
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Compute gradient stop positions in css pixels."
+  },
+  {
+   "bugid": "1610912",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Prevent double buffering from riding the trains"
+  },
+  {
+   "bugid": "1596128",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Implement WebGPU compute"
+  },
+  {
+   "bugid": "1605283",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Improve support for invalidation debugging and testing"
+  },
+  {
+   "bugid": "1610738",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add primitive flag to specify a compositor surface is preferred"
+  },
+  {
+   "bugid": "1610949",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Only use WS_EX_NOREDIRECTIONBITMAP when using DirectComposition."
+  },
+  {
+   "bugid": "1608235",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ egl::ValidateStreamConsumerGLTextureExternalAttribsNV]"
+  },
+  {
+   "bugid": "1610007",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Support the 'tainted' keyword in ipdl parsing and generation code."
+  },
+  {
+   "bugid": "1607153",
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "ThreadSanitizer: data race [@ IPC::Channel::ChannelImpl::ProcessIncomingMessages] vs. [@ GetClientFileDescriptorMapping]"
+  },
+  {
+   "bugid": "1580176",
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Add MOZ_LOG to JSWindowActor messaging"
+  },
+  {
+   "bugid": "1604535",
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Crash in [@ OOM | large | mozalloc_abort | mozalloc_handle_oom | moz_xmalloc | mozilla::gfx::SourceSurfaceRawData::GuaranteePersistance]"
+  },
+  {
+   "bugid": "1607444",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ThreadSanitizer: data race [@ setGeneration] vs. [@ flagsDontCheckGeneration]"
+  },
+  {
+   "bugid": "1609504",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Compared to ESR68 the FunctionCreationData cleanup requirements causing slowdown"
+  },
+  {
+   "bugid": "1610621",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "ClearKeptObject() should return undefined"
+  },
+  {
+   "bugid": "1610387",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Replace nsAutoPtr usage in layout/ with UniquePtr"
+  },
+  {
+   "bugid": "1607052",
+   "status": "NEW",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "using wrong font since v.72"
+  },
+  {
+   "bugid": "1609176",
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Stop using the obsolete baseDomain field of moz_cookies"
+  },
+  {
+   "bugid": "1606643",
+   "status": "RESOLVED",
+   "component": "Core:Networking: JAR",
+   "summary": "ThreadSanitizer: data race [@ AddRef] vs. [@ Release] in nsZipArchive"
+  },
+  {
+   "bugid": "1610878",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Remove using namespace mozilla::java from AndroidAPZ.cpp"
+  },
+  {
+   "bugid": "1357107",
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Consider removing nsContentBlocker"
+  },
+  {
+   "bugid": "1609257",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Firefox 72 no longer loads Shockwave Flash (after setting plugin.load_flash_only pref = false)"
+  },
+  {
+   "bugid": "1607671",
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Crash in [@ CallPropertyPageCallback]"
+  },
+  {
+   "bugid": "1610179",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove and recreate the database doesn't actually do anything in RKV safe-mode"
+  },
+  {
+   "bugid": "1606927",
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 74 to use NSS 3.50"
+  },
+  {
+   "bugid": "1499105",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Assertion failure: mResponseSent, at /builds/worker/workspace/build/src/dom/filehandle/ActorsParent.cpp:2025"
+  },
+  {
+   "bugid": "1608584",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Perma [tier2] browser/base/content/test/webrtc/browser_devices_get_user_media_in_frame.js | Uncaught exception - [Exception... \"(null)\"  nsresult: \"0x80040111 (NS_ERROR_NOT_AVAILABLE)\"  location: \"<unknown>\"  data: no]"
+  },
+  {
+   "bugid": "1607205",
+   "status": "NEW",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent PROCESS-CRASH | Main app process exited normally | application crashed [@ mozilla::media::LambdaRunnable<mozilla::WebrtcAudioConduit::OnRtcpBye()::$_1>::Run()]"
+  },
+  {
+   "bugid": "1547106",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "createDataChannel with a duplicate id should throw OperationError"
+  },
+  {
+   "bugid": "1591199",
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "answer is offer for a brief moment after signalingstatechange event"
+  },
+  {
+   "bugid": "1603321",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "MacOS touchbar button \"Search or enter address\" non-functional when a full-screen video is playing back"
+  },
+  {
+   "bugid": "1610754",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Eager evaluation result is not displayed when it is falsy"
+  },
+  {
+   "bugid": "1603356",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Enable Eager evaluation in Nightly"
+  },
+  {
+   "bugid": "1610651",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Libraries URLs expression matching should use Regexp::test"
+  },
+  {
+   "bugid": "1610277",
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Stop emitting unused \"ready\" event for DevTools toolbox hosts"
+  },
+  {
+   "bugid": "1610823",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Running browser_browser_toolbox_fission_contentframe_inspector in isolation fails"
+  },
+  {
+   "bugid": "1597125",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Unwanted line breaks when copying plain text of CSS declarations from the Rules panel"
+  },
+  {
+   "bugid": "1597381",
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Create profiler presets for about:profiling"
+  },
+  {
+   "bugid": "1516413",
+   "status": "ASSIGNED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "RDM mousewheel zooming does not update zoom UI"
+  },
+  {
+   "bugid": "1610781",
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Add react-dom file to React regex in getLibraryFromUrl"
+  },
+  {
+   "bugid": "1608890",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "[Storage] Column names should match those in Chrome"
+  },
+  {
+   "bugid": "1608411",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "[storage] Add size column to cookies panel similar to Chrome's storage panel"
+  },
+  {
+   "bugid": "1608154",
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "[storage] Column order should match Chrome's storage panel"
+  },
+  {
+   "bugid": "1610681",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "UrlbarView needs to select the heuristic result when it's not the first result added"
+  },
+  {
+   "bugid": "1610271",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "A promise chain failed to handle a rejection: can't access property \"updateCount\", updateManager is undefined - stack: lastBrowserUpdateDate@resource:///modules/UrlbarProviderSearchTips.jsm:415:7"
+  },
+  {
+   "bugid": "1601795",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Ctrl+I shortcut key for Page Info opens the bookmarks sidebar instead"
+  },
+  {
+   "bugid": "1606731",
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Searching for a page in the address bar or history sidebar should ignore diacritics"
+  },
+  {
+   "bugid": "1610623",
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "DisplayMenuBar isn't working via GPO with Firefox 72"
+  },
+  {
+   "bugid": "1552600",
+   "status": "ASSIGNED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Local policies.json should augment system policy (not override)"
+  },
+  {
+   "bugid": "1607724",
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "License texts missing from about:license"
+  },
+  {
+   "bugid": "1590412",
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The \"Address Bar\" is wrongly unfocused after it is clicked while a \"CFR Recommendation\" is displayed"
+  },
+  {
+   "bugid": "1608513",
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Import from Microsoft's Chromium Edge browser"
+  },
+  {
+   "bugid": "1544922",
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Port v2 personalization to Discovery Stream"
+  },
+  {
+   "bugid": "1608952",
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Ensure spoc based UI is translated"
+  },
+  {
+   "bugid": "1607501",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Perma browser/components/preferences/in-content/tests/browser_browser_languages_subdialog.js | The events are recorded correctly - when Gecko version increases to 75 on 2020-02-10"
+  },
+  {
+   "bugid": "1591059",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "setDefaultPrivate (and variations) should ensure separatePrivateDefault preference is set to true."
+  },
+  {
+   "bugid": "1576917",
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Port PopupBlockingChild from a message manager actor to a JSWindowActor"
+  },
+  {
+   "bugid": "1596592",
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Warm the tab that's being switched to early during tab removal"
+  },
+  {
+   "bugid": "1610680",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "./mach bootstrap fails when trying to install rust"
+  },
+  {
+   "bugid": "1610728",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix tooltip positioning in build_resources.html"
+  },
+  {
+   "bugid": "1609764",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Do not run --disable-optimize --enable-debug builds on autoland"
+  },
+  {
+   "bugid": "1610774",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`ImportError: cannot import name which` when running configure"
+  },
+  {
+   "bugid": "1610929",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update in-tree sccache to the current master branch"
+  },
+  {
+   "bugid": "1610944",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "configure/test_toolchain_configure.py and configure/test_toolchain_helpers.py support Python 3"
+  },
+  {
+   "bugid": "1609281",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Loading a mozconfig does not work if there is a unicode environment variable"
+  },
+  {
+   "bugid": "1605850",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "./mach static-analysis autotest  -i fails with KeyError: u'MOZ_FETCHES_DIR'"
+  },
+  {
+   "bugid": "1610678",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Prevent code from containing using directives for the mozilla::java namespace"
+  },
+  {
+   "bugid": "1611014",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "mach taskgraph fails with schema validation error when run with --root option from commandline"
+  },
+  {
+   "bugid": "1608834",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable chunking in the taskgraph for all mochitest suites"
+  },
+  {
+   "bugid": "1593395",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Remove mobile/android copy of FxAccountsWebChannel.jsm"
+  },
+  {
+   "bugid": "1610641",
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Remove Fennec modules"
+  },
+  {
+   "bugid": "1610914",
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Extensions with theme_icons crash in the Icon code"
+  },
+  {
+   "bugid": "1610608",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove unused ErrorPageEventHandler"
+  },
+  {
+   "bugid": "1533406",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoView: Private sessions are not \"shared\""
+  },
+  {
+   "bugid": "1601660",
+   "status": "ASSIGNED",
+   "component": "GeckoView:Tracking Protection",
+   "summary": "Make GeckoView get content blocking log from the parent process"
+  },
+  {
+   "bugid": "1607193",
+   "status": "ASSIGNED",
+   "component": "Release Engineering:Release Automation: L10N",
+   "summary": "Drop l10n-check from automation and build"
+  },
+  {
+   "bugid": "1610611",
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "puppeteer is permafailing on autoland"
+  },
+  {
+   "bugid": "1587845",
+   "status": "REOPENED",
+   "component": "Remote Protocol:Page",
+   "summary": "Add \"clip\" argument to Page.captureScreenshot"
+  },
+  {
+   "bugid": "1547111",
+   "status": "REOPENED",
+   "component": "Taskcluster:General",
+   "summary": "Migrate tier 1 builds from AWS to GCP"
+  },
+  {
+   "bugid": "1610778",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Breakpad spews out garbage when printing a pid number to the log"
+  },
+  {
+   "bugid": "1595915",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Context Menu: have suggest secure password option at the top of the main list"
+  },
+  {
+   "bugid": "1610300",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Failed to init glean_preview due to Error {inner: An Rkv error occurred: lmdb error: Permission denied }"
+  },
+  {
+   "bugid": "1610779",
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove obsolete MozTabbox::_tabs and MozTabbox::_tabpanels getters"
+  },
+  {
+   "bugid": "1602384",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "browser.menus.onShown event listener is not firing when used in multiple contexts and one of them unloads"
+  },
+  {
+   "bugid": "1469060",
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Extension override doorhanger title text is incorrectly formatted"
+  },
+  {
+   "bugid": "1609474",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Reading extensions.webextensions.remote once for the purposes of Eval/Js Load Telemetry"
+  }
+ ],
+ "date": "2020-01-23",
+ "cset": "a1669b5990974f625d95260c059dcf8f87129a8d",
+ "buildid": "20200123095433",
+ "fixed": 86,
+ "total": 114,
+ "restricted": 3
+}

@@ -1,0 +1,574 @@
+{
+ "bugs": [
+  {
+   "bugid": "1237782",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove support for appcache storage in Nightly and early beta"
+  },
+  {
+   "bugid": "1345192",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Consider removing gecko-only DataTransfer APIs"
+  },
+  {
+   "bugid": "1348682",
+   "status": "RESOLVED",
+   "component": "Core:DOM: IndexedDB",
+   "summary": "Intermittent xpcshell-unpack.ini:toolkit/mozapps/extensions/test/xpcshell/test_bug542391.js | application crashed [@ mozilla::dom::indexedDB::`anonymous namespace'::FactoryOp::OpenDirectory] after Assertion failure: !QuotaClient::IsShuttingDownOnBackgroun"
+  },
+  {
+   "bugid": "1456995",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "enable e10s service workers pref on nightly (set \"dom.serviceWorkers.parent_intercept\" to true on nightly)"
+  },
+  {
+   "bugid": "1474659",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Store ArrayBuffer metadata in its own arena"
+  },
+  {
+   "bugid": "1478331",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "should nightly-asan-reporter builds use \"nightly\" branding instead of \"unofficial\"?"
+  },
+  {
+   "bugid": "1491649",
+   "status": "VERIFIED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "long dropdown texts cropped/shortened in responsive design mode for device and connection type due to too small width"
+  },
+  {
+   "bugid": "1497191",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Apply Meta CSP to about:config"
+  },
+  {
+   "bugid": "1507759",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Print a sensible warning if failing to allocate a wasm memory due to virtual memory limits"
+  },
+  {
+   "bugid": "1518138",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent GECKO(5620) | Assertion failure: [unhandlable oom] Failed not allocate new chunk during GC, at z:/build/build/src/js/src/vm/JSContext.cpp:1485"
+  },
+  {
+   "bugid": "1533759",
+   "status": "NEW",
+   "component": "Core:DOM: Web Storage",
+   "summary": "Intermittent GECKO(3405) | Assertion failure: access != nsContentUtils::StorageAccess::eDeny || rejectedReason == nsIWebProgressListener::STATE_COOKIES_BLOCKED_FOREIGN, at /builds/worker/workspace/build/src/dom/storage/Storage.cpp:42"
+  },
+  {
+   "bugid": "1539182",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "IMDB video is not seekable"
+  },
+  {
+   "bugid": "1542369",
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "RDM Settings - clicking in Add Device fields should highlight placeholder input"
+  },
+  {
+   "bugid": "1545038",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Figure out what to do with test262 realm tests that pass with same-compartment realms"
+  },
+  {
+   "bugid": "1547519",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "mingwclang build: application crashed [@ RtlpLowFragHeapFree + 0x2c]"
+  },
+  {
+   "bugid": "1557564",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Complete implementation of Base Profiler on Windows"
+  },
+  {
+   "bugid": "1558439",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Log warning to web console when add-on installation was blocked due to full-screen"
+  },
+  {
+   "bugid": "1559088",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use of unknown property Ci.nsIRequest.LOAD_ONLY_FROM_CACHE in test_redirect-caching_failure.js"
+  },
+  {
+   "bugid": "1565332",
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update desktop1604-test image to use Debian 10 (buster)"
+  },
+  {
+   "bugid": "1565375",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The pause overlay should include stepping buttons"
+  },
+  {
+   "bugid": "1565715",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The Preview highlight should only highlight a single token"
+  },
+  {
+   "bugid": "1566986",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "getSymbolTable call never returns for profiler popup's frame script"
+  },
+  {
+   "bugid": "1567040",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "LeakSanitizer: [@ js::wasm::StackMap::create]"
+  },
+  {
+   "bugid": "1567249",
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Update color contrast calculation in the a11y panel so that it works with simulation mode"
+  },
+  {
+   "bugid": "1569738",
+   "status": "RESOLVED",
+   "component": "Firefox:Page Info Window",
+   "summary": "[Fission] Make Page Info window Fission-compatible"
+  },
+  {
+   "bugid": "1570337",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Android implementation of PlatformEncoderModule."
+  },
+  {
+   "bugid": "1570537",
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Intermittent  test/browser/browser_protections_monitor.js | Header content for user with monitor data is correct - \"\\n                  \\n                \" == \"Firefox Monitor warns you if your info has appeared in a known data breach\" -"
+  },
+  {
+   "bugid": "1572013",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[BinAST] JSAPI tests for Context 0.1"
+  },
+  {
+   "bugid": "1572144",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Support search result navigation"
+  },
+  {
+   "bugid": "1572439",
+   "status": "VERIFIED",
+   "component": "Firefox:Sync",
+   "summary": "[Synced Tabs Sidebar] Firefox Nightly Fresh Profile cuts off icons from Synced Tabs sidebar"
+  },
+  {
+   "bugid": "1573477",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support Scalar operations in GeckoView Streaming Telemetry"
+  },
+  {
+   "bugid": "1573832",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enumerate MediaCapabilities database in about:support"
+  },
+  {
+   "bugid": "1573859",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The DOM Mutation side panel could show help if empty"
+  },
+  {
+   "bugid": "1574852",
+   "status": "RESOLVED",
+   "component": "Core:Editor",
+   "summary": "Move all protected/private methods of TextEditRules/HTMLEditRules to editor class or somewhere"
+  },
+  {
+   "bugid": "1575240",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "inspect(x) should show x in the appropriate panel"
+  },
+  {
+   "bugid": "1575350",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move JSScript side-tables from Realm to Zone"
+  },
+  {
+   "bugid": "1575483",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Force LTR the homepage url for extensions"
+  },
+  {
+   "bugid": "1575682",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "De-duplicate profiler pop-up code"
+  },
+  {
+   "bugid": "1575704",
+   "status": "VERIFIED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Update send tab menu to reflect the decoupling of FxA and Sync"
+  },
+  {
+   "bugid": "1576087",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Split EGLSurface creation from RenderCompositorANGLE::ResizeBufferIfNeeded()"
+  },
+  {
+   "bugid": "1576272",
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "about:logins loaded with a prepopulated filter to a site with no saved logins shows an unusable screen"
+  },
+  {
+   "bugid": "1576288",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Storage",
+   "summary": "Fix dom/tests/mochitest/storageevent/ tests to work with Fission"
+  },
+  {
+   "bugid": "1576343",
+   "status": "VERIFIED",
+   "component": "Core:Internationalization",
+   "summary": "Options/General/Network Settings/Enable DNS over HTTPS/Use Provider->listbox labels lost"
+  },
+  {
+   "bugid": "1576613",
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.3.129"
+  },
+  {
+   "bugid": "1576641",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add flags for loaded tracking and social cookies in the content blocking log"
+  },
+  {
+   "bugid": "1576742",
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove Fission-incompatible test of UniversalXPConnect gunk"
+  },
+  {
+   "bugid": "1576904",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Add WaylandDMABufSurface GL binding ability"
+  },
+  {
+   "bugid": "1577000",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix Megabar breakout width on window resize"
+  },
+  {
+   "bugid": "1577021",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add gtest coverage for non-ascii codecs in MimeTypes"
+  },
+  {
+   "bugid": "1577224",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: inhibitNops_ && (isPoolEmptyFor(InstSize) || canNotPlacePool_), at js/src/jit/shared/IonAssemblerBufferWithConstantPools.h:1121 with Baseline Interpreter on the stack"
+  },
+  {
+   "bugid": "1577288",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "Re-enable the ally tests and add a few more tests to the mingw build"
+  },
+  {
+   "bugid": "1577376",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "UI for enabling/disabling debugger statements"
+  },
+  {
+   "bugid": "1577425",
+   "status": "RESOLVED",
+   "component": "Core:Serializers",
+   "summary": "Encapsulate output and `mAtFirstColumn` in `nsPlainTextSerializer"
+  },
+  {
+   "bugid": "1577428",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Not allow nsICertOverrideService to be implemented in js"
+  },
+  {
+   "bugid": "1577558",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "IPC: crash [@mozilla::AntiTrackingCommon::SaveFirstPartyStorageAccessGrantedForOriginOnParentProcess]"
+  },
+  {
+   "bugid": "1577563",
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "IPC: crash [@mozilla::AntiTrackingCommon::CreateStoragePermissionKey]"
+  },
+  {
+   "bugid": "1577706",
+   "status": "VERIFIED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Mailto: links in any browser (Firefox, Chrome, Edge, etc) not launching Thunderbird if configured as default mail client on Windows"
+  },
+  {
+   "bugid": "1577708",
+   "status": "VERIFIED",
+   "component": "Firefox:Theme",
+   "summary": "Very low on-hover contrast in dark theme Change Search Settings button"
+  },
+  {
+   "bugid": "1577767",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "logMessage does not send messages to content process when there are no console listeners attached to the parent"
+  },
+  {
+   "bugid": "1577795",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_reverse_search_initial_value.js | A promise chain failed to handle a rejection: Connection closed, pending request to server0.conn245.child1/domwalker53"
+  },
+  {
+   "bugid": "1577871",
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Stop using `using namespace std` in toolkit"
+  },
+  {
+   "bugid": "1577872",
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Updating on Windows is broken with mingw-w64/clang toolchain"
+  },
+  {
+   "bugid": "1577885",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Stop using `using namespace std` at global scope in GMP"
+  },
+  {
+   "bugid": "1577936",
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "Stop using `using namespace std` at global scope in dom/plugins"
+  },
+  {
+   "bugid": "1577977",
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Crash when accessing StaticPrefs::ui_scrolling_negate_wheel_scroll() in Android"
+  },
+  {
+   "bugid": "1578039",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma tier2 fission dom/tests/mochitest/whatwg/test_postMessage_onOther.html | uncaught exception - NS_ERROR_UNEXPECTED:  at run@http://mochi.test:8888/tests/dom/tests/mochitest/whatwg/test_postMessage_onOther.html:42:3"
+  },
+  {
+   "bugid": "1578041",
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Perma tier2 fission toolkit/components/extensions/test/mochitest/test_ext_cookies.html | one tabId returned for store - Expected: 1, Actual: 2"
+  },
+  {
+   "bugid": "1578092",
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "[RTL] Fix the Contribute background icon position"
+  },
+  {
+   "bugid": "1578140",
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Accessible::DoAction fails on XULLabelAccessible inside a button"
+  },
+  {
+   "bugid": "1578145",
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[RTL] Fix submit/view buttons position in about:crashes"
+  },
+  {
+   "bugid": "1578146",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Quota Manager",
+   "summary": "Adapt quota manager origin tests to fixes to MozURL/rust-url"
+  },
+  {
+   "bugid": "1578158",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "images decoded in inactive tabs"
+  },
+  {
+   "bugid": "1578163",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 69"
+  },
+  {
+   "bugid": "1578194",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Having node_modules installed in a sub-directory can cause failures in ESLint"
+  },
+  {
+   "bugid": "1578198",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Mach clobber broken on Windows - \"TypeError: environment can only contain strings\""
+  },
+  {
+   "bugid": "1578252",
+   "status": "RESOLVED",
+   "component": "Core:Web Replay",
+   "summary": "Highlight messages that are at the same location"
+  },
+  {
+   "bugid": "1578289",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "raise CoTError(\"path {} not in {} {} chain of trust artifacts!\".format(path, link.name, link.task_id))"
+  },
+  {
+   "bugid": "1578295",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Use cbindgen for counters."
+  },
+  {
+   "bugid": "1578298",
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "[RTL] Fix protection details cog icon position"
+  },
+  {
+   "bugid": "1578299",
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "about:config search box is shifted to the right"
+  },
+  {
+   "bugid": "1578303",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Enable LoginManagerContextMenu.jsm for SeaMonkey"
+  },
+  {
+   "bugid": "1578324",
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Cleanup some text-align properties in about:logins"
+  },
+  {
+   "bugid": "1578326",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Make history navigation icons same color as other icons in webconsole"
+  },
+  {
+   "bugid": "1578333",
+   "status": "NEW",
+   "component": "Core:DOM: Push Notifications",
+   "summary": "Intermittent dom/push/test/test_serviceworker_lifetime.html | Test timed out."
+  },
+  {
+   "bugid": "1578340",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Intern local position + spatial node in WR clips."
+  },
+  {
+   "bugid": "1578375",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Stop flushing layout in SearchOneOffs::__rebuild when used with the address bar"
+  },
+  {
+   "bugid": "1578389",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Fix Proptype errors in console"
+  },
+  {
+   "bugid": "1578391",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Fix various races during profiler shutdown."
+  },
+  {
+   "bugid": "1578394",
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "MessageTask::GetType should actually return the message type"
+  },
+  {
+   "bugid": "1578471",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "consolidate NDK version detection"
+  },
+  {
+   "bugid": "1578493",
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Misc. sccache-dist doc updates"
+  },
+  {
+   "bugid": "1578531",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "be even more careful about success when running dsymutil"
+  },
+  {
+   "bugid": "1578605",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove workaround of Bug 1569881"
+  },
+  {
+   "bugid": "1578606",
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix jest"
+  }
+ ],
+ "date": "2019-09-04",
+ "cset": "174361d152923aea2b24226a57cde3099509ed6a",
+ "buildid": "20190904094319",
+ "fixed": 78,
+ "total": 94,
+ "restricted": 2
+}

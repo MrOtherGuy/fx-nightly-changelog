@@ -1,0 +1,652 @@
+{
+ "bugs": [
+  {
+   "bugid": "1648732",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Crash in AudioResampler"
+  },
+  {
+   "bugid": "1642465",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Port EME related messages to Fission"
+  },
+  {
+   "bugid": "1647070",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::image::`anonymous namespace'::ImageDecoderListener::GetFrame]"
+  },
+  {
+   "bugid": "1647434",
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[MediaControl-Windows] Rework image cache mechanism for SMTC"
+  },
+  {
+   "bugid": "1649294",
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make RemoteDecoder work with background taskqueue"
+  },
+  {
+   "bugid": "1648736",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Webpages render previously cached CSS changes"
+  },
+  {
+   "bugid": "1649197",
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove StyleSheet::UnparentChildren."
+  },
+  {
+   "bugid": "1647112",
+   "status": "NEW",
+   "component": "Core:Canvas: 2D",
+   "summary": "Make CanvasThreadHolder use a BackgroundTaskQueue"
+  },
+  {
+   "bugid": "1645046",
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable HTML5 dialog in Nightly"
+  },
+  {
+   "bugid": "1649125",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Disable browsing context preservation due to regressions"
+  },
+  {
+   "bugid": "1648141",
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "IPCBlobInputStream should be renamed to something more generic than \"IPCBlob\""
+  },
+  {
+   "bugid": "1623461",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "navigation-timing/test_performance_attributes.sub.html.ini WPT FAIL with Fission"
+  },
+  {
+   "bugid": "1647557",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Land prototype version of parent controlled document loads"
+  },
+  {
+   "bugid": "1649133",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove unused nsISHEntry.expirationStatus"
+  },
+  {
+   "bugid": "1494356",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Styling SVG element via DOM API before adding it to DOM produce CSP errors (due to SVG elements reparsing their inline style attribute on document insertion, ever since bug 387466)"
+  },
+  {
+   "bugid": "1649227",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.2.13"
+  },
+  {
+   "bugid": "1642676",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Select an explicit remoteType for remote workers and then check that it matches the one set on the child process"
+  },
+  {
+   "bugid": "1648449",
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Redesign mLoadInfos handling in ScriptLoader"
+  },
+  {
+   "bugid": "1631276",
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::ipc::FatalError | mozilla::ipc::IProtocol::HandleFatalError | mozilla::a11y::PDocAccessibleParent::SendChildAtPoint]"
+  },
+  {
+   "bugid": "1647911",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Fix up \"Payload presented\" markers"
+  },
+  {
+   "bugid": "1648972",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Fix profiler non-unified build issues"
+  },
+  {
+   "bugid": "1649056",
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Move `do_GetService` out of profiler-locked code to avoid deadlock"
+  },
+  {
+   "bugid": "1648821",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "MOZ_SKIA_DISABLE_ASSERTS=1 does not suppress skia assertions on fuzzing opt builds"
+  },
+  {
+   "bugid": "1649119",
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add ANDROID_get_native_client_buffer support"
+  },
+  {
+   "bugid": "1647628",
+   "status": "NEW",
+   "component": "Core:Graphics: Layers",
+   "summary": "Make ImageBridgeChild use a BackgroundTaskQueue"
+  },
+  {
+   "bugid": "1649073",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in [@ gfxDWriteFontList::AppendFamiliesFromCollection]"
+  },
+  {
+   "bugid": "1623792",
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Optimize primitive dependency handling, taking advantage of spatial information from tile assignment."
+  },
+  {
+   "bugid": "1648871",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "SWGL crash when using debug draws"
+  },
+  {
+   "bugid": "1649215",
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Expose OpenGL Compositing status."
+  },
+  {
+   "bugid": "1634846",
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "MessageChannel can't work with TaskQueue"
+  },
+  {
+   "bugid": "1647377",
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Lines in Tibetan text do not wrap"
+  },
+  {
+   "bugid": "1647309",
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: genObj.isSuspended(), at debugger/Debugger.cpp:2576"
+  },
+  {
+   "bugid": "1648757",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (Jun 26 2020 edition)"
+  },
+  {
+   "bugid": "1635375",
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Improve WarpBuilder IC logic"
+  },
+  {
+   "bugid": "1647920",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize Math.trunc in CacheIR and Warp."
+  },
+  {
+   "bugid": "1648005",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: handle the unreachable-OSR-loop case"
+  },
+  {
+   "bugid": "1649398",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Known class support for MRegExp and folding for MHasClass and MIsCallable"
+  },
+  {
+   "bugid": "1647803",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Move cell header field to the Cell class and remove CellHeader classes"
+  },
+  {
+   "bugid": "1648646",
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add capability of searching from roots to shortestPaths() testing function"
+  },
+  {
+   "bugid": "1619196",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Allow atomic operations on non-shared memories"
+  },
+  {
+   "bugid": "1648755",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Really gate thread ops on the pref"
+  },
+  {
+   "bugid": "1649282",
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Make wasm/limits.js work without reference-types"
+  },
+  {
+   "bugid": "1630704",
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Merge nsFrame into nsIFrame"
+  },
+  {
+   "bugid": "1638844",
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent transform-3d/animate-preserve3d-parent.html == transform-3d/animate-preserve3d-ref.html | image comparison, max difference: 1, number of differing pixels: 2"
+  },
+  {
+   "bugid": "1648500",
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Avoid using the visual viewport for laying out scrollbars"
+  },
+  {
+   "bugid": "1645083",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove or update probes expiring in Firefox 80: SESSION_RESUMPTION_WITH_*"
+  },
+  {
+   "bugid": "1648898",
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Data race during STS initialisation."
+  },
+  {
+   "bugid": "1633935",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Allow sending onStartRequest via pHttpBackgroundChannel"
+  },
+  {
+   "bugid": "1649003",
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Log JS stack on more places in nsHttpChannel and Child"
+  },
+  {
+   "bugid": "1647034",
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Try and reduce number of reflows triggered by setting the visual viewport size"
+  },
+  {
+   "bugid": "1648667",
+   "status": "NEW",
+   "component": "Core:Performance",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /navigation-timing/secure_connection_start_non_zero.https.html | Test that secureConnectionStart is not zero - expected FAIL"
+  },
+  {
+   "bugid": "1648134",
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Permission Manager does not save changes when scope is changed."
+  },
+  {
+   "bugid": "386713",
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "reftest text-font-weight-01.svg fails on linux"
+  },
+  {
+   "bugid": "1555557",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Cert override service does main-thread I/O"
+  },
+  {
+   "bugid": "1648855",
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "osclientcerts: re-scan OS storage only when NSS is searching for all certificates/keys"
+  },
+  {
+   "bugid": "1640345",
+   "status": "NEW",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Add pref to prevent content processes from connecting to the X server"
+  },
+  {
+   "bugid": "1644917",
+   "status": "NEW",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Lazily create common sandbox broker policy"
+  },
+  {
+   "bugid": "1641598",
+   "status": "VERIFIED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Assertion failure: (typeOffset % eArray == 0) && (typeOffset / eArray <= 2), at /builds/worker/checkouts/gecko/dom/indexedDB/Key.cpp:238"
+  },
+  {
+   "bugid": "1644379",
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Replace output parameters in Key by appropriate return values"
+  },
+  {
+   "bugid": "1648010",
+   "status": "NEW",
+   "component": "Core:String",
+   "summary": "Remove NS_*LITERAL_*STRING macros"
+  },
+  {
+   "bugid": "1644709",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Show selected PeerConnection configuration (RTCConfiguration) options in about:webrtc"
+  },
+  {
+   "bugid": "1648600",
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add SDP errors to about:webrtc"
+  },
+  {
+   "bugid": "1648939",
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Clicking navigation bar buttons on macOS triggers appearance and disappearance of menu in the wrong location"
+  },
+  {
+   "bugid": "1647958",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "GetCurrentThreadSerialEventTarget() doesn't return what you expect (part 2)"
+  },
+  {
+   "bugid": "1648705",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add a nsTArrayView template that owns a nsTArray but only exposes a Span"
+  },
+  {
+   "bugid": "1648781",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Log timer events"
+  },
+  {
+   "bugid": "1648787",
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "remove MOZ_GUARD_OBJECT bits from RecursiveMutex"
+  },
+  {
+   "bugid": "1649198",
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove unused and undefined nsXULPrototypeDocument::Create"
+  },
+  {
+   "bugid": "1648017",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "bracket completion gone on highlight text"
+  },
+  {
+   "bugid": "1648875",
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Missing function names for Angular stack traces"
+  },
+  {
+   "bugid": "1642852",
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Add section in the \"getting started/you might not need to rebuild\" detailing how to work with workers"
+  },
+  {
+   "bugid": "1618059",
+   "status": "ASSIGNED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/server/tests/xpcshell/test_extension_storage_actor.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": "1648510",
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Improve DAMP profiler markers"
+  },
+  {
+   "bugid": "1646636",
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Perma fision [tier 2] devtools/client/inspector/test/browser_inspector_inspect_node_contextmenu.js | Uncaught exception - at resource://devtools/client/fronts/inspector.js:212 - TypeError: can't access property \"getFront\", target is null"
+  },
+  {
+   "bugid": "1646974",
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Missing requests in Netmonitor"
+  },
+  {
+   "bugid": "1646086",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "UrlbarProviderSearchTips.jsm appears in Talos ts_paint profiles"
+  },
+  {
+   "bugid": "1646928",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Bogus URL autocorrect for servers starting with 'ps'"
+  },
+  {
+   "bugid": "1648385",
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search suggestions are missing in the address bar when searching with the \"?\" operator"
+  },
+  {
+   "bugid": "1648180",
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Support 'entrypoint', 'entrypoint_experiment', 'entrypoint_variation' parameters in FxA UITour"
+  },
+  {
+   "bugid": "1642731",
+   "status": "RESOLVED",
+   "component": "Firefox:Page Info Window",
+   "summary": "Turn excessive calls to document.l10n.formatValue to a single document.l10n.formatValues call"
+  },
+  {
+   "bugid": "1648961",
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "[RTL] The warning icon for the experiments section is not positioned correctly"
+  },
+  {
+   "bugid": "1627540",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Expose Region.getRegion as a (idl exposed) Service"
+  },
+  {
+   "bugid": "1627547",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update WebPayments to call getRegion"
+  },
+  {
+   "bugid": "1647320",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make the search cache responsible for listening to notifications of changes, rather than being told about updates"
+  },
+  {
+   "bugid": "1647359",
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Change object definitions in SearchEngine.jsm to be classes"
+  },
+  {
+   "bugid": "1642556",
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Write a sync log after sending a tab"
+  },
+  {
+   "bugid": "1648175",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Move history and library panel views out of main panel"
+  },
+  {
+   "bugid": "1648198",
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Move recently closed panels and windows views out of main panel"
+  },
+  {
+   "bugid": "1649039",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach build errors out saying I need rustc 1.43.0, mach bootstrap says \"Your version of Rust (1.41.1) is new enough\""
+  },
+  {
+   "bugid": "1200075",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix malloc_usable_size situation for SQLite on Windows"
+  },
+  {
+   "bugid": "1647482",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "client.py: Write binary string when file is opened as binary in NSS/NSPR uplift"
+  },
+  {
+   "bugid": "1648959",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Generated Documentation",
+   "summary": "Replace the firefox docs link in the docs with internal linking"
+  },
+  {
+   "bugid": "1647260",
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "test_gen_feature_definitions.py:   method already defined line 85  E0102 (pylint)"
+  },
+  {
+   "bugid": "1649071",
+   "status": "REOPENED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Replace the DISALLOW_COPY_AND_ASSIGN & DISALLOW_EVIL_CONSTRUCTORS macros with = delete;"
+  },
+  {
+   "bugid": "1645948",
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Automated review] re.error: multiple repeat at position 48"
+  },
+  {
+   "bugid": "1582562",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "remove all references to geckoview_example.test"
+  },
+  {
+   "bugid": "1647172",
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Pages render as black screen on Nvidia Shield Tablet"
+  },
+  {
+   "bugid": "1647687",
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 77"
+  },
+  {
+   "bugid": "1649266",
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "79.0b1 release-generate-checksums failures blocking releases"
+  },
+  {
+   "bugid": "1647360",
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "cleanup require builtin cert logic for install/update"
+  },
+  {
+   "bugid": "1648417",
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Form Update -  notification lacks icon in pop-up"
+  },
+  {
+   "bugid": "1647413",
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "ThreadSanitizer: data race [@ Shutdown] vs. [@ mozilla::places::History::FetchPageInfo]"
+  },
+  {
+   "bugid": "1513674",
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Twice-reported memory allocations in url-classifier code"
+  },
+  {
+   "bugid": "1646451",
+   "status": "ASSIGNED",
+   "component": "Toolkit:Storage",
+   "summary": "get_or_create caches value for corrupted dbs"
+  },
+  {
+   "bugid": "1649357",
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Clarify in telemetry API docs that only events flushed to storage are cleared"
+  },
+  {
+   "bugid": "1253129",
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Support focused=false in the browser.windows.create"
+  },
+  {
+   "bugid": "1645907",
+   "status": "NEW",
+   "component": "WebExtensions:Storage",
+   "summary": "Handle corrupt ExtensionPermission database"
+  }
+ ],
+ "date": "2020-06-30",
+ "cset": "933c9f34edfab8d5cf2a5389304cf3708889eb1c",
+ "buildid": "20200630144559",
+ "fixed": 86,
+ "total": 107,
+ "restricted": 2
+}
