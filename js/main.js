@@ -148,19 +148,22 @@ function populateBugs(e){
   const b = e ? e.target : document.getElementById("dateSelector");
   if(!b || !b.value){ return }
   if(!b.validity.valid){
-    LOG.log("requested date" + b.value + " is not invalid");
-    restoreUI(b);
+    LOG.log("requested date" + b.value + " is out of valid range");
     return
   }
-  b.removeEventListener("change",populateBugs);
+  
   LOG.clear();
-  document.getElementById("bugList").classList.add("busy");
   
   const date = b.valueAsDate.toISOString().slice(0,10);
-  if(typeof date != "string" || !isValidDate(date)){
-    LOG.log("invalid date");
+  
+  if(!isValidDate(date)){
+    LOG.log("requested date is invalid");
     return
   }
+  
+  b.removeEventListener("change",populateBugs);
+  document.getElementById("bugList").classList.add("busy");
+  
   getFile(date)
   .then(res => res, rej => {
     
