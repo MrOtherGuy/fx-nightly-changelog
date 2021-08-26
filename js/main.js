@@ -133,7 +133,7 @@ function printData(json){
 function getFile(dateString){
   let filename = `${dateString.slice(0,4)}/${dateString.slice(5,7)}/${dateString}.json`;
   return new Promise((resolve,reject) => {
-    fetch(`../changes/${filename}`)
+    fetch(`changes/${filename}`)
     .then(response => {
       if(!response.ok){
         reject(`request for "${filename}" got response: ${response.status}`);
