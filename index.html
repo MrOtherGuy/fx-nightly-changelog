@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firefox Nightly changes checker</title>
+<meta name="viewport" content="width=device-width"/>
+<meta charset="UTF-8">
+<script type="text/javascript" src="js/main.js"></script>
+<link href="css/main.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<template id="buginfo-template">
+<div class="logline">
+<slot name="bug-id"></slot>
+<slot name="bug-component"></slot>
+<slot name="bug-description"></slot>
+</div>
+</template>
+<div>
+<h2 class="flex">Nightly changes<span id="buildId"></span><input type="date" min="2018-01-01" id="dateSelector"></input></h2>
+<h3 id="changeset"></h3>
+</div>
+<div id="bugList"></div>
+<p>Status Log</p>
+<div id="statuslog">
+<div class="logline odd">This page didn't load correctly and is broken</div>
+</div>
+</body>
+</html>
