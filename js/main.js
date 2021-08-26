@@ -146,8 +146,9 @@ function getFile(dateString){
 
 function populateBugs(e){
   const b = e ? e.target : document.getElementById("dateSelector");
+  if(!b || !b.value){ return }
   if(!b.validity.valid){
-    LOG.log("requested date" + b.value + " is in the future");
+    LOG.log("requested date" + b.value + " is not invalid");
     restoreUI(b);
     return
   }
