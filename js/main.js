@@ -81,14 +81,6 @@ const LOG = {
   }
 }
 
-function getDate(day){
-  
-let date = (day?new Date(day):new Date()).toISOString().substr(0,10);
-  
-return {y:date.slice(0,4),m:date.slice(5,7),d:date.slice(8,10)}
-}
-
-
 function isValidDate(str){
   if(!str || typeof str != "string"){
     return false
@@ -96,11 +88,6 @@ function isValidDate(str){
   else{
     return (/^\d{4,4}-\d{2,2}-\d{2,2}$/).test(str)
   }
-}
-
-function restoreUI(b){
-  document.getElementById("bugList").classList.remove("busy");
-  b.addEventListener("change",populateBugs);
 }
 
 function printData(json){
@@ -144,8 +131,17 @@ function getFile(dateString){
   })
 }
 
-function populateBugs(e){
-  const b = e ? e.target : document.getElementById("dateSelector");
+function restoreUI(b){
+  document.getElementById("bugList").classList.remove("busy");
+  b.addEventListener("change",onDateChange);
+}
+
+function onDateChange(e){
+  populateBugs();
+}
+
+function populateBugs(tryPreviousDate){
+  const b = document.getElementById("dateSelector");
   if(!b || !b.value){ return }
   if(!b.validity.valid){
     LOG.log("requested date" + b.value + " is out of valid range");
@@ -161,13 +157,13 @@ function populateBugs(e){
     return
   }
   
-  b.removeEventListener("change",populateBugs);
+  b.removeEventListener("change",onDateChange);
   document.getElementById("bugList").classList.add("busy");
   
   getFile(date)
   .then(res => res, rej => {
     
-    if(!e){
+    if(tryPreviousDate){
       LOG.log(`No build for ${date}: ${rej}`);
       LOG.log("Trying to load yesterdays build data...");
       b.stepDown();
@@ -185,24 +181,49 @@ function populateBugs(e){
 function setUpDateInput(){
   let input = document.getElementById("dateSelector");
   let search = new URLSearchParams(document.location.search);
-  let today = getDate();
-  let todayStr = `${today.y}-${today.m}-${today.d}`;
-  input.setAttribute("max",todayStr);
+  let today = (new Date()).toISOString().slice(0,10);
+  input.setAttribute("max",today);
   let requestedDate = search.get("date");
   if(isValidDate(requestedDate)){
     input.value = requestedDate;
     if(!input.value){
-      input.value = todayStr
+      input.value = today
     }
   }else{
-    input.value = todayStr
+    input.value = today
   }
+  
+  function onInputButtonClick(e){
+    let input = document.getElementById("dateSelector");
+    if(!input.value){
+      input.value = input.max;
+      populateBugs(true);
+      return
+    }
+    let oldValue = input.value;
+    switch (e.target.id){
+      case "previousbutton":
+        input.stepDown();
+        break;
+      case "nextbutton":
+        input.stepUp();
+        break;
+      default:
+        return;
+    }
+    if(input.value != oldValue){
+      populateBugs();
+    }
+  }
+  
+  input.previousElementSibling.addEventListener("click",onInputButtonClick);
+  input.nextElementSibling.addEventListener("click",onInputButtonClick);
 }
 
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
     setUpDateInput();
     
-    populateBugs()
+    populateBugs(true)
   }
 }
