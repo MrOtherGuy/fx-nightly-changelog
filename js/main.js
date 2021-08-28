@@ -25,8 +25,8 @@ class BugInfo extends HTMLElement{
     this.firstChild.setAttribute("href",`https://bugzilla.mozilla.org/show_bug.cgi?id=${bug.bugid}`);
     this.firstChild.textContent = `#${bug.bugid} ${bug.status[0]}`;
     this.firstChild.setAttribute("title",bug.status);
-    this.children[1].textContent = `[${bug.component.replace(/</g,"&lt;")}]`;
-    this.children[2].textContent = bug.summary.replace(/</g,"&lt;");
+    this.children[1].textContent = `[${bug.component}]`;
+    this.children[2].textContent = bug.summary;
     this.unhide();
   }
   hide(){ this.classList.add("hidden") }
