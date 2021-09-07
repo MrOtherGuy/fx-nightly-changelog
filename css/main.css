@@ -4,7 +4,7 @@ body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break
 #list,#bugList,#statuslog{ background: rgba(0,0,0,0.1); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
 .hidden{ display: none }
 .flex{ display: flex }
-#buildId{ flex-grow: 1 }
+.buildIdContainer{ flex-grow: 1 }
 @media screen and (max-width: 600px){
   .flex{ flex-direction: column }
   .flex.inline{ flex-direction: row; margin-top: 0.8em; align-self: center  }
@@ -36,8 +36,9 @@ cr-buginfo:nth-child(2n),
 cr-buginfo,
 .logline{ padding: 2px 3px }
 
-#buildId:not(:empty)::before{ content: " in build id: " }
-#buildId{ margin-inline-start: 0.5ch }
+#buildId:not(:empty)::before{ content: "in build id: " }
+#buildId:empty + a{ display: none }
+#buildId{ margin-inline: 0.5ch }
 #changeset{ height: 2em; font-size: medium }
 #changeset:not(:empty)::before{ content: "Built from: " }
 cr-buginfo > span,
@@ -71,6 +72,30 @@ div > span{ padding-inline-start: 2ch }
   width: 2ch;
   background: no-repeat center url("plus.svg#minus");
   box-sizing: border-box;
+  opacity: 0.6;
 }
 #dateSelector + .dateAdjust{ background-image: url("plus.svg") }
-.dateAdjust:hover{ color: coral; filter: drop-shadow(0 0 1px coral) drop-shadow(0 0 2px coral) }
+.dateAdjust:hover{
+  color: coral;
+  filter: drop-shadow(0 0 1px coral) drop-shadow(0 0 2px coral);
+  opacity: 1;
+}
+@keyframes hide-show{ 0%{ opacity: 0 } 10%{ opacity: 1 } 90%{ opacity: 1 } 100%{ opacity: 0 } }
+#permalink.copy-success::after{
+  position: absolute;
+  width: 0;
+  white-space:nowrap;
+  content: "Copied";
+  font-size: 0.8em;
+  pointer-events: none;
+  animation: hide-show 2s linear forwards;
+}
+#permalink{
+  font-size: 0.8em;
+  padding: 0.2em;
+  user-select: none;
+}
+#permalink:hover{
+  background: rgba(100,100,100,0.4);
+  border-radius: 4px;
+}

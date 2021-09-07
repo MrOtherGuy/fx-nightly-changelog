@@ -48,6 +48,7 @@ const LOG = {
   printInfo: function(){
     document.getElementById("buildId").textContent = LOG.info.buildId;
     document.getElementById("changeset").textContent = LOG.info.cset;
+    document.getElementById("permalink").href = `?date=${LOG.info.date}`;
   },
   log: function(text){
     let container = document.getElementById("statuslog");
@@ -223,7 +224,23 @@ function setUpDateInput(){
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
     setUpDateInput();
-    
+    document.getElementById("permalink").addEventListener("click",(e) => {
+      e.preventDefault();
+      let link = e.target;
+      try{
+        let url = new URL(link.href);
+        let writing = navigator.clipboard.writeText(url.href);
+        writing.then(()=>{
+          LOG.log("copied url for "+LOG.info.date+" to clipboard");
+          link.classList.add("copy-success");
+          setTimeout(()=>link.classList.remove("copy-success"),2000);
+        });
+        
+      }catch(e){
+        LOG.log(e)
+      }
+      
+    });
     populateBugs(true)
   }
 }
