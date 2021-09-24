@@ -1,0 +1,394 @@
+{
+ "date": "2021-09-24",
+ "buildid": "20210924094613",
+ "cset": "64bfebfc3f6c63388d8a27b2a0c91020dc859666",
+ "bugs": [
+  {
+   "bugid": 1730518,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Crash in [@ core::result::unwrap_failed | audioipc_client::stream::{{impl}}::process]"
+  },
+  {
+   "bugid": 1725572,
+   "status": "REOPENED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fission crash in [@ IPCError-content | RecvConstructBrowser missing initial frame BrowsingContext]"
+  },
+  {
+   "bugid": 1731994,
+   "status": "NEW",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Fortify code around `ContentPermissionRequestBase`"
+  },
+  {
+   "bugid": 1726157,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add GetStorageAccess to nsIGlobalObject"
+  },
+  {
+   "bugid": 1695216,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "XMLHttpRequest should reset response upon receiving a bad chunk"
+  },
+  {
+   "bugid": 1725402,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS-First should copy referrerInfo (and potentially more state) from upgraded channel when performing a fallback to http"
+  },
+  {
+   "bugid": 1731154,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make AccAttributes entries movable and avoid copies."
+  },
+  {
+   "bugid": 1729407,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Cache friendly accessible text implementation"
+  },
+  {
+   "bugid": 1732227,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused layers.componentalpha.enabled pref"
+  },
+  {
+   "bugid": 1732221,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused `layers.geometry.***` prefs"
+  },
+  {
+   "bugid": 1730056,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused PaintCounter()"
+  },
+  {
+   "bugid": 1732230,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Heavy freezing while playing videos on YouTube fullscreen"
+  },
+  {
+   "bugid": 1732225,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused layers.bench.enabled pref"
+  },
+  {
+   "bugid": 1127828,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Intermittent e10s test_peerConnection_twoAudioVideoStreamsCombined.html | application timed out after 330 seconds with no output"
+  },
+  {
+   "bugid": 1731610,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "A simpler way to add prefs for WebRender"
+  },
+  {
+   "bugid": 1731773,
+   "status": "ASSIGNED",
+   "component": "Core:ImageLib",
+   "summary": "Update jpeg-xl to new version 0e1aa2a4a402a69c1f849e6fac22fd03aa34dfa4 from 2021-09-20 19:42:42"
+  },
+  {
+   "bugid": 1732194,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Fix non-unified build error in image/"
+  },
+  {
+   "bugid": 1728180,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Unify js::intl_GetCalendarInfo"
+  },
+  {
+   "bugid": 1731620,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Unify DateTime.cpp in SpiderMonkey"
+  },
+  {
+   "bugid": 1732147,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Bump jsparagus for bug 1718635 and bug 1718952"
+  },
+  {
+   "bugid": 1732168,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use bytecode pinning with ScriptPreloader"
+  },
+  {
+   "bugid": 1732162,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix behaviour of OOM during incremental XDR encoding"
+  },
+  {
+   "bugid": 1732098,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Reduce boilerplate in implementation of GenericTracer sublasses"
+  },
+  {
+   "bugid": 1732222,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove unused nsDisplayMasksAndClipPaths::CanPaintOnMaskLayer"
+  },
+  {
+   "bugid": 1732267,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Don't force textarea::placeholder to have white-space: pre-wrap."
+  },
+  {
+   "bugid": 1715537,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Log a message in the developer console when an installed font is blocked by font-visibility restriction"
+  },
+  {
+   "bugid": 1729412,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Expose public way to determine whether a frame is logically at the start of a line"
+  },
+  {
+   "bugid": 1715507,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Split the layout.css.font-visibility.level pref into separate settings for different browsing modes"
+  },
+  {
+   "bugid": 1730456,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ gfxFontGroup::FindFontForChar]"
+  },
+  {
+   "bugid": 1732095,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Clean up CacheStorageService"
+  },
+  {
+   "bugid": 1732256,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::nsHttpConnection::OnReadSegment]"
+  },
+  {
+   "bugid": 1732249,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::nsHttpNTLMAuth::GenerateCredentials]"
+  },
+  {
+   "bugid": 1729784,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "remove unused FrameMetrics::mExtraResolution"
+  },
+  {
+   "bugid": 1731933,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "include transform scale when interpreting danger zone values"
+  },
+  {
+   "bugid": 1731929,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "make cumulative and extra resolution make sense"
+  },
+  {
+   "bugid": 1675655,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "measure when CRLite and OCSP fetching differ"
+  },
+  {
+   "bugid": 1726598,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "sFactoryShutdown is never set to true and might be obsolete as well as sMutex"
+  },
+  {
+   "bugid": 1728267,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Remove implicit ToResult from QM_TRY macros"
+  },
+  {
+   "bugid": 1671182,
+   "status": "RESOLVED",
+   "component": "Core:Storage: StorageManager",
+   "summary": "Remove \"cache\" feature from Clear-Site-Data"
+  },
+  {
+   "bugid": 1171255,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent e10s test_peerConnection_twoAudioVideoStreams.html | application timed out after 330 seconds with no output | after ABORT: file shared_memory_posix.cc, line 221"
+  },
+  {
+   "bugid": 1731302,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Enable TURN TLS testing in CI"
+  },
+  {
+   "bugid": 1702071,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Fix and re-enable dom/media/webrtc/tests/mochitests/test_peerConnection_basicH264Video.html test on Fission (Windows debug)"
+  },
+  {
+   "bugid": 1732367,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Pref on by default exiting of fullscreen on escape key event on macOS"
+  },
+  {
+   "bugid": 1731432,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Crash in [@ CheckParticipatesInCycleCollection]"
+  },
+  {
+   "bugid": 1717802,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Event BP doesn't work after reload"
+  },
+  {
+   "bugid": 1731630,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Track leaks when reloading the page against console, debugger and netmonitor"
+  },
+  {
+   "bugid": 1731530,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Support TrackedObject.track from the content process"
+  },
+  {
+   "bugid": 1732286,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Browser toolbox throws `Can't find the actor ID for reflow from root or target actor's form.` exception"
+  },
+  {
+   "bugid": 1731538,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "New DuckDuckGo 16x16 search icon is blurry compared with site favicon"
+  },
+  {
+   "bugid": 1732108,
+   "status": "RESOLVED",
+   "component": "Firefox:Disability Access",
+   "summary": "Implement/fix mappings for ins, del elements and insertion, deletion roles"
+  },
+  {
+   "bugid": 1731559,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Change the return type in case of JEXL evaluation error"
+  },
+  {
+   "bugid": 1732395,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.11.298"
+  },
+  {
+   "bugid": 1730018,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Update footer under the Pocket section on newtab."
+  },
+  {
+   "bugid": 1726385,
+   "status": "NEW",
+   "component": "Firefox:Pocket",
+   "summary": "Build out recs variant"
+  },
+  {
+   "bugid": 1724960,
+   "status": "ASSIGNED",
+   "component": "Firefox:Session Restore",
+   "summary": "Add one-time infobar that indicates how to restore the previous session on the next session startup if automatic session restore is disabled"
+  },
+  {
+   "bugid": 1731264,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Update documentation about PopupNotifications in PermissionUI.jsm"
+  },
+  {
+   "bugid": 1729534,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Change Customize window theme picker to a button that points to about:addons#themes"
+  },
+  {
+   "bugid": 1732235,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade macOS SDK used to build mac clang"
+  },
+  {
+   "bugid": 1723084,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add a shared try preset for remote protocol"
+  },
+  {
+   "bugid": 1731790,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Add blank implementation of Fetch.disable to prevent unknown method errors"
+  },
+  {
+   "bugid": 1732011,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Update backgroundtasks example to include EXPORTED_SYMBOLS"
+  },
+  {
+   "bugid": 1730037,
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "Remove or update probes expiring in Firefox 95: blocklist.*"
+  },
+  {
+   "bugid": 1730039,
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Remove or update probes expiring in Firefox 95: pictureinpicture.*"
+  },
+  {
+   "bugid": 1731825,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Add an intervention to auto-hide mailto handler prompts on Office365"
+  }
+ ],
+ "fixed": 53,
+ "total": 64,
+ "restricted": 2
+}
