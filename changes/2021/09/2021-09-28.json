@@ -1,0 +1,478 @@
+{
+ "date": "2021-09-28",
+ "buildid": "20210928095433",
+ "cset": "c985110bb4b5b89e016b3b1bff340f755b55dc79",
+ "bugs": [
+  {
+   "bugid": 1605699,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Crash in [@ mozilla::MediaData::HasValidTime]"
+  },
+  {
+   "bugid": 1732802,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Do not expose the size property on computed style"
+  },
+  {
+   "bugid": 1731792,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Major warmload regression in fission due to setting dom.ipc.processCount.webIsolated=4"
+  },
+  {
+   "bugid": 1729239,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement HTMLScriptElement.supports(type) method"
+  },
+  {
+   "bugid": 1732234,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Fix non-unified build errors in editor"
+  },
+  {
+   "bugid": 1730166,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "test_ipc_messagemanager_blob.js does not wait for completion, skips tests"
+  },
+  {
+   "bugid": 1732319,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent [tier2] dom/security/test/https-first/test_referrer_policy.html | Test timed out. -"
+  },
+  {
+   "bugid": 1732079,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within devtools/client/debugger/test/ to work with https-first enabled"
+  },
+  {
+   "bugid": 1703699,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Consider changing title in HTTPS-Only Mode error page"
+  },
+  {
+   "bugid": 1732633,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within dom/security to work with https-first enabled"
+  },
+  {
+   "bugid": 1731931,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Add more test cases such as <input type=date> to test_imestate.html"
+  },
+  {
+   "bugid": 1729531,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "test failure in accessible/tests/browser/fission/browser_nested_iframe.js on apple silicon"
+  },
+  {
+   "bugid": 1732464,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Optimize usage of FindLineContaining in IsLocalAccAtLineStart"
+  },
+  {
+   "bugid": 1638880,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/mochitest/name/test_browserui.xhtml | Test timed out."
+  },
+  {
+   "bugid": 1729061,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Log accessible cache discrepancies"
+  },
+  {
+   "bugid": 1710408,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "\"Assertion failure: !mBufferPositionWhenReceivedJSContext (JSContext should have been cleared before the thread was unregistered), at tools/profiler/core/ProfiledThreadData.h:61\" when adding a marker with rr in chaos mode"
+  },
+  {
+   "bugid": 1730953,
+   "status": "ASSIGNED",
+   "component": "Core:General",
+   "summary": "Migrate strings from browser.dtd to Fluent and remove file"
+  },
+  {
+   "bugid": 1732596,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove Ord usage for spatial node indices"
+  },
+  {
+   "bugid": 1732591,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove static coordinate system ids"
+  },
+  {
+   "bugid": 1715414,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "telemetry | High frequency Assertion failure: mThreadLocalIndex != kBadThreadLocalIndex (BackgroundChild::Startup() was never called!), at /builds/worker/checkouts/gecko/ipc/glue/BackgroundImpl.cpp:378"
+  },
+  {
+   "bugid": 1732281,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add a megamorphic stub for the GetIterator IC"
+  },
+  {
+   "bugid": 1639153,
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize indirect calls"
+  },
+  {
+   "bugid": 1732356,
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Tidy up WasmIonCompile in preparation for memory64"
+  },
+  {
+   "bugid": 1731856,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Prototype relaxed-SIMD min/max instructions"
+  },
+  {
+   "bugid": 1732631,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Permanent cranelift /builds/worker/checkouts/gecko/js/src/jit-test/lib/asserts.js:65:27 Error: Assertion failed: expected /(can't touch memory without memory)|(unknown memory)/, got Invalid input WebAssembly code at offset 24: multi-memory not enabled"
+  },
+  {
+   "bugid": 1731054,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Reenable bug1708673 without perf regression"
+  },
+  {
+   "bugid": 1615017,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "ThreadSanitizer: data race [@ mozilla::net::CacheFileMetadata::SetHash] vs. [@ MemoryUsage]"
+  },
+  {
+   "bugid": 1732388,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "support a proxy bypass flag for http requests"
+  },
+  {
+   "bugid": 1731557,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Making the PartitioningExceptionList working with sandboxed iframes"
+  },
+  {
+   "bugid": 1668408,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "DFPI breaks stackblitz.com"
+  },
+  {
+   "bugid": 1729653,
+   "status": "RESOLVED",
+   "component": "Core:Spelling checker",
+   "summary": "Misspelled word not marked as such"
+  },
+  {
+   "bugid": 1730682,
+   "status": "ASSIGNED",
+   "component": "Core:Web Painting",
+   "summary": "19.68 - 11.59% displaylist_mutate / displaylist_mutate + 4 more (Linux, OSX, Windows) regression on Fri September 10 2021"
+  },
+  {
+   "bugid": 1731076,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "dom/media/webrtc/tests/mochitests/test_setSinkId_default_addTrack.html is disabled, and permaorange when re-enabled"
+  },
+  {
+   "bugid": 1730867,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Android",
+   "summary": "Use nsNativeBasicThemeAndroid to draw scrollbars instead of relying on mobile/scrollbars.css"
+  },
+  {
+   "bugid": 1732526,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Convert image data from DnD to nsIInputStream"
+  },
+  {
+   "bugid": 1730534,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Create an iterator for JSHolderMap"
+  },
+  {
+   "bugid": 1713960,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Use next-session preloader cache for new processes when we had no cache at startup"
+  },
+  {
+   "bugid": 1732749,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Update console stubs comment to point to the correct tests"
+  },
+  {
+   "bugid": 1709366,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add a Error boundary Component for the Debugger panel"
+  },
+  {
+   "bugid": 1698770,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Create architecture doc page for the Network panel"
+  },
+  {
+   "bugid": 1731772,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Link to the documentation about allocation tests"
+  },
+  {
+   "bugid": 1732254,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Track allocation when reload the test page without devtools"
+  },
+  {
+   "bugid": 1732253,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Share code between all test reloading the test page"
+  },
+  {
+   "bugid": 1732120,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Rename BrowsingContextTargetActor WindowGlobalTargetActor"
+  },
+  {
+   "bugid": 1731996,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Using node picker on remote iframe padding does not hover the iframe"
+  },
+  {
+   "bugid": 1675584,
+   "status": "REOPENED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "Intermittent devtools/client/jsonview/test/browser_jsonview_ignore_charset.js | The charset parameter is ignored and UTF-8 is used. - Got null, expected \"❤\""
+  },
+  {
+   "bugid": 1671147,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Network monitor should show when responses are inaccessible to the requesting site due to Cross-Origin Request Blocking"
+  },
+  {
+   "bugid": 1731460,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Move AppErrorBoundary.css to the shared folder to be used across panels"
+  },
+  {
+   "bugid": 1654257,
+   "status": "NEW",
+   "component": "DevTools:Netmonitor",
+   "summary": "Images with incorrect mime-type won't appear when Network is filtered with \"Images\""
+  },
+  {
+   "bugid": 1724319,
+   "status": "ASSIGNED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Fix test failures when browser.download.improvements_to_download_panel pref is true"
+  },
+  {
+   "bugid": 1730046,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove or update probes expiring in Firefox 95: startup.skeleton_ui_disabled_reason"
+  },
+  {
+   "bugid": 1730193,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update newtab dependencies for 94"
+  },
+  {
+   "bugid": 1732636,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "activeNotifications targeting attribute reports a high error rate"
+  },
+  {
+   "bugid": 1728286,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Disabling pdf.js causes an exception in pdf.js' _unbecomeHandler method because `clearIntPref` isn't a function"
+  },
+  {
+   "bugid": 1717917,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Intermittent windows7-32-qr browser/components/preferences/tests/<test> | application terminated with exit code 1 | application crashed [@ mozalloc_handle_oom(unsigned int)/moz_xmalloc(unsigned int)]"
+  },
+  {
+   "bugid": 1726550,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "\"Try Mozilla VPN\" button on about:privatebrowsing has low contrast when hovered in dark mode"
+  },
+  {
+   "bugid": 1725430,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "When screenshots.browser.component.enabled is true, the screenshots shortcut should bring up the new screenshots UI"
+  },
+  {
+   "bugid": 1729969,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Exempt Bergamont better; and add about:preference"
+  },
+  {
+   "bugid": 1724960,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Add one-time infobar that indicates how to restore the previous session on the next session startup if automatic session restore is disabled"
+  },
+  {
+   "bugid": 1719221,
+   "status": "NEW",
+   "component": "Firefox:Site Identity",
+   "summary": "Intermittent browser/base/content/test/siteIdentity/browser_about_blank_same_document_tabswitch.js | Test timed out -"
+  },
+  {
+   "bugid": 1731108,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Improve text contrast in themed address bar boxes"
+  },
+  {
+   "bugid": 1731660,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Theme notification badges, tab throbber, and attention color"
+  },
+  {
+   "bugid": 1726435,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Theme pinned tab notification dot"
+  },
+  {
+   "bugid": 1731889,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Bookmarks toolbar buttons exposed to accessibility even when hidden (due to CSS visibility: visible)"
+  },
+  {
+   "bugid": 1732208,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "[clang 13] unused-but-set-variable bulk fix"
+  },
+  {
+   "bugid": 1732177,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "non-existent virtualenv common used with \"virtx ./mach build\" on Linux"
+  },
+  {
+   "bugid": 1730712,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Virtualenv import scope should behave consistently"
+  },
+  {
+   "bugid": 1723031,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Assert pip packages are available with MACH_USE_SYSTEM_PYTHON"
+  },
+  {
+   "bugid": 1731145,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Include \"egg-info\" in vendored Python code"
+  },
+  {
+   "bugid": 1724279,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Move zstandard from Mach virtualenv"
+  },
+  {
+   "bugid": 1717051,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Transparently manage Mach virtualenv at run-time"
+  },
+  {
+   "bugid": 1712151,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Validate in CI virtualenvs don't have dependency collisions with \"global\" virtualenv, or between vendored + pypi'd deps"
+  },
+  {
+   "bugid": 1696251,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Allow Mach commands as standalone functions"
+  },
+  {
+   "bugid": 1731582,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade llvm toolchain to 13"
+  },
+  {
+   "bugid": 1717506,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.AutofillDelegateTest#autofillNavigation | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms"
+  },
+  {
+   "bugid": 1703976,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Extend the GV Autocomplete API to support credit card saving"
+  },
+  {
+   "bugid": 1732727,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Missing .module in maven.mozilla.org"
+  },
+  {
+   "bugid": 1641735,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Improve extension testing framework for GeckoView to not require useAddonManager in ExtensionTestUtils.loadExtension"
+  }
+ ],
+ "fixed": 53,
+ "total": 78,
+ "restricted": 2
+}
