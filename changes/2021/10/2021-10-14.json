@@ -1,0 +1,466 @@
+{
+ "date": "2021-10-14",
+ "buildid": "20211014093415",
+ "cset": "c2a85e89a84353b7f9b8593dfa36f603d9fd9aa9",
+ "bugs": [
+  {
+   "bugid": 1735263,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Rework AudioTrackPresent()"
+  },
+  {
+   "bugid": 1735224,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Improve AudioIPC server's shmem sizing estimate to reduce unnecessary overhead"
+  },
+  {
+   "bugid": 1730518,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Crash in [@ core::result::unwrap_failed | audioipc_client::stream::{{impl}}::process]"
+  },
+  {
+   "bugid": 1733067,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fission: iframe with srcdoc sometimes prefers cached srcdoc over fresh srcdoc"
+  },
+  {
+   "bugid": 1731940,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Web Manifest: implement id member"
+  },
+  {
+   "bugid": 1734771,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make ContentEventHandler methods take reference and concrete class"
+  },
+  {
+   "bugid": 1732578,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Cut over KeyboardEvent RFP check to new API"
+  },
+  {
+   "bugid": 1734787,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add https://example.net:443 to build/pgo/server-locations.txt"
+  },
+  {
+   "bugid": 1735143,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Ensure various tests within devtools are https-first compliant"
+  },
+  {
+   "bugid": 1732637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within docshell/ to work with https-first enabled"
+  },
+  {
+   "bugid": 1723674,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Implement crypto.randomUUID()"
+  },
+  {
+   "bugid": 1734582,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make TextLeafPoint handle display: contents"
+  },
+  {
+   "bugid": 1734540,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make it possible to use HTML snippets in the parent process for a11y browser tests"
+  },
+  {
+   "bugid": 1734322,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Get RemoteAccessible::DOMNodeID working on Windows with the cache enabled"
+  },
+  {
+   "bugid": 1733514,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add basic testing for text caching"
+  },
+  {
+   "bugid": 1735244,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Assertion failure: mDataMutex.TryLock() (Mutex shouldn't be locked in any thread, as it's about to be destroyed in ~ThreadRegistration()), at tools/profiler/core/ProfilerThreadRegistration.cpp:55"
+  },
+  {
+   "bugid": 1735273,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Threads that were sleeping when profiler started could sometimes be left empty"
+  },
+  {
+   "bugid": 1734958,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Firefox spins on CPU after computer wakes from suspend"
+  },
+  {
+   "bugid": 1734740,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Retain spatial tree across display lists"
+  },
+  {
+   "bugid": 1735539,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Linux\\EGL] Don't report mem leaks from libEGL_mesa.so"
+  },
+  {
+   "bugid": 1734346,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "The text in the menupopup of menubar/Bookmarks Toolbar is displayed as grayscale AA instead of subpixel AA."
+  },
+  {
+   "bugid": 1697429,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Web Processes not reaped leaving zombies with ASan"
+  },
+  {
+   "bugid": 1735295,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "[clang-13] TestDecoders.cpp:61:9: error: variable 'v' set but not used [-Werror,-Wunused-but-set-variable]"
+  },
+  {
+   "bugid": 1719746,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Unify LanguageTag in SpiderMonkey"
+  },
+  {
+   "bugid": 1735341,
+   "status": "NEW",
+   "component": "Core:Internationalization",
+   "summary": "Rename FillVectorWithICUCall to FillBufferWithICUCall"
+  },
+  {
+   "bugid": 1734612,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Startup Crash in [@ mozilla::ScriptPreloader::InitCacheInternal]"
+  },
+  {
+   "bugid": 1735297,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[clang-13] js/src/fuzz-tests/testWasm.cpp:472:30: error: variable 'rawMemByte' set but not used [-Werror,-Wunused-but-set-variable]"
+  },
+  {
+   "bugid": 1729563,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement the Change Array by copy proposal"
+  },
+  {
+   "bugid": 1735296,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Improve weak edge tracing APIs in preparation for replacing uses of IsAboutToBeFinalized"
+  },
+  {
+   "bugid": 1735445,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Land initial CSS Gap Decorations draft spec in tree for internal reviewing purposes"
+  },
+  {
+   "bugid": 1735375,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "fieldset in flex item not fragmented for printing"
+  },
+  {
+   "bugid": 1735326,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Intermitent /css/css-flexbox/flexbox-align-self-vert-001.xhtml | Testing http://web-platform.test:8000/css/css-flexbox/flexbox-align-self-vert-001.xhtml == http://web-platform.test:8000/css/css-flexbox/flexbox-align-self-vert-001-ref.xhtml"
+  },
+  {
+   "bugid": 1669392,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Add more size classes between 512B and the page size"
+  },
+  {
+   "bugid": 1733922,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Specialize TransportSetup into Primary/BackupTransportSetup"
+  },
+  {
+   "bugid": 1733356,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Fix non-unified build errors in netwerk/"
+  },
+  {
+   "bugid": 1725569,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "visualViewport doesn't emit resize event for iframes"
+  },
+  {
+   "bugid": 1733746,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Update APZ documentation to reflect Layers removal and other recent developments"
+  },
+  {
+   "bugid": 1731982,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Populate the partitionPrincipal to the clientInfo"
+  },
+  {
+   "bugid": 1725148,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "WebGL no longer available on Linux"
+  },
+  {
+   "bugid": 1734748,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "[clang-13] CubebDeviceEnumerator.cpp:228:8: error: variable 'manualInvalidation' set but not used [-Werror,-Wunused-but-set-variable]"
+  },
+  {
+   "bugid": 1734705,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Sluggish scrolling if the gecko event loop is busy (native scroll events no longer get coalesced properly by macOS)"
+  },
+  {
+   "bugid": 1735294,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Menu hover tooltips appear to the far right of the window"
+  },
+  {
+   "bugid": 1733796,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox doesn't inhibit screensaver on Xfce"
+  },
+  {
+   "bugid": 1732161,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Track and report CC reason to profiler"
+  },
+  {
+   "bugid": 1410470,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Stop using `rawObj instanceof`"
+  },
+  {
+   "bugid": 1539502,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "The toolbox is leaking its React components after closing"
+  },
+  {
+   "bugid": 1731967,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Rename watched data entries to session data"
+  },
+  {
+   "bugid": 1734738,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Uneven spacing around \"all threads\" checkbox"
+  },
+  {
+   "bugid": 1695152,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "String in text nodes should be escaped"
+  },
+  {
+   "bugid": 1735335,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Fix and run browser_storage_cache_navigation.js test only with server side targets"
+  },
+  {
+   "bugid": 1706004,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Make not refer to document.popupNode in Places."
+  },
+  {
+   "bugid": 1735230,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Improve the layout of the app chooser richlistbox"
+  },
+  {
+   "bugid": 1735155,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[New Users] The theme preview area and its variations are blank if the Firefox Alpenglow theme was previously enabled"
+  },
+  {
+   "bugid": 1735454,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Upgrade spotlight: Theme variation radio buttons all have \"Use this colorway\" as a11y label"
+  },
+  {
+   "bugid": 1734851,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The \"Not now\" button is pushed down if the description of the \"Life in color\" slide is displayed on two rows"
+  },
+  {
+   "bugid": 1735388,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Keep the variant when changing colorways on about:welcome and upgrade spotlight"
+  },
+  {
+   "bugid": 1735409,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.12.16"
+  },
+  {
+   "bugid": 1726395,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "CTA telemetry"
+  },
+  {
+   "bugid": 1733428,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Toggle screenshots UI if screenshots toolbar button is pressed"
+  },
+  {
+   "bugid": 1735500,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When we do not have the initial URI a page is loading, default the browser to the PRIVILEGEDABOUT_REMOTE_TYPE"
+  },
+  {
+   "bugid": 1735541,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove redundant :root[tabsintitlebar] #main-menubar > menu rule"
+  },
+  {
+   "bugid": 1735536,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Add --toolbar-field-icon-fill-attention variable"
+  },
+  {
+   "bugid": 1706534,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Links in prompts are full-length, use system accent color"
+  },
+  {
+   "bugid": 1735331,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Make compacttheme.css #navigator-toolbox overrides more specific"
+  },
+  {
+   "bugid": 1724284,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Update the id of the \"Browser Tools\" menubar item"
+  },
+  {
+   "bugid": 1735307,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "\"rm bootstrap.py\" should be part of bootstrap step"
+  },
+  {
+   "bugid": 1735058,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Add `cd /c/mozilla-source/` in windows setup document"
+  },
+  {
+   "bugid": 1733908,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "[Clang/TSAN bug, not wasm] Clang13 TSAN failure in wasm tiering"
+  },
+  {
+   "bugid": 1732208,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[clang 13] unused-but-set-variable bulk fix"
+  },
+  {
+   "bugid": 1735396,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update test_archive.py expected file hashes when running on Python 3.9 or newer"
+  },
+  {
+   "bugid": 1734971,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "pylint fails to install with mach on Windows (missing colorama)"
+  },
+  {
+   "bugid": 1723031,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Assert pip packages are available with MACH_USE_SYSTEM_PYTHON"
+  },
+  {
+   "bugid": 1731780,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Add linting to prevent landing .only() debugging helper in tests"
+  },
+  {
+   "bugid": 1696785,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.SelectionActionDelegateTest#collapseToEnd[#textarea] | java.lang.AssertionError: Selection offsets should match"
+  },
+  {
+   "bugid": 1649599,
+   "status": "REOPENED",
+   "component": "Toolkit:OS.File",
+   "summary": "SessionFile.jsm imports OS.File during startup"
+  },
+  {
+   "bugid": 1735347,
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "TypeError: data is undefined"
+  }
+ ],
+ "fixed": 65,
+ "total": 76,
+ "restricted": 3
+}
