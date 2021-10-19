@@ -1,0 +1,370 @@
+{
+ "date": "2021-10-19",
+ "buildid": "20211019095357",
+ "cset": "4185629111d323484d1f74a667d57145616203b7",
+ "bugs": [
+  {
+   "bugid": 1731430,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Stream audio and video desynchronization on Windows 11"
+  },
+  {
+   "bugid": 1735431,
+   "status": "NEW",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Merge WebGLExtension* into WebGLExtensions.cpp"
+  },
+  {
+   "bugid": 1725572,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Fission crash in [@ IPCError-content | RecvConstructBrowser missing initial frame BrowsingContext]"
+  },
+  {
+   "bugid": 1725539,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Improve the logic for multiple GC timers firing before a parent process responds with can GC"
+  },
+  {
+   "bugid": 1726734,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable ESLint no-octal rule on dom/"
+  },
+  {
+   "bugid": 1735945,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Split unload into unload and beforeunload for  BFCACHE_COMBO telemetry probe"
+  },
+  {
+   "bugid": 1735973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within dom/ to be compliant with https-first"
+  },
+  {
+   "bugid": 1735660,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Ensure tests within devtools/client/netmonitor are https-first compliant"
+  },
+  {
+   "bugid": 1735826,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Update tests within js/xpconnect to work with https-first enabled"
+  },
+  {
+   "bugid": 1735953,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Temporary hacks to get NVDA virtual buffers rendering from the cache"
+  },
+  {
+   "bugid": 1735722,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Unify LinkAt in HyperTextAccessibleBase"
+  },
+  {
+   "bugid": 1735952,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Fix IAccessibleValue and accLocation for cached RemoteAccessibles"
+  },
+  {
+   "bugid": 1735697,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Only record markers in profiled threads"
+  },
+  {
+   "bugid": 1509931,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "[Wayland][OpenGL] CSD has sharp corners (drawn over GTK rounded border/shadow frame)"
+  },
+  {
+   "bugid": 1736367,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused ReadbackLayer.h."
+  },
+  {
+   "bugid": 1734007,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Assertion failure: aChild->GetApzc() != parent, at /gfx/layers/apz/src/HitTestingTreeNode.cpp:93"
+  },
+  {
+   "bugid": 1736266,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unused DidCompositeObserver."
+  },
+  {
+   "bugid": 1736229,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unused mImageRect."
+  },
+  {
+   "bugid": 1719746,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Unify LanguageTag in SpiderMonkey"
+  },
+  {
+   "bugid": 1720619,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add instantiation-specific subset of CompileOptions"
+  },
+  {
+   "bugid": 1728953,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused flag from nsXULPrototypeCache"
+  },
+  {
+   "bugid": 1736009,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "The `AutoForbidPoolsAndNops` mechanism fails (asserts) on legitimate use cases on arm64"
+  },
+  {
+   "bugid": 1735157,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadNondeterministicException(), at js/src/jit/WarpOracle.cpp:188"
+  },
+  {
+   "bugid": 1582599,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] Compute any/all property sets throughout callgraph"
+  },
+  {
+   "bugid": 1582898,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] Parallelize callgraph generation"
+  },
+  {
+   "bugid": 1582895,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] move more information into callgraph"
+  },
+  {
+   "bugid": 1733970,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Strengthen invariants around access to per-tier information"
+  },
+  {
+   "bugid": 1736041,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "relaxed i32x4.trunc_f32x4_u has inaccurate conversion for some values"
+  },
+  {
+   "bugid": 1735990,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Permanent cranelift js/src/jit-test/tests/wasm/bce-x64-ion-codegen.js | Unrecognized option for wasm-compiler: ion (code 1, args \"--wasm-compiler=ion --disable-wasm-huge-memory --spectre-mitigations=off\") [0.0 s]"
+  },
+  {
+   "bugid": 1727084,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Wasm64: Implement basic functionality"
+  },
+  {
+   "bugid": 1730460,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ mozilla::fontlist::Family::FindAllFacesForStyleInternal]"
+  },
+  {
+   "bugid": 1734478,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "stop checking displayport size against max texture size"
+  },
+  {
+   "bugid": 1736380,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable the Kinja shim in bug 1656171 on Android"
+  },
+  {
+   "bugid": 1731982,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Populate the partitionPrincipal to the clientInfo"
+  },
+  {
+   "bugid": 1733374,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 95 to use NSS 3.72"
+  },
+  {
+   "bugid": 1734547,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Permanent beta on macOS dom/media/webrtc/tests/mochitests/test_peerConnection_scaleResolution.html | Test timed out. - + test_peerConnection_videoCodecs.html failure"
+  },
+  {
+   "bugid": 1733656,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "webrtc wpt ini files need another scrub"
+  },
+  {
+   "bugid": 1616394,
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Add prefs to allow configuration of WebXR quantization."
+  },
+  {
+   "bugid": 1722833,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Pressed native buttons on macOS Monterey use white text on light gray"
+  },
+  {
+   "bugid": 1736377,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Remove eWindowType_child leftovers"
+  },
+  {
+   "bugid": 1734700,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "IOUtils uses the CPU-intensive threadpool for blocking IO"
+  },
+  {
+   "bugid": 1735358,
+   "status": "RESOLVED",
+   "component": "DevTools:CSS and Themes",
+   "summary": "Switch back default devtools theme from auto to light (or dark for deved)"
+  },
+  {
+   "bugid": 1736257,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Update MDN compat data (2021 Oct 4th week)"
+  },
+  {
+   "bugid": 1735797,
+   "status": "VERIFIED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "mochitest-chrome crashes on MacOS with debug builds"
+  },
+  {
+   "bugid": 1728610,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use logger in urlbar to report errors, warnings, and debug messages instead of Cu.reportError"
+  },
+  {
+   "bugid": 1734205,
+   "status": "NEW",
+   "component": "Firefox:Pocket",
+   "summary": "Reader Recs: VQA – CTA + Recs Variant"
+  },
+  {
+   "bugid": 1696281,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Split SearchService._getSortedEngines into two for readability"
+  },
+  {
+   "bugid": 1736128,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Cannot use touchscreen input to close, maximize, or minimize a Firefox window"
+  },
+  {
+   "bugid": 1736368,
+   "status": "UNCONFIRMED",
+   "component": "Firefox:Theme",
+   "summary": "[Page info: dark mode] treecol height is shorter than in light mode"
+  },
+  {
+   "bugid": 1734306,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Ignore Visual Studio cache/options directory in VCS"
+  },
+  {
+   "bugid": 1576768,
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "[eslint] Turn on JavaScript linting and formatting rules for .sjs files"
+  },
+  {
+   "bugid": 1736022,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "[ESLint] Add handleRequest as a used variable for sjs files"
+  },
+  {
+   "bugid": 1734075,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`mach doctor` fails with TypeError: 'NoneType' object is not iterable"
+  },
+  {
+   "bugid": 1736464,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ERROR 404: Not Found. when building test-iris docker images"
+  },
+  {
+   "bugid": 1735562,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove Nightly only code for multiple cc number capture and autofill behavior"
+  },
+  {
+   "bugid": 1678607,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Add dedicated tags notifications"
+  },
+  {
+   "bugid": 1736438,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "PingCentre import of sendStandalonePing is incorrect"
+  },
+  {
+   "bugid": 1580875,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent Fission browser/components/extensions/test/browser/browser_ext_sidebarAction_contextMenu.js | Test timed out -"
+  },
+  {
+   "bugid": 1706194,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_sidebarAction_click.js | Extension left running at test shutdown - | After Test timed out"
+  },
+  {
+   "bugid": 1705244,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_incognito_popup.js | A promise chain failed to handle a rejection: can't access property \"getAttribute\", this.node is null - stack: _moveOutKids@resource:///modules/PanelMultiView.jsm:631"
+  }
+ ],
+ "fixed": 51,
+ "total": 60,
+ "restricted": 4
+}
