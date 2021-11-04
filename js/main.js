@@ -221,6 +221,13 @@ function setUpDateInput(){
   input.nextElementSibling.addEventListener("click",onInputButtonClick);
 }
 
+function handleVisibilityChange(ev){
+  if (document.visibilityState === "visible") {
+    document.getElementById("dateSelector")
+    .setAttribute("max",(new Date().toISOString().slice(0,10)))
+  }
+}
+
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
     setUpDateInput();
@@ -241,6 +248,9 @@ document.onreadystatechange = function () {
       }
       
     });
+    if(document.hidden != undefined){
+      document.addEventListener("visibilitychange", handleVisibilityChange);
+    }
     populateBugs(true)
   }
 }
