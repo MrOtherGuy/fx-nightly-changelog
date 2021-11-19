@@ -1,0 +1,472 @@
+{
+ "date": "2021-11-19",
+ "buildid": "20211119093910",
+ "cset": "a7391d47652c75a6506a427fe9fc56d09a553746",
+ "bugs": [
+  {
+   "bugid": 1741677,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "mediaCapabilities.decodingInfo crashes because of `media.flac.enabled` not being RelaxedAtomicBool"
+  },
+  {
+   "bugid": 1738926,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Playing video in full screen causes excess WindowServer CPU usage"
+  },
+  {
+   "bugid": 1741990,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Run rustfmt on servo/components/style and servo/ports/geckolib"
+  },
+  {
+   "bugid": 1725721,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "display: contents on top layer elements should work as display: block"
+  },
+  {
+   "bugid": 1740924,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Transparent borders used to indicate widget shape in High Contrast mode no longer visible"
+  },
+  {
+   "bugid": 1741491,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Animation",
+   "summary": "Assertion failure: !isSome(), at /builds/worker/workspace/obj-build/dist/include/mozilla/Maybe.h:837"
+  },
+  {
+   "bugid": 1730593,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent docshell/test/browser/browser_bfcache_copycommand.js | Selection should remain when coming out of BFCache. - Got \" just a dummy html file \", expected \"\" | Copy item should be enabled if text is selected"
+  },
+  {
+   "bugid": 1741585,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update more tests within toolkit/components/antitracking/test/ to work with https-first enabled"
+  },
+  {
+   "bugid": 1742010,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "File descriptor leak when serializing into SurfaceDescriptorAndroidHardwareBuffer"
+  },
+  {
+   "bugid": 1742017,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Local build disabled gpu process support on Windows"
+  },
+  {
+   "bugid": 1741123,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove LayersBackend::LAYERS_D3D11"
+  },
+  {
+   "bugid": 1741799,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove SupportsThreadSafeWeakPtr from WinWindowOcclusionTracker"
+  },
+  {
+   "bugid": 1741783,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Rename PuppetWidget::HasLayerManager() to HasWindowRenderer()"
+  },
+  {
+   "bugid": 1741784,
+   "status": "NEW",
+   "component": "Core:Graphics: Layers",
+   "summary": "Remove unused code around CompositableHost"
+  },
+  {
+   "bugid": 1740165,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "CompositorOptions::mUseWebGPU is not delivered to CompositorBridgeParent"
+  },
+  {
+   "bugid": 1740284,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Missing Unlock in WebGPUParent::RecvSwapChainPresent()"
+  },
+  {
+   "bugid": 1741638,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Report error code from Freetype."
+  },
+  {
+   "bugid": 1736120,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Intermittent xpcshell <test-name> | application crashed [@ mozilla::dom::ContentParent::LaunchSubprocessReject()]"
+  },
+  {
+   "bugid": 1687118,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Startup crash in [@ mozilla::dom::Promise::MaybeSomething<T>] from mozilla::dom::DocumentL10n::TriggerInitialTranslation"
+  },
+  {
+   "bugid": 1741707,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update jitsrc to handle EVEX"
+  },
+  {
+   "bugid": 1687973,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move stencil instantiation of decode task to main thread"
+  },
+  {
+   "bugid": 1655768,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove parserGlobal and mergeRealms"
+  },
+  {
+   "bugid": 538450,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make string atomization not require taking a runtime lock?"
+  },
+  {
+   "bugid": 1741411,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimised spread calls emit duplicate lookups"
+  },
+  {
+   "bugid": 1587847,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "When we parse without creating objects, investigate if we can remove the OffThreadPlaceholderObject code."
+  },
+  {
+   "bugid": 1740737,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support scalar replacement of arguments when used in spread calls"
+  },
+  {
+   "bugid": 1741635,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: kind != BailoutKind::Unknown, at jit/shared/Lowering-shared.cpp:275"
+  },
+  {
+   "bugid": 1713092,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Remove redundant bitwise {and/or/xor}{32,64} for wasm-via-Ion"
+  },
+  {
+   "bugid": 1741773,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Document some state bits in ScrollReflowInput and ScrollFrameHelper"
+  },
+  {
+   "bugid": 1741774,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Support scrollbar-gutter in the style system"
+  },
+  {
+   "bugid": 1741167,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable ESLint rule mozilla/use-services on netwerk/test and netwerk/cookie/test"
+  },
+  {
+   "bugid": 1681494,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add telemetry for measuring usage of network.cookie.lifetimePolicy"
+  },
+  {
+   "bugid": 1734609,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::Http2Session::IsReused]"
+  },
+  {
+   "bugid": 1740232,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add telemetry to track privacy.restrict3rdpartystorage.rollout.enabledByDefault preference state"
+  },
+  {
+   "bugid": 1738222,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 96 to use NSS 3.73"
+  },
+  {
+   "bugid": 1738550,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Clean up RLBox type definitions"
+  },
+  {
+   "bugid": 1741115,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Support checking if app pointers and callbacks are null"
+  },
+  {
+   "bugid": 1742032,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Update rlbox to correctly support re-entrancy across multiple sandbox instances"
+  },
+  {
+   "bugid": 1738978,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent /webrtc/RTCRtpReceiver-getSynchronizationSources.https.html | [video/audio] RTCRtpSynchronizationSource.timestamp is comparable to performance.timeOrigin + performance.now() - assert_true: expected true got false"
+  },
+  {
+   "bugid": 1741143,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Tune the AudioProcessingObject"
+  },
+  {
+   "bugid": 1741965,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Ensure we close fds in error paths in DMABufSurfaceRGBA::CreateTexture/CreateWlBuffer"
+  },
+  {
+   "bugid": 1740897,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[X11] There's a flickering when popup widget is used for D&D"
+  },
+  {
+   "bugid": 1741835,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Drop position is shifted"
+  },
+  {
+   "bugid": 1741997,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "DMABufSurface::FenceDelete should not require GL context to close mSyncFd handle"
+  },
+  {
+   "bugid": 1741837,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] D&D does not work from external sources"
+  },
+  {
+   "bugid": 1741734,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix rust xpcom_macros future-compat warning"
+  },
+  {
+   "bugid": 1740453,
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Handle onTargetSelected in a11y panel"
+  },
+  {
+   "bugid": 1741808,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Enable devtools.every-frame-target.enabled on Nightly"
+  },
+  {
+   "bugid": 1741803,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "browser_inspector_iframe-picker-bfcache-navigation fails with EFT"
+  },
+  {
+   "bugid": 1740292,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Stop \"attaching\" the target actors"
+  },
+  {
+   "bugid": 1737194,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent .../.../commands/target/tests/browser_target_command_various_descriptors.js | Uncaught exception - at resource: .../Front.js:106 - Error: Connection closed, pending request to server0.../contentProcessTarget1, type listWorkers failed"
+  },
+  {
+   "bugid": 1733496,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Migrate key-shortcuts.properties to Fluent"
+  },
+  {
+   "bugid": 1498224,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Apply new classnames as you type in the .cls section of the rule-view"
+  },
+  {
+   "bugid": 1730394,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "`./mach vendor` is using origin url instead of vendoring url from moz.yaml files"
+  },
+  {
+   "bugid": 1741703,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix a broken link in the Firefox Suggest telemetry document"
+  },
+  {
+   "bugid": 1739716,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add a few more prefs"
+  },
+  {
+   "bugid": 1733284,
+   "status": "VERIFIED",
+   "component": "Firefox:General",
+   "summary": "LaunchUnelevated fails with packaged app on Windows 10"
+  },
+  {
+   "bugid": 836789,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use weak references when adding observers in nsBrowserGlue.js"
+  },
+  {
+   "bugid": 1738264,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "The Open Previous Tabs Infobar is displayed on a Private Browsing window"
+  },
+  {
+   "bugid": 1738855,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "the border of the active tab has changed"
+  },
+  {
+   "bugid": 1734099,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "We should not unload tabs with webrtc peer connections"
+  },
+  {
+   "bugid": 1741815,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Titles on tabs are barely visible if the browser is focused while light theme is set and the High contrast white enabled"
+  },
+  {
+   "bugid": 1741359,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Dark theme specific highlight focus is missing from some of the  Restart Nightly/Firefox panels"
+  },
+  {
+   "bugid": 1736502,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk CheckIncludeFile.c:1:10: fatal error: malloc/malloc.h: No such file or directory and other failures"
+  },
+  {
+   "bugid": 1734354,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Bump Puppeteer (Fission job) to Tier 1"
+  },
+  {
+   "bugid": 1740798,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Input.dispatchMouseEvent() doesn't wait for mouse event to be processed before returning"
+  },
+  {
+   "bugid": 1741816,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Upstream Synchronization",
+   "summary": "Permanent TEST-UNEXPECTED-TIMEOUT | toolkit/mozapps/extensions/test/xpcshell/test_installOrigins.js | Test timed out"
+  },
+  {
+   "bugid": 1697875,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Annotate headless and backgroundtask mode in crash reports"
+  },
+  {
+   "bugid": 1740696,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[DE][otto.de] Credit Card type is not selected by autofill"
+  },
+  {
+   "bugid": 1702983,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "WebAuthn Attestation text in the panel shouldn't be bolded"
+  },
+  {
+   "bugid": 1736175,
+   "status": "UNCONFIRMED",
+   "component": "Toolkit:OS.File",
+   "summary": "JSONFile/IOUtils does not work on a network-based \"roaming\" profile"
+  },
+  {
+   "bugid": 1741848,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "update in-tree Bugzilla component for Picture-in-Picture files"
+  },
+  {
+   "bugid": 1741163,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Add the option to collect overlapping snapshots"
+  },
+  {
+   "bugid": 1740630,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Printing selection from parent process browsers is broken and disabled"
+  },
+  {
+   "bugid": 1737157,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Existing FOG testing prefs aren't working out"
+  },
+  {
+   "bugid": 1739602,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "`/developer/url` definition should have `format: url` in JSON schema"
+  },
+  {
+   "bugid": 1739618,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Move \"developer\" object definition to the `ManifestBase` in json schema"
+  }
+ ],
+ "fixed": 67,
+ "total": 77,
+ "restricted": 2
+}
