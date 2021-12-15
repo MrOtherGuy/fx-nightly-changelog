@@ -1,0 +1,334 @@
+{
+ "date": "2021-12-15",
+ "buildid": "20211215091158",
+ "cset": "130729937076d4433eaad9a214f7fa2846285edd",
+ "bugs": [
+  {
+   "bugid": 1741286,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Don't record decoding support for small videos"
+  },
+  {
+   "bugid": 1745233,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Update cascade layers CSSOM to the spec."
+  },
+  {
+   "bugid": 1699220,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add support for the 'revert-layer' keyword"
+  },
+  {
+   "bugid": 1746111,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Upload WebRTC video frames directly to minimize copies and cpu work"
+  },
+  {
+   "bugid": 1596772,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "The OffscreenCanvas case of WebGLContext doesn't implement GetParentObject correctly"
+  },
+  {
+   "bugid": 1745950,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove string-based KeepAliveIfHasListenersFor() implementation"
+  },
+  {
+   "bugid": 1745626,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Loading indicator is displayed forever in some page"
+  },
+  {
+   "bugid": 1745882,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move all editor prefs into StaticPrefList.yaml"
+  },
+  {
+   "bugid": 1745879,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Allow to delete `<hr>` element from next line with a `Backspace` key press"
+  },
+  {
+   "bugid": 1736248,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "\"View > Repair Text Encoding\" disabled if the head/first kilobyte was ASCII"
+  },
+  {
+   "bugid": 1742865,
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Back button does not work any more with auto-refresh pages"
+  },
+  {
+   "bugid": 1744397,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Simplify refresh code"
+  },
+  {
+   "bugid": 1718475,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "The URL parser truncates URL hashes if it starts with null, otherwise percent encodes"
+  },
+  {
+   "bugid": 1743093,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Open WPT sync bugs under DOM: Streams"
+  },
+  {
+   "bugid": 1745976,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Try enabling reuse-decoder-device on Nightly."
+  },
+  {
+   "bugid": 1744468,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Aliasing in screenshot of rescaled image"
+  },
+  {
+   "bugid": 1746065,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Use a static pref for dcomp overlay."
+  },
+  {
+   "bugid": 1297652,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Revert jit-test workaround for Windows/NSPR threading issues"
+  },
+  {
+   "bugid": 1745527,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] Assertion failure: JS::IsTranscodingBytecodeAligned(range.begin().get()), at /builds/worker/checkouts/gecko/js/src/vm/HelperThreads.cpp:732"
+  },
+  {
+   "bugid": 1722962,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Directly construct JS permanent atoms at startup"
+  },
+  {
+   "bugid": 1724123,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update async generator implementation to reflect the latest spec steps"
+  },
+  {
+   "bugid": 1745662,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove {AutoSuppressNurseryCellAlloc,AutoSuppressAllocationMetadataBuilder} from {ParseTask,StartOffThreadParseTask}"
+  },
+  {
+   "bugid": 1745388,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash [@ js::jit::OptimizeMIR(js::jit::MIRGenerator*)] or Crash [@ js::jit::EliminateRedundantShapeGuards(js::jit::MIRGraph&)]"
+  },
+  {
+   "bugid": 1745529,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "scrolling with scrollwheel moves very slowly down the page, at nuro.ai"
+  },
+  {
+   "bugid": 1745828,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Refactor ScrollFrameHelper::LayoutScrollbars"
+  },
+  {
+   "bugid": 1503350,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "mozconfig option \"--disable-negotiateauth\" causes link problem with functions in nsIAuthModule and nsHttpNegotiateAuth after bug 1502774"
+  },
+  {
+   "bugid": 1743630,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add EarlyHints telemetry"
+  },
+  {
+   "bugid": 1707963,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Intermittent Storage connection not closed: permissions.sqliteHit MOZ_CRASH() at /builds/worker/checkouts/gecko/storage/mozStorageService.cpp:712"
+  },
+  {
+   "bugid": 1745707,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "RTCRtpReceiver Stats IDs should be opaque"
+  },
+  {
+   "bugid": 1745868,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Users unable to select individual screens for screen sharing in a multi-monitor setup"
+  },
+  {
+   "bugid": 1745176,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Add profiler markers to MediaTransportHandler.cpp"
+  },
+  {
+   "bugid": 1745912,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Fix static-analysis warnings in MediaTransportHandler.cpp"
+  },
+  {
+   "bugid": 1745649,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Spurious wheel event deltas on macOS 12.1"
+  },
+  {
+   "bugid": 1745590,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Opening a local file using the GTK file picker causes a crash without crash report (wl_display@1: error 1: invalid arguments for xdg_activation_token_v1@110.set_surface)"
+  },
+  {
+   "bugid": 1745921,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove tabsBlackboxed pref which is no longer used"
+  },
+  {
+   "bugid": 1745881,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 97] Remove backward compatibility code"
+  },
+  {
+   "bugid": 1129488,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "[Devtools][Inspector] Can't inspect an element with \"pointer-events: none\" using the pick tool"
+  },
+  {
+   "bugid": 1745348,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "\"Manage bookmarks\" button in hotdog menu is broken"
+  },
+  {
+   "bugid": 1741441,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Ensure download starts are still notified in an accessible manner with the demise of the unknown content type dialog"
+  },
+  {
+   "bugid": 1745398,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Full Screen mode does not work using the hamburger menu button"
+  },
+  {
+   "bugid": 1705799,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Switch multistage about:welcome background image to use avif"
+  },
+  {
+   "bugid": 1400420,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Focusing to element can be covered by browser.preferences.search header (either because moving focus upwards, or because prefs are scrolled down but focus is at the top)"
+  },
+  {
+   "bugid": 1745267,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add new event to AsyncTabSwitcher for when a tab has been successfully switched"
+  },
+  {
+   "bugid": 1744604,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Relax the non-param and non-memmovable analysis to reduce false positives"
+  },
+  {
+   "bugid": 1597897,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Candidate window position is invalid when using physical keyboard"
+  },
+  {
+   "bugid": 1744372,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.OrientationDelegateTest#orientationLockedAlready | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms"
+  },
+  {
+   "bugid": 1596726,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Create recipe creator"
+  },
+  {
+   "bugid": 1678152,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Some (parent process) crashes don't yield stack traces"
+  },
+  {
+   "bugid": 1745355,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm from browser/components/shell"
+  },
+  {
+   "bugid": 1745354,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm from browser/components/sessionstore"
+  },
+  {
+   "bugid": 1743309,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.37.0"
+  },
+  {
+   "bugid": 1715542,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "What sort of `Glean` JS global should we have to appease eslint and ergonomics?"
+  },
+  {
+   "bugid": 1735899,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "browserAction Pop-up failure"
+  },
+  {
+   "bugid": 1733490,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Migrate CSPValidator::FormatErrorParams to Fluent"
+  }
+ ],
+ "fixed": 47,
+ "total": 54,
+ "restricted": 5
+}
