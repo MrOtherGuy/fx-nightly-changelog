@@ -1,0 +1,514 @@
+{
+ "date": "2021-12-16",
+ "buildid": "20211216094142",
+ "cset": "792c9fbceb7170c1c00d8bed57a2c3d2cf6d1913",
+ "bugs": [
+  {
+   "bugid": 1726275,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update audioipc to pick up IPC rework"
+  },
+  {
+   "bugid": 1746171,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Permanent /css/css-will-change/parsing/will-change-invalid.html | e.style['will-change'] = \"transform, revert-layer\" should not set the property value - assert_equals: expected \"\" but got \"transform, revert-layer when Gecko 97 merges to Beta on 2022-01-10"
+  },
+  {
+   "bugid": 1741255,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Make sure scroll animations go into Play/Pause state from PlayPending/PausePending"
+  },
+  {
+   "bugid": 1746101,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Ensure the scroll animation is still responsive after moving it from 100%"
+  },
+  {
+   "bugid": 1746093,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Allow OffscreenCanvas as an option in CanvasImageSource and ImageBitmapSource"
+  },
+  {
+   "bugid": 1746095,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::dom::HTMLCanvasElementObserver::Observe]"
+  },
+  {
+   "bugid": 1603339,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "ImageBitmapRenderingContext.webidl does not define canvas attribute"
+  },
+  {
+   "bugid": 1746059,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "MOZ_CRASH(\"todo\") when ImageBitmapRenderingContext::TransferFromImageBitmap called"
+  },
+  {
+   "bugid": 1745308,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Intermittent [tier 2] Main app process exited normally | application crashed [@ RaiseException + 0x62] | Shmem exhaustion after change to clientWaitSync warnings"
+  },
+  {
+   "bugid": 1740127,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Merge copy/swizzle/premultiply in ClientWebGLContext::GetFrontBufferSnapshot"
+  },
+  {
+   "bugid": 1746114,
+   "status": "NEW",
+   "component": "Core:DLL Services",
+   "summary": "Collect the third-party modules ping from socket process"
+  },
+  {
+   "bugid": 1745882,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Move all editor prefs into StaticPrefList.yaml"
+  },
+  {
+   "bugid": 1539884,
+   "status": "NEW",
+   "component": "Core:DOM: Events",
+   "summary": "Mark EventDispatcher::Dispatch as MOZ_CAN_RUN_SCRIPT"
+  },
+  {
+   "bugid": 1745186,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS-First: Test http fallback of download attribute"
+  },
+  {
+   "bugid": 1745146,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add a test for https-first download from mixed content site"
+  },
+  {
+   "bugid": 1744025,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Workers",
+   "summary": "Refactor WorkerPrivate to support CheckedUnsafePtr and convert existing raw class member pointers"
+  },
+  {
+   "bugid": 1674278,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Workers",
+   "summary": "Hit MOZ_CRASH(Promise not thread-safe) at /builds/worker/checkouts/gecko/xpcom/base/nsISupportsImpl.cpp:41"
+  },
+  {
+   "bugid": 1734867,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Considerable overhead from allocating temporary profiler buffer when capturing markers with stack"
+  },
+  {
+   "bugid": 1743667,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "[WebGPU] GPUDevice.features is undefined"
+  },
+  {
+   "bugid": 1745894,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[wayland] Scrolling performance regression since changes to titlebar corners, especially when playing video in a second window"
+  },
+  {
+   "bugid": 1743957,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Refactor surface info array (pt 1)"
+  },
+  {
+   "bugid": 1746155,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Removing include uidna.h in nsIDNService.h"
+  },
+  {
+   "bugid": 1746124,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Use PRIORITY_RENDER_BLOCKING runnable priority for Fluent async l10n"
+  },
+  {
+   "bugid": 1745887,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Flush stdout immediately after printing test name in jsapi-test"
+  },
+  {
+   "bugid": 1746157,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove ScopedICUObject.h from Spidermonkey"
+  },
+  {
+   "bugid": 1745694,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Tidy up some stack alignment code"
+  },
+  {
+   "bugid": 1709578,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Optimize null check of call_indirect"
+  },
+  {
+   "bugid": 1715112,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "[css-overflow-4] Implement \"scrollbar-gutter\" css property"
+  },
+  {
+   "bugid": 1746187,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Implement the CSS Text 4 property `hyphenate-character`"
+  },
+  {
+   "bugid": 1625161,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Move ASSERT_UNLESS_FUZZING to mfbt"
+  },
+  {
+   "bugid": 1741423,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Make 103 EarlyHints observer work with HTTP/3"
+  },
+  {
+   "bugid": 1743630,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add EarlyHints telemetry"
+  },
+  {
+   "bugid": 1745268,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Remove or update probes expiring in Firefox 98: CONTENT_PROCESS_*"
+  },
+  {
+   "bugid": 1415595,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Enable FORTIFY_SOURCE on Android"
+  },
+  {
+   "bugid": 1359918,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Add -Wl,-z,now Linker Flags"
+  },
+  {
+   "bugid": 1742617,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Crash in [@ nsDocShell::MaybeFixBadCertDomainErrorURI]"
+  },
+  {
+   "bugid": 1743993,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 97 to use NSS 3.74"
+  },
+  {
+   "bugid": 1744203,
+   "status": "NEW",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "FAIL Test connect_abstract_permit was permitted (security/sandbox/test/browser_sandbox_test.js)"
+  },
+  {
+   "bugid": 1746170,
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ nsWindow::RequestFocusWaylandWindow]"
+  },
+  {
+   "bugid": 1719427,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Use system scrollbars or update scrollbar to Windows 11 style"
+  },
+  {
+   "bugid": 1744316,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Replace nsILocalFileWin::{Get,Set}FileAttributesWin with nsILocalFileWin::{Get,Set}ReadOnly"
+  },
+  {
+   "bugid": 1746142,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Ctrl+/ keyboard shortcut does not show debugger's ShortcutsModal"
+  },
+  {
+   "bugid": 1745795,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Avoid confusions between SourceFront and source objects in debugger reducer"
+  },
+  {
+   "bugid": 1745466,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Hide boxmodel highlighter immediately when picking a node with the node picker"
+  },
+  {
+   "bugid": 1744783,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Open new context menu item for Http custom request (edit & resend)"
+  },
+  {
+   "bugid": 1744790,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Add new Edit and resend panel in the left side panel"
+  },
+  {
+   "bugid": 1745944,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use new ChromeUtils.getXPCOMErrorName() method to get platform error names"
+  },
+  {
+   "bugid": 1744782,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Add new toolbar button for the edit and resend"
+  },
+  {
+   "bugid": 1729675,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Re-enable browser_aboutdebugging_devtoolstoolbox_navigate_to_url for BFCache"
+  },
+  {
+   "bugid": 1729674,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Re-enable browser_aboutdebugging_devtoolstoolbox_navigate_back_forward for BFCache"
+  },
+  {
+   "bugid": 1745938,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Updatebot verify job is mis-creating links"
+  },
+  {
+   "bugid": 1745196,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Write Testing section under address bar in tree documentation"
+  },
+  {
+   "bugid": 1745022,
+   "status": "ASSIGNED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add policies.json path to debug information for policies"
+  },
+  {
+   "bugid": 1745977,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Stop using the second argument to ChromeUtils.import in various files in services/"
+  },
+  {
+   "bugid": 1661791,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Remove \"New Non-Fission Window\" menu item and \"[F]\" tab tooltip suffix"
+  },
+  {
+   "bugid": 1744331,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Take visible doesn't actually take visible"
+  },
+  {
+   "bugid": 1745045,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Clicking child in screenshots preview button doesn't behave correctly"
+  },
+  {
+   "bugid": 1743882,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Screenshots component preference observer"
+  },
+  {
+   "bugid": 1745360,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Pressed native styled buttons on macOS High Sierra regressed to black text"
+  },
+  {
+   "bugid": 1745020,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "[meta] things to review on about:logins UI"
+  },
+  {
+   "bugid": 1746085,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --with-system-png to python configure"
+  },
+  {
+   "bugid": 1744886,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Override the vcpkg and cmake crates"
+  },
+  {
+   "bugid": 1745908,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`_Py_HashRandomization_Init` Python error at the end of every mach invocation"
+  },
+  {
+   "bugid": 1746088,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --with-system-libevent to python configure"
+  },
+  {
+   "bugid": 1745508,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "common virtualenv missing mach site packages"
+  },
+  {
+   "bugid": 1746223,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Move ScreenOrientation.lock to the correct version in Changelog"
+  },
+  {
+   "bugid": 1744101,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Support ScreenOrientation.unlock"
+  },
+  {
+   "bugid": 1739976,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add basic support for payload deserialization"
+  },
+  {
+   "bugid": 1741544,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "verify blocklist works for new sitepermission addon type"
+  },
+  {
+   "bugid": 1737165,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "bypass 3rd party panel for site permission type addons"
+  },
+  {
+   "bugid": 1741534,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "support permissions prompt for site permissions addon"
+  },
+  {
+   "bugid": 1741547,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "add sitepermission addon type to the addon list in about:support"
+  },
+  {
+   "bugid": 1741545,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "expose new sitepermission group in about:addons"
+  },
+  {
+   "bugid": 1744809,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove boilerplate in IOUtils frontend methods"
+  },
+  {
+   "bugid": 1741610,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Start LoginDetectionService on Android"
+  },
+  {
+   "bugid": 1745444,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Expand FOG IPC to Socket process"
+  },
+  {
+   "bugid": 1745189,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Window control(minimize/restore/close button) are missing in Fullscreen size mode if MenuBar is enabled"
+  },
+  {
+   "bugid": 1746268,
+   "status": "NEW",
+   "component": "WebExtensions:Android",
+   "summary": "Add site permission strings for android"
+  },
+  {
+   "bugid": 1741750,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "support privatebrowsing context for sitepermission addons"
+  },
+  {
+   "bugid": 1741292,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Account for the sitepermissions addon type in the existing AddonManager telemetry events"
+  },
+  {
+   "bugid": 1741908,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "ensure abuse reports work with sitepermission addons"
+  },
+  {
+   "bugid": 1737163,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support new site permission extension type"
+  },
+  {
+   "bugid": 1733490,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Migrate CSPValidator::FormatErrorParams to Fluent"
+  },
+  {
+   "bugid": 1728327,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Spawn the active extension background service worker when an extension event is triggering it"
+  }
+ ],
+ "fixed": 68,
+ "total": 84,
+ "restricted": 1
+}
