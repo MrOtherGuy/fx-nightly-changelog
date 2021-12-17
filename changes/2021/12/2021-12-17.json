@@ -1,0 +1,460 @@
+{
+ "date": "2021-12-17",
+ "buildid": "20211217035153",
+ "cset": "e6f994394be4fd1eb00bd8db40e8a8dcb42f5f9a",
+ "bugs": [
+  {
+   "bugid": 1726275,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update audioipc to pick up IPC rework"
+  },
+  {
+   "bugid": 1746352,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update audioipc to 515bb210"
+  },
+  {
+   "bugid": 1746135,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Perma Android 8.0 Pixel2 [tier 2] dom/canvas/test/webgl-conf/generated/<test> | application crashed [@ RefPtr<mozilla::layers::TextureClient>::operator->() const]"
+  },
+  {
+   "bugid": 1743663,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ mozilla::dom::WindowContext::HasActivePeerConnections]"
+  },
+  {
+   "bugid": 1539884,
+   "status": "NEW",
+   "component": "Core:DOM: Events",
+   "summary": "Mark EventDispatcher::Dispatch as MOZ_CAN_RUN_SCRIPT"
+  },
+  {
+   "bugid": 1742865,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Back button does not work any more with auto-refresh pages"
+  },
+  {
+   "bugid": 1746351,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove unused PContent::CanSavePresentation"
+  },
+  {
+   "bugid": 1721217,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix tests that regressed when browser.tabs.documentchannel.parent-controlled is enabled."
+  },
+  {
+   "bugid": 1744397,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Simplify refresh code"
+  },
+  {
+   "bugid": 1737405,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Diagnostic crash in [@ mozilla::dom::JSStreamConsumer::WriteSegment ]"
+  },
+  {
+   "bugid": 1745435,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Unable to select the last image at the very end of a line with single-click & drag"
+  },
+  {
+   "bugid": 1734867,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Considerable overhead from allocating temporary profiler buffer when capturing markers with stack"
+  },
+  {
+   "bugid": 1744135,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Add font names to crash annotations"
+  },
+  {
+   "bugid": 1746062,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "test case for bug 1742382 still crashes the browser"
+  },
+  {
+   "bugid": 1744052,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Large amount of time spent in texture_pack::guillotine::GuillotineAllocator::allocate"
+  },
+  {
+   "bugid": 1746229,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Minor refresh driver cleanups."
+  },
+  {
+   "bugid": 987030,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "mDelayedPaintTimer is unused"
+  },
+  {
+   "bugid": 1746187,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Implement the CSS Text 4 property `hyphenate-character`"
+  },
+  {
+   "bugid": 1746300,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::ProxyAutoConfigChild::RecvGetProxyForURI]"
+  },
+  {
+   "bugid": 1730152,
+   "status": "NEW",
+   "component": "Core:Performance",
+   "summary": "Intermittent dom/tests/mochitest/general/test_interfaces_secureContext.html | PerformanceNavigationTiming should  be defined on 'window' scope"
+  },
+  {
+   "bugid": 1746263,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Shortly after startup, load_crlite_stash_from_reader_into_map uses 160ms+ of CPU time calling read()"
+  },
+  {
+   "bugid": 1743928,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "[VA-API] The RDD process needs to use dma-buf ioctls"
+  },
+  {
+   "bugid": 1742993,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "[VA-API] Crash in [@ pthread_setaffinity_np@@GLIBC_2.3.4]"
+  },
+  {
+   "bugid": 1743611,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "[VA-API] Crash in [@ __GI___uname]"
+  },
+  {
+   "bugid": 1743609,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "[VA-API] Crash in [@ __GI___socket]"
+  },
+  {
+   "bugid": 1743647,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ semget]: Don't allow VAAPI in the content process / require RDD for VAAPI"
+  },
+  {
+   "bugid": 1586061,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "hidden window churn causes app menu to stop working"
+  },
+  {
+   "bugid": 1744316,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Replace nsILocalFileWin::{Get,Set}FileAttributesWin with nsILocalFileWin::{Get,Set}ReadOnly"
+  },
+  {
+   "bugid": 1745700,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "color-scheme meta property not affected by colour scheme simulation"
+  },
+  {
+   "bugid": 1746239,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Load devtools netmonitor search scripts using an absolute uri instead of a relative one"
+  },
+  {
+   "bugid": 1689459,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Enable NETWORK_EVENT and NETWORK_EVENT_STACK_TRACE resources for all target types"
+  },
+  {
+   "bugid": 1733420,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "browser_net_send-beacon.js fails with https-first (404 from httpd.js in HTTPS treated as 200?)"
+  },
+  {
+   "bugid": 1740116,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "HAR file export results in an empty file"
+  },
+  {
+   "bugid": 1746214,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The sponsored and non sponsored toggles are wrongly enabled when upgrading Firefox after previously opting in the online scenario and disabled the “Contextual suggestions” checkbox"
+  },
+  {
+   "bugid": 1746080,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Improve performance of common url name lookups"
+  },
+  {
+   "bugid": 1743783,
+   "status": "RESOLVED",
+   "component": "Firefox:Headless",
+   "summary": "Taking a screenshot from the command line doesn't work on Windows"
+  },
+  {
+   "bugid": 1735456,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "about:welcome: Theme radio buttons have no text in NVDA browse mode"
+  },
+  {
+   "bugid": 1744888,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Invalid or missing values of MfM template pref show mostly empty page"
+  },
+  {
+   "bugid": 1745593,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Twitch audio briefly plays on browser start when the site is pinned in about:home"
+  },
+  {
+   "bugid": 1746066,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Pocket newtab Nimbus listener update event not properly removed"
+  },
+  {
+   "bugid": 1745959,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "getTabDialogBox should not fall back to selected browser"
+  },
+  {
+   "bugid": 1744749,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Poor contrast in extension popup with color-scheme dark meta tag"
+  },
+  {
+   "bugid": 1742239,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Light Theme] Regression: Shadow around selected tab is too dark again"
+  },
+  {
+   "bugid": 1745345,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove ATK_*_VERSION"
+  },
+  {
+   "bugid": 1746296,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --enable-debug-js-modules to python configure"
+  },
+  {
+   "bugid": 1745341,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused MOZ_TLS"
+  },
+  {
+   "bugid": 1746294,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --disable-necko-wifi to python configure"
+  },
+  {
+   "bugid": 1744857,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove MOZ_FS_LAYOUT"
+  },
+  {
+   "bugid": 1746293,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --disable-dbus to python configure"
+  },
+  {
+   "bugid": 1746292,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --enable-crashreporter to python configure"
+  },
+  {
+   "bugid": 1745837,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove JS_SHELL_NAME and JS_CONFIG_NAME"
+  },
+  {
+   "bugid": 1745838,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZJS_*_VERSION and MOZJS_ALPHA to python configure"
+  },
+  {
+   "bugid": 1746298,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move --enable-dump-painting to python configure"
+  },
+  {
+   "bugid": 1746106,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build fails if rustup is installed on a path containing spaces"
+  },
+  {
+   "bugid": 1745342,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Stop checking for memmem during configure"
+  },
+  {
+   "bugid": 1745343,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove redundant addition of -funwind-tables on arm"
+  },
+  {
+   "bugid": 1745344,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove configure checks for va_copy"
+  },
+  {
+   "bugid": 1746473,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Make wrench jobs run on all branches"
+  },
+  {
+   "bugid": 1741745,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Make '1proc' a test variant rather than a special cased e10s attribute"
+  },
+  {
+   "bugid": 1737824,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Allow calling GeckoSession::load from any thread"
+  },
+  {
+   "bugid": 1746404,
+   "status": "RESOLVED",
+   "component": "NSS:CA Certificates Code",
+   "summary": "Perma HPKP preload list generation failed"
+  },
+  {
+   "bugid": 1746216,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"session.status\" command"
+  },
+  {
+   "bugid": 1746400,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Upstream Synchronization",
+   "summary": "Thunderbird - toolkit/components/extensions/test/xpcshell/test_site_permissions.js | test_site_permissions_have_localization_strings - [test_site_permissions_have_localization_strings : 365] Site permission missing 'midi' - false == true"
+  },
+  {
+   "bugid": 1741534,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "support permissions prompt for site permissions addon"
+  },
+  {
+   "bugid": 1704144,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove extension-data migration logic from DirectoryInstaller's installAddon method"
+  },
+  {
+   "bugid": 1738983,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Enable Background Update by default on Release starting in FX96"
+  },
+  {
+   "bugid": 1743102,
+   "status": "ASSIGNED",
+   "component": "Toolkit:General",
+   "summary": "Add color-scheme meta tag to remaining compatible about: pages"
+  },
+  {
+   "bugid": 1745358,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm from browser/components/tests"
+  },
+  {
+   "bugid": 1745357,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm from browser/components/enterprisepolicies"
+  },
+  {
+   "bugid": 1746022,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "schema.org parsing should handle nested scopes"
+  },
+  {
+   "bugid": 1746167,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Support JSON-LD format microdata"
+  },
+  {
+   "bugid": 1745452,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Remove the print progress dialog code"
+  },
+  {
+   "bugid": 1745189,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Window control(minimize/restore/close button) are missing in Fullscreen size mode if MenuBar is enabled"
+  },
+  {
+   "bugid": 1746268,
+   "status": "NEW",
+   "component": "WebExtensions:Android",
+   "summary": "Add site permission strings for android"
+  },
+  {
+   "bugid": 1741908,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "ensure abuse reports work with sitepermission addons"
+  }
+ ],
+ "fixed": 69,
+ "total": 75,
+ "restricted": 6
+}
