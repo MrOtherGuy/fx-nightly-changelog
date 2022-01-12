@@ -219,6 +219,18 @@ function setUpDateInput(){
   
   input.previousElementSibling.addEventListener("click",onInputButtonClick);
   input.nextElementSibling.addEventListener("click",onInputButtonClick);
+  
+  document.addEventListener("keyup",(ev) => {
+    let keys = ["ArrowLeft","ArrowRight"];  
+    if(keys.includes(ev.key)){
+      let oldValue = input.value;
+      if(!oldValue){
+        input.value = input.max
+      }
+      keys.indexOf(ev.key) ? input.stepUp() : input.stepDown();
+      input.value != oldValue && populateBugs()   
+    }
+  });
 }
 
 function handleVisibilityChange(ev){
