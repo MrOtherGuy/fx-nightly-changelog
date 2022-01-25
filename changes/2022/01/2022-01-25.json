@@ -1,0 +1,406 @@
+{
+ "date": "2022-01-25",
+ "buildid": "20220125100058",
+ "cset": "e960e654cbc9f60ce79eb1535fd6ec4e3acc2029",
+ "bugs": [
+  {
+   "bugid": 1713276,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[ffmpeg] Decode video frames directly into VideoData"
+  },
+  {
+   "bugid": 1724385,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[vaapi] VA-API does no fallback to SW decode when we fail to create EGLImage"
+  },
+  {
+   "bugid": 1743638,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "RDD VAAPI: Crash in [@ mozilla::VideoFrameSurfaceVAAPI::ReleaseVAAPIData]"
+  },
+  {
+   "bugid": 1750663,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "USE_LIBS contains \"mozva\", which does not match any LIBRARY_NAME in the tree."
+  },
+  {
+   "bugid": 1750938,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Disable AudioIPC on macOS until known issues are resolved"
+  },
+  {
+   "bugid": 1750884,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add style_traits::ToCss for AtomIdent"
+  },
+  {
+   "bugid": 1749323,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Allow shipping OffscreenCanvas via a pref-based hostname allowlist"
+  },
+  {
+   "bugid": 1734027,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Crash in [@ @0x0 | mozilla::ScopedDrawCallWrapper::ScopedDrawCallWrapper] or mozilla::WebGLContext::DoColorMask"
+  },
+  {
+   "bugid": 1748271,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Assertion failure: false, at /dom/canvas/ClientWebGLContext.cpp:3864"
+  },
+  {
+   "bugid": 1747261,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Turn on ServiceWorker site isolation for all ServiceWorkers"
+  },
+  {
+   "bugid": 1740626,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove `NeedsCallerType` from nsMimeTypeArray.webidl"
+  },
+  {
+   "bugid": 1751453,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove AbortFollower::Unlink"
+  },
+  {
+   "bugid": 1751772,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove the declaration of nsContentUtils::PrincipalAllowsL10n()"
+  },
+  {
+   "bugid": 1750588,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Contenteditable content of web component cannot be removed when multiple paragraphs ending at the end of one are selected"
+  },
+  {
+   "bugid": 1751501,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "DOM Writable Streams need to be disabled by preference to ship DOM Readable Streams."
+  },
+  {
+   "bugid": 1749978,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent tools/profiler/tests/xpcshell/test_addProfilerMarker.js | application crashed [@ ProfilingStack::~ProfilingStack()]"
+  },
+  {
+   "bugid": 1751765,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "dom/media/test/reftest/gen_combos.py could be more clear about its usage"
+  },
+  {
+   "bugid": 1742994,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Bump required nvidia driver version for HW-WR to 470.82 (i.e. always use EGL)"
+  },
+  {
+   "bugid": 1751603,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Accelerated Canvas] visual corruption on https://codepen.io/thebabydino/pen/fojzu"
+  },
+  {
+   "bugid": 1749665,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use inline assembly for atomic operation intrinsics"
+  },
+  {
+   "bugid": 1750496,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Differential testing: MStringSplit incorrect conguent_to"
+  },
+  {
+   "bugid": 1664535,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "ThreadSanitizer: data race [@ JS::Zone::setNeedsIncrementalBarrier] vs. [@ needsIncrementalBarrier]"
+  },
+  {
+   "bugid": 1751162,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Consider reducing the maximum nursery size to improve responsiveness"
+  },
+  {
+   "bugid": 1751554,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma /builds/worker/checkouts/gecko/js/src/wasm/WasmIonCompile.cpp:2489:51: error: no member named 'Try' in 'js::wasm::LabelKind' -  when Gecko 98 merges to Beta on 2022-02-07"
+  },
+  {
+   "bugid": 1749536,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /visual-viewport/resize-event-order.html | Popup: DOMWindow resize fired before VisualViewport. - expected FAIL"
+  },
+  {
+   "bugid": 1751471,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Consider adding a debug pref to turn off flexbox optimization"
+  },
+  {
+   "bugid": 1750753,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Mispositioned select dropdowns in thunderbird."
+  },
+  {
+   "bugid": 1751024,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "[css-text-4] Ship the hyphenate-character property"
+  },
+  {
+   "bugid": 1736763,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Permanent HTTPS certificate exceptions for IPv6 addresses stopped persisting in Firefox 91"
+  },
+  {
+   "bugid": 1750730,
+   "status": "RESOLVED",
+   "component": "Core:Storage: StorageManager",
+   "summary": "Add WebIDL bindings for OPFS"
+  },
+  {
+   "bugid": 1620520,
+   "status": "REOPENED",
+   "component": "Core:Web Audio",
+   "summary": "Perma [tier 2] /webaudio/the-audio-api/the-pannernode-interface/panner-rolloff-clamping.html | X Panner distanceModel: \"linear\", rolloffFactor: 2 expected to be equal to the array [0,0.009438801556825638,0.02810869924724102,0.03424321487545967,0."
+  },
+  {
+   "bugid": 1750850,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "LayerActivityTracker timers firing every 100ms forever on phabricator tabs"
+  },
+  {
+   "bugid": 1751587,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Perma /builds/worker/checkouts/gecko/layout/base/nsLayoutDebugger.cpp:132:3: error: control reaches end of non-void function [-Werror=return-type]"
+  },
+  {
+   "bugid": 1751742,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Enable stacking context display item reuse in Nightly"
+  },
+  {
+   "bugid": 1344524,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "canvas.captureStream: doesn't capture frames in a background tab"
+  },
+  {
+   "bugid": 1751443,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Don't count 0-channel device in AudioDeviceSet"
+  },
+  {
+   "bugid": 1751687,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Crash in [@ mozilla::PresShell::AccessibleCaretEnabled]"
+  },
+  {
+   "bugid": 1751545,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Select dropdown's selected item is unreadable (gray-on-gray) at https://paste.mozilla.org/ with dark theme and dom.forms.select.customstyling enabled"
+  },
+  {
+   "bugid": 1751723,
+   "status": "VERIFIED",
+   "component": "Core:Widget: Gtk",
+   "summary": "In some setups we incorrectly switch to dark mode, with freedesktop appearance = 0 and a dark theme"
+  },
+  {
+   "bugid": 1751207,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Cannot open DevTools on tab opened via window.open if DevTools was already opened"
+  },
+  {
+   "bugid": 1751214,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Perma devtools/shared/commands/resource/tests/browser_resources_network_events_parent_process.js | Uncaught exception - at devtools/client/shared/test/shared-head.js:1018 - Error: Failed waitFor() when Gecko 98 merges to Beta on 2022-02-07"
+  },
+  {
+   "bugid": 1751235,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Can't open devtools when a page has an iframe loaded via window.open(url, \"iframe-name\")"
+  },
+  {
+   "bugid": 1751480,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Perma Late-Beta TEST-UNEXPECTED-FAIL | devtools/shared/commands/resource/tests/browser_resources_network_events_parent_process.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client - when Gecko 98 merges to Beta on 2022-02-18"
+  },
+  {
+   "bugid": 1748805,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Error when clicking on \"scroll\" badge when element causing overflow has pseudo element"
+  },
+  {
+   "bugid": 1749551,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "In event-collector, only hide jump to debugger button when no source actor were created"
+  },
+  {
+   "bugid": 1747195,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Move media query text out of the stylesheet location to put it before the rule select"
+  },
+  {
+   "bugid": 1632058,
+   "status": "RESOLVED",
+   "component": "Firefox:Distributions",
+   "summary": "distribution.id preference is sometimes accessed from the default branch, sometimes as a normal preference"
+  },
+  {
+   "bugid": 1751733,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "High frequency Linux/Windows browser/base/content/test/performance/browser_tabopen.js | unexpected changed rect: ({x1:213, x2:230, y1:4, y2:39, w:18, h:36}), window width: 1280 -"
+  },
+  {
+   "bugid": 1744467,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Do \"More from Mozilla\" a11y audit and land key fixes before any potential rollout (97 at the earliest)"
+  },
+  {
+   "bugid": 1746598,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Route MS messages to PB newtab"
+  },
+  {
+   "bugid": 1751752,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Fix webpack warning"
+  },
+  {
+   "bugid": 1150377,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "In-content preferences: Applications panel - the rows are sorted when right clicking on them"
+  },
+  {
+   "bugid": 1751484,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Long restyle/reflow in parent process for browser.xhtml when entering/exiting fullscreen mode for web content (with lots of tabs)"
+  },
+  {
+   "bugid": 1751284,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap fails in a clean ubuntu 21.10 installation with ImportError: cannot import name 'dist' from 'distutils' (/usr/lib/python3.9/distutils/__init__.py)"
+  },
+  {
+   "bugid": 1751673,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "archlinux.ensure_nasm_packages parameter list has not been updated"
+  },
+  {
+   "bugid": 1751474,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Mapping is not part of Collections module"
+  },
+  {
+   "bugid": 1751674,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "HTML Select not working properly after 1750395"
+  },
+  {
+   "bugid": 1745203,
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Add pushmsixscript scriptworker-script"
+  },
+  {
+   "bugid": 1751761,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "HSTS update script broken on m-c with \"Could not convert JavaScript argument\" JavaScript exception"
+  },
+  {
+   "bugid": 1749032,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Consumers should not call createInstance on nsISound, and instead should be using it as a service"
+  },
+  {
+   "bugid": 1745427,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Investigate why `PathUtils.getTempDir()` can fail in tests"
+  },
+  {
+   "bugid": 1751085,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "PathUtils: Support detecting absolute paths"
+  },
+  {
+   "bugid": 1750998,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Enable loading site-specific video wrapper scripts on debug builds"
+  },
+  {
+   "bugid": 1751241,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Why is the gpu time in Firefox beta 97 reported by Glean on the \"metrics\" ping 8x lower than the same value reported by Telemetry on the \"main\" ping"
+  },
+  {
+   "bugid": 1738567,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support cookieStoreId option in userScripts.register"
+  },
+  {
+   "bugid": 1748524,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "support event page background script startup"
+  }
+ ],
+ "fixed": 57,
+ "total": 66,
+ "restricted": 1
+}
