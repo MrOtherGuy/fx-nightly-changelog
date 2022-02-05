@@ -1,0 +1,286 @@
+{
+ "date": "2022-02-05",
+ "buildid": "20220205091402",
+ "cset": "e240dde296a870934ff76c8c01d13f6b79ac6bf9",
+ "bugs": [
+  {
+   "bugid": 1753657,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "tsan race with gCanvasAzureMemoryUsed, must be made atomic"
+  },
+  {
+   "bugid": 1753340,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Increase compositor stack size limit to deal with Mesa and OOP WebGL"
+  },
+  {
+   "bugid": 1753573,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-PASS | /html/canvas/offscreen/the-offscreen-canvas/2d.canvas.readonly.html | canvas is readonly - expected FAIL"
+  },
+  {
+   "bugid": 1752914,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: aPoint.IsSetAndValid(), at /editor/libeditor/HTMLEditUtils.cpp:1063"
+  },
+  {
+   "bugid": 1750973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Fission] TikTok videos not opening from user profiles"
+  },
+  {
+   "bugid": 1620516,
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent dom/security/test/csp/test_upgrade_insecure.html | upgrade all requests on toplevel https using meta csp (result: nested-img-error) - didn't expect -1, but got it"
+  },
+  {
+   "bugid": 1753731,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Mark ReadRequest::CloseSteps as MOZ_CAN_RUN_SCRIPT"
+  },
+  {
+   "bugid": 1753530,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Scale rects directly instead of going through a matrix."
+  },
+  {
+   "bugid": 1738096,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Move GC slice budget scheduling decisions out of spidermonkey and feed semantically meaningful info to Gecko scheduler"
+  },
+  {
+   "bugid": 1747274,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Record whether a GC slice was interrupted in the profiler marker"
+  },
+  {
+   "bugid": 1746631,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Add matrix multiply intrinsics for Firefox Translations"
+  },
+  {
+   "bugid": 1745860,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !child->GetPrimaryFrame(), at /builds/worker/checkouts/gecko/layout/base/nsCSSFrameConstructor.cpp:6451"
+  },
+  {
+   "bugid": 1752893,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma css-grid/grid-fragmentation-dyn4-015.html == css-grid/grid-fragmentation-015-ref.html | image comparison, max difference: 255, number of differing pixels: 4"
+  },
+  {
+   "bugid": 1753408,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Disabling ResizeObserver breaks debugging tools and eventually Firefox itself"
+  },
+  {
+   "bugid": 1750413,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Simultaneous HTTP/1.1 with ECH and HTTP/2 without on crypto.cloudflare.com"
+  },
+  {
+   "bugid": 1746956,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Crash in [@ _platform_strstr] from cups (despite our attempt to avoid the crashy API call)"
+  },
+  {
+   "bugid": 1753105,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: aMax >= aMin (clamped(): aMax must be greater than or equal to aMin), at /builds/worker/workspace/obj-build/dist/include/nsAlgorithm.h:37"
+  },
+  {
+   "bugid": 1749809,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Ensure test coverage of Profiler and Memory reporting for UtilityProcess"
+  },
+  {
+   "bugid": 1753411,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Deduplicate a lot of the X11/Wayland clipboard code."
+  },
+  {
+   "bugid": 1744752,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Browser Toolbox documentation link should be fixed"
+  },
+  {
+   "bugid": 1753426,
+   "status": "ASSIGNED",
+   "component": "DevTools:Documentation",
+   "summary": "Fix documentation links in the source code"
+  },
+  {
+   "bugid": 1745408,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Allow user to edit/add/remove URL parameters in New Custom Request Panel"
+  },
+  {
+   "bugid": 1745409,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Allow user to edit/add/remove HTTP Headers in New Custom Request Panel"
+  },
+  {
+   "bugid": 1745412,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Allow user to disable existing HTTP Headers in New Custom Request Panel"
+  },
+  {
+   "bugid": 1745413,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Allow user to see a list of (read only) headers in New Custom Request Panel"
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1753050,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Add libwebp to list of libraries UpdateBot can update"
+  },
+  {
+   "bugid": 1749328,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent browser/components/places/tests/browser/interactions/browser_interactions_typing.js | Found the expected number of entries - 1 == 2 - JS frame :: chrome://mochitests/content/browser/browser/components/places/tests/browser/interactions/head.js"
+  },
+  {
+   "bugid": 1753438,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "The “Mozilla VPN” and the “Mozilla Rally” sections are not displayed on the top part of the page when they are searched"
+  },
+  {
+   "bugid": 1744779,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Failing to download file due to missing filename sanitation"
+  },
+  {
+   "bugid": 1749996,
+   "status": "ASSIGNED",
+   "component": "Firefox:Session Restore",
+   "summary": "Session Restore (even when disabled) appears randomly after launching Firefox"
+  },
+  {
+   "bugid": 1753608,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Session Restore fails to restore some window features correctly"
+  },
+  {
+   "bugid": 1472626,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Error: [Exception... \"Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIFaviconService...."
+  },
+  {
+   "bugid": 1752724,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Error building Firefox on M1 machine with Rosetta 2 and python3.6.8"
+  },
+  {
+   "bugid": 1753402,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox fails to build with rust rustc 1.58.1 (Fedora 36) error[E0740]: unions may not contain fields that need dropping"
+  },
+  {
+   "bugid": 1753701,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "|./mach lint| should default to `--outgoing` and `--workdir`, even if linters are provided"
+  },
+  {
+   "bugid": 1752927,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "distutils DeprecationWarning on every Mach invocation for modern Python (SetuptoolsDeprecationWarning: setup.py install is deprecated)"
+  },
+  {
+   "bugid": 1742972,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Build failure on Apple M1 Max: ARM64 branch out of range (169326784 max is +/-128MB): from _mdb_env_stat.island (0x07C120C0) to _mdb_env_stat (0x11D8D980) in '_mdb_env_stat.island'"
+  },
+  {
+   "bugid": 1753787,
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Perma toolkit/mozapps/extensions/test/xpcshell/test_ProductAddonChecker_signatures.js | test_valid_content_signature - [test_valid_content_signature : 117] Should successfully get addon list, instead failed with Error: Content signature is"
+  },
+  {
+   "bugid": 1752566,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Perma [tier 2] /builds/worker/checkouts/gecko/toolkit/crashreporter/test/nsTestCrasher.cpp:170:10: error: function returns address of local variable [-Werror=return-local-addr]"
+  },
+  {
+   "bugid": 1726801,
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Feature to remember the download directory per site doesn't work for standalone image tabs"
+  },
+  {
+   "bugid": 1745248,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Allow address autofill to be enabled per country independently of credit card autofill"
+  },
+  {
+   "bugid": 1751209,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Urlbar and Places should also search the Snapshots  title"
+  },
+  {
+   "bugid": 1749887,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove or update probes expiring in Firefox 99: startup.profile_selection_reason"
+  },
+  {
+   "bugid": 1752586,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove no-longer-necessary eslint-appeasing global Glean:false annotations from FOG browser-chrome tests"
+  },
+  {
+   "bugid": 1753598,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent Assertion failure: false (ClearOnShutdown for phase that already was cleared), at /builds/worker/checkouts/gecko/xpcom/base/ClearOnShutdown.cpp:20"
+  }
+ ],
+ "fixed": 40,
+ "total": 46,
+ "restricted": 1
+}
