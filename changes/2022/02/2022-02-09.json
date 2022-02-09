@@ -1,0 +1,760 @@
+{
+ "date": "2022-02-09",
+ "buildid": "20220209095640",
+ "cset": "99073046b39c268cf1381abe5a21389dcb7dd37d",
+ "bugs": [
+  {
+   "bugid": 1753493,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Assertion failure: !aIID.Equals((nsISupports::COMTypeInfo<nsISupports, void>::kIID)), at src/dom/media/mediasession/MediaSession.cpp:47"
+  },
+  {
+   "bugid": 1754107,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Release memory created by VTSessionCopyProperty"
+  },
+  {
+   "bugid": 1521455,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Count RDD process crashes in telemetry"
+  },
+  {
+   "bugid": 1751023,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix more static-analysis issues in dom/media"
+  },
+  {
+   "bugid": 1754006,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Increase the processed media queue size and threshold in AudioSink"
+  },
+  {
+   "bugid": 1754134,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove ImageBufferWrapper::AsPlanarYCbCrImage()"
+  },
+  {
+   "bugid": 1754274,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add more logs on ffmpeg video decoder."
+  },
+  {
+   "bugid": 1754095,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Fix non-unified-build bustage in layout/style and mark directory as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1738135,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Don't create ScrollTimeline object for each CSS Animation"
+  },
+  {
+   "bugid": 1753847,
+   "status": "REOPENED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | /css/cssom-view/add-background-attachment-fixed-during-smooth-scroll.html | Testing http://web-platform.test:8000/css/cssom-view/add-background-attachment-fixed-during-smooth-scroll.html == http://web-platform.test:8000"
+  },
+  {
+   "bugid": 1754215,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Update process model documentation to include webServiceWorkers"
+  },
+  {
+   "bugid": 1753995,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up some code around window.devicePixelRatio."
+  },
+  {
+   "bugid": 1749068,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent leakcheck | tab 1240 bytes leaked (CondVar, Mutex, PRemoteWorkerChild, RemoteWorkerChild, ShutdownOnWorker, ...)"
+  },
+  {
+   "bugid": 1750515,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Enable NavigationPreload on Nightly"
+  },
+  {
+   "bugid": 1752387,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "ServiceWorkerManager is the second most frequent timer when Firefox is completely idle"
+  },
+  {
+   "bugid": 1753025,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Using the correct principal to create channel for ServiceWorker NavigationPreload."
+  },
+  {
+   "bugid": 1752206,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Streams",
+   "summary": "Build with DOM ReadableStreams by default."
+  },
+  {
+   "bugid": 1752662,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "WPT streams/readable-byte-streams/tee.any.js - TypeError: Pending PullInto has detached buffer"
+  },
+  {
+   "bugid": 1754032,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Enable all streams flag in the toplevel wpt __dir__.ini"
+  },
+  {
+   "bugid": 1754088,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Streams",
+   "summary": "DOM Streams fails compilation under Linux x64 debug build-linux64-base-toolchains/debug (Bb jobs)"
+  },
+  {
+   "bugid": 1739154,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "delegatesFocus changes focused inner element when host is focused"
+  },
+  {
+   "bugid": 1746104,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "ContentCacheInChild shouldn't stop caching text content etc when there is no selection"
+  },
+  {
+   "bugid": 1752956,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "`IMEContentObserver` should update selection cache before sending a text change notification"
+  },
+  {
+   "bugid": 1753173,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[GTK] Failed to handle composition start signal which is sent immediately after setting IME focus"
+  },
+  {
+   "bugid": 1752907,
+   "status": "UNCONFIRMED",
+   "component": "Core:DOM: Workers",
+   "summary": "Cut over Hardware Concurrency to finer-grained RFP Check"
+  },
+  {
+   "bugid": 1735397,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Profiling a single process barely works when there are many child processes"
+  },
+  {
+   "bugid": 1753575,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "BufferTextureData of ffmpeg decoded video is not recycled"
+  },
+  {
+   "bugid": 1587094,
+   "status": "REOPENED",
+   "component": "Core:Graphics: Text",
+   "summary": "Firefox usage of DirectWrite's synthetic bolding breaks rendering of some fonts (windows only)"
+  },
+  {
+   "bugid": 1748520,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Text",
+   "summary": "Intermittent valgrind-test | 20 bytes in 1 blocks are definitely lost at malloc / moz_xmalloc / nsDynamicAtom::Create / nsAtomTable::Atomize"
+  },
+  {
+   "bugid": 1754028,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update HarfBuzz to 3.3.2"
+  },
+  {
+   "bugid": 1749380,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[meta] Refactor / fix the various correctness and performance issues WR has with render target scaling, bounding rect inflation and raster root creation."
+  },
+  {
+   "bugid": 1738734,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "use properly-owned RAII types in `TransportDescriptor`"
+  },
+  {
+   "bugid": 1751071,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Correctly forward-declare/import included but unused types in ipdlh headers"
+  },
+  {
+   "bugid": 1754235,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "(msan) reading padding bytes from RegEx JIT"
+  },
+  {
+   "bugid": 1710025,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make Ion's regalloc debug output easier to read"
+  },
+  {
+   "bugid": 1753633,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add a fixed-size property cache for megamorphic lookups"
+  },
+  {
+   "bugid": 1747273,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Ignore the GC interrupt flag if the GC goes on for too long"
+  },
+  {
+   "bugid": 1751543,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Parent process appears to be momentarily waiting for chance to do major GC"
+  },
+  {
+   "bugid": 1752646,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Improve some GC/CC profiler markers"
+  },
+  {
+   "bugid": 1753061,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Back out call_indirect optimization"
+  },
+  {
+   "bugid": 1753719,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Properly convert the the result of GetMaskArea to device pixels."
+  },
+  {
+   "bugid": 1753990,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Wireframe collection being enabled causes parent process crashes when going through WebRTC permission popups for Google Meet"
+  },
+  {
+   "bugid": 1754105,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix non-unified-build bustage in layout/xul and mark directory as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1754295,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix non-unified-build bustage in layout/forms, layout/mathml, and layout/tables, and mark directories as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1752658,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Some refactor around DoFlexLayout"
+  },
+  {
+   "bugid": 1742311,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_udp_multicast.js |  - A promise chain failed to handle a rejection: [Exception... \"Abort\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: Z:\\\\task_163753158435822\\\\build\\\\tests\\\\xpcshell\\\\head.js"
+  },
+  {
+   "bugid": 1747497,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ Allocator<T>::malloc | moz_xmalloc | mozilla::net::ProxyAutoConfigChild::RecvGetProxyForURI]"
+  },
+  {
+   "bugid": 1753805,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add pref for enterprise users to override the User-Agent string's Firefox version"
+  },
+  {
+   "bugid": 1753875,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "comm-central perma fail (after bug 1750413): netwerk/test/unit/test_httpssvc_retry_with_ech.js | testConnectWithECH - [testConnectWithECH : 189] Should have only one speculative DnsAndSock created - 20488 == 20489"
+  },
+  {
+   "bugid": 1753885,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "turn swipe to navigate back on for nightly on Windows"
+  },
+  {
+   "bugid": 1754129,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Land the mochitest for bug 1571758"
+  },
+  {
+   "bugid": 1606651,
+   "status": "RESOLVED",
+   "component": "Core:Plug-ins",
+   "summary": "ThreadSanitizer: data race [@ nsPluginTag::nsPluginTag] vs. [@ nsFakePluginTag] on nsIInternalPluginTag::sNextId"
+  },
+  {
+   "bugid": 1754111,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Fix non-unified-build bustage in layout/printing and mark directory as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1754131,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma [tier 2] svg/filters/css-filter-chains/long-chain.html == svg/filters/css-filter-chains/long-chain-ref.html | image comparison, max difference: 5, number of differing pixels: 19902"
+  },
+  {
+   "bugid": 1754160,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma [Tier 2]  svg/filters/feDropShadow-01.svg == svg/filters/feDropShadow-01-ref.svg | image comparison, max difference: 56, number of differing pixels: 16352"
+  },
+  {
+   "bugid": 1754277,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Fix non-unified-build bustage in layout/svg and mark directory as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1753136,
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Failed to parse precursor from nullprincipal query), at src/caps/NullPrincipal.cpp:311"
+  },
+  {
+   "bugid": 1747959,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Crash in [@ je_free | nssCKFWObject_Destroy | NSSCKFWC_FindObjects | builtinsC_FindObjects]"
+  },
+  {
+   "bugid": 1753980,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 99 to use NSS 3.76"
+  },
+  {
+   "bugid": 1750539,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Move `SNAP` sandbox rules to more strict"
+  },
+  {
+   "bugid": 1753642,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Utility process hard kill can leak?"
+  },
+  {
+   "bugid": 1746248,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Add support for mix-blend-mode keyword plus-lighter (Compositing 2)"
+  },
+  {
+   "bugid": 1754054,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "RDLUtils::AssertFrameSubtreeUnmodified is called also in optimized builds"
+  },
+  {
+   "bugid": 1754315,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Fix non-unified-build bustage in layout/painting and mark directory as safe-to-build in non-unified mode"
+  },
+  {
+   "bugid": 1748333,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Assertion failure: !mTaskQueue->IsOnCurrentThread() (TaskQueue::AwaitIdle must not be called on itself), at /dom/media/webrtc/libwebrtcglue/TaskQueueWrapper.h:34"
+  },
+  {
+   "bugid": 1749802,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Remove dead config option `media.peerconnection.rtpsourcesapi.enable`"
+  },
+  {
+   "bugid": 1752448,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent Assertion failure: mEnabled, at /builds/worker/checkouts/gecko/dom/media/webrtc/MediaEngineWebRTCAudio.cpp:755"
+  },
+  {
+   "bugid": 1752896,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "NAT simulator allows incoming packets through even when they arrive on a port that is mapped to some other destination"
+  },
+  {
+   "bugid": 1253706,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Implement RTCPeerConnection.setConfiguration"
+  },
+  {
+   "bugid": 1748181,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Firefox should allow users to override scrollbar-width"
+  },
+  {
+   "bugid": 1753830,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[LINUX] The scrollbar thumb is near invisible and has a horribly low contrast"
+  },
+  {
+   "bugid": 1732737,
+   "status": "NEW",
+   "component": "Core:Widget: Win32",
+   "summary": "Add VirtualDesktop handling to window occlusion on Windows"
+  },
+  {
+   "bugid": 1753996,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "nsCycleCollector::FixGrayBits() forced GC reason is incorrect for an all traces CC"
+  },
+  {
+   "bugid": 1754154,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Missing include for nsINamed in RLBoxSandboxPool.h"
+  },
+  {
+   "bugid": 1643797,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Browser Console slows down main thread with `getRepeatId`"
+  },
+  {
+   "bugid": 1753942,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Save some cycle in console"
+  },
+  {
+   "bugid": 1752160,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove unecessary memoization and actions around breakable lines"
+  },
+  {
+   "bugid": 1753594,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Improve pretty printing tests for adding and removing breakpoints"
+  },
+  {
+   "bugid": 1753985,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove unused references to immutable in debugger build files"
+  },
+  {
+   "bugid": 1639179,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "DevTools Inspector tabs not re-loading same tab after toggling the 3pane"
+  },
+  {
+   "bugid": 1743239,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Verify Updatebot will choke on separate patch commits"
+  },
+  {
+   "bugid": 1753333,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the Firefox Suggest best match group label with the final string"
+  },
+  {
+   "bugid": 1753596,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Implement SnapshotGroups.updateUrls"
+  },
+  {
+   "bugid": 1744379,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Intermittent browser/components/tests/browser/browser_browserGlue_upgradeDialog.js | uncaught exception - TypeError: can't access property 0, THEME_IDS[variations.getAttribute(...)] is undefined at enableVariant@chrome://browser/content/u"
+  },
+  {
+   "bugid": 1747459,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove preprocessor use for license headers from CSS files"
+  },
+  {
+   "bugid": 1747149,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Consolidate logic for when to show VPN promo and add BrowserUtils tests"
+  },
+  {
+   "bugid": 1754126,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Perma browser/components/tests/browser/browser_browserGlue_upgradeDialog.js | Uncaught exception in test - Theme is active - threw exception: TypeError: can't access property \"isActive\", theme is null"
+  },
+  {
+   "bugid": 1754127,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "High frequency browser/components/tests/browser/browser_browserGlue_upgradeDialog_trigger.js | A promise chain failed to handle a rejection: can't access property \"enable\" of null - stack: enableTheme@chrome://browser/content/upgradeDialog.js:93:23"
+  },
+  {
+   "bugid": 1059603,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Portuguese/Portugal [pt-pt] missing from Content Options"
+  },
+  {
+   "bugid": 1728800,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Investigate collecting more window features"
+  },
+  {
+   "bugid": 1748944,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Button to open Connection Security info is unlabelled"
+  },
+  {
+   "bugid": 1713137,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Update the autofill tests for creditcard sync"
+  },
+  {
+   "bugid": 1747893,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "Sync error: CreditCards is not initialized"
+  },
+  {
+   "bugid": 1752664,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Sync after a tab change"
+  },
+  {
+   "bugid": 1751366,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Disable tab unloading in private windows (Firefox update coupled with tabs unloading can cause loss of tabs in private browsing)"
+  },
+  {
+   "bugid": 1747423,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Remove preprocessor variable use of buttonStateHover, buttonStateHoverOrFocus and buttonStateActive"
+  },
+  {
+   "bugid": 1754124,
+   "status": "NEW",
+   "component": "Firefox:Tours",
+   "summary": "Perma browser/components/uitour/test/browser_UITour_colorway.js | {} -"
+  },
+  {
+   "bugid": 1753914,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "./mach environment is failure on windows"
+  },
+  {
+   "bugid": 1740027,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Migrate \"Test Verification\" MDN doc to Firefox Source Docs"
+  },
+  {
+   "bugid": 1754147,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove REQUIRES_UNIFIED_BUILD from modules/woff2"
+  },
+  {
+   "bugid": 1753739,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Pre-commit linting hook ModuleNotFoundError: No module named 'mach'"
+  },
+  {
+   "bugid": 1753769,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Perma [tier 2]  2:02.07 python/mozlint/test/test_cli.py::test_cli_with_ascii_encoding TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1753652,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Update eslint-plugin-no-unsanitized to version 4.0.1"
+  },
+  {
+   "bugid": 1753859,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain-linux64-clang-trunk assert r == 0"
+  },
+  {
+   "bugid": 1753515,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Try",
+   "summary": "Add a basic test for scriptworker.py in Gecko"
+  },
+  {
+   "bugid": 1750623,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Crash in WebExtensionController.fromBundle(WebExtensionController.java:13): \"Missing sender information.\""
+  },
+  {
+   "bugid": 1331109,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable GPU Process on Android"
+  },
+  {
+   "bugid": 1637922,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Consider disabling dom.netinfo.enabled on mobile"
+  },
+  {
+   "bugid": 1754159,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Test helper_zoom_after_gpu_process_restart.html fails due to not correctly waiting for GPU process restart"
+  },
+  {
+   "bugid": 1754244,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove deprecated enterpiseRootsEnabled"
+  },
+  {
+   "bugid": 1745248,
+   "status": "REOPENED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Allow address autofill to be enabled per country independently of credit card autofill"
+  },
+  {
+   "bugid": 1745973,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add \"UK,FR,DE\" to \"extensions.formautofill.creditCards.supportedCountries\""
+  },
+  {
+   "bugid": 1754012,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "browser_test_procinfo.js is not checking correctly the CPU time returned by ChromeUtils.requestProcInfo"
+  },
+  {
+   "bugid": 1748884,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add support for displaying subtitles/captions if WebVTT is supported"
+  },
+  {
+   "bugid": 1749585,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add Telemetry probes to Picture-in-Picture toggle clicks"
+  },
+  {
+   "bugid": 1749586,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add client code for PiP first time toggle experiment"
+  },
+  {
+   "bugid": 1753401,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP not working on Hulu"
+  },
+  {
+   "bugid": 1751936,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Blocklist for preferences should be applied to initial synchronization of preferences to content process"
+  },
+  {
+   "bugid": 1659193,
+   "status": "NEW",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Intermittent toolkit/components/reader/test/browser_readerMode_with_anchor.js | scrollTop (0) should be within 1 CSS pixel of offsetTop (2894) - 2894 <= 1 - got 2894, expected 1 (operator <=)"
+  },
+  {
+   "bugid": 1749038,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "As a user of Firefox ReaderMode I would like a keyboard command to toggle narrate"
+  },
+  {
+   "bugid": 1750735,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Narrate telemetry tries to record 'null' language voice selection telemetry"
+  },
+  {
+   "bugid": 1753117,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Add pref for UI changes to Reader Mode"
+  },
+  {
+   "bugid": 1753689,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add new instrumentation to Telemetry via GIFFT and Mirror in the same build"
+  },
+  {
+   "bugid": 1754205,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "GIFFT `labeled_counter` uses ScalarSet instead of ScalarAdd"
+  },
+  {
+   "bugid": 1749977,
+   "status": "RESOLVED",
+   "component": "Tree Management:Treeherder",
+   "summary": "\"Create Interactive Task\" on Treeherder for docker workers fails with: \"Docker configuration could not be created.  This may indicate an authentication error when validating scopes necessary for running the task\""
+  }
+ ],
+ "fixed": 100,
+ "total": 125,
+ "restricted": 5
+}
