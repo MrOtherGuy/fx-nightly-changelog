@@ -1,0 +1,340 @@
+{
+ "date": "2022-02-10",
+ "buildid": "20220210065747",
+ "cset": "15da7669985245a2cd6f0a62d37e44a4a9487a36",
+ "bugs": [
+  {
+   "bugid": 1754250,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Some cleanup for DeviceInputTrack"
+  },
+  {
+   "bugid": 1754254,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Narrower down the thread limits for some NativeInputTrack APIs"
+  },
+  {
+   "bugid": 1752493,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "When RDD with VA-API crashes, restart it without HW acceleration"
+  },
+  {
+   "bugid": 1481454,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Remove Nightly restriction for blocking threads with LoadLibrary* functions as entry points"
+  },
+  {
+   "bugid": 1754411,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent TV dom/xhr/tests/test_bug1752863.html | Got TERMINATE"
+  },
+  {
+   "bugid": 1750515,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Enable NavigationPreload on Nightly"
+  },
+  {
+   "bugid": 1752387,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "ServiceWorkerManager is the second most frequent timer when Firefox is completely idle"
+  },
+  {
+   "bugid": 1753025,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Using the correct principal to create channel for ServiceWorker NavigationPreload."
+  },
+  {
+   "bugid": 1754088,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "DOM Streams fails compilation under Linux x64 debug build-linux64-base-toolchains/debug (Bb jobs)"
+  },
+  {
+   "bugid": 1754252,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Readable streams JSAPI Tests fail with MOZ_DOM_STREAMS enabled."
+  },
+  {
+   "bugid": 1752863,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: !mProxy->mSyncLoopTarget, at /dom/xhr/XMLHttpRequestWorker.cpp:1311"
+  },
+  {
+   "bugid": 1754139,
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Null principal ends up in serialized form rather than \"null\""
+  },
+  {
+   "bugid": 1587094,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Firefox usage of DirectWrite's synthetic bolding breaks rendering of some fonts (windows only)"
+  },
+  {
+   "bugid": 1754302,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Replace uses of GetMainThreadSerialEventTarget with GetCurrentSerialEventTarget"
+  },
+  {
+   "bugid": 1751675,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "MOZ_CRASH(Can't allocate > MAX_VERTEX_TEXTURE_WIDTH per resource!) at gfx/wr/webrender/src/gpu_cache.rs:409"
+  },
+  {
+   "bugid": 1754336,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "https://keithclark.co.uk/labs/css-fps/nojs/ became very blurry after bug1749380"
+  },
+  {
+   "bugid": 1754350,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Visible seams on https://codepen.io/amit_sheen/pen/YzxbwOx"
+  },
+  {
+   "bugid": 1754388,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Forward more functions in RenderTextureHostWrapper"
+  },
+  {
+   "bugid": 1736371,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Default new protocols to be `[RefCounted]`"
+  },
+  {
+   "bugid": 1752444,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Use attributes instead of direct_call.py for virtual call overrides"
+  },
+  {
+   "bugid": 1754443,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "DelazifyTask fails on scripts with no inner functions."
+  },
+  {
+   "bugid": 1754444,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "DelazifyTask should check in case of allocation failures of a strategy."
+  },
+  {
+   "bugid": 1754018,
+   "status": "ASSIGNED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Deal with cranelift bitrot"
+  },
+  {
+   "bugid": 1753440,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Crash in [@ mozilla::net::WebSocketChannel::DoStopSession ]"
+  },
+  {
+   "bugid": 1753374,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "don't allow pending vv offset updates to become the vv offset purely on the content side without asking apz"
+  },
+  {
+   "bugid": 1753229,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make test dom/security/test/csp/test_service_worker.html to be dFPI compatible"
+  },
+  {
+   "bugid": 1753586,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix navigator.cookieEnabled for dFPI"
+  },
+  {
+   "bugid": 1753970,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable dFPI for the wpt /cookies/samesite/setcookie-lax.https.html"
+  },
+  {
+   "bugid": 1754242,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "PartitioningExceptionList::Check is called for same-origin"
+  },
+  {
+   "bugid": 1754389,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Product page content does not load on us.driftinnovation.com with ETP - Standard enabled"
+  },
+  {
+   "bugid": 1754294,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "take the appropriate lock when accessing SECMODModule slot information"
+  },
+  {
+   "bugid": 1751964,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ DdQueryDisplaySettingsUniqueness]"
+  },
+  {
+   "bugid": 1753758,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Ensure test coverage of crash reporting for UtilityProcess"
+  },
+  {
+   "bugid": 1631340,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Crash in [@ mozilla::dom::LSValue::Converter::Converter]"
+  },
+  {
+   "bugid": 1747102,
+   "status": "NEW",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Handle ill-formed keys in local storage"
+  },
+  {
+   "bugid": 1754211,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Update libsrtp to 2.4.2"
+  },
+  {
+   "bugid": 1754225,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Allow dark scrollbars to use theme colors."
+  },
+  {
+   "bugid": 1690326,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Add mappings for NS_ERROR_MODULE_WIN32 errors generated from nsLocalFileWin.cpp"
+  },
+  {
+   "bugid": 1754090,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Documentation of BulkWrite is out-of-date"
+  },
+  {
+   "bugid": 1753860,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Test using structuredClone in xpcshell tests"
+  },
+  {
+   "bugid": 1753594,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Improve pretty printing tests for adding and removing breakpoints"
+  },
+  {
+   "bugid": 1754397,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Remove MDN links from the Network Monitor source"
+  },
+  {
+   "bugid": 1678645,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/client/shared/test/browser_filter-editor-<xy>.js | A promise chain failed to handle a rejection: [Exception... \"Failure\"  nsresult: \"0x80004005 (NS_ERROR_FAILURE)\"  location: \"JS frame :: resource://"
+  },
+  {
+   "bugid": 1754195,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Use the active tab view in nightly only"
+  },
+  {
+   "bugid": 1735806,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Specifying install_sources still allows installs from addons.mozilla.org"
+  },
+  {
+   "bugid": 1751424,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add theme previews to RTAMO"
+  },
+  {
+   "bugid": 1754124,
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Perma browser/components/uitour/test/browser_UITour_colorway.js | {} -"
+  },
+  {
+   "bugid": 1753919,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove copy situation of AndroidWebAuthnResult"
+  },
+  {
+   "bugid": 1754334,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.ScreenshotTest#capturePixelsBeforeGpuProcessCrash | java.lang.AssertionError: Images are almost identical"
+  },
+  {
+   "bugid": 1754306,
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "c-c perma - toolkit/components/telemetry/tests/unit/test_TelemetrySessionGIFFT.js | test_assemblingInstrumentation - [test_assemblingInstrumentation : 51] \"undefined\" == true"
+  },
+  {
+   "bugid": 1715813,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent browser/extensions/formautofill/test/browser/focus-leak/browser_iframe_typecontent_input_focus.js | Test timed out -"
+  },
+  {
+   "bugid": 1752570,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent browser/extensions/formautofill/test/browser/creditCard/browser_creditCard_telemetry.js , browser_creditCard_doorhanger.js | A promise chain failed to handle a rejection: [Exception... \"Failure\"  nsresult: \"0x8000400"
+  },
+  {
+   "bugid": 1754424,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Add profiler markers for CPU time being recorded in Glean"
+  },
+  {
+   "bugid": 1753641,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Mute/Unmute is applied instead of volume change when using up/down arrow"
+  },
+  {
+   "bugid": 1754524,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Update Readability to 0.4.2 from node/git"
+  }
+ ],
+ "fixed": 50,
+ "total": 55,
+ "restricted": 1
+}
