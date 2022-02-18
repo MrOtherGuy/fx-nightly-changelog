@@ -1,0 +1,412 @@
+{
+ "date": "2022-02-18",
+ "buildid": "20220218090822",
+ "cset": "6938c3b26d145c7e2c77f078566463df66d45359",
+ "bugs": [
+  {
+   "bugid": 1697476,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "NS_ERROR_OUT_OF_MEMORY after 1hour+ of playback due to accumulation in TrackBuffersManager"
+  },
+  {
+   "bugid": 1670817,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Have crash recovery policy with RDD process"
+  },
+  {
+   "bugid": 1755376,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Investigate effect of raising the priority of Shutdown IPC messages"
+  },
+  {
+   "bugid": 1742437,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Factor out common ScriptLoadRequest for use in Worker and DOM"
+  },
+  {
+   "bugid": 1755134,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "window.open() positioning code is broken."
+  },
+  {
+   "bugid": 1755315,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add less error prone accessors to widget screen to chrome code."
+  },
+  {
+   "bugid": 1755947,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Simplify nsIPrincipal.isSameOrigin."
+  },
+  {
+   "bugid": 1752518,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Intermittent Assertion failure: false (Please ensure to IPC_FAIL only when in an unrecoverable, unexpected state.), at /builds/worker/checkouts/gecko/ipc/glue/ProtocolUtils.cpp:68"
+  },
+  {
+   "bugid": 1736570,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Outlook OWA Automatic Replies not working - _event error or broken fields."
+  },
+  {
+   "bugid": 1734241,
+   "status": "NEW",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement ReadableStream.pipeTo"
+  },
+  {
+   "bugid": 1755438,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Crash in [@ mozilla::ContentCacheInParent::GetTextRect]"
+  },
+  {
+   "bugid": 1754650,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove or update probes expiring in Firefox 100: WEBAUTHN_* before Gecko version increases to 100 on 2022-03-08"
+  },
+  {
+   "bugid": 1755891,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Remove unneeded include after bug 1724152"
+  },
+  {
+   "bugid": 1730090,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "TextLeafPoint: Implement BOUNDARY_PARAGRAPH"
+  },
+  {
+   "bugid": 1743968,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Cache the display object attribute"
+  },
+  {
+   "bugid": 1754675,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Loading w3c.github.io/aria crashes Firefox with CTW enabled"
+  },
+  {
+   "bugid": 1755420,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Clean up HyperTextAccessible methods now that all boundaries are supported by TextLeafPoint"
+  },
+  {
+   "bugid": 1755604,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add IsBefore and IsAncestorOf methods to Accessible"
+  },
+  {
+   "bugid": 1755055,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Record CPU time inside Awake markers"
+  },
+  {
+   "bugid": 1755450,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Bug 1754519 broke !MOZ_GECKO_PROFILER builds"
+  },
+  {
+   "bugid": 1752652,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Use CreateClippedDrawTarget instead of CreateSimiliarDrawTarget."
+  },
+  {
+   "bugid": 1755718,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Assert that color formats can be handled by Skia."
+  },
+  {
+   "bugid": 1755959,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused path creation methods."
+  },
+  {
+   "bugid": 1755975,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "Use Clip(rect) instead of manually creating a rectangle path."
+  },
+  {
+   "bugid": 1755988,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Switch back to CreateSimilarDrawTarget for luminance masking."
+  },
+  {
+   "bugid": 1756035,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused aMaskSurfaceMatrix parameter."
+  },
+  {
+   "bugid": 1754219,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move to a WebRender blocklist for Nvidia on Windows."
+  },
+  {
+   "bugid": 1754829,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Detect when an SVG path is a rect"
+  },
+  {
+   "bugid": 1755226,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "check if there are any \"http-on-image-cache-response\" observers in imgLoader::NotifyObserversForCachedImage before doing any work"
+  },
+  {
+   "bugid": 1755649,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace ArrayJoinKernel functors with lambdas"
+  },
+  {
+   "bugid": 1755693,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma [tier 2] Assertion failure: maybeGcOptions == Nothing(), at z:/task_164498528886997/src/js/src/gc/GC.cpp:3962"
+  },
+  {
+   "bugid": 1755874,
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: comp == compartment || runtime()->mainContextFromOwnThread()->disableCompartmentCheckTracer || (srcKind == JS::TraceKind::Object && InCrossCompartmentMap(runtime(), static_cast<JSObject*>(src), thing))"
+  },
+  {
+   "bugid": 1755641,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Enable ion fuzzing for memory64"
+  },
+  {
+   "bugid": 1755833,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Update to thin-vec 0.2.5"
+  },
+  {
+   "bugid": 1753703,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_httpssvc_retry_with_ech.js | testConnectWithECH - [testConnectWithECH : 188] 6 == 3 | after xpcshell return code: 0"
+  },
+  {
+   "bugid": 1755866,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Should not need to collect gpu time in socket process"
+  },
+  {
+   "bugid": 1754814,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable dFPI for mochitests on Nightly"
+  },
+  {
+   "bugid": 1755209,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "3rd Party Storage permission's site/label value becomes \"null\" somehow"
+  },
+  {
+   "bugid": 1755552,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make tests in dom/workers/tests/ dFPI compatible"
+  },
+  {
+   "bugid": 1750859,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ gfxWindowsPlatform::EnsureDevicesInitialized]"
+  },
+  {
+   "bugid": 1754448,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "LSNG: Snapshots for the same origin have issues when they operate in parallel"
+  },
+  {
+   "bugid": 1732738,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Add EnsureDisplayStatusObserver() and EnsureSessionChangeObserver()"
+  },
+  {
+   "bugid": 1755199,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Repurpose`browser_dbg-sourcemaps-reload.js`  test for resyncing breakpoints in sourcemapped files on reload when source changes"
+  },
+  {
+   "bugid": 1518675,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Intermittent devtools/client/inspector/flexbox/test/browser_flexbox_container_and_item_accordion_state.js | Test timed out -"
+  },
+  {
+   "bugid": 1264621,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Devtools: Middle click on filename should shortcut to open link in new tab"
+  },
+  {
+   "bugid": 1754368,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "\"Block\" and \"Resend\" buttons don't have the same padding"
+  },
+  {
+   "bugid": 1756067,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement temporary simplistic logic for triggering best matches"
+  },
+  {
+   "bugid": 1754636,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Remove or update probes expiring in Firefox 100: downloads.helpertype#helpertype before Gecko version increases to 100 on 2022-03-08"
+  },
+  {
+   "bugid": 1754659,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Remove or update probes expiring in Firefox 100: pdf.viewer.is_attachment"
+  },
+  {
+   "bugid": 1742167,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Intermittent browser/components/enterprisepolicies/tests/browser/managedbookmarks/browser_policy_managedbookmarks.js | Test timed out -"
+  },
+  {
+   "bugid": 1755354,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add a policy to remove \"More from Mozilla\" in preference"
+  },
+  {
+   "bugid": 1753449,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Add BrowserUtils test for shouldShowVPNPromo when an enterprise policy is active"
+  },
+  {
+   "bugid": 1746016,
+   "status": "NEW",
+   "component": "Firefox:Pocket",
+   "summary": "Save to Pocket home panel refresh"
+  },
+  {
+   "bugid": 1755996,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add a pref to enable removal of search engine infobar"
+  },
+  {
+   "bugid": 1721229,
+   "status": "RESOLVED",
+   "component": "Firefox:WebPayments UI",
+   "summary": "Remove the WebPayments UI code from the tree"
+  },
+  {
+   "bugid": 1747358,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"about:logins\" page cannot be scrolled anymore when it is smaller resized"
+  },
+  {
+   "bugid": 1748652,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The content from the \"Import Summary\" page is wrongly displayed in the right part and the page cannot be scrolled if there are multiple logins"
+  },
+  {
+   "bugid": 1755826,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Cannot build Firefox with VS 2022 17.1.0"
+  },
+  {
+   "bugid": 1755581,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Fenix parent process unexpectedly loads scripts intended for the child process"
+  },
+  {
+   "bugid": 1755783,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Clean up a bit android screen code."
+  },
+  {
+   "bugid": 1753876,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Add-Ons: General",
+   "summary": "comm-central debug perma: toolkit/crashreporter/test/unit/test_crashreporter.js | application crashed [@ GetLiveWin32kLockdownState()]"
+  },
+  {
+   "bugid": 1653486,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Replace all non-user-facing references to \"master\" password"
+  },
+  {
+   "bugid": 1598312,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "It's hard to resize the Picture-in-Picture video window"
+  },
+  {
+   "bugid": 1755686,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PictureInPicture.getWorkingScreen uses confused coordinate spaces"
+  },
+  {
+   "bugid": 1755706,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP window shrinks when reopening on X11"
+  },
+  {
+   "bugid": 1736844,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Allow sqlite3_interrupt call on read/write storage connection"
+  },
+  {
+   "bugid": 1751448,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Extend (quietly) GIFFT to support `timing_distribution` -> Histogram mirroring in Rust"
+  }
+ ],
+ "fixed": 54,
+ "total": 67,
+ "restricted": 3
+}
