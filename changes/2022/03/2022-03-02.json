@@ -1,0 +1,376 @@
+{
+ "date": "2022-03-02",
+ "buildid": "20220302065857",
+ "cset": "8988d043ed686a23cbe9f3785ac98572d0f9e0e7",
+ "bugs": [
+  {
+   "bugid": 1757122,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Perma [tier 2] /builds/worker/checkouts/gecko/dom/media/fake-cdm/cdm-test-storage.cpp:76:25: error: unqualified call to std::move [-Werror,-Wunqualified-std-cast-call]"
+  },
+  {
+   "bugid": 1757473,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update AudioIPC macOS branch to 8e3c4c1b"
+  },
+  {
+   "bugid": 1757475,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to 3a04ed29"
+  },
+  {
+   "bugid": 1752456,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Rect.h:272:61: runtime error: inf is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1638466,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Ship out-of-process WebGL on Linux"
+  },
+  {
+   "bugid": 1757487,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Enable the LoadLibrary injection protection unconditionally"
+  },
+  {
+   "bugid": 1757575,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix non-unified-build bustage in dom/html/HTMLFormElement.cpp"
+  },
+  {
+   "bugid": 1752518,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Intermittent Assertion failure: false (Please ensure to IPC_FAIL only when in an unrecoverable, unexpected state.), at /builds/worker/checkouts/gecko/ipc/glue/ProtocolUtils.cpp:68"
+  },
+  {
+   "bugid": 1741671,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable BFCache for pages with beforeunload event listeners on Desktop"
+  },
+  {
+   "bugid": 1757514,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ mozilla::dom::PerformanceTimingData::ToIPC]"
+  },
+  {
+   "bugid": 1757653,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Remove redundant `extern`s"
+  },
+  {
+   "bugid": 1757257,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Firefox consistently hits MOZ_ASSERT(rootFrame, \"No frame for accessible!\") with cache enabled"
+  },
+  {
+   "bugid": 1668867,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Have Services.profiler.StartProfiler() return a promise that resolves when the child processes are initialized"
+  },
+  {
+   "bugid": 1756642,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "[Linux] Avoid marking the main thread as awake whenever the profiler records a sample"
+  },
+  {
+   "bugid": 1756569,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.gecko.process.GeckoProcessManager.getCompositorSurfaceManager(GeckoProcessManager.java)]"
+  },
+  {
+   "bugid": 1757587,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Remove non-webrender CompositorAnimationStorage code that seems unused"
+  },
+  {
+   "bugid": 1756664,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update HarfBuzz to 3.4.0"
+  },
+  {
+   "bugid": 1757201,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "invalidation bug with text-shadows + mix-blend-mode"
+  },
+  {
+   "bugid": 1757454,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove code for working with CGFonts."
+  },
+  {
+   "bugid": 1757534,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "[ARM64] Crash [@ mozilla::ipc::FatalError | mozilla::ipc::FatalError | mozilla::ipc::IProtocol::HandleFatalError | mozilla::gmp::PGMPParent::OnMessageReceived ]"
+  },
+  {
+   "bugid": 1757483,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Update libjxl to new version 89875cba4d18485ec9692c80b747b59b73ce712e from 2022-02-28 16:03:42"
+  },
+  {
+   "bugid": 1753709,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add an about:config preference to toggle the various eager delazification strategies."
+  },
+  {
+   "bugid": 1755391,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS Streams implementation of Writable Stream and PipeTo"
+  },
+  {
+   "bugid": 1755725,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "WeakRefs don't work with cross-zone targets"
+  },
+  {
+   "bugid": 1757273,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma bustage /builds/worker/checkouts/gecko/js/src/wasm/WasmInstance.cpp:2158:14: error: no member named 'pendingException' in 'js::wasm::TlsData' when Gecko 99 merges to Beta on 2022-03-08"
+  },
+  {
+   "bugid": 1676760,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "ParentProcessVsyncNotifier and NotifyParentProcessVsync is confusing, should be renamed"
+  },
+  {
+   "bugid": 1607913,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Update default monospace fonts from Courier and Courier New to something more modern"
+  },
+  {
+   "bugid": 1756720,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Firefox doesn't display WingDings font (and other symbol fonts)."
+  },
+  {
+   "bugid": 1717629,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/browser/browser_opaque_response_blocking_telemetry.js | Should not have recorded key Allowed_SniffAsImageOrAudioOrVideo -"
+  },
+  {
+   "bugid": 1756979,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Re-enable DoH mode 2.5 on nightly"
+  },
+  {
+   "bugid": 1756762,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "make all parts of gfx/layers/apz/test/mochitest/browser_test_background_tab_load_scroll.js pass"
+  },
+  {
+   "bugid": 1751108,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "nsLayoutUtils.h:3077:54: runtime error: -nan is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1129492,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Firefox content process has a live connection to the X11 server."
+  },
+  {
+   "bugid": 1756802,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Utility Process shows as GeckoMain in profiler"
+  },
+  {
+   "bugid": 1755318,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Make PeerConnectionImpl cycle-collected"
+  },
+  {
+   "bugid": 1751010,
+   "status": "NEW",
+   "component": "Core:Widget: Win32",
+   "summary": "Ensure Private Browsing Mode windows are separate from non-private windows in the Windows taskbar"
+  },
+  {
+   "bugid": 1757565,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Explicitly cast from size_t to uint32_t in nsTStringLengthStorage."
+  },
+  {
+   "bugid": 1755434,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove debugger devtools-utils package"
+  },
+  {
+   "bugid": 1639020,
+   "status": "REOPENED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/client/shared/test/browser_filter-editor-04.js | Should reorder elements correctly - Got contrast, expected blur"
+  },
+  {
+   "bugid": 1756533,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "devtools.inspector.compatibility.target-browsers should only holds id and status of selected browsers"
+  },
+  {
+   "bugid": 1756620,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Remove devtools/shared/compatibility/dataset/browsers.json"
+  },
+  {
+   "bugid": 1756200,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Change multi-line text area feature to use mostly CSS"
+  },
+  {
+   "bugid": 1757488,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Disable best match blocking"
+  },
+  {
+   "bugid": 1757622,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Change the best match SUMO URL to use the firefox-suggest slug"
+  },
+  {
+   "bugid": 1747689,
+   "status": "REOPENED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Create a \"Save\" API for EditBookmarks.js"
+  },
+  {
+   "bugid": 1756113,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Inside the Download Panel some elements have focus ring, others don't"
+  },
+  {
+   "bugid": 1753861,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "On macOS, setting the home page by dragging tabs breaks the tabs."
+  },
+  {
+   "bugid": 1754638,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Remove or update probes expiring in Firefox 100: installation.first_seen#first_seen before Gecko version increases to 100 on 2022-03-08"
+  },
+  {
+   "bugid": 1756178,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Enhancement] Consider opening the “Learn more” link from the private browsing page in a new tab"
+  },
+  {
+   "bugid": 1752149,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Changes in PDF forms are not saved when overwriting an existing saved file from a loaded file:/// pdf."
+  },
+  {
+   "bugid": 1743486,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "more cut over for resistfingerprinting API:  UseStandinsForNativeColors and Appwindow"
+  },
+  {
+   "bugid": 1756385,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Sidebar toggle toolbar widget remains checked in customize mode"
+  },
+  {
+   "bugid": 1756700,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "GPU process suspected to introduce ~128ms regression on Moto G5 to COLD VIEW nav start fenix benchmark"
+  },
+  {
+   "bugid": 1757523,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add \"--no-install\" option to \"mach puppeteer-test\" to not always install the package"
+  },
+  {
+   "bugid": 1700292,
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Marks not available for horizontal scrollbar, i.e. pages with `writing-mode: vertical-lr`"
+  },
+  {
+   "bugid": 1756579,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Allow hiding snapshot groups"
+  },
+  {
+   "bugid": 1757554,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Allow updating individual properties in SnapshotGroups.updateMetadata."
+  },
+  {
+   "bugid": 1754262,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Eliminate preprocessor %includes from toolkit checkbox stylesheets"
+  },
+  {
+   "bugid": 1755670,
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Remove preprocessing conditionals from videocontrols.css"
+  },
+  {
+   "bugid": 312891,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "[RTL] Right-click menu doesn't appear in the left of the mouse cursor"
+  },
+  {
+   "bugid": 1757399,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | xpcshell.ini:toolkit/mozapps/extensions/test/xpcshell/test_loadManifest_isPrivileged.js | test_temporary_experiments_enabled - [test_temporary_experiments_enabled : 83] addon.isPrivil when Gecko 99 merges to Beta on 2022-03-08"
+  }
+ ],
+ "fixed": 52,
+ "total": 61,
+ "restricted": 1
+}
