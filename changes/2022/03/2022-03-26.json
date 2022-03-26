@@ -1,0 +1,292 @@
+{
+ "date": "2022-03-26",
+ "buildid": "20220326092842",
+ "cset": "6498a0eab61187297f034916680274b2df9e50e9",
+ "bugs": [
+  {
+   "bugid": 1759137,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "FFMPEG 5.0 Crash in [@ av_buffer_ref]"
+  },
+  {
+   "bugid": 1761392,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "YouTube Livestream audio \"pitch corrected\" after landing of Bug 1760774"
+  },
+  {
+   "bugid": 1761580,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update AudioIPC branches"
+  },
+  {
+   "bugid": 1760579,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove layout.css.moz-locale-dir.content.enabled."
+  },
+  {
+   "bugid": 1760726,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Failed webgl.linkProgram on CURRENT_PROGRAM should cause draws to fail"
+  },
+  {
+   "bugid": 1760786,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Ensure we only use WebGL in the content process on Android for workers"
+  },
+  {
+   "bugid": 1728332,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[Experiment] Pinned tabs of the same domain are initially loaded in separate Shared Web Content processes"
+  },
+  {
+   "bugid": 1761459,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Make AssertIsOnWorkerThread independent from mWorkerPrivate in worker scopes."
+  },
+  {
+   "bugid": 1734886,
+   "status": "REOPENED",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement DOM TransformStreams"
+  },
+  {
+   "bugid": 1761257,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Perma dom/workers/test/test_worker_interfaces.html | false: If this is failing: DANGER, are you sure you want to expose the new interface Tag to all webpages as a property of WebAssembly? Do not make a change... when Gecko 100 merges to Beta on 2022-04-04"
+  },
+  {
+   "bugid": 1761200,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::TextAttrsMgr::GetAttributes]"
+  },
+  {
+   "bugid": 1761369,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "mochitest profiles captured with --profiler should include content child processes"
+  },
+  {
+   "bugid": 1761299,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Profiler markers disappear when increasing the window width"
+  },
+  {
+   "bugid": 1757407,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Move l10nregistry to mozilla-central"
+  },
+  {
+   "bugid": 1761432,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Tidy up the script load request's progress enum"
+  },
+  {
+   "bugid": 1666059,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Plex overlays a transparent button on top of text, causing invisible text in high contrast mode"
+  },
+  {
+   "bugid": 1757110,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Migrate new/delete to UniquePtr in nsTableFrame.cpp"
+  },
+  {
+   "bugid": 1755902,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Support Port Prefixed QNAMEs"
+  },
+  {
+   "bugid": 1760660,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add  WebSocketChannel thread-safety annotations"
+  },
+  {
+   "bugid": 1761239,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "use an EnumSet for nsIScrollableFrame::IsScrollAnimating"
+  },
+  {
+   "bugid": 1754896,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for D-TRUST EV Root CA 1 2020 root certificate"
+  },
+  {
+   "bugid": 1761438,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Stop using 8.3 names in PSM"
+  },
+  {
+   "bugid": 1759931,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Implement some missing outbound-rtp stats."
+  },
+  {
+   "bugid": 1760276,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Don't use move-to-rect to place popups in area of main window"
+  },
+  {
+   "bugid": 1751281,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Enable logging Windows messages without changing #defines"
+  },
+  {
+   "bugid": 1761408,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Cursor stuck at \"resize\" state after moving into a non-maximised Firefox window's chrome area"
+  },
+  {
+   "bugid": 1761509,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Perma [Tier 2] /builds/worker/workspace/obj-build/dist/include/WinUtils.h:99:13: error: no template named 'unordered_map' in namespace 'std'"
+  },
+  {
+   "bugid": 1207753,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Add static thread-safety lock/mutex analysis based on clang GUARDED_BY()"
+  },
+  {
+   "bugid": 1761548,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add basic locking to nsStorageStream"
+  },
+  {
+   "bugid": 1761579,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix thread-safety annotations for ReentrantMonitor.h"
+  },
+  {
+   "bugid": 1758666,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Automatically generate Window rep stub"
+  },
+  {
+   "bugid": 1758294,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Download panel context menu acts on the first item in the list instead of the one clicked on"
+  },
+  {
+   "bugid": 1760991,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Add \"my firefox\" shell page"
+  },
+  {
+   "bugid": 1754065,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Save to Pocket refresh, sync up and implement utm params for all links and action in the new panels"
+  },
+  {
+   "bugid": 1752853,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Stop using a worker to write session restore information"
+  },
+  {
+   "bugid": 1758686,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Mac] Text is not visible at hover on about:config page on high contrast settings."
+  },
+  {
+   "bugid": 1760342,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove moz-lwtheme-{brighttext,darktext}"
+  },
+  {
+   "bugid": 1761441,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [Tier 2] FileToBugzillaMappingError: Missing Bugzilla component: third_party/js/cfworker/LICENSE.md - Set the BUG_COMPONENT in the moz.build file to fix the issue."
+  },
+  {
+   "bugid": 1553931,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add eslint-plugin-react-hooks to mozilla central"
+  },
+  {
+   "bugid": 1761326,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove usage of ChromeUtils.import with second param from AddonManager.jsm"
+  },
+  {
+   "bugid": 1757849,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Add entry for OS temp dir to PathUtils"
+  },
+  {
+   "bugid": 1761354,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove the NativeFileWatcher"
+  },
+  {
+   "bugid": 1761268,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Perma toolkit/components/glean/tests/xpcshell/test_GIFFTIPC.js | xpcshell return code: 0 when Gecko 99 merges to release on 2022-03-28"
+  },
+  {
+   "bugid": 1761072,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Unable to debug xpcshell-tests involving add-on manager (Error: Duplicate BroadcastConduit method name recvPortConnect)"
+  },
+  {
+   "bugid": 1745819,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Require granted host permission for content scripts in mv3"
+  },
+  {
+   "bugid": 1748546,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "action namespace persistent listeners"
+  },
+  {
+   "bugid": 1760146,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Don't import XPIProvider.jsm in Extension.jsm"
+  }
+ ],
+ "fixed": 45,
+ "total": 47,
+ "restricted": 1
+}
