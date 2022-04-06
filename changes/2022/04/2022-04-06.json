@@ -1,0 +1,418 @@
+{
+ "date": "2022-04-06",
+ "buildid": "20220406093646",
+ "cset": "cd1e11d59e128a09f246adfb9211a1d894d623bc",
+ "bugs": [
+  {
+   "bugid": 1760804,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "148.38 - 82.72% ts_paint_webext / startup_about_home_paint + 12 more (Windows) regression on Thu March 17 2022"
+  },
+  {
+   "bugid": 1762531,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Switch media/libnestegg to mach vendoring model"
+  },
+  {
+   "bugid": 1762966,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add a pref to force the number of dropped frames to 0."
+  },
+  {
+   "bugid": 1763158,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma /css/css-color-adjust/rendering/dark-color-scheme/svg-as-image.html | Testing http://web-platform.test:8000/css/css-color-adjust/rendering/dark-color-scheme/svg-as-image.html == when Gecko 101 merges to Beta on 2022-05-02"
+  },
+  {
+   "bugid": 1737180,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Enable compositor animation when using scroll-timeline"
+  },
+  {
+   "bugid": 1728999,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Support of CanvasRenderingContext2D.direction"
+  },
+  {
+   "bugid": 1762965,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "In some case .isInstance returns false while instanceof returns true"
+  },
+  {
+   "bugid": 1762993,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "InterfaceIsInstance is a copypaste of InterfaceHasInstance"
+  },
+  {
+   "bugid": 1762661,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add JS::Handle-supported version for Promise::ThenWithCycleCollectedArgs"
+  },
+  {
+   "bugid": 1762796,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "slowdown on  a website due to slow Element.classList.values() (which slows down uBlock)"
+  },
+  {
+   "bugid": 1761395,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Clean up SplitNodeResult  users and make them aware of bug 1735608"
+  },
+  {
+   "bugid": 1735746,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Block external protocol handler with sandbox."
+  },
+  {
+   "bugid": 1761483,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Streams",
+   "summary": "Crash [@ mozilla::dom::ReadableByteStreamControllerFillReadRequestFromQueue]"
+  },
+  {
+   "bugid": 1750677,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Update about:profiling's \"processcpu\" description and experimental-ness when front-end is final"
+  },
+  {
+   "bugid": 1751961,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "The `tabs.captureVisibleTab` returns wrong image if `iframe` is on the page AND user has `devicePixelRatio` above 1 (monitor scaling)"
+  },
+  {
+   "bugid": 1762572,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "gfx::FeatureState::AssertInitialized() failure when blocklisting GPU process"
+  },
+  {
+   "bugid": 1763053,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Disable avoid copying hardware decoded video on Win <  10"
+  },
+  {
+   "bugid": 1762730,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu from upstream"
+  },
+  {
+   "bugid": 1762530,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Introduce SurfaceBuilder"
+  },
+  {
+   "bugid": 1762810,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ensure backdrop root containers get placed inside APZ container"
+  },
+  {
+   "bugid": 1762812,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unused `picture_cache_spatial_nodes` from tile cache builder"
+  },
+  {
+   "bugid": 1440727,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "StructuredClone reader silently ignores extraneous bytes at the end"
+  },
+  {
+   "bugid": 1762575,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Check for overridden arguments objects in more cases"
+  },
+  {
+   "bugid": 1762933,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix compiler errors on C++20"
+  },
+  {
+   "bugid": 1763107,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "IsPackedArray intrinsic no longer matches C++ function"
+  },
+  {
+   "bugid": 1740683,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support extra formals when replacing the rest array for MApplyArray and MConstructArray"
+  },
+  {
+   "bugid": 1763054,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Get rid of local loadConstantDouble/Float variations"
+  },
+  {
+   "bugid": 1763099,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove unused code in js/src/jit"
+  },
+  {
+   "bugid": 1762413,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Translate emscripten's sequence for _mm_maddubs_epi16 into MozWHPMADDUBSW"
+  },
+  {
+   "bugid": 1761995,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Do not add content in `content-visibility: hidden` elements to the display list"
+  },
+  {
+   "bugid": 1763001,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent layout/base/tests/chrome/test_color_scheme_browser.xhtml | AbortError: Actor 'SpecialPowers' destroyed before query 'Spawn' was resolved - Should not throw any errors"
+  },
+  {
+   "bugid": 1752475,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Store distinct \"default\" samesite attribute value even if the laxByDefault pref is false"
+  },
+  {
+   "bugid": 1763121,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "nsIDOMWindowUtils::sendNativeTouchpadPan should use an observer to notify when the event has been sent to the destination widget"
+  },
+  {
+   "bugid": 1761203,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ __strlen_avx2 | __vfprintf_internal]"
+  },
+  {
+   "bugid": 1761756,
+   "status": "VERIFIED",
+   "component": "Core:Web Painting",
+   "summary": "Assertion failure: mDirtyRect.Intersects(mOuterRect), at /layout/painting/nsCSSRenderingBorders.cpp:2079"
+  },
+  {
+   "bugid": 1763207,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Enable peer connection through the socket process by default"
+  },
+  {
+   "bugid": 1616937,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Stop using JSImpl for RTCRtpSender"
+  },
+  {
+   "bugid": 1624989,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Move RTCPeerConnection's operations chain to c++"
+  },
+  {
+   "bugid": 1742877,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Sharing bar cannot be minimized when Firefox is built with the macOS 11 SDK"
+  },
+  {
+   "bugid": 1762521,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "widget/windows/JumpListBuilder.cpp fails thread safety checks"
+  },
+  {
+   "bugid": 1751796,
+   "status": "RESOLVED",
+   "component": "Core:XML",
+   "summary": "XML parsererror eats two first letters"
+  },
+  {
+   "bugid": 1519200,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "nsIFile returns different error codes if the file in question is already missing"
+  },
+  {
+   "bugid": 1758709,
+   "status": "RESOLVED",
+   "component": "Core:XSLT",
+   "summary": "Add Telemetry for XSLT use"
+  },
+  {
+   "bugid": 1762849,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Automatically generate DateTime rep stubs"
+  },
+  {
+   "bugid": 1748986,
+   "status": "NEW",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_urlbar_event_telemetry_engagement.js | Test timed out -"
+  },
+  {
+   "bugid": 1757104,
+   "status": "NEW",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent browser/components/places/tests/browser/browser_controller_onDrop_sidebar.js | Test timed out -"
+  },
+  {
+   "bugid": 1762723,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Always first item drag & dropped from downloads list"
+  },
+  {
+   "bugid": 1762431,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Visual/presentation fixes for a11y on PBM 100"
+  },
+  {
+   "bugid": 1762090,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Lag and stutter on about:newtab settings pane"
+  },
+  {
+   "bugid": 1762941,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Save to Pocket refresh turn on for nightly only"
+  },
+  {
+   "bugid": 1762785,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Fix typo in prefs.js"
+  },
+  {
+   "bugid": 1732056,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Keep a history of the last X synchronizations status (and errors)"
+  },
+  {
+   "bugid": 1752734,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Full page screenshots are scaled down without warning"
+  },
+  {
+   "bugid": 1760936,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Unloaded tab loads urlbar string in default search engine instead of the correct page"
+  },
+  {
+   "bugid": 1759786,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Don't allow file:// uri schemes to be able to sent to other devices"
+  },
+  {
+   "bugid": 1761274,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "[Automated review] setState, setObjectState ... cause false positive `is not defined` warnings"
+  },
+  {
+   "bugid": 1755515,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "symbols_archive.py should use zstandard directly"
+  },
+  {
+   "bugid": 1760675,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Avoid downloading `run-task` and `fetch-content` script from hg.mozilla.org"
+  },
+  {
+   "bugid": 1763074,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Permanent backfill KeyError: 'env' for signing tasks"
+  },
+  {
+   "bugid": 1763022,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Permanent Android(lint) /builds/worker/checkouts/gecko/mobile/android/geckoview/src/main/java/org/mozilla/geckoview/GeckoRuntime.java:107:3 | Deprecated method should be removed. Expected removal version: 100 < current version: 101 (GV10)"
+  },
+  {
+   "bugid": 1763252,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Signing",
+   "summary": "Perma exception signingscript.exceptions.SigningScriptError: No autograph config found with cert type project:releng:signing:cert:release-signing and formats ['mar']"
+  },
+  {
+   "bugid": 1758369,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card logo in save/edit panel is displayed as generic for certain websites"
+  },
+  {
+   "bugid": 1762174,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "The “settings.disable” event is not displayed on the “about:telemetry#events-tab” page when the “Enable picture-in-picture video controls” option is unchecked"
+  },
+  {
+   "bugid": 1762380,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "The PiP Play/Pause button has a border when the PiP window is focused"
+  },
+  {
+   "bugid": 1762921,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Intermittent toolkit/components/printing/tests/browser_print_stream.js | Uncaught exception in test - Sizes should (almost) match - timed out after 50 tries."
+  },
+  {
+   "bugid": 1763000,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Enable ESLint rule no-unused-vars for chrome/test/unit/test_no_remote_registration.js, removing global directive"
+  },
+  {
+   "bugid": 1762913,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Restore changing the color of toplevel menubar items in inactive windows on Windows"
+  },
+  {
+   "bugid": 1763224,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Helper application dialog swallows exceptions"
+  }
+ ],
+ "fixed": 57,
+ "total": 68,
+ "restricted": 2
+}
