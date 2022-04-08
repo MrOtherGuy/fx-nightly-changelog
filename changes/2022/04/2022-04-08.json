@@ -1,0 +1,484 @@
+{
+ "date": "2022-04-08",
+ "buildid": "20220408094506",
+ "cset": "f9afaaf33533d59d88eb31c159cf5e6676808c30",
+ "bugs": [
+  {
+   "bugid": 1732416,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::PDMFactory::CreatePDMs] from accessing pref media.decoder-doctor.wmf-disabled-is-failure"
+  },
+  {
+   "bugid": 1762125,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "No HW video decoding"
+  },
+  {
+   "bugid": 1763640,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add StartBuffering marker."
+  },
+  {
+   "bugid": 1762474,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-conditional-3] Make conditionText readonly"
+  },
+  {
+   "bugid": 1763644,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Basic @container boilerplate and parsing."
+  },
+  {
+   "bugid": 1763424,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Crash in [@ mozilla::dom::ImageBitmap::CreateInternal]"
+  },
+  {
+   "bugid": 1761182,
+   "status": "REOPENED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent Assertion failure: mRawPtr, at /builds/worker/workspace/obj-build/dist/include/mozilla/StaticPtr.h:155"
+  },
+  {
+   "bugid": 1739691,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Media player no longer focused when clicking on background"
+  },
+  {
+   "bugid": 1759624,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WebAuthn: support empty pubKeyCredParams on Windows"
+  },
+  {
+   "bugid": 1763390,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Destroy the cycle collector explicitely in WorkerThreadPrimaryRunnable before checking the global scope sentinels."
+  },
+  {
+   "bugid": 1763280,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Enable avoid copying hardware decoded video on intel GPU on Window on nightly"
+  },
+  {
+   "bugid": 1763679,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::write_func]"
+  },
+  {
+   "bugid": 1763368,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Misplaced Bengali letters since HarfBuzz update"
+  },
+  {
+   "bugid": 1762730,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu from upstream"
+  },
+  {
+   "bugid": 1751693,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add telemetry probe for measuring glyph rasterization time"
+  },
+  {
+   "bugid": 1763307,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "wrench: remove pre-1.59 Rust code"
+  },
+  {
+   "bugid": 1763405,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Use a higher priority for the renderer thread"
+  },
+  {
+   "bugid": 1763574,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ webrender::render_task_graph::RenderTaskGraphBuilder::end_frame]"
+  },
+  {
+   "bugid": 1763642,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Stale blob image key (delete)!), at /builds/worker/checkouts/gecko/gfx/layers/wr/WebRenderBridgeParent.cpp:675"
+  },
+  {
+   "bugid": 1763643,
+   "status": "RESOLVED",
+   "component": "Core:ImageLib",
+   "summary": "Turn on blob recordings for SVG images"
+  },
+  {
+   "bugid": 1744967,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Run Record&Tuple tests on Treeherder"
+  },
+  {
+   "bugid": 1763103,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Don't require extended functions when methods don't use [[HomeObject]]"
+  },
+  {
+   "bugid": 1763501,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !IsInternalDotName(cx, id), at vm/EnvironmentObject.cpp:727"
+  },
+  {
+   "bugid": 1763609,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262, April 2022"
+  },
+  {
+   "bugid": 1761947,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Differential testing: miscompute when GC during scalar-replaced applyArray"
+  },
+  {
+   "bugid": 1762923,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fold s[idx].charCodeAt(0) to s.charCodeAt(idx)"
+  },
+  {
+   "bugid": 1763163,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Reduce register usage in LIsNullOrLikeUndefinedV, LNotV, and LIsNullOrLikeUndefinedV"
+  },
+  {
+   "bugid": 1763351,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Don't guard on prototype object identity for instanceof"
+  },
+  {
+   "bugid": 1737500,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "mailchimp setup pages fails on loading"
+  },
+  {
+   "bugid": 1763396,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma layout/base/tests/chrome/test_color_scheme_browser.xhtml | dynamic-test: remote should be light - got \"dark\", expected \"light\" when Gecko 101 merges to Beta on 2022-05-02"
+  },
+  {
+   "bugid": 1733232,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Subtitle/Closed Caption not displaying after upgrade firefox to 92"
+  },
+  {
+   "bugid": 1763495,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Simplify styles in TopLevelVideoDocument.css"
+  },
+  {
+   "bugid": 1762407,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Do not scroll content with `content-visibility: hidden` ancestors into view"
+  },
+  {
+   "bugid": 1763310,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Report ARM64 Windows 11+ as \"x86_64\" (and continue to report Windows 10 as \"x86\")"
+  },
+  {
+   "bugid": 1757917,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Part of \"Browse\" menu becomes displayed on wtol.com with ETP enabled"
+  },
+  {
+   "bugid": 1763308,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "ipcclientcerts: Remove pre-1.59 Rust check from moz.build"
+  },
+  {
+   "bugid": 1755316,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Audio decoding in utility process"
+  },
+  {
+   "bugid": 1682326,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Chrome IndexedDB operations seem to be potentially started after shutdown started"
+  },
+  {
+   "bugid": 1757186,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Consider to unnest the nested QuotaManager::Shutdown timers"
+  },
+  {
+   "bugid": 1759324,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "Update libvpx to v1.11.0"
+  },
+  {
+   "bugid": 1741293,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Download icon is almost invisible with system theme (GNOME Adwaita Dark) after a download has been completed"
+  },
+  {
+   "bugid": 1761870,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Dragging tab window hangs/crashes browser"
+  },
+  {
+   "bugid": 1763591,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Clean up a bit nsWaylandDisplay."
+  },
+  {
+   "bugid": 1617283,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "AudioSession COM Cleanup"
+  },
+  {
+   "bugid": 239460,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Use const static members for XPIDL constants instead of anonymous enums"
+  },
+  {
+   "bugid": 1435766,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "make the directory service use GetSpecialSystemDirectory for mac-specific atoms"
+  },
+  {
+   "bugid": 1762749,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix ESLint rule warnings for no-unused-vars in xpcom/tests/unit/test_localfile.js and xpcom/tests/unit/test_hidden_files.js"
+  },
+  {
+   "bugid": 1747105,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Assert debugger frontend behavior against many sources using the same URL"
+  },
+  {
+   "bugid": 1761052,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement remotely configurable frequency capping for non-sponsored and sponsored Suggest suggestions"
+  },
+  {
+   "bugid": 1761058,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement telemetry for Suggest suggestion frequency capping"
+  },
+  {
+   "bugid": 1763262,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove unused  toggleMenuButtonInToolbar"
+  },
+  {
+   "bugid": 1762972,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Intermittent TV-fis browser/components/enterprisepolicies/tests/browser/disable_developer_tools/browser_policy_disable_developer_tools.js | devtools should be disabled by policy. - Got true, expected false"
+  },
+  {
+   "bugid": 1725756,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "High frequency browser/base/content/test/general/browser_minimize.js | Docshell should be active when starting the test -"
+  },
+  {
+   "bugid": 1762909,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Get rid of Adobe Flash hang handler"
+  },
+  {
+   "bugid": 1762433,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Windows HCM fixes for PBM 100"
+  },
+  {
+   "bugid": 1762477,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add test coverage for resetMessageState in ASRouter.jsm"
+  },
+  {
+   "bugid": 1763470,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Accessibility updates for FX100 upgrade dialog"
+  },
+  {
+   "bugid": 1763486,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Improve heart animation image asset for dark mode"
+  },
+  {
+   "bugid": 1754220,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Testing after force enrolling in an experiment doesn't work until restart"
+  },
+  {
+   "bugid": 1753304,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Ensure save to Pocket refresh panels have correct initial heights and no loading jank"
+  },
+  {
+   "bugid": 1762243,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Design tweaks for Components"
+  },
+  {
+   "bugid": 1751093,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Clean up Cloud Storage API and its usage in about:preferences"
+  },
+  {
+   "bugid": 1761652,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Shutdown crash (IOUtils: waiting for profileBeforeChange IO to complete | CrashMonitor: Writing notifications to file after receiving profile-before-change and awaiting all checkpoints written] -- when disabling permanent private browsing from settings"
+  },
+  {
+   "bugid": 1763712,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Empty string passed to getElementById() when creating lazy tab"
+  },
+  {
+   "bugid": 1706320,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The space between the rows of text of the “Import Error” and “Import Complete” modals seems larger than it should be"
+  },
+  {
+   "bugid": 1763618,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The “Create New Login” button on “about:logins” is not visible at smaller window sizes"
+  },
+  {
+   "bugid": 1659593,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make `mach vendor python` produce cross-platform, cross-Python-version results"
+  },
+  {
+   "bugid": 1762547,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Building firefox with gpsd support on ubuntu 20.04 fail"
+  },
+  {
+   "bugid": 1763305,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Update minimum rust version to >= 1.59.0"
+  },
+  {
+   "bugid": 1763392,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "SDKProcessor trips up on nested classes containing a method with an argument or parameter of the outer class type"
+  },
+  {
+   "bugid": 1673104,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | Page removing and adding event handlers should correctly fire event handlers as they are added and then removed (page.spec.ts) | expected FAIL"
+  },
+  {
+   "bugid": 1730642,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement basic support for \"browsingContext.navigate\" command"
+  },
+  {
+   "bugid": 1763047,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Reduce code duplication in LoginAutoComplete and introduce async filling by LoginManagerParent"
+  },
+  {
+   "bugid": 1755274,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Intermittent toolkit/components/pictureinpicture/tests/browser_telemetry_togglePiP.js | Test timed out -"
+  },
+  {
+   "bugid": 1762085,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add PiP Video-Adapter for handling Funimation Subtitles"
+  },
+  {
+   "bugid": 1763190,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "The subtitles are not displayed in PiP in the beta channel for neither of the streaming services"
+  },
+  {
+   "bugid": 1763577,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Implement initial snapshots expiration"
+  },
+  {
+   "bugid": 1762394,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "persist menu creation in startupCache"
+  },
+  {
+   "bugid": 1758475,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Support StorageArea.onChanged (onChanged on storage.local/sync/managed)"
+  }
+ ],
+ "fixed": 64,
+ "total": 79,
+ "restricted": 3
+}
