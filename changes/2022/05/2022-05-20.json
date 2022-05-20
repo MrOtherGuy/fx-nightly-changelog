@@ -1,0 +1,424 @@
+{
+ "date": "2022-05-20",
+ "buildid": "20220520093126",
+ "cset": "6092ad95d1178aaa55787cffeab84ad4b5be17f5",
+ "bugs": [
+  {
+   "bugid": 1767899,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use EventTargetCapability to protect members in TrackBuffersManager"
+  },
+  {
+   "bugid": 1770086,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent LeakSanitizer | leak at Then, mozilla::RemoteDecoderManagerChild::LaunchUtilityProcessIfNeeded, mozilla::RemoteDecoderManagerChild::Supports, mozilla::RemoteDecoderModule::Supports"
+  },
+  {
+   "bugid": 1769612,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "More container queries plumbing."
+  },
+  {
+   "bugid": 1770088,
+   "status": "ASSIGNED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Enable Accelerated Canvas2D on Linux Nightly"
+  },
+  {
+   "bugid": 1770103,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Handle StrokeLine in DrawTargetWebgl"
+  },
+  {
+   "bugid": 1745054,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of dom.webcomponents.elementInternals.enabled pref"
+  },
+  {
+   "bugid": 1745058,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of dom.webcomponents.disabledFeatures.enabled pref"
+  },
+  {
+   "bugid": 1749663,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of dom.webcomponents.formAssociatedCustomElement.enabled"
+  },
+  {
+   "bugid": 1766469,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Assertion failure: isSome(), at /builds/worker/workspace/obj-build/dist/include/mozilla/Maybe.h:825"
+  },
+  {
+   "bugid": 1769009,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Reloading a page doesn't refresh the list of Web MIDI devices"
+  },
+  {
+   "bugid": 1770126,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Fix WindowsLocationProvider::Startup to not always initialize."
+  },
+  {
+   "bugid": 1769468,
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "Frequent wpt failures in /fetch/metadata/generated/*"
+  },
+  {
+   "bugid": 1740263,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement wasm-unsafe-eval"
+  },
+  {
+   "bugid": 1770037,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma Android 7.0 TEST-UNEXPECTED-OK | /referrer-policy/gen/srcdoc.meta/always/<random-tag>.http.html | expected CRASH"
+  },
+  {
+   "bugid": 1659025,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement transferable streams"
+  },
+  {
+   "bugid": 1770172,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Intermittent /streams/transferable/writable-stream.html | second write should wait for first underlying write to complete - promise_test: Unhandled rejection with value: object \"TypeError: resolveWrite is not a function\""
+  },
+  {
+   "bugid": 1769196,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix D3D11TextureIMFSampleImage::GetAsSourceSurface()"
+  },
+  {
+   "bugid": 1769499,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[RDD] We create X11/EGL headless GL context on Wayland"
+  },
+  {
+   "bugid": 1770235,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "DrawBlitProg::Draw non-vao path doesn't restore bindBuffer for restore of vertexAttribPointer"
+  },
+  {
+   "bugid": 1392106,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Intermittent letter missing in reftests on Windows 7"
+  },
+  {
+   "bugid": 1499459,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Intermittent reftest failures from a downloadable font failing to be used (on Windows 7)"
+  },
+  {
+   "bugid": 1743170,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "\"Hiragino Kaku Gothic ProN\" font is not available when Firefox is built with macOS 11 SDK"
+  },
+  {
+   "bugid": 1770163,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "ScaledFontDWrite mishandles the 'gasp' table ranges"
+  },
+  {
+   "bugid": 1769624,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "osx Intermittent Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Failure when starting actor), at /builds/worker/checkouts/gecko/ipc/glue/UtilityProcessManager.cpp:248"
+  },
+  {
+   "bugid": 1770082,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] js\\src\\jit-test\\tests\\gc\\bug-1768813.js | <path>\\bug-1768813.js:10:19 InternalError: too much recursion (code 3, args \"\") [0.2 s]"
+  },
+  {
+   "bugid": 1770096,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma Jit [tier 2] tests/jit-test/jit-test/tests/parser/stencil-asmjs.js | [CodeCoverage] Setting handlers for process 2224. (code -11, args \"\") [0.0 s]"
+  },
+  {
+   "bugid": 1768829,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Permafailing transform/partial-prerender-translate-6.html == transform/partial-prerender-translate-6-ref.html | image comparison, max difference: 255, number of differing pixels: 720000"
+  },
+  {
+   "bugid": 1739260,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Floats",
+   "summary": "hang with floats and aspect-ratio"
+  },
+  {
+   "bugid": 1744028,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/browser/browser_103_telemetry.js | Should have found an entry for EH_FINAL_RESPONSE at index 2 - false == true - JS frame :: resource://testing-common/TelemetryTestUtils.jsm :: assertHistogram :: line 309"
+  },
+  {
+   "bugid": 1745150,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "random immediate connection failures"
+  },
+  {
+   "bugid": 1681498,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Migrate users on network.cookie.lifetimePolicy=2 to sanitization prefs"
+  },
+  {
+   "bugid": 1765204,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Compositor hit test can target incorrect process in the presence of perspective transforms"
+  },
+  {
+   "bugid": 1769993,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Bring some sanity to nsPrintJob's scaling/shrink-to-fit logic"
+  },
+  {
+   "bugid": 1769999,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Remove the last of the nsPrintJob::mPrtPreview code"
+  },
+  {
+   "bugid": 1770199,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Remove the nsDeviceContextSpecWin::GetDPI override"
+  },
+  {
+   "bugid": 1763848,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ libc.so.6@0x1328a9 | libc.so.6@0xd7ff7 | libglib-2.0.so.0@0x92463]"
+  },
+  {
+   "bugid": 1769182,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Adjust RDD sandbox policy to allow VA-API with X11 EGL"
+  },
+  {
+   "bugid": 1769807,
+   "status": "ASSIGNED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ nsObserverService::AddObserver]"
+  },
+  {
+   "bugid": 1769935,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "add being in content process to conditions for partial bg image drawing"
+  },
+  {
+   "bugid": 1768360,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Crash in [@ mozalloc_abort | abort | gfileutils.c#2913]"
+  },
+  {
+   "bugid": 1770151,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Resize loop with select element bigger than the screen."
+  },
+  {
+   "bugid": 1767396,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Don't wake up the timer thread when removing any timer"
+  },
+  {
+   "bugid": 1769795,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Avoid updating codemirror empty lines on any debugger state update"
+  },
+  {
+   "bugid": 1761554,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "`ResourceCommand`'s `_cache` can grow indefinitely"
+  },
+  {
+   "bugid": 1769982,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "\"Devtools window actor throws exceptions when docshell is being destroyed"
+  },
+  {
+   "bugid": 1769771,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Dev Edition is not showing ShadowDOM stylesheet in the devtools anymore"
+  },
+  {
+   "bugid": 1769572,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Firefox crashes nastily if a request is resent from the devtools with a CONNECT method."
+  },
+  {
+   "bugid": 1700092,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Expose watcherTraits in target actors"
+  },
+  {
+   "bugid": 1701862,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Enable Stylesheet resources for all target"
+  },
+  {
+   "bugid": 1764347,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Introduce Browser Toolbox test for the Style Editor"
+  },
+  {
+   "bugid": 1769585,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Require a minimum character count for adaptive history autofill"
+  },
+  {
+   "bugid": 1681495,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "\"Delete cookies and site data when Nightly is closed\" should update sanitization prefs instead of network.cookie.lifetimePolicy"
+  },
+  {
+   "bugid": 1722228,
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "[macOS] Holding backspace while clearing out \"Search websites\" filter in \"Manage Cookies and Site Data\" marks domains for deletion"
+  },
+  {
+   "bugid": 1769250,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Check whether the addon is really present before trying to enable/disabling it"
+  },
+  {
+   "bugid": 1768518,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Create a colorway description section and display this in the new Colorway modal"
+  },
+  {
+   "bugid": 1770246,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove unused -moz-window-shadow: none uses after bug 1768285"
+  },
+  {
+   "bugid": 1769117,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Incomplete ValueError message for invalid SourcePath"
+  },
+  {
+   "bugid": 1769275,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "mach eslint only detects and fixes issues once"
+  },
+  {
+   "bugid": 1767346,
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Fenix content process priority is never lowered when creating new tabs"
+  },
+  {
+   "bugid": 1770010,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Bug]: Autofill fails, when I need to unlock bitwarden."
+  },
+  {
+   "bugid": 1770195,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "cleanup private method / internal command declarations in windowglobal/log.jsm"
+  },
+  {
+   "bugid": 1607498,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "about dialog's restart to update button does not get re-added if the restart is cancelled by the user (e.g. via onbeforeunload dialogs)"
+  },
+  {
+   "bugid": 1007656,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Support formatting the current stack using Log.jsm / Log.stackTrace()"
+  },
+  {
+   "bugid": 1768165,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Use the new updateDetailsAndRebuild from SnapshotSelector"
+  },
+  {
+   "bugid": 1769825,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Make sure the feature is turned on when running test in test_classifier.html"
+  },
+  {
+   "bugid": 1769828,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Do not assume there is only test table when running test_dbservice.js"
+  },
+  {
+   "bugid": 1769762,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Override navigator.plugins and navigator.mimeTypes for TikTok"
+  },
+  {
+   "bugid": 1739114,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Gate each privileged extension feature by a webextension permission"
+  },
+  {
+   "bugid": 1768522,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Tab Extension pages loaded receive API events and can trigger API method calls after the user navigated the tab to a page running in a different process and Fission is enabled"
+  }
+ ],
+ "fixed": 56,
+ "total": 69,
+ "restricted": 2
+}
