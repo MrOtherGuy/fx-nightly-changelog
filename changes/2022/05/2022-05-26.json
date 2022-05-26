@@ -1,0 +1,340 @@
+{
+ "date": "2022-05-26",
+ "buildid": "20220526093328",
+ "cset": "e7aef329a267c324e972b46f50dcea1d7a5bd956",
+ "bugs": [
+  {
+   "bugid": 1770558,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent LeakSanitizer | leak at RefPtr, mozilla::RemoteDecoderManagerChild::LaunchUtilityProcessIfNeeded, mozilla::RemoteDecoderManagerChild::Supports, mozilla::RemoteDecoderModule::Supports"
+  },
+  {
+   "bugid": 1770691,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[ffmpeg] Print better error messages"
+  },
+  {
+   "bugid": 1771154,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Crash in [@ mozilla::ipc::IProtocol::ChannelSend | mozilla::dom::PWebGLChild::SendDispatchCommands]"
+  },
+  {
+   "bugid": 1524237,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Crash in mozilla::ipc::ProcessLink::SendMessage | IPC_Message_Name=PContent::Msg_SetClipboard on attempt to copy much text into the clipboard"
+  },
+  {
+   "bugid": 1770395,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Followup work for bug 1760024"
+  },
+  {
+   "bugid": 1771137,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up a bit top layer code."
+  },
+  {
+   "bugid": 1770170,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Disable large-pipeto.js under TSAN (causes claim_expired errors on taskcluster)"
+  },
+  {
+   "bugid": 1766093,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Everything on youtube home page is highlighted blue/selected"
+  },
+  {
+   "bugid": 1685375,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "High frequency SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/gfx/src/X11Util.cpp:62:19 in mozilla::ScopedXErrorHandler::ScopedXErrorHandler(bool)"
+  },
+  {
+   "bugid": 1764589,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "WebGL not working with Mali-400 MP graphics card"
+  },
+  {
+   "bugid": 1770062,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Instructions for generating `wgpu_ffi_bindings.h` are out of date"
+  },
+  {
+   "bugid": 1752919,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make WebRender allow opacity in large images"
+  },
+  {
+   "bugid": 1769949,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Graphical glitches when pinch-zooming backdrop-filter in iframe with gfx.webrender.low-quality-pinch-zoom=true"
+  },
+  {
+   "bugid": 1769953,
+   "status": "UNCONFIRMED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Backdrop-filter effect disappears on interaction with overlay scrollbars"
+  },
+  {
+   "bugid": 1770241,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Utility process child blocked on startup from audio utility"
+  },
+  {
+   "bugid": 1765358,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support inline allocation of inlined arguments object"
+  },
+  {
+   "bugid": 1767834,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Pass \"collation\" property to ICU"
+  },
+  {
+   "bugid": 1770634,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Perma SM wasm/jsapi/global/constructor.any.js | (args: \"\") [0.2 s]"
+  },
+  {
+   "bugid": 1730284,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Loading recent DOOM files on wadcmd.com takes ~40s on Firefox, ~2s in Chrome"
+  },
+  {
+   "bugid": 1769774,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Stop tracking painted pres shells."
+  },
+  {
+   "bugid": 1769778,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Replace deprecated std::result_of_t with std::invoke_result_t"
+  },
+  {
+   "bugid": 1635092,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Save one main thread loop to nsHttpChannel::AsyncOpen of IPC'ed channels"
+  },
+  {
+   "bugid": 1762874,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "make sure to draw swipe to nav ui element opaque if velocity pushes us over success threshold"
+  },
+  {
+   "bugid": 1766745,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Enable swipe-to-nav on Windows by default for early beta"
+  },
+  {
+   "bugid": 1770743,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Page keeps refreshing at databricks.com with ETP set to STANDARD"
+  },
+  {
+   "bugid": 1770388,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable Utility Audio Decoder on Nightly for OpenBSD"
+  },
+  {
+   "bugid": 1696504,
+   "status": "REOPENED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Build Firefox with the macOS 11 SDK in CI"
+  },
+  {
+   "bugid": 1771104,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Utility popups may be invisible or dislocated"
+  },
+  {
+   "bugid": 1768903,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Cursor gets hidden when executing various keyboard shortcuts"
+  },
+  {
+   "bugid": 1757635,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Apply NS_IMPL_CYCLE_COLLECTION_WITH_JS_MEMBERS"
+  },
+  {
+   "bugid": 1771110,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Modify the JSM-ESM shim to use .sys.mjs extension"
+  },
+  {
+   "bugid": 1771112,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Temporarily remove ChromeUtils.importModule API to prevent shipping it in ESR 102"
+  },
+  {
+   "bugid": 1770926,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent [TV-fis] devtools/client/webconsole/test/browser/browser_webconsole_block_mixedcontent_securityerrors.js | Uncaught exception in test - at chrome://mochitests/content/browser/devtools/client/shared/test/shared-head.js:1056 - Error: Failed wa"
+  },
+  {
+   "bugid": 1770204,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Simplify breakpoint list selectors"
+  },
+  {
+   "bugid": 1770257,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix DevTools eslint `react/prop-types` errors batch 1"
+  },
+  {
+   "bugid": 1770941,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix DevTools eslint `react/prop-types` errors batch 2"
+  },
+  {
+   "bugid": 1770959,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger parse URL via whatwg-url module and is slow"
+  },
+  {
+   "bugid": 1770961,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "EmptyLines's disableEmptyLines method is still called too many times"
+  },
+  {
+   "bugid": 1767473,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remaining implementation of recently closed tabs list in Firefox View"
+  },
+  {
+   "bugid": 1771004,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Update .hgignore and .gitignore to ignore Storybook built bundles"
+  },
+  {
+   "bugid": 1771133,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused brand names from brand.dtd"
+  },
+  {
+   "bugid": 1751450,
+   "status": "NEW",
+   "component": "Firefox:Installer",
+   "summary": "Unsigned DLLs used during per-user installation on Windows, prevents use of AppLocker"
+  },
+  {
+   "bugid": 1770872,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_focus_promo.js | Focus promo is shown for allowed region - null == true - got null, expected true (operator ==)"
+  },
+  {
+   "bugid": 1756995,
+   "status": "ASSIGNED",
+   "component": "Firefox:Session Restore",
+   "summary": "Make nsDocShell::EndPageLoad session store run off timer"
+  },
+  {
+   "bugid": 1771079,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "TPS - validate is not a function (try 2)"
+  },
+  {
+   "bugid": 1766293,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Implement option to reset the home page"
+  },
+  {
+   "bugid": 1768744,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Active theme selection should be announced to screen readers."
+  },
+  {
+   "bugid": 1770860,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add cargo-vet state to m-c"
+  },
+  {
+   "bugid": 1771189,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Permanent UVC update-verify-config TypeError: '<' not supported between instances of 'NoneType' and 'NoneType' when Gecko 102 merges to Beta on 2022-05-30"
+  },
+  {
+   "bugid": 1771016,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Update `./mach doctor` to check for erroneously enabled Artifact Builds"
+  },
+  {
+   "bugid": 1759052,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add a gv-junit webContentIsolationStrategy=0 (IsolateNothing)"
+  },
+  {
+   "bugid": 1765442,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Large lag from identifyAutofillFields on page with many forms"
+  },
+  {
+   "bugid": 1771152,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Uncaught TypeError: mutation.target.closest is not a function when opening edit credit card dialog"
+  },
+  {
+   "bugid": 1759192,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "When the user mutes a Hulu / HBOMax video in PiP and closes it, he cannot reactivate sound from the main window/player"
+  },
+  {
+   "bugid": 1770372,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Printing with Save to PDF crashes Firefox if window is closed while Fx is saving the PDF"
+  }
+ ],
+ "fixed": 48,
+ "total": 55,
+ "restricted": 3
+}
