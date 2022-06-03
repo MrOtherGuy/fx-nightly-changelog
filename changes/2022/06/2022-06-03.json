@@ -1,0 +1,412 @@
+{
+ "date": "2022-06-03",
+ "buildid": "20220603093350",
+ "cset": "2f53c261903ebb5437dcc75c0a2b0b3572f60658",
+ "bugs": [
+  {
+   "bugid": 1772097,
+   "status": "RESOLVED",
+   "component": "Cloud Services:General",
+   "summary": "Use plain object for lazy getter in services/"
+  },
+  {
+   "bugid": 1771796,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Some scrollbar style cleanups."
+  },
+  {
+   "bugid": 1768593,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "createImageBitmap fails for SvgImageElement with no dimensions"
+  },
+  {
+   "bugid": 1771504,
+   "status": "VERIFIED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Assertion failure: mHandle, at /dom/canvas/SourceSurfaceWebgl.cpp:116"
+  },
+  {
+   "bugid": 1772403,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: WebGL",
+   "summary": "Warn once on LINEAR texture compare"
+  },
+  {
+   "bugid": 1692609,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "resist-fingerprinting makes it hard to have smooth (60hz) animations"
+  },
+  {
+   "bugid": 1759504,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement text recognition component on macOS."
+  },
+  {
+   "bugid": 1770885,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "8.39% twitter fcp (Linux) regression on Wed May 18 2022"
+  },
+  {
+   "bugid": 1772022,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EditorBase::DeleteNodeWithTransaction` return `NS_ERROR_EDITOR_DESTROYED`"
+  },
+  {
+   "bugid": 1769786,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "test_user_suggestion_box.html doesn't check responses from the server"
+  },
+  {
+   "bugid": 1770498,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Simplify and unify the ShouldRFP(Principal) check"
+  },
+  {
+   "bugid": 1772032,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ nsContentUtils::GetLinkLocation]"
+  },
+  {
+   "bugid": 1772165,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Turn off ctw on Android Beta/Release"
+  },
+  {
+   "bugid": 1771718,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Tweak idle scheduling to support high frame rates better"
+  },
+  {
+   "bugid": 1772068,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade various rust crates to reduce current and future duplicates, continued"
+  },
+  {
+   "bugid": 1772234,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update style guide to deprecate SpiderMonkey rooting typedefs"
+  },
+  {
+   "bugid": 1731821,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove or narrow the NativeLayerRootCA::Representation::FindVideoLayerToIsolate heuristic"
+  },
+  {
+   "bugid": 1764936,
+   "status": "VERIFIED",
+   "component": "Core:Graphics",
+   "summary": "Hit MOZ_CRASH(ElementAt(aIndex = 18446744073709551615, aLength = 0)) at /mfbt/Assertions.cpp:51"
+  },
+  {
+   "bugid": 1767125,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Change the type of LayerActivity::mPreviousTransformScale to Maybe<MatrixScales>"
+  },
+  {
+   "bugid": 1772423,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add Region::Contains(point)"
+  },
+  {
+   "bugid": 1758219,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "src/swgl_ext.h:537:16: runtime error: -nan is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1758983,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "src/objdir-ff-ubsan/dist/include/mozilla/gfx/Point.h:97:34: runtime error: -1.87351e+15 is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1771932,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "src/glsl.h:2315:29: error: call to non-'constexpr' function 'glsl::vec2& glsl::vec2::operator=(glsl::vec2&&)'"
+  },
+  {
+   "bugid": 1771858,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ js::AsyncModuleExecutionFulfilled] or Assertion failure: cx->isExceptionPending(), at builtin/ModuleObject.cpp:2271"
+  },
+  {
+   "bugid": 1771874,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Tidy up NumberToCString API"
+  },
+  {
+   "bugid": 1772393,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow 'mach jstests' and '--disable-tests'"
+  },
+  {
+   "bugid": 1772081,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove bailout tables"
+  },
+  {
+   "bugid": 1747184,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [Tier 2] async-scrolling/fixed-pos-scrolled-clip-2.html == async-scrolling/fixed-pos-scrolled-clip-2-ref.html | image comparison, max difference: 12, number of differing pixels: 135"
+  },
+  {
+   "bugid": 1771791,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "22.66 - 15.79% a11yr dhtml.html / a11yr dhtml.html + 3 more (Linux, Windows) regression on Thu May 26 2022"
+  },
+  {
+   "bugid": 1772284,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "ImageLoader::Notify profiler label creates extra variables on the stack"
+  },
+  {
+   "bugid": 1772386,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Adjust a table code-comment to point at bug 1772383"
+  },
+  {
+   "bugid": 1743020,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Consider adding  MoveOnlyFunction - a move-only std::function"
+  },
+  {
+   "bugid": 1771822,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Clean up obsolete or unnecessary prefs set when running APZ tests"
+  },
+  {
+   "bugid": 1771069,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Intermittent /webaudio/the-audio-api/the-mediaelementaudiosourcenode-interface/mediaElementAudioSourceToScriptProcessorTest.html | All data processed correctly - assert_array_approx_equals: comparing expected and rendered buffers (channel 0) lengths diffe"
+  },
+  {
+   "bugid": 1771515,
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "[webxr] Support Oculus Quest2 controllers"
+  },
+  {
+   "bugid": 1771823,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Firefox clears the system clipboard when the application exits"
+  },
+  {
+   "bugid": 1771952,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "misc nsWindow clean-ups."
+  },
+  {
+   "bugid": 1209411,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "[windows] Dropdown arrow in vertical writing modes should point in the appropriate (sideways) direction"
+  },
+  {
+   "bugid": 1704500,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Crash in [@ CLegacyPositionRequest::GetLocationFromSession]"
+  },
+  {
+   "bugid": 1772104,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Use plain object for lazy getter in js/xpconnect/"
+  },
+  {
+   "bugid": 1764348,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Disable Browser Toolbox Network panel by default"
+  },
+  {
+   "bugid": 1770527,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Closing a Firefox dev build doesn't simultaneously close the browser toolbox"
+  },
+  {
+   "bugid": 1771608,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Eliminate mozilla/reject-osfile eslint warning in devTools code"
+  },
+  {
+   "bugid": 1771675,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Eliminate jest/expect-expect eslint warning in devTools code"
+  },
+  {
+   "bugid": 1771277,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove the websocket and server sent events prefs"
+  },
+  {
+   "bugid": 1772043,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Allow duplicate crates when one depends on the other"
+  },
+  {
+   "bugid": 1739348,
+   "status": "ASSIGNED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "When a filetype is set to \"always ask\" and the user makes a save/open choice in the dialog, we should not also open the downloads panel"
+  },
+  {
+   "bugid": 1753915,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add debug logging subsystem to ASRouter"
+  },
+  {
+   "bugid": 1770390,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "\"Take Screenshot\" menu for frames should be hidden if the Screenshots is disabled"
+  },
+  {
+   "bugid": 1771961,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Align preexisting colorways with new directory structure"
+  },
+  {
+   "bugid": 1741360,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Artifact builds on comm-esr* still don't work"
+  },
+  {
+   "bugid": 1771089,
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add a lint-like task to check rust vendoring"
+  },
+  {
+   "bugid": 1772035,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Hook cargo vet into rust vendoring lint"
+  },
+  {
+   "bugid": 1761849,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Use pathlib in the \"python/mozbuild\" module"
+  },
+  {
+   "bugid": 1766497,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "virtualenv error with Python 3.10: No such file or directory: '[...]lib/python3.10/site-packages/mach.pth'"
+  },
+  {
+   "bugid": 1769631,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "python-3.11 compatibility"
+  },
+  {
+   "bugid": 1769290,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[meta] Apply mozilla-js-handle-rooted-typedef"
+  },
+  {
+   "bugid": 1771826,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.61"
+  },
+  {
+   "bugid": 1715572,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "[Prompts] Select prompts should be dismissed when user clicks other fields"
+  },
+  {
+   "bugid": 1772095,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use plain object for lazy getter in mobile/"
+  },
+  {
+   "bugid": 1763133,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Handle navigation to data: urls for browsingContext.navigate"
+  },
+  {
+   "bugid": 1764314,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Handle AbortErrors when calling commands (eg \"browsingContext._getBaseURL\")"
+  },
+  {
+   "bugid": 1565271,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Limit default view of description on expanded card"
+  },
+  {
+   "bugid": 1771148,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit card autocomplete dialog is shown in edit credit card dialog"
+  },
+  {
+   "bugid": 1762574,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Picture-in-Picture Support for HBOMAX"
+  },
+  {
+   "bugid": 1772345,
+   "status": "NEW",
+   "component": "Toolkit:Preferences",
+   "summary": "Assert in Nightly if a blocklisted preference is accessed from the content process"
+  },
+  {
+   "bugid": 1767846,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Enable MSU reader mode improvements in Nightly"
+  }
+ ],
+ "fixed": 52,
+ "total": 67,
+ "restricted": 2
+}
