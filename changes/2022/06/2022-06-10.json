@@ -1,0 +1,346 @@
+{
+ "date": "2022-06-10",
+ "buildid": "20220610093138",
+ "cset": "db6a4218414f151cf50dac45ca1ee193c454a2a2",
+ "bugs": [
+  {
+   "bugid": 1773353,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "ResourceQueue::EvictAll and ::EvictBefore spams NS_WARN messages with an empty queue"
+  },
+  {
+   "bugid": 1773207,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "\"libgmpopenh264.dylib\" can't be opened because Apple cannot check it for malicious software"
+  },
+  {
+   "bugid": 1771986,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Increase the threading amount used for decoding for DAV1Decoder"
+  },
+  {
+   "bugid": 1768535,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement CSS :modal pseudo-class"
+  },
+  {
+   "bugid": 1771725,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add a low-priority selector list for pseudo-classes that have global rules."
+  },
+  {
+   "bugid": 1773270,
+   "status": "RESOLVED",
+   "component": "Core:Canvas: 2D",
+   "summary": "Unreadable text in PDF"
+  },
+  {
+   "bugid": 1773399,
+   "status": "NEW",
+   "component": "Core:General",
+   "summary": "Update various rust crates"
+  },
+  {
+   "bugid": 1773576,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Add audits for some of the collection crates I own/maintain"
+  },
+  {
+   "bugid": 1773156,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Flickering with full screen live Twitch and YouTube streams"
+  },
+  {
+   "bugid": 1701975,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "AddressSanitizer: heap-buffer-overflow /builds/worker/checkouts/gecko/gfx/wr/swgl/src/vector_type.h:502:5 in load<unsigned int>"
+  },
+  {
+   "bugid": 1746913,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "src/gl.cc:202:17: runtime error: 2.51151e+09 is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1772643,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "src/swgl_ext.h:692:27: runtime error: -4.2924e+09 is outside the range of representable values of type 'int'"
+  },
+  {
+   "bugid": 1773491,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "webrender_ffi_generated.h:1225:23: error: expected unqualified-id before ‘unsigned’"
+  },
+  {
+   "bugid": 1773361,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Remove QueueParamTraits<Shmem>"
+  },
+  {
+   "bugid": 1773304,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [Tier 2] WASI /builds/worker/fetches/sysroot-wasm32-wasi/include/sys/mman.h:2:2: error: \"WASI lacks a true mmap; to enable minimal mmap emulation, compile with -D_WASI_EMULATED_MMAN and link with -lwasi-emulated-mman\""
+  },
+  {
+   "bugid": 1773368,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove uses of JS::Handle/Rooted/etc typedefs for internal types"
+  },
+  {
+   "bugid": 1773400,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Bump jsparagus for bug 1770509"
+  },
+  {
+   "bugid": 1770366,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use frame pointer register in Warp/Ion"
+  },
+  {
+   "bugid": 1772987,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Save caller frame pointer in Wasm JitEntry stub"
+  },
+  {
+   "bugid": 1773446,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64] Failed to build JS on loongarch64 platform (\"Port changes from bug 1772506\")"
+  },
+  {
+   "bugid": 1762658,
+   "status": "RESOLVED",
+   "component": "Core:Javascript: WebAssembly",
+   "summary": "Export name de-duplication assumes strings are null-terminated"
+  },
+  {
+   "bugid": 1578503,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[filter-effects-2] Enable the CSS backdrop-filter property by default (letting it ride the trains to release)"
+  },
+  {
+   "bugid": 1770485,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "The socket thread in the content process calls poll / select for no good reason"
+  },
+  {
+   "bugid": 1772092,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "Update neqo to 0.6.0"
+  },
+  {
+   "bugid": 1769161,
+   "status": "NEW",
+   "component": "Core:Printing: Output",
+   "summary": "Page Margins do not properly take into account page-size scaling"
+  },
+  {
+   "bugid": 1769740,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Unnecessary Facebook banner is present when accepting the \"Cookie Policy\" at expertflyer.com with ETP set to STRICT"
+  },
+  {
+   "bugid": 1773373,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Remove VideoEngine dependencies on webrtc::Config"
+  },
+  {
+   "bugid": 1735929,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Dmabuf WebGL/X11/Nvidia: Failed to create gl framebuffer"
+  },
+  {
+   "bugid": 1771262,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "\"ASSERTION: Expected Mozilla child widget: '!mContainer'\" in Thunderbird"
+  },
+  {
+   "bugid": 1773342,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "\"Make text bigger\" setting does not scale all UI elements"
+  },
+  {
+   "bugid": 1685949,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Perma devtools/client/webconsole/test/browser/browser_console_context_menu_entries.js | Test timed out -"
+  },
+  {
+   "bugid": 1772146,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Automatically destroy all DevToolsServer once the last connection drops"
+  },
+  {
+   "bugid": 1773284,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Add tracing markers for RDP requests"
+  },
+  {
+   "bugid": 1772363,
+   "status": "REOPENED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Intermittent devtools/client/netmonitor/test/browser_net_pause.js | Test timed out -"
+  },
+  {
+   "bugid": 1603831,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Sorting cookies in the storage inspector based on expiry time doesn't seem to work correctly"
+  },
+  {
+   "bugid": 1773124,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Make devtools/shared/natural-sort.js easier to read"
+  },
+  {
+   "bugid": 1771144,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Add mjs to the list of default mime entries"
+  },
+  {
+   "bugid": 1772100,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Use plain object for lazy getter in browser/components/"
+  },
+  {
+   "bugid": 1769085,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix PBM tests to handle opening Spotlight"
+  },
+  {
+   "bugid": 1760130,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Intermittent toolkit/components/nimbus/test/unit/test_ExperimentManager_enroll.js | single tracking bug"
+  },
+  {
+   "bugid": 1773469,
+   "status": "NEW",
+   "component": "Firefox:Protections UI",
+   "summary": "Change about:protections module files to use mjs extensions."
+  },
+  {
+   "bugid": 1769147,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Open Colorways closet modal from about:addons"
+  },
+  {
+   "bugid": 1765453,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Content in Update available notification misaligned (due to missing icon)"
+  },
+  {
+   "bugid": 1773468,
+   "status": "NEW",
+   "component": "Firefox:about:logins",
+   "summary": "Change about:logins module files to use mjs extensions."
+  },
+  {
+   "bugid": 1772808,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap fails to install minidump-stackwalk"
+  },
+  {
+   "bugid": 1773592,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update cargo-vet to June 9th"
+  },
+  {
+   "bugid": 1771117,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Distinguish between system (privileged) esm files and non-system in ESLint"
+  },
+  {
+   "bugid": 1772366,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Fix reject-osfile to cover lazy case"
+  },
+  {
+   "bugid": 1773452,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Disable ESlint warnings about the use of osfile for the osfile files."
+  },
+  {
+   "bugid": 1773472,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Enable eslint-plugin-import for mjs files"
+  },
+  {
+   "bugid": 1773200,
+   "status": "NEW",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update to wasi-sdk-16"
+  },
+  {
+   "bugid": 1723058,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Browser.getVersion has to return the application version as part of the  product"
+  },
+  {
+   "bugid": 1772868,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Refactor LoginManagerParent"
+  },
+  {
+   "bugid": 1768675,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add PiP captions/subtitles support for youtube-no-cookie.com videos"
+  },
+  {
+   "bugid": 1770473,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "`sendStandalonePing` in `TelemetrySend.jsm` does not correctly encode UTF-8, leading to `com.fasterxml.jackson.core.JsonParseException: Illegal unquoted character` in the ingestion pipeline"
+  },
+  {
+   "bugid": 1773076,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Allow theme_experiments for permanently installed addons not signed as privileged on builds that allows disabling signatures"
+  }
+ ],
+ "fixed": 43,
+ "total": 56,
+ "restricted": 1
+}
