@@ -1,0 +1,334 @@
+{
+ "date": "2022-06-21",
+ "buildid": "20220621093233",
+ "cset": "58bd176f87a19439cbe975ab0a65796355a1c65a",
+ "bugs": [
+  {
+   "bugid": 1771896,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add simple parsing support for :has()"
+  },
+  {
+   "bugid": 1771980,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Refactor `specified::easing::TimingFunction` parsing branches"
+  },
+  {
+   "bugid": 1774946,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Allow color-mix() to work with a system color (when in HCM) and `transparent` (or maybe other values?)"
+  },
+  {
+   "bugid": 1775076,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Reduce shutdown log verbosity of IdleSchedulerChild"
+  },
+  {
+   "bugid": 1770877,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make edit sub action handlers stop retrieving selection by themselves #2"
+  },
+  {
+   "bugid": 1774499,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Stylistic fixes followup"
+  },
+  {
+   "bugid": 1775102,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Disable security.block_fileuri_script_with_wrong_mime outside of early beta"
+  },
+  {
+   "bugid": 1774630,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/browser_navigator_clipboard_readText.js | Test timed out | Found a tab after previous test timed out: https://example.com/browser/dom/events/test/simple_navigator_clipboard_readText.html"
+  },
+  {
+   "bugid": 1773387,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Change local variables of type gfxSize, which actually represent scales, to MatrixScalesDouble"
+  },
+  {
+   "bugid": 1775125,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "FlattenedPath::ComputePointAtLength makes a duplicated call to hypotf()"
+  },
+  {
+   "bugid": 1774075,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Crash at EGL_MESA_image_dma_buf_export"
+  },
+  {
+   "bugid": 1774796,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement a new delazification strategy to minimize main-thread effort in case of races."
+  },
+  {
+   "bugid": 1764585,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Permanent macOS 11 about:blank != about:blank | image comparison, max difference: 0, number of differing pixels: 0"
+  },
+  {
+   "bugid": 1775123,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent bugs/1773633.html | can't drawWindow remote content | Screen resolution is too low - USE_WIDGET_LAYERS was disabled. Since E10s is enabled, there is no fallback rendering path!"
+  },
+  {
+   "bugid": 847368,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "\"ASSERTION: Shouldn't be incomplete if availableBSize is UNCONSTRAINED.\" with :first-letter float and page-break-inside:avoid"
+  },
+  {
+   "bugid": 1772697,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Disable various legacy MathML features on all channels."
+  },
+  {
+   "bugid": 1772646,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "gfx/layers/apz/test/gtest/APZTestCommon.h:54:10: runtime error: -172.371 is outside the range of representable values of type 'unsigned int'"
+  },
+  {
+   "bugid": 1775069,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Query parameter stripping is not enabled in Private Browsing Mode"
+  },
+  {
+   "bugid": 1773947,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Correctly set returned MIME type in GetMIMEInfoFromOS"
+  },
+  {
+   "bugid": 1738845,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "firefox-96.0 nightly fails to link webrtc: multiple definition of `WebRtcSpl_ComplexBitReverse';"
+  },
+  {
+   "bugid": 1760484,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "fix webrtc build on OpenBSD/arm64"
+  },
+  {
+   "bugid": 1775017,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[x11] XULPopupElement::GetOuterScreenRect is incorrect on HiDPI screens."
+  },
+  {
+   "bugid": 1767396,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Don't wake up the timer thread when removing any timer"
+  },
+  {
+   "bugid": 1773182,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add a native function to return an nsICryptoHash"
+  },
+  {
+   "bugid": 1773797,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Convert all instance of do_CreateInstance for nsICryptoHash with NS_NewCryptoHash"
+  },
+  {
+   "bugid": 1744240,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_warn_about_replaced_api.js | Uncaught exception - at chrome://mochitests/content/browser/devtools/client/shared/test/shared-head.js:1012 - Error: Failed waitFor():"
+  },
+  {
+   "bugid": 1773276,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Javascript inside iFrame which uses srcdoc attribute as opposed to src cannot be debugged"
+  },
+  {
+   "bugid": 1770363,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Allow the browser toolbox to enable/disable multiprocess behavior on-demand"
+  },
+  {
+   "bugid": 1771249,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Privileged Network Event Logs shows as Content messages in the browser toolbox console"
+  },
+  {
+   "bugid": 1775084,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Add clear resources capabilities to resource command"
+  },
+  {
+   "bugid": 1774735,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent TVdevtools/client/shared/test/browser_telemetry_button_responsive.js | A promise chain failed to handle a rejection: can't access property \"top\", nextProps.toolboxDoc.defaultView is null - stack: UNSAFE_componentWillReceiveProps@resource://"
+  },
+  {
+   "bugid": 1774913,
+   "status": "ASSIGNED",
+   "component": "DevTools:General",
+   "summary": "Enable devtools tests depending on emptyClipboard"
+  },
+  {
+   "bugid": 1775078,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "NodePicker.#stop awaits in a for..of loop"
+  },
+  {
+   "bugid": 1766821,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Context menu for Network side panel should copy value only instead of `name: value`"
+  },
+  {
+   "bugid": 1774809,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Intermittent devtools/client/responsive/test/browser/browser_zoom.js | single tracking bug"
+  },
+  {
+   "bugid": 1775096,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "aboutwelcome feature is missing an ID variable"
+  },
+  {
+   "bugid": 1746458,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Users are not unenrolled from Nimbus experiments if they disable sending “technical and interaction data”"
+  },
+  {
+   "bugid": 1774908,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update Nimbus schemas from nimbus-shared 1.8.0"
+  },
+  {
+   "bugid": 1775185,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Regenerate the Viaduct protobuf classes"
+  },
+  {
+   "bugid": 1276019,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Detect and warn when Windows Defender is slowing down operations"
+  },
+  {
+   "bugid": 1773223,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Improve how webrtc moz.builds are generated"
+  },
+  {
+   "bugid": 1774862,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Some Android jobs are still running on ESR102"
+  },
+  {
+   "bugid": 1775070,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "release-to-esr migration broken (\"versions already match\")"
+  },
+  {
+   "bugid": 1774669,
+   "status": "NEW",
+   "component": "Release Engineering:Release Automation: Signing",
+   "summary": "automate openh264 notarization"
+  },
+  {
+   "bugid": 1770751,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Support deserialization of complex objects with simple value field"
+  },
+  {
+   "bugid": 1773568,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add-on incompatibility notification not displayed due to missing string details-notification-incompatible-link from aboutAddons.ftl"
+  },
+  {
+   "bugid": 1774750,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "UpdateService references unknown property wasSilentlyRestarted"
+  },
+  {
+   "bugid": 1774385,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Replace multiple ChromeUtils.defineModuleGetter call with one XPCOMUtils.defineLazyModuleGetters"
+  },
+  {
+   "bugid": 1774768,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Fix issues with various property accesses of Services.<alias> in tests"
+  },
+  {
+   "bugid": 1775013,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "lazy.fetch is undefined in LoginRecipes.jsm"
+  },
+  {
+   "bugid": 1775028,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Cleanup ESLint unused variables handling in toolkit/components/passwordmgr"
+  },
+  {
+   "bugid": 1771348,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent TV-nofis toolkit/components/glean/tests/xpcshell/test_FOGIPCLimit.js | test_fog_ipc_limit - [test_fog_ipc_limit : 41] 'undefined' is not a number"
+  },
+  {
+   "bugid": 1774847,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent TV-fis toolkit/components/glean/tests/browser/browser_event_leak.js | Nothing to begin with - \"undefined\" == [{\"timestamp\":0,\"category\":\"test_only.ipc\",\"name\":\"event_with_extra\",\"extra\":{\"extra3_longer_name\":\"false\",\"extra2\":\"42\",\"extra1\":\"So"
+  },
+  {
+   "bugid": 1769793,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add ability to grant/revoke permissions for current website from action menu"
+  }
+ ],
+ "fixed": 47,
+ "total": 54,
+ "restricted": 0
+}
