@@ -1,0 +1,418 @@
+{
+ "date": "2022-06-30",
+ "buildid": "20220630095519",
+ "cset": "65e579f52525f9dc53be7ace5fd4452d4f835588",
+ "bugs": [
+  {
+   "bugid": 1757637,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Canvas.drawImage(video, sx, sy, swidth, sheight, dx, dy, dwidth, dheight) races against .videoWidth and .videoHeight"
+  },
+  {
+   "bugid": 1773282,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Polish VA-API feature handling"
+  },
+  {
+   "bugid": 1776429,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Compile and use ffvpx video decoder/fft code on Apple Silicon Macs"
+  },
+  {
+   "bugid": 1777159,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Perma [tier 2] dom/media/test/reftest/color_quads/720p.png.bt709.bt709.tv.gbrp.vp9.webm == dom/media/test/reftest/color_quads/reftest_video.html?src=none | image comparison, max difference: 255, number of differing pixels: 505"
+  },
+  {
+   "bugid": 1771374,
+   "status": "NEW",
+   "component": "Core:Canvas: WebGL",
+   "summary": "webgl display-p3 display for windows+dcomp"
+  },
+  {
+   "bugid": 1776103,
+   "status": "RESOLVED",
+   "component": "Core:DMD",
+   "summary": "memory/replace/dmd/README points to a 404 MDN page"
+  },
+  {
+   "bugid": 1776898,
+   "status": "RESOLVED",
+   "component": "Core:DMD",
+   "summary": "Expand dmd.py's filtering capabilities"
+  },
+  {
+   "bugid": 1758055,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: File",
+   "summary": "Establish file system content and parent process IPC"
+  },
+  {
+   "bugid": 1746524,
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable browser.tabs.documentchannel.parent-controlled pref"
+  },
+  {
+   "bugid": 1758115,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: lock-order-inversion (potential deadlock) /builds/worker/checkouts/gecko/mozglue/misc/Mutex_posix.cpp:96:3 in mutexLock"
+  },
+  {
+   "bugid": 1772378,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "eval is still allowed in JSMs"
+  },
+  {
+   "bugid": 1717091,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent dom/serviceworkers/test/test_hsts_upgrade_intercept.html | This test left a service worker registered without cleaning it up"
+  },
+  {
+   "bugid": 1777181,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Crash in [@ mozilla::dom::WorkerPrivate::MaybeWrapAsWorkerRunnable]"
+  },
+  {
+   "bugid": 1748755,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support live regions with the cache enabled on Windows"
+  },
+  {
+   "bugid": 1757121,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Cache live region attributes"
+  },
+  {
+   "bugid": 1775329,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Implement cached OffsetAtPoint"
+  },
+  {
+   "bugid": 1776275,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Adjust AUPDP used in BoundsInAppUnits for consistency (and correctness in BoundsInCSSPixels)"
+  },
+  {
+   "bugid": 1774844,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Use the Windows Energy Meter Interface to record power use data in profiles"
+  },
+  {
+   "bugid": 1775285,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Counters should be output for each sample before a time without change"
+  },
+  {
+   "bugid": 1712486,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "RenderDXGITextureHost Failed to open shared texture, hr=0x80070057"
+  },
+  {
+   "bugid": 1777277,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Crash with infinite recursion in RemoteContentController::NotifyScaleGestureCompleteInProcess"
+  },
+  {
+   "bugid": 1771252,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(called `Result::unwrap()` on an `Err` value: MissingBufferUsage(MissingBufferUsageError { actual: MAP_WRITE, expected: MAP_READ })) at gfx/wgpu_bindings/src/server.rs:238"
+  },
+  {
+   "bugid": 1776075,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove use of clip-id parenting in gecko"
+  },
+  {
+   "bugid": 1777141,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support `spatial-id` in wrench yaml files"
+  },
+  {
+   "bugid": 1777363,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add clip-chain definition shortcut to wrench"
+  },
+  {
+   "bugid": 1777388,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove legacy clip-parenting from `clip-to-frame` in wrench"
+  },
+  {
+   "bugid": 1753923,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Remove run-time selection of wasm SIMD"
+  },
+  {
+   "bugid": 1774458,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "29.08 - 2.05% cross_origin_pageload / twinopen ext+twinopen:twinopen.html + 26 more (OSX) regression on Tue June 7 2022"
+  },
+  {
+   "bugid": 1776455,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Various Windows \"memory/build/mozjemalloc.cpp [-Wunused-function] unused function\" warnings"
+  },
+  {
+   "bugid": 1765590,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Port Prefixed DNS Records are not used for ECH"
+  },
+  {
+   "bugid": 1776414,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Change nsIHttpChannelInternal corsMode to requestMode"
+  },
+  {
+   "bugid": 1774595,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Intermittent TV Assertion failure: mTRRSkippedReason != mozilla::net::TRRSkippedReason::TRR_UNSET, at /builds/worker/checkouts/gecko/netwerk/dns/nsHostRecord.cpp:317"
+  },
+  {
+   "bugid": 1772124,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Early hint telemetry"
+  },
+  {
+   "bugid": 1771836,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_keyboard.html | Test timed out. -"
+  },
+  {
+   "bugid": 1777151,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Minor APZ mochitest cleanup"
+  },
+  {
+   "bugid": 1776109,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Try hiding caches/indexedDB/serviceWorker in PBMode"
+  },
+  {
+   "bugid": 1776760,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Turn on Total Cookie Protection for all channels (phase 4)"
+  },
+  {
+   "bugid": 1776869,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Unable to sign in with gmail in order to comment on renderpages.blogspot.com with ETP set to Standard"
+  },
+  {
+   "bugid": 1163452,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "change assertion into check for MozillaRegisterDebugHandle"
+  },
+  {
+   "bugid": 696976,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Client certificate UI blocks the SSL thread / socket transport thread"
+  },
+  {
+   "bugid": 1777220,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "High frequency Assertion failure: topSize == exSize (and others) at /builds/worker/checkouts/gecko/xpcom/base/nsMemoryReporterManager.cpp:537"
+  },
+  {
+   "bugid": 1772347,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Content process targets destruction isn't notified to the client"
+  },
+  {
+   "bugid": 1767684,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_cycle-angle.js | single tracking bug"
+  },
+  {
+   "bugid": 1777119,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the public adaptive history autofill doc"
+  },
+  {
+   "bugid": 1777328,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove braces from Merino session IDs"
+  },
+  {
+   "bugid": 1775469,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Firefox View - Add empty list item placeholder for Tab Pickup Section"
+  },
+  {
+   "bugid": 1776087,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Enable FxA pages to return user to Firefox View"
+  },
+  {
+   "bugid": 1771073,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Correct schemas in Nimbus Feature Manifest"
+  },
+  {
+   "bugid": 1775098,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "RemoteImagesTestUtils.dbEntryFor generates a lastLoaded field with NaN as the value"
+  },
+  {
+   "bugid": 1776770,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Pocket newtab recent saves pref work"
+  },
+  {
+   "bugid": 1712628,
+   "status": "REOPENED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Check pinning for a packaged app"
+  },
+  {
+   "bugid": 1776256,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway - Modal - Graphic ] Collage Option Create a section to display colorway graphics"
+  },
+  {
+   "bugid": 1777310,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorways - FirefoxView] - Add images for firefox view colorways entry points"
+  },
+  {
+   "bugid": 1682621,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "\"Clicking\" an add-on toolbarbutton with the space key executes the action twice"
+  },
+  {
+   "bugid": 1776812,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Don't check for GN in configure"
+  },
+  {
+   "bugid": 1646183,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Write a rule to find and prevent unnecessary usages of XPCOMUtils.defineLazyGlobalGetters"
+  },
+  {
+   "bugid": 1776219,
+   "status": "VERIFIED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "mach configure fails on OpenBSD/i386"
+  },
+  {
+   "bugid": 1776774,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Some tests that do not run on beta or release are run on esr"
+  },
+  {
+   "bugid": 1771229,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Ensure GV stops listening for location updates when the app is backgrounded and in background tabs"
+  },
+  {
+   "bugid": 1771945,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.PromptDelegateTest#selectTestDismiss | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms"
+  },
+  {
+   "bugid": 1776313,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Agi's farewell docs"
+  },
+  {
+   "bugid": 1727300,
+   "status": "ASSIGNED",
+   "component": "Localization Infrastructure and Tools:General",
+   "summary": "Update documentation for cross-channel"
+  },
+  {
+   "bugid": 1759665,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Remove/replace usage of StaticPrefs::network_cookie_lifetimePolicy"
+  },
+  {
+   "bugid": 1764761,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Remove/replace the network.cookie.lifetimePolicy"
+  },
+  {
+   "bugid": 1772742,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm from uriloader/"
+  },
+  {
+   "bugid": 1772942,
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from toolkit/modules/"
+  },
+  {
+   "bugid": 1776729,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Immediately store interactions on disk when a manual snapshot is created"
+  },
+  {
+   "bugid": 1743781,
+   "status": "RESOLVED",
+   "component": "Toolkit:about:memory",
+   "summary": "\"Resident Unique Memory\" measurement on macOS is suspicious"
+  }
+ ],
+ "fixed": 49,
+ "total": 68,
+ "restricted": 2
+}
