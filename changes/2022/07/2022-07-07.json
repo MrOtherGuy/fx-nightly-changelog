@@ -1,0 +1,406 @@
+{
+ "date": "2022-07-07",
+ "buildid": "20220707093757",
+ "cset": "f11b4ed312f4110f6a05d19a6acbe9b6139bf439",
+ "bugs": [
+  {
+   "bugid": 1778062,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add support for parsing the `contain-intrinsic-size` property from the CSS-sizing specification"
+  },
+  {
+   "bugid": 1773641,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Enable tests disabled for Windows in <dom/events/test/browser_navigator_clipboard_readText.js>"
+  },
+  {
+   "bugid": 1777903,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Add tentative WPT for checking the handling of `insertParagraph` and `insertLineBreak` in inline editing host"
+  },
+  {
+   "bugid": 1773696,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "`sendWheelEvent` should check `StaticPrefs::test_events_async_enabled()` before dispatching to parent"
+  },
+  {
+   "bugid": 1768050,
+   "status": "NEW",
+   "component": "Core:DOM: File",
+   "summary": "Move all OPFS operations other than getting the root off PBackground"
+  },
+  {
+   "bugid": 1778345,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "GetAnElement function doesn't follow the spec"
+  },
+  {
+   "bugid": 1749521,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "We should have \"relevant for JS\" label frames for JavaScript static API methods"
+  },
+  {
+   "bugid": 1776721,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Change the API to add label frames in the JS code"
+  },
+  {
+   "bugid": 1777473,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Expose some more layout frame labels to javascript developers"
+  },
+  {
+   "bugid": 1777540,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "LUL initialisation: inline `CmpExtentsByOffsetLE` so as to speed up sorting of `SecMap::mExtents`"
+  },
+  {
+   "bugid": 1777890,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "The multi-process chunk manager update logic is never started, removing the overall buffer size limit"
+  },
+  {
+   "bugid": 1778315,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make power counter names more user friendly"
+  },
+  {
+   "bugid": 1776470,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Iff d3d11 debug layer pref enabled, explicitly request debug layer for ANGLE"
+  },
+  {
+   "bugid": 1778232,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "ImageFormat::CAIRO_SURFACE is neither Cairo nor therefore needs to be main-thread"
+  },
+  {
+   "bugid": 1778233,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "macOS crash in background tasks mode due to racing shutdown and font list initialization"
+  },
+  {
+   "bugid": 1750576,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Expose WebGPU shader compilation info"
+  },
+  {
+   "bugid": 1778158,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "quartz: Avoid reading beyond the end of image surfaces."
+  },
+  {
+   "bugid": 1778318,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JS getters from internal module objects"
+  },
+  {
+   "bugid": 1778178,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Convert ReflowInput's available size write-accessors to setters"
+  },
+  {
+   "bugid": 1778286,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Declare `aEvent` of `nsIFrame::GetContentForEvent` `const`"
+  },
+  {
+   "bugid": 1777968,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma Mingw-clang [tier 2] /builds/worker/checkouts/gecko/netwerk/base/nsServerSocket.cpp:22:12: fatal error: 'Winsock2.h' file not found"
+  },
+  {
+   "bugid": 1778272,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Revert the change to the LoadInfo release function"
+  },
+  {
+   "bugid": 1778136,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /cookies/<random_test> | <random_test> expected FAIL when Gecko 104 merges to Beta on 2022-07-25"
+  },
+  {
+   "bugid": 1774581,
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Add more tests for TRR retry"
+  },
+  {
+   "bugid": 1772124,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Early hint telemetry"
+  },
+  {
+   "bugid": 1775244,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "HTTP2ProxyCode does not work as a http2 proxy"
+  },
+  {
+   "bugid": 1777671,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Account for glyph orientations when returning rotation of character"
+  },
+  {
+   "bugid": 1778298,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGs not working properly, specifically xlink:href, when setting <base /> html tag"
+  },
+  {
+   "bugid": 1749884,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove or update probes expiring in Firefox 99: TLS_1_3_CLIENT_AUTH_USES_PHA"
+  },
+  {
+   "bugid": 1773310,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "If the hidden window finishes loading after the main window, the menubar is broken"
+  },
+  {
+   "bugid": 1777910,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "*** MESA_GLSL_CACHE_DISABLE is deprecated; use MESA_SHADER_CACHE_DISABLE instead ***"
+  },
+  {
+   "bugid": 1778211,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Try to reject adding virtual methods to xpidl interfaces in CDATA blocks"
+  },
+  {
+   "bugid": 1778259,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "PLDHashTable::ShallowSizeOf methods have swapped comments"
+  },
+  {
+   "bugid": 1771587,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Collect ESM-ification progress"
+  },
+  {
+   "bugid": 1742774,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add a button to remove all breakpoints in the Breakpoint header"
+  },
+  {
+   "bugid": 1778113,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use thicker icons for the breakpoints, watch expressions"
+  },
+  {
+   "bugid": 1775295,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent devtools/client/framework/browser-toolbox/test/browser_browser_toolbox_netmonitor.js | Test timed out -"
+  },
+  {
+   "bugid": 1775071,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "16.63 - 2% damp console.log-in-loop-content-process-symbol / damp console.typing + 64 more (Linux, OSX, Windows) regression on Mon June 13 2022"
+  },
+  {
+   "bugid": 1735534,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "cannot turn off \"did you mean to go to...\" web search result"
+  },
+  {
+   "bugid": 1778327,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "All actions are not shown when entering quickactions mode"
+  },
+  {
+   "bugid": 1766075,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Intermittent TV browser/components/downloads/test/browser/browser_downloads_panel_disable_items.js | Test timed out -"
+  },
+  {
+   "bugid": 1774061,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "MR new user onboarding to have 50-50 split template"
+  },
+  {
+   "bugid": 1776686,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add progress bar style to step indicator for MR new user onboarding"
+  },
+  {
+   "bugid": 1778368,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Experimenter cannot ingest the FxMS mega-schema"
+  },
+  {
+   "bugid": 1778273,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to version 2.15.224"
+  },
+  {
+   "bugid": 1776237,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Pocket newtab recent saves hide 3rd card of row on narrow screens"
+  },
+  {
+   "bugid": 1778183,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Pocket newtab send to Pocket utm params formatting fix"
+  },
+  {
+   "bugid": 1772136,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Add option to throw if .get() fails to obtain records"
+  },
+  {
+   "bugid": 1777632,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rename all instances of __sortedEngines to _cachedSortedEngines within SearchService"
+  },
+  {
+   "bugid": 1778182,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "put private browsing taskbar pinning & window separation behind a distinct pref"
+  },
+  {
+   "bugid": 1778204,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "LightweightThemeChild doesn't call update() for non-sidebar parent process documents"
+  },
+  {
+   "bugid": 1778280,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Adjust sizing and positioning of various elements to better match the spec"
+  },
+  {
+   "bugid": 1777451,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Add a rule to prevent/recommend against using globalThis or window in non-system modules for lazy getters"
+  },
+  {
+   "bugid": 1650335,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "[Automated review] clang-tidy fails on C files"
+  },
+  {
+   "bugid": 1778250,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchains clang-trunk-stage1 AssertionError assert r == 0 after 1 out of 1 hunk ignored -- saving rejects to file compiler-rt/lib/profile/GCDAProfiling.c.rej"
+  },
+  {
+   "bugid": 1297520,
+   "status": "NEW",
+   "component": "Release Engineering:Release Automation: Snap",
+   "summary": "Investigate performance penalty of multilocale Firefox snaps"
+  },
+  {
+   "bugid": 1750541,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement basic support for \"script.callFunction\" command"
+  },
+  {
+   "bugid": 1770477,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Support handling of Javascript errors for \"script.evaluate\" command"
+  },
+  {
+   "bugid": 1758654,
+   "status": "REOPENED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Stack overflows when writing child minidumps on Windows"
+  },
+  {
+   "bugid": 1766273,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP subtitles support on Disney+"
+  },
+  {
+   "bugid": 1775040,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "When opening a new video while in PiP subtitles appear to be enabled even when these are not available"
+  },
+  {
+   "bugid": 1778295,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "The PiP's subtitle settings panel closes upon clicking any option"
+  },
+  {
+   "bugid": 1733821,
+   "status": "REOPENED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Endless loop of firefox.exe spawning and dying dozens of times per second"
+  },
+  {
+   "bugid": 1766515,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Why does using an invalid label in a `labeled_boolean` not result in an `invalid_label` error?"
+  },
+  {
+   "bugid": 1771814,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add ESMification test for importing modules from Extension Framework sandboxes"
+  },
+  {
+   "bugid": 1776841,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Support <all_urls> in MV3 web_accessible_resources[].matches"
+  }
+ ],
+ "fixed": 56,
+ "total": 66,
+ "restricted": 3
+}
