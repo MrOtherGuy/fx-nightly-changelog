@@ -1,0 +1,418 @@
+{
+ "date": "2022-07-20",
+ "buildid": "20220720095935",
+ "cset": "553b7242667d9998744c752bcdf3f04f6438df1d",
+ "bugs": [
+  {
+   "bugid": 1754239,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Add hardware accelerated media encode/decode information to about:support"
+  },
+  {
+   "bugid": 1766307,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Enable PDMFactory to report per-codec SW/HW decode support information"
+  },
+  {
+   "bugid": 1766308,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Add gfxVar to store SW/HW media decode support information"
+  },
+  {
+   "bugid": 1766310,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Collect SW/HW accelerated decode information for Windows from WMFDecoder"
+  },
+  {
+   "bugid": 1779036,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ RtlAcquireSRWLockExclusive | mozilla::MozPromise<T>::Private::Resolve<T>]"
+  },
+  {
+   "bugid": 1778405,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "Correct cb and cr value in YUVBufferGenerator::CreateNV{12,21}Image()"
+  },
+  {
+   "bugid": 1780075,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove outline-style: auto pref."
+  },
+  {
+   "bugid": 1777478,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Animations in content hidden by `content-visibility` should not fire events or resolve promises"
+  },
+  {
+   "bugid": 1779559,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider making `document.visibilityState` work in chrome docs (reflect window occlusion)"
+  },
+  {
+   "bugid": 1780160,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused HTMLMenuBuilder.jsm component definition"
+  },
+  {
+   "bugid": 1773848,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Thunderbird hangs when trying to add a line at the end of a table in the compose window"
+  },
+  {
+   "bugid": 1758324,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Implement file system directory iteration"
+  },
+  {
+   "bugid": 1777164,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Sanitizer API: setHTML should require a SecureContext just like the Sanitizer constructor"
+  },
+  {
+   "bugid": 1778308,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Avoid adding 'nsThreadPool' runnable markers lasting the entire duration of the thread"
+  },
+  {
+   "bugid": 1779513,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add profiling log for chunk manager updates"
+  },
+  {
+   "bugid": 1772463,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/widget/VsyncDispatcher.cpp:129:7 in mozilla::VsyncDispatcher::NotifyVsync(mozilla::VsyncEvent const&)"
+  },
+  {
+   "bugid": 1780138,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Let zero copy hardware decoded video to release on all GPUs on Windows"
+  },
+  {
+   "bugid": 1779942,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Crash in [@ mozilla::ClientWebGLContext::UpdateWebRenderCanvasData]"
+  },
+  {
+   "bugid": 1742797,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Layers",
+   "summary": "composites happen at 60Hz until the browser window is closed after showing an arrowpanel"
+  },
+  {
+   "bugid": 1779425,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "UI freezes and the GPU process crashes when enabled"
+  },
+  {
+   "bugid": 1776668,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "23.55 - 4.09% expedia ContentfulSpeedIndex / google-mail loadtime + 18 more (Linux) regression on Fri June 24 2022"
+  },
+  {
+   "bugid": 1779878,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Bug in ModuleBuilderInitArray causes asserts from the previous import to be applied to the current import"
+  },
+  {
+   "bugid": 1780152,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update document about offset and breakpoint to reflect breakpoint-not-allowed case"
+  },
+  {
+   "bugid": 1780158,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Exclude JSOp::SetAliasedVar \".generator\" from Debugger.Script.getEffectfulOffsets"
+  },
+  {
+   "bugid": 1427635,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Fix DoCompareTreePosition frame tree version with null aCommonAncestor."
+  },
+  {
+   "bugid": 1780264,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove rarely used style structs cached in ReflowInput"
+  },
+  {
+   "bugid": 1773378,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Dominant axis scrolling doesn't switch axes reliably"
+  },
+  {
+   "bugid": 1773701,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add Telemetry for the Email Tracking Protection"
+  },
+  {
+   "bugid": 1777295,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "document.requestStorageAccess error thrown even from static (plaintext) iframe content"
+  },
+  {
+   "bugid": 1485465,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Cleanup SVG attribute mapping parsing."
+  },
+  {
+   "bugid": 1764397,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for Digicert G5 root certificates"
+  },
+  {
+   "bugid": 1770269,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for E-Tugra v3 Global root certificates"
+  },
+  {
+   "bugid": 1779398,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 104 to use NSS 3.81"
+  },
+  {
+   "bugid": 1779848,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "mFd being nullptr in nsNSSSocketInfo::ClientAuthCertificateSelected means the connection has closed and isn't an error"
+  },
+  {
+   "bugid": 1776592,
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "The new blue focus style is not contrasted enough according to the background"
+  },
+  {
+   "bugid": 1780247,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Fix a typo in windows' non-native menus."
+  },
+  {
+   "bugid": 1780212,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Marionette window restoration is broken on Linux automation"
+  },
+  {
+   "bugid": 1780166,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "esmify fails to migrate browser.js due to nodeFrom.comments being an invalid iterator"
+  },
+  {
+   "bugid": 1780134,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "completion of : await browser.stora… crashed the console"
+  },
+  {
+   "bugid": 1780156,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Add context selector to Browser Console"
+  },
+  {
+   "bugid": 1779966,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "\"Go to File\" panel doesn't find tabbrowser.js in BrowserToolbox"
+  },
+  {
+   "bugid": 1777249,
+   "status": "ASSIGNED",
+   "component": "DevTools:Shared Components",
+   "summary": "Elements shouldn't use --theme-selection-background-hover for non-focused/hovered/active element"
+  },
+  {
+   "bugid": 1778951,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Background script console (Toolbox) gets stuck after addon reload"
+  },
+  {
+   "bugid": 1765029,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Link rot on https://firefox-source-docs.mozilla.org/devtools/contributing/css.html"
+  },
+  {
+   "bugid": 1765645,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Documentation issue on devtools-user/responsive_design_mode/index"
+  },
+  {
+   "bugid": 1770589,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Documentation Typo \"even listener\""
+  },
+  {
+   "bugid": 1773598,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Visible </pre> in code block"
+  },
+  {
+   "bugid": 1780263,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Update rotating triage docs to reflect the process simplification"
+  },
+  {
+   "bugid": 1780188,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Experiment] The Autofill telemetry impressions are not recorded using the 103 Release Candidate build"
+  },
+  {
+   "bugid": 1775128,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add `toast_notification` Messaging template for displaying (native) toast notifications"
+  },
+  {
+   "bugid": 1779329,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Correct file path for schemas in messaging system docs"
+  },
+  {
+   "bugid": 1779654,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[PBM] Add SpecialMessageAction BLOCK_MESSAGE that allows to block message"
+  },
+  {
+   "bugid": 1762652,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Enhanced telemetry around unenrollment and schema validation failures"
+  },
+  {
+   "bugid": 1779389,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable PDF editing by default in Nightly and early Beta"
+  },
+  {
+   "bugid": 1778351,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Pocket newtab remove old experiment features for Pocket cards"
+  },
+  {
+   "bugid": 1777981,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "\"Delete cookies and site data when Firefox is closed\" no longer checked when \"Always use private browsing mode\" is enabled"
+  },
+  {
+   "bugid": 1779981,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Migrate search from ChromeUtils.import to ES6 Modules"
+  },
+  {
+   "bugid": 1780203,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Fix input error in bug_1737043_aboutNetError.py"
+  },
+  {
+   "bugid": 1780220,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrap on openSUSE Tumbleweed fails when trying to upgrade Mercurial"
+  },
+  {
+   "bugid": 1780087,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Documentation Infrastructure",
+   "summary": "Create a `searchfox` role"
+  },
+  {
+   "bugid": 1780159,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "UnboundLocalError: local variable 'cmd_and_path' referenced before assignment"
+  },
+  {
+   "bugid": 1779691,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain-clang-trunk-stage1  1 out of 1 hunk FAILED -- saving rejects to file llvm/tools/gold/gold-plugin.cpp.rej"
+  },
+  {
+   "bugid": 1763466,
+   "status": "RESOLVED",
+   "component": "GeckoView:Sandboxing",
+   "summary": "System.err: java.lang.SecurityException: Isolated process not allowed to call getContentProvider"
+  },
+  {
+   "bugid": 1772345,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Assert in Nightly if a blocklisted preference is accessed from the content process"
+  },
+  {
+   "bugid": 1777481,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Introduce a new extensions toolbar button (widget)"
+  },
+  {
+   "bugid": 1778722,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Hide existing \"Add-ons and themes\" toolbar button when \"unifiedExtensions\" pref is set"
+  },
+  {
+   "bugid": 1780008,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browserAction preload popup should not be part of the results returned by browser.extension.getViews"
+  },
+  {
+   "bugid": 1770696,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "MV3 non-persistent background pages vs native messaging host"
+  }
+ ],
+ "fixed": 55,
+ "total": 68,
+ "restricted": 1
+}
