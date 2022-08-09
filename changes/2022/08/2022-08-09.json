@@ -1,0 +1,466 @@
+{
+ "date": "2022-08-09",
+ "buildid": "20220809093338",
+ "cset": "aeac2e82d88d2535598de558b8cc9069780f034d",
+ "bugs": [
+  {
+   "bugid": 1763880,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Explicitly disable DXVA decoding in the RDD process."
+  },
+  {
+   "bugid": 1783753,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "GenerateCombinedIndividualTransform() declaration in nsStyleStruct.h is not used"
+  },
+  {
+   "bugid": 1780348,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ mozilla::FullscreenRequest::CreateForRemote]"
+  },
+  {
+   "bugid": 1780617,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-TIMEOUT | /dom/events/scrolling/scrollend-event-fired-after-snap.html | Tests that scrollend is fired after fling snap animation completion. - Test timed out"
+  },
+  {
+   "bugid": 1771812,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: indentedParentElement == content, at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditSubActionHandler.cpp:4845"
+  },
+  {
+   "bugid": 1782874,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor::RemoveEmptyNodesIn` remove end container of the range if it's empty"
+  },
+  {
+   "bugid": 1783393,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`SplitRangeOffFromNodeResult` may return nodes around the split point"
+  },
+  {
+   "bugid": 1783402,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make result of getter methods of `EditorDOMPointBase` and `SplitRangeOffFromNodeResult` templated"
+  },
+  {
+   "bugid": 1779184,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Sanitizer API config handling (`allowUnknownMarkup` & stricter allow-list, etc.)"
+  },
+  {
+   "bugid": 1749068,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Intermittent leakcheck | tab 1240 bytes leaked (CondVar, Mutex, PRemoteWorkerChild, RemoteWorkerChild, ShutdownOnWorker, ...)"
+  },
+  {
+   "bugid": 1783133,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Fix unexpected passes in text mochitests with CTW enabled"
+  },
+  {
+   "bugid": 1571089,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove the \"leaf\" profiler feature"
+  },
+  {
+   "bugid": 1779009,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Ship OffscreenCanvas to release"
+  },
+  {
+   "bugid": 1677183,
+   "status": "NEW",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Implement Queue.copyImageBitmapToTexture in WebGPU"
+  },
+  {
+   "bugid": 1321932,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Statically set computed property method's function name if computed property name is string or number"
+  },
+  {
+   "bugid": 1782558,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: aValue <= (size_t(1) << (sizeof(size_t) * 8 - 1)) (can't round up -- will overflow!), at dist/include/mozilla/MathAlgorithms.h:391"
+  },
+  {
+   "bugid": 1782705,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not use JSContext variant of AutoCheckRecursionLimit in RegExp"
+  },
+  {
+   "bugid": 1782753,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused HandleScope from CheckPatternSyntaxImpl"
+  },
+  {
+   "bugid": 1782865,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "v8::internal::Isolate::trace is not called"
+  },
+  {
+   "bugid": 1783239,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove dead method from LCovRuntime"
+  },
+  {
+   "bugid": 1783439,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unused self-hosting intrinsics"
+  },
+  {
+   "bugid": 1782771,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fold some MMinMax operations in String.prototype.{substring, slice, substr}"
+  },
+  {
+   "bugid": 1782959,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Inline String.prototype.startsWith with constant search strings"
+  },
+  {
+   "bugid": 1783507,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: IsResumableMIRType(op->type())"
+  },
+  {
+   "bugid": 1783622,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Recover all MMathFunctions"
+  },
+  {
+   "bugid": 1778014,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "gecko/dom/base/CCGCScheduler.cpp:276:16: runtime error: -384.001 is outside the range of representable values of type 'unsigned int'"
+  },
+  {
+   "bugid": 1783006,
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Calculate the track sizes with the contain intrinsic block size if available"
+  },
+  {
+   "bugid": 1783687,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Grid",
+   "summary": "Obey contain-intrinsic-size in scroll containers"
+  },
+  {
+   "bugid": 1783565,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Enable more ESLint rules for netwerk"
+  },
+  {
+   "bugid": 1768067,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove the Assertion at nsHttpConnectionMgr.cpp:3380"
+  },
+  {
+   "bugid": 1783057,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Pass the correct stream to OnInputStreamReady in nsPreloadedStream"
+  },
+  {
+   "bugid": 1783567,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Instagram and Twitter broken if network.http.http3.enable=false: Can't like posts (\"Something went wrong. Please try again.\" after a few seconds) or access activity menu (endless loading circle)"
+  },
+  {
+   "bugid": 1776972,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_hittest-2.html | single tracking bug"
+  },
+  {
+   "bugid": 1781962,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "swipe-to-navigation is broken on RTL environments"
+  },
+  {
+   "bugid": 1782142,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[Bug]: :active pseudo-class doesn't get added when element is in shadow DOM"
+  },
+  {
+   "bugid": 1766670,
+   "status": "VERIFIED",
+   "component": "Core:Performance",
+   "summary": "Assertion failure: !aArgument.IsUncatchableException() (Doesn't make sense to convert uncatchable exception to a JS value!), at /dom/bindings/ToJSValue.cpp:55"
+  },
+  {
+   "bugid": 1778052,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "All tabs crash when the terminal (emulator) firefox was run from is closed, even if firefox was run with nohup"
+  },
+  {
+   "bugid": 1783195,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Implement MozClearHandleID"
+  },
+  {
+   "bugid": 1783566,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Color selection text in the urlbar does not match Firefox's dark mode"
+  },
+  {
+   "bugid": 1134538,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Assertion failure ('Infinity + -Infinity' and '-Infinity + Infinity' are undefined or multiplication of infinity) with CSS transition/animations"
+  },
+  {
+   "bugid": 1745116,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Intermittent ThreadMetrics.CollectMetrics | Expected: (duration) >= (50000u), actual: 48922 vs 50000 @ /builds/worker/checkouts/gecko/xpcom/tests/gtest/TestThreadMetrics.cpp:186"
+  },
+  {
+   "bugid": 1782667,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Force \"everything\" mode in Browser Toolbox when debugging a mochitest with --jsdebugger"
+  },
+  {
+   "bugid": 1783160,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Turn BrowserToolboxLauncher into an ES6 class"
+  },
+  {
+   "bugid": 1735748,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Cmd/Ctrl+R in Multiprocess Browser Toolbox blanks the whole browser window"
+  },
+  {
+   "bugid": 1783606,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "11 - 5.52% damp custom.inspector.expandall.balanced / damp custom.inspector.expandall.manychildren + 8 more (Linux, OSX, Windows) regression on Mon August 1 2022"
+  },
+  {
+   "bugid": 1778173,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent TV browser/components/urlbar/tests/browser/browser_quickactions.js | One off button is available when preffed on - null == true - JS frame :: chrome://mochitests/content/browser/browser/components/urlbar/tests/browser/browser_quickactions.js"
+  },
+  {
+   "bugid": 1783643,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Don't open downloads panel for very first drag-and-drop download in a new profile"
+  },
+  {
+   "bugid": 1780045,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Device name and timing for synced tabs lacks padding/margin in about:firefoxview"
+  },
+  {
+   "bugid": 923514,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "[UX] Add \"paste as plaintext\" context menu option within main content panel."
+  },
+  {
+   "bugid": 1780429,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Display Pin Private Browsing Promo based off Pref"
+  },
+  {
+   "bugid": 1776607,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update search code to track interactions in the new column"
+  },
+  {
+   "bugid": 1782426,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Use of the new source for frecency calculation of sponsored urls"
+  },
+  {
+   "bugid": 1778714,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Downloading from internal PDF viewer produces the wrong download link if link is copied from library."
+  },
+  {
+   "bugid": 1783605,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update pdf.js to new version 40f9f7e9097e1168e98f1e2987726c5c31693617"
+  },
+  {
+   "bugid": 1776417,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search bar dropdown gets truncated when an open engine is available"
+  },
+  {
+   "bugid": 1766636,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "chrome windows opened by private browsing window use regular Firefox taskbar icon"
+  },
+  {
+   "bugid": 1783289,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab bar sometimes broken because this.PictureInPicture is undefined"
+  },
+  {
+   "bugid": 1774432,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Implement a reliable mock of BuiltInThemes and BuiltInThemeConfig for tests"
+  },
+  {
+   "bugid": 1782291,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update preview.svg for Innovator Balanced and Activist Bold colorways"
+  },
+  {
+   "bugid": 1783011,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Limit the modal size to something reasonable"
+  },
+  {
+   "bugid": 1783166,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Fix up illustration sizing"
+  },
+  {
+   "bugid": 1783671,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Clean up `defer` attribute on colorwaycloset.js script tag"
+  },
+  {
+   "bugid": 1783673,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Bring back underline for learn more link in the profiler popup"
+  },
+  {
+   "bugid": 1781819,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update fix-stacks to support new breakpad sym format, once symbolic-debuginfo has been released"
+  },
+  {
+   "bugid": 1783244,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Firefox crashes when opening link from external app"
+  },
+  {
+   "bugid": 1783689,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "TypeError: warning() takes 2 positional arguments but 3 were given"
+  },
+  {
+   "bugid": 1783087,
+   "status": "RESOLVED",
+   "component": "Toolkit:Background Tasks",
+   "summary": "Build fails on Windows with --disable-backgroundtasks"
+  },
+  {
+   "bugid": 1782199,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Unregister the WER runtime module before calling `exit()`/`_exit()`"
+  },
+  {
+   "bugid": 1783189,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Remove setting of WER_FAULT_REPORTING_DISABLE_SNAPSHOT_HANG flag in RegisterRuntimeExceptionModule"
+  },
+  {
+   "bugid": 1783633,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Launch the crash reporter client outside of Firefox process job"
+  },
+  {
+   "bugid": 1773483,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "The \"View saved logins\" footer shows a piece of Code before the \"Import your login from Google Chrome\" text is displayed"
+  },
+  {
+   "bugid": 1781801,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Make activeTab target sameOriginWithTop iframes in MV3"
+  },
+  {
+   "bugid": 1781998,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Hidden add-ons in the unified extensions panel"
+  },
+  {
+   "bugid": 1783442,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "WebExtensionPolicy case missmatch with hostname is possible"
+  },
+  {
+   "bugid": 1780747,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Add DNR API bindings and permissions"
+  },
+  {
+   "bugid": 1773115,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "MV3 - specifying resource in \"web_accessible_resources\" prevents it's usage inside addon pages"
+  }
+ ],
+ "fixed": 67,
+ "total": 76,
+ "restricted": 3
+}
