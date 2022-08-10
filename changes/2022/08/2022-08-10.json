@@ -1,0 +1,436 @@
+{
+ "date": "2022-08-10",
+ "buildid": "20220810094530",
+ "cset": "f75c79d52f563f19c2baa22d60341564a9d31546",
+ "bugs": [
+  {
+   "bugid": 1655509,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Assertion failure: Request::mDisconnected, at /builds/worker/workspace/obj-build/dist/include/mozilla/MozPromise.h:447"
+  },
+  {
+   "bugid": 1782313,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Fix MCSInfo's shutdown listener to avoid errors if shutdown is already in process when the listener is started."
+  },
+  {
+   "bugid": 1782914,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Simplify the logic of using RemoteDecoderChild, process promise and MediaCodecsSupported in RemoteDecoderManagerChild"
+  },
+  {
+   "bugid": 1778989,
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add some basic container query interleaving."
+  },
+  {
+   "bugid": 1783933,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Avoid sContentParents assertion"
+  },
+  {
+   "bugid": 1783664,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add a helper method to construct a rejected Promise"
+  },
+  {
+   "bugid": 1746524,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable browser.tabs.documentchannel.parent-controlled pref"
+  },
+  {
+   "bugid": 1783717,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "23.55 - 23.11% pdfpaint / pdfpaint (OSX) regression on Wed August 3 2022"
+  },
+  {
+   "bugid": 1707590,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Initial implementation for JXL"
+  },
+  {
+   "bugid": 1730936,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "DMFBuf does not work on Pinebook Pro/Rockchip RK3399"
+  },
+  {
+   "bugid": 1769254,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ mozilla::wr::RenderMacIOSurfaceTextureHost::GetSize]"
+  },
+  {
+   "bugid": 1779355,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "GL context called from incorrect thread"
+  },
+  {
+   "bugid": 1771712,
+   "status": "RESOLVED",
+   "component": "Core:Hardware Abstraction Layer (HAL)",
+   "summary": "Set oom_score_adj in SetProcessPriority() on Linux to make it less likely for the main process to be killed under memory pressure"
+  },
+  {
+   "bugid": 1778808,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "is_trivially_copyable does not mean deserializing with memcpy is safe"
+  },
+  {
+   "bugid": 1595259,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "basic/hypot-approx.js triggers left shift of a negative value in e_hypot.cpp"
+  },
+  {
+   "bugid": 1783301,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Bump jsparagus for bug 1781061"
+  },
+  {
+   "bugid": 1783795,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] /builds/worker/workspace/build/tests/jit-test/jit-test/tests/function/function-displayName-computed.js:18:9 Error: Assertion failed: got \"obj/<\", expected \"\""
+  },
+  {
+   "bugid": 1783607,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add megamorphic stub for GetProp/HasProp for dense elements"
+  },
+  {
+   "bugid": 1783702,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "\"length\" can't be used as a property key in Array.prototype.group"
+  },
+  {
+   "bugid": 1783703,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Fix various issues in the Change-Array-By-Copy functions"
+  },
+  {
+   "bugid": 1781945,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement br_on_non_null in baseline"
+  },
+  {
+   "bugid": 1764640,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Implement Containment Change from `container-type`"
+  },
+  {
+   "bugid": 1783783,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Null dereference in some chrome frames when CSS named pages is enabled"
+  },
+  {
+   "bugid": 1783940,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Remove -moz-box-enabled-in-content prefs"
+  },
+  {
+   "bugid": 793686,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "[css3-multicol] Column balancing breaks page-break-inside:avoid child"
+  },
+  {
+   "bugid": 1783500,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Any Select elements' dropdown menus are consistently smaller in width than the Select elements themselves"
+  },
+  {
+   "bugid": 1783687,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Obey contain-intrinsic-size in scroll containers"
+  },
+  {
+   "bugid": 1749348,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Update double-conversion to version 3.2.1 (upstream revision af09fd6)"
+  },
+  {
+   "bugid": 1783841,
+   "status": "ASSIGNED",
+   "component": "Core:MathML",
+   "summary": "Remove MathML preferences deprecated_style_attributes and mathsize_names"
+  },
+  {
+   "bugid": 1779110,
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Why does \"DNS over HTTPS\" chases CNAME answers for HTTPS records and NODATA responses?"
+  },
+  {
+   "bugid": 1629690,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove nsIHttpChannel::allowPipelining"
+  },
+  {
+   "bugid": 1780822,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Early Hint crashes when preloading stylesheets"
+  },
+  {
+   "bugid": 1783642,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::Http2StreamBase::~Http2StreamBase]"
+  },
+  {
+   "bugid": 1753814,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add an option to configure the maximum amount of pinch zoom that is available"
+  },
+  {
+   "bugid": 1782303,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: !aParams.builder->IsForGenerateGlyphMask() (Filter effect is discarded while generating glyph mask.), at /builds/worker/checkouts/gecko/layout/svg/SVGIntegrationUtils.cpp:997"
+  },
+  {
+   "bugid": 1735191,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Intermittent Assertion failure: mReadyState == ReadyState::Finished, at /builds/worker/checkouts/gecko/dom/indexedDB/IDBTransaction.cpp:135"
+  },
+  {
+   "bugid": 1776895,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Firefox refusing to open window after disconnecting second screen with full screen video"
+  },
+  {
+   "bugid": 1783754,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Update FoG to Glean v51.1.0"
+  },
+  {
+   "bugid": 1783608,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "evaluateInBrowserToolbox should throw when evaluation fails"
+  },
+  {
+   "bugid": 1783610,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Set Browser Toolbox mode to \"everything\" in DAMP browser-toolbox.js"
+  },
+  {
+   "bugid": 1783670,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Front.watchFronts API is having an uncessary performance impact on all fronts"
+  },
+  {
+   "bugid": 1503293,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "\"tran\" gets autocompleted to \"transition=7&sort=4/\""
+  },
+  {
+   "bugid": 1531335,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Awesomebar should not auto-complete \"about:blank\" to \"about:blank/\""
+  },
+  {
+   "bugid": 1744243,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "If the system lies about protocol handler, use internal checks and search if not available"
+  },
+  {
+   "bugid": 1782301,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "opportunistically load remote settings for quick suggest"
+  },
+  {
+   "bugid": 1779642,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox View Telemetry"
+  },
+  {
+   "bugid": 1774066,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add colorways screen in MR onboarding"
+  },
+  {
+   "bugid": 1779423,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add configurable positioning to Feature Callout surface"
+  },
+  {
+   "bugid": 1781978,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove or update probes expiring in Firefox 106: browser.startup.abouthome_cache_* when Gecko version gets increased to 106 on 2022-08-22"
+  },
+  {
+   "bugid": 1780618,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Remove override from fallbackPref"
+  },
+  {
+   "bugid": 1782254,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add telemetry to measure the number of times users had an interaction with the editing feature"
+  },
+  {
+   "bugid": 1782035,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Firefox screenshot does not work on long pages"
+  },
+  {
+   "bugid": 1759555,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Developer Environment Integration",
+   "summary": "Environment variables needed by Rust code are not visible to `rust-analyzer` in VSCode"
+  },
+  {
+   "bugid": 1782988,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build process stops in Unified_c_src_third_party0.c"
+  },
+  {
+   "bugid": 1783790,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Running `cargo update` fails with \"failed to resolve patches for `https://github.com/mozilla/uniffi-rs.git`\""
+  },
+  {
+   "bugid": 1783798,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma clang-trunk /builds/worker/checkouts/gecko/intl/icu/source/common/ubidi.cpp:1318:28: error: integer value -1 is outside the valid range of values [0, 3] for this enumeration type [-Wenum-constexpr-conversion]"
+  },
+  {
+   "bugid": 1617103,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "yamllint should be documented"
+  },
+  {
+   "bugid": 1782696,
+   "status": "NEW",
+   "component": "Firefox Build System:Lint and Formatting",
+   "summary": "Update to pylint v2.14.5"
+  },
+  {
+   "bugid": 1769290,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Source Code Analysis",
+   "summary": "Apply mozilla-js-handle-rooted-typedef"
+  },
+  {
+   "bugid": 1780278,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Merge optimization logic between the two taskgraphs"
+  },
+  {
+   "bugid": 1783788,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade zlib to 1.2.12 for nsis"
+  },
+  {
+   "bugid": 1783542,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Bottom UI glitches out when keyboard appears"
+  },
+  {
+   "bugid": 1276388,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Prevent Subprocess processes from inheriting extra file descriptors on *nix"
+  },
+  {
+   "bugid": 1769152,
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "IOUtils must support writing until the end of profile-before-change-telemetry"
+  },
+  {
+   "bugid": 1772929,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from toolkit/components/contextualidentity/"
+  },
+  {
+   "bugid": 1772937,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from toolkit/components/satchel/"
+  },
+  {
+   "bugid": 1772939,
+   "status": "NEW",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from toolkit/components/thumbnails/"
+  },
+  {
+   "bugid": 1772748,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager: Site Compatibility",
+   "summary": "Multiple unrelated usernames suggested in Humblebundle.com login"
+  },
+  {
+   "bugid": 1779759,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent [tier 2] Wd CCOV TEST-UNEXPECTED-TIMEOUT | expected OK (telemetry shutdown)"
+  },
+  {
+   "bugid": 1783842,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove `toolbaritem` for unified extensions"
+  },
+  {
+   "bugid": 1780747,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Add DNR API bindings and permissions"
+  }
+ ],
+ "fixed": 54,
+ "total": 71,
+ "restricted": 1
+}
