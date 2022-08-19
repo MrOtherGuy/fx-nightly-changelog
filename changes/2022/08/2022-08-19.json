@@ -1,0 +1,430 @@
+{
+ "date": "2022-08-19",
+ "buildid": "20220819095050",
+ "cset": "58a08b3c7632051dcefede064373d842e3e19f65",
+ "bugs": [
+  {
+   "bugid": 1782313,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Fix MCSInfo's shutdown listener to avoid errors if shutdown is already in process when the listener is started."
+  },
+  {
+   "bugid": 1785758,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Reduce overhead of AudibilityMonitor"
+  },
+  {
+   "bugid": 1682444,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Math function 'calc()' should allow infinity and NaN"
+  },
+  {
+   "bugid": 1774589,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-values-4] Implement trigonometric functions and constants"
+  },
+  {
+   "bugid": 1782595,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-mediaqueries] propagate preferred color-scheme into SVG images, when embedding context has color-scheme: normal and no color-scheme meta tag"
+  },
+  {
+   "bugid": 1785329,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable animation-composition on Nightly"
+  },
+  {
+   "bugid": 1776843,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Investigate behavior on touch devices with Gecko-based non-Android OSs"
+  },
+  {
+   "bugid": 1785325,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Don't synthesize native mouse event in browser_navigator_clipboard_readText.js if possilbe"
+  },
+  {
+   "bugid": 1749677,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Check whether we should handle untrusted keypress event for input elements"
+  },
+  {
+   "bugid": 1784489,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Pref on text recognition for nightly and early beta"
+  },
+  {
+   "bugid": 1785227,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma /html/browsers/windows/nested-browsing-contexts/frameElement.sub.html | The window's frameElement attribute must return its container element if it is a nested browsing context - assert_equals: The frameEl when Gecko 105 merges to Beta on 2022-08-22"
+  },
+  {
+   "bugid": 1785309,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add test for HostEnsureCanAddPrivateElement"
+  },
+  {
+   "bugid": 1772416,
+   "status": "REOPENED",
+   "component": "Core:DOM: Performance",
+   "summary": "Make WPT tests pass: measure_associated_with_navigation_timing.html"
+  },
+  {
+   "bugid": 1772417,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "Make WPT tests pass: performance-measure-invalid.worker.html"
+  },
+  {
+   "bugid": 1234121,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Cache active item from child process in parent and remove sync call for FocusedChild"
+  },
+  {
+   "bugid": 1776907,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Don't regard text input elements as line breaks"
+  },
+  {
+   "bugid": 1779252,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "HTML AAM update to address element mapping"
+  },
+  {
+   "bugid": 1785741,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove unused profiler_get_profile_json_into_lazily_allocated_buffer"
+  },
+  {
+   "bugid": 1785193,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unnecessary Monitors in CompositorBridgeParent"
+  },
+  {
+   "bugid": 1785366,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add blocklist support for backdrop filter"
+  },
+  {
+   "bugid": 1785673,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Improve DisplayListPayload preallocations"
+  },
+  {
+   "bugid": 1677183,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Implement Queue.copyImageBitmapToTexture in WebGPU"
+  },
+  {
+   "bugid": 1761893,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Don't treat aria-valuetext as a localisable attribute"
+  },
+  {
+   "bugid": 1693223,
+   "status": "REOPENED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: !JS::GCThingIsMarkedGray(priv.toGCCellPtr()), at /builds/worker/checkouts/gecko/js/src/vm/ProxyObject.cpp:165"
+  },
+  {
+   "bugid": 1785287,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "IsInsideNursery null check is not optimised away in all cases"
+  },
+  {
+   "bugid": 1221888,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "\"ASSERTION: we should have saved a frame property\" with mspace"
+  },
+  {
+   "bugid": 1781046,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Implement last remembered size for contain-intrinsic-size:auto"
+  },
+  {
+   "bugid": 1785817,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Typo in comment from bug 1783953"
+  },
+  {
+   "bugid": 582793,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Floats",
+   "summary": "Hang reflowing deeply nested floats"
+  },
+  {
+   "bugid": 1716727,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "Delay crashing the main process when running out of memory"
+  },
+  {
+   "bugid": 1784851,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Break the cycle of InputStreamTunnel and TLSTransportLayer"
+  },
+  {
+   "bugid": 1746336,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[Bug]: CSS rule touch-action: none fails when the HTML element has a \"wheel\" event listener added"
+  },
+  {
+   "bugid": 1784335,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "prefers-color-scheme MediaQueryList change event doesn't fire before and after print"
+  },
+  {
+   "bugid": 1785230,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /service-workers/cache-storage/cross-partition.https.tentative.html | CacheStorage caches shouldn't be shared with a cross-partition service worker - expected TIMEOUT Gecko 105 merges to Beta on 2022-08-22"
+  },
+  {
+   "bugid": 1785784,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 105 to use NSS 3.82"
+  },
+  {
+   "bugid": 1783223,
+   "status": "ASSIGNED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable Arbitratry Code Guard in RDD on Nightly"
+  },
+  {
+   "bugid": 1783181,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Regression in StereoPannerNode on M1 Macs"
+  },
+  {
+   "bugid": 1785947,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Perma [tier 2]  /css/filter-effects/ <something> | <something>"
+  },
+  {
+   "bugid": 1784873,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] xdg_popup (menu) fails to show/move when positioned by gtk_window_move()"
+  },
+  {
+   "bugid": 1783282,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Use a custom attribute instead of custom derive for implementing interfaces with rust-xpcom"
+  },
+  {
+   "bugid": 1769791,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "allowXULXBL shouldn't be the default when running mochitests"
+  },
+  {
+   "bugid": 1785451,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update codespell to 2.2.0"
+  },
+  {
+   "bugid": 1785139,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "When updating a rust create, make sure we actually update it"
+  },
+  {
+   "bugid": 1779219,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add onboarding link to QuickActions"
+  },
+  {
+   "bugid": 1785743,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Expose Merino's endpoint to Nimbus"
+  },
+  {
+   "bugid": 1770472,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Styling tweak of favicon in recently closed tabs list"
+  },
+  {
+   "bugid": 1785819,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox View toolbar button should be announced as a tab to screen readers"
+  },
+  {
+   "bugid": 1778792,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update language mismatch screen in MR onboarding"
+  },
+  {
+   "bugid": 1781084,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add CSS transitions when moving Feature Callout from one element to the next"
+  },
+  {
+   "bugid": 1781088,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Improve accessibility by adding roles and alternate means of navigation to Feature Callout surface"
+  },
+  {
+   "bugid": 1781155,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add strings for localization and update message configuration for Firefox View feature callout"
+  },
+  {
+   "bugid": 1781158,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add final illustration assets and update Firefox View feature callout message configuration"
+  },
+  {
+   "bugid": 1783070,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update About Welcome references to window functions with safe navigators"
+  },
+  {
+   "bugid": 1783780,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update image icon used for default theme in MR onboarding colorway screen"
+  },
+  {
+   "bugid": 1784571,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Center logo on small screen in new MR onboarding"
+  },
+  {
+   "bugid": 1785253,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Perma newtab TEST-UNEXPECTED-FAIL sasslint | content-src/styles/_feature-callout.scss(38, 1): Space expected between blocks (empty-line-between-blocks)"
+  },
+  {
+   "bugid": 1785810,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable PDF editing in nightly and early beta"
+  },
+  {
+   "bugid": 1785203,
+   "status": "RESOLVED",
+   "component": "Firefox:Preferences",
+   "summary": "Update sub-dialog dimensions now that they're based on the sub-dialog's real font size"
+  },
+  {
+   "bugid": 1785814,
+   "status": "VERIFIED",
+   "component": "Firefox:Shell Integration",
+   "summary": "The \"os.environment.is_taskbar_pinned_private\" scalar is set to \"false\" even if the \"Pin Private Window\" shortcut is pinned to the taskbar"
+  },
+  {
+   "bugid": 1785740,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Navigating a tab to a non-syncable URL doesn't remove the old tab from the synced tabs list"
+  },
+  {
+   "bugid": 1785265,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] Set role=\"presentation\" on colorway illustrations"
+  },
+  {
+   "bugid": 1785902,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Independent Voices] Update colorway illustrations for Colorway Closet and about:addons"
+  },
+  {
+   "bugid": 1782837,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma Windows MinGW-clang [tier 2] /builds/worker/fetches/clang/bin/../i686-w64-mingw32/include/c++/v1/filesystem:262:3: error: \"The Filesystem library is not supported since libc++ has been configured with LIBCXX_ENABLE_FILESYSTEM disabled\""
+  },
+  {
+   "bugid": 1783542,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Bottom UI glitches out when keyboard appears"
+  },
+  {
+   "bugid": 1785318,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from toolkit/components/passwordmgr"
+  },
+  {
+   "bugid": 1777398,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Remove or update probes expiring in Firefox 105: PRINT_INIT_TO_P*"
+  },
+  {
+   "bugid": 1785904,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Open menubar menus lack contrast with some webextension themes (such as balanced colorways with white text)"
+  },
+  {
+   "bugid": 1761158,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "datetimebox calls addEventListener for \"mousedown\" in destructor"
+  },
+  {
+   "bugid": 1784118,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Activate scripts when clicking an extension item in the unified extensions panel"
+  },
+  {
+   "bugid": 1784292,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Anchor extension popups to the unified extensions button"
+  }
+ ],
+ "fixed": 61,
+ "total": 70,
+ "restricted": 2
+}
