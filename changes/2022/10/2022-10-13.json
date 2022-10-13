@@ -1,0 +1,406 @@
+{
+ "date": "2022-10-13",
+ "buildid": "20221013100028",
+ "cset": "3662e18e5c43d986700dd79684c08cef69481dcc",
+ "bugs": [
+  {
+   "bugid": 1794635,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Enforce thread safety on VideoFrame"
+  },
+  {
+   "bugid": 1794496,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make the format reader be able to seek only audio track, without affecting the video playback"
+  },
+  {
+   "bugid": 1794714,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable the media engine test (wmfme) by default on the try server"
+  },
+  {
+   "bugid": 1768185,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Origin header should NOT honor ReferrerPolicy no-referrer for CORS requests"
+  },
+  {
+   "bugid": 1792190,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Perma /service-workers/service-worker/same-site-cookies.https.html | same-origin, nested set location with cross-site middle frame and no service worker  when Gecko 107 switches to Late Beta on 2022-10-28"
+  },
+  {
+   "bugid": 1794777,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Make elementIsFocusable not lie with ShadowRoot.delegatesFocus and an already-focused element"
+  },
+  {
+   "bugid": 1285986,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "crypto.subtle.encrypt throws wrong error for bad IV length with AES-CBC"
+  },
+  {
+   "bugid": 1786240,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Live regions are broken with JAWS"
+  },
+  {
+   "bugid": 1794043,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "AccAttributes ergonomic fixups (const, value category correctness, special member functions, oh my!)"
+  },
+  {
+   "bugid": 1794634,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "mozAccessible::ARIARole uses sync IPC message"
+  },
+  {
+   "bugid": 1794654,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Wait for cache update before comparing bounds to content"
+  },
+  {
+   "bugid": 1794747,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Treeherder Add new jobs (Search) hangs with NVDA"
+  },
+  {
+   "bugid": 1794327,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Use RAPL perf events to show power use in the profiler"
+  },
+  {
+   "bugid": 1792115,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Clicking Trigger Device Reset in about:support causes Firefox to lock up (Windows)"
+  },
+  {
+   "bugid": 1791877,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Assertion failure: mSize > 0 (invalid size), at /ipc/glue/Shmem.cpp:251"
+  },
+  {
+   "bugid": 1794406,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Missing WebGPU buffer mapAsync error messages"
+  },
+  {
+   "bugid": 1791970,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow AMD Barcelo 0x15e7 device"
+  },
+  {
+   "bugid": 1765477,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Calling console.log with a Record crashes the tab"
+  },
+  {
+   "bugid": 1789528,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [Tier-2] tests/jit-test/jit-test/tests/bug1787730.js | [CodeCoverage] Setting handlers for process 2077. (code -11, args \"--delazification-mode=concurrent-df+on-demand\") [0.0 s]"
+  },
+  {
+   "bugid": 1794317,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "LeakSanitizer: [@ js::irregexp::InitializeNamedCaptures] with RegExp"
+  },
+  {
+   "bugid": 1791968,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !JS_IsExceptionPending(cx_), at js/src/vm/JSContext.cpp:1326"
+  },
+  {
+   "bugid": 1792228,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize shapeguards on proto chain"
+  },
+  {
+   "bugid": 1787554,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Update call_ref to have type annotation"
+  },
+  {
+   "bugid": 1791361,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: end_ > begin_, at wasm/WasmCodegenTypes.h:576"
+  },
+  {
+   "bugid": 1794407,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "[macOS] Drop-down menu check mark is overlapping text if the Zoom level is increased inside a PDF Form"
+  },
+  {
+   "bugid": 1788860,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash in [@ mozilla::ipc::MessageChannel::~MessageChannel | mozilla::net::PSocketProcessChild::~PSocketProcessChild]"
+  },
+  {
+   "bugid": 1793975,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add a telemetry probe to measure time spent relaying response start from the parent process to the child"
+  },
+  {
+   "bugid": 1794840,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Rename probe NETWORK_ASYNC_OPEN_TO_TRANSACTION_PENDING_MS as the type changed"
+  },
+  {
+   "bugid": 1720118,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "SSL token cache doesn't handle connections with overridden errors well"
+  },
+  {
+   "bugid": 1791814,
+   "status": "ASSIGNED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Investigate `security.sandbox.content.tempDirSuffix`"
+  },
+  {
+   "bugid": 1174097,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "remove SVGSVGElement.useCurrentView"
+  },
+  {
+   "bugid": 1794450,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Measure the use of certificate revocation mechanisms"
+  },
+  {
+   "bugid": 1788321,
+   "status": "RESOLVED",
+   "component": "Core:Spelling checker",
+   "summary": "Intermittent editor/reftests/spellcheck-input-disabled.html != editor/reftests/spellcheck-input-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1774462,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Hit MOZ_CRASH(OOM) [@ mozilla::dom::indexedDB::Key::EncodeBinary]"
+  },
+  {
+   "bugid": 1792567,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "deCOM nsIMacUtils"
+  },
+  {
+   "bugid": 1794001,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Use `rure` instead of the `regex-ffi`"
+  },
+  {
+   "bugid": 1712762,
+   "status": "ASSIGNED",
+   "component": "Core:XPConnect",
+   "summary": "Crash in [@ xpc::NativeGlobal]"
+  },
+  {
+   "bugid": 1792334,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "De-COM nsIXPConnect"
+  },
+  {
+   "bugid": 1793602,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | js/xpconnect/tests/unit/test_import_devtools_loader.js | xpcshell return code: 0 when Gecko 107 switches to Late Beta on 2022-10-28"
+  },
+  {
+   "bugid": 1794186,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove various `__exposedProps__` tests"
+  },
+  {
+   "bugid": 1792848,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Migrate devtools/shared/ to use absolute URL instead of absolute path when requiring commonjs modules"
+  },
+  {
+   "bugid": 1792550,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Signing in to FxA with the primary password locked doesn't work correctly and leaves the user disconected."
+  },
+  {
+   "bugid": 1785853,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Close the FxA tab opened by Fx-View when sign-in is complete"
+  },
+  {
+   "bugid": 1793754,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "We're having trouble syncing error is displayed after the account is disconnected from the FxA web page"
+  },
+  {
+   "bugid": 1794423,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Improve NetError page loading"
+  },
+  {
+   "bugid": 1786523,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Enhancement] Open the “Sign in” link from the intro screen of the “about:welcome” page in a new tab"
+  },
+  {
+   "bugid": 1794620,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "land assets for rollout of winning import bookmarks treatment"
+  },
+  {
+   "bugid": 1793478,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Per-recipe opt-out for schema validation"
+  },
+  {
+   "bugid": 1793821,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Do not try to enroll in non-desktop preview experiments"
+  },
+  {
+   "bugid": 1791178,
+   "status": "ASSIGNED",
+   "component": "Firefox:Preferences",
+   "summary": "Digital storage size unit symbols not expressed according to the language set in Firefox if language changes (need to switch downloads.properties units to fluent)"
+  },
+  {
+   "bugid": 1791172,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Colorway Closet] The checkmark’s framing is disproportional on some locales when reducing the browser’s width if “Firefox Home is now your homepage” translation  generates a long string"
+  },
+  {
+   "bugid": 1792686,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Highlighted searched strings in the about:preferences page has a bigger font than before when the result is situated in a drop-down menu"
+  },
+  {
+   "bugid": 1794473,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Fix rendering of XUL trees with flexbox emulation enabled."
+  },
+  {
+   "bugid": 1794630,
+   "status": "REOPENED",
+   "component": "Firefox:Theme",
+   "summary": "Improve splitters for browser chrome use cases."
+  },
+  {
+   "bugid": 1793622,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Remove unused argument in PanelMultiView"
+  },
+  {
+   "bugid": 1766497,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "virtualenv error with Python 3.10: No such file or directory: '[...]lib/python3.10/site-packages/mach.pth'"
+  },
+  {
+   "bugid": 1794955,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk-stage1 1 out of 7 hunks FAILED -- saving rejects to file compiler-rt/lib/lsan/lsan_common.cpp.rej"
+  },
+  {
+   "bugid": 1792461,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Drop previously removed localization files from mobile/android/locales/l10n.toml"
+  },
+  {
+   "bugid": 1793365,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Preexisting site permission XPI with non-default OriginAttributes breaks new site permission addon provider UI"
+  },
+  {
+   "bugid": 1794162,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Only register `SitePermsAddonProvider` when the pref is enabled"
+  },
+  {
+   "bugid": 1760033,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Migrate aboutReader.properties to Fluent"
+  },
+  {
+   "bugid": 1767039,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support the runtime registration of event metrics in JOG"
+  },
+  {
+   "bugid": 1791000,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement a custom ping in FOG to emulate a possible nodc implementation"
+  },
+  {
+   "bugid": 1693271,
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "Switch MatchPattern and MatchGlob to use the Rust regex engine"
+  },
+  {
+   "bugid": 1793626,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Enable unified extensions pref by default on Nightly (only, for now)"
+  },
+  {
+   "bugid": 1793995,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Factor parts of WebExtensionPolicy into a threadsafe core type"
+  }
+ ],
+ "fixed": 52,
+ "total": 66,
+ "restricted": 1
+}
