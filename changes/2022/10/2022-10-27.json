@@ -1,0 +1,472 @@
+{
+ "date": "2022-10-27",
+ "buildid": "20221027095047",
+ "cset": "7e777801b7cdfd8d275b5ec3ab6fe171c3c4b1a4",
+ "bugs": [
+  {
+   "bugid": 1774302,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Make VideoFrame Serializable"
+  },
+  {
+   "bugid": 1796893,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "build failure on OpenBSD/arm64 since ffmpeg config regen in bug 1765480"
+  },
+  {
+   "bugid": 1797479,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "MOZ_DIAGNOSTIC_ASSERT(sDeviceUniqueIDs.find(aCaptureId) == sDeviceUniqueIDs.end()) in IPC fuzzing"
+  },
+  {
+   "bugid": 1795112,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Check that GMP Service cannot be created twice"
+  },
+  {
+   "bugid": 1797445,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Race condition in MockCubebStream's frozen start feature"
+  },
+  {
+   "bugid": 1786797,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Enable AudioIPC in Nightly builds on macOS"
+  },
+  {
+   "bugid": 1797398,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update cubeb-coreaudio-rs to 93b5c01a"
+  },
+  {
+   "bugid": 1793483,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Migrate NS_STYLE_FRAME_* defines"
+  },
+  {
+   "bugid": 1794040,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "adding container-type: inline-size to an element, makes the height of that element 0px"
+  },
+  {
+   "bugid": 1797146,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Unexpected spaces in serialization of `font-variant` when a system font name is used"
+  },
+  {
+   "bugid": 1797312,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`SharedSubResourceCacheLoadingValueBase` duplicates `mIsCancelled` field"
+  },
+  {
+   "bugid": 1797407,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(assertion failed: !element.has_dirty_descendants()) at /builds/worker/checkouts/gecko/servo/components/style/traversal.rs:526"
+  },
+  {
+   "bugid": 1797019,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add telemetry probe logging if MIDI devices are connected to the machine"
+  },
+  {
+   "bugid": 1796732,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Write document of the editor module overview"
+  },
+  {
+   "bugid": 1796963,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "Intermittent /navigation-timing/secure-connection-start-non-zero.https.html | Test that secureConnectionStart is not zero - assert_greater_than: secureConnectionStart is non-zero expected a number greater than 0 but got -1.56"
+  },
+  {
+   "bugid": 1705271,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Notifications",
+   "summary": "Remove PushServiceAndroidGCM.jsm"
+  },
+  {
+   "bugid": 1797463,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Firefox UI unresponsive after minimizing the browser with the Show Desktop button"
+  },
+  {
+   "bugid": 1795124,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Missing target check in DocAccessibleParent"
+  },
+  {
+   "bugid": 1797029,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose DXGISwapChain tearing support to about:support"
+  },
+  {
+   "bugid": 1778237,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Firefox eats up memory and  hangs on the certain page. (Seems to be fixed by gpu-canvas)"
+  },
+  {
+   "bugid": 1794237,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Android crash in [@ mozilla::WebGLContext::UniformData]"
+  },
+  {
+   "bugid": 1783713,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Firefox should use wgpu's \"strict_asserts\" feature"
+  },
+  {
+   "bugid": 1797580,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "webrender is disabled for me on latest Nightly (gfx.blacklist.webrender = 8)"
+  },
+  {
+   "bugid": 1792203,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "AsyncBlockers might not immediately resolve promise when called with no blocker registered"
+  },
+  {
+   "bugid": 1726039,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement the HostEnsureCanAddPrivateElement hook"
+  },
+  {
+   "bugid": 1792228,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize shapeguards on proto chain"
+  },
+  {
+   "bugid": 1794439,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Inline `HasNativeDataPropertyPure` cache lookup in Ion"
+  },
+  {
+   "bugid": 1790626,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Switch representation of (ref T) to use pointer to TypeDef instead of index"
+  },
+  {
+   "bugid": 1796590,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma reftest TEST-UNEXPECTED-PASS | css-grid/grid-item-video-stretch-001.html == css-grid/grid-item-video-stretch-001-ref.html | image comparison, max difference: 0, number of differing pixels: 0"
+  },
+  {
+   "bugid": 1797011,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Make nsFrameList and AbsoluteFrameList be move-only"
+  },
+  {
+   "bugid": 1797432,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Places tooltips are vertically truncated"
+  },
+  {
+   "bugid": 1797504,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Address bar is not clickable when initially opened"
+  },
+  {
+   "bugid": 1797139,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "input element stopped working after change type from date to datetime-local"
+  },
+  {
+   "bugid": 1778999,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove backward compatible code from httpd.js"
+  },
+  {
+   "bugid": 1795775,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add a telemetry probe to measure the time spent relaying the completion of a network request from the parent process to the child"
+  },
+  {
+   "bugid": 1796316,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update necko peers"
+  },
+  {
+   "bugid": 1797346,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "redirectEnd on timedChannel is almost always set to null"
+  },
+  {
+   "bugid": 1347710,
+   "status": "REOPENED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable sandbox protections for the Windows GPU process"
+  },
+  {
+   "bugid": 1795542,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent dom/media/webrtc/tests/mochitests/test_getUserMedia_basicTabshare.html | application crashed [@ mozilla::MozPromise<bool,nsresult,1>::ThenValueBase::AssertIsDead()]"
+  },
+  {
+   "bugid": 1794613,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Profile selection dialog unresponsive to mouse input due to hover tooltip that doesn't go away"
+  },
+  {
+   "bugid": 1796103,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Log move-to-rect params"
+  },
+  {
+   "bugid": 1796751,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Use correct GdkWindow type to apply negative coordinates workaround"
+  },
+  {
+   "bugid": 1797470,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Remove MOZ_GTK_DRAG_RESULT_*"
+  },
+  {
+   "bugid": 1796408,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Nightly fails to position mouse cursor to default dialog button."
+  },
+  {
+   "bugid": 1791725,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add FixedBufferOutputStream"
+  },
+  {
+   "bugid": 1791729,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Expose StreamBufferSource implementations"
+  },
+  {
+   "bugid": 1581213,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "DOM Mutation Breakpoints:  Disabling Mutation Breakpoint in the Debugger doesn't show checked context menu in inspector"
+  },
+  {
+   "bugid": 1537712,
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "JSON Viewer does not check key modifiers"
+  },
+  {
+   "bugid": 1796992,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Improve CSS and appearance of the profiler popup"
+  },
+  {
+   "bugid": 1797137,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Add recommendation to \"Files: exclude\" build directories in vscode docs"
+  },
+  {
+   "bugid": 1797399,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "rust-analyzer fails to run build scripts on Windows"
+  },
+  {
+   "bugid": 1795880,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Add an ESLint rule to enforce using static imports where possible"
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1796017,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Hide help button for QuickActions"
+  },
+  {
+   "bugid": 1794661,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "The MR onboarding split screen's main section is missing a shadow"
+  },
+  {
+   "bugid": 1795037,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "\"try it\" doorhanger after closing a tab reappears frequently when also using private browsing"
+  },
+  {
+   "bugid": 1797202,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "ASrouter doesn't ingest rollout messages from Nimbus"
+  },
+  {
+   "bugid": 1797366,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Return \"Skip this step\" button to the Get Started screen"
+  },
+  {
+   "bugid": 1797553,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "fxms-message-1 not in MESSAGING_EXPERIMENTS_DEFAULT_FEATURES"
+  },
+  {
+   "bugid": 1794020,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Show Pocket tiles in the 2nd spot of sponsored top sites on the newtab page"
+  },
+  {
+   "bugid": 1796396,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove or update probes expiring in Firefox 109: intl.ui.browserLanguage.manage#action"
+  },
+  {
+   "bugid": 1797454,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "update meta data which links Firefox Settings UI files to their Bugzilla component"
+  },
+  {
+   "bugid": 1797466,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Rename Firefox :: Preferences module and add Mike and Dave as a peer"
+  },
+  {
+   "bugid": 1797156,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Cleanup, refactor and document OverflowableToolbar"
+  },
+  {
+   "bugid": 1797406,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Ignore DONTBUILD on toolchains project branch"
+  },
+  {
+   "bugid": 1797653,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [style 0.0.1] thread 'main' panicked at 'Not able to resolve vector element?: Continue', /builds/worker/checkouts/gecko/third_party/rust/bindgen/src/ir/ty.rs:1135:22"
+  },
+  {
+   "bugid": 1795994,
+   "status": "ASSIGNED",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "Migrate decision task jobs from AWS to GCP"
+  },
+  {
+   "bugid": 1793589,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Consider empty sandbox name as a default realm"
+  },
+  {
+   "bugid": 1796839,
+   "status": "RESOLVED",
+   "component": "Taskcluster:General",
+   "summary": "toolchain-build dockerfile references Python2"
+  },
+  {
+   "bugid": 1727820,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "AppUpdater.jsm race condition involving update state"
+  },
+  {
+   "bugid": 1795322,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update non-code & other references for migrated ES modules files"
+  },
+  {
+   "bugid": 1743878,
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Many repeated modal caret-browsing dialogs, if you accidentally hold down F7 for a few seconds"
+  },
+  {
+   "bugid": 1793905,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Not able to Lock HTTPS-only preferences"
+  },
+  {
+   "bugid": 1797363,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Vendor Glean SDK v51.7.0"
+  },
+  {
+   "bugid": 1797313,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "confirm() dialog layout broken when checkbox is showing."
+  },
+  {
+   "bugid": 1797050,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Add `max_manifest_version: 2` to manifest `applications` key"
+  },
+  {
+   "bugid": 1796586,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "browser.runtime.onStartup doesn't work"
+  }
+ ],
+ "fixed": 68,
+ "total": 77,
+ "restricted": 3
+}
