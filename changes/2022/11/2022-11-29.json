@@ -1,0 +1,364 @@
+{
+ "date": "2022-11-29",
+ "buildid": "20221129084032",
+ "cset": "fd40e36100cc0b5c401e3c52f744b4dc9a5f6eaa",
+ "bugs": [
+  {
+   "bugid": 1765732,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Make ContentParent::ShutDownProcess fallible in case of failed dispatch"
+  },
+  {
+   "bugid": 1437126,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "drag/dropping image from one tab into another should drop the image, not the URL."
+  },
+  {
+   "bugid": 1802125,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Use nsIClipboard.AsyncGetData to handle async IPC"
+  },
+  {
+   "bugid": 1802818,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Overscroll gutter doesn't match background in top level images"
+  },
+  {
+   "bugid": 1777054,
+   "status": "NEW",
+   "component": "Core:DOM: Editor",
+   "summary": "Intermittent editor/libeditor/tests/test_bug795785.html | single tracking bug"
+  },
+  {
+   "bugid": 1802402,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Group methods of HTMLEditor setting inline style into a nested class"
+  },
+  {
+   "bugid": 1785520,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent /fetch/private-network-access/service-worker-background-fetch.https.window.js | single tracking bug"
+  },
+  {
+   "bugid": 1778510,
+   "status": "NEW",
+   "component": "Core:DOM: Performance",
+   "summary": "Cut Performance and timestamps in general over to fine-grained RFP checks"
+  },
+  {
+   "bugid": 1800829,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "intl.tsf.enable is still being referenced in source docs after being renamed in 108"
+  },
+  {
+   "bugid": 1801907,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::Accessible::IsOuterDoc]"
+  },
+  {
+   "bugid": 1798521,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Permanent tools/fuzzing/smoke/test_grizzly.py::test_grizzly_smoke TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1798067,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add telemetry for HDR capability based on per-platform capability detection"
+  },
+  {
+   "bugid": 1802225,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove some remaining Layers-specific code and files"
+  },
+  {
+   "bugid": 1801539,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "PDF.js slow rendering of timetable pdf with gfx.canvas.accelerated set to true"
+  },
+  {
+   "bugid": 1801548,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Codepen demo (https://codepen.io/sanderriel/pen/vYRdYBE) is slower with gpu-canvas, and somewhat improves with wpf-gpu"
+  },
+  {
+   "bugid": 1801584,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "[HWA] Stroking a single rect with transform doesn't use antialising"
+  },
+  {
+   "bugid": 1801588,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "[HWA] \"copy\" composite mode doesn't work anymore"
+  },
+  {
+   "bugid": 1802625,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Codepen demo (https://codepen.io/DonKarlssonSan/pen/KKoaRrY) is slower with gpu-canvas"
+  },
+  {
+   "bugid": 1802479,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: IsObjectValueInCompartment(v, compartment()), at vm/NativeObject.h:1074"
+  },
+  {
+   "bugid": 1802731,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "regress-531682.js got accidentally renamed in bug 1423335"
+  },
+  {
+   "bugid": 1219128,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: inited == hasPrototype(key), at vm/GlobalObject.h:334 with OOM"
+  },
+  {
+   "bugid": 1671228,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Warp: Implement stub folding for shape guards"
+  },
+  {
+   "bugid": 1799806,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Profiler misreports Ion frames as Baseline frames"
+  },
+  {
+   "bugid": 1800514,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Don't unbox shapes in GuardMultipleShapes"
+  },
+  {
+   "bugid": 1802308,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: [barrier verifier] Unmarked edge: JS RegExpShared 234c3c168098 'RegExpShared code' edge to JS JitCode 234c3c169308, at /js/src/gc/Verifier.cpp:384"
+  },
+  {
+   "bugid": 1791759,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Implement CSS Containment content-visibility: auto"
+  },
+  {
+   "bugid": 841942,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Consider displaying tick marks for <input type=range> when @list/<datalist> is used"
+  },
+  {
+   "bugid": 1793736,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use AbortSignal.reason in Fetch code"
+  },
+  {
+   "bugid": 1787927,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "2.51% startup_about_home_paint_cached (Windows) regression on Mon August 15 2022"
+  },
+  {
+   "bugid": 1802605,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Use SpecialPowers.Services.env in test_group_keyboard.html and helper_relative_scroll_smoothness.html"
+  },
+  {
+   "bugid": 1795831,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Assertion failure: errorCode != 0, at /security/manager/ssl/TransportSecurityInfo.cpp:115"
+  },
+  {
+   "bugid": 1802798,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "WebAudio crashing on CPUs without DAZ mode"
+  },
+  {
+   "bugid": 1801888,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ nsWindow::Destroy]"
+  },
+  {
+   "bugid": 1802105,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Disable processing native events in nsDragService::SourceDataGetUriLists()"
+  },
+  {
+   "bugid": 1798014,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Mousewheel scrolling disabled when hardware acceleration is enabled"
+  },
+  {
+   "bugid": 1802924,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Update to sphinx-rtd-theme 1.1.1"
+  },
+  {
+   "bugid": 1800630,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Filter out navigational suggestion top picks that match the heuristic"
+  },
+  {
+   "bugid": 1800954,
+   "status": "ASSIGNED",
+   "component": "Firefox:File Handling",
+   "summary": "Bugzilla component for uriloader is incorrect in mots.yaml"
+  },
+  {
+   "bugid": 1793453,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "F6 results in CFR panel showing and hiding  when URL bar is focused on \"blank\" url page or URL string has been altered"
+  },
+  {
+   "bugid": 1799195,
+   "status": "REOPENED",
+   "component": "Firefox:Messaging System",
+   "summary": "Intermittent browser/components/firefoxview/tests/browser/browser_feature_callout_resize.js | single tracking bug"
+  },
+  {
+   "bugid": 1802194,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update title and body text of Firefox View onboarding CFR message"
+  },
+  {
+   "bugid": 1802468,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Remove expired Telemetry probes related to pdf.js"
+  },
+  {
+   "bugid": 1802508,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Privacy settings permissions not aligned"
+  },
+  {
+   "bugid": 1802701,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "\"Manage Cookies and Site Data\" dialog is too tall"
+  },
+  {
+   "bugid": 1802706,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Confirmation window to delete cookies and website data is shown incorrectly"
+  },
+  {
+   "bugid": 1801024,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Tabs telemetry appears to no longer be collected"
+  },
+  {
+   "bugid": 1802490,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Replace Cu.reportError with console.error in services"
+  },
+  {
+   "bugid": 1386368,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap failing with SSL: CERTIFICATE_VERIFY_FAILED"
+  },
+  {
+   "bugid": 1801283,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "eslint-build tester isn't running on cron"
+  },
+  {
+   "bugid": 1802837,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Remove Fluent migration recipes for Firefox 105-107"
+  },
+  {
+   "bugid": 1801679,
+   "status": "ASSIGNED",
+   "component": "Thunderbird:Message Compose Window",
+   "summary": "Lips-are-sealed smiley uses wrong emoji"
+  },
+  {
+   "bugid": 1782990,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Manager",
+   "summary": "JSONFile: Include sanitized filename of file being written in shutdown blocker"
+  },
+  {
+   "bugid": 1799823,
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "Crash in [@ AsyncShutdownTimeout | IOUtils: waiting for profileBeforeChange IO to complete | JSON store: writing data]"
+  },
+  {
+   "bugid": 1775328,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Clicking the subtitle options displayed over the PiP toggle will activate pip instead of the menu displayed over it (WebVTT sub video)"
+  },
+  {
+   "bugid": 1787080,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/xpcshell/test_ext_scripting_startupCache.js | single tracking bug"
+  },
+  {
+   "bugid": 1800109,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Write a test that checks that overflowed toolbar items in the addons area can be unpinned via a context menu"
+  },
+  {
+   "bugid": 1801514,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "The UEP looks wonky while it's open and when entering customize mode, if Disable Popup Auto-Hide is checked in the toolbox"
+  },
+  {
+   "bugid": 1802562,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Themes",
+   "summary": "HCM should not affect extension widgets outside panels"
+  },
+  {
+   "bugid": 1802574,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_unified_extensions.js | single tracking bug"
+  }
+ ],
+ "fixed": 46,
+ "total": 59,
+ "restricted": 6
+}
