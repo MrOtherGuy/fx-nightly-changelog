@@ -1,0 +1,616 @@
+{
+ "date": "2022-12-01",
+ "buildid": "20221201161829",
+ "cset": "4ec5232d1c53adc904757703336402e02f10ee01",
+ "bugs": [
+  {
+   "bugid": 1803022,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "VideoFrame.codedRect should be null if it's closed"
+  },
+  {
+   "bugid": 1800912,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libdav1d to 4b9f5b70"
+  },
+  {
+   "bugid": 1802513,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "MP3s are decoded using the system's ffmpeg on desktop Linux, instead of the vendored ffmpeg"
+  },
+  {
+   "bugid": 1803252,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video stuttering and corruption after seeking if playback rate is > 1"
+  },
+  {
+   "bugid": 1793783,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add parsing for <general-enclosed> in queries conditions"
+  },
+  {
+   "bugid": 1803350,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "rusttests still fail on i686 due to wrong Document layout."
+  },
+  {
+   "bugid": 1563452,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "When serialising with nsIDocumentEncoder::OutputFormatted, attributes, like href, can be broken across lines, which alters their value (broken links etc.)"
+  },
+  {
+   "bugid": 1786048,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Setting innerWidth/Height multiple times can apply the delta multiple times."
+  },
+  {
+   "bugid": 1791867,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add GetStorageManager to nsIGlobalObject"
+  },
+  {
+   "bugid": 1795491,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent browser/base/content/test/fullscreen/browser_fullscreen_window_open.js | single tracking bug"
+  },
+  {
+   "bugid": 1803222,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Worklet.addModule should return SyntaxError if fails to parse the moduleURL"
+  },
+  {
+   "bugid": 1803268,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "regression: RFP navigator spoof fails in initial about:blank iframes"
+  },
+  {
+   "bugid": 1802668,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "HTMLEditor should not use existing `<strong>`, `<em>` and `<s>` as alternative container when styling node is a sibling of existing one"
+  },
+  {
+   "bugid": 1802736,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "HTML editor should not reuse existing container at styling text with `execCommand` if the element is not created in current mode"
+  },
+  {
+   "bugid": 1803317,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Assert that op queue is empty in the ~nsHtml5TreeOpExecutor"
+  },
+  {
+   "bugid": 1797219,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "High frequency docshell/test/browser/browser_onbeforeunload_frame.js | single tracking bug"
+  },
+  {
+   "bugid": 1787044,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent dom/websocket/tests/test_worker_websocket2.html | single tracking bug"
+  },
+  {
+   "bugid": 1803157,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "ReferrerInfo classinfo shouldn't say \"MAIN_THREAD_ONLY\""
+  },
+  {
+   "bugid": 1789399,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Making CheckedUnsafePtr be much easier debugging"
+  },
+  {
+   "bugid": 1734244,
+   "status": "NEW",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement async iteration of ReadableStream"
+  },
+  {
+   "bugid": 1801756,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Using Firefox Nightly with GMail I can no longer read the web page with NVDA using the mouse"
+  },
+  {
+   "bugid": 1803398,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Update Gecko Profiler module ownership: Add Florian to peers, move a few inactive peers to emeritus"
+  },
+  {
+   "bugid": 1798711,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove gtest duplication of DisableCrashReporter()"
+  },
+  {
+   "bugid": 1802158,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "`gfx/graphite2` third-party C++ file pruning"
+  },
+  {
+   "bugid": 1802977,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ nsWindow::Destroy]"
+  },
+  {
+   "bugid": 1803331,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Refresh a bit skia/generate_mozbuild.py"
+  },
+  {
+   "bugid": 1803501,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add RenderTextureHostWrapper::AsRenderTextureHostSWGL()"
+  },
+  {
+   "bugid": 1645092,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "WebGLRenderingContext.getUniform() fails with \"WebGL warning: getUniform: No active linked Program.\""
+  },
+  {
+   "bugid": 1802382,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: Text",
+   "summary": "Assertion failure: NS_IsMainThread(), at /builds/worker/checkouts/gecko/gfx/thebes/gfxUserFontSet.h:102"
+  },
+  {
+   "bugid": 1800050,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "malloc vs operator delete [] mismatch in WriteCachedStencil"
+  },
+  {
+   "bugid": 1801894,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "`fdlibm` third-party C++ file pruning"
+  },
+  {
+   "bugid": 1802525,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Why does GiveUpBytecodeEncoding call FinishIncrementalEncoding?"
+  },
+  {
+   "bugid": 1803329,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Simplify code now that Object/Function are eagerly created"
+  },
+  {
+   "bugid": 1797486,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:190"
+  },
+  {
+   "bugid": 1802896,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Move mark color state to the MarkStack class"
+  },
+  {
+   "bugid": 1599800,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[exploration] Consider growing table capacity exponentially"
+  },
+  {
+   "bugid": 1736860,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Sundry cruft in generate-spectests"
+  },
+  {
+   "bugid": 1792765,
+   "status": "NEW",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Tab freezes when running WebAssembly demo with devtools open"
+  },
+  {
+   "bugid": 1425434,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "stack overflow in xul!nsLineBreaker::AppendText"
+  },
+  {
+   "bugid": 1791759,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Implement CSS Containment content-visibility: auto"
+  },
+  {
+   "bugid": 1803162,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "13.94% fandom loadtime (Linux) regression on Mon November 21 2022"
+  },
+  {
+   "bugid": 1793463,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Make NS_URIChainHasFlags (mostly) threadsafe"
+  },
+  {
+   "bugid": 1797279,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_retry_0rtt.js | single tracking bug"
+  },
+  {
+   "bugid": 1800758,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Rename add_tls_server_setup to asyncStartTLSTestServer and make it truly async"
+  },
+  {
+   "bugid": 1801782,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add a mochitest to make sure bug 1801661 will not happen"
+  },
+  {
+   "bugid": 1801852,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "libwebrtc's copy of abseil causes way too many warnings about __has_trivial_destructor"
+  },
+  {
+   "bugid": 1802829,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "WebRTC H.264 failing for web conferencing"
+  },
+  {
+   "bugid": 1796069,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Implement a way to measure realtime (webrtc et al) video performance"
+  },
+  {
+   "bugid": 1803368,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "H264 encoding for webrtc is broken on Android"
+  },
+  {
+   "bugid": 1802957,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Add preferences to override system fonts"
+  },
+  {
+   "bugid": 1791754,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Assertion failure: !gHandled || !aCommands.IsEmpty(), at widget/gtk/NativeKeyBindings.cpp:387"
+  },
+  {
+   "bugid": 1802327,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ wl_log] (xdg_activation_v1_activate)"
+  },
+  {
+   "bugid": 1796152,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Explain why sometimes some buttons are disabled in about:logging"
+  },
+  {
+   "bugid": 1796554,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Make about:logging look a bit better, fix inconsistencies when clicking various buttons"
+  },
+  {
+   "bugid": 1796585,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Introduce logging presets for about:logging"
+  },
+  {
+   "bugid": 1797284,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Teach about:logging to start the Firefox Profiler, with the appropriate profiler preset for a particular logging preset"
+  },
+  {
+   "bugid": 1797497,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Allow custom configuration of about:logging via URL parameter"
+  },
+  {
+   "bugid": 1800076,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Test about:logging"
+  },
+  {
+   "bugid": 1801270,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "GetDiskInfo can return NS_OK without setting aResult"
+  },
+  {
+   "bugid": 1802349,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Document about:logging"
+  },
+  {
+   "bugid": 1802338,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "RDM z-index tweaks"
+  },
+  {
+   "bugid": 1803225,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Add a link in the docs to Emilio's mach/MSYS2 setup guide"
+  },
+  {
+   "bugid": 1797265,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement the engagement event"
+  },
+  {
+   "bugid": 1801602,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The context menu search terms are not displayed in the urlbar for certain engines"
+  },
+  {
+   "bugid": 1801035,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "The download window should have a smaller minimum resizable width/height/size"
+  },
+  {
+   "bugid": 1787945,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "As a user I want the ability to delete items listed in Firefox View (e.g. Recently Closed)"
+  },
+  {
+   "bugid": 1796659,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Padding needed in the synced tabs error content area in Firefox View."
+  },
+  {
+   "bugid": 1788800,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "High freq browser/components/firefoxview/tests/browser/browser_colorways_card.js | single tracking bug"
+  },
+  {
+   "bugid": 1798780,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Blank tab and tab switching hang within a window on back/forward navigation in cache"
+  },
+  {
+   "bugid": 1799997,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[OnboardingVideo] Update autoPlay pref to support tratement branch with autoPlay true"
+  },
+  {
+   "bugid": 1803339,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Perma bustage FATAL ERROR PROCESSING MOZBUILD FILE when Gecko 109 merges to Beta on 2022-12-12"
+  },
+  {
+   "bugid": 1795334,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Add a pref that opens the existing migration.xhtml document in a gDialogBox window modal"
+  },
+  {
+   "bugid": 1803206,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Drop the resize param from the image URL for spocs topsites"
+  },
+  {
+   "bugid": 1802353,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Expose the pref  `apz.allow_zooming` in pdf.js"
+  },
+  {
+   "bugid": 1785293,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Screenshots component should respect \"Always ask you where to save files\""
+  },
+  {
+   "bugid": 1800662,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search engine order is modified after region change"
+  },
+  {
+   "bugid": 1789043,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Rationalize sessionstore-closed-objects-changed and updates to session store closed tab data so they make sense"
+  },
+  {
+   "bugid": 1801061,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "No previous Windows and Tabs displayed under \"Restore only the ones you want\" on Success page"
+  },
+  {
+   "bugid": 1801029,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Upgrade bindgen to 0.63.0"
+  },
+  {
+   "bugid": 1803034,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [tier 2] /builds/worker/checkouts/gecko/gfx/thebes/gfxWindowsPlatform.cpp:599:12: error: use of undeclared identifier 'DXGI_COLOR_SPACE_RGB_STUDIO_G24_NONE_P2020'; did you mean 'DXGI_COLOR_SPACE_RGB_STUDIO_G22_NONE_P2020'?"
+  },
+  {
+   "bugid": 1803477,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`mach cargo clippy` is limited to one core by default"
+  },
+  {
+   "bugid": 1803492,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`IndexError: list index out of range` when running `mach cargo clippy`"
+  },
+  {
+   "bugid": 1795042,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Migrate remaining tasks using `b-linux(-large|-xlarge)?`"
+  },
+  {
+   "bugid": 1799423,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "clang should be linked with lld"
+  },
+  {
+   "bugid": 1801381,
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Refactor dmg repackaging to not use run_configure"
+  },
+  {
+   "bugid": 1801674,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Annotate in AsyncShutdown metadata if some blocker could not be added"
+  },
+  {
+   "bugid": 1798660,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Intermittent FileNotFoundError: [Errno 2] No such file or directory: '/builds/worker/workspace/obj-build/i686-pc-windows-msvc/release/build/crossbeam-epoch-d5d1c249ddd49459/out/rmetaI5n4GG'"
+  },
+  {
+   "bugid": 1803216,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Very short session can yield garbage in the UptimeTS crash annotation"
+  },
+  {
+   "bugid": 1803326,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update the symbol scrapers to pick up expat packages"
+  },
+  {
+   "bugid": 1803343,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remvoe `fill_type_manual`, `fill_type_autofill`, `fill_type_autofill_modified` from Scalar telemetry"
+  },
+  {
+   "bugid": 1803346,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "cc_form_v2 event telemetry should record `user filled` when users don't autofill"
+  },
+  {
+   "bugid": 1547294,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Don't save values in fields with `autocomplete=\"one-time-code\"` in form history"
+  },
+  {
+   "bugid": 1802160,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "`toolkit/components/protobuf` third-party C++ file pruning"
+  },
+  {
+   "bugid": 1803478,
+   "status": "RESOLVED",
+   "component": "Toolkit:OS.File",
+   "summary": "Intermittent Perma [Tier2] TEST-UNEXPECTED-ERROR | /builds/worker/checkouts/gecko/toolkit/components/kvstore/test/xpcshell/test_kvstore.js:44:5 | Unknown property access Services.appinfo.os, Interfaces: ... (mozilla/valid-services-property)"
+  },
+  {
+   "bugid": 1802361,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Record telemetry to understand how much CPU time is used by content processes that only load trackers"
+  },
+  {
+   "bugid": 1768436,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "The subtitles from PiP move up and down when modifying PiP's size while buttons are still displayed"
+  },
+  {
+   "bugid": 1802933,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Update \"Developing with a local Glean build\" guide to include how to deal with `cargo vet`"
+  },
+  {
+   "bugid": 1803320,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Update rand to 0.8 in dap_ffi"
+  },
+  {
+   "bugid": 1797086,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "Use https by default in requests from extensions, e.g. via extension CSP"
+  },
+  {
+   "bugid": 1745763,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Prototype of static rules"
+  },
+  {
+   "bugid": 1801870,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Implement redirect.transform part of redirect actions"
+  }
+ ],
+ "fixed": 76,
+ "total": 101,
+ "restricted": 5
+}
