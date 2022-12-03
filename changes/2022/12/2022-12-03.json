@@ -1,0 +1,382 @@
+{
+ "date": "2022-12-03",
+ "buildid": "20221203092459",
+ "cset": "38ad87bc6f42df650e19616ba8bf27b5d5a68afe",
+ "bugs": [
+  {
+   "bugid": 1702483,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Recording",
+   "summary": "Crash in [@ mozilla::EbmlComposer::WriteSimpleBlock]"
+  },
+  {
+   "bugid": 1638052,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support new system colors Mark, MarkText, and ButtonBorder"
+  },
+  {
+   "bugid": 1769620,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Disable `dom.webidl.crosscontext_hasinstance.enabled` everywhere"
+  },
+  {
+   "bugid": 1803774,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Change MOZ_ASSERT in DOMGlobalHasProtoAndIFaceCache/GetProtoAndIfaceCache to MOZ_DIAGNOSTIC_ASSERT"
+  },
+  {
+   "bugid": 1746997,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Infinite recursion in FontFaceSet_Binding"
+  },
+  {
+   "bugid": 1786048,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Setting innerWidth/Height multiple times can apply the delta multiple times."
+  },
+  {
+   "bugid": 1803701,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up the fullscreen browser-chrome test manifest"
+  },
+  {
+   "bugid": 1782087,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Create registration doorhanger for IdentityCredential"
+  },
+  {
+   "bugid": 1782091,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Create IdentityCredential state map"
+  },
+  {
+   "bugid": 1782093,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Implement login logic for [[DiscoverFromExternalSource]] for IdentityCredential"
+  },
+  {
+   "bugid": 1782094,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Implement IdentityCredential.logoutRPs"
+  },
+  {
+   "bugid": 1802831,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`text-decoration` should be updated if the element changes it"
+  },
+  {
+   "bugid": 1791918,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Ensure ORB blocks requests with UNKNOWN_CONTENT_TYPE when the response is recognized as a blocked type after sniffing in OnDataAvailable"
+  },
+  {
+   "bugid": 1802216,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Scripts are not loaded on g2a.com"
+  },
+  {
+   "bugid": 1803732,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose if canvas renderer thread is enabled in about:support"
+  },
+  {
+   "bugid": 1803604,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Optimize stroked paths in accelerated Canvas2D"
+  },
+  {
+   "bugid": 1803615,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Empty strings for fluent data-l10n-args mistakenly trigger a warning"
+  },
+  {
+   "bugid": 1803527,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Finish call site object when instantiating the stencil"
+  },
+  {
+   "bugid": 1803138,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Declared element segments should be dropped after validation or before instantiation"
+  },
+  {
+   "bugid": 1803750,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Fix build breakage for Early Beta sim re missing `refAsNonNull` in WasmIonCompile.cpp"
+  },
+  {
+   "bugid": 1803377,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Rename the values of the `IntrinsicDirty` enum"
+  },
+  {
+   "bugid": 1803303,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Input range with a @list/<datalist> displays tick marks that are step mismatches"
+  },
+  {
+   "bugid": 1792187,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Webrtc needs some API for determining whether its origin was loaded via a web proxy"
+  },
+  {
+   "bugid": 1799026,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "vendor ohttp and provide an xpcom interface to it"
+  },
+  {
+   "bugid": 1771867,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Early hint preloader, phase 2, informing the speculative loader"
+  },
+  {
+   "bugid": 1803455,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "scrollend event is not fired after a main-thread smooth scroll"
+  },
+  {
+   "bugid": 1800546,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Default orientation does not consider named pages"
+  },
+  {
+   "bugid": 1803790,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove SVGGraphicsElement.getTransformToElement"
+  },
+  {
+   "bugid": 1796753,
+   "status": "RESOLVED",
+   "component": "Core:Sanitizers",
+   "summary": "Linux webrender tsan opt xpcshell frequent retries that end up as exception"
+  },
+  {
+   "bugid": 1803704,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Disable EV Treatment for \"Network Solutions Certificate Authority\""
+  },
+  {
+   "bugid": 1803642,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "use ./mach python when running vendor-libwebrtc.py and extract-for-git.py"
+  },
+  {
+   "bugid": 1803504,
+   "status": "RESOLVED",
+   "component": "Core:WebVR",
+   "summary": "Fix C++20 -Wdeprecated-volatile warnings in gfx/vr"
+  },
+  {
+   "bugid": 1793119,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Prevent screensaver during automatic scrolling"
+  },
+  {
+   "bugid": 1798131,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[X11] Tooltips stay and never disappear when switching virtual desktops in Linux"
+  },
+  {
+   "bugid": 1796152,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Explain why sometimes some buttons are disabled in about:logging"
+  },
+  {
+   "bugid": 1796554,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Make about:logging look a bit better, fix inconsistencies when clicking various buttons"
+  },
+  {
+   "bugid": 1796585,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Introduce logging presets for about:logging"
+  },
+  {
+   "bugid": 1797284,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Teach about:logging to start the Firefox Profiler, with the appropriate profiler preset for a particular logging preset"
+  },
+  {
+   "bugid": 1797497,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Allow custom configuration of about:logging via URL parameter"
+  },
+  {
+   "bugid": 1800076,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Test about:logging"
+  },
+  {
+   "bugid": 1802349,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Document about:logging"
+  },
+  {
+   "bugid": 1801754,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Update Tryselect module's Bugzilla components to point to Developer Infrastructure::Try"
+  },
+  {
+   "bugid": 1802564,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable `browser.urlbar.showSearchTerms.featureGate` on Nightly"
+  },
+  {
+   "bugid": 1803566,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Turn quickactions off on zero prefix by default"
+  },
+  {
+   "bugid": 1803763,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Closed tab dismiss button tooltip says \"Open ... in a new tab\""
+  },
+  {
+   "bugid": 1794715,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Intermittent browser/base/content/test/performance/browser_startup_mainthreadio.js | single tracking bug"
+  },
+  {
+   "bugid": 1794702,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Use a dedicated transition for the MR onboarding split screen progress bar"
+  },
+  {
+   "bugid": 1803220,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support the Spotlight component on about:messagepreview"
+  },
+  {
+   "bugid": 1803367,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove test messages and Strings used for the TCP rollout"
+  },
+  {
+   "bugid": 1803654,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update PDF.js annotation Feature Callout messages to include both treatment branches"
+  },
+  {
+   "bugid": 1803630,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 6e4968225e3e4901ef08e47d2787c8d0afb72df7 from 2022-12-01 17:56:02"
+  },
+  {
+   "bugid": 1801899,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Improve logging of invalid signature by showing cert chain URL"
+  },
+  {
+   "bugid": 1785293,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Screenshots component should respect \"Always ask you where to save files\""
+  },
+  {
+   "bugid": 1803775,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Update macOS supported SDK documentation"
+  },
+  {
+   "bugid": 1790453,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Selectively Expire Build Artifacts in the public/build Directory"
+  },
+  {
+   "bugid": 1803776,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Replace Cu.reportError calls in geckoview code"
+  },
+  {
+   "bugid": 1803648,
+   "status": "RESOLVED",
+   "component": "Socorro:Symbols",
+   "summary": "Launchpad Snap download should limit to supported arches"
+  },
+  {
+   "bugid": 1803758,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Replace Cu.reportError calls in update code"
+  },
+  {
+   "bugid": 1709543,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "crash symbols for recent macOS beta versions"
+  },
+  {
+   "bugid": 1725615,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Replace OS.File with IOUtils in the crash reporter code"
+  },
+  {
+   "bugid": 1803757,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Replace Cu.reportError calls in formautofill and login code"
+  },
+  {
+   "bugid": 1803650,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove `setAttribute()` since the label is updated with Fluent"
+  }
+ ],
+ "fixed": 40,
+ "total": 62,
+ "restricted": 0
+}
