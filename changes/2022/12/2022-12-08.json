@@ -1,0 +1,568 @@
+{
+ "date": "2022-12-08",
+ "buildid": "20221208094253",
+ "cset": "c3622b291dcc7f5138eec5704a8026bef513e9ca",
+ "bugs": [
+  {
+   "bugid": 1787947,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable layout.css.named_pages.enabled to pref on CSS named pages in Nightly"
+  },
+  {
+   "bugid": 1803968,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Migrate NS_STYLE_LIST_STYLE_* defines to enum class"
+  },
+  {
+   "bugid": 1804406,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Prevent internal SVG elements from becoming query containers for size features"
+  },
+  {
+   "bugid": 1804551,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "layout/base/crashtests/468645-3.xhtml causes assert with CSS named pages enabled"
+  },
+  {
+   "bugid": 1804347,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "dom/credentialmanagement/CredentialsContainer.cpp causes build failure: no member named 'dom_security_credentialmanagement_identity_enabled' in namespace 'mozilla::StaticPrefs'"
+  },
+  {
+   "bugid": 1793996,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Allow FileSystemHandle.move() to succeed if it doesn't actually move the file"
+  },
+  {
+   "bugid": 1794129,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Handle rename when there's a destination file/dir"
+  },
+  {
+   "bugid": 1794441,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Add WPT tests for full ASCII set and non-ASCII chars for OPFS filenames"
+  },
+  {
+   "bugid": 1797579,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Make all FileSystemSyncAccessHandle methods sync"
+  },
+  {
+   "bugid": 1797671,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "OPFS WPT Test FileSystemFileHandle fails CreateWritable() after remove()"
+  },
+  {
+   "bugid": 1797672,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "OPFS WPT Test that FileSystemHandles are references, not paths"
+  },
+  {
+   "bugid": 1802278,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Return invalid modification error when trying to overwrite locked files"
+  },
+  {
+   "bugid": 1803540,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Ensure there are no pending tasks when WorkerJSContext goes out of scope"
+  },
+  {
+   "bugid": 1752841,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Pretty bad Google Docs perf with GPU canvas."
+  },
+  {
+   "bugid": 1794380,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Accelerated canvas with out-of-process webgl is broken on Android"
+  },
+  {
+   "bugid": 1773596,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Investigate switching away from DirectComposition VirtualSurfaces"
+  },
+  {
+   "bugid": 1797183,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use ErrorContext variant of js::ReportOutOfMemory() for JS modules"
+  },
+  {
+   "bugid": 1803495,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support initializing SourceText from AutoStableStringChar"
+  },
+  {
+   "bugid": 1804254,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace some JSObjects used to store module metadata with native structures"
+  },
+  {
+   "bugid": 1804298,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make fdlibm vendorable by mach vendor"
+  },
+  {
+   "bugid": 1804394,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use SharedShape and DictionaryShape more"
+  },
+  {
+   "bugid": 1803539,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64][mips64] Failed to build loong64 and mips64 simulator (use of undeclared identifier 'TlsContext'; member access into incomplete type 'JSContext')"
+  },
+  {
+   "bugid": 1685588,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Pass through some command-line parameters from `mach analyze`"
+  },
+  {
+   "bugid": 1782323,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Move more of hazard analysis invocation to mach"
+  },
+  {
+   "bugid": 1802897,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Initial implementation of parallel marking"
+  },
+  {
+   "bugid": 1804272,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Turn on parallel marking in some shell tests"
+  },
+  {
+   "bugid": 1800907,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "`OverflowAreas::UnionAllWith` Can Be Erroneously Overwritten When Default-Constructed OverflowAreas supplied"
+  },
+  {
+   "bugid": 1803118,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Snap to input type=range tick marks"
+  },
+  {
+   "bugid": 1804554,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Scrollbar in month/year selector panel doesn't work"
+  },
+  {
+   "bugid": 1804555,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Calendar button is not visible on dark backgrounds"
+  },
+  {
+   "bugid": 1803671,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add telemetry for first byte keyed by TRR provider/Native dns"
+  },
+  {
+   "bugid": 1803435,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Fire scrollend events to content by default"
+  },
+  {
+   "bugid": 1804457,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "RecvAdoptChild() no longer tries to gracefully handle moving a tab between windows with different APZ enablement"
+  },
+  {
+   "bugid": 1803102,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "High frequency browser-chrome with CookieBannerListService.jsm when Gecko 109 merges to Beta on 2022-12-12"
+  },
+  {
+   "bugid": 1804234,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update CookieBannerRuleUI.schema.json for domains schema update"
+  },
+  {
+   "bugid": 1804328,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add missing cookie banner handle duration metric implementation"
+  },
+  {
+   "bugid": 1801016,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove probes expiring in Firefox 110: security.psm_ui_interaction"
+  },
+  {
+   "bugid": 1802319,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Disable ECDSA_SHA1 signature algorithm for Nightly and early Beta"
+  },
+  {
+   "bugid": 1800505,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Move cleared origin directories before removal at shutdown"
+  },
+  {
+   "bugid": 1803538,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add scrollend event in event breakpoints panel"
+  },
+  {
+   "bugid": 1802314,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "The description of the DevTools settings items have white text on light-gray background in dark-theme mode"
+  },
+  {
+   "bugid": 1255839,
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "Error text has insufficient contrast"
+  },
+  {
+   "bugid": 1804479,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Add jsm and sjs extensions as associated with JavaScript for VSCode"
+  },
+  {
+   "bugid": 1804404,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Update localization docs to account for dropped formats"
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1804160,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "[Static-Analysis][Clang-Tidy] Static analysis produces unactionable/unavoidable warning-spam for DeMorgan's theorem simplifications, when run on NS_ASSERTION or MOZ_ASSERT with compound expression"
+  },
+  {
+   "bugid": 1783153,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update strings and icons for Quickactions"
+  },
+  {
+   "bugid": 1800579,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement the impression event"
+  },
+  {
+   "bugid": 1800993,
+   "status": "NEW",
+   "component": "Firefox:Address Bar",
+   "summary": "Add new telemetry for dynamic wikipedia results"
+  },
+  {
+   "bugid": 1803767,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma Late Beta browser/components/urlbar/tests/browser/browser_glean_telemetry when Gecko 109 switches to Late Beta on 2022-12-23"
+  },
+  {
+   "bugid": 1786322,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Re-design bookmark detail pane to be a fixed height"
+  },
+  {
+   "bugid": 1801290,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Improve history sidebar telemetry"
+  },
+  {
+   "bugid": 1803505,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Simplify the tab-pickup-container initialization"
+  },
+  {
+   "bugid": 1803794,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add max height to dismiss button in Recently Closed tabs in Firefox View"
+  },
+  {
+   "bugid": 1804099,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "[Fx View] Update telemetry for dismissal of recently closed tabs"
+  },
+  {
+   "bugid": 1790483,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Add basic lit vendoring for use in new widgets"
+  },
+  {
+   "bugid": 1792238,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Create a fx-button-group element for styling groups of buttons"
+  },
+  {
+   "bugid": 1802041,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Clean up lit bundle warnings"
+  },
+  {
+   "bugid": 1804113,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "stop implicitly pinning to taskbar on windows 8/10/11"
+  },
+  {
+   "bugid": 1791438,
+   "status": "ASSIGNED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Update browser_tabCloseSpace to use overflowTabs() from BrowserTestUtils"
+  },
+  {
+   "bugid": 1794485,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove colorway variation from about:welcome codebase"
+  },
+  {
+   "bugid": 1801973,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove Colorways specific messages and targeting attributes"
+  },
+  {
+   "bugid": 1802134,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] The users can be enrolled in the “Onboarding Welcome Video Experiment” even if they prefer reduced motion"
+  },
+  {
+   "bugid": 1804098,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Two white lines are displayed on the progress bar of the “about:welcome” page when there are six screens"
+  },
+  {
+   "bugid": 1804309,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Set default value of browser.pdfjs.feature-tour to have a message id of empty string"
+  },
+  {
+   "bugid": 1803959,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable pdf.js by default in GeckoView for nightly"
+  },
+  {
+   "bugid": 1789227,
+   "status": "RESOLVED",
+   "component": "Firefox:Page Info Window",
+   "summary": "Intermittent browser/base/content/test/pageinfo/browser_pageinfo_separate_private.js | single tracking bug"
+  },
+  {
+   "bugid": 1804545,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Re-vendor application-services to pickup fix to IDs in sync payload"
+  },
+  {
+   "bugid": 1736454,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "can't access property \"hasLayers\", initialBrowser.frameLoader.remoteTab is null"
+  },
+  {
+   "bugid": 1804327,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Non-native context menus don't appear bigger when activated via touchmode"
+  },
+  {
+   "bugid": 1803557,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Factorize ./mach cargo implementations in mach_commands.py"
+  },
+  {
+   "bugid": 1804548,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "`wasm2c` fails to cross compile from a Win64 host to a Win32 target"
+  },
+  {
+   "bugid": 1804588,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "libmozsqlite3.so is not rebuilt when touching third_party/sqlite3/src/sqlite.symbols"
+  },
+  {
+   "bugid": 1712329,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run some tests against msix packages"
+  },
+  {
+   "bugid": 1804386,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update partner-repack docker image to Debian 11"
+  },
+  {
+   "bugid": 1804387,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update github-sync docker image to Debian 11"
+  },
+  {
+   "bugid": 1804388,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update sentry docker image to Debian 11"
+  },
+  {
+   "bugid": 1804389,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update system-symbols-* docker images to Debian 11"
+  },
+  {
+   "bugid": 1804390,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update push-to-try/updatebot docker images to Debian 11"
+  },
+  {
+   "bugid": 1799423,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "clang should be linked with lld"
+  },
+  {
+   "bugid": 1800257,
+   "status": "NEW",
+   "component": "Remote Protocol:Agent",
+   "summary": "Intermittent waittask specs Frame.waitForFunction should work when resolved right before execution context disposal (waittask.spec.js) | expected PASS"
+  },
+  {
+   "bugid": 1804219,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Clarify where to add preferences between RecommendedPreferences (remote), prefs.rs (geckodriver) and geckoinstance.py (Marionette client)"
+  },
+  {
+   "bugid": 1803599,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add type field to \"ScriptEvaluateResult\" for \"success\" or \"exception\""
+  },
+  {
+   "bugid": 1804251,
+   "status": "RESOLVED",
+   "component": "Taskcluster:Workers",
+   "summary": "Update bullseyes version to allow for clang-13 and lld-13"
+  },
+  {
+   "bugid": 1755564,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Theme",
+   "summary": "Spell checker dotted line is badly visible to colour blind people in dark mode"
+  },
+  {
+   "bugid": 1727058,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Intermittent [TV] toolkit/content/tests/browser/browser_datetime_datepicker.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": 1751763,
+   "status": "NEW",
+   "component": "Toolkit:Password Manager",
+   "summary": "Integrate with Firefox Relay"
+  },
+  {
+   "bugid": 1802781,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP progress bar lacks contrast against white video background"
+  },
+  {
+   "bugid": 1804223,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Normalise snapshot pref names"
+  },
+  {
+   "bugid": 1804019,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Disable DAP telemetry when user turns off all telemetry"
+  },
+  {
+   "bugid": 1801426,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Update lit to version 2.4.1"
+  },
+  {
+   "bugid": 1802377,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use moz-button-group in export logins dialog"
+  },
+  {
+   "bugid": 1804464,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Restrict tabIds and excludeTabIds conditions to session rules"
+  }
+ ],
+ "fixed": 77,
+ "total": 93,
+ "restricted": 3
+}
