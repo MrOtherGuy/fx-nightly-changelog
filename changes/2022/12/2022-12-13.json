@@ -1,0 +1,424 @@
+{
+ "date": "2022-12-13",
+ "buildid": "20221213041109",
+ "cset": "bd78e2e5b1fe852424cf7c035580e44de70ac135",
+ "bugs": [
+  {
+   "bugid": 1803025,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Apparent leak of SharedThreadPool during WMF tests"
+  },
+  {
+   "bugid": 1776953,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent dom/media/test/test_mediarecorder_record_changing_video_resolution.html | single tracking bug"
+  },
+  {
+   "bugid": 1802444,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version 757c53f775a0b651b0512a1992d67f4b2159a378 from 2022-11-24 17:20:32"
+  },
+  {
+   "bugid": 1803765,
+   "status": "NEW",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to revision e4da2d47"
+  },
+  {
+   "bugid": 1787947,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable layout.css.named_pages.enabled to pref on CSS named pages in Nightly"
+  },
+  {
+   "bugid": 1805106,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add test for nested query containers affecting each other"
+  },
+  {
+   "bugid": 1709184,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent Assertion failure: false (ClearOnShutdown for phase that already was cleared), at /builds/worker/checkouts/gecko/xpcom/base/ClearOnShutdown.cpp:20"
+  },
+  {
+   "bugid": 1800482,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider tracking fullscreen-request-origin on browsing context of chrome window"
+  },
+  {
+   "bugid": 1803062,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: File",
+   "summary": "FS: SyncAccessHandle should do all IO off the worker thread"
+  },
+  {
+   "bugid": 1402292,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "<form> in navigated document cannot navigate test results in strange failure"
+  },
+  {
+   "bugid": 1804270,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Email input fields with multiple fields aren't sanitized properly"
+  },
+  {
+   "bugid": 1799683,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add disable next line for all accessible/tests"
+  },
+  {
+   "bugid": 1804093,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Eliminate WorkerPrincipal and WorkletPrincipals"
+  },
+  {
+   "bugid": 1803751,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make some marker fields searchable in their marker schema"
+  },
+  {
+   "bugid": 1804361,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update memoffset to 0.7.1"
+  },
+  {
+   "bugid": 1466443,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update woff2 to latest upstream code"
+  },
+  {
+   "bugid": 1804930,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "NS_IsMainThread assertion in font-face source comparison is obsolete"
+  },
+  {
+   "bugid": 1797506,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Preload string bundle to allow it to be read it from a worker/worklet thread"
+  },
+  {
+   "bugid": 1804936,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ZoneData still exists even though we removed the concept of zone exclusive access"
+  },
+  {
+   "bugid": 1804326,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Ensure MConstantProto instructions don't interfere with LICM"
+  },
+  {
+   "bugid": 1804634,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:192"
+  },
+  {
+   "bugid": 1804629,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !hasDelayedMarking(), at gc/GC.cpp:3135"
+  },
+  {
+   "bugid": 1804787,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: CurrentThreadIsGCMarking() || CurrentThreadCanAccessZone(zone), at /builds/worker/checkouts/gecko/js/src/gc/Cell.h:521"
+  },
+  {
+   "bugid": 1801804,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Wasm-via-Ion possible cleanups once wasm-gc-via-Ion work has landed"
+  },
+  {
+   "bugid": 1805217,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "High frequency TEST-UNEXPECTED-PASS | /css/css-writing-modes/forms/text-input-vertical-overflow-no-scroll.html | input[type=<something>] in sideways-lr: typing characters in input should not cause the page to scroll - expected FAIL"
+  },
+  {
+   "bugid": 1804980,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Remove about:config pref `layout.css.grid-template-subgrid-value.enabled`"
+  },
+  {
+   "bugid": 1804732,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Leak in wpt basic-auth test for websocket over h2"
+  },
+  {
+   "bugid": 1805082,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "WebRenderLayerScrollData::WebRenderLayerScrollData() does not initialise `mAncestorTransformId`"
+  },
+  {
+   "bugid": 1799727,
+   "status": "NEW",
+   "component": "Core:Performance Engineering",
+   "summary": "Add additional keys to the page load event for redirection time, redirection count, trr domain and http protocol"
+  },
+  {
+   "bugid": 1804259,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "GIFFT Telemetry Mirroring for Legacy Telemetry"
+  },
+  {
+   "bugid": 1804591,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove the oldPush work-around added to the GTM SmartBlock shim in bug 1760279"
+  },
+  {
+   "bugid": 1451394,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Update video capture code on OS X"
+  },
+  {
+   "bugid": 1804950,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Disable wpt for webrtc features we don't support at all"
+  },
+  {
+   "bugid": 1805147,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Potential deadlock in nsAvailableMemoryWatcher::Observe"
+  },
+  {
+   "bugid": 1768581,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Verify if we can have a different order inside AppShutdown:.AdvanceShutdownPhaseInternal"
+  },
+  {
+   "bugid": 1796152,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Explain why sometimes some buttons are disabled in about:logging"
+  },
+  {
+   "bugid": 1796554,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Make about:logging look a bit better, fix inconsistencies when clicking various buttons"
+  },
+  {
+   "bugid": 1796585,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Introduce logging presets for about:logging"
+  },
+  {
+   "bugid": 1797284,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Teach about:logging to start the Firefox Profiler, with the appropriate profiler preset for a particular logging preset"
+  },
+  {
+   "bugid": 1797497,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Allow custom configuration of about:logging via URL parameter"
+  },
+  {
+   "bugid": 1800076,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Test about:logging"
+  },
+  {
+   "bugid": 1802349,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Document about:logging"
+  },
+  {
+   "bugid": 1800898,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Missing unwind information for detoured code in Windows hooking code"
+  },
+  {
+   "bugid": 1525624,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Group CSP warning messages in the console"
+  },
+  {
+   "bugid": 1801695,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove SourceMapService in favor of SourceMapLoader"
+  },
+  {
+   "bugid": 1801290,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Improve history sidebar telemetry"
+  },
+  {
+   "bugid": 1804661,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Convert browser/components/*.jsm to ES Modules"
+  },
+  {
+   "bugid": 1791438,
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Update browser_tabCloseSpace to use overflowTabs() from BrowserTestUtils"
+  },
+  {
+   "bugid": 1804726,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Reimplement the about:welcome progress bar animation with a different technique"
+  },
+  {
+   "bugid": 1804786,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Enzyme assertions in unit tests are always passing"
+  },
+  {
+   "bugid": 718280,
+   "status": "NEW",
+   "component": "Firefox:Migration",
+   "summary": "deCOM migrators"
+  },
+  {
+   "bugid": 1800917,
+   "status": "ASSIGNED",
+   "component": "Firefox:Migration",
+   "summary": "Not able to import data from Opera/Vivaldi on Ubuntu"
+  },
+  {
+   "bugid": 1804520,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Stop using the callback argument for SearchSuggestionController"
+  },
+  {
+   "bugid": 1804739,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make Search SERP Telemetry work with multiple providers using the same ad provider"
+  },
+  {
+   "bugid": 1803391,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Remove plain text / comment references to Sessionstore.jsm and other session store JSMs"
+  },
+  {
+   "bugid": 1293692,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "[e10s] Ctrl+Tab thumbnails sometimes rendered as black"
+  },
+  {
+   "bugid": 1804605,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Misc old-configure -> python migrations"
+  },
+  {
+   "bugid": 1712329,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run some tests against msix packages"
+  },
+  {
+   "bugid": 1803831,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Migrate valgrind task from AWS -> GCP"
+  },
+  {
+   "bugid": 1804922,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Permanent failure lines for successful valgrind tasks: The MOZ_ARTIFACT_PLATFORM env var is not set."
+  },
+  {
+   "bugid": 1805263,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma [tier 2] release-flatpak-repackage-firefox error: Cannot write to repository: Operation not permitted"
+  },
+  {
+   "bugid": 1800086,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement browsingContext.captureScreenshot command"
+  },
+  {
+   "bugid": 1804825,
+   "status": "RESOLVED",
+   "component": "Toolkit:Background Tasks",
+   "summary": "Perma [tier 2] toolkit/components/backgroundtasks/tests/xpcshell/test_backgroundtask_no_output.js | single tracking bug"
+  },
+  {
+   "bugid": 1802323,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Add more logging to History cleaner in Sanitizers"
+  },
+  {
+   "bugid": 1802318,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "test_bug1274685_unowned_list.js seems to have unexpected side effects"
+  },
+  {
+   "bugid": 1657551,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Intermittent Assertion failure: ((bool)(__builtin_expect(!!(!NS_FAILED_impl(rv)), 1))), at /builds/worker/checkouts/gecko/storage/mozStorageConnection.cpp:1461"
+  },
+  {
+   "bugid": 1804738,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "`nsIGleanDatetime.set` says it takes millis, but it takes a PRTime which is nanos"
+  },
+  {
+   "bugid": 1789435,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "With middlemouse.paste enabled: Middle-click on input field triggers TypeError: can't access property \"startsWith\", node.closest(...).constructor.name is undefined"
+  },
+  {
+   "bugid": 1410932,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Errors raised in the content scripts context should be logged in the related tab's webconsole"
+  }
+ ],
+ "fixed": 52,
+ "total": 69,
+ "restricted": 4
+}
