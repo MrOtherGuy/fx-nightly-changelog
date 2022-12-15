@@ -1,0 +1,562 @@
+{
+ "date": "2022-12-15",
+ "buildid": "20221215092759",
+ "cset": "061ba69417ebfdcb275f01049f09a893004c5587",
+ "bugs": [
+  {
+   "bugid": 1774306,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Make VideoFrame Transferable"
+  },
+  {
+   "bugid": 1776981,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent layout/style/test/test_pseudoelement_state.html | single tracking bug"
+  },
+  {
+   "bugid": 1800952,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Computed 'column-rule' serialization has wrong width"
+  },
+  {
+   "bugid": 1804696,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Restyle subtree when element stops being a query container"
+  },
+  {
+   "bugid": 1805588,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "When a query container becomes 'display:table', styles are not invalidated"
+  },
+  {
+   "bugid": 1803245,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Add Timeout nsiTimer onto the Document to track active IdentityCredential requests"
+  },
+  {
+   "bugid": 1437171,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Implement Permission API updates for WebMIDI"
+  },
+  {
+   "bugid": 1805582,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Add console message to indicate when MIDI access has been auto-denied due to lack of devices"
+  },
+  {
+   "bugid": 1805735,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "When user clicks \"Never Allow\" for WebMIDI access, promise rejection should include randomized delay"
+  },
+  {
+   "bugid": 1803336,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "macOS Crash in [@ nsTextFragment::CharAt]"
+  },
+  {
+   "bugid": 1805135,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "FileSystemWritableFileStream should use the default writer for all IO operations"
+  },
+  {
+   "bugid": 1801862,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Remove the pref to run the HTML parser on the main thread"
+  },
+  {
+   "bugid": 1800439,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent /fetch/private-network-access/iframe.tentative.https.window.html | single tracking bug"
+  },
+  {
+   "bugid": 1570722,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Firefox and Chrome differ on how to treat an invalid CSP header (need WPT test) with non ASCII characters"
+  },
+  {
+   "bugid": 1804038,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP: Console logging improvements"
+  },
+  {
+   "bugid": 1804145,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Serialization of CSP (e.g. event.originalPolicy) prepends scheme to schemeless host-source expression"
+  },
+  {
+   "bugid": 1498259,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Remove ClassifierDummyChannel hack"
+  },
+  {
+   "bugid": 1621377,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Firefox incorrectly returns AbortError when user cancels WebAuthn operation from UI"
+  },
+  {
+   "bugid": 1247687,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Implement worker modules"
+  },
+  {
+   "bugid": 1800736,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: hyperAcc, at /builds/worker/checkouts/gecko/accessible/base/TextLeafRange.cpp:1345"
+  },
+  {
+   "bugid": 1802386,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Hit MOZ_CRASH(trying to get the offset between frames in different document hierarchies?) at /builds/worker/checkouts/gecko/layout/generic/nsIFrame.cpp:7031"
+  },
+  {
+   "bugid": 1645990,
+   "status": "RESOLVED",
+   "component": "Core:Find Backend",
+   "summary": "find whole word does not find a word"
+  },
+  {
+   "bugid": 1803059,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Clean up obsolete patch files in gfx/cairo"
+  },
+  {
+   "bugid": 1805626,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "WebGL loses VAO buffer bindings due to incorrect save/restore in GLBlitHelper.cpp"
+  },
+  {
+   "bugid": 1801397,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Firefox renders a gif opaque where Chrome does not"
+  },
+  {
+   "bugid": 1805128,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update webrender standalone CI docker image"
+  },
+  {
+   "bugid": 1793525,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Obtain crash reports from hanging child process on NS_FREE_PERMANENT_DATA builds"
+  },
+  {
+   "bugid": 1800407,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Update intl_pluralrules, unic-langid-impl and unic-langid-macros to use newer ICU4X's tinystr"
+  },
+  {
+   "bugid": 1785762,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add frontend-specific error storage and convert it to runtime error at the end of compile"
+  },
+  {
+   "bugid": 1787528,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add FrontendContext"
+  },
+  {
+   "bugid": 1805199,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support getters on the global in more cases"
+  },
+  {
+   "bugid": 1805457,
+   "status": "REOPENED",
+   "component": "Core:JavaScript: GC",
+   "summary": "ThreadSanitizer: data race /builds/worker/checkouts/gecko/js/src/gc/Compacting.cpp:445:14 in onEdge<JSObject>"
+  },
+  {
+   "bugid": 1805631,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Race condition in ArrayBufferViewObject::trace during parallel marking"
+  },
+  {
+   "bugid": 1803381,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Use signal handling for GC null pointer checks for Ion"
+  },
+  {
+   "bugid": 1804571,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: ancestorFrame->mWasVisitedByAutoFrameConstructionPageName (Frame should have been visited by AutoFrameConstructionPageName), at /builds/worker/checkouts/gecko/layout/base/nsCSSFrameConstructor.cpp:9638"
+  },
+  {
+   "bugid": 1805522,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Assertion failure: data (SharedFlexData should be set by our first-in-flow!), at /builds/worker/checkouts/gecko/layout/generic/nsFlexContainerFrame.cpp:4133"
+  },
+  {
+   "bugid": 960984,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Implement <input type=\"color\">: list attribute"
+  },
+  {
+   "bugid": 1767298,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Allow Websocket over h2 to send data larger than 500 kilobytes"
+  },
+  {
+   "bugid": 1805671,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Add additional documentation for call graph profiling using jitdump and perf"
+  },
+  {
+   "bugid": 1755974,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "New Print dialog with CUPS: pages-per-sheet doubled up with system dialog"
+  },
+  {
+   "bugid": 1805477,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Pages-per-sheet doubled up with system dialog on macOS"
+  },
+  {
+   "bugid": 1805716,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Stop overwriting the print settings passed to nsIPrintDialogService::showPrintDialog with saved prefs"
+  },
+  {
+   "bugid": 1797094,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/cookiebanners/test/browser/browser_bannerClicking.js | single tracking bug"
+  },
+  {
+   "bugid": 1797513,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove TCP rollout code from about:preferences"
+  },
+  {
+   "bugid": 1804963,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "crash near null in [@ nsIGlobalObject::GetRTPCallerType]"
+  },
+  {
+   "bugid": 1805697,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add git rebase conflict detection to fast-forward-libwebrtc.sh"
+  },
+  {
+   "bugid": 1401592,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Bring RTCRtpParameters/setParameters/getParameters up-to-spec"
+  },
+  {
+   "bugid": 1676855,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Implement RTCRtpEncodingParameters.active"
+  },
+  {
+   "bugid": 1769787,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Implement breakpoints per URL"
+  },
+  {
+   "bugid": 1784847,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-event-breakpoints.js | single tracking bug"
+  },
+  {
+   "bugid": 1764439,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Handle errors in custom formatters"
+  },
+  {
+   "bugid": 1783100,
+   "status": "NEW",
+   "component": "DevTools:General",
+   "summary": "Remove osfile.jsm from devtools/"
+  },
+  {
+   "bugid": 1803646,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "No data shows in local storage when USB debugging"
+  },
+  {
+   "bugid": 1805075,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[QuickActions] Clicking on the QuickActions Shortcuts Button no longer lists all available QuickActions"
+  },
+  {
+   "bugid": 1805321,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move initNimbusFeature() to UrlbarTestUtils"
+  },
+  {
+   "bugid": 1789533,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Improve title text (tooltips) experience in Firefox View"
+  },
+  {
+   "bugid": 1804897,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "browser/base/content/test/performance/browser_startup.js | resource://gre/modules/Preferences.sys.mjs is not allowed before first paint in MSIX builds"
+  },
+  {
+   "bugid": 1805415,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Use XULPopupElement.activateElement rather than menuitem.click() for testing menuitems"
+  },
+  {
+   "bugid": 1775849,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Include a corpus of messaging experiments for validation"
+  },
+  {
+   "bugid": 1801973,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove Colorways specific messages and targeting attributes"
+  },
+  {
+   "bugid": 1804726,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Reimplement the about:welcome progress bar animation with a different technique"
+  },
+  {
+   "bugid": 1804892,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The Spotlight message that starts the Firefox View tour should not show if user has CFRs disabled"
+  },
+  {
+   "bugid": 1804899,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "browser/components/newtab/test/browser/browser_aboutwelcome_rtamo.js fails against MSIX packages"
+  },
+  {
+   "bugid": 1804988,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Determine `ToastNotification` `tag`  from experiment slug and branch slug in `backgroundTaskMessages` experiments"
+  },
+  {
+   "bugid": 1805387,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "On Firefox locales with long strings the title of the PDF callout message overlaps with the \"X\" button"
+  },
+  {
+   "bugid": 1804898,
+   "status": "NEW",
+   "component": "Firefox:Normandy Client",
+   "summary": "update toolkit/components/normandy/test/browser/browser_ClientEnvironment.js expectations for MSIX builds"
+  },
+  {
+   "bugid": 1801813,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Change telemetry load path reporting for enterprise policy/user/add-on engines to use a significantly different value to add-on based search engines."
+  },
+  {
+   "bugid": 1804902,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "adjust preferences test expectations for msix builds"
+  },
+  {
+   "bugid": 1804894,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "attribution code is attempted to be written to the install directory for msix builds"
+  },
+  {
+   "bugid": 1804903,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "investigate browser_misused_characters_in_strings.js failures in MSIX tests"
+  },
+  {
+   "bugid": 1804904,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "update about dialog tests with proper expectations for MSIX builds"
+  },
+  {
+   "bugid": 1804905,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "update browserglue telemetry test expectations for msix builds"
+  },
+  {
+   "bugid": 1805262,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "All Tabs panel strings are in title case instead of sentence case"
+  },
+  {
+   "bugid": 1804900,
+   "status": "NEW",
+   "component": "Firefox:Tours",
+   "summary": "Update browser/components/uitour/test/browser_UITour.js expectations for MSIX builds"
+  },
+  {
+   "bugid": 1805504,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma BR 'mach build -v' did not run successfully. Please check log for errors. after ERROR: Wasm sandboxing is not supported yet when building for x86 on x86_64 Windows. Please use --without-wasm-sandboxed-libraries for now."
+  },
+  {
+   "bugid": 1805507,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma Linux Bocf package> gmake[4]: *** [/builds/worker/checkouts/gecko/toolkit/mozapps/installer/packager.mk:130: make-package] Error 127"
+  },
+  {
+   "bugid": 1712329,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run some tests against msix packages"
+  },
+  {
+   "bugid": 1805536,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable more passing TSAN test suites"
+  },
+  {
+   "bugid": 1799423,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "clang should be linked with lld"
+  },
+  {
+   "bugid": 1805587,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma afl-llvm-pass.so.cc:151:72: error: use of undeclared identifier 'None'"
+  },
+  {
+   "bugid": 1805813,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchains clang-trunk-stage1 1 out of 7 hunks FAILED -- saving rejects to file llvm/include/llvm/Analysis/AliasAnalysis.h.rej"
+  },
+  {
+   "bugid": 1750670,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Better support orientation.lock('natural')"
+  },
+  {
+   "bugid": 1742607,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add initial documentation for MessageHandler architecture"
+  },
+  {
+   "bugid": 1795467,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Include key metrics from targeting state snapshot in background (update) task"
+  },
+  {
+   "bugid": 1804896,
+   "status": "NEW",
+   "component": "Toolkit:Application Update",
+   "summary": "don't run update related tests against msix packages"
+  },
+  {
+   "bugid": 1802064,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Writing crash annotations on Windows can loop infinitely on error"
+  },
+  {
+   "bugid": 702925,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "\"Forget About This Site\" shouldn't delete saved passwords (without a prompt?)"
+  },
+  {
+   "bugid": 1772924,
+   "status": "ASSIGNED",
+   "component": "Toolkit:OS.File",
+   "summary": "Remove osfile.jsm usage from security/sandbox/"
+  },
+  {
+   "bugid": 1805154,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "focus outline changes and tooltip disappears when pressing enter on any PIP controls button"
+  },
+  {
+   "bugid": 1788306,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Add CallbackInterface support to UniFFI"
+  },
+  {
+   "bugid": 1798695,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "3.54% tabswitch (Windows) regression on Sat October 22 2022"
+  },
+  {
+   "bugid": 1802704,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/xpcshell/test_proxy_info_results.js | single tracking bug"
+  }
+ ],
+ "fixed": 73,
+ "total": 92,
+ "restricted": 3
+}
