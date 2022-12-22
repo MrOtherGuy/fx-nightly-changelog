@@ -1,0 +1,574 @@
+{
+ "date": "2022-12-21",
+ "buildid": "20221221212123",
+ "cset": "1de20be14b0d2c1f6897654fe57c659bcfdf5df6",
+ "bugs": [
+  {
+   "bugid": 1806552,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Only use MF media engine playback on win10+"
+  },
+  {
+   "bugid": 1467917,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "layout/style/crashtests/1236398.xhtml | application crashed [@ static bool style::invalidation::element::invalidator::TreeStyleInvalidator<style::gecko::wrapper::GeckoElement ...]"
+  },
+  {
+   "bugid": 1806273,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "apply_declarations shouldn't just pass None as the originating_element_style"
+  },
+  {
+   "bugid": 1806647,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Improve cycle collection for async iterators"
+  },
+  {
+   "bugid": 1801391,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider having a way to tracking why widget goes into fullscreen mode"
+  },
+  {
+   "bugid": 1806500,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Replace Cu.reportError calls in dom and uriloader"
+  },
+  {
+   "bugid": 1806723,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Replace Cu.reportError calls in dom/console/ConsoleAPIStorage.jsm"
+  },
+  {
+   "bugid": 1793876,
+   "status": "NEW",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: aRangesToDelete.IsFirstRangeEditable(aEditingHost), at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditorDeleteHandler.cpp:3189"
+  },
+  {
+   "bugid": 1731210,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "pdf.js modal for unsaved data on a pdf page appears twice in private window"
+  },
+  {
+   "bugid": 1734244,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement async iteration of ReadableStream"
+  },
+  {
+   "bugid": 1802904,
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent [tier 2] dom/events/test/test_drag_image_file.html | single tracking bug"
+  },
+  {
+   "bugid": 1247687,
+   "status": "REOPENED",
+   "component": "Core:DOM: Workers",
+   "summary": "Implement worker modules"
+  },
+  {
+   "bugid": 1806709,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Allow nsIGlobalObject::PrincipalOrNull to be used on workers"
+  },
+  {
+   "bugid": 1800430,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Port more code to the new shared memory classes"
+  },
+  {
+   "bugid": 1356399,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in TrueTypeFontMetricsBuilder::GetBlackBox"
+  },
+  {
+   "bugid": 1806430,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Don't validate bitflags in server.rs"
+  },
+  {
+   "bugid": 1806475,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Audit ash crate 0.37.0+1.3.209 -> 0.37.1+1.3.235"
+  },
+  {
+   "bugid": 1806679,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Reorder our WebGPU idl to allow diffing against the spec"
+  },
+  {
+   "bugid": 1753373,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add video overlay support to software decoded video on Windows."
+  },
+  {
+   "bugid": 1799258,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Do color-management on Windows+DComp via IDCompositionFilterEffects"
+  },
+  {
+   "bugid": 1804485,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Consider batching some IPC messages to be sent together"
+  },
+  {
+   "bugid": 1532644,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create a JavaScript validator that can be run by networking"
+  },
+  {
+   "bugid": 1703508,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove flag for large arraybuffers in FF92 or later"
+  },
+  {
+   "bugid": 1804613,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Decouple frontend::NameCollectionPool from JSContext"
+  },
+  {
+   "bugid": 1804837,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove JSContext from TokenStream classes"
+  },
+  {
+   "bugid": 1804842,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Refactor GetDecimal not to directly depend on JSContext"
+  },
+  {
+   "bugid": 1804849,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make JSContext optional in StringBuffer"
+  },
+  {
+   "bugid": 1805149,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Delay the bytecode de-duplication to the instantiation step"
+  },
+  {
+   "bugid": 1805121,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64][mips64] Implement MacroAssembler::mulHighUnsigned32 function"
+  },
+  {
+   "bugid": 1806396,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Simplify LoadDOMPrivate"
+  },
+  {
+   "bugid": 1792319,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Crash in [@ mozilla::FrameProperties::PropertyComparator::Equals]"
+  },
+  {
+   "bugid": 290125,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Floats",
+   "summary": "[CSS21] floated :first-letter pseudo-element should act like normal inline (e.g., support line-height)"
+  },
+  {
+   "bugid": 1801930,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Use Escape to close month-year panel only and keep the datepicker open"
+  },
+  {
+   "bugid": 1804669,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Users can delete the Calendar button with Backspace"
+  },
+  {
+   "bugid": 1806764,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Update mapped_hyph to current master"
+  },
+  {
+   "bugid": 1799636,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Investigate how to reset a WebTransport stream properly"
+  },
+  {
+   "bugid": 1804803,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Hit MOZ_CRASH(DocumentLoadListener::Open for invalid history entry due to mismatch of 'Invalid LoadId') at /builds/worker/checkouts/gecko/netwerk/ipc/DocumentLoadListener.cpp:642"
+  },
+  {
+   "bugid": 1790965,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "CookieService::GetSessionCookies Interface implementation may have a clerical error"
+  },
+  {
+   "bugid": 1806515,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Implement URL parsing requirements for WebTransport"
+  },
+  {
+   "bugid": 1801277,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Virtual assistant window stuck in a loading loop on microsoft.com with ETP set to Standard"
+  },
+  {
+   "bugid": 1804129,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implement hasRuleForBrowsingContext on cookie banner service"
+  },
+  {
+   "bugid": 1806547,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add release branch cherry-pick detection and no-op commit processing to fast-foward scripts"
+  },
+  {
+   "bugid": 1805901,
+   "status": "VERIFIED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/media/webrtc/tests/mochitests/test_peerConnection_encodingsNegotiation.html | Error executing test: OperationError: SIPCC Failed to parse SDP when Gecko 110 merges to Beta on 2023-01-16"
+  },
+  {
+   "bugid": 1800136,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "RTCRtpSender.getStats() does not get any ICE stats"
+  },
+  {
+   "bugid": 1430892,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Clicking on select tag sometimes it closes automatically selecting the option under the pointer"
+  },
+  {
+   "bugid": 1806451,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Superfluous inwindowmenu=false attributes"
+  },
+  {
+   "bugid": 1795568,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove or replace deprecated calls to FSFindFolder in xpcom/io/nsAppFileLocationProvider"
+  },
+  {
+   "bugid": 1805963,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove local execution support from nsThread"
+  },
+  {
+   "bugid": 1806332,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "[diagnostic assert] Crash in [@ mozilla::net::CacheOutputCloseListener::OnOutputClosed]"
+  },
+  {
+   "bugid": 1805378,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Simplify devtools workers"
+  },
+  {
+   "bugid": 1625939,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Remove devtools.browsertoolbox.fission preference and only support the Multiprocess browser toolbox"
+  },
+  {
+   "bugid": 1806595,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Call onNativeCall hooks from DebuggerObject#call and DebuggerObject#apply"
+  },
+  {
+   "bugid": 1593753,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove the \"Browser Content Toolbox\""
+  },
+  {
+   "bugid": 1794769,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Introduce a Javascript tracer to ease debugging mochitests"
+  },
+  {
+   "bugid": 1806404,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove content process message forwarding code from the server codebase"
+  },
+  {
+   "bugid": 1806405,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove \"show content message\" toggle and related code"
+  },
+  {
+   "bugid": 1806419,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_color_scheme_simulation_bfcache.js | single tracking bug"
+  },
+  {
+   "bugid": 1790816,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Reformat the whole tree with isort"
+  },
+  {
+   "bugid": 1806522,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Extend the eslint pre-commit hook to also lint mjs files and other files we lint"
+  },
+  {
+   "bugid": 1806642,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "update in-tree references to 'Lint and Formatting' bugzilla component"
+  },
+  {
+   "bugid": 1806134,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "docker-image-updatebot-3rdp task is failing"
+  },
+  {
+   "bugid": 1805685,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Don't start source-test-clang-tidy task for header files"
+  },
+  {
+   "bugid": 1750450,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Update to Sphinx 4.5.0"
+  },
+  {
+   "bugid": 1763971,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "mach doc is busted with python 3.10"
+  },
+  {
+   "bugid": 1802924,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Update to sphinx-rtd-theme 1.1.1"
+  },
+  {
+   "bugid": 1803056,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Sub-pages display the search term if they're clicked as the persist search tip is displayed"
+  },
+  {
+   "bugid": 1805717,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a property to distinguish when the urlbar is in Search Mode"
+  },
+  {
+   "bugid": 1804969,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Create a webpack plugin to re-write chrome CSS URLs for Storybook"
+  },
+  {
+   "bugid": 1798832,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "WNP schema uses dependentSchema instead of dependantRequired"
+  },
+  {
+   "bugid": 1800805,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix definition of contentBlocking trigger arguments in schema"
+  },
+  {
+   "bugid": 1802351,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Provider field is not defined in FxMS schemas"
+  },
+  {
+   "bugid": 1800733,
+   "status": "VERIFIED",
+   "component": "Firefox:Migration",
+   "summary": "The saved passwords are not imported from Opera on MacOS"
+  },
+  {
+   "bugid": 1792718,
+   "status": "REOPENED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent browser/components/search/test/browser/browser_searchbar_keyboard_navigation.js | single tracking bug"
+  },
+  {
+   "bugid": 1798387,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement SERP telemetry for Ecosia"
+  },
+  {
+   "bugid": 1801607,
+   "status": "VERIFIED",
+   "component": "Firefox:Settings UI",
+   "summary": "Certificate Manager table too high"
+  },
+  {
+   "bugid": 1704347,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "It's less easy to distinguish the current tab since activation of proton"
+  },
+  {
+   "bugid": 1806518,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "WebRTC preview video is cut off in the popupnotification when asked what screen/window to share"
+  },
+  {
+   "bugid": 1806760,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use lld for ASan builds on CI"
+  },
+  {
+   "bugid": 1804178,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Replace use of `pytoml` with `toml` (or similar)"
+  },
+  {
+   "bugid": 1806483,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable TSAN cppunittests by default in CI"
+  },
+  {
+   "bugid": 1806702,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Increase the maximum runtime of TSAN mochitest-browser-a11y"
+  },
+  {
+   "bugid": 1806832,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable TSAN mochitest-chrome by default in CI"
+  },
+  {
+   "bugid": 1806497,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update node to v16.19.0"
+  },
+  {
+   "bugid": 1795075,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "[2.1] Implement a delegate method for cookie banner events"
+  },
+  {
+   "bugid": 1806675,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Freeze `rv:` segment in the User Agent string to `rv:109.0` on android too, to avoid erroneous IE11 detection"
+  },
+  {
+   "bugid": 1741834,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "MessageHandler: support transactions when using sessionData"
+  },
+  {
+   "bugid": 1578273,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Firefox process staying alive after exit"
+  },
+  {
+   "bugid": 1806406,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove records in the end of each subtest in browser_creditCard_doorhanger.js"
+  },
+  {
+   "bugid": 1796797,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert toolkit/components/contextualidentity JSM modules to ESMs"
+  },
+  {
+   "bugid": 1804227,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Enable interaction measurements in nightly only"
+  },
+  {
+   "bugid": 1804771,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Change moz-toggle implementation to use a button with `role=\"switch`"
+  },
+  {
+   "bugid": 1805967,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Freeze `rv:` segment in the User Agent string to `rv:109.0` to avoid erroneous IE11 detection"
+  },
+  {
+   "bugid": 1805492,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Avoid firing webext content script error on the content window"
+  },
+  {
+   "bugid": 1806771,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Perma clang-trunk /builds/worker/checkouts/gecko/build/clang-plugin/mozsearch-plugin/MozsearchIndexer.cpp:178:16: error: 'InclusionDirective' marked 'override' but does not override any member functions"
+  }
+ ],
+ "fixed": 80,
+ "total": 94,
+ "restricted": 5
+}
