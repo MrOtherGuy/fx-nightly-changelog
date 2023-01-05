@@ -1,0 +1,442 @@
+{
+ "date": "2023-01-05",
+ "buildid": "20230105092304",
+ "cset": "13af43e59e415ec120b5116c4ce2d8e77f6bb825",
+ "bugs": [
+  {
+   "bugid": 1805103,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Test VideoFrame in Service Worker"
+  },
+  {
+   "bugid": 1808180,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "font-dependent units like `ch` do not account for font-size-adjust"
+  },
+  {
+   "bugid": 1806783,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move oncopy/oncut/onpaste to GlobalEventHandlers"
+  },
+  {
+   "bugid": 1807252,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ mozilla::Maybe<T>::emplace<T> | nsGlobalWindowOuter::FullscreenWillChange]"
+  },
+  {
+   "bugid": 1808177,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Crash in [@ nsINode::OwnerDoc]"
+  },
+  {
+   "bugid": 1806447,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Always use the new Sanitizer implementation instead of the old nsTreeSanitizer code"
+  },
+  {
+   "bugid": 1791083,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Hover state not reset after going back  history"
+  },
+  {
+   "bugid": 1800370,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Click listeners should not fire when a form-associate custom element is disabled"
+  },
+  {
+   "bugid": 1807639,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Android crash in [@ mozilla::a11y::Accessible::AsRemote] in mozilla::a11y::PivotRadioNameRule::Match"
+  },
+  {
+   "bugid": 1529794,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Crash in [@ local_unwind]"
+  },
+  {
+   "bugid": 1808490,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "[hardware error] crashes in dwrite.dll used via Skia during text-decoration rendering"
+  },
+  {
+   "bugid": 1808331,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update (early Jan 2023)"
+  },
+  {
+   "bugid": 1808062,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "include stackingcontext helper scale when looking at size of items to determine if they should be active"
+  },
+  {
+   "bugid": 1806725,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Page close cycle collection spends a long time in ModuleScript::UnlinkModuleRecord()"
+  },
+  {
+   "bugid": 1807653,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CodeGeneratorX86::visitOutOfLineTruncateFloat32 generates incorrect code"
+  },
+  {
+   "bugid": 1806772,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/js/src/vm/PIC.cpp:311:16 in freeAllStubs"
+  },
+  {
+   "bugid": 1806976,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: marker->isDrained(), at gc/GC.cpp:1312 with gcparam"
+  },
+  {
+   "bugid": 1807669,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Something not quite right with debug-only poisoning on 32-bit targets?"
+  },
+  {
+   "bugid": 1807958,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Columns",
+   "summary": "Assertion failure: kidReflowInput.ComputedLogicalMargin(wm).IsAllZero() (-moz-column-content has no margin!), at /layout/generic/nsColumnSetFrame.cpp:662"
+  },
+  {
+   "bugid": 1806831,
+   "status": "VERIFIED",
+   "component": "Core:Networking: Cache",
+   "summary": "Firefox shutdown never finishes if the policy is set to clear the cache on shutdown"
+  },
+  {
+   "bugid": 1808206,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Remove code that moves cookies around in memory."
+  },
+  {
+   "bugid": 1792774,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Printer names are cut off"
+  },
+  {
+   "bugid": 1801557,
+   "status": "NEW",
+   "component": "Core:Web Audio",
+   "summary": "Investigate using xsimd as SIMD engine"
+  },
+  {
+   "bugid": 1804226,
+   "status": "NEW",
+   "component": "Core:Web Audio",
+   "summary": "Investigate using fma instructions for intel architectures in dom/media/webaudio/AudioNodeEngine"
+  },
+  {
+   "bugid": 1807959,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Remove libwebrtc build mitigations landed in 699496c38ca1"
+  },
+  {
+   "bugid": 1808245,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "default to stopping fast-forward processing when target branch-head is reached"
+  },
+  {
+   "bugid": 1808347,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "clarify config variable names in libwebrtc fast-forward scripts"
+  },
+  {
+   "bugid": 1808053,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Answer with no codecs in common with offer causes tab crash on debug builds"
+  },
+  {
+   "bugid": 1803545,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Implement AsyncGetData()"
+  },
+  {
+   "bugid": 1804877,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Set XDG_ACTIVATION_TOKEN when launch external application (LaunchWithURI)"
+  },
+  {
+   "bugid": 1807482,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "sawfish window manager: pulldown menus disappear upon hovering (109.0)"
+  },
+  {
+   "bugid": 1721592,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove spawnActorInParentProcess + WebConsoleActor.startListeners([NetworkActivity])"
+  },
+  {
+   "bugid": 1807140,
+   "status": "NEW",
+   "component": "DevTools:Console",
+   "summary": "Frequent TSAN devtools/client/webconsole/test/browser/browser_jsterm_await_paused.js | Test timed out"
+  },
+  {
+   "bugid": 1808308,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove console actor getPreferences and setPreferences methods"
+  },
+  {
+   "bugid": 1318029,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "LongStringActor doesn't work in storage inspector with long strings"
+  },
+  {
+   "bugid": 1807898,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Simplify telemetry's sessionID implementation"
+  },
+  {
+   "bugid": 1808300,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Can't open a Multiprocess Toolbox from about:debugging when connected to an older server"
+  },
+  {
+   "bugid": 1808309,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove web console actor's sendHttpRequest method"
+  },
+  {
+   "bugid": 1807901,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "enable codespell on mode documentation directories"
+  },
+  {
+   "bugid": 1808507,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "perfdocs fails if .hg is present in the full path"
+  },
+  {
+   "bugid": 1808027,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Adjust to myst parser 0.17.0 - Fix some warnings in the doc + ignore some warnings, etc"
+  },
+  {
+   "bugid": 1803719,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_glean_telemetry_abandonment_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1805574,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "High freq browser/components/urlbar/tests/browser/browser_glean_telemetry_engagement_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1806350,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_glean_telemetry_impression_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1382992,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Figure out what do to with canDrop() with respect to sync vs async"
+  },
+  {
+   "bugid": 1457131,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Investigate if we can remove itemId (aka parentId) from PlacesInsertionPoint"
+  },
+  {
+   "bugid": 1807008,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Erroneous errors when adding multiple security devices"
+  },
+  {
+   "bugid": 1795538,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "High freq browser/base/content/test/performance/browser_startup_syncIPC.js | single tracking bug"
+  },
+  {
+   "bugid": 1808117,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace Cu.reportError calls in nsContextMenu"
+  },
+  {
+   "bugid": 1805414,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Remove nsMenuFrame"
+  },
+  {
+   "bugid": 1795184,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Docs] [Cleanup] Update the \"Metrics we collect\" page"
+  },
+  {
+   "bugid": 1799939,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Write tests for CFR logic added in CFRPageActions.jsm"
+  },
+  {
+   "bugid": 1805318,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Update link shown in MobileDownloads component"
+  },
+  {
+   "bugid": 1806711,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Let Opera, Opera GX and Vivaldi migrators ride out to release"
+  },
+  {
+   "bugid": 1808581,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Use moz-button-group for the buttons at the bottom of the new migration wizard"
+  },
+  {
+   "bugid": 1808608,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Move MigrationWizard constants into their own module"
+  },
+  {
+   "bugid": 1808197,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Use a specific UI for the pdf viewer on Android"
+  },
+  {
+   "bugid": 1763626,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Delete obsolete attachments automatically"
+  },
+  {
+   "bugid": 1806638,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | services/settings/test/unit/test_remote_settings_release_prefs.js | xpcshell return code: 0 when Gecko 110 merges to Beta on 2023-01-16"
+  },
+  {
+   "bugid": 1807984,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Download notification icon has a black stroke"
+  },
+  {
+   "bugid": 1802954,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstrap support for this Linux distro not yet available: oracle"
+  },
+  {
+   "bugid": 1808609,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Improve error message in `test_site_compatibilitiy.py`"
+  },
+  {
+   "bugid": 1808234,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Clean up xpcshell variant scheduling"
+  },
+  {
+   "bugid": 1807522,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Upgrade build-tools to 33.0.1"
+  },
+  {
+   "bugid": 1807822,
+   "status": "RESOLVED",
+   "component": "NSS:Documentation",
+   "summary": "nss doc: Fix some warnings in the doc"
+  },
+  {
+   "bugid": 1804901,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add form interaction telemetry"
+  },
+  {
+   "bugid": 1808303,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove the pref to determine whether a user has ever used credit card autofill"
+  },
+  {
+   "bugid": 1808564,
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Change Bugzilla component for toolkit/components/prompts"
+  },
+  {
+   "bugid": 1807783,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Race condition in LoginManagerParent.sendLoginDataToChild()"
+  },
+  {
+   "bugid": 1776050,
+   "status": "REOPENED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "High frequency toolkit/components/narrate/test/browser_narrate.js | single tracking bug"
+  },
+  {
+   "bugid": 1791442,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Wrong profile used when non-snap Firefox launched by a snap"
+  },
+  {
+   "bugid": 1745764,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Prototype of dynamic rules"
+  }
+ ],
+ "fixed": 61,
+ "total": 72,
+ "restricted": 0
+}
