@@ -1,0 +1,502 @@
+{
+ "date": "2023-01-19",
+ "buildid": "20230119093127",
+ "cset": "5672f2a22f7853fbad3a8e23ade8fcaa7f118d59",
+ "bugs": [
+  {
+   "bugid": 1794961,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "enable Audio Output Devices API in Nightly"
+  },
+  {
+   "bugid": 1735923,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Leaking size of cross-origin resources by using Range Requests and Service Workers"
+  },
+  {
+   "bugid": 1810840,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] Correct wrong process name in the comment"
+  },
+  {
+   "bugid": 1808228,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Matching for nth-child(An+B of selector list), nth-last-child(An+B of selector list)"
+  },
+  {
+   "bugid": 1810946,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Share computed animation-iteration-count representation between Servo and Gecko."
+  },
+  {
+   "bugid": 1810876,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "opacity:0 element with CSS compositor runnable animation still consumes CPU"
+  },
+  {
+   "bugid": 1809741,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Animation.commitStyles should enqueue attributeChanged CEReaction"
+  },
+  {
+   "bugid": 1418449,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Support translate property on HTMLElements"
+  },
+  {
+   "bugid": 1802282,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Prevent moving and removing directories containing locked files"
+  },
+  {
+   "bugid": 1809598,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Allow overwriting directories having no locked children"
+  },
+  {
+   "bugid": 1509346,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Add support for <form rel>"
+  },
+  {
+   "bugid": 1351231,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Implement PFetch protocol and backing FetchService to allow Workers to request fetches without involving the main thread of their process"
+  },
+  {
+   "bugid": 1316727,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Creating containers without a name can get confusing"
+  },
+  {
+   "bugid": 1809902,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Fluent translateRoots trips innerHTML \"auditing\" MOZ_CRASH if used with l10n ids whose messages contain markup"
+  },
+  {
+   "bugid": 1810620,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Crash in [@ mozilla::ContentCacheInChild::CacheTextRects] at logging ContentCacheWidgets"
+  },
+  {
+   "bugid": 1247687,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Implement worker modules"
+  },
+  {
+   "bugid": 1774705,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Changing CSS position properties doesn't update cached bounds"
+  },
+  {
+   "bugid": 1807011,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "AutoProfilerTextMarker may call TimeStamp::Now even when the profiler isn't running?"
+  },
+  {
+   "bugid": 1800430,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Port more code to the new shared memory classes"
+  },
+  {
+   "bugid": 1810488,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Remove unnecessary ShouldResistFingerprinting call from IsImageExtractionAllowed."
+  },
+  {
+   "bugid": 1753349,
+   "status": "REOPENED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Update ANGLE for Fx111"
+  },
+  {
+   "bugid": 1810489,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Do more precise RFP checks in WebGL"
+  },
+  {
+   "bugid": 1810623,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Pref on webgl.out-of-process and webgl.out-of-process.worker on Android until release"
+  },
+  {
+   "bugid": 1810495,
+   "status": "NEW",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update (mid January 2023)"
+  },
+  {
+   "bugid": 1803387,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "compositor animations seems to be running in a closed window in this profile"
+  },
+  {
+   "bugid": 1791520,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Nullptr dereference in IsWriteableAddress when coming from CreateBigIntFromInt64"
+  },
+  {
+   "bugid": 1810299,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS demo (https://www.fxhash.xyz/generative/slug/ascii-dun-gen ) is a lot slower in Nightly compared with Chrome"
+  },
+  {
+   "bugid": 1810584,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "(gcc 12) regexp-parser.cc:1915:35: error: 'this' pointer is null [-Werror=nonnull]"
+  },
+  {
+   "bugid": 1799024,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Generate shape guards instead of class guards for first stub"
+  },
+  {
+   "bugid": 1799025,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize hasOwnProperty and getProp inside for-in loops"
+  },
+  {
+   "bugid": 1810688,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Correctly implement MacroAssembler::branchTruncateDoubleToInt32 on ARM64"
+  },
+  {
+   "bugid": 1810090,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Disallow uses of MWasmDerived{,Index}Pointer with reftyped-bases"
+  },
+  {
+   "bugid": 1810689,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier 2] bugs/670442-1.html == bugs/670442-1-ref.html | image comparison, max difference: 55, number of differing pixels: 3742"
+  },
+  {
+   "bugid": 1809646,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | /css/css-align/parsing/align-tracks-computed.html | Property align-tracks value 'normal' - assert_true: align-tracks doesn't seem to be supported in the computed style expected when Gecko 110 merges to Beta on 2023-01-16"
+  },
+  {
+   "bugid": 1470075,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "make ch units compute to the vertical advance of the zero glyph, in vertical upright writing modes"
+  },
+  {
+   "bugid": 1810709,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Unreliable evaluation of the \"first available font\" for CSS purposes"
+  },
+  {
+   "bugid": 1810815,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "CSS 'ch' and 'ic' units may not always be derived from the correct font"
+  },
+  {
+   "bugid": 1792395,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Full song is not shown in spotify embeds with ETP set to STANDARD"
+  },
+  {
+   "bugid": 1810691,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma [tier 2] svg/as-image/canvas-drawImage-scale-2a.html == svg/as-image/canvas-drawImage-scale-2-ref.html | image comparison, max difference: 64, number of differing pixels: 1171"
+  },
+  {
+   "bugid": 1799470,
+   "status": "ASSIGNED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Tighten GPU sandbox's filesystem access"
+  },
+  {
+   "bugid": 1810791,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Fix if statement in obfsRead regarding SQLITE_IOERR_SHORT_READ"
+  },
+  {
+   "bugid": 1795993,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "building FF 106 on x86-32 fails in libwebrtc due to missing -msse2"
+  },
+  {
+   "bugid": 1773057,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Can we remove the `browser.history_swipe_animation.disabled` pref?"
+  },
+  {
+   "bugid": 1773741,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS 13 SDK] Build Firefox with the macOS 13 SDK in CI"
+  },
+  {
+   "bugid": 1810975,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "remove unused MarkVsyncReceived()/MarkVsyncRan()"
+  },
+  {
+   "bugid": 1810981,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove unused SchedulerGroup member variables"
+  },
+  {
+   "bugid": 1807896,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Reducer number of events between parent process code and soon-to-be privileged content proces toolbox"
+  },
+  {
+   "bugid": 1810622,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Add test for Navigating a tab breaks the Browser Toolbox in Parent Process mode"
+  },
+  {
+   "bugid": 1809848,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove unused fields of TargetMixin"
+  },
+  {
+   "bugid": 1651255,
+   "status": "RESOLVED",
+   "component": "DevTools:Memory",
+   "summary": "A memory dump is not loaded into the profiler if the dump file name contains Russian characters in the name"
+  },
+  {
+   "bugid": 1757161,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "can't access property \"addonId\", channel.loadInfo.loadingPrincipal is null"
+  },
+  {
+   "bugid": 1810572,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Rewrite consumers of getStyleSheetText to use async/await instead of then()"
+  },
+  {
+   "bugid": 1810579,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "stylesheets manager does not notify about already registered stylesheets"
+  },
+  {
+   "bugid": 1750317,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "location bar search intermittently fails to reach search engine input"
+  },
+  {
+   "bugid": 1806007,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Refactoring urlbar engagement telemetry test"
+  },
+  {
+   "bugid": 1803151,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use bundled lit in storybook"
+  },
+  {
+   "bugid": 1810653,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update feature_callout_second_screen_positioned_left_of_element for the new screen it's testing"
+  },
+  {
+   "bugid": 1809638,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Save the extension id in AddonSearchEngine's constructor rather than passing it to the init/update functions"
+  },
+  {
+   "bugid": 1809640,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Move WebExtension valid checks from SearchService to AddonSearchEngine"
+  },
+  {
+   "bugid": 1810025,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tabbrowser's tab label long data URI truncation code doesn't truncate initial label for a tab"
+  },
+  {
+   "bugid": 1810038,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tests in browser/base/content/test/tabs/browser.ini are no longer sorted alphabetically"
+  },
+  {
+   "bugid": 1799665,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Make login search / add functionality more accessible and usable"
+  },
+  {
+   "bugid": 1747145,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Configure should check that linking wasm modules works"
+  },
+  {
+   "bugid": 1807583,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Enable -Wtautological-constant-in-range-compare warnings"
+  },
+  {
+   "bugid": 1810627,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow to build without a wasi sysroot"
+  },
+  {
+   "bugid": 1810969,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Minor clangd back-end clean-up"
+  },
+  {
+   "bugid": 1795884,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "migrate release-flatpak-repackage task to gcp"
+  },
+  {
+   "bugid": 1744288,
+   "status": "RESOLVED",
+   "component": "GeckoView:GeckoViewExample",
+   "summary": "Behavior for screenOrientation.lock demo is different from FF and Chrome"
+  },
+  {
+   "bugid": 1810392,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Upgrade ktlint to 0.47.x"
+  },
+  {
+   "bugid": 1724687,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Remove usage of OS.File from CDP implementation"
+  },
+  {
+   "bugid": 1810231,
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Fix expired retained colorway theme still uninstalled by BuiltInThemes.ensureBuiltInThemes as expired after being migrated from built-in to AMO installed"
+  },
+  {
+   "bugid": 1807157,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/workspace/obj-build/dist/include/nsCOMPtr.h:807:18 in swap or nsCOMPtr.h:867:45 in operator bool"
+  },
+  {
+   "bugid": 1791442,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Wrong profile used when non-snap Firefox launched by a snap"
+  },
+  {
+   "bugid": 1805802,
+   "status": "REOPENED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Make Windows remote server command-line handling async with `WndProc`"
+  },
+  {
+   "bugid": 1801927,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Convert the SUMO links in about:preferences#general to moz-support-link"
+  },
+  {
+   "bugid": 1802215,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Let <panel-list>s be optionally embedded in a <xul:panel> so that they can float over other things"
+  },
+  {
+   "bugid": 1803676,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Expand documentation to include information on how to create and use new components"
+  },
+  {
+   "bugid": 1797777,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Use `browser_specific_settings` instead of `applications` in extension manifests"
+  },
+  {
+   "bugid": 1805918,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Use a Set instead of an Array in toolkit\\components\\extensions\\test\\xpcshell\\test_ext_startup_perf.js"
+  },
+  {
+   "bugid": 1810877,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Replace Cu.reportError calls in browser/extensions/"
+  },
+  {
+   "bugid": 1809721,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Expose DNR api namespace properties related to DNR limits (like MAX_NUMBER_OF_STATIC_RULESETS)"
+  },
+  {
+   "bugid": 1810732,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Perma browser/components/extensions/test/browser/browser_ext_incognito_views.js | Error: Error: openPopup requires a user gesture :: Async*testWindow@moz-extension://... when Gecko 111 merges to Beta on 2023-02-13"
+  }
+ ],
+ "fixed": 68,
+ "total": 82,
+ "restricted": 3
+}
