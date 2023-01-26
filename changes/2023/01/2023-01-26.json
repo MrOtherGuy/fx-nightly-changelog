@@ -1,0 +1,796 @@
+{
+ "date": "2023-01-26",
+ "buildid": "20230126094703",
+ "cset": "b9c4ba78462076c06f3938d19954c88a9504d8fb",
+ "bugs": [
+  {
+   "bugid": 1811210,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[Linux] Use zero-copy video playback with fallback to surface copy"
+  },
+  {
+   "bugid": 1811911,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Build system needs support for Sun cubeb backend"
+  },
+  {
+   "bugid": 1809851,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add wpt for overflow:overlay acting as overflow:auto"
+  },
+  {
+   "bugid": 1808409,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Implement view-timeline-{name|axis|inset} and view-timeline in style"
+  },
+  {
+   "bugid": 1621530,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Consider adding a mode for WebIDL dictionaries where they do not sort their members"
+  },
+  {
+   "bugid": 1809134,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Ensure we get NotifiedImpendingShutdown before we call (the last) BrowserChild::RecvDestroy"
+  },
+  {
+   "bugid": 1811216,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Intermittent Assertion failure: mResolver, at /builds/worker/checkouts/gecko/dom/ipc/JSValidatorChild.cpp:20"
+  },
+  {
+   "bugid": 1811237,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Linux webrender asan xpcshell frequent retries that end up in exception"
+  },
+  {
+   "bugid": 1797411,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "New wpt failures in /screen-orientation/non-fully-active.html"
+  },
+  {
+   "bugid": 1811963,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "CustomElementData::Traverse should use NoteXPCOMChild for mElementInternals"
+  },
+  {
+   "bugid": 1803201,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "FedCM doorhanger doesn't auto-close on timeout"
+  },
+  {
+   "bugid": 1804727,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Prevent concurrent IdentityCredential requests"
+  },
+  {
+   "bugid": 1811340,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Move timeout code into the parent process"
+  },
+  {
+   "bugid": 1810828,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "High freq /FileAPI/url/url-with-fetch.any.worker.html | single tracking bug"
+  },
+  {
+   "bugid": 1806501,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Improve the life time of the Utility Process for ORB"
+  },
+  {
+   "bugid": 1811278,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add disable next line for all browser/base"
+  },
+  {
+   "bugid": 1810759,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Replace ReadableStreamError use in Fetch's AbortStream()"
+  },
+  {
+   "bugid": 1810959,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Use precise RFP check for PresShell::EventHandler::DispatchEventToDOM"
+  },
+  {
+   "bugid": 1773760,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WebAuthn enums should be DOMStrings"
+  },
+  {
+   "bugid": 1811949,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Bounds incorrect for text within height: 0, flex aside element"
+  },
+  {
+   "bugid": 1812208,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Bounds cache incorrect if bounds change without reflow"
+  },
+  {
+   "bugid": 1615546,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove optimization tracking code from the profiler"
+  },
+  {
+   "bugid": 1811450,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Do not cap the Firefox version on profiler metadata"
+  },
+  {
+   "bugid": 1811929,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::layers::AndroidNativeWindowTextureData::AndroidNativeWindowTextureData]"
+  },
+  {
+   "bugid": 1812260,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Building a snap from source fails for 111, build errors in angle"
+  },
+  {
+   "bugid": 1423833,
+   "status": "REOPENED",
+   "component": "Core:Graphics: Layers",
+   "summary": "Crash in shutdownhang | PR_MD_WAIT_CV | PR_Wait | mozilla::ReentrantMonitor::Wait | mozilla::layers::SynchronousTask::Wait"
+  },
+  {
+   "bugid": 1812016,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[ARM] GPU acceleration seems broken on armhf since 1738814"
+  },
+  {
+   "bugid": 1812102,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Webrender Nvidia baseline driver version mixed up"
+  },
+  {
+   "bugid": 1775062,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Consider avoiding requiring default constructors for IPDL unions."
+  },
+  {
+   "bugid": 1812011,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Fluent linter: warn when a string has placeables but no comments"
+  },
+  {
+   "bugid": 1811056,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add --enable-change-by-array-copy to the fuzz-flags.txt"
+  },
+  {
+   "bugid": 1811789,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: MOZ_ASSERT(isString()) at include/js/Value.h:924 with --enable-change-by-array-copy"
+  },
+  {
+   "bugid": 1812055,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add fast path for adding a plain object property or array element to structured clone reading"
+  },
+  {
+   "bugid": 1812390,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma 1st [tier 2] [taskcluster:error] exit status 1"
+  },
+  {
+   "bugid": 1801985,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Handle postbarriers in codegen for ObjectToIterator"
+  },
+  {
+   "bugid": 1811355,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add detailed Trampoline information to the jitdump"
+  },
+  {
+   "bugid": 1812001,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: IndicesAreValid(&obj->as<NativeObject>(), iterobj->getNativeIterator()), at js/src/vm/Iteration.cpp:1272"
+  },
+  {
+   "bugid": 1812267,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Parallel marking performs worse on some non-parallelizable workloads"
+  },
+  {
+   "bugid": 1812268,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add a GC parameter to control the number of threads used by parallel marking"
+  },
+  {
+   "bugid": 1804573,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[scroll-animations-1] `scroll-timeline` and `view-timeline` shorthand syntax"
+  },
+  {
+   "bugid": 1804466,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Navigating through Datepicker using keyboard after a date has already been selected will loose keyboard focus when reaching a different month"
+  },
+  {
+   "bugid": 1811581,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Show a time picker on click on a <input type=time> field (when pref is on)"
+  },
+  {
+   "bugid": 1800603,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Setting network.captive-portal-service.enabled to false and immediately after that to true leads to crash"
+  },
+  {
+   "bugid": 1808975,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "HTTP error 511 Network Authentication Required is not detected as a captive portal"
+  },
+  {
+   "bugid": 1809151,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "corporate web proxy no kerberos auth for iframe content since 108.0.1"
+  },
+  {
+   "bugid": 1811552,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_range_requests.js | application crashed [@ MOZ_Crash(char const*, int, char const*)]"
+  },
+  {
+   "bugid": 1812048,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "We should call MaybeResumeSend in Http3Session::WebTransportNegotiationDone"
+  },
+  {
+   "bugid": 1809381,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/netwerk/dns/DNSServiceBase.cpp:40:22 in mozilla::net::DNSServiceBase::ReadPrefs(char const*)"
+  },
+  {
+   "bugid": 1812009,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add prefs that allow increasing the DNS thread count"
+  },
+  {
+   "bugid": 1775358,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add a profiling marker to nsHttpConnectionMgr::SpeculativeConnect"
+  },
+  {
+   "bugid": 1800618,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Write generic nsIHttpChannel for oblivious HTTP"
+  },
+  {
+   "bugid": 1802910,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "We should not try to create nsHttpHandler during shutdown"
+  },
+  {
+   "bugid": 1746126,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Allow controlling zoom-to-focused-input behaviour using `user-scalable` and `touch-action`"
+  },
+  {
+   "bugid": 1803740,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Desktop site is automatically zoomed in"
+  },
+  {
+   "bugid": 1810871,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Add perfstats to capture internal necko timings -  async open to transaction pending and response start parent to content"
+  },
+  {
+   "bugid": 1806009,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "add payloads for onboarding doorhanger experiments"
+  },
+  {
+   "bugid": 1811921,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CookieBannerService doesn't handle observer \"browsing-context-discarded\""
+  },
+  {
+   "bugid": 1812030,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "nsCookieInjector does not observe detect-only pref"
+  },
+  {
+   "bugid": 752638,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "make the context-fill and context-stroke SVG paint values work in marker content"
+  },
+  {
+   "bugid": 1808872,
+   "status": "RESOLVED",
+   "component": "Core:Spelling Checker: en-US Dictionary",
+   "summary": "Add new words to en-US dictionary (post 20230105 update)"
+  },
+  {
+   "bugid": 1810662,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "make \"item should have finite clip with respect to aASR\" asserts non-fatal"
+  },
+  {
+   "bugid": 1811322,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libyuv"
+  },
+  {
+   "bugid": 1811487,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Cleanup rollup / hide popup APIs"
+  },
+  {
+   "bugid": 1807468,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Flatpak desktop file has duplicate keywords"
+  },
+  {
+   "bugid": 1811486,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Re-enable panel animations on KDE."
+  },
+  {
+   "bugid": 1812289,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Consider enabling CSD titlebar by default on more systems."
+  },
+  {
+   "bugid": 1644104,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Reenable `alerts.useSystemBackend` in Windows on Nightly"
+  },
+  {
+   "bugid": 1704500,
+   "status": "REOPENED",
+   "component": "Core:Widget: Win32",
+   "summary": "Crash in [@ CLegacyPositionRequest::GetLocationFromSession]"
+  },
+  {
+   "bugid": 1809002,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Document cycle collector macros"
+  },
+  {
+   "bugid": 1771685,
+   "status": "VERIFIED",
+   "component": "Core:XSLT",
+   "summary": "Cross-origin frames can obtain top-level permissions b/c XSLT transform resets FeaturePolicy"
+  },
+  {
+   "bugid": 1811262,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Add proper jest mock for devtools/shared/indexed-db.js"
+  },
+  {
+   "bugid": 1811257,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Browser toolbox's debugger stays empty as soon as you start using the iframe dropdown"
+  },
+  {
+   "bugid": 1811429,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger break in non-pretty-printed \"new Function\" source"
+  },
+  {
+   "bugid": 1810340,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "\"Inspect\" menuitem doesn't work on system pages without a certain uri flag"
+  },
+  {
+   "bugid": 1811760,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Event listener checkbox sizes vary"
+  },
+  {
+   "bugid": 1639052,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Polish for pseudoclass toggles"
+  },
+  {
+   "bugid": 1812281,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "`lab` and `lch` should be in autocomplete popup when layout.css.more_color_4.enabled is true"
+  },
+  {
+   "bugid": 1811820,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Change prettier configuration file from json to common js format."
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1749473,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "[meta] Eliminate all sphinx warnings when building docs"
+  },
+  {
+   "bugid": 1776030,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser-tips/browser_searchTips_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1791657,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Page title is not shown for autofill result when the whole URL is typed into at once"
+  },
+  {
+   "bugid": 1808932,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tip_persist abandonment telemetry ping is not recorded on dismissal"
+  },
+  {
+   "bugid": 1811497,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Regression: Hover highlight delay/gap appears between items in the Result List when moving mouse cursor between them"
+  },
+  {
+   "bugid": 1811620,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Regression: URLs are changing the color from blue to white when hovering over it"
+  },
+  {
+   "bugid": 1811623,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Regression: Padding between section title and hover is too narrow"
+  },
+  {
+   "bugid": 1811870,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable urlbar result menu in Nightly"
+  },
+  {
+   "bugid": 1808768,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmarks manager shows duplicate tags in the input field"
+  },
+  {
+   "bugid": 1812034,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "13 elements are restyled every time the download progress is updated"
+  },
+  {
+   "bugid": 1784979,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Make Firefox View test helpers available somewhere central"
+  },
+  {
+   "bugid": 1811854,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Switch remaining BrowserTestUtils.loadURI consumers to loadURIString"
+  },
+  {
+   "bugid": 1811871,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Regression: New blue Forward indicator disappears with delay"
+  },
+  {
+   "bugid": 1812410,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Restore Micah as downloads panel & PiP peer"
+  },
+  {
+   "bugid": 984589,
+   "status": "NEW",
+   "component": "Firefox:Menus",
+   "summary": "Sideways sliding animation in panels should be disabled when prefers-reduced-motion is turned on"
+  },
+  {
+   "bugid": 1786648,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove background images used in Proton new user Onboarding"
+  },
+  {
+   "bugid": 1811935,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Show and hide the available resource type checkbox items depending on which browser / profile is selected"
+  },
+  {
+   "bugid": 1812097,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Save should be enabled after tags are entered"
+  },
+  {
+   "bugid": 1812296,
+   "status": "VERIFIED",
+   "component": "Firefox:Protections UI",
+   "summary": "The \"Enhanced Tracking Protection is ON for this site\" title has no bold style applied"
+  },
+  {
+   "bugid": 1809884,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "inspect() does not bust cache when fetching the latest changes from server"
+  },
+  {
+   "bugid": 1743887,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Screenshot failed when taking screenshot of really large page"
+  },
+  {
+   "bugid": 1792816,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Address bar Search Engine placeholder is not correctly displayed in private browsing"
+  },
+  {
+   "bugid": 1809637,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Improve console error checks on toolkit search tests"
+  },
+  {
+   "bugid": 1811158,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove or update probes expiring in Firefox 112: browser.searchinit.secure_opensearch_* before Gecko version gets increased to 112 on 2023-02-13"
+  },
+  {
+   "bugid": 1811633,
+   "status": "NEW",
+   "component": "Firefox:Security",
+   "summary": "properly vendor PKI.js and update it to the latest version"
+  },
+  {
+   "bugid": 1812335,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove some XUL image usage from preferences."
+  },
+  {
+   "bugid": 1706933,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "When sync removes a bookmark with a keyword based on data from another device, the keyword is not removed"
+  },
+  {
+   "bugid": 1805236,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Turn _updateForUnifiedExtensions into a one-time migration inside of _updateForNewVersion"
+  },
+  {
+   "bugid": 1811729,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/Win%2F1095440%2Fchromedriver_win32.zip?alt=media"
+  },
+  {
+   "bugid": 1812143,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "asan marionette and firefox-ui tasks try to download symbols, still"
+  },
+  {
+   "bugid": 1812284,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Remove spurious third_party/xsimd/include/xsimd/config/xsimd_config.hpp.orig file"
+  },
+  {
+   "bugid": 1801268,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Clang should be built with ThinLTO"
+  },
+  {
+   "bugid": 1812201,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade wine to 8.0"
+  },
+  {
+   "bugid": 1812216,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade valgrind to 3.20.0"
+  },
+  {
+   "bugid": 1810742,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Expose cookie banner detect-only mode in GeckoView"
+  },
+  {
+   "bugid": 1806191,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Implement New ActivityContextDelegate"
+  },
+  {
+   "bugid": 1760324,
+   "status": "RESOLVED",
+   "component": "GeckoView:Sandboxing",
+   "summary": "Add OOP iframe to SelectionActionDelegateTest.kt"
+  },
+  {
+   "bugid": 1812195,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add alipay.com and miravia.es to the site permission blocklist"
+  },
+  {
+   "bugid": 1789713,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "LLVM doesn't include xdata unwinding information for _tailMerge_xxxx symbols"
+  },
+  {
+   "bugid": 1806410,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Remove the remaining limitations around sending crash pings for child processes"
+  },
+  {
+   "bugid": 1809464,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "toolkit/components/alerts/test/test_principal.html | Fails when `alerts.useSystemBackend=true` for Windows"
+  },
+  {
+   "bugid": 1810860,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Intermittent TV /tests/toolkit/components/alerts/test/test_principal.html logged result after SimpleTest.finish(): Alerts should not be present at the start of the test."
+  },
+  {
+   "bugid": 1779124,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Render full PiP controls in their proper places as per UX"
+  },
+  {
+   "bugid": 1812081,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Picture-in-picture's timer does not fade away unless the mouse is completely hidden from the screen"
+  },
+  {
+   "bugid": 1811970,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Remove pages-per-sheet pref"
+  },
+  {
+   "bugid": 1801929,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Convert the SUMO links in about:preferences#privacy to moz-support-link"
+  },
+  {
+   "bugid": 1803155,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Install storybook dependencies when needed"
+  },
+  {
+   "bugid": 1804695,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Replace \"Learn more\" links in about:addons with reusable component"
+  },
+  {
+   "bugid": 1809458,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove redundant support-link implementation"
+  },
+  {
+   "bugid": 1812035,
+   "status": "ASSIGNED",
+   "component": "Toolkit:about:memory",
+   "summary": "about:memory tests doesn't know about utility processes"
+  },
+  {
+   "bugid": 1802175,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Confirm and add test for migration of (mv2 mandatory) host permissions to mv3 (optional) permissions"
+  },
+  {
+   "bugid": 1807993,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Perma [Tier 2] Android searchfox /builds/worker/workspace/obj-build/dist/include/mozilla/ServoArcTypeList.h:30: error: undefined reference to 'Servo_AnimationValue_AddRef'"
+  }
+ ],
+ "fixed": 111,
+ "total": 131,
+ "restricted": 0
+}
