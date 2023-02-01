@@ -1,0 +1,472 @@
+{
+ "date": "2023-02-01",
+ "buildid": "20230201094356",
+ "cset": "dd0fdd1daa69783be36acd5c50544f3694eaa8f9",
+ "bugs": [
+  {
+   "bugid": 1802624,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "MOZ_DIAGNOSTIC_ASSERT(mIsValid) (Invalid checked integer (division by zero or integer overflow)) Crash in [@ mozilla::AudioTrimmer::HandleDecodedResult]"
+  },
+  {
+   "bugid": 1811981,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add plumbing to use either ARM64 or x86 plugin on Windows ARM"
+  },
+  {
+   "bugid": 1813063,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "crash at null in [@ Length]"
+  },
+  {
+   "bugid": 1813569,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Serialization of font-variant values should use canonical order"
+  },
+  {
+   "bugid": 1812312,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Proposed New Module: Core: Credentials"
+  },
+  {
+   "bugid": 895197,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Deleting first <li> inside an <ul> with contenteditable inserts <br> before <ul>"
+  },
+  {
+   "bugid": 1810903,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: !mIsBeingDestroyed, at /builds/worker/checkouts/gecko/docshell/base/nsDocShell.cpp:3981"
+  },
+  {
+   "bugid": 1813489,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove pref dom.security.secFetch.enabled"
+  },
+  {
+   "bugid": 1811538,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Create a version of Promise::Create that doesn't throw ErrorResult on OOM/at shutdown"
+  },
+  {
+   "bugid": 1812315,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Replace internal algorithm uses in WebTransport/File System"
+  },
+  {
+   "bugid": 1803832,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Advertise CTAP2 support for more platforms in PublicKeyCredential::IsExternalCTAP2SecurityKeySupported"
+  },
+  {
+   "bugid": 1812524,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "CTAP2 test on webauthn.bin.coffee fails"
+  },
+  {
+   "bugid": 1812628,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Workers",
+   "summary": "Introduce flag for worker modules"
+  },
+  {
+   "bugid": 1809836,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Bounds incorrect for scrolled position: fixed elements"
+  },
+  {
+   "bugid": 1813256,
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: aUpdateType == CacheUpdateType::Initial || mBounds.isSome() (Incremental cache push but mBounds is not set!), at /builds/worker/checkouts/gecko/accessible/generic/LocalAccessible.cpp:3301"
+  },
+  {
+   "bugid": 1813980,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] ApplyCrossDocOffset checks Parent before IsDoc"
+  },
+  {
+   "bugid": 1813310,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "AutoProfileRunnable uses TimeStamp::Now even when the profiler isn't running"
+  },
+  {
+   "bugid": 1813514,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "High freq gfx/tests/reftest/1812341.html == gfx/tests/reftest/1812341-ref.html | image comparison, max difference: 1, number of differing pixels: 230"
+  },
+  {
+   "bugid": 1813774,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Actually hook up rasterization truncation support."
+  },
+  {
+   "bugid": 1806699,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebIDL for WebGPU indirect draw/compute calls should be removed until validation is implemented"
+  },
+  {
+   "bugid": 1813127,
+   "status": "NEW",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Assertion failure: IsGPUColorDict() (Wrong type!), at /builds/worker/workspace/obj-build/dist/include/mozilla/dom/WebGPUBinding.h:3615"
+  },
+  {
+   "bugid": 1813547,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update (early feb 2023)"
+  },
+  {
+   "bugid": 1809738,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Twitter.com - stuttering and input lag - Caused by backdrop-filter"
+  },
+  {
+   "bugid": 1813987,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "gfxFontGroup::FindFontForChar accesses the normalizer without using the unified API"
+  },
+  {
+   "bugid": 1808673,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Investigate if MruCache would be useful for atom cache"
+  },
+  {
+   "bugid": 1812508,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Unexpected behaviour with can.js library causing circular references"
+  },
+  {
+   "bugid": 1813624,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Cleanup old warmup count heuristic that no longer does anything"
+  },
+  {
+   "bugid": 1812283,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "WasmArrayObject::create: don't create zero-sized payload blocks"
+  },
+  {
+   "bugid": 1812285,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm::InitExprInterpreter: use inline capacity for `::stack`"
+  },
+  {
+   "bugid": 1806587,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Decide if pressing Backspace on the Calendar button should reset the date and datetime-local inputs"
+  },
+  {
+   "bugid": 1813865,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Add 'Material Icons Extended' to browser.display.use_document_fonts.icon_font_allowlist"
+  },
+  {
+   "bugid": 1812753,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Move xpcom/ds/MruCache.h to mfbt/"
+  },
+  {
+   "bugid": 1813469,
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add telemetry for how often cookies contain non-ascii characters"
+  },
+  {
+   "bugid": 1814234,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Send FIN for WebTransportStreams which have moved to SEND_DONE state"
+  },
+  {
+   "bugid": 1814047,
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Text from button is not visible on print preview nor on saved pdf."
+  },
+  {
+   "bugid": 1813322,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "use elements should be able to target any SVGGraphicsElement"
+  },
+  {
+   "bugid": 1814026,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Minor cleanup to SVGGeometryFrame"
+  },
+  {
+   "bugid": 1811991,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Perma [tier 2] Btime raptor-browsertime Critical: Could not find window recording directory in C:\\<path>\\browsertime-results\\welcome | or Critical: TypeError: Cannot read properties of undefined (reading 'substr')"
+  },
+  {
+   "bugid": 1775945,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent browser/base/content/test/webrtc/browser_devices_get_user_media_queue_request.js | single tracking bug"
+  },
+  {
+   "bugid": 1811341,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Display capture under Wayland causes double system prompting for permissions"
+  },
+  {
+   "bugid": 1812293,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "[Google Meet] The webcam video stream is not being seen by the other participant if one disables and re-enables it"
+  },
+  {
+   "bugid": 1784772,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Intermittent widget/tests/browser/browser_test_swipe_gesture.js | single tracking bug"
+  },
+  {
+   "bugid": 1779478,
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove and replace deprecated code on macOS"
+  },
+  {
+   "bugid": 1813554,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KDE] Can't resize the Firefox window after CSD enabled"
+  },
+  {
+   "bugid": 1704500,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Crash in [@ CLegacyPositionRequest::GetLocationFromSession]"
+  },
+  {
+   "bugid": 1813303,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "windows: new window keeps shrinking with bookmarks toolbar shown"
+  },
+  {
+   "bugid": 1681586,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "XPIDL compiler uses redundant include guards"
+  },
+  {
+   "bugid": 1810615,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Update async-task crate"
+  },
+  {
+   "bugid": 1811934,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make nsID::ToString() less error prone"
+  },
+  {
+   "bugid": 1812615,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Land Glean v52.2.0 in tree"
+  },
+  {
+   "bugid": 1810979,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Show a title for search results from evaled sources"
+  },
+  {
+   "bugid": 1812023,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Move all project search jest tests to mochitests"
+  },
+  {
+   "bugid": 1813476,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Mass convert all actors to use ES Classes"
+  },
+  {
+   "bugid": 1812646,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "base-loader.js should be loaded in the devtools global when used for browser toolbox"
+  },
+  {
+   "bugid": 1810263,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Broken Link in \"GeckoView For Gecko Engineers\" page"
+  },
+  {
+   "bugid": 1812197,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Autofilling does not show the page title properly for some URLs"
+  },
+  {
+   "bugid": 1813302,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Omnibox API] Deletable suggestion result menu is broken"
+  },
+  {
+   "bugid": 1813505,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make browser_view_selectionByMouse.js work with the result menu button"
+  },
+  {
+   "bugid": 1795255,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Stop importing useless modules in browser tests"
+  },
+  {
+   "bugid": 1811792,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "quick swipes never show the arrow icon at full opacity"
+  },
+  {
+   "bugid": 1812321,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "The name of the device used is clipped instead of wrapped if the text excedes the limit of the microfone/camera site permission panel"
+  },
+  {
+   "bugid": 1813947,
+   "status": "VERIFIED",
+   "component": "Firefox:Messaging System",
+   "summary": "Feature callout temporarily is hidden and throws an error when immediately navigating to a new PDF tab"
+  },
+  {
+   "bugid": 1811281,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "MigrationUtils.showMigrationWizard should open about:preferences and open the migration-dialog in a SubDialog"
+  },
+  {
+   "bugid": 1812704,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Wire up the MigrationWizard to MigrationUtils to actually perform migrations"
+  },
+  {
+   "bugid": 1799215,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Cancel, Copy, and Download buttons in the Screenshots overlay are not focusable (component)"
+  },
+  {
+   "bugid": 791594,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "401 password prompt spoofing thing"
+  },
+  {
+   "bugid": 1814063,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove and cancel buttons aren't visible in confirmation window to delete cookies and website data"
+  },
+  {
+   "bugid": 1814134,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma /builds/worker/checkouts/gecko/build/clang-plugin/StmtToBlockMap.h:56:13: error: use of undeclared identifier 'Optional'; did you mean 'optionally'?"
+  },
+  {
+   "bugid": 1793219,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Unfriendly error message with unsupported version control platform"
+  },
+  {
+   "bugid": 1813356,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchains clang-trunk-stage1 /builds/worker/fetches/llvm-project/llvm/lib/ProfileData/Coverage/CoverageMapping.cpp:422:34: error: no member named 'readBinaryIds' in 'llvm::IndexedInstrProfReader'"
+  },
+  {
+   "bugid": 1806740,
+   "status": "NEW",
+   "component": "GeckoView:Core",
+   "summary": "Expose hasRuleForBrowsingContext in GeckoView"
+  },
+  {
+   "bugid": 1808540,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Getting a 403 forbidden when trying to generate a Relay mask"
+  },
+  {
+   "bugid": 1770429,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Picture on picture subtitles don't update unless firefox is visible"
+  },
+  {
+   "bugid": 1813484,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Use new URI <-> URL conversion in Places"
+  },
+  {
+   "bugid": 1748313,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "add proxy webidl binding"
+  },
+  {
+   "bugid": 1811155,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 112: WEBEXT_* before Gecko version gets increased to 112 on 2023-02-13"
+  },
+  {
+   "bugid": 1812445,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Checkbox and label for private browsing permissions are displayed on different lines in post-install dialog"
+  }
+ ],
+ "fixed": 64,
+ "total": 77,
+ "restricted": 3
+}
