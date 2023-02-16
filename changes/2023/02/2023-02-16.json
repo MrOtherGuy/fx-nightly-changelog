@@ -1,0 +1,538 @@
+{
+ "date": "2023-02-16",
+ "buildid": "20230216094044",
+ "cset": "1a6c81eba852843665fa42d8e30bbb9e7fe890ba",
+ "bugs": [
+  {
+   "bugid": 1813584,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Use fine grained RFP for CubebUtils::PreferredSampleRate"
+  },
+  {
+   "bugid": 1811157,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove or update probes expiring in Firefox 112: media.video_h* before Gecko version gets increased to 112 on 2023-02-13"
+  },
+  {
+   "bugid": 1807003,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "consider to optimize Animation::Cancel"
+  },
+  {
+   "bugid": 1816915,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Animation handling on bind / unbind is rather suspect."
+  },
+  {
+   "bugid": 1814037,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "The variant `geckoview-fission` expiration is on 2023-03-01"
+  },
+  {
+   "bugid": 1816687,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ mozilla::ipc::IProtocol::CanSend] through [@ mozilla::dom::ContentParent::RecvRaiseWindow]"
+  },
+  {
+   "bugid": 1444491,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider updating to autofocus spec changes"
+  },
+  {
+   "bugid": 1724447,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma /html/cross-origin-opener-policy/popup-coop-by-sw.https.html?X-Y | application crashed [@ mozilla::DeadlockDetector<mozilla::BlockingResourceBase>::InTransitiveClosure(mozilla::DeadlockDetector<mozilla::BlockingResourceBase>::Ordering"
+  },
+  {
+   "bugid": 1801761,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "UnsuppressAndInvalidate -> SetReadyForFocus may cause unexpected side affect when it's triggered by Element::Focus"
+  },
+  {
+   "bugid": 1797247,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `DeleteRangeTransaction` and `DeleteTextTransaction` stop updating `Selection`"
+  },
+  {
+   "bugid": 1810902,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: SelectionRef().GetAnchorFocusRange() && SelectionRef().GetAnchorFocusRange()->Collapsed() (Selection not collapsed after delete), at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditor.cpp:5657"
+  },
+  {
+   "bugid": 1816889,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Tweak some pointer event tests to ensure cancelling pointer down doesn't affect click/auxclick"
+  },
+  {
+   "bugid": 1815664,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix DocShellLoadStateInit Padding"
+  },
+  {
+   "bugid": 1805760,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent dom/security/test/sec-fetch/test_trustworthy_loopback.html logged result after SimpleTest.finish(): sec-fetch-site header matches - \"same-site\" == \"same-site\""
+  },
+  {
+   "bugid": 1815967,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove MinGW defines in TSFTextStore"
+  },
+  {
+   "bugid": 1816039,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Fix the failure of web-platform/tests/inert/inert-and-contenteditable.html"
+  },
+  {
+   "bugid": 1816500,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Enable CTAP2 support in early beta"
+  },
+  {
+   "bugid": 1816653,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Perma mozilla/tests/workers/modules/shared-worker-import-csp.html | <something> directive should allow cross origin static import. - assert_equals: expected (string) \"LOADED\" but got (object) [\"ERROR\"]"
+  },
+  {
+   "bugid": 1782783,
+   "status": "REOPENED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/events/browser_test_focus_urlbar.js | single tracking bug"
+  },
+  {
+   "bugid": 1816601,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Consider emulating HyperTextAccessible::OffsetAtPoint returning 0 even if offset 0 isn't at the given point"
+  },
+  {
+   "bugid": 1816833,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add CTW to Nimbus feature manifest"
+  },
+  {
+   "bugid": 1814908,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Have a way to disable capturing all the stacks of profiler markers"
+  },
+  {
+   "bugid": 1812649,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Consider to have a cache in SetFontInternal"
+  },
+  {
+   "bugid": 1816902,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Setting up the palette for COLR font rendering is way too expensive"
+  },
+  {
+   "bugid": 1816781,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to b33731c4 (2022-2-14)"
+  },
+  {
+   "bugid": 1799258,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Do color-management on Windows+DComp via IDCompositionFilterEffects"
+  },
+  {
+   "bugid": 1815272,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add a hidden pref to skip very large blobs"
+  },
+  {
+   "bugid": 1816872,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow partial picture cache tile invalidation on recent Mali devices"
+  },
+  {
+   "bugid": 1817033,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make MAX_SHARED_SURFACE_SIZE configurable with a preference"
+  },
+  {
+   "bugid": 1815503,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimize away `SetElementMegamorphic` inside for-in loops when possible"
+  },
+  {
+   "bugid": 1816498,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove unused result from LMegamorphicStoreSlot"
+  },
+  {
+   "bugid": 1816863,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64] Fix `MacroAssembler::branchTruncateDoubleToInt32` on LoongArch64"
+  },
+  {
+   "bugid": 1816865,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips64] Correctly implement MacroAssembler::branchTruncateDoubleToInt32 on MIPS64"
+  },
+  {
+   "bugid": 1816340,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Emergency GCs should wait for background free"
+  },
+  {
+   "bugid": 1816686,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "DumpHeap doesn't dump the shared atoms zone"
+  },
+  {
+   "bugid": 1816882,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Perma build bustages /builds/worker/checkouts/gecko/js/src/wasm/WasmIonCompile.cpp:6098:13: error: unused function 'EmitMemDiscard' [-Werror,-Wunused-function] when Gecko 112 merges to Beta on 2023-03-13"
+  },
+  {
+   "bugid": 1651129,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Use nsIFrame::HasAnyStateBits() whenever possible instead of raw mState access"
+  },
+  {
+   "bugid": 1780865,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[scroll-animations-1] currentTime when scroll range is 0?"
+  },
+  {
+   "bugid": 1816044,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Fix an ascii-art table"
+  },
+  {
+   "bugid": 1815666,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Fix HttpChannelOpenArgs Padding"
+  },
+  {
+   "bugid": 1808233,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Permafailing Linux ASAN/ccov socketprocess netwerk/test/unit/test_trr_with_proxy.js"
+  },
+  {
+   "bugid": 1629307,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Shouldn't prompt for http auth if the XFO (X-Frame-Options header) will block loading the page anyway"
+  },
+  {
+   "bugid": 1815755,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Fix HttpChannelOnStartRequestArgs Padding"
+  },
+  {
+   "bugid": 1816866,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Fixes to eSVGContainer"
+  },
+  {
+   "bugid": 1816911,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Visibility logic is wrong in SVGGeometryFrame"
+  },
+  {
+   "bugid": 1815090,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Certificate expirations issue that causes multiple failures on all trees"
+  },
+  {
+   "bugid": 1815667,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Fix nsDisplayListBuilder Padding"
+  },
+  {
+   "bugid": 1265827,
+   "status": "NEW",
+   "component": "Core:WebRTC",
+   "summary": "Add support for RTCPeerConnectionState in RTCPeerConnection"
+  },
+  {
+   "bugid": 1510802,
+   "status": "NEW",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCRtpSender.setStreams()"
+  },
+  {
+   "bugid": 1804678,
+   "status": "NEW",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCMediaSourceStats"
+  },
+  {
+   "bugid": 1812154,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libwebrtc to 108"
+  },
+  {
+   "bugid": 1816173,
+   "status": "REOPENED",
+   "component": "Core:WebRTC",
+   "summary": "moz-libwebrtc github patch burn-down"
+  },
+  {
+   "bugid": 1278299,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Implement RTCSctpTransport and RTCPeerConnection.sctp"
+  },
+  {
+   "bugid": 1815369,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "RtcStatsReport packetsLost equals 4294967295"
+  },
+  {
+   "bugid": 1531087,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "RTCPeerConnectionStats (\"peer-connection\" RTCStatsType) support"
+  },
+  {
+   "bugid": 1531812,
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove remaining mozRTC* stuff (mozRTCPeerConnection, mozRTCIceCandidate, mozRTCSessionDescription)"
+  },
+  {
+   "bugid": 1808989,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Duplicate stream ids in a=msid if addTrack/addTransceiver have duplicates in the associated stream list"
+  },
+  {
+   "bugid": 1813147,
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "wpt expect outbound-rtp stats to show up before packets have been sent"
+  },
+  {
+   "bugid": 1815248,
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove setParameters compat mode forgiveness of rid changes"
+  },
+  {
+   "bugid": 1636805,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "remove mingw direct manipulation ifdefs"
+  },
+  {
+   "bugid": 1814532,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Tweak Windows event log output formatting"
+  },
+  {
+   "bugid": 1814718,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Record number of timers fired per Timer Thread wake-up"
+  },
+  {
+   "bugid": 1815757,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix JSServiceEntry Padding"
+  },
+  {
+   "bugid": 1815758,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix StaticProtocolHandler Padding"
+  },
+  {
+   "bugid": 1816342,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Changing \"default color unit\" setting causes rules to fail to load in Inspector"
+  },
+  {
+   "bugid": 1814668,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Toggling into and out of responsive design mode caches certain media query outcomes"
+  },
+  {
+   "bugid": 1764776,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Modifying a bookmark URL from a search doesn't update the result tree"
+  },
+  {
+   "bugid": 1816725,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Remove `indicator` attribute on the downloads button"
+  },
+  {
+   "bugid": 1812141,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Convert JSMs in browser/components/attribution to ESMs"
+  },
+  {
+   "bugid": 1811198,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"Synced Tabs\" in History menu doesn't do anything if the synced tabs toolbar button is in the hidden bookmarks toolbar"
+  },
+  {
+   "bugid": 1811922,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Convert JSMs in browser/components/doh to ESMs"
+  },
+  {
+   "bugid": 1812027,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Remove \"send you to an untrusted site\" from DoH error page"
+  },
+  {
+   "bugid": 1812028,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Do not show the website's name in the DoH error UI title"
+  },
+  {
+   "bugid": 1815964,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Clean up VirtualDesktop mingw ifdefs"
+  },
+  {
+   "bugid": 1740359,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "MinGW header lacks of some attributes of MFT_MESSAGE_TYPE"
+  },
+  {
+   "bugid": 1758568,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "JS Minifier fails on Extension.jsm"
+  },
+  {
+   "bugid": 1814416,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use the app displayname in about:buildconfig"
+  },
+  {
+   "bugid": 1633097,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "mingw's version of shlwapi.h is missing IsOS/OS_DOMAINMEMBER"
+  },
+  {
+   "bugid": 1669185,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "Make shlobj_core.h available for mingw builds and remove #if !defined(__MINGW32__) in TRRService.cpp"
+  },
+  {
+   "bugid": 1758681,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General: Unsupported Platforms",
+   "summary": "Update MinGW to support `ERROR_DEVICE_HARDWARE_ERROR` and `ERROR_CONTENT_BLOCKED` and remove workarounds"
+  },
+  {
+   "bugid": 1786338,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "aarch64 macOS - ld64.lld: error: finalize: FIXME: thunk range overrun"
+  },
+  {
+   "bugid": 1816723,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "add flathub::manifest entry to the firefox flatpak appdata"
+  },
+  {
+   "bugid": 1799503,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Find a way to turn off the updater for Firefox Debian Packages installed from an APT repository"
+  },
+  {
+   "bugid": 1795471,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add metrics to help understand how many users are not using background update on Windows"
+  },
+  {
+   "bugid": 1816897,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fix error when showing credit card or address prompt"
+  },
+  {
+   "bugid": 1812939,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP controls are not removed after adjusting subtitles font setting"
+  },
+  {
+   "bugid": 1813167,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent FOG.TestCppTimingDistWorks | Expected: (data.sum) > ((uint64_t)(15 * NANOS_IN_MILLIS) - EPSILON), actual: 14813300 vs 14960000 @ /builds/worker/checkouts/gecko/toolkit/components/glean/tests/gtest/TestFog.cpp:294"
+  },
+  {
+   "bugid": 1805490,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Support fluent pseudo locales in Storybook"
+  }
+ ],
+ "fixed": 70,
+ "total": 88,
+ "restricted": 1
+}
