@@ -1,0 +1,550 @@
+{
+ "date": "2023-02-22",
+ "buildid": "20230222094403",
+ "cset": "3408467a08851e358867fbecfab4f6941809f2a7",
+ "bugs": [
+  {
+   "bugid": 1814703,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Allow selecting Windows ARM64 clearkey plugin over x86 via pref"
+  },
+  {
+   "bugid": 1814910,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "GMP plugin update mechanism should replace x86 plugin with ARM plugin if channel is updated without version bump"
+  },
+  {
+   "bugid": 1812189,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable `dom.media.autoplay-policy-detection.enabled` by default"
+  },
+  {
+   "bugid": 1817071,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove -moz-image-region"
+  },
+  {
+   "bugid": 1816915,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Animation handling on bind / unbind is rather suspect."
+  },
+  {
+   "bugid": 1817467,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "Add logging for mParticipant errors"
+  },
+  {
+   "bugid": 1817946,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "JSProcessActor documentation link is wrong"
+  },
+  {
+   "bugid": 1818000,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Re-enable a few tests that were accidentally disabled"
+  },
+  {
+   "bugid": 1815639,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make some delete handlers stop touching `Selection` directly"
+  },
+  {
+   "bugid": 1815827,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of unused editor prefs whose use counters were added in bug 1745895"
+  },
+  {
+   "bugid": 1804803,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Hit MOZ_CRASH(DocumentLoadListener::Open for invalid history entry due to mismatch of 'Invalid LoadId') at /builds/worker/checkouts/gecko/netwerk/ipc/DocumentLoadListener.cpp:642"
+  },
+  {
+   "bugid": 1816697,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix tests that fail if session-history-in-parent is enabled without Fission"
+  },
+  {
+   "bugid": 1817176,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Partial Test For `URL::SetPort(const nsAString& aPort)` When `NS_FAILED(rv)`"
+  },
+  {
+   "bugid": 1817754,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Associate dom/webtransport code with DOM::Networking"
+  },
+  {
+   "bugid": 1810403,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Allow Ranges to be in multiple Selections"
+  },
+  {
+   "bugid": 1813011,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Replace BodyStream states by utilizing existing ReadableStream implementation"
+  },
+  {
+   "bugid": 1810406,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[ibus] IME may consume `GDK_KEY_PRESS` but send commit string without the follow up `GDK_KEY_PRESS`"
+  },
+  {
+   "bugid": 1816957,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Expose CryptoKey on Workers and enable lots of WPT tests"
+  },
+  {
+   "bugid": 1816536,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "TextLeafPoint::FindBoundary misses document edges"
+  },
+  {
+   "bugid": 1816573,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Use flags in TextLeafPoint::FindBoundary instead of boolean arguments"
+  },
+  {
+   "bugid": 1817506,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "High frequency accessible/tests/mochitest/tree/test_media.html | Wrong value of property 'value' for ['input@id=\"scrubber\" node', address: [object HTMLInputElement], role: slider, name: 'Position', address: 0x7f7feddea600]. - got \"0:00 / 0:00\", expected"
+  },
+  {
+   "bugid": 1808155,
+   "status": "UNCONFIRMED",
+   "component": "Core:Graphics",
+   "summary": "Screen Flickering Issue on MacOS Ventura"
+  },
+  {
+   "bugid": 1817709,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Block video overlay with non-intel GPUs on Windows 10"
+  },
+  {
+   "bugid": 1817712,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GraphicsCriticalErrors When GPU process is disabled on Windows"
+  },
+  {
+   "bugid": 1756175,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Implement roundRect for canvas2D"
+  },
+  {
+   "bugid": 1815404,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "CanvasBidiProcessor::DrawText allocates and deallocates gfxContext all the time?"
+  },
+  {
+   "bugid": 1817873,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Canvas not drawing a dot anymore"
+  },
+  {
+   "bugid": 1808820,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Assertion failure: !globalScopeAlive, at /builds/worker/checkouts/gecko/dom/workers/RuntimeService.cpp:2106"
+  },
+  {
+   "bugid": 1817829,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update (Feb 2023 #3)"
+  },
+  {
+   "bugid": 1817505,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "10.49 - 5.59% tsvg_static / tscrollx (Linux, OSX) regression on Mon February 13 2023"
+  },
+  {
+   "bugid": 1818047,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow disabling/force enabled scissored cache clears"
+  },
+  {
+   "bugid": 1814020,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: genObj->isSuspended(), at debugger/Debugger.cpp:708"
+  },
+  {
+   "bugid": 1765402,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Emit ETW events for mapping JITed code to method names"
+  },
+  {
+   "bugid": 1817188,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !cx->runtime()->jitRuntime()->disallowArbitraryCode(), at js/src/vm/Interpreter.cpp:389 with Fuzzilli internal hash method"
+  },
+  {
+   "bugid": 1818024,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Perma [tier 2] WMC64 / WMC32 Bd /builds/worker/checkouts/gecko/js/src/jit/PerfSpewer.cpp:44:12: fatal error: 'Windows.h' file not found"
+  },
+  {
+   "bugid": 1816000,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Remove FailFP hack, keep FP valid all the time"
+  },
+  {
+   "bugid": 637597,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Drawing errors while moving nodes with css3 transforms inside scaled node."
+  },
+  {
+   "bugid": 709398,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "\"ABORT: negative scaling factors must be handled manually\" with background, -moz-column"
+  },
+  {
+   "bugid": 1743045,
+   "status": "NEW",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Smooth scroll preference is ignored for element.scrollIntoView"
+  },
+  {
+   "bugid": 1817756,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Consider adding a seed to the network ID"
+  },
+  {
+   "bugid": 1800639,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Assertion failure: !mCallOnResume (How did that happen?), at /Users/changkershaw/work/gecko/netwerk/protocol/http/HttpBaseChannel.h:1042"
+  },
+  {
+   "bugid": 1170092,
+   "status": "REOPENED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Search for default preferences in /etc/mozilla/firefox/default/prefs"
+  },
+  {
+   "bugid": 1811548,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Print: content is restricted to narrow width on MacOS"
+  },
+  {
+   "bugid": 1817941,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "gCookieBannerHandlingExperiment._enrollUser sets invalid nsICookieBannerService pref state"
+  },
+  {
+   "bugid": 1813407,
+   "status": "NEW",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Portions of the protections panel are disappearing"
+  },
+  {
+   "bugid": 1815229,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove nsImageBoxFrame."
+  },
+  {
+   "bugid": 1815888,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use utils/source-maps helpers instead of the sourceMapLoader directly"
+  },
+  {
+   "bugid": 1817729,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "DAMP Performance regression on log-in-loop + bulklog tests"
+  },
+  {
+   "bugid": 1817381,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Inspector tooltip not scaled with rest of the UI"
+  },
+  {
+   "bugid": 1815140,
+   "status": "NEW",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "grid devtools overlay causes extreme content-process jank (for`stringifyGridFragments` and resulting garbage collection), for testcase with many columns"
+  },
+  {
+   "bugid": 1817659,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Network limiter doesn't work"
+  },
+  {
+   "bugid": 1817857,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Cannot copy text from netmonitor html preview"
+  },
+  {
+   "bugid": 1818037,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Update test for text selection in netmonitor response preview"
+  },
+  {
+   "bugid": 1749473,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "[meta] Eliminate all sphinx warnings when building docs"
+  },
+  {
+   "bugid": 1803426,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Images that are not in a `/docs/` folder are not being detected and uploaded in the doc upload task"
+  },
+  {
+   "bugid": 1807831,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Add a check to make sure that we don't regress the number of warnings"
+  },
+  {
+   "bugid": 1815706,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Fix history sidebar telemetry and add total clicks count"
+  },
+  {
+   "bugid": 1766701,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Document Storybook in Firefox Source Docs"
+  },
+  {
+   "bugid": 1814503,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow passing of utm_term through OPEN_URL and SHOW_FIREFOX_ACCOUNT actions for Spotlight"
+  },
+  {
+   "bugid": 1817018,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Adjust spotlight dismiss button transitions to support a static dismiss button on every screen"
+  },
+  {
+   "bugid": 1801019,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Ensure its possible to differentiate the extension vs. the component implementation in telemetry"
+  },
+  {
+   "bugid": 1814659,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "DoH native fallback warning should not show after switching to a non-restricted network"
+  },
+  {
+   "bugid": 1817888,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "The web appearance images in about:preferences are not mirrored in RTL"
+  },
+  {
+   "bugid": 1359861,
+   "status": "NEW",
+   "component": "Firefox:Sync",
+   "summary": "Unable to send page to device or find page in \"synced tabs\" when in reading mode"
+  },
+  {
+   "bugid": 1817588,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "NULL dereferences on MIME handler failures on OpenBSD"
+  },
+  {
+   "bugid": 1817866,
+   "status": "VERIFIED",
+   "component": "Firefox:about:logins",
+   "summary": "The about:logins menu is overlapping the menu button"
+  },
+  {
+   "bugid": 1817714,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make toolkit/components/find buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817715,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make toolkit/components/browser buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817716,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make intl/uconv buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817717,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make toolkit/components/resistfingerprinting buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817718,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make dom/media/webrtc/jsapi buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817719,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make dom/promise buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817720,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make security/sandbox/linux/gtest buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817721,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make security/sandbox/linux/launch buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817722,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make toolkit/components/autocomplet buildable outside of a unified build environment"
+  },
+  {
+   "bugid": 1817815,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mach try presets should use double quotes when saving fuzzy queries into yaml files"
+  },
+  {
+   "bugid": 1810223,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`./mach repackage msix` can use outdated `makeappx.exe`"
+  },
+  {
+   "bugid": 1817894,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma tsan/asan data race failures on toolchains rebuild"
+  },
+  {
+   "bugid": 1801615,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Deprecate GeckoSession.SelectionActionDelegate.Selection.clientRect in 112"
+  },
+  {
+   "bugid": 1799684,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Bouncer",
+   "summary": "Provide a bouncer URL for the latest release language pack"
+  },
+  {
+   "bugid": 1808688,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Remove the assert on the beforeRequestSentMap from the BiDi network module implementation"
+  },
+  {
+   "bugid": 1814852,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Look for macOS __crash_info in the __DATA_DIRTY section if it can't be found in the __DATA one"
+  },
+  {
+   "bugid": 1817807,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Address telemetry event is not recorded"
+  },
+  {
+   "bugid": 1807223,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[Relay] \"null\" displayed instead of the Relay option"
+  },
+  {
+   "bugid": 1801057,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove any code referring to moz_items_annos or the  \"sync/parent\" annotation"
+  },
+  {
+   "bugid": 1701865,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "about:telemetry - better adjust media querries so that Section names don't touch elements from right side of page on resize/zoom"
+  },
+  {
+   "bugid": 1803584,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove \"Dealing with Clippy\" docs as we don't need them any more."
+  },
+  {
+   "bugid": 1817865,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "The default extension icon on the unified extension panel appears black, with dark theme enabled"
+  },
+  {
+   "bugid": 1816989,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Fix InspectJSONSchema.py --dump-platform-diffs"
+  },
+  {
+   "bugid": 1807010,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Prevent ExtensionPermissions and ExtensionScriptingStore kvstore based backends to hit race conditions issues"
+  }
+ ],
+ "fixed": 80,
+ "total": 90,
+ "restricted": 2
+}
