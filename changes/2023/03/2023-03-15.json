@@ -1,0 +1,832 @@
+{
+ "date": "2023-03-15",
+ "buildid": "20230315092641",
+ "cset": "1b23793f3953df4f0340a6da671e4f97082f824a",
+ "bugs": [
+  {
+   "bugid": 1804249,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add media telemetry for audio decoding process"
+  },
+  {
+   "bugid": 1804291,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add media telemetry for decoding error in all processes"
+  },
+  {
+   "bugid": 1820650,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] Use WMFCDMProxy in the media engine playback framework"
+  },
+  {
+   "bugid": 1480746,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Invalidation of :nth-child selectors in Shadow DOM on insertion is broken."
+  },
+  {
+   "bugid": 1684958,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement full <image> syntax for 'content' property"
+  },
+  {
+   "bugid": 1736914,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement prefers-reduced-transparency media query"
+  },
+  {
+   "bugid": 1821002,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ mozilla::ipc::IProtocol::CanSend] through [@ mozilla::dom::PContentParent::SendClearFocus]"
+  },
+  {
+   "bugid": 1572644,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Support \"import\" in worklet scripts"
+  },
+  {
+   "bugid": 1821732,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "implement popover light dismiss"
+  },
+  {
+   "bugid": 1822264,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Don't check the persisted property of pagehide event in browser_fullscreen-navigation-history.js test"
+  },
+  {
+   "bugid": 1822323,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add ToggleEvent interface for Popover"
+  },
+  {
+   "bugid": 1821682,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Enable ORB for early beta"
+  },
+  {
+   "bugid": 1384606,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: !newEditingHost->IsInNativeAnonymousSubtree(), at /home/worker/workspace/build/src/dom/base/Selection.cpp:3740"
+  },
+  {
+   "bugid": 1540913,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Implement Dynamic import for workers"
+  },
+  {
+   "bugid": 1775784,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent dom/workers/test/browser_worker_use_counters.js | single tracking bug"
+  },
+  {
+   "bugid": 1783178,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/e10s/browser_caching_text_bounds.js | single tracking bug"
+  },
+  {
+   "bugid": 1820894,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Don't use ApplyPostSearchFilter sync IPC message when caching is on."
+  },
+  {
+   "bugid": 1822170,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "[Fx View] Tabbing from Tab Pickup header with VoiceOver on causing browser to freeze up"
+  },
+  {
+   "bugid": 1822225,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Always capture async stacks in a11y browser tests"
+  },
+  {
+   "bugid": 1821006,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "IPCFuzzController initializes message buffer multiple times"
+  },
+  {
+   "bugid": 1821008,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Add a Nyx ABORT macro and use it in IPCFuzzController"
+  },
+  {
+   "bugid": 1821935,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "gfxContext constructor does always an extra heap allocation for mStateStack"
+  },
+  {
+   "bugid": 1822098,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Inline trivial gfxContext methods and remove some unused ones"
+  },
+  {
+   "bugid": 1294362,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Remove CanvasRenderingContext2D::mozTextStyle"
+  },
+  {
+   "bugid": 1709347,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Add reset function to CanvasRenderingContext2D"
+  },
+  {
+   "bugid": 1799258,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Do color-management on Windows+DComp via IDCompositionFilterEffects"
+  },
+  {
+   "bugid": 1821233,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Simplify and optimize how prims are pushed to command buffers"
+  },
+  {
+   "bugid": 1822018,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove gfxContext::mTransform, which is redundant because mAzureState also has a transform field"
+  },
+  {
+   "bugid": 1607634,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Null-check non-nullable actor pointers when constructing IPDL unions/structs"
+  },
+  {
+   "bugid": 1814683,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Support types without default constructors more consistently in IPDL"
+  },
+  {
+   "bugid": 1814686,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Consider making refcounted types NotNull by default in IPDL"
+  },
+  {
+   "bugid": 1815177,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "0.61% installer size (OSX) regression on Sat February 4 2023"
+  },
+  {
+   "bugid": 1467519,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: nscoord((1 << 30) - 1) != aContainingBlockBSize || !aCoord.HasPercent() (unexpected containing block block-size), at nsLayoutUtils.cpp:5630"
+  },
+  {
+   "bugid": 1820058,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Enable CSS content-visibility on Nightly"
+  },
+  {
+   "bugid": 1821559,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "baseline-aligned fieldset flex item should derive baseline from its main content area, not from its legend"
+  },
+  {
+   "bugid": 1821737,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Date picker outlines are cropped"
+  },
+  {
+   "bugid": 1822022,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Stop using mfbt/FloatingPoint helpers in dom/streams"
+  },
+  {
+   "bugid": 1647985,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "DNS-over-HTTPS sometimes fails after VPN is turned off"
+  },
+  {
+   "bugid": 1805372,
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Pass effectiveTRRMode to nsHttpChannel from socketTransport."
+  },
+  {
+   "bugid": 1818828,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Port test_webtransport_simple.js into DOM-using tests"
+  },
+  {
+   "bugid": 1821898,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "RFPHelper is unnecessarily declared on the browser window global"
+  },
+  {
+   "bugid": 1822336,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove use of reserved word private in browser_fingerprinting_randomization_key.js"
+  },
+  {
+   "bugid": 1820754,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Move common webrender code into SVGUtils"
+  },
+  {
+   "bugid": 1822261,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Simplify bounds calculation for images"
+  },
+  {
+   "bugid": 1816559,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable screen recording when GPU sandbox filesystem blocking is active"
+  },
+  {
+   "bugid": 1639545,
+   "status": "REOPENED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Also run IndexedDB mochitests in private browsing mode"
+  },
+  {
+   "bugid": 1639548,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Purge private browsing mode storage on private browsing mode session end"
+  },
+  {
+   "bugid": 1819135,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "StorageActivityService causes wake-ups every 5 minutes while Firefox is completely idle"
+  },
+  {
+   "bugid": 1265827,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add support for RTCPeerConnectionState in RTCPeerConnection"
+  },
+  {
+   "bugid": 1510802,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCRtpSender.setStreams()"
+  },
+  {
+   "bugid": 1775941,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent browser/base/content/test/webrtc/browser_devices_get_user_media_screen.js | single tracking bug"
+  },
+  {
+   "bugid": 1804678,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCMediaSourceStats"
+  },
+  {
+   "bugid": 1822173,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "push_official_branch.sh runs in the wrong working directory"
+  },
+  {
+   "bugid": 1820814,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Transport errors/closure can prevent previously received packets from being processed"
+  },
+  {
+   "bugid": 1278299,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Implement RTCSctpTransport and RTCPeerConnection.sctp"
+  },
+  {
+   "bugid": 1815369,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "RtcStatsReport packetsLost equals 4294967295"
+  },
+  {
+   "bugid": 1531087,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "RTCPeerConnectionStats (\"peer-connection\" RTCStatsType) support"
+  },
+  {
+   "bugid": 1531812,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove remaining mozRTC* stuff (mozRTCPeerConnection, mozRTCIceCandidate, mozRTCSessionDescription)"
+  },
+  {
+   "bugid": 1808989,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Duplicate stream ids in a=msid if addTrack/addTransceiver have duplicates in the associated stream list"
+  },
+  {
+   "bugid": 1813147,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "wpt expect outbound-rtp stats to show up before packets have been sent"
+  },
+  {
+   "bugid": 1815248,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove setParameters compat mode forgiveness of rid changes"
+  },
+  {
+   "bugid": 1818127,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "webrtc/protocol/bundle.https.html unintentionally creates two video elements instead of one"
+  },
+  {
+   "bugid": 1820844,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "The fake simulcast adapter in wpt sometimes creates a session id with scientific notation?"
+  },
+  {
+   "bugid": 1784772,
+   "status": "REOPENED",
+   "component": "Core:Widget",
+   "summary": "Intermittent widget/tests/browser/browser_test_swipe_gesture.js | single tracking bug"
+  },
+  {
+   "bugid": 1820168,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS] The PDF draw pen cursor is no longer used if right click context menu is opened"
+  },
+  {
+   "bugid": 1822030,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "README file is a txt file but setup.py expect a rst file"
+  },
+  {
+   "bugid": 1816131,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Improve about:logging styles"
+  },
+  {
+   "bugid": 1822357,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Add another file to esmify's exclude list"
+  },
+  {
+   "bugid": 1822131,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Allow XUL to shrink by default"
+  },
+  {
+   "bugid": 1822236,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Layout debugger's URL bar is short"
+  },
+  {
+   "bugid": 1803616,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Expose a Javascript Tracer feature in the debugger"
+  },
+  {
+   "bugid": 1822334,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "mach esmify fails because of devtools/client/shared/source-map-loader/test/browser/fixtures/bundle.js"
+  },
+  {
+   "bugid": 1617369,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "[rust] Reformat the tree using rustfmt"
+  },
+  {
+   "bugid": 1812098,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Enable the builtinGlobals option for ESLint's no-shadow rule on .mjs files"
+  },
+  {
+   "bugid": 1636599,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "DevTools node task should report errors properly for reviewbot"
+  },
+  {
+   "bugid": 1822196,
+   "status": "RESOLVED",
+   "component": "Developer Services:Mercurial: hg.mozilla.org",
+   "summary": "Lock the elm arcconfig patch to elm (with REPO-elm)"
+  },
+  {
+   "bugid": 1817208,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Sometimes selected_result is unknown even if there's results"
+  },
+  {
+   "bugid": 1820978,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Enable delayed bookmarks panels in Firefox 113"
+  },
+  {
+   "bugid": 1821796,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "\"Open in Firefox\" option is unavailable for application/xml files"
+  },
+  {
+   "bugid": 1817251,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Record telemetry for History in sidebar and library when using the context menu"
+  },
+  {
+   "bugid": 1738056,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "About Firefox window appears in top left for an instant before moving to the center"
+  },
+  {
+   "bugid": 1821162,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Convert SwitchDocumentDirectionChild.jsm and PromptParent.jsm in browser/actors to ESMs"
+  },
+  {
+   "bugid": 1821189,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Put provenance attribution in `installation.first_seen` event"
+  },
+  {
+   "bugid": 1822165,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "add documentation for firefox installer attribution"
+  },
+  {
+   "bugid": 1821761,
+   "status": "RESOLVED",
+   "component": "Firefox:Launcher Process",
+   "summary": "Too many untrusted modules kept in UntrustedModulesData"
+  },
+  {
+   "bugid": 1818099,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "FeatureCallout in chrome doesn't fully clean up after itself"
+  },
+  {
+   "bugid": 1819456,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "ASRouter doesn't update messages when natural experiment enrollment happens during runtime"
+  },
+  {
+   "bugid": 1821644,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "ShellService writes to console on every start"
+  },
+  {
+   "bugid": 1820655,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Add a new entrypoint to the migration wizard in about:preferences"
+  },
+  {
+   "bugid": 1821505,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Wire up Variant 2 of the new Migration Wizard's selection page to Nimbus for experimentation"
+  },
+  {
+   "bugid": 1822094,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Create a shared class for deemphasized text in the new Migration Wizard"
+  },
+  {
+   "bugid": 1814724,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Use BFF route for recent saves"
+  },
+  {
+   "bugid": 1781912,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Intermittent browser/components/screenshots/tests/browser/browser_screenshots_drag_test.js | single tracking bug"
+  },
+  {
+   "bugid": 1813394,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Fix updateSize in ScreenshotsOverlayChild"
+  },
+  {
+   "bugid": 1697392,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Failing to get search suggestions with \"FormHistoryClient constructed with both a formField and an inputName\" error (Stop using formAutofill in SearchSuggestionsController)"
+  },
+  {
+   "bugid": 1771820,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Create high level documentation on how the Search Service works overall and on start-up"
+  },
+  {
+   "bugid": 1821920,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Items exceeding pane width in about:preferences#privacy panel"
+  },
+  {
+   "bugid": 1822072,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Split up tabbrowser's addTab to reduce its complexity and improve readability"
+  },
+  {
+   "bugid": 1822344,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove inactive Tabbed Browser peers"
+  },
+  {
+   "bugid": 1821928,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Convert toolkit/components/translation to ES modules"
+  },
+  {
+   "bugid": 1820947,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Use \"new style\" sysroot on Android"
+  },
+  {
+   "bugid": 1822216,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "C programs are linked with the C++ compiler"
+  },
+  {
+   "bugid": 1799504,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add tasks to upload Firefox nightly Debian Packages to the Mozilla archive"
+  },
+  {
+   "bugid": 1818502,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Support for Http3 WebTransport server for WPT tests"
+  },
+  {
+   "bugid": 1817924,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Use Window manager coordinate for text selection menu on Android 11+"
+  },
+  {
+   "bugid": 1799508,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: L10N",
+   "summary": "Add tasks to upload nightly langpack addons to the Mozilla archive"
+  },
+  {
+   "bugid": 1822285,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Signing",
+   "summary": "fix silly group name for l10n attribution tasks"
+  },
+  {
+   "bugid": 1822174,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "push langpack tasks are failing CoT"
+  },
+  {
+   "bugid": 1821603,
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "Thunderbird debug build test results not parsed due to huge amounts of ###!!! ASSERTION: writing-mode mismatch: 'aWritingMode.IgnoreSideways() == GetWritingMode().IgnoreSideways()"
+  },
+  {
+   "bugid": 1821299,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Convert toolkit/components/bitsdownload/ to ES modules"
+  },
+  {
+   "bugid": 1821899,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Convert toolkit/components/taskscheduler to ES modules"
+  },
+  {
+   "bugid": 1819969,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash in [@ PollWrapper] caused by corrupt/wrong signal information"
+  },
+  {
+   "bugid": 1820768,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add a test that covers crash generation for sandbox violation"
+  },
+  {
+   "bugid": 1821335,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Always send Glean crash pings for main process crashes"
+  },
+  {
+   "bugid": 1821042,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "The Clear now button from the Clear Recent history panel will not disable if we uncheck the Browsing and Download history option"
+  },
+  {
+   "bugid": 1821620,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Convert toolkit/components/forgetaboutsite to ES modules"
+  },
+  {
+   "bugid": 1812294,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Implement a framework to detect duplicated address entry"
+  },
+  {
+   "bugid": 1821927,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert toolkit/components/tooltiptext to ES modules"
+  },
+  {
+   "bugid": 1822011,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert toolkit/components/urlformatter to ES modules"
+  },
+  {
+   "bugid": 1815769,
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Refactor code that reverts the Urlbar from PopupNotifications"
+  },
+  {
+   "bugid": 1559986,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add special characters / symbols to generated passwords"
+  },
+  {
+   "bugid": 1804502,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add telemetry for Firefox relay integration"
+  },
+  {
+   "bugid": 1819300,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Write test cases for SignUpFormRuleset"
+  },
+  {
+   "bugid": 1768692,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Mute/Unmute is out of sync with original video on www.cbc.ca"
+  },
+  {
+   "bugid": 1768694,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Mute/Unmute is out of sync with original video on ici.radio-canada.ca"
+  },
+  {
+   "bugid": 1819079,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP's disabled subtitle button remains visible in View Mode while full screen (does not hide)"
+  },
+  {
+   "bugid": 1819956,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Subtitles don't work in PiP on live Hulu videos"
+  },
+  {
+   "bugid": 1820595,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Seeking doesn't work on Hulu"
+  },
+  {
+   "bugid": 1820821,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Re-order PiP tests in pictureinpicture/tests/browser.ini alphabetically"
+  },
+  {
+   "bugid": 1782283,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "`PLACES_DATABASE_PAGESIZE_B` histogram has 99.58% values in one bucket: is it still useful?"
+  },
+  {
+   "bugid": 1822012,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Convert toolkit/components/xulstore to ES modules"
+  },
+  {
+   "bugid": 1821463,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Vendor glean_parser update v7.1.0"
+  },
+  {
+   "bugid": 1820282,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use moz-button-group in about:logins import error dialog"
+  },
+  {
+   "bugid": 1820616,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Replace \"Learn more\" link on extension manage page with moz-support-link"
+  },
+  {
+   "bugid": 1805526,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Fix granted_host_permissions manifest key"
+  },
+  {
+   "bugid": 1811326,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "browser.windows.update size/position incorrectly limited"
+  },
+  {
+   "bugid": 1819176,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "Set default extension.startupReason in our tests without `useAddonManager`"
+  }
+ ],
+ "fixed": 117,
+ "total": 137,
+ "restricted": 7
+}
