@@ -1,0 +1,940 @@
+{
+ "date": "2023-03-23",
+ "buildid": "20230323094537",
+ "cset": "218676b3830cbb5cdcbc82c4ccb924d948288b9c",
+ "bugs": [
+  {
+   "bugid": 1823586,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Unexpected AbortError from setSinkId() when video element is suspended"
+  },
+  {
+   "bugid": 1823780,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to 2071354a"
+  },
+  {
+   "bugid": 1820695,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent /css/mediaqueries/mq-non-matching-lazy-load.tentative.html | single tracking bug"
+  },
+  {
+   "bugid": 1823642,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "(Time spent in Style) CPU spikes and webpage becomes unresponsive while it's using Document.querySelectorAll"
+  },
+  {
+   "bugid": 1822907,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Crash in [@ mozilla::LinkedListElement<T>::setPreviousUnsafe]"
+  },
+  {
+   "bugid": 1808146,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Copying images from Pixiv and pasting them in certain programs is broken"
+  },
+  {
+   "bugid": 1776738,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/tests/mochitest/pointerlock/test_pointerlock-api.html | single tracking bug"
+  },
+  {
+   "bugid": 1822445,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Cut Screen Orientation over to per-target RFP"
+  },
+  {
+   "bugid": 1822521,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Update UA stylesheet for popover"
+  },
+  {
+   "bugid": 1823359,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement beforetoggle event for popover"
+  },
+  {
+   "bugid": 1823840,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent TV /tests/dom/html/test/test_bug674558.html | single tracking bug"
+  },
+  {
+   "bugid": 1822627,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Point tests in credential-management folder to the right component in searchfox/bugzilla"
+  },
+  {
+   "bugid": 1810663,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Add new Gecko specific `execCommand` to opt-in to the new split/join node direction"
+  },
+  {
+   "bugid": 1820116,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Enable new join/split direction by default in the Nightly channel and early beta builds"
+  },
+  {
+   "bugid": 1818239,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Infinite loop when loading a intranet site (between the main URL & the SSO auth) since Firefox ESR 102.6.0"
+  },
+  {
+   "bugid": 1820434,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Leaked  object in a worker causing globalScopeAlive assertions"
+  },
+  {
+   "bugid": 1821146,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Crashes due to using a cycle-collected object on a thread that isn't cycle collected in WebTransport"
+  },
+  {
+   "bugid": 1822038,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "WebTransport Bidirectional channel not enqueued to stream if it arrives before first pull"
+  },
+  {
+   "bugid": 1818287,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "form associated custom elements with [disabled] do not fire events"
+  },
+  {
+   "bugid": 1823660,
+   "status": "VERIFIED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Perma gfx/layers/apz/test/mochitest/test_wheel_scroll.html | We should have scrolled to the bottom of the scrollframe - got 190, expected 1485 when Gecko 113 merges to Beta on 2023-04-10"
+  },
+  {
+   "bugid": 1822703,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove Google's cross-origin AppID exceptions"
+  },
+  {
+   "bugid": 1822541,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Workers",
+   "summary": "Perma /workers | /service-workers | /html/semantics/scripting-1 -  SyntaxError: import declarations may only appear at top level of a module when Gecko 113 merges to Beta on 2023-04-10"
+  },
+  {
+   "bugid": 1776049,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/bounds/browser_zero_area.js | single tracking bug"
+  },
+  {
+   "bugid": 1822340,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Using Firefox Nightly with GitHub Blog I can no longer read the links on the page with NVDA using the mouse"
+  },
+  {
+   "bugid": 1823594,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perma [tier 2] accessible/tests/mochitest/editabletext/test_1.html | assertion count 14 is more than expected 0 assertions"
+  },
+  {
+   "bugid": 1820813,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Markers for UserTiming `measure` seems to be mispositioned"
+  },
+  {
+   "bugid": 1820826,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "`performance.mark` markers are wrongly positioned when { startTime } is used."
+  },
+  {
+   "bugid": 1823844,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add error log to RenderThread::Start()"
+  },
+  {
+   "bugid": 1813145,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Enable animated AVIF (AVIS) for Nightly only"
+  },
+  {
+   "bugid": 1818725,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "return value of nsAVIFDecoder::CreateDecoder is ignored"
+  },
+  {
+   "bugid": 1823644,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Optimize textrun initialization by merging SanitizeGlyphRuns and SortGlyphRuns"
+  },
+  {
+   "bugid": 1720941,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Integrate WebGPU CTS into CI"
+  },
+  {
+   "bugid": 1820066,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix some DXGI-related D3D11 debug-layer warnings when using swapchains"
+  },
+  {
+   "bugid": 1821560,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Start splitting up ps_quad to a base shader"
+  },
+  {
+   "bugid": 1823411,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Give webrender's shader's varyings explicit precisions"
+  },
+  {
+   "bugid": 1823842,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "error: extra arguments to `rustc` can only be passed to one target, consider filtering"
+  },
+  {
+   "bugid": 1727364,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: args[0].isObject(), at builtin/intl/NumberFormat.cpp:1258"
+  },
+  {
+   "bugid": 1804086,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make sure the content we passed to the Javascript parser in the Utility Process are utf-8 encoded for ORB"
+  },
+  {
+   "bugid": 1815937,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Columns are wrong for the first line of inline scripts (for exception, stacks, console message,...)"
+  },
+  {
+   "bugid": 1820161,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: *offset < base->length() (Tenured root base) after left-trimming a rope string"
+  },
+  {
+   "bugid": 1821025,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | js/src/jit-test/tests/wasm/features.js | /builds/worker/checkouts/gecko/js/src/jit-test/tests/wasm/features.js:90:13 Error: Assertion failed: got false, expected true: when Gecko 112 merges to Beta on 2023-03-13"
+  },
+  {
+   "bugid": 1821659,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fallible hashing (MovableCellHasher) performs unnecessary lookups"
+  },
+  {
+   "bugid": 1822262,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Bump jsparagus for bug 1793962"
+  },
+  {
+   "bugid": 1823212,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: isThrowingOutOfMemory(), at vm/JSContext.cpp:698"
+  },
+  {
+   "bugid": 1816309,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: (Incremental marking verification failed), at gc/Verifier.cpp:759"
+  },
+  {
+   "bugid": 1818391,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: sample >= 0 && sample <= 100, at /builds/worker/checkouts/gecko/js/src/vm/Runtime.h:275"
+  },
+  {
+   "bugid": 1822995,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: CurrentThreadIsGCSweeping() || CurrentThreadIsGCFinalizing(), at gc/Barrier.h:616"
+  },
+  {
+   "bugid": 1823286,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Documentation about JSGC_MAX_EMPTY_CHUNK_COUNT refers to javascript.options.mem.gc_min_empty_chunk_count"
+  },
+  {
+   "bugid": 1823622,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Some small parallel marking improvements"
+  },
+  {
+   "bugid": 1783956,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add MWasmTrapIfNull/Zero to simplify MIR"
+  },
+  {
+   "bugid": 1814924,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement memory.discard for shared memories"
+  },
+  {
+   "bugid": 1820802,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add a stress test for management of wasm-gc out-of-line storage blocks"
+  },
+  {
+   "bugid": 1823476,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Update Wasm spec tests for relaxed-simd"
+  },
+  {
+   "bugid": 1823857,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Minor tuning for wasm-gc code running on the arm64 simulator"
+  },
+  {
+   "bugid": 1823516,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "WPT failures in https://wpt.fyi/results/css/css-writing-modes/forms/text-input-block-size.optional.html"
+  },
+  {
+   "bugid": 1823455,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Consider merging nsHTMLScrollFrame and ScrollFrameHelper."
+  },
+  {
+   "bugid": 1660405,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Replace mozilla::IsNaN with std::isnan, etc."
+  },
+  {
+   "bugid": 1791835,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Implement WebTransportDatagramDuplexStream"
+  },
+  {
+   "bugid": 1818998,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Rework socket arrays to eliminate manual array management"
+  },
+  {
+   "bugid": 1822138,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "We don't need to handle multiple WriteCallbacks for datagrams before connection"
+  },
+  {
+   "bugid": 1818828,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Port test_webtransport_simple.js into DOM-using tests"
+  },
+  {
+   "bugid": 1737725,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_hittest-2.html | helper_hittest_bug1730606-2.html | root scroller (after <second> async scroll) scrollid - got 189, expected 187"
+  },
+  {
+   "bugid": 1821131,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Exempt a document from more restrictive font visibility rules if it has been exempted from tracking protection"
+  },
+  {
+   "bugid": 1821738,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add cookie injection to banner handling result telemetry"
+  },
+  {
+   "bugid": 1823545,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVG attribute handling is a bit allocator heavy"
+  },
+  {
+   "bugid": 1823686,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Share URLExtraData between style attribute and SVG."
+  },
+  {
+   "bugid": 1823851,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "WPT failures in css/css-transforms/skewY , for fuzzy pixels around edges of transformed SVG shapes"
+  },
+  {
+   "bugid": 1823887,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGImageFrame DidSetComputedStyle and OnVisibilityChange should skip SVGGeometryFrame"
+  },
+  {
+   "bugid": 1823889,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGGeometryFrame::GetHitTestFlags does not need to be virtual"
+  },
+  {
+   "bugid": 1823458,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "bug 1809518 triggers openbsd sandboxing"
+  },
+  {
+   "bugid": 1823394,
+   "status": "RESOLVED",
+   "component": "Core:Web Speech",
+   "summary": "Cut WebSpeech over to fine-grained RFP"
+  },
+  {
+   "bugid": 1784772,
+   "status": "REOPENED",
+   "component": "Core:Widget",
+   "summary": "Intermittent widget/tests/browser/browser_test_swipe_gesture.js | single tracking bug"
+  },
+  {
+   "bugid": 1822845,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "macOS Automator workflow on selected text stopped working in Firefox 111.0 release"
+  },
+  {
+   "bugid": 1787182,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Don't fire glxtest process for remote instances"
+  },
+  {
+   "bugid": 1822484,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "IsDevelopmentBuild should be renamed"
+  },
+  {
+   "bugid": 1823606,
+   "status": "ASSIGNED",
+   "component": "Core:XUL",
+   "summary": "The search icon of about:addons is missing on MacOS"
+  },
+  {
+   "bugid": 1823764,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Textfield \"This connection is not secure\" dropdown-message wiggles between two positions/layouts during typing"
+  },
+  {
+   "bugid": 1010150,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Can't pretty-print inline scripts"
+  },
+  {
+   "bugid": 1823335,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger.Source ReparseSource don't pass column information to CompileOptions"
+  },
+  {
+   "bugid": 1823399,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Accept startColumn argument for Debugger.Object.createSource"
+  },
+  {
+   "bugid": 1823616,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 113] Remove backward compatibility code"
+  },
+  {
+   "bugid": 1589474,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "The new performance panel icon in devtools should be highlighted in green when the profiler is running"
+  },
+  {
+   "bugid": 1823813,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Add \"fuzzblockers\" as examples of S2 bugs"
+  },
+  {
+   "bugid": 610357,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Show pending URL in location bar (and store for session restore) for tabs with no history, non-web-controlled about:blank loaded and a pending new URL"
+  },
+  {
+   "bugid": 1806090,
+   "status": "NEW",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_quickactions.js | single tracking bug"
+  },
+  {
+   "bugid": 1815971,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry for how often we see search terms in the urlbar and how often it needs to be reverted due to a shown PopupNotification"
+  },
+  {
+   "bugid": 1823643,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "In ProviderQuickSuggest::blockResult, check result.payload.isBlockable instead of re-determining whether blocking is enabled"
+  },
+  {
+   "bugid": 1823831,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "A VPN interferes with weather suggestions"
+  },
+  {
+   "bugid": 1794435,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Intermittent browser/components/firefoxview/tests/browser/browser_tab_pickup_list.js | single tracking bug"
+  },
+  {
+   "bugid": 1801734,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Change withFirefoxView helper so it doesn't open a new window by default"
+  },
+  {
+   "bugid": 1819081,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add Bookmark telemetry"
+  },
+  {
+   "bugid": 1817015,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Convert JSM in browser/components/protocolhandler to ESM"
+  },
+  {
+   "bugid": 1821158,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Convert browser/actors/RFPHelper* JSMs to ESMs"
+  },
+  {
+   "bugid": 1816991,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Convert JSM in browser/components/installerprefs to ESM"
+  },
+  {
+   "bugid": 1791441,
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Update browser_overflowScroll.js to use BrowserTestUtils.overflowTabs function"
+  },
+  {
+   "bugid": 1786582,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "npm bundle command generates different bundle on windows"
+  },
+  {
+   "bugid": 1813809,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Implement safeguard for Feature Callout pref getter function"
+  },
+  {
+   "bugid": 1816589,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Feature Callout box shadow is too bright to see in dark mode"
+  },
+  {
+   "bugid": 1820566,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support showing FxA screen based of user import selection"
+  },
+  {
+   "bugid": 1822309,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Disable the \"Import\" button in the selection page of the new Migration Wizard if no resource types are selected"
+  },
+  {
+   "bugid": 1823438,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "New Migration Wizard <panel-list> should assume the same minimum width as the selector button"
+  },
+  {
+   "bugid": 1823495,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Apply basic styling to the Migration Wizard panel-list to bring it closer to the spec"
+  },
+  {
+   "bugid": 1824012,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Profile selector button icon should use SVG context-fill for colour"
+  },
+  {
+   "bugid": 1821490,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New tab page updates should pause when the user is away and resume immediately when the user is back"
+  },
+  {
+   "bugid": 1822327,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Sponsored tile via Pocket disappear after dismissing the Amazon Sponsored tile"
+  },
+  {
+   "bugid": 1822503,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The frequency cap for the Sponsored tile via Pocket is reset at each browser restart"
+  },
+  {
+   "bugid": 1823949,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Shortcuts are not added to the Top Sites section if previously dismissing all the non-sponsored tiles"
+  },
+  {
+   "bugid": 1821408,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "SVG filters aren't working correctly in the pdf builtin viewer"
+  },
+  {
+   "bugid": 1823401,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Wrong values shown in PDF viewer"
+  },
+  {
+   "bugid": 1823649,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version b1e0253f29176751c9762f88b5b9765fcf9fc07c from 2023-03-20 13:22:09"
+  },
+  {
+   "bugid": 1811953,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Screenshots component should scroll when moving box along the edge"
+  },
+  {
+   "bugid": 1822854,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "`Restore Previous Session` does not restore normal tab if pinned tab is existed"
+  },
+  {
+   "bugid": 1761282,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Update sad/happy smiley faces to emoji"
+  },
+  {
+   "bugid": 1804352,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Add speaker selection permissions to about:preferences#privacy"
+  },
+  {
+   "bugid": 1817904,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Update golden_gate and webext_storage_bridge for app-services BridgedEngine changes"
+  },
+  {
+   "bugid": 1820011,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Start tracking reasons individual records failed to sync"
+  },
+  {
+   "bugid": 1817016,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Convert JSM in browser/components/prompts to ESM"
+  },
+  {
+   "bugid": 1820139,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "Add an early return mechanism to line handling in ProcessExecutionMixin"
+  },
+  {
+   "bugid": 1823834,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "[riscv] Add 'Int32_GeneralInt64Int64General' function prototype support in simulator"
+  },
+  {
+   "bugid": 1654665,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Password field should be unmasked when editing"
+  },
+  {
+   "bugid": 1774569,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Bootstraping on a vanilla Debian install fails because distutils isn't installed"
+  },
+  {
+   "bugid": 1806618,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "RUST_PROGRAMS are always rebuilt upon ./mach build"
+  },
+  {
+   "bugid": 1808184,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "RUST_LIBRARY_FILE is always rebuilt upon ./mach build"
+  },
+  {
+   "bugid": 1821255,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update vendored rust crates with cargo 1.68"
+  },
+  {
+   "bugid": 1821844,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Repackaging to MSIX fails if current directory is not the source dir"
+  },
+  {
+   "bugid": 1823598,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[mach cargo] `mozbuild.base.BuildEnvironmentNotFoundException: config.status not available. Run configure`."
+  },
+  {
+   "bugid": 1823796,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update to sccache 0.4.0"
+  },
+  {
+   "bugid": 1824045,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "pre-export/export isn't run for mach cargo commands that need it when running mach configure manually first"
+  },
+  {
+   "bugid": 1782785,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Error running `./mach vendor python`"
+  },
+  {
+   "bugid": 1823662,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "bugbug's push_schedules is called with different parameters"
+  },
+  {
+   "bugid": 1805805,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.68"
+  },
+  {
+   "bugid": 1823837,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain clang-trunk Cannot copy libunwind-aarch64-linux-android/include/unwind.h because it is already in clang/lib/clang/17/include"
+  },
+  {
+   "bugid": 1820876,
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Update to Android NDK r23"
+  },
+  {
+   "bugid": 1821004,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add summary.java-heap memory report (about:memory)"
+  },
+  {
+   "bugid": 1822602,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "cleanup install_app support for very old mozinstall"
+  },
+  {
+   "bugid": 1822869,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: L10N",
+   "summary": "nightly .deb packages don't get localized"
+  },
+  {
+   "bugid": 1823670,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "MessageHandler modules can still emit events for pages in BFCache"
+  },
+  {
+   "bugid": 1823089,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Fix consoleAPICalled test timeouts"
+  },
+  {
+   "bugid": 1823464,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Handle DOMTokenList instances as collection"
+  },
+  {
+   "bugid": 1822772,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Missing navigation events when document gets replaced via \"document.[open/write/close]\""
+  },
+  {
+   "bugid": 1823507,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Collect `install_stats` for RTAMO as well"
+  },
+  {
+   "bugid": 1823217,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Convert toolkit/components/crashes to ES modules"
+  },
+  {
+   "bugid": 1791414,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Remove mShuttingDown from XREMain class"
+  },
+  {
+   "bugid": 1823278,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert most of toolkit/components/utils to ES modules"
+  },
+  {
+   "bugid": 1822842,
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "Allow to enable and disable Windows-native notification Windows Event Log messages"
+  },
+  {
+   "bugid": 1811318,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Url bar toggle on one-video pages: open and close PiP"
+  },
+  {
+   "bugid": 1812936,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Avoid off-centering play and rewind buttons"
+  },
+  {
+   "bugid": 1822848,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Change some Places telemetry to opt-out"
+  },
+  {
+   "bugid": 1823396,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Allow narration in about:reader when resistFingerprinting is on"
+  },
+  {
+   "bugid": 1813986,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Sqlite module should be able to register for vacuum"
+  },
+  {
+   "bugid": 1823960,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.41.2"
+  },
+  {
+   "bugid": 1778799,
+   "status": "RESOLVED",
+   "component": "Toolkit:Video/Audio Controls",
+   "summary": "Intermittent toolkit/content/tests/widgets/test_videocontrols.html | single tracking bug"
+  },
+  {
+   "bugid": 1820209,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Replace \"telemetryDataDeletionLearnMore\" in about:preferences#privacy with moz-support-link"
+  },
+  {
+   "bugid": 1823456,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Enable additional devtools actions for temporarily loaded extensions for Android"
+  },
+  {
+   "bugid": 1820743,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Allow to move unified extensions button on the navbar"
+  }
+ ],
+ "fixed": 137,
+ "total": 155,
+ "restricted": 5
+}
