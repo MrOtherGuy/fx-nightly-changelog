@@ -1,0 +1,424 @@
+{
+ "date": "2023-05-09",
+ "buildid": "20230509093033",
+ "cset": "169e7173a60fb69db064292175b3d66a1dbdae65",
+ "bugs": [
+  {
+   "bugid": 1831410,
+   "status": "VERIFIED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Assertion failure: *aDuration >= zeroDuration && aIterations >= 0.0 (Both animation duration and ieration count should be greater than zero), at /builds/worker/workspace/obj-build/dist/include/mozilla/TimingParams.h:137"
+  },
+  {
+   "bugid": 1831981,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Some minor refactoring in nsTransitionManager"
+  },
+  {
+   "bugid": 1831182,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Consider to let mozjemalloc to use a bit more memory for dirty pages in foreground content processes"
+  },
+  {
+   "bugid": 1425310,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement link rel=\"modulepreload\""
+  },
+  {
+   "bugid": 1829559,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Convert dom/base to ES modules"
+  },
+  {
+   "bugid": 1829660,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Pass `true` as `fireEvents` when `popover`'s \"attribute change steps\" \"run the hide popover algorithm"
+  },
+  {
+   "bugid": 1831295,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma dom/<random> | If this is failing: DANGER, are you sure you want to expose the new interface WebTransportBidirectionalStream to all webpages as a property on 'window'? Do not make a change to this <...> when Gecko 114 merges to Beta on 2023-05-08"
+  },
+  {
+   "bugid": 1815477,
+   "status": "REOPENED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Intermittent dom/credentialmanagement/identity/tests/mochitest/test_accounts_error.html | single tracking bug"
+  },
+  {
+   "bugid": 1816153,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Add branding icon for the IDP inside of the policy and account chooser prompt"
+  },
+  {
+   "bugid": 1758943,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Implement `Response.json` static method"
+  },
+  {
+   "bugid": 1793597,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "firefox crash on bad ssl https link in \"HTTPS only\" mode"
+  },
+  {
+   "bugid": 1827936,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Call AsyncWait after calling EnqueueNative in BodyStream/InputToReadableStreamAlgorithms"
+  },
+  {
+   "bugid": 1455416,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "removed accessible element doesn't return owned accessibles back"
+  },
+  {
+   "bugid": 1825411,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Scroll regions with scroll offset (0,0) do not have cached scroll position"
+  },
+  {
+   "bugid": 1825611,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Hit testing overflow:hidden; nodes is incorrect"
+  },
+  {
+   "bugid": 1826853,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CtW][tail-end] Sync call RemoteAccessible::CaretLineNumber() is still used in MacOS"
+  },
+  {
+   "bugid": 1826868,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CtW][tail-end] Sync call RemoteAccessible::Title() is still used in XPCOM and MacOS"
+  },
+  {
+   "bugid": 1828373,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CtW] Bounds incorrect when an element becomes scrollable later without reflow"
+  },
+  {
+   "bugid": 1826687,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix Android SurfaceTexture handling with async RemoteTexture"
+  },
+  {
+   "bugid": 1830989,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add a document.l10n.setArgs method to DOMLocalization"
+  },
+  {
+   "bugid": 1825005,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement String.prototype.toWellFormed and String.prototype.isWellFormed"
+  },
+  {
+   "bugid": 1828496,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Broaden MegamorphicStoreSlot's domain to avoid SetPropertyCache"
+  },
+  {
+   "bugid": 1831496,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[riscv] skip test regress-157652.js/regress-330812.js/regress-422348.js"
+  },
+  {
+   "bugid": 1821185,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] Improve the cut & paste command lines for running individual steps"
+  },
+  {
+   "bugid": 1831976,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix typos in comments regarding CSS named pages pref"
+  },
+  {
+   "bugid": 1823275,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Improve styling and CSS for the datetime picker"
+  },
+  {
+   "bugid": 1831850,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Remove force-inline-alttext pref."
+  },
+  {
+   "bugid": 1830103,
+   "status": "REOPENED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "If you update Firefox 113 beta to Nightly114.0a1 with an existing profile, the scrolling behavior will be overridden by the OS settings."
+  },
+  {
+   "bugid": 1831731,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Perma FATAL ERROR: Non-local network connections are disabled and a connection attempt to mozilla.cloudflare-dns.com (104.18.106.66) was made. [DO NOT USE FOR CLASSIFICATION]"
+  },
+  {
+   "bugid": 1712082,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Image cache partitioning tests use invalid images"
+  },
+  {
+   "bugid": 1816189,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Introduce random noises to canvas data when resist fingerprinting is enabled."
+  },
+  {
+   "bugid": 1829160,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "font-visibility pref also affects the browser chrome"
+  },
+  {
+   "bugid": 1831304,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "nsContentUtils::ShouldResistFingerprinting() will hit an assertion if the loading principal is system"
+  },
+  {
+   "bugid": 1831575,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Clarify the \"no primary password\" explanation message"
+  },
+  {
+   "bugid": 1829652,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ statx] from calling num_cpus::get at content sandbox level 1"
+  },
+  {
+   "bugid": 1829050,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Enable STL wrapping (and thus infallible new) for wasm-sandboxed code"
+  },
+  {
+   "bugid": 1829053,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Enable graphite malloc wrapping in the wasm sandbox"
+  },
+  {
+   "bugid": 1831227,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Remove windows.h dependency in wasm2c host program"
+  },
+  {
+   "bugid": 1831255,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "IDB: Anonymize database file name base on disk for private browsing"
+  },
+  {
+   "bugid": 1831804,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "AttributeError: module 'glean_parser.lint' has no attribute 'lint_yaml_files'"
+  },
+  {
+   "bugid": 1828796,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move weather suggestion keywords back to remote settings"
+  },
+  {
+   "bugid": 1831656,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Refactor quick suggest remote settings management"
+  },
+  {
+   "bugid": 1831657,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement the \"Show less frequently\" weather suggestion command"
+  },
+  {
+   "bugid": 1831689,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a pref for the weather suggestion to ignore VPNs and fetch anyway"
+  },
+  {
+   "bugid": 1828249,
+   "status": "ASSIGNED",
+   "component": "Firefox:File Handling",
+   "summary": "File metadata kMDItemWhereFroms is not correct when a pdf is download on Mac"
+  },
+  {
+   "bugid": 1831601,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Switch Firefox View chrome URLS to their own component (not top level)"
+  },
+  {
+   "bugid": 1828668,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "\"Switch to another language\" screen prompts user to switch to zh-CN over zh-TW operating system"
+  },
+  {
+   "bugid": 1829043,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Embedded Migration Wizard telemetry requirements in about:welcome"
+  },
+  {
+   "bugid": 1828433,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Links on new tab page rely on use of color only"
+  },
+  {
+   "bugid": 1831653,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Handle more experiment recipes for generateTestIds"
+  },
+  {
+   "bugid": 1830746,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "The pdf viewer must ignore the minimum font size"
+  },
+  {
+   "bugid": 1831389,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version a24e11a91cb289dded4241fba6818d9cf1bfb100 from 2023-05-04 17:48:57"
+  },
+  {
+   "bugid": 1831130,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Make browser_privatebrowsing_about_nimbus_impressions.js more robust"
+  },
+  {
+   "bugid": 1830953,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Fix the toast milestone popup alignment to the shield icon on the urlbar"
+  },
+  {
+   "bugid": 1831935,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Optimize Gecko android build for speed (O2)  rather than for size (Oz)"
+  },
+  {
+   "bugid": 1831274,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "CARGO_INCREMENTAL is unexpectedly enabled in release builds"
+  },
+  {
+   "bugid": 1819166,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add a toolchain for Visual Studio 2022 (for running performance testing on chromium builds)"
+  },
+  {
+   "bugid": 1554779,
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | runjunit.py | Timed out after 2400 seconds"
+  },
+  {
+   "bugid": 1831179,
+   "status": "RESOLVED",
+   "component": "GeckoView:Sandboxing",
+   "summary": "Enable running Fission tests locally by default"
+  },
+  {
+   "bugid": 1824327,
+   "status": "REOPENED",
+   "component": "Release Engineering:General",
+   "summary": "deb: Firefox doesn't display pretty app name and app icon on Desktop environments like Gnome"
+  },
+  {
+   "bugid": 1831881,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "bump max run time of push-to-release tasks"
+  },
+  {
+   "bugid": 1831873,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Intermittent /builds/worker/checkouts/gecko/toolkit/crashreporter/tools/upload_symbols.py:294: DeprecationWarning: The 'warn' method is deprecated, use 'warning' instead"
+  },
+  {
+   "bugid": 1830925,
+   "status": "RESOLVED",
+   "component": "Toolkit:Notifications and Alerts",
+   "summary": "PopupNotifications should use lazy pref getter for security.notification_enable_delay"
+  },
+  {
+   "bugid": 1825207,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Subtitles are not displayed in PiP on TubiTV live streams"
+  },
+  {
+   "bugid": 1831398,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document the policy for adding Gecko telemetry also available in Fenix"
+  },
+  {
+   "bugid": 1831754,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Disabled menuitems shouldn't get hover treatment"
+  },
+  {
+   "bugid": 1782784,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Convert UniFFI JS bindings to use mjs instead of jsm"
+  },
+  {
+   "bugid": 1813197,
+   "status": "ASSIGNED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use moz-support-link in the setButtons functions in notificationbox.js"
+  },
+  {
+   "bugid": 1825036,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "How to guide for creating UI widgets"
+  }
+ ],
+ "fixed": 57,
+ "total": 69,
+ "restricted": 1
+}
