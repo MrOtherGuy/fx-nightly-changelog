@@ -1,0 +1,586 @@
+{
+ "date": "2023-06-13",
+ "buildid": "20230613092556",
+ "cset": "8dd3ce4ea8f1907471551bd278230326a4ab1a7d",
+ "bugs": [
+  {
+   "bugid": 1829054,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Resume decoded audio when device is replugged after setSinkId()"
+  },
+  {
+   "bugid": 1835407,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove useless check in style sharing cache."
+  },
+  {
+   "bugid": 1837692,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "sub-pixel -webkit-text-stroke-width computation regressed in 115"
+  },
+  {
+   "bugid": 1837962,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Clean up Context::for_non_inherited_property."
+  },
+  {
+   "bugid": 1817026,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Consider anything signed by \"Microsoft Corporation\" to not be an untrusted module"
+  },
+  {
+   "bugid": 1837664,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Improve border shorthand serialization."
+  },
+  {
+   "bugid": 1472169,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "<textarea> validity state is not preserved correctly after a clone."
+  },
+  {
+   "bugid": 1837753,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "High freq shippable TEST-UNEXPECTED-FAIL | /html/semantics/scripting-1/the-script-element/module/dynamic-import/microtasks/basic.any.html | import() should not drain the microtask queue when loading an already loaded module - assert_less_than: exp"
+  },
+  {
+   "bugid": 1835925,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Expand ORB_BLOCK_INITIATOR telemetry probe to demystify OTHER"
+  },
+  {
+   "bugid": 1837795,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "Remove unused dom.performance.children_results_ipc_timeout pref"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1828875,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Add a documentation"
+  },
+  {
+   "bugid": 1690827,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Inserting Emoji from the picker of Windows 10 into editor which forcibly commits composition immediately may cause crash except in the release channel"
+  },
+  {
+   "bugid": 1835577,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Get rid of typedefs in nsGUIEventIPC.h"
+  },
+  {
+   "bugid": 1835578,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Fix warnings of clang-tidy in XP IME handling code"
+  },
+  {
+   "bugid": 1832579,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add prompt for invalid UV attempts"
+  },
+  {
+   "bugid": 1777921,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assert that StrongWorkerRefs are not lazily released during final GC/CC"
+  },
+  {
+   "bugid": 1833891,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Worker module tests for construction with a file URL fail"
+  },
+  {
+   "bugid": 1780667,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Stored active item is unbound from document), at /builds/worker/checkouts/gecko/accessible/base/FocusManager.cpp:33"
+  },
+  {
+   "bugid": 1837030,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "NVDA does not read visible text leaf when fuzzy hit testing with generics"
+  },
+  {
+   "bugid": 1837825,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Always expose the src of images, even if they have alt text"
+  },
+  {
+   "bugid": 1837982,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Remove unused accessibility.delay_plugins, accessibility.delay_plugin_time, accessibility.handler.enabled prefs"
+  },
+  {
+   "bugid": 1834302,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Intermittent Assertion failure: false (MOZ_ASSERT_UNREACHABLE: unexpected to be called), at /builds/worker/checkouts/gecko/gfx/layers/RemoteTextureMap.cpp:900"
+  },
+  {
+   "bugid": 1837938,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix fallback from SW-WR + OpenGL to SW-WR"
+  },
+  {
+   "bugid": 1837862,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libjxl to new version d4e67a644d8babe7cb68de122d8b5ccb2ad8f226 from 2023-06-09 20:00:31"
+  },
+  {
+   "bugid": 1837980,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Remove unused image.multithreaded_decoding.* prefs"
+  },
+  {
+   "bugid": 1812353,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: standard features and limits not yet conforming to spec."
+  },
+  {
+   "bugid": 1837708,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Handle WebGPU ComputePipelineDescriptor labels like RenderPipelineDescriptor"
+  },
+  {
+   "bugid": 1837711,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU GPUObjectDescriptorBase labels should default to the empty string"
+  },
+  {
+   "bugid": 1830753,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Continuous memory leak, with animated theme and at least one visible and one occluded window"
+  },
+  {
+   "bugid": 1836690,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for complex + tiled paths to new clip-mask rendering path"
+  },
+  {
+   "bugid": 1837194,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support MAP_JIT with pthread_jit_write_protect_np on Apple Silicon"
+  },
+  {
+   "bugid": 1837935,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loongarch] Fix scratch register usage when compare and branch"
+  },
+  {
+   "bugid": 1825098,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement the JS-API MVP for the GC proposal"
+  },
+  {
+   "bugid": 1773234,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "[meta] Necko documentation improvements in firefox-source-docs"
+  },
+  {
+   "bugid": 1830043,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent TV netwerk/test/unit/test_trr_telemetry.js | xpcshell return code: 0 | The histogram TRR_SKIP_REASON_TRR_FIRST2 must contain (other)_2 - false == true"
+  },
+  {
+   "bugid": 1835863,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "DocumentLoadListener::SerializeRedirectData argument `ContentParent* aParent` is unused and can be removed"
+  },
+  {
+   "bugid": 1837399,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Propagate stream error through nsBufferedInputStream::ReadSegments"
+  },
+  {
+   "bugid": 1837457,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Change httpserver tests to load httpd.js as a module rather than a script"
+  },
+  {
+   "bugid": 1837756,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused network.http.http2.persistent-settings pref"
+  },
+  {
+   "bugid": 1828068,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Crash in [@ shutdownhang | mozilla::net::CacheIndexEntry::HashKey]"
+  },
+  {
+   "bugid": 1837757,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Remove unused network.cache.frecency_array_check_enabled pref"
+  },
+  {
+   "bugid": 1829445,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Permanent SUMMARY: ThreadSanitizer: lock-order-inversion (potential deadlock) /builds/worker/checkouts/gecko/xpcom/threads/RecursiveMutex.cpp:71:3 in mozilla::RecursiveMutex::LockInternal() in TestHttpResponseHead.Bug1636930"
+  },
+  {
+   "bugid": 720419,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "nsIPrefBranch.resetBranch:  Either remove or implement"
+  },
+  {
+   "bugid": 1837153,
+   "status": "NEW",
+   "component": "Core:Security",
+   "summary": "Make RFPTarget parameter in various ShouldResistFingerprinting methods non-optional (continued)"
+  },
+  {
+   "bugid": 1837582,
+   "status": "ASSIGNED",
+   "component": "Core:Security",
+   "summary": "Remove the disabled by default TZ=UTC environment setting code from RFP"
+  },
+  {
+   "bugid": 1838113,
+   "status": "RESOLVED",
+   "component": "Core:Spelling checker",
+   "summary": "[clang-trunk] Perma /builds/worker/checkouts/gecko/extensions/spellcheck/hunspell/src/csutil.cxx:128:9: error: implicit instantiation of undefined template 'std::basic_ifstream<char>'"
+  },
+  {
+   "bugid": 1755206,
+   "status": "REOPENED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "wordle game not working for some users after move to nytimes (page remains empty/white/blank); console: Uncaught DOMException: The quota has been exceeded."
+  },
+  {
+   "bugid": 1837288,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add default mozconfig file for fast-forward builds"
+  },
+  {
+   "bugid": 1834365,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Add a test to demonstrate that XPCOM JS objects don't work as weak map keys"
+  },
+  {
+   "bugid": 1835985,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Stop cloning frame objects -- Unify all frame objects"
+  },
+  {
+   "bugid": 1836768,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Stop wiping parser worker cache on navigation"
+  },
+  {
+   "bugid": 1836929,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Move SourceTreeItem context menu code from React Component to an action"
+  },
+  {
+   "bugid": 1837048,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove command-click / highlight calls feature"
+  },
+  {
+   "bugid": 1837926,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Scripts containing Regexp with v flag breaks can't be parsed by parser worker"
+  },
+  {
+   "bugid": 1837745,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove Preferences.sys.mjs usage from devtools"
+  },
+  {
+   "bugid": 1837950,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Remove references to about:performance in .eslintrc.js"
+  },
+  {
+   "bugid": 1837242,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ kisfdpro64.dll]"
+  },
+  {
+   "bugid": 1837246,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ dghmpg64.dll]"
+  },
+  {
+   "bugid": 1833091,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Replace direct UrlbarInput.inputField access with UrlbarInput proxies"
+  },
+  {
+   "bugid": 1710338,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Firefox Account email shown as first hamburger menu item"
+  },
+  {
+   "bugid": 1773080,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Can we remove `privacy.popups.usecustom`?"
+  },
+  {
+   "bugid": 1837715,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused privacy.popups.disable_from_plugins pref"
+  },
+  {
+   "bugid": 1837788,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused plugin.scan.plid.all pref"
+  },
+  {
+   "bugid": 1837792,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused plugins.navigator.hidden_ctp_plugin pref"
+  },
+  {
+   "bugid": 1837793,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused plugin.override_internal_types pref"
+  },
+  {
+   "bugid": 1837800,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused plugins.testmode and plugins.show_infobar prefs"
+  },
+  {
+   "bugid": 1835212,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Create method to set custom time limits for feature-callout to close after N seconds"
+  },
+  {
+   "bugid": 1836083,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Embedded Migration Wizard import and Done button should render correct on shorter responsive layout"
+  },
+  {
+   "bugid": 1837619,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Previously imported number of bookmarks from HTML files are displayed when importing bookmarks HTML files again"
+  },
+  {
+   "bugid": 1838033,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Show a Firefox icon when importing from Firefox profiles when running the migration wizard from the command line"
+  },
+  {
+   "bugid": 1837741,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove Preferences.sys.mjs usage from the ToolbarPanelHub module"
+  },
+  {
+   "bugid": 1643887,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "[One-off search] Unable to untick search engine with a comma"
+  },
+  {
+   "bugid": 1807036,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Refactor the search engine verification code to make exceptions clearer"
+  },
+  {
+   "bugid": 275342,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove unused ui.key.saveLink.shift pref"
+  },
+  {
+   "bugid": 1836344,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "The Download and Delete buttons in the Translations section in about:preferences are not centered"
+  },
+  {
+   "bugid": 1837740,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Stop using Preferences.sys.mjs in TransientPrefs.jsm"
+  },
+  {
+   "bugid": 1787552,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "nsIWindowsShellService::PinCurrentAppToTaskbarAsync breaks icon when called repeatedly"
+  },
+  {
+   "bugid": 1837662,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Create shopping placeholder page"
+  },
+  {
+   "bugid": 1837796,
+   "status": "RESOLVED",
+   "component": "Firefox:WebPayments UI",
+   "summary": "Remove unused dom.payments.* prefs"
+  },
+  {
+   "bugid": 1835943,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Incorrect CalledProcessError construction in mozversioncontrol"
+  },
+  {
+   "bugid": 1833653,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run mochitest-plain with wayland"
+  },
+  {
+   "bugid": 1837640,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Target JVM 17 bytecode in GeckoView"
+  },
+  {
+   "bugid": 1837725,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Administration / Setup",
+   "summary": "Add ESR 115 to cross-channel"
+  },
+  {
+   "bugid": 1837939,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "update-packaging: basename: extra operand ‘Media’"
+  },
+  {
+   "bugid": 1822466,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Element reference is unknown and not stale after a remoteness change since Firefox 110.0"
+  },
+  {
+   "bugid": 1830884,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Use and update navigable seen node map when interacting with nodes of type Element and ShadowRoot"
+  },
+  {
+   "bugid": 1837688,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash in [@ core::ptr::const_ptr::impl$2::eq] from CrashReporter::CreateMinidumpsAndPair"
+  },
+  {
+   "bugid": 1837812,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Merging InputListAutoComplete.sys.mjs into FormAutoComplete.sys.mjs"
+  },
+  {
+   "bugid": 1830679,
+   "status": "ASSIGNED",
+   "component": "Toolkit:General",
+   "summary": "Convert element.setAttribute(data-l10n-{id,args}) uses in the codebase to document.l10n.setAttributes(element, id, args)"
+  },
+  {
+   "bugid": 1752839,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Improve logins sync"
+  },
+  {
+   "bugid": 1835633,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "www.duke-energy.com - Username does not appear when trying to save credentials"
+  },
+  {
+   "bugid": 1837722,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Remove unused toolkit.aboutPerformance.showInternals pref"
+  },
+  {
+   "bugid": 1837721,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Remove unused reader.has_used_toolbar pref"
+  },
+  {
+   "bugid": 1752139,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support `TestResetFOG` on Android"
+  },
+  {
+   "bugid": 1837829,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "webNavigation.onCommitted's `transitionType`/`transitionQualifiers` shouldn't be marked as `unsupported`"
+  }
+ ],
+ "fixed": 81,
+ "total": 96,
+ "restricted": 0
+}
