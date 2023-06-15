@@ -1,0 +1,598 @@
+{
+ "date": "2023-06-15",
+ "buildid": "20230615094111",
+ "cset": "6a3e558888107e82ba443f0ce749cd51f6e1b385",
+ "bugs": [
+  {
+   "bugid": 1835804,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Experiment on nightly with complete removal of ability to perform audio decoding outside of Utility"
+  },
+  {
+   "bugid": 1838487,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Enable webcodecs pref in Nightly"
+  },
+  {
+   "bugid": 1837779,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Remove unused media.gmp.decoder.* prefs"
+  },
+  {
+   "bugid": 1773055,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove `media.gmp.trial-create.enabled` pref"
+  },
+  {
+   "bugid": 1835866,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::AudioData::SetTrimWindow]"
+  },
+  {
+   "bugid": 1837061,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] support HWDRM query for WMFCDM"
+  },
+  {
+   "bugid": 1837778,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove unused media.throttle-regardless-of-download-rate pref"
+  },
+  {
+   "bugid": 1838058,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crackling sound on streams on huya.com"
+  },
+  {
+   "bugid": 1838141,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use a pref for audio device retry interval"
+  },
+  {
+   "bugid": 1837786,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Remove unused media.cubeb.logging_level pref"
+  },
+  {
+   "bugid": 1836658,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Update cssparser to 0.31.1 and drop the local override."
+  },
+  {
+   "bugid": 1837305,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[motion-1] Support \"<basic-shape> || <coord-box>\" for offset-path in the style system"
+  },
+  {
+   "bugid": 1837734,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Minor improvements to attribute selector-matching."
+  },
+  {
+   "bugid": 1837762,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Consider adding a fast-path for attribute selectors in querySelector."
+  },
+  {
+   "bugid": 1838045,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "https://www.ing.com.au/securebanking/ no longer loads after bug 1834081"
+  },
+  {
+   "bugid": 1838404,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "layer-statement-before-import.html's insertRule before import test fails if ran standalone or with the changes from bug 1838045"
+  },
+  {
+   "bugid": 1835062,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "[css-nesting] Update CSSOM APIs to account for nesting."
+  },
+  {
+   "bugid": 1556358,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Custom elements: implement custom element reaction's formStateRestoreCallback"
+  },
+  {
+   "bugid": 1833652,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Some dialog related popover tests times out after mapping EmptyString to Auto state"
+  },
+  {
+   "bugid": 1838330,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "AppWindow::FullscreenWillChange is comparing window size vs screen size without considering device pixel scaling."
+  },
+  {
+   "bugid": 1831292,
+   "status": "NEW",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Intermittent dom/credentialmanagement/identity/tests/mochitest/test_accounts_redirect.html | single tracking bug"
+  },
+  {
+   "bugid": 1838180,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "4.41 - 3.51% ebay SpeedIndex / ebay PerceptualSpeedIndex + 1 more (Windows) regression on Tue June 6 2023"
+  },
+  {
+   "bugid": 1811440,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Fix BodyStream to support actual Bring-Your-Own-Buffer(BYOB)"
+  },
+  {
+   "bugid": 1835925,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Expand ORB_BLOCK_INITIATOR telemetry probe to demystify OTHER"
+  },
+  {
+   "bugid": 1838208,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Add preference for controlling `audio/` and `video/` ORB exemptions"
+  },
+  {
+   "bugid": 1659763,
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Align X-Frame-Options processing with the spec/WebKit/Blink"
+  },
+  {
+   "bugid": 1837473,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.4.0-alpha.16"
+  },
+  {
+   "bugid": 1837642,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused gfx.vsync.collect-scroll-transforms pref"
+  },
+  {
+   "bugid": 1772557,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(called `Option::unwrap()` on a `None` value) at /third_party/rust/wgpu-core/src/id.rs:151"
+  },
+  {
+   "bugid": 1837557,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Bring pushErrorScope/popErrorScope up to spec"
+  },
+  {
+   "bugid": 1837103,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support perspective transforms with new WR clip mask code path"
+  },
+  {
+   "bugid": 1837787,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Remove unused intl.fallbackCharsetList.ISO-8859-1 pref"
+  },
+  {
+   "bugid": 1838173,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add patch for ICU bug ICU-22412"
+  },
+  {
+   "bugid": 1826230,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS::ErrorReportBuilder asserts on ErrorObject with cause property"
+  },
+  {
+   "bugid": 1837408,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ mozilla::LinkedListElement<T>::getNext]"
+  },
+  {
+   "bugid": 1838242,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "\"JIT ABI for js::jit::DoUnaryArithFallback\" jsapi test failure on macOS"
+  },
+  {
+   "bugid": 1838407,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "The name of the downloaded file is changed on hover inside the downloads panel if the file has a long name"
+  },
+  {
+   "bugid": 1829128,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "jemalloc could tell the crash reporter which memory its freeing"
+  },
+  {
+   "bugid": 1837991,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused network.mdns.use_js_fallback pref"
+  },
+  {
+   "bugid": 1838089,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "WPT failure in css/css-transforms/scale/svg-scale-013.html and -014.html"
+  },
+  {
+   "bugid": 1837153,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Make RFPTarget parameter in various ShouldResistFingerprinting methods non-optional (continued)"
+  },
+  {
+   "bugid": 1837763,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "Remove unused privacy.fuzzyfox.clockgrainus pref"
+  },
+  {
+   "bugid": 1835591,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Fenix/Reference browser still prefer uses CHACHA20_POLY1305 on arm32 packages"
+  },
+  {
+   "bugid": 1838351,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "osclientcerts crate is using errhandlingapi feature from winapi without enabling it explicitly"
+  },
+  {
+   "bugid": 1832854,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "we need a fast-forward helper script to write the no-op tracking files when we cherry-pick upstream commits"
+  },
+  {
+   "bugid": 1837483,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "crash near null in [@ mozilla::dom::RTCRtpReceiver::SetJitterBufferTarget]"
+  },
+  {
+   "bugid": 1767893,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Assertion failure: !mPromise, at /builds/worker/workspace/obj-build/dist/include/mozilla/MozPromise.h:1318"
+  },
+  {
+   "bugid": 1838505,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Would be nice to have a pref to turn off the live previews in the screen sharing prompt"
+  },
+  {
+   "bugid": 1838468,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Warning spam from !Theme::ThemeSupportsWidget(aFrame->PresContext(), aFrame, aAppearance)"
+  },
+  {
+   "bugid": 1837768,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove unused threads.medium_high_event_queue.enabled pref"
+  },
+  {
+   "bugid": 1837142,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Update to new Glean release v53.0.0"
+  },
+  {
+   "bugid": 1752760,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Remove preference for custom formatters work"
+  },
+  {
+   "bugid": 1836755,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "CSS variables set on the shadow dom host element are shown as not set in the inherited dom"
+  },
+  {
+   "bugid": 1838364,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "incorrect property is displayed as active with !important"
+  },
+  {
+   "bugid": 1836757,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Migrate ruleCount.label to fluent"
+  },
+  {
+   "bugid": 1838396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Temporarily disable misc-include-cleaner"
+  },
+  {
+   "bugid": 1837791,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove unused browser.download.forward_oma_android_download_manager pref"
+  },
+  {
+   "bugid": 1801334,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_UrlbarInput_searchTerms_moveTab.js | single tracking bug"
+  },
+  {
+   "bugid": 1833091,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Replace direct UrlbarInput.inputField access with UrlbarInput proxies"
+  },
+  {
+   "bugid": 1835227,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "QuickActions are not displayed the second time for the same url after performing specific actions"
+  },
+  {
+   "bugid": 1836051,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URL text is selected when switching from a loaded tab and not selected when switching from a new tab"
+  },
+  {
+   "bugid": 1836985,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove screenshot from the Star (\"Bookmark this page\") panel"
+  },
+  {
+   "bugid": 1826600,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add Open Tabs page"
+  },
+  {
+   "bugid": 1837989,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused privacy.item.cookies pref"
+  },
+  {
+   "bugid": 1837026,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "All Feature Callout arrows are hidden"
+  },
+  {
+   "bugid": 1837899,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove unused trailhead.firstrun.newtab.triplets pref"
+  },
+  {
+   "bugid": 1838051,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a nimbus variable to use 3 tiles from Contile"
+  },
+  {
+   "bugid": 1736587,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add applyTargeting param to about:studies preview URLS"
+  },
+  {
+   "bugid": 1838198,
+   "status": "REOPENED",
+   "component": "Firefox:Shopping",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/base/content/test/static/browser_all_files_referenced.js | unreferenced file: resource://app/localization/en-US/preview/shopping.ftl when Gecko 116 merges to Beta on 2023-07-04"
+  },
+  {
+   "bugid": 1837979,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Identity",
+   "summary": "Remove unused security.identitypopup.recordEventTelemetry pref"
+  },
+  {
+   "bugid": 1838309,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "The addon installation blocked icon looks out of place"
+  },
+  {
+   "bugid": 1406475,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Remove Preferences.sys.mjs usage from Sync"
+  },
+  {
+   "bugid": 1835653,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Ensure that syncing from RemoteSettings is being done regularly for translations files"
+  },
+  {
+   "bugid": 1836505,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Ship a json dump of translation RemoteSettings without the attachments"
+  },
+  {
+   "bugid": 1837078,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Refactor the Translations actor to remove memory footprint, and increase performance"
+  },
+  {
+   "bugid": 1831935,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Optimize Gecko android build for speed (O2)  rather than for size (Oz)"
+  },
+  {
+   "bugid": 1838328,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Geckoview_example crashes when changing the compilation flag to `-O2`"
+  },
+  {
+   "bugid": 1838373,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "License aggregation file contains multiple entries for MIT"
+  },
+  {
+   "bugid": 1838137,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Convert GeckoViewAutocomplete to ESM"
+  },
+  {
+   "bugid": 1829297,
+   "status": "RESOLVED",
+   "component": "Taskcluster:General",
+   "summary": "Use an Ubuntu 18.04 image to build Python interpreter"
+  },
+  {
+   "bugid": 1832523,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Optionally use NSS for MAR signature verification on Windows/macOS"
+  },
+  {
+   "bugid": 1837895,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Remove unused app.update.* prefs"
+  },
+  {
+   "bugid": 1838044,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Rename app.update.download.promptMaxAttempt and app.update.elevation.promptMaxAttempts"
+  },
+  {
+   "bugid": 1838203,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update the symbol scrapers to pick up recent versions of OpenSUSE and Fedora"
+  },
+  {
+   "bugid": 1838353,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "mozwer crate is using winapi features without enabling them explicitly"
+  },
+  {
+   "bugid": 1821019,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[IT][euronics.it] Autofill dropdown is applied/displayed on \"Security code\" field and considered as a CC field"
+  },
+  {
+   "bugid": 1825777,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[IT][philips.it] Autofill is triggered from an address number field"
+  },
+  {
+   "bugid": 1837513,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add support for es-ES phrases for cc-exp, cc-exp-month, and cc-exp-year"
+  },
+  {
+   "bugid": 1838161,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add regular expression heuristic that only applies to labels"
+  },
+  {
+   "bugid": 1830679,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert element.setAttribute(data-l10n-{id,args}) uses in the codebase to document.l10n.setAttributes(element, id, args)"
+  },
+  {
+   "bugid": 1836369,
+   "status": "REOPENED",
+   "component": "Toolkit:General",
+   "summary": "Fine grain control over symbol visibility"
+  },
+  {
+   "bugid": 898315,
+   "status": "ASSIGNED",
+   "component": "Toolkit:IOUtils and PathUtils",
+   "summary": "Deprecate and get rid of FileUtils.getDir(..., ..., true)"
+  },
+  {
+   "bugid": 1747468,
+   "status": "RESOLVED",
+   "component": "Toolkit:IOUtils and PathUtils",
+   "summary": "Remove FileUtils.getFile from devtools/"
+  },
+  {
+   "bugid": 1837794,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove unused profile.manage_only_at_launch pref"
+  },
+  {
+   "bugid": 1835940,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Document \"small\" button variant in Storybook"
+  },
+  {
+   "bugid": 1837896,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove unused xpinstall.signatures.devInfoURL pref"
+  },
+  {
+   "bugid": 1837897,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove unused extensions.checkCompatibility.temporaryThemeOverride_minAppVersion pref"
+  },
+  {
+   "bugid": 1838230,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Make WebExtensionPolicy.ignoreQuarantine read/write"
+  }
+ ],
+ "fixed": 86,
+ "total": 98,
+ "restricted": 1
+}
