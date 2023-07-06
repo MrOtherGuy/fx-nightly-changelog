@@ -1,0 +1,532 @@
+{
+ "date": "2023-07-06",
+ "buildid": "20230706092222",
+ "cset": "1ba8085e68676425907973397d26e7417c1c4a74",
+ "bugs": [
+  {
+   "bugid": 1826256,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::Maybe<T>::operator* | mozilla::MediaDecoderStateMachine::LoopingDecodingState::DetermineOriginalDecodedDurationIfNeeded]"
+  },
+  {
+   "bugid": 1840933,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "seeking to the end of video, then video would stuck on the last frame after starting next iteration of looping"
+  },
+  {
+   "bugid": 1841193,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Save unnecessary copies in VideoDecoder"
+  },
+  {
+   "bugid": 1841375,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Fix `Test closed VideoFrame` failure"
+  },
+  {
+   "bugid": 1841311,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Firefox fails WPT css/css-grid/abspos/positioned-grid-items-025.html"
+  },
+  {
+   "bugid": 1841612,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Always deal with calc() in CSS pixels."
+  },
+  {
+   "bugid": 1841638,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "scale() does not serialize single NaN value correctly"
+  },
+  {
+   "bugid": 1840818,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable Custom Highlight API"
+  },
+  {
+   "bugid": 1841726,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Clean up OPFS datamodel files"
+  },
+  {
+   "bugid": 1841710,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma [tier 2] /trusted-types/trusted-types-event-handlers.tentative.html | Event handler div.oncancel should be blocked. - assert_throws_js: function \"_ => element.setAttribute(name, \"2+2\")\" did not throw"
+  },
+  {
+   "bugid": 1840568,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Crash in [@ mozilla::widget::TSFTextStore::SelectionForTSF]"
+  },
+  {
+   "bugid": 1835728,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Presentational Accessibles forced into the tree to facilitate bounds calculation expose block presentation"
+  },
+  {
+   "bugid": 1840295,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Get rid of the Windows ifdefs for PDocAccessible CaretMoveEvent and FocusEvent"
+  },
+  {
+   "bugid": 1841216,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "No event fired when aria-description changes"
+  },
+  {
+   "bugid": 1840549,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Avoid extra lock during ThreadPoolRegistration"
+  },
+  {
+   "bugid": 1840557,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Re-enable sandbox test on Windows debug gpu"
+  },
+  {
+   "bugid": 1841731,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove obsolete comment from description of BaseMatrix::ScaleFactors()"
+  },
+  {
+   "bugid": 1841599,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Remove canvas.image.cache.limit pref"
+  },
+  {
+   "bugid": 1841921,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "error: variable does not need to be mutable"
+  },
+  {
+   "bugid": 1836805,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Restore Linux CI for WebGPU CTS"
+  },
+  {
+   "bugid": 1838493,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2023-06-14"
+  },
+  {
+   "bugid": 1838694,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`GPUError` hierarchy in WebGPU is not up to spec."
+  },
+  {
+   "bugid": 1841919,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "error: variable does not need to be mutable"
+  },
+  {
+   "bugid": 1841250,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: sJitCodeRegionStart && sJitCodeRegionStart == aStart && sJitCodeRegionSize == aSize, at mozglue/misc/StackWalk.cpp:157"
+  },
+  {
+   "bugid": 1837620,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Investigate removing baseline JIT guards for otherwise-dead GC things"
+  },
+  {
+   "bugid": 1839142,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[WASM] AddressSanitizer: use-after-poison js/src/jit/MIR.h:10779:40 in js::jit::MWasmBinarySimd128::simdOp() const"
+  },
+  {
+   "bugid": 1835813,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "support contain-intrinsic-size: auto none"
+  },
+  {
+   "bugid": 1841721,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Make  /css/css-scroll-snap/input/keyboard.html  less flaky"
+  },
+  {
+   "bugid": 1674369,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "URL query parser encodes \"|\" when returned by an encoder (e.g., Shift_JIS)"
+  },
+  {
+   "bugid": 1841523,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Allow users to opt-in or opt-out of the entire RFP experience except individual features"
+  },
+  {
+   "bugid": 1840545,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Move all code related to origin operations to separate source files"
+  },
+  {
+   "bugid": 1840752,
+   "status": "VERIFIED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Drop support for macOS < 10.15"
+  },
+  {
+   "bugid": 1841871,
+   "status": "NEW",
+   "component": "Core:Widget: Win32",
+   "summary": "Add Windows AppShell native message logging and profiling"
+  },
+  {
+   "bugid": 1385198,
+   "status": "REOPENED",
+   "component": "DevTools:Console",
+   "summary": "\"values\" defined in web console is interfering with lexical declaration"
+  },
+  {
+   "bugid": 1517907,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "console helpers should not override same-name top-level let/const variables"
+  },
+  {
+   "bugid": 1841041,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Stop using context in React components where it isn't relevant"
+  },
+  {
+   "bugid": 1840775,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Enable compatibility tooltip everywhere"
+  },
+  {
+   "bugid": 1796805,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "QuickActions: Shrinked Buttons expand and wrap into a new line in Actions search mode"
+  },
+  {
+   "bugid": 1837097,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement \"Show less frequently\" behavior for Pocket suggestions"
+  },
+  {
+   "bugid": 1841408,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unify rich suggestions, best match, Firefox Suggest sponsored results, and Pocket Suggestions"
+  },
+  {
+   "bugid": 1841409,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The Feedback menu button sometimes isn't shown"
+  },
+  {
+   "bugid": 1841442,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Finish integrating Pocket suggestions with rich suggestions"
+  },
+  {
+   "bugid": 1841446,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the \"Not interested\" command to disable Pocket suggestions."
+  },
+  {
+   "bugid": 1841447,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Change the \"Top pick\" label to \"Recommended reads\" for Pocket suggestions"
+  },
+  {
+   "bugid": 1816447,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "[macOS] Dragging and dropping a website over another in bookmark sidebar will change their places but open one of them as well"
+  },
+  {
+   "bugid": 1638359,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Explore removing kSync and kXCS once the transition away from BrowserID is complete"
+  },
+  {
+   "bugid": 713713,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Clean up OpenBrowserWindow"
+  },
+  {
+   "bugid": 1836874,
+   "status": "VERIFIED",
+   "component": "Firefox:Installer",
+   "summary": "Prevent installers from installing Firefox 116+ on Win7/8/8.1"
+  },
+  {
+   "bugid": 1840489,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Rename migration wizard \"success text\" element to something else"
+  },
+  {
+   "bugid": 1838478,
+   "status": "RESOLVED",
+   "component": "Firefox:Pocket",
+   "summary": "Remove topics from STP"
+  },
+  {
+   "bugid": 1824886,
+   "status": "REOPENED",
+   "component": "Firefox:Screenshots",
+   "summary": "Investigate a way to use the shared, common browser stylesheets in Screenshots' overlay"
+  },
+  {
+   "bugid": 1839461,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Enable the SERP telemetry being gathered by Glean in Nightly"
+  },
+  {
+   "bugid": 1840892,
+   "status": "ASSIGNED",
+   "component": "Firefox:Security",
+   "summary": "Address outstanding JS load restrictions telemetry"
+  },
+  {
+   "bugid": 1836741,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add initial trustwerty/fakespot client to fetch product information"
+  },
+  {
+   "bugid": 1838438,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shopping",
+   "summary": "Insert sidebar into the XUL DOM"
+  },
+  {
+   "bugid": 1840678,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add API schemas and validate against them before requesting"
+  },
+  {
+   "bugid": 1807626,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Consider an outline speaker/sound icon"
+  },
+  {
+   "bugid": 1840881,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update toolbar warning badge so that the stroke matches the toolbar background"
+  },
+  {
+   "bugid": 1814254,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Review and decide on the correct nsIAboutModule flags for about:translations"
+  },
+  {
+   "bugid": 1840904,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Remove language management operations from the TranslationsChild"
+  },
+  {
+   "bugid": 1840905,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Restrict the TranslationsChild actor definition to be more targeted"
+  },
+  {
+   "bugid": 1841341,
+   "status": "NEW",
+   "component": "Firefox:Translation",
+   "summary": "Only show one translation popup offering when restoring windows"
+  },
+  {
+   "bugid": 1688213,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Control \"signon.management.page.fileImport.enabled\" via Nimbus"
+  },
+  {
+   "bugid": 1834815,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use full LTO + cross LTO for shippable binaries"
+  },
+  {
+   "bugid": 1841567,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Stop running check_binary on host binaries"
+  },
+  {
+   "bugid": 1841568,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "-z pack-relative-relocs is not correctly detected on some platforms"
+  },
+  {
+   "bugid": 1841766,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Vendor libogg using `mach vendor`"
+  },
+  {
+   "bugid": 1838323,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Startup crash with OpenSUSE-built Firefox 114.x due to unsupported CPU instruction, not bug #1837201, Mozilla-built Firefox is fine."
+  },
+  {
+   "bugid": 1838048,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Create a Test for validating the nsIIdentityCredentialPromptService.showAccountPrompt is handled in GeckoView"
+  },
+  {
+   "bugid": 1841498,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Convert GV's BrowserUsageTelemetry.jsm to ESM"
+  },
+  {
+   "bugid": 1841595,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Administration / Setup",
+   "summary": "Drop esr102 from cross-channel"
+  },
+  {
+   "bugid": 1841470,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[wdspec] new_tab fixture should not raise NoSuchFrameError when trying to close the tab"
+  },
+  {
+   "bugid": 1840071,
+   "status": "RESOLVED",
+   "component": "Toolkit:Alerts Service",
+   "summary": "Update references to Toolkit :: Notifications and Alerts in parts of the tree to use new components"
+  },
+  {
+   "bugid": 1689358,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add ARM/AArch64 support to the oxidized minidump rust writer"
+  },
+  {
+   "bugid": 1815524,
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Frequent toolkit/modules/tests/xpcshell/test_firstStartup.js | single tracking bug"
+  },
+  {
+   "bugid": 1838872,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Tests attempt and fail to set extensions.formautofill.creditCards.available to a string"
+  },
+  {
+   "bugid": 1841553,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "JsonSchemaValidator: Add \"additionalProperties\" to schema objects and rename \"allowExtraProperties\" to \"allowAdditionalProperties\""
+  },
+  {
+   "bugid": 1807618,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Replace getAllLogins() with getAllLoginsAsync()"
+  },
+  {
+   "bugid": 1841491,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove nsIAuthPrompt.promptPassword() and nsIAuthPrompt.promptUsernameAndPassword() from nsIAuthPrompt.idl since its implementation was removed in bug 1832490"
+  },
+  {
+   "bugid": 1841753,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "DRY out promiseACPopupClosed"
+  },
+  {
+   "bugid": 1831499,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "www.arte.tv - Subtitles using PiP are not displayed as expected"
+  },
+  {
+   "bugid": 1840583,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Subtitles are not displayed in PiP on Disney+ Hotstar"
+  },
+  {
+   "bugid": 1841131,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Subtitles are not displayed in PiP on Disney+ (Non US)"
+  },
+  {
+   "bugid": 1825034,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "How to guide for using UI Widgets"
+  },
+  {
+   "bugid": 1825037,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "How to guide for using lit"
+  },
+  {
+   "bugid": 1838222,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Set up the moz-message-bar custom element"
+  },
+  {
+   "bugid": 1840684,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Switch moz-message-bar to use an <img> with alt text instead of a pseudo element for icons"
+  }
+ ],
+ "fixed": 66,
+ "total": 87,
+ "restricted": 2
+}
