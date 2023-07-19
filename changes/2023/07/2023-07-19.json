@@ -1,0 +1,472 @@
+{
+ "date": "2023-07-19",
+ "buildid": "20230719093047",
+ "cset": "49a85b3b07e07c1158f9cb0c1f58b67fc2d659f7",
+ "bugs": [
+  {
+   "bugid": 1843519,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Reuse logic for merging nodes in parse_product"
+  },
+  {
+   "bugid": 1842451,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.requestIdleCallback.enabled pref"
+  },
+  {
+   "bugid": 1842468,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.xhr.standard_content_type_normalization pref"
+  },
+  {
+   "bugid": 1843035,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Align unbinding a popover node from the tree closer to the spec"
+  },
+  {
+   "bugid": 1843793,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Convert html/xhtml consumers of JSM modules in dom/ to import ES modules direct"
+  },
+  {
+   "bugid": 1843845,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Strengthen <popover-attribute-basic.html>"
+  },
+  {
+   "bugid": 1843794,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Convert html/xhtml consumers of JSM modules in editor/ to import ES modules direct"
+  },
+  {
+   "bugid": 1843475,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "Avoid event type stringification in SessionStoreChangeListener::HandleEvent"
+  },
+  {
+   "bugid": 1820403,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "dialog form submission should not take action into account"
+  },
+  {
+   "bugid": 1576602,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "HEAD request for data: URL should not have response body"
+  },
+  {
+   "bugid": 1587045,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Remove dom.webnotifications.allowinsecure preference"
+  },
+  {
+   "bugid": 1842457,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Remove dom.webnotifications.serviceworker.enabled pref"
+  },
+  {
+   "bugid": 1572932,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "nested-context-navigations-iframe.html passes by accident"
+  },
+  {
+   "bugid": 1842973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Remove dom.crypto.randomUUID.enabled pref"
+  },
+  {
+   "bugid": 412902,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Remove support for unused events"
+  },
+  {
+   "bugid": 798492,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Deprecate/Remove our Windows MSAA BSTR accRole hack"
+  },
+  {
+   "bugid": 1694573,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Unify platform event firing across local and remote Accessibles"
+  },
+  {
+   "bugid": 1843825,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Remove unused roles"
+  },
+  {
+   "bugid": 1843021,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Frequent CTS intermittent crashes in StatelessTracker::remove_abandoned"
+  },
+  {
+   "bugid": 1759123,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove helper thread JSContexts"
+  },
+  {
+   "bugid": 1769551,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JSAtom.h does not define JSAtom"
+  },
+  {
+   "bugid": 1799960,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove AutoSetHelperThreadContext"
+  },
+  {
+   "bugid": 1834816,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move DelazifyTask to FrontendContext"
+  },
+  {
+   "bugid": 1843842,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove some SpiderMonkey code for Windows versions < 10"
+  },
+  {
+   "bugid": 1843944,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Copy PrefableCompileOptions from the initial parse to DelazifyTask"
+  },
+  {
+   "bugid": 1843956,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not try to decompress ScriptSource in concurrent delazification"
+  },
+  {
+   "bugid": 1843965,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not trace ParseTask::compileStorage_"
+  },
+  {
+   "bugid": 1843973,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not root CompilationInput in DelazifyCanonicalScriptedFunctionImpl"
+  },
+  {
+   "bugid": 1843976,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Do not use cx->tempLifoAlloc() in concurrent delazification"
+  },
+  {
+   "bugid": 1843978,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make delazification cache per-process singleton"
+  },
+  {
+   "bugid": 1844033,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Disassemble JSOp::{CanSkipAwait,MaybeExtractAwaitValue,ImportMeta,DynamicImport,ArgumentsLength,GetFrameArg,GetActualArg,HasOwn}"
+  },
+  {
+   "bugid": 1733556,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add Permissions Policy support for Storage Access API"
+  },
+  {
+   "bugid": 1805860,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Expose storage-access permissions through the Permissions API"
+  },
+  {
+   "bugid": 1839916,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implement Bounce Tracking Protection Core Detection Logic"
+  },
+  {
+   "bugid": 1819467,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "WPT failures in css/css-transforms/group , for fuzzy pixels around edges of transformed SVG shapes"
+  },
+  {
+   "bugid": 1843020,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Re-enable Win32k lockdown in Audio Decoding Utility Process"
+  },
+  {
+   "bugid": 1840567,
+   "status": "ASSIGNED",
+   "component": "Core:Web Painting",
+   "summary": "Intermittent layout/painting/crashtests/1425271-1.html | single tracking bug"
+  },
+  {
+   "bugid": 1838460,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Using titlebar colour to render menu bar & tabs looks badly in some themes"
+  },
+  {
+   "bugid": 1839663,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console helpers $ & $$ should support a second argument as root for the query"
+  },
+  {
+   "bugid": 1574540,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove DOM BP preferences"
+  },
+  {
+   "bugid": 1767711,
+   "status": "NEW",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-preview.js | single tracking bug"
+  },
+  {
+   "bugid": 1839839,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Avoid cloning the frames objects unless it is strictly necessary"
+  },
+  {
+   "bugid": 1842314,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Last item in custom property fallback list is hidden [in DevTools Inspector] if used on font-family property"
+  },
+  {
+   "bugid": 1416881,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Entering characters with character/accent marks on macOS doesn't remove the autofilled selected part"
+  },
+  {
+   "bugid": 1843875,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add \"Search History\" option in the history menu within the menubar."
+  },
+  {
+   "bugid": 1826604,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add History empty states and banner"
+  },
+  {
+   "bugid": 1826608,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add Open tabs from other devices page"
+  },
+  {
+   "bugid": 1842896,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "History: Clicking the label for \"sort by site\" doesn't change the sort"
+  },
+  {
+   "bugid": 1843587,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox View in a non-private window should never show tabs from a private window"
+  },
+  {
+   "bugid": 1428402,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Add a line to about:support that identifies if the user has userChrome.css or userContent.css"
+  },
+  {
+   "bugid": 1838558,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove unused browser.contentblocking.report.vpn_platforms pref"
+  },
+  {
+   "bugid": 1831211,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add more detailed documentation for FxMS templates, overall message structure"
+  },
+  {
+   "bugid": 1843658,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "ASRouter devtools \"modify\" method fails if message doesn't have groups property"
+  },
+  {
+   "bugid": 1820660,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Persist a record of recently closed tabs from all non-private browser windows"
+  },
+  {
+   "bugid": 1839732,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Create review reliability component"
+  },
+  {
+   "bugid": 1840453,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Retry when the API is unavailable"
+  },
+  {
+   "bugid": 1766765,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove ContentLinkHandler.jsm references from comments"
+  },
+  {
+   "bugid": 1843663,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove pre-win-10/11 media queries and styles."
+  },
+  {
+   "bugid": 1839832,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use PGO-based orderfile"
+  },
+  {
+   "bugid": 1844122,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "sccache: store the stats too"
+  },
+  {
+   "bugid": 1695312,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Make mach command modules be loaded selectively"
+  },
+  {
+   "bugid": 1808732,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Move vendored packages out of the `mach` site"
+  },
+  {
+   "bugid": 1842700,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "l10n-cross-channel MachCommandReference uses wrong module path"
+  },
+  {
+   "bugid": 1839891,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Replace `multi_dep` loaders with `from_deps` transforms"
+  },
+  {
+   "bugid": 1843902,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Error building pyyaml when running `./mach vendor python`"
+  },
+  {
+   "bugid": 1842656,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Add/update URL parameters when sending traffic to mozilla.org"
+  },
+  {
+   "bugid": 1840998,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for \"clip\" argument to browsingContext.captureScreenshot"
+  },
+  {
+   "bugid": 1843791,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Convert html/xhtml consumers of JSM modules in toolkit/mozapps/extensions/ to import ES modules direct"
+  },
+  {
+   "bugid": 1841996,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Enable Credit Card Autofill in AT, BE, and PL in nightly"
+  },
+  {
+   "bugid": 1770550,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | toolkit/components/prompts/test/test_modal_prompts.html | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": 1843790,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert html/xhtml consumers of JSM modules in toolkit/modules/ to import ES modules direct"
+  },
+  {
+   "bugid": 1843792,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert html/xhtml consumers of JSM modules in toolkit/components/ to import ES modules direct"
+  },
+  {
+   "bugid": 1840479,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Intermittent toolkit/components/passwordmgr/test/browser/browser_preselect_login.js | single tracking bug"
+  },
+  {
+   "bugid": 1842232,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Add UTM params to Manage Masks button"
+  },
+  {
+   "bugid": 1844192,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "browser_print_selection.js: browser.isRemote should be browser.isRemoteBrowser"
+  },
+  {
+   "bugid": 1692849,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "In case of an unexpected number of events, assertEvents should include the actual events in the assertion message"
+  },
+  {
+   "bugid": 1843178,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG IPC flushing during tests must be called before the ContentParent is removed"
+  }
+ ],
+ "fixed": 65,
+ "total": 77,
+ "restricted": 6
+}
