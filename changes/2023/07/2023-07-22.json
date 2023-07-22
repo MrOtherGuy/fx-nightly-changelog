@@ -1,0 +1,394 @@
+{
+ "date": "2023-07-22",
+ "buildid": "20230722091255",
+ "cset": "e4939251f81ca8c6a2fb9db3bbd4416e04dff97d",
+ "bugs": [
+  {
+   "bugid": 1844284,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Improve telemetry tests of audio decoding with EME coverage"
+  },
+  {
+   "bugid": 1832080,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[AMD] Decoding artifacts on Radeon RX 6600 due to fast surface returns"
+  },
+  {
+   "bugid": 1843960,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "mp3 not playable (NS_ERROR_DOM_MEDIA_MEDIASINK_ERR ?)"
+  },
+  {
+   "bugid": 1844741,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::media::Interval<T>::Interval<T>]"
+  },
+  {
+   "bugid": 1838984,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Support [Serializable] for EncodedVideoChunk"
+  },
+  {
+   "bugid": 1842116,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Replace DecodeMessage::ChunkData by EncodedVideoChunkData"
+  },
+  {
+   "bugid": 1844818,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Add webcodecs pref for h265 WPTs"
+  },
+  {
+   "bugid": 1844501,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CustomIdent::from_ident usage can usually be simplified to CustomIdent::parse"
+  },
+  {
+   "bugid": 1844874,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Avoid an allocation in DocumentCascadeData::default()"
+  },
+  {
+   "bugid": 1843002,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add nonce and parser-metadata to ScriptFetchOptions"
+  },
+  {
+   "bugid": 1843066,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Provide the nonce for speculative <script> preloads."
+  },
+  {
+   "bugid": 1844432,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "On the Speedometer 3 \"NewsSite\" subtests, HTMLImageElement spends too much time creating URLs"
+  },
+  {
+   "bugid": 1844872,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Optimize nsContentUtils::IsPDFJS"
+  },
+  {
+   "bugid": 1695216,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "XMLHttpRequest should reset response upon receiving a bad chunk"
+  },
+  {
+   "bugid": 1313937,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP: Enforce 'strict-dynamic' within default-src"
+  },
+  {
+   "bugid": 1765968,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Use QueueCacheUpdate instead of SendCacheUpdate wherever possible"
+  },
+  {
+   "bugid": 1843389,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Bug 1472024 is still not fixed - Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Bogus row index?), at src/layout/tables/nsCellMap.cpp:361"
+  },
+  {
+   "bugid": 1843540,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "\"Queued event belongs to another document\" assertion failure with patch from bug 1839455"
+  },
+  {
+   "bugid": 1844406,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove struct CommonType and use automatic return type deduction in Coord.h"
+  },
+  {
+   "bugid": 1844636,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`webgpu:api,validation,error_scope:current_scope:*` times out when `stackDepth=100000`"
+  },
+  {
+   "bugid": 1842085,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Missing VMWrapper JIT function annotations on Windows (ETW profiles currently mark all VMWrapper functions as \"Trampoline: ProfilerExitFrameTailStub\")"
+  },
+  {
+   "bugid": 1844115,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Don't create String wrapper objects in Iterator.from"
+  },
+  {
+   "bugid": 1844277,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove no longer needed object operand from MInArray"
+  },
+  {
+   "bugid": 1831176,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement the newer GC cast encodings"
+  },
+  {
+   "bugid": 1844464,
+   "status": "NEW",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Optimize gfxHarfBuzzShaper::ShapeText if possible, for Editor-TipTap"
+  },
+  {
+   "bugid": 1844504,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Recover memory for SVGObserverSet more quickly"
+  },
+  {
+   "bugid": 1844403,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Perma tier2 WebIDL.WebIDLError: error: Unresolved type '<unresolved scope>::RTCRtpScriptTransformer'., /builds/worker/checkouts/gecko/dom/webidl/RTCTransformEvent.webidl line 15:22"
+  },
+  {
+   "bugid": 1844530,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Add PDF as a document type you can filter on when opening a local file (CTRL+O)"
+  },
+  {
+   "bugid": 1668358,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Wayland: Disable Firefox' webrtc indicator and rely on the desktop environment's screensharing indicator (was: Implement nsISystemStatusBar)"
+  },
+  {
+   "bugid": 1844674,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[ResizeIT 2 addon] Programmatic positioning no longer positions correctly."
+  },
+  {
+   "bugid": 1844730,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Error when selecting debugger panel"
+  },
+  {
+   "bugid": 1824652,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "incorrect property is displayed as active with @layers + !important"
+  },
+  {
+   "bugid": 1844803,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Replace mentions of Triage Center with BugDash"
+  },
+  {
+   "bugid": 1842244,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Security Bug Approval Process contradicts itself on whether it's okay to link security bugs"
+  },
+  {
+   "bugid": 1843386,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rich suggestion dissapears when complete"
+  },
+  {
+   "bugid": 1844800,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Remove handlers info for non-shipping locales (csb and sah)"
+  },
+  {
+   "bugid": 1833664,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add three-dot and context menus to Tabs on other devices"
+  },
+  {
+   "bugid": 1842903,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "History: Sort options markup has divs inside a span."
+  },
+  {
+   "bugid": 1844616,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "\"Show all history\" link is missing on about:firefoxview-next#history page"
+  },
+  {
+   "bugid": 1836211,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Idle trigger doesn't immediately count tabs as silent when closing a tab that has audio playing"
+  },
+  {
+   "bugid": 1844647,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 2a508b95e185d190ce1e65e8e364997a279ae46f from 2023-07-20 17:42:38"
+  },
+  {
+   "bugid": 1844791,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Cmd-Shift-T does not re-open the most recently closed tab despite it being the most recent action"
+  },
+  {
+   "bugid": 1840155,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Create analysis explainer component"
+  },
+  {
+   "bugid": 1843067,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add initial OHTTP implementation for sidebar API"
+  },
+  {
+   "bugid": 1844744,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Intermittent TV toolkit/components/shopping/test/xpcshell/test_product.js | single tracking bug"
+  },
+  {
+   "bugid": 1843210,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow options with choices without value"
+  },
+  {
+   "bugid": 1844484,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "libxul with packed relative relocations is larger than with elfhack"
+  },
+  {
+   "bugid": 1844538,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "build/cargo-linker should use os.system instead of os.execvp to handle apostrophe"
+  },
+  {
+   "bugid": 1844554,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Vendor double-conversion using `mach vendor`"
+  },
+  {
+   "bugid": 1839891,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Replace `multi_dep` loaders with `from_deps` transforms"
+  },
+  {
+   "bugid": 1844725,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Permafailing ...\\artifacts\\sccache-stats.json does not exist; not loading sccache stats"
+  },
+  {
+   "bugid": 1841039,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"browsingContext.fragmentNavigated\" event"
+  },
+  {
+   "bugid": 1844582,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent TV TEST-UNEXPECTED-PASS | remote/shared/test/browser/browser_NavigationManager_no_navigation.js | single tracking bug"
+  },
+  {
+   "bugid": 1841619,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add-on listing link is not visible when an add-on does not have any ratings"
+  },
+  {
+   "bugid": 1689358,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add ARM/AArch64 support to the oxidized minidump rust writer"
+  },
+  {
+   "bugid": 1843897,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[nintendo.com] Credit Card Autofill not working on nintendo website"
+  },
+  {
+   "bugid": 1844364,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[PL][cocolita.pl] The autofill is not working for the expiry date field and it is also not saved in the CC manager"
+  },
+  {
+   "bugid": 1843357,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "403 error when trying to click the email field opt-in promt"
+  },
+  {
+   "bugid": 1844708,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "UrlClassifierRemoteSettingsService fails to apply update when a list is too large"
+  },
+  {
+   "bugid": 1811282,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Add documentation for panel-list and panel-item"
+  },
+  {
+   "bugid": 1723520,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "TypeError: can't access property \"sendRequestForResult\", window.WindowEventDispatcher is undefined in test_ext_brokenlinks.js"
+  },
+  {
+   "bugid": 1728542,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Error: \"window is null\" ext-android.js (getBrowserData, via WebRequest.jsm)"
+  },
+  {
+   "bugid": 1841929,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 118: extensions.startupCache.load_time before Gecko version number gets increased to 118 on 2023-07-31"
+  },
+  {
+   "bugid": 1841806,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "IndexedDB is not working in the private browsing mode for extensions"
+  }
+ ],
+ "fixed": 58,
+ "total": 64,
+ "restricted": 3
+}
