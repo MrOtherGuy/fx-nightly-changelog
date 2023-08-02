@@ -1,0 +1,652 @@
+{
+ "date": "2023-08-02",
+ "buildid": "20230802094513",
+ "cset": "a8968f9e8cf0bba14f132004f11b34a8abb93165",
+ "bugs": [
+  {
+   "bugid": 1823953,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use libvorbis though ffmpeg"
+  },
+  {
+   "bugid": 1826382,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "\"Decode\" PCM using ffmpeg"
+  },
+  {
+   "bugid": 1828912,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use libopus through ffmpeg for playback"
+  },
+  {
+   "bugid": 1833654,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make Android builds use f32 audio instead of int16_t"
+  },
+  {
+   "bugid": 1837160,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix more static analysis in dom/media"
+  },
+  {
+   "bugid": 1839389,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove extradata related to padding and encoder/decoder delay"
+  },
+  {
+   "bugid": 1839391,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Trim padding / delay in OGG and WebM files using mOriginalPresentationWindow"
+  },
+  {
+   "bugid": 1840399,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix more static-analysis warnings in dom/media"
+  },
+  {
+   "bugid": 1840402,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Switch the WAVE demuxer to use TimeUnit of the proper base"
+  },
+  {
+   "bugid": 1840869,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add logging statements in WebMDemuxer error paths"
+  },
+  {
+   "bugid": 1844772,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HTML5 video not looping properly"
+  },
+  {
+   "bugid": 1845213,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "The mismatching of the buffered ranged and the buffered data in MSE causes looping failed"
+  },
+  {
+   "bugid": 1845350,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "MOZ_CRASH in [@ mozilla::media::TimeUnit::MultDouble]"
+  },
+  {
+   "bugid": 1845811,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::AudioSinkWrapper::OnAudioEnded]"
+  },
+  {
+   "bugid": 1846158,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Crash in [@ aaudio_stream_init]"
+  },
+  {
+   "bugid": 1827675,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`inverted-colors` media feature incorrectly matches smart invert"
+  },
+  {
+   "bugid": 1846249,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Change color functions to constants"
+  },
+  {
+   "bugid": 1846272,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Allow AbsoluteColor::new to auto detect none components."
+  },
+  {
+   "bugid": 1846251,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "[css-nesting] Make CSSStyleRule a CSSGroupingRule"
+  },
+  {
+   "bugid": 1844752,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsNodeInfoManager's constructor should initialize mPrincipal to the right value immediately if possible"
+  },
+  {
+   "bugid": 1845744,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Separate out selector-specific node flags"
+  },
+  {
+   "bugid": 1834370,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "Optimize listener iteration in EventListenerManager::HandleEventInternal"
+  },
+  {
+   "bugid": 1784880,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "blob: URLs and range requests"
+  },
+  {
+   "bugid": 1845073,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Add \"fetchpriority\" attribute to HTML parser"
+  },
+  {
+   "bugid": 1846141,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Bfcached page changes zoom when navigated to"
+  },
+  {
+   "bugid": 1842005,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Avoid code duplication in IsSimpleHeader and IsCORSSafelistedRequestHeader"
+  },
+  {
+   "bugid": 1743749,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Clean up use of atoms for cache keys"
+  },
+  {
+   "bugid": 1845863,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CtW] HTML placeholder not exposed"
+  },
+  {
+   "bugid": 1845883,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Get rid of HyperTextAccessibleWrap"
+  },
+  {
+   "bugid": 1844595,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Snapshot fuzzing flag should enable fuzzing too"
+  },
+  {
+   "bugid": 1841837,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "remove profiler power counter workaround for old Windows SDK"
+  },
+  {
+   "bugid": 1846405,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Switch prost to syn 2"
+  },
+  {
+   "bugid": 1846406,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Switch derive_more to syn 2"
+  },
+  {
+   "bugid": 1846113,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove some always-true macOS version checks now that Firefox only supports macOS >= 10.15"
+  },
+  {
+   "bugid": 1846183,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "pixman-arm-neon-asm-bilinear.S:1274: Error: missing .func for armv7 gcc build"
+  },
+  {
+   "bugid": 1832955,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Support font-relative CSS lengths as values for letterSpacing/wordSpacing in OffscreenCanvas"
+  },
+  {
+   "bugid": 1841692,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Expose glyph emHeights in TextMetrics"
+  },
+  {
+   "bugid": 1845372,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Assertion failure: mBitmaps.Contains(aImageBitmap), at /dom/canvas/ImageBitmap.cpp:124"
+  },
+  {
+   "bugid": 1845697,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Crash when viewing Firefox profiler pages"
+  },
+  {
+   "bugid": 1846558,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update `wgpu` to f71a1bc736fde37509262ca03e91d8f56a13aeb5 (`trunk` as of 2023-08-01)"
+  },
+  {
+   "bugid": 1826643,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove `--enable-change-array-by-copy` shell flag and `javascript.options.experimental.enable_change_array_by_copy` pref"
+  },
+  {
+   "bugid": 1843935,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove Array.fromAsync pref code."
+  },
+  {
+   "bugid": 1843987,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Automatically tigger concurrent delazification for off-thread compilation if the option is set"
+  },
+  {
+   "bugid": 1845031,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Decouple delazify+strategy handling from DelazifyTask struct"
+  },
+  {
+   "bugid": 1845270,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: IsUninitializedLexical(lexicalEnv->getSlot(prop->slot())), at vm/Interpreter-inl.h:288"
+  },
+  {
+   "bugid": 1845698,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: hasKey(index), at vm/PropMap.h:827"
+  },
+  {
+   "bugid": 1845715,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js::NativeObject::sharedShape (this=0x0) at src/vm/NativeObject.h:650"
+  },
+  {
+   "bugid": 1846247,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ js::ListObject::append] through [@ FinishDynamicModuleImport_impl]"
+  },
+  {
+   "bugid": 1846487,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Pausing in Browser Toolbox Debugger causes tab crash"
+  },
+  {
+   "bugid": 1846602,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove dead code in Ion.cpp"
+  },
+  {
+   "bugid": 1175778,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Date.parse chokes on a period after abbreviated month"
+  },
+  {
+   "bugid": 1571998,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement wasm tail calls"
+  },
+  {
+   "bugid": 1843668,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Hide wasm final types behind a flag by default"
+  },
+  {
+   "bugid": 1844334,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Random testing for multi-value returns"
+  },
+  {
+   "bugid": 1708240,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "[css-fonts-5] font-size-adjust: from-font"
+  },
+  {
+   "bugid": 1845461,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Add deprecation warning and use counter for deprecated mathvariant usages"
+  },
+  {
+   "bugid": 1846482,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Reorganize and tweak mathvariant tests"
+  },
+  {
+   "bugid": 1845017,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "Intermittent PHC.TestPHCExhaustion | Value of: GetPHCAllocation(128)"
+  },
+  {
+   "bugid": 1798407,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Restrict Storage Access API usage to within secure contexts"
+  },
+  {
+   "bugid": 1846083,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "remove win7 cursor fix in libwebrtc's mouse_cursor_monitor_win.cc"
+  },
+  {
+   "bugid": 1845144,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove macOS @available directives for 10.15 and earlier"
+  },
+  {
+   "bugid": 1739598,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Mouse navigation in a specific game is severely impaired in wayland compared to the xwayland"
+  },
+  {
+   "bugid": 1832760,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Wayland protocol error with Linux display scaling: wl_surface@86: error 2: Buffer size (989x379) must be an integer multiple of the buffer_scale (2)."
+  },
+  {
+   "bugid": 1844543,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "nsWindow::SetEGLNativeWindowSize() and nsWindow::GetNativeData(NS_NATIVE_EGL_WINDOW) is not thread safe"
+  },
+  {
+   "bugid": 1834278,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Get rid of nsIMessageLoop"
+  },
+  {
+   "bugid": 1839108,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Rewrite nsXULPrototypeScript::Compile with TaskController"
+  },
+  {
+   "bugid": 1840870,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add test for InspectorUtils.getCSStyleRules with ::highlight pseudo elements"
+  },
+  {
+   "bugid": 1845258,
+   "status": "RESOLVED",
+   "component": "DevTools:Object Inspector",
+   "summary": "Preview support for HighlightRegistry objects"
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1844659,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Use Github API to find new tags to avoid cloning the repo unnecessarily"
+  },
+  {
+   "bugid": 1845751,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Change upstream_tag to use the commiter date for all repos"
+  },
+  {
+   "bugid": 1842230,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URL bar suggested action for paste when clipboard contains URL"
+  },
+  {
+   "bugid": 1842234,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dismiss the clipboard result through result menu button"
+  },
+  {
+   "bugid": 1842236,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Limit for displaying clipboard result in URL bar suggestions"
+  },
+  {
+   "bugid": 1846028,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a .featureGate pref to Clipboard Suggestion"
+  },
+  {
+   "bugid": 1846085,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Treat \"how to\" as one word when matching prefixes for Pocket suggestions"
+  },
+  {
+   "bugid": 1845122,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Having three devices with the same doesn't show all devices"
+  },
+  {
+   "bugid": 1846393,
+   "status": "NEW",
+   "component": "Firefox:Firefox View",
+   "summary": "Perma browser/components/firefoxview/tests/browser/browser_history_firefoxview_next.js | Total number of cards should be 2 - Got 2, expected 3"
+  },
+  {
+   "bugid": 1845311,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use ChromeUtils.defineLazyGetter in more places"
+  },
+  {
+   "bugid": 1846557,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix cta-link style for additional button in feature callout"
+  },
+  {
+   "bugid": 1846544,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 4735ed8f161297f0b117de3d1896f8fe362be600 from 2023-08-01 13:21:10"
+  },
+  {
+   "bugid": 1840139,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shopping",
+   "summary": "Create error component"
+  },
+  {
+   "bugid": 1840156,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Shopping toolbar button"
+  },
+  {
+   "bugid": 1840161,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "TBD Initial loading state component"
+  },
+  {
+   "bugid": 1841866,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "History Sync engine should roundtrip data it doesn't know about"
+  },
+  {
+   "bugid": 1845815,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Support binary response bodies in Viaduct"
+  },
+  {
+   "bugid": 1846347,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Tab syncing broken on Nightlies"
+  },
+  {
+   "bugid": 1844346,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "about:profiles modal challenging to read in private mode"
+  },
+  {
+   "bugid": 1836204,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Re-enable browser.translations.enable for automation"
+  },
+  {
+   "bugid": 1846523,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Android Studio fails to use settings.gradle on Windows"
+  },
+  {
+   "bugid": 1835053,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[tracking] Transition to syn 2"
+  },
+  {
+   "bugid": 1844484,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "libxul with packed relative relocations is larger than with elfhack"
+  },
+  {
+   "bugid": 1845833,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "./mach storybook launch throws a KeyError 'runprefs' when invoked"
+  },
+  {
+   "bugid": 1846065,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Mach no longer gracefully hanldes unknown/misspelled commands"
+  },
+  {
+   "bugid": 1846068,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`./mach busted file <command>` is not working correctly"
+  },
+  {
+   "bugid": 1839891,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Replace `multi_dep` loaders with `from_deps` transforms"
+  },
+  {
+   "bugid": 1845745,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Introduce a specific `install.error` for blocklisted add-ons"
+  },
+  {
+   "bugid": 1819899,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "siteDataTestUtils.hasCookies() is wrong if the host is a substring of an existing cookies host"
+  },
+  {
+   "bugid": 1846069,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[Relay] optimize FXA token experience"
+  },
+  {
+   "bugid": 1829581,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove nsNavHistory::URIToResultNode()"
+  },
+  {
+   "bugid": 1834043,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Enable Sqlite auxiliary files persistence in Release"
+  },
+  {
+   "bugid": 1846248,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Unify popup.css"
+  },
+  {
+   "bugid": 1819352,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use moz-button-group in report add-on dialog"
+  },
+  {
+   "bugid": 1700482,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Re-enable failing xpcshell tests on Android and run them with out-of-process extensions enabled"
+  },
+  {
+   "bugid": 1844825,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Investigate test failure hit by test_ext_cache_api.js when running on android with the extension process enabled"
+  },
+  {
+   "bugid": 1845352,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Avoid intermittent extension process termination in the middle of a xpcshell test run"
+  },
+  {
+   "bugid": 1841683,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Consider capturing in glean string metrics the hash of the quarantined domains list string as synced from RemoteSettings and as currently set on the about:config pref"
+  }
+ ],
+ "fixed": 85,
+ "total": 107,
+ "restricted": 3
+}
