@@ -1,0 +1,652 @@
+{
+ "date": "2023-08-08",
+ "buildid": "20230808212319",
+ "cset": "b19ed5a6579d312e71c03201698107835378c612",
+ "bugs": [
+  {
+   "bugid": 1823953,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use libvorbis though ffmpeg"
+  },
+  {
+   "bugid": 1826382,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "\"Decode\" PCM using ffmpeg"
+  },
+  {
+   "bugid": 1828912,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use libopus through ffmpeg for playback"
+  },
+  {
+   "bugid": 1833654,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make Android builds use f32 audio instead of int16_t"
+  },
+  {
+   "bugid": 1837160,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix more static analysis in dom/media"
+  },
+  {
+   "bugid": 1839389,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove extradata related to padding and encoder/decoder delay"
+  },
+  {
+   "bugid": 1839391,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Trim padding / delay in OGG and WebM files using mOriginalPresentationWindow"
+  },
+  {
+   "bugid": 1840399,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fix more static-analysis warnings in dom/media"
+  },
+  {
+   "bugid": 1840402,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Switch the WAVE demuxer to use TimeUnit of the proper base"
+  },
+  {
+   "bugid": 1840869,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add logging statements in WebMDemuxer error paths"
+  },
+  {
+   "bugid": 1846854,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in Resolve() from [@ mozilla::AudioSinkWrapper::OnAudioEnded]"
+  },
+  {
+   "bugid": 1847009,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update libcubeb to revision ac8474a5929"
+  },
+  {
+   "bugid": 1843783,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "css custom property fallback 'unset' not working as expected"
+  },
+  {
+   "bugid": 1847546,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Don't do duplicate work on style elements from the innerHTML setter."
+  },
+  {
+   "bugid": 1847715,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make prototype content sink not treat stylesheets so weirdly."
+  },
+  {
+   "bugid": 1598158,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "[motion-1] Support offset-path: <url>"
+  },
+  {
+   "bugid": 1847200,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Don't create an internal event for transition events that we won't ever dispatch because of no listeners."
+  },
+  {
+   "bugid": 1843239,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider to use [Pure, StoreInSlot] for Location.hash, or cache the value in C++"
+  },
+  {
+   "bugid": 1847090,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma /html/semantics/scripting-1/the-script-element/module/dynamic-import/microtasks/basic.any.html | import() should not drain the microtask queue when loading an already loaded module - expected FAIL"
+  },
+  {
+   "bugid": 1847324,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add use counter for rewritable YouTube flash embeds"
+  },
+  {
+   "bugid": 1845904,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "mozilla::PresShell::DoFlushPendingNotifications reentrancy during nsMenuPopupFrame::Init on macOS"
+  },
+  {
+   "bugid": 1824121,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Implement the <search> element"
+  },
+  {
+   "bugid": 1839316,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Add \"fetchpriority\" attribute to <script> element"
+  },
+  {
+   "bugid": 1846780,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "responseXML is not populated for a blob with an empty type"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1546662,
+   "status": "REOPENED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "webauth tests have become unstable"
+  },
+  {
+   "bugid": 1838526,
+   "status": "NEW",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Implement a CTAP2-capable virtual authenticator for tests"
+  },
+  {
+   "bugid": 1838894,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add functions to nsIWebAuthnTransport to add and remove virtual authenticators"
+  },
+  {
+   "bugid": 1838938,
+   "status": "NEW",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove U2FSoftTokenTransport"
+  },
+  {
+   "bugid": 1838945,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Fix tests that worked with U2FSoftTokenTransport but not the CTAP2 virtual authenticator"
+  },
+  {
+   "bugid": 1839517,
+   "status": "NEW",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.4.0-alpha.18"
+  },
+  {
+   "bugid": 1844136,
+   "status": "NEW",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Avoid authenticator-rs `Manager` type"
+  },
+  {
+   "bugid": 1372296,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CtW] Unify ScrollSubstringToPoint"
+  },
+  {
+   "bugid": 1843227,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Accessible::ScrollTo SCROLL_TYPE_ANYWHERE doesn't trigger infinite scroll on YouTube video lists"
+  },
+  {
+   "bugid": 1843225,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove some Win7-and-8-specific checks from gfxWindowsPlatform.cpp"
+  },
+  {
+   "bugid": 1847665,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Reduce SyncObjectD3D11Host::Synchronize() call in RenderCompositorANGLE::BeginFrame()"
+  },
+  {
+   "bugid": 1847319,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Text rendering issues in Firefox 115 on Android"
+  },
+  {
+   "bugid": 1843296,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Better handle allocation failures when creating buffers"
+  },
+  {
+   "bugid": 1846558,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update `wgpu` to f71a1bc736fde37509262ca03e91d8f56a13aeb5 (`trunk` as of 2023-08-01)"
+  },
+  {
+   "bugid": 1847472,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Simplify logic in `build_mask_tasks`"
+  },
+  {
+   "bugid": 1719535,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Integrate ICU4x segmenter into Gecko and use it to back the existing intl::mozilla::LineBreaker API."
+  },
+  {
+   "bugid": 1842701,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fallback to no-extra-bindings-mode in Debugger.Object.prototype.executeInGlobalWithBindings if possible"
+  },
+  {
+   "bugid": 1843344,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash in [@ js::jit::ICScript::icEntryFromPCOffset]"
+  },
+  {
+   "bugid": 1846270,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "GC profile background work time double counts parallel marking time"
+  },
+  {
+   "bugid": 1847567,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add a browser pref for JSGC_PARALLEL_MARKING_THRESHOLD_KB and set it appropriately"
+  },
+  {
+   "bugid": 1832576,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Wasm SIMD opcode mismatch in jit tests and in C++ code"
+  },
+  {
+   "bugid": 1829184,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "High freq [tier 2] bugs/456219-1c.html == bugs/456219-1-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1845667,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Webextension themes may visually disable url formatting in Address Bar"
+  },
+  {
+   "bugid": 1842754,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash [@ nsILoadInfo::GetOriginAttributes]"
+  },
+  {
+   "bugid": 1843763,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma MOZ_RELEASE_ASSERT(externalHandler) (We should never allow overriding a builtin protocol handler) [@ mozilla::dom::Navigator::CheckProtocolHandlerAllowed] | single tracking bug"
+  },
+  {
+   "bugid": 1847402,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove some unused code: NS_N(), MAX_RECURSION_COUNT, and AutoIncrement"
+  },
+  {
+   "bugid": 1847604,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use std::move() for OnSessionClosed in WebTransport"
+  },
+  {
+   "bugid": 1453318,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Disallow responses when a response header value contains 0x00"
+  },
+  {
+   "bugid": 1843538,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "vixl::<ID_REG>::GetCpuFeatures() is slow on some Android devices"
+  },
+  {
+   "bugid": 1846181,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "'Save to PDF' produces a corrupt PDF with a blank or missing page, due to mishandling of parenthesis in an `<a href>` link tag"
+  },
+  {
+   "bugid": 1847260,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "use MOZ_DIAGNOSTIC_ASSERT in COMMON_SOCKET_CONTROL_ASSERT_ON_OWNING_THREAD"
+  },
+  {
+   "bugid": 1847240,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "dom/media/systemservices/video_engine/browser_capture_impl.h appears unused"
+  },
+  {
+   "bugid": 1847466,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "remove libwebrtc code added to work around missing v4l2_capability::bus_info in v412loopback driver"
+  },
+  {
+   "bugid": 1779498,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Properly handle libwebrtc ResidualEchoDetector change to injectable component or delete our pref"
+  },
+  {
+   "bugid": 1845587,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Firefox popups hide when Voice Control is enabled."
+  },
+  {
+   "bugid": 1847154,
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove some always-true OnMojaveOrLater() and OnCatalinaOrLater() version checks"
+  },
+  {
+   "bugid": 1847287,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Switch nsAppShell from dbus-glib to GDBus"
+  },
+  {
+   "bugid": 1847296,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Utility process selector is using wrong bitmask"
+  },
+  {
+   "bugid": 1816936,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Dll Interceptor should write nop instructions to the remaining bytes of the final instruction"
+  },
+  {
+   "bugid": 1845127,
+   "status": "NEW",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_csp_too_many_reports.js | Test timed out -"
+  },
+  {
+   "bugid": 1828573,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Move away from JSX"
+  },
+  {
+   "bugid": 1845723,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Perma tier2 devtools/client/inspector/test/browser_inspector_highlighter-cssshape_offset-path.js | Interactive elements must be labeled: id: , tagName: span, className: ruleview-shapeswatch"
+  },
+  {
+   "bugid": 1847498,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Add test for requests resent by DevTools blocked by ORB"
+  },
+  {
+   "bugid": 1847285,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Remove devtools.storage.test.forceLegacyActors pref"
+  },
+  {
+   "bugid": 1831529,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intervention cards are executed when trying to access the Help menu"
+  },
+  {
+   "bugid": 1846291,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "There is a size inconsistency between history/bookmarked/switch to tab and suggestion results favicons"
+  },
+  {
+   "bugid": 1846765,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Users enrolled in rich suggestions experiment will have broken UI"
+  },
+  {
+   "bugid": 1847275,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Change MDN suggestion bottom text to \"MDN Web Docs\""
+  },
+  {
+   "bugid": 1845489,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Tabs from other devices: Check internet connection message disappearing"
+  },
+  {
+   "bugid": 1845709,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Tabs from other devices page should fade under the title when scrolling"
+  },
+  {
+   "bugid": 1845909,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "[macOS] Firefox view navigation list items are read three times each by VoiceOver"
+  },
+  {
+   "bugid": 1846607,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Change \"Open menu\" strings for more menu's to give more context"
+  },
+  {
+   "bugid": 1846342,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update Fakespot sidebar template to support adding supplementary text underneath main content"
+  },
+  {
+   "bugid": 1847065,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Right-clicking on the page action button opens the sidebar"
+  },
+  {
+   "bugid": 1844978,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "https-only exceptions misinterpret attempted wildcards for a domain"
+  },
+  {
+   "bugid": 1846500,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Inherit PrefersColorSchemeOverride for chrome windows with opener relationship"
+  },
+  {
+   "bugid": 1845611,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Translations Panel UI Is Not Correctly Updated Between Various Error States"
+  },
+  {
+   "bugid": 1847339,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Intermittent browser/components/translations/tests/browser/browser_translations_telemetry_panel_auto_offer.js | single tracking bug"
+  },
+  {
+   "bugid": 1847408,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Remove vestigial beta-language code artifacts from Translations"
+  },
+  {
+   "bugid": 1847574,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Ensure translations do not de-lazify code and is fast for initial page load"
+  },
+  {
+   "bugid": 1847692,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Consider waiting for the page to be ready before identifying the language"
+  },
+  {
+   "bugid": 1846591,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "[msix] Set vendor in repackage-msix kind files"
+  },
+  {
+   "bugid": 1847210,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma toolchains custom-car  Error: Command 'python3 src/testing/generate_location_tags.py --out src/testing/location_tags.json' returned non-zero exit status 127"
+  },
+  {
+   "bugid": 1847059,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Add missing providerName to FedCM Account and Provider entities in GeckoSession"
+  },
+  {
+   "bugid": 1809422,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "\"Unable to generate PDF\"/\"Unable to print\" Error when the Content Frame is not Selected During Save to PDF/Printing"
+  },
+  {
+   "bugid": 1846574,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "support webdriver virtual authenticator functions in marionette"
+  },
+  {
+   "bugid": 1847578,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Correct wdspec meta data for various platforms"
+  },
+  {
+   "bugid": 1844009,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement `type` field on response messages"
+  },
+  {
+   "bugid": 1844745,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Rename the \"id\" from NavigationManager events to \"navigationId\""
+  },
+  {
+   "bugid": 1847468,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "undefined reference to `getgrgid_r' when using Android NDK r25c"
+  },
+  {
+   "bugid": 1847476,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Include aria-label when parsing labels in formautofill"
+  },
+  {
+   "bugid": 1847479,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add MM/YY to cc-exp keyword"
+  },
+  {
+   "bugid": 1834570,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Migrate the event creditcard.cc_form_v2 to Glean"
+  },
+  {
+   "bugid": 1840564,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Intermittent toolkit/components/passwordmgr/test/browser/browser_glean_pwmgr_form_autofill_result.js | single tracking bug"
+  },
+  {
+   "bugid": 1845456,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "nsNavHistoryResult::evaluateQueryForNode is unable to evaluate times on results grouped by uri"
+  },
+  {
+   "bugid": 1847592,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Remove old migrations and move schema version to the history interface"
+  },
+  {
+   "bugid": 1626969,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Investigate which locale(s) to send in FOG data"
+  },
+  {
+   "bugid": 1830772,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "update the GIFFT documentation to say text has no compatible Telemetry type"
+  },
+  {
+   "bugid": 1847735,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Update testing docs to include IPC flush before clear"
+  },
+  {
+   "bugid": 1840396,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Remove exception for moz-message-bar in browser_all_files_referenced"
+  },
+  {
+   "bugid": 1844848,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Use moz-message-bar in about:plugins"
+  },
+  {
+   "bugid": 1847299,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "High Freq toolkit/components/extensions/test/xpcshell/test_ext_background_iframe.js | single tracking bug"
+  }
+ ],
+ "fixed": 90,
+ "total": 107,
+ "restricted": 5
+}
