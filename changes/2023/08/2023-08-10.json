@@ -1,0 +1,532 @@
+{
+ "date": "2023-08-10",
+ "buildid": "20230810094725",
+ "cset": "24eb42c9b3d9f910ba5afe124232608f70532552",
+ "bugs": [
+  {
+   "bugid": 1846957,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::TrackBuffersManager::RemoveFrames], [@ mozilla::TrackBuffersManager::TrackData::GetTrackBuffer]"
+  },
+  {
+   "bugid": 1847754,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Figure out what to do with the wav test disabled in test_played.html"
+  },
+  {
+   "bugid": 1847509,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "109.75 - 7.56% compiler_metrics num_static_constructors / compiler_metrics num_static_constructors + 2 more (Windows) regression on Tue August 1 2023"
+  },
+  {
+   "bugid": 1847715,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make prototype content sink not treat stylesheets so weirdly."
+  },
+  {
+   "bugid": 1668200,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Use StableSort member function in AnimationEventDispatcher"
+  },
+  {
+   "bugid": 1847788,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ nsIURI::SchemeIs] through [@ mozilla::dom::WindowGlobalParent::RecvReloadWithHttpsOnlyException]"
+  },
+  {
+   "bugid": 1091187,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move selectionchange code in nsGlobalWindow::UpdateCommands"
+  },
+  {
+   "bugid": 1815273,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "WidgetEvent::Duplicate triggers extra TimeStamp::Now() call"
+  },
+  {
+   "bugid": 697151,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Synchronous XMLHttpRequest (XHR) does not block readyState events for async XHR"
+  },
+  {
+   "bugid": 1839316,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Add \"fetchpriority\" attribute to <script> element"
+  },
+  {
+   "bugid": 1833494,
+   "status": "VERIFIED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Keyboard zoom shortcut switches tabs when zoom level maxed out with certain keyboard layouts"
+  },
+  {
+   "bugid": 1845215,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Make `ContentEventHandler` stop using strong pointers as far as possible"
+  },
+  {
+   "bugid": 1546662,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "webauth tests have become unstable"
+  },
+  {
+   "bugid": 1838526,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Implement a CTAP2-capable virtual authenticator for tests"
+  },
+  {
+   "bugid": 1838894,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add functions to nsIWebAuthnTransport to add and remove virtual authenticators"
+  },
+  {
+   "bugid": 1838938,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove U2FSoftTokenTransport"
+  },
+  {
+   "bugid": 1838945,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Fix tests that worked with U2FSoftTokenTransport but not the CTAP2 virtual authenticator"
+  },
+  {
+   "bugid": 1839517,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.4.0-alpha.18"
+  },
+  {
+   "bugid": 1844136,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Avoid authenticator-rs `Manager` type"
+  },
+  {
+   "bugid": 1649306,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "null pointer passed as argument 1, which is declared to never be null in dom/crypto/CryptoBuffer.cpp:131"
+  },
+  {
+   "bugid": 1847489,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "UIA client detection is broken on Windows 10"
+  },
+  {
+   "bugid": 1847084,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "Perma Android aarch64 [tier 2] gfx/tests/reftest/1845828-1.html == gfx/tests/reftest/1845828-1-ref.html | image comparison, max difference: 125, number of differing pixels: 106"
+  },
+  {
+   "bugid": 1847644,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Perma [Tier-2] gfx/tests/reftest/1696439-1.html == gfx/tests/reftest/1696439-1-ref.html | image comparison, max difference: 64, number of differing pixels: 641"
+  },
+  {
+   "bugid": 1847597,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update `wgpu` to 09b010b26af6876ce84991576a168a572172f08d"
+  },
+  {
+   "bugid": 1840515,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Preload the omnijars in the fork server"
+  },
+  {
+   "bugid": 1847780,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Crash [@ __pthread_mutex_clocklock_common] through [@ mozilla::RemoteLazyInputStream::TakeInternalStream]"
+  },
+  {
+   "bugid": 1847869,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Update ICU4X document"
+  },
+  {
+   "bugid": 1847360,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "AddressSanitizer: SEGV on unknown address or Assertion failure: whyMagic() == why, at dist/include/js/Value.h:868"
+  },
+  {
+   "bugid": 1847369,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "MOZ_CRASH(JSON.stringify mismatch between fast and slow paths) at builtin/JSON.cpp:1704"
+  },
+  {
+   "bugid": 1847714,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allocate smaller regexp match result objects from JIT code"
+  },
+  {
+   "bugid": 1847813,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Infinite scrolling broken on https://reddit.com/r/toronto on recent nightly builds"
+  },
+  {
+   "bugid": 1847831,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ReportLargeOutOfMemory"
+  },
+  {
+   "bugid": 1847899,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "fdlibm patches doesn't apply"
+  },
+  {
+   "bugid": 1824051,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Calling filter() on a proxied array is quite a bit slower in SM than V8"
+  },
+  {
+   "bugid": 1847871,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[loong64][mips64] Support i31ref"
+  },
+  {
+   "bugid": 1845355,
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Crash in [@ MaybeMutex::ShouldLock]"
+  },
+  {
+   "bugid": 1847584,
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Hidden remote browser with an animation keeps vsync going indefinitely"
+  },
+  {
+   "bugid": 1845017,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Intermittent PHC.TestPHCExhaustion | Value of: GetPHCAllocation(128)"
+  },
+  {
+   "bugid": 1847741,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add an API to nsIURI to know if the query string is missing or an empty string"
+  },
+  {
+   "bugid": 1847689,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Minor cleanup to GenericScrollAnimation constructor"
+  },
+  {
+   "bugid": 1847716,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Scrolling smoothly even with smooth scrolling disabled if you click and hold scrollbar"
+  },
+  {
+   "bugid": 1843534,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "clock_gettime() etc are very slow on some android devices"
+  },
+  {
+   "bugid": 1847928,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Permafailing SM [tier 2] /mozglue/misc/TimeStamp_posix.cpp:86:50: error: expected ';' after do/while statement"
+  },
+  {
+   "bugid": 1847760,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Correct incorrect integer cast in IsRFPEnabledFor"
+  },
+  {
+   "bugid": 1847768,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Storage access API sometimes rejects instead of autogranting"
+  },
+  {
+   "bugid": 1839996,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for 2 SSL.com root certificates"
+  },
+  {
+   "bugid": 1840432,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable EV Treatment for Sectigo E46 and R46 root certificates"
+  },
+  {
+   "bugid": 1846850,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "remove mozilla-added IsGUIThread asserts from libwebrtc"
+  },
+  {
+   "bugid": 1846858,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "revert changes to libwebrtc's deprecated/session_info.cc since we don't build it"
+  },
+  {
+   "bugid": 1847154,
+   "status": "NEW",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Remove some always-true OnMojaveOrLater() and OnCatalinaOrLater() version checks"
+  },
+  {
+   "bugid": 1847565,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "17.51 - 12.17% damp custom.styleeditor.open.DAMP / damp custom.styleeditor.open.DAMP + 2 more (Linux, Windows) regression on Tue August 1 2023"
+  },
+  {
+   "bugid": 1847753,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Stop storing pseudo elements in properties-db"
+  },
+  {
+   "bugid": 1845731,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Cache StyleRule desugaredSelectors"
+  },
+  {
+   "bugid": 1846947,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add DAMP test for deeply nested CSS rule"
+  },
+  {
+   "bugid": 1792803,
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "Load JSON viewer modules from resource://devtools/"
+  },
+  {
+   "bugid": 1847747,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "highlighters.css is displayed in style editor"
+  },
+  {
+   "bugid": 1847835,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Update requestAnalysis and requestRecommendations to add null checks"
+  },
+  {
+   "bugid": 1067293,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Omit \"https://\" (pref'd off by default)"
+  },
+  {
+   "bugid": 1846261,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Editing autocompleted domains in URL bar is broken"
+  },
+  {
+   "bugid": 1846290,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The “Thanks for your feedback” message is not aligned with the Address Bar results"
+  },
+  {
+   "bugid": 1847911,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Clean up wrapping rules for rich suggestions"
+  },
+  {
+   "bugid": 1847913,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS nesting for tip results"
+  },
+  {
+   "bugid": 1847938,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove obsolete .urlbarView-row-inner[selected] selector"
+  },
+  {
+   "bugid": 1847944,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS nesting for .urlbarView-button rules"
+  },
+  {
+   "bugid": 1847947,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS nesting for labeled result menu button rules"
+  },
+  {
+   "bugid": 1845468,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "History Sort by Date and Sort by Site and Tabs from other devices title doesn't stay in place while scrolling in HCM"
+  },
+  {
+   "bugid": 1847765,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove some old UI Migrations"
+  },
+  {
+   "bugid": 1848017,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Change all \"NSIS Installer\" bug components to \"Installer\""
+  },
+  {
+   "bugid": 1844784,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"Synced Tabs\" in Menu Bar's History menu should be hidden when a user has explicitly disabled Firefox Sync"
+  },
+  {
+   "bugid": 1847815,
+   "status": "RESOLVED",
+   "component": "Firefox:Migration",
+   "summary": "Decouple the use of import wizard variants in embedded and non-embedded wizard"
+  },
+  {
+   "bugid": 1801936,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Use moz-toggle in the ETP panel"
+  },
+  {
+   "bugid": 1840162,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shopping",
+   "summary": "Create \"Recommended by Firefox\" ad component"
+  },
+  {
+   "bugid": 1847958,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Use -Oz for optimize option on GeckoView all channel"
+  },
+  {
+   "bugid": 1847101,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build failures when targeting powerpc64"
+  },
+  {
+   "bugid": 1847190,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "packed relative relocations configure check cannot use configure_cache"
+  },
+  {
+   "bugid": 1847196,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "python/mozbuild/mozbuild/test/frontend/test_emitter.py DeprecationWarnings"
+  },
+  {
+   "bugid": 1845003,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Snap Nightly build fails with error: could not compile gkrust"
+  },
+  {
+   "bugid": 1720484,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Aarch64 cross build needs --without-sysroot to find the sysroot"
+  },
+  {
+   "bugid": 1847198,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to clang 16.0.6"
+  },
+  {
+   "bugid": 1847199,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add toolchains for clang 17.0.0-rc2"
+  },
+  {
+   "bugid": 1840082,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Create a Test for validating the nsIIdentityCredentialPromptService.showPolicyPrompt is handled in GeckoView"
+  },
+  {
+   "bugid": 1842712,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "[toolchains] requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: http://taskcluster/queue/v1/task/XvMvYM6zSP-KCsZUwXolFQ"
+  },
+  {
+   "bugid": 1845368,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "set-up `pine` as a permanent project branch for the Desktop Integrations team"
+  },
+  {
+   "bugid": 1846574,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "support webdriver virtual authenticator functions in marionette"
+  },
+  {
+   "bugid": 1840479,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Frequent toolkit/components/passwordmgr/test/browser/browser_preselect_login.js | single tracking bug"
+  },
+  {
+   "bugid": 1847592,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove old migrations and move schema version to the history interface"
+  },
+  {
+   "bugid": 1847608,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Event page shutdown is misinterpreted as process crash on Android"
+  }
+ ],
+ "fixed": 75,
+ "total": 87,
+ "restricted": 3
+}
