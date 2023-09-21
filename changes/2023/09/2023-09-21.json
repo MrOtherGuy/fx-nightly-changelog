@@ -1,0 +1,670 @@
+{
+ "date": "2023-09-21",
+ "buildid": "20230921091327",
+ "cset": "7c6496f92bb0572d56513d645f3d6201f77a5653",
+ "bugs": [
+  {
+   "bugid": 1828441,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "MP4 containers served with \"content-type:application/octet-stream\" are not downloaded"
+  },
+  {
+   "bugid": 1853211,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "On MacOS, sometimes `about:support` shows only hw vp9 support, no sw vp9 support"
+  },
+  {
+   "bugid": 1854013,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update audio-mixer to 0.1.3"
+  },
+  {
+   "bugid": 1847660,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add remaining plumbing to GMP process"
+  },
+  {
+   "bugid": 1839193,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: mBase > 0, at /builds/worker/workspace/obj-build/dist/include/TimeUnits.h:84"
+  },
+  {
+   "bugid": 1852461,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "crashtest 1830206.html loads wrong media resource url"
+  },
+  {
+   "bugid": 1854034,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add log to display the support information for processes"
+  },
+  {
+   "bugid": 1853158,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma /webcodecs/videoFrame-serialization.https.html | Verify frames can be passed within the same agent clusters - promise_test: Unhandled rejection with value: object \"ReferenceError: VideoFrame is not defined\" when Gecko 119 merge to Beta on 2023-09-25"
+  },
+  {
+   "bugid": 1448248,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement CSS attr(<attr-name>, <attr-fallback>)"
+  },
+  {
+   "bugid": 1853969,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "11.27 - 5.39% perf_reftest_singletons bloom-basic.html / perf_reftest_singletons link-style-cache-1.html + 3 more (OSX, Windows) regression on Fri September 15 2023"
+  },
+  {
+   "bugid": 1854151,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Optimize `:has` invalidation code path on processing pending state & attribute invalidations"
+  },
+  {
+   "bugid": 1843999,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Remove dom.animations-api.core.enabled, dom.animations-api.implicit-keyframes.enabled, and dom.animations-api.autoremove.enabled prefs"
+  },
+  {
+   "bugid": 1412463,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider removing the chromeonly datatransfer.types.contains hack"
+  },
+  {
+   "bugid": 1850341,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[popover] Improve focus handling in hidepopover"
+  },
+  {
+   "bugid": 1853832,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.mouseevent.click.hack.use_legacy_non-primary_dispatch pref"
+  },
+  {
+   "bugid": 1853835,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable media.webspeech.synth.enabled in StaticPrefs"
+  },
+  {
+   "bugid": 1852808,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Add the mediation field to CredentialRequestOptions"
+  },
+  {
+   "bugid": 1850645,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Make `AutoTextControlHandlingState` stop using `nsString`"
+  },
+  {
+   "bugid": 1799326,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ RefPtr<T>::assign_assuming_AddRef | RefPtr<T>::operator= | mozilla::dom::BrowsingContextWebProgress::ContextReplaced]"
+  },
+  {
+   "bugid": 1852213,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add crash annotations for docflags"
+  },
+  {
+   "bugid": 1853682,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Clean up GetPrincipalURIOrPrecursorPrincipalURI in Mixed Content Blocker"
+  },
+  {
+   "bugid": 1586950,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Web Authentication should use partial dictionaries now that it can"
+  },
+  {
+   "bugid": 1813778,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Implement the isConditionalMediationAvailable method for PublicKeyCredential"
+  },
+  {
+   "bugid": 1823782,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Implement WebAuthn serialization methods"
+  },
+  {
+   "bugid": 1844437,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Support WebAuthn credProps extension"
+  },
+  {
+   "bugid": 1853819,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove nsIU2FTokenManager"
+  },
+  {
+   "bugid": 1853255,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Text bounds incorrect for inline list items"
+  },
+  {
+   "bugid": 1781526,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Implement VideoFrame for TexImageSource"
+  },
+  {
+   "bugid": 1793526,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Assertion failure: gl->IsCurrent(), at /builds/worker/checkouts/gecko/dom/canvas/WebGLRenderbuffer.cpp:27"
+  },
+  {
+   "bugid": 1853105,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update (mid september 2023)"
+  },
+  {
+   "bugid": 1553691,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "CrossProcessSemaphore is unimplemented on OSX"
+  },
+  {
+   "bugid": 1853612,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Specify argument type for diplomat::span alias template to fix C++20 compilation error"
+  },
+  {
+   "bugid": 1839396,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve handling of GenericPrinter classes."
+  },
+  {
+   "bugid": 1841859,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use module referrer policy for descendant fetches"
+  },
+  {
+   "bugid": 1851938,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent application crashed [@ js::SharedImmutableStringsCache::StringBox::~StringBox] | single tracking bug"
+  },
+  {
+   "bugid": 1852893,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:200"
+  },
+  {
+   "bugid": 1854087,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Disallow copy construction of lock guards"
+  },
+  {
+   "bugid": 1845374,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Switch to the final opcode encodings"
+  },
+  {
+   "bugid": 1847234,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "br_on_cast validation issues"
+  },
+  {
+   "bugid": 1853205,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Rename i31.new to ref.i31"
+  },
+  {
+   "bugid": 1853430,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Update wasm-tools for new GC encoding and ref.i31"
+  },
+  {
+   "bugid": 1854007,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Fix the serialization of canonicalized recursion groups with self references"
+  },
+  {
+   "bugid": 1854009,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Use load32 in call_indirect signature check for subtype depth"
+  },
+  {
+   "bugid": 1854011,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Enable Final types by default in wasm-gc"
+  },
+  {
+   "bugid": 1854014,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Update our implementation limits for GC"
+  },
+  {
+   "bugid": 1851094,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove layout.css.grid-item-baxis-measurement.enabled pref"
+  },
+  {
+   "bugid": 1853727,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "SVG circle objects not printed anymore when r is given as CSS property"
+  },
+  {
+   "bugid": 1835920,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add all webdriver functions needed to support storageAccessAPI wpt"
+  },
+  {
+   "bugid": 1837168,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Rework user activation checks for requestStorageAccess"
+  },
+  {
+   "bugid": 1848783,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix WPT failures left after set_permission is enabled for storage-access"
+  },
+  {
+   "bugid": 1717312,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVG animate property locks attribute values on animation end"
+  },
+  {
+   "bugid": 1853264,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Disable EV Treatment for older version of Autoridad de Certificacion Firmaprofesional CIF A62634068 root"
+  },
+  {
+   "bugid": 1749504,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Asynchronous storage initialization"
+  },
+  {
+   "bugid": 1814577,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Prevent potential race from removeDirectory background task (remove only the child directories)"
+  },
+  {
+   "bugid": 1853841,
+   "status": "RESOLVED",
+   "component": "Core:Storage: StorageManager",
+   "summary": "Remove dom.storageManager.enabled pref"
+  },
+  {
+   "bugid": 1790666,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Unable to use Google account to login to dall-e OpenAI image generator"
+  },
+  {
+   "bugid": 1688721,
+   "status": "REOPENED",
+   "component": "Core:Web Audio",
+   "summary": "setTargetAtTime changes the parameter value immediately when starts"
+  },
+  {
+   "bugid": 1853855,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "use inline AudioParamTimeline::GetValue() as an optimization for GetValueAtTime() if appropriate"
+  },
+  {
+   "bugid": 1853749,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "improve cherry-pick scripting for libwebrtc"
+  },
+  {
+   "bugid": 1853769,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "loop-ff.sh should not fail if the try build push fails"
+  },
+  {
+   "bugid": 1853784,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "improve messaging upon completion of restore_elm_arcconfig.py"
+  },
+  {
+   "bugid": 1827651,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "macOS resume session support doesn't seem to work"
+  },
+  {
+   "bugid": 1851045,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: SEGV /builds/worker/checkouts/gecko/xpcom/threads/nsThread.cpp:830:3 in nsThread::BeginShutdown(nsIThreadShutdown**)"
+  },
+  {
+   "bugid": 1853190,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add Nimbus features to control handling of MacOS power-savings prefs"
+  },
+  {
+   "bugid": 1848331,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Land nimbus variable to configure event timestamps in Firefox Desktop"
+  },
+  {
+   "bugid": 1853536,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "No source urls are displayed when the quick open panel (to go to file) is opened with on search criteria"
+  },
+  {
+   "bugid": 1853618,
+   "status": "VERIFIED",
+   "component": "Developer Services:General",
+   "summary": "GitHub pull request closer fails to run: `GraphQL: Resource not accessible by integration (addComment)`"
+  },
+  {
+   "bugid": 1853954,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rename `actionoverride` to `action-override` and make it a standard boolean attribute"
+  },
+  {
+   "bugid": 1854082,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS nesting for group label, feedback acknowledgment, and tail suggestions"
+  },
+  {
+   "bugid": 1853815,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Remove \"Firefox account\" branding from FxA app menu"
+  },
+  {
+   "bugid": 1833671,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add Telemetry for Tabs from Other Devices"
+  },
+  {
+   "bugid": 1833674,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add Telemetry for History"
+  },
+  {
+   "bugid": 1845333,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Create submenu panel-items for open tabs \"more\" menu"
+  },
+  {
+   "bugid": 1852229,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Fix spacing between synced devices on Recent Browsing"
+  },
+  {
+   "bugid": 1851266,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Survey] Add Terms of Use link in shopping Survey"
+  },
+  {
+   "bugid": 1852138,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Survey] Add 24 hours time gap from opt-in before displaying survey"
+  },
+  {
+   "bugid": 1852621,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update onboarding strings and expose them to localization"
+  },
+  {
+   "bugid": 1853210,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Shopping Microsurvey includes an unlabelled visually hidden button that is focusable at the end of the container"
+  },
+  {
+   "bugid": 1853483,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "High frequency browser/components/shopping/tests/browser/browser_shopping_survey.js | single tracking bug"
+  },
+  {
+   "bugid": 1854171,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Add ftl string(s) for felt privacy pref"
+  },
+  {
+   "bugid": 1853638,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "Tooltip's content showing the date the tracker was first blocked is always \"Since January 1, 1970\""
+  },
+  {
+   "bugid": 1848160,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Record whether Nimbus control or experimental group users visited supported product pages"
+  },
+  {
+   "bugid": 1851612,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Update reanalysis-needed card to call API, not open a new tab"
+  },
+  {
+   "bugid": 1851837,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Rating stars: reduce size and change color"
+  },
+  {
+   "bugid": 1853728,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "\"Show more\" interface in shopping highlights card does not match the Figma spec"
+  },
+  {
+   "bugid": 1854223,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Event for stale analysis being shown"
+  },
+  {
+   "bugid": 1854103,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove --urlbar-popup-url-color"
+  },
+  {
+   "bugid": 1853812,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Perma [Tier 2] Bootstrap-ubuntu2210 bustage"
+  },
+  {
+   "bugid": 1853813,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Perma [Tier 2] bootstrap-opensuse-tumbleweed"
+  },
+  {
+   "bugid": 1850868,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Enable relrhack for android builds on automation"
+  },
+  {
+   "bugid": 1854052,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Don't build elfhack tests when building with relrhack"
+  },
+  {
+   "bugid": 1836901,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use taskcluster-built python for source-test task"
+  },
+  {
+   "bugid": 1853082,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Don't rely on file extension to guess archive type in fetch-content"
+  },
+  {
+   "bugid": 1853175,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Bump taskcluster-taskgraph to version 6.3.0"
+  },
+  {
+   "bugid": 1854005,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade clang 17 to 17.0.1"
+  },
+  {
+   "bugid": 1854022,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk-stage1 AssertionError at llvm/lib/Transforms/Vectorize/VectorCombine.cpp"
+  },
+  {
+   "bugid": 1854039,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.72.1"
+  },
+  {
+   "bugid": 1510973,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Java Warning: Redundant Local Variable"
+  },
+  {
+   "bugid": 1853966,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Change automated Desktop Beta build start time to M/W/F @ 13:00 UTC"
+  },
+  {
+   "bugid": 1854067,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Unsubscribe correctly from PromptListener opened event"
+  },
+  {
+   "bugid": 1853302,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "http auth popup creates a browsingContext.userPromptOpened event with type promptUserAndPass"
+  },
+  {
+   "bugid": 1853959,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | /webdriver/tests/bidi/input/perform_actions/invalid.py | expected OK"
+  },
+  {
+   "bugid": 1853927,
+   "status": "RESOLVED",
+   "component": "Toolkit:Background Tasks",
+   "summary": "Add a way to remove all subdirectories with removeDirectory"
+  },
+  {
+   "bugid": 1851714,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Perma firefox/modules/backgroundtasks differs. See the diff.html or diff.txt artifact"
+  },
+  {
+   "bugid": 1852745,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Go over passwordmgr mochitests and apply modern patterns"
+  },
+  {
+   "bugid": 1846361,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Consider to remove DB access in nsNavHistoryResultNode::GetTags()"
+  },
+  {
+   "bugid": 1853874,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "warning: $SRCDIR/browser/installer/package-manifest.in:455: Missing file(s): Firefox Nightly.app/Contents/MacOS/jogfile.json"
+  },
+  {
+   "bugid": 1838939,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Add typography design tokens"
+  },
+  {
+   "bugid": 1818007,
+   "status": "RESOLVED",
+   "component": "Toolkit:XUL Widgets",
+   "summary": "Create a single command to start and launch Storybook"
+  },
+  {
+   "bugid": 1853758,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Address pixel-value-off-by-one issue causing intermittent failures for test_ext_canvas_resistFingerprinting.html"
+  }
+ ],
+ "fixed": 96,
+ "total": 110,
+ "restricted": 3
+}
