@@ -1,0 +1,442 @@
+{
+ "date": "2023-10-05",
+ "buildid": "20231005092542",
+ "cset": "97d412cf7a31602d9485ebc549b56aed797523e9",
+ "bugs": [
+  {
+   "bugid": 1852333,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Detect hevc inband config changes"
+  },
+  {
+   "bugid": 1310170,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement 'lh' and 'rlh' units"
+  },
+  {
+   "bugid": 1856018,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make invalid forgiving selectors serialize."
+  },
+  {
+   "bugid": 1856669,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Crash in [@ style::properties::generated::longhands::font_weight::cascade_property]"
+  },
+  {
+   "bugid": 1857048,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add some diagnostics for wrong cascade_property crashes."
+  },
+  {
+   "bugid": 1814531,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Copy-paste of images on macOS converts image data to TIFF."
+  },
+  {
+   "bugid": 1817122,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use ToggleEvent interface for <details> element toggle event"
+  },
+  {
+   "bugid": 1829594,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "youtube: after entering/exiting fullscreen, keyboard shortcuts don't work anymore, or screen flashes (bug 1851869)"
+  },
+  {
+   "bugid": 1849763,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Changes from bug 1840822 cause side-effects in Thunderbird"
+  },
+  {
+   "bugid": 1844619,
+   "status": "VERIFIED",
+   "component": "Core:DOM: File",
+   "summary": "Assertion failure: usage == removedUsage, at /dom/fs/parent/datamodel/FileSystemDatabaseManagerVersion001.cpp:810"
+  },
+  {
+   "bugid": 1851017,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Update the Windows WebAuthn header from version 4 to version 7"
+  },
+  {
+   "bugid": 1856395,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Remove WebAuthnController"
+  },
+  {
+   "bugid": 1843832,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Firefox reports wrong element when Accesibility tools ask for what element is under the specific point and the element is an anchor"
+  },
+  {
+   "bugid": 1852190,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Windows accessibility API automated testing"
+  },
+  {
+   "bugid": 1855915,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Make IPCFuzzController less verbose when actors are destroyed pt2"
+  },
+  {
+   "bugid": 1856791,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add the TextureUpdate to the Firefox Graphics and Media presets"
+  },
+  {
+   "bugid": 1856516,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Enable uploading yuv video to NV12 ID3D11Texture2D at WebRenderImageHost on Windows until early beta"
+  },
+  {
+   "bugid": 1856520,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Set DXGI_SWAP_CHAIN_FLAG_DISPLAY_ONLY to Video swap chain of video overlay when video is DRM protected on Windows"
+  },
+  {
+   "bugid": 1856465,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "CoreTextFontList::LookupSystemFont should be static like gfxMacPlatformFontList::LookupSystemFont"
+  },
+  {
+   "bugid": 1856656,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "The subpixel aa of the text in some video players (eg. time on youtube) looks off"
+  },
+  {
+   "bugid": 1856359,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Utility process should honor MOZ_CRASHREPORTER_SHUTDOWN"
+  },
+  {
+   "bugid": 1856506,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Enable dom.ipc.processPriorityManager.enabled in StaticPrefs"
+  },
+  {
+   "bugid": 1838863,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "warning: definition of implicit copy assignment operator for 'RegExpFlags' is deprecated"
+  },
+  {
+   "bugid": 1839396,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve handling of GenericPrinter classes."
+  },
+  {
+   "bugid": 1854214,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create a jit-test to capture out-of-tree fuzzing API requirements"
+  },
+  {
+   "bugid": 1854929,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ JS::EnsureNonInlineArrayBufferOrView] or Hit MOZ_CRASH(Invalid object. Dead wrapper?) at vm/JSObject.h:649"
+  },
+  {
+   "bugid": 1856242,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "LifoAlloc.cpp:  using decl 'RoundUpPow2' is unused"
+  },
+  {
+   "bugid": 1856739,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !linearStr->isPermanentAtom() when creating 25+ chars substring from permanent atom"
+  },
+  {
+   "bugid": 1856213,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "remove some svg QueryInterface calls"
+  },
+  {
+   "bugid": 1856629,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Crash in [@ nsCOMPtr<T>::get | nsCOMPtr<T>::operator nsIContent* | nsIFrame::GetContent]"
+  },
+  {
+   "bugid": 1856746,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Update already_AddRefed documentation to mention a case where it makes sense as a parameter"
+  },
+  {
+   "bugid": 1156659,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Provide way to \"set network offline\" per BrowsingContext"
+  },
+  {
+   "bugid": 1052909,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Remove pref and code that enables websocket redirects"
+  },
+  {
+   "bugid": 1781007,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Checkerboarding on gmail \"forward\" page with maximized sub-window"
+  },
+  {
+   "bugid": 1854903,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CookieBanner JSWindowActors get constructed even if the feature is disabled"
+  },
+  {
+   "bugid": 1494263,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Rework the SVG filter code to obtain filter frames via SVGObserverUtils"
+  },
+  {
+   "bugid": 1856928,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enable ECH in Firefox by default"
+  },
+  {
+   "bugid": 1857042,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Set security.cert_pinning.enforcement_level to 1 in StaticPrefs"
+  },
+  {
+   "bugid": 1856089,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Assertion failure: mWorkerPromise, at /builds/worker/checkouts/gecko/dom/promise/Promise.cpp:890"
+  },
+  {
+   "bugid": 1855415,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Consider using fdlibm_pow() instead of fdlibm_powf() for better precision of  exponentialRampToValueAtTime() curves"
+  },
+  {
+   "bugid": 1856738,
+   "status": "RESOLVED",
+   "component": "Core:Web Audio",
+   "summary": "Reduce number of powf() calls for exponentialRampToValueAtTime()"
+  },
+  {
+   "bugid": 1855330,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update our vendored abseil-cpp import in libwebrtc"
+  },
+  {
+   "bugid": 1851817,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Make GTK nsClipboard use nsBaseClipboard"
+  },
+  {
+   "bugid": 1856582,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Handle better Gtk init failure"
+  },
+  {
+   "bugid": 1837530,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Introduce Win32 logging preset for about:logging"
+  },
+  {
+   "bugid": 1847572,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Unix file path `~foo` should expand to `/home/foo`"
+  },
+  {
+   "bugid": 1843328,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "event listener badge is not marked up as a button"
+  },
+  {
+   "bugid": 1843330,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "event listeners tooltip is not accessible with keyboard alone or with a screen reader"
+  },
+  {
+   "bugid": 1844053,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Selector highlighter icon can't be focused Tab and is missing role"
+  },
+  {
+   "bugid": 1832213,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Add button in UI to trigger 'pretty print'"
+  },
+  {
+   "bugid": 1856797,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "No info available right now card is shown on all products"
+  },
+  {
+   "bugid": 1850674,
+   "status": "ASSIGNED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Cache installed extension metadata on disk"
+  },
+  {
+   "bugid": 1854504,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Enable \"PDF Set To Default\" message"
+  },
+  {
+   "bugid": 1818237,
+   "status": "NEW",
+   "component": "Firefox:Migration",
+   "summary": "Make it possible to import from other browsers when Firefox is installed as a Snap package"
+  },
+  {
+   "bugid": 1856896,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Enable browser.privatebrowsing.resetPBM.enabled in Nightly"
+  },
+  {
+   "bugid": 1828308,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent browser/components/search/test/browser/telemetry/browser_search_telemetry_sources_ads.js | single tracking bug"
+  },
+  {
+   "bugid": 1852654,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add `non_ads_link` in `serp.engagement` documentation"
+  },
+  {
+   "bugid": 1855084,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Set up SearchService to be able to switch to a new configuration & schema"
+  },
+  {
+   "bugid": 1855790,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "tests for no review reliability available events"
+  },
+  {
+   "bugid": 1855512,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Investigate fxrecord outage"
+  },
+  {
+   "bugid": 1856598,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Intermittent python/mozbuild/mozbuild/test/repackaging/test_deb.py::test_generate_deb_desktop_entry_file_text TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1851988,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "python deprecation warning: invalid escape sequence"
+  },
+  {
+   "bugid": 1854162,
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use taskcluster-built python for webrender task"
+  },
+  {
+   "bugid": 1857012,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use taskcluster-built python for addon task"
+  },
+  {
+   "bugid": 1856510,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Clean up mobile.js"
+  },
+  {
+   "bugid": 1856512,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Lock toolkit.defaultChromeURI pref"
+  },
+  {
+   "bugid": 1857045,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Clean up geckoview-prefs.js"
+  },
+  {
+   "bugid": 1853733,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add more logging to the update binary"
+  },
+  {
+   "bugid": 1856241,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "crashreporter.cpp: Unused variable: currentSection"
+  },
+  {
+   "bugid": 1856297,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Remove the `CrashAddressLikelyWrong` annotation and its associated machinery"
+  },
+  {
+   "bugid": 1856709,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "'Password Saved' message does not show up after saving a securely generated password"
+  },
+  {
+   "bugid": 1857030,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_yaml_indices doesn't actually work"
+  }
+ ],
+ "fixed": 62,
+ "total": 72,
+ "restricted": 2
+}
