@@ -1,0 +1,484 @@
+{
+ "date": "2023-10-11",
+ "buildid": "20231011092203",
+ "cset": "bbe69c1ce114d5a824dc1903e6421b9b720cc88b",
+ "bugs": [
+  {
+   "bugid": 1836826,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update libvpx to new version 25a9a8e35aafe8391c5b79115bf944e27445317e"
+  },
+  {
+   "bugid": 1852333,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Detect hevc inband config changes"
+  },
+  {
+   "bugid": 1857567,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Split HEVC test to \"playback\" and \"support ability\" test (adding media capability check as well)"
+  },
+  {
+   "bugid": 1857628,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HEVC should always be `powerEfficient` for the media capabilities API"
+  },
+  {
+   "bugid": 1857670,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::H265::ParseStRefPicSet]"
+  },
+  {
+   "bugid": 1857936,
+   "status": "VERIFIED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(assertion failed: !forgiving || selector.is_ok()) at /servo/components/selectors/parser.rs:459"
+  },
+  {
+   "bugid": 1858104,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Use constexpr for initial subtable size + count."
+  },
+  {
+   "bugid": 1851041,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Drag and drop url to FF creates shortcut in temp"
+  },
+  {
+   "bugid": 1857506,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Wrong decimal separator in number inputs"
+  },
+  {
+   "bugid": 1840856,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Linefeed seems to be not working correctly in contenteditable"
+  },
+  {
+   "bugid": 1857303,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Copy event is not fired when pressing CTRL+C on contenteditable without selection"
+  },
+  {
+   "bugid": 1844723,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Don't copy `.button` and `.buttons` from `(mouse|pointer)(down|up)` to `(mouse|pointer)(over|enter|out|leave)`"
+  },
+  {
+   "bugid": 1857949,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Move AutoSuppressGCAnalysis from Blob to StreamBlobImpl::GetAllocationSize"
+  },
+  {
+   "bugid": 1812192,
+   "status": "REOPENED",
+   "component": "Core:DOM: Security",
+   "summary": "Identify URL bar input without a scheme and allow upgrading those to HTTPS with a fallback"
+  },
+  {
+   "bugid": 1857762,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Re-enable idlharness wpt"
+  },
+  {
+   "bugid": 1857948,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Assertion failure: !mPromise, at /builds/worker/workspace/obj-build/dist/include/mozilla/MozPromise.h:1358"
+  },
+  {
+   "bugid": 1858009,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Prefer `None` to `Some(false)` as the input to an unused CTAP2 create extensions"
+  },
+  {
+   "bugid": 1858205,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Presence prompt not shown after direct attestation prompt"
+  },
+  {
+   "bugid": 1854349,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "IPC Fuzzing: Make the trigger message optionally configurable"
+  },
+  {
+   "bugid": 1848717,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Assertion failure: image.primary_image.data, at /builds/worker/checkouts/gecko/image/decoders/nsAVIFDecoder.cpp:272"
+  },
+  {
+   "bugid": 1856035,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: Text",
+   "summary": "Variable fonts render in maximum optical size regardless of opsz axis value"
+  },
+  {
+   "bugid": 1857622,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Race condition when data-l10n attributes are updated when customize mode is in the foreground"
+  },
+  {
+   "bugid": 1857730,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Perma Assertion failure: end > start, at /builds/worker/checkouts/gecko/js/src/gc/Nursery.cpp:122 - when Gecko 120 merges to Beta on 2023-10-23"
+  },
+  {
+   "bugid": 1852323,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Firefox will fail css/css-masking/clip-path/clip-path-polygon-010.html after that test gets updated to match the spec"
+  },
+  {
+   "bugid": 1857618,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Ensure normal tasks get enough time to run"
+  },
+  {
+   "bugid": 1858187,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove unused MaskLayerImageCache files"
+  },
+  {
+   "bugid": 1857455,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "mUnderHiddenEmbedderElement propagation unreliable with iframe that remains at initial about:blank"
+  },
+  {
+   "bugid": 1857911,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "optimize nsHTMLScrollFrame::WantAsyncScroll to avoid getting the scrolled rect"
+  },
+  {
+   "bugid": 1856227,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Perma TEST-UNEXPECTED-TIMEOUT | layout/style/test/test_bug1112014.html | application timed out after 370 seconds with no output when Gecko 120 merges to Beta on 2023-10-23"
+  },
+  {
+   "bugid": 1858250,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "mDefaultMaxDirtyPageModifier should use relaxed ordering."
+  },
+  {
+   "bugid": 1852740,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add tests for \"fetchpriority\" attribute for HTTP Link headers"
+  },
+  {
+   "bugid": 1857217,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add PerfStats to understand the IPC delay introduced by socket process"
+  },
+  {
+   "bugid": 1858146,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Make more global properties available for sjs files"
+  },
+  {
+   "bugid": 1806690,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove the frozen `rv:109.0` IE11 UA workaround after Firefox reaches version 120 (desktop and Android)"
+  },
+  {
+   "bugid": 1850955,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add current GPC setting to webcompat reports"
+  },
+  {
+   "bugid": 1852541,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "meet.google.com - Cannot join meetings when Canvas Randomization is enabled"
+  },
+  {
+   "bugid": 1857986,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "Crash [@ WritingMode]"
+  },
+  {
+   "bugid": 1858067,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Skip saving of origin access time during shutdown"
+  },
+  {
+   "bugid": 1817263,
+   "status": "VERIFIED",
+   "component": "Core:WebRTC",
+   "summary": "Display capture under Wayland should use a unified picker for any type of capture"
+  },
+  {
+   "bugid": 1858177,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "libwebrtc fast-forward script filter_git_changes.py fails on renames when excluded from our vendoring"
+  },
+  {
+   "bugid": 1855950,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "TestNrSocket::allow_ingress does not always set return parameter but uses it always"
+  },
+  {
+   "bugid": 1854449,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Migrate DbusWifiScanner to DBus/GIO"
+  },
+  {
+   "bugid": 1571516,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Startup Crash in [@ nsWidgetWindowsModuleCtor] via mozilla::xpcom::CreateInstanceImpl. MOZ_CRASH Reason MOZ_RELEASE_ASSERT(((bool)(__builtin_expect"
+  },
+  {
+   "bugid": 1624819,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Maybe remove TaskCategory."
+  },
+  {
+   "bugid": 1857747,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "JSMEnvironmentProxy.cpp: duplicate include \"js/PropertyDescriptor.h\""
+  },
+  {
+   "bugid": 1857513,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Bookmark sidebar tooltips no longer appear on hover when sidebar is not focused"
+  },
+  {
+   "bugid": 1857977,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 120] Remove backward compatibility code"
+  },
+  {
+   "bugid": 1857234,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "The globbing ** pattern inside moz.yaml doesn't catch hidden file"
+  },
+  {
+   "bugid": 1852848,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement recent search history urlbar provider"
+  },
+  {
+   "bugid": 1856920,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS variables for quickaction button styling, except for the button icons"
+  },
+  {
+   "bugid": 1857971,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Title separator is missing from onboarding tab-to-search rows"
+  },
+  {
+   "bugid": 1856903,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "At Firefox startup, 1 to 2 second delay before bookmarks toolbar appears and omnibox active"
+  },
+  {
+   "bugid": 1841797,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Convert test_opentabs.html to a browser test that tests within about:firefoxview-next"
+  },
+  {
+   "bugid": 1851197,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add more context for telemetry when selecting options in the context menu when right clicking a tab in Firefox View"
+  },
+  {
+   "bugid": 1857118,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox View cause large main thread jank"
+  },
+  {
+   "bugid": 1856449,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Updating the UI when iframes are being loaded slows down speedometer3"
+  },
+  {
+   "bugid": 1857441,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Update Desktop Firefox (including Desktop UI, Password Manager and Settings UI) and Toolkit module ownership"
+  },
+  {
+   "bugid": 1857036,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Create asrouter targeting for primary monitor resolution size"
+  },
+  {
+   "bugid": 1858254,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add a new user pref to control messaging requests for user feedback"
+  },
+  {
+   "bugid": 1858038,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Pocket newtab decouple spoc system value from Discovery config"
+  },
+  {
+   "bugid": 1858063,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 2c87c4854a486d5cd0731b947dd622f8abe5e1b5 from 2023-10-09 12:34:58"
+  },
+  {
+   "bugid": 1854953,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Browser becomes unresponsive when take large full page screenshot"
+  },
+  {
+   "bugid": 1851622,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update search-telemetry-v2 schema with domainExtraction"
+  },
+  {
+   "bugid": 1852792,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Refactor search Service init function to be smaller and easier to read"
+  },
+  {
+   "bugid": 1855096,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add UTM tags to the web links in the core sidebar experience"
+  },
+  {
+   "bugid": 1857063,
+   "status": "VERIFIED",
+   "component": "Firefox:Shopping",
+   "summary": "Ads-related string changes"
+  },
+  {
+   "bugid": 1858139,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use light-dark instead of toolbar[brighttext] in a few more places"
+  },
+  {
+   "bugid": 1858056,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "AttributeError: 'RawConfigParser' object has no attribute 'readfp'. Did you mean: 'read'?"
+  },
+  {
+   "bugid": 1833653,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run mochitest-plain with wayland"
+  },
+  {
+   "bugid": 1851019,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable mochitest-plain-gpu with Wayland"
+  },
+  {
+   "bugid": 1857319,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable mochitest-remote with Wayland"
+  },
+  {
+   "bugid": 1858039,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Upgrade webrender docker images to Debian 12"
+  },
+  {
+   "bugid": 1858042,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain clang-trunk-stage1 1 out of 3 hunks FAILED -- saving rejects to file llvm/lib/DebugInfo/DWARF/DWARFUnit.cpp.rej"
+  },
+  {
+   "bugid": 1844138,
+   "status": "ASSIGNED",
+   "component": "GeckoView:Extensions",
+   "summary": "Add new GeckoRuntimeSettings for the extensions process prefs"
+  },
+  {
+   "bugid": 1858159,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "localized mac dmgs are not being published"
+  },
+  {
+   "bugid": 1838755,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Add glean telemetry to WDBA Background Task"
+  },
+  {
+   "bugid": 1852745,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Go over passwordmgr mochitests and apply modern patterns"
+  },
+  {
+   "bugid": 1855977,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "ExtensionProcessCrashObserver appInForeground flag is set to true when android recreate Fenix application instance in the background after a system restart"
+  },
+  {
+   "bugid": 1823714,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Test storage.session is preserved when we restart the extension process, including for non-event pages"
+  }
+ ],
+ "fixed": 59,
+ "total": 79,
+ "restricted": 4
+}
