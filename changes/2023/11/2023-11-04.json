@@ -1,0 +1,346 @@
+{
+ "date": "2023-11-04",
+ "buildid": "20231104091937",
+ "cset": "fa8ebe703963d027ce9185c21a4e7bdc98f8cd68",
+ "bugs": [
+  {
+   "bugid": 1862051,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add basic plumbing for downloading Widevine L1 plugins"
+  },
+  {
+   "bugid": 1862526,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] print debug info on release build as well"
+  },
+  {
+   "bugid": 1859048,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS round(up, N, N) resolves to 2N rather than to N (and similarly, round(down, -N, N) produces -2N rather than -N)"
+  },
+  {
+   "bugid": 1860205,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS round(up, A, B) and round(down, A, B) order of operations incorrect (A multiplied by -1 before rounding)"
+  },
+  {
+   "bugid": 1862900,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma /builds/worker/checkouts/gecko/layout/style/CSSStyleRule.cpp:302:1: error: control reaches end of non-void function [-Werror=return-type]"
+  },
+  {
+   "bugid": 1838286,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Crash in [@ mozilla::interceptor::FuncHook<T>::operator()] - In-process interception race condition"
+  },
+  {
+   "bugid": 1854112,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add showPicker method to <select> elements"
+  },
+  {
+   "bugid": 1862907,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-PASS | /performance-timeline/navigation-id-initial-load.tentative.html | Navigation Ids should exist and are all the same as the initial navigation. - expected TIMEOUT"
+  },
+  {
+   "bugid": 1849590,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "The \"Learn more about how Fakespot determines review quality\" text from the Shopping sidebar is not read out loud by NVDA"
+  },
+  {
+   "bugid": 1861751,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(Unexpected binding entry BindGroupEntry { binding: 23, buffer: None, offset: 0, size: None, sampler: None, texture_view: None }) at gfx/wgpu_bindings/src/client.rs:1029"
+  },
+  {
+   "bugid": 1862499,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(assertion failed: `(left == right)`   left: `2`,  right: `1`: RenderPipeline[32] is no longer alive) at /third_party/rust/wgpu-core/src/storage.rs:111"
+  },
+  {
+   "bugid": 1862689,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu crate to 49b7ec97c (2023-10-25)"
+  },
+  {
+   "bugid": 1489008,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Simplify per-ParseHandler NodeType definition"
+  },
+  {
+   "bugid": 1803855,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js::SubstringKernel should avoid making small ropes"
+  },
+  {
+   "bugid": 1855745,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262, September 2023"
+  },
+  {
+   "bugid": 1858854,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Throw an error if setTimeZone is given an invalid time zone"
+  },
+  {
+   "bugid": 1860802,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Product quick view overlay no longer appears on consumentenbond.nl (vue.js)"
+  },
+  {
+   "bugid": 1861926,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Improve relational comparison of single character strings"
+  },
+  {
+   "bugid": 1861983,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make MSubstr movable"
+  },
+  {
+   "bugid": 1668136,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "New wpt failures in /css/css-contain/content-visibility/ [content-visibility-075.html, content-visibility-076.html]"
+  },
+  {
+   "bugid": 1834320,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Alignment of preserved tabs should not be affected by justification"
+  },
+  {
+   "bugid": 1850710,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add mozilla::Result PackingStrategy for pointer or enum where nullptr or 0 is reserved for error, with empty error struct"
+  },
+  {
+   "bugid": 1850723,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add mozilla::Result<V1, E> constructor that receives mozilla::Result<V2, E> where V2 is subclass of V1"
+  },
+  {
+   "bugid": 1862906,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Perma Android [tier 2] TEST-UNEXPECTED-PASS | /largest-contentful-paint/broken-image-icon.html | The broken image icon should not emit an LCP entry. - expected TIMEOUT"
+  },
+  {
+   "bugid": 1861317,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring in Firefox 122: cookie.banners.r*"
+  },
+  {
+   "bugid": 1862411,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Simplify array access"
+  },
+  {
+   "bugid": 1862956,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "We should use `FlavorsTransferableCanExport` to get the available flavor list from cached transferable"
+  },
+  {
+   "bugid": 1837907,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Not handle system shutdown (SIGTERM)"
+  },
+  {
+   "bugid": 1859865,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "glib warning \"Failed to create DBus proxy for org.freedesktop.UPower\""
+  },
+  {
+   "bugid": 1863035,
+   "status": "REOPENED",
+   "component": "Core:Widget: Win32",
+   "summary": "Improve native registry querying APIs."
+  },
+  {
+   "bugid": 1861848,
+   "status": "REOPENED",
+   "component": "Core:XPCOM",
+   "summary": "Let foreground content processes run idle tasks and GC without consulting the parent process"
+  },
+  {
+   "bugid": 1862987,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Consider to have two caches for the main thread atoms"
+  },
+  {
+   "bugid": 1730119,
+   "status": "RESOLVED",
+   "component": "Core:XSLT",
+   "summary": "Make XSLT not use sort key objects for collation"
+  },
+  {
+   "bugid": 1860888,
+   "status": "NEW",
+   "component": "DevTools:Console",
+   "summary": "SharedArrayBuffer aren't logged from Worklet"
+  },
+  {
+   "bugid": 1861142,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Evaluating `:` throws"
+  },
+  {
+   "bugid": 1826504,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Don't include react-transition-group/Transition into vendors.js"
+  },
+  {
+   "bugid": 1862142,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix focus indicators / styling on XHR Breakpoints panel"
+  },
+  {
+   "bugid": 1862924,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Remove devtools.toolbox.force_chrome_prefs"
+  },
+  {
+   "bugid": 1855200,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Harmonize focus indicator across the toolbox"
+  },
+  {
+   "bugid": 1862704,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use moz-bool-pref for richSuggestions CSS"
+  },
+  {
+   "bugid": 1863026,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Improve logging when a sent-tab is received."
+  },
+  {
+   "bugid": 1818418,
+   "status": "ASSIGNED",
+   "component": "Firefox:Installer",
+   "summary": "[MSIX] Allow to use Windows UserChoice default mechanisms for MSIX packages"
+  },
+  {
+   "bugid": 1861302,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove or update probes expiring in Firefox 122: SEARCH_SERVICE_INIT_MS"
+  },
+  {
+   "bugid": 1861676,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Extend and update SERP telemetry configuration for mobile"
+  },
+  {
+   "bugid": 1862287,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Drop use of locales.matches and locales.startsWith in search engine configuration tests"
+  },
+  {
+   "bugid": 1861299,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove or update probes expiring in Firefox 122: intl.ui.browserLanguage.manage#action"
+  },
+  {
+   "bugid": 1858470,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Record ads exposure counter for opted-in users"
+  },
+  {
+   "bugid": 1794449,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Intermittent browser/base/content/test/fullscreen/browser_bug1620341.js | single tracking bug"
+  },
+  {
+   "bugid": 1860554,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Create new \"Translations\" module"
+  },
+  {
+   "bugid": 1863030,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Update cargo-vet to November 3rd 2023 (0.9.0)"
+  },
+  {
+   "bugid": 1510660,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Lint Warning: Use apply() on SharedPreferences"
+  },
+  {
+   "bugid": 1855514,
+   "status": "RESOLVED",
+   "component": "GeckoView:Sandboxing",
+   "summary": "Disable currently failing tests and make M-xorigin tier 2"
+  },
+  {
+   "bugid": 1860830,
+   "status": "ASSIGNED",
+   "component": "Infrastructure & Operations:RelOps: General",
+   "summary": "Please rebuild hostutils"
+  },
+  {
+   "bugid": 1860468,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "Perma tier2 macosx1100-64-aarch64-qr TEST-UNEXPECTED-TIMEOUT | automation.py | application timed out after 370 seconds with no output"
+  },
+  {
+   "bugid": 1862965,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Clean up additional references to Geckoview Streaming Telemetry"
+  },
+  {
+   "bugid": 1860304,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Background page fails to load if background.service_worker and background.scripts are both present"
+  }
+ ],
+ "fixed": 46,
+ "total": 56,
+ "restricted": 2
+}
