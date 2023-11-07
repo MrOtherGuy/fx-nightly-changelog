@@ -1,0 +1,520 @@
+{
+ "date": "2023-11-07",
+ "buildid": "20231107094442",
+ "cset": "6e2a2b5bb5913d493da900bb833b117d23d8dae7",
+ "bugs": [
+  {
+   "bugid": 1861755,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Run media-gpu on NUC (windows11-64-2009-hw-ref) machines on CI"
+  },
+  {
+   "bugid": 1862763,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update AudioIPC to c6aed8b9."
+  },
+  {
+   "bugid": 1472876,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "empty url() in CSS should be treated as an invalid URL"
+  },
+  {
+   "bugid": 1789214,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "prefers-color-scheme is not updated according to the selected high contrast theme"
+  },
+  {
+   "bugid": 1861726,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Wrong item icons on u.gg (zoom should affect background-image)"
+  },
+  {
+   "bugid": 1831236,
+   "status": "ASSIGNED",
+   "component": "Core:DLL Services",
+   "summary": "Intermittent Main app process exited normally | application crashed [@ DbgBreakPoint]"
+  },
+  {
+   "bugid": 1859643,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "nsSoundProxy and related ContentParent::Recv methods are untested"
+  },
+  {
+   "bugid": 1860729,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable lazy loading iframes by default"
+  },
+  {
+   "bugid": 1863277,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make Web Locks tests deal with promise argument conversion as defined in the WebIDL spec"
+  },
+  {
+   "bugid": 1861910,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Some WPT failures of formatblock.html?4001-last are caused by wrong expectations"
+  },
+  {
+   "bugid": 1855734,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "The HTTPS Only error page repeats forever in view-source:http://IP-addresses when privacy.firstparty.isolate is enabled"
+  },
+  {
+   "bugid": 1858565,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS-first and HTTPS-only mishandle URLs that trigger the \"superfluous auth\" warning"
+  },
+  {
+   "bugid": 1859576,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "When upgrading schemeless URLs from the address bar, Firefox does not log to the web developer tools"
+  },
+  {
+   "bugid": 1863286,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Schemeless HTTPS-First overrides HTTPS-Only in identity pane"
+  },
+  {
+   "bugid": 1849230,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent application crashed [@ mozilla::detail::InvalidArrayIndex_CRASH] | single tracking bug"
+  },
+  {
+   "bugid": 1861902,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | nsTArray_Impl<T>::ElementAt | nsTArray_Impl<T>::operator[] | mozilla::a11y::CachedTableCellAccessible::ColHeaderCells]"
+  },
+  {
+   "bugid": 1863039,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::a11y::nsAccUtils::GetScreenCoordsForWindow]"
+  },
+  {
+   "bugid": 1862241,
+   "status": "ASSIGNED",
+   "component": "Core:General",
+   "summary": "Make content-visibility animation interpolating"
+  },
+  {
+   "bugid": 1863241,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Replace WindowsHandle by HANDLE in Windows only code around layers"
+  },
+  {
+   "bugid": 1863144,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Get WebGPU CTS generally green again in CI"
+  },
+  {
+   "bugid": 1863295,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Simplify audit chains for wgpu crates"
+  },
+  {
+   "bugid": 1858692,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "DOMLocalization::TranslateElements spends most of its time creating a JS Global"
+  },
+  {
+   "bugid": 1831412,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix decorator application order"
+  },
+  {
+   "bugid": 1840621,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add ClassField::accessorGetterNode and accessorSetterNode to dumpImpl"
+  },
+  {
+   "bugid": 1842810,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: IsInteger(days), at js/src/builtin/temporal/Duration.cpp:368"
+  },
+  {
+   "bugid": 1863132,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (November 4, 2023)"
+  },
+  {
+   "bugid": 1863197,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma non262/Date/15.9.5.7.js | (args: \"\") | d = new Date(1699177674394); d == new Date(d.toDateString() + \" \" + d.toLocaleTimeString()) = Sun Nov 05 2023 01:47:54 GMT-0700 (Pacific Daylight Time) expected: Sun Nov 05 2023 01:47:54 GMT-0800"
+  },
+  {
+   "bugid": 1856338,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Update Temporal implementation to draft Sept 26, 2023"
+  },
+  {
+   "bugid": 1863125,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Accept milliseconds for more Date formats"
+  },
+  {
+   "bugid": 1855959,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Loongson64: change `MacroAssembler::storeUncanonicalized{Float32,Double} to return a `FaultingCodeOffset`."
+  },
+  {
+   "bugid": 1861343,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[mips64] Implement multi-memory for MIPS64"
+  },
+  {
+   "bugid": 1854857,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "sidebar / allow web pages to choose their own font"
+  },
+  {
+   "bugid": 1863191,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "On Japanese macOS, font-family:monospace is ignored if Enhanced Tracking Protection is strict (because Osaka-Mono is unavailable)"
+  },
+  {
+   "bugid": 1863162,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Update function2 to new version a354bd093d2b6e50c9325dbce84d20b4e77aabc6 from 2023-11-04 12:44:54"
+  },
+  {
+   "bugid": 1829127,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Add telemetry needed to evaluate PHC"
+  },
+  {
+   "bugid": 1853444,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Add support for getting and setting sendOrder for WebTransport streams"
+  },
+  {
+   "bugid": 1862514,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "NetlinkService.cpp: extra ';' after member function definition"
+  },
+  {
+   "bugid": 1852924,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "H3 upload Speed still slow. Three times slower than other browsers."
+  },
+  {
+   "bugid": 1863111,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove UA string workaround for Android versions < 4.4"
+  },
+  {
+   "bugid": 1856196,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Smooth scrolling option resets after each update"
+  },
+  {
+   "bugid": 1862939,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Add telemetry for LCP"
+  },
+  {
+   "bugid": 1851816,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "FPP + RFP.pbMode apply RFP globally"
+  },
+  {
+   "bugid": 1793966,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable low privileged application container on MF Media Engine utility process"
+  },
+  {
+   "bugid": 1797769,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Add LPAC access to the application directory for MSIX installs"
+  },
+  {
+   "bugid": 1777094,
+   "status": "NEW",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent dom/canvas/test/test_capture_throttled.html | single tracking bug"
+  },
+  {
+   "bugid": 1855861,
+   "status": "REOPENED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "HighFreq leakcheck large nsGlobalWindowInner | single tracking bug"
+  },
+  {
+   "bugid": 1862740,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "network/sctp: Follow-up style guide fixes"
+  },
+  {
+   "bugid": 1739622,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "The PIP window will only resize to smaller size in Linux / Wayland"
+  },
+  {
+   "bugid": 1762816,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Slow startup (~30 seconds)"
+  },
+  {
+   "bugid": 1857032,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Perma dom/tests/mochitest/bugs/test_sizetocontent_clamp.html failure on new Ubuntu 22.04 Wayland pool"
+  },
+  {
+   "bugid": 1859865,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "glib warning \"Failed to create DBus proxy for org.freedesktop.UPower\""
+  },
+  {
+   "bugid": 1861618,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "shared-libraries-linux.cc: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": 1858076,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Provide mapped variables info in the console panel when mapping variables is disabled."
+  },
+  {
+   "bugid": 1860888,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "SharedArrayBuffer aren't logged from Worklet"
+  },
+  {
+   "bugid": 1856270,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Refactor the workflow for showing scopes for original sources"
+  },
+  {
+   "bugid": 1858032,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Provide mapped variables info in the expressions panel when mapping variables is disabled."
+  },
+  {
+   "bugid": 1858652,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Hide tooltip and inline previews for original sources when map scopes is disabled"
+  },
+  {
+   "bugid": 1861943,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Introduce a server side method to set all data entry values in one call"
+  },
+  {
+   "bugid": 1843636,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Add a section explaining what should happen when running ./mach build and ./mach run"
+  },
+  {
+   "bugid": 1802289,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "License linter should check .idl and .webidl files"
+  },
+  {
+   "bugid": 1860157,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update codespell to 2.2.6"
+  },
+  {
+   "bugid": 1853469,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "GeckoView Translate Need to Mock Remote Settings for Automated Testing"
+  },
+  {
+   "bugid": 1862930,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Nest --urlbarView-icon-margin-* adjustments for rich suggestions in the main .urlbarView-row rule"
+  },
+  {
+   "bugid": 1862798,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Extract the copyLink function to the firefoxview/helpers.mjs module"
+  },
+  {
+   "bugid": 1863201,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 50f52b43a5daf0cb17e275b809ae1845825ea652 from 2023-11-04 16:40:03"
+  },
+  {
+   "bugid": 1863023,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Marionette tests for the search component are not being run"
+  },
+  {
+   "bugid": 1859055,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Make toolkit API sendAttributionEvent static"
+  },
+  {
+   "bugid": 1861516,
+   "status": "NEW",
+   "component": "Firefox:Translation",
+   "summary": "Remove fastText from Translations Language Identification"
+  },
+  {
+   "bugid": 1861790,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove Python2 support from processhandler.py"
+  },
+  {
+   "bugid": 1857279,
+   "status": "NEW",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Aliased commands always load the 'common' virtualenv, instead of the virtualenv for the aliased command"
+  },
+  {
+   "bugid": 1510966,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Code Style Warning: Unneccessary code"
+  },
+  {
+   "bugid": 1719925,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GeckoSystemStateListener.shutdown() does not complete properly"
+  },
+  {
+   "bugid": 1859434,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Generated .class files are not ignored"
+  },
+  {
+   "bugid": 1860830,
+   "status": "RESOLVED",
+   "component": "Infrastructure & Operations:RelOps: General",
+   "summary": "Please rebuild hostutils"
+  },
+  {
+   "bugid": 1862649,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Remove usage of \"scrollIntoView\" argument from \"browsingContext.captureScreenshot\" command"
+  },
+  {
+   "bugid": 1861295,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove or update probes expiring in Firefox 122: addonsManager.*"
+  },
+  {
+   "bugid": 1861296,
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "Remove or update probes expiring in Firefox 122: blocklist.* before Gecko version gets increased to 122 on 2023-11-20"
+  },
+  {
+   "bugid": 1862410,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Removing unused LoginReputation service and updating link to Chromium's safe browsing protobuf"
+  },
+  {
+   "bugid": 1858435,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Rename toolkit/components/pictureinpicture/content/pictureInPicturePanel.xhtml to include `.inc.` to make it clear it's included elsewhere and not a standalone document"
+  },
+  {
+   "bugid": 1855386,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Evaluate removing nsNavBookmarks::ResultNodeForContainer()"
+  },
+  {
+   "bugid": 1862694,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "places.database.replaceDatabaseOnStartup is not reset if the database is cloned on startup"
+  },
+  {
+   "bugid": 1845541,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Write a README documenting moz-message-bar"
+  },
+  {
+   "bugid": 1850426,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Update the component status of message-bar and moz-message-bar"
+  },
+  {
+   "bugid": 1861303,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 122: WEBEXT_* before Gecko version gets increased to 122 on 2023-11-20"
+  },
+  {
+   "bugid": 1861297,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Remove or update probes expiring in Firefox 122: extensions.data.storageLocalError#storageLocalError"
+  }
+ ],
+ "fixed": 70,
+ "total": 85,
+ "restricted": 2
+}
