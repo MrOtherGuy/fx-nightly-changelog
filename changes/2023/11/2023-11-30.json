@@ -1,0 +1,388 @@
+{
+ "date": "2023-11-30",
+ "buildid": "20231130093957",
+ "cset": "556c8b22cbbbcc165c42b2c52ebdfd01be3cee6b",
+ "bugs": [
+  {
+   "bugid": 1867036,
+   "status": "RESOLVED",
+   "component": "Conduit:Lando",
+   "summary": "Unable to send via push-to-lando with empty commits"
+  },
+  {
+   "bugid": 1863846,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "remove MediaInfo.h include from ImageContainer.h"
+  },
+  {
+   "bugid": 1865996,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Audio played through a non-default output (any use of setSinkId) is ducked on Mac"
+  },
+  {
+   "bugid": 1866738,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Devtools panels produce white flash when first opened in dark mode"
+  },
+  {
+   "bugid": 1867266,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma dom/tests/mochitest/general/test_interfaces<something> | If this is failing: DANGER, are you sure you want to expose the new interface LargestContentfulPaint to all webpages as a property on 'window'?  when Gecko 122 merges to Beta on 2023-12-18"
+  },
+  {
+   "bugid": 1830909,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Implement <hr>-in-<select>"
+  },
+  {
+   "bugid": 1867215,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma [tier 2] /trusted-types/trusted-types-event-handlers.html | Event handler div.onbeforetoggle should be blocked. - assert_throws_js: function \"_ => element.setAttribute(name, \"2+2\")\" did not throw"
+  },
+  {
+   "bugid": 1864972,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "FIDO u2f broken with update between 118.02 and 119.01 (64bit DA)"
+  },
+  {
+   "bugid": 1865625,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Unable to add a passkey on google account with Firefox"
+  },
+  {
+   "bugid": 1867353,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator-rs to v0.4.0-alpha.24"
+  },
+  {
+   "bugid": 1862802,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Remove virtual cursor change events"
+  },
+  {
+   "bugid": 1864988,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::gfx::CreateDataSourceSurfaceByCloning]"
+  },
+  {
+   "bugid": 1866021,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "[WebGPU] With dx12-no readback enabled,  driver crash and freeze on a wegpu demo if you tear the tab repeatedly"
+  },
+  {
+   "bugid": 1866540,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ js::HasOffThreadIonCompile(JS::Zone*)]"
+  },
+  {
+   "bugid": 1866817,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: linear.ownsMallocedChars(), at /js/src/vm/StringType.cpp:109 with shell-only byteSize function"
+  },
+  {
+   "bugid": 1866502,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash [@ WarpScriptOracle::maybeInlineCall] or Hit MOZ_CRASH(Unsupported op) at jit/TrialInlining.cpp:459"
+  },
+  {
+   "bugid": 1866974,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use more batching for IonFreeTask"
+  },
+  {
+   "bugid": 1853251,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add debug printing routines for type system"
+  },
+  {
+   "bugid": 1865267,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Intermittent /css/css-contain/content-visibility/content-visibility-vs-scrollIntoView-003.html on Linux"
+  },
+  {
+   "bugid": 1867042,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "(regression) white flickering on every page reload / navigation"
+  },
+  {
+   "bugid": 1867090,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Don't deliver resize loop error notification for internal Last Remembered Size observer."
+  },
+  {
+   "bugid": 1867252,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Remove obsolete nsTableCellFrame::PaintBackground"
+  },
+  {
+   "bugid": 1866135,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Upgrade rust-url to 2.5.0"
+  },
+  {
+   "bugid": 1867229,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused fields from nsIDirIndex and nsIDirIndexParser"
+  },
+  {
+   "bugid": 1866245,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Record telemetry for how many DoH requests we make in private browsing"
+  },
+  {
+   "bugid": 1867006,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Disable HTTP2 websockets until we can resolve proxy issues."
+  },
+  {
+   "bugid": 1864396,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Crash in [@ mozilla::SVGContentUtils::GetStrokeOptions::$::operator()] with infinite recursion leading to stack overflow, when using 'transform-box: border-box'"
+  },
+  {
+   "bugid": 1866911,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Checkmark is missing on Fidelity NetBenefits"
+  },
+  {
+   "bugid": 1867225,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVGUseElement::mOriginal usage is suspicious / probably wrong."
+  },
+  {
+   "bugid": 1850599,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "[meta] November 2023 Batch of EV Changes"
+  },
+  {
+   "bugid": 1837907,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Not handle system shutdown (SIGTERM)"
+  },
+  {
+   "bugid": 1866669,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Menus have a black box painted behind them"
+  },
+  {
+   "bugid": 1867043,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KWin/Wayland] Artifacts when using small custom cursor"
+  },
+  {
+   "bugid": 1862511,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "TimeStamp.cpp: extra ';' after member function definition"
+  },
+  {
+   "bugid": 1866176,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "mach linters ignore exclude directories in Windows"
+  },
+  {
+   "bugid": 1866112,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Expose progress field from analysis_status api in GV"
+  },
+  {
+   "bugid": 1864941,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Investigate if a browser_glean_telemetry_abandonment_tips.js test in the Search and Address Bar needs to be updated to pass a11y_checks"
+  },
+  {
+   "bugid": 1865273,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rich suggestions are always bottom"
+  },
+  {
+   "bugid": 1839304,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Investigate consecutive calls to setTree breaking the nodes parenting"
+  },
+  {
+   "bugid": 1854599,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Fix Cards sub-headings and spacing to spec"
+  },
+  {
+   "bugid": 1860833,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Avoid duplicate call to getTabClients"
+  },
+  {
+   "bugid": 1866142,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "The \"Send more info\" link from the new webcompat reporter tool is not accessible by keyboard navigation"
+  },
+  {
+   "bugid": 1864507,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "about:welcome radio buttons focus is cut off"
+  },
+  {
+   "bugid": 1867336,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update Shopping Sidebar default width to use pixel value"
+  },
+  {
+   "bugid": 1867346,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Tweak strings for ASRouter spotlight message to encourage users without FxA accounts to create one"
+  },
+  {
+   "bugid": 1866773,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "When editing a freetext the focus is stolen and the edition is stopped"
+  },
+  {
+   "bugid": 1867213,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 59cf2ee5a9c38a730e78cf84ba99656f1b467dab from 2023-11-28 15:26:32"
+  },
+  {
+   "bugid": 1860214,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "CA delete dialog buttons are invisible when selecting more than x certificates at once"
+  },
+  {
+   "bugid": 1852045,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "[Search Preferences] Hide the \"Show search suggestions in address bar results\" checkbox when the search bar isn't in the toolbar"
+  },
+  {
+   "bugid": 1859505,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Make text referring to DoH more consistent across the UI"
+  },
+  {
+   "bugid": 1867340,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Enable the new WindowsJumpList backend by default held to Nightly"
+  },
+  {
+   "bugid": 1867217,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Updating an old git-cinnabar from mach bootstrap doesn't work when it was placed there manually"
+  },
+  {
+   "bugid": 1864652,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Add support for Global Privacy Control Preferences in GeckoView Runtime"
+  },
+  {
+   "bugid": 1795327,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent /web-platform/tests/webdriver/tests/perform_actions/pointer_tripleclick.py | test_tripleclick_at_coordinates - AssertionError: assert '' == ('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e..."
+  },
+  {
+   "bugid": 1864614,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[remote] DoubleClickTracker doesn't track multiple click sequences"
+  },
+  {
+   "bugid": 1866098,
+   "status": "ASSIGNED",
+   "component": "Thunderbird:General",
+   "summary": "100% CPU and hang when launching on Mac (startup) with primary password enabled"
+  },
+  {
+   "bugid": 1862505,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "mar_create.c: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": 1859968,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add accessibility support for address doorhanger"
+  },
+  {
+   "bugid": 1866641,
+   "status": "NEW",
+   "component": "Toolkit:General",
+   "summary": "Finish renaming production files to automatically apply the ESLint worker environment"
+  },
+  {
+   "bugid": 1866720,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Convert more imports to use ES modules directly"
+  },
+  {
+   "bugid": 1862660,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Contextual Services Reinstrumentation: sometimes quick_suggest.request_id is `\"\"` when it should probably, properly be `NULL`"
+  },
+  {
+   "bugid": 1846846,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Convert shopping-card to a reusable moz-card element in toolkit/widgets"
+  },
+  {
+   "bugid": 1867034,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/components/extensions/test/browser/browser_ext_webNavigation_urlbar_transitions.js | Got the expected url - Expected: http://example.com/?q=typed, Actual: https:/ when Gecko 122 merges to Beta on 2023-12-18"
+  }
+ ],
+ "fixed": 53,
+ "total": 63,
+ "restricted": 2
+}
