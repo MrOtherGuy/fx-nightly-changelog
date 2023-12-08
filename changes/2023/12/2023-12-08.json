@@ -1,0 +1,442 @@
+{
+ "date": "2023-12-08",
+ "buildid": "20231208094241",
+ "cset": "3152110c63b5c99048b0651867ecf7723aa5ddf8",
+ "bugs": [
+  {
+   "bugid": 1865376,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Call the error callback synchronously from the configure error task, and block the message queue processing at the right time"
+  },
+  {
+   "bugid": 1867542,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Overhaul PlatformEncoderModules to prepare for Web Codecs"
+  },
+  {
+   "bugid": 1868374,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Ship transform-box: content-box | stroke-box"
+  },
+  {
+   "bugid": 1598151,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "[motion-1] Ship offset-path:ray()"
+  },
+  {
+   "bugid": 1598152,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "[motion-1] Ship offset-position"
+  },
+  {
+   "bugid": 1598159,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "[motion-1] Ship the rest of offset-path"
+  },
+  {
+   "bugid": 1576075,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Support buffer sharing for Latin1 strings / ByteString"
+  },
+  {
+   "bugid": 1868570,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Throw a WebIDLError for various conditions that can actually happen instead of asserting"
+  },
+  {
+   "bugid": 1868654,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Add debugging code to detect why TypedArrayObject::ensureHasBuffer fails for diagnosing crash bug 1856672"
+  },
+  {
+   "bugid": 1712140,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement Declarative Shadow DOM"
+  },
+  {
+   "bugid": 1867945,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use WeakPtr<Document> instead of nsWeakPtr."
+  },
+  {
+   "bugid": 1868740,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Giving an element `popovertarget=\"\"` with popover unflagged can lead to crashes."
+  },
+  {
+   "bugid": 1868744,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "If JS engine triggered a GC slice, don't trigger another too soon from CCGCScheduler"
+  },
+  {
+   "bugid": 1868746,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Drop styleset from Document sooner"
+  },
+  {
+   "bugid": 1868677,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Re-enable HTML fragment sanitization on about:newtab and about:home"
+  },
+  {
+   "bugid": 1868787,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Perma backlog(W-b) OSX Shippable [tier 2] TEST-UNEXPECTED-PASS | /service-workers/service-worker/fetch-event-respond-with-readable-stream.https.html | Abort in the page should be observable in the service worker with nonempty stream - expected NOTRUN"
+  },
+  {
+   "bugid": 1868637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Enable passkey support on macOS in early beta and earlier"
+  },
+  {
+   "bugid": 1865953,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "FreeBSD arm64 missing closing ) at mozglue/baseprofiler/core/platform-linux-android.cpp#l125"
+  },
+  {
+   "bugid": 1867863,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "__chkstk wrapper incompatible with temporal profiling"
+  },
+  {
+   "bugid": 1863914,
+   "status": "REOPENED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Use multiple shmems for remote canvas recording and translation."
+  },
+  {
+   "bugid": 1868729,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Use root API for sending transaction related to ImageBridge in WebRenderBridgeParent::ProcessWebRenderParentCommands()"
+  },
+  {
+   "bugid": 1331508,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Local data overlay on top of CLDR/ICU"
+  },
+  {
+   "bugid": 1865865,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Add fast-path when computing segment's length is 1"
+  },
+  {
+   "bugid": 1576076,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Latin1 strings: Add a Latin1 flavor of JSExternalString"
+  },
+  {
+   "bugid": 1621144,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update comment on NukeCrossCompartmentWrappers"
+  },
+  {
+   "bugid": 1868346,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[loong64][mips64] Generate ABIFunctionType code using build script"
+  },
+  {
+   "bugid": 1868601,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable the entry trampolines and IC frame pointers only when IONPERF is set"
+  },
+  {
+   "bugid": 1861707,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Wasm GC: importing globals with reference types"
+  },
+  {
+   "bugid": 1609403,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "grid items with align-self:baseline should synthesize a baseline instead of falling back to start/end alignment"
+  },
+  {
+   "bugid": 1863574,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Disable font fingerprinting protection if a user has unchecked \"Allow pages to choose their own fonts\""
+  },
+  {
+   "bugid": 1865766,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Freeze the Android OS version in Firefox Android’s User-Agent string"
+  },
+  {
+   "bugid": 1868070,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Intermittently the socket thread uses 100% of a single logical core and the browser drops all connections"
+  },
+  {
+   "bugid": 1784757,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/browser_test_group_fission.js | single tracking bug"
+  },
+  {
+   "bugid": 1868710,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Guard the mixed page code with the correct pref"
+  },
+  {
+   "bugid": 1864931,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Copy without Site Tracking option appears within about:preferences"
+  },
+  {
+   "bugid": 658189,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SMIL transform animation is frozen at intermediate state when switching to another tab & back, at Marek's \"Cuba\" demo"
+  },
+  {
+   "bugid": 1868479,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Since FF 120, backdrop-filter no longer works with svg filters"
+  },
+  {
+   "bugid": 1857428,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Refactor about:webrtc sections making them more dynamic"
+  },
+  {
+   "bugid": 1868721,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "RtpLogging produces inconsistent log format"
+  },
+  {
+   "bugid": 1868725,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Don't strike through selectors for rules in pseudo element section"
+  },
+  {
+   "bugid": 1868400,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Open the profiler tab just after the currently selected tab"
+  },
+  {
+   "bugid": 1519636,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Reformat recent changes to the Google coding style"
+  },
+  {
+   "bugid": 1677775,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Run black on .mozbuild files"
+  },
+  {
+   "bugid": 1868301,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Fix clippy warnings in xpcom_macros/src/lib.rs"
+  },
+  {
+   "bugid": 1868630,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Removing custom lint rules for Form Autofill, satchel & Login Manager"
+  },
+  {
+   "bugid": 1866906,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Consider adding support for other file types when installing an addon from a file"
+  },
+  {
+   "bugid": 1863110,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "If trimHttps is enabled, domain highlighting is not applied when loading suggested bookmark"
+  },
+  {
+   "bugid": 1868131,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "The Opt-In section's content is cut off when the browser is resized to its minimum"
+  },
+  {
+   "bugid": 1868137,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Add support for settings alerts.* preferences via policy"
+  },
+  {
+   "bugid": 1868443,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Searching open tabs in Firefox View takes 6 seconds"
+  },
+  {
+   "bugid": 1868707,
+   "status": "REOPENED",
+   "component": "Firefox:Firefox View",
+   "summary": "Clear-icon in the search field in Firefox View is not accessible"
+  },
+  {
+   "bugid": 1866291,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "There should be some information shown when the new webcompat reporter's Send button is deactivated"
+  },
+  {
+   "bugid": 1867690,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "The new webcompat reporter tool dialog is not being read out by NVDA, when it is opened"
+  },
+  {
+   "bugid": 1831144,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Fox Doodle set to default experiment treatment in MC"
+  },
+  {
+   "bugid": 1867512,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable highlighting in a PDF in Nightly and early Beta"
+  },
+  {
+   "bugid": 1868845,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rename `channel` to `channels` in search-config-v2 and search-engine-config-v2-schema"
+  },
+  {
+   "bugid": 1854434,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "PrivacyLevel should cache its pref"
+  },
+  {
+   "bugid": 1844869,
+   "status": "NEW",
+   "component": "Firefox:about:logins",
+   "summary": "Clean up and make each login-command-button self-contained for about:logins."
+  },
+  {
+   "bugid": 1861462,
+   "status": "NEW",
+   "component": "Firefox:about:logins",
+   "summary": "Update tests for about logins based on the new command-button component."
+  },
+  {
+   "bugid": 1864318,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Speedup elfhack relocation process"
+  },
+  {
+   "bugid": 1867457,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make TARGET_CPU in the build system mean the same as target.cpu in configure"
+  },
+  {
+   "bugid": 1868547,
+   "status": "VERIFIED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma Gecko Decision Task failure Exception: In task 'release-flatpak-push-firefox' in beta and release simulations"
+  },
+  {
+   "bugid": 1868656,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain rust-dev RuntimeError: failed to run: /builds/worker/fetches/rust/build/bootstrap/debug/bootstrap install -v --host x86_64-unknown-linux-gnu --target x86_64-unknown-linux-gnu"
+  },
+  {
+   "bugid": 1865359,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Selenium atom \"Get Visible Text\" returns empty text for elements within a closed Shadow DOM"
+  },
+  {
+   "bugid": 1868576,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Fix bidi network wdspec tests test_response_headers"
+  },
+  {
+   "bugid": 1852133,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "Fix `--backgroundtask backgroundupdate` restart to apply update after staging"
+  },
+  {
+   "bugid": 1863801,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Infer form submission after DOMDocFetchSuccess event and form removal in FormAutofill"
+  },
+  {
+   "bugid": 1865876,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add test for credit card capture for form removal heuristic"
+  },
+  {
+   "bugid": 1867548,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add a telemetry for 4-cc-number case"
+  },
+  {
+   "bugid": 1866984,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "List presentation height of HTMLSelectElement is wrong calculated in case options have differnt font-sizes"
+  },
+  {
+   "bugid": 1868412,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Introduce red tokens for form input error state (descriptive error text and focus outline)"
+  },
+  {
+   "bugid": 1868114,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Drop schema support for chrome_settings_overrides.searchProvider.params in Manifest v3"
+  }
+ ],
+ "fixed": 63,
+ "total": 72,
+ "restricted": 2
+}
