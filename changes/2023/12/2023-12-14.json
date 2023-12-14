@@ -1,0 +1,712 @@
+{
+ "date": "2023-12-14",
+ "buildid": "20231214095424",
+ "cset": "3af75f3310fc53f70cba7e6c5a7e7bec2d3381dc",
+ "bugs": [
+  {
+   "bugid": 1869381,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Enable FFmpegVideoEncoder on Nightly"
+  },
+  {
+   "bugid": 1869593,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Apply realtime settings to FFmpegVideoEncoder"
+  },
+  {
+   "bugid": 1869609,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add threadsafety assertions to GMP"
+  },
+  {
+   "bugid": 1869675,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | nsTArray_Impl<T>::Sort<T> | mozilla::media::IntervalSet<T>::Normalize]"
+  },
+  {
+   "bugid": 1869719,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add threadsafety annotations for ChannelMediaResource"
+  },
+  {
+   "bugid": 1869332,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Teach ffvpx to encode AV1 using libaom"
+  },
+  {
+   "bugid": 1869526,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "In cubeb-coreaudio-rs only set up an VoiceProcessingIO AudioUnit when VOICE is preferred for the input stream"
+  },
+  {
+   "bugid": 1869003,
+   "status": "VERIFIED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma /css/selectors/invalidation/part-pseudo.html | Testing http://web-platform.test:8000/css/selectors/invalidation/part-pseudo.html == http://web-platform.test:8000/css/selectors/invalidation when Gecko 122 merges to Beta on 2023-12-18"
+  },
+  {
+   "bugid": 1869815,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "DebuggerObject wrapper \"class\" property for cross-origin iframe contentWindow is \"Object\", should be \"Window\""
+  },
+  {
+   "bugid": 1764895,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of nsIEditor.setShouldTxnSetSelection, instead insertNode and deleteNode should have optional argument for equivalent feature"
+  },
+  {
+   "bugid": 1868641,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Ctrl+A selecting text in Slack's \"New message\" \"To:\" field and typing appends next characters instead of replacing the selected text"
+  },
+  {
+   "bugid": 1722328,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "New wpt crashes in /url/failure.html"
+  },
+  {
+   "bugid": 1863797,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Frequent dom/security/test/https-first/browser_schemeless.js - UrlbarView.selectedElement may become invalid"
+  },
+  {
+   "bugid": 1577829,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Add timing measurements for Service Workers e10s"
+  },
+  {
+   "bugid": 1868304,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Add diagnostics code around mozilla::net::LoadInfo::SetReservedClientInfo"
+  },
+  {
+   "bugid": 1853747,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add deep link to Windows settings for passkey management"
+  },
+  {
+   "bugid": 1864541,
+   "status": "NEW",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Let WebAuthn conditional mediation ride the trains"
+  },
+  {
+   "bugid": 1867622,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Finalize icon for WebAuthn conditional UI autofill entries"
+  },
+  {
+   "bugid": 1868442,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Show autofill dropdown on `autocomplete=\"webauthn\"` and `autocomplete=\"username webauthn\"` fields"
+  },
+  {
+   "bugid": 1869374,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "let passkey support on macOS ride the trains"
+  },
+  {
+   "bugid": 1858041,
+   "status": "REOPENED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[meta] Multiple tier 2 failures happening on a11y-checks"
+  },
+  {
+   "bugid": 1869777,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GPU process gets launched on Android while app is in background if content process is killed"
+  },
+  {
+   "bugid": 1829026,
+   "status": "REOPENED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Investigate off-main-thread canvas for DrawTargetWebGL"
+  },
+  {
+   "bugid": 1869658,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ OOM | unknown | base::SharedMemory::memory]"
+  },
+  {
+   "bugid": 1869659,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::layers::CanvasTranslator::SetDataSurfaceBuffer]"
+  },
+  {
+   "bugid": 1869661,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::gfx::DrawTargetRecording::DrawTargetRecording]"
+  },
+  {
+   "bugid": 1869818,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::ipc::MessageChannel::AssertWorkerThread | mozilla::ipc::MessageChannel::NextSeqno]"
+  },
+  {
+   "bugid": 1869822,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::gfx::MemWriter::write]"
+  },
+  {
+   "bugid": 1869481,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Adjust webgpu test expectations (Dec 12th)"
+  },
+  {
+   "bugid": 1869520,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2023-12-12"
+  },
+  {
+   "bugid": 1869683,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Fix remote texture handling of OffscreenCanvas WebGPU"
+  },
+  {
+   "bugid": 1869692,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "https://mdn.github.io/dom-examples/webgpu-render-demo/ WebGPU is not rendered"
+  },
+  {
+   "bugid": 1866020,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "video playback looks like a negative image Pixel 6 Pro"
+  },
+  {
+   "bugid": 1869666,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add WebRender threadsafety annotations"
+  },
+  {
+   "bugid": 1854032,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Enable intl.icu4x.segmenter.enabled by default"
+  },
+  {
+   "bugid": 1828654,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Usage of zlibs `deflateBound()` not correct"
+  },
+  {
+   "bugid": 1867193,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Multiple regressions on AWFY-Jetstream2  benchmark (regexp and and splay) around 14November2023"
+  },
+  {
+   "bugid": 1869755,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma SM bustages TEST-UNEXPECTED-FAIL | non262/Intl/Segmenter/sentence-latin.js | (args: \"--dll /builds/worker/fetches/injector/libbreakpadinjector.so\") [0.1 s] when Gecko 122 merges to Beta on 2023-12-18"
+  },
+  {
+   "bugid": 1869780,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move symbols_as_weakmap_keys feature into RELEASE_OR_BETA in test262-update.py"
+  },
+  {
+   "bugid": 1868336,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Tidyup and preparation for semispace nursery"
+  },
+  {
+   "bugid": 1869580,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Consider caching IsStackingContext in a frame bit."
+  },
+  {
+   "bugid": 1869722,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Minor cleanup after fixing tables as flex items"
+  },
+  {
+   "bugid": 1869738,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Tables",
+   "summary": "Tables are no longer rendered on Gdoc example"
+  },
+  {
+   "bugid": 1869604,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Incorrect asserts for OnDataFinished telemetry timing"
+  },
+  {
+   "bugid": 1869717,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Let OffMainThread OnDataFinished for HTML5Parser ride the trains"
+  },
+  {
+   "bugid": 1859608,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: DNS",
+   "summary": "Maybe change user's default DoH region when the user is roaming"
+  },
+  {
+   "bugid": 1869488,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Log address of `nsIChannel` subobject of `nsHttpChannel` in the constructor/destructor too"
+  },
+  {
+   "bugid": 1848013,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "HTTP/2 WebSocket CONNECT missing headers when proxied (RFC8441)"
+  },
+  {
+   "bugid": 1860020,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Debug builds with telemetry off are unusable"
+  },
+  {
+   "bugid": 1869539,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | /css/css-page/page-rule-specificity-001-print.html | Testing http://web-platform.test:8000/css/css-page/page-rule-specificity-001-print.html == http://web-platform.test when Gecko 122 switches to Late Beta on 2024-01-05"
+  },
+  {
+   "bugid": 1869880,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Pref on layout.css.page-orientation.enabled"
+  },
+  {
+   "bugid": 1856732,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "WebExtensions should not be subject to random canvas noise for fingerprint resistance"
+  },
+  {
+   "bugid": 1864907,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CBH CFR is not displayed on amazon.de after captcha verification"
+  },
+  {
+   "bugid": 1869670,
+   "status": "RESOLVED",
+   "component": "Core:Security: RLBox",
+   "summary": "Attribute rlbox-related source files to the RLBox bugzilla component"
+  },
+  {
+   "bugid": 1869087,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Crash in [@ mozilla::dom::cache::Context::OnQuotaInit]"
+  },
+  {
+   "bugid": 1869192,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Add threadsafety annotation to nr_socket_prsock"
+  },
+  {
+   "bugid": 1866517,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Add close method to file picker"
+  },
+  {
+   "bugid": 1869853,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Window transparency logic got reversed after refactoring"
+  },
+  {
+   "bugid": 1869299,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Consider updating the GTK3 adwaita colors to use the libadwaita ones."
+  },
+  {
+   "bugid": 1869525,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Switching KDE breeze theme from light to dark or viceversa ends up falling back to adwaita until the next settings change."
+  },
+  {
+   "bugid": 1867630,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Unify various file-dialog logger uses"
+  },
+  {
+   "bugid": 1869606,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add minor threadsafety assertion to StartupCache"
+  },
+  {
+   "bugid": 1868571,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "42.86 - 42.86% reload-debugger:parent-process objects-with-stacks / reload-debugger:parent-process objects-with-stacks + 1 more (Linux) regression on Fri November 17 2023"
+  },
+  {
+   "bugid": 1000540,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Netmonitor doesn't show resources loaded from a file url"
+  },
+  {
+   "bugid": 1868283,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "devtools/client/responsive/test/browser/browser_tooltip.js is not stable"
+  },
+  {
+   "bugid": 1840493,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "doc/rst: add some missing languages"
+  },
+  {
+   "bugid": 1868825,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Crash in [@ libGLESv2_samsung.so@0x2c1b6c] on s5e9925"
+  },
+  {
+   "bugid": 1866927,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "Enable ETB while browsing in Private mode."
+  },
+  {
+   "bugid": 1865727,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "GeckoView API to Change Site Translation Option Independent of Session"
+  },
+  {
+   "bugid": 1869389,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Close button for the search mode in the URL bar is unlabeled"
+  },
+  {
+   "bugid": 1811076,
+   "status": "REOPENED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Integrate Content Analysis SDK for data loss prevention"
+  },
+  {
+   "bugid": 1491614,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Red text for download notification warnings should use --text-color-error"
+  },
+  {
+   "bugid": 1857634,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "The interval timer in FxviewTabList should be extracted so the parent component manages if/when to update"
+  },
+  {
+   "bugid": 1868707,
+   "status": "VERIFIED",
+   "component": "Firefox:Firefox View",
+   "summary": "Clear-icon in the search field in Firefox View is not accessible"
+  },
+  {
+   "bugid": 1869442,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Tweak Report Broken Site CSS to improve focus feedback"
+  },
+  {
+   "bugid": 1858729,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Pdf infobar prompt is not displayed on tab for a specific version of Edge."
+  },
+  {
+   "bugid": 1868410,
+   "status": "VERIFIED",
+   "component": "Firefox:Installer",
+   "summary": "MSIX set to default browser takes too long"
+  },
+  {
+   "bugid": 1866802,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Move ASRouter Admin UI out from newtab into about:asrouter"
+  },
+  {
+   "bugid": 1869955,
+   "status": "REOPENED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Perma xpcshell browser/components/newtab/test/xpcshell/test_TopSitesFeed.js | xpcshell return code: 0 | test_ContileIntegration - [test_ContileIntegration : 3119] false == true"
+  },
+  {
+   "bugid": 1868527,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "\"Site not working?\" button should not be shown when the new webcompat reporter is enabled"
+  },
+  {
+   "bugid": 1867406,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Part 3: Update search engine selector to filter distribution and sort default engines"
+  },
+  {
+   "bugid": 1867620,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Avoid updating the in-content search bar placeholders / text from multiple locations when in handoff mode"
+  },
+  {
+   "bugid": 1869571,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "In search-config-v2, move the environment out of the engine \"base\" and into the \"variants\""
+  },
+  {
+   "bugid": 1869613,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove unused EngineStore.reloadIcons function"
+  },
+  {
+   "bugid": 1860585,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Manage keyboard focus after a user opted-in and Review Checker sidebar is updated"
+  },
+  {
+   "bugid": 1867282,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "The Highlights from recent reviews card will shrink to fit the available space when clicking the Show More button"
+  },
+  {
+   "bugid": 1869413,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "New event for clicking the opt out button"
+  },
+  {
+   "bugid": 1867098,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Experiment for discoverability of PXI in the FxA toolbar button"
+  },
+  {
+   "bugid": 1869812,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Web Compat reporter panelviews should live in the viewcache by default for performance reasons"
+  },
+  {
+   "bugid": 1837424,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Use the computed style to determine inline vs block elements in the TranslationsDocument"
+  },
+  {
+   "bugid": 1837535,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Sentence from Wikipedia is wrongly translated in built-in version, correctly in addon"
+  },
+  {
+   "bugid": 1868782,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "glxtest: cannot access /sys/bus/pci"
+  },
+  {
+   "bugid": 1860630,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Perma bootstrap-voidlinux ModuleNotFoundError: No module named 'zstandard'"
+  },
+  {
+   "bugid": 1868680,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Perma toolchain avd-arm-linux [taskcluster:error] Task timeout after 1800 seconds after Force killing container. adb: no devices/emulators found"
+  },
+  {
+   "bugid": 1868980,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "12.73% build times (Windows) regression on Tue November 28 2023"
+  },
+  {
+   "bugid": 1869078,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma Windows 2012 SM subprocess.CalledProcessError: Command '['sh', '-c', \"'C:/mozilla-build/python/python3.exe' 'D:/task_170207252670475/src/mach' build\"]' returned non-zero exit status 2."
+  },
+  {
+   "bugid": 1869358,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Reference rusqlite via a workspace dependency"
+  },
+  {
+   "bugid": 1869690,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma bootstrap ModuleNotFoundError: No module named 'zstandard' - SE"
+  },
+  {
+   "bugid": 1842692,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Check if the paths for extensions in the hgrc file match the current .mozbuild directory"
+  },
+  {
+   "bugid": 1867182,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add bootstrap tests for newer versions of Debian, Ubuntu, Fedora and Rocky Linux"
+  },
+  {
+   "bugid": 1869626,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Python tasks have the same index when things that impact their content change"
+  },
+  {
+   "bugid": 1864030,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "showPicker doesn't work for select multiple or size > 1"
+  },
+  {
+   "bugid": 1869527,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Disable SurfaceControl rendering path"
+  },
+  {
+   "bugid": 1869250,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "\"File not found\" when opening a PDF from Whatsapp, Dropbox and other apps"
+  },
+  {
+   "bugid": 1869892,
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "Remove target.json"
+  },
+  {
+   "bugid": 1850149,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Include previous Windows version information in WDBA pings"
+  },
+  {
+   "bugid": 1869417,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Trim included CPP in `toolkit/mozapps/defaultagent/proxy`"
+  },
+  {
+   "bugid": 1867022,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Update Strings for OS prompt - using saved cards"
+  },
+  {
+   "bugid": 1867339,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update xsimd to new version 12.1.0 from 2023-11-29 14:34:39"
+  },
+  {
+   "bugid": 1867008,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Update Strings for about:logins - Empty state"
+  },
+  {
+   "bugid": 1867012,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Update Strings for about:logins - Export Passwords"
+  },
+  {
+   "bugid": 1869024,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Convert passwordmgr.properties to Fluent"
+  },
+  {
+   "bugid": 1869051,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove unused strings from passwordmgr.properties"
+  },
+  {
+   "bugid": 1869544,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Use const declarations in LoginManagerPrompter.sys.mjs"
+  },
+  {
+   "bugid": 1869723,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Restore ellipsis in `Exceptions` label `forms-exceptions`"
+  },
+  {
+   "bugid": 1868059,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Add a documenting comment to class PrintPreview"
+  },
+  {
+   "bugid": 1869555,
+   "status": "VERIFIED",
+   "component": "WebExtensions:General",
+   "summary": "Perma Mn PurgeExtensionServiceWorkersOnPrefDisabled.test_unregistering_service_worker_when_clearing_data | marionette_driver.addons.AddonInstallException: Could not install add-on when Gecko 122 merges to Beta on 2023-12-18"
+  }
+ ],
+ "fixed": 94,
+ "total": 117,
+ "restricted": 5
+}
