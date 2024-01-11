@@ -1,0 +1,316 @@
+{
+ "date": "2024-01-11",
+ "buildid": "20240111095249",
+ "cset": "3e561c3916769d60f0d266746f1109216d8ed3eb",
+ "bugs": [
+  {
+   "bugid": 1765615,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Handle changes to CSS `contain` and `content-visibility` without needing to reconstruct frames"
+  },
+  {
+   "bugid": 1669453,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "history.replace/pushState should throw SECURITY_ERR, not NS_ERROR_FAILURE with cross-origin urls"
+  },
+  {
+   "bugid": 1853986,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Let \"Don't translate new lines for IME\" ride to release"
+  },
+  {
+   "bugid": 1873038,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Sidebar navigation tablist in about:webauthn needs to ensure proper dynamic focus handling"
+  },
+  {
+   "bugid": 1873537,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add missing required fields to AuthenticatorAttestationResponse toJSON web-platform test"
+  },
+  {
+   "bugid": 1873967,
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Simplify postMessage throttling code a bit."
+  },
+  {
+   "bugid": 1873745,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "libFuzzer broken with undefined symbol: _ZN9dav1dfuzz24dav1d_set_cpu_flags_maskEj"
+  },
+  {
+   "bugid": 1873603,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused ssse3-scalar"
+  },
+  {
+   "bugid": 1829457,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "PDF display corrupted after restore of minimized window"
+  },
+  {
+   "bugid": 1870872,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Hang on offscreen canvas demo with ublock origin installed"
+  },
+  {
+   "bugid": 1872705,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "A canvas demo that takes ~1min to render will not draw anything on screen unless you switch away from the tab"
+  },
+  {
+   "bugid": 1873405,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Test canvas placeholder exemption for pdf.js"
+  },
+  {
+   "bugid": 1873506,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2024-01-08"
+  },
+  {
+   "bugid": 1864323,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "There might be room for improving String.prototype.includes() performance"
+  },
+  {
+   "bugid": 1870255,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Nightly is slower than Chrome on a Codepen demo (https://codepen.io/MittenedWatchmaker/pen/MQOeeb)"
+  },
+  {
+   "bugid": 1871597,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: obj->nonCCWRealm()->realmFuses.optimizeGetIteratorFuse.intact(), at jit/CacheIR.cpp:13563"
+  },
+  {
+   "bugid": 1870747,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: Integer input should be equal or higher than Lowerbound., at jit/VMFunctions.cpp:2911"
+  },
+  {
+   "bugid": 1872842,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: !ins->isGuardShape(), at jit/ScalarReplacement.cpp:304"
+  },
+  {
+   "bugid": 1873042,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimisation ideas for inlined String functions"
+  },
+  {
+   "bugid": 1872524,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: tunables.smallHeapIncrementalLimit() >= tunables.largeHeapIncrementalLimit(), at gc/Scheduling.cpp:380"
+  },
+  {
+   "bugid": 1872154,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Reentrancy crash in PresShell::DoFlushPendingNotifications on Android Nightly and Beta, through nsFocusManager"
+  },
+  {
+   "bugid": 1872468,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT /css/css-contain/content-visibility/animation-display-lock.html | single tracking bug"
+  },
+  {
+   "bugid": 1873461,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add pref for resolving HTTPS records using native resolver on win 10"
+  },
+  {
+   "bugid": 1871048,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Site responding with content type `application/http-index-format` causes tab to crash"
+  },
+  {
+   "bugid": 1872740,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Intermittent TV dom/indexedDB/test/unit/test_clear_object_store_with_indexes.js | xpcshell return code: 0 | Test timed out"
+  },
+  {
+   "bugid": 1871799,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "High CPU Usage by QuotaManager IO Thread since Firefox 122 b2"
+  },
+  {
+   "bugid": 1860328,
+   "status": "ASSIGNED",
+   "component": "Core:Web Painting",
+   "summary": "When dragging and dropping any text into a contentEditable, insertion position (caret) is not displayed on Linux."
+  },
+  {
+   "bugid": 1871514,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Improve macOS control colors"
+  },
+  {
+   "bugid": 1864842,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Migrate defer usage to Promise.withResolvers"
+  },
+  {
+   "bugid": 1871806,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Surface / Add hint about rules view new \"Enter\" behavior"
+  },
+  {
+   "bugid": 1872997,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Arrow tooltip for css variable and url looks ugly"
+  },
+  {
+   "bugid": 1873788,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Bookmark keyword search and search mode search uses the default engine search when there is restrict symbol at the end of search string"
+  },
+  {
+   "bugid": 1787278,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Some newtab instrumentation module(s) don't parse ES2020 constructs"
+  },
+  {
+   "bugid": 1863022,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Move Protection Panel Message to calling code"
+  },
+  {
+   "bugid": 1873026,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "ASRouter tests under browser/components/asrouter are not being run in CI"
+  },
+  {
+   "bugid": 1862493,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add Glean metrics to newtab ping"
+  },
+  {
+   "bugid": 1873013,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove unused react-test-renderer from newtab's node_modules"
+  },
+  {
+   "bugid": 1873547,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update `updateRecipes` to sort by `publishedDate`"
+  },
+  {
+   "bugid": 1873476,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 903af4ee0009afbb5e42f5866b966fdefe4185b7 from 2024-01-10 09:03:52"
+  },
+  {
+   "bugid": 1872741,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update mingw to upstream revision 95a2cf4b7260200c4a60f4f1d1127e72799a3541"
+  },
+  {
+   "bugid": 1873494,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Cache check for malloc_usable_size argument constness"
+  },
+  {
+   "bugid": 1873495,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix variable naming for cached EXPAND_LIBS_LIST_STYLE"
+  },
+  {
+   "bugid": 1873821,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused bindgen 0.66 patch"
+  },
+  {
+   "bugid": 1873688,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Inappropriate \"InvalidArgument\" error when providing both \"context\" and \"realm\" argument to \"script.evaluate\", \"script.callFunction\", and \"script.disown\""
+  },
+  {
+   "bugid": 1873914,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Remove PromiseUtils module"
+  },
+  {
+   "bugid": 1869183,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Scrape symbols for Alpine Linux"
+  },
+  {
+   "bugid": 1855068,
+   "status": "REOPENED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Extend sanitizer functionality to fetch data sizes for clear data dialog"
+  },
+  {
+   "bugid": 1856412,
+   "status": "REOPENED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Make all endpoints point to the same clear data dialog"
+  },
+  {
+   "bugid": 1859588,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Crashing when loading autofill/addressmetadata/US/addressReferences.js in test_addressDataLoader.js"
+  },
+  {
+   "bugid": 1873440,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Dot not update address data that has less information than the original data"
+  },
+  {
+   "bugid": 1845150,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Use moz-message-bar instead of message-bar in notificationbox.js"
+  }
+ ],
+ "fixed": 42,
+ "total": 51,
+ "restricted": 2
+}
