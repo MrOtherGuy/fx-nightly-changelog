@@ -1,0 +1,358 @@
+{
+ "date": "2024-01-13",
+ "buildid": "20240113091922",
+ "cset": "53d4d65c33f1a556689dd9de738b173142e52749",
+ "bugs": [
+  {
+   "bugid": 1869043,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Move CrossGraphReceiver usage for audio outputs from AudioStreamTrack to MediaTrackGraph"
+  },
+  {
+   "bugid": 1873663,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove legacy audio decoders (vorbis, opus, pcm)"
+  },
+  {
+   "bugid": 1874050,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Too much time spent in CustomPropertiesBuilder::cascade on TodoMVC-Lit-Complex-DOM (copying custom properties from ancestors)"
+  },
+  {
+   "bugid": 1869726,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Use latin-1 external string for UTF8String with ASCII content"
+  },
+  {
+   "bugid": 1874090,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up nsContentUtils.h"
+  },
+  {
+   "bugid": 1872428,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: !HasCaretPointSuggestion() || CaretPointHandled(), at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditHelpers.h:136"
+  },
+  {
+   "bugid": 1870863,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Web Authentication - Enable Cross-Origin iframes via Feature-Policy for credential creation"
+  },
+  {
+   "bugid": 1872913,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Workers",
+   "summary": "Hanging at shutdown as mMainThreadDebuggeeEventTarget is paused and will not execute CancelingOnParentRunnable"
+  },
+  {
+   "bugid": 1874190,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "artifact build doc should cover more of local work"
+  },
+  {
+   "bugid": 1874372,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix typo in FilterNodeConvolveMatrixSoftware"
+  },
+  {
+   "bugid": 1873708,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Canvas fillText+Filter - Over-Clipping on mixed ASCII+Emojis"
+  },
+  {
+   "bugid": 1873790,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Hit MOZ_CRASH(CanvasChild not thread-safe) at /builds/worker/checkouts/gecko/xpcom/base/nsISupportsImpl.cpp:43"
+  },
+  {
+   "bugid": 1874449,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Add diagnostic assert that not canvas for remaining uses of RecordedDrawTargetCreation"
+  },
+  {
+   "bugid": 1873696,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`webgpu14` tests consistently time out on Windows `debug` build in CI"
+  },
+  {
+   "bugid": 1794063,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow dump()ing to printf_stderr sinks"
+  },
+  {
+   "bugid": 1868992,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: scriptData->nfixed() <= frontend::ParseContext::Scope::FixedSlotLimit, at js/src/vm/JSScript.cpp:2472"
+  },
+  {
+   "bugid": 1869688,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add API to convert UTF-8 string to external string if it fits ASCII range"
+  },
+  {
+   "bugid": 1873827,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use const reference for UTF8Chars parameters"
+  },
+  {
+   "bugid": 1869899,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Make hazard analysis allow references to function pointers"
+  },
+  {
+   "bugid": 1865267,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Intermittent /css/css-contain/content-visibility/content-visibility-vs-scrollIntoView-003.html on Linux"
+  },
+  {
+   "bugid": 1874336,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Minor rewrite regarding applying min & max size constrain"
+  },
+  {
+   "bugid": 1871766,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "New wpt crashes in /css/css-content/parsing/content-computed.html"
+  },
+  {
+   "bugid": 1406337,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove comment handling from media type parser"
+  },
+  {
+   "bugid": 1864545,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clearing the executed record when the cookie banner service is disabled"
+  },
+  {
+   "bugid": 1873490,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove StorageDisabledByAntitracking Functions to Simplify StorageAccess helpers"
+  },
+  {
+   "bugid": 1872995,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Prespawn CIG is not active in Nightly with an empty dynamic DLL blocklist and no IAT injection"
+  },
+  {
+   "bugid": 1791417,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KDE Wayland async clipboard] Can't copy from address bar and paste into other apps if \"Middle Click: Paste Selected Text\" is disabled in KDE settings>Workspace>General. Copying from websites still works: Why does the address bar behave differently?"
+  },
+  {
+   "bugid": 1857289,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux][Wayland][Firefox] Unable to use Meta/Super key for ui.key.accelkey"
+  },
+  {
+   "bugid": 1874089,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox 123.0a1 (2024-1-10) didn't restart properly when disabling or enabling Always use private browsing mode with Wayland Proxy warnings"
+  },
+  {
+   "bugid": 1813979,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "For Surface Pro media query \"any-pointer: fine\" is true only when both the Type Cover and mouse are connected"
+  },
+  {
+   "bugid": 1873777,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix interfaces wrongly marked as [function]"
+  },
+  {
+   "bugid": 1869687,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Use latin-1 external string in XPCConvert"
+  },
+  {
+   "bugid": 1874376,
+   "status": "ASSIGNED",
+   "component": "Core:XPConnect",
+   "summary": "Use latin-1 external string in XPCConvert with T_UTF8STRING is possible"
+  },
+  {
+   "bugid": 1858994,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Punycode is shown in history"
+  },
+  {
+   "bugid": 1868133,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "UrlbarProviderSearchTips should use SearchStaticData, rather than including its own list of domains"
+  },
+  {
+   "bugid": 1874200,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Disable the clipboard provider if the clipboard contents are too large"
+  },
+  {
+   "bugid": 1874344,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add additional tests and documentation for existing persisted search term logic"
+  },
+  {
+   "bugid": 1871441,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Core DLP code should calculate file digests if necessary"
+  },
+  {
+   "bugid": 1866283,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update package.json dependencies"
+  },
+  {
+   "bugid": 1871197,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Remove or update probes expiring in Firefox 124: aboutprivatebrowsing.click#click before Gecko version number gets increased to 124 on 2024-01-22"
+  },
+  {
+   "bugid": 1872764,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Exit/Copy/Download buttons do not work on certain website with screenshot component enabled"
+  },
+  {
+   "bugid": 1873002,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Certificate Manager popup doesn't grow with content"
+  },
+  {
+   "bugid": 1873766,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "invisible VPN icon in sync menu"
+  },
+  {
+   "bugid": 1783521,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add tab hover card previews"
+  },
+  {
+   "bugid": 1861365,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Crash in [@ std::locale::operator=]"
+  },
+  {
+   "bugid": 1873905,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix variable naming for cached configure variable"
+  },
+  {
+   "bugid": 1873908,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Do not explicitly add -freorder-blocks to non clang compilers"
+  },
+  {
+   "bugid": 1873959,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "buildid.h is generated twice"
+  },
+  {
+   "bugid": 1874141,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update build system docs for xpcom components given esmification"
+  },
+  {
+   "bugid": 1874208,
+   "status": "NEW",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`mach environment --format=json` can output status messages to stdout"
+  },
+  {
+   "bugid": 1874207,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Updates",
+   "summary": "Intermittent update-verify TEST-UNEXPECTED-FAIL: differences found after update | Files only in source/Firefox.app: Contents/embedded.provisionprofile"
+  },
+  {
+   "bugid": 1853883,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"network.failRequest\" command"
+  },
+  {
+   "bugid": 1873279,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add an exception from a11y_checks for clicks on a non-interactive header containers in Add-On tests"
+  },
+  {
+   "bugid": 1873299,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Add an exception from a11y_checks for a click on a disabled panel-item control in Add-On tests"
+  },
+  {
+   "bugid": 1873304,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "shortcut-remove-button on Manage Extension Shortcuts of about:addons is not labeled"
+  },
+  {
+   "bugid": 1848801,
+   "status": "RESOLVED",
+   "component": "Toolkit:Alerts Service",
+   "summary": "Clicking Dismiss button on Windows still opens the corresponding tab"
+  },
+  {
+   "bugid": 1873190,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[US][apple.com] The Address Capture doorhanger is displayed only for the first address form submit"
+  },
+  {
+   "bugid": 1838843,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Ship v123.0.0 of the WebCompat System Addon"
+  }
+ ],
+ "fixed": 47,
+ "total": 58,
+ "restricted": 0
+}
