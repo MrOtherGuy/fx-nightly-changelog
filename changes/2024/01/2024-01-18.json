@@ -1,0 +1,508 @@
+{
+ "date": "2024-01-18",
+ "buildid": "20240118095536",
+ "cset": "842adcf822fc168da5c9a2745cacfe10d05a0d8b",
+ "bugs": [
+  {
+   "bugid": 1872787,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: mMainThreadTrackCount > 0 || mMainThreadPortCount > 0, at /builds/worker/checkouts/gecko/dom/media/MediaTrackGraph.cpp:2092"
+  },
+  {
+   "bugid": 1872311,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Fix videoFrame-createImageBitmap.https.any.js failure"
+  },
+  {
+   "bugid": 1765615,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Handle changes to CSS `contain` and `content-visibility` without needing to reconstruct frames"
+  },
+  {
+   "bugid": 1875123,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove auto-inverting of images."
+  },
+  {
+   "bugid": 1870459,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Make legacycaller work through Xrays"
+  },
+  {
+   "bugid": 1874871,
+   "status": "REOPENED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /css/cssom-view/client-props-zoom.html | Client properties for elements with css zoom 1 - expected FAIL when Gecko 123 merges to Beta on 2024-01-22"
+  },
+  {
+   "bugid": 1875189,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Editorial fixups to WPT getClientRects-zoom.html"
+  },
+  {
+   "bugid": 1874793,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "JS Actor SendQuery creates unhandleable errored promises if SendRawMessage fails"
+  },
+  {
+   "bugid": 1870052,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable Declarative ShadowDOM on all channels"
+  },
+  {
+   "bugid": 1874776,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider ignoring web extension background pages from use counter telemetry."
+  },
+  {
+   "bugid": 1875026,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable ESLint rules on more dom/ directories where the rules are already passing"
+  },
+  {
+   "bugid": 1874806,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of `editor.inline_style.range.compatible_with_the_other_browsers` pref"
+  },
+  {
+   "bugid": 1873474,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Replace or remove NS_CheckContentProcessPolicy call in ImageDocument"
+  },
+  {
+   "bugid": 1870746,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Increase service worker performance test times"
+  },
+  {
+   "bugid": 1870488,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Web Worker Canvas Memory Leak"
+  },
+  {
+   "bugid": 1874810,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Implement RecordedStrokeGlyphs"
+  },
+  {
+   "bugid": 1875193,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::gl::GLContext::LockSurface]"
+  },
+  {
+   "bugid": 1873503,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Remove use of deprecated mfbt/Scoped.h in dom/webgpu"
+  },
+  {
+   "bugid": 1872776,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "firefox: src/rasterize.h:1157: void draw_perspective_spans(int, Point3D *, Interpolants *, Texture &, Texture &, const ClipRect &) [P = unsigned int]: Assertion `l0.y == r0.y' failed."
+  },
+  {
+   "bugid": 1847521,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Possible to replace unicode-segmentation crate with ICU4X?"
+  },
+  {
+   "bugid": 1847849,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use JSErrorBase::column instead of JSErrorReport::tokenOffset in JSErrorToXPCException"
+  },
+  {
+   "bugid": 1868693,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent Android 13 <random test> | WARNING: linker: Warning: \"/data/local/tmp/test_root/bin/libmozglue.so\" unused DT entry: unknown (<random>) <more random text>"
+  },
+  {
+   "bugid": 1870396,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use GuardFuse to speed up destructuring"
+  },
+  {
+   "bugid": 1875017,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] tests\\jit-test\\jit-test\\tests\\parser\\stencil-laziness-validate.js | \\task_170546931415822\\build\\tests\\jit-test\\jit-test\\lib\\/../../tests/non262/shell.js:149:13 Error: Assertion failed: expected exception Error, no exception thrown (code 3"
+  },
+  {
+   "bugid": 1873027,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add a shell flag to force monomorphic inlining or trial inlining"
+  },
+  {
+   "bugid": 1828648,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "JS::WeakCache is not used externally and can be removed from the public headers"
+  },
+  {
+   "bugid": 1874872,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Permafailing /css/css-contain/container-queries/pseudo-elements-*.html with e.g. Originating element container for ::highlight - assert_equals: expected \"20px\" but got \"\" when Gecko 123 merges to Beta on 2024-01-22"
+  },
+  {
+   "bugid": 1874897,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "4774.18 - 26.36% perf_reftest bidi-resolution-1.html / perf_reftest + 14 more (Linux, OSX, Windows) regression on Thu January 11 2024"
+  },
+  {
+   "bugid": 1875011,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Use non-rounded scroll position in nsHTMLScrollFrame::ScrollByCSSPixelsInternal behind layout.scroll.disable-pixel-alignment pref"
+  },
+  {
+   "bugid": 1875194,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Fix vertical scrollbar size returned by GetDesiredScrollbarSizes()"
+  },
+  {
+   "bugid": 1874551,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "The JavaScript function getBoundingClientRect() returns prematurely, while the final position is still being calculated."
+  },
+  {
+   "bugid": 1849864,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "HTTPUserAgent RFPTarget still active with Tracking Protection disabled"
+  },
+  {
+   "bugid": 1857894,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Embedded videos can not be played at video.sina.com.cn with ETP set to STANDARD"
+  },
+  {
+   "bugid": 1859632,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "continuous onboarding callout for cookie banner blocking"
+  },
+  {
+   "bugid": 1870067,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Refactor StorageAccessAPIHelper.cpp into a Parent and Child function"
+  },
+  {
+   "bugid": 1874054,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "prevent loading known roots as third party certificates"
+  },
+  {
+   "bugid": 1874962,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add a pref to enable the use of Xyber768"
+  },
+  {
+   "bugid": 1875158,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Avoid listing xyber768 in supported groups when security.tls.enable_kyber is false"
+  },
+  {
+   "bugid": 1861446,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add --continue and --abort flags to cherry_pick_commit.py to help avoid footguns"
+  },
+  {
+   "bugid": 1872399,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "moz-window-shadow implementation also draws a border, causing thicker-looking popups"
+  },
+  {
+   "bugid": 1874969,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Consider to use GetHeterogeneousCpuInfo when deciding how many background threads TaskController should have"
+  },
+  {
+   "bugid": 1500000,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove DebuggerClient.release method"
+  },
+  {
+   "bugid": 1873066,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Investigate calls to Array.includes from isInRemovedId and UNSAFE_componentWillUpdate/isOpeningGroup<"
+  },
+  {
+   "bugid": 1875062,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console client is broken when connecting to an older server"
+  },
+  {
+   "bugid": 1824109,
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-call-stack.js | single tracking bug"
+  },
+  {
+   "bugid": 1873432,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Stop using the parser worker for determining specific frameworks"
+  },
+  {
+   "bugid": 1874822,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove devtools/client/debugger/src/utils/connect.js"
+  },
+  {
+   "bugid": 1870812,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add CSS_REGISTERED_PROPERTIES resource"
+  },
+  {
+   "bugid": 1780071,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Linter should yell if using assignment inside assertion conditions"
+  },
+  {
+   "bugid": 1864896,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Turn on argument linting from no-unused-vars"
+  },
+  {
+   "bugid": 1875027,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Remove deprecated ESLint rule no-return-await"
+  },
+  {
+   "bugid": 1870760,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "After installing the proxy extension, restarting Fenix and entering the extension management keeps loading."
+  },
+  {
+   "bugid": 1851481,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "'Search with <engine>' is not aligned to the suggestion"
+  },
+  {
+   "bugid": 1857264,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "openTabInUserContext function is defined in multiple tests"
+  },
+  {
+   "bugid": 1874546,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/components/urlbar/tests/unit/test_autofill_urls.js | xpcshell return code: 0 when Gecko 123 merges to Beta on 2024-01-22"
+  },
+  {
+   "bugid": 1869641,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Listen to oauth_login webchannel message, and trigger oauth complete"
+  },
+  {
+   "bugid": 1859358,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Remove hardcoded limit of 25 recently closed tabs in Firefox View"
+  },
+  {
+   "bugid": 1874253,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Loading the obsolete about:firefoxview-next doesnt show the malformed URI error page"
+  },
+  {
+   "bugid": 1872922,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace last few uses of XPCOMUtils.defineLazyGetter with ChromeUtils.defineLazyGetter and add linter error for XPCOMUtils.defineLazyGetter"
+  },
+  {
+   "bugid": 1665381,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "add distribution_id to install ping"
+  },
+  {
+   "bugid": 1875079,
+   "status": "ASSIGNED",
+   "component": "Firefox:Menus",
+   "summary": "Apply touchmode rules to all OSes"
+  },
+  {
+   "bugid": 1840762,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Opening any PDF (local or from the network) always takes a minimum of 5 seconds"
+  },
+  {
+   "bugid": 1875053,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version a22b5a4f02d046b5113630b1c333281841cbe309 from 2024-01-16 21:27:14"
+  },
+  {
+   "bugid": 1873977,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "The last click selection is remembered after clicking away"
+  },
+  {
+   "bugid": 1822097,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Split out OpenSearch loading into a separate module"
+  },
+  {
+   "bugid": 1870857,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update search telemetry related schemas with the ability to observe single page applications"
+  },
+  {
+   "bugid": 1871019,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "The invalid webextension telemetry is incorrectly reported for search engines with post data"
+  },
+  {
+   "bugid": 1874186,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove remains of extension ID facility from OpenSearch engines"
+  },
+  {
+   "bugid": 1872872,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Send trusted_deals_placement upon fetching the Fakespot ad unit from a server"
+  },
+  {
+   "bugid": 1842804,
+   "status": "RESOLVED",
+   "component": "Firefox:Translation",
+   "summary": "Set lang attribute to the translated language after translation"
+  },
+  {
+   "bugid": 1874126,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "\"android-archive-geckoview\" is very slow when building GV (artifact build enabled)"
+  },
+  {
+   "bugid": 1467337,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Don't allow --enable-stdcxx-compat when the linker is gold"
+  },
+  {
+   "bugid": 1793001,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "old-configure uses deprecated egrep, change to grep -E"
+  },
+  {
+   "bugid": 1875002,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma make: *** [Makefile:188: build/libcxx.BUILT] Error 1"
+  },
+  {
+   "bugid": 1837747,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Use \"Services.prefs\" instead of the Preferences.sys.mjs module in remote/"
+  },
+  {
+   "bugid": 1873440,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Dot not update address data that has less information than the original data"
+  },
+  {
+   "bugid": 1875063,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fix wrong handling of FormScenarios.detect method"
+  },
+  {
+   "bugid": 1874766,
+   "status": "REOPENED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "[KDE/wayland] Window rules to position PiP window broke after bug 1838045"
+  },
+  {
+   "bugid": 1874010,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Crash in [@ nsNavHistoryResult::HandlePlacesEvent]"
+  },
+  {
+   "bugid": 1795317,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Use formatRange() and selectRange() for formatting reading time, when available"
+  },
+  {
+   "bugid": 1873772,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "XULStore.sys.mjs does not work when not in the parent process"
+  },
+  {
+   "bugid": 1868144,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Introduce a new linter and verification task to verify that firefox-addons fetch task includes all xpi files being used in condprof customization json files"
+  },
+  {
+   "bugid": 1874487,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add perfdocs to describe browsertime-tp6-webextensions and browsertime-tp6m-webextensions jobs"
+  }
+ ],
+ "fixed": 69,
+ "total": 83,
+ "restricted": 2
+}
