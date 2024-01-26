@@ -1,0 +1,436 @@
+{
+ "date": "2024-01-26",
+ "buildid": "20240126095257",
+ "cset": "a412d893c38f632f34b44a9c5b3fd8cc30bb87be",
+ "bugs": [
+  {
+   "bugid": 1876372,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update audio_thread_priority to 0.31"
+  },
+  {
+   "bugid": 1735923,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Leaking size of cross-origin resources by using Range Requests and Service Workers"
+  },
+  {
+   "bugid": 1864475,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Assertion failure: aDst + aNElem <= aSrc || aSrc + aNElem <= aDst (destination and source must not overlap), at /builds/worker/workspace/obj-build/dist/include/mozilla/PodOperations.h:99"
+  },
+  {
+   "bugid": 1875941,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Move 1839270.html and 1848460.html to dom/media/webcodecs/crashtest"
+  },
+  {
+   "bugid": 1404972,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Use MacOS's audio processing algorithm"
+  },
+  {
+   "bugid": 1875235,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "MacOS builtin speakers detected as input device when using AirPods and with a duplex stream going through VPIO"
+  },
+  {
+   "bugid": 1852478,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-text-4] CSS 'white-space' property should be a shorthand"
+  },
+  {
+   "bugid": 1865637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Intermittent /web-animations/timing-model/animations/setting-the-playback-rate-of-an-animation.html | single tracking bug"
+  },
+  {
+   "bugid": 1876107,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Try to get some specific data about buffer size for diagnosing crash bug 1856672"
+  },
+  {
+   "bugid": 1876539,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Crash in [@ mozilla::ServoStyleSet::ClearNonInheritingComputedStyles]"
+  },
+  {
+   "bugid": 1819923,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix wpt failure in perform-microtask-checkpoint-before-construction-xml-parser.xhtml"
+  },
+  {
+   "bugid": 1876322,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Deduplicate PermissionStatus create functions"
+  },
+  {
+   "bugid": 1876371,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Update the comment in UseCounters.conf about data-reviews."
+  },
+  {
+   "bugid": 1875424,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "`mouseleave` should be fired on ancestors when the last `mouseover` target is removed and the cursor moved outside of the ancestors"
+  },
+  {
+   "bugid": 1875822,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "nsObjectLoadingContent does not need to inherit from nsImageLoadingContent"
+  },
+  {
+   "bugid": 1875427,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "microoptimize in LCPHelpers::CreateLCPEntryForImage"
+  },
+  {
+   "bugid": 1823658,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Fix wpt failures in pointerevent_after_target_removed.html"
+  },
+  {
+   "bugid": 1851533,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[TSF] mozilla::PresShell::DoFlushPendingNotifications reentrancy during TSF gets focus"
+  },
+  {
+   "bugid": 1876487,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add comments to ensure profiler presets are kept in sync between Desktop Firefox and Fenix (mozilla-central side)"
+  },
+  {
+   "bugid": 1839425,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[macOS] video isn't shown during transition to full screen"
+  },
+  {
+   "bugid": 1873507,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove use of deprecated mfbt/Scoped.h in gfx/*"
+  },
+  {
+   "bugid": 1875661,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Refactor task queue utilization for remote canvas"
+  },
+  {
+   "bugid": 1865921,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Resolve the WebGPU client device.lost promise using the `device_lost_closure` in wgpu"
+  },
+  {
+   "bugid": 1842773,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement Resizable and growable ArrayBuffers"
+  },
+  {
+   "bugid": 1874456,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "jit::EliminateDeadResumePointOperands never worked as expected."
+  },
+  {
+   "bugid": 1876415,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Change jitdump timestamps on macOS to be relative to the mach_absolute_time origin, and change MOZ_USE_PERFORMANCE_MARKER_FILE timestamps to match"
+  },
+  {
+   "bugid": 1873776,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Update exnref and try_table implementation"
+  },
+  {
+   "bugid": 1876358,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Can't turn on video or see participants on a zoom meeting"
+  },
+  {
+   "bugid": 1876583,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier 2] layout/base/tests/test_bug1120705.html | Test timed out. -"
+  },
+  {
+   "bugid": 1758391,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Convert text-wrap CSS property to a shorthand"
+  },
+  {
+   "bugid": 1824325,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Remove support for application/http-index-format Content-Type"
+  },
+  {
+   "bugid": 1873955,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsStandardURL doesn't do backslash replacement in SetFilePath"
+  },
+  {
+   "bugid": 1875068,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Opening jar: URI in debug build leads to assertion failure (Failed to create truncated form of URI with NS_NewURI.)"
+  },
+  {
+   "bugid": 1691113,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Commented out block relating to ancient cookie Path requirements should be removed"
+  },
+  {
+   "bugid": 1875265,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "9.56 - 9.38% linkedin fcp / linkedin fcp (Linux) regression on Wed January 10 2024"
+  },
+  {
+   "bugid": 1790750,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "The page is blank on relearnings.com/linkedinlearning.html with ETP set to Standard"
+  },
+  {
+   "bugid": 1871011,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "cannot browse any website, on multiple OSs"
+  },
+  {
+   "bugid": 1876585,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Use nsISocketProvider flags instead of nsISocketTransport flags in nsSSLIOLayerSetOptions"
+  },
+  {
+   "bugid": 1859546,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Investigate how Firefox/Wayland is installed to system from tarball"
+  },
+  {
+   "bugid": 1876609,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Add logging for GTK widget callback functions"
+  },
+  {
+   "bugid": 1876613,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Fix single-line return statements in GTK nsWindow.cpp"
+  },
+  {
+   "bugid": 1876233,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Delete nsTPromiseFlatString's copy-constructor"
+  },
+  {
+   "bugid": 1876477,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Use actual private fields and methods in StyleSheetsManager"
+  },
+  {
+   "bugid": 1780071,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Linter should yell if using assignment or comparisons inside assertion conditions"
+  },
+  {
+   "bugid": 1869733,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "`--push-to-lando` only considers one official looking remote on Git"
+  },
+  {
+   "bugid": 1875533,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Exposure event: Hidden exposures are overcounted"
+  },
+  {
+   "bugid": 1876381,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rename `TestProvider._results` to `.results`"
+  },
+  {
+   "bugid": 1869443,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Provide a default value for targetURI fluent variable"
+  },
+  {
+   "bugid": 1876547,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "browser_parsable_css.js fails because of new lines inside var(...)"
+  },
+  {
+   "bugid": 1874944,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "treat attributable builds with empty attribution strings as a distinct error on macOS"
+  },
+  {
+   "bugid": 1874276,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Convert PlacesFeed.jsm into an ESM"
+  },
+  {
+   "bugid": 1876159,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "A bug has been identified in the instrumentation for 1862493"
+  },
+  {
+   "bugid": 1876186,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Intermittent toolkit/components/nimbus/test/unit/test_RemoteSettingsExperimentLoader_updateRecipes.js | single tracking bug"
+  },
+  {
+   "bugid": 1876508,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version bf9236009521621891d73dd77acc68215cb2cadb from 2024-01-25 09:07:48"
+  },
+  {
+   "bugid": 1875034,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Captures taken with the component version of Screenshots are more blurry"
+  },
+  {
+   "bugid": 1872899,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-FAIL | browser/components/search/test/browser/browser_searchbar_openpopup.js | Node is not accessible via accessibility API: id: , tagName: html:body, className:  -"
+  },
+  {
+   "bugid": 1872940,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement support for prior settings when using the new search configuration"
+  },
+  {
+   "bugid": 1875955,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Support the \"optional\" search engine configuration flag"
+  },
+  {
+   "bugid": 1863636,
+   "status": "REOPENED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Integrate taskbar tabs extension pinning into Firefox"
+  },
+  {
+   "bugid": 1876568,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add a new pref for auto-open toggle"
+  },
+  {
+   "bugid": 1874215,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Sync sets the log max_level for Rust code to Debug in all builds"
+  },
+  {
+   "bugid": 1874599,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Links opened from external applications no longer respect Multi Account Container addon \"Always Open This Site In...\" setting"
+  },
+  {
+   "bugid": 1876386,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update workspace hack to windows-sys 0.52"
+  },
+  {
+   "bugid": 1591533,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "GV API to toggle and configure DoH TRR"
+  },
+  {
+   "bugid": 1873880,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "BiDi fetchError tests require more time to reach the error page on Windows"
+  },
+  {
+   "bugid": 1875253,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Enable Address Capture for US and CA regions in Nightly"
+  },
+  {
+   "bugid": 1876400,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "cached-icon protocol and page-icon protocol should be independent of each other"
+  },
+  {
+   "bugid": 1633456,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "`TelemetryStorage.addPendingPing` and `TelemetryStorage.savePendingPing` are identical"
+  },
+  {
+   "bugid": 1869596,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove --in-content-error-text-color and use --text-color-error instead"
+  },
+  {
+   "bugid": 1876273,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/components/reportbrokensite/test/browser/browser_antitracking_data_sent.js | ping matches expectations  when Gecko 124 merges to Beta on 2024-02-19"
+  },
+  {
+   "bugid": 1876333,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Randomize the Report Broken Site \"select a reason\" dropdown"
+  }
+ ],
+ "fixed": 60,
+ "total": 71,
+ "restricted": 5
+}
