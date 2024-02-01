@@ -1,0 +1,364 @@
+{
+ "date": "2024-02-01",
+ "buildid": "20240201095346",
+ "cset": "93128c0fb8fed778bd735f2dceb9301c1a8eaf07",
+ "bugs": [
+  {
+   "bugid": 1871768,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma LeakSanitizer | leak at mozilla::layers::GPUVideoImage::GPUVideoImage, mozilla::RemoteImageHolder::TransferToImage, mozilla::RemoteVideoDecoderChild::ProcessOutput, operator"
+  },
+  {
+   "bugid": 1877880,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Enable videoFrame-createImageBitmap.https.any.js on Linux CI"
+  },
+  {
+   "bugid": 1867569,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-values] min() max() clamp() don't handle signed zero well"
+  },
+  {
+   "bugid": 1876276,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dead nsIDocShell allowPlugins code"
+  },
+  {
+   "bugid": 1877273,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove Telemetry Use Counter probes"
+  },
+  {
+   "bugid": 1877447,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Perma /pointerevents/pointerevent_pointer_boundary_events_after_removing_last_over_element.html | After removing the last over element, redundant pointerenter events should not be fired on the ancestors | when Gecko 124 switches to late Beta on 2024-03-01"
+  },
+  {
+   "bugid": 1876941,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add a Matrix4x4Typed::Cast function"
+  },
+  {
+   "bugid": 1877341,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Raw MakeCurrent calls in GL libraries should reset any TLS current-context caching"
+  },
+  {
+   "bugid": 1877541,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "\"IsWebglOutOfProcessEnabled: 0/1\" in webgl's about:support is not *this* context's out-of-process state"
+  },
+  {
+   "bugid": 1877328,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libjxl to new version 07203da045f6b41f9b3b5b86023fd70b075137f6 from 2024-01-29 17:41:05"
+  },
+  {
+   "bugid": 1875670,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Text",
+   "summary": "Bugzilla comment with lots of emojis checkerboards quite bad while scrolling (and is fixed with COLR disabled)"
+  },
+  {
+   "bugid": 1875412,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Main thread I/O test fails if the fork server is enabled because we no longer touch the omnijars"
+  },
+  {
+   "bugid": 1783397,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add JS::Value::dump"
+  },
+  {
+   "bugid": 1871969,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "signal 4 on freebsd arm64 due to missing cache synchronisation"
+  },
+  {
+   "bugid": 1877122,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Import map prevents module script execution if the script is still compiling"
+  },
+  {
+   "bugid": 1877605,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "spectre mitigation speculation barriers are still used in generateVMWrappers"
+  },
+  {
+   "bugid": 1877684,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash [@ js::jit::CacheRegisterAllocator::useRegister] or Hit MOZ_CRASH(Unexpected Value) at jit/CacheIRCompiler.cpp:360"
+  },
+  {
+   "bugid": 1877872,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Remove/replace tab characters in meter reftests"
+  },
+  {
+   "bugid": 1860247,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Poison.cpp: do not use 'else' after 'return'"
+  },
+  {
+   "bugid": 1876684,
+   "status": "NEW",
+   "component": "Core:MathML",
+   "summary": "Export more MathML reftests to WPT"
+  },
+  {
+   "bugid": 1875119,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash [@ mozilla::net::SubstitutingURL::EnsureFile]"
+  },
+  {
+   "bugid": 1877848,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Fix a spelling error in CookieService.cpp"
+  },
+  {
+   "bugid": 1877316,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Remove the aOutInputBlockId parameter of APZCTesterBase::Tap()"
+  },
+  {
+   "bugid": 1875313,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Spoof English is ignored in number validation"
+  },
+  {
+   "bugid": 1875764,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 124 to use NSS 3.98"
+  },
+  {
+   "bugid": 1876840,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "ignore invalid subject alternative name entries in certificates from non-built-in roots"
+  },
+  {
+   "bugid": 1873801,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Crash in [@ mozilla::WebrtcVideoConduit::OnControlConfigChange]"
+  },
+  {
+   "bugid": 1877543,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash at gtk_drag_begin_with_coordinates()"
+  },
+  {
+   "bugid": 1877618,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Perma [tier 2] /builds/worker/checkouts/gecko/widget/gtk/nsLookAndFeel.cpp:1646:21: error: loop variable 'mapping' creates a copy from type 'const nsLookAndFeel::InitializeGlobalSettings()::actionMapping' [-Werror=range-loop-construct]"
+  },
+  {
+   "bugid": 1877457,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Default devtools.inspector.rule-view.focusNextOnEnter to true"
+  },
+  {
+   "bugid": 1877304,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Allow exporting lazy object"
+  },
+  {
+   "bugid": 1877484,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Support conditional lazy getter defintiion in if-then-else branches"
+  },
+  {
+   "bugid": 1877491,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Report unused property on the property's line to support disabling the rule only for the property"
+  },
+  {
+   "bugid": 1608026,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Make mach try always generate try_task_config.json v2"
+  },
+  {
+   "bugid": 1869449,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "./mach try fuzzy --chemspill-prio fails to run gecko decision task: Exception: Invalid v1 `try_task_config.json`. expected bool for dictionary value @ data['chemspill-prio']"
+  },
+  {
+   "bugid": 1876757,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Stop shipping qipcap64.dll stub DLL"
+  },
+  {
+   "bugid": 1841869,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "entering \"abc @xyz.[TLD]\" in address bar opens a prompt regarding loading \"xyz.[TLD]\" instead of searching for \"abc @xyz.[TLD]\" on the default search engine"
+  },
+  {
+   "bugid": 1876518,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Only the icons are displayed for Options inside the Open a new container Tab context menu option inside the Library and the Sidebar"
+  },
+  {
+   "bugid": 1708289,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Implement AllowFileSelectionDialogs policy on Chrome"
+  },
+  {
+   "bugid": 1866667,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Intermittent browser/components/firefoxview/tests/browser/firefoxview-next/browser_opentabs_cards.js | single tracking bug"
+  },
+  {
+   "bugid": 1872285,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add a check for a button or link within a listitem in a focusable Firefox View list in the a11y-checks"
+  },
+  {
+   "bugid": 1877594,
+   "status": "REOPENED",
+   "component": "Firefox:Firefox View",
+   "summary": "Perma browser/components/firefoxview/tests/browser/browser_history_firefoxview.js | Uncaught exception in test bound test_list_ordering - undefined - timed out after 50 tries."
+  },
+  {
+   "bugid": 1864214,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Enable search telemetry to observe changes on search providers serving Single Page Application Pages"
+  },
+  {
+   "bugid": 1877181,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add an explicit lazy getter for accessing the allowlist in SearchService"
+  },
+  {
+   "bugid": 1877593,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add search-config-v2.json to simple-engines directory to fix broken tests"
+  },
+  {
+   "bugid": 1877758,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent TV browser/components/search/test/browser/telemetry/browser_search_telemetry_spa_multi_tab.js | single tracking bug"
+  },
+  {
+   "bugid": 1869734,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Firefox Settings UI has misleading claim about permanent private-browsing-mode: \"cookies and site data will always be cleared when Firefox is closed\", but in fact your *preexisting* cookies/data (before you entered permanent PB mode) will not be cleared"
+  },
+  {
+   "bugid": 1876972,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "\"@\" based LTR/latin search engine keywords in settings don't display correctly in RTL locales (\"@\" appears in the wrong place)"
+  },
+  {
+   "bugid": 1877546,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Refresh rust target configure tests"
+  },
+  {
+   "bugid": 1876576,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Task to trigger Rust vendor'd library check on comm-central"
+  },
+  {
+   "bugid": 1877478,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update AFL++ toolchain"
+  },
+  {
+   "bugid": 1877214,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Sync vendored puppeteer to v21.10.0"
+  },
+  {
+   "bugid": 1836480,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Convert toolkit/mozapps/extensions/internal/XPI* to ES modules"
+  },
+  {
+   "bugid": 1877049,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Test function getAddonCard clicks on an addon-name-container link instead of its container"
+  },
+  {
+   "bugid": 1874951,
+   "status": "NEW",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.45.1"
+  },
+  {
+   "bugid": 1874019,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent TV browser/base/content/test/general/browser_datachoices_notification.js | single tracking bug"
+  },
+  {
+   "bugid": 1877405,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Desktop",
+   "summary": "immobilienscout24.de shows a 403 page"
+  },
+  {
+   "bugid": 1876444,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 125: extensions.startupCache.load_time before Gecko version gets increased to 125 on 2024-02-19"
+  },
+  {
+   "bugid": 1773165,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Improve \"traverse\" diagramming heuristics to be smarter about core infrastructure interfaces/overrides and IPC in general"
+  }
+ ],
+ "fixed": 50,
+ "total": 59,
+ "restricted": 1
+}
