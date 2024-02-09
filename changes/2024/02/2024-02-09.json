@@ -1,0 +1,406 @@
+{
+ "date": "2024-02-09",
+ "buildid": "20240209114116",
+ "cset": "0fc754e65091458a757b8794b5e8eacc61556167",
+ "bugs": [
+  {
+   "bugid": 1876526,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "cubeb-related deadlocks due to cubeb_stream_destroy on main, and excessive locking in CubebUtils"
+  },
+  {
+   "bugid": 1873394,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] create telemetry probes to collect playback data for MFCDM"
+  },
+  {
+   "bugid": 1877221,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update vendored ffmpeg library to current tip"
+  },
+  {
+   "bugid": 1878039,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] Implement HDCP check for the mfcdm"
+  },
+  {
+   "bugid": 1878713,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use enum version of HDCPVersion in MediaKeysPolicy"
+  },
+  {
+   "bugid": 1879352,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove libvpx .orig files"
+  },
+  {
+   "bugid": 1874488,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "New wpt failures in /css/cssom-view/ [client-props-zoom.html, scroll-zoom.html]"
+  },
+  {
+   "bugid": 1851414,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "<a> and <area>'s search setter should use the UTF-8 URL encoding"
+  },
+  {
+   "bugid": 1875702,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Intermittent fetch/api/cors/cors-keepalive.any.html | single tracking bug"
+  },
+  {
+   "bugid": 1878753,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "autofocus and elem.focus() don't work for image map 'area' elements"
+  },
+  {
+   "bugid": 1732306,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Implement mappings for emphasis, strong, time, and generic ARIA 1.2 roles"
+  },
+  {
+   "bugid": 1876392,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Make MOXAccessibleBase moxUnignoredParent getter check before calling moxUnignoredParent recursively"
+  },
+  {
+   "bugid": 1878884,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "[GPU-canvas] 32x regression on a canvas demo (https://www.fxhash.xyz/generative/23090)"
+  },
+  {
+   "bugid": 1879178,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "A lot of time (25%) spent in SharedContextWebgl::ResetPathVertexBuffer on MotionMark Paths benchmark"
+  },
+  {
+   "bugid": 1879228,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "WebGLMethodDispatcher<N>::DispatchCommand |N=0..60ish makes profiler/debug stacks messy/noisy"
+  },
+  {
+   "bugid": 1877985,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Missing error forwarding for buffer map and getMappedRange"
+  },
+  {
+   "bugid": 1879284,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update Feb 8th 2024"
+  },
+  {
+   "bugid": 1875412,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Main thread I/O test fails if the fork server is enabled because we no longer touch the omnijars"
+  },
+  {
+   "bugid": 1868727,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent server: http3server [stderr] thread 'main' panicked at /builds/worker/checkouts/gecko/third_party/rust/neqo-http3/src/connection.rs:1086:9: | single tracking bug"
+  },
+  {
+   "bugid": 1878831,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Improve test coverage for `fetchpriority` when `network.fetchpriority` is disabled"
+  },
+  {
+   "bugid": 1788080,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add test for GetBaseDomain failure in content process cookie filtering"
+  },
+  {
+   "bugid": 1876776,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Create a glean probe for http response version"
+  },
+  {
+   "bugid": 1865749,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Storage Access API requires page refresh to read new cookies"
+  },
+  {
+   "bugid": 1873412,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Store the \"partitioned\" cookie attribute in the cookie database"
+  },
+  {
+   "bugid": 1877239,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Support the partitioned attribute in the cookie service"
+  },
+  {
+   "bugid": 1874963,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add probes for Xyber768 experiment"
+  },
+  {
+   "bugid": 1878385,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add logic and tests for retrying connections that fail due to the use of Xyber768d00"
+  },
+  {
+   "bugid": 1878792,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "[rustc 1.77] error: mutable reference of mutable static is discouraged"
+  },
+  {
+   "bugid": 1877957,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Use untrusted integrity as the delayed integrity for the content process sandbox on Nightly"
+  },
+  {
+   "bugid": 1878805,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Hit MOZ_CRASH(Item found was in the wrong list! type 73 (outer type was 26 at depth 6, now is 42)) at /builds/worker/checkouts/gecko/layout/painting/nsDisplayList.h:2210"
+  },
+  {
+   "bugid": 1878568,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Browser hangs after opening multiple save dialogs and cancelling in non-LIFO order"
+  },
+  {
+   "bugid": 1853899,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Add a menu button dedicated source map settings in the editor footer"
+  },
+  {
+   "bugid": 1824726,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Throttle Resources events on the server side"
+  },
+  {
+   "bugid": 1879286,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Return PropertyDefinition location in InspectorUtils::GetCSSRegisteredProperties"
+  },
+  {
+   "bugid": 1877989,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "Add codemirror 6 in tree"
+  },
+  {
+   "bugid": 1878605,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "Use CodeMirror6 editor in EventTooltip"
+  },
+  {
+   "bugid": 1878879,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Avoid failing the source-test-doc-upload task if there are too many warnings"
+  },
+  {
+   "bugid": 1878206,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fill find_loc parameter of Yelp suggestion if user does not specify the location"
+  },
+  {
+   "bugid": 1878728,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Implement result menu for Yelp"
+  },
+  {
+   "bugid": 1879232,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add Rust Yelp and MDN suggestions to Glean docs (metrics.yaml)"
+  },
+  {
+   "bugid": 1879397,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Yelp top picks should have a \"Local recommendations\" group label"
+  },
+  {
+   "bugid": 1879448,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add UTM parameters to Yelp suggestions"
+  },
+  {
+   "bugid": 1873025,
+   "status": "NEW",
+   "component": "Firefox:Firefox View",
+   "summary": "Sorting on recent tabs after search is confusing"
+  },
+  {
+   "bugid": 1851776,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] [Enhancement] Please consider changing the Addon button's label to reflect that the add-on is already installed"
+  },
+  {
+   "bugid": 1879220,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Adjust feature callout surface to handle panel surveys"
+  },
+  {
+   "bugid": 1879223,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 60fd9d583df2376cc4f3899febc7a64851477932 from 2024-02-07 09:16:52"
+  },
+  {
+   "bugid": 1852051,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "[Search Preferences] Remove the Search Bar from the toolbar for users who haven’t used it in 120 days"
+  },
+  {
+   "bugid": 1878808,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Update the FxA toolbar icon to direct to about:preferences#sync"
+  },
+  {
+   "bugid": 1872242,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "milestone_winversion should be unique"
+  },
+  {
+   "bugid": 1877344,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Replace `distutils.spawn.find_executable` with `shutil.which` within `mach`"
+  },
+  {
+   "bugid": 1877347,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Replace `distutils.util.strtobool` with custom `strtobool` within `mach`"
+  },
+  {
+   "bugid": 1877348,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Use `setuptools.setup` over `distutils.core.setup` within `mach`"
+  },
+  {
+   "bugid": 1877349,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove `distutils` installation from Dockerfiles"
+  },
+  {
+   "bugid": 1878021,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "mach help displays an exception before the help text"
+  },
+  {
+   "bugid": 1875285,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add snapshot fuzzing coverage build"
+  },
+  {
+   "bugid": 1879189,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "[tb-rust] HTTP/1.1 403 Forbidden"
+  },
+  {
+   "bugid": 1879290,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma testing/test/test_skipfails.py::test_get_failures_5 TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1865758,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.76"
+  },
+  {
+   "bugid": 1877438,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "\"network.fetchError\" event is not sent when \"fetch\" request gets immediately aborted"
+  },
+  {
+   "bugid": 1878278,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The Alpine Linux scraper misses different packages with identical names"
+  },
+  {
+   "bugid": 1874835,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Intermittent browser/base/content/test/sanitize/browser_sanitizeDialog_v2.js | single tracking bug"
+  },
+  {
+   "bugid": 1865705,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Use address autofill nimbus flag"
+  },
+  {
+   "bugid": 1876343,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Handle active and navigated window contexts on page navigation"
+  },
+  {
+   "bugid": 1877839,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate GVST metrics in the network namespace to pure glean"
+  },
+  {
+   "bugid": 1875396,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Avoid using `font-weight: 300` and `font-weight: lighter`"
+  },
+  {
+   "bugid": 1875848,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "uniffi JS bindings should accept POJOs in the constructors and perform instance checking on arguments."
+  }
+ ],
+ "fixed": 58,
+ "total": 66,
+ "restricted": 1
+}
