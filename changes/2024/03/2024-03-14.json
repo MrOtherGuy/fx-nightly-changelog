@@ -1,0 +1,526 @@
+{
+ "date": "2024-03-14",
+ "buildid": "20240314092545",
+ "cset": "2333872b0f5028fa1f0e9236440fe58df07a0235",
+ "bugs": [
+  {
+   "bugid": 1861918,
+   "status": "RESOLVED",
+   "component": "Cloud Services:Firefox: Common",
+   "summary": "Remove kinto-offline-client.js or change it to an ES module"
+  },
+  {
+   "bugid": 1881620,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] enable media engine for encypted playback on Nightly and Dev Edition"
+  },
+  {
+   "bugid": 1884026,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "media/libcubeb/test/test_duplex.cpp:224:37: error: use of undeclared identifier 'EXPECT_DEATH'"
+  },
+  {
+   "bugid": 1884028,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::Maybe<T>::ref | mozilla::MediaDecoderStateMachineBase::HasAudio]"
+  },
+  {
+   "bugid": 1884719,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] ensure the hardware decoding is available before starting the media engine"
+  },
+  {
+   "bugid": 1884910,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "The variant `wmf-media-engine` expiration is on 2024-04-10"
+  },
+  {
+   "bugid": 1885026,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Don't show warning for `NS_ERROR_DOM_MEDIA_EXTERNAL_ENGINE_NOT_SUPPORTED_ERR`"
+  },
+  {
+   "bugid": 1880307,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Change specified colors to hold none/value/calc components."
+  },
+  {
+   "bugid": 1882631,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-values] Let B default to 1 in `round(<strategy>?, A, B)`"
+  },
+  {
+   "bugid": 1882127,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Use JSFunctions for WebIDL interface objects"
+  },
+  {
+   "bugid": 1858627,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Suppress the paste contextmenu if the paste request is triggered by keyboard shortcut"
+  },
+  {
+   "bugid": 1883279,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Check browser.navigation.requireUserInteraction before skipping entries based on user interaction"
+  },
+  {
+   "bugid": 1882498,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add web APIs for Trusted Types guarded behind a pref"
+  },
+  {
+   "bugid": 1858048,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Don't include aria-label if we append the value as part of name computation (WPT accname/name/comp_embedded_control.html)"
+  },
+  {
+   "bugid": 1884383,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Support including markers from external sources in gecko profiles"
+  },
+  {
+   "bugid": 1884600,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Block NVIDIA RTX Video Super Resolution depends on driver version"
+  },
+  {
+   "bugid": 1885028,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "WebGL should use ParamTraits_TiedFields not PlainOldDataSerializer"
+  },
+  {
+   "bugid": 1883810,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Assertion failure: mTexture, at /builds/worker/checkouts/gecko/dom/webgpu/CanvasContext.cpp:195"
+  },
+  {
+   "bugid": 1769492,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ core::option::expect_failed | webrender::render_task_graph::RenderTaskGraphBuilder::end_frame] - Unable to find a bin!"
+  },
+  {
+   "bugid": 1883863,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Don't allocate surface rects when the scale factor is zero"
+  },
+  {
+   "bugid": 1883873,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make SurfaceInfo::get_surface_rect return a DeviceIntRect"
+  },
+  {
+   "bugid": 1884583,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Square border on rounded buttons when zoomed-in"
+  },
+  {
+   "bugid": 1751995,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Migrate old IPDLUnitTest tests to IPDL gtests"
+  },
+  {
+   "bugid": 1823904,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->realm()->isDebuggee(), at debugger/DebugScript.cpp:305"
+  },
+  {
+   "bugid": 1877703,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Dynamically inserted import map fails to remap bareword import"
+  },
+  {
+   "bugid": 1884706,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: count < PropCountLimit, at vm/Iteration.h:487"
+  },
+  {
+   "bugid": 1884746,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !zone->uniqueIds().has(tgt), at gc/StableCellHasher-inl.h:140"
+  },
+  {
+   "bugid": 1885114,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Zone class memory is not added to heap size measurements"
+  },
+  {
+   "bugid": 1882091,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Sticky child height is higher than its container"
+  },
+  {
+   "bugid": 1865394,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Verify dev tools display of priorities; urgency / incremental"
+  },
+  {
+   "bugid": 1884645,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Send an observer notification with the decodedBodySize before calling OnStopRequest listeners"
+  },
+  {
+   "bugid": 1882863,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ neqo_transport::path::Path::local_cid]"
+  },
+  {
+   "bugid": 1884759,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Don't use a mutex to handle parse promise blocking."
+  },
+  {
+   "bugid": 1859353,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add additional query parameters to strip on share List"
+  },
+  {
+   "bugid": 1884982,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "browser-blocking tests are taking too long to run in debug mode, investigate and re-enable"
+  },
+  {
+   "bugid": 1884216,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Perma dom/quota/test/xpcshell/telemetry/test_dom_quota_try.js | testSteps - [testSteps : 95] The number of events must match the expected number of events - 14 == 9 when Gecko 125 merges to Beta on 2024-03-18"
+  },
+  {
+   "bugid": 1843207,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "security/manager/ssl/OSReauthenticatorDarwin.mm:9:10: fatal error: 'nsCocoaUtils.h' file not found"
+  },
+  {
+   "bugid": 1439247,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "\"close tab with middle click\" feature is disruptive on touchpads where middle click is triggered unintentionally"
+  },
+  {
+   "bugid": 1883568,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Focus is lost after dismissing Windows file picker"
+  },
+  {
+   "bugid": 1884832,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Move CFTypeRefPtr.h to xpcom"
+  },
+  {
+   "bugid": 1884717,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Allow :trace console command to log function returns"
+  },
+  {
+   "bugid": 1885008,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma [tier 2] devtools/client/debugger/test/mochitest/browser_dbg-outline-filter.js | We expect at least one assertion to fail because this test file is marked as fail-if in the manifest."
+  },
+  {
+   "bugid": 1763961,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Keyboard shortcut still works when the \"Pick an element from the page\" feature is disabled."
+  },
+  {
+   "bugid": 1884072,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Make getStyleSheetRuleCountAndAtRules faster."
+  },
+  {
+   "bugid": 1856535,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "linter: Move from an blocklist model (from allowlist)"
+  },
+  {
+   "bugid": 1885041,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Expand disallowing JSM based imports to everything except for devtools"
+  },
+  {
+   "bugid": 1880498,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Modify the abandonment event, to also happen in case of a switch tab"
+  },
+  {
+   "bugid": 1884232,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dismissal acknowledgment tip padding is slightly uneven when it's the last result"
+  },
+  {
+   "bugid": 1876342,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Modify Firefox to register itself as a native messaging client for Chrome for the Dual Browser extensions on Windows"
+  },
+  {
+   "bugid": 1876344,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Modify Firefox to register itself as a native messaging client for Chrome for the Dual Browser extensions on Mac"
+  },
+  {
+   "bugid": 1875203,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Intermittent browser/components/aboutwelcome/tests/browser/browser_aboutwelcome_multistage_experimentAPI.js | single tracking bug"
+  },
+  {
+   "bugid": 1876173,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Add the ability to disable split Spotlight RDM"
+  },
+  {
+   "bugid": 1883660,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate deviceMigration to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1883682,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate saveToPocket to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1884407,
+   "status": "RESOLVED",
+   "component": "Firefox:Profiles",
+   "summary": "Add a probe to measure available disk space for profile directory storage device"
+  },
+  {
+   "bugid": 1884995,
+   "status": "RESOLVED",
+   "component": "Firefox:Profiles",
+   "summary": "Create base BackupResource class"
+  },
+  {
+   "bugid": 1885037,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "\"No trackers known to Firefox were detected on this page\" section should shrink when space is constrained, in the Protections popup"
+  },
+  {
+   "bugid": 1884705,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Add a function to allow getting attachments from the cache or dumps without downloading them"
+  },
+  {
+   "bugid": 1873833,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "The buttons of the selection done by click/mouse drag do not show tooltips upon mouse hover"
+  },
+  {
+   "bugid": 1867288,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Create new search engine icons schema and use it"
+  },
+  {
+   "bugid": 1882577,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make nsISearchEngine.getIconURL an async function"
+  },
+  {
+   "bugid": 1883916,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update search-telemetry-v2 schema with a nonAdsLinkQueryParamNames property"
+  },
+  {
+   "bugid": 1885002,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Turn on search-config-v2 for Nightly"
+  },
+  {
+   "bugid": 1885121,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix a few more tests that are broken with search-config-v2 enabled"
+  },
+  {
+   "bugid": 1885177,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix test_settings_persist and browser_rich_suggestions with search-config-v2 enabled"
+  },
+  {
+   "bugid": 1885193,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update mozilla-central copy of search-config-overrides-v2.json"
+  },
+  {
+   "bugid": 1883278,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Force-enable plaform session store collection if SHIP is enabled"
+  },
+  {
+   "bugid": 1881567,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Write standalone Rust application to process native messaging"
+  },
+  {
+   "bugid": 1884265,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Expose the Windows ApplicationName registry property to nsILocalHandlerApp"
+  },
+  {
+   "bugid": 1884785,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Expose the path to the os default application to privileged extensions"
+  },
+  {
+   "bugid": 1814289,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Apply the new jsdoc eslint rules to the new translations component"
+  },
+  {
+   "bugid": 1884722,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Translating a specific page removes some whitespaces between words"
+  },
+  {
+   "bugid": 1885003,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma OS X bustage warning: Can't unify mozinfo.json: file differs between /builds/worker/fetches/x64/common and /builds/worker/fetches/aarch64/common when Gecko 125 switches from Early Beta to Late Beta on 2024-03-29"
+  },
+  {
+   "bugid": 1885062,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Bump ios deployment target to 17.4"
+  },
+  {
+   "bugid": 1885183,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Vendor mako properly instead of using a binary wheel"
+  },
+  {
+   "bugid": 1884392,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove six dependency in RunCbindgen.py"
+  },
+  {
+   "bugid": 1884540,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove six dependency from build/ directory"
+  },
+  {
+   "bugid": 1884547,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma linux64-snap QA TEST-UNEXPECTED-TIMEOUT | test_download_folder_removal | TimeoutException()"
+  },
+  {
+   "bugid": 1879543,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Expose granted permissions on GeckoView"
+  },
+  {
+   "bugid": 1885020,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Perma [tier 2] toolkit/mozapps/extensions/test/browser/browser_html_detail_permissions.js | Only tabs should be included in a tablist: id: details-deck-button-permissions, tagName: BUTTON, className: tab-button ghost-button"
+  },
+  {
+   "bugid": 1885189,
+   "status": "RESOLVED",
+   "component": "Toolkit:Content Prompts",
+   "summary": "Remove some tests for old content prompts"
+  },
+  {
+   "bugid": 1868603,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Add a loading state to the new clear history dialog"
+  },
+  {
+   "bugid": 1883909,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Move logic from FormAutofillContent to FormAutofillChild"
+  },
+  {
+   "bugid": 1884931,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.45.2"
+  },
+  {
+   "bugid": 1828737,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Upgrade to Storybook version 7"
+  },
+  {
+   "bugid": 1876363,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Ship v125.0.0 of the WebCompat System Addon"
+  }
+ ],
+ "fixed": 75,
+ "total": 86,
+ "restricted": 1
+}
