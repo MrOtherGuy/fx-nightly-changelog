@@ -1,0 +1,2206 @@
+{
+ "date": "2024-03-18",
+ "buildid": "20240318110542",
+ "cset": "e427f093926ae213863305fd3943625e4a68aa87",
+ "bugs": [
+  {
+   "bugid": 1870912,
+   "status": "NEW",
+   "component": "Application Services:Fxa Client",
+   "summary": "Dry-run testing for the new application-services state machine"
+  },
+  {
+   "bugid": 1880328,
+   "status": "RESOLVED",
+   "component": "Application Services:Fxa Client",
+   "summary": "FxA state machine checker fixes"
+  },
+  {
+   "bugid": 1882136,
+   "status": "RESOLVED",
+   "component": "Application Services:Fxa Client",
+   "summary": "Don't send internal AuthenticationError to the state machine checker"
+  },
+  {
+   "bugid": 1883412,
+   "status": "RESOLVED",
+   "component": "Application Services:Fxa Client",
+   "summary": "Fxa state machine fixes (round 3)"
+  },
+  {
+   "bugid": 1884434,
+   "status": "RESOLVED",
+   "component": "Application Services:Fxa Client",
+   "summary": "Fxa state machine breadcrumb improvements"
+  },
+  {
+   "bugid": 1879649,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Send the `data_path` to the suggest component on Android"
+  },
+  {
+   "bugid": 1885170,
+   "status": "NEW",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Remove `glean_timestamp` from recorded events in test mode"
+  },
+  {
+   "bugid": 1864682,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Extract the internal FxA state machine and move it to application-services"
+  },
+  {
+   "bugid": 1872184,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Rate limit the amount of auth recovery checks that we schedule"
+  },
+  {
+   "bugid": 1832357,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Nothing happens when clicking on some PDF links in custom tabs"
+  },
+  {
+   "bugid": 1877039,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Opening specific amazon link causes loop which makes firefox/phone unusable"
+  },
+  {
+   "bugid": 1877323,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Improve external applinks trigger timeout"
+  },
+  {
+   "bugid": 1880075,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Use single name field for addresses"
+  },
+  {
+   "bugid": 1882204,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Update `removedIn` version for address autofill name strings"
+  },
+  {
+   "bugid": 1839160,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Crash - NullPointerException in BookmarkFragment"
+  },
+  {
+   "bugid": 1875761,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "browser-engine-gecko unit test fails if geckoview update channel is \"default\""
+  },
+  {
+   "bugid": 1879583,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "Change the default setting for pull-to-refresh to enabled"
+  },
+  {
+   "bugid": 1882914,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "[Color update] Add `fx_mobile_icon_color_oncolor_disabled` to Fenix color tokens"
+  },
+  {
+   "bugid": 1876806,
+   "status": "VERIFIED",
+   "component": "Fenix:Downloads",
+   "summary": "Downloaded files in private tabs get deleted after deleting browsing data"
+  },
+  {
+   "bugid": 1877881,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Crash in [@ java.lang.RuntimeException: at android.app.LoadedApk$ReceiverDispatcher$Args.lambda$getRunnable$0(LoadedApk.java)]"
+  },
+  {
+   "bugid": 1879135,
+   "status": "VERIFIED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[Telemetry] browser.search. metrics are not generated with Ecosia"
+  },
+  {
+   "bugid": 1880150,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[off-train experiments] Do not wait for attribution before dismissing splash screen"
+  },
+  {
+   "bugid": 1880476,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Messaging Transition I: Prepare for microsurveys"
+  },
+  {
+   "bugid": 1880483,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Messaging Transition I: Add inverse triggers"
+  },
+  {
+   "bugid": 1880544,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Messaging Transition I: Add action-params to message action"
+  },
+  {
+   "bugid": 1881336,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove expired telemetry in v125"
+  },
+  {
+   "bugid": 1882123,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Crash in [@ java.lang.IllegalThreadStateException: at mozilla.components.lib.state.internal.ReducerChainBuilder$build$threadCheck$1.invoke(ReducerChainBuilder.kt)]"
+  },
+  {
+   "bugid": 1882778,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove redundant string juno_onboarding_privacy_notice_text_2"
+  },
+  {
+   "bugid": 1807080,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "[Pull To Refresh] Throbber should have dark design in dark mode"
+  },
+  {
+   "bugid": 1833666,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "Keep Firefox-Android documentation up-to-date"
+  },
+  {
+   "bugid": 1845409,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Add `lib-state` alternative to `HomeActivity::openToBrowserAndLoad`"
+  },
+  {
+   "bugid": 1845496,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Upgrade Kotlin to latest version (1.9.22)"
+  },
+  {
+   "bugid": 1847999,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Upgrade Room to 2.6.1 and enable Kotlin code generation (\"Kotlin CodeGen”)"
+  },
+  {
+   "bugid": 1848139,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove the glean-gradle-plugin step that generates metrics documentation"
+  },
+  {
+   "bugid": 1850316,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update navigation library to latest stable version (2.7.7)"
+  },
+  {
+   "bugid": 1851947,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Google Accompanist to version 0.32.0"
+  },
+  {
+   "bugid": 1852224,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Background audio playback from \"Video Background Play Fix\" stops when another tab's opened"
+  },
+  {
+   "bugid": 1858895,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "The \"Leave no trace on this device\" message is displayed resized when changing the orientation"
+  },
+  {
+   "bugid": 1870050,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Android Gradle Plugin to version 8.2.0"
+  },
+  {
+   "bugid": 1870123,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove the GitHubPlugin in oak"
+  },
+  {
+   "bugid": 1872235,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Introduce a lint check to ensure Response.close is always called with concept-fetch consumers"
+  },
+  {
+   "bugid": 1873486,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update mockk to version 1.13.9"
+  },
+  {
+   "bugid": 1874522,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Crash when entering more that. 3 characters in URL bar"
+  },
+  {
+   "bugid": 1874819,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Align the displayed version name with the GV version"
+  },
+  {
+   "bugid": 1875379,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update private tab notification string for Android 14"
+  },
+  {
+   "bugid": 1876024,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Snapshot not taken on swiping between tabs leading to incorrect scroll offset when swiping, re-opening bug 1813206"
+  },
+  {
+   "bugid": 1876385,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Benchmark to version 1.2.3"
+  },
+  {
+   "bugid": 1876398,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Compose to version 1.6.1"
+  },
+  {
+   "bugid": 1876419,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "ktlint warnings due to \"Property 'max_line_length' expects an integer\""
+  },
+  {
+   "bugid": 1876751,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove redundant preferences from SettingsFragment"
+  },
+  {
+   "bugid": 1876752,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Reorder preferences in `SettingsFragment` to match the UI layout"
+  },
+  {
+   "bugid": 1876794,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[v123] Fixes needed on a-c and fenix strings"
+  },
+  {
+   "bugid": 1877307,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[RFC] Introduce a Store for UI components"
+  },
+  {
+   "bugid": 1877412,
+   "status": "ASSIGNED",
+   "component": "Fenix:General",
+   "summary": "Bootstrap_CONDA_'Miniconda3' tasks racing against each other"
+  },
+  {
+   "bugid": 1877692,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "use geckoview build in objdir for local fenix/focus/a-c builds"
+  },
+  {
+   "bugid": 1877833,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Utilize the new credential management strings"
+  },
+  {
+   "bugid": 1877847,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove Suggest error reporting"
+  },
+  {
+   "bugid": 1877885,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Detekt to version 1.23.5"
+  },
+  {
+   "bugid": 1877887,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update ZXing to version 3.5.3"
+  },
+  {
+   "bugid": 1877888,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Update Adjust to version 4.38.1"
+  },
+  {
+   "bugid": 1877889,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Sentry to version 7.3.0"
+  },
+  {
+   "bugid": 1878185,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Add a middleware that can react to changes to specific state properties"
+  },
+  {
+   "bugid": 1878409,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Gradle to version 8.6"
+  },
+  {
+   "bugid": 1879116,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Replace coil-svg with AndroidSVG"
+  },
+  {
+   "bugid": 1879132,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "Upgrade AGP to latest version (8.3.0)"
+  },
+  {
+   "bugid": 1879146,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Move mozac.org docs back into the android-components folder"
+  },
+  {
+   "bugid": 1879663,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Add RFC proposing changes to RFC process"
+  },
+  {
+   "bugid": 1879912,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update OkHttp to version 4.12.0"
+  },
+  {
+   "bugid": 1879944,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Compose Compiler to version 1.5.9"
+  },
+  {
+   "bugid": 1880077,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Switch to using Compose BOM instead of individual versioning for Compose libraries"
+  },
+  {
+   "bugid": 1880152,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Firebase Cloud Messaging to version 23.4.1"
+  },
+  {
+   "bugid": 1880216,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Migrate Fenix docs into Sphinx"
+  },
+  {
+   "bugid": 1880408,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX WorkManager to version 2.9.0"
+  },
+  {
+   "bugid": 1880494,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update JUnit5 to version 5.10.2"
+  },
+  {
+   "bugid": 1880511,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Kotlin Coroutines to version 1.8.0"
+  },
+  {
+   "bugid": 1880516,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Kotlin Serialization to version 1.6.3"
+  },
+  {
+   "bugid": 1880666,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Android command line tools to version 12.0"
+  },
+  {
+   "bugid": 1880759,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update SnakeYAML to version 2.2"
+  },
+  {
+   "bugid": 1880999,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Start the Nightly 125 development cycle"
+  },
+  {
+   "bugid": 1881326,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Sentry to version 7.4.0"
+  },
+  {
+   "bugid": 1881338,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update telemetry expiry handling in release checklist"
+  },
+  {
+   "bugid": 1881347,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Compose Compiler to version 1.5.10"
+  },
+  {
+   "bugid": 1882087,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "make sure android tests are sheriffable"
+  },
+  {
+   "bugid": 1882134,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Use jvmToolchain for setting target JVM version"
+  },
+  {
+   "bugid": 1882450,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove Gecko.kt"
+  },
+  {
+   "bugid": 1882457,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update the release process docs for the monorepo migration"
+  },
+  {
+   "bugid": 1882468,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Add BUG_COMPONENT and SCHEDULES for migrated monorepo files in mobile/android/moz.build"
+  },
+  {
+   "bugid": 1882560,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update mockk to version 1.13.10"
+  },
+  {
+   "bugid": 1882566,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Adjust to version 4.38.2"
+  },
+  {
+   "bugid": 1883054,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Implement Granting partial access to photos and videos  in Android 14+"
+  },
+  {
+   "bugid": 1883083,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Mockito to version 5.11.0"
+  },
+  {
+   "bugid": 1883084,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Sentry to version 7.5.0"
+  },
+  {
+   "bugid": 1883197,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Fix Dependency androidx_navigation_ui version number issue"
+  },
+  {
+   "bugid": 1883651,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "disable cron tasks and github workflows on firefox-android main ahead of the move to mozilla-central"
+  },
+  {
+   "bugid": 1883703,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Direct contributors to Bugzilla for issue tracking"
+  },
+  {
+   "bugid": 1883984,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Browser to version 1.8.0"
+  },
+  {
+   "bugid": 1884034,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Crash in [@ java.lang.IllegalArgumentException: at com.caverock.androidsvg.SVG.getDocumentViewBox(SVG.java)]"
+  },
+  {
+   "bugid": 1884187,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "Fenix doesn't display the enabled \"Dark\" theme after opening a custom tab"
+  },
+  {
+   "bugid": 1884300,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Crash in [@ java.lang.IllegalArgumentException: at com.caverock.androidsvg.SVG.getDocumentViewBox(SVG.java)]"
+  },
+  {
+   "bugid": 1884666,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "Google SSO functionality is broken"
+  },
+  {
+   "bugid": 1885348,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update README.md to include blurb about installing Rosetta"
+  },
+  {
+   "bugid": 1809798,
+   "status": "VERIFIED",
+   "component": "Fenix:Homepage",
+   "summary": "Orientation is not respected when loading wallpapers"
+  },
+  {
+   "bugid": 1840969,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Homepage Banner CFR heading is missing"
+  },
+  {
+   "bugid": 1861459,
+   "status": "REOPENED",
+   "component": "Fenix:Homepage",
+   "summary": "[lib-state] Remove `BrowsingModeManager` and track Private Browsing Mode in the `AppStore` exclusively"
+  },
+  {
+   "bugid": 1873457,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Can ext Activity HomeActivity decoupling functions enforce compile time checking"
+  },
+  {
+   "bugid": 1879507,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Investigate & Add \"Set as default\" system prompt when default-browser card not displayed"
+  },
+  {
+   "bugid": 1879512,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add Illustrations for Optimize “Set as Default Browser” screen experiment"
+  },
+  {
+   "bugid": 1880520,
+   "status": "VERIFIED",
+   "component": "Fenix:Onboarding",
+   "summary": "Promote Treatment B of Android Search Widget Onboarding Experiment to be default."
+  },
+  {
+   "bugid": 1881009,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Implement treatment B branch for \"Set to Default\" Onboarding Experiment"
+  },
+  {
+   "bugid": 1881016,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Implement treatment C & D branch strings for \"Set to Default\" Onboarding Experiment"
+  },
+  {
+   "bugid": 1881976,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Permanent raptor-main Critical: test 'web-de' could not be found for fenix"
+  },
+  {
+   "bugid": 1883487,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "Remove unused KeyUtils.generateEncryptionKey in lib-dataprotect"
+  },
+  {
+   "bugid": 1804636,
+   "status": "VERIFIED",
+   "component": "Fenix:Search",
+   "summary": "Allow search terms to be refined in content"
+  },
+  {
+   "bugid": 1868539,
+   "status": "VERIFIED",
+   "component": "Fenix:Search",
+   "summary": "Add a method of changing the remote settings server for SERP telemetry"
+  },
+  {
+   "bugid": 1878434,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Add awesomebar engagement and abandonment events"
+  },
+  {
+   "bugid": 1880004,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Ensure Mobile Clients are requesting/consuming mobile specific sponsored suggestions"
+  },
+  {
+   "bugid": 1880284,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "The keyboard is no longer displayed and the term is not highlighted when performing a voice search"
+  },
+  {
+   "bugid": 1880829,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Prevent multiple identical tabs being displayed in 'Firefox Suggest' 'Switch to Tab'"
+  },
+  {
+   "bugid": 1881296,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Add item to release checklist to add search-telemtry-v2.json dump"
+  },
+  {
+   "bugid": 1881561,
+   "status": "VERIFIED",
+   "component": "Fenix:Search",
+   "summary": "Update SERP telemetry json dump to latest"
+  },
+  {
+   "bugid": 1857544,
+   "status": "VERIFIED",
+   "component": "Fenix:Shopping",
+   "summary": "[a11y] The Review Checker sheet does not scroll into the view elements from under the OS footer when TalkBack is focusing them"
+  },
+  {
+   "bugid": 1870701,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Update the base privacy policy link and anchor text in the Review Checker opt-in screen"
+  },
+  {
+   "bugid": 1871093,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "[a11y] Consider increasing contrast for the \"Report product is in stock\" button on Xiaomi Pad5 (Android 13)"
+  },
+  {
+   "bugid": 1796209,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "CustomTabsToolbarFeature does not correct tint icons/text when no toolbar colour config provided"
+  },
+  {
+   "bugid": 1812359,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "Black unresponsive screen after returning to custom tab after some time"
+  },
+  {
+   "bugid": 1812843,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Custom tab \"tweet\" button looks squished"
+  },
+  {
+   "bugid": 1813875,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "PWA & Custom Tabs: Status bar & Navigation Bar issue"
+  },
+  {
+   "bugid": 1813913,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "CustomTabs does not support setColorScheme and setColorSchemeParams"
+  },
+  {
+   "bugid": 1853107,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "Tab freezes, in part the contents of an adjacent tab are displayed, in part the tab contents are completely black"
+  },
+  {
+   "bugid": 1860778,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Strange shadow effect of \"Add tab\" float action button"
+  },
+  {
+   "bugid": 1875465,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Add tab strip for tablets behind secret settings"
+  },
+  {
+   "bugid": 1875668,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "the desktop-website toggle is not working correctly"
+  },
+  {
+   "bugid": 1876594,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Fix broken Compose previews in Tabs Tray"
+  },
+  {
+   "bugid": 1877123,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[L10N] The counter from tabs tray is not translated in Arabic"
+  },
+  {
+   "bugid": 1878524,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "short-circuiting tabs loop in TabsTrayTabLayouts"
+  },
+  {
+   "bugid": 1879332,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Set the `inactive` RemoteTab attribute for inactive tabs"
+  },
+  {
+   "bugid": 1881703,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Notifiy AppStore of mode change when tab is selected from a different mode"
+  },
+  {
+   "bugid": 1882106,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Display undo snack bar on closing a tab"
+  },
+  {
+   "bugid": 1882107,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Add ability to reorder tabs with drag and drop"
+  },
+  {
+   "bugid": 1882308,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "Custom tab toolbar doesn't have the purple color in Private Mode"
+  },
+  {
+   "bugid": 1883065,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Extra padding on top of toolbar in custom tabs when tab strip is enabled"
+  },
+  {
+   "bugid": 1883621,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Add Fade for longer title instead of ellipsis"
+  },
+  {
+   "bugid": 1884891,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Opening a link in a new private tab and switching should show private tabs only"
+  },
+  {
+   "bugid": 1864760,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Remove all button actions from Toolbar in BrowserFragment"
+  },
+  {
+   "bugid": 1867698,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] add basic nav bar composable"
+  },
+  {
+   "bugid": 1868260,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] sync positioning of nav bar with toolbar"
+  },
+  {
+   "bugid": 1868261,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] hide nav toolbar on scrolling the container"
+  },
+  {
+   "bugid": 1868262,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] integrate A-C MenuButton into composable nav bar"
+  },
+  {
+   "bugid": 1868469,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Fenix URL bar reverts to the old URL after loading a new URL until successfully loading the new site"
+  },
+  {
+   "bugid": 1870933,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Remove all button actions from Toolbar in HomeFragment"
+  },
+  {
+   "bugid": 1870938,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Modify URL bar background and page action separator"
+  },
+  {
+   "bugid": 1870939,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Add Share button to Page Actions in Toolbar"
+  },
+  {
+   "bugid": 1873260,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] refactor scrollable toolbar behaviour"
+  },
+  {
+   "bugid": 1873991,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] make nav bar work in custom tab"
+  },
+  {
+   "bugid": 1874298,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Add Reload button to PageActions in Toolbar"
+  },
+  {
+   "bugid": 1877350,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] refactor tabs tray tab counter to make it reusable"
+  },
+  {
+   "bugid": 1878827,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] handle click events on nav buttons"
+  },
+  {
+   "bugid": 1879370,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] adjust window/banners positioning to nav bar"
+  },
+  {
+   "bugid": 1879372,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] add enabled/disabled states for nav buttons"
+  },
+  {
+   "bugid": 1879373,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] add a fake nav bar to tab swiping"
+  },
+  {
+   "bugid": 1879377,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] hide nav bar when the toolbar becomes focused"
+  },
+  {
+   "bugid": 1879648,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] remove nav buttons from the menu"
+  },
+  {
+   "bugid": 1882196,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] land dev branch"
+  },
+  {
+   "bugid": 1883753,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] remove menu button from custom tab"
+  },
+  {
+   "bugid": 1884487,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign]  refactor NavbarIntegration"
+  },
+  {
+   "bugid": 1885399,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] fix clipping behaviour"
+  },
+  {
+   "bugid": 1876596,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "[Debug Drawer] Add a telemetry probe for enabling the Debug Drawer"
+  },
+  {
+   "bugid": 1881571,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Use tooling-lint component in mobile firefox apps"
+  },
+  {
+   "bugid": 1853058,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Remove Secret Settings and Give Nimbus Release Control"
+  },
+  {
+   "bugid": 1856979,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Post-Translate Popup"
+  },
+  {
+   "bugid": 1856986,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Integration Preference Logic - Page Settings"
+  },
+  {
+   "bugid": 1862289,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Integration Low Data Translate"
+  },
+  {
+   "bugid": 1862291,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Automatic Translations Preference Language - Global Settings"
+  },
+  {
+   "bugid": 1862295,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Integration Integrate Error States"
+  },
+  {
+   "bugid": 1873983,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Move Secret Settings to Nightly"
+  },
+  {
+   "bugid": 1875093,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Page Settings Preference Actions Fetch"
+  },
+  {
+   "bugid": 1875817,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Integration Toolbar Showing"
+  },
+  {
+   "bugid": 1876140,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Dropdown Checkmark"
+  },
+  {
+   "bugid": 1876610,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Minor Adjustments to Mock Data and Content Description on Toolbar Icon"
+  },
+  {
+   "bugid": 1876803,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Add Low Data Action"
+  },
+  {
+   "bugid": 1876820,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Download Languages Action"
+  },
+  {
+   "bugid": 1876823,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Never Translate this Site Global"
+  },
+  {
+   "bugid": 1876844,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Language Setting Helper"
+  },
+  {
+   "bugid": 1877203,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Page Settings Preference Actions Update"
+  },
+  {
+   "bugid": 1877205,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Refactor `TranslateExpectedAction` in Middleware to send a `TranslateDataRequestedAction`"
+  },
+  {
+   "bugid": 1877277,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations add Check for isTranslationsEngineSupported"
+  },
+  {
+   "bugid": 1877278,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC State Translations add Check for isTranslationsEngineSupported"
+  },
+  {
+   "bugid": 1877588,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Dispatched Actions in Translations Middleware `Must have a Handler`"
+  },
+  {
+   "bugid": 1877712,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Update Mock Translations Data Language Names"
+  },
+  {
+   "bugid": 1878091,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Refine AC Translations Action that Syncs with Translations Engine State"
+  },
+  {
+   "bugid": 1878365,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Fix dispatch and Test in `requestTranslationPageSettings`"
+  },
+  {
+   "bugid": 1878917,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Add Action and/or Reducer for Checking for `LanguageNotSupported` and Send Error"
+  },
+  {
+   "bugid": 1878921,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations CouldNotLoadLanguagesError UI \"Try Again\""
+  },
+  {
+   "bugid": 1878962,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Update/Delete Never Translate this Site Global"
+  },
+  {
+   "bugid": 1879868,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Automatically Popup bottom sheet on Offer Translation"
+  },
+  {
+   "bugid": 1880490,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Move `languageSupport` to Global Translations State"
+  },
+  {
+   "bugid": 1881294,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Clear `isExpectedTranslate` when the state indicates we should"
+  },
+  {
+   "bugid": 1881604,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Support Helper for Mapping a Language Code to a Language"
+  },
+  {
+   "bugid": 1881831,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations Integration - Add \"Offer to translate when possible\" Connection"
+  },
+  {
+   "bugid": 1882151,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Update Translations AC API for \"Always Translate\" and \"Never Translate\" Language"
+  },
+  {
+   "bugid": 1882403,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Refactor `InitAction` in TranslationsMiddleware to call `InitTranslationsBrowserState`"
+  },
+  {
+   "bugid": 1882405,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Fix Bug in Translations Reducer that prevents Updates being Emitted to Observers"
+  },
+  {
+   "bugid": 1882542,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Eagerly calculate the translation model download size on default values"
+  },
+  {
+   "bugid": 1882572,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Nimbus Instrumentation for Staged Area Release for Translations"
+  },
+  {
+   "bugid": 1883127,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations unset `isOfferTranslate`"
+  },
+  {
+   "bugid": 1883128,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Page Settings Unsetting in Translations and Add Logging"
+  },
+  {
+   "bugid": 1883418,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translate icon is not visible on Private Browsing Mode"
+  },
+  {
+   "bugid": 1883420,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Global Automatic translation text is cut off"
+  },
+  {
+   "bugid": 1883465,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Bottom Sheet in landscape should span the full screen"
+  },
+  {
+   "bugid": 1883968,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Telemetry Probes to Support Nimbus Translations Experiment"
+  },
+  {
+   "bugid": 1884390,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Adjust language selection on Unsupported Error"
+  },
+  {
+   "bugid": 1884459,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "In the \"Offer\" Translation case, the Dialog Pops up Too Eagerly"
+  },
+  {
+   "bugid": 1885137,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "The Translations feature is not available on some devices"
+  },
+  {
+   "bugid": 1807268,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - HomeActivity ANR"
+  },
+  {
+   "bugid": 1815651,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyAutofillToggleTest >"
+  },
+  {
+   "bugid": 1816066,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyMultipleLoginsSelectionsTest >"
+  },
+  {
+   "bugid": 1833097,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < AddressAutofillTest.verifyAddAddressViewTest >"
+  },
+  {
+   "bugid": 1837569,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < AddressAutofillTest.verifyStateFieldUpdatesInAccordanceWithCountryFieldTest >"
+  },
+  {
+   "bugid": 1844252,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < ComposeMediaNotificationTest. verifyVideoPlaybackSystemNotificationTest >"
+  },
+  {
+   "bugid": 1846707,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < ComposeTabbedBrowsingTest.closeAllTabsTest >"
+  },
+  {
+   "bugid": 1864692,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create new startup-test Robo Test Task for Fenix/Focus w/opt-enabled Nightly"
+  },
+  {
+   "bugid": 1865316,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < SettingsAdvancedTest. askBeforeOpeningLinkInAppCancelTest >"
+  },
+  {
+   "bugid": 1873897,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update Testrail Milestone Release Trigger and Slack Message"
+  },
+  {
+   "bugid": 1874662,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Interminttent UI test failure - ANR on waiting for Tabs tray"
+  },
+  {
+   "bugid": 1874831,
+   "status": "NEW",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure FirefoxSuggestTest - suggestions not displayed"
+  },
+  {
+   "bugid": 1876700,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to CollectionRobot"
+  },
+  {
+   "bugid": 1876720,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to ComposeTabDrawerRobot"
+  },
+  {
+   "bugid": 1876734,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to ComposeTopSitesRobot"
+  },
+  {
+   "bugid": 1877409,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to CustomTabRobot"
+  },
+  {
+   "bugid": 1877435,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to EnhancedTrackingProtectionRobot"
+  },
+  {
+   "bugid": 1877440,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Use only TestHelper snack bar verification function in UI tests"
+  },
+  {
+   "bugid": 1877639,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to FindInPageRobot"
+  },
+  {
+   "bugid": 1877938,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove redundant assertion functions from BookmarksRobot"
+  },
+  {
+   "bugid": 1877939,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove redundant assertion functions from EnhancedTrackingProtectionRobot"
+  },
+  {
+   "bugid": 1877945,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove redundant assertion functions from FindInPageRobot"
+  },
+  {
+   "bugid": 1878028,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more test logs to HistoryRobot"
+  },
+  {
+   "bugid": 1878386,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Rewrite ui-test.sh into Python"
+  },
+  {
+   "bugid": 1878866,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to AddToHomeScreenRobot"
+  },
+  {
+   "bugid": 1878868,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create TestSetup helper: Migrate all test setup and tear down methods in @Before  - Test classes A-C"
+  },
+  {
+   "bugid": 1878878,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to BookmarksRobot"
+  },
+  {
+   "bugid": 1879027,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to CollectionRobot"
+  },
+  {
+   "bugid": 1879072,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add test logs to HomeScreenRobot"
+  },
+  {
+   "bugid": 1879288,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to BrowserRobot"
+  },
+  {
+   "bugid": 1879308,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to ComposeTabDrawerRobot"
+  },
+  {
+   "bugid": 1879339,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to ComposeTopSitesRobot"
+  },
+  {
+   "bugid": 1879498,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to CustomTabRobot"
+  },
+  {
+   "bugid": 1879509,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to DownloadRobot"
+  },
+  {
+   "bugid": 1879525,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create TestSetup helper: Migrate all test setup and tear down methods in @Before  - Compose Test classes"
+  },
+  {
+   "bugid": 1879539,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add test logs to LibrarySubMenusMultipleSelectionToolbarRobot"
+  },
+  {
+   "bugid": 1879886,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add test logs to NavigationToolbarRobot"
+  },
+  {
+   "bugid": 1880047,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing pairs of logs to NotificationRobot"
+  },
+  {
+   "bugid": 1880064,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to ReaderViewRobot"
+  },
+  {
+   "bugid": 1880087,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create TestSetup helper: Migrate all test setup and tear down methods in @Before  - Test classes D-L"
+  },
+  {
+   "bugid": 1880221,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to RecentlyClosedTabsRobot"
+  },
+  {
+   "bugid": 1880445,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsRobot"
+  },
+  {
+   "bugid": 1880466,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuAccessibilityRobot"
+  },
+  {
+   "bugid": 1880497,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "TestSetup helper: Migrate all test setup and tear down methods in @Before  - Test classes M-N"
+  },
+  {
+   "bugid": 1880620,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuAddonsManagerRobot"
+  },
+  {
+   "bugid": 1880640,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add pairs of logs to SettingsSubMenuAutofillRobot"
+  },
+  {
+   "bugid": 1880796,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "TestSetup helper: Migrate all test setup and tear down methods in @Before  - Test classes O-R"
+  },
+  {
+   "bugid": 1880797,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "TestSetup helper: Migrate all test setup and tear down methods in @Before  - Settings Test classes"
+  },
+  {
+   "bugid": 1880808,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add pairs of logs to SearchRobot"
+  },
+  {
+   "bugid": 1880812,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuCustomizeRobot"
+  },
+  {
+   "bugid": 1880820,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "TestSetup helper: Migrate all test setup and tear down methods in @Before  - Test classes S-W"
+  },
+  {
+   "bugid": 1880821,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuDataCollectionRobot"
+  },
+  {
+   "bugid": 1880827,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuDeleteBrowsingDataOnQuitRobot"
+  },
+  {
+   "bugid": 1880912,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove TestRail Script and Dependencies from ui-test-apk TC Task"
+  },
+  {
+   "bugid": 1881010,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuDeleteBrowsingDataRobot"
+  },
+  {
+   "bugid": 1881028,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuEnhancedTrackingProtectionRobot"
+  },
+  {
+   "bugid": 1881041,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "TestSetup helper: Migrate all test setup and tear down methods in @Before  - RetryTestRule"
+  },
+  {
+   "bugid": 1881066,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Unschedule screenshots cron"
+  },
+  {
+   "bugid": 1881228,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuHomepageRobot"
+  },
+  {
+   "bugid": 1881238,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuHomepageRobot"
+  },
+  {
+   "bugid": 1881250,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuLanguageRobot"
+  },
+  {
+   "bugid": 1881349,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update AndroidX Test Uiautomator to version 2.3.0"
+  },
+  {
+   "bugid": 1881489,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuLoginsAndPasswordOptionsToSaveRobot"
+  },
+  {
+   "bugid": 1881491,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuLoginsAndPasswordRobot"
+  },
+  {
+   "bugid": 1881733,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuLoginsAndPasswordsSavedLoginsRobot"
+  },
+  {
+   "bugid": 1882035,
+   "status": "NEW",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure FirefoxSuggestTest - non-sponsored suggestions not updated"
+  },
+  {
+   "bugid": 1882162,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "remove jQuery slim test asset"
+  },
+  {
+   "bugid": 1882170,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Disable Auto-Fill View Tests After Test Asset Was Modified"
+  },
+  {
+   "bugid": 1882213,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Re-enable address autofill view tests"
+  },
+  {
+   "bugid": 1882264,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuOpenLinksInAppsRobot"
+  },
+  {
+   "bugid": 1882272,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuPrivateBrowsingRobot"
+  },
+  {
+   "bugid": 1882473,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuSitePermissionsCommonRobot"
+  },
+  {
+   "bugid": 1882507,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuSitePermissionsExceptionsRobot"
+  },
+  {
+   "bugid": 1882732,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuSitePermissionsRobot"
+  },
+  {
+   "bugid": 1882740,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuTabsRobot"
+  },
+  {
+   "bugid": 1882768,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsTurnOnSyncRobot"
+  },
+  {
+   "bugid": 1882777,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Request permission to reset locale in UI tests"
+  },
+  {
+   "bugid": 1882976,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to ShareOverlayRobot"
+  },
+  {
+   "bugid": 1882987,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SiteSecurityRobot"
+  },
+  {
+   "bugid": 1883005,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SyncSignInRobot"
+  },
+  {
+   "bugid": 1883014,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SystemSettingsRobot"
+  },
+  {
+   "bugid": 1883021,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to ThreeDotMenuBookmarksRobot"
+  },
+  {
+   "bugid": 1883331,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SitePermissionsRobot"
+  },
+  {
+   "bugid": 1883363,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuSearchRobot"
+  },
+  {
+   "bugid": 1883870,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Improve test logs in bookmarks and downloads storage deletion in UI test"
+  },
+  {
+   "bugid": 1884154,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove openInApp Button Reference from UI Tests"
+  },
+  {
+   "bugid": 1884329,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to TabDrawerRobot"
+  },
+  {
+   "bugid": 1884363,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to ThreeDotMenuMainRobot"
+  },
+  {
+   "bugid": 1884653,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to AccountSettingsRobot"
+  },
+  {
+   "bugid": 1884903,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuAboutRobot"
+  },
+  {
+   "bugid": 1884904,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to SettingsSubMenuSetDefaultBrowserRobot"
+  },
+  {
+   "bugid": 1884918,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to MatcherHelper"
+  },
+  {
+   "bugid": 1885108,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to TestHelper"
+  },
+  {
+   "bugid": 1885123,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to DataGenerationHelper"
+  },
+  {
+   "bugid": 1885141,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to MockBrowserDataHelper"
+  },
+  {
+   "bugid": 1885160,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to AppAndSystemHelper"
+  },
+  {
+   "bugid": 1885288,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to FeatureSettingsHelperDelegate"
+  },
+  {
+   "bugid": 1885300,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to  HomeActivityTestRule"
+  },
+  {
+   "bugid": 1885314,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add more logs to RetryTestRule"
+  },
+  {
+   "bugid": 1885329,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add logs to MockLocationUpdatesRule"
+  },
+  {
+   "bugid": 1867717,
+   "status": "REOPENED",
+   "component": "Fenix:WebExtensions",
+   "summary": "click() on a download link does not work from extension popup"
+  },
+  {
+   "bugid": 1875229,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Add support for extensions not allowed in private windows"
+  },
+  {
+   "bugid": 1881537,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Exposed required and optional permissions on AC"
+  },
+  {
+   "bugid": 1881676,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "When you disable an extension, Fenix changes its label for the \"Enabled\" slider to say \"Disabled\", which is a confusing label since the slider ends up in the off position (so, \"disabled: no\")"
+  },
+  {
+   "bugid": 1882404,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Expose granted permissions on AC"
+  },
+  {
+   "bugid": 1881803,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Convert Report Site Issue extension to event pages"
+  },
+  {
+   "bugid": 1882671,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Dependency change instructions for .buildconfig.yml are incorrect on firefox-android"
+  },
+  {
+   "bugid": 1877662,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "expose mozconfig as an artifact from build-fat-aar tasks"
+  },
+  {
+   "bugid": 1878034,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "update task scheduling for firefox-android in gecko repos"
+  },
+  {
+   "bugid": 1881774,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "point browsertime-mobile tests at in-tree fenix builds after repo migration"
+  },
+  {
+   "bugid": 1880227,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Migrate Focus docs into Sphinx"
+  },
+  {
+   "bugid": 1882138,
+   "status": "VERIFIED",
+   "component": "Focus:General",
+   "summary": "In-app language switching doesn't work"
+  },
+  {
+   "bugid": 1819872,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Intermittent UI test failure - HomeActivity ANR"
+  },
+  {
+   "bugid": 1883319,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Focus UI test: add language change smoke test coverage"
+  },
+  {
+   "bugid": 1884339,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Intermittent UI test failure - < ContextMenusTest. shareImageTest >"
+  },
+  {
+   "bugid": 1867656,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Refactor the load mozconfig script to its own gradle file"
+  },
+  {
+   "bugid": 1822248,
+   "status": "NEW",
+   "component": "Release Engineering:General",
+   "summary": "[meta] Migrate the Android monorepo to mozilla-{central,beta,release}"
+  },
+  {
+   "bugid": 1822393,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Consume GeckoView directly in Fenix and Focus in mozilla-central"
+  },
+  {
+   "bugid": 1824856,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: port tasks to oak/mozilla-central"
+  },
+  {
+   "bugid": 1824858,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: task optimization"
+  },
+  {
+   "bugid": 1825116,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: fix lint errors on mozilla-central"
+  },
+  {
+   "bugid": 1826838,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: port lint tasks to oak/mozilla-central"
+  },
+  {
+   "bugid": 1839869,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "set up pushapkscript for fenix/focus-android uploads from gecko"
+  },
+  {
+   "bugid": 1875350,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: Port application-services version bump to oak/mozilla-central"
+  },
+  {
+   "bugid": 1876041,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "android-l10n support using treescript"
+  },
+  {
+   "bugid": 1876318,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "port release tasks from firefox-android to oak/mozilla-central"
+  },
+  {
+   "bugid": 1876323,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "port firefox-android's getGitHash functions for migration to hg"
+  },
+  {
+   "bugid": 1876335,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "consistently use GRADLE_MAVEN_REPOSITORIES in firefox-android gradle files"
+  },
+  {
+   "bugid": 1876338,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "replace firefox-android's external-gradle-dependencies tasks with mozilla-central's android-gradle-dependencies"
+  },
+  {
+   "bugid": 1877661,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "use non-shippable geckoview builds for firefox-android tasks/tests"
+  },
+  {
+   "bugid": 1877823,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android: misc. migration code cleanup"
+  },
+  {
+   "bugid": 1879660,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Support --use-existing-tasks for geckoview"
+  },
+  {
+   "bugid": 1881206,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "firefox-android version-bump should depend on push-bundle"
+  },
+  {
+   "bugid": 1882313,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "update index paths for android signing tasks"
+  },
+  {
+   "bugid": 1883499,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Update task schedule optimizations for firefox-android tasks"
+  },
+  {
+   "bugid": 1883700,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Update firefox-android Readme to link to monorepo migration announcement"
+  },
+  {
+   "bugid": 1883750,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "'mach try chooser' doesn't provide options for firefox-android"
+  },
+  {
+   "bugid": 1884976,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Rebuild android-gradle-dependencies when the AC/Fenix/Focus dependencies plugin is modified"
+  },
+  {
+   "bugid": 1567912,
+   "status": "REOPENED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Support AAB publication in release pipeline"
+  },
+  {
+   "bugid": 1883763,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Deprecate GVST APIs in Geckoview"
+  },
+  {
+   "bugid": 1876363,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Ship v125.0.0 of the WebCompat System Addon"
+  },
+  {
+   "bugid": 1870312,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "List of add-ons on Android includes active cards and \"+\" buttons which active areas overlap"
+  },
+  {
+   "bugid": 1870319,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Top row of the Add-ons sub-menu on Fx Android is not announcing it's title with TalkBack"
+  },
+  {
+   "bugid": 1870326,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Installed add-ons on the Add-ons sub-menu on Fx Android are not announced as buttons"
+  },
+  {
+   "bugid": 1870329,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "All \"+\" Install add-on controls on the Add-ons Manager view on Fx Android are are missing the context"
+  },
+  {
+   "bugid": 1870335,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Columns of Add-on info rows on the Add-on card view on Fx Android are announced by TalkBack as separate elements"
+  },
+  {
+   "bugid": 1870337,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Popup with the installation confirmation for an Add-on on Fx Android includes unclear element"
+  },
+  {
+   "bugid": 1870339,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "List of add-ons on Android is mentioning `In list` but lacks the list position information"
+  },
+  {
+   "bugid": 1870345,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Headings for List of add-ons on Android are not programmatically marked as such"
+  },
+  {
+   "bugid": 1870347,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Permissions for an installed add-on on Android are mentioning `In list` but lack the list position information"
+  },
+  {
+   "bugid": 1870351,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Controls on the Add-on info rows on the Add-on card view on Fx Android have small touch targets"
+  },
+  {
+   "bugid": 1870362,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Links and buttons on the Add-on card view on Fx Android look like a static text when High Contrast display mode is on"
+  },
+  {
+   "bugid": 1879819,
+   "status": "VERIFIED",
+   "component": "WebExtensions:Android",
+   "summary": "Improve rating description in list of add-ons"
+  }
+ ],
+ "fixed": 311,
+ "total": 366,
+ "restricted": 1
+}
