@@ -1,36 +1,39 @@
 class BugInfo extends HTMLElement{
+  #initDone;
   constructor() {
     super();
-    let template = document.getElementById('buginfo-template');
-    let templateContent = template.content;
-
-    const shadowRoot = this.attachShadow({mode: 'closed'})
-      .appendChild(templateContent.cloneNode(true));
+  }
+  static #fragment = null;
+  static get fragment(){
+    if(!BugInfo.#fragment){
+      let frag = document.getElementById('buginfo-template').content.cloneNode(true);
+      for(let i = frag.childNodes.length - 1; i >= 0; --i){
+        if(frag.childNodes[i]?.nodeType === 3) { //textnode
+          frag.childNodes[i].remove()
+        }
+      }
+      BugInfo.#fragment = frag
+    }
+    return BugInfo.#fragment
   }
   init(){
-    this.appendChild(ce("a",{
-      slot: "bug-id",
-      href: "",
-      title: ""
-    }));
-    this.appendChild(ce("span",{
-      slot: "bug-component"
-    }));
-    this.appendChild(ce("span",{
-      slot: "bug-description"
-    }));
+    if(this.#initDone){ return this }
+    this.classList.add("logline");
+    this.append(BugInfo.fragment.cloneNode(true));
+    this.#initDone = true;
     return this
   }
   loadFrom(bug){
-    this.firstChild.setAttribute("href",`https://bugzilla.mozilla.org/show_bug.cgi?id=${bug.bugid}`);
-    this.firstChild.textContent = `#${bug.bugid} ${bug.status[0]}`;
-    this.firstChild.setAttribute("title",bug.status);
+    let hrefEl = this.firstElementChild;
+    hrefEl.setAttribute("href",`https://bugzilla.mozilla.org/show_bug.cgi?id=${bug.bugid}`);
+    hrefEl.textContent = `#${bug.bugid} ${bug.status[0]}`;
+    hrefEl.setAttribute("title",`${bug.bugid} ${bug.status}`);
     this.children[1].textContent = `[${bug.component}]`;
     this.children[2].textContent = bug.summary;
     this.unhide();
   }
-  hide(){ this.classList.add("hidden") }
-  unhide(){ this.classList.remove("hidden") }
+  hide(){ this.hidden = true }
+  unhide(){ this.hidden = false }
 }
 
 customElements.define('cr-buginfo',BugInfo);
@@ -55,7 +58,7 @@ const LOG = {
     if(!container){
       return
     }
-    let line = ce("div",{"text":text,"class":`logline ${container.children.length & 1?"even":"odd"}`});
+    let line = ce("div",{"text":text,"class":"logline"});
     container.appendChild(line);
     return
   },

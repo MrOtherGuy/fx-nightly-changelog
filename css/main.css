@@ -1,9 +1,9 @@
 :root{ color: rgb(50,54,68); scrollbar-color: currentColor transparent; scrollbar-width: thin }
 
-body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break-word; max-width: 110ch }
+body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break-word; max-width: 120ch }
 #list,#bugList,#statuslog{ background: rgba(0,0,0,0.1); border-radius: 6px; box-shadow: inset 0 0 4px 2px grey; padding: 8px }
 .hidden{ display: none }
-.flex{ display: flex }
+.flex:not([hidden]){ display: flex }
 .buildIdContainer{ flex-grow: 1 }
 @media screen and (max-width: 600px){
   .flex{ flex-direction: column }
@@ -11,12 +11,15 @@ body{ background: rgb(230,234,240);  font-family: segoe UI; overflow-wrap: break
   #dateSelector{ padding-block: 0.4em }
 }
 .controls{ display: flex; flex-direction: column; justify-content: center }
-a:hover{ color: purple }
-a + span{ color: darkgreen; }
-cr-buginfo{ display: block }
 
-cr-buginfo:nth-child(2n),
-.logline.even{ background: rgba(70,60,70,0.1) }
+a:hover{ color: purple }
+.bug-component{ color: darkgreen; }
+
+.bug-id,
+.bug-component{
+  flex-shrink: 0;
+}
+.logline:nth-child(2n){ background: rgba(70,60,70,0.1) }
 
 @media (prefers-color-scheme:dark){
   :root{ color: rgb(220,220,200); }
@@ -25,24 +28,26 @@ cr-buginfo:nth-child(2n),
   a{ color:coral }
   a:visited{ color:orchid }
   a:hover{ color: orange }
-  a + span{ color: darkseagreen }
+  .bug-component{ color: darkseagreen }
   
   input{ background: #282b36; color: inherit; border-radius: 4px }
   
-  cr-buginfo:nth-child(2n),
-  .logline.even{ background: rgba(170,160,170,0.1) }
+  .logline:nth-child(2n){ background: rgba(170,160,170,0.1) }
   
 }
-cr-buginfo,
 .logline{ padding: 2px 3px }
+.logline:not([hidden]){
+  display: block;
+}
 
 #buildId:not(:empty)::before{ content: "in build id: " }
 #buildId:empty + a{ display: none }
 #buildId{ margin-inline: 0.5ch }
 #changeset{ height: 2em; font-size: medium }
 #changeset:not(:empty)::before{ content: "Built from: " }
-cr-buginfo > span,
-div > span{ padding-inline-start: 2ch }
+
+.bug-component,
+.bug-description{ padding-inline-start: 2ch }
 
 @keyframes anim{
   0%{ transform: scale(1) }
@@ -53,8 +58,8 @@ div > span{ padding-inline-start: 2ch }
 }
 #statuslog > .logline{ font-family: monospace }
 #statuslog > .logline::before{ content: ">> " }
-#bugList.busy > cr-buginfo,
-#bugList.hideContent > cr-buginfo{ display:none }
+#bugList.busy > .logline,
+#bugList.hideContent > .logline{ display:none }
 
 #bugList{ min-height: 60px; }
 
