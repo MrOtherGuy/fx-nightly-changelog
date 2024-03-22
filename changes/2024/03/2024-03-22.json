@@ -1,0 +1,418 @@
+{
+ "date": "2024-03-22",
+ "buildid": "20240322093041",
+ "cset": "5d6efea5e0bbc9c3cb2231d09450c2c7dd045122",
+ "bugs": [
+  {
+   "bugid": 1886730,
+   "status": "RESOLVED",
+   "component": "Application Services:Remote Settings",
+   "summary": "Crash in [@ java.lang.NullPointerException: at mozilla.appservices.remotesettings.RemoteSettings.getRecords(remote_settings.kt)]"
+  },
+  {
+   "bugid": 1886057,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Replace custom functions returning dom enum item defined in webidls by GetEnumString"
+  },
+  {
+   "bugid": 1886855,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add pref to allow disabling fallback for plugin updates"
+  },
+  {
+   "bugid": 1886654,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "PDMFactory assumes RDD is enabled when media.allow-audio-non-utility is false"
+  },
+  {
+   "bugid": 1764201,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "video-dynamic-range should match against capabilities of the window's display, not the main display"
+  },
+  {
+   "bugid": 1885013,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "WPT failures in css/css-animations/parsing/animation-computed.html"
+  },
+  {
+   "bugid": 1886124,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Indentation of generated binding code is broken"
+  },
+  {
+   "bugid": 1883860,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "nsDocShell::HandleSameDocumentNavigation() causes crash in SetDocumentURI"
+  },
+  {
+   "bugid": 1883640,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "history_reload_referrer.html WPT fails on Chromium and WebKit"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1886463,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Perma dom/base/test/test_range_bounds.html | uncaught exception - TypeError: node.getBoxQuads is not a function at getTextBoundingClientRect@http://mochi.test:8888/tests/dom/base/test/test_range_bounds.html:42: when Gecko 126 merges to beta on 2024-04-15"
+  },
+  {
+   "bugid": 1878354,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Failing WPT accname/name/comp_label.html"
+  },
+  {
+   "bugid": 1885117,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Teach MicroGeckoProfiler.h to capture stacks"
+  },
+  {
+   "bugid": 1885319,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make the `SIGPROF` a sync signal on TSan"
+  },
+  {
+   "bugid": 1882688,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Enable NVIDIA RTX Video Super Resolution in Nightly"
+  },
+  {
+   "bugid": 1884737,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Ensure CanvasChild::ReturnDataSurfaceShmem is threadsafe"
+  },
+  {
+   "bugid": 1886214,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Cache PWebGL::IsEnabled"
+  },
+  {
+   "bugid": 1843891,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Present WebGPU without readback  on Windows"
+  },
+  {
+   "bugid": 1886197,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2024-03-19)"
+  },
+  {
+   "bugid": 1886715,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Ensure webgpu is disabled by default on Android"
+  },
+  {
+   "bugid": 1883336,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Extend the quad shader infrastructure to support more patterns"
+  },
+  {
+   "bugid": 1885246,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Remove PlainOldDataSerializer except in gfx/vr and gfx/layers/wr"
+  },
+  {
+   "bugid": 1886471,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Intermittent IPDLTest_CrossThread.TestHangsHang | Value of: result"
+  },
+  {
+   "bugid": 1883144,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at vm/Interpreter.cpp:483"
+  },
+  {
+   "bugid": 1885819,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !chunk->markBits.isMarkedAny(cell), at gc/Allocator.cpp:289"
+  },
+  {
+   "bugid": 1650159,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "crash near null in [@ nsCSSFrameConstructor::IsValidSibling]"
+  },
+  {
+   "bugid": 1808813,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Assertion failure: !mLoadingFontSet, at gfx/thebes/gfxUserFontSet.cpp:869"
+  },
+  {
+   "bugid": 1865394,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Verify dev tools display of priorities; urgency / incremental"
+  },
+  {
+   "bugid": 1873940,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "mozurl_host_port returns the wrong thing for non-spec:/.//"
+  },
+  {
+   "bugid": 1877649,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove unused storage access flag `eSessionScoped`"
+  },
+  {
+   "bugid": 1882017,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash caused by Nvidia closed-source drivers in [@ libc.so.6@0xe3c53 | libc.so.6@0xe9e99 | <.text ELF section in libnvidia-glsi.so.545.29.06>]"
+  },
+  {
+   "bugid": 1882598,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ libc.so.6@0x116dfb | libxcb.so.1@0xf5ac]"
+  },
+  {
+   "bugid": 1529646,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "WPT webrtc/RTCIceCandidate-constructor.html is wrong about why {candidate: null} throws TypeError"
+  },
+  {
+   "bugid": 1879987,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox UI hangs for a long time after moving the window [  GetScreenBounds() / gdk_window_get_root_origin()]"
+  },
+  {
+   "bugid": 1882779,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Avoid compositor pause and make it thread safe"
+  },
+  {
+   "bugid": 1882060,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Migrate all functionality for the debugger editor line gutter"
+  },
+  {
+   "bugid": 1864896,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Turn on argument linting from no-unused-vars"
+  },
+  {
+   "bugid": 1886656,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "pushes made by reviewbot are scheduling unnecessary Android jobs"
+  },
+  {
+   "bugid": 1854149,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Upgrade to sphinx 7.X"
+  },
+  {
+   "bugid": 1886055,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "builds preset now runs android tasks it probably shouldn't"
+  },
+  {
+   "bugid": 1886769,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Only show search widget experiment if search widget has not already been added"
+  },
+  {
+   "bugid": 1876398,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Compose BOM to 2024.03.00"
+  },
+  {
+   "bugid": 1886657,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Kotlin to version 1.9.23"
+  },
+  {
+   "bugid": 1886841,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version cd42116f499d604c75f6daf074db513603793ffe from 2024-03-21 17:41:03"
+  },
+  {
+   "bugid": 1886885,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Okio to version 3.9.0"
+  },
+  {
+   "bugid": 1882108,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Tab Strip should scroll up with content and toolbar"
+  },
+  {
+   "bugid": 1882967,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Create icon image by its blob and mimetype returned from Rust"
+  },
+  {
+   "bugid": 1886175,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Experiment] The exposure event for non-sponsored results is registered on holdback branch only if previously a sponsored result was triggered"
+  },
+  {
+   "bugid": 1886694,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "The weather suggest content is not centered while it is displayed on 4 rows"
+  },
+  {
+   "bugid": 1883424,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Update OAuth desktop crypto code"
+  },
+  {
+   "bugid": 1883876,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox view changes to pinned tabs are sometimes not reflected on Open tabs"
+  },
+  {
+   "bugid": 1724300,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Cleanup] Remove code related to What's New panel"
+  },
+  {
+   "bugid": 1876176,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update the embedded migration wizard to support configurations from Figma"
+  },
+  {
+   "bugid": 1881643,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add wallpaper thumbnail assets"
+  },
+  {
+   "bugid": 1886796,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable pdfjs.enableHighlightFloatingButton in nightly"
+  },
+  {
+   "bugid": 1886872,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 067c49dc49ce37ea99106f7d836456025f7ef5f4 from 2024-03-21 18:02:25"
+  },
+  {
+   "bugid": 1884952,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add support for downloading new search engine icons from remote settings"
+  },
+  {
+   "bugid": 1883941,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Cleanup and port over sidebar launcher"
+  },
+  {
+   "bugid": 1886707,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove Amy from triage rotation"
+  },
+  {
+   "bugid": 1886193,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use more aggressive optimization strategies for new Android builds and tests"
+  },
+  {
+   "bugid": 1886456,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma 'mach build -v' did not run successfully. Please check log for errors. when Gecko 126 merges to beta on 2024-04-15"
+  },
+  {
+   "bugid": 1886737,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "fetch-content download_to_memory retries mangle data"
+  },
+  {
+   "bugid": 1886521,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Perma Fenix/Focus [tier 2] [taskcluster:error] Task timeout after 120 seconds. Force killing container. when Gecko 126 merges to beta on 2024-04-15"
+  },
+  {
+   "bugid": 1885155,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Intermittent IntegrityError: size mismatch on https://firefox-ci-tc.services.mozilla.com/api/queue/v1/task/G7MUHS5DQ6-A3f5TfSUQ5A/artifacts/public/build/rustc.tar.zst: wanted 568303441; got 243529920"
+  },
+  {
+   "bugid": 1886767,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "geckoview nightly is no longer uploaded to maven"
+  },
+  {
+   "bugid": 1870823,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add product name, version, channel and build id to the symbol files"
+  },
+  {
+   "bugid": 1886607,
+   "status": "NEW",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "ProcInfoRequest.childTask is not always filled on iOS"
+  },
+  {
+   "bugid": 1886388,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Can not create a new profile using the latest Nightly"
+  }
+ ],
+ "fixed": 55,
+ "total": 68,
+ "restricted": 13
+}
