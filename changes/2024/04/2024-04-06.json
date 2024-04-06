@@ -1,0 +1,448 @@
+{
+ "date": "2024-04-06",
+ "buildid": "20240406085330",
+ "cset": "a1630c7af1b667dfc6142244da6fec43545cd3ae",
+ "bugs": [
+  {
+   "bugid": 1886601,
+   "status": "RESOLVED",
+   "component": "Application Services:Relevancy",
+   "summary": "Integrate the Rust component into the component with basic browsing histrory data"
+  },
+  {
+   "bugid": 1887971,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: aIsHardwareDecryption == capabilities.isHardwareDecryption(), at /builds/worker/checkouts/gecko/dom/media/eme/mediafoundation/WMFCDMImpl.cpp:41"
+  },
+  {
+   "bugid": 1888238,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] do not block main thread when querying the capabilites from MFCDM"
+  },
+  {
+   "bugid": 1865376,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Call the error callback synchronously from the configure error task, and block the message queue processing at the right time"
+  },
+  {
+   "bugid": 1881079,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Assertion failure: r.value.isOk(), at /dom/media/webcodecs/EncoderTemplate.cpp:687"
+  },
+  {
+   "bugid": 1889496,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement parsing for @starting-style"
+  },
+  {
+   "bugid": 1889670,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add code to track accurate allocation size in servo-arc"
+  },
+  {
+   "bugid": 1889896,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma OSX TEST-UNEXPECTED-FAIL | /css/css-values/media-progress-computed.tentative.html | media-progress(height from 0px to 1px) should be used-value-equivalent to 865 - assert_not_equals: media-progress(height from 0px to 1px) isn't valid in 'scale'; got"
+  },
+  {
+   "bugid": 1889842,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Build fails with exception from _winapi.WaitForMultipleObjects on Windows on Threadripper machine"
+  },
+  {
+   "bugid": 1889434,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Remove HashChangeEvent.initHashChangeEvent to match spec"
+  },
+  {
+   "bugid": 1889590,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Make cache DB use UTF8 string for referrer."
+  },
+  {
+   "bugid": 1885960,
+   "status": "NEW",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Deprecate new notifications store dom/notification/new/NotificationDB.sys.mjs"
+  },
+  {
+   "bugid": 1634872,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Leak of post-redirect url in error stacktrace when script loaded via importScripts in Web Workers"
+  },
+  {
+   "bugid": 1865931,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add support for starting the profiler using UNIX signals."
+  },
+  {
+   "bugid": 1888483,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Support power profiling on Android"
+  },
+  {
+   "bugid": 1882538,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Intermittent Assertion failure: IsValid(), at /builds/worker/checkouts/gecko/gfx/layers/client/TextureClient.cpp:751 | single tracking bug"
+  },
+  {
+   "bugid": 1888566,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "ThreadSanitizer: lock-order-inversion (potential deadlock) [@ gfxUserFontFamily::AddFontEntry]"
+  },
+  {
+   "bugid": 1881518,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Recycle wgpu resource ID indices"
+  },
+  {
+   "bugid": 1889873,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Remove IsOpen in favor of CanSend"
+  },
+  {
+   "bugid": 1888628,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Extract the texture sampling code out of ps_quad"
+  },
+  {
+   "bugid": 1888744,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !jitIter.done(), at vm/GeckoProfiler.cpp:62"
+  },
+  {
+   "bugid": 1880362,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Line break handling with smart quotes is incorrect"
+  },
+  {
+   "bugid": 1887614,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Incorrect parsing of <file:.> URL"
+  },
+  {
+   "bugid": 1888488,
+   "status": "RESOLVED",
+   "component": "Core:Security",
+   "summary": "update staging content signing root certificate to new cas_new root certificate"
+  },
+  {
+   "bugid": 1818283,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "A media element can be erroneously garbage-collected when autoplaying an inactive MediaStream"
+  },
+  {
+   "bugid": 1889689,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Misc cocoa clean-ups."
+  },
+  {
+   "bugid": 1889644,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Add more logging to expose/scale code"
+  },
+  {
+   "bugid": 1889935,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "xpcom/build/XPCOMInit.cpp:472:3: error: ‘profiler_lookup_download_directory’ was not declared in this scope"
+  },
+  {
+   "bugid": 1843627,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Add reference to How To Contribute Code to Firefox doc to quick reference document"
+  },
+  {
+   "bugid": 1887687,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "reject-multiple-getters-calls should allow multiple calls when 3rd argument is used and `global` is different"
+  },
+  {
+   "bugid": 1851654,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Update names of `scrim`, `gradientStart`, and `gradientEnd` color tokens"
+  },
+  {
+   "bugid": 1889947,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "fenix/focus initial experiments aren't getting updated"
+  },
+  {
+   "bugid": 1881094,
+   "status": "NEW",
+   "component": "Fenix:General",
+   "summary": "re-enable linting for excluded firefox-android files after migration to m-c"
+  },
+  {
+   "bugid": 1889364,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "On Robo Test failure, display associated crash artifact in live logs"
+  },
+  {
+   "bugid": 1889843,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Perma [tier 2] fenix-debug org.mozilla.fenix.ui.ComposeTabbedBrowsingTest#swipeToCloseTabsTest | androidx.test.uiautomator.UiObjectNotFoundException: UiSelector[RESOURCE_ID=org.mozilla.fenix.debug:id/toolbar]"
+  },
+  {
+   "bugid": 1856246,
+   "status": "RESOLVED",
+   "component": "Fenix:History",
+   "summary": "Remove unused `invalidateOptionsMenu` in HistoryFragment.kt"
+  },
+  {
+   "bugid": 1889097,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Crash in [@ java.lang.IllegalStateException: at androidx.compose.ui.node.LookaheadCapablePlaceable.layout(LookaheadDelegate.kt:38)]"
+  },
+  {
+   "bugid": 1807537,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "Referer is leaked when opening private tab from non-private tab"
+  },
+  {
+   "bugid": 1834213,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_strip_on_share.js | single tracking bug"
+  },
+  {
+   "bugid": 1888905,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove the \"start\" and \"discard\" notifications"
+  },
+  {
+   "bugid": 1881107,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "In the open tab list, opening the meatball menu for the first time is delayed for half a second by a network request to Firefox Sync"
+  },
+  {
+   "bugid": 1889769,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Firefox View tab row buttons are no longer flush right within card containers"
+  },
+  {
+   "bugid": 1888958,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Add documentation on building NSIS plugins to Firefox Source Docs"
+  },
+  {
+   "bugid": 1885939,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement `backup` method for PreferencesBackupResource"
+  },
+  {
+   "bugid": 1885993,
+   "status": "REOPENED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Enable the BackupService initializer on Nightly by default"
+  },
+  {
+   "bugid": 1889037,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update documentation for search-config-v2"
+  },
+  {
+   "bugid": 1889940,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Improve logging of domain extraction"
+  },
+  {
+   "bugid": 1886659,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Remove or update probes expiring in Firefox 127: FX_SESSION_RESTORE_CLOSED_TABS_NOT_SAVED before Gecko version gets increased to 127 on 2024-04-15"
+  },
+  {
+   "bugid": 1886203,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Incorrect confirmation message shown in the mailto infobar"
+  },
+  {
+   "bugid": 1889885,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "The Review checker onboarding card is truncated"
+  },
+  {
+   "bugid": 1870316,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Automatically translate selection when Select Translations Panel opens"
+  },
+  {
+   "bugid": 1870320,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Implement Select Translations Panel Translating Spinner"
+  },
+  {
+   "bugid": 1878721,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Rework Opening the Select Translations Panel"
+  },
+  {
+   "bugid": 1884901,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "about:translations stops working until reloading the page"
+  },
+  {
+   "bugid": 1887953,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve SelectTranslationsPanel language detection algorithm"
+  },
+  {
+   "bugid": 1889837,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "FullPageTranslationsPanel Error Strings Are Incorrect"
+  },
+  {
+   "bugid": 1888738,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk-stage1 /builds/worker/fetches/llvm-project/llvm/lib/TextAPI/BinaryReader/DylibReader.cpp:467:37: error: no member named 'getCompileUnitForCodeAddress' in 'llvm::DWARFContext'; did you mean 'getCompileUnitForAddress'?"
+  },
+  {
+   "bugid": 1889823,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma Clang-trunk-stage1 1 out of 2 hunks FAILED -- saving rejects to file llvm/lib/Transforms/Vectorize/VectorCombine.cpp.rej"
+  },
+  {
+   "bugid": 1887019,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Set `id-ID` on accept-language, not `in-ID`"
+  },
+  {
+   "bugid": 1889686,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Typo in MediaSession.Metadata toString"
+  },
+  {
+   "bugid": 1889508,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Crash in [@ java.lang.reflect.UndeclaredThrowableException: at $Proxy15.replace(Unknown Source)]"
+  },
+  {
+   "bugid": 1733086,
+   "status": "RESOLVED",
+   "component": "MailNews Core:Security: OpenPGP",
+   "summary": "Layout issues in OpenPGP dialogs where longer identity email with display name pushes buttons out of sight"
+  },
+  {
+   "bugid": 1888663,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Some elements from “Firefox Crash Reporter” dialog box disappear after unchecking the “Tell Mozilla about this crash” checkbox"
+  },
+  {
+   "bugid": 1888880,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[Windows] “Firefox Crash Reporter” displays a placeholder icon instead of the specific error dialog icon"
+  },
+  {
+   "bugid": 1888673,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "New Sanitize dialog breaks policy"
+  },
+  {
+   "bugid": 1889810,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove extraneous transferables from \"PasswordManager:onFormSubmit\" message"
+  },
+  {
+   "bugid": 1890021,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Password manager plain mochitests rely on the JSON fallback for structured cloning"
+  },
+  {
+   "bugid": 1888952,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Integrate the style-dictionary build step with mach/Firefox build processes"
+  },
+  {
+   "bugid": 1886276,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "MenuList does not deselect menu item when noinitialselection is true if value is set before connectedCallback"
+  },
+  {
+   "bugid": 1889469,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "./mach addstory is broken"
+  },
+  {
+   "bugid": 1888975,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Investigate how to share validations between Firefox desktop and Firefox for Android"
+  },
+  {
+   "bugid": 1880162,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Update types and fix issues from introducing gecko typelibs"
+  },
+  {
+   "bugid": 1820569,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Implement webRequestAuthProvider permission for webRequest.onAuthRequired"
+  }
+ ],
+ "fixed": 64,
+ "total": 73,
+ "restricted": 4
+}
