@@ -1,0 +1,508 @@
+{
+ "date": "2024-04-10",
+ "buildid": "20240410094541",
+ "cset": "e21f6f5c4e955cf97af9959683355b990773d9d5",
+ "bugs": [
+  {
+   "bugid": 1644383,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:310:45 in operator bool"
+  },
+  {
+   "bugid": 1888354,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "poor Youtube video performance when browser stays open for long time. CPU in CDecodeContext::SubmitBuffers"
+  },
+  {
+   "bugid": 1890070,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Perma wmfme [tier 2] SUMMARY: AddressSanitizer: stack-use-after-scope /builds/worker/checkouts/gecko/xpcom/string/nsTStringRepr.cpp:83 in mozilla::detail::nsTStringRepr<char16_t>::EqualsASCII | single tracking bug"
+  },
+  {
+   "bugid": 1890432,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: info.HasVideo(), at /builds/worker/checkouts/gecko/dom/media/utils/TelemetryProbesReporter.cpp:300"
+  },
+  {
+   "bugid": 1890629,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version fdb198e88660721e289df94c29e91f70caff787e from 2024-04-09 14:29:12"
+  },
+  {
+   "bugid": 1880143,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Simplify VideoDecoderConfigInternal's mDescription type"
+  },
+  {
+   "bugid": 1886170,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Remove the ColorParser abstraction."
+  },
+  {
+   "bugid": 1890502,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Unify the color component parsing functions into one"
+  },
+  {
+   "bugid": 1885111,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Remove requirement to update \"TestJSImplGen\""
+  },
+  {
+   "bugid": 306344,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Marquee should be able to animate smoothly (either via smooth scrolling or transform animations)"
+  },
+  {
+   "bugid": 1888088,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Allow fullscreen elements nested in popovers"
+  },
+  {
+   "bugid": 1874849,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Enable Screen Wake Lock API by default"
+  },
+  {
+   "bugid": 1889059,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Block ports 4190 & 6679"
+  },
+  {
+   "bugid": 1890329,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Migrate the notification storage/db logger from dump() to ConsoleInstance"
+  },
+  {
+   "bugid": 1885960,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Deprecate new notifications store dom/notification/new/NotificationDB.sys.mjs"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1888359,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within dom/security to work with https-first enabled"
+  },
+  {
+   "bugid": 1890652,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove test_wpt_pointerevent_constructor.html"
+  },
+  {
+   "bugid": 1890206,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Rework attestation consent flow"
+  },
+  {
+   "bugid": 1858809,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Assertion failure: aWorkerPrivate, at /builds/worker/checkouts/gecko/dom/workers/WorkerRunnable.cpp:62"
+  },
+  {
+   "bugid": 1888310,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver fails to announce announcements from A11yUtils.announce"
+  },
+  {
+   "bugid": 1890383,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Stalls in glGetInteger in webgl::PixelPackingState::AssertCurrentUnpack when profiling flame graph in firefox profiler"
+  },
+  {
+   "bugid": 1887870,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "ThreadSanitizer: CHECK failed: sanitizer_deadlock_detector.h:67 \"((n_all_locks_)) < (((sizeof(all_locks_with_contexts_)/sizeof((all_locks_with_contexts_)[0]))))"
+  },
+  {
+   "bugid": 1879918,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Allocating tenured dependent strings doesn't work"
+  },
+  {
+   "bugid": 1871963,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Import zstd library"
+  },
+  {
+   "bugid": 1890346,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Hit MOZ_CRASH(nsStandardURL::SanityCheck failed) at /netwerk/base/nsStandardURL.cpp:298"
+  },
+  {
+   "bugid": 1885801,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Secure DNS causes delayed website loading at startup"
+  },
+  {
+   "bugid": 1669355,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "ServiceWorker intercepted channels don't run main fetch step 12 MIME type checks; nsHttpChannel logic should be moved into HttpBaseChannel"
+  },
+  {
+   "bugid": 1889691,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Neqo 0.7.3"
+  },
+  {
+   "bugid": 1887068,
+   "status": "NEW",
+   "component": "Core:Performance",
+   "summary": "Add support for perfetto track events"
+  },
+  {
+   "bugid": 1888734,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Crash in [@ mozilla::URLQueryStringStripper::StripForCopyOrShareInternal::<T>::operator()]"
+  },
+  {
+   "bugid": 1354393,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Drop flush from SMILAnimationController::DoSample"
+  },
+  {
+   "bugid": 1890174,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Add some more tests to WPT SVGGraphicsElement.getScreenCTM.html"
+  },
+  {
+   "bugid": 1888982,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make sure cocoa trees use the correct color."
+  },
+  {
+   "bugid": 1889442,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS catalina] Overlaid titlebar appears over fullscreen window"
+  },
+  {
+   "bugid": 1890273,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Simplify pixel unit usage in menubar fullscreen shift."
+  },
+  {
+   "bugid": 1873386,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove or fix references to non-scriptable interfaces from scriptable ones"
+  },
+  {
+   "bugid": 1890540,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Faster xpt codegen"
+  },
+  {
+   "bugid": 1890115,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Perma OS X 10.15 WebRender devtools/shared/commands/target/tests/browser_target_command_service_workers_navigation.js | Test timed out -"
+  },
+  {
+   "bugid": 1557040,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Remove eslint-plugin-fetch-options from the tree"
+  },
+  {
+   "bugid": 1890330,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Support new ESLint APIs in eslint-plugin-mozilla"
+  },
+  {
+   "bugid": 1870425,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Unable to clear multiple download finished notifications in a shot"
+  },
+  {
+   "bugid": 1890476,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 94d15144656f2fa49e3de385bb1ec07da446d6e4 from 2024-04-09 05:02:47"
+  },
+  {
+   "bugid": 1890570,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Adjust regex in crash signature detection for parsing Robo Test crash artifacts"
+  },
+  {
+   "bugid": 1882111,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip] Add telemetry related to tab strip"
+  },
+  {
+   "bugid": 1885280,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Visual glitch displayed while selecting a translation language"
+  },
+  {
+   "bugid": 1885662,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Remove capitalization in \"Translation Options\", should be \"Translation options\""
+  },
+  {
+   "bugid": 1890407,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Follow up on additional button casing"
+  },
+  {
+   "bugid": 1888908,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Rename current onEngagement to onLegacyEngagement"
+  },
+  {
+   "bugid": 1889820,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make \"Manage Firefox Suggest\"  menu item instead of  \"Learn More about Firefox Suggest\""
+  },
+  {
+   "bugid": 1875481,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Add content analysis support for printing operations"
+  },
+  {
+   "bugid": 1889451,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Update Content Analysis SDK to new version 3d82f7523b557d0d5c75e1acf28c3deb8081ead1 from 2024-04-03 14:44:34"
+  },
+  {
+   "bugid": 1881107,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "In the open tab list, opening the meatball menu for the first time is delayed for half a second by a network request to Firefox Sync"
+  },
+  {
+   "bugid": 1890498,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Perma Documentation ./mach doc | Error: 1 new warnings have been introduced compared to the limit in docs/config.yml"
+  },
+  {
+   "bugid": 1890630,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Correct fill color and opacity for toolbar button icon"
+  },
+  {
+   "bugid": 1888454,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "0.34 - 0.27% installer size / installer size + 1 more (OSX) regression on Thu March 21 2024"
+  },
+  {
+   "bugid": 1890596,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version a208d6bca72f8cb700f7bb506ea1bc3e76cbaec0 from 2024-04-09 07:48:17"
+  },
+  {
+   "bugid": 1886174,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Let the BackupService initializer ride the trains by default"
+  },
+  {
+   "bugid": 1890294,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add a `requiresEncryption` static getter on BackupResource that subclasses must implement"
+  },
+  {
+   "bugid": 1890644,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Make it clear the the `backup` method can return `null` instead of the empty object"
+  },
+  {
+   "bugid": 1875960,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "mobile doesn't use most files installed in defaults/settings"
+  },
+  {
+   "bugid": 1888841,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "forgetClosedTabById() never getting passed ids due to a typo"
+  },
+  {
+   "bugid": 1832748,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "High frequency browser/components/customizableui/test/browser_customization_context_menus.js | Test timed out -"
+  },
+  {
+   "bugid": 1889866,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "[macOS] Synced tabs sidebar message is hardly readable as it shares the same color as the applied theme"
+  },
+  {
+   "bugid": 1889628,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove unused translations-identification-models dump"
+  },
+  {
+   "bugid": 1889054,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Firefox fails to compile in non-unified builds"
+  },
+  {
+   "bugid": 1888738,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk-stage1 /builds/worker/fetches/llvm-project/llvm/lib/TextAPI/BinaryReader/DylibReader.cpp:467:37: error: no member named 'getCompileUnitForCodeAddress' in 'llvm::DWARFContext'; did you mean 'getCompileUnitForAddress'?"
+  },
+  {
+   "bugid": 1889822,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add support for arm64e to LLD"
+  },
+  {
+   "bugid": 1796176,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Add API support to edit extension permissions at run-time in GeckoView"
+  },
+  {
+   "bugid": 1499453,
+   "status": "ASSIGNED",
+   "component": "GeckoView:General",
+   "summary": "Use GeckoResult.ALLOW/DENY shortcuts in GeckoView code"
+  },
+  {
+   "bugid": 1838152,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Improve error message when sending session.new without capabilities"
+  },
+  {
+   "bugid": 1859204,
+   "status": "RESOLVED",
+   "component": "Taskcluster:Workers",
+   "summary": "Frequent Linux 18.04 x64 WebRender asan opt browser-chrome jobs fail as exceptions with \"claim_expired\""
+  },
+  {
+   "bugid": 1879136,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Early shutdown requests right after startup cause a shutdown delay due to lazy loading \"ShutdownDuration.json\""
+  },
+  {
+   "bugid": 1889382,
+   "status": "RESOLVED",
+   "component": "Toolkit:Blocklist Implementation",
+   "summary": "Remove unused services/settings/dumps/blocklists/plugins.json"
+  },
+  {
+   "bugid": 1887717,
+   "status": "RESOLVED",
+   "component": "Toolkit:Content Prompts",
+   "summary": "prompts.windowPromptSubDialog should be removed"
+  },
+  {
+   "bugid": 1890443,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Perma error: could not compile `crashreporter` (bin \"crashreporter\") due to 1 previous error | after error[E0308]: mismatched type"
+  },
+  {
+   "bugid": 1814281,
+   "status": "REOPENED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Intermittent toolkit/components/cleardata/tests/marionette/test_moved_origin_directory_cleanup.py | single tracking bug"
+  },
+  {
+   "bugid": 1881797,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Add a nsIClearDataService flag for clearing cookies & site data"
+  },
+  {
+   "bugid": 1890254,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Move Perry to \"Peer(s) Emeritus\" in the governance docs"
+  },
+  {
+   "bugid": 1881080,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Write JSON design tokens documentation"
+  },
+  {
+   "bugid": 1883058,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-toggle should only show active state on hover"
+  },
+  {
+   "bugid": 1890586,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Firefox Source Docs link to Storybook leads to a missing story"
+  },
+  {
+   "bugid": 1888683,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Upgrade UniFFI to 0.27.1"
+  }
+ ],
+ "fixed": 76,
+ "total": 83,
+ "restricted": 2
+}
