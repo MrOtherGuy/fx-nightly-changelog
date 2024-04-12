@@ -1,0 +1,340 @@
+{
+ "date": "2024-04-12",
+ "buildid": "20240412093252",
+ "cset": "90ef908ff18573cca9f4f0e5d676df56875c68b5",
+ "bugs": [
+  {
+   "bugid": 1891023,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Clear CallbackObject's JS references when refcnt drops to 0"
+  },
+  {
+   "bugid": 1890888,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: startContent->IsInComposedDoc(), at /builds/worker/checkouts/gecko/dom/base/Selection.cpp:1822"
+  },
+  {
+   "bugid": 1887435,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "pointerup event isPrimary always true for touch"
+  },
+  {
+   "bugid": 1890924,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[clang-trunk] xpcAccessible.cpp(639,25): error: variable 'proxy' set but not used [-Werror,-Wunused-but-set-variable]"
+  },
+  {
+   "bugid": 1890154,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash in [@ __delayLoadHelper2 | _tailMerge_shell32.dll | GetKnownFolder]"
+  },
+  {
+   "bugid": 1890219,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Crash in [@ mozilla::webgpu::Device::GetBridge]"
+  },
+  {
+   "bugid": 1890793,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assert CallArgs::newTarget is not gray"
+  },
+  {
+   "bugid": 1888360,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Some GC telemetry is not collected for release builds"
+  },
+  {
+   "bugid": 1885842,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "counter-reset behaving differently to other browsers due to bug 1548753"
+  },
+  {
+   "bugid": 1890773,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Provide a pref to control how letter-spacing is applied"
+  },
+  {
+   "bugid": 1890523,
+   "status": "NEW",
+   "component": "Core:MathML",
+   "summary": "Remove extra space above/below stretchy operators"
+  },
+  {
+   "bugid": 1890988,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Neqo 0.7.5"
+  },
+  {
+   "bugid": 1890934,
+   "status": "REOPENED",
+   "component": "Core:Performance",
+   "summary": "Update perfetto to new version v44.0 from 2024-04-10 09:26:48"
+  },
+  {
+   "bugid": 1843308,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Take into account openers in BounceTrackingState::OnStartNavigation"
+  },
+  {
+   "bugid": 1848406,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Stateful bounce detection for storage"
+  },
+  {
+   "bugid": 1888500,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Bounce Tracking Protection should only apply to http/https scheme"
+  },
+  {
+   "bugid": 1888504,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a dry-run mode for Bounce Tracking Protection purging"
+  },
+  {
+   "bugid": 1889444,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Record a Glean event for sites purged by Bounce Tracking Protection"
+  },
+  {
+   "bugid": 1890546,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clean up BounceTrackingProtection site host handling"
+  },
+  {
+   "bugid": 1890782,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add [[nodiscard]] to BounceTrackingProtection methods where missing"
+  },
+  {
+   "bugid": 1890669,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add a nimbus feature to control use of post-quantum crypto"
+  },
+  {
+   "bugid": 1875036,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Speed up directory enumeration on Windows"
+  },
+  {
+   "bugid": 1855257,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Expose an API to disable glean-managed pings"
+  },
+  {
+   "bugid": 1885173,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Remove experiment feature from FOG"
+  },
+  {
+   "bugid": 1890759,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Error \"Services.prefs is undefined\" when connecting to a worker target"
+  },
+  {
+   "bugid": 1879064,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "The variant `devtools-no-eft` expiration is on 2024-03-01"
+  },
+  {
+   "bugid": 1767770,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/shared/commands/resource/tests/browser_resources_network_events_parent_process.js | single tracking bug"
+  },
+  {
+   "bugid": 1890775,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Disabling property in a rule empties out the stylesheet if the rule is not on the first line of the stylesheet, and right after another rule declaration (without whitespace)"
+  },
+  {
+   "bugid": 1890843,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Update ADB test extensions"
+  },
+  {
+   "bugid": 1890144,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update ts xpcom typelib for Firefox 126"
+  },
+  {
+   "bugid": 1888967,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Consider Preset Try Options for GeckoView"
+  },
+  {
+   "bugid": 1885565,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement skeleton bottom sheet menu"
+  },
+  {
+   "bugid": 1885602,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign]  Implement header"
+  },
+  {
+   "bugid": 1885604,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement Library menu group"
+  },
+  {
+   "bugid": 1884769,
+   "status": "VERIFIED",
+   "component": "Fenix:Translations",
+   "summary": "Should Hide Translate Icon When in Reader View Mode"
+  },
+  {
+   "bugid": 1887594,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < ComposeCollectionTest.saveTabToExistingCollectionFromMainMenuTest >"
+  },
+  {
+   "bugid": 1873957,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add missing test coverage for error states"
+  },
+  {
+   "bugid": 1883516,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add new wallpaper component for onboarding."
+  },
+  {
+   "bugid": 1881588,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add Wallpaper feature to home & new tab page"
+  },
+  {
+   "bugid": 1891108,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "home and newtab small wallpapers fixes"
+  },
+  {
+   "bugid": 1889702,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Change search-config-v2 validation to allow only require a telemetrySuffix with a partnerCode when it is for a distribution"
+  },
+  {
+   "bugid": 1889910,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add an option to search-config-v2 to allow specifying the device type"
+  },
+  {
+   "bugid": 1890658,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Correct application name for the xpcshell search config tests"
+  },
+  {
+   "bugid": 1890698,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search word by Rakuten search plugin is broken"
+  },
+  {
+   "bugid": 1890066,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Provide visual guidance when setting default requires interaction with Windows Settings on Windows 11"
+  },
+  {
+   "bugid": 1891104,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Perma Documentation ./mach doc | Error: 1 new warnings have been introduced compared to the limit in docs/config.yml"
+  },
+  {
+   "bugid": 1879925,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Replace Synced Tabs component in sidebar"
+  },
+  {
+   "bugid": 1887039,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add icons to device headers in Synced Tabs"
+  },
+  {
+   "bugid": 1890897,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Fix \"Choose a language\" regression in FullPageTranslationsPanel"
+  },
+  {
+   "bugid": 1888163,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Speedup configure clangd backend"
+  },
+  {
+   "bugid": 1890704,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.77.2"
+  },
+  {
+   "bugid": 1884935,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Update serialization for \"browsingContext.locateNodes\" and remove \"ownership\" and \"sandbox\" arguments"
+  },
+  {
+   "bugid": 1888663,
+   "status": "VERIFIED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Some elements from “Firefox Crash Reporter” dialog box disappear after unchecking the “Tell Mozilla about this crash” checkbox"
+  },
+  {
+   "bugid": 1885456,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Combine implementations of sendFillRequestXXX"
+  },
+  {
+   "bugid": 1889107,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Credit Card autofill dropdown data is not properly aligned"
+  }
+ ],
+ "fixed": 41,
+ "total": 55,
+ "restricted": 2
+}
