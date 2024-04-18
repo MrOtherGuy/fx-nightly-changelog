@@ -1,0 +1,592 @@
+{
+ "date": "2024-04-18",
+ "buildid": "20240418095314",
+ "cset": "b17b73afc2d507ea2589d38c7c58ccd9716ea714",
+ "bugs": [
+  {
+   "bugid": 1892081,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add EME logging to default media logging"
+  },
+  {
+   "bugid": 1890689,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "`DriftController` output rate adjustments are affected by the nominal resampling ratio"
+  },
+  {
+   "bugid": 1891885,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "excess audio drift controller buffering after underrun due to silence buffered to drain the resampler"
+  },
+  {
+   "bugid": 1842507,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove media.mediasource.webm.audio.enabled pref"
+  },
+  {
+   "bugid": 1869218,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add threadsafety assertions for MediaSourceDemuxer"
+  },
+  {
+   "bugid": 1890889,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version ddbe48383984d56acd9e1ab6a090c54ca6b735a6 from 2024-04-10 16:38:50"
+  },
+  {
+   "bugid": 1892066,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add a new pref to switch between using ffvpx-based decoders and other decoders"
+  },
+  {
+   "bugid": 1839993,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "FFmpegDataDecoder::ProcessDrain() should return error if needed"
+  },
+  {
+   "bugid": 1888748,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "rAF movement applied to spaced elements with a transition, coming into the viewport from off screen, has a delay"
+  },
+  {
+   "bugid": 1596935,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Firefox doesn’t resolve <link rel=dns-prefetch> on HTTPS"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1885949,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "First twitch.tv log in fails in private windows due to HTTPS-First and in normal windows since dom.security.https_first_schemeless was enabled"
+  },
+  {
+   "bugid": 1890277,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Add CSP support for Trusted Types"
+  },
+  {
+   "bugid": 1891710,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enable more WPTs for Trusted Types"
+  },
+  {
+   "bugid": 1891717,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update tests within browser/base/ to work with https-first enabled"
+  },
+  {
+   "bugid": 1888310,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver fails to announce announcements from A11yUtils.announce"
+  },
+  {
+   "bugid": 1888649,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "High frequency accessible/tests/<...>.html | ASSERTION: Can't create an accessible for the document!: 'parentDocAcc', file /builds/worker/checkouts/gecko/accessible/base/DocManager.cpp | single tracking bug"
+  },
+  {
+   "bugid": 1891751,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Correct usages of async xpcshell test API for posix signal feature tests"
+  },
+  {
+   "bugid": 1891332,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Replace debug MOZ_ASSERT with MOZ_RELEASE_ASSERT in tests"
+  },
+  {
+   "bugid": 1889146,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Video playback over-saturated when full-screen on SDR screen if another monitor has HDR on."
+  },
+  {
+   "bugid": 1888634,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "OffscreenCanvas Codepen demo sometimes completely freezes the tab for 10-15 seconds"
+  },
+  {
+   "bugid": 1891303,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libwebp to new version v1.4.0 from 2024-04-12 13:48:48"
+  },
+  {
+   "bugid": 1876161,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS (2024-04)"
+  },
+  {
+   "bugid": 1892041,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (April 17, 2024)"
+  },
+  {
+   "bugid": 1891688,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "js/src/jit/CodeGenerator.cpp:6883:42: error: static assertion failed: Stack padding adds exactly one Value"
+  },
+  {
+   "bugid": 1890514,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent SUMMARY: AddressSanitizer: access-violation /builds/worker/checkouts/gecko/layout/xul/tree/nsTreeBodyFrame.cpp:3898 in nsTreeBodyFrame::RemoveImageCacheEntry(int, class nsTreeColumn *) | single tracking bug"
+  },
+  {
+   "bugid": 1891866,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Clear mIsTopOfPage bit in flex item's ReflowInput"
+  },
+  {
+   "bugid": 1887826,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Implement the Transformers.js based Pipeline for alt-text"
+  },
+  {
+   "bugid": 1849686,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Add http-on-dispatching-transaction event"
+  },
+  {
+   "bugid": 1891349,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Firefox doesn't treat cookie name prefixes as case-insensitive"
+  },
+  {
+   "bugid": 1891926,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Proxy",
+   "summary": "\"Use system Web Proxy Auto-Discovery setting\" checkbox is not shown even if \"network.proxy.system_wpad.allowed\" is set to true"
+  },
+  {
+   "bugid": 1733509,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "PositionedEventTargeting.cpp calls GetResolution"
+  },
+  {
+   "bugid": 1843308,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Take into account openers in BounceTrackingState::OnStartNavigation"
+  },
+  {
+   "bugid": 1848406,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Stateful bounce detection for storage"
+  },
+  {
+   "bugid": 1888500,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Bounce Tracking Protection should only apply to http/https scheme"
+  },
+  {
+   "bugid": 1888504,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a dry-run mode for Bounce Tracking Protection purging"
+  },
+  {
+   "bugid": 1889444,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Record a Glean event for sites purged by Bounce Tracking Protection"
+  },
+  {
+   "bugid": 1890546,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clean up BounceTrackingProtection site host handling"
+  },
+  {
+   "bugid": 1890782,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add [[nodiscard]] to BounceTrackingProtection methods where missing"
+  },
+  {
+   "bugid": 1891470,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enterprise Policy Support for Encrypted Client Hello"
+  },
+  {
+   "bugid": 1891483,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Parental Control Support for Encrypted Client Hello"
+  },
+  {
+   "bugid": 1891763,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 127 to use NSS 3.100"
+  },
+  {
+   "bugid": 1890873,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Prime a VOICE cubeb input stream before showing gUM prompt for a request that would apply audio processing"
+  },
+  {
+   "bugid": 1892045,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "thready-safety error building video_capture_v4l2.cc"
+  },
+  {
+   "bugid": 1892131,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ libc.so.6@0x94e2c | mozilla::RWLock::ReadLock]"
+  },
+  {
+   "bugid": 1891120,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Remove GetWindowInfo hook."
+  },
+  {
+   "bugid": 1891699,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "dev tools crashes cannot do anything halp"
+  },
+  {
+   "bugid": 1890247,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "41.38 - 2.52% reload-debugger:content-process objects-with-stacks / damp cold.jsdebugger.open.DAMP + 25 more (Linux, Windows) regression on Tue April 2 2024"
+  },
+  {
+   "bugid": 1889875,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use InspectorCSSParser in CssAngle#valid"
+  },
+  {
+   "bugid": 1889920,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use InspectorCSSParser in CubicBezierWidget.js parseTimingFunction"
+  },
+  {
+   "bugid": 1889938,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use InspectorCSSParser in LinearEasingFunctionWidget.js parseTimingFunction"
+  },
+  {
+   "bugid": 1888441,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "Use InspectorUtils CSS parser in CSSCompleter"
+  },
+  {
+   "bugid": 1891317,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Missing document.createElement declaration in lib.gecko.dom.d.ts"
+  },
+  {
+   "bugid": 1891324,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Display an Icon in the `afterListAction` in IconListItem if an `afterIconPainter` is provided"
+  },
+  {
+   "bugid": 1891340,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add parameters to customize the before and after icon tints in IconListItem"
+  },
+  {
+   "bugid": 1891341,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add text button as an after list action in IconListItem"
+  },
+  {
+   "bugid": 1891444,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add a new 'style' called MICRO_SURVEY to the messaging manifest"
+  },
+  {
+   "bugid": 1888789,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Robolectric to version 4.12.1"
+  },
+  {
+   "bugid": 1890956,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Remove unused code from Fenix View.kt"
+  },
+  {
+   "bugid": 1891342,
+   "status": "ASSIGNED",
+   "component": "Fenix:General",
+   "summary": "Implement enabled, disabled, active and warning states for MenuItem"
+  },
+  {
+   "bugid": 1891915,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 8df35e4c85df62b2cbdbde371e02f7093c4125bb from 2024-04-17 05:03:28"
+  },
+  {
+   "bugid": 1891602,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use \"Manage Firefox Suggest\" menu item for Navigational and Dynamic Wikipedia suggestions"
+  },
+  {
+   "bugid": 1873942,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add test coverage for device connection and sync"
+  },
+  {
+   "bugid": 1887237,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Intermittent TV browser/components/firefoxview/tests/browser/browser_firefoxview_paused.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. -"
+  },
+  {
+   "bugid": 1824019,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The three-dot \"...\" menu and pocket button should change their look when hovered, on new-tab tiles & suggested-stories"
+  },
+  {
+   "bugid": 1891769,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home & Newtab: Add nimbus variables and stub data for WeatherFeed"
+  },
+  {
+   "bugid": 1883668,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate gleanInternalSdk to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1885941,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement `backup` method for the BackupResource(s) created for cookies, form history and sessions"
+  },
+  {
+   "bugid": 1887752,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Construct and write the backup-manifest.json file to the staging folder inside of BackupService.createBackup"
+  },
+  {
+   "bugid": 1891141,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Make the page size for doing an Sqlite backup something that can be controlled via a pref / experiment"
+  },
+  {
+   "bugid": 1818862,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Download of screenshot fails when autogenerated filename exceeds OS's permissible length"
+  },
+  {
+   "bugid": 1884625,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Voice Over does not read the 'Screenshot copied' notification when copying via Save dialogs"
+  },
+  {
+   "bugid": 1887093,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Text selection cleared when screenshot is taken"
+  },
+  {
+   "bugid": 1879975,
+   "status": "REOPENED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Firefox pinning to taskbar on newer versions of Windows fails"
+  },
+  {
+   "bugid": 1889232,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Delete firefox-bridge and firefox-private-bridge protocol registration"
+  },
+  {
+   "bugid": 1891210,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Cropped text with long tab preview title."
+  },
+  {
+   "bugid": 1891780,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add DJ and Niklas as peers for Tabbed Browser"
+  },
+  {
+   "bugid": 1890299,
+   "status": "NEW",
+   "component": "Firefox:Translations",
+   "summary": "Enable Select Translations for Nightly and Early Beta"
+  },
+  {
+   "bugid": 1891528,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Fix SelectTranslationsPanel Label Margins"
+  },
+  {
+   "bugid": 1883615,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Move -ldl checks from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1885334,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Change the signature of FdPrintf to use a platform-dependently-sized argument type"
+  },
+  {
+   "bugid": 1890509,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove AC_EXEEXT from old-configure"
+  },
+  {
+   "bugid": 1891796,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Avoid rebuilding \"IsCombiningDiacritic.h\" on nop build"
+  },
+  {
+   "bugid": 1890790,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "focus-debug(T) tasks have logs whose size is above threshold to get log parsed (5MB gzipped), should be smaller"
+  },
+  {
+   "bugid": 1810856,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Add hooks to run a remote-settings only periodic file update on central/beta/esr"
+  },
+  {
+   "bugid": 1870880,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add \"isInstance\" assertion method to Assert.sys.mjs"
+  },
+  {
+   "bugid": 1888866,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Addons options_ui browser_style false doesn't properly handle dark mode on macOS"
+  },
+  {
+   "bugid": 1891583,
+   "status": "RESOLVED",
+   "component": "Toolkit:Alerts Service",
+   "summary": "High frequency Assertion failure: aHeight > 0, at /builds/worker/checkouts/gecko/widget/windows/RemoteBackbuffer.cpp:93 | single tracking bug"
+  },
+  {
+   "bugid": 1885985,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "macOS framework changes yield artifact builds with `nightly` channel pref that can and do apply updates"
+  },
+  {
+   "bugid": 1892062,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "Modify backgroundTaskMinRuntimeMS to investigate cause of background updater-caused shutdown hangs"
+  },
+  {
+   "bugid": 1891881,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[megalist]  Fix import logins command"
+  },
+  {
+   "bugid": 1891145,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Implement history flooding protection"
+  },
+  {
+   "bugid": 1797811,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Migrate user-defined shortcuts from _execute_browser_action to _execute_action"
+  },
+  {
+   "bugid": 1826390,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Persistent state and prefs (e.g. extensions.webextensions.uuids) from generated test extensions are not cleaned up at extension.unload()"
+  },
+  {
+   "bugid": 1847216,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_contextMenus_targetUrlPatterns.js | single tracking bug"
+  },
+  {
+   "bugid": 1891693,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add a test for messages originating from a service worker"
+  },
+  {
+   "bugid": 1891954,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_menus_targetElement.js | targetElementId from different tab should not resolve. - Expected: null, Actual: [object HTMLParagraphElement]"
+  }
+ ],
+ "fixed": 76,
+ "total": 97,
+ "restricted": 2
+}
