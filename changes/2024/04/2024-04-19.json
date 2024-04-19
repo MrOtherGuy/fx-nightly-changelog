@@ -1,0 +1,496 @@
+{
+ "date": "2024-04-19",
+ "buildid": "20240419094732",
+ "cset": "99364906cd1d11016d0fc2dc03a8b7fd11705aa4",
+ "bugs": [
+  {
+   "bugid": 1885671,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Move decoder module's initialization off the main thread"
+  },
+  {
+   "bugid": 1891458,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update libvpx to new version 85dafa9c61f99330f484e77297684b42af6ff37d"
+  },
+  {
+   "bugid": 1890689,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "`DriftController` output rate adjustments are affected by the nominal resampling ratio"
+  },
+  {
+   "bugid": 1891457,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update aom to new version a4420e55a8d5da107001bb2bb61fa53263a90041 from 2024-04-20 00:00:00"
+  },
+  {
+   "bugid": 1839993,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "FFmpegDataDecoder::ProcessDrain() should return error if needed"
+  },
+  {
+   "bugid": 1892188,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] Refactor/clean up color parsing."
+  },
+  {
+   "bugid": 1892278,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add a pref'ed off memory-pressure when a content process moves to background"
+  },
+  {
+   "bugid": 1858788,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Implement ClipboardItem.supports"
+  },
+  {
+   "bugid": 1867636,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Rename requestingPrincipal attribute of nsITransferable"
+  },
+  {
+   "bugid": 1877642,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/base/test/fullscreen/browser_fullscreen-tab-close-race.js | single tracking bug"
+  },
+  {
+   "bugid": 1891724,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma /dom/ranges/Range-isPointInRange-shadowdom.html | isPointInRange() test for collapsed selection - assert_implements: GetComposedRanges is not supported undefined  - when Gecko 127 merges to beta on 2024-05-13"
+  },
+  {
+   "bugid": 1890277,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Add CSP support for Trusted Types"
+  },
+  {
+   "bugid": 1886937,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Figure out how to block UIA instantiation with native UIA implementation"
+  },
+  {
+   "bugid": 1892349,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Failing WPT /dpub-aam/role/roles.html"
+  },
+  {
+   "bugid": 1892285,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Fix setting of pref \"image.mem.max_legal_imgframe_size_kb\" in TestDecoders"
+  },
+  {
+   "bugid": 1892238,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Disable profiler posix signal tests when running with tsan"
+  },
+  {
+   "bugid": 1891132,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Assertion failure: mTexture, at /dom/webgpu/CanvasContext.cpp:207"
+  },
+  {
+   "bugid": 1891754,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2024-04-16"
+  },
+  {
+   "bugid": 1891322,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: !(first.offset > last.offset)) at gfx/wr/webrender_api/src/gradient_builder.rs:137"
+  },
+  {
+   "bugid": 1891746,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262-export.py"
+  },
+  {
+   "bugid": 1892041,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (April 17, 2024)"
+  },
+  {
+   "bugid": 1892242,
+   "status": "NEW",
+   "component": "Core:JavaScript: GC",
+   "summary": "Increase maximum nursery size to 64MB"
+  },
+  {
+   "bugid": 1881930,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Date.parse allows delimeters after day of week which other engines do not"
+  },
+  {
+   "bugid": 1889202,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Migrate mozilla wiki's Style System and Layout section into firefox source doc"
+  },
+  {
+   "bugid": 1892341,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Minor clean-up to nsSubDocumentFrame::BuildDisplayList"
+  },
+  {
+   "bugid": 1891918,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Update mozjemalloc's kCacheLineSize for Apple Silicon"
+  },
+  {
+   "bugid": 1891941,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Use StringBeginsWith in CookieService"
+  },
+  {
+   "bugid": 1892226,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Use inet_ntop directly on Windows to prevent mswsock.dll load."
+  },
+  {
+   "bugid": 1834381,
+   "status": "REOPENED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "H2 connection with websockets disconnects"
+  },
+  {
+   "bugid": 1858610,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make helper_{bug1285070,bug1299195,bug1502010_unconsumed_pan}.html pass reliably on Android"
+  },
+  {
+   "bugid": 1891462,
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "Update xsimd to new version 7eb009bca73e5cc51d05dcfcda25dfb74d6e0aaa from 2024-03-28 13:40:05"
+  },
+  {
+   "bugid": 1891990,
+   "status": "ASSIGNED",
+   "component": "Core:Performance",
+   "summary": "Update gemmology to match recent xsimd API changes"
+  },
+  {
+   "bugid": 1892059,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add additional domains to strip on share list"
+  },
+  {
+   "bugid": 1888751,
+   "status": "VERIFIED",
+   "component": "Core:Security: PSM",
+   "summary": "Client Certificate prompt no longer pops up for extension background script"
+  },
+  {
+   "bugid": 1891279,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Intermittent layout/painting/crashtests/1547420-1.html | single tracking bug"
+  },
+  {
+   "bugid": 1891988,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Perma tier2 /builds/worker/checkouts/gecko/dom/media/MediaManager.cpp:1538:35: error: use of undeclared identifier 'CubebInputStream'; did you mean 'nsIInputStream'?"
+  },
+  {
+   "bugid": 1892217,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove Components.utils.getDOMClassInfo"
+  },
+  {
+   "bugid": 1884256,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Consider how GIFFT might persist accross multiple main pings"
+  },
+  {
+   "bugid": 1891420,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Disable internal pings for the correct application ID"
+  },
+  {
+   "bugid": 1617369,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "[rust] Reformat the tree using rustfmt"
+  },
+  {
+   "bugid": 1839039,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Crash: android.app.ForegroundServiceStartNotAllowedException: startForegroundService() not allowed due to mAllowStartForeground false: service org.mozilla.firefox/org.mozilla.fenix.downloads.DownloadService"
+  },
+  {
+   "bugid": 1891818,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[Messaging] Add a microsurvey surface"
+  },
+  {
+   "bugid": 1891342,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Implement enabled, disabled, active and warning states for MenuItem"
+  },
+  {
+   "bugid": 1892072,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update KSP to version 1.0.20"
+  },
+  {
+   "bugid": 1892153,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Benchmark to version 1.2.4"
+  },
+  {
+   "bugid": 1892159,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Compose Compiler to version 1.5.12"
+  },
+  {
+   "bugid": 1827107,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "The applied wallpaper is dismissed when turning the device into landscape mode"
+  },
+  {
+   "bugid": 1879430,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] disable navbar for horizontal and tablet mods"
+  },
+  {
+   "bugid": 1889746,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] The refresh icon should always be shown in display toolbar"
+  },
+  {
+   "bugid": 1807268,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - HomeActivity ANR"
+  },
+  {
+   "bugid": 1824019,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The three-dot \"...\" menu and pocket button should change their look when hovered, on new-tab tiles & suggested-stories"
+  },
+  {
+   "bugid": 1883668,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate gleanInternalSdk to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1891813,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "assertEmptyStore does not assert the store is empty"
+  },
+  {
+   "bugid": 1892138,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Intermittent browser/components/backup/tests/xpcshell/test_SessionStoreBackupResource.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": 1818862,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Download of screenshot fails when autogenerated filename exceeds OS's permissible length"
+  },
+  {
+   "bugid": 1892267,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add `num_ads_loaded` and `num_ads_hidden` to the categorization event"
+  },
+  {
+   "bugid": 1844935,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Replace restart prompt when changing history settings with an in-content dialogue box"
+  },
+  {
+   "bugid": 1889232,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Delete firefox-bridge and firefox-private-bridge protocol registration"
+  },
+  {
+   "bugid": 1749835,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tabs without title or favicon are not visible to the user unless hovering the tabstrip"
+  },
+  {
+   "bugid": 1889384,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab scroll button tooltips say \"Scroll up\" and \"Scroll down\" but the tabstrip is horizontal so scrolling actually goes left/right"
+  },
+  {
+   "bugid": 1891819,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview text can still appear with some transparency with certain themes installed, after bug 1885146"
+  },
+  {
+   "bugid": 1892057,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Merge tabbrowser.css into tabs.css"
+  },
+  {
+   "bugid": 1882209,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "third_party/rust/packed_simd/src/lib.rs:219:5: error[E0635]: unknown feature `stdsimd`"
+  },
+  {
+   "bugid": 1891781,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Lazily import FileFinder in mozbuild/jar.py"
+  },
+  {
+   "bugid": 1891886,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "python/mozbuild/mozbuild/controller/building.py uses hasattr(\"handler\") but probably means \"_handler\", used elsewhere in file."
+  },
+  {
+   "bugid": 1868440,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Upgrade Gecko to Taskgraph 7.x"
+  },
+  {
+   "bugid": 1887808,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent valgrind-test | Valgrind timed out (reached 2400 second limit)"
+  },
+  {
+   "bugid": 1892252,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Expose GNOME Screencast capability to Snap tests"
+  },
+  {
+   "bugid": 1890935,
+   "status": "NEW",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Bump the minimum version of Rust to 1.76"
+  },
+  {
+   "bugid": 1892128,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "toolchain-linux64-llvm-symbolizer-trunk build failure"
+  },
+  {
+   "bugid": 1883425,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "hardware keyboard focus issue"
+  },
+  {
+   "bugid": 1891762,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Sync vendored puppeteer to v22.6.5"
+  },
+  {
+   "bugid": 1891564,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Perma [Tier 2] toolkit/mozapps/extensions/test/xpcshell/test_dictionary_webextension.js | single tracking bug"
+  },
+  {
+   "bugid": 1885985,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "macOS framework changes yield artifact builds with `nightly` channel pref that can and do apply updates"
+  },
+  {
+   "bugid": 1892062,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "Modify backgroundTaskMinRuntimeMS to investigate cause of background updater-caused shutdown hangs"
+  },
+  {
+   "bugid": 1891176,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The Quit Firefox and Restart Firefox buttons on the Crash Reporter cannot be selected using the Tab keyboard key"
+  },
+  {
+   "bugid": 1891181,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[win] Add comment (comments are publicly visible) from the Crash Reporter is not visible with High Contrast"
+  },
+  {
+   "bugid": 1891920,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[Windows] Crash reporter icon from the window title bar is blurry when the scaling factor is set to 125%"
+  },
+  {
+   "bugid": 1890076,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "The browser.startup.record pref is read anytime we load a JS module when doing startup recording"
+  },
+  {
+   "bugid": 1891145,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Implement history flooding protection"
+  },
+  {
+   "bugid": 1884526,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove Geckoview Streaming from Telemetry"
+  }
+ ],
+ "fixed": 65,
+ "total": 81,
+ "restricted": 1
+}
