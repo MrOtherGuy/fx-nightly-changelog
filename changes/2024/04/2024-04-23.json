@@ -1,0 +1,544 @@
+{
+ "date": "2024-04-23",
+ "buildid": "20240423094521",
+ "cset": "d02a8aafb747d098282b201ba03f3b5a199daa89",
+ "bugs": [
+  {
+   "bugid": 1851294,
+   "status": "RESOLVED",
+   "component": "Chat Core:XMPP",
+   "summary": "Crash in [@ NSSSocketControl::StartTLS | NS_InvokeByIndex] if you have a chat account"
+  },
+  {
+   "bugid": 1891709,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Don't warn when failing to set the stream name on Linux Desktop when using a backend for which it's not supporte"
+  },
+  {
+   "bugid": 1724083,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::dom::BrowserParent::ActorDestroy]"
+  },
+  {
+   "bugid": 1781280,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Consider re-using `IPCImage` for `IPCDataTransferImageContainer`"
+  },
+  {
+   "bugid": 1645268,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "New wpt failures in /html/dom/usvstring-reflection.https.html"
+  },
+  {
+   "bugid": 1885822,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner::ReachedCurrentBlockBoundary` never lie"
+  },
+  {
+   "bugid": 1879112,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Notification::CloseInternal happens after permissionless `new Notification()`"
+  },
+  {
+   "bugid": 1878742,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "[WebAuthn] macOS Firefox 122 does not respect transports during security key authentication"
+  },
+  {
+   "bugid": 1877811,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "New wpt failures in /css/css-display/accessibility/display-contents-role-and-label.html"
+  },
+  {
+   "bugid": 1838350,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add regression tests preventing \"Animated theme produces steady memory leak in occluded or minimized windows [leaking render-texture-hosts via RecvAddSharedSurface]\""
+  },
+  {
+   "bugid": 1892648,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Extend timeout for debug build in WebRenderAPI::CheckIsRemoteTextureReady()"
+  },
+  {
+   "bugid": 1892650,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove DeviceManagerDx::GetOutputDescs()"
+  },
+  {
+   "bugid": 1892774,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "ComputePipeline::Cleanup has a logic error preventing it from doing any work"
+  },
+  {
+   "bugid": 1875528,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Make actors hold a strong reference to their IPDL manager"
+  },
+  {
+   "bugid": 1879375,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Mojo ports may not be notified of peer node destruction"
+  },
+  {
+   "bugid": 1892300,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !holder->containsPure(id), at vm/GlobalObject.cpp:980"
+  },
+  {
+   "bugid": 1891277,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "JS GC memory prefs are not applied to workers"
+  },
+  {
+   "bugid": 1892242,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Increase maximum nursery size to 64MB"
+  },
+  {
+   "bugid": 1891485,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Differential error: RuntimeError: too many array elements"
+  },
+  {
+   "bugid": 1775568,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Intermittent browser/components/extensions/test/browser/browser_ext_popup_select_in_oopif.js | single tracking bug"
+  },
+  {
+   "bugid": 1892778,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Modernize the enums in WritingMode, and some cleanup nearby"
+  },
+  {
+   "bugid": 1892449,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Latest beta Firefox doesn't allow authentication input to my ADSL router"
+  },
+  {
+   "bugid": 1892325,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Extract 3 Internal Methods from WebTransportSessionEventListener"
+  },
+  {
+   "bugid": 1873631,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Support CHIPS for service workers"
+  },
+  {
+   "bugid": 1892647,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Silence from spammy warnings in toolkit/components/antitracking/AntiTrackingUtils.cpp"
+  },
+  {
+   "bugid": 1275496,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Fix failure of idbfactory_open9.htm in web-platform test."
+  },
+  {
+   "bugid": 1606210,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "IDB_CUSTOM_OPEN_WITH_OPTIONS_COUNT telemetry will expire in Nightly on 2020-01-06 when Gecko version gets increased 74"
+  },
+  {
+   "bugid": 1890730,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Remove IDBOpenDBOptions"
+  },
+  {
+   "bugid": 1892501,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "High frequency /IndexedDB/structured-clone.any.worker.html?101-last | Blob: [object Blob] - Test timed out"
+  },
+  {
+   "bugid": 1892649,
+   "status": "RESOLVED",
+   "component": "Core:String",
+   "summary": "nsPrintfCString width specifier not covered by any unit tests"
+  },
+  {
+   "bugid": 1889226,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "[rustc 1.78] error: the item `Box` is imported redundantly"
+  },
+  {
+   "bugid": 1891063,
+   "status": "REOPENED",
+   "component": "Core:Widget: Win32",
+   "summary": "Various preliminary clean-ups before bug 1850979"
+  },
+  {
+   "bugid": 1892481,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Improve build-time checking of noscript and builtinclass in xpidl"
+  },
+  {
+   "bugid": 1890565,
+   "status": "REOPENED",
+   "component": "Core:XPConnect",
+   "summary": "Intermittent js/xpconnect/crashtests/601284-1.html | single tracking bug"
+  },
+  {
+   "bugid": 1888864,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add click and context menu event listeners for the editor content"
+  },
+  {
+   "bugid": 1519636,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Reformat recent changes to the Google coding style"
+  },
+  {
+   "bugid": 1892668,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Update updatebot to revision d7689dd2e47c6df15f5fe"
+  },
+  {
+   "bugid": 1892670,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Upgrade some mach doc dependencies"
+  },
+  {
+   "bugid": 1878910,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Signing in to sync using email and password creates a duplicate entry in manage accounts"
+  },
+  {
+   "bugid": 1841749,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "The user can interact with elements under the Download notification modal"
+  },
+  {
+   "bugid": 1891509,
+   "status": "NEW",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Implement the telemetry required to capture the user response"
+  },
+  {
+   "bugid": 1891984,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add the required strings for the micro survey UI data object"
+  },
+  {
+   "bugid": 1892404,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UI/UX] Part 1: Create the scaffolding for the micro survey view"
+  },
+  {
+   "bugid": 1885618,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "[Menu Redesign] Implement Homepage menu group"
+  },
+  {
+   "bugid": 1892811,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Make 'Set as Default Browser' optimization experiment winning variation default experience"
+  },
+  {
+   "bugid": 1879380,
+   "status": "NEW",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] add nav buttons to toolbar in horizontal mode"
+  },
+  {
+   "bugid": 1891253,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Display the correct state in the Mozilla account button"
+  },
+  {
+   "bugid": 1892019,
+   "status": "REOPENED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Investigate to see if we can refactor toolbar into a new component toolbar2 that only new toolbar can use"
+  },
+  {
+   "bugid": 1881611,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Migrate \"Could never translate this site\" Global Settings to global state"
+  },
+  {
+   "bugid": 1884475,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations seems to wait until command is accepted not until translation completes"
+  },
+  {
+   "bugid": 1890837,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Check Translations Button Size"
+  },
+  {
+   "bugid": 1891473,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Hide line on Global Settings Page when there are not Global Settings"
+  },
+  {
+   "bugid": 1892732,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Experiment] The \"Learn more about Firefox Suggest\" option for Yelp and MDN results is not working on Firefox 125"
+  },
+  {
+   "bugid": 1888713,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Move ContentAnalysis code out of nsBaseClipboard"
+  },
+  {
+   "bugid": 1889851,
+   "status": "RESOLVED",
+   "component": "Firefox:Disability Access",
+   "summary": "[Linux] The Orca screen reader fails to reads aloud warning message on hovering over saved values"
+  },
+  {
+   "bugid": 1853818,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Remove `toolkit/branding/accounts.ftl` file"
+  },
+  {
+   "bugid": 1885664,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "PlacesQuery#getHistory() should fetch all history items by default"
+  },
+  {
+   "bugid": 1781868,
+   "status": "REOPENED",
+   "component": "Firefox:General",
+   "summary": "Intermittent browser/modules/test/browser/browser_TabUnloader.js | single tracking bug"
+  },
+  {
+   "bugid": 1890718,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers in app menu code"
+  },
+  {
+   "bugid": 1883673,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate majorRelease2022 to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1886613,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Make `BackupService.createBackup` rename the `staging` folder to a date after creating the backup completes"
+  },
+  {
+   "bugid": 1886614,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Write a Marionette test that ensures that all expected data stores are copied to the staging folder on `BackupService.createBackup`"
+  },
+  {
+   "bugid": 1888436,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add a \"recover\" method to the BackupResource base class"
+  },
+  {
+   "bugid": 1892007,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Make sure BackupService runs PlacesBackupResource's `backup` method first"
+  },
+  {
+   "bugid": 1889037,
+   "status": "REOPENED",
+   "component": "Firefox:Search",
+   "summary": "Update documentation for search-config-v2"
+  },
+  {
+   "bugid": 1876342,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Modify Firefox to register itself as a native messaging client for Chrome for the Dual Browser extensions on Windows"
+  },
+  {
+   "bugid": 1879975,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Firefox pinning to taskbar on newer versions of Windows fails"
+  },
+  {
+   "bugid": 1855471,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Stop using deprecated message-bar element for outstanding shopping message bars"
+  },
+  {
+   "bugid": 1870307,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Create Select Translations Panel Problem Translating View UI"
+  },
+  {
+   "bugid": 1870311,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Create Select Translations Panel Problem Loading Languages View UI"
+  },
+  {
+   "bugid": 1870332,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Implement Select Translations Panel Translate Full Page Button"
+  },
+  {
+   "bugid": 1870334,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Implement Select Translations Panel Try Again Button"
+  },
+  {
+   "bugid": 1870349,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Implement Select Translations Panel Settings Menu"
+  },
+  {
+   "bugid": 1890299,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Enable Select Translations for Nightly and Early Beta"
+  },
+  {
+   "bugid": 1892359,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Fix Translator Exception Handling"
+  },
+  {
+   "bugid": 1892541,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Fix FullPageTranslationsPanel init-failure messaging"
+  },
+  {
+   "bugid": 1892546,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add chaos mode to Translations language initialization"
+  },
+  {
+   "bugid": 1892683,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "add release-early-tagging for firefox-android"
+  },
+  {
+   "bugid": 1891254,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Investigate reducing noise in unit test logs."
+  },
+  {
+   "bugid": 1891726,
+   "status": "RESOLVED",
+   "component": "GeckoView:Core",
+   "summary": "Thread names are overridden by JavaVM::AttachCurrentThread"
+  },
+  {
+   "bugid": 1890795,
+   "status": "ASSIGNED",
+   "component": "NSS:CA Certificates Code",
+   "summary": "Count number of trust objects in db"
+  },
+  {
+   "bugid": 1876793,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='hg.mozilla.org', port=443): Read timed out. (read timeout=30)"
+  },
+  {
+   "bugid": 1892456,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Consider disabling Android tasks from other pine/larch repositories"
+  },
+  {
+   "bugid": 1889464,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Messagebox shown from background update tasks"
+  },
+  {
+   "bugid": 1892062,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Modify backgroundTaskMinRuntimeMS to investigate cause of background updater-caused shutdown hangs"
+  },
+  {
+   "bugid": 1882578,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update the vendored minidump crates to version 0.21"
+  },
+  {
+   "bugid": 1891454,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent TV browser/extensions/formautofill/test/browser/address/browser_address_doorhanger_ui_lines.js | single tracking bug"
+  },
+  {
+   "bugid": 1891145,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Implement history flooding protection"
+  },
+  {
+   "bugid": 1892775,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Run document_start content script without await cssPromise when there is no css"
+  }
+ ],
+ "fixed": 75,
+ "total": 89,
+ "restricted": 1
+}
