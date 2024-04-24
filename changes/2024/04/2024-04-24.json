@@ -1,0 +1,502 @@
+{
+ "date": "2024-04-24",
+ "buildid": "20240424093459",
+ "cset": "3de3f9428f138bf269718fceb36c5112a195ca37",
+ "bugs": [
+  {
+   "bugid": 1892887,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "gmp-clearkey doesn't work if the binary is called something other than \"firefox\""
+  },
+  {
+   "bugid": 1892927,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version 5667867fa293dbbc632a7c78308f4ad2db9c52df from 2024-04-23 10:38:45"
+  },
+  {
+   "bugid": 1867155,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "New wpt failures in /dom/xslt/large-cdata.html"
+  },
+  {
+   "bugid": 1892598,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Reuse `IPCImage` for `PBrowser::SetCursor`"
+  },
+  {
+   "bugid": 1776989,
+   "status": "NEW",
+   "component": "Core:DOM: Events",
+   "summary": "Intermittent dom/events/test/pointerevents/test_getCoalescedEvents.html | single tracking bug"
+  },
+  {
+   "bugid": 1891259,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "event.preventDefault() is not respected when called in microtask"
+  },
+  {
+   "bugid": 1892589,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Custom Highlight API: Speed up `Highlight::Add()`"
+  },
+  {
+   "bugid": 1887799,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Implement support for tables"
+  },
+  {
+   "bugid": 1892106,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Rewrite profiler posix tests to use topicObserved rather than timers"
+  },
+  {
+   "bugid": 1870628,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Firefox for Android doesn't support video acceleration on Samsung Galaxy A50"
+  },
+  {
+   "bugid": 1885447,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Tonemap/color-manage webgl sdr/wcg output into Display profile as pre-compositor post-process."
+  },
+  {
+   "bugid": 1892678,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "rename pref image.decode-sync.enabled to image.testing.decode-sync.enabled"
+  },
+  {
+   "bugid": 1712963,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Refactor mValid checks in WebGPU for early-out"
+  },
+  {
+   "bugid": 1822096,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Support WGSL const-expressions and override-expressions in Naga"
+  },
+  {
+   "bugid": 1873687,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Enable incremental upgrading of test tier for WebGPU CTS"
+  },
+  {
+   "bugid": 1887837,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Port conic gradients to the quad shaders"
+  },
+  {
+   "bugid": 1889792,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Scrolling Slack mesage history is very laggy when using SWGL and the quad conic gradient shader"
+  },
+  {
+   "bugid": 1891543,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ensure expensive shaders use as few pixels as possible in the opaque pass"
+  },
+  {
+   "bugid": 1892398,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Quad shaders use a mix of device and layout coordinate spaces"
+  },
+  {
+   "bugid": 1892577,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JOF_MODEMASK bits are no longer needed for JS opcodes"
+  },
+  {
+   "bugid": 1892699,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Firefox 125.0.1 (64-bit) \"Arguments\" array-like object have zero-length in generator function"
+  },
+  {
+   "bugid": 1893052,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS::ParseJSONWithHandler() should fail when boolean and null handlers fail at the top level"
+  },
+  {
+   "bugid": 1892564,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !obj->runtimeFromMainThread()->gc.nursery().isInside(src.dataPointer()), at js/src/vm/ArrayBufferObject.cpp:2583"
+  },
+  {
+   "bugid": 1850627,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Support WebAssembly JS Promise Integration proposal"
+  },
+  {
+   "bugid": 1881281,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add `noexn` heap type"
+  },
+  {
+   "bugid": 1887081,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Implement WebAssembly.JSTag"
+  },
+  {
+   "bugid": 1891718,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "nice error when `browser.ml.enable` is False"
+  },
+  {
+   "bugid": 1892251,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Perma toolkit/components/ml/tests/browser/browser_ml_engine.js | Test timed out - when Gecko 127 merges to beta on 2024-05-13"
+  },
+  {
+   "bugid": 1892816,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "<a> link bounds are lost in PDFs generated by Firefox's save-to-PDF printer, for absolutely positioned links"
+  },
+  {
+   "bugid": 1874005,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix WPT /cookies/samesite/iframe.document.https.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1877432,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable BounceTrackingProtection in Nightly"
+  },
+  {
+   "bugid": 1892142,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Perma a11y [tier 2] TEST-UNEXPECTED-FAIL | toolkit/components/antitracking/bouncetrackingprotection/test/browser/browser_bouncetracking_schemes.js | Node is not accessible via accessibility API: id: , tagName: body, className: -"
+  },
+  {
+   "bugid": 1892501,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "High frequency /IndexedDB/structured-clone.any.worker.html?101-last | Blob: [object Blob] - Test timed out"
+  },
+  {
+   "bugid": 1555498,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Slow Inspector opening because of collecting event listeners on DOM-heavy pages"
+  },
+  {
+   "bugid": 1888607,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use InspectorUtils CSS parser in parseDeclarationsInternal"
+  },
+  {
+   "bugid": 1889363,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Implement performEOFFixup for InspectorUtils CSS parser"
+  },
+  {
+   "bugid": 1890493,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use InspectorCSSParser in sanitizePropertyValue"
+  },
+  {
+   "bugid": 1617369,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "[rust] Reformat the tree using rustfmt"
+  },
+  {
+   "bugid": 1890668,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Add note regarding enabling ESLint rules to the jsdoc support document"
+  },
+  {
+   "bugid": 1888249,
+   "status": "ASSIGNED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Add Sync Debug menu items for FxA"
+  },
+  {
+   "bugid": 1891509,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Implement the telemetry required to capture the user response"
+  },
+  {
+   "bugid": 1891933,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[Messaging] Create a Messaging object for the micro survey content data"
+  },
+  {
+   "bugid": 1892657,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] Part 2 A: Add the UI 'open' state elements to the micro survey scaffold view"
+  },
+  {
+   "bugid": 1892042,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Sentry to version 7.8.0"
+  },
+  {
+   "bugid": 1892144,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX DataStore to version 1.1.0"
+  },
+  {
+   "bugid": 1892160,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Compose BOM to 2024.04.01"
+  },
+  {
+   "bugid": 1892899,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Prevent IllegalAccessException being thrown in Fenix unit tests"
+  },
+  {
+   "bugid": 1891972,
+   "status": "REOPENED",
+   "component": "Fenix:Onboarding",
+   "summary": "Allow CFRs to be dismissed by outside touches - consitent with review checker CFR behaviour"
+  },
+  {
+   "bugid": 1892019,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Investigate to see if we can refactor toolbar into a new component toolbar2 that only new toolbar can use"
+  },
+  {
+   "bugid": 1892382,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Re-enable verifyAPageIsAddedToASearchGroupOnlyOnceTest UI test"
+  },
+  {
+   "bugid": 1871206,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Create demo of secondary actions buttons"
+  },
+  {
+   "bugid": 1892150,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove or update probes expiring in Firefox 128: FX_URLBAR_PROVIDER_CLIPBOARD_READ_TIME_MS before Gecko version gets increased on 2024-05-13"
+  },
+  {
+   "bugid": 1890718,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers in app menu code"
+  },
+  {
+   "bugid": 1888263,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "\"Open Firefox automatically when your computer starts up\" is not working on windows 11"
+  },
+  {
+   "bugid": 1892782,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Enable Firefox launch on login by default"
+  },
+  {
+   "bugid": 1892769,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "reverse_split property styles are reverted at widths < 800px when no_rdm property is present"
+  },
+  {
+   "bugid": 1883199,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "SearchService errors logged at startup for all extension-provided engines"
+  },
+  {
+   "bugid": 1890595,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent browser/components/preferences/tests/siteData/browser_clearSiteData_v2.js | single tracking bug"
+  },
+  {
+   "bugid": 1889718,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Set browser.firefoxbridge.enabled to True by default"
+  },
+  {
+   "bugid": 1892931,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Perma Late Beta TEST-UNEXPECTED-FAIL | browser/base/content/test/sync/browser_contextmenu_sendpage.js | Ids in context menu match expected values - \"frame-sep\" == \"context-translate-selec  when Gecko 127 switches from Early Beta to Late Beta on 2024-05-24"
+  },
+  {
+   "bugid": 1891982,
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Duplicate TopSitesFeed and relevant tests into a separate component"
+  },
+  {
+   "bugid": 1890863,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Perma a11y [Tier2] browser/components/translations/tests/browser/browser_translations_about_preferences_settings_ui.js | single tracking bug"
+  },
+  {
+   "bugid": 1885361,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Implement an optimization that reads mozlint configs"
+  },
+  {
+   "bugid": 1892371,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Update to JDK 17.0.11"
+  },
+  {
+   "bugid": 1892478,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use the Dependencies plugin to manage AndroidX Collection"
+  },
+  {
+   "bugid": 1890795,
+   "status": "RESOLVED",
+   "component": "NSS:CA Certificates Code",
+   "summary": "Count number of trust objects in db"
+  },
+  {
+   "bugid": 1857961,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for the \"devicePixelRatio\" argument for \"browsingContext.setViewport\""
+  },
+  {
+   "bugid": 1892421,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "Perma tgdiff failure: \"abort: unknown revision ...\""
+  },
+  {
+   "bugid": 1886157,
+   "status": "VERIFIED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Enable new AOM restrictions on new weak signatures xpi installs on Nightly"
+  },
+  {
+   "bugid": 1891177,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[win] The Quit Firefox and Restart Firefox buttons are reversed"
+  },
+  {
+   "bugid": 1891371,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "missing spacing between select box and text in new clear history dialog"
+  },
+  {
+   "bugid": 1888911,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "A flicker is displayed while going through the list of addresses/credit cards when the preview is applied"
+  },
+  {
+   "bugid": 1890749,
+   "status": "NEW",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Don't need to pass onFormSubmit callback to FormStateManager"
+  },
+  {
+   "bugid": 1892357,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Clear Autofill Form menuitem appearing after the form has already been cleared"
+  },
+  {
+   "bugid": 1891811,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[megalist] Establish rendering data-source specific UI"
+  },
+  {
+   "bugid": 1891599,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Create PiP JWPlayer Wrapper"
+  },
+  {
+   "bugid": 1552815,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Removing ReplaceFaviconData and ReplaceFaviconDataFromDataURL in favor of a setIconForPage always taking a data uri"
+  },
+  {
+   "bugid": 1803678,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Enable on-demand/lazy loading for ESModule based reusable components"
+  },
+  {
+   "bugid": 1858812,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create a icon and text variant of moz-button"
+  },
+  {
+   "bugid": 1867614,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "fxview-tab-list story is broken, shows a \"ChromeUtils is not defined\" error"
+  },
+  {
+   "bugid": 1869065,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Re-visit some of the element property names used in moz-message-bar"
+  },
+  {
+   "bugid": 1845918,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Re-enable test_ext_subframes_privileges.html on Android"
+  }
+ ],
+ "fixed": 64,
+ "total": 82,
+ "restricted": 1
+}
