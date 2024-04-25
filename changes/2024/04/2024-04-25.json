@@ -1,0 +1,574 @@
+{
+ "date": "2024-04-25",
+ "buildid": "20240425094116",
+ "cset": "792c9892791495e8f13e77e5a78bfda83ab7a455",
+ "bugs": [
+  {
+   "bugid": 1885671,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Move decoder module's initialization off the main thread"
+  },
+  {
+   "bugid": 1892457,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "10 bit RGB AV1 video broken on macOS M3"
+  },
+  {
+   "bugid": 1892785,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "WebCodecs Encoder: Allow Reset() to reject promises during Flush()'s callback"
+  },
+  {
+   "bugid": 1891302,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma OSX /css/css-values/container-progress-computed.tentative.html | container-progress(height of non-existing-container from 0px to 1px) should be used-value-equivalent to 866 - assert_not_equals: container-progress(height of non-existing-container fro"
+  },
+  {
+   "bugid": 1892727,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "10.65 - 9.11% perf_reftest_singletons parent-basic-singleton.html / perf_reftest_singletons parent-basic-singleton.html (Linux) regression on Tue April 2 2024"
+  },
+  {
+   "bugid": 1264508,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Add helpers for converting ArrayBuffer or BufferSource to nsTArray"
+  },
+  {
+   "bugid": 1887721,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Use correct order when defining length/name/prototype on legacy factory functions"
+  },
+  {
+   "bugid": 1891789,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "console.createInstance crashes when used in a ChromeWorker"
+  },
+  {
+   "bugid": 1891934,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[popover] When invoker isn't focusable,  focus navigation should look for another element next to the invoker to focus"
+  },
+  {
+   "bugid": 1891408,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Sort out `WSScanResult::Point`"
+  },
+  {
+   "bugid": 1891656,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`HTMLEditUtils::GetMostDistantAncestorEditableEmptyInlineElement` may return `Text`"
+  },
+  {
+   "bugid": 1891659,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`HTMLEditor::AutoDeleteRangesHandler::AutoBlockElementsJoiner::DeleteTextAtStartAndEndOfRange()` may delete the text node"
+  },
+  {
+   "bugid": 1892376,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EditorBase::CloneAttributesWithTransaction()` not use `nsDOMAttributeMap`"
+  },
+  {
+   "bugid": 1289130,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Containers with really long identity name break the UX"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1891938,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Improve debugging in IPCFuzzController"
+  },
+  {
+   "bugid": 1891945,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Improve PROTO_FILTER code for IPC fuzzing"
+  },
+  {
+   "bugid": 1891946,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Avoid setting the LAZY_SEND_BIT in IPC fuzzing"
+  },
+  {
+   "bugid": 1893138,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Enable gczeal in all fuzzing builds"
+  },
+  {
+   "bugid": 1893364,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add more profiler markers around video overlay handing."
+  },
+  {
+   "bugid": 1892201,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for caching quad render tasks"
+  },
+  {
+   "bugid": 1892398,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Quad shaders use a mix of device and layout coordinate spaces"
+  },
+  {
+   "bugid": 638577,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Reflect.parse doesn't handle doubly-declared functions gracefully"
+  },
+  {
+   "bugid": 1833647,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement Float16Array"
+  },
+  {
+   "bugid": 1891195,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: asValue() % sizeof(std::conditional_t<std::is_void_v<std::remove_pointer_t<U>>, char, std::remove_pointer_t<U>>) == 0, at vm/SharedMem.h:84"
+  },
+  {
+   "bugid": 1892912,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Improve hash table checks after moving GC"
+  },
+  {
+   "bugid": 1887083,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Fix function type of 'substring' builtin"
+  },
+  {
+   "bugid": 1892080,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Migrate inference options to RS"
+  },
+  {
+   "bugid": 1888815,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Firefox keeps trying to resolve cname-only https rr"
+  },
+  {
+   "bugid": 1888904,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Unable to create an account into kia website (unable to click fission iframe)"
+  },
+  {
+   "bugid": 1874008,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix WPT /cookies/third-party-cookies/third-party-cookies.tentative.https.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1874009,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix WPT /websockets/cookies/third-party-cookie-accepted.https.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1874011,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix WPT /cookies/prefix/__secure.header.https.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1892867,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "remove some unused view code"
+  },
+  {
+   "bugid": 1893357,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Drop |aRepaintExposedAreaOnly| argument from nsViewManager::ResizeView()"
+  },
+  {
+   "bugid": 1884140,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Enable DTLS1.3 in WebRTC for Firefox Release"
+  },
+  {
+   "bugid": 1891541,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Ensure that call-site arguments to MozPromise's member functions are always static strings"
+  },
+  {
+   "bugid": 1868732,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "[devtools] Add test for ::target-text pseudo element in rules view"
+  },
+  {
+   "bugid": 1888249,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Add Sync Debug menu items for FxA"
+  },
+  {
+   "bugid": 1888280,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Update actionSecondary and related tokens"
+  },
+  {
+   "bugid": 1889313,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Update FirefoxTheme with the latest design color tokens"
+  },
+  {
+   "bugid": 1891890,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Align colour token names with desktop"
+  },
+  {
+   "bugid": 1890609,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "When downloading a file with a larger name, the download percentage (%) is not displayed"
+  },
+  {
+   "bugid": 1892914,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add the survey 'content' view"
+  },
+  {
+   "bugid": 1892162,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AndroidX Core to version 1.13.0"
+  },
+  {
+   "bugid": 1892906,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Prevent MockKException in Fenix unit tests."
+  },
+  {
+   "bugid": 1893110,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version d4cf842f8534fa15f5c8cef55400e487d3b972f0 from 2024-04-24 05:02:55"
+  },
+  {
+   "bugid": 1893248,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version bf37a5174a1dcb7a890dc35386d58f9b77f82434 from 2024-04-24 13:46:28"
+  },
+  {
+   "bugid": 1812426,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Save password disappears before user can interact with it."
+  },
+  {
+   "bugid": 1816746,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tabs tray to Compose] Add the Inactive tabs CFR"
+  },
+  {
+   "bugid": 1892019,
+   "status": "REOPENED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Refactor toolbar into a new component toolbar2 that only new toolbar can use"
+  },
+  {
+   "bugid": 1892743,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Need to add Global Option to change Offer outside of Page Settings"
+  },
+  {
+   "bugid": 1807268,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - HomeActivity ANR"
+  },
+  {
+   "bugid": 1879011,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < FirefoxSuggestTest.openFirefoxSuggestSponsoredSearchResultsTest >"
+  },
+  {
+   "bugid": 1848715,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Editing and copying URL loses \"https://\" URL scheme when browser.urlbar.trimHttps = true"
+  },
+  {
+   "bugid": 1893147,
+   "status": "VERIFIED",
+   "component": "Firefox:Installer",
+   "summary": "Nightly build takes aprox 5 minutes to install from .exe being stuck at default browser agent, background task and when uninstalling"
+  },
+  {
+   "bugid": 1892402,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Survey on new tab page has low text contrast with custom themes or Firefox Color"
+  },
+  {
+   "bugid": 1892772,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "\"welcome-text\" container is still rendered in the absence of title and subtitle"
+  },
+  {
+   "bugid": 1893076,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update wallpaper onboarding thumbnail images"
+  },
+  {
+   "bugid": 1883673,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate majorRelease2022 to use setPref instead of isEarlyStartup"
+  },
+  {
+   "bugid": 1867513,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable highlighting in a PDF in Release"
+  },
+  {
+   "bugid": 1888447,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement `recover` for PreferencesBackupResource"
+  },
+  {
+   "bugid": 1890574,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add a simple utility to select a backup staging folder to `recovery` and initiate recovery"
+  },
+  {
+   "bugid": 1891596,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add `recoverFromBackup` to BackupService"
+  },
+  {
+   "bugid": 1889037,
+   "status": "REOPENED",
+   "component": "Firefox:Search",
+   "summary": "Update documentation for search-config-v2"
+  },
+  {
+   "bugid": 1893193,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Using <div>s instead of <message-bar>s for shopping messages regressed icons"
+  },
+  {
+   "bugid": 1890784,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Document TPS tests"
+  },
+  {
+   "bugid": 1892738,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Flickering issue when positioning cursor near bottom line/corners of a tab"
+  },
+  {
+   "bugid": 1836440,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Firefox black favicons look bad on black/dark backgrounds"
+  },
+  {
+   "bugid": 1871645,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Disallow Select Translations in the right-click context menu when the Translations Engine is unsupported"
+  },
+  {
+   "bugid": 1890490,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Allow resizing the SelectTranslationsPanel textarea"
+  },
+  {
+   "bugid": 1892836,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Create a Nimbus rollout for the Select Translations release"
+  },
+  {
+   "bugid": 1892846,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Disable translate-full-page button when same language is selected"
+  },
+  {
+   "bugid": 1892848,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve SelectTranslationsPanel translate via keyboard navigation"
+  },
+  {
+   "bugid": 1892853,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Ensure SelectTranslationsPanel footer buttons wrap correctly"
+  },
+  {
+   "bugid": 1893060,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add ability to force reopen SelectTranslationsPanel"
+  },
+  {
+   "bugid": 1893062,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "The SelectTranslationsPanel settings menu is not accessible via keyboard"
+  },
+  {
+   "bugid": 1893252,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "./configure fails with: TypeError: expected str, bytes or os.PathLike object, not NoneType"
+  },
+  {
+   "bugid": 1892812,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang-trunk] 1 out of 2 hunks FAILED -- saving rejects to file llvm/lib/Transforms/Vectorize/VectorCombine.cpp.rej"
+  },
+  {
+   "bugid": 1489528,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "FinderFindFlags IntDef annotation should include a zero value as a default"
+  },
+  {
+   "bugid": 1777509,
+   "status": "RESOLVED",
+   "component": "GeckoView:Sandboxing",
+   "summary": "Add an async version of createContentWindow and use it wherever possible"
+  },
+  {
+   "bugid": 1890553,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "try selection of firefox-android nightly/beta tasks requires shippable builds -- not available for artifact builds"
+  },
+  {
+   "bugid": 1893041,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Update mobile first-run experiments on Beta"
+  },
+  {
+   "bugid": 1892924,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Avoid calling Services.policies on Android"
+  },
+  {
+   "bugid": 1885985,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "macOS framework changes yield artifact builds with `nightly` channel pref that can and do apply updates"
+  },
+  {
+   "bugid": 1890764,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "[macOS] Firefox 125 fails to update when running on non-admin accounts"
+  },
+  {
+   "bugid": 1892710,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[macOS& Ubuntu] The Quit Firefox and Restart Firefox buttons on the Crash Reporter cannot be selected using the Tab keyboard key"
+  },
+  {
+   "bugid": 1893156,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "linux system symbol scraping silently broken"
+  },
+  {
+   "bugid": 1891983,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Options  are misaligned inside the  Address dropdown"
+  },
+  {
+   "bugid": 1892357,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Clear Autofill Form menuitem appearing after the form has already been cleared"
+  },
+  {
+   "bugid": 1893201,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Using l10n id for menu command labels"
+  },
+  {
+   "bugid": 1891745,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Vendor Glean SDK v60, glean_parser v14 into mozilla-central"
+  },
+  {
+   "bugid": 1892204,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Upgrade Rust prio library to 0.16"
+  },
+  {
+   "bugid": 1803678,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Enable on-demand/lazy loading for ESModule based reusable components"
+  }
+ ],
+ "fixed": 83,
+ "total": 94,
+ "restricted": 1
+}
