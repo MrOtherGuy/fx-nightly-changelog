@@ -1,0 +1,448 @@
+{
+ "date": "2024-05-07",
+ "buildid": "20240507091307",
+ "cset": "8d47b53b92aab287aee923b25739e74f89cc323f",
+ "bugs": [
+  {
+   "bugid": 1889129,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "AndroidDecoderModule::GetSupportedMimeTypes() takes over a 100ms during child process startup."
+  },
+  {
+   "bugid": 1348181,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[webvtt] fix webvtt-file-format-parsing/webvtt-cue-text-parsing-rules/tests/tree-building.html"
+  },
+  {
+   "bugid": 1395924,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Support all of HTML's character entities in WebVTT"
+  },
+  {
+   "bugid": 1894577,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma ccov [tier 2] TEST-UNEXPECTED-PASS | /webcodecs/video-encoder.https.any.worker.html | Test successful configure(), encode(), and flush() - expected FAIL"
+  },
+  {
+   "bugid": 1894668,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /webcodecs/video-encoder.https.any.html | Test successful configure(), encode(), and flush() - expected FAIL when Gecko 127 merges to beta on 2024-05-13"
+  },
+  {
+   "bugid": 1404972,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Use MacOS's audio processing algorithm"
+  },
+  {
+   "bugid": 1894041,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(assertion failed: !registration.syntax.is_universal()) at servo/components/style/custom_properties.rs:1850"
+  },
+  {
+   "bugid": 1850967,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Forbid data: and javascript: URLs in <base>"
+  },
+  {
+   "bugid": 1883220,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Create SHIP (session history in parent) variants for test suites"
+  },
+  {
+   "bugid": 1882176,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Supporting notifications in PBM"
+  },
+  {
+   "bugid": 1891007,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Make NotificationDB a real javascript class"
+  },
+  {
+   "bugid": 1890277,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Add CSP support for Trusted Types"
+  },
+  {
+   "bugid": 1893996,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Prepare some code around reporting CSP errors for extending it to Trusted Types"
+  },
+  {
+   "bugid": 1895068,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma /fetch/metadata/generated/element-video-poster.https.sub.html | sec-fetch-site - HTTPS downgrade-upgrade - Test timed out when Gecko 127 merges to beta on 2024-05-13"
+  },
+  {
+   "bugid": 1895208,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Refactor IsFocusable checks to pass down flags rather than bool arguments."
+  },
+  {
+   "bugid": 1895229,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove nsIWebBrowserChromeFocus."
+  },
+  {
+   "bugid": 1892553,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WPT failures in /webauthn/createcredential-pubkeycredparams.https.html"
+  },
+  {
+   "bugid": 1894027,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "WebCrypto: derive_bits_keys returns an incorrect exception"
+  },
+  {
+   "bugid": 1893376,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Failing WPT html-aam/fragile/area-role.html"
+  },
+  {
+   "bugid": 1660754,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "The JS RT fuzzing interface should support AFL-style tools"
+  },
+  {
+   "bugid": 1892913,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update Cairo to version 1.18.0"
+  },
+  {
+   "bugid": 1885447,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Tonemap/color-manage webgl sdr/wcg output into Display profile as pre-compositor post-process."
+  },
+  {
+   "bugid": 1894399,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Temporarily disable quad-style gradients from rendering in tiled / nine-patch mode."
+  },
+  {
+   "bugid": 1894902,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Temporarily disable low-quality pinch zoom"
+  },
+  {
+   "bugid": 1894793,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Document additional tests that need to be updated when adding methods to existing builtin objects"
+  },
+  {
+   "bugid": 1894883,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: shape_ != later.shape_, at builtin/TestingFunctions.cpp:6262"
+  },
+  {
+   "bugid": 1894604,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: CurrentThreadIsGCSweeping(), at gc/Nursery.cpp:1816"
+  },
+  {
+   "bugid": 1895017,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Relax serialization check for LinkData::symbolicLinks"
+  },
+  {
+   "bugid": 1860565,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "(De)Serialize `LinkHeader::mAnchor` in IPCMessageUtilsSpecializations.h"
+  },
+  {
+   "bugid": 1883282,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Log message incorrectly logs split string parts"
+  },
+  {
+   "bugid": 1895198,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Move the assert !LoadWasOpened() in HttpBaseChannel::ExplicitSetUploadStreamLength to HttpChannelChild"
+  },
+  {
+   "bugid": 1884535,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "\"Copy link without site tracking\" doesn't send anything to the clipboard when used on magnet: links"
+  },
+  {
+   "bugid": 1887658,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect (user) font prefs"
+  },
+  {
+   "bugid": 1887742,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add tests for redirect URLs with multiple query params to QPS Tests"
+  },
+  {
+   "bugid": 1888032,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Partitioned cookie not sent from WebWokers"
+  },
+  {
+   "bugid": 1889564,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Some queryParams are not being properly removed from Amazon"
+  },
+  {
+   "bugid": 1892152,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring in Firefox 128: cookie.banners.r*"
+  },
+  {
+   "bugid": 1892154,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring in Firefox 128: cookie.banners.c* before Gecko version gets increased on 2024-05-13"
+  },
+  {
+   "bugid": 1895222,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable Bounce Tracking Protection tracker purging in Nightly"
+  },
+  {
+   "bugid": 1870415,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Hit MOZ_CRASH(Item found was in the wrong list! type 281 (outer type was 263 at depth 2, now is 3)) at /builds/worker/checkouts/gecko/layout/painting/nsDisplayList.h:2210"
+  },
+  {
+   "bugid": 1888433,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent debug Assertion failure: mRawPtr != nullptr (You can't dereference a NULL RefPtr with operator->().), at /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:343"
+  },
+  {
+   "bugid": 1892329,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Properly fix threading issues in video_capture_v4l2.cc"
+  },
+  {
+   "bugid": 1848899,
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "Remove widget.non-native-theme.enabled pref"
+  },
+  {
+   "bugid": 1873138,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Remove widget.non-native-theme.webrender pref"
+  },
+  {
+   "bugid": 1891608,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Enure nsCocoaWindow native window is hidden before it is destroyed"
+  },
+  {
+   "bugid": 1893890,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KDE] Blurred titlebar on KDE using behind-window blur."
+  },
+  {
+   "bugid": 1894481,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Clean up nsWindow::RegisterWindowClass()"
+  },
+  {
+   "bugid": 1894170,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "aarch64 Linux CPU information missing"
+  },
+  {
+   "bugid": 1894897,
+   "status": "REOPENED",
+   "component": "Core:XPConnect",
+   "summary": "Perma test_xrayToJS.xhtml | A property on the Set prototype has changed! You need a security audit from an XPConnect peer - got <[\\\"add\\\",..>\", expected \"<.\\\"add\\\",.>\" when Gecko 127 merges to beta on 2024-05-13"
+  },
+  {
+   "bugid": 1889429,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove most native tree header code."
+  },
+  {
+   "bugid": 1895230,
+   "status": "ASSIGNED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Object metric type should not serialize null values"
+  },
+  {
+   "bugid": 1894659,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Duplicate breakpoints source with long lines"
+  },
+  {
+   "bugid": 1894709,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_pseudo-element_01.js | single tracking bug"
+  },
+  {
+   "bugid": 1893033,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Expand a11y-checks debugging documentation in the Mochitest FAQ on testing/mochitest-plain/faq"
+  },
+  {
+   "bugid": 1891157,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Add basic support for closing synced tabs"
+  },
+  {
+   "bugid": 1873528,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "The escape character for downloading files is not displayed in the download history, causing confusion for users."
+  },
+  {
+   "bugid": 1884484,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Mouse forward / forward_longpress should be supported."
+  },
+  {
+   "bugid": 1891360,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Load the Mozilla account avatar image in AvatarIcon if available"
+  },
+  {
+   "bugid": 1895149,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Firebase Cloud Messaging to version 24.0.0"
+  },
+  {
+   "bugid": 1886833,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab create a weather feed"
+  },
+  {
+   "bugid": 1895324,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 14e87469dbb04fa0e9e6f7ec23e5c9d7b283e901 from 2024-05-06 18:00:03"
+  },
+  {
+   "bugid": 1892312,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Update times.json with recovery information for the recovered profile"
+  },
+  {
+   "bugid": 1893800,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "Horizontally align buttons to region in screenshots overlay"
+  },
+  {
+   "bugid": 1889941,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Partial restoration of closed windows with 'Reopen all windows' option in History menu"
+  },
+  {
+   "bugid": 1885894,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Remove sidebar persistence off of XULstore"
+  },
+  {
+   "bugid": 1892659,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Allow closing all of current window's duplicate tabs in tab overflow menu."
+  },
+  {
+   "bugid": 1750072,
+   "status": "ASSIGNED",
+   "component": "Firefox:about:logins",
+   "summary": "Remove custom reveal/conceal button on password field"
+  },
+  {
+   "bugid": 1892860,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "add and remove optional permissions not updating the entire list"
+  },
+  {
+   "bugid": 1837601,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Indicate if location change was requested by user"
+  },
+  {
+   "bugid": 1893565,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Perma [Tier 2] /builds/worker/checkouts/gecko/mobile/android/modules/geckoview/GeckoViewNavigation.sys.mjs:368:7 | Use of unknown property Ci.nsIBrowserDOMWindow.OPEN_NEWTAB_FOREGROUND (mozilla/valid-ci-uses)"
+  },
+  {
+   "bugid": 1885542,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "\"WheelScrollAction.performOneWheelScroll\" doesn't update key input state"
+  },
+  {
+   "bugid": 1877720,
+   "status": "NEW",
+   "component": "Toolkit:Password Manager",
+   "summary": "Tests for os auth for password manager."
+  },
+  {
+   "bugid": 1891030,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document how to use OHTTP"
+  }
+ ],
+ "fixed": 60,
+ "total": 73,
+ "restricted": 6
+}
