@@ -1,0 +1,502 @@
+{
+ "date": "2024-05-23",
+ "buildid": "20240523041055",
+ "cset": "5f32152690020a32702097b55f1b5c44804d0db4",
+ "bugs": [
+  {
+   "bugid": 1897452,
+   "status": "RESOLVED",
+   "component": "Application Services:Relevancy",
+   "summary": "Interrupt the ingestion and close the relevancy store via AsyncShutdown blocker"
+  },
+  {
+   "bugid": 1892445,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "10 bit RGB AV1 video broken on Linux"
+  },
+  {
+   "bugid": 1895787,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Residual echo on macOS with external speakers"
+  },
+  {
+   "bugid": 1898350,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Clear pending exceptions for JSON serialization failures in nsFrameMessageManager::GetParamsForMessage()"
+  },
+  {
+   "bugid": 1858801,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider to bring back option to show a spinning cursor while the page is loading"
+  },
+  {
+   "bugid": 1898128,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Perma [tier 2] /credential-management/fedcm-authz/fedcm-disclosure-text-shown.https.html | We should send disclosure_text_shown=false when custom fields are passed. - Test timed out"
+  },
+  {
+   "bugid": 1894288,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Remove network.fetch.redirect.stripAuthHeader and network.http.redirect.stripAuthHeader prefs"
+  },
+  {
+   "bugid": 1896475,
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "Implement Request/Response `.bytes()` method"
+  },
+  {
+   "bugid": 1898129,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Perma [tier 2] /fetch/api/abort/serviceworker-intercepted.https.html | response.bytes() rejects if already aborted - promise_test: Unhandled rejection with value: object \"TypeError: response[bodyMethod] is not a function\""
+  },
+  {
+   "bugid": 1878741,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Prevent WPT tests from potentially affecting other tests"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1896225,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: !startRoot && !endRoot, at /builds/worker/checkouts/gecko/dom/base/CrossShadowBoundaryRange.cpp:107"
+  },
+  {
+   "bugid": 1736488,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Assertion failure crash: ClientMatchPrincipalInfo(mClientInfo.PrincipalInfo(), aServiceWorker.PrincipalInfo()), at /dom/clients/manager/ClientHandle.cpp:112"
+  },
+  {
+   "bugid": 1810596,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Screen reader does not announce aria-live-region with role=\"status\""
+  },
+  {
+   "bugid": 1897349,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perma OS X opt + shippable accessible/tests/browser/tree/browser_css_alt.js | Wrong value of property 'name' for [role: statictext, name: 'before', address: [xpconnect wrapped nsIAccessible]]. - Got \"before\", expected \"alt\""
+  },
+  {
+   "bugid": 1898082,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Clean up comments in nsTextEquivUtils"
+  },
+  {
+   "bugid": 1896674,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Add allow/deny lists to IPCFuzzController"
+  },
+  {
+   "bugid": 1897468,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Stop non-parent processes from doing anything when recieving a signal."
+  },
+  {
+   "bugid": 1894791,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade to `clang-sys` 1.7.0"
+  },
+  {
+   "bugid": 1896951,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "BigInts are not reported in about:memory"
+  },
+  {
+   "bugid": 1898063,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add --enable-json-parse-with-source to fuzz-flags.txt"
+  },
+  {
+   "bugid": 1894779,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Allow font-face urls to be resource:// urls and relax CORS for resource:// URLs"
+  },
+  {
+   "bugid": 1894329,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "The text in about:networking it too small and should be zoomable"
+  },
+  {
+   "bugid": 1895232,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Convert do_GetService to using components::*::service in netwerk/"
+  },
+  {
+   "bugid": 1897209,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Migrate HTTP_ONSTART_SUSPEND_TOTAL_TIME probe to glean"
+  },
+  {
+   "bugid": 1559200,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Add explanatory text to about:cache that sizes are only for subset of entries"
+  },
+  {
+   "bugid": 1894266,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Add a \"clear cache\" option to about:networking"
+  },
+  {
+   "bugid": 1894995,
+   "status": "REOPENED",
+   "component": "Core:Networking: Cache",
+   "summary": "Remove deprecated nsICacheEntry methods"
+  },
+  {
+   "bugid": 1897959,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Perma /client-hints/sec-ch-width.https.html | Sec-CH-Width should be set - assert_equals: expected 100 but got 1"
+  },
+  {
+   "bugid": 1760085,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/xpcshell/test_purge_trackers.js | single tracking bug"
+  },
+  {
+   "bugid": 1886133,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Separate out CHIPS pref from the pref \"network.cookie.cookieBehavior.optInPartitioning\""
+  },
+  {
+   "bugid": 1892494,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Only enable BounceTrackingProtection when 3rd party cookies are restricted"
+  },
+  {
+   "bugid": 1884243,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Dragging multiple selected tabs out of the tab bar does not create a new window for most drop locations"
+  },
+  {
+   "bugid": 1898258,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Port mozuuid.pl to mach"
+  },
+  {
+   "bugid": 1898109,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Allow the Android system linker to handle RELR relocations itself"
+  },
+  {
+   "bugid": 1805996,
+   "status": "NEW",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Consider if, and if so how to best, report Glean SDK memory use in Firefox Desktop"
+  },
+  {
+   "bugid": 1897915,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "FOG: Disable ride-along-pings test in artifact builds"
+  },
+  {
+   "bugid": 1651518,
+   "status": "REOPENED",
+   "component": "DevTools:Framework",
+   "summary": "Enable all server side worker targets for the browser toolbox"
+  },
+  {
+   "bugid": 1883847,
+   "status": "REOPENED",
+   "component": "DevTools:Framework",
+   "summary": "Create WorkerTargets for Shared Worker from the server codebase"
+  },
+  {
+   "bugid": 1897772,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Allow sampling at 1Hz"
+  },
+  {
+   "bugid": 1590432,
+   "status": "ASSIGNED",
+   "component": "DevTools:Shared Components",
+   "summary": "Filters button colors could be better"
+  },
+  {
+   "bugid": 1877583,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Ask before opening not respected and link from app immediately goes back to app"
+  },
+  {
+   "bugid": 1861744,
+   "status": "VERIFIED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.fenix.library.bookmarks.BookmarkFragment.refreshBookmarks(BookmarkFragment.kt)]"
+  },
+  {
+   "bugid": 1890623,
+   "status": "ASSIGNED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Add method of retrieving unsubmitted crashes from database"
+  },
+  {
+   "bugid": 1885639,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[Menu Redesign] Implement telemetry"
+  },
+  {
+   "bugid": 1897211,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Add Menu Navigation Middleware tests for editing bookmarks"
+  },
+  {
+   "bugid": 1841578,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Crash in [@ java.lang.IllegalArgumentException: at androidx.compose.ui.unit.Constraints$Companion.bitsNeedForSize(Constraints.kt:41)]"
+  },
+  {
+   "bugid": 1863661,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Reingest suggestions when the Firefox Suggest database is recreated"
+  },
+  {
+   "bugid": 1890369,
+   "status": "VERIFIED",
+   "component": "Fenix:Top Sites",
+   "summary": "The \"Site removed\" snack bar overlaps the toolbar"
+  },
+  {
+   "bugid": 1897974,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove composable tabs tray related feature setting helpers and duplicate functions from the robots"
+  },
+  {
+   "bugid": 1896871,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Fenix Add-on Manager Optional Permissions UI should list granted permissions not explicitly listed in the manifest as optional"
+  },
+  {
+   "bugid": 1897905,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Adjust permissions dialog when there is no permission"
+  },
+  {
+   "bugid": 1898287,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "wallpaper_click telemtery event is not defined"
+  },
+  {
+   "bugid": 1897934,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 9ee7c07b837d0a849ed75272d48947eb33812a45 from 2024-05-21 10:28:28"
+  },
+  {
+   "bugid": 1898231,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Merge browser/components/tabpreview/ into browser/components/tabbrowser/"
+  },
+  {
+   "bugid": 1891992,
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Remove/Reduce dependency on the Redux store from TopSites"
+  },
+  {
+   "bugid": 1892043,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_EXPAND_LIBS check to moz.configure"
+  },
+  {
+   "bugid": 1894947,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Exclude Android builds/tests from the desktop-frontend try preset"
+  },
+  {
+   "bugid": 1895511,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_DEBUGGING_OPTS to moz.configure"
+  },
+  {
+   "bugid": 1897935,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "libxul.so-gdb.py isn't found by gdb"
+  },
+  {
+   "bugid": 1896126,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Upgrade Taskgraph vendor to 8.2.0"
+  },
+  {
+   "bugid": 1896684,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Fix test-manifests section support for test suites"
+  },
+  {
+   "bugid": 1898330,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run certain python-unittests when `third_party/python/taskcluster_taskgraph` is modified"
+  },
+  {
+   "bugid": 1878690,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Returning early for error pages in \"onStateChange\" stop of the WebProgressListener leads to not yet loaded error pages"
+  },
+  {
+   "bugid": 1884650,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add support for the new type of \"unhandledPromptBehavior\" for WebDriver BiDi"
+  },
+  {
+   "bugid": 1524074,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Implement Permissions API extension for Marionette"
+  },
+  {
+   "bugid": 1879556,
+   "status": "NEW",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent TEST-UNEXPECTED-ERROR | /webdriver/tests/classic/perform_actions/<test file>| <random> - teardown error: OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted"
+  },
+  {
+   "bugid": 1879832,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent Wd RuntimeError: Event loop is closed | single tracking bug - DO NOT USE FOR CLASSIFICATION"
+  },
+  {
+   "bugid": 1894980,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Intermittent toolkit/mozapps/extensions/test/browser/browser_html_detail_permissions.js | single tracking bug"
+  },
+  {
+   "bugid": 1833735,
+   "status": "NEW",
+   "component": "Toolkit:Application Update",
+   "summary": "Don't timeout background tasks when JS debugger is connected"
+  },
+  {
+   "bugid": 1896845,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update the replacements for missing functions in bionic to match GeckoView's current minimum Android version"
+  },
+  {
+   "bugid": 1898165,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add Debian/Ubuntu libllvm packages to the system symbol scrapers"
+  },
+  {
+   "bugid": 1898237,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Disable browser/extensions/formautofill/test/browser/creditCard/browser_creditCard_doorhanger_display.js only for linux"
+  },
+  {
+   "bugid": 1898057,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Record how much energy was used per process type"
+  },
+  {
+   "bugid": 1893693,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Create new SelectableProfileService"
+  },
+  {
+   "bugid": 1897208,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Expose build flag to config system to support conditional JS module loading"
+  },
+  {
+   "bugid": 1896896,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Child processes on Android have pointless telemetry timers and IPCs"
+  },
+  {
+   "bugid": 1873534,
+   "status": "NEW",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-card should emit a toggle event when expanding or collapsing"
+  },
+  {
+   "bugid": 1898076,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Don't use a <slot> in moz-button when a label is provided directly"
+  },
+  {
+   "bugid": 1766026,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Compatibility",
+   "summary": "Add optional_host_permissions in mv3"
+  },
+  {
+   "bugid": 1866999,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "WebExtensions permissions.onAdded <all_urls> returns invalid permission object"
+  },
+  {
+   "bugid": 1896708,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent TV TEST-UNEXPECTED-TIMEOUT | toolkit/components/extensions/test/xpcshell/test_ext_webRequest_auth.js | single tracking bug"
+  }
+ ],
+ "fixed": 60,
+ "total": 82,
+ "restricted": 4
+}
