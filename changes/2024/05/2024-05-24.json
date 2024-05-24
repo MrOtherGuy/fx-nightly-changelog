@@ -1,0 +1,574 @@
+{
+ "date": "2024-05-24",
+ "buildid": "20240524095301",
+ "cset": "d7f4e0eadb023e216294bf41177ba694c5f8f860",
+ "bugs": [
+  {
+   "bugid": 1894028,
+   "status": "RESOLVED",
+   "component": "Application Services:Relevancy",
+   "summary": "Simplify the RelevancyManager by keeping a long-lived relevancy store"
+  },
+  {
+   "bugid": 1872892,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "macOS Youtube HDR colours washed out with \"Ambient mode\" enabled"
+  },
+  {
+   "bugid": 1894331,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: aRate != 0 (Can't create an AudioData with a sample-rate of 0.), at /dom/media/MediaData.cpp:57"
+  },
+  {
+   "bugid": 1891117,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Assertion failure: mActiveConfig, at /home/cm/Work/gecko-dev/dom/media/webcodecs/DecoderTemplate.cpp:322"
+  },
+  {
+   "bugid": 1891892,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Construct ControlMessage::ToString() only when needed"
+  },
+  {
+   "bugid": 1895787,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Residual echo on macOS with external speakers"
+  },
+  {
+   "bugid": 1897975,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] tests in color-computed-relative-color.html to have more accurate results"
+  },
+  {
+   "bugid": 1898468,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Relative color using color(srgb ...) syntax is incorrect with a legacy rgb(...) origin color"
+  },
+  {
+   "bugid": 1853548,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.no_unknown_protocol_error.enabled pref"
+  },
+  {
+   "bugid": 1860457,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add popover default behaviours for invoketarget"
+  },
+  {
+   "bugid": 1898343,
+   "status": "NEW",
+   "component": "Core:DOM: Editor",
+   "summary": "Don't fire selectionchange if there is one pending"
+  },
+  {
+   "bugid": 1891221,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "Fix broken feature: click-hold context menus"
+  },
+  {
+   "bugid": 1896475,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Implement Request/Response `.bytes()` method"
+  },
+  {
+   "bugid": 1898129,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Perma [tier 2] /fetch/api/abort/serviceworker-intercepted.https.html | response.bytes() rejects if already aborted - promise_test: Unhandled rejection with value: object \"TypeError: response[bodyMethod] is not a function\""
+  },
+  {
+   "bugid": 1898384,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "LCP telemetry is collected for different documents than FCP"
+  },
+  {
+   "bugid": 1898401,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma Shippable builds W-b [tier 2] TEST-UNEXPECTED-PASS | /trusted-types/block-string-assignment-to-Document-parseHTMLUnsafe.html | 'Document.parseHTMLUnsafe(null)' assigned via default policy does not throw - expected FAIL"
+  },
+  {
+   "bugid": 1855383,
+   "status": "REOPENED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Intermittent dom/webauthn/tests/browser/browser_webauthn_prompts.js | single tracking bug"
+  },
+  {
+   "bugid": 1896599,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "High frequency accessible/tests/mochitest/events/test_attrs.html | single tracking bug"
+  },
+  {
+   "bugid": 1886065,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add some profiler markers to gfxPlatform."
+  },
+  {
+   "bugid": 1897636,
+   "status": "REOPENED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ IPCError-browser | GPUProcessKill]"
+  },
+  {
+   "bugid": 1898142,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Deliver image usage type to WebRenderImageHost"
+  },
+  {
+   "bugid": 1898436,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Defer removing AsyncImagePipeline to WebRenderAPI if necessary"
+  },
+  {
+   "bugid": 1897201,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ nsWrapperCache::GetWrapperMaybeDead] from CanvasRenderingContext2D_Binding::getTransform"
+  },
+  {
+   "bugid": 1897821,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Canvas2d demo disappers instantly after loading (and lots of canvas2d demos either dont render, or flash, or render intermittently)"
+  },
+  {
+   "bugid": 1898252,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Promote more WebGPU CTS tests to tier 2"
+  },
+  {
+   "bugid": 1897088,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "structs that are uploaded should be `repr(C)` and implement `bytemuck::Pod`"
+  },
+  {
+   "bugid": 1897343,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[rustc 1.79] error: field `verbose` is never read"
+  },
+  {
+   "bugid": 1898453,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Minor unicode-bidi-ffi clean-ups"
+  },
+  {
+   "bugid": 1897802,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement `await using` syntax parsing"
+  },
+  {
+   "bugid": 1897473,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Simplify GC zeal implementation and add tests"
+  },
+  {
+   "bugid": 1898083,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Fix documentation for HidesContentForLayout"
+  },
+  {
+   "bugid": 1894779,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Allow font-face urls to be resource:// urls and relax CORS for resource:// URLs"
+  },
+  {
+   "bugid": 1797846,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove network.url.strip-data-url-whitespace pref"
+  },
+  {
+   "bugid": 1898185,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "error: could not compile `quinn-udp` (lib) due to 18 previous errors on Solaris"
+  },
+  {
+   "bugid": 1898465,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Do not send any IPC messages when predictor is disabled"
+  },
+  {
+   "bugid": 1895084,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Remove network.trr.fetch_off_main_thread pref"
+  },
+  {
+   "bugid": 1510262,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "nsIncrementalDownload causes a lot of jank with main thread I/O while downloading updates in the background"
+  },
+  {
+   "bugid": 1898203,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Rename GOOGLE_SEARCH_RAM_THRESHOLD_MEGABYTES macro"
+  },
+  {
+   "bugid": 1659788,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Repeated opacity:0 keyframe waits for mouse movement"
+  },
+  {
+   "bugid": 1897459,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "build failure in libwebrtc/rtc_base/physical_socket_server.cc on OpenBSD since webrtc update in #1892299"
+  },
+  {
+   "bugid": 1894703,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Support setting log modules from just one pref"
+  },
+  {
+   "bugid": 1898515,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Disable `performance.clone.deserialize` metrics in Android"
+  },
+  {
+   "bugid": 1898382,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Remove outdated code from the linker"
+  },
+  {
+   "bugid": 1896615,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:General",
+   "summary": "allow Thunderbird specific Glean metrics"
+  },
+  {
+   "bugid": 1805996,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Consider if, and if so how to best, report Glean SDK memory use in Firefox Desktop"
+  },
+  {
+   "bugid": 1880803,
+   "status": "REOPENED",
+   "component": "DevTools:Netmonitor",
+   "summary": "NetworkObserver should create network events earlier (http-on-before-connect)"
+  },
+  {
+   "bugid": 1590432,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Filters button colors could be better"
+  },
+  {
+   "bugid": 1895560,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Create a new message controller for Microsurveys"
+  },
+  {
+   "bugid": 1895698,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] Add microsurvey \"Survey complete\" view"
+  },
+  {
+   "bugid": 1898127,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Prompt is removed when device is in landscape in re-designed toolbar"
+  },
+  {
+   "bugid": 1898417,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 33ea53616a4d35989059bde593a68dc424a9b95e from 2024-05-23 05:03:11"
+  },
+  {
+   "bugid": 1894345,
+   "status": "RESOLVED",
+   "component": "Fenix:QR",
+   "summary": "[Android Large Screen Ready Tier 3] Camera view stretched and sideways. (search bar> click QR scanner icon)"
+  },
+  {
+   "bugid": 1898516,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "[Debug Drawer] Change error message to the Tab Tools text field"
+  },
+  {
+   "bugid": 1881810,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "AC Translations Download/Delete Language Models"
+  },
+  {
+   "bugid": 1898358,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Normalize ModelManagementOptions to Lower Case"
+  },
+  {
+   "bugid": 1879011,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < FirefoxSuggestTest.openFirefoxSuggestSponsoredSearchResultsTest >"
+  },
+  {
+   "bugid": 1895752,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update Android experiment integration test suite for github actions."
+  },
+  {
+   "bugid": 1626741,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar panel/view/popup opens behind other popups/menus, and focus is also broken"
+  },
+  {
+   "bugid": 1868605,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Adding/changing the hash causes a page load when browser.urlbar.trimHttps = true"
+  },
+  {
+   "bugid": 1897319,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update logo and remove URL for Yelp suggestion"
+  },
+  {
+   "bugid": 1895521,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "FxA telemetry recorded by browser-sync doesn't record correct entry-points"
+  },
+  {
+   "bugid": 1859774,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Add new Firefox View search component to Storybook"
+  },
+  {
+   "bugid": 1896681,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab weather widget locale/region controls"
+  },
+  {
+   "bugid": 1898275,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Tab Weather Widget: Add an impression and error event to telemetry"
+  },
+  {
+   "bugid": 1874917,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rename SearchTestUtils.promiseNewSearchEngine to installOpenSearchEngine or something similar"
+  },
+  {
+   "bugid": 1898512,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Icon / buttons in sidebar launcher are wonky / duplicated with sidebar.revamp=true"
+  },
+  {
+   "bugid": 1898580,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Flip the FxA CTA panel to be default on"
+  },
+  {
+   "bugid": 1877838,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "The \"about:\" text is omitted from about: pages in the tab preview cards"
+  },
+  {
+   "bugid": 1898197,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Move tabs tests into browser/components/tabbrowser/"
+  },
+  {
+   "bugid": 1898450,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Move triage-tabbrowser.json into browser/components/tabbrowser/"
+  },
+  {
+   "bugid": 1870368,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Instrument Select Translations Panel UI with flow-id telemetry"
+  },
+  {
+   "bugid": 1897482,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "TranslationsParent.isSupportedAsToLang checks the wrong language"
+  },
+  {
+   "bugid": 1897495,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove first_interaction from Translations Telemetry"
+  },
+  {
+   "bugid": 1776255,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Cannot configure SM build for embedding examples on Mac OS"
+  },
+  {
+   "bugid": 1870059,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Allow overriding the optimization level of a particular directory and all sub directories"
+  },
+  {
+   "bugid": 1896063,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move _MOZ_USE_RTTI to moz.configure"
+  },
+  {
+   "bugid": 1896066,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move -ffunction-sections, -fdata-sections, -fno-exceptions and -fno-math-errno flag detection to moz.configure"
+  },
+  {
+   "bugid": 1898499,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Rename build_with_gnu_cc into a more explicit name"
+  },
+  {
+   "bugid": 1849075,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to clang 18"
+  },
+  {
+   "bugid": 1878764,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.78"
+  },
+  {
+   "bugid": 1650045,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove references to whitelist/blacklist from SafeBrowsing"
+  },
+  {
+   "bugid": 1677190,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "(SHIP) Enable Session Restore and Session History In Parent in GeckoView"
+  },
+  {
+   "bugid": 1884650,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add support for the new type of \"unhandledPromptBehavior\" for WebDriver BiDi"
+  },
+  {
+   "bugid": 1850680,
+   "status": "REOPENED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for headers, cookies, method and body arguments for \"network.continueRequest\" command"
+  },
+  {
+   "bugid": 1898565,
+   "status": "REOPENED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add missing quotes in error message for invalid header value in network.continueRequest"
+  },
+  {
+   "bugid": 1898400,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Testing Infrastructure",
+   "summary": "Reinstate Marionette tests for Thunderbird"
+  },
+  {
+   "bugid": 1833735,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Don't timeout background tasks when JS debugger is connected"
+  },
+  {
+   "bugid": 1898428,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The new crash reporter client is sending malformed legacy telemetry crash pings"
+  },
+  {
+   "bugid": 1894911,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Resolve ESLint warnings about no-case-declarations in toolkit/components/places"
+  },
+  {
+   "bugid": 1873534,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-card should emit a toggle event when expanding or collapsing"
+  },
+  {
+   "bugid": 1897266,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "No message printed for UniFFITypeError"
+  },
+  {
+   "bugid": 1757293,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Extension fails to load if an unrecognized property is set in browser_specific_settings.gecko"
+  },
+  {
+   "bugid": 1771328,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Restarting manifest v3 extension removes its context menu entry"
+  },
+  {
+   "bugid": 1897759,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Content scripts can run in view-source: with null principal"
+  }
+ ],
+ "fixed": 78,
+ "total": 94,
+ "restricted": 3
+}
