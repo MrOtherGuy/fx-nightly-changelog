@@ -1,0 +1,346 @@
+{
+ "date": "2024-05-29",
+ "buildid": "20240529013712",
+ "cset": "198b8c4a9b506b8bb15c4bc93dba876c4bdb1289",
+ "bugs": [
+  {
+   "bugid": 1898601,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "layout/media should probably move somewhere else / be deleted."
+  },
+  {
+   "bugid": 1897756,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement parsing of CSS 'position-visibility' property"
+  },
+  {
+   "bugid": 1899126,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Various clean-ups in the style engine."
+  },
+  {
+   "bugid": 1899187,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "More mako clean-ups."
+  },
+  {
+   "bugid": 1877338,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/base/test/chrome/test_nsITextInputProcessorCallback_at_changing_default_value_of_textarea.html | single tracking bug"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1898294,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "WebCrypto: Operation Exception instead of Data exception if asked for too many bits"
+  },
+  {
+   "bugid": 1897636,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ IPCError-browser | GPUProcessKill]"
+  },
+  {
+   "bugid": 1898650,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Re-remove sync wait in compositor thread of main thread canvas on Nightly"
+  },
+  {
+   "bugid": 1899219,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused CompositorMap"
+  },
+  {
+   "bugid": 1898569,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(attempt to subtract with overflow) at gfx/wr/webrender/src/quad.rs:244"
+  },
+  {
+   "bugid": 1898625,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Apply scroll snapping during scene building prior to external scroll offset"
+  },
+  {
+   "bugid": 1899091,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assert no overlapping incremental encoding"
+  },
+  {
+   "bugid": 1899113,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: threadCount <= sizeof(uint32_t) * 8, at js/src/vm/InternalThreadPool.cpp:135"
+  },
+  {
+   "bugid": 1899215,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at debugger/Debugger.cpp:1966"
+  },
+  {
+   "bugid": 1895479,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add JS shell flag to enable GC poisoning in non-debug builds"
+  },
+  {
+   "bugid": 385615,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "{inc} style of :first-letter used to erroneously calculate (intrinsic) width of element"
+  },
+  {
+   "bugid": 1896516,
+   "status": "REOPENED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Get rid of nsIScrollableFrame"
+  },
+  {
+   "bugid": 1872320,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "--enable-project=memory build busted"
+  },
+  {
+   "bugid": 1864392,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Honor `fetchpriority` attribute for HTTP/3 requests"
+  },
+  {
+   "bugid": 1884349,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "firefox didn't load any page"
+  },
+  {
+   "bugid": 1898595,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Expose socket and connection preferences to Feature Manifest"
+  },
+  {
+   "bugid": 1896626,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Rename TRR_IS_OFFLINE"
+  },
+  {
+   "bugid": 1454850,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Proxy",
+   "summary": "Mislabelled options relating to SOCKS4, SOCKS5 and server-side DNS resolution"
+  },
+  {
+   "bugid": 1897050,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Proxy",
+   "summary": "Remove or update metrics expiring in Firefox 129: networking.proxy_info_type before Gecko version gets increased to 129 on 2024-06-10"
+  },
+  {
+   "bugid": 1899292,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "nsIPermissionManager::RemoveByType methods fail to remove permissions on early startup"
+  },
+  {
+   "bugid": 1859738,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Exempt sites from bounce tracker purging that have a cookie ALLOW permission"
+  },
+  {
+   "bugid": 1890580,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Count sites purged as bounce trackers that are classified as trackers by ETP"
+  },
+  {
+   "bugid": 1896372,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Extract RFTTarget defaults to RFPTargetsDefault.inc and make it available in RFPHelper.sys.mjs"
+  },
+  {
+   "bugid": 1898291,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect more screen information"
+  },
+  {
+   "bugid": 1899249,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "O_LARGEFILE value mismatch on musl libc"
+  },
+  {
+   "bugid": 1893359,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Flatpak]: Firefox does not set correct DesktopEntry property for MPRIS"
+  },
+  {
+   "bugid": 1898217,
+   "status": "NEW",
+   "component": "Core:Widget: Gtk",
+   "summary": "Menu options extending beyond the extremity of the Firefox window are not clickable"
+  },
+  {
+   "bugid": 1882329,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "StackWalk has two disagreeing checks for support on Linux"
+  },
+  {
+   "bugid": 1824726,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Throttle Resources events on the server side"
+  },
+  {
+   "bugid": 1899103,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Create InspectorUtils method to retrieve current color scheme"
+  },
+  {
+   "bugid": 1880803,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "NetworkObserver should create network events earlier (http-on-before-connect)"
+  },
+  {
+   "bugid": 1815613,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Filename name suggested for downloaded file accepted as it is."
+  },
+  {
+   "bugid": 1893069,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add \"scotchBonnet\" featureGate pref"
+  },
+  {
+   "bugid": 1886222,
+   "status": "ASSIGNED",
+   "component": "Firefox:General",
+   "summary": "Simplify BrowserTabChild.sys.mjs"
+  },
+  {
+   "bugid": 1811374,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Include `installation.first_seen` event details in `new_profile` ping on Windows"
+  },
+  {
+   "bugid": 1892429,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Create an expanded sidebar state"
+  },
+  {
+   "bugid": 1898697,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Consolidate tabpanel and statuspanel styling in a new tabbrowser stylesheet"
+  },
+  {
+   "bugid": 1898713,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move searchbar.css into browser/themes/shared/search/"
+  },
+  {
+   "bugid": 1857470,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build fails on Python 3.12; the vendored pip 23.0.1 uses obsolete pkgutil.ImpImporter"
+  },
+  {
+   "bugid": 1894951,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_CHECK_ALLOCATOR to moz.configure"
+  },
+  {
+   "bugid": 1896351,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Move sanitizer-related AC_SUBST and AC_DEFINE from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1897079,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "all_mozbuild_paths is too slow"
+  },
+  {
+   "bugid": 1898798,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Bump version of `poetry` to a recent version"
+  },
+  {
+   "bugid": 1677190,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "(SHIP) Enable Session Restore and Session History In Parent in GeckoView"
+  },
+  {
+   "bugid": 1851160,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent mozilla/tests/webdriver/harness/crash_content_process.py | test_detect_crash[capabilities0] - teardown error: webdriver.error.NoSuchWindowException: no such window (404): Browsing context has been discarded"
+  },
+  {
+   "bugid": 1850680,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for headers, cookies, method and body arguments for \"network.continueRequest\" command"
+  },
+  {
+   "bugid": 1898565,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add missing quotes in error message for invalid header value in network.continueRequest"
+  },
+  {
+   "bugid": 1899183,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove unused fluent `autofill-address-*-name` strings"
+  },
+  {
+   "bugid": 1898057,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Record how much energy was used per process type"
+  },
+  {
+   "bugid": 1897208,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Expose build flag to config system to support conditional JS module loading"
+  }
+ ],
+ "fixed": 46,
+ "total": 56,
+ "restricted": 5
+}
