@@ -1,0 +1,742 @@
+{
+ "date": "2024-05-30",
+ "buildid": "20240530040816",
+ "cset": "b05a24f158503b7ea175520ef383fa005a4c41b7",
+ "bugs": [
+  {
+   "bugid": 1641585,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Assertion failure: mChannels && mFrames && mSampleRate (Mix not called for this cycle?), at /builds/worker/checkouts/gecko/dom/media/AudioMixer.h:54"
+  },
+  {
+   "bugid": 1336404,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove or standardize HTMLMediaElement::seekToNextFrame"
+  },
+  {
+   "bugid": 1474175,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Wrong audio channel selection on multi channel audio interfaces (MacOS)"
+  },
+  {
+   "bugid": 1898588,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Support checking scheme per capability"
+  },
+  {
+   "bugid": 1879986,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "VideoDecoderTraits::Validate returns empty error message unexpectedly"
+  },
+  {
+   "bugid": 1897181,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "VideoEncoder: macOS support"
+  },
+  {
+   "bugid": 1897312,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-FAIL | /webcodecs/videoFrame-createImageBitmap.https.any.worker.html | Create ImageBitmap for a VideoFrame from VP9 decoder. - promise_test: Unhandled rejection with value: object \"EncodingError: The given encoding is not su"
+  },
+  {
+   "bugid": 1897481,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Implement h264 svc on macOS"
+  },
+  {
+   "bugid": 1898103,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Hold active config by RefPtr rather than UniquePtr"
+  },
+  {
+   "bugid": 1899210,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Fix null deref in ConfigureMessage::ToString()"
+  },
+  {
+   "bugid": 1864818,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-properties-values-api] Let css-properties-values-api ride the trains"
+  },
+  {
+   "bugid": 1899011,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-color] For very small values of a and b in Lab/Oklab, the hue component is powerless"
+  },
+  {
+   "bugid": 1899272,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "color from registered property set with light-dark() have different values in Firefox and Chrome in dark mode"
+  },
+  {
+   "bugid": 1899318,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Fix at-property-animation to account for spec ambiguity."
+  },
+  {
+   "bugid": 1899406,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Crash in [@ core::option::unwrap_failed] when removing custom property registration"
+  },
+  {
+   "bugid": 1899446,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Assertion failure: to.is_some() == from.is_some() || matches!(to, Some(AnimationValue::Custom(..)))) when removing custom property registration"
+  },
+  {
+   "bugid": 1743775,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Intermittent /tests/dom/animation/test/mozilla/test_restyles.html logged result after SimpleTest.finish(): undefined"
+  },
+  {
+   "bugid": 1867545,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove popup state propagation for link click event handler"
+  },
+  {
+   "bugid": 1876307,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Text-Fragments: Revisit search for &nbsp;"
+  },
+  {
+   "bugid": 1899328,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Mark dom/base/use_counter_metrics.yaml as generated"
+  },
+  {
+   "bugid": 1899400,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Rename DispatchMouseOrPointerEvent to DispatchMouseOrPointerBoundaryEvent"
+  },
+  {
+   "bugid": 1899567,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Text-Fragments: Check if a start element is directly adjacent to the prefix is wrong if both are in the same node"
+  },
+  {
+   "bugid": 1838846,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Revise the deprecation warning message for MutationEvent"
+  },
+  {
+   "bugid": 1838848,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Split the current telemetry of MutationEvents"
+  },
+  {
+   "bugid": 1891221,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Fix broken feature: click-hold context menus"
+  },
+  {
+   "bugid": 1886918,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Failing WPT content-security-policy/generic/304-response-should-update-csp.sub.html"
+  },
+  {
+   "bugid": 1890899,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: mClosestCommonInclusiveAncestor && startContainer && endContainer, at /builds/worker/checkouts/gecko/dom/base/ContentIterator.cpp:1137"
+  },
+  {
+   "bugid": 1899020,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Selection.direction's value is incorrect"
+  },
+  {
+   "bugid": 1824155,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Accessible Caret shows on both iframes"
+  },
+  {
+   "bugid": 1898826,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Intermittent [TV] /tests/dom/webauthn/tests/test_webauthn_in_xhtml.xhtml | changed preference: security.webauthn.show_ms_settings_link"
+  },
+  {
+   "bugid": 1899138,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "The channels for loading scripts for workers are always considered as non-foreign"
+  },
+  {
+   "bugid": 1875629,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver loses cache contents in background tabs if no element on the page is focused when switching away"
+  },
+  {
+   "bugid": 1896367,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Incorrect a11y states on form controls when disabled attribute on fieldset is changed"
+  },
+  {
+   "bugid": 1894106,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Seams between tiles flicker during zooming on Android"
+  },
+  {
+   "bugid": 1897584,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Rendering artifacts on a Codepen demo on pinch-zoom (split off from bug 1892018)"
+  },
+  {
+   "bugid": 1884150,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ship Resizable and growable ArrayBuffers"
+  },
+  {
+   "bugid": 1896505,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add use-counter telemetry for subclassing types"
+  },
+  {
+   "bugid": 1898473,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: CurrentThreadIsGCMarking() || CurrentThreadCanAccessZone(zone), at gc/Cell.h:483"
+  },
+  {
+   "bugid": 1896875,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Discover Page - spend lot of time at nsLineBox::DeleteLineList"
+  },
+  {
+   "bugid": 1899345,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Replace ScrollContainerFrame::OverflowState with mozilla::PhysicalAxes"
+  },
+  {
+   "bugid": 1873973,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsStandardURL incorrectly escapes ^ in the path"
+  },
+  {
+   "bugid": 1898191,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Improving HTTPS RR Handling to Mitigate Performance Regression"
+  },
+  {
+   "bugid": 1896076,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Better handling of PDF destinations for document-internal links"
+  },
+  {
+   "bugid": 1881749,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect screen width/height and orientation"
+  },
+  {
+   "bugid": 1890578,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add Glean counters for Bounce Tracker purging and purge failures"
+  },
+  {
+   "bugid": 1895311,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Successful Web Authentication should be treated as user activation for BTP"
+  },
+  {
+   "bugid": 1896372,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Extract RFTTarget defaults to RFPTargetsDefault.inc and make it available in RFPHelper.sys.mjs"
+  },
+  {
+   "bugid": 1897653,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Bitstamp Tradeview stopped working in 126.0"
+  },
+  {
+   "bugid": 1898424,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CookieRejectedPartitionedRequiresSecure error is confusing"
+  },
+  {
+   "bugid": 1898427,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enabling CHIPS after creating a partitioned cookie crashes the browser (EXC_BAD_ACCESS (SIGSEGV))"
+  },
+  {
+   "bugid": 1896197,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add clobber to pre-push instructions in WebRTC daily rebase instructions"
+  },
+  {
+   "bugid": 1264333,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "test_getUserMedia_audioCapture times out on Android"
+  },
+  {
+   "bugid": 1899189,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "missing frames when DynamicResampler switches from resampling to copying"
+  },
+  {
+   "bugid": 1898362,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "setCodecPreferences should be case-insensitive on mimeTypes"
+  },
+  {
+   "bugid": 1896514,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "`mach lint` runs no lints due to Windows drive case differences"
+  },
+  {
+   "bugid": 1700396,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "[meta] Bump Updatebot Version"
+  },
+  {
+   "bugid": 1892292,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "HANG when running ./mach vendor media/libyuv/moz.yaml --patch-mode only"
+  },
+  {
+   "bugid": 1832320,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "Geolocation error when trying to enable approximate location"
+  },
+  {
+   "bugid": 1898421,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] Remove the micro_survey_close_button_label string as it is no longer required"
+  },
+  {
+   "bugid": 1813166,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "URLs describing Megazord do not work"
+  },
+  {
+   "bugid": 1899367,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.PwaTest#installPWAFromTheMainMenuTest | androidx.test.uiautomator.UiObjectNotFoundException: UiSelector[CONTAINS_TEXT=add automatically]"
+  },
+  {
+   "bugid": 1899481,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version b09581e8e9b3a946da32d1ad68f8fd732b7a91df from 2024-05-29 05:02:53"
+  },
+  {
+   "bugid": 1898055,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Remove OnProductUrl check on every page load"
+  },
+  {
+   "bugid": 1890860,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] The loading progress bar should be end to end"
+  },
+  {
+   "bugid": 1899409,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Add context for translators for added strings for custom tabs toolbar buttons"
+  },
+  {
+   "bugid": 1898078,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.TextSelectionTest#verifySearchPDFTextOptionTest | java.lang.AssertionError: UiSelector[CONTAINS_TEXT=2, RESOURCE_ID=org.mozilla.fenix.debug:id/counter_text] does not exist"
+  },
+  {
+   "bugid": 1860753,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_recentsearches.js | single tracking bug"
+  },
+  {
+   "bugid": 1897152,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Quick action shortcut \"scr\" does not work"
+  },
+  {
+   "bugid": 1898718,
+   "status": "VERIFIED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Firefox fails to relaunch after closing the browser during active DLP request"
+  },
+  {
+   "bugid": 1897477,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from <command>"
+  },
+  {
+   "bugid": 1811374,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Include `installation.first_seen` event details in `new_profile` ping on Windows"
+  },
+  {
+   "bugid": 1897321,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add minVersion variable to whatsNewPage Nimbus feature"
+  },
+  {
+   "bugid": 1898346,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Feature callout theme transparency issue"
+  },
+  {
+   "bugid": 1899340,
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Tab Weather Widget: Add \"weather enabled\" event to telemetry"
+  },
+  {
+   "bugid": 1851618,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Cannot remove packaged locales from the locale alternatives list (multi-locale build)"
+  },
+  {
+   "bugid": 1896527,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Perma [tier 2] browser/components/preferences/tests/browser_languages_subdialog.js | Interactive elements must be labeled: id: availableLanguages, tagName: menulist, className: -"
+  },
+  {
+   "bugid": 1872993,
+   "status": "ASSIGNED",
+   "component": "Firefox:Site Permissions",
+   "summary": "getUserMedia permission prompt cannot be clicked in different window than it was created in"
+  },
+  {
+   "bugid": 1899410,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Vendor new app-services to pick up remote tab operations work"
+  },
+  {
+   "bugid": 1898690,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Move statuspanel tests into browser/components/tabbrowser/"
+  },
+  {
+   "bugid": 1898705,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move :root, body, #titlebar, #toolbar-menubar, #nav-bar-customization-target, #navigator-toolbox rules from browser/base/content/browser.css to browser-shared.css"
+  },
+  {
+   "bugid": 1892002,
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Integrate the Top Sites API with UrlbarProviderTopSites behind a preference"
+  },
+  {
+   "bugid": 1884479,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Sometimes when switching \"to\" languages post-translate, the page does not update"
+  },
+  {
+   "bugid": 1894094,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Select Translations panel is missing accessible name"
+  },
+  {
+   "bugid": 1896978,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "VCS-less bootstrap does not seem to work anymore"
+  },
+  {
+   "bugid": 1690814,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Assert minimum MozillaBuild version in configure"
+  },
+  {
+   "bugid": 1896351,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move sanitizer-related AC_SUBST and AC_DEFINE from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1898651,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "MASM warning A4018: invalid command-line option: /Z7"
+  },
+  {
+   "bugid": 1899286,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove legacy AIX and HP-UX support"
+  },
+  {
+   "bugid": 1899356,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [tier 2] Windows MinGW all gmake[4]: *** [/builds/worker/checkouts/gecko/config/rules.mk:541: ../../../dist/bin/xul.dll] Error 1"
+  },
+  {
+   "bugid": 1898655,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk-stage1 1 out of 1 hunk FAILED -- saving rejects to file lld/MachO/LTO.cpp.rej"
+  },
+  {
+   "bugid": 1899227,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain trunk x86-crt-trunk CMake Error at /usr/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake:70 (message): The C compiler is not able to compile a simple test program. | followed by Linking C executable cmTC_56804 FAILED"
+  },
+  {
+   "bugid": 1899232,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Remove revert-llvmorg-18*.patch."
+  },
+  {
+   "bugid": 1898052,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add code examples for GeckoView deprecate process"
+  },
+  {
+   "bugid": 1864350,
+   "status": "RESOLVED",
+   "component": "GeckoView:Permissions",
+   "summary": "When clicking upload file buttons on certain web pages with Android 6.0+ devices, file picker isn't opened if either \"Microphone\" or \"Camera\" permission is not granted"
+  },
+  {
+   "bugid": 1898796,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "Make the code for the paths of wheels in setup.py automatically handle version changes of the wheels"
+  },
+  {
+   "bugid": 1899174,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "update gecko taskgraph to support esr128"
+  },
+  {
+   "bugid": 1899239,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "update mozilla-version to 3.1.0"
+  },
+  {
+   "bugid": 1899504,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "esr staging release shouldn't try to bump mobile/android/version.txt"
+  },
+  {
+   "bugid": 1899553,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Remove push-bundle from Android nightly graphs"
+  },
+  {
+   "bugid": 1899392,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "add parameters for l10n bump and merge automation"
+  },
+  {
+   "bugid": 1899564,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "taskgraph parameter update script is broken for firefox android action tasks"
+  },
+  {
+   "bugid": 1884090,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add support for \"HTTP flag\" in WebDriver Session"
+  },
+  {
+   "bugid": 1896595,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Add-Ons: Extensions API",
+   "summary": "Remove optional permission tabHide from tabs.json"
+  },
+  {
+   "bugid": 1888234,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "Create libxul-gtest in comm/rust like done for libxul"
+  },
+  {
+   "bugid": 1895244,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash reporter branded lookup needs to be adjusted - now falls back to \"Firefox Crash Reporter\" for Thunderbird"
+  },
+  {
+   "bugid": 1899139,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add more logging around minidump generation to better understand failure cases"
+  },
+  {
+   "bugid": 1899371,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Clean up code added to the crash reporter when patching issues for the release"
+  },
+  {
+   "bugid": 1899319,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Two bit flags have same value in nsIClearDataService"
+  },
+  {
+   "bugid": 1849122,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[CA][ca.boohoo.com] The Address dropdown is not displayed and the autofill is not working for none of the fields after clearing the form once"
+  },
+  {
+   "bugid": 1898323,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fix OsAuth migration."
+  },
+  {
+   "bugid": 1899331,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Rename workers to use the .worker.(m)js pattern for ESLint (toolkit/)"
+  },
+  {
+   "bugid": 1898075,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Repeteadly clicking on the menu button on megalist items creates duplicate popups"
+  },
+  {
+   "bugid": 1892046,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "The reader mode does not set a first party domain"
+  },
+  {
+   "bugid": 1881536,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Firefox does not start if using a profile created with a version of Firefox and opened with a older one (Nightly-Beta-Release)"
+  },
+  {
+   "bugid": 1893693,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Create new SelectableProfileService"
+  },
+  {
+   "bugid": 1898529,
+   "status": "RESOLVED",
+   "component": "Toolkit:Storage",
+   "summary": "Upgrade to SQLite 3.46.0"
+  },
+  {
+   "bugid": 1894486,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create a base moz-checkbox component with input and label"
+  },
+  {
+   "bugid": 1894489,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add disabled support to moz-checkbox"
+  },
+  {
+   "bugid": 1897212,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Don't use delegatesFocus for moz-toggle since clicking the description focuses the input"
+  },
+  {
+   "bugid": 1899407,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Code cleanups before 1899351"
+  },
+  {
+   "bugid": 1894128,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Replace MAX_NUMBER_OF_DYNAMIC_AND_SESSION_RULES"
+  },
+  {
+   "bugid": 1896628,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "[DNR] Enforce a limit to the maximum number of static rules disabled individually"
+  }
+ ],
+ "fixed": 108,
+ "total": 122,
+ "restricted": 4
+}
