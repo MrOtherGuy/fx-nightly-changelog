@@ -1,0 +1,580 @@
+{
+ "date": "2024-06-13",
+ "buildid": "20240613093628",
+ "cset": "bfd01427a5e81bfee85e3e3b7661d2527fa29852",
+ "bugs": [
+  {
+   "bugid": 1901707,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "TSAN data race on `ticket` in DoCreateTicketAfterAppShutdownOffMain"
+  },
+  {
+   "bugid": 1896524,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add browsertime based video playback latency tests"
+  },
+  {
+   "bugid": 1901196,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "font-size returns zoomed values in getComputedStyle."
+  },
+  {
+   "bugid": 1901374,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement parsing support for field-sizing"
+  },
+  {
+   "bugid": 1901911,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[rustc 1.80] Perma error: unexpected `cfg` condition name: `linking_with_gecko`"
+  },
+  {
+   "bugid": 1901042,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "customElements.whenDefined gives useless error message (\"invalid or illegal string\")"
+  },
+  {
+   "bugid": 1901792,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Confirm PPA is disabled in PBM"
+  },
+  {
+   "bugid": 1900108,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Replace/remove mochitests that does not need mock service"
+  },
+  {
+   "bugid": 1901282,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Stop using content process side mock service"
+  },
+  {
+   "bugid": 1800443,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Performance",
+   "summary": "Addition of content-type to Resource Timing API"
+  },
+  {
+   "bugid": 1719271,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Consider enabling HTTPS-First Mode in Nightly"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1901633,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Cannot focus/change selection with keyboard in radio group where first button is disabled"
+  },
+  {
+   "bugid": 1888851,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Incorrect clientDataJSON order to support limited verification order"
+  },
+  {
+   "bugid": 1901186,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add hybrid transport on GeckoView"
+  },
+  {
+   "bugid": 1901834,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Build with pixman < 0.40.0 fails with `error: unknown type name 'pixman_dither_t'`"
+  },
+  {
+   "bugid": 1901928,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remvoe D3D11YCbCrImage class"
+  },
+  {
+   "bugid": 1901947,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Clean up some DXGITextureHostD3D11 code"
+  },
+  {
+   "bugid": 1901950,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[armhf linux] Error: bad instruction `subsge PF_CTL,PF_CTL,#0x10'"
+  },
+  {
+   "bugid": 1902117,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Console reporting for WebGPU shader compilations crashes in worker contexts"
+  },
+  {
+   "bugid": 1896503,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WR SVG Filters: Integrate new SVGFE code path with Gecko"
+  },
+  {
+   "bugid": 1898625,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Apply scroll snapping during scene building prior to external scroll offset"
+  },
+  {
+   "bugid": 1901406,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: JS::StringIsASCII(message.get()), at /root/src/js/src/vm/ErrorReporting.cpp:56"
+  },
+  {
+   "bugid": 1899872,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Make js::SliceBudget a proper public API"
+  },
+  {
+   "bugid": 1719046,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "TCP RST will cause Firefox UI to lag or unresponsive"
+  },
+  {
+   "bugid": 1881040,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use the destination to refine the fetchpriority mapping of FetchDriver::HttpFetch"
+  },
+  {
+   "bugid": 1895233,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Potentially incorrect parsing of <file:w|m>"
+  },
+  {
+   "bugid": 1898737,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Add telemetry for byte-range requests, and how often they're cacheable"
+  },
+  {
+   "bugid": 1851439,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add pref for EH over HTTP1.1"
+  },
+  {
+   "bugid": 1901860,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Skip trying to wake up scene builder during shutdowning"
+  },
+  {
+   "bugid": 1611426,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Cleanup nsContentBlocker permissions"
+  },
+  {
+   "bugid": 1823078,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Save as PDF has garbled / pixelized font in Flatpak"
+  },
+  {
+   "bugid": 1898255,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable opt-in partitioning in PBM and ETP strict in Nightly"
+  },
+  {
+   "bugid": 1888618,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Certificate information (email) has display bugs"
+  },
+  {
+   "bugid": 1897501,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libwebrtc to 125"
+  },
+  {
+   "bugid": 1800944,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "scrollbar-width: thin; changes on hover"
+  },
+  {
+   "bugid": 1899943,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Excessive spacing on blocked popup menu on macOS"
+  },
+  {
+   "bugid": 1503809,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "FaviconHelper::ObtainCachedIconFile does main thread IO and causes hangs"
+  },
+  {
+   "bugid": 1901905,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "[rustc 1.80] Perma error: struct `Promise` is never constructed"
+  },
+  {
+   "bugid": 1901942,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Remove unused FilterCheckbox component and unused CSS"
+  },
+  {
+   "bugid": 1900982,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use arrays instead of objects in the tracer resources"
+  },
+  {
+   "bugid": 1901674,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Intermittent devtools/client/inspector/markup/test/browser_markup_events_toggle.js | single tracking bug"
+  },
+  {
+   "bugid": 1583894,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "[Inactive CSS] Display a warning when 'box-sizing' is used on elements that ignore width / height"
+  },
+  {
+   "bugid": 1756770,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Network Blocking in DevTools blocks responses, but not requests"
+  },
+  {
+   "bugid": 1895418,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Use TypeScript-DOM-lib-generator to build lib.gecko.dom.d.ts"
+  },
+  {
+   "bugid": 1901830,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "Speedup session store serialization by ~25x"
+  },
+  {
+   "bugid": 1901821,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add an option to display a divider before the IconButton in FaviconListItem and IconListItem"
+  },
+  {
+   "bugid": 1898552,
+   "status": "ASSIGNED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add support for Nimbus' recorded targeting context"
+  },
+  {
+   "bugid": 1901966,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update likert_scale_option_6 to use an apostrophe"
+  },
+  {
+   "bugid": 1901163,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Refactor updateContentState to be an internal function"
+  },
+  {
+   "bugid": 1901167,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Refactor FenixSnackbarDelegate to ContextMenuSnackbarDelegate"
+  },
+  {
+   "bugid": 1901931,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 5982870e95e8810320b1cea374bf87da0df3d727 from 2024-06-12 05:02:50"
+  },
+  {
+   "bugid": 1895573,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] navbar is visible for a short time when address toolbar is clicked"
+  },
+  {
+   "bugid": 1899640,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Fix the display toolbar paddings"
+  },
+  {
+   "bugid": 1875391,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "[Debug drawer] AppBar is not drawing shadow on the debug drawer home screen"
+  },
+  {
+   "bugid": 1900974,
+   "status": "VERIFIED",
+   "component": "Fenix:Translations",
+   "summary": "\"Delete all languages\" is not working"
+  },
+  {
+   "bugid": 1891863,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Create demo of dedicated search button"
+  },
+  {
+   "bugid": 1899491,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Pasting an empty clipboard will make the page unresponsive"
+  },
+  {
+   "bugid": 1900798,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Firefox is freezing if resizing the window during the transition to the blocked dialog for printing operation"
+  },
+  {
+   "bugid": 1893068,
+   "status": "REOPENED",
+   "component": "Firefox:Menus",
+   "summary": "Remove inline event handlers from menubar code"
+  },
+  {
+   "bugid": 1898380,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Replace the \"unsaved changes\" dialog in the PDF viewer with a clearer design"
+  },
+  {
+   "bugid": 1893299,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Build confirmation dialog element for turning off the backup feature"
+  },
+  {
+   "bugid": 1895943,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement file picker and save location for backups"
+  },
+  {
+   "bugid": 1895981,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Disable confirm button for \"turn on scheduled backups\" dialog  if encryption is required and not yet set"
+  },
+  {
+   "bugid": 1880109,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Remove the legacy Windows Jump List backend"
+  },
+  {
+   "bugid": 1901565,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Record failure reason by default in installation first_seen scalars in new-profile ping"
+  },
+  {
+   "bugid": 406629,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebars (history, bookmarks) should not have maximum width"
+  },
+  {
+   "bugid": 1891777,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Persist sidebar settings from Customize Sidebar menu"
+  },
+  {
+   "bugid": 1896914,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar should not be visible in full screen mode"
+  },
+  {
+   "bugid": 1896988,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_customize_sidebar.js | single tracking bug"
+  },
+  {
+   "bugid": 1901673,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_hide_sidebar_on_popup.js | single tracking bug"
+  },
+  {
+   "bugid": 1901885,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_adopt_sidebar_from_opener.js | single tracking bug"
+  },
+  {
+   "bugid": 1902008,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent [TV] browser/components/sidebar/tests/browser/browser_sidebar_max_width.js | Uncaught exception in test bound test_customize_sidebar_actions - at chrome://mochitests/content/browser/browser/components/sidebar/tests/browser/browser_sidebar"
+  },
+  {
+   "bugid": 1900107,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "High frequency browser/components/translations/tests/browser/browser_translations_select_telemetry_init_failure_ui_then_succeed.js | single tracking bug"
+  },
+  {
+   "bugid": 1898060,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_APP_ID from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1898177,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_APP_VENDOR from confvars.sh to moz.configure"
+  },
+  {
+   "bugid": 1898817,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Migrate various `distutils` usages in first-party python modules"
+  },
+  {
+   "bugid": 1901477,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_LINKER customisation from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1901281,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use upstream Taskgraph's transform loader"
+  },
+  {
+   "bugid": 1897005,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Remove clang 17 toolchains"
+  },
+  {
+   "bugid": 1901125,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[rustc-1.80] Perma tsan error: failed to resolve patches for `https://github.com/rust-lang/crates.io-index`"
+  },
+  {
+   "bugid": 1901890,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma error: failed to run custom build command for `mozglue-static v0.1.0 (/builds/worker/checkouts/gecko/mozglue/static/rust)`"
+  },
+  {
+   "bugid": 1901895,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade clang 18 toolchain to 18.1.7"
+  },
+  {
+   "bugid": 1901913,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Allow beta versions of the rust compiler"
+  },
+  {
+   "bugid": 1901976,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [TIer 2] clang-format/clang-tidy ModuleNotFoundError: No module named 'zstandard'"
+  },
+  {
+   "bugid": 1833534,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Limit the length of title/alt/textcontent in GeckoView:ContextMenu message."
+  },
+  {
+   "bugid": 1899614,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Make docs for GeckoView deprecate process more clear"
+  },
+  {
+   "bugid": 1901717,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Administration / Setup",
+   "summary": "Add ESR128 to cross-channel"
+  },
+  {
+   "bugid": 1901852,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "update-verify-config-creator local repo query fails for Thunderbird"
+  },
+  {
+   "bugid": 1894022,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "Add ARM64/aarch64 Windows MSIX packages to bouncer-check"
+  },
+  {
+   "bugid": 1882089,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Flip the \"remote.active-protocols\" default value to \"1\" after the Firefox 128 ESR release"
+  },
+  {
+   "bugid": 1892486,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Longer card heading in the Megalist overlaps and is cut off in the default sidebar width"
+  },
+  {
+   "bugid": 1892873,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Visiting chrome://global/content/print.html causes web content to become 250px wide permanently"
+  },
+  {
+   "bugid": 1895964,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Redesign read aloud menu to match new theme and layout menus"
+  },
+  {
+   "bugid": 1901909,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Index cypress for searchfox"
+  }
+ ],
+ "fixed": 81,
+ "total": 95,
+ "restricted": 3
+}
