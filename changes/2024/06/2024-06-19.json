@@ -1,0 +1,910 @@
+{
+ "date": "2024-06-19",
+ "buildid": "20240619095752",
+ "cset": "4c1dffe40676f3987692453b79514c4808833ee7",
+ "bugs": [
+  {
+   "bugid": 1900928,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Disable Suggest reingestion"
+  },
+  {
+   "bugid": 1902048,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Andoid: Update FxSuggestStorage constructor to use the new SuggestStoreBuilder API"
+  },
+  {
+   "bugid": 1878510,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "YouTube videos buffering issues due to bad muxed VP9 bytestream"
+  },
+  {
+   "bugid": 1896948,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] DRM-protected livestream shows blackframe on tvthek.orf.at"
+  },
+  {
+   "bugid": 1903002,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Make voice processing on macOS reliable"
+  },
+  {
+   "bugid": 1903027,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Capturing input without VPIO may get stuck in a reinit-loop"
+  },
+  {
+   "bugid": 1902333,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash [@ operator->]"
+  },
+  {
+   "bugid": 1903086,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use script blocker in Document::DoUpdateSVGUseElementShadowTrees()."
+  },
+  {
+   "bugid": 1892016,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Implement per session cross-site request state to handle RP-IDP communication"
+  },
+  {
+   "bugid": 1892017,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Implement Discover method for lightweight credential, integrating it with FedCM"
+  },
+  {
+   "bugid": 1897865,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Cannot type phone number with IME in attachment 9400860"
+  },
+  {
+   "bugid": 1796785,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Addition of response status code to Resource Timing API"
+  },
+  {
+   "bugid": 1902995,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance",
+   "summary": "`PerformanceMark::UnclampedStartTime` crashes tab when Profiler does not profile `GeckoMain`"
+  },
+  {
+   "bugid": 1719271,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Consider enabling HTTPS-First Mode in Nightly"
+  },
+  {
+   "bugid": 1835983,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fix tests that would break with dom.security.https_first enabled"
+  },
+  {
+   "bugid": 1769437,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "browser_userContextId_openWindow.js fails"
+  },
+  {
+   "bugid": 1817981,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Add possibility to mark Dedicated workers being in background"
+  },
+  {
+   "bugid": 1875416,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Blur & Focus Event Not Firing After Using System Print Dialogue in Firefox on an Iframe"
+  },
+  {
+   "bugid": 1902096,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent TV /tests/dom/workers/test/test_notification_permission.html | single tracking bug"
+  },
+  {
+   "bugid": 1903326,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "IPCFuzzController is missing PRemoteLazyInputStream as toplevel actor"
+  },
+  {
+   "bugid": 1903080,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "ProfilerStackWalk.h:19:10: fatal error: PlatformMacros.h: No such file or directory"
+  },
+  {
+   "bugid": 1902304,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "[s390x] Undefined reference to 'jsimd_can_rgb_ycc' in media/libjpeg/jccolor.o"
+  },
+  {
+   "bugid": 1903296,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2024-06-18"
+  },
+  {
+   "bugid": 1786431,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "firefox: src/gl.cc:481: bool Texture::allocate(bool, int, int): Assertion `!locked' failed. swgl"
+  },
+  {
+   "bugid": 1893424,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Screen flickering on Samsung S24 Ultra"
+  },
+  {
+   "bugid": 1896503,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WR SVG Filters: Integrate new SVGFE code path with Gecko"
+  },
+  {
+   "bugid": 1894073,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Intermittent SUMMARY: ThreadSanitizer: data race /builds/worker/checkouts/gecko/mfbt/UniquePtrExtensions.cpp:28:10 in mozilla::detail::FileHandleDeleter::operator()(mozilla::detail::FileHandleHelper) | single tracking bug"
+  },
+  {
+   "bugid": 1902985,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Turn on test_osPreferences.js on GeckoView"
+  },
+  {
+   "bugid": 1440748,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "StructuredClone stack overflow reading invalid data"
+  },
+  {
+   "bugid": 1892508,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add a way to get information about nursery things tenured in a minor GC"
+  },
+  {
+   "bugid": 1899872,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Make js::SliceBudget a proper public API"
+  },
+  {
+   "bugid": 1847757,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add debug assertions about canonical high-bits for i31ref values on 64-bit targets"
+  },
+  {
+   "bugid": 1897989,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add Wasm exception handling + JSPI tests"
+  },
+  {
+   "bugid": 1899862,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Enable JS PI for aarch64 simulator."
+  },
+  {
+   "bugid": 1901647,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "i31ref values are not correctly passed between JS and wasm"
+  },
+  {
+   "bugid": 1901870,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Enable js/src/jit-test/tests/wasm/profiling.js"
+  },
+  {
+   "bugid": 1902019,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Wasm instance calls in Ion do not verify MIRTypes of arguments"
+  },
+  {
+   "bugid": 1858806,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !needsFrameBitSet (Ancestors of nodes with frames to be constructed lazily should not have NEEDS_FRAME bit set), at /builds/worker/checkouts/gecko/layout/base/nsCSSFrameConstructor.cpp:6259"
+  },
+  {
+   "bugid": 1885106,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Enhance \"LayoutUtils.sys.mjs\" to allow the transformation of local coordinates to the browser window coordinates in CSS units"
+  },
+  {
+   "bugid": 1901515,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Removing a DOM node with large text contents is slow"
+  },
+  {
+   "bugid": 1902325,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove z-index concept from views."
+  },
+  {
+   "bugid": 1903141,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Store floats list in a frame property rather than in nsBlockFrame::mFloats"
+  },
+  {
+   "bugid": 1901376,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Implement field-sizing support for select listboxes"
+  },
+  {
+   "bugid": 1901652,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "The hypothetical box of fixed positioned elements accounted the root scrollbar-gutter on the left twice"
+  },
+  {
+   "bugid": 1901126,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Table border overflows off the start edge of its container (potentially being clipped), with 'border-collapse: collapse`"
+  },
+  {
+   "bugid": 1902184,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Remove or update metrics expiring in Firefox 130: network.data_size_p*"
+  },
+  {
+   "bugid": 1903212,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Expose a nsIDataChannel interface to JS"
+  },
+  {
+   "bugid": 1900672,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "DNS-over-HTTPS (DoH, TRR) provider OFF should default to fallbackProviderURI"
+  },
+  {
+   "bugid": 1902188,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove or update metrics expiring in Firefox 130: networking.http_content_on*"
+  },
+  {
+   "bugid": 1881694,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Remove unused method PermissionManager::LegacyTestPermissionFromURI"
+  },
+  {
+   "bugid": 1903440,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Use MakeUnique in RemotePrintJobParent"
+  },
+  {
+   "bugid": 1889444,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Record a Glean event for sites purged by Bounce Tracking Protection"
+  },
+  {
+   "bugid": 1902675,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "animations should not run in inactive switch children or if they are children of elements that have failed conditional processing tests"
+  },
+  {
+   "bugid": 1903214,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Don't dispatch SMIL events unless there are listeners"
+  },
+  {
+   "bugid": 1900258,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "After deleting an authentication decision \"Send no client certificate\" entry remains"
+  },
+  {
+   "bugid": 1902159,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add a pref to omit P256 share in client hello"
+  },
+  {
+   "bugid": 1903096,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "build failure unused variable this_process when building linux without gecko profiler"
+  },
+  {
+   "bugid": 1890283,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Add a new test for idle daily maintenance and IDBFactory.databases() interaction"
+  },
+  {
+   "bugid": 1903252,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Move crash tests for IndexedDB to dom/indexedDB/test"
+  },
+  {
+   "bugid": 1901525,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Simplify DecryptingInputStream implementation"
+  },
+  {
+   "bugid": 1903169,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Crash in [@ mozilla::dom::quota::DropDirectoryLock]"
+  },
+  {
+   "bugid": 1903387,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Crash in [@ mozilla::dom::quota::DirectoryLockImpl::~DirectoryLockImpl]"
+  },
+  {
+   "bugid": 1776143,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Crash in [@ RtlpWaitOnCriticalSection | RtlpEnterCriticalSectionContended | RtlEnterCriticalSection | sctp_inpcb_free | sctp_close]"
+  },
+  {
+   "bugid": 1891611,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "nsCocoaWindow::GetTransparencyMode returns opaque if the window is destroyed"
+  },
+  {
+   "bugid": 1895175,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Crash in [@ _dispatch_client_callout3]"
+  },
+  {
+   "bugid": 1901644,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Stop encapsulating CONSOLE_MESSAGE resource into a 'message' attribute"
+  },
+  {
+   "bugid": 1898725,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Turn on debugger editor shortcuts for Codemirror 6"
+  },
+  {
+   "bugid": 1900684,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "CodeMirror6: Selecting text and changing the source leads to a blank editor"
+  },
+  {
+   "bugid": 1901788,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Frequent devtools/client/debugger/test/mochitest/browser_dbg-iframes.js | Uncaught exception in test bound - at chrome://mochitests/content/browser/devtools/client/shared/test/shared-head.js:1120 - Error: Failed waitFor()"
+  },
+  {
+   "bugid": 1902701,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma macosx1015 devtools/client/debugger/test/mochitest/browser_dbg-call-stack.js | A promise chain failed to handle a rejection: Actor 'SpecialPowers' destroyed before query 'Spawn' was resolved - stack: (No stack available.)"
+  },
+  {
+   "bugid": 1901643,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Avoid passing resourceType for each resource sent to the client"
+  },
+  {
+   "bugid": 1844054,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Stylesheet location link are not focusable with keyboard and is missing role"
+  },
+  {
+   "bugid": 1897339,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "Create constants for all the codemirror 6 marker ids"
+  },
+  {
+   "bugid": 1901862,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Improve wording of how to find sec-approved flag"
+  },
+  {
+   "bugid": 1903175,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Long pause at the end of `mach try` when using git"
+  },
+  {
+   "bugid": 1877238,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Add telemetry for strong password generation"
+  },
+  {
+   "bugid": 1898682,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UI/UX] The BottomToolbarContainerView should adjust the height of the content behind to allow users to access the content below - e.g. the customize hoomescreen button"
+  },
+  {
+   "bugid": 1900770,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey Prompt not displayed when using Toolbar Redesign Incomplete in landscape"
+  },
+  {
+   "bugid": 1900996,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add behavioural targeting for the homepage feature"
+  },
+  {
+   "bugid": 1902074,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] Add click listener to the Prompt to trigger the Bottom Sheet (survey displayed)"
+  },
+  {
+   "bugid": 1903026,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Fix lint 'shadowed' warning in listenForMicrosurveyMessage func"
+  },
+  {
+   "bugid": 1903198,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version b6094821ada17a93e400e1411a890f4e67f353bd from 2024-06-18 05:03:33"
+  },
+  {
+   "bugid": 1902888,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Add a secret setting for Homepage as a New Tab"
+  },
+  {
+   "bugid": 1895440,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Add UX implementation for Strong Generated Password"
+  },
+  {
+   "bugid": 1812113,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Closed tabs should be reopened at the bottom of the Tabs Tray"
+  },
+  {
+   "bugid": 1899893,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Downstream the selected Tab ID from browser store into Tabs Tray Store"
+  },
+  {
+   "bugid": 1897354,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] address bar now no longer stretch to edge"
+  },
+  {
+   "bugid": 1902267,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Download complete dialog is hidden by the refactored toolbar"
+  },
+  {
+   "bugid": 1855987,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Translations UI Integration Partial Downloads Removal / Clearing Translations Cache"
+  },
+  {
+   "bugid": 1889807,
+   "status": "ASSIGNED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Crash in [@ java.lang.Exception: at org.mozilla.fenix.addons.InstalledAddonDetailsFragment$bindAddon$1$1.invokeSuspend(InstalledAddonDetailsFragment.kt)]"
+  },
+  {
+   "bugid": 1901983,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove usage of searchForm from ProviderTabToSearch"
+  },
+  {
+   "bugid": 1763464,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Dragging bookmarked items from the overflow menu onto the current opened webpage breaks the drag functionality"
+  },
+  {
+   "bugid": 1888019,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Use a different client ID, scope and keys for Sync in Thunderbird"
+  },
+  {
+   "bugid": 1889123,
+   "status": "NEW",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Measure potential device migrations for Mozilla Account holders"
+  },
+  {
+   "bugid": 1901667,
+   "status": "REOPENED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Intermittent services/fxaccounts/tests/xpcshell/test_commands_closetab.js | single tracking bug"
+  },
+  {
+   "bugid": 1900381,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from mainPopupSet"
+  },
+  {
+   "bugid": 1896090,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] The \"X\" button is displayed in the top-right part of the browser instead of the top-right part of the \"Embedded Import Spotlight\""
+  },
+  {
+   "bugid": 1897804,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fox Doodle Spotlight Rollout enrollment targeting should exclude First Run"
+  },
+  {
+   "bugid": 1899439,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add a way to locally load experiment-localized messages"
+  },
+  {
+   "bugid": 1900511,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "RC survey visual issues"
+  },
+  {
+   "bugid": 1900984,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Ghost shadow on feature callout arrow when flip=slide makes the arrow disappear"
+  },
+  {
+   "bugid": 1901499,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] Nothing happens if clicking \"Extensions success\" link from the \"Data Import Complete Success\" screen of the \"Embedded Import Spotlight\""
+  },
+  {
+   "bugid": 1901134,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab wallpaper solid color selector"
+  },
+  {
+   "bugid": 1901904,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New-tab pocket stories' 3-dot-menu-icon is misaligned in its button (0.5px-1px to the right of the perfect center position)"
+  },
+  {
+   "bugid": 1902154,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Tab Weather Widget: Error message has legibility issues when a wallpaper is selected"
+  },
+  {
+   "bugid": 1902948,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab wallpaper categories menu and weather widget cleanup for RTL"
+  },
+  {
+   "bugid": 1896718,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Implement the Nimbus pref flipper"
+  },
+  {
+   "bugid": 1902303,
+   "status": "ASSIGNED",
+   "component": "Firefox:Screenshots",
+   "summary": "screenshot not working properly with highlighted text"
+  },
+  {
+   "bugid": 1901839,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Classify engagements for requests that match an ad but didn't have a corresponding component as  `ad_uncategorized` instead of `non_ads_link`"
+  },
+  {
+   "bugid": 1902134,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "expand cert/tls error page telemetry to investigate events with empty error strings"
+  },
+  {
+   "bugid": 1899887,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "High freq browser/components/tests/browser/browser_default_webprotocol_handler_mailto.js | single tracking bug"
+  },
+  {
+   "bugid": 1852830,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "[Desktop] Shopping sidebar says \"Unreliable reviews removed\" despite not actually removing any reviews"
+  },
+  {
+   "bugid": 1898576,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "amazon.fr/amazon.de aren't understood by analysis-explainer code; fills in \"retailer\" which isn't localized"
+  },
+  {
+   "bugid": 1899576,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Create a reusable sidebar header component"
+  },
+  {
+   "bugid": 1900513,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "When receiving a push for closing a remote tab, show the user a notification"
+  },
+  {
+   "bugid": 1901868,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Remote tab management - Remove pending closed tabs so there's only ever one undo"
+  },
+  {
+   "bugid": 1903221,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move #PopupAutoComplete rules from browser/base/content/browser.css to autocomplete.css"
+  },
+  {
+   "bugid": 1903236,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move .unified-nav-current rule to browser-shared.css"
+  },
+  {
+   "bugid": 1903238,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove obsolete .popup-anchor rule"
+  },
+  {
+   "bugid": 1903241,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move sidebar rules to sidebar.css"
+  },
+  {
+   "bugid": 1902314,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Consolidate toolbarpaletteitem rules"
+  },
+  {
+   "bugid": 1903228,
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "Move UI Tour rules from browser/base/content/browser.css to UITour.css"
+  },
+  {
+   "bugid": 1903087,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "SelectTranslationsPanel cached docLangTag is not correctly updated between panel opens"
+  },
+  {
+   "bugid": 1903114,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove unused CSS rule from SelectTranslationsPanel"
+  },
+  {
+   "bugid": 1903151,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Perma OS X 11 WebRender Shippable browser/components/translations/tests/browser/browser_translations_select_telemetry_keypresses_try_again_button_init_failure.js | betaIcon is visible. -"
+  },
+  {
+   "bugid": 1903391,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Send From- and To-Language Changes to SelectTranslationsPanel Telemetry"
+  },
+  {
+   "bugid": 1903392,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Send Source Language Changes to SelectTranslationsPanel Telemetry"
+  },
+  {
+   "bugid": 1903393,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Send The Text Source to SelectTranslationsPanel Telemetry"
+  },
+  {
+   "bugid": 1896414,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_ASAN checks from old.configure to moz.configure"
+  },
+  {
+   "bugid": 1900255,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_DISTRIBUTION_ID from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1900540,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "No longer require -fno-sanitize-address-globals-dead-stripping"
+  },
+  {
+   "bugid": 1903033,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused references to SKIP_* in old-configure.in"
+  },
+  {
+   "bugid": 1903167,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove remains from the WASM_LIBRARY target"
+  },
+  {
+   "bugid": 1903168,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Host rust programs are not copied to $DIST"
+  },
+  {
+   "bugid": 1903346,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Migrate Focus away from Play Core library"
+  },
+  {
+   "bugid": 1884740,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Enable automated betas for Android"
+  },
+  {
+   "bugid": 1902435,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Remove Thunderbird special case for Thunderbird release type from update-verify-config-creator.py"
+  },
+  {
+   "bugid": 1824220,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for \"beforeunload\" simple prompts"
+  },
+  {
+   "bugid": 1876062,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Skip \"beforeunload\" prompts when closing tabs during browser.removeUserContext"
+  },
+  {
+   "bugid": 1902911,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[NSStackView layoutMarginsGuide]: unrecognized selector sent to instance (software.webrender=true)"
+  },
+  {
+   "bugid": 1835771,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[US][etsy.com] Save Address doorhanger is not displayed upon form submit"
+  },
+  {
+   "bugid": 1901247,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Required fields for address capture should be region-aware."
+  },
+  {
+   "bugid": 1899608,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[megalist] Finder icon in search input is not visible on dark mode"
+  },
+  {
+   "bugid": 1845042,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Make ability of tagging multiple items from history"
+  },
+  {
+   "bugid": 1900947,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "wrong order of font size buttons in new reader mode settings"
+  },
+  {
+   "bugid": 1902423,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Add labels to Read aloud menu to improve screenreader support"
+  },
+  {
+   "bugid": 1895508,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add component specific documentation for moz-radio/moz-radio-group"
+  },
+  {
+   "bugid": 1795750,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Update version format in Quitter XPI (manifest)"
+  },
+  {
+   "bugid": 1898498,
+   "status": "VERIFIED",
+   "component": "WebExtensions:General",
+   "summary": "downloads.download throws if the filename containing \"%\""
+  },
+  {
+   "bugid": 1900755,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "webext-panels.xhtml's contentAreaContextMenu is missing showservicesmenu"
+  }
+ ],
+ "fixed": 130,
+ "total": 150,
+ "restricted": 3
+}
