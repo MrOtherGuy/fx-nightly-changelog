@@ -1,0 +1,538 @@
+{
+ "date": "2024-06-21",
+ "buildid": "20240621100955",
+ "cset": "deea4a904a0d3d546ab359aeca91a4bb6dc02a77",
+ "bugs": [
+  {
+   "bugid": 1880183,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Adopt the new `SuggestStoreBuilder` API in Desktop"
+  },
+  {
+   "bugid": 1903656,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add more profiler markers for MSE"
+  },
+  {
+   "bugid": 1903864,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make the flag for hw/sw decoding in the profiler marker more precise"
+  },
+  {
+   "bugid": 1903876,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add MediaSourceSample to default logging"
+  },
+  {
+   "bugid": 1903315,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Update cubeb-coreaudio-rs to revision 6d84f4638"
+  },
+  {
+   "bugid": 1728331,
+   "status": "REOPENED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[Fission] same domain tabs are loaded in the same process when reloaded in bulk"
+  },
+  {
+   "bugid": 1883799,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Rename nsIClipboard.asyncGetData and nsIAsyncGetClipboardData"
+  },
+  {
+   "bugid": 1860915,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement part of Document Policy for force-load-at-top for text fragment"
+  },
+  {
+   "bugid": 1881096,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ensure nsPrintJob works for selection that across the shadow boundary"
+  },
+  {
+   "bugid": 1903025,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Events",
+   "summary": "Perma Late Beta TEST-UNEXPECTED-FAIL | /pointerevents/pointerevent_after_target_removed_from_slot.html?mouse | <...> when Gecko 129 switches from Early Beta to Late Beta on 2024-07-19"
+  },
+  {
+   "bugid": 1890706,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "GeolocationCoordinates and GeolocationPosition should expose a Default .toJSON() method"
+  },
+  {
+   "bugid": 1888756,
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Implement User Activation"
+  },
+  {
+   "bugid": 1901064,
+   "status": "REOPENED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Preserve user activation for window.open cases when fission is disabled"
+  },
+  {
+   "bugid": 1842970,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Pass failing xhr WPTs related to aborting XMLHttpRequests on workers"
+  },
+  {
+   "bugid": 1901491,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add CSP support for Trusted Types for Windows (not Workers) excluding reporting violations"
+  },
+  {
+   "bugid": 1903718,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma [tier 2] Android Shippable /permissions-policy/reporting/geolocation-reporting.https.html | Geolocation Report Format - assert_unreached: geolocation should be disabled in this document Reached unreachable code"
+  },
+  {
+   "bugid": 1901851,
+   "status": "REOPENED",
+   "component": "Core:DOM: Workers",
+   "summary": "Improve the reliability of process startup for remote workers"
+  },
+  {
+   "bugid": 1897783,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "When using certain SVG filters, screenshot tool and color picker show a different color to the page rendered normally"
+  },
+  {
+   "bugid": 1899444,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Move --enable-icu4x option to JS"
+  },
+  {
+   "bugid": 1901323,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add IsCCW testing function"
+  },
+  {
+   "bugid": 1902910,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: (iter_[0] == 'u' && iter_[1] == '-') || iter_[0] == '-', at builtin/intl/Locale.cpp:196"
+  },
+  {
+   "bugid": 1903324,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: BytecodeOpCanHaveAllocSite(JSOp(*pc_)), at js/src/jit/CacheIR.cpp:276"
+  },
+  {
+   "bugid": 1903329,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ship Float16Array"
+  },
+  {
+   "bugid": 1903867,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (June 20, 2024)"
+  },
+  {
+   "bugid": 1902907,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: startOfUninitialized <= nfixed, at jit/MacroAssembler.cpp:922"
+  },
+  {
+   "bugid": 1899177,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Support more built-in calendars in Temporal"
+  },
+  {
+   "bugid": 1891182,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Refactor ModuleGenerator and ModuleEnvironment to make them ready for partial tiering"
+  },
+  {
+   "bugid": 1895433,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add chat providers to show in preferences with links and menu"
+  },
+  {
+   "bugid": 1902449,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Rework chat prompts to support targeting and non-contextmenu entry points"
+  },
+  {
+   "bugid": 1903443,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Support providers that accept prompts via headers"
+  },
+  {
+   "bugid": 1883954,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Consider moving HTTPS upgrade telemetry code into one place"
+  },
+  {
+   "bugid": 1901355,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma Windows netwerk/test/unit/test_tls13_disabled.js | Test timed out"
+  },
+  {
+   "bugid": 1902184,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove or update metrics expiring in Firefox 130: network.data_size_p* before Gecko version gets increased to 130 on 2024-07-08"
+  },
+  {
+   "bugid": 1895742,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Pull to refresh triggers on navigating a geographic map"
+  },
+  {
+   "bugid": 1901043,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Crashes [@ create_protected_copy ] while printing on 127 branch and up"
+  },
+  {
+   "bugid": 1889444,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Record a Glean event for sites purged by Bounce Tracking Protection"
+  },
+  {
+   "bugid": 1745149,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove SVGPathSeg APIs and its preference"
+  },
+  {
+   "bugid": 1903352,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "SVG attribute values should not be zoomed"
+  },
+  {
+   "bugid": 1903679,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Simplify antialiasing code"
+  },
+  {
+   "bugid": 1888878,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Remove arbitrary timeout from test_idle_maintenance_and_databases.js"
+  },
+  {
+   "bugid": 1903387,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Crash in [@ mozilla::dom::quota::DirectoryLockImpl::~DirectoryLockImpl]"
+  },
+  {
+   "bugid": 1902737,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Improve telemetry for out-of-process file-picker failures (v2.1)"
+  },
+  {
+   "bugid": 1843325,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Scopes panel tree view item loses focus when switching apps"
+  },
+  {
+   "bugid": 1902005,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "CodeMirror6: Exceptions is not highlighted on initial page opening"
+  },
+  {
+   "bugid": 1902224,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Do not store JS traces in ResourceCommand cache"
+  },
+  {
+   "bugid": 1902229,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use individual trace ressources for each trace type"
+  },
+  {
+   "bugid": 1900742,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "CodeMirror6: Paused line is not highlighted for a breakpoint hit on load"
+  },
+  {
+   "bugid": 1903849,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Wrong file for specifying udl path in UniFFi doc"
+  },
+  {
+   "bugid": 1890617,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Add ability to attach runtime metadata to crash reporter"
+  },
+  {
+   "bugid": 1899852,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey prompt should not be displayed when 'search fragment' is open (e.g. keyboard is displayed)"
+  },
+  {
+   "bugid": 1903282,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add privacy policy link"
+  },
+  {
+   "bugid": 1901968,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "password in three dot menu breaks websites"
+  },
+  {
+   "bugid": 1893003,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Crashes in java.lang.IllegalStateException: ViewTreeLifecycleOwner not found from mozilla.components.compose.cfr.CFRPopupFullscreenLayout"
+  },
+  {
+   "bugid": 1898495,
+   "status": "RESOLVED",
+   "component": "Fenix:Share",
+   "summary": "Share button in custom tab doesn't share the URL"
+  },
+  {
+   "bugid": 1826154,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tabs tray to Compose] Add `TabsTrayFab` to `TabsTray` preview and refactor `TabsTray` previews"
+  },
+  {
+   "bugid": 1902021,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Write KDocs for `NormalTabsPage`, `PrivateTabsPage`, `SyncedTabsPage`, `EmptyTabPage`"
+  },
+  {
+   "bugid": 1890848,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] The nav bar should automatically appear when closing the keyboard."
+  },
+  {
+   "bugid": 1876513,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar should not prefix schemeless URI that will be handled by schemeless HTTPS-First"
+  },
+  {
+   "bugid": 1903160,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Display Sponsored and non-Sponsored Suggestions at the Top of Firefox Suggest Section"
+  },
+  {
+   "bugid": 1901667,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Intermittent services/fxaccounts/tests/xpcshell/test_commands_closetab.js | single tracking bug"
+  },
+  {
+   "bugid": 1903771,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove empty test file in aboutwelcome tests"
+  },
+  {
+   "bugid": 1896677,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab weather widget fetch might need a retry feature"
+  },
+  {
+   "bugid": 1902109,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab wallpapers v2 fixing lint rule for fluent dom"
+  },
+  {
+   "bugid": 1903123,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Change default behavior for F/C"
+  },
+  {
+   "bugid": 1902323,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Application Provided Search Engine Icons are not displayed if they are svg based"
+  },
+  {
+   "bugid": 1903608,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Pressing enter on search bar settings icon does not open settings."
+  },
+  {
+   "bugid": 1903805,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add additional allowed characters to search-config-icons filter expression pattern"
+  },
+  {
+   "bugid": 1888871,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "There is a white bar on the right side of the screen near the scroll area on websites where Review Checker is available"
+  },
+  {
+   "bugid": 1896987,
+   "status": "REOPENED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_sidebar_context_menu.js | single tracking bug"
+  },
+  {
+   "bugid": 1878038,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Missing content in the preview thumbnail if using Firefox in a wide window"
+  },
+  {
+   "bugid": 1902252,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab hover preview is blurry"
+  },
+  {
+   "bugid": 1903541,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move .notification-anchor-icon and .blocked-permission-icon rules into notification-icons.css"
+  },
+  {
+   "bugid": 1903809,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move emptyplacesresult rule from browser/base/content/browser.css to panelUI-shared.css"
+  },
+  {
+   "bugid": 1903813,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Move toolbartabstop rule from browser/base/content/browser.css to toolbarbuttons.css"
+  },
+  {
+   "bugid": 1903838,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "SelectTranslationsPanel does not report the to-language-changed event to telemetry if both languages are changed prior to retranslation"
+  },
+  {
+   "bugid": 1901965,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Only include jsconfdefs.h if mozilla-config.h is not included"
+  },
+  {
+   "bugid": 1903021,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "GeckoView crashes on startup when linked with gold"
+  },
+  {
+   "bugid": 1903061,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move objective-C flags settings from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903575,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "STRICT macro from minwindef.h is back to conflict with ServoStyleConsts.h StyleContain value"
+  },
+  {
+   "bugid": 1903661,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Automatically stage a package when running mach run --packaged"
+  },
+  {
+   "bugid": 1903505,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Changes for fetch-chromium tasks shouldn't retrigger everything"
+  },
+  {
+   "bugid": 1903814,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent macOS Bp-nu [taskcluster:error] Task timeout after 5400 seconds. Force killing container."
+  },
+  {
+   "bugid": 1873196,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "\"browser.close\" has to close all top-level browsing contexts by discarding any \"beforeunload\" handlers"
+  },
+  {
+   "bugid": 1901246,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Enable Address Autofill for DE and FR"
+  },
+  {
+   "bugid": 1903572,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Test ping server uses a relative server root"
+  },
+  {
+   "bugid": 1882040,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "m.youtube.com - \"Pull to refresh\" enabled breaks scrolling on YouTube shorts - overflow-y:hidden isn't preventing pull-to-refresh"
+  },
+  {
+   "bugid": 1583716,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "DevTools' panel and sidebar created by WebExtensions API does not reflect the zooming on DevTools' toolbar"
+  },
+  {
+   "bugid": 1903794,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove test_addon_to_theme_update test"
+  }
+ ],
+ "fixed": 75,
+ "total": 88,
+ "restricted": 4
+}
