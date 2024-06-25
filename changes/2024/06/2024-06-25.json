@@ -1,0 +1,574 @@
+{
+ "date": "2024-06-25",
+ "buildid": "20240625093602",
+ "cset": "653f0dc8442dd9cae70845896eb3c0a0252677b3",
+ "bugs": [
+  {
+   "bugid": 1900191,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Youtube Live video endless buffering"
+  },
+  {
+   "bugid": 1595620,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Considering aliasing -webkit-font-feature-settings to font-feature-settings for webcompat"
+  },
+  {
+   "bugid": 1904139,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Crash in [@ atomic_refcell::AtomicRefCell<T>::borrow_mut] with reentrancy into restyling via `gfxPlatformFontList::InitFontList()`"
+  },
+  {
+   "bugid": 1728331,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "[Fission] same domain tabs are loaded in the same process when reloaded in bulk"
+  },
+  {
+   "bugid": 697151,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Synchronous XMLHttpRequest (XHR) does not block readyState events for async XHR"
+  },
+  {
+   "bugid": 1894231,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Remove WorkPrivate raw pointers which are a class member variable."
+  },
+  {
+   "bugid": 1897400,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Move mWindow out of TimeoutManager, in order to reuse it for the Workers case (refactor)"
+  },
+  {
+   "bugid": 1901851,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Improve the reliability of process startup for remote workers"
+  },
+  {
+   "bugid": 1903538,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add a profiler label frame for mozilla::dom::CreateGlobal"
+  },
+  {
+   "bugid": 1903542,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add a profiler label frame for JIT array sort functions"
+  },
+  {
+   "bugid": 1903581,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add a profiler label frame for mozilla::net::HttpChannelChild::AsyncOpen"
+  },
+  {
+   "bugid": 1904183,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Parts of style related profile appears grey instead of the expected coloring"
+  },
+  {
+   "bugid": 1903993,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Use the SPDX license format for all `Cargo.toml` files managed in mozilla-central"
+  },
+  {
+   "bugid": 1902718,
+   "status": "REOPENED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Use Etagere for DrawTargetWebgl allocation"
+  },
+  {
+   "bugid": 1901076,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Add new metadata decoding variant to calculate frame count"
+  },
+  {
+   "bugid": 1904318,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libjxl by release instead of weeks"
+  },
+  {
+   "bugid": 1903102,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Change usage of WebGPU to use vertex pulling transform (only meaningful for macOS/Metal) all the time"
+  },
+  {
+   "bugid": 1903389,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU CTS on Windows debug: Intermittent [taskcluster:error] task aborted - max run time exceeded"
+  },
+  {
+   "bugid": 1896503,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WR SVG Filters: Integrate new SVGFE code path with Gecko"
+  },
+  {
+   "bugid": 1890771,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Test JSON.parse with source edge cases"
+  },
+  {
+   "bugid": 1898280,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Prevent chains of dependent strings from LSubstr"
+  },
+  {
+   "bugid": 1899160,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Make it possible to allocate JSStrings with a refcounted StringBuffer in the shell"
+  },
+  {
+   "bugid": 1904070,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Array Type III subclassing use counter includes non-species uses"
+  },
+  {
+   "bugid": 1442536,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "ARM64 simulator: Implement single-step profiling"
+  },
+  {
+   "bugid": 1113608,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Never disable incremental GC during runtime"
+  },
+  {
+   "bugid": 1895628,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Simplify string deduplication code by taking advantage of dependent string sweeping"
+  },
+  {
+   "bugid": 1904453,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add a hyphen to the filename for wpt crashtests"
+  },
+  {
+   "bugid": 1901157,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Fix HCM styling of radio button, checkbox in chrome"
+  },
+  {
+   "bugid": 1901764,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "clicking a <select> within draggable element can start dragging"
+  },
+  {
+   "bugid": 1903922,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "disclosure-closed style has wrong expanders in RTL & vertical writing mode"
+  },
+  {
+   "bugid": 1897589,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "FontFace.load sometimes never resolves"
+  },
+  {
+   "bugid": 1895497,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Update chatbot providers and featuregate with more appropriate configuration for initial nightly"
+  },
+  {
+   "bugid": 1873915,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "%2e entered in URL bar not normalized leading to denormalized request"
+  },
+  {
+   "bugid": 1883954,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Consider moving HTTPS upgrade telemetry code into one place"
+  },
+  {
+   "bugid": 1768656,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Deprecate and remove thirdparty.*sessionOnly prefs"
+  },
+  {
+   "bugid": 1903415,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Long cookie attrbiutes should be rejected"
+  },
+  {
+   "bugid": 1900362,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Do not override the Priority header when set by the user"
+  },
+  {
+   "bugid": 1903410,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Migrate HTTP_RESPONSE_STATUS_CODE probe to glean"
+  },
+  {
+   "bugid": 1902313,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Pull to refresh broken on pages with overflow-y:hidden set on the body element."
+  },
+  {
+   "bugid": 1899809,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect telemetry on how many origins are cleared in one purge event"
+  },
+  {
+   "bugid": 1903713,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "3.48 - 1.52% compiler_metrics num_static_constructors / compiler_metrics num_static_constructors + 3 more (Linux, OSX, Windows) regression on Mon June 10 2024"
+  },
+  {
+   "bugid": 1903825,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clean up BounceTrackingProtection includes"
+  },
+  {
+   "bugid": 1800740,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/text/simple-bidi-selection.svg == svg/text/simple-bidi-selection-ref.html | image comparison, max difference: 1, number of differing pixels: 575"
+  },
+  {
+   "bugid": 1833267,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/non-scaling-stroke-02.svg == svg/non-scaling-stroke-02-ref.svg | image comparison, max difference: 49, number of differing pixels: 4104"
+  },
+  {
+   "bugid": 1904378,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Stop creating runnables to fire SMIL events if we know we can't have listeners"
+  },
+  {
+   "bugid": 1904004,
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "Add a OriginAttributes::IsPrivateBrowsing helper method"
+  },
+  {
+   "bugid": 1900678,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "about:webrtc copy button rollover should be consistently positioned"
+  },
+  {
+   "bugid": 1904096,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "GeckoTraceEvent.h is behind upstream libwebrtc (and should be un-formatted)"
+  },
+  {
+   "bugid": 1891040,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Regression: Toolbar animation in Fullscreen is not smooth on macOS Catalina"
+  },
+  {
+   "bugid": 1902961,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "DevTools incorrectly reports that element with `float:left;display:inline-grid` has been changed to block"
+  },
+  {
+   "bugid": 1767657,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Intermittent devtools/client/netmonitor/test/browser_net_telemetry_select_ws_frame.js | single tracking bug"
+  },
+  {
+   "bugid": 1500188,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Don't modify git HEAD when running `mach try`"
+  },
+  {
+   "bugid": 1903502,
+   "status": "RESOLVED",
+   "component": "Developer Services:Mercurial: robustcheckout",
+   "summary": "Use in-tree robustcheckout.py in tasks running on generic-worker"
+  },
+  {
+   "bugid": 1901821,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add an option to display a divider before the IconButton in FaviconListItem and IconListItem"
+  },
+  {
+   "bugid": 1904021,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Pass the required survey data from Messaging to be used in the micro survey Prompt"
+  },
+  {
+   "bugid": 1904342,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update the SECOND_HOMEPAGE_VIEW trigger to use \">=\" instead of \"==\" to account for the potential delay in applying the experiment as it's not first run"
+  },
+  {
+   "bugid": 1902958,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Create a new tab without loading when adding a new tab from the tabs tray"
+  },
+  {
+   "bugid": 1812113,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Closed tabs should be reopened at the bottom of the Tabs Tray"
+  },
+  {
+   "bugid": 1893784,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Delay while closing tab when \"enable tabs tray to compose rewrite\" is enabled"
+  },
+  {
+   "bugid": 1904046,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Close tab on Tabs Tray grid view is not providing a context to TalkBack"
+  },
+  {
+   "bugid": 1904156,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Set the selected tab ID during the TabsTrayStore intialization"
+  },
+  {
+   "bugid": 1893527,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Add app menu to landscape/tablet address bar"
+  },
+  {
+   "bugid": 1902957,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Add a new tab button in the navigation bar"
+  },
+  {
+   "bugid": 1904268,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Refactor setting the Display Toolbar colors into its own function in BrowserToolbarView"
+  },
+  {
+   "bugid": 1904269,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Remove redundant `menuBuilder` and `private` setting in `DefaultToolbarIntegration.init`"
+  },
+  {
+   "bugid": 1902330,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Create UrlbarSearchTermsPersistence component and implement test cases"
+  },
+  {
+   "bugid": 1903775,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma browser/components/urlbar/tests/browser/browser_UrlbarInput_overflow.js | Check the scheme value after blur - \"\" == \"https://\" - when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1869215,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Docs] Create Messaging System glossary"
+  },
+  {
+   "bugid": 1903416,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow for turning off guided notifications for set to default on Windows using a pref"
+  },
+  {
+   "bugid": 1903697,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Make all bordered tables in ASRouter Admin the same width"
+  },
+  {
+   "bugid": 1904345,
+   "status": "REOPENED",
+   "component": "Firefox:Messaging System",
+   "summary": "Perma documentation ./mach doc | Error: 31 new warnings have been introduced compared to the limit in docs/config.yml"
+  },
+  {
+   "bugid": 1904120,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version f9ff613e56dca65b95ce9e10d13350008b523979 from 2024-06-21 14:13:54"
+  },
+  {
+   "bugid": 1891854,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Do not copy session store cookies in the backup staging directory if the backup is not encrypted"
+  },
+  {
+   "bugid": 1901520,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Style the generated single-archive file to match the specification"
+  },
+  {
+   "bugid": 1901534,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Compute a new enc-state.json for the recovered profile after recovery"
+  },
+  {
+   "bugid": 1903820,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Update intro language on settings experimental page"
+  },
+  {
+   "bugid": 1903888,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Close duplicate tab confirmation message only appears if 2 or more tabs are closed"
+  },
+  {
+   "bugid": 1904228,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "MLB box scores hard to read"
+  },
+  {
+   "bugid": 1378595,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Remove redundant -fno-exceptions"
+  },
+  {
+   "bugid": 1903035,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move TARGET_CPCOM_ABI detection from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903040,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move Child Process Name for IPC checks from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903367,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "When checking for asm flag, the configure script outputs \"checking whether the C compiler\""
+  },
+  {
+   "bugid": 1903369,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Check for -pipe is never honored"
+  },
+  {
+   "bugid": 1903418,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Wayland builds need xkbcommon >= 0.4.1"
+  },
+  {
+   "bugid": 1903628,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_FIX_LINK_PATHS from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903956,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma toolchain wasi-crt-trunk make[1]: *** [Makefile:675: check-symbols] Error 1"
+  },
+  {
+   "bugid": 1900066,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent mozilla/tests/webdriver/harness/crash_content_process.py | test_detect_crash - teardown error: webdriver.error.NoSuchWindowException: no such window (404): Browsing context has been discarded"
+  },
+  {
+   "bugid": 1889462,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "crash reporter shown for background tasks"
+  },
+  {
+   "bugid": 1901035,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Document preference of Glean crash pings over Telemetry"
+  },
+  {
+   "bugid": 1901539,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Refactor crashreporter network code"
+  },
+  {
+   "bugid": 1658094,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clearing site preferences on shutdown also clears exceptions for clearing on shutdown"
+  },
+  {
+   "bugid": 1903836,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Intermittent toolkit/components/processtools/tests/browser/browser_test_powerMetrics.js | no CPU time should be recorded in the __other__ label - 84 === null -"
+  },
+  {
+   "bugid": 1899366,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Flip prefs to enable new text and layout + theme menus by default"
+  },
+  {
+   "bugid": 1901897,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Perma [tier 2] opt testing/firefox-ui/tests/functional/safebrowsing/test_initial_download.py TestSafeBrowsingInitialDownload.test_safe_browsing_initial_download | AssertionError: '<something>' not found in ['google4']"
+  }
+ ],
+ "fixed": 87,
+ "total": 94,
+ "restricted": 3
+}
