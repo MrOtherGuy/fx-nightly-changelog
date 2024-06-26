@@ -1,0 +1,520 @@
+{
+ "date": "2024-06-26",
+ "buildid": "20240626114148",
+ "cset": "b3b798d8d5231417c7c4c20a70cb7430395a886e",
+ "bugs": [
+  {
+   "bugid": 1903974,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "spurious additional gaps in content-exposed buffered ranges after samples are removed"
+  },
+  {
+   "bugid": 1904407,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Shutdown leaks through the color picker proxy with show-picker-disabled-readonly.html"
+  },
+  {
+   "bugid": 1904719,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused HTMLInputElement::mHandlingSelectEvent"
+  },
+  {
+   "bugid": 1904192,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`input` event handler runs recursively if asynchronously setting `<input>.value` during IME composition"
+  },
+  {
+   "bugid": 1903551,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "When creating a trusted type convert null to the empty string and enable all Trusted Types WPTs"
+  },
+  {
+   "bugid": 1903879,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma W-b [tier 2] application crashed [@ RefPtr<mozilla::dom::Document>::operator bool] | /trusted-types/worker-constructor.https.html"
+  },
+  {
+   "bugid": 1804788,
+   "status": "REOPENED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Support for Curve25519 in the WebCrypto API:  Ed25519 algorithm"
+  },
+  {
+   "bugid": 1766044,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "[profiler markers] Add CC markers for workers"
+  },
+  {
+   "bugid": 1888310,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver fails to announce announcements from A11yUtils.announce"
+  },
+  {
+   "bugid": 1901456,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Support for querying plain text"
+  },
+  {
+   "bugid": 1904007,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "MOZ_DIAGNOSTIC_ASSERT(false, \"mHeader->readerState == State::Paused\") in IPC fuzzing"
+  },
+  {
+   "bugid": 1902718,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Use Etagere for DrawTargetWebgl allocation"
+  },
+  {
+   "bugid": 1904466,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libjxl to new version 0cad754da2ee3ececcfa1aad8b858a0286c24e16 from 2024-06-24 14:09:09"
+  },
+  {
+   "bugid": 1900263,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle Non-local jumps for using statements"
+  },
+  {
+   "bugid": 1903037,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace DOMStringExternalString with JS strings using StringBuffer directly"
+  },
+  {
+   "bugid": 1885771,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: lineOrBytecode == lineOrBytecode_, at wasm/WasmCodegenTypes.h:566"
+  },
+  {
+   "bugid": 1886703,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: offset_ != (4294967295U), at wasm/WasmModuleTypes.h:284"
+  },
+  {
+   "bugid": 1901313,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Use set_spidermonkey_pref: always for wasm preferences"
+  },
+  {
+   "bugid": 1903341,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: isJSObject(), at js/src/wasm/WasmAnyRef.h:304"
+  },
+  {
+   "bugid": 1902068,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Fix HCM styling of input type=\"range\""
+  },
+  {
+   "bugid": 1874022,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "The PHC check has too much overhead on arm64"
+  },
+  {
+   "bugid": 1902186,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove or update metrics expiring in Firefox 130: networking.http_content_cssloader_ondatafinished_to_onstop_delay before Gecko version gets increased to 130 on 2024-07-08"
+  },
+  {
+   "bugid": 1897271,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Improve the failure handling of Data Collection"
+  },
+  {
+   "bugid": 1899874,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implement forceSoftwareRendering for canvas contextes"
+  },
+  {
+   "bugid": 1900828,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect test canvas software renderings"
+  },
+  {
+   "bugid": 1900863,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Reconsider the pref design, or at least add tests"
+  },
+  {
+   "bugid": 1901260,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect OS information and Browser Version"
+  },
+  {
+   "bugid": 1901291,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CPU model information"
+  },
+  {
+   "bugid": 1901771,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Refactor/Clean-up user characteristics code"
+  },
+  {
+   "bugid": 1901799,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CSS Pointer Capabilities"
+  },
+  {
+   "bugid": 1902003,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect ICE foundations info"
+  },
+  {
+   "bugid": 1902086,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect pointer event information"
+  },
+  {
+   "bugid": 1902359,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add missing data reviews to characteristics metrics"
+  },
+  {
+   "bugid": 1902364,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect touch event information"
+  },
+  {
+   "bugid": 1902671,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect motion/orientation event information"
+  },
+  {
+   "bugid": 1903609,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix usercharacteristics metrics that break on Fenix"
+  },
+  {
+   "bugid": 1904378,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Stop creating runnables to fire SMIL events if we know we can't have listeners"
+  },
+  {
+   "bugid": 1893921,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Creation of content processes is slow on macos arm64 runners on GitHub actions"
+  },
+  {
+   "bugid": 1623193,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Implement RTCDTMFSender.canInsertDTMF"
+  },
+  {
+   "bugid": 1903452,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "When the title bar is enabled, a white rectangle appears at the bottom of the browser at startup."
+  },
+  {
+   "bugid": 1904550,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "scroll-bars on windows have website-background show trough behind rounded corners"
+  },
+  {
+   "bugid": 1903790,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Split tracer actor in distinct class for each output type"
+  },
+  {
+   "bugid": 1903791,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Increate js tracer max depth and make it configurable"
+  },
+  {
+   "bugid": 1904339,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Watch expression input is missing focus indicator"
+  },
+  {
+   "bugid": 1903430,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Speedup resource array processing in resource command"
+  },
+  {
+   "bugid": 1903980,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Blank DevTools when closing them while iframe is being destroyed"
+  },
+  {
+   "bugid": 1767657,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Intermittent devtools/client/netmonitor/test/browser_net_telemetry_select_ws_frame.js | single tracking bug"
+  },
+  {
+   "bugid": 1904480,
+   "status": "RESOLVED",
+   "component": "Developer Services:Mercurial: robustcheckout",
+   "summary": "Perma [Tier 2] [taskcluster:error] exit status 255 | failed to import extension robustcheckout from /home/cltbld/tasks/<...>"
+  },
+  {
+   "bugid": 1904687,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Remove unused mozac_feature_prompts_suggest_strong_password_generated_password string from strings.xml"
+  },
+  {
+   "bugid": 1904221,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Perma fenix-debug org.mozilla.fenix.ui.SettingsHTTPSOnlyModeTest#turnOffHttpsOnlyModeTest | androidx.test.espresso.base.AssertionErrorHandler$AssertionFailedWithCauseError: 'an instance of android.widget.TextView and view.getText() with or without transfo"
+  },
+  {
+   "bugid": 1904490,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 3ab90b51f742447f60d5f70a3ea0c89763ee8ec2 from 2024-06-25 05:02:53"
+  },
+  {
+   "bugid": 1904556,
+   "status": "RESOLVED",
+   "component": "Fenix:Media",
+   "summary": "Pull-to-refresh is activated once on Youtube shorts"
+  },
+  {
+   "bugid": 1876328,
+   "status": "VERIFIED",
+   "component": "Fenix:PWA",
+   "summary": "The Keyboard disappears while using PWA with notifications blocked, and the PWA automatically closes after a short time"
+  },
+  {
+   "bugid": 1903827,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Close tab on tabstrip is not providing a context to TalkBack"
+  },
+  {
+   "bugid": 1904050,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Current tab on the Tabs Tray is not providing its current/selected state to TalkBack"
+  },
+  {
+   "bugid": 1885630,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement Shortcut states"
+  },
+  {
+   "bugid": 1902339,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Ensure Setting Menu Label and Description"
+  },
+  {
+   "bugid": 1904122,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Refactor] Move the BottomContainer integration & container view into a new package outside of navbar"
+  },
+  {
+   "bugid": 1895356,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Adjust Translations Wait State on Error and Snackbar Persistance"
+  },
+  {
+   "bugid": 1904370,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Improve Translations Translate Telemetry by Sending false to ` reportAsAutoTranslate` in GeckoViewTranslations"
+  },
+  {
+   "bugid": 1901518,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add urlbar-persisted-search-terms-schema.json"
+  },
+  {
+   "bugid": 1901519,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add urlbar-persisted-search-terms-ui-schema.json"
+  },
+  {
+   "bugid": 1901297,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow for quick toggling of light/dark mode from about:messagepreview"
+  },
+  {
+   "bugid": 1887765,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add telemetry to report the total size of the backup staging directory."
+  },
+  {
+   "bugid": 1903602,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Update settings-data-backup-restore-choose string to \"Choose backup file\""
+  },
+  {
+   "bugid": 1902303,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "screenshot not working properly with highlighted text"
+  },
+  {
+   "bugid": 1895873,
+   "status": "ASSIGNED",
+   "component": "Firefox:Search",
+   "summary": "Remove icons and search_form from the application provided search WebExtensions"
+  },
+  {
+   "bugid": 1904478,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Perma [Tier 2] browser/components/preferences/tests/browser_experimental_features_resetall.js | single tracking bug"
+  },
+  {
+   "bugid": 1845340,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Consider ensuring shopping's OHTTP keyconfig caching happens in the parent process"
+  },
+  {
+   "bugid": 1902639,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview is displayed for the previous hovered tab when moving the cursor to another tab at the right moment if the image preview is disabled"
+  },
+  {
+   "bugid": 1899708,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move DSO_LDOPTS old-configure references to moz.configure"
+  },
+  {
+   "bugid": 1903370,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move -fPIC flag checks from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903620,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "`./mach build` should respect CPU affinity"
+  },
+  {
+   "bugid": 1903638,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove last mention of $GCC in old-configure"
+  },
+  {
+   "bugid": 1904479,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Refresh rust workspace hack"
+  },
+  {
+   "bugid": 1904586,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update `mach install langpack-%` to work with new L10n git repo"
+  },
+  {
+   "bugid": 1895962,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add a shipitscript task that updates the Nightly version in shipit if necessary once the builds are in the Mozilla archive"
+  },
+  {
+   "bugid": 1903966,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Enable cppunittest on Apple Silicon"
+  },
+  {
+   "bugid": 1904543,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [tier 2] Windows MinGW all lld: error: unknown argument: -z | clang: error: linker command failed with exit code 1 (use -v to see invocation)"
+  },
+  {
+   "bugid": 1510671,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Security Warning: load used to dynamically load code"
+  },
+  {
+   "bugid": 1841818,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Consider enabling MOZ_LOG logging in release and beta geckoview builds"
+  },
+  {
+   "bugid": 1903706,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "[wdspec] Pass target platform to pytest to accurately detect and utilize the operating system (required for Android testing)"
+  },
+  {
+   "bugid": 1903829,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Use latest zip crate to remove the patched in-tree crate"
+  },
+  {
+   "bugid": 1898745,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Move section classification heuristics from the child process to the parent process"
+  },
+  {
+   "bugid": 1896262,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "High frequency Android Shippable xpcshell.toml:toolkit/components/extensions/test/xpcshell/test_ext_cookieBehaviors.js | Test timed out when Gecko 127 merges to beta on 2024-05-13"
+  }
+ ],
+ "fixed": 62,
+ "total": 85,
+ "restricted": 2
+}
