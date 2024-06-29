@@ -1,0 +1,502 @@
+{
+ "date": "2024-06-29",
+ "buildid": "20240629093945",
+ "cset": "61a856d287032a910148200017343e46b2e859a4",
+ "bugs": [
+  {
+   "bugid": 1900592,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Implement keyframe request in VideoEncoder"
+  },
+  {
+   "bugid": 1902627,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Enable ffmpeg encoder on macOS"
+  },
+  {
+   "bugid": 1903055,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Tune FFmpegVideoEncoder/AppleVT encoder parameters"
+  },
+  {
+   "bugid": 1903071,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Don't reject parameters that are valid in H264 profile 6.2, when it's likely x624 will be used"
+  },
+  {
+   "bugid": 1903582,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "SVC encoding with libvpx/libaom doesn't work"
+  },
+  {
+   "bugid": 1904018,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ mozilla::ipc::IProtocol::CanSend] through [@ mozilla::dom::ContentParent::RecvCompleteAllowAccessFor]"
+  },
+  {
+   "bugid": 1905332,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Perma W-b [tier 2] /scroll-to-text-fragment/non-html-documents.html | TEST-UNEXPECTED-NOTRUN | /scroll-to-text-fragment/non-html-documents.html | Text directive blocked in application/json - expected TIMEOUT"
+  },
+  {
+   "bugid": 1905021,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "HyperTextAccessible::IsCaretAtEndOfLine returns true when it shouldn't"
+  },
+  {
+   "bugid": 1905065,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "IA2_TEXT_OFFSET_CARET should return nothing for IA2_TEXT_BOUNDARY_CHAR when caret at end of line"
+  },
+  {
+   "bugid": 1901734,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "undefined behaviour: crashing with stock source, gfx.webrender.software=true, --enable-debug-symbols, --disable-install-strip, --disable-optimize"
+  },
+  {
+   "bugid": 1902975,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [Tier 2] android bugs/621918-2.svg == bugs/621918-2-ref.svg | image comparison, max difference: 255, number of differing pixels: 32"
+  },
+  {
+   "bugid": 1878391,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add cookie byte cap for partitioned cookies (phase 1)"
+  },
+  {
+   "bugid": 1904557,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Unify and improve cookie warning messages"
+  },
+  {
+   "bugid": 1855990,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Dynamic Toolbar hides active input field"
+  },
+  {
+   "bugid": 1897271,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Improve the failure handling of Data Collection"
+  },
+  {
+   "bugid": 1900863,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Reconsider the pref design, or at least add tests"
+  },
+  {
+   "bugid": 1901260,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect OS information and Browser Version"
+  },
+  {
+   "bugid": 1901291,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CPU model information"
+  },
+  {
+   "bugid": 1901771,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Refactor/Clean-up user characteristics code"
+  },
+  {
+   "bugid": 1901799,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CSS Pointer Capabilities"
+  },
+  {
+   "bugid": 1902003,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect ICE foundations info"
+  },
+  {
+   "bugid": 1902086,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect pointer event information"
+  },
+  {
+   "bugid": 1902319,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Separate BTP user interaction tracking from ContentBlockingUserInteraction"
+  },
+  {
+   "bugid": 1902359,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add missing data reviews to characteristics metrics"
+  },
+  {
+   "bugid": 1902364,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect touch event information"
+  },
+  {
+   "bugid": 1902671,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect motion/orientation event information"
+  },
+  {
+   "bugid": 1903609,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix usercharacteristics metrics that break on Fenix"
+  },
+  {
+   "bugid": 1901387,
+   "status": "RESOLVED",
+   "component": "Core:Security: CAPS",
+   "summary": "{nsIPrincipal, BasePrincipal}::CheckMayLoad needs to be threadsafe to allow workers to stop needing to synchronously block and consult the main thread"
+  },
+  {
+   "bugid": 1903523,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "3.41% Base Content Resident Unique Memory (Windows) regression on Fri June 14 2024"
+  },
+  {
+   "bugid": 1903806,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Clean up directory lock dropping in Maintenance and DatabaseMaintenance"
+  },
+  {
+   "bugid": 1905335,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Backport upstream fix for cursor not hiding when it should while screen sharing"
+  },
+  {
+   "bugid": 1905348,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Perma dom/media/webrtc/tests/mochitests/test_peerConnection_basicScreenshare.html | Expected VP8, VP9, four variants of H264, ULPFEC, and RED - got 6, expected 8 when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1905346,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Perma JsepSessionTest.ValidateOfferedVideoCodecParams | Expected equality of these values: when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1766412,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Opening profile directory under flatpak no longer works"
+  },
+  {
+   "bugid": 1882079,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Flatpak] Choosing download directory over FileChooser portal doesn't display real path"
+  },
+  {
+   "bugid": 1902250,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Fix move-to-rect popup alignment of un-anchored popups on RTL."
+  },
+  {
+   "bugid": 1904765,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Land initial patch to support High Contrast Mode in DevTools"
+  },
+  {
+   "bugid": 1904831,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Annotate individual netmonitor tests with https_first_disabled"
+  },
+  {
+   "bugid": 1823310,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Link in https://firefox-source-docs.mozilla.org/testing/automated-testing/index.html#functional-testing is invalid"
+  },
+  {
+   "bugid": 1905044,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Add tabbrowser-reviewers, theme-reviewers, sessionstore-reviewers to docs"
+  },
+  {
+   "bugid": 1904777,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "perma \"Aborting, could not apply patch buffer for None.\""
+  },
+  {
+   "bugid": 1904903,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Cannot push to try: \"Branch name doesn't conform to GIT standards\""
+  },
+  {
+   "bugid": 1896405,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add \"close\" behaviour to the Prompt"
+  },
+  {
+   "bugid": 1903521,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] Add \"close\" behavior to the microsurvey Bottom Sheet"
+  },
+  {
+   "bugid": 1904548,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Refactor the documentation for the Remove duplicate descriptions in NimbusMessagingController that are already defined in NimbusMessagingControllerInterface"
+  },
+  {
+   "bugid": 1905349,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey - Add the required a11y strings to the UI componets with 'contentDescription'"
+  },
+  {
+   "bugid": 1897246,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[Menu Redesign] Implement \"Add to Home screen\" menu functionality"
+  },
+  {
+   "bugid": 1905271,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 7e50de72c52a90c93caf99abca822cfee2092fb1 from 2024-06-28 05:02:51"
+  },
+  {
+   "bugid": 1894512,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Implement long press tab tray button"
+  },
+  {
+   "bugid": 1902969,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Moving the Tab with the Warning Dialog displayed to a New Window results in a blank Tab"
+  },
+  {
+   "bugid": 1903938,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Cleanup fxa commands so they are better able to support new commands"
+  },
+  {
+   "bugid": 1903841,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove ghost shadow on feature callout on MacOS"
+  },
+  {
+   "bugid": 1899782,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab wallpapers v2 flip on in nightly"
+  },
+  {
+   "bugid": 1902099,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add thumbs up/down UI to Recommended Stories cards"
+  },
+  {
+   "bugid": 1904594,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab switch Pocket recs to Merino"
+  },
+  {
+   "bugid": 1898380,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Replace the \"unsaved changes\" dialog in the PDF viewer with a clearer design"
+  },
+  {
+   "bugid": 1904585,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add some chrome events for watching pdf.js"
+  },
+  {
+   "bugid": 1904779,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 2fbd61944b88d67a2df97ae8a3ac1fa86f7b4092 from 2024-06-25 19:15:15"
+  },
+  {
+   "bugid": 1891146,
+   "status": "NEW",
+   "component": "Firefox:Profile Backup",
+   "summary": "Collect telemetry on how long it takes to create a backup"
+  },
+  {
+   "bugid": 1893295,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Build set / change backup encryption password dialog element"
+  },
+  {
+   "bugid": 1903064,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Do not allow backups to be recovered in browser versions older than the one that created the backup"
+  },
+  {
+   "bugid": 1903606,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Don't allow backups to be recovered when the appName does not match"
+  },
+  {
+   "bugid": 1905126,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add new Qwant icon to the dumps"
+  },
+  {
+   "bugid": 1900486,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Review Checker Blank Screen after filling out Satisfaction Microsurvey and Disabling Feature"
+  },
+  {
+   "bugid": 1884970,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Close current tab button is missing an accessible name and role"
+  },
+  {
+   "bugid": 1904001,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Merge .bookmark-item and crisp favicon rendering rules from browser/base/content/browser.css into panelUI-shared.css and toolbarbutton-icons.css"
+  },
+  {
+   "bugid": 1904077,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Merge Stop and Reload button rules from browser/base/content/browser.css and toolbarbutton-icons.css into toolbarbuttons.css"
+  },
+  {
+   "bugid": 1903036,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move check for libstdc++ static linkage from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903232,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add wrapper for mkstemp call pattern in moz.configure"
+  },
+  {
+   "bugid": 1903591,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Move js-confdefs / mozilla-config include from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1903982,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move X11-specific detection from moz_fix_link_paths to pkg_check_modules(\"MOZ_X11\", ...)"
+  },
+  {
+   "bugid": 1904609,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Export a python function to get the build id"
+  },
+  {
+   "bugid": 1904789,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_PROGRAM_LDFLAGS from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1905251,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang-trunk] wasm-ld: error: /builds/worker/fetches/sysroot-wasm32-wasi/lib/wasm32-wasi/crt1-command.o: undefined symbol: __indirect_function_table"
+  },
+  {
+   "bugid": 1859814,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Always set `defaultValue` to the type `prompt`"
+  },
+  {
+   "bugid": 1901032,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"network.setCacheBypass\" command"
+  },
+  {
+   "bugid": 1842832,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Move the private browsing toggle to initial install dialog"
+  },
+  {
+   "bugid": 1905084,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Make Alex Franchuk a peer of the Core: Crash reporting module"
+  },
+  {
+   "bugid": 1895947,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Text align buttons in reader view should also align images"
+  },
+  {
+   "bugid": 1904040,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Replace loading.png with loading.svg"
+  },
+  {
+   "bugid": 1905153,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Non-functional extension APIs at startup due to race condition, when asyncLoadModule is called before loadModule"
+  },
+  {
+   "bugid": 1887869,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "declarativeNetRequest.updateSessionRules doesn't work with local file"
+  }
+ ],
+ "fixed": 72,
+ "total": 82,
+ "restricted": 0
+}
