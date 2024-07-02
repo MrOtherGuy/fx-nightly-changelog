@@ -1,0 +1,424 @@
+{
+ "date": "2024-07-02",
+ "buildid": "20240702092648",
+ "cset": "8d56911c2bb135c6e7768a3b2602a5d0ce807c66",
+ "bugs": [
+  {
+   "bugid": 1900592,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Implement keyframe request in VideoEncoder"
+  },
+  {
+   "bugid": 1902627,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Enable ffmpeg encoder on macOS"
+  },
+  {
+   "bugid": 1903055,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Tune FFmpegVideoEncoder/AppleVT encoder parameters"
+  },
+  {
+   "bugid": 1903071,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Don't reject parameters that are valid in H264 profile 6.2, when it's likely x624 will be used"
+  },
+  {
+   "bugid": 1903582,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "SVC encoding with libvpx/libaom doesn't work"
+  },
+  {
+   "bugid": 1905636,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "Allow buffering of frames in AAudio input callbacks"
+  },
+  {
+   "bugid": 1860915,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement part of Document Policy for force-load-at-top for text fragment"
+  },
+  {
+   "bugid": 1899615,
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "javascript.options.mem.gc_incremental_slice_ms is always doubled"
+  },
+  {
+   "bugid": 1904442,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Consider making GlobalTeardownObserver::mOwnerWindow a bool"
+  },
+  {
+   "bugid": 1905712,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Temporarily disable geoclue support"
+  },
+  {
+   "bugid": 1904773,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Implement makeshift user-involvement"
+  },
+  {
+   "bugid": 1904124,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Move all notification related mochitests/browser tests to dom/notification"
+  },
+  {
+   "bugid": 1901510,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement reporting CSP violations for Trusted Types' \"trusted-types\" CSP directive for Windows (not workers)"
+  },
+  {
+   "bugid": 1905120,
+   "status": "NEW",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "WebCrypto: ECDH does not require alg in jwk"
+  },
+  {
+   "bugid": 1905617,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "WebCrypto: Extending telemetry for to support Ed25519"
+  },
+  {
+   "bugid": 1897444,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Boxes Rendered with white background with Adreno GPU on Surface Pro X"
+  },
+  {
+   "bugid": 1905356,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Partial present only works when buffer age is 3 or less"
+  },
+  {
+   "bugid": 1904992,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle JSOp::AddDisposable in the stack dump in disassemble"
+  },
+  {
+   "bugid": 1905117,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allocate more JS strings with a StringBuffer instead of raw malloc"
+  },
+  {
+   "bugid": 1905609,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Clean-up various floating point conversion methods"
+  },
+  {
+   "bugid": 1898153,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Refactor Code/CodeTier/etc to be ready for partial tiering"
+  },
+  {
+   "bugid": 1905351,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma layout/base/crashtests/453894-1.xhtml | assertion count 5 is more than expected 0 assertions when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1905462,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Clean up in ComputeISizeValue() around the handling of aspect-ratio"
+  },
+  {
+   "bugid": 1905463,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Cap aspect-ratio's automatic minimum size by its maximum size"
+  },
+  {
+   "bugid": 1905213,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Enable symmetrical CSS letter-spacing on early Beta builds"
+  },
+  {
+   "bugid": 1813630,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Early Hints: Add telemetry how often the parent-connect-timeout timer is necessary to clear up EarlyHintPreloader"
+  },
+  {
+   "bugid": 1902024,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable bounce.tracking.protection.purge_action event for release"
+  },
+  {
+   "bugid": 1905348,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Perma dom/media/webrtc/tests/mochitests/test_peerConnection_basicScreenshare.html | Expected VP8, VP9, four variants of H264, ULPFEC, and RED - got 6, expected 8 when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1881329,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Revert \"Add close method to file picker\""
+  },
+  {
+   "bugid": 1904814,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "[Windows] The Credit Cards/Addresses autocomplete dropdown is grey instead of white"
+  },
+  {
+   "bugid": 1905569,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add InspectorUtils.getCSSRegisteredProperty method"
+  },
+  {
+   "bugid": 1904839,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Color picker isn't usable in High Contrast Mode"
+  },
+  {
+   "bugid": 1905606,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Fix StyleEditor onStyleApplied frequent intermittents due to throttling"
+  },
+  {
+   "bugid": 1901955,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Intermittent devtools/client/styleeditor/test/browser_styleeditor_syncAddRule.js | single tracking bug"
+  },
+  {
+   "bugid": 1904710,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Report telemetry when click continue on the MicrosurveyRequestPrompt"
+  },
+  {
+   "bugid": 1905082,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Pass the required question and icon values from Messaging to be used in the microsurvey Bottom Sheet"
+  },
+  {
+   "bugid": 1905620,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add padding to the 'completed' content to match the Figma design"
+  },
+  {
+   "bugid": 1905621,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Open the microsurvey bottom sheet to 100% of the view only - 50% no longer required"
+  },
+  {
+   "bugid": 1899890,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Downstream the inactive tabs expanded boolean in App Store"
+  },
+  {
+   "bugid": 1890849,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] The colour of the tab tray icon needs to be Icon/Primary"
+  },
+  {
+   "bugid": 1900152,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Improve TalkBack experience on Translations Download Languages Screen"
+  },
+  {
+   "bugid": 1905684,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "[Translations] non-supported translations locale has a misleading UI"
+  },
+  {
+   "bugid": 1905498,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update AndroidX Test to the latest releases"
+  },
+  {
+   "bugid": 1905100,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove Search Tip related to Persisted Search Terms"
+  },
+  {
+   "bugid": 1905662,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Update triage rotation"
+  },
+  {
+   "bugid": 1900381,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from mainPopupSet"
+  },
+  {
+   "bugid": 1905632,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from mainKeyset"
+  },
+  {
+   "bugid": 1905704,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use single image element for about dialog updater icons"
+  },
+  {
+   "bugid": 1895563,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Uncaught SyntaxError: redeclaration of let nsContextMenu"
+  },
+  {
+   "bugid": 1905721,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Firefox fires unknown event: [\"activity_stream\", \"event\", \"POCKET_THUMBS_DOWN\"] for thumbs down action"
+  },
+  {
+   "bugid": 1904655,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "389.5 - 2.01% pdfpaint bug1260585.pdf / pdfpaint issue15577.pdf + 427 more (Linux, OSX, Windows) regression on Sat June 15 2024"
+  },
+  {
+   "bugid": 1905382,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Remove unnecessary remote-settings dump exclusions from allowed-dupes.mn"
+  },
+  {
+   "bugid": 1904961,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Perma OSX TEST-UNEXPECTED-FAIL | browser/components/screenshots/tests/browser/browser_screenshots_test_visible.js | Uncaught exception in test bound test_visibleScreenshotRTL - Waiting for screenshot to copy to clipboard - timed out after 50 tri"
+  },
+  {
+   "bugid": 1905322,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Disable prompts for SuperfluousAuth and AutomaticAuth"
+  },
+  {
+   "bugid": 1904868,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Fix leaks from PlacesQuery when closing during a fetch in progress"
+  },
+  {
+   "bugid": 1905692,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Remove inline sidebar close button oncommand handler"
+  },
+  {
+   "bugid": 1901298,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Tab has no focus ring when a LWT is installed"
+  },
+  {
+   "bugid": 1905311,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Move or remove the rest of browser/base/content/browser.css"
+  },
+  {
+   "bugid": 1905635,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use nesting in aboutDialog.css"
+  },
+  {
+   "bugid": 1882556,
+   "status": "ASSIGNED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "Enable .deb package publishing on esr"
+  },
+  {
+   "bugid": 1899524,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Use nsACString types for the crash annotations' generated code"
+  },
+  {
+   "bugid": 1903583,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "rust_minidump_writer_linux and Breakpad disagree on the alignment of the context structure on Android/AArch64"
+  },
+  {
+   "bugid": 1905633,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "report XHR channel status as a new crash submission failures telemetry"
+  },
+  {
+   "bugid": 1902180,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove or update metrics expiring in Firefox 130: formautofill.form_submission_heuristic before Gecko version gets increased to 130 on 2024-07-08 before Gecko version gets increased to 130 on 2024-07-08"
+  },
+  {
+   "bugid": 1902171,
+   "status": "NEW",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove or update probes expiring in Firefox 130: PWMGR_NUM_FORM_HAS_POSSIBLE_USERNAME_EVENT_PER_DOC before Gecko version gets increased to 130 on 2024-07-08"
+  },
+  {
+   "bugid": 1904905,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove `nsNavHistoryContainerResultNode::ReverseUpdateStats`"
+  },
+  {
+   "bugid": 1904368,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Cannot change focus or selection with keyboard in moz-radio-group when first button is disabled"
+  },
+  {
+   "bugid": 1851083,
+   "status": "VERIFIED",
+   "component": "WebExtensions:General",
+   "summary": "Manifest V3 extensions with activeTab/tabs permission require user interaction not previously required, showing blue dot on desktop and no indicator on Android"
+  },
+  {
+   "bugid": 1905505,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Event page terminates immediately at event page wakeup when an extension event is triggered while the event page is suspended"
+  }
+ ],
+ "fixed": 59,
+ "total": 69,
+ "restricted": 1
+}
