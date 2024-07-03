@@ -1,0 +1,496 @@
+{
+ "date": "2024-07-03",
+ "buildid": "20240703093917",
+ "cset": "144fa502c7e55f71a80bbbf766cb2d915aeb1454",
+ "bugs": [
+  {
+   "bugid": 1760529,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Some 4320p60 (8K 60fps) videos on YouTube will always fill the video SourceBuffer and cause the player to reload once."
+  },
+  {
+   "bugid": 1905634,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Incorrect usage of preprocessor conditionals around media engine prefs"
+  },
+  {
+   "bugid": 1889503,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "[cssom-view] Specify document.caretPositionFromPoint in shadow DOM scenario"
+  },
+  {
+   "bugid": 1890842,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Implement CSSPageDescriptors"
+  },
+  {
+   "bugid": 1892514,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Copy-paste of text from local text editor to Codepen demo is slow, but deleting that text is fast. Copy-paste of text from browser to Codepen demo is fast, but deleting that text is slow (STR in comment 8)"
+  },
+  {
+   "bugid": 1864327,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "dom/html/test/forms/test_required_attribute.html is not testing correctly"
+  },
+  {
+   "bugid": 1905717,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Fall back from geoclue to GLS"
+  },
+  {
+   "bugid": 1898536,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add variations of same-document-tests for force-load-at-top"
+  },
+  {
+   "bugid": 1901510,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement reporting CSP violations for Trusted Types' \"trusted-types\" CSP directive for Windows (not workers)"
+  },
+  {
+   "bugid": 1902561,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Pressing F6 or Control+Tab no longer takes you to the search box in the Library view"
+  },
+  {
+   "bugid": 1894859,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "[clang-trunk] Perma instrumentation/afl-llvm-common.cc:94:22: error: no member named 'startswith' in 'llvm::StringRef'; did you mean 'starts_with'?"
+  },
+  {
+   "bugid": 1902253,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "canvas composition ops not working correctly with emoji filltext"
+  },
+  {
+   "bugid": 1903058,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Perma Late Beta TEST-UNEXPECTED-FAIL | dom/canvas/test/webgl-conf/generated/<test> when Gecko 129 switches from Early Beta to Late Beta on 2024-07-19"
+  },
+  {
+   "bugid": 1905166,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update harfbuzz to new version 9.0.0 from 2024-06-27 18:38:31"
+  },
+  {
+   "bugid": 1904566,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Perma layout/reftests/svg/filters/feDropShadow-01.svg == layout/reftests/svg/filters/feDropShadow-01-ref.svg | image comparison, max difference: 97, number of differing pixels: 22869 when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1905807,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add initial PatternBuilder trait"
+  },
+  {
+   "bugid": 1448922,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "GeckoProfiler.cpp has a stale link to cleopatra/js/parserWorker.js"
+  },
+  {
+   "bugid": 1905063,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma mochitest/xpc js/xpconnect/tests/unit/test_json_parse_with_source.js | js/xpconnect/tests/mochitest/test_json_parse_with_source_worker.html when Gecko 129 merges to Beta on 2024-07-08"
+  },
+  {
+   "bugid": 1905967,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove Emulates Undefined fuse Preference"
+  },
+  {
+   "bugid": 1905001,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add logical accessors for IntrinsicSize"
+  },
+  {
+   "bugid": 1905675,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Clean up IntersectionObserver setup."
+  },
+  {
+   "bugid": 1905743,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "<input type=\"number\"> too narrow when using min & max attributes"
+  },
+  {
+   "bugid": 1905247,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "scroller with 'scroll-snap-align' on descendants refuses to scroll until you give it extremely out-of-bounds scrollLeft values"
+  },
+  {
+   "bugid": 1903242,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "TypeError: can't convert null to object"
+  },
+  {
+   "bugid": 1903905,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent Assertion failure: stream != (0xFFFF), at /builds/worker/checkouts/gecko/netwerk/sctp/datachannel/DataChannel.cpp:2472"
+  },
+  {
+   "bugid": 1895741,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Intermittent valgrind-test | 28 bytes in 1 blocks are definitely lost at malloc / __res_context_send / __res_context_query / __res_context_querydomain"
+  },
+  {
+   "bugid": 1900362,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Do not override the Priority header when set by the user"
+  },
+  {
+   "bugid": 1901768,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 129 to use NSS 3.102"
+  },
+  {
+   "bugid": 1905453,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "gather telemetry on third-party PKCS#11 module prevalence"
+  },
+  {
+   "bugid": 1905011,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Replace counting of pending clear/shutdown storage operations with evaluation of existing directory locks"
+  },
+  {
+   "bugid": 1902162,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libgbm to new version 2498d6738275eeb0e64814cc841596a37293fac9 from 2024-06-12 21:20:06"
+  },
+  {
+   "bugid": 1905985,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "set missing from update_libepoxy.sh for error handling"
+  },
+  {
+   "bugid": 1898157,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Evaluating `1..toString(); debugger;` in console crashes Debugger when cm6 is enabled"
+  },
+  {
+   "bugid": 1905380,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Migrate the extension for rendering line markers from View Plugins to State Fields"
+  },
+  {
+   "bugid": 1905653,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Escape inside template literals gets lost by prettify"
+  },
+  {
+   "bugid": 1822975,
+   "status": "ASSIGNED",
+   "component": "DevTools:General",
+   "summary": "Stop setting javascript.options.asyncstack_capture_debuggee_only manually from devtools mochitests"
+  },
+  {
+   "bugid": 1905861,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 129] Update compatibility data"
+  },
+  {
+   "bugid": 1905865,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 129] Update webidl-pure-allowlist.js"
+  },
+  {
+   "bugid": 1900070,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Show impact of invalid at computed-value time custom property declaration in computed panel"
+  },
+  {
+   "bugid": 1904839,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Color picker isn't usable in High Contrast Mode"
+  },
+  {
+   "bugid": 1902326,
+   "status": "VERIFIED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Perma devtools/client/netmonitor/<test> | Test timed out when Gecko 129 merges to beta on 2024-07-08"
+  },
+  {
+   "bugid": 1905797,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "[rustc-nightly] Perma tools/lint/test/test_rustfmt.py::test_basic[rust] TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1815613,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Filename name suggested for downloaded file accepted as it is, then doesn't show up in download manager"
+  },
+  {
+   "bugid": 1905429,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[UX/UI] The bottom sheet should slide closed when the handle is dragged"
+  },
+  {
+   "bugid": 1905435,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add telemetry for the microsurvey sheet"
+  },
+  {
+   "bugid": 1895144,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[Menu Redesign] Show the snackbar after bookmarking a page"
+  },
+  {
+   "bugid": 1905992,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Sentry to version 7.11.0"
+  },
+  {
+   "bugid": 1812849,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Improve Snackbar message after removing \"Inactive tabs\""
+  },
+  {
+   "bugid": 1902761,
+   "status": "NEW",
+   "component": "Fenix:Tabs",
+   "summary": "Current tab on the tabstrip is not providing its current/selected state to TalkBack"
+  },
+  {
+   "bugid": 1842106,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Remove Firefox Android's lists of top domains used for address bar autocomplete suggestions"
+  },
+  {
+   "bugid": 1889474,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Implement navigation CFR"
+  },
+  {
+   "bugid": 1903384,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Fix the padding between the divider and the help icon."
+  },
+  {
+   "bugid": 1894333,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "[Debug Drawer] Make the FAB draggable"
+  },
+  {
+   "bugid": 1885648,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "[Menu Redesign] Implement Extensions menu states"
+  },
+  {
+   "bugid": 1882564,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Urlbar-zoom-button lacks an informative accessible name for a browser zoom reset control"
+  },
+  {
+   "bugid": 1903145,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Opening dedicated search button should close urlbar"
+  },
+  {
+   "bugid": 1905353,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Set up triage rotation JSON file for Address Bar"
+  },
+  {
+   "bugid": 1900663,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Opening a new window from macOS dock should set opener from existing window"
+  },
+  {
+   "bugid": 1898361,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add ability to disable WNP via whatsNewPage nimbus feature"
+  },
+  {
+   "bugid": 1899747,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "[Experiment] The pin message is not dismissed if a tab from a different window is pinned"
+  },
+  {
+   "bugid": 1905379,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Maybe remove regRename pref check when deciding whether to set default guidance notification check and update tests"
+  },
+  {
+   "bugid": 1892968,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Settle on better default values for browser.backup.sqlite.pages_per_step and browser.backup.sqlite.step_delay_ms"
+  },
+  {
+   "bugid": 1905172,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "UX updates for closing tabs remotely feature"
+  },
+  {
+   "bugid": 1899566,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview should remain visible during mouse wheel scrolling when there is no tab overflow"
+  },
+  {
+   "bugid": 1900867,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab Hover Preview: Hide the card when clicking on a tab"
+  },
+  {
+   "bugid": 1902430,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Update strings for close duplicate tabs in tab overview menu"
+  },
+  {
+   "bugid": 1905726,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove optional element id from browser theme variable handling"
+  },
+  {
+   "bugid": 1905922,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add \"stage\" as a server option for upload-bergamot.py script"
+  },
+  {
+   "bugid": 1905373,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Permanent failure line for successful tasks: rm: cannot remove 'confdefs.pytmp': No such file or directory - don't use for classification"
+  },
+  {
+   "bugid": 1905738,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "plugin-container's identifer changed from org.mozilla.plugincontainer to PositiveOptionValue(org.mozilla,).plugincontainer"
+  },
+  {
+   "bugid": 1904822,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Support \"handler\" field for \"browsingContext.userPromptOpened\" event"
+  },
+  {
+   "bugid": 1905641,
+   "status": "NEW",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Perma /webdriver/tests/bidi/browsing_context/handle_user_prompt/handle_user_prompt.py | test_beforeunload[capabilities0-False] - asyncio.exceptions.CancelledError"
+  },
+  {
+   "bugid": 1830136,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "addonStartup.json.lz4 grows unbounded due to nested _processedColors property"
+  },
+  {
+   "bugid": 1904909,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "PlacesUtils::GatherDataText and GatherDataHtml should not recurse into queries"
+  },
+  {
+   "bugid": 1904108,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add space tokens to moz-toggle.css"
+  },
+  {
+   "bugid": 1904110,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add space tokens to moz-page-nav-button.css"
+  },
+  {
+   "bugid": 1904113,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add space tokens to moz-message-bar.css"
+  },
+  {
+   "bugid": 1902011,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "TEST-UNEXPECTED-FAIL | toolkit/components/extensions/test/mochitest/test_ext_scripting_executeScript.html | Unexpected execution"
+  },
+  {
+   "bugid": 1902173,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove or update probes expiring in Firefox 130: extensions.quarantinedDomains.list* before Gecko version gets increased to 130 on 2024-07-08"
+  },
+  {
+   "bugid": 1905402,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent TV browser/components/backup/tests/browser/browser_settings.js | single tracking bug"
+  },
+  {
+   "bugid": 1830144,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Themes",
+   "summary": "startupData (persistent listeners) lost whenever theme.update is called"
+  }
+ ],
+ "fixed": 69,
+ "total": 81,
+ "restricted": 0
+}
