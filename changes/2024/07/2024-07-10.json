@@ -1,0 +1,538 @@
+{
+ "date": "2024-07-10",
+ "buildid": "20240710094438",
+ "cset": "33c9a6ddad0258fc4340ae1343af17c42e6d0b65",
+ "bugs": [
+  {
+   "bugid": 1902115,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Implement convert-to-RGB-frame for VideoFrame copyto method"
+  },
+  {
+   "bugid": 1906749,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "CSS Page rules incorrectly parse a single empty page name and pseudo-class list for page rules with no selectors"
+  },
+  {
+   "bugid": 1906801,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Improve ProcessTools.kill() error handling"
+  },
+  {
+   "bugid": 1876163,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "implement recent HTML spec changes to directionality and shadow DOM"
+  },
+  {
+   "bugid": 1881225,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "dir=auto should probably work with CDATA section nodes."
+  },
+  {
+   "bugid": 1896667,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Text changes do not apply to dir=auto on further ancestor after removing dir=auto from closer ancestor"
+  },
+  {
+   "bugid": 1906015,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Avoid QI from `nsINode*` to `nsCOMPtr<nsIFormControl>`"
+  },
+  {
+   "bugid": 1906706,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove MozApplicationEvent"
+  },
+  {
+   "bugid": 1903292,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "HTTPS-Only/First shouldn't try to downgrade pages on 3s timer that have HSTS enabled"
+  },
+  {
+   "bugid": 1906390,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Add ability to display available fuzzing targets via FUZZER=list"
+  },
+  {
+   "bugid": 1748814,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add auto scoped markers to the profiler Rust API"
+  },
+  {
+   "bugid": 1883903,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Consider capturing profiles using signals for timed out tests in CI"
+  },
+  {
+   "bugid": 1897914,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add support for gathering multi-process profiles using nsProfiler on the main thread"
+  },
+  {
+   "bugid": 1906892,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update my name in the tree"
+  },
+  {
+   "bugid": 1906649,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GfxInfo::Init() doesn't check the return value of PR_sscanf"
+  },
+  {
+   "bugid": 1897792,
+   "status": "REOPENED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Perma Android 13.0 Pixel5 AArch64 opt mochitest-webgl [tier 2] No tests run or test summary not found | TinderboxPrint: mochitest-webgl1-ext<br/><em class=\"testfail\">T-FAIL</em> when Gecko 128 merges to beta on 2024-06-10"
+  },
+  {
+   "bugid": 1906267,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Perma Android 13.0 Pixel5 AArch64 [tier 2] TEST-UNEXPECTED-FAIL | dom/canvas/test/webgl-conf/generated/test_conformance__rendering__blending.html | Expected [100,2,3,4], was [1,2,3,4]"
+  },
+  {
+   "bugid": 1874689,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "[forkserver] Enable forkserver by default on Nightly"
+  },
+  {
+   "bugid": 1905117,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allocate more JS strings with a StringBuffer instead of raw malloc"
+  },
+  {
+   "bugid": 1906312,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use external string cache more for NewStringFromBuffer"
+  },
+  {
+   "bugid": 1906866,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement %IteratorPrototype% [ @@dispose ] ( )"
+  },
+  {
+   "bugid": 1903126,
+   "status": "NEW",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Module.imports() should hide builtin module imports"
+  },
+  {
+   "bugid": 1906451,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Table.set incorrectly set entries to null for not-nullable typed tables"
+  },
+  {
+   "bugid": 1906792,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "More cleanup related to intrinsic size"
+  },
+  {
+   "bugid": 1906768,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "use-after-poison in [@ nsBlockFrame::ReflowPushedFloats]"
+  },
+  {
+   "bugid": 1905330,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Perma layout/reftests/writing-mode/1083848-1-inline-border.html == layout/reftests/writing-mode/1083848-1-inline-border-ref.html | image comparison, max difference: 255, number of differin when Gecko 129 switches from Early Beta to Late Beta on 2024-07-19"
+  },
+  {
+   "bugid": 1906793,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Text disappears after trivial devtools tweaks, for testcase that uses a web-font that's blocked by CSP"
+  },
+  {
+   "bugid": 1906823,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Complete the doc about how to run inference"
+  },
+  {
+   "bugid": 1903400,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Reject cookies containing %xa and %xd for cookie WPTs"
+  },
+  {
+   "bugid": 1889536,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Migrate IDNA handling to ICU4X"
+  },
+  {
+   "bugid": 1781383,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_wheelevents.html | single tracking bug"
+  },
+  {
+   "bugid": 1888946,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Do not terminate a wheel transaction when scrolling over an out of process iframe - scroll wheel"
+  },
+  {
+   "bugid": 1902017,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Do not terminate a wheel transaction when scrolling over an out of process iframe - pan gestures"
+  },
+  {
+   "bugid": 1906718,
+   "status": "RESOLVED",
+   "component": "Core:Performance",
+   "summary": "Update xsimd to new version e624857ac1474ea3abf3b5232832a77545fa528e from 2024-07-05 18:17:12"
+  },
+  {
+   "bugid": 1896054,
+   "status": "NEW",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Fork server child processes have the wrong main thread tid in glibc-internal structures"
+  },
+  {
+   "bugid": 1639546,
+   "status": "NEW",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Enable support for IndexedDB WPT tests to run in PBM"
+  },
+  {
+   "bugid": 1884426,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Provide UI notification when the out-of-process file-picker crashes"
+  },
+  {
+   "bugid": 1892684,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Text indent is shifted when the Conditional breakpoint panel is open"
+  },
+  {
+   "bugid": 1873060,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Move the tracer toggle icon from debugger to the toolbox"
+  },
+  {
+   "bugid": 1906816,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "devtools test might run into race on process kill with forkserver"
+  },
+  {
+   "bugid": 1905493,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Updatebot encountering an error when submitting to phabricator."
+  },
+  {
+   "bugid": 1899953,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "File will not deleted when download is cancelled"
+  },
+  {
+   "bugid": 1836795,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add more telemetry/fields to the already existing tab-kills telemetries"
+  },
+  {
+   "bugid": 1906789,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 9b83867cbe0c05a39e5521333658880cd27c74ca from 2024-07-09 05:03:38"
+  },
+  {
+   "bugid": 1906872,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Start the Nightly 130 development cycle"
+  },
+  {
+   "bugid": 1877948,
+   "status": "RESOLVED",
+   "component": "Fenix:Media",
+   "summary": "Video stutters on Samsung S devices"
+  },
+  {
+   "bugid": 1906784,
+   "status": "RESOLVED",
+   "component": "Fenix:PWA",
+   "summary": "[toolbar redesign] PWA shows navbar/spacing after rotation"
+  },
+  {
+   "bugid": 1902759,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "When a new tab is opened the TalkBack focus is shifted to the first visible tab in the tabstrip instead of the page content"
+  },
+  {
+   "bugid": 1903868,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Close tab controls are shown on all tabs making navigation throught the tabstrip TalkBack and switch tedious"
+  },
+  {
+   "bugid": 1906133,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Close tab button on Tabs Tray is not providing a context to TalkBack when the site has no site name"
+  },
+  {
+   "bugid": 1899970,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement the snackbar display for the quit menu item"
+  },
+  {
+   "bugid": 1902798,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] enable navbar on nightly"
+  },
+  {
+   "bugid": 1905368,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Showing \"Translations\" in the new Toolbar Tools Section should only happen if the Device Architecture Supports Translations"
+  },
+  {
+   "bugid": 1906557,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Removes the Home button in the toolbar redesign"
+  },
+  {
+   "bugid": 1906682,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Fix touch target size of the tab tray icon"
+  },
+  {
+   "bugid": 1906693,
+   "status": "ASSIGNED",
+   "component": "Fenix:Toolbar",
+   "summary": "Update the navbar CFR copy"
+  },
+  {
+   "bugid": 1906788,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] navbar flashes on PWA start"
+  },
+  {
+   "bugid": 1906791,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] PWA crashes on start in landscape mode"
+  },
+  {
+   "bugid": 1906889,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Create a section on the Debug Drawer for CFR Tools"
+  },
+  {
+   "bugid": 1904829,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Editing the hidden scheme in the address bar behaves inconsistently"
+  },
+  {
+   "bugid": 1906742,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Remove concurrency from clipboard CA actor"
+  },
+  {
+   "bugid": 1904630,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove existing default bookmarks in toolbar to be replaced by a bookmark style configurable messaging surface"
+  },
+  {
+   "bugid": 1905258,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Thumbs Up/Down UI: Add tests for Notifications and DS Card components"
+  },
+  {
+   "bugid": 1171799,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "bad A11Y/U7Y in PDF viewer toolbar"
+  },
+  {
+   "bugid": 1906729,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 1bdd6920ff0b443ab7893ee103d8185bcf2bb7f2 from 2024-07-07 20:07:29"
+  },
+  {
+   "bugid": 1822297,
+   "status": "ASSIGNED",
+   "component": "Firefox:Search",
+   "summary": "Remove search suggestions dependency on satchel"
+  },
+  {
+   "bugid": 1900124,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Update the Nightly Experiments page with recomp form input"
+  },
+  {
+   "bugid": 1898094,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add native code for pinning to Windows Start Menu"
+  },
+  {
+   "bugid": 1904436,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Implement private browser pinning using new taskbar APIs"
+  },
+  {
+   "bugid": 1893656,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fix drag n' drop in vertical tabstrip"
+  },
+  {
+   "bugid": 1881851,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Toolbarbuttons should have a visible border in prefers-contrast/forced-colors"
+  },
+  {
+   "bugid": 1887885,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mach: Collect --target values in telemetry"
+  },
+  {
+   "bugid": 1906909,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove stale comment referencing Aurora from init.configure"
+  },
+  {
+   "bugid": 1894154,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Enable Glean telemetry in CI"
+  },
+  {
+   "bugid": 1894153,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:MozillaBuild",
+   "summary": "Add more granular metrics collection for duration of build tiers"
+  },
+  {
+   "bugid": 1906610,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "add esr128 snap"
+  },
+  {
+   "bugid": 1902059,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Perma [Tier 2] org.mozilla.focus.activity.SettingsPrivacyTest#verifyCrossSiteCookiesBlockedTest | java.lang.AssertionError"
+  },
+  {
+   "bugid": 1895275,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove deprecated `TranslationState` constructor in v130."
+  },
+  {
+   "bugid": 1903675,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable Wd tests on Android Fission in automation"
+  },
+  {
+   "bugid": 1906699,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Bouncer",
+   "summary": "enable cron-bouncer-check on esr128"
+  },
+  {
+   "bugid": 1906095,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "ElementSendKeys calls scrollIntoView when an element is already visible"
+  },
+  {
+   "bugid": 1901662,
+   "status": "RESOLVED",
+   "component": "Toolkit:FeatureGate",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | No tests collected for subsuite 'featuregates' (Not in PYTHON_UNITTEST_MANIFESTS?)"
+  },
+  {
+   "bugid": 1898745,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Move section classification heuristics from the child process to the parent process"
+  },
+  {
+   "bugid": 1906873,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG Migration docs reference out-of-date information about a \"strict label regex\""
+  },
+  {
+   "bugid": 1899294,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Generate flat JSON file with color tokens for Figma from our a JSON design tokens"
+  },
+  {
+   "bugid": 1901573,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "The fxview-tab-list stories do not correctly render the meatball button"
+  },
+  {
+   "bugid": 1905975,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Remove the old button story in Storybook"
+  },
+  {
+   "bugid": 1905931,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Origin Controls Attention should not be shown for MV3 extensions optional_host_permissions"
+  }
+ ],
+ "fixed": 70,
+ "total": 88,
+ "restricted": 3
+}
