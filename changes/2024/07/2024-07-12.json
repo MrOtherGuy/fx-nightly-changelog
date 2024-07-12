@@ -1,0 +1,406 @@
+{
+ "date": "2024-07-12",
+ "buildid": "20240712095045",
+ "cset": "ae67a0e098b4518b9760482c91ef32871a0153d7",
+ "bugs": [
+  {
+   "bugid": 1869186,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Implement Reconfigure for FFmpegVideoEncoder"
+  },
+  {
+   "bugid": 1898501,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable playback of MP4 videos with YUV444 format"
+  },
+  {
+   "bugid": 1906342,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "For automatic eviction, prioritize removing data furthest from the current playback position."
+  },
+  {
+   "bugid": 1906648,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent Assertion failure: (detail::IsInBounds<From, To>(aFrom)), at /builds/worker/workspace/obj-build/dist/include/mozilla/Casting.h:183"
+  },
+  {
+   "bugid": 1906979,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Shouldn't report support for HEVC in Media Capabilities API if the HEVC pref is not enabled for the non-encrypted playback"
+  },
+  {
+   "bugid": 1903069,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Allow changing bitrate when encoding with x264 via ffmpeg on Linux"
+  },
+  {
+   "bugid": 1907320,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Allow style sharing on elements that specify transitions / animations."
+  },
+  {
+   "bugid": 1907393,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Scope matching traverses up the ancestor chain using the same bloom filter"
+  },
+  {
+   "bugid": 1901109,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "PPA API - Add unit tests to the JS Module"
+  },
+  {
+   "bugid": 1798379,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Caret doesn't disappear when designMode turns off"
+  },
+  {
+   "bugid": 1906932,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Frequent 07-09 16:16:29.287 F/MOZ_Assert( 3487): [3487] Assertion failure: !aContentToInsert.IsText(), at /builds/worker/checkouts/gecko/editor/libeditor/EditorBase.cpp:2349"
+  },
+  {
+   "bugid": 1901459,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Support embedded objects in text"
+  },
+  {
+   "bugid": 1904048,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "surma.dev - 9GB of main process memory usage from SourceSurfaceAlignedRawData::Init()"
+  },
+  {
+   "bugid": 1903553,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Talos tests do not catch frame building performance regressions"
+  },
+  {
+   "bugid": 1889417,
+   "status": "REOPENED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Tests should fail if they use l10n messages that do not exist"
+  },
+  {
+   "bugid": 1907132,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "EnqueuePromiseResolveThenableJob allocates an array object unnecessarily"
+  },
+  {
+   "bugid": 1907070,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Restore public headers for JS::WeakCache"
+  },
+  {
+   "bugid": 1906584,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "when accumulating boxes (for ex getBoundingClientRect) don't waste time trying to transform to the same frame"
+  },
+  {
+   "bugid": 1907072,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma /css/css-conditional/container-queries/pseudo-elements-*.html when Gecko 130 merges to beta on 2024-08-05"
+  },
+  {
+   "bugid": 1906768,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "use-after-poison in [@ nsBlockFrame::ReflowPushedFloats]"
+  },
+  {
+   "bugid": 1907243,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Assertion failure: aReflowInput.ComputedLogicalBorderPadding(wm).IsAllZero(), at /builds/worker/checkouts/gecko/layout/forms/nsCheckboxRadioFrame.cpp:121"
+  },
+  {
+   "bugid": 1906346,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Problem with Afrikaans hyphenation dictionary"
+  },
+  {
+   "bugid": 1906691,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "The Select Provider combobox in the Settings UI AI Chatbot Integration section is not programmatically labelled"
+  },
+  {
+   "bugid": 1907246,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add Anthropic Claude to chatbot provider list"
+  },
+  {
+   "bugid": 1904582,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Hit MOZ_CRASH(nsStandardURL::SanityCheck failed) at /netwerk/base/nsStandardURL.cpp:298"
+  },
+  {
+   "bugid": 1907287,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "typo http3 `max_data` `max_stream_data` pref doc"
+  },
+  {
+   "bugid": 1844563,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Create an allow-list mechanism for Bounce Tracking Protection"
+  },
+  {
+   "bugid": 1906826,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "BounceTrackingRecord should use  nsTHashSet<nsCStringHashKey>"
+  },
+  {
+   "bugid": 1903546,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Wrong non-scaling-stroke rendering in a nested svg"
+  },
+  {
+   "bugid": 1890467,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Reduce oscillations in audio `DriftController` output rate amplified by hysteresis"
+  },
+  {
+   "bugid": 1907295,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Kiosk mode - Gtk-WARNING gtk_window_set_titlebar() called on a realized window"
+  },
+  {
+   "bugid": 1904782,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Make TaskController select pool thread deterministically"
+  },
+  {
+   "bugid": 1897755,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Turn on and run debugger DAMP tests for Codemirror 6"
+  },
+  {
+   "bugid": 1905035,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "InspectorUtils.getCSSStyleRules only returns nested CSSStartingStyleRule rules of rules with selectors using children/descendent combinator in their selectors"
+  },
+  {
+   "bugid": 1907409,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Block known file-picker-crash-inducing DLLs in utility processes"
+  },
+  {
+   "bugid": 1885625,
+   "status": "ASSIGNED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement Reader View states"
+  },
+  {
+   "bugid": 1899329,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement \"Open in app\" menu functionality"
+  },
+  {
+   "bugid": 1906553,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Show a snackbar after adding and removing a shortcut"
+  },
+  {
+   "bugid": 1906693,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Update the navbar CFR copy"
+  },
+  {
+   "bugid": 1907182,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Allow Navigation bar CFR to be dismissed by outside touches ."
+  },
+  {
+   "bugid": 1906889,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Create a section on the Debug Drawer for CFR Tools"
+  },
+  {
+   "bugid": 1905727,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Default enable Translations in Nightly and Developer in Nimbus"
+  },
+  {
+   "bugid": 1907051,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix verifyUrlAutocompleteToggleTest UI test"
+  },
+  {
+   "bugid": 1907227,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry probe for Rust ingest times"
+  },
+  {
+   "bugid": 1907231,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add test for rating and total review label for Fakespot suggestion"
+  },
+  {
+   "bugid": 1903310,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Enable identity.fxaccounts.telemetry.clientAssociationPing.enabled by default"
+  },
+  {
+   "bugid": 1907035,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "about:support fails to load experimental features. Missing genai-settings-chat-title string"
+  },
+  {
+   "bugid": 1907392,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab weather widget locale controls"
+  },
+  {
+   "bugid": 1907447,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab merino provider nimbus pref wrong value"
+  },
+  {
+   "bugid": 1880230,
+   "status": "ASSIGNED",
+   "component": "Firefox:Private Browsing",
+   "summary": "An empty overflow menu is displayed in Normal Browsing if the End Private Session button is added to the Overflow Menu in Private Session"
+  },
+  {
+   "bugid": 1891146,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Collect telemetry on how long it takes to create a backup"
+  },
+  {
+   "bugid": 1906739,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement scheduled backups CTA and restore your data sections in backup-settings"
+  },
+  {
+   "bugid": 1907136,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Don't forget to clear the last backup filename / timestamp preference when deleting the last backup"
+  },
+  {
+   "bugid": 1906665,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent TV browser/components/search/test/browser/browser_searchPanelHeader.js | leaked 1 window(s) until shutdown [url = chrome://browser/content/browser.xhtml]"
+  },
+  {
+   "bugid": 1905172,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "UX updates for closing tabs remotely feature"
+  },
+  {
+   "bugid": 1906515,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "HOST_CFLAGS isn't set in config"
+  },
+  {
+   "bugid": 1906524,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Define asm flags in one place"
+  },
+  {
+   "bugid": 1907235,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma wasi-crt-trunk make: *** [Makefile:104: build/wasi-libc.BUILT] Error 2"
+  },
+  {
+   "bugid": 1905307,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Support mixed configuration for \"network.setCacheBehavior\" command"
+  },
+  {
+   "bugid": 1906992,
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "NS_ERROR_MALFORMED_URI on startup"
+  },
+  {
+   "bugid": 1703313,
+   "status": "REOPENED",
+   "component": "Toolkit:Application Update",
+   "summary": "Migrate `update-*` legacy Telemetry pings to Glean/GIFFT"
+  },
+  {
+   "bugid": 1907077,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Perma browser/extensions/formautofill/test/mochitest/creditCard/test_basic_creditcard_autocomplete_form.html when Gecko 130 merges to beta on 2024-08-05"
+  },
+  {
+   "bugid": 1905060,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Focus outlines (highlights) are cut off on some buttons in the reader mode control popup when using keyboard navigation"
+  },
+  {
+   "bugid": 1858998,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a color-scheme switcher to Storybook"
+  },
+  {
+   "bugid": 1881922,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Page slows down Firefox but not Chrome while scrolling down the page"
+  },
+  {
+   "bugid": 1901780,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.vanbreda-health.be - The page never fully load"
+  }
+ ],
+ "fixed": 54,
+ "total": 66,
+ "restricted": 2
+}
