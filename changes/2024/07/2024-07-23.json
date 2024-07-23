@@ -1,0 +1,532 @@
+{
+ "date": "2024-07-23",
+ "buildid": "20240723093447",
+ "cset": "17630c12ac58fd6623fb5d6816eccd9b17933729",
+ "bugs": [
+  {
+   "bugid": 1904632,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Crash in GetPersistentPermissions due to poor pref value validation"
+  },
+  {
+   "bugid": 1905022,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video playback freezes while audio keeps going with hardware decoded video zero copy"
+  },
+  {
+   "bugid": 1905231,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: aTime >= 0.0 (Cannot seek to a negative value.), at /builds/worker/checkouts/gecko/dom/media/MediaDecoder.cpp:721"
+  },
+  {
+   "bugid": 1907652,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Support Custom Ident for EME playback"
+  },
+  {
+   "bugid": 1908317,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Firefox 128ESR no longer plays videos on Solaris - version 115ESR was ok"
+  },
+  {
+   "bugid": 1908914,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove more Servo specific code from Stylo"
+  },
+  {
+   "bugid": 1904963,
+   "status": "REOPENED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Perma linux asan canvas [tier 2] [taskcluster:error] Task timeout after 1800 seconds. Force killing container. | single tracking bug"
+  },
+  {
+   "bugid": 1908466,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash [@ Aborted]"
+  },
+  {
+   "bugid": 1908239,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: EditorUtils::IsEditableContent(*leafContent->GetParent(), EditorType::HTML), at /editor/libeditor/HTMLEditor.cpp:1161"
+  },
+  {
+   "bugid": 1889930,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Remove source code and clean any persistent artifacts corresponding to new notification store."
+  },
+  {
+   "bugid": 1669016,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Clicking next absolute positioned label breaks tabbing"
+  },
+  {
+   "bugid": 1898238,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Allow using SharedSurface_EGLImage for oop-webgl and accelerated canvas on Android"
+  },
+  {
+   "bugid": 1908740,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Enable ES3 webgl1 on Windows"
+  },
+  {
+   "bugid": 1907477,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loongarch] Failed to build js (error: call to deleted function 'patchFarJump')"
+  },
+  {
+   "bugid": 1906255,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Add a way to easily disable the nursery in the browser"
+  },
+  {
+   "bugid": 1909003,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !storeBuffer().mayHavePointersToDeadCells(), at gc/Sweeping.cpp:2368"
+  },
+  {
+   "bugid": 1897809,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Enable JIT exit for JS PI"
+  },
+  {
+   "bugid": 1908819,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma W-b [tier 2] /scroll-animations/css/animation-shorthand.html | e.style['animation'] = \"1s linear 1s 2 reverse forwards paused anim --timeline\" should not set the property value - assert_equals: expected \"\" but got \"1s linear 1s 2 reverse forwards pa"
+  },
+  {
+   "bugid": 1909075,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "remove a useless 4x4 matrix multiply in nsIFrame::GetTransformMatrix"
+  },
+  {
+   "bugid": 1909274,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add a match link for wpt intrinsic-percent-non-replaced-002.html"
+  },
+  {
+   "bugid": 1908826,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Modernize collapsing margin data structure"
+  },
+  {
+   "bugid": 1906901,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Grid",
+   "summary": "Alignment tests are failing because of missing line-height property"
+  },
+  {
+   "bugid": 1905426,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Can't return to origin of complex table after scrolling around table"
+  },
+  {
+   "bugid": 1907789,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Firefox does not display collapsible mediawiki tables"
+  },
+  {
+   "bugid": 1907238,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Assertion failure: IsInBounds(mStart, mLength, aRange) (Range out of bounds), at /builds/worker/checkouts/gecko/layout/generic/nsTextFrame.cpp:3906"
+  },
+  {
+   "bugid": 1909195,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Fix EngineDispatcher implementation"
+  },
+  {
+   "bugid": 1909196,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Rename engine variable in tests"
+  },
+  {
+   "bugid": 1907267,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "neqo v0.8.1"
+  },
+  {
+   "bugid": 1909219,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in [@ mozilla::net::nsHttpChannel::ContinueProcessResponse1] and ContinueProcessResponse3 on null mAuthProvider"
+  },
+  {
+   "bugid": 1908801,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Crash in [@ mozilla::StaticPrefs::dom_event_wheel_event_groups_enabled] from APZCTreeManager::MaybeOverrideLayersIdForWheelEvent"
+  },
+  {
+   "bugid": 1904704,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Update module owner for Core:Preferences and peers for Core:XPCOM"
+  },
+  {
+   "bugid": 1908969,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Add some tests to ensure mozPrintCallback doesn't produce fuzzy/rasterized text"
+  },
+  {
+   "bugid": 1908393,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "BounceTrackingState never gets destroyed even when the tab closes"
+  },
+  {
+   "bugid": 1905534,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent TEST-UNEXPECTED-PASS | svg/filters/feDropShadow-01.svg == svg/filters/feDropShadow-01-ref.svg | single tracking bug"
+  },
+  {
+   "bugid": 1906818,
+   "status": "NEW",
+   "component": "Core:WebRTC",
+   "summary": "WebRTC/DTLS: Improving timeout logging"
+  },
+  {
+   "bugid": 1471720,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "XPCOM/XPConnect should do a \"canary\" load of a JS module (Was: fast startup crash in ServiceWorkerRegistrar::ProfileStarted)"
+  },
+  {
+   "bugid": 1885054,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Display JS trace in a debugger sidebar"
+  },
+  {
+   "bugid": 1906587,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Preview tooltip doesn't work on expression `this[x].y`"
+  },
+  {
+   "bugid": 1908704,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add minimal documentation for the debugger sidebar"
+  },
+  {
+   "bugid": 1908918,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Typo in Tracer sidebar and tracer test (interation -> interaction)"
+  },
+  {
+   "bugid": 1906906,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Use a shared test helper to expand object inspector items"
+  },
+  {
+   "bugid": 1908384,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Don't track mutation of nodes we don't show in the markup"
+  },
+  {
+   "bugid": 1908600,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Focus the event badge back when hiding the event listener tooltip"
+  },
+  {
+   "bugid": 1908669,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/framework/selection.js into an ES6 class and use proper private methods and properties"
+  },
+  {
+   "bugid": 1907489,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "`TextPropertyEditor.prototype._draggingOnMouseDown` uses `Element.setPointerCapture` with `undefined`"
+  },
+  {
+   "bugid": 1907490,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "`Draggable.startDragging` uses `Element.setPointerCapture` with `undefined`"
+  },
+  {
+   "bugid": 1907494,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "`LinearEasingFunctionWidget.#onMouseDown` uses `Element.setPointerCapture` with `undefined`"
+  },
+  {
+   "bugid": 1905450,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "[Grid system] Apply the spacing and sizing tokens to the wallpaper selection screen"
+  },
+  {
+   "bugid": 1825477,
+   "status": "ASSIGNED",
+   "component": "Fenix:Downloads",
+   "summary": "Cannot download the same file if previously it was a failed download"
+  },
+  {
+   "bugid": 1904031,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Move download code to one package in Fenix"
+  },
+  {
+   "bugid": 1907821,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey prompt doesn't dissapear after survey completed"
+  },
+  {
+   "bugid": 1909323,
+   "status": "ASSIGNED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "RecordedContext object is not passed into ApplicationServicesNimbus constructor"
+  },
+  {
+   "bugid": 1908864,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Sync Card Copy is misleading."
+  },
+  {
+   "bugid": 1907571,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "After the inactive tabs CFR and tab auto close banner is shown, the appropriate values are not being updated"
+  },
+  {
+   "bugid": 1811629,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[a11y] Navigation bar-Touch target-\"Search or enter address\" search bar needs to be larger"
+  },
+  {
+   "bugid": 1906554,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Dismiss the menu after clicking on \"Add to Home screen\""
+  },
+  {
+   "bugid": 1907933,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Design and implement Customize Reader View"
+  },
+  {
+   "bugid": 1909128,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Add telemetry for Reader View"
+  },
+  {
+   "bugid": 1908782,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Align gear button beta label in translation panel"
+  },
+  {
+   "bugid": 1908794,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Adjust beta tag proportions & styling to follow the designs"
+  },
+  {
+   "bugid": 1909002,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Correct capitalization in download languages title"
+  },
+  {
+   "bugid": 1862911,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < DownloadTest. restartDownloadFromAppNotificationAfterConnectionIsInterruptedTest >"
+  },
+  {
+   "bugid": 1474705,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Improve formatting of about:license"
+  },
+  {
+   "bugid": 1882776,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "gPopupBlockerObserver shouldn't live in browser.js"
+  },
+  {
+   "bugid": 1908163,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab skeleton loading state for stories"
+  },
+  {
+   "bugid": 1909245,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "With light theme and dark wallpaper, pin icon color is wrong when tile is hovered"
+  },
+  {
+   "bugid": 1909256,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Nimbus rollout for weather location (weatherLocationSearch) should use setPref instead of fallbackPref"
+  },
+  {
+   "bugid": 1908939,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add the possibility to delete the image-to-text model from the pdf viewer"
+  },
+  {
+   "bugid": 1909193,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | toolkit/components/pdfjs/test/browser_pdfjs_alttext_load_engine.js | Test timed out when Gecko 130 merges to beta on 2024-08-05"
+  },
+  {
+   "bugid": 1907625,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Collect telemetry on the size of the single-file archive after it is created"
+  },
+  {
+   "bugid": 1909201,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "ContentSearchParent should take account of receiving messages from browsers that have gone away"
+  },
+  {
+   "bugid": 1908965,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Clicks that toggle settings in the Firefox Labs pane are not triggering telemetry anymore"
+  },
+  {
+   "bugid": 1901565,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Record failure reason by default in installation first_seen scalars in new-profile ping"
+  },
+  {
+   "bugid": 1888299,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Investigate ways to ensure remote tabs push gets sent before browser closes"
+  },
+  {
+   "bugid": 1905974,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "[Remote Tab Management] Flip closing tabs remotely feature to be default on"
+  },
+  {
+   "bugid": 1908637,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma Linux x64 CCov [tier 2] 'mach build -v' did not run successfully. Please check log for errors."
+  },
+  {
+   "bugid": 1908832,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove js_shared from python configure"
+  },
+  {
+   "bugid": 1909344,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Builds on automation must use a version of rust for which we know how to hook OOM: want < 1.82.0-alpha, have 1.82.0-nightly"
+  },
+  {
+   "bugid": 1881001,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use the same AGP version for AC and GeckoView"
+  },
+  {
+   "bugid": 1908956,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Turn on WebNotification tests into geckoview-junit with PBM"
+  },
+  {
+   "bugid": 1903231,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "Firefox is showing a 404 when reopening a tab with a pdf"
+  },
+  {
+   "bugid": 1901063,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "Add expiration tag to gecko candidate build artifacts"
+  },
+  {
+   "bugid": 1899674,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Optional Permission switch deletes permission row instead of toggling off"
+  },
+  {
+   "bugid": 1904593,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[CA][leons.ca] Need to better handle when a form field's value is modified after it has been autofilled"
+  },
+  {
+   "bugid": 1909141,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Don't use FormData to get edit address form state"
+  },
+  {
+   "bugid": 1907991,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Use the vendored `glean_parser` for `mach` and `build`"
+  },
+  {
+   "bugid": 1813177,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "RBI website doesn't open"
+  }
+ ],
+ "fixed": 75,
+ "total": 87,
+ "restricted": 3
+}
