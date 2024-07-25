@@ -1,0 +1,514 @@
+{
+ "date": "2024-07-25",
+ "buildid": "20240725093133",
+ "cset": "d2cde533d9490a661d586893e9f539382073c8a7",
+ "bugs": [
+  {
+   "bugid": 1800882,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Implement HTMLVideoElement.requestVideoFrameCallback()"
+  },
+  {
+   "bugid": 1909610,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::WMFVideoMFTManager::UseZeroCopyVideoFrame]"
+  },
+  {
+   "bugid": 1908267,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Add Greg Stoll as module peer for Core: DLL Services"
+  },
+  {
+   "bugid": 1809713,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Change nsIClipboard constant lists to be a CEnum type"
+  },
+  {
+   "bugid": 1909502,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove IID of GlobalTeardownObserver"
+  },
+  {
+   "bugid": 1909571,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsTreeSanitizer::LogMessage could use AssignASCII"
+  },
+  {
+   "bugid": 1909613,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable <details name=\"\"> everywhere"
+  },
+  {
+   "bugid": 1909729,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Flip PPA pref on Android"
+  },
+  {
+   "bugid": 1892021,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Implement a credential chooser for IdentityCredentials"
+  },
+  {
+   "bugid": 1906650,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Implement Trusted Types support for `Element.insertAdjacentHTML` without default-policy support without reporting violations"
+  },
+  {
+   "bugid": 1908552,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Selection",
+   "summary": "Remove unused Selection.scrollIntoView."
+  },
+  {
+   "bugid": 1909577,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Get rid of `nsContentUtils::IsFocusedContent` and make some `nsFocusManager::GetFocusedElement()` users use its static version"
+  },
+  {
+   "bugid": 1909581,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade warp to 0.3.7"
+  },
+  {
+   "bugid": 1905674,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Add memory reporting for SharedContextWebgl"
+  },
+  {
+   "bugid": 1908380,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Crash [@ mozilla::WebGLVertexArrayJS::WebGLVertexArrayJS]"
+  },
+  {
+   "bugid": 1909559,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "webgl.drawingBufferColorSpace should be behind a pref until it ships"
+  },
+  {
+   "bugid": 1801798,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Intermittent image/test/crashtests/1629490-1.html | load failed: timed out waiting for reftest-wait to be removed"
+  },
+  {
+   "bugid": 1909426,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update OTS to latest upstream commit"
+  },
+  {
+   "bugid": 1909265,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU CTS: isolate particularly long-running tests to a `webgpu-long` task"
+  },
+  {
+   "bugid": 1909018,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "gfx/vr still uses PlainOldDataSerializer"
+  },
+  {
+   "bugid": 1907891,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use shared string buffer for long strings created by js::StringBuffer"
+  },
+  {
+   "bugid": 1909012,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update irregexp to new version 9b9d02b07c231de5046a87ac80d4bbe24a737097 from 2024-07-26 00:00:00"
+  },
+  {
+   "bugid": 1909220,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow embeddings to define classes without a globally available constructor"
+  },
+  {
+   "bugid": 1909472,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "support unsigned long in T2S for WASI builds"
+  },
+  {
+   "bugid": 1909478,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support GetTid function on WASI builds"
+  },
+  {
+   "bugid": 1909092,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:206"
+  },
+  {
+   "bugid": 1908321,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Simplify the mark stack implementation a little"
+  },
+  {
+   "bugid": 1909048,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Clean up document frame callback handling."
+  },
+  {
+   "bugid": 1909653,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma android shippable backlog(W-b) [tier 2] TEST-UNEXPECTED-OK | /scroll-animations/css/scroll-timeline-range-animation.html | expected FAIL"
+  },
+  {
+   "bugid": 1909395,
+   "status": "REOPENED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Intermittent /css/css-scroll-anchoring/zero-scroll-offset-002.html | single tracking bug"
+  },
+  {
+   "bugid": 1907082,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "MathML <mroot>: clamp RadicalKernBefore/AfterDegree"
+  },
+  {
+   "bugid": 1904754,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Configure updatebot for zstd and update zstd to 1.5.6"
+  },
+  {
+   "bugid": 1909666,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "For website https://www.frankfurt-marathon.com/ firefox 128 does not finish loading the initial request"
+  },
+  {
+   "bugid": 1776965,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_touchevents-5.html | single tracking bug"
+  },
+  {
+   "bugid": 1909720,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Disable helper_relative_scroll_smoothness.html in the input-type=native-key configuration on Windows"
+  },
+  {
+   "bugid": 1900846,
+   "status": "NEW",
+   "component": "Core:Performance Engineering",
+   "summary": "Emit gecko profiler markers as perfetto track events"
+  },
+  {
+   "bugid": 1908629,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Download request does not send the same cookies as normal request"
+  },
+  {
+   "bugid": 1909616,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "User namespaces warning is alarmist and not actionable with flatpak"
+  },
+  {
+   "bugid": 1909652,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Put prespawn CIG behind a pref"
+  },
+  {
+   "bugid": 1906955,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "nrappkit uses qsort incorrectly, fails to compile with fortify-headers"
+  },
+  {
+   "bugid": 1880260,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "CSS `cursor: move` and `cursor: all-scroll` displays `cursor: grabbing` instead"
+  },
+  {
+   "bugid": 1907794,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Very long cycle collection times (4.3s) in parser-worker.js"
+  },
+  {
+   "bugid": 1908695,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Cover jstracer debugger and profiler output performance in DAMP"
+  },
+  {
+   "bugid": 1909481,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix recording raw server performance of the jstracer."
+  },
+  {
+   "bugid": 1909544,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable the jstracer in the browser toolbox"
+  },
+  {
+   "bugid": 1909405,
+   "status": "RESOLVED",
+   "component": "DevTools:Storage Inspector",
+   "summary": "Refactor handling of uniqueKey in CookiesStorageActor"
+  },
+  {
+   "bugid": 1857021,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Support for \"logout\" and \"delete_account\" messages is missing from fx-webchannel"
+  },
+  {
+   "bugid": 1820554,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Login list items are not clickable"
+  },
+  {
+   "bugid": 1908842,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "[Password generator] The text from the prompt needs an update"
+  },
+  {
+   "bugid": 1909592,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 4fa8251b3b049cd38a62d0dbba6848033192a593 from 2024-07-24 05:02:32"
+  },
+  {
+   "bugid": 1826152,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tabs tray to Compose] Refactor the metrics out of `TabsTrayFragment`"
+  },
+  {
+   "bugid": 1891615,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Implement CFR for forward and back navbar buttons"
+  },
+  {
+   "bugid": 1907519,
+   "status": "NEW",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] The address bar and nav bar don't hide when watching a video on full screen"
+  },
+  {
+   "bugid": 1886426,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Re-enable the AGP preciseShrinking optimization"
+  },
+  {
+   "bugid": 1907653,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Create a Redux layer for the CFR Tools in the Debug Drawer"
+  },
+  {
+   "bugid": 1909569,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma [tier 2] fenix-debug org.mozilla.fenix.ui.BookmarksTest#cantSelectDefaultFoldersTest | androidx.test.espresso.PerformException: Error performing 'long click - At Coordinates: 623, 304 and precision: 16, 16' on view 'an instance of android.widget.Tex"
+  },
+  {
+   "bugid": 1905090,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "MSIX Update copy and pin option in about:welcome to call both pin to taskbar and pin to start menu actions"
+  },
+  {
+   "bugid": 1908163,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab skeleton loading state for stories"
+  },
+  {
+   "bugid": 1908469,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add new Nimbus variable to pass experiment data to Merino POST data"
+  },
+  {
+   "bugid": 1907649,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "PrefFlips feature can throw during pref setting"
+  },
+  {
+   "bugid": 1905923,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add enableAltText variable to pdfjs Nimbus feature"
+  },
+  {
+   "bugid": 1907207,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add enableUpdatedAddImage variable to pdfjs Nimbus feature"
+  },
+  {
+   "bugid": 1909310,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add a preference to know if the alt text must generated automatically"
+  },
+  {
+   "bugid": 1909325,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Implement telemetry for the new alt text flow"
+  },
+  {
+   "bugid": 1909329,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add browserMlEnable variable to pdfjs Nimbus feature"
+  },
+  {
+   "bugid": 1909430,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 33493301b3ed74955699d89546c745538163baf8 from (2024-07-23 08:02:03"
+  },
+  {
+   "bugid": 1900094,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add telemetry and error logging for when we record a categorization but the corresponding impression is missing due to domain-to-categories map issues"
+  },
+  {
+   "bugid": 1907431,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "work around bug 1907430 when determining securityInfo for certificate error pages"
+  },
+  {
+   "bugid": 1900035,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add start menu pinning in set to default and first run scenarios"
+  },
+  {
+   "bugid": 1901621,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add start menu pinning availability as a targeting condition for pinning product messages"
+  },
+  {
+   "bugid": 1904436,
+   "status": "REOPENED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Implement private browser pinning using new taskbar APIs"
+  },
+  {
+   "bugid": 1907501,
+   "status": "ASSIGNED",
+   "component": "Firefox:Theme",
+   "summary": "input field in find bar no longer has a border on Windows"
+  },
+  {
+   "bugid": 1909558,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma error: use of deprecated type alias `std::panic::PanicInfo`: use `PanicHookInfo` instead"
+  },
+  {
+   "bugid": 1904022,
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Create the check file in the final download folder when checking for executable bits"
+  },
+  {
+   "bugid": 1904023,
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Provide the onStatusChange error message on the download, when it's failing in nsExternalHelperAppService"
+  },
+  {
+   "bugid": 1907280,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "The reader view panels should close when tapping ESC key"
+  },
+  {
+   "bugid": 1889839,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Intermittent UntrustedModulesFixture.Serialize | SEH exception with code 0xc0000005 thrown in the test body. @ (null):-1"
+  },
+  {
+   "bugid": 1907495,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "`DatePicker.prototype.handleEvent` uses `Element.setPointerCapture` with `undefined`"
+  },
+  {
+   "bugid": 1909062,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "[RTL] Tabbar scroll arrows always look disabled"
+  },
+  {
+   "bugid": 1899351,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Remove `ScaffoldingCall.h`"
+  },
+  {
+   "bugid": 1909496,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove YouTube shorts intervention"
+  },
+  {
+   "bugid": 1898952,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "digits.t-mobile.com - Firefox is not a recommended browser"
+  },
+  {
+   "bugid": 1902474,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "lg.jio.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1903970,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "unimedlitoral.com.br - unsupported browser"
+  }
+ ],
+ "fixed": 65,
+ "total": 84,
+ "restricted": 3
+}
