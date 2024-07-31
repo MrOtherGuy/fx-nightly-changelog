@@ -1,0 +1,442 @@
+{
+ "date": "2024-07-31",
+ "buildid": "20240731034758",
+ "cset": "fe23e201d6cdf1d01af9c3ff8b1539b783493c76",
+ "bugs": [
+  {
+   "bugid": 1910523,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update audioipc to c200b1e"
+  },
+  {
+   "bugid": 1898501,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable playback of MP4 videos with YUV444 format"
+  },
+  {
+   "bugid": 1908002,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Expose LockManager in the parent process so that the browser UI can use it"
+  },
+  {
+   "bugid": 1908729,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fully replace FROZEN_TOPIC etc. with GlobalTeardown/FreezeObserver"
+  },
+  {
+   "bugid": 1910597,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Notify of device pixel ratio changes after setting mCurAppUnitsPerDevPx"
+  },
+  {
+   "bugid": 1910599,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix image-decode-path-changes to not hit the image cache."
+  },
+  {
+   "bugid": 1910600,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Minor clean-ups to test_img_picture_preload.html"
+  },
+  {
+   "bugid": 1814735,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Typo in honorific-prefix and honorific-suffix both spelled `honorifix-` in AutocompleteFieldList.h"
+  },
+  {
+   "bugid": 1910417,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Simplify parser algorithm to only consider fragments instead of whole URLs."
+  },
+  {
+   "bugid": 1910082,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Further improve HTTPS Telemetry"
+  },
+  {
+   "bugid": 1910413,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "High frequency OSX TEST-UNEXPECTED-FAIL | dom/reporting/tests/test_delivering.html | Age is correctly set"
+  },
+  {
+   "bugid": 1904279,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Get rid of `dom.w3c_pointer_events.dispatch_click_as_pointer_event` pref once the fix of bug 1675847 is shipped in the release channel"
+  },
+  {
+   "bugid": 1910516,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ operator!=]"
+  },
+  {
+   "bugid": 1910637,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "youtube lag when scroll"
+  },
+  {
+   "bugid": 1899344,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Module registry in shell module loader needs to be keyed by both module type and path"
+  },
+  {
+   "bugid": 1909587,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips64] Failed to build (error: could not convert ‘js::jit::ABIType::Float64’ from ‘js::jit::ABIType’ to ‘int’))"
+  },
+  {
+   "bugid": 1909897,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips] Failed to build js (error: call to deleted function 'patchFarJump')"
+  },
+  {
+   "bugid": 1910544,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Release StringBuffers off-thread after minor GC"
+  },
+  {
+   "bugid": 1910552,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Update mapped_hyph to current master"
+  },
+  {
+   "bugid": 1909910,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "enable QUIC PMTUD"
+  },
+  {
+   "bugid": 1873982,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix  dom/security/test/cors/test_CrossSiteXHR.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1873984,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix  dom/security/test/general/test_same_site_cookies_cross_origin_context.html  when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1873986,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix dom/tests/mochitest/fetch/ when by blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1899969,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix web-platform/tests/cookies/partitioned-cookies/partitioned-cookies.tentative.https.html when CHIPS is enabled for android"
+  },
+  {
+   "bugid": 1907326,
+   "status": "NEW",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update default GeckoView cookieBehavior preferences to BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN (5) to mirror Desktop"
+  },
+  {
+   "bugid": 1840427,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent [tier 2] svg/pattern-transformed-02.svg == svg/pattern-transformed-02-ref.svg | image comparison, max difference: 27, number of differing pixels: 11173"
+  },
+  {
+   "bugid": 1909832,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "User namespaces warning appears in about:support on flatpak despite not being relevant or actionable"
+  },
+  {
+   "bugid": 1904424,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Fix focus stealing issue on X11"
+  },
+  {
+   "bugid": 1887023,
+   "status": "NEW",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Investigate removing service-glean from android-components"
+  },
+  {
+   "bugid": 1907977,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "source not showing in worker"
+  },
+  {
+   "bugid": 1908065,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Group and retry \"close tabs\" commands sent to the same device"
+  },
+  {
+   "bugid": 1908842,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "[Password generator] The text from the prompt needs an update"
+  },
+  {
+   "bugid": 1862795,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Fenix \"Share|Save as PDF\", for a page with no title, says it will generate a file named \".pdf\", and actually generates a file simply named \"pdf\" (no suffix)"
+  },
+  {
+   "bugid": 1910078,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Allow microsurvey experiment feature to be enabled by Nimbus"
+  },
+  {
+   "bugid": 1910534,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 4874113f01701861f272ba904cc2e327b0df8e2e from 2024-07-30 05:04:14"
+  },
+  {
+   "bugid": 1910684,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Google Play Services Base to version 18.5.0"
+  },
+  {
+   "bugid": 1907627,
+   "status": "VERIFIED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Navigation bar CFR showing up on the top when app is launched from search widget"
+  },
+  {
+   "bugid": 1907915,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Investigate using `UiStore` for `CfrToolsPreferencesMiddlewareTest.kt` and `CfrToolsStoreTest.kt`"
+  },
+  {
+   "bugid": 1910583,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update TestRail URLs to mozilla.testrail.io  - Part 1"
+  },
+  {
+   "bugid": 1910591,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update TestRail URLs to mozilla.testrail.io  - Part 2"
+  },
+  {
+   "bugid": 1906014,
+   "status": "ASSIGNED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Design and integrate new illustration for the Extensions menu"
+  },
+  {
+   "bugid": 1907079,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Docs] Refine Messaging System glossary"
+  },
+  {
+   "bugid": 1907446,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update topic selection modal for onboarding experience"
+  },
+  {
+   "bugid": 1910525,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab topic selection button shows up in highlights/recent activity"
+  },
+  {
+   "bugid": 1910757,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable topic labels by default"
+  },
+  {
+   "bugid": 1910389,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Uptake telemetry for security-state/intermediates has 99% `download_error` status"
+  },
+  {
+   "bugid": 1904210,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Adjust default sidebar and sidebar panel widths"
+  },
+  {
+   "bugid": 1907325,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add additional test coverage for extensions in the revamped sidebar"
+  },
+  {
+   "bugid": 1879103,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview does not update while it's hovered and the tab title and content have changed"
+  },
+  {
+   "bugid": 1896172,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Dragged tab into a new window causes is to be treated as a background tab (may freeze with QoS enabled when under high load)"
+  },
+  {
+   "bugid": 1908162,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Basic Tab Group custom element"
+  },
+  {
+   "bugid": 1910601,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove _verticalTabs property and use verticalMode instead"
+  },
+  {
+   "bugid": 1907501,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "input field in find bar no longer has a border on Windows"
+  },
+  {
+   "bugid": 1908980,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build failure building Fenix on Windows with \"error: unknown argument '--no-insert-timestamp'\""
+  },
+  {
+   "bugid": 1900768,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Create Linux ARM64 Docker images on Firefox CI"
+  },
+  {
+   "bugid": 1910179,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Merge a bunch of duplicate gecko_taskgraph logic in main.py"
+  },
+  {
+   "bugid": 1909932,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Build compiler-rt for Windows Arm64"
+  },
+  {
+   "bugid": 1846397,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove about:crashes L10N resources from GeckoView"
+  },
+  {
+   "bugid": 1884254,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Add linux-aarch64 Python toolchain task"
+  },
+  {
+   "bugid": 1863757,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Packaging",
+   "summary": "The .deb package doesn't update alternatives for `x-www-browser`"
+  },
+  {
+   "bugid": 1876701,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Packaging",
+   "summary": "Missing man pages for Firefox with official .deb packages"
+  },
+  {
+   "bugid": 1905073,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Packaging",
+   "summary": "Upgrading Mozilla's .deb package makes `apt` uninstall `gimp-help-en`"
+  },
+  {
+   "bugid": 1846601,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"browsingContext.navigationFailed\" event"
+  },
+  {
+   "bugid": 1910555,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[wdspec] Resume blocked requests from the setup_blocked_request fixture on teardown"
+  },
+  {
+   "bugid": 1869712,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Intermittent Symsys-symbols-ubuntu [taskcluster:error] Task timeout after 1200 seconds. Force killing container."
+  },
+  {
+   "bugid": 1910590,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Perma toolkit/components/satchel/megalist/aggregator/tests/unit/test_loginDataSource[...] | xpcshell return code: 0 when Gecko 130 merges to beta on 2024-08-05"
+  },
+  {
+   "bugid": 1910622,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Update instances of \"picture-in-picture\" (all lowercase) to \"Picture-in-Picture\""
+  },
+  {
+   "bugid": 1893666,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add new properties to nsToolkitProfile to support selectable profiles"
+  },
+  {
+   "bugid": 1910122,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document how to use Glean to record Legacy Telemetry Events"
+  },
+  {
+   "bugid": 1910470,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Augment the FOG C++ API's Glean Interface For Firefox Telemetry (GIFFT) to support the Legacy Telemetry event `value` parameter"
+  },
+  {
+   "bugid": 1910643,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Sitepatches for honeywell.com, personalizedplates.revenue.tn.gov and plus.nhk.jp"
+  },
+  {
+   "bugid": 1910243,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Improve test coverage for ChannelWrapper + GC"
+  }
+ ],
+ "fixed": 59,
+ "total": 72,
+ "restricted": 2
+}
