@@ -1,0 +1,562 @@
+{
+ "date": "2024-08-01",
+ "buildid": "20240801092933",
+ "cset": "2d074238f3277f6aa65764a4ee6434b0579e8d6d",
+ "bugs": [
+  {
+   "bugid": 1800882,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Implement HTMLVideoElement.requestVideoFrameCallback()"
+  },
+  {
+   "bugid": 1910938,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Remove resolved issue links in VideoFrame"
+  },
+  {
+   "bugid": 1905284,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ nsIPrincipal::Subsumes]"
+  },
+  {
+   "bugid": 1896672,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Experiment with checking user activation for openBlocked popup blocker state"
+  },
+  {
+   "bugid": 1901586,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Uplift web platform tests for Lightweight FedCM from mozilla folder"
+  },
+  {
+   "bugid": 1910824,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Text Substitution isn't shown even if pref is turned on"
+  },
+  {
+   "bugid": 1901139,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "The user activation state isn't propagted to nsDocShellLoadState for the load triggered by `window.open()`"
+  },
+  {
+   "bugid": 1760110,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Frequent netwerk/test/unit/test_websocket_with_h3_active.js | single tracking bug"
+  },
+  {
+   "bugid": 1910586,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Improve https telemetry within OpenSearchLoader"
+  },
+  {
+   "bugid": 1910127,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Frequent Android debug dom/serviceworkers/test/performance/test_registration.html | Test timed out. -"
+  },
+  {
+   "bugid": 1910513,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade tokio crate to 1.39.2"
+  },
+  {
+   "bugid": 1910779,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update num-traits to 0.2.19"
+  },
+  {
+   "bugid": 1896000,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "merge_blob_images Method Segfaults"
+  },
+  {
+   "bugid": 1910421,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support js::float16 in mozilla::FloatingPoint"
+  },
+  {
+   "bugid": 1910674,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace \"typedef\" with \"using\""
+  },
+  {
+   "bugid": 1910422,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support Float32<>Float16 conversions in ARM32"
+  },
+  {
+   "bugid": 1910673,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use default move-constructor for MacroAssemblerX86Shared::Constant"
+  },
+  {
+   "bugid": 1907642,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Lazy tiering: allocate code for lazy tier2 functions at hardware page granularity"
+  },
+  {
+   "bugid": 1910672,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Use memcmp for V128::operator=="
+  },
+  {
+   "bugid": 1865896,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add a ToString function to DefineEnum"
+  },
+  {
+   "bugid": 1906093,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Create a singleton per task id"
+  },
+  {
+   "bugid": 1910509,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add nimbus variables for chatbot configuration"
+  },
+  {
+   "bugid": 1908069,
+   "status": "NEW",
+   "component": "Core:MathML",
+   "summary": "Add support for padding/border/margin on MathML elements"
+  },
+  {
+   "bugid": 1910821,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use correct mutex for gConnRecvMutex in FuzzyLayer"
+  },
+  {
+   "bugid": 1908859,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clean up principal code in HasBounceTrackingStateForSite"
+  },
+  {
+   "bugid": 1909178,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "HasBounceTrackingState for site does not take OriginAttributes into account"
+  },
+  {
+   "bugid": 1887023,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Investigate removing service-glean from android-components"
+  },
+  {
+   "bugid": 1866818,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Ensure JS Tracer work with remote debugging"
+  },
+  {
+   "bugid": 1905840,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Switching between document may lose scroll position"
+  },
+  {
+   "bugid": 1909804,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Ignored file text isn't legible when the tree node is selected"
+  },
+  {
+   "bugid": 1909920,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Unexpected traces are displayed in the tracer's call tree"
+  },
+  {
+   "bugid": 1910569,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Rename OutputParser unmatchedVariableClass option into unmatchedClass"
+  },
+  {
+   "bugid": 1910822,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Enable closing synced tabs by default on Fenix"
+  },
+  {
+   "bugid": 1907549,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "[Password generator] Save username/password prompt primary button wrong colors"
+  },
+  {
+   "bugid": 1910992,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Add UI package in bookmarks"
+  },
+  {
+   "bugid": 1910582,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Move DownloadItem extension to downloads package"
+  },
+  {
+   "bugid": 1910825,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version 171ef940b5c5e88f8ebbda974c6d453970b102a4 from 2024-07-31 05:02:43"
+  },
+  {
+   "bugid": 1910893,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Migrate AndroidX Activity to the AC dependencies plugin"
+  },
+  {
+   "bugid": 1906097,
+   "status": "NEW",
+   "component": "Fenix:Logins",
+   "summary": "[Password manager] When saving a new suggested password, the \"update\" prompt is displayed"
+  },
+  {
+   "bugid": 1909943,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Change update login dialog"
+  },
+  {
+   "bugid": 1910903,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "[Password Generator] Remove feature flag for password generator"
+  },
+  {
+   "bugid": 1899125,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "[a11y Large Text] Private New Tab"
+  },
+  {
+   "bugid": 1899127,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "[a11y Large Text] Button Size"
+  },
+  {
+   "bugid": 1885583,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Add BottomSheetDialog.dismiss() when onRequestDismiss is called"
+  },
+  {
+   "bugid": 1903383,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Fix the system navigation bar color"
+  },
+  {
+   "bugid": 1908148,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Fix padding between menu item text and divider."
+  },
+  {
+   "bugid": 1909958,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Increase touch area to entire row of `SwitchWithLabel` composable"
+  },
+  {
+   "bugid": 1909001,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Unable to stop “Downloading all languages”"
+  },
+  {
+   "bugid": 1807268,
+   "status": "REOPENED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - HomeActivity ANR"
+  },
+  {
+   "bugid": 1907854,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Close any sharing overlays and apps after they are done"
+  },
+  {
+   "bugid": 1906014,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Add the new onboarding illustration for the Extensions menu"
+  },
+  {
+   "bugid": 1906054,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "SearchModeSwitcher icon is not updated when default search engine changes"
+  },
+  {
+   "bugid": 1909211,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add Bookmark dialog suggests all already entered tags instead those ones related to the one being currently entered"
+  },
+  {
+   "bugid": 1907269,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Open tel: link with target=_blank doesn't trigger the default action"
+  },
+  {
+   "bugid": 1910464,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Disable identity.fxaccounts.telemetry.clientAssociationPing.enabled pref for now"
+  },
+  {
+   "bugid": 1901261,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Create a remotely configurable bookmarks bar button messaging surface"
+  },
+  {
+   "bugid": 1907902,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Send telemetry when the return to about:welcome \"Finish Setup\" toolbar button is removed"
+  },
+  {
+   "bugid": 1908520,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Make AddonsPicker strings available for localization"
+  },
+  {
+   "bugid": 1906902,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add l10n strings for topic selection"
+  },
+  {
+   "bugid": 1907911,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab topic selection modal topic buttons click sometimes doesn't select"
+  },
+  {
+   "bugid": 1908486,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab swap topic personalization button and stories header based on topic selection"
+  },
+  {
+   "bugid": 1910526,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab need mechanisim to turn on and off topic onboarding functionality"
+  },
+  {
+   "bugid": 1910689,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add additional Telemetry to assist in Topic boosting algorithm improvements"
+  },
+  {
+   "bugid": 1910759,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update Nightly only prefs to Nightly or Early Beta"
+  },
+  {
+   "bugid": 1910776,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab flip wallpapers pref on"
+  },
+  {
+   "bugid": 1910904,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab topic selection onboarding handle if modal is ignored"
+  },
+  {
+   "bugid": 1851215,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "about:studies reports inactive rollouts under \"Active Studies\""
+  },
+  {
+   "bugid": 1910429,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Support group ID as a randomization unit in Nimbus"
+  },
+  {
+   "bugid": 1896449,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "search.json.mozlz4 contains some hardcoded path data, making it not-portable"
+  },
+  {
+   "bugid": 1897095,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Can't easily approve screenshot on Responsive Design Mode"
+  },
+  {
+   "bugid": 1881739,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Create a SearchTestUtils function to simplify creating configurations for tests"
+  },
+  {
+   "bugid": 1900979,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Fix empty strings assigned in Sidebar.ftl"
+  },
+  {
+   "bugid": 1901551,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Fix vertical tabs breaking customize mode's \"restore defaults\" button"
+  },
+  {
+   "bugid": 1906140,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update the labs UI toml file for sidebar and vertical tabs"
+  },
+  {
+   "bugid": 1902619,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview flickers when the browser is moved to the bottom part of the screen"
+  },
+  {
+   "bugid": 1906123,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab Hover Preview: Very long Preview appears when the window is half of the screen"
+  },
+  {
+   "bugid": 1910576,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "tabbrowser.js needs to check tabContainer.verticalMode rather than tabContainer.inVerticalTabsMode"
+  },
+  {
+   "bugid": 1910601,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove _verticalTabs property and use verticalMode instead"
+  },
+  {
+   "bugid": 1910819,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "--with-system-zlib: sysroot-x86_64-linux-gnu/usr/include/features.h:374:12: fatal error: 'sys/cdefs.h' file not found"
+  },
+  {
+   "bugid": 1838206,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Focus UI test: add PDF reader smoke test coverage"
+  },
+  {
+   "bugid": 1908808,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Intermittent org.mozilla.geckoview.test.DynamicToolbarTest#withIntersectionObserver2 | single tracking bug"
+  },
+  {
+   "bugid": 1910123,
+   "status": "RESOLVED",
+   "component": "Infrastructure & Operations:RelOps: Windows OS",
+   "summary": "Intermittent INFRA-ERROR: The new screen resolution or mouse positions are not what we expected - Windows test machines sometimes not set to correct screen resolution"
+  },
+  {
+   "bugid": 1899711,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "After each authentication attempt the number of authRequired events received increases"
+  },
+  {
+   "bugid": 506009,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash reporter fails if your Firefox profile is in a volume other than your home directory"
+  },
+  {
+   "bugid": 1897708,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[MX] [elpalaciodelhierrro.com] Autofiil doesn't work on Last Name field in payment form"
+  },
+  {
+   "bugid": 1893666,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add new properties to nsToolkitProfile to support selectable profiles"
+  },
+  {
+   "bugid": 1908742,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add ability to expand moz-card accordion by default"
+  },
+  {
+   "bugid": 1897724,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.homewyse.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1898923,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "trade-in.vodafone.com - Firefox is not supported"
+  },
+  {
+   "bugid": 1898941,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "events.webinar.ru - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1899067,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "granbluefantasy.jp - Firefox in unsupported browser"
+  },
+  {
+   "bugid": 1910899,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Error: \"can't access property \"ownerGlobal\", target is undefined\" in `ext-pageAction.js`"
+  }
+ ],
+ "fixed": 79,
+ "total": 92,
+ "restricted": 1
+}
