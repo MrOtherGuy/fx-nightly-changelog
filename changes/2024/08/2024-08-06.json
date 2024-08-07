@@ -1,0 +1,532 @@
+{
+ "date": "2024-08-06",
+ "buildid": "20240806211239",
+ "cset": "9ada5eb4bcb548c5fcb6621ddaef3a4f17933da9",
+ "bugs": [
+  {
+   "bugid": 1906527,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "YUV422P10 video playback inconsistencies"
+  },
+  {
+   "bugid": 1076583,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Update <img> load model (non-responsive case) to match new spec"
+  },
+  {
+   "bugid": 1907085,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/tests/browser/browser_pointerlock_popup.js | single tracking bug"
+  },
+  {
+   "bugid": 1910969,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Export Web Locks global by default in the shared privileged global in the parent process"
+  },
+  {
+   "bugid": 1911605,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix HTMLImageElement.prototype.decode() request tracking."
+  },
+  {
+   "bugid": 1803234,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Remove gpsd support"
+  },
+  {
+   "bugid": 1911758,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Enable on Nightly."
+  },
+  {
+   "bugid": 1867249,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "View Source is slow on specific markdown page on Github"
+  },
+  {
+   "bugid": 1883903,
+   "status": "NEW",
+   "component": "Core:Gecko Profiler",
+   "summary": "Consider capturing profiles using signals for timed out tests in CI"
+  },
+  {
+   "bugid": 1897914,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add support for gathering multi-process profiles using nsProfiler on the main thread"
+  },
+  {
+   "bugid": 1910868,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "[GPU-canvas] Testcase from bug 1828940 doesnt animate with gpu-canvas"
+  },
+  {
+   "bugid": 1908834,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Support outset box-shadows with quad based rendering"
+  },
+  {
+   "bugid": 1454819,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Do we really need all these shared memory classes?"
+  },
+  {
+   "bugid": 1874689,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "[forkserver] Enable forkserver by default on Nightly"
+  },
+  {
+   "bugid": 1909125,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Assertion failure: result.isOk() in SharedPrefMap.cpp with dom.ipc.forkserver.enable=true, fuzzing build and running with --debugger"
+  },
+  {
+   "bugid": 1911760,
+   "status": "VERIFIED",
+   "component": "Core:Internationalization: Localization",
+   "summary": "mozintl: \"skr\" is incorrectly defined in region() instead of language() set"
+  },
+  {
+   "bugid": 1907009,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move CalculateExpirationTime to shared utility, with using constant instead of `nsContentUtils::SecondsFromPRTime(PR_Now()) - 1` for \"no cache\""
+  },
+  {
+   "bugid": 1911242,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "JitEntry stub doesn't need to reload the instance register after calling into Wasm"
+  },
+  {
+   "bugid": 1911448,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove DOMContentFlushed."
+  },
+  {
+   "bugid": 1911550,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "First character is clipped in units dropdown-menu in Accuweather Settings (text-transform: capitalize not affecting <select> intrinsic size)"
+  },
+  {
+   "bugid": 1831649,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Implement the 'interactive-widget' meta viewport key, to allow controlling viewport resize behaviour when showing a virtual keyboard"
+  },
+  {
+   "bugid": 1907460,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Disable overflow/underflow events in release"
+  },
+  {
+   "bugid": 1911173,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Update the shortcut text selection UX"
+  },
+  {
+   "bugid": 1911277,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Extend the documentation and link in about:inference"
+  },
+  {
+   "bugid": 1911516,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "ML Fails in non-debug mode because of maxLogLevelPref"
+  },
+  {
+   "bugid": 1911529,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "MOZ_DIAGNOSTIC_ASSERT(equal) (aLoadState should contain the same URI passed to this function.)"
+  },
+  {
+   "bugid": 1911658,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Crash in [@ core::slice::impl$0::chunks]"
+  },
+  {
+   "bugid": 1908658,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Don't fallback from H3 connection for cert errors"
+  },
+  {
+   "bugid": 1911005,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "ct: note log state and timestamp when incorporating known logs"
+  },
+  {
+   "bugid": 1911385,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "osclientcerts: return early with an error when C_FindObjectsInit is called with irrelevant attributes"
+  },
+  {
+   "bugid": 1907883,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "187.99 - 2.01% speedometer3 TodoMVC-JavaScript-ES6-Webpack-Complex-DOM/DeletingAllItems/Async / google-slides fcp + 417 more (Linux) regression on Wed July 10 2024"
+  },
+  {
+   "bugid": 1911676,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Fix test_peerConnection_basicH264Video.html codec removal logic"
+  },
+  {
+   "bugid": 1609427,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Add microphone and camera to PermissionDescriptor for navigator.permissions.query"
+  },
+  {
+   "bugid": 1910197,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "iceserver.py warnings due to deprecation of pyOpenSSL X509Extension"
+  },
+  {
+   "bugid": 1901769,
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Async clipboard \"Paste\" permission context menu appears in wrong position and flickers"
+  },
+  {
+   "bugid": 1906719,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Implement a native backend for the JS tracer"
+  },
+  {
+   "bugid": 1501959,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "[markup-view] \"Add attribute\" input should have a 1 character left margin"
+  },
+  {
+   "bugid": 1907803,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Focused tagname/attribute is hard to differentiate from inplace editor input with selected text"
+  },
+  {
+   "bugid": 1909170,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Showing \"grid overlay\" in the devtools will stress GPU and CPU"
+  },
+  {
+   "bugid": 1857006,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Consider fading the unused value from light-dark() colors."
+  },
+  {
+   "bugid": 1868305,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Fix clippy warnings in intl/l10n/rust/fluent-ffi/src/text_elements.rs"
+  },
+  {
+   "bugid": 1902093,
+   "status": "NEW",
+   "component": "Fenix:Bookmarks",
+   "summary": "Create BookmarksStore components and initial State"
+  },
+  {
+   "bugid": 1911727,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Update android nightly application-services version bump to new version 56e868a6e1ece05361943e91b63f1f656597cb6c from 2024-08-06 05:02:56"
+  },
+  {
+   "bugid": 1907879,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Hide the top border of the toolbar so the prompt looks like it's part of the same visual element"
+  },
+  {
+   "bugid": 1909108,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Record description of applicationexitinfo to get more details about REASON_OTHER process exits"
+  },
+  {
+   "bugid": 1911677,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Start the Nightly 131 development cycle"
+  },
+  {
+   "bugid": 1905440,
+   "status": "ASSIGNED",
+   "component": "Fenix:Homepage",
+   "summary": "Add preview for homepage composable"
+  },
+  {
+   "bugid": 1807353,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "AccountManager memory leak in AuthCustomTabActivity"
+  },
+  {
+   "bugid": 1911224,
+   "status": "RESOLVED",
+   "component": "Fenix:Pocket",
+   "summary": "Open Pocket stories in the existing tab if Homepage as a New Tab is enabled"
+  },
+  {
+   "bugid": 1899129,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "[a11y Large Text] Settings"
+  },
+  {
+   "bugid": 1911085,
+   "status": "VERIFIED",
+   "component": "Fenix:Tabs",
+   "summary": "The \"Tabs closed\" snackbar is displayed at the top of the screen on tablets/landscape mode"
+  },
+  {
+   "bugid": 1907824,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Don't show a menu when long-pressing on the tabs counter if on a tablet"
+  },
+  {
+   "bugid": 1908249,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Navbar still steals space from viewport when keyboard appears (even though navbar is hidden)"
+  },
+  {
+   "bugid": 1909145,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Display the error state of an extension in the Extensions menu description"
+  },
+  {
+   "bugid": 1910936,
+   "status": "VERIFIED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] The \"copied to clipboard\" snack bar is no longer displayed on Android < 13 devices in custom tab"
+  },
+  {
+   "bugid": 1911360,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Dismissing the \"Translate this page?\" sheet doesn’t dismiss the Tools menu"
+  },
+  {
+   "bugid": 1911362,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Dismissing the \"Share\" sheet doesn’t dismiss the Tools menu"
+  },
+  {
+   "bugid": 1842154,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < DownloadTest.notificationCanBeDismissedIfDownloadIsInterruptedTest >"
+  },
+  {
+   "bugid": 1897244,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Convert the QuickSuggest provider onLegacyEngagement to use the new notifications"
+  },
+  {
+   "bugid": 1902052,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dedicated search button should be keyboard navigatable"
+  },
+  {
+   "bugid": 1910209,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Improve the Fakespot suggestions engagement telemetry test"
+  },
+  {
+   "bugid": 1911683,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove shouldNavigate for dynamic result types and make UrlbarUtils.getUrlFromResult() fall back to payload.url for all results"
+  },
+  {
+   "bugid": 1911729,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Move openContextMenu from nsContextMenu.js to ContextMenuParent.sys.mjs"
+  },
+  {
+   "bugid": 1911546,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "\"Select topics to fine-tune your feed\" popup doesn't have any :hover or :active styling for its \"Learn how we protect and manage data\" link"
+  },
+  {
+   "bugid": 1911613,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "add new topic label for Home & Garden"
+  },
+  {
+   "bugid": 1910953,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Prevent interleaving of backup creation and deletion using a Web Lock"
+  },
+  {
+   "bugid": 1902656,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update all strings for the sidebar"
+  },
+  {
+   "bugid": 1906140,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update the labs UI toml file for sidebar and vertical tabs"
+  },
+  {
+   "bugid": 1909843,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Tabs without favicons don't look right in the vertical tabstrip"
+  },
+  {
+   "bugid": 1884970,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Close current tab button is missing an accessible name and role"
+  },
+  {
+   "bugid": 1908412,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "API to add tab(s) to a group"
+  },
+  {
+   "bugid": 1908566,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable Tab Hover Preview by default"
+  },
+  {
+   "bugid": 1908873,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "[win] Sometimes NVDA says \"Alert\" when hovering over tabs"
+  },
+  {
+   "bugid": 1901703,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "unify firefox.desktop across tree"
+  },
+  {
+   "bugid": 1879701,
+   "status": "VERIFIED",
+   "component": "GeckoView:General",
+   "summary": "Show text selection context menu when mouse right click on the selected text"
+  },
+  {
+   "bugid": 1909382,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use constexpr for static primitive type"
+  },
+  {
+   "bugid": 1909811,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Some tests in PromptDelegateTest.kt fail if `ui.*.radius.enabled` are set to `false`"
+  },
+  {
+   "bugid": 1911651,
+   "status": "RESOLVED",
+   "component": "GeckoView:Media",
+   "summary": "Disable ExoPlayer HLS use (media.hls.enabled pref) in Fenix release to see what breaks"
+  },
+  {
+   "bugid": 1763134,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Handle navigation which trigger beforeunload prompts for browsingContext.navigate"
+  },
+  {
+   "bugid": 1850682,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add a base RootBiDiModule class"
+  },
+  {
+   "bugid": 1908851,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Mail Window Front End",
+   "summary": "Can't show PDF attachments in tab"
+  },
+  {
+   "bugid": 1743983,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Rewrite the minidump-analyzer in Rust"
+  },
+  {
+   "bugid": 1908369,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "2.05 - 58.92% speedometer AngularJS-TodoMVC/Adding100Items (android-hw-a51-11-0-aarch64-shippable-qr, linux1804-64-nightlyasrelease-qr, macosx1015-64-nightlyasrelease-qr, windows11-64-nightlyasrelease-qr,) regression on Fri Jul 12"
+  },
+  {
+   "bugid": 1906260,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove the -no-remote command line argument"
+  },
+  {
+   "bugid": 1894505,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add description support to moz-radio"
+  },
+  {
+   "bugid": 1907685,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Don't return nullptr from UniFFIPointer::GetParentObject"
+  },
+  {
+   "bugid": 1409262,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Updated openerTabId is not notified via tabs.onUpdated if it is changed by tabs.update()"
+  }
+ ],
+ "fixed": 74,
+ "total": 87,
+ "restricted": 2
+}
