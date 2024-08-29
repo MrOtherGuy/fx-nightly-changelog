@@ -1,0 +1,436 @@
+{
+ "date": "2024-08-29",
+ "buildid": "20240829040756",
+ "cset": "78a5d30a370f05eedaf47dc55d2fc0c946eacda0",
+ "bugs": [
+  {
+   "bugid": 1912543,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: !frameSize.IsEmpty(), at /builds/worker/checkouts/gecko/dom/html/HTMLVideoElement.cpp:759"
+  },
+  {
+   "bugid": 1912461,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Add initial tests for PCM decoding"
+  },
+  {
+   "bugid": 1915286,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Undefined direction angle if we cannot find a tangent angle in ComputePointAtLength()"
+  },
+  {
+   "bugid": 1882670,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "iframe with loading=\"lazy\" is not loading when src is set with location.replace"
+  },
+  {
+   "bugid": 1900426,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ensure drag and drop works for selection that across the shadow boundary"
+  },
+  {
+   "bugid": 1914617,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable ESLint rules no-undef and no-unused-vars on dom/worklet"
+  },
+  {
+   "bugid": 1914877,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Enable on Release"
+  },
+  {
+   "bugid": 1914620,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Enable remaining ESLint rules on dom/websocket"
+  },
+  {
+   "bugid": 1914560,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Failing WPTs in /pointerevents/coalesced_events_attributes.https.html?mouse"
+  },
+  {
+   "bugid": 1914758,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Intermittent [tier 2] mozilla/tests/webgpu/cts/webgpu/api/validation/capability_checks/limits/maxStorageBufferBindingSize/cts.https.html | single tracking bug"
+  },
+  {
+   "bugid": 1914928,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Intermittent [tier 2] mozilla/tests/webgpu/cts/webgpu/api/validation/capability_checks/limits/maxDynamicUniformBuffersPerPipelineLayout/cts.https.html | single tracking bug"
+  },
+  {
+   "bugid": 1915284,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Intermittent TC mozilla/tests/webgpu/cts/webgpu/api/validation/render_pipeline/fragment_state/cts.https.html?q=webgpu:api,validation,render_pipeline,fragment_state:targets_format_filterable:* | single tracking bug"
+  },
+  {
+   "bugid": 1915103,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent js/src/jit-test/tests/basic/stringbuffer-6.js | /builds/worker/checkouts/gecko/js/src/jit-test/tests/basic/stringbuffer-6.js:13:17 Error: Assertion failed: got 2, expected 1 (code 3, args \"--no-blinterp --no-baseline --no-ion --more-compartme"
+  },
+  {
+   "bugid": 1913657,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "assert fail in js::wasm::CompilePartialTier2 when Ion stack frame is too big"
+  },
+  {
+   "bugid": 1909761,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Pass percentage basis when computing intrinsic sizes"
+  },
+  {
+   "bugid": 1913768,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "browser_ml_engine.js missing arguments to EngineDispatcher's terminate method"
+  },
+  {
+   "bugid": 1913158,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "http://xn--w3calb.com should be displayed as punycode"
+  },
+  {
+   "bugid": 1913161,
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "Implement a max-age cap for cookies"
+  },
+  {
+   "bugid": 1914964,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove unused or high volume Early Hints probes"
+  },
+  {
+   "bugid": 1914995,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove an unnecessary #include in MicrosoftEntraSSOUtils.mm"
+  },
+  {
+   "bugid": 1873982,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix  dom/security/test/cors/test_CrossSiteXHR.html when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1873984,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix  dom/security/test/general/test_same_site_cookies_cross_origin_context.html  when blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1873986,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix dom/tests/mochitest/fetch/ when by blocking 3pc by default in TCP"
+  },
+  {
+   "bugid": 1899969,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix web-platform/tests/cookies/partitioned-cookies/partitioned-cookies.tentative.https.html when CHIPS is enabled for android"
+  },
+  {
+   "bugid": 1907326,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update default GeckoView cookieBehavior preferences to BEHAVIOR_REJECT_TRACKER_AND_PARTITION_FOREIGN (5) to mirror Desktop"
+  },
+  {
+   "bugid": 1908160,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable CHIPS by default"
+  },
+  {
+   "bugid": 1915263,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent svg/outline.html == svg/outline-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1915474,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "https://phabricator.services.mozilla.com/D220296"
+  },
+  {
+   "bugid": 1355903,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Re-enable Certificate Transparency telemetry collection in Nightly"
+  },
+  {
+   "bugid": 1915082,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Request sRGB colorspace from ScreenCapturerSck"
+  },
+  {
+   "bugid": 1915433,
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "gfxPlatform::EnsureCMSInitialized leads to presumably harmless reentrancy in gfxPlatform::InitializeCMS"
+  },
+  {
+   "bugid": 1914559,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Remove fallback to hidden window in WindowsUIUtils::UpdateInTabletMode"
+  },
+  {
+   "bugid": 1913061,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "The Debugger panel has crashed."
+  },
+  {
+   "bugid": 1913693,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove legacy code to handling escaping out of the debugger editor which is causing issues"
+  },
+  {
+   "bugid": 1915014,
+   "status": "REOPENED",
+   "component": "DevTools:General",
+   "summary": "Remove fallback to hidden window in ParentProcessTargetActor._getInitialDocShell"
+  },
+  {
+   "bugid": 1902095,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Implement click handlers and other functionality for Compose Bookmarks List"
+  },
+  {
+   "bugid": 1909554,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Refactor the `isTablet` utility function to use `AcornWindowSize` instead"
+  },
+  {
+   "bugid": 1915498,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add long click to list items and its children"
+  },
+  {
+   "bugid": 1915279,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Mockito to version 5.13.0"
+  },
+  {
+   "bugid": 1915264,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Main Menu - Tools, Save and Extensions have wrong direction of arrows in RTL"
+  },
+  {
+   "bugid": 1915438,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Back arrow of Site Details popup inwards in RTL"
+  },
+  {
+   "bugid": 1915449,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] updating string resoureces for i10n clarity"
+  },
+  {
+   "bugid": 1915381,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Enable identity.fxaccounts.telemetry.clientAssociationPing.enabled by default again"
+  },
+  {
+   "bugid": 1915235,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Fix use of camelCasing in links in targeting-attributes.md"
+  },
+  {
+   "bugid": 1914974,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Update Review Checker Telemetry"
+  },
+  {
+   "bugid": 1910581,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Context menu doesn't respect the add-on permissions/prefs"
+  },
+  {
+   "bugid": 935372,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "browser_overflowScroll.js fails with non-default DPI on Windows"
+  },
+  {
+   "bugid": 1804166,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "favicon not reseting when changing tab to about:newtab with newtab to Blank Page"
+  },
+  {
+   "bugid": 1908411,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "API to delete group"
+  },
+  {
+   "bugid": 1915266,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Almost permafailing TEST-UNEXPECTED-FAIL | browser/components/tabbrowser/test/browser/tabs/browser_middle_click_new_tab_button_loads_clipboard.js | Test timed out -"
+  },
+  {
+   "bugid": 1915405,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Scroll forwards\" and \"Open a new tab\" UI elements disappear from the tab strip with many pinned tabs and many open tabs"
+  },
+  {
+   "bugid": 1915415,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make arrowscrollbox timing of events more consistent."
+  },
+  {
+   "bugid": 1915306,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "White border appears at top of content area when OS Theme is Dark"
+  },
+  {
+   "bugid": 1915387,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Add hjones as Desktop Theme peer"
+  },
+  {
+   "bugid": 1583811,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "The \"Firefox Account\" page is not opened in a new tab when middle click on the “email address+avatar” button"
+  },
+  {
+   "bugid": 1912993,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused reference to autoconfmk in js/src/old-configure.in"
+  },
+  {
+   "bugid": 1913225,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Detect arm64 MSVC"
+  },
+  {
+   "bugid": 1914953,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "add support for sccache buckets in northamerica-northeast1 region"
+  },
+  {
+   "bugid": 1915074,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add win64-aarch64 clang trunk tasks"
+  },
+  {
+   "bugid": 1915182,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add win64-aarch64-clang-tidy job"
+  },
+  {
+   "bugid": 1914410,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Uploading",
+   "summary": "upload fenix/focus to candidates directory on release promotion"
+  },
+  {
+   "bugid": 490753,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clarify the \"Today\" duration in the clear recent history dialog"
+  },
+  {
+   "bugid": 1914666,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "First implementation to show Relay to all Desktop users"
+  },
+  {
+   "bugid": 1914868,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[Password Generator iOS] Share more dependencies for detecting new password field"
+  },
+  {
+   "bugid": 1830553,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager: Site Compatibility",
+   "summary": "Attempts to fill in logins/passwords in weird places such as Discord/Add Friend"
+  },
+  {
+   "bugid": 1913976,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "menu_mobileBookmarks folder is missing."
+  },
+  {
+   "bugid": 1894526,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate addons-search-detection away from browser.telemety event APIs"
+  },
+  {
+   "bugid": 1915115,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove unreferenced telemetry scalars"
+  },
+  {
+   "bugid": 1915228,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove expired legacy telemetry scalar definitions and their code"
+  },
+  {
+   "bugid": 1909980,
+   "status": "NEW",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Duo 2fa hits \"403 forbidden\" if your system clock is wrong, only in Firefox"
+  },
+  {
+   "bugid": 1907732,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "clearing recent history loses extension's unlimitedStorage permission"
+  }
+ ],
+ "fixed": 61,
+ "total": 71,
+ "restricted": 1
+}
