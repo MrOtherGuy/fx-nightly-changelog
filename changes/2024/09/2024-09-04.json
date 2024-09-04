@@ -1,0 +1,460 @@
+{
+ "date": "2024-09-04",
+ "buildid": "20240904095513",
+ "cset": "35b419e9cf538709ea3f63fc57e3291f00059d32",
+ "bugs": [
+  {
+   "bugid": 1916530,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor application-services into mozilla-central"
+  },
+  {
+   "bugid": 1916306,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "unexpected InvalidStateError exception with MediaSource.endOfStream() and short-duration last frame"
+  },
+  {
+   "bugid": 1911216,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add CSS selector parsing support for view transitions pseudo-elements"
+  },
+  {
+   "bugid": 1882670,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "iframe with loading=\"lazy\" is not loading when src is set with location.replace"
+  },
+  {
+   "bugid": 1900426,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ensure drag and drop works for selection that across the shadow boundary"
+  },
+  {
+   "bugid": 1916262,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove AbortFollower inheritance from AbortSignal"
+  },
+  {
+   "bugid": 1916081,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Crash in [@ mozilla::EditorBase::GetDocument]"
+  },
+  {
+   "bugid": 1914594,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Redirect to non http(s) URL in new tab is ignored"
+  },
+  {
+   "bugid": 1913925,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Frequent OS X debug Assertion failure: !aParam.mSynthesizeMoveAfterDispatch, at /builds/worker/workspace/obj-build/dist/include/ipc/nsGUIEventIPC.h:223"
+  },
+  {
+   "bugid": 1768396,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Consider caching RemoteAccessibleBase::IndexInParent"
+  },
+  {
+   "bugid": 1911518,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver sometimes freezes and reads all address bar suggestions when focusing the address bar"
+  },
+  {
+   "bugid": 1885491,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Ship webgl.drawingBufferColorSpace"
+  },
+  {
+   "bugid": 1877792,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JSON modules browser integration"
+  },
+  {
+   "bugid": 1899501,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement explicit resource management in warp builder"
+  },
+  {
+   "bugid": 1913085,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Release JSON.parse with source"
+  },
+  {
+   "bugid": 1916185,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support JSOp::GetBoundName in Warp"
+  },
+  {
+   "bugid": 1916359,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Update GenerateLIRFiles.py to generate LIR ops from MIROps.yaml"
+  },
+  {
+   "bugid": 1915860,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Make wasmDis fuzzing unsafe"
+  },
+  {
+   "bugid": 1915864,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Don't allow fuzzing unsafe features to be configured"
+  },
+  {
+   "bugid": 1909761,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Pass percentage basis when computing intrinsic sizes"
+  },
+  {
+   "bugid": 1748339,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "content-based 'flex-basis' produces a width of 0, in case where descendant with aspect ratio and resolvable percent height should prop it up"
+  },
+  {
+   "bugid": 1913158,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "http://xn--w3calb.com should be displayed as punycode"
+  },
+  {
+   "bugid": 1913692,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Write test for mode3 TRR with captive portal login"
+  },
+  {
+   "bugid": 1915693,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove unused telemetry probes (HTTP_09_INFO, HTTP_TRANSACTION_USE_ALTSVC_OE, and SPDY_NPN_CONNECT)."
+  },
+  {
+   "bugid": 1888494,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Increased Protection mode for DNS-over-HTTPS (DoH) breaks captive portals"
+  },
+  {
+   "bugid": 1907418,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Migrate HTTP3_TLS_HANDSHAKE, SUP_HTTP3_TCP_CONNECTION, HTTP3_OPEN_TO_FIRST_SENT, HTTP3_FIRST_SENT_TO_LAST_RECEIVED, HTTP3_OPEN_TO_FIRST_RECEIVED, and HTTP3_COMPLETE_LOAD probes to glean"
+  },
+  {
+   "bugid": 1913908,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Improve HTTP_CONNECTION_CLOSE_REASON"
+  },
+  {
+   "bugid": 1894122,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "\"Dead zone\" during scrolling when panning back and forth in a single gesture (sticky axis locking eats vertical movement in some cases)"
+  },
+  {
+   "bugid": 1906157,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Use AsyncPanZoomController::ToCSSPixel in more places"
+  },
+  {
+   "bugid": 1916528,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Consider disabling and eventually removing Android TouchResampler code"
+  },
+  {
+   "bugid": 1916191,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "remove lineno annotations from mochitest .toml file"
+  },
+  {
+   "bugid": 1355903,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Re-enable Certificate Transparency telemetry collection in Nightly"
+  },
+  {
+   "bugid": 1916423,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Failing WPT service-workers/cache-storage/cross-partition.https.tentative.html on Android"
+  },
+  {
+   "bugid": 1912778,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Missing device list changes once camera backend is initialized"
+  },
+  {
+   "bugid": 1912785,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Camera backend can be initialized without information about camera availability and hit assert when screen casting"
+  },
+  {
+   "bugid": 1914239,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Remove highlight of selected paused frame when selecting a tracer frame"
+  },
+  {
+   "bugid": 1915800,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Change modifier to add new line in Conditional panel"
+  },
+  {
+   "bugid": 1911733,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Use light-dark() in variables.css"
+  },
+  {
+   "bugid": 1916258,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add colorSwatchReadOnly to OutputParser"
+  },
+  {
+   "bugid": 1915857,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Refactor getThemeColorAsRgba"
+  },
+  {
+   "bugid": 1915872,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Refactor getColor"
+  },
+  {
+   "bugid": 1916093,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "When generating docs, handle CRITICAL errors, and make more warnings fatal by default"
+  },
+  {
+   "bugid": 1911100,
+   "status": "NEW",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Display \"Set as default Browser\" native prompt in home fragment"
+  },
+  {
+   "bugid": 1916177,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Start the Nightly 132 development cycle"
+  },
+  {
+   "bugid": 1849073,
+   "status": "ASSIGNED",
+   "component": "Fenix:Search",
+   "summary": "Remove unifiedSearchSettings feature flags"
+  },
+  {
+   "bugid": 1885606,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement animation between menu and sub menu"
+  },
+  {
+   "bugid": 1912473,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Download complete dialog appears mid-air or overlapped by navigation bar when changing the orientation"
+  },
+  {
+   "bugid": 1914421,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "Fenix crashes when using the Accessibility Scanner in a specific Translations settings screen"
+  },
+  {
+   "bugid": 1893071,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Contextual Search should enter search mode"
+  },
+  {
+   "bugid": 1900725,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent browser/components/places/tests/browser/browser_library_bookmark_clear_visits.js | single tracking bug"
+  },
+  {
+   "bugid": 1902342,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmarks Toolbar briefly shows placeholder message (\"For quick access, place your bookmarks here...\") on every new Firefox window, sometimes alongside my first bookmark"
+  },
+  {
+   "bugid": 1775957,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Intermittent browser/components/privatebrowsing/test/browser/browser_privatebrowsing_about.js | single tracking bug"
+  },
+  {
+   "bugid": 1908699,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Perma win [tier 2] services/settings/test/unit/test_attachments_downloader.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": 1916087,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "`browser_search_telemetry_engagement_eventListeners_children.js` synthesizes non-realistic mouse events"
+  },
+  {
+   "bugid": 1899346,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Move all tools in the tabs toolbar when in vertical tabs mode"
+  },
+  {
+   "bugid": 1911626,
+   "status": "NEW",
+   "component": "Firefox:Sidebar",
+   "summary": "Add close remote tab for synced tabs in sidebar"
+  },
+  {
+   "bugid": 1916101,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Make the fix to bug 1915664 apply to Linux too."
+  },
+  {
+   "bugid": 655445,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add setting to control position of tabs opened from pinned tabs"
+  },
+  {
+   "bugid": 1908408,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "API to move group to a new window"
+  },
+  {
+   "bugid": 1908934,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Whitespace around inline tags is not correctly preserved"
+  },
+  {
+   "bugid": 1915768,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Unwanted translation of implicit <option> values"
+  },
+  {
+   "bugid": 1914333,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make harfbuzz compatible with -fstrict-flex-array-member=2"
+  },
+  {
+   "bugid": 1915540,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build logs are still eaten on Windows"
+  },
+  {
+   "bugid": 1916125,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Ctrl-C does not cancel \"mach build\""
+  },
+  {
+   "bugid": 1916292,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Upgrade typing_extensions python package"
+  },
+  {
+   "bugid": 1916438,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Use a specialized state type instead of mutableStateOf"
+  },
+  {
+   "bugid": 1911561,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "The variant `aab` expiration is on 2024-09-01"
+  },
+  {
+   "bugid": 1914993,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "4.17% ts_paint (Linux) regression on Fri August 9 2024"
+  },
+  {
+   "bugid": 1899261,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Support inspecting all the <input> and <select> in a document"
+  },
+  {
+   "bugid": 1916360,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add `extensions.formautofill.heuristics.autofillSameOriginWithTop` to `Constants.ios.mjs`"
+  },
+  {
+   "bugid": 1916034,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Remove unused nsIAppStartup.interrupted"
+  },
+  {
+   "bugid": 1914666,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "First implementation to show Relay to all Desktop users"
+  },
+  {
+   "bugid": 1910807,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP captions no longer work in arte.tv"
+  },
+  {
+   "bugid": 1910488,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Update moz-button's Storybook status to stable"
+  },
+  {
+   "bugid": 1915646,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Stop importing in-content vars into notification-message"
+  }
+ ],
+ "fixed": 66,
+ "total": 75,
+ "restricted": 4
+}
