@@ -1,0 +1,520 @@
+{
+ "date": "2024-09-05",
+ "buildid": "20240905095820",
+ "cset": "c20bcb3d61ece7634c67db62fdd1526dbee1937f",
+ "bugs": [
+  {
+   "bugid": 1888472,
+   "status": "NEW",
+   "component": "Application Services:Webext Storage",
+   "summary": "Replace webext-storage API calls with UNIFFI-ed webext-storage component calls"
+  },
+  {
+   "bugid": 1912557,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "enable assembly for arm 32 bit for dav1d"
+  },
+  {
+   "bugid": 1815783,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[MediaControl-Linux] Show media URL on the virtual control interface (MPRIS)"
+  },
+  {
+   "bugid": 1914735,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "color-scheme with different single values does not work for consecutive elements"
+  },
+  {
+   "bugid": 1916311,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-view-transitions] Initial pass at DOM API internals."
+  },
+  {
+   "bugid": 1711835,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make navigator.oscpu and navigator.platform a compile-time value on Linux"
+  },
+  {
+   "bugid": 1882670,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "iframe with loading=\"lazy\" is not loading when src is set with location.replace"
+  },
+  {
+   "bugid": 1915057,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make somebody activates `IMEContentObserver` after document has a new root element"
+  },
+  {
+   "bugid": 1916081,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Crash in [@ mozilla::EditorBase::GetDocument]"
+  },
+  {
+   "bugid": 1816916,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Hide Onion Referrers by default"
+  },
+  {
+   "bugid": 1913382,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Count how common it is for SVG STYLE/XMP/etc. elements to contain children in the real world"
+  },
+  {
+   "bugid": 1879744,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent TEST-UNEXPECTED-TIMEOUT | tools/profiler/tests/xpcshell/test_feature_cpufreq.js | single tracking bug"
+  },
+  {
+   "bugid": 1916561,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "GL_BYTE not recognized by GetEnumName"
+  },
+  {
+   "bugid": 1915749,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Update Localization documentation post GitHub transition"
+  },
+  {
+   "bugid": 1899501,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement explicit resource management in warp builder"
+  },
+  {
+   "bugid": 1905988,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Clean up script dependency logic for invalidating fuses."
+  },
+  {
+   "bugid": 1915328,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Temporary 2.8GB memory spike on a slightly modified Codepen demo"
+  },
+  {
+   "bugid": 1916260,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow [[ReferencedName]] in Reference Records to be a not-yet-resolved property key"
+  },
+  {
+   "bugid": 1850746,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate whether poison and decommit on chunk creation is optimal"
+  },
+  {
+   "bugid": 1916362,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "High frequency GC mode doesn't trigger any more"
+  },
+  {
+   "bugid": 1916549,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Mark js/src/jit-test/tests/wasm/gc/big-arrays.js as slow"
+  },
+  {
+   "bugid": 1851008,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Hit MOZ_CRASH(assertion failed: self.state.active()) at /builds/worker/checkouts/gecko/third_party/rust/neqo-http3/src/connection.rs:1086"
+  },
+  {
+   "bugid": 1915700,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Expose socket process network markers with MarkerThreadId::MainThread()"
+  },
+  {
+   "bugid": 1916645,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "neqo v0.9.0"
+  },
+  {
+   "bugid": 1916352,
+   "status": "NEW",
+   "component": "Core:Networking: DNS",
+   "summary": "Increasing idle timeout for TRR connection"
+  },
+  {
+   "bugid": 1841896,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[meta] Port APZ Fission tests in browser_test_group_fission.js to regular mochitests running in M-fis or M-fis-xorig mode"
+  },
+  {
+   "bugid": 1915006,
+   "status": "VERIFIED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Assertion failure: overscrollScale > 0.0f && overscrollScale <= 1.0f, at /builds/worker/checkouts/gecko/gfx/layers/apz/src/ScrollThumbUtils.cpp:259"
+  },
+  {
+   "bugid": 1916278,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Update xsimd to new version caeb777bdd38f0c3a00277b4b64c8ec259b0027a from 2024-08-11 14:34:20"
+  },
+  {
+   "bugid": 1916385,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Intermittent [tier 2] svg/outline.html == svg/outline-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1830275,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "WebRTC: Implement DeviceInfo::DeviceChange() in DeviceInfoPipewire"
+  },
+  {
+   "bugid": 1912989,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libwebrtc to 128"
+  },
+  {
+   "bugid": 1912785,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Camera backend can be initialized without information about camera availability and hit assert when screen casting"
+  },
+  {
+   "bugid": 1915433,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "gfxPlatform::EnsureCMSInitialized leads to presumably harmless reentrancy in gfxPlatform::InitializeCMS"
+  },
+  {
+   "bugid": 1911801,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "browser_very_fission.js never runs"
+  },
+  {
+   "bugid": 1916462,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable tracer debugger sidebar by default"
+  },
+  {
+   "bugid": 1916533,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Always use native backend when recording JS Traces to the profiler output"
+  },
+  {
+   "bugid": 1916286,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "resource://devtools/shared/loader/builtin-modules.js fails to open on Windows local build"
+  },
+  {
+   "bugid": 1915804,
+   "status": "RESOLVED",
+   "component": "DevTools:Source Editor",
+   "summary": "Add AbortController to control sourceeditor event listeners"
+  },
+  {
+   "bugid": 1916616,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update exclusions for ESLint rule no-insecure-url in .eslintrc-rollouts.js"
+  },
+  {
+   "bugid": 1915750,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add SelectableFaviconListItem and SelectableIconListItem Composables"
+  },
+  {
+   "bugid": 1916364,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Selecting multiple downloads does not update the number in the toolbar"
+  },
+  {
+   "bugid": 1910839,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey Search - Add the required experiment strings"
+  },
+  {
+   "bugid": 1910867,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey Search - Add the feature trigger"
+  },
+  {
+   "bugid": 1916268,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "crash: IllegalStateException  org.mozilla.fenix.components.toolbar.BottomToolbarContainerView in <init>"
+  },
+  {
+   "bugid": 1916368,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove nullable flag for 'answer' from NimbusMessagingController sendMicrosurveyCompletedTelemetry"
+  },
+  {
+   "bugid": 1910788,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update \"meh\" locale name in our in-app language switcher"
+  },
+  {
+   "bugid": 1916588,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 7902bfb6df38d62fc06c4afba917aa41679c489b from 2024-09-04 05:02:46"
+  },
+  {
+   "bugid": 1908497,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Address bar tab preview does not have the share and reload action buttons"
+  },
+  {
+   "bugid": 1915975,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Remove ripple effect on the search and tabs tray buttons"
+  },
+  {
+   "bugid": 1916749,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add set as default prompt helper and use it only where needed"
+  },
+  {
+   "bugid": 1772264,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Distinguish \"rich\" icons in the favicons service and when asking for a small sized icon prefer the classic ones"
+  },
+  {
+   "bugid": 1914068,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Use principal URI for content analysis"
+  },
+  {
+   "bugid": 1912403,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Remove inline events handlers from navigator-toolbox"
+  },
+  {
+   "bugid": 1912333,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Create special message action to bookmark current tab"
+  },
+  {
+   "bugid": 1915707,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Use group_id during branch allocation in Nimbus Client"
+  },
+  {
+   "bugid": 1916667,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 4fb045b9eb013752086289d2f2db575e05d1497b from 2024-09-04 12:07:18"
+  },
+  {
+   "bugid": 1890427,
+   "status": "NEW",
+   "component": "Firefox:Profile Backup",
+   "summary": "Update backups when history and bookmarks are modified or manually cleared"
+  },
+  {
+   "bugid": 1893485,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add the profileGroupID to the backup manifest meta property"
+  },
+  {
+   "bugid": 1910968,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Ensure that search engines with invalid verification hashes aren't recovered and validated"
+  },
+  {
+   "bugid": 1916025,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Perma browser/components/sidebar/tests/browser/browser_history_sidebar.js | There is a card for each day. - 2 == 3 -"
+  },
+  {
+   "bugid": 1915599,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Consolidate tabbrowser arrowscrollbox initialization and overflow/overflowing attribute checks"
+  },
+  {
+   "bugid": 1916497,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add pref to turn on tab groups"
+  },
+  {
+   "bugid": 1916574,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Toolbar bottom border missing after bug 1916004"
+  },
+  {
+   "bugid": 1625600,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "panelview with long title is rendered incorrectly, oversized and painting issues"
+  },
+  {
+   "bugid": 1610656,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Kill the `withGeckoBinaries` variant"
+  },
+  {
+   "bugid": 1913480,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Update AGP to version 8.6.0"
+  },
+  {
+   "bugid": 1916043,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Running ./mach ide vscode with an artifact build fails with KeyError: 'CXX'"
+  },
+  {
+   "bugid": 1916304,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Prevent running `mach vendor rust` with cargo < 1.80."
+  },
+  {
+   "bugid": 1915574,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Clean up toolchain symbols"
+  },
+  {
+   "bugid": 1914947,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Get macosx-aarch64 profile for clang build?"
+  },
+  {
+   "bugid": 1915568,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Split windows clang build like for other platforms"
+  },
+  {
+   "bugid": 1915571,
+   "status": "NEW",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Build mac and windows clangs more quickly"
+  },
+  {
+   "bugid": 1915778,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Clean up the clang toolchain json configs"
+  },
+  {
+   "bugid": 1916600,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-tidy Exception: Download failed, no more retries!"
+  },
+  {
+   "bugid": 1914354,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "Remove polling for profile data in android_emulator_pgo.py which is no longer needed after bug 1761634"
+  },
+  {
+   "bugid": 1910087,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Merge `navigations` and `preRegisteredNavigationIds` maps into one in NavigationManager"
+  },
+  {
+   "bugid": 1899283,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Support showing unrecognize fields in about:autofill"
+  },
+  {
+   "bugid": 1916293,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[Password Generator iOS] Share `isProbablyANewPasswordField` and `findConfirmationField` for `new-password` field detection"
+  },
+  {
+   "bugid": 1911375,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Add new telemetry to measure how often the page-icon protocol serves icons smaller than requested"
+  },
+  {
+   "bugid": 1915974,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove toolkit/components/places/tests/expiration/test_notifications.js"
+  },
+  {
+   "bugid": 1905214,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "\"Read Aloud\" in reader activates on reopening last closed window with keyboard shortcut"
+  },
+  {
+   "bugid": 1910716,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Support launching selectable profiles via `--profile` command line option"
+  },
+  {
+   "bugid": 1915451,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a link to the HCM Media Query docs from the Design Tokens docs"
+  },
+  {
+   "bugid": 1911977,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "my.tso.tele2.se - The BankID button is not working"
+  },
+  {
+   "bugid": 1915606,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Fix ExtensionControlledPopups dialogs SUMO learn more link position"
+  }
+ ],
+ "fixed": 72,
+ "total": 85,
+ "restricted": 3
+}
