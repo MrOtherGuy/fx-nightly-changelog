@@ -1,0 +1,478 @@
+{
+ "date": "2024-09-10",
+ "buildid": "20240910090327",
+ "cset": "ebf0e33ba93e6be120a2c9d1b257b840b467c235",
+ "bugs": [
+  {
+   "bugid": 1916280,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update libvpx to new version 3ba1fada8b6389549f942eeaff40532d005b0390"
+  },
+  {
+   "bugid": 1436226,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Hardcode VP8/VP9 algorithm choice when resisting fingerprinting"
+  },
+  {
+   "bugid": 1916282,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update dav1d to new version 79db1624878fa0f37841ddc2caf86f06738ae275"
+  },
+  {
+   "bugid": 1891082,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Video on https://webvideo-js.pages.dev/ does not play"
+  },
+  {
+   "bugid": 1607032,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "RFP: make spoofed orientation reflect spoofed screen dimensions"
+  },
+  {
+   "bugid": 1917087,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make scope bound selectors unforgiving"
+  },
+  {
+   "bugid": 1917089,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Nested @scope with Relative Selector in inner @scope's selector-start doesn't work"
+  },
+  {
+   "bugid": 1917511,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Demo takes 3mins to run and spends 2.4mins in nsParentNodeChildContentList::ValidateCache. Chrome runs in 20s"
+  },
+  {
+   "bugid": 1809028,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "[Web Notifications] Ship support for “silent” web notifications by default"
+  },
+  {
+   "bugid": 1773976,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP: Network loads triggered by SVG <use href=> are only controlled by default-src. Need spec to explicitly define the directive to use."
+  },
+  {
+   "bugid": 1917215,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Fix typo in test"
+  },
+  {
+   "bugid": 1794974,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[CTW] Runtime adjustment of requested cache domains"
+  },
+  {
+   "bugid": 1871557,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Intermittent Assertion failure: CompositorThreadHolder::IsInCompositorThread(), at /builds/worker/checkouts/gecko/gfx/layers/ipc/CompositorBridgeParent.cpp:356 | single tracking bug"
+  },
+  {
+   "bugid": 1846055,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "A monochrome AVIF image with an ICC profile is rendered incorrectly"
+  },
+  {
+   "bugid": 1916038,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "[GCC] Firefox-130.0 has issues when showing AVIF images"
+  },
+  {
+   "bugid": 1917339,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Auto-assign review of WebGPU's IDL file to `#webgpu-reviewers`"
+  },
+  {
+   "bugid": 1917513,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add a way to expose if webgpu::Adapter and webgpu::Device support ExternalTexture usage in SwapChain"
+  },
+  {
+   "bugid": 1905611,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[REGRESSION] DarkReader's Filter+ mode is extremely low res with gfx.webrender.svg-filter-effects enabled (Nightly only)"
+  },
+  {
+   "bugid": 1913568,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Incorrect hardware VP9 Video Scale on Huawei Mate 10 Pro"
+  },
+  {
+   "bugid": 1905364,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement Promise.try"
+  },
+  {
+   "bugid": 1916990,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Clean-up some environment object code"
+  },
+  {
+   "bugid": 1917214,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma test262/annexB/language/eval-code/direct/script-decl-lex-no-collision.js | (args: \"\") [0.0 s] when Gecko 132 merges to beta on 2024-09-30"
+  },
+  {
+   "bugid": 1917516,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve generated code for PropertyKey::isAtom"
+  },
+  {
+   "bugid": 1917519,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rectify includes in builtin/DisposableStackObject.cpp"
+  },
+  {
+   "bugid": 1917456,
+   "status": "NEW",
+   "component": "Core:Layout: Form Controls",
+   "summary": "<input type=\"range\" style=\"padding: 100px\"> miscalculates click coordinates"
+  },
+  {
+   "bugid": 1917528,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Duplicate telemetry recording for mDefaultLoadRequest"
+  },
+  {
+   "bugid": 1915848,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Pref off HTTP/2 push"
+  },
+  {
+   "bugid": 1917341,
+   "status": "RESOLVED",
+   "component": "Core:Networking: JAR",
+   "summary": "Clean up ADDREF/RELEASEs in nsJAR"
+  },
+  {
+   "bugid": 1887125,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add testcases related to scroll position rounding"
+  },
+  {
+   "bugid": 1917715,
+   "status": "RESOLVED",
+   "component": "Core:Print Preview",
+   "summary": "Print preview doesn't work properly for some SVG unless \"print backgrounds\" is checked"
+  },
+  {
+   "bugid": 1917604,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Favorite weatherapp yr.no broken by SVG regression that covers up weather graph with red & purple boxes"
+  },
+  {
+   "bugid": 1917550,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Failing WPT service-workers/cache-storage/cache-abort.https.any.js"
+  },
+  {
+   "bugid": 1917669,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Document the purpose of nsDisplayList::mIsRelativeToLayoutViewport"
+  },
+  {
+   "bugid": 1914130,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Vendor Glean v61.0.0"
+  },
+  {
+   "bugid": 1907304,
+   "status": "NEW",
+   "component": "DevTools:General",
+   "summary": "DevTools offline mode should not make cached requests fail"
+  },
+  {
+   "bugid": 1916881,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Clicking on event badge doesn't do anything on some pages using jQuery"
+  },
+  {
+   "bugid": 1917098,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Incorrect WebChannel message parsed for delete account"
+  },
+  {
+   "bugid": 1907922,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Android : open links in app. \" Always\" option missing since latest release."
+  },
+  {
+   "bugid": 1903569,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Asses impact of the new Data sync foreground service timeout behavior when targeting Android 15"
+  },
+  {
+   "bugid": 1910870,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey Sync - Add the feature trigger based on time - behavioural targeting"
+  },
+  {
+   "bugid": 1914164,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add Nimbus to enable experiment updating the the app icon background colour to white"
+  },
+  {
+   "bugid": 1917032,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Disabling telemetry should grey out and visibly disable studies"
+  },
+  {
+   "bugid": 1917138,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Crash in [@ java.lang.RuntimeException: at androidx.coordinatorlayout.widget.DirectedAcyclicGraph.dfs(DirectedAcyclicGraph.java)]"
+  },
+  {
+   "bugid": 1917400,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 6651984e3b456d99fad0df1deb727b7c2f62ec16 from 2024-09-07 05:03:48"
+  },
+  {
+   "bugid": 1917414,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Google Accompanist to version 0.36.0"
+  },
+  {
+   "bugid": 1917498,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Migrate the remaining AndroidX libraries to the AC dependencies plugin"
+  },
+  {
+   "bugid": 1912342,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Navigation Bar CFR should only be shown to existing users."
+  },
+  {
+   "bugid": 1912988,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] the YouTube playlist table disappears when the toolbar is hidden"
+  },
+  {
+   "bugid": 1913204,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "New Switch to tab button does not distinguish between container and regular tabs"
+  },
+  {
+   "bugid": 1914604,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Secondary Actions buttons remain in the address bar dropdown after exiting Actions mode"
+  },
+  {
+   "bugid": 1653564,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Open options from the context menu doesn't dismiss the bookmarks doorhanger in some cases"
+  },
+  {
+   "bugid": 1841429,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Firefox 115 Bookmark Toolbar - Firefox connects(preload) with a right click to web page"
+  },
+  {
+   "bugid": 1915350,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Web pages become unresponsive after pasting the “warning text”"
+  },
+  {
+   "bugid": 1916946,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Remove or update metrics expiring in Firefox 133: private_browsing.window_open_during_teardown"
+  },
+  {
+   "bugid": 1911070,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "[Experiment] Two infobars are displayed on \"treatment-a\" branch when first navigating on a webmail page that already exists in the Applications list"
+  },
+  {
+   "bugid": 1917373,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "ShellService fails to log when methods are not present on the proxied `nsIShellService`."
+  },
+  {
+   "bugid": 1917551,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar no longer has a top border with sidebar.revamp = false"
+  },
+  {
+   "bugid": 1917557,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Bug 1886847 should've tweaked browser-custom-colors.css too."
+  },
+  {
+   "bugid": 1917342,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Synced tabs in the Synced tabs menu are not showing close remote tab feature or inactive tabs due to overflow"
+  },
+  {
+   "bugid": 1901826,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fullscreen toolbar autohides prematurely when tab preview disappears"
+  },
+  {
+   "bugid": 1913279,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Scroll to the selected tab when in vertical tabs mode"
+  },
+  {
+   "bugid": 1910203,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update all-tabs button icon so we can move the button into the nav bar when vertical tabs are enabled"
+  },
+  {
+   "bugid": 1917588,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Stop setting  --button-bgcolor, --button-hover-bgcolor, --button-active-bgcolor in browser-shared.css"
+  },
+  {
+   "bugid": 1906365,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Don't use `dotgradle-online` environment for Firefox for Android Gradle tasks"
+  },
+  {
+   "bugid": 1917581,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Update Gradle to version 8.10.1"
+  },
+  {
+   "bugid": 1916985,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "\"tarfile.StreamError: seeking backwards is not allowed\" error during Windows bootstrap"
+  },
+  {
+   "bugid": 1917407,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma linting rust vendor - Errors occured; new rust crates were not vendored."
+  },
+  {
+   "bugid": 1917744,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[rust-nightly] Perma error: failed to run custom build command for `mozglue-static v0.1.0 (/builds/worker/checkouts/gecko/mozglue/static/rust)`"
+  },
+  {
+   "bugid": 1917746,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[rust nightly] Perma error: elided lifetime has a name"
+  },
+  {
+   "bugid": 1916592,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Deprioritize Puppeteer tests for CDP to Tier 2"
+  },
+  {
+   "bugid": 1917524,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:CDP",
+   "summary": "Disable network.cookies.useServerTime for CDP"
+  },
+  {
+   "bugid": 1911098,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "Thunderbird deb package desktop file has Firefox stuff in it"
+  },
+  {
+   "bugid": 1916411,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Profile locked dialog hangs startup on macOS"
+  },
+  {
+   "bugid": 1894533,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Deprecate browser.telemetry.registerEvents and browser.telemetry.recordEvents and replace them with no-ops"
+  },
+  {
+   "bugid": 1894506,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add support-link support to moz-radio"
+  },
+  {
+   "bugid": 1914241,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Upgrade UniFFI to 0.28.x"
+  },
+  {
+   "bugid": 1915426,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Update dependencies to prepare for the 0.28 update"
+  },
+  {
+   "bugid": 1893181,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Update Searchfox indexing to include AC/Fenix/Focus"
+  }
+ ],
+ "fixed": 69,
+ "total": 78,
+ "restricted": 7
+}
