@@ -1,0 +1,466 @@
+{
+ "date": "2024-09-14",
+ "buildid": "20240914092100",
+ "cset": "ea9792026c1957530b2403b33acee81bdd95acaf",
+ "bugs": [
+  {
+   "bugid": 1908245,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Implement support for including WebRTC specific values in HTMLVideoElement.requestVideoFrameCallback"
+  },
+  {
+   "bugid": 1914570,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "smleaks.com - Audio is distorted"
+  },
+  {
+   "bugid": 1914841,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Add more tests for Web Codecs audio decoding"
+  },
+  {
+   "bugid": 1917579,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Flac doesn't decode any more with Web Codecs"
+  },
+  {
+   "bugid": 1918454,
+   "status": "VERIFIED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(attempt to divide by zero) at servo/components/style/values/computed/font.rs:105"
+  },
+  {
+   "bugid": 1918670,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Revert canonical order enforcement for `position-try-fallbacks`"
+  },
+  {
+   "bugid": 1917745,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom.window.sizeToContent.enabled pref"
+  },
+  {
+   "bugid": 1918736,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Reissue PrivateAttibution OriginTrial"
+  },
+  {
+   "bugid": 1918300,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Apply bug 1293212 and bug 1628961 to the uikit uriloader"
+  },
+  {
+   "bugid": 1914008,
+   "status": "NEW",
+   "component": "Core:DOM: Notifications",
+   "summary": "Add WPT for cross origin notification permission"
+  },
+  {
+   "bugid": 1915575,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Intermittent dom/events/test/test_deltaMode_lines_always_enabled.html | single tracking bug"
+  },
+  {
+   "bugid": 1917964,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Build failure with GCC 15 in swgl-0.1.0"
+  },
+  {
+   "bugid": 1918554,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libpng to new version v1.6.44 from 2024-09-12 23:44:44"
+  },
+  {
+   "bugid": 1873039,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: ASTC formats are not supported"
+  },
+  {
+   "bugid": 1917059,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU devices claim support for `texture-compression-etc2` feature, but ETC2 texture formats are not recognized"
+  },
+  {
+   "bugid": 1917102,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to c2e0ad293 (2024-09-12)"
+  },
+  {
+   "bugid": 1918739,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2024-09-13"
+  },
+  {
+   "bugid": 1918411,
+   "status": "NEW",
+   "component": "Core:Internationalization: Localization",
+   "summary": "Reformat Fluent files in mozilla-central with new moz-l10n style"
+  },
+  {
+   "bugid": 1166408,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Additional [[HasProperty]] call when checking object environment binding in call expression"
+  },
+  {
+   "bugid": 1918114,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fold MIntPtrToBigInt in MNot and MCompare"
+  },
+  {
+   "bugid": 1918224,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "ThreadSanitizer: data race [@ Test] vs. [@ operator=]"
+  },
+  {
+   "bugid": 1918303,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: toSpace.mallocedBufferBytes >= nbytes, at gc/Nursery-inl.h:77"
+  },
+  {
+   "bugid": 1735589,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "[css-flexbox] content size suggestion of image flex items"
+  },
+  {
+   "bugid": 1742042,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Intrinsically-sized flex container has the wrong intrinsic ISize, if it has a definite BSize that stretches a child with an aspect ratio"
+  },
+  {
+   "bugid": 1917763,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Cleanup and refactoring of MathML layout classes"
+  },
+  {
+   "bugid": 1918308,
+   "status": "ASSIGNED",
+   "component": "Core:MathML",
+   "summary": "nsMathMLContainerFrame::AttributeChanged should not always force a reflow"
+  },
+  {
+   "bugid": 1918070,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable QUIC ECN on Firefox Nightly"
+  },
+  {
+   "bugid": 1915134,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add pref to enable Extensible Prioritization Scheme without sending SETTINGS_NO_RFC7540_PRIORITIES"
+  },
+  {
+   "bugid": 1918711,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Firefox immediately crashes on the new tab page and blocks local WPT run"
+  },
+  {
+   "bugid": 1917453,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Create a common infrastructure for notification utilities"
+  },
+  {
+   "bugid": 1918096,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Hook up an SCContentSharingPicker MVP integration"
+  },
+  {
+   "bugid": 1918641,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Allow more concurrent screen sharing streams for PipeWire"
+  },
+  {
+   "bugid": 1918762,
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "Minor clean-ups to scrollbar and widget paint invalidation"
+  },
+  {
+   "bugid": 1900395,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix Failing tests to enable CM6"
+  },
+  {
+   "bugid": 1908615,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Display all the DOM events of a record in the Debugger Tracer Sidebar"
+  },
+  {
+   "bugid": 1916086,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger crash when debugging userscript code"
+  },
+  {
+   "bugid": 1918587,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 132] Remove backward compatibility code"
+  },
+  {
+   "bugid": 1918072,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Update \"Triage for Bugzilla\" with notes from \"Firefox Bug Management\" (gdocs)"
+  },
+  {
+   "bugid": 1918249,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "`mach lint` fails to lint prefs JS files on Windows due to charmap encoding issues"
+  },
+  {
+   "bugid": 1918750,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Disable new crash reporter"
+  },
+  {
+   "bugid": 1914826,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Top of screen cut off when exiting full screen"
+  },
+  {
+   "bugid": 1857874,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < SettingsAddonsTest. verifyAddonsCanBeUninstalledTest >"
+  },
+  {
+   "bugid": 1918100,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix failing address autofill related UI tests after setting up the experimental task"
+  },
+  {
+   "bugid": 1918112,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix mediaSystemNotificationInPrivateModeTest UI test on API 34"
+  },
+  {
+   "bugid": 1918325,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Disable quick share system setting and fix affected UI tests"
+  },
+  {
+   "bugid": 1918403,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix failing add to home screen related UI tests on API 34"
+  },
+  {
+   "bugid": 1913199,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar text doesn’t get cleared after using tab to select a search engine"
+  },
+  {
+   "bugid": 1913205,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Switch to tab doesn’t display the url upon pressing Ctrl"
+  },
+  {
+   "bugid": 1915250,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Allow shift-click/shift-enter to open an empty search page when clicking on entries in the dedicated search button on the address bar"
+  },
+  {
+   "bugid": 1917186,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Dedicated Search Button] Pressing ‘ESC’ key twice does not exit searchmode"
+  },
+  {
+   "bugid": 1918176,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Restrict search terms persistence to work only on application provided search engines"
+  },
+  {
+   "bugid": 1918498,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Access contextID using lazy method instead of Services.prefs.getStringPref()"
+  },
+  {
+   "bugid": 1918796,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab turn on merino recs provider pref flip"
+  },
+  {
+   "bugid": 1917468,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Remove the unused pdfjs.enableHighlightEditor preference"
+  },
+  {
+   "bugid": 1912051,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Improve naming of the test files used for search settings migration/loading tests"
+  },
+  {
+   "bugid": 1917955,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Move remaining test files out of toolkit/components/search/tests/xpcshell/data/"
+  },
+  {
+   "bugid": 1911626,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add close remote tab for synced tabs in sidebar"
+  },
+  {
+   "bugid": 1916188,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Active pinned tab moves to first position after restarting the browser with vertical tabs and session restore"
+  },
+  {
+   "bugid": 1918371,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "sidebar panels shouldn't unconditionally use system colors."
+  },
+  {
+   "bugid": 1918618,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Cleanup content separator color handling a little bit"
+  },
+  {
+   "bugid": 1918726,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical pinned tabs container taking up vertical space even when there are no pinned tabs"
+  },
+  {
+   "bugid": 1918608,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Clean up [orient=...] and [expanded] rules"
+  },
+  {
+   "bugid": 1911889,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Update the tab icon that indicates sound playing"
+  },
+  {
+   "bugid": 1918304,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Incomplete localization with local build (locale es-MX)"
+  },
+  {
+   "bugid": 1918644,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use xlarge instances for Android shippable builds"
+  },
+  {
+   "bugid": 1904665,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Prepare the Remote Agent code base for parent process event dispatching"
+  },
+  {
+   "bugid": 1915798,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add support for \"Action queues\" to sequencially perform actions without races"
+  },
+  {
+   "bugid": 1917674,
+   "status": "RESOLVED",
+   "component": "Toolkit:Background Tasks",
+   "summary": "One-click set-to-default fails in Firefox Background Tasks"
+  },
+  {
+   "bugid": 1912131,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update minidump-writer to 0.10.0"
+  },
+  {
+   "bugid": 1755634,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[DE][tchibo.de] The autofill feature is not working at all on tchibo.de"
+  },
+  {
+   "bugid": 1918547,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add `filled_modified` event back to iOS telemetry"
+  },
+  {
+   "bugid": 1918545,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove all panel item should be disabled when user has no logins"
+  },
+  {
+   "bugid": 1918758,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Stop shipping toolkit/components/pictureinpicture in Fenix"
+  },
+  {
+   "bugid": 1918611,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "mach gifft should replace . in alias names"
+  },
+  {
+   "bugid": 1918613,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Avoid generating trailing whitespace in mach gifft when not generating aliases"
+  },
+  {
+   "bugid": 1918626,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Fix the category and event name case in the output of mach gifft"
+  }
+ ],
+ "fixed": 62,
+ "total": 76,
+ "restricted": 2
+}
