@@ -1,0 +1,550 @@
+{
+ "date": "2024-09-18",
+ "buildid": "20240918041351",
+ "cset": "6f33b896b26bca8d3aabe9ff248fd84036db437a",
+ "bugs": [
+  {
+   "bugid": 1919367,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Ship requestVideoFrameCallback to release"
+  },
+  {
+   "bugid": 1918506,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Tab crashes with too deep recursion stack in AudioWorkletGlobalScope"
+  },
+  {
+   "bugid": 1916508,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "VideoEncoder.isConfigSupported with specific config crashes tab"
+  },
+  {
+   "bugid": 1917579,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Flac doesn't decode any more with Web Codecs"
+  },
+  {
+   "bugid": 1919212,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: cubeb",
+   "summary": "cubeb::duplex_collection_change_no_unregister gtest disables the crash reporter permanently"
+  },
+  {
+   "bugid": 1918107,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma [tier 2] W-b /css/css-view-transitions/unset-and-initial-view-transition-name.html | Unhandled rejection: Skipped ViewTransition due to document being hidden"
+  },
+  {
+   "bugid": 1909698,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Browser navigation (back/forward) loses the text fragment directive"
+  },
+  {
+   "bugid": 1917228,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "allow X25519 private keys to be exported in JWK"
+  },
+  {
+   "bugid": 1901462,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Support ITextRangeProvider::GetBoundingRectangles"
+  },
+  {
+   "bugid": 1901463,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Implement ITextProvider::RangeFromPoint"
+  },
+  {
+   "bugid": 1917741,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/caching_granularity/browser_viewport_domain.js | viewport is not present in cache -"
+  },
+  {
+   "bugid": 1919155,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Added element is not relocated when assigned to ariaOwnsElements"
+  },
+  {
+   "bugid": 1918647,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libjxl to new version v0.11.0 from 2024-09-13 07:31:05"
+  },
+  {
+   "bugid": 1918739,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2024-09-13"
+  },
+  {
+   "bugid": 1918691,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /css/filter-effects/backdrop-filter-reference-filter-mutated.html | Testing http://web-platform.test:8000/css/filter-effects/backdrop-filter-reference-filter-mutated.html == http://w when Gecko 132 merges to beta on 2024-09-30"
+  },
+  {
+   "bugid": 1913151,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement %AsyncIteratorPrototype% [ @@asyncDispose] ( )"
+  },
+  {
+   "bugid": 1914242,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable import-attribute WPT tests"
+  },
+  {
+   "bugid": 1917899,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Check unsupported import attributes before resolving specifier"
+  },
+  {
+   "bugid": 1916589,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add BrowsingContext flag to emulate forced-colors"
+  },
+  {
+   "bugid": 1917356,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "High freq bugs/1743533-1.html == bugs/1743533-1-notref.html | single tracking bug"
+  },
+  {
+   "bugid": 1918806,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "New wpt failures in /css/css-overscroll-behavior/overscroll-behavior.html"
+  },
+  {
+   "bugid": 1865438,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Resolve both min-length & max-length for auto repetitions, for grid container with aspect-ratio"
+  },
+  {
+   "bugid": 1918310,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "mroot and msqrt should share their implementation"
+  },
+  {
+   "bugid": 1917924,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove network.http.reject_NULs_in_response_header_values pref"
+  },
+  {
+   "bugid": 1889762,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Service Workers don't apply the correct overridden fingerprinting settings when isolated/partitioned"
+  },
+  {
+   "bugid": 1919090,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Flatten JSON metrics of user characteristics to some depth"
+  },
+  {
+   "bugid": 1919040,
+   "status": "ASSIGNED",
+   "component": "Core:SVG",
+   "summary": "162.8 - 42.85% perf_reftest_singletons svg-text-textLength-1.html / perf_reftest_singletons svg-text-textLength-1.html + 2 more (Linux, OSX, Windows) regression on Wed August 21 2024"
+  },
+  {
+   "bugid": 1917466,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Cache: Fix handling of directory locks invalidated during storage initialization"
+  },
+  {
+   "bugid": 1917477,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "LSNG: Fix handling of directory locks invalidated during storage initialization"
+  },
+  {
+   "bugid": 1811836,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Look into simplifying RFP check in MediaDevices::OnDeviceChange"
+  },
+  {
+   "bugid": 1919299,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Add nicer:5 to about:logging WebRTC preset"
+  },
+  {
+   "bugid": 1918762,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Minor clean-ups to scrollbar and widget paint invalidation"
+  },
+  {
+   "bugid": 1918802,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Simplify scrollbar track drawing."
+  },
+  {
+   "bugid": 1910401,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Enable more update tests once we have switched to using the NSWorkspace API to launch our callback apps (bug 1827651)"
+  },
+  {
+   "bugid": 1914807,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Firefox updater fills up macOS dock recent apps after bug 1827651"
+  },
+  {
+   "bugid": 1919130,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox nightly crashes on startup in Wayland mode, with \"invalid version for global zwp_pointer_gestures_v1 (11): have 1, wanted 3\""
+  },
+  {
+   "bugid": 1915665,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Streamline WinEventHub"
+  },
+  {
+   "bugid": 1919211,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Replace reference to bugs.firefox-dev.tools by codetribute"
+  },
+  {
+   "bugid": 1907304,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "DevTools offline mode should not make cached requests fail"
+  },
+  {
+   "bugid": 1572655,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Make the FontsHighlighter compatible with Fission"
+  },
+  {
+   "bugid": 1919322,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update doc generate fatal warnings and reduce maximum number of warnings"
+  },
+  {
+   "bugid": 1910872,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Microsurvey Sync - Add the feature trigger based on number of devices - behavioural targeting"
+  },
+  {
+   "bugid": 1919195,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version 8be45cd32354c1ed808271cb0f2212b7bffce317 from 2024-09-17 05:03:25"
+  },
+  {
+   "bugid": 1918780,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Migrate Protobuf to the AC dependencies plugin."
+  },
+  {
+   "bugid": 1915212,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Migrate \"Recently Visited\" section to compose homepage"
+  },
+  {
+   "bugid": 1917862,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Update collection composable previews to be interactive"
+  },
+  {
+   "bugid": 1917912,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Create HomepageInteractor to reduce parameters for Homepage composable"
+  },
+  {
+   "bugid": 1918982,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "[Password Generator] Change password generator dialog string: 'accounts' becomes 'account'"
+  },
+  {
+   "bugid": 1909149,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement accessibility reading order in the save submenu"
+  },
+  {
+   "bugid": 1917757,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Add telemetry for knowing how many users have gesture navigation enabled"
+  },
+  {
+   "bugid": 1919200,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "No toolbar top divider after microsurvey in browser screen"
+  },
+  {
+   "bugid": 1919224,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "No toolbar top divider after microsurvey options closed in home screen"
+  },
+  {
+   "bugid": 1815651,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyAutofillToggleTest >"
+  },
+  {
+   "bugid": 1918987,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Isolate network disabling tests to API 34"
+  },
+  {
+   "bugid": 1919003,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix verifyVideoPlaybackSystemNotificationTest and verifyAudioPlaybackSystemNotificationTest UI tests on API 34"
+  },
+  {
+   "bugid": 1908922,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Layout of dedicated button has extra space and incorrect icon behaviour"
+  },
+  {
+   "bugid": 1916804,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Make Content Analysis for DND use getURIForBrowsingContext"
+  },
+  {
+   "bugid": 1918028,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Pasting warning text again after 5 seconds after the first scan was canceled makes the page unresponsive"
+  },
+  {
+   "bugid": 1918579,
+   "status": "VERIFIED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Tab crashes when dropping text from an external program"
+  },
+  {
+   "bugid": 1918455,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "collect telemetry for how often TLS key logging has been enabled via SSLKEYLOGFILE"
+  },
+  {
+   "bugid": 1918447,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[contextual content] Update list feed styles for different screen sizes"
+  },
+  {
+   "bugid": 1914926,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Do not back up Form History if the browser is configured to not record history or clear history on shutdown"
+  },
+  {
+   "bugid": 1914936,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Do not back up cookies database if the browser is configured to not remember history or to clear history on shutdown"
+  },
+  {
+   "bugid": 1914940,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Do not back up permissions or content prefs databases if the browser is configured to clear history on shutdown"
+  },
+  {
+   "bugid": 1603760,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove navigation.search event telemetry"
+  },
+  {
+   "bugid": 1452899,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "door-hanger \"verified by\" information doesn't always get changed when the server certificate changes"
+  },
+  {
+   "bugid": 1919365,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "\"Learn More\" for cookie banner blocking in settings should be capitalized \"Learn more\" to match other settings"
+  },
+  {
+   "bugid": 1919297,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Clean up unused isProductURL import in browser.js"
+  },
+  {
+   "bugid": 1910202,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Handle the case when installing an extension with a tabstrip `action.default area` while using vertical tabs"
+  },
+  {
+   "bugid": 1918638,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "[Vertical tabs] Selected tab shadow is cut off on the left and right sides"
+  },
+  {
+   "bugid": 1918676,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical tabs: empty spaces in list after closing tabs"
+  },
+  {
+   "bugid": 1919041,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Rapidly toggling sidebar causes it to move and reveal desktop during animation"
+  },
+  {
+   "bugid": 1919108,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Perma linux a11y-checks [tier 2] TEST-UNEXPECTED-FAIL | browser/components/sidebar/tests/browser/browser_glean_sidebar.js | Node is not focusable via the accessibility API: id: , tagName: A, className:  -"
+  },
+  {
+   "bugid": 1894766,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "\"Configuration X variant android-assets declares a component for use during runtime...\" warning spam in Android builds"
+  },
+  {
+   "bugid": 1913904,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach vcs-setup --update-only should update evolve"
+  },
+  {
+   "bugid": 1913118,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Investigate using -fstrict-flex-arrays=3"
+  },
+  {
+   "bugid": 1918392,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use c99 flexible array member syntax in mozjemalloc"
+  },
+  {
+   "bugid": 1918980,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Split caching of clean metrics"
+  },
+  {
+   "bugid": 1919088,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "mozharness: headers clean up"
+  },
+  {
+   "bugid": 1918287,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "`browsingContext.setViewport` fails intermittently with \"unknown error\""
+  },
+  {
+   "bugid": 1914669,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "When an existing FXA user signs in, they are not sent back to the original Relay form with a new mask"
+  },
+  {
+   "bugid": 1919092,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Change search bar string and center radio buttons"
+  },
+  {
+   "bugid": 1909885,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Pressing the SHIFT+TAB hotkey does not retain the focus inside the reader view panels"
+  },
+  {
+   "bugid": 1885999,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add edit profile page"
+  },
+  {
+   "bugid": 1918097,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::CounterMetric"
+  },
+  {
+   "bugid": 1918172,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::BooleanMetric"
+  },
+  {
+   "bugid": 1918191,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::StringMetric"
+  },
+  {
+   "bugid": 1919146,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Check that all Glean.* calls made in Firefox desktop's JavaScript code are free of typos"
+  },
+  {
+   "bugid": 1917389,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Knowledge Base",
+   "summary": "Unlike Chrome and Safari, Firefox executes async scripts before sync scripts"
+  },
+  {
+   "bugid": 1912404,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "bevyengine.org -  The animation is not displayed"
+  }
+ ],
+ "fixed": 82,
+ "total": 90,
+ "restricted": 3
+}
