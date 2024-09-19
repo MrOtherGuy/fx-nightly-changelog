@@ -1,0 +1,502 @@
+{
+ "date": "2024-09-19",
+ "buildid": "20240919095816",
+ "cset": "59fa1328930f79b47a3052363d9e89482915154e",
+ "bugs": [
+  {
+   "bugid": 1919362,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Add metrics.yaml to moz-central"
+  },
+  {
+   "bugid": 1919423,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Crash in [@ mozilla::dom::MediaStreamTrack::GetSource]"
+  },
+  {
+   "bugid": 1917579,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Flac doesn't decode any more with Web Codecs"
+  },
+  {
+   "bugid": 1917703,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(assertion failed: self.color_scheme.map_or(true, |cs| cs == color_scheme)) at servo/components/style/rule_cache.rs:44"
+  },
+  {
+   "bugid": 1913613,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "setTimeout ID counter overflows causing UB, invalid IDs, and live ID reuse"
+  },
+  {
+   "bugid": 1775881,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Intermittent toolkit/components/httpsonlyerror/tests/browser/browser_errorpage.js | single tracking bug"
+  },
+  {
+   "bugid": 1919229,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Change WPT <to-javascript-parent-initiated-parent-csp.html> to create securitypolicyviolation event on javascript URL execution"
+  },
+  {
+   "bugid": 1917205,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash in [@ Mutex::Lock]"
+  },
+  {
+   "bugid": 1919114,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Add testing variant for disabling GPU process"
+  },
+  {
+   "bugid": 1919139,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "png decoder can incorrectly apply both gAMA and sRGB chunk"
+  },
+  {
+   "bugid": 1901659,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Consider relaxing the Mesa requirement for running HW-WR on XWayland"
+  },
+  {
+   "bugid": 1911542,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Reuse more allocations in WebRender"
+  },
+  {
+   "bugid": 1912019,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Experiment with a custom allocator for the contents of the built frame"
+  },
+  {
+   "bugid": 1915146,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Temporarily increase the threshold for decommitting memory when WR is doing work"
+  },
+  {
+   "bugid": 1915924,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "feComponentTransfer with type='discrete' now gives incorrect result"
+  },
+  {
+   "bugid": 1917493,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable quad box shadows on a subset of outset box-shadows"
+  },
+  {
+   "bugid": 1919560,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Wrong fuzzing email address in JS Language Feature checklist"
+  },
+  {
+   "bugid": 1919217,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix some slow calls into C++"
+  },
+  {
+   "bugid": 1916646,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "clip-path: rect does not floor values"
+  },
+  {
+   "bugid": 1917356,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "High freq bugs/1743533-1.html == bugs/1743533-1-notref.html | single tracking bug"
+  },
+  {
+   "bugid": 1914154,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Sidebar vertical tabs scrollbar doesn't always autohide"
+  },
+  {
+   "bugid": 1915144,
+   "status": "NEW",
+   "component": "Core:Memory Allocator",
+   "summary": "Add a way to purge excess dirty pages (not triggered by deallocation)"
+  },
+  {
+   "bugid": 1768724,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add support for Microsoft SSO on macOS"
+  },
+  {
+   "bugid": 1905939,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Migrate HTTP3_ECH_OUTCOME, HTTP3_0RTT_STATE, and HTTP3_0RTT_STATE_DURATION probes to glean"
+  },
+  {
+   "bugid": 1917804,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Remove redudant zoom null checks when AsyncPanZoomController::ToCSSPixel is used"
+  },
+  {
+   "bugid": 1865148,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CookieBannerChild cleanup timeout never executes on some sites"
+  },
+  {
+   "bugid": 1918037,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable blocking third-party cookies in ETP strict and private windows."
+  },
+  {
+   "bugid": 1919090,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Flatten JSON metrics of user characteristics to some depth"
+  },
+  {
+   "bugid": 1919040,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "162.8 - 42.85% perf_reftest_singletons svg-text-textLength-1.html / perf_reftest_singletons svg-text-textLength-1.html + 2 more (Linux, OSX, Windows) regression on Wed August 21 2024"
+  },
+  {
+   "bugid": 1917479,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Bucket File System",
+   "summary": "FS: Fix handling of directory locks invalidated during storage initialization"
+  },
+  {
+   "bugid": 1879444,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Potential UAFs caused by SafeRefPtr::operator=(SafeRefPtr &&)"
+  },
+  {
+   "bugid": 1914486,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "test_peerConnection_glean.html mochitest is unreliable on linux"
+  },
+  {
+   "bugid": 1905417,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Assertion failure: nsContentUtils::IsSafeToRunScript(), at /builds/worker/checkouts/gecko/docshell/base/nsDocShell.cpp:1559 via WindowsUIUtils::UpdateInTabletMode"
+  },
+  {
+   "bugid": 1919435,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Perma [tier 2] MinGW /builds/worker/checkouts/gecko/widget/windows/WinEventObserver.cpp:7:10: fatal error: 'corecrt_memcpy_s.h' file not found"
+  },
+  {
+   "bugid": 1918285,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Perma Gtest gtest TEST-UNEXPECTED-FAIL | gtest | test failed with return code -11 | TinderboxPrint: gtest-gtest<br/><em class=\"testfail\">T-FAIL</em>"
+  },
+  {
+   "bugid": 1800862,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Escape Rust extra type keys on Rust glean_parser template"
+  },
+  {
+   "bugid": 1916333,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Filter input icons keep their original color in High Contrast Mode"
+  },
+  {
+   "bugid": 1767721,
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-browser-toolbox-workers.js | single tracking bug"
+  },
+  {
+   "bugid": 1918358,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "DevTools highlighters are impacted by forced-colors: active in the page"
+  },
+  {
+   "bugid": 1916614,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "Flex/Grid highlighter color swatch doesn't have the selected color in High Contrast Mode"
+  },
+  {
+   "bugid": 1919452,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "Use light-dark() in boxmodel.css"
+  },
+  {
+   "bugid": 1902097,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Implement Toolbar functionality for Compose Bookmarks Screen"
+  },
+  {
+   "bugid": 1902101,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Create the 3 dot menu functionality for an individual bookmark items"
+  },
+  {
+   "bugid": 1919596,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Fix crash when using Compose Bookmarks secret setting"
+  },
+  {
+   "bugid": 1918601,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove the Homepage Intro CFR and related code"
+  },
+  {
+   "bugid": 1918698,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove the Navigation for Tablets CFR and related code"
+  },
+  {
+   "bugid": 1904652,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Saved logins list is visible when putting the app in background and then bringing it back on foreground"
+  },
+  {
+   "bugid": 1909151,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Implement accessibility reading order in the extensions submenu"
+  },
+  {
+   "bugid": 1909751,
+   "status": "ASSIGNED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Fix the margins for the landscape version of the toolbar."
+  },
+  {
+   "bugid": 1917318,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Landscape address bar tab preview are missing buttons"
+  },
+  {
+   "bugid": 1846708,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < MainMenuTest.findInPageTest >"
+  },
+  {
+   "bugid": 1919259,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix verifyCloseAllPrivateTabsNotificationTestUI tests on API 34"
+  },
+  {
+   "bugid": 1874543,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser-tips/browser_searchTips_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1898155,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Evaluate untrimming the address bar value on focus when focused by keyboard"
+  },
+  {
+   "bugid": 1918625,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma a11y-checks linux [tier 2] TEST-UNEXPECTED-FAIL | browser/components/urlbar/tests/browser/browser_searchModeSwitcher_basic.js | Node is not accessible via accessibility API: id: searchmode-switcher-close, tagName: toolbarbutton, className: toolbarbu"
+  },
+  {
+   "bugid": 1919193,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Hide Lock and Shield Icon Persisted Search State and use a Simplified Design"
+  },
+  {
+   "bugid": 1917811,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/components/places/tests/browser/browser_closePanelview.js | Test timed out - when Gecko 132 merges to beta on 2024-09-30"
+  },
+  {
+   "bugid": 1919318,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Setting UseHTTPProxyForAllProtocols sets SOCKSHost"
+  },
+  {
+   "bugid": 1776017,
+   "status": "REOPENED",
+   "component": "Firefox:File Handling",
+   "summary": "Intermittent uriloader/exthandler/tests/mochitest/browser_open_internal_choice_persistence.js | single tracking bug"
+  },
+  {
+   "bugid": 1918723,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from identity-popup"
+  },
+  {
+   "bugid": 1917606,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Unified Ads API Integr] Prefs or some what to connect Nimbus to placement data"
+  },
+  {
+   "bugid": 1919069,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[contextual content] Update list group for saved pocket & bookmark state"
+  },
+  {
+   "bugid": 1890427,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Update backups when history and bookmarks are modified or manually cleared"
+  },
+  {
+   "bugid": 1915856,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Restrict domain-to-categories map by region"
+  },
+  {
+   "bugid": 1899853,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "`errorCode` is never going to be \"interrupted\" in aboutNetError.mjs"
+  },
+  {
+   "bugid": 1836198,
+   "status": "REOPENED",
+   "component": "Firefox:Session Restore",
+   "summary": "Intermittent browser/components/sessionstore/test/browser_closed_tabs_windows.js | single tracking bug"
+  },
+  {
+   "bugid": 1916813,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Disabling telemetry should grey out and visibly disable studies"
+  },
+  {
+   "bugid": 1919301,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "The context menu from several sub-dialogs from Preferences displays a lot of unnecessary options"
+  },
+  {
+   "bugid": 1916016,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Update not-opted-in state for new sidebar"
+  },
+  {
+   "bugid": 1919035,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar icons no longer use theme colors"
+  },
+  {
+   "bugid": 1901826,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fullscreen toolbar autohides prematurely when tab preview disappears"
+  },
+  {
+   "bugid": 1919460,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "remove `mach android uplift` command"
+  },
+  {
+   "bugid": 1915419,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Refactor deleteDataFromBaseDomain to support OriginAttributesPattern clearing"
+  },
+  {
+   "bugid": 1918724,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "nsIClearDataService.CLEAR_PASSWORDS is totally unused."
+  },
+  {
+   "bugid": 1918343,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Consider matching address-related regular expression prior than organization-related regular expression"
+  },
+  {
+   "bugid": 1919473,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "The CSC field is autofilled and the autocomplete dropdown is displayed for it as well"
+  },
+  {
+   "bugid": 1918184,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Skip the file stat check early in Flush if StoreID is set"
+  },
+  {
+   "bugid": 1916823,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Replace --in-content-border-color-hover with the --border-color-interactive-hover token"
+  },
+  {
+   "bugid": 1917337,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Rename CSS var panel-disabled-color to text-color-disabled"
+  },
+  {
+   "bugid": 1919262,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Remove --button-color"
+  },
+  {
+   "bugid": 1909022,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "https://www.oxfordeconomics.com/global-cities-index/ doesn't finish loading"
+  },
+  {
+   "bugid": 1903134,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Conduits message PortMessage is used as both an async message and a query"
+  }
+ ],
+ "fixed": 66,
+ "total": 82,
+ "restricted": 1
+}
