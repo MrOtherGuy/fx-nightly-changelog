@@ -1,0 +1,574 @@
+{
+ "date": "2024-09-25",
+ "buildid": "20240925090641",
+ "cset": "2dd8febaaab7a3aab3905f180ee241dbc09ba07e",
+ "bugs": [
+  {
+   "bugid": 1920740,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Simplify AppleVTEncoder initialization"
+  },
+  {
+   "bugid": 1920719,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Update GMP fallback downloader for Widevine CDM 4.10.2830.0"
+  },
+  {
+   "bugid": 1917627,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "AssertedCast error: Cannot cast 33556992 from uint32_t to float: out of range"
+  },
+  {
+   "bugid": 1919123,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add markers to report more playback status of a media element"
+  },
+  {
+   "bugid": 1920510,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support CSS display: contents in XUL"
+  },
+  {
+   "bugid": 1888728,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use CloseWatcher machinery for Dialogs & Popovers"
+  },
+  {
+   "bugid": 1919168,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma linux Bgcc [tier 2] /builds/worker/checkouts/gecko/dom/closewatcher/CloseWatcherManager.cpp:40:35: error: loop variable 'watcher' creates a copy from type 'const RefPtr<mozilla::dom::CloseWatcher>' [-Werror=range-loop-construct]"
+  },
+  {
+   "bugid": 1920534,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ nsPIDOMWindowInner::GetOuterWindow] from CookieStore::GetInternal"
+  },
+  {
+   "bugid": 1920651,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Stop using MochiKit DOM methods in test_bug100533.html"
+  },
+  {
+   "bugid": 1901761,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Extend keepalive wpt tests for workers"
+  },
+  {
+   "bugid": 1906952,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Enable fetch keepalive by default for nightly and early beta build"
+  },
+  {
+   "bugid": 1914632,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Update FetchChild and FetchParent to support keepalive for worker requests"
+  },
+  {
+   "bugid": 1899151,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Remove dom.streams.from.enabled pref"
+  },
+  {
+   "bugid": 1920705,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "Export a X25519 public key in 'raw' format fails with \"Operation not supported\""
+  },
+  {
+   "bugid": 1880789,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Remove dom.workers.modules.enabled pref"
+  },
+  {
+   "bugid": 1920268,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove unnecessary MochiKit.js includes"
+  },
+  {
+   "bugid": 1919114,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Add testing variant for disabling GPU process"
+  },
+  {
+   "bugid": 1869182,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Make WebGL use ExternalImageId instead of copying SourceSurfaceSharedData"
+  },
+  {
+   "bugid": 1919906,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Text",
+   "summary": "Text rendering looks off on maps.apple.com on Windows"
+  },
+  {
+   "bugid": 1920361,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add ExternalTextureDMABuf for handling DMA buf for WebGPU"
+  },
+  {
+   "bugid": 1440207,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Rethink how we give file descriptors / handles to child processes"
+  },
+  {
+   "bugid": 1910686,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove support for the assert syntax"
+  },
+  {
+   "bugid": 1913432,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Defer property accesses to disposable record in dispose loop until the properties are actually required"
+  },
+  {
+   "bugid": 1918449,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix and enable /test html/semantics/scripting-1/the-script-element/import-attributes/invalid-type-attribute-error.html"
+  },
+  {
+   "bugid": 1920433,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve InlineTable data structure"
+  },
+  {
+   "bugid": 1919025,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Investigate using Semi-NCA in ComputeImmediateDominators"
+  },
+  {
+   "bugid": 1919203,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm lazy tiering: improve estimation of Ion compilation cost"
+  },
+  {
+   "bugid": 1920617,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[loongarch] Port: wasm lazy tiering: improvements to hotness-counter decrementation"
+  },
+  {
+   "bugid": 1920814,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Stop using MochiKit Color methods in test_bug302186.html"
+  },
+  {
+   "bugid": 1920603,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Clean-up nsLineList iterators."
+  },
+  {
+   "bugid": 1920304,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | toolkit/components/ml/tests/browser/browser_ml_end_to_end.js | Uncaught exception in test bound test_ml_moz_image_to_text_pipeline - at chrome://global/content/ml/ort.webgpu.mjs:6 - when Gecko 132 merges to beta on 2024-09-30"
+  },
+  {
+   "bugid": 1854077,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable \"fetchpriority\" feature by default"
+  },
+  {
+   "bugid": 1900561,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Consider storing fetchPriority in nsIClassOfService"
+  },
+  {
+   "bugid": 1917925,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove network.http.strict_response_status_line_parsing pref"
+  },
+  {
+   "bugid": 1919158,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Request urgency may ignore fetchPriority and supportsPriority in two scenarios"
+  },
+  {
+   "bugid": 1760097,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Intermittent netwerk/test/unit/test_trr_confirmation.js | single tracking bug"
+  },
+  {
+   "bugid": 1911256,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "\"Copy Link Without Site Tracking\" should support removal of \"sp_atk\" and \"extParams\" parameters"
+  },
+  {
+   "bugid": 1917304,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "\"Copy Without Site Tracking\" should support removal of `li_fat_id` parameters from LinkedIn"
+  },
+  {
+   "bugid": 1918120,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable “tracker redirect” heuristic in release (privacy.restrict3rdpartystorage.heuristic.redirect)"
+  },
+  {
+   "bugid": 1918121,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable the “popup with past interaction” heuristic in Nightly (privacy.restrict3rdpartystorage.heuristic.window_open)"
+  },
+  {
+   "bugid": 1920460,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "PipeWire camera: Add missing support for frame rate specified as list of possible values"
+  },
+  {
+   "bugid": 1751467,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox can't open files in flatpak programs on linux"
+  },
+  {
+   "bugid": 1730361,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Unclear \"Not implemented\" error when using a file dialog to open word file stored on OneDrive which is open in word"
+  },
+  {
+   "bugid": 1914612,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Use WinEventWindow for most broadcast message handling (WM_FONTCHANGE, etc.)"
+  },
+  {
+   "bugid": 71895,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Remove Hidden Window from Linux and Windows builds"
+  },
+  {
+   "bugid": 1916344,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Console input selected text doesn't have any background color"
+  },
+  {
+   "bugid": 1853030,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Intermittent devtools/client/inspector/fonts/test/browser_fontinspector_reveal-in-page.js | single tracking bug"
+  },
+  {
+   "bugid": 1916712,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Layout",
+   "summary": "The Box Model is barely usable in High Contrast Mode"
+  },
+  {
+   "bugid": 1916363,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Request list doesn't adapt well to High Contrast Mode"
+  },
+  {
+   "bugid": 1916960,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Integrate SharedSubResourceCache into DevTools network monitor"
+  },
+  {
+   "bugid": 1920643,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Mitigate the risk of heap corruptions by double-freeing a BSTR"
+  },
+  {
+   "bugid": 1917062,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Create the Compose select folder screen"
+  },
+  {
+   "bugid": 1920745,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Migrate the compose bookmarks feature flag to be backed by nimbus"
+  },
+  {
+   "bugid": 1917346,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Refactor `TranslationsDropdown` into a top level `Dropdown` composable"
+  },
+  {
+   "bugid": 1911366,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Create the UI for the Glean Debug Tools and use Redux to implement the Glean APIs"
+  },
+  {
+   "bugid": 1918697,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Remove the Total Cookie Protection CFR and related code"
+  },
+  {
+   "bugid": 1920640,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 0e3636d36eaf6102b6557eb1f549e4a4ab90e7bf from 2024-09-24 05:03:19"
+  },
+  {
+   "bugid": 1920514,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip Beta] Update UI properties for tab items"
+  },
+  {
+   "bugid": 1910727,
+   "status": "RESOLVED",
+   "component": "Fenix:Translations",
+   "summary": "`TranslationSettingsPreview` is not provided a background colour"
+  },
+  {
+   "bugid": 1814379,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyEditLoginsViewTest >"
+  },
+  {
+   "bugid": 1920424,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fenix API 34 UI tests upgrade: fix locale switching methods"
+  },
+  {
+   "bugid": 1913431,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Newtab topic personalization modal blocks messaging system messages"
+  },
+  {
+   "bugid": 1916706,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Contextual content - Update fetch and state for \"list feed\""
+  },
+  {
+   "bugid": 1918486,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Unified Ads API Integr] Pass blocks array to the server request"
+  },
+  {
+   "bugid": 1920656,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version cc63941b6496382bc8c762b6ccd886f036d43601 from 2024-09-24 08:08:02"
+  },
+  {
+   "bugid": 1920421,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Some Settings links open in the current about:preferences tab instead of a new tab"
+  },
+  {
+   "bugid": 1919166,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Prevent registering review checker sidebar panel for private windows."
+  },
+  {
+   "bugid": 1902056,
+   "status": "REOPENED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update strings for Sidebar toolbarbutton, close button and Customize Sidebar visibility settings"
+  },
+  {
+   "bugid": 1915862,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical tabs that are pinned do not change appearance when hovered and do not clearly show active state"
+  },
+  {
+   "bugid": 1919863,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Land strings for sidebar + chatbot experiments"
+  },
+  {
+   "bugid": 1920666,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make tab group line extend under the group label"
+  },
+  {
+   "bugid": 1919439,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "sound-playing icon looks bad (outline is aliased)"
+  },
+  {
+   "bugid": 1920624,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Update Gradle to version 8.10.2"
+  },
+  {
+   "bugid": 1919774,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Remove global constructor from tools/profiler/gecko/ProfilerParent.cpp"
+  },
+  {
+   "bugid": 1919777,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Provide a way to flag some initialization as constinit even in c++17 mode"
+  },
+  {
+   "bugid": 1919778,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Remove global constructors from dom/media/ipc/RemoteDecoderManagerChild.cpp"
+  },
+  {
+   "bugid": 1919083,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Create cron tasks that only run the 'os_integration' tag"
+  },
+  {
+   "bugid": 1919962,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma Custom-car../../ui/base/cocoa/cursor_utils.mm:166:13: error: no known class method for selector 'frameResizeCursorFromPosition:inDirections:'"
+  },
+  {
+   "bugid": 1917406,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Truncated strings in localizations of the Message shown to explain how to exit fullscreen mode when using back button navigation"
+  },
+  {
+   "bugid": 1920457,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Add additional StrictMode policies applied to all threads in the virtual machine's process."
+  },
+  {
+   "bugid": 1917353,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Fission] Add GeckoRuntimeSetting API for fission.webContentIsolationStrategy"
+  },
+  {
+   "bugid": 1920573,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[wdspec] 2024-Q3 Clean-up meta data for multiple statuses"
+  },
+  {
+   "bugid": 1743983,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Rewrite the minidump-analyzer in Rust"
+  },
+  {
+   "bugid": 1915419,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Refactor deleteDataFromBaseDomain to support OriginAttributesPattern clearing"
+  },
+  {
+   "bugid": 1916927,
+   "status": "NEW",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Move field update heuristics from the child process to the parent process"
+  },
+  {
+   "bugid": 1916052,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Perma [tier 2] toolkit/components/satchel/megalist/content/tests/browser/browser_passwords_sidebar.js | Node is not focusable via the accessibility API: id: , tagName: LOGIN-LINE, className: line-item -"
+  },
+  {
+   "bugid": 1916506,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "gProfiles init runs after we notify that idle tasks are finished"
+  },
+  {
+   "bugid": 1918097,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::CounterMetric"
+  },
+  {
+   "bugid": 1918172,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::BooleanMetric"
+  },
+  {
+   "bugid": 1918191,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profiler markers for Glean::StringMetric"
+  },
+  {
+   "bugid": 1918702,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate Services.telemetry.recordEvent calls to Glean APIs"
+  },
+  {
+   "bugid": 1919118,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Perma toolkit/components/glean/metrics_yamls.cached differs. See the diff.html or diff.txt artifact | toolkit/components/glean/metrics_n_pings_yamls.cached differs. See the diff.html or diff.txt artifact"
+  },
+  {
+   "bugid": 1920706,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Anchor \"all-tabs\" popup to the extensions button"
+  },
+  {
+   "bugid": 1920720,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "testBrowserActionWithVerticalTabs pushPrefEnv should include sidebar.revamp pref along with sidebar.verticalTabs"
+  }
+ ],
+ "fixed": 80,
+ "total": 94,
+ "restricted": 0
+}
