@@ -1,0 +1,586 @@
+{
+ "date": "2024-10-11",
+ "buildid": "20241011104937",
+ "cset": "326f317b084883b87bd495f2d1b715bd5bc1be8e",
+ "bugs": [
+  {
+   "bugid": 1923741,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add telemetry to check if the temporary folder is writable"
+  },
+  {
+   "bugid": 1923774,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Handle the case for marker when media key is null"
+  },
+  {
+   "bugid": 1921401,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma codecs /webcodecs/temporal-svc-encoding.https.any.worker.html | single tracking bug"
+  },
+  {
+   "bugid": 1923546,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/events/test/browser_dragdrop_protected_diff_origin.js | [tab1->tab1|dragSource]| mousedown existed - false == true - got false, expected true (operator ==)"
+  },
+  {
+   "bugid": 1915262,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Shadow DOM Live Region Updates Not Announced via VoiceOver"
+  },
+  {
+   "bugid": 1923263,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add log around RenderThread::PostEvent() and RendererEvent"
+  },
+  {
+   "bugid": 1920753,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Canvas graphics corruption with gfx.canvas.accelerated = true and gfx.direct2d.disabled = true"
+  },
+  {
+   "bugid": 1788866,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Colors on a wide gamut monitor are not correct and cause some AVIF images to be washed out."
+  },
+  {
+   "bugid": 1920733,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Text",
+   "summary": "Disable (and eventually remove) the force-GDI-classic-mode rendering of certain fonts on Windows"
+  },
+  {
+   "bugid": 1923596,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update OTS to upstream rev 5daecc9 to work around https://github.com/mozilla/pdf.js/issues/18848"
+  },
+  {
+   "bugid": 1919424,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Crash in [@ wgpu_core::storage::Storage<T>::remove]"
+  },
+  {
+   "bugid": 1917652,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make X11 GPU Process on-by-default"
+  },
+  {
+   "bugid": 1917885,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[Outreachy] Ship Uint8Array to/from base64 and hex"
+  },
+  {
+   "bugid": 1918731,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[Outreachy] Add preference for Atomics.pause proposal"
+  },
+  {
+   "bugid": 1923408,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at vm/Interpreter.cpp:439"
+  },
+  {
+   "bugid": 1923710,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[Outreachy] Replace sumprecise condition in JSObject.cpp"
+  },
+  {
+   "bugid": 1922259,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CodeGeneratorShared::outOfLineCode_ should be a TempObject InlineForwardList."
+  },
+  {
+   "bugid": 1922829,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Pre-allocate CodeGeneratorShared::safepointIndices_."
+  },
+  {
+   "bugid": 1923090,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Pre-allocate CodeGenerator::osiIndices_ vector."
+  },
+  {
+   "bugid": 1918706,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "[Outreachy] Update test262 and test262 skipped files"
+  },
+  {
+   "bugid": 1893002,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Remove old JS Promise Integration API"
+  },
+  {
+   "bugid": 1922861,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: !JS_IsExceptionPending(cx_), at vm/JSContext.cpp:1412"
+  },
+  {
+   "bugid": 1918906,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "scroll anchor adjustment interrupt smooth scroll operation by scroll-to-anchor"
+  },
+  {
+   "bugid": 1919511,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Defer building the resolved font list in gfxFontGroup until actually needed"
+  },
+  {
+   "bugid": 1923698,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "CSS `font-variant: emoji` fails to work as expected if the text involved is purely 8-bit"
+  },
+  {
+   "bugid": 1923839,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Intermittent [Tvg] layout/reftests/bugs/1923698-font-variant-emoji.html == layout/reftests/bugs/1923698-font-variant-emoji-ref.html | image comparison, max difference: 255, number of differing pixels: 1413"
+  },
+  {
+   "bugid": 1923299,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add live engine information in `about:inference`"
+  },
+  {
+   "bugid": 1923551,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add a peak memory stat"
+  },
+  {
+   "bugid": 1923591,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Warn when GPU is not available"
+  },
+  {
+   "bugid": 1883033,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Scheme ws/wss/ssh url query-encoding wpt failures"
+  },
+  {
+   "bugid": 1895361,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Traffic Shaping Tool Setup: Depending on the operating system of the test machine, install and configure the appropriate traffic shaping tool."
+  },
+  {
+   "bugid": 1917901,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Assertion failure: !mODATarget, at netwerk/protocol/http/HttpChannelChild.cpp"
+  },
+  {
+   "bugid": 1918532,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Replace xyber768d00 with mlkem768x25519 in neqo_glue"
+  },
+  {
+   "bugid": 1919391,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Migrate MOZ_SQLITE_COOKIES_BLOCK_MAIN_THREAD_MS_V2 and MOZ_SQLITE_COOKIES_TIME_TO_BLOCK_MAIN_THREAD_MS P1 probes to glean."
+  },
+  {
+   "bugid": 1921237,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Remove the FX_REFRESH_DRIVER_SYNC_SCROLL_FRAME_DELAY_MS telemetry histogram"
+  },
+  {
+   "bugid": 1922602,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring in Firefox 134: bounce.tracking.protection.purge_action before Gecko version gets increased to 134 on 2024-10-28"
+  },
+  {
+   "bugid": 1923888,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Scalar security.client_auth_cert_usage is unnecessarily cleared to 0 on init"
+  },
+  {
+   "bugid": 1923918,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Use the experimental CRLite filter channel on Nightly"
+  },
+  {
+   "bugid": 1866402,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Cover origin initialization in OpenStorageDirectory and OpenClientDirectory"
+  },
+  {
+   "bugid": 1921707,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "move abseil-cpp and the google build directory from libwebrtc to third_party"
+  },
+  {
+   "bugid": 1101259,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Configuration of preferred codec should be based on codec name, not payload type"
+  },
+  {
+   "bugid": 1920766,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Update webrtc-sdp to version 0.3.12"
+  },
+  {
+   "bugid": 1771028,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[MediaControl-MacOS] Show artwork image on the virtual control interface (MPNowPlayingInfoCenter)"
+  },
+  {
+   "bugid": 1922746,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Only show supported media actions in MacOS media center."
+  },
+  {
+   "bugid": 1923086,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Detect wayland compositor cash and provide such MOZ_CRASH notification"
+  },
+  {
+   "bugid": 1923325,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Get crashed compositor name"
+  },
+  {
+   "bugid": 1923334,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Titlebar not following color scheme of theme dynamically."
+  },
+  {
+   "bugid": 1923336,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "DAMP doesn't cover DOM Element and Node List logging correctly"
+  },
+  {
+   "bugid": 1900395,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Fix Failing tests to enable CM6"
+  },
+  {
+   "bugid": 1911021,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Integrate native tracer output directly into the profiler"
+  },
+  {
+   "bugid": 1918241,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Add for an  `eq` function to the setPositionContentMarker API"
+  },
+  {
+   "bugid": 1923429,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Dropdown menus should be anchored over the 3-dot menu"
+  },
+  {
+   "bugid": 1922088,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Incorrect calculation of longest item size in dropdown"
+  },
+  {
+   "bugid": 1923719,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add unit tests for default browser native prompt"
+  },
+  {
+   "bugid": 1910768,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Create an app-wide setting for desktop mode browsing"
+  },
+  {
+   "bugid": 1920517,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip Beta] Add private mode toggle in tab strip"
+  },
+  {
+   "bugid": 1909528,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Swiping to close the menu using the menu's drag bar is difficult"
+  },
+  {
+   "bugid": 1917758,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "The new toolbar is separated by a line between the address bar and the commands, when it is set to disappear and the toolbar is set to the bottom"
+  },
+  {
+   "bugid": 1923713,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] The margin for the menu bottom sheet component should be 56 dp."
+  },
+  {
+   "bugid": 1814579,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest. verifyLoginWithoutPasswordCanNotBeSavedTest >"
+  },
+  {
+   "bugid": 1923422,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add debuggable build GeckoView config to specify custom target profile path for UI tests"
+  },
+  {
+   "bugid": 1923187,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Integrate interest-based relevance ranking for Merino-backed suggestions"
+  },
+  {
+   "bugid": 1859597,
+   "status": "NEW",
+   "component": "Firefox:Installer",
+   "summary": "Add `buildid` and Windows UBR to installer telemetry"
+  },
+  {
+   "bugid": 1923897,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Logic calculating matches_selected_topic telemetry attribute may block certain telemetry events from firing if set incorrectly"
+  },
+  {
+   "bugid": 1879621,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Create new tests to ensure search-config-v2 search engines can be fully loaded"
+  },
+  {
+   "bugid": 1895934,
+   "status": "NEW",
+   "component": "Firefox:Search",
+   "summary": "Improve handling of search term parameter names"
+  },
+  {
+   "bugid": 1922264,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Container menu not shown when right-clicking new tab button when vertical tabs overflowing"
+  },
+  {
+   "bugid": 1923512,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical tabs' X Close buttons are flush with the right edge of the tab. No padding or spacing."
+  },
+  {
+   "bugid": 1918687,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Newly created tab groups should use the first unused color in the tab group color list"
+  },
+  {
+   "bugid": 1921860,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab counts should include tabs in collapsed tab groups"
+  },
+  {
+   "bugid": 1922262,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab groups have incorrect chicklet colour and border radius in the \"Add Tab to Group\" context menu"
+  },
+  {
+   "bugid": 1922898,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "tabbar background becomes a default opaque color when losing focus"
+  },
+  {
+   "bugid": 1923830,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Print commands in a way that is easy to copy paste in case of non-zero return code"
+  },
+  {
+   "bugid": 1916662,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run Marionette tests for TSAN builds as well"
+  },
+  {
+   "bugid": 1923857,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "let decision tasks on try get retried automatically"
+  },
+  {
+   "bugid": 1923282,
+   "status": "NEW",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Crash in [@ DMABufSurfaceYUV::CreateEGLImage]"
+  },
+  {
+   "bugid": 1913734,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Fission] Setup Fission Nimbus Experiment Instrumentation"
+  },
+  {
+   "bugid": 1914655,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Fission] Add GeckoRuntimeSetting API to enable Fission"
+  },
+  {
+   "bugid": 1857571,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Update Marionette to handle window positioning on Wayland"
+  },
+  {
+   "bugid": 1886382,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "\"browsingContext.print\" needs to raise \"invalid argument\" error for PDFs with zero dimension"
+  },
+  {
+   "bugid": 1923015,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Remove or migrate to Glean the addonsManager.* legacy telemetry events"
+  },
+  {
+   "bugid": 1923468,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "No longer able to install a privileged add-on in WebDriver on Android for testing the webcompat add-on"
+  },
+  {
+   "bugid": 1923873,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Include utility actors names in Glean crash ping"
+  },
+  {
+   "bugid": 1843667,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Identify WDBA clients that are about to \"age out\" in telemetry"
+  },
+  {
+   "bugid": 1754774,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[FR][manomano.fr] The autofill dropdown is not triggered and the autofill functionality is not working for multiple fields"
+  },
+  {
+   "bugid": 1923312,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove `nom` from regex cc-name in HeuristicsRegExp.sys.mjs"
+  },
+  {
+   "bugid": 1886007,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add avatar selector for profile manager"
+  },
+  {
+   "bugid": 1921243,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove the nsITelemetry.setHistogramRecordingEnabled API"
+  },
+  {
+   "bugid": 1886616,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Selected options are not visible on www.six-group.com"
+  },
+  {
+   "bugid": 1896349,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "vivaldi.com - Text selection not functional"
+  },
+  {
+   "bugid": 1916407,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "give.umrelief.org - Drop-downs aren't working"
+  },
+  {
+   "bugid": 1919004,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.editoracontexto.com.br - Design is broken, elements are misaligned"
+  },
+  {
+   "bugid": 1921410,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "beta.maps.apple.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1922175,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.livingsecurity.com - Unsupported browser"
+  },
+  {
+   "bugid": 1918637,
+   "status": "ASSIGNED",
+   "component": "WebExtensions:General",
+   "summary": "High frequency Linux TEST-UNEXPECTED-FAIL | toolkit/components/extensions/test/mochitest/test_ext_idle.html | Idle status is active - Expected: active, Actual: idle"
+  },
+  {
+   "bugid": 1923739,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Stop using MochiKit directory in browser_ext_tabs_query.js"
+  }
+ ],
+ "fixed": 72,
+ "total": 96,
+ "restricted": 2
+}
