@@ -1,0 +1,664 @@
+{
+ "date": "2024-10-24",
+ "buildid": "20241024094434",
+ "cset": "7936ca01a900402531a01de23474744fde9bbe1c",
+ "bugs": [
+  {
+   "bugid": 1926459,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "VideoFrame must be cloneable when only dom.media.webcodecs.image-decoder.enabled is true"
+  },
+  {
+   "bugid": 1918400,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Capture old state for view transitions"
+  },
+  {
+   "bugid": 1918402,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Capture new state for view transitions"
+  },
+  {
+   "bugid": 1926269,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Minor changes to allow publishing selectors."
+  },
+  {
+   "bugid": 1926423,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Too much CPU time spent dealing with custom properties in the prepare steps of the Preact/Svelte/Lit TodoMVC-Complex-DOM tests"
+  },
+  {
+   "bugid": 1926731,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma W-b-nofis [tier 2] /css/css-view-transitions/capture-old-state-error-flag-cleanup.html | single tracking bug"
+  },
+  {
+   "bugid": 1879401,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Make clipboard DataTransfer use sync version of `nsIAsyncGetClipboardData`"
+  },
+  {
+   "bugid": 1900427,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Expose CookieJarSettings on nsIGlobalObject for current anti-tracking partitioning idiom in relation to StorageAccess checks"
+  },
+  {
+   "bugid": 1900431,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Expose GetBaseURI on nsIGlobalObject"
+  },
+  {
+   "bugid": 1900706,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Expose equivalent of nsContentUtils::ReportToConsole on nsIGlobalObject"
+  },
+  {
+   "bugid": 1924310,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /html/document-isolation-policy/credentialless-dedicated-worker.https.tentative.window.html | fetch same-origin + credentialless worker - expected FAIL when Gecko 133 merges to beta on 2024-10-28"
+  },
+  {
+   "bugid": 1926666,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add a test-case for image src getting set, then lazy-loading."
+  },
+  {
+   "bugid": 1923251,
+   "status": "REOPENED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor` clean up unnecessary padding line break which is immediately after inserting content"
+  },
+  {
+   "bugid": 1544428,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Setting window.location.hash to an empty string on a site without a hash causes a popstate event"
+  },
+  {
+   "bugid": 1926290,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable back-button intervention by default"
+  },
+  {
+   "bugid": 1921226,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Should the locally identified https-first exceptions have a longer lifetime?"
+  },
+  {
+   "bugid": 1926037,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove WPT <to-javascript-parent-initiated-parent-csp-disallow.html>"
+  },
+  {
+   "bugid": 1926240,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Rename WPT <javascript-url-navigation-inherits-csp.html> to <javascript-url-navigation-evaluated-to-string-inherits-csp.html>"
+  },
+  {
+   "bugid": 1926286,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make attrNs/elementNs parameters of getAttributeType/getPropertyType nullable"
+  },
+  {
+   "bugid": 1131324,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Expose ServiceWorkerContainer on WorkerNavigator"
+  },
+  {
+   "bugid": 1257977,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "queue tasks to update attributes on ServiceWorker and ServiceWorkerRegistration"
+  },
+  {
+   "bugid": 1544232,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Possible vulnerabilities in allowing unbounded system resource usage for installed service workers"
+  },
+  {
+   "bugid": 1926132,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Perma condprof dom/serviceworkers/test/test_cookie_fetch.html | single tracking bug"
+  },
+  {
+   "bugid": 1113522,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Expose ServiceWorker in Workers (aka ServiceWorkerRegistration returns null for all of installing, waiting, active in Workers/ServiceWorkers)"
+  },
+  {
+   "bugid": 1925722,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "AFL++ should reject any non-zero return value"
+  },
+  {
+   "bugid": 1918923,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "conic-gradient with hsl interpolation contains weird line"
+  },
+  {
+   "bugid": 1924042,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Fallback to readback when creating Texture with ExternalTextureD3D11 is failed"
+  },
+  {
+   "bugid": 1925398,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add tests and code comments to ensure WebGPU classes are garbage collected correctly"
+  },
+  {
+   "bugid": 1926146,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Unnecessary JSOp::Try in `for (using x of y)`"
+  },
+  {
+   "bugid": 1926525,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Merge the data and table allocations in OrderedHashTable"
+  },
+  {
+   "bugid": 1398213,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Use of lambda provokes internal compiler error in hazard build"
+  },
+  {
+   "bugid": 1924608,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "[Outreachy] Add non262 tests for Error.isError"
+  },
+  {
+   "bugid": 1898029,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Interrupts should switch back to the main stack to execute user code"
+  },
+  {
+   "bugid": 1921216,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm speculative inlining: track multiple targets per call-ref callsite"
+  },
+  {
+   "bugid": 1926512,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Consider caching first-continuation/first-in-flow directly in nsSplittableFrame"
+  },
+  {
+   "bugid": 1926569,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "2.83 - 2.42% speedometer3 Editor-TipTap/total / speedometer3 Editor-TipTap/Highlight/Sync + 2 more (Windows) regression on Wed October 16 2024"
+  },
+  {
+   "bugid": 1911457,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Mobile version of barleyhall.co.uk has dead space off the right edge that's scrollable in Firefox but not Chrome"
+  },
+  {
+   "bugid": 1922591,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "initial MLSuggest for city weather, yelp"
+  },
+  {
+   "bugid": 1889988,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add remote settings configuration of defaultURI bypass list"
+  },
+  {
+   "bugid": 1925390,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add nimbus support for fetch priority on Android"
+  },
+  {
+   "bugid": 1925667,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Leak of AF_ROUTE sockets on macOS"
+  },
+  {
+   "bugid": 1890529,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add axis locking mode that allows free movement after breaking lock"
+  },
+  {
+   "bugid": 1926292,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Include Heterogeneous core information in the telemetry environment"
+  },
+  {
+   "bugid": 1921464,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "When BounceTrackingState is destroyed during an extended navigation RecordStatefulBounces should be called"
+  },
+  {
+   "bugid": 1926280,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "BounceTrackingProtectionStorage::mFinalized is never read"
+  },
+  {
+   "bugid": 483318,
+   "status": "ASSIGNED",
+   "component": "Core:SQLite and Embedded Database Bindings",
+   "summary": "mozIStorageStatementParams doesn't let you bind an array"
+  },
+  {
+   "bugid": 1926414,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Add an option to make CRLite coverage checks more strict"
+  },
+  {
+   "bugid": 1925982,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable USER_RESTRICTED for content processes on early Beta"
+  },
+  {
+   "bugid": 1926565,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "IDB: Ensure that a closed connection is not used when asserting that the current thread is the connection thread"
+  },
+  {
+   "bugid": 1925813,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Conditionally skip temporary origin initialization in OpenClientDirectory"
+  },
+  {
+   "bugid": 1925782,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "LSNG: Disable migration from archived database"
+  },
+  {
+   "bugid": 1925832,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "LSNG: Avoid ensuring origin initialization for datastore preloading"
+  },
+  {
+   "bugid": 1920468,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Support badging the dock icon with an arbritrary image"
+  },
+  {
+   "bugid": 1926584,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Extra space between menu bar and toolbar in full screen mode on macOS"
+  },
+  {
+   "bugid": 1920674,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Allow rendering an SVG image as the taskbar overlay icon."
+  },
+  {
+   "bugid": 1925115,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Window logging may break at WindowEvent:3 or greater"
+  },
+  {
+   "bugid": 1556002,
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "Change the Initial Window Size Resolution to use the same Stepped Resolution as Letterboxing"
+  },
+  {
+   "bugid": 1924821,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Increase logging module count"
+  },
+  {
+   "bugid": 1926089,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Perma [Tier 2] None [@ linux-gate.so + 0x00000cd9] | gtest"
+  },
+  {
+   "bugid": 1870062,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Breakpoint isn't a button while it can be clicked"
+  },
+  {
+   "bugid": 1926495,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Console architecture chart has duplicated SideBar item"
+  },
+  {
+   "bugid": 1922190,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Highlighter related warning message (Layout was forced before the page was fully loaded) is displayed in regular console"
+  },
+  {
+   "bugid": 1926284,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Fenix Architecture Simplified Example links are all broken"
+  },
+  {
+   "bugid": 1926612,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Perma Updatebot all ValueError: Timed out waiting for Auth0 device code authentication!"
+  },
+  {
+   "bugid": 1923606,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Labeled.h:33:36: error: template-id not allowed for constructor in C++20 [-Werror=template-id-cdtor]"
+  },
+  {
+   "bugid": 1926586,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Update android nightly application-services version bump to new version 50bf235b9a3a62a6b6749cd0bd7358d7b96a42e4 from 2024-10-23 05:02:44"
+  },
+  {
+   "bugid": 1926625,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update Protobuf to version 4.28.2"
+  },
+  {
+   "bugid": 1924211,
+   "status": "VERIFIED",
+   "component": "Fenix:History",
+   "summary": "Search gets broken on HistoryFragment when device theme has changed."
+  },
+  {
+   "bugid": 1924978,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Map the Nimbus `add-ons` onboarding card type to `AddOnsOnboardingPage` using  `OnboardingMapper`"
+  },
+  {
+   "bugid": 1922419,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Always use the system black color for the OS nav bar"
+  },
+  {
+   "bugid": 1923115,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Change the margin on the left from 24dp to 16dp for the address bar."
+  },
+  {
+   "bugid": 1917919,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Add 'Learn more' button to the addon installation dialog"
+  },
+  {
+   "bugid": 1906541,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Ensure Searchmode Switcher works when Search Services fails"
+  },
+  {
+   "bugid": 1921126,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Desktop changes for city-based weather suggestions"
+  },
+  {
+   "bugid": 1925332,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "\"Not Secure\" Label Is Illegible When the Width Is Too Small to Show Its Text"
+  },
+  {
+   "bugid": 1925426,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Test autofill by typing a full or partial restrict keyword to trigger search mode"
+  },
+  {
+   "bugid": 1925735,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update weather suggestions tests"
+  },
+  {
+   "bugid": 1926315,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry for relevance ranking of Firefox Suggest"
+  },
+  {
+   "bugid": 1915351,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Firefox DLP scans the pasted content multiple times when copied from Google/OneDrive Documents"
+  },
+  {
+   "bugid": 1925488,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from the customization panel"
+  },
+  {
+   "bugid": 1905027,
+   "status": "ASSIGNED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "There should be a Keyboard shortcut for the AI chat sidebar"
+  },
+  {
+   "bugid": 1925865,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add showOtherBookmarks to the feature manifest for bookmarks"
+  },
+  {
+   "bugid": 1926343,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Set min-width on AboutWelcome Single Select Picker tiles based on icon width"
+  },
+  {
+   "bugid": 1806159,
+   "status": "NEW",
+   "component": "Firefox:Migration",
+   "summary": "Create tests for default bookmarks"
+  },
+  {
+   "bugid": 1922311,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[meta] Fakespot style listcard"
+  },
+  {
+   "bugid": 1926553,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version bde36f28bee3a01495375ae88d6ac2e3bf217c74 from 2024-10-23 11:54:07"
+  },
+  {
+   "bugid": 1873514,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Update about:neterror appearance and strings (SEC_ERROR_UNKNOWN_ISSUER)"
+  },
+  {
+   "bugid": 1923052,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "\"Private browsing\" icon/label no longer shown in titlebar with vertical tabs"
+  },
+  {
+   "bugid": 1923972,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Telemetry for icons on the sidebar"
+  },
+  {
+   "bugid": 1926119,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Remove an extra paragraph from the History sidebar panel empty state"
+  },
+  {
+   "bugid": 1923593,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "drag-n-drop from all tabs list to bookmarks toolbar creates two different bookmarks"
+  },
+  {
+   "bugid": 1925724,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add UI for (off by default) page wireframes for tab preview"
+  },
+  {
+   "bugid": 1926295,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group panel: color swatches lack focus indicator"
+  },
+  {
+   "bugid": 1926359,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab groups hairline should extend across group when reordering/adding new tabs"
+  },
+  {
+   "bugid": 1926394,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "No animation when dragging a tab over other tabs in a tab group"
+  },
+  {
+   "bugid": 1926582,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Rename things related to moving multiselected tabs together to avoid confusion with tab groups"
+  },
+  {
+   "bugid": 1926632,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use destructive button tokens for title bar close button"
+  },
+  {
+   "bugid": 1920969,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Tracking the update to NSPR 4.36"
+  },
+  {
+   "bugid": 1925740,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [Tier 2] /builds/worker/checkouts/gecko/media/webrtc/signaling/gtest/jsep_session_unittest.cpp:7756:19: error: loop variable 'offerTransceiver' creates a copy from type 'const mozilla::JsepTransceiver' [-Werror=range-loop-construct]"
+  },
+  {
+   "bugid": 1776646,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Support EXTRA_IS_SENSITIVE for clipboard"
+  },
+  {
+   "bugid": 1855525,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Failures in dom/tests/mochitest/sessionstorage/test_sessionStorageClone_alwaysPartitioned.html in M-xorig"
+  },
+  {
+   "bugid": 1924684,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Clean up unused methods in AndroidBridge"
+  },
+  {
+   "bugid": 1917685,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Merge minidump-analyzer into crashreporter"
+  },
+  {
+   "bugid": 1594368,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Query visited status of multiple URIs in the parent process at the same time."
+  },
+  {
+   "bugid": 1664001,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Use a \"best we have\" favicon choice for page-icon urls without a path"
+  },
+  {
+   "bugid": 1902693,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Create a pref to run reader mode with debug mode turned on"
+  },
+  {
+   "bugid": 1923470,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Consider removing code related to FissionDecisionStatus for Experiments"
+  },
+  {
+   "bugid": 1925098,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update theme colors in profiles db on theme changes"
+  },
+  {
+   "bugid": 1915183,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "Add telemetry in preparation to enforcing storage.sync quota on android"
+  }
+ ],
+ "fixed": 97,
+ "total": 109,
+ "restricted": 1
+}
