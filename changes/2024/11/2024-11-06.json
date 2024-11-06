@@ -1,0 +1,592 @@
+{
+ "date": "2024-11-06",
+ "buildid": "20241106094902",
+ "cset": "66c06d5d735b9b7d7ccb0e85f326c28f7d19dd7d",
+ "bugs": [
+  {
+   "bugid": 1929475,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor application-services 6a7df1d54b34579cbb2fbca257b5b11d40ab4ea2 for city-based weather"
+  },
+  {
+   "bugid": 1923942,
+   "status": "RESOLVED",
+   "component": "Application Services:Remote Settings",
+   "summary": "Agree on a general shape for the new Remote Settings API"
+  },
+  {
+   "bugid": 1926407,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Consider modifying the fetchpriority adjustments for <link rel=preload as=font fetchpriority=low/high/auto> so that priority=\"high\" is given a higher priority than auto"
+  },
+  {
+   "bugid": 1928828,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Do not create an external state machine for playback if the element already has unsupported CDMProxy"
+  },
+  {
+   "bugid": 1926722,
+   "status": "NEW",
+   "component": "Core:DOM: File",
+   "summary": "Intermittent application crashed [@ nsCOMPtr<nsIThread>::operator->] | single tracking bug"
+  },
+  {
+   "bugid": 1927546,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Connections to port 4160 are erroneously blocked by the \"bad port list\" (should be 4190)"
+  },
+  {
+   "bugid": 1816449,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Add exception list for https-first with remote settings"
+  },
+  {
+   "bugid": 1927247,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ IPCError-content | Init Already registered!]"
+  },
+  {
+   "bugid": 1929338,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "convert more mozilla:clamped to std:clamp"
+  },
+  {
+   "bugid": 1929180,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add external semaphore handling to DMABufSurface"
+  },
+  {
+   "bugid": 1929185,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Reduce DMABufSurface::mSyncFd file descriptor usage"
+  },
+  {
+   "bugid": 1928736,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Hit MOZ_CRASH(Content-process DrawTargetRecording can't create requested clipped drawtarget) at /builds/worker/checkouts/gecko/gfx/2d/DrawTargetRecording.cpp:834"
+  },
+  {
+   "bugid": 1929176,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update harfbuzz to new version 10.1.0 from 2024-11-05 08:04:49"
+  },
+  {
+   "bugid": 1838729,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Bring `GPUQuerySet` APIs up to spec."
+  },
+  {
+   "bugid": 1927932,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Update mozangle in wrench to 0.5.2."
+  },
+  {
+   "bugid": 1928735,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement Explicit Resource Management opcodes in portable baseline interpreter"
+  },
+  {
+   "bugid": 1929034,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix clang-tidy error in js/src/proxy/Wrapper.cpp manifested while building with explicit resource management enabled"
+  },
+  {
+   "bugid": 1929037,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix hazard analysis errors caught in getOrCreateDisposeCapability in js/src/builtin/DisposableStackObjectBase.h"
+  },
+  {
+   "bugid": 1927795,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Reduce the size of ArenaLists by using a smaller linked list implementation"
+  },
+  {
+   "bugid": 1928943,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "34316.95 - -3932% browser-console:parent-process memory / browser-console:parent-process memory (Linux) regression on Tue October 29 2024"
+  },
+  {
+   "bugid": 1907644,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Only hold onto the code section bytecode when doing lazy tiering"
+  },
+  {
+   "bugid": 1928713,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "const _Tp &std::clamp(const _Tp &, const _Tp &, const _Tp &) [_Tp = int]: Assertion '!(__hi < __lo)' failed."
+  },
+  {
+   "bugid": 1929309,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Reduce the sizes in WPT unreachable-snap-positions-003.html to avoid failures for windows < 600px wide"
+  },
+  {
+   "bugid": 1929204,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in dom/base/IdleDeadline.cpp"
+  },
+  {
+   "bugid": 1929222,
+   "status": "NEW",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in gfx/"
+  },
+  {
+   "bugid": 1488780,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "decommit can be slow while holding the allocator lock"
+  },
+  {
+   "bugid": 1922661,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Migrate NETWORK_CACHE_V2_MISS_TIME_MS, NETWORK_CACHE_HIT_MISS_STAT_PER_CACHE_SIZE, and NETWORK_CACHE_HIT_RATE_PER_CACHE_SIZE probes to glean."
+  },
+  {
+   "bugid": 1922193,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Sending multiple (unknown) cookies with same name"
+  },
+  {
+   "bugid": 1761248,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Expose API to report Early hints information for devtools"
+  },
+  {
+   "bugid": 1929093,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Disable network.http.http3.disable_when_third_party_roots_found"
+  },
+  {
+   "bugid": 1841896,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "[meta] Port APZ Fission tests in browser_test_group_fission.js to regular mochitests running in M-fis or M-fis-xorig mode"
+  },
+  {
+   "bugid": 1922710,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "helper_fission_scroll_handoff.html and helper_fission_inactivescroller_under_oopif.html are not run at all"
+  },
+  {
+   "bugid": 1919558,
+   "status": "ASSIGNED",
+   "component": "Core:Permission Manager",
+   "summary": "Implement mechanism to set default permissions per origin through Remote Settings"
+  },
+  {
+   "bugid": 1928352,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma [tier 2] Assertion failure: mAnimationElement != aOther->mAnimationElement (Two animations cannot have the same animation content element!), at /builds/worker/checkouts/gecko/dom/smil/SMILAnimationFunction.cpp:283"
+  },
+  {
+   "bugid": 1929459,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "enforce certificate transparency in early beta"
+  },
+  {
+   "bugid": 1908630,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable ForkServer during PGO"
+  },
+  {
+   "bugid": 1922525,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Bucket File System",
+   "summary": "FS: Handle shutdown requested during CreateFileSystemManagerParent"
+  },
+  {
+   "bugid": 1928028,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add suppport for triggering artificial failures"
+  },
+  {
+   "bugid": 1928939,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Crash in [@ mozilla::dom::(anonymous namespace)::ConnectionThread::CreateConnection]"
+  },
+  {
+   "bugid": 1765391,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Crash in [@ nsMenuBarX::Paint]"
+  },
+  {
+   "bugid": 1926630,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Menuitems added via async onPopupShowing handler create duplicates on macos"
+  },
+  {
+   "bugid": 1882079,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Flatpak] Choosing download directory over FileChooser portal doesn't display real path"
+  },
+  {
+   "bugid": 1926030,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "firefox nightly fails to build with: ../widget/gtk/WakeLockListener.cpp:207:8: error: 'queue' in namespace 'std' does not name a template type when built without dbus"
+  },
+  {
+   "bugid": 1921759,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "browser_copy_query_without_tree.js and Windows CI Issues on upgrades"
+  },
+  {
+   "bugid": 1928016,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Add information how to use Python's virtual environments on macOS to provide a comptabile Python version to mozilla-unified"
+  },
+  {
+   "bugid": 1921169,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "[a11y] The delete button is not properly read by Talkback"
+  },
+  {
+   "bugid": 1924789,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Prevent crash reporter from sending old crashes."
+  },
+  {
+   "bugid": 1929175,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version df8c16859ebeff46cb4fcfb65d7ca9dd6d4fa6d3 from 2024-11-05 05:03:37"
+  },
+  {
+   "bugid": 1926986,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Remove the add button when an add-on is installed in onboarding"
+  },
+  {
+   "bugid": 1929254,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Update the Dark Mode reader and main add-ons onboarding image svg's"
+  },
+  {
+   "bugid": 1924720,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[Baseline Profile] Integrate Baseline Profile generation for Beta on Android"
+  },
+  {
+   "bugid": 1923855,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "[Tab Strip Post Beta] Show Tab counter in Tab Strip"
+  },
+  {
+   "bugid": 1895140,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Passwords menu should navigate into saved passwords"
+  },
+  {
+   "bugid": 1915092,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Menu CFR is incorrectly positioned after rotating screen"
+  },
+  {
+   "bugid": 1921044,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] Tabs box not clickable when a11y talkback is enabled"
+  },
+  {
+   "bugid": 1927677,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[toolbar redesign] Navbar divider not hidden when navbar is hidden for webpage interactions"
+  },
+  {
+   "bugid": 1928425,
+   "status": "VERIFIED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign][a11y] Suggestion for \"Support\" and \"Settings\" options to be labeled"
+  },
+  {
+   "bugid": 1928431,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign][a11y] Suggestion for \"Extensions\" and \"Customize homepage\" options display unexposed text"
+  },
+  {
+   "bugid": 1928451,
+   "status": "VERIFIED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] The menu is incorrectly displayed after changing the orientation from landscape to portrait mode"
+  },
+  {
+   "bugid": 1814024,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyEditModeDismissalDoesNotSaveLoginCredentialsTest >"
+  },
+  {
+   "bugid": 1921174,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Shift + Tab when the urlbar has been focused (with Ctrl+L) should focus dedicated search button"
+  },
+  {
+   "bugid": 1928548,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a urlbar Nimbus variable for browser.ml.enable"
+  },
+  {
+   "bugid": 1775779,
+   "status": "REOPENED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Intermittent browser/components/downloads/test/browser/browser_download_spam_protection.js | single tracking bug"
+  },
+  {
+   "bugid": 1929355,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Changing the password for an already signed in user is broken"
+  },
+  {
+   "bugid": 1775852,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/components/asrouter/tests/browser/browser_asrouter_group_userprefs.js | single tracking bug"
+  },
+  {
+   "bugid": 1893050,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "A button with a cog icon is labeled as \"Personalize new tab\" while it's usually \"Settings\""
+  },
+  {
+   "bugid": 1929279,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The “fakespot_click” and “fakespot_product_impression” events either do not contain a “category” key or it is empty"
+  },
+  {
+   "bugid": 1929116,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Migrate to mozilla-nimbus-schemas (from github.com/mozilla/experimenter) in Nimbus"
+  },
+  {
+   "bugid": 1908727,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add scalar probes for the current state of the BackupService"
+  },
+  {
+   "bugid": 1902667,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add new trigger and callout for sidebar survey"
+  },
+  {
+   "bugid": 1921836,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar panel is displayed without the sidebar launcher when invoked via a keyboard shortcut/application menu"
+  },
+  {
+   "bugid": 1926893,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "attention notification dot is misplaced for vertical tabs"
+  },
+  {
+   "bugid": 1928151,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Investigate whether the titlebar for vertical tabs can be styled like the nav bar"
+  },
+  {
+   "bugid": 1921814,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group label should be in keyboard focus list"
+  },
+  {
+   "bugid": 1922268,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Clicking \"New tab to right\" in a context menu inadvertently adds a tab to a group, if the next tab to the right is in a group"
+  },
+  {
+   "bugid": 1922276,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Moving tab groups between windows causes the \"create tab group\" UI to appear"
+  },
+  {
+   "bugid": 1927094,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "on_wheel handler consulting lineScrollAmount getter which iterates over all tabs, which makes it slow (should cache line scroll amount somehow)"
+  },
+  {
+   "bugid": 1929345,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove border and reverse icon/background colors for mute, soundplaying, activemedia-blocked buttons to improve readability"
+  },
+  {
+   "bugid": 1928733,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Update \"yua\" locale code to its actual name, in our in-app language switcher"
+  },
+  {
+   "bugid": 1855025,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"browser.getClientWindows\" command"
+  },
+  {
+   "bugid": 1924623,
+   "status": "RESOLVED",
+   "component": "Thunderbird:General",
+   "summary": "Startup Crash in [@ Detour_VariantClear]"
+  },
+  {
+   "bugid": 1927592,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "ExtensionXPCShellUtils AOMExtensionWrapper instances do not receive onUninstalled method calls when uninstalled if the test has called AddonTestUtils.promiseShutdownManager/promiseRestartManager"
+  },
+  {
+   "bugid": 1916287,
+   "status": "REOPENED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "High frequency browser/extensions/formautofill/test/browser/browser_iframe_autofill_sandbox.js | Test timed out -"
+  },
+  {
+   "bugid": 1926886,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Implement add new passwords"
+  },
+  {
+   "bugid": 1926975,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Take user to existing entry when adding a login"
+  },
+  {
+   "bugid": 1929272,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Move `transformRulesToMap` to shared file"
+  },
+  {
+   "bugid": 1927201,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP captions for site overrides using videojsWrapper.js don't render as expected when there's multiple span elements"
+  },
+  {
+   "bugid": 1851327,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Reader view font type controls (Sans/Serif) do not follow Firefox settings"
+  },
+  {
+   "bugid": 1894239,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Set backend build flag to true once stabilized in Nightly"
+  },
+  {
+   "bugid": 1924850,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update appmenu top-level menuitem as state changes"
+  },
+  {
+   "bugid": 1926145,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add Profiles menu to menubar"
+  },
+  {
+   "bugid": 1926593,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update selectable profile data store to include theme id"
+  },
+  {
+   "bugid": 1926946,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Errors in SelectableProfileService theme observer when setting theme to system default"
+  },
+  {
+   "bugid": 1927093,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate scalars to glean - part 2"
+  },
+  {
+   "bugid": 1927404,
+   "status": "RESOLVED",
+   "component": "Toolkit:View Source",
+   "summary": "Copying code from view-source generates blank lines between every line"
+  },
+  {
+   "bugid": 1923663,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Google/Gmail redirecting users to \"Clear cache & cookies\""
+  },
+  {
+   "bugid": 1926373,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Calling window.close() from an \"WebExtension\"-registered devtools panel shouldn't close the browser chrome window"
+  }
+ ],
+ "fixed": 73,
+ "total": 97,
+ "restricted": 0
+}
