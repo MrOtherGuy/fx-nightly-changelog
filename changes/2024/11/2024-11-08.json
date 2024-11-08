@@ -1,0 +1,658 @@
+{
+ "date": "2024-11-08",
+ "buildid": "20241108094832",
+ "cset": "a2f86a2bc0183e5fff789dfc3289cb04ebb4bba9",
+ "bugs": [
+  {
+   "bugid": 1929251,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "video currentTime jumping to Infinity with Widevine Live stream (regression)"
+  },
+  {
+   "bugid": 1928536,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable HEVC for all playback on Windows"
+  },
+  {
+   "bugid": 1928412,
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement `HostDefined` object"
+  },
+  {
+   "bugid": 1929736,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "init Document::mIsInPrivateBrowsing"
+  },
+  {
+   "bugid": 1862256,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Behavior of home/end and ctrl+a/e in textarea is inconsistent with other browsers"
+  },
+  {
+   "bugid": 1926722,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Intermittent application crashed [@ nsCOMPtr<nsIThread>::operator->] | single tracking bug"
+  },
+  {
+   "bugid": 1928702,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Reimplement showNotification() via IPC"
+  },
+  {
+   "bugid": 1929755,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perma [tier 2] MinGW all /builds/worker/checkouts/gecko/accessible/windows/uia/UiaTextRange.cpp:728:24: error: use of undeclared identifier 'UIA_AnnotationTypesAttributeId' | fatal error: too many errors emitted, stopping now [-ferror-limit=]"
+  },
+  {
+   "bugid": 1929626,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove more uses/includes of nsAlgorithm.h"
+  },
+  {
+   "bugid": 1918133,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add a an API to snapshot stacking contexts with a stub implementation"
+  },
+  {
+   "bugid": 1921980,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Snapshot and render stacking contexts"
+  },
+  {
+   "bugid": 1921981,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Correctly handle the position and size of the snapshots"
+  },
+  {
+   "bugid": 1929166,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make occlusion tracker use a generic key"
+  },
+  {
+   "bugid": 1918139,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Turn on --enable-perf by default for nightly builds"
+  },
+  {
+   "bugid": 1928356,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma [tier 2] Assertion failure: lhs.indices[0] != rhs.indices[0], at /builds/worker/checkouts/gecko/js/src/irregexp/RegExpAPI.cpp:656"
+  },
+  {
+   "bugid": 1929511,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ v8::internal::(anonymous namespace)::RegExpParserImpl<unsigned char>::Parse]"
+  },
+  {
+   "bugid": 1929801,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[MIPS64] Failed to build JS on mips64 platform (emitBigIntPtrDiv)"
+  },
+  {
+   "bugid": 1928676,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Replace uses of HeapPtr with GCPtr where possible"
+  },
+  {
+   "bugid": 1928993,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at js/src/vm/Interpreter.cpp:440 with wasmGcReadField"
+  },
+  {
+   "bugid": 1929701,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma async-scrolling/dynamic-toolbar-fixed-top-1.html == async-scrolling/dynamic-toolbar-fixed-top-1-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1929797,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent transform-3d/1929182-1.html == about:blank | single tracking bug"
+  },
+  {
+   "bugid": 1905904,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "google.com - Can not insert more than 1 space char in the same focused area"
+  },
+  {
+   "bugid": 1920160,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Absolutely positioned boxes should accept `align-self` and `justify-self`"
+  },
+  {
+   "bugid": 1768921,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "[css-overflow-3] Incorporate \"padding-inflated bounds of in-flow children\"  into scrollable elements' scrollable-overflow area"
+  },
+  {
+   "bugid": 1929360,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Reserve capacity before bulk append in CreateObserversForAnimatedGlyphs"
+  },
+  {
+   "bugid": 1929268,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in  image/"
+  },
+  {
+   "bugid": 1929269,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in ipc/glue/IdleSchedulerParent.cpp"
+  },
+  {
+   "bugid": 1925282,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "models and organizations allow/deny lists"
+  },
+  {
+   "bugid": 1926218,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add a modelHub in PipelineOptions"
+  },
+  {
+   "bugid": 1928224,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add intent and NER performance test in local"
+  },
+  {
+   "bugid": 1929230,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add verbosity in onnx-runtime"
+  },
+  {
+   "bugid": 1929499,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "provide a default for rootUrl"
+  },
+  {
+   "bugid": 1922193,
+   "status": "REOPENED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Sending multiple (unknown) cookies with same name"
+  },
+  {
+   "bugid": 1928309,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Adjust the User-Agent string on iOS"
+  },
+  {
+   "bugid": 1929622,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Potential crash in Microsoft Entra SSO (macOS)."
+  },
+  {
+   "bugid": 1926634,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make axis locking mode enum an enum class"
+  },
+  {
+   "bugid": 1926982,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Overscroll effect resets with a jump when touching touchpad"
+  },
+  {
+   "bugid": 1929171,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make helper_fission_setResolution.html work on hi-DPI environments"
+  },
+  {
+   "bugid": 1929746,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Put Linux hold gesture support behind a pref"
+  },
+  {
+   "bugid": 1929754,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Avoid including nsViewportInfo.h from Document.h"
+  },
+  {
+   "bugid": 1902570,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fonts not displaying correctly in Firefox (macOS 15 Beta) after blocking Suspected Fingerprinters (Mojibake)"
+  },
+  {
+   "bugid": 1922506,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Move canvas renderings to an actor child from about:fingerprintingprotection"
+  },
+  {
+   "bugid": 1924087,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "SVG Switch Element leaks language even with spoof language"
+  },
+  {
+   "bugid": 1929654,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Smartblock instagram placeholders not reloading on some sites"
+  },
+  {
+   "bugid": 1929895,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Consider offloading missing font sorting to clients"
+  },
+  {
+   "bugid": 1734476,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "'vector-effect: non-scaling-stroke' attribute does not work when animating SVG scale."
+  },
+  {
+   "bugid": 1927645,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Argument count mismatch in pthread_atfork_interposer on non-glibc platforms"
+  },
+  {
+   "bugid": 1923513,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "fission hit testing incorrect with clip-path on top."
+  },
+  {
+   "bugid": 1919160,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Stop reporting facingMode on mac laptops and desktops"
+  },
+  {
+   "bugid": 1928216,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Google Voice doesn't list microphones in Firefox 132 while it still works in 131"
+  },
+  {
+   "bugid": 1929460,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Use .labelColor for -moz-dialogtext and a few others."
+  },
+  {
+   "bugid": 1929006,
+   "status": "ASSIGNED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Accessibility components/Button.js isn't used anywhere"
+  },
+  {
+   "bugid": 1929003,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Make the DevTools tracer button use the native profiler pipeline"
+  },
+  {
+   "bugid": 1929004,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Record DOM Mutations when tracing to the profiler"
+  },
+  {
+   "bugid": 1929007,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Store console API calls in recorded tracing profiles"
+  },
+  {
+   "bugid": 1916660,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Reordering element with drag and drop in markup view doesn't show feedback in High Contrast Mode"
+  },
+  {
+   "bugid": 1916722,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Computed panel location don't look like a link in High Contrast Mode"
+  },
+  {
+   "bugid": 1928003,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Perma [tier 2] devtools/client/inspector/markup/test/browser_markup_tag_edit_long-classname.js | Node is not accessible via accessibility API: id: ruleview-container-focusable, tagName: div, className:  -"
+  },
+  {
+   "bugid": 1929200,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Markup view expand button (the one between opening/closing tag, not twisty) should have a ButtonText color in High Contrast Mode"
+  },
+  {
+   "bugid": 1929594,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Don't use opacity to style disabled menuitem"
+  },
+  {
+   "bugid": 1848134,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "[Crash] mozilla.components.support.base.android.UnboundHandlerException: You must bind the NotificationPermissionHandler to an activity"
+  },
+  {
+   "bugid": 1814198,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Add a generalized `FenixSnackbar` composable"
+  },
+  {
+   "bugid": 1929792,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version 48a71c2ebeace366cde98977f0bd13da7dbf7121 from 2024-11-07 05:03:14"
+  },
+  {
+   "bugid": 1916877,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Replace deprecated ClickableText with AnnotatedString+LinkAnnotation"
+  },
+  {
+   "bugid": 1929398,
+   "status": "NEW",
+   "component": "Fenix:Settings",
+   "summary": "Update data collection strings  in Settings"
+  },
+  {
+   "bugid": 1919538,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[WebCompat Reporter] Rename \"Report Site Issue\" menu item into \"Report broken site\" in the old and new menu"
+  },
+  {
+   "bugid": 1923385,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Add a navigation transition animation for specific menu items"
+  },
+  {
+   "bugid": 1929837,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Improve running duration time for verifyCopyPDFTextOptionTest and verifyCopyTextOptionTest UI tests"
+  },
+  {
+   "bugid": 1929857,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma fenix-debug org.mozilla.fenix.ui.MainMenuTest#verifyTabMainMenuItemsTest | java.lang.AssertionError: UiSelector[CONTAINS_TEXT=Report Site Issue] does not exist"
+  },
+  {
+   "bugid": 1928715,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable weather suggestions in Nightly"
+  },
+  {
+   "bugid": 1929636,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Messaging for operations when there is no action connection are misleading"
+  },
+  {
+   "bugid": 1893458,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Taskbar pinning races shortcut creation propogating through Windows shell"
+  },
+  {
+   "bugid": 1887011,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[MSIX] Small delay untill next scren is displayed when setting Firefox as the default browser from the about:welcome page"
+  },
+  {
+   "bugid": 1929363,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for sign-up / sign-in card in new profile onboarding"
+  },
+  {
+   "bugid": 1927869,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Create Section Headline UI"
+  },
+  {
+   "bugid": 1927902,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Update Medium DS Card UI"
+  },
+  {
+   "bugid": 1929629,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab remove content recomendation ads from startup cache"
+  },
+  {
+   "bugid": 1929989,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] DSCard is missing necessary props when rendered from CardSections component"
+  },
+  {
+   "bugid": 1928458,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "PDF browsing font issue"
+  },
+  {
+   "bugid": 1923448,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Generalized Windows Pinning"
+  },
+  {
+   "bugid": 1927897,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Replace the AI chatbot tool icon in the sidebar"
+  },
+  {
+   "bugid": 1928163,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Tabs from other devices panel does not display all tabs from synced mobile devices"
+  },
+  {
+   "bugid": 1929933,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Extraneous TriggerActionSchema entry \"sidebarGenaiOpened\" added"
+  },
+  {
+   "bugid": 1929345,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove border and reverse icon/background colors for mute, soundplaying, activemedia-blocked buttons to improve readability"
+  },
+  {
+   "bugid": 1915191,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Harmonize configure help"
+  },
+  {
+   "bugid": 1929372,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "[mozversioncontrol] Add unofficial support for Jujutsu repositories"
+  },
+  {
+   "bugid": 1925623,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "warning: the object size sanitizer has no effect at -O0, but is explicitly enabled"
+  },
+  {
+   "bugid": 1929558,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "The voice search via widget is not working when Fingerprint unlock is enabled and the screen locked."
+  },
+  {
+   "bugid": 1929301,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Android 15 - edge to edge layout issues in the GeckoView Example app"
+  },
+  {
+   "bugid": 1929287,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Intermittent TV1 browser/components/profiles/tests/browser/browser_test_db_lazily_created.js | Uncaught exception in setup bound  - [Exception... \"Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]\""
+  },
+  {
+   "bugid": 1927093,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate scalars to glean - part 2"
+  },
+  {
+   "bugid": 1916820,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Replace --in-content-accent-color-active with the --color-accent-primary-active token"
+  },
+  {
+   "bugid": 1929447,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "./mach -<tab> autocomplete triggers error in uniffi-bindgen-gecko-js/mach_commands.py: ModuleNotFoundError: No module named 'distutils'"
+  },
+  {
+   "bugid": 1886285,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Add an intervention for a group of sites using -webkit-scrollbar"
+  },
+  {
+   "bugid": 1888405,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Interventions for vmos.cn"
+  },
+  {
+   "bugid": 1890067,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Intervention for crunchyroll.com"
+  },
+  {
+   "bugid": 1890321,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Update Intervention for tvmovie.de"
+  },
+  {
+   "bugid": 1890328,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Interventions for legacy esri site breakage"
+  },
+  {
+   "bugid": 1928833,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Intervention for kucharkaprodceru.cz"
+  },
+  {
+   "bugid": 1929069,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Intervention for \"Download prompt for files with no content-type\""
+  },
+  {
+   "bugid": 1929114,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove intervention for attwatchtv.com"
+  },
+  {
+   "bugid": 1929127,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove intervention for www.sling.com"
+  },
+  {
+   "bugid": 1929294,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Intervention for itv.com"
+  },
+  {
+   "bugid": 1929298,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test updates for v134.2.0"
+  },
+  {
+   "bugid": 1844503,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "This browser is not supported. on nicochannel.jp"
+  },
+  {
+   "bugid": 1923663,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Google/Gmail redirecting users to \"Clear cache & cookies\""
+  },
+  {
+   "bugid": 1925508,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "developer.apple.com - The page is rendered broken"
+  },
+  {
+   "bugid": 1929002,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Update extensions/.eslintrc.js to limit some globals to ext-*.js files"
+  }
+ ],
+ "fixed": 94,
+ "total": 108,
+ "restricted": 2
+}
