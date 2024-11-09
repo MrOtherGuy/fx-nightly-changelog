@@ -1,0 +1,520 @@
+{
+ "date": "2024-11-09",
+ "buildid": "20241109093230",
+ "cset": "bcec5f42cb2e5a1cb68f6c686ffe88ec72bb7828",
+ "bugs": [
+  {
+   "bugid": 1905287,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | nsTArray_Impl<T>::ElementAt | nsTArray_Impl<T>::operator[] | mozilla::AudioChunk::ChannelDataForWrite<T>]"
+  },
+  {
+   "bugid": 1929955,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Rounding issue fixup"
+  },
+  {
+   "bugid": 1930253,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "CleanupPhase should clear the graph first and only after that free snow whites"
+  },
+  {
+   "bugid": 1863046,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove redundant nsContentUtils::IsInPrivateBrowsing (it's also slow)"
+  },
+  {
+   "bugid": 1930111,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clear AttrArray in nsINode::LastRelease"
+  },
+  {
+   "bugid": 1929534,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Keep back-button intervention enabled only in nightly/early-beta"
+  },
+  {
+   "bugid": 1816449,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Add exception list for https-first with remote settings"
+  },
+  {
+   "bugid": 1924951,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "[WebCrypto] Import OKP keys in \"raw\" format fails when passing the algorithm as string"
+  },
+  {
+   "bugid": 1925510,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent GeckoProfiler.AllThreads | Expected: (aOutput) != (nullptr), actual: NULL vs (nullptr)"
+  },
+  {
+   "bugid": 1927077,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS (2024-10-25)"
+  },
+  {
+   "bugid": 1928862,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update irregexp to new version d6bea6fd6d8c2f3e270bdd72534aea94b0683bdb from 2024-11-09 00:00:00"
+  },
+  {
+   "bugid": 1928407,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: ok, at js/src/gc/Scheduling.cpp:636"
+  },
+  {
+   "bugid": 1929024,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Use language as a hint to resolve script for textruns that contain only COMMON or INHERITED codepoints"
+  },
+  {
+   "bugid": 1929932,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Perma [tier 2] toolkit/components/ml/tests/browser/browser_ml_engine_perf.js | Uncaught exception in test bound test_ml_generic_pipeline - at chrome://global/content/ml/ModelHub.sys.mjs:70 - Error: Error: Forbidden URL: http://localhost:37001/Xenova/all-M"
+  },
+  {
+   "bugid": 1913753,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Add thread safety annotations to arena_t and ArenaCollection"
+  },
+  {
+   "bugid": 1928822,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Assertion failure: !mRandomizeSmallAllocations || mPRNG, at memory/build/mozjemalloc.cpp:3475"
+  },
+  {
+   "bugid": 1930122,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Set network.http.http2.send_NO_RFC7540_PRI to false"
+  },
+  {
+   "bugid": 1894122,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "\"Dead zone\" during scrolling when panning back and forth in a single gesture (sticky axis locking eats vertical movement in some cases)"
+  },
+  {
+   "bugid": 1919558,
+   "status": "ASSIGNED",
+   "component": "Core:Permission Manager",
+   "summary": "Implement mechanism to set default permissions per origin through Remote Settings"
+  },
+  {
+   "bugid": 1927723,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Expose all cached temporary origins via QuotaManagerService"
+  },
+  {
+   "bugid": 1926624,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Primary password dialog has the wrong size on macOS"
+  },
+  {
+   "bugid": 1929846,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Check of nsWindow state"
+  },
+  {
+   "bugid": 1926862,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Ugly black tab bar when widget.windows.mica is enabled, with HW acceleration enabled but WR compositor disabled"
+  },
+  {
+   "bugid": 1929006,
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Accessibility components/Button.js isn't used anywhere"
+  },
+  {
+   "bugid": 1930099,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Disabled command buttons should't change opacity in High Contrast Mode"
+  },
+  {
+   "bugid": 1928134,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Intermittent devtools/client/inspector/test/browser_inspector_fission_frame_navigation.js | single tracking bug"
+  },
+  {
+   "bugid": 1916669,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Rules view accordion text isn't legible on hover in High Contrast Mode"
+  },
+  {
+   "bugid": 1929508,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Selected tree node twisty icon are white in High Contrast Mode (they should be SelectedItemText)"
+  },
+  {
+   "bugid": 1917989,
+   "status": "RESOLVED",
+   "component": "Fenix:Accounts and Sync",
+   "summary": "Open Tabs Not Syncing on Fenix"
+  },
+  {
+   "bugid": 1914084,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "\"CrashDao.kt:51: The query returns some columns which are not used by mozilla.components.lib.crash.db.CrashEntity.\" warning in lib-crash"
+  },
+  {
+   "bugid": 1929963,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Minidump hashes are always empty in crash pings"
+  },
+  {
+   "bugid": 1809328,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "\"source\": \"HOME\" string is missing from the log when accessing \"What's new\""
+  },
+  {
+   "bugid": 1921885,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Add GV getWebCompatInfo API to GeckoEngineSession"
+  },
+  {
+   "bugid": 1930152,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add the drawable asset(s) for toolbar placement card"
+  },
+  {
+   "bugid": 1894788,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "mobile/android/focus-android/README.md still references GitHub"
+  },
+  {
+   "bugid": 1926814,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Android Components linter report errors that do not exists because of stale reports directory"
+  },
+  {
+   "bugid": 1928679,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "remove web-extension-on-install-prompt method before Gecko version gets increased to 135 on 2024-11-25"
+  },
+  {
+   "bugid": 1926241,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Provide action to search with engine when autofilling url"
+  },
+  {
+   "bugid": 1927113,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search mode transfers to other tabs while cycling tabs when persisted search enabled"
+  },
+  {
+   "bugid": 1928088,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search button search engine icons should default to magnifying glass if no icon is provided for the search engine"
+  },
+  {
+   "bugid": 1929853,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Small popups cause overlap between urlbar and hamburger menu."
+  },
+  {
+   "bugid": 1930226,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "desktop_l10n.py runs make export on entire tree after bug 1859597"
+  },
+  {
+   "bugid": 1904945,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Staff pick addons Treatment A in MC"
+  },
+  {
+   "bugid": 1927387,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[FxMS Docs] Move Simple CFR Template doc under CFR UI Template in source doc"
+  },
+  {
+   "bugid": 1929593,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for onboarding checklist rollout"
+  },
+  {
+   "bugid": 1930175,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Mac OS] Sections Headlines have double line rules"
+  },
+  {
+   "bugid": 1930184,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "If TBR is enabled, sections feed is limited to only one section"
+  },
+  {
+   "bugid": 1930210,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab list feed should go back to replacing 1 item for now to keep spoc positions consistent between release and beta"
+  },
+  {
+   "bugid": 1924071,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove the purpose option from search URLs"
+  },
+  {
+   "bugid": 1908422,
+   "status": "NEW",
+   "component": "Firefox:Session Restore",
+   "summary": "Implement _closedGroups array"
+  },
+  {
+   "bugid": 1916230,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar tool selected color is not as per design (and different from tab selected color)"
+  },
+  {
+   "bugid": 1918217,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Drag and drop for pinned tabs in vertical expanded mode polish"
+  },
+  {
+   "bugid": 1923752,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hide new tab button that pops up in the toolbar upon switching to vertical tabs"
+  },
+  {
+   "bugid": 1926116,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update tooltips for sidebar tools that have shortcuts"
+  },
+  {
+   "bugid": 1928116,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update search field string in tabs from other devices"
+  },
+  {
+   "bugid": 1928151,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Investigate whether the titlebar for vertical tabs can be styled like the nav bar"
+  },
+  {
+   "bugid": 1928163,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Tabs from other devices panel does not display all tabs from synced mobile devices"
+  },
+  {
+   "bugid": 1929972,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "New callout trigger for sidebar tools triggering when tools panels are closing instead of opening"
+  },
+  {
+   "bugid": 1926354,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Drag and drop tab groups inside a group triggers new group creation"
+  },
+  {
+   "bugid": 1927884,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Hairline should change colour when moving between groups"
+  },
+  {
+   "bugid": 1927910,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Drag and drop tab to create group creates multiple colour changes"
+  },
+  {
+   "bugid": 1929918,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "Change periodic_file_updates.sh to make it easier to run outside of automation"
+  },
+  {
+   "bugid": 1806135,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Enable installation and uninstallation of addons in GeckoView"
+  },
+  {
+   "bugid": 1927172,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Save the addon file in profile folder when using \"Addon:Install\" command with base64 interface"
+  },
+  {
+   "bugid": 1928508,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Don't log the message \"update.locale file doesn't exist\" on Firefox installations with no updater"
+  },
+  {
+   "bugid": 1927576,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Clicking on another profile in the menu should switch app focus, not open a new window"
+  },
+  {
+   "bugid": 1928738,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "String change: \"Profile 1\" to \"Original profile\""
+  },
+  {
+   "bugid": 1905932,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Update statuses of our \"UI Widgets\" in Storybook"
+  },
+  {
+   "bugid": 1930056,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Tabstrip height changes when closing multiple tabs"
+  },
+  {
+   "bugid": 1929381,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Interventions for bluetokaicoffee.com and ottoandspike.com.au"
+  },
+  {
+   "bugid": 1929382,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Android intervention for kt.com"
+  },
+  {
+   "bugid": 1929383,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove Android intervention for tv.partner.co.il"
+  },
+  {
+   "bugid": 1873166,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "NS&I website says Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1875540,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Allstate.com doesn't support Firefox"
+  },
+  {
+   "bugid": 1894682,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "https://www.arboretumapartments.com/ shows Firefox unsupported message"
+  },
+  {
+   "bugid": 1898938,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "conference.amwell.com - Firefox is an unsupported browser"
+  },
+  {
+   "bugid": 1898960,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "hrm.online.comarch.pl - unsupported"
+  },
+  {
+   "bugid": 1898988,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.prudential.com.hk - Firefox is unsupported browser"
+  },
+  {
+   "bugid": 1898992,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "asp.attenix.co.il - Firefox is unsupported browser"
+  },
+  {
+   "bugid": 1898994,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "eportal.uestc.edu.cn - site is not usable"
+  },
+  {
+   "bugid": 1899060,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "wbte.drcedirect.com - Firefox is unsupported browser"
+  },
+  {
+   "bugid": 1899945,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.nytimes.com - Browser not supported for an interactive project"
+  },
+  {
+   "bugid": 1907488,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.thepointatkingston.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1912923,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "class.com - The page does not load"
+  },
+  {
+   "bugid": 1453506,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "[templates] Search for references to nsDisplayOwnLayer constructor does not find calls through MakeDisplayItem, similar issue for MakeRefPtr"
+  }
+ ],
+ "fixed": 67,
+ "total": 85,
+ "restricted": 2
+}
