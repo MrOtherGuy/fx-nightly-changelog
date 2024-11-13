@@ -1,0 +1,580 @@
+{
+ "date": "2024-11-13",
+ "buildid": "20241113094833",
+ "cset": "723946b9a47990aa6253585366bb18863de4df33",
+ "bugs": [
+  {
+   "bugid": 1927566,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Generate JS API references for application-services components"
+  },
+  {
+   "bugid": 1927569,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Write JS topic guides for application-services components"
+  },
+  {
+   "bugid": 1919384,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Optimize latency of getting encoded result in AppleVTEncoder"
+  },
+  {
+   "bugid": 1930476,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Improve unit usage in subdoc frames and co."
+  },
+  {
+   "bugid": 1922870,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add CSS error for missing @property inherits descriptor."
+  },
+  {
+   "bugid": 1922871,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add CSS error for missing @property syntax descriptor."
+  },
+  {
+   "bugid": 1926969,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Reject `light-dark()` in `@property` as not computationally independent."
+  },
+  {
+   "bugid": 1923208,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Fire transitioncancel event first rather than transitionrun when replacing old transitions"
+  },
+  {
+   "bugid": 1929095,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "`FileBlobImpl::GetTypeInternal` holds a mutex while spinning the event loop"
+  },
+  {
+   "bugid": 1930425,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "PROCESS-CRASH | MOZ_ASSERT(ManuallyManagesActiveness()) (Shouldn't be setting active status of this browsing context if not manually managed) [@ mozilla::dom::CanonicalBrowsingContext::SetIsActive]"
+  },
+  {
+   "bugid": 1666160,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Users enable `privacy.resistFingerprinting` and then are surprised when it causes problems"
+  },
+  {
+   "bugid": 1672493,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "ServiceWorker event dispatch should not go through the main thread of the content process"
+  },
+  {
+   "bugid": 1929953,
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Assertion failure: !textAcc (Text node isn't rendered but accessible is kept alive!), at /builds/worker/checkouts/gecko/accessible/base/NotificationController.cpp:797"
+  },
+  {
+   "bugid": 1644983,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Register CacheIOThread thread with profiler"
+  },
+  {
+   "bugid": 1915717,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "[network-markers] Expose http protocol version for a request in the profiler network tab"
+  },
+  {
+   "bugid": 1930660,
+   "status": "ASSIGNED",
+   "component": "Core:General",
+   "summary": "Replace remaining uses of mozilla::clamped by std::clamp"
+  },
+  {
+   "bugid": 1930751,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2024-11-11)"
+  },
+  {
+   "bugid": 1929045,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Prevent parsing of explicit resource management syntax and addition of globals based on pref"
+  },
+  {
+   "bugid": 1929055,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ensure globals added by explicit resource management are handled correctly by xray"
+  },
+  {
+   "bugid": 1930698,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Log invalidation of fuses for issue debugging"
+  },
+  {
+   "bugid": 1922657,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Allow all ToBigInt values in memory64 JS parameters"
+  },
+  {
+   "bugid": 1929445,
+   "status": "VERIFIED",
+   "component": "Core:Layout",
+   "summary": "const _Tp &std::clamp(const _Tp &, const _Tp &, const _Tp &) [_Tp = int]: Assertion '!(__hi < __lo)' failed. [@ mozilla::ScrollContainerFrame::GetNaturalBaselineBOffset]"
+  },
+  {
+   "bugid": 1930725,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Clean up a bit nsDeviceContext."
+  },
+  {
+   "bugid": 1929270,
+   "status": "ASSIGNED",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in dom/"
+  },
+  {
+   "bugid": 1929377,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "macos privacy block local connections"
+  },
+  {
+   "bugid": 1929818,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add Glean metric for QUIC frame count"
+  },
+  {
+   "bugid": 1930125,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "textPath causes text to be translated incorrectly if the referenced path has a translation applied"
+  },
+  {
+   "bugid": 1930221,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: aActiveTime >= 0 (Expecting non-negative active time), at /builds/worker/checkouts/gecko/dom/smil/SMILTimedElement.cpp:1754"
+  },
+  {
+   "bugid": 1929104,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Disable SandboxProfiler* by default when profiling"
+  },
+  {
+   "bugid": 1929603,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Bucket File System",
+   "summary": "FS: Follow-up fixes for handling shutdown requested during CreateFileSystemManagerParent"
+  },
+  {
+   "bugid": 1929190,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Temporary origin is not initialized if a previous initialization attempt failed"
+  },
+  {
+   "bugid": 1930628,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "don't store a subdoc display item on a frame if we aren't retaining the display list"
+  },
+  {
+   "bugid": 1930598,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Backport upstream fix to PipeWire camera for better unique device names"
+  },
+  {
+   "bugid": 1849109,
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Context menu broken with widget.wayland.fractional-scale.enabled"
+  },
+  {
+   "bugid": 1926030,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "firefox nightly fails to build with: ../widget/gtk/WakeLockListener.cpp:207:8: error: 'queue' in namespace 'std' does not name a template type when built without dbus"
+  },
+  {
+   "bugid": 1852762,
+   "status": "RESOLVED",
+   "component": "DevTools:Accessibility Tools",
+   "summary": "Remove additional accessibility panel \"beta\" code"
+  },
+  {
+   "bugid": 1833502,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-editor-scroll.js | single tracking bug"
+  },
+  {
+   "bugid": 1911521,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_pseudo-element_01.js | single tracking bug"
+  },
+  {
+   "bugid": 1930185,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "Remove color transition on buttons"
+  },
+  {
+   "bugid": 1835655,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "./mach lint -l ruff  -n tools/moztreedocs fails with a python exception"
+  },
+  {
+   "bugid": 1918098,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Upgrade to ruff 0.6.4"
+  },
+  {
+   "bugid": 1929531,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Change the ESLint mozilla/reject-addtask-only rule to highlight only the .only() section"
+  },
+  {
+   "bugid": 1930335,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Upgrade to ruff 0.7.3"
+  },
+  {
+   "bugid": 1930704,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Mermaid diagram with empty classes fails to build in source docs but works on mermaid.live"
+  },
+  {
+   "bugid": 1930468,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ GetHandleInformation]"
+  },
+  {
+   "bugid": 1930472,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ RtlInitUnicodeStringEx | LoadLibraryExW]"
+  },
+  {
+   "bugid": 1930285,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "When editing a bookmark or folder, if you use the system back gesture or button the change is not saved."
+  },
+  {
+   "bugid": 1930710,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Native stack traces are read incorrectly from the extra data"
+  },
+  {
+   "bugid": 1927738,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add New Fenix \"Open Share Sheet\" Card Messaging Action and Make Nimbus Configurable"
+  },
+  {
+   "bugid": 1924201,
+   "status": "RESOLVED",
+   "component": "Fenix:History",
+   "summary": "Open history item gets broken on HistoryFragment when device theme has changed."
+  },
+  {
+   "bugid": 1930176,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add the drawable asset(s) for theme card"
+  },
+  {
+   "bugid": 1906681,
+   "status": "RESOLVED",
+   "component": "Fenix:PWA",
+   "summary": "[Menu Redesign] Install menu text is wrong for PWAs"
+  },
+  {
+   "bugid": 1919858,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "Crash if voice recognition provides no results (with proposed solution)"
+  },
+  {
+   "bugid": 1929398,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Update data collection strings  in Settings"
+  },
+  {
+   "bugid": 1910687,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] The long press CFR points in between the 2 navigation buttons instead of the back button"
+  },
+  {
+   "bugid": 1930480,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Extensions item from homepage menu opens the submenu instead of Manage extensions page"
+  },
+  {
+   "bugid": 1902130,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Update Documentation for Monorepo Builds"
+  },
+  {
+   "bugid": 1930527,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Update Gradle to version 8.11"
+  },
+  {
+   "bugid": 1925532,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Entering searchmode via auto-complete (tab) does not dismiss the heuristic"
+  },
+  {
+   "bugid": 1929679,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Stop using :has() in urlbar view CSS"
+  },
+  {
+   "bugid": 1930499,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[macOS] URL Bar is misaligned in Full Screen pop-up window"
+  },
+  {
+   "bugid": 1930559,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix issue causing test failure spike in browser_searchModeSwitcher_basic.js"
+  },
+  {
+   "bugid": 1930752,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "add certificate transparency preference to enterprise policies"
+  },
+  {
+   "bugid": 1762608,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Add a comment to Firefox shortcuts (.lnk files)"
+  },
+  {
+   "bugid": 1927385,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[FxMS Docs] Revise the Onboarding Flow documentation in Source doc"
+  },
+  {
+   "bugid": 1930653,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab unified ads API isn't correctly handling a dismissed topsite ad"
+  },
+  {
+   "bugid": 1930715,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix a couple of documentation and code issues in search code"
+  },
+  {
+   "bugid": 1908422,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Implement closedGroups array"
+  },
+  {
+   "bugid": 1922010,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Change WindowsLaunchOnLogin functions that interacts with registry keys to be private"
+  },
+  {
+   "bugid": 1923448,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Generalized Windows Pinning"
+  },
+  {
+   "bugid": 1925377,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Update treatment of \"Turn on Syncing...\" option in the avatar and app menus"
+  },
+  {
+   "bugid": 1927644,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Add UI control to about:preferences#sync to allow turning Sync on and off"
+  },
+  {
+   "bugid": 1926371,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Remove from group\" moves tab into another group"
+  },
+  {
+   "bugid": 1929898,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Need to add a pause on drag and drop to create tab group"
+  },
+  {
+   "bugid": 1930608,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Refactor _updateAfterMoveTabTo"
+  },
+  {
+   "bugid": 1920080,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Remove global constructors from modules/libpref/Preferences.cpp"
+  },
+  {
+   "bugid": 1927242,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma wasi-crt-trunk make: *** [Makefile:104: build/wasi-libc.BUILT] Error 2"
+  },
+  {
+   "bugid": 1928572,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [clang-trunk] 1 out of 2 hunks FAILED -- saving rejects to file llvm/lib/Transforms/Vectorize/VectorCombine.cpp.rej"
+  },
+  {
+   "bugid": 1930634,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Exclude generated files from detekt AbsentOrWrongFileLicense rule"
+  },
+  {
+   "bugid": 1930416,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Don't use LocalRef for possible long-live object"
+  },
+  {
+   "bugid": 1930648,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "system-info.log truncated when there is a zombie process"
+  },
+  {
+   "bugid": 1928668,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Update Slack notify route in various test task configurations"
+  },
+  {
+   "bugid": 1930090,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Retry dispatching single event if navigation aborted a dispatch"
+  },
+  {
+   "bugid": 1851327,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Reader view font type controls (Sans/Serif) do not follow Firefox settings"
+  },
+  {
+   "bugid": 1780062,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "The text information on the profile manager's pages is not read by NVDA (or any screen readers)"
+  },
+  {
+   "bugid": 1924850,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update appmenu top-level menuitem as state changes"
+  },
+  {
+   "bugid": 1926145,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add Profiles menu to menubar"
+  },
+  {
+   "bugid": 1926507,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Badge the taskbar/dock with the profile icon"
+  },
+  {
+   "bugid": 1927555,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "\"Explore more themes\" link does not open about:addons correctly"
+  },
+  {
+   "bugid": 1927561,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add button labels to profile cards shown in about:profilemanager"
+  },
+  {
+   "bugid": 1929307,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Import prefs from SharedPrefs at startup, not the other way around"
+  },
+  {
+   "bugid": 1906207,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Remove font styling from moz-message-bar"
+  },
+  {
+   "bugid": 1925311,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create moz-select component"
+  },
+  {
+   "bugid": 1927211,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-page-nav footer should be immediately below the page buttons and secondary buttons should have the same font/icon size as primary buttons"
+  },
+  {
+   "bugid": 1927215,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-page-nav should include the browser icon in the header"
+  }
+ ],
+ "fixed": 78,
+ "total": 95,
+ "restricted": 4
+}
