@@ -1,0 +1,502 @@
+{
+ "date": "2024-11-16",
+ "buildid": "20241116092601",
+ "cset": "8cdd018168b025a36b6188eb9afed96e550c8cb0",
+ "bugs": [
+  {
+   "bugid": 1923955,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Handle `anchor-size()` function in math functions, such as `calc()`"
+  },
+  {
+   "bugid": 1931457,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma [tier 2] /css/css-view-transitions/no-crash-view-transition-in-massive-iframe.html | startViewTransition in massive iframe shouldn't crash. - expected TIMEOUT"
+  },
+  {
+   "bugid": 1923208,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Fire transitioncancel event first rather than transitionrun when replacing old transitions"
+  },
+  {
+   "bugid": 1930907,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Elements with same translation and transition applied, coming into the view from hidden overflow, have a delay"
+  },
+  {
+   "bugid": 1930836,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "PROCESS-CRASH | application crashed [@ RefPtr<nsFrameSelection>::operator!] | toolkit/components/satchel/test/test_form_autocomplete_with_list.html"
+  },
+  {
+   "bugid": 1931496,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Some missed contentViewer to documentViewer renames"
+  },
+  {
+   "bugid": 1925306,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Expand Push documentation in regard to GeckoVIew"
+  },
+  {
+   "bugid": 1930983,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Remove unused test-only ServiceWorkerContainer.getScopeForUrl helper"
+  },
+  {
+   "bugid": 1901461,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Support text attributes"
+  },
+  {
+   "bugid": 1931242,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update Skia to m132"
+  },
+  {
+   "bugid": 1921586,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Rapidly resizing the demo-pane on a Codepen demo makes the animation stop until you switch back to the tab (Best STR in comment #5)"
+  },
+  {
+   "bugid": 1928666,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Create Map/Set data lazily and allocate the objects in JIT code"
+  },
+  {
+   "bugid": 1931070,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Build complains about `--enable-perf`"
+  },
+  {
+   "bugid": 1918166,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add telemetry for Ion compilation times"
+  },
+  {
+   "bugid": 1931315,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Almost perma tests/jit-test/jit-test/tests/atomics/pause-multi.js | Timeout (code -6, args \"--enable-atomics-pause --blinterp-eager\") [970.2 s]"
+  },
+  {
+   "bugid": 1931493,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[MIPS] References to private fields (uint8_clamped)"
+  },
+  {
+   "bugid": 1930477,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Alloc triggers can run many unnecessary GC slices while waiting for background unmarking"
+  },
+  {
+   "bugid": 1931429,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Remove unused public nursery configuration helpers"
+  },
+  {
+   "bugid": 1648139,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Implement Intl.DurationFormat"
+  },
+  {
+   "bugid": 1929878,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Optimize array.copy for the different kinds of value types"
+  },
+  {
+   "bugid": 1931361,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: cx->isThrowingOutOfMemory(), at js/src/wasm/WasmInstance.cpp:2177 with js-string builtins"
+  },
+  {
+   "bugid": 1931471,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: canSerialize() with test_serialization and js-string-builtins"
+  },
+  {
+   "bugid": 1930225,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: Frame property OutsideMarkerProperty should never be destroyed by the FrameProperties class), at /builds/worker/checkouts/gecko/layout/generic/nsBlockFrame.cpp:422"
+  },
+  {
+   "bugid": 1931478,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Replace mozilla::Clamp with std::clamp in nsGridContainerFrame.cpp"
+  },
+  {
+   "bugid": 1749572,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Replace mozilla::Unused with (void) in dom/locks"
+  },
+  {
+   "bugid": 1929270,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Use std::clamp instead of min/max chain in dom/"
+  },
+  {
+   "bugid": 1929596,
+   "status": "NEW",
+   "component": "Core:Machine Learning",
+   "summary": "Add MLSuggest inference as under ml tests and make it run inference"
+  },
+  {
+   "bugid": 1930097,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add a concurrent workers perftest"
+  },
+  {
+   "bugid": 1921382,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Firefox unable to reconnect to WebSocket connection after network change (e.g. turn on VPN)"
+  },
+  {
+   "bugid": 1922193,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Sending multiple (unknown) cookies with same name"
+  },
+  {
+   "bugid": 1516117,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Optimize locking in ChannelEventQueue::CompleteResume"
+  },
+  {
+   "bugid": 1930742,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add a glean probe for SSO cookie parsing success/failure (macOS)"
+  },
+  {
+   "bugid": 1926141,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Handle PANGESTURE_MAYSTART and PANGESTURE_CANCELLED events on non-Linux platforms as well"
+  },
+  {
+   "bugid": 1931447,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Minor improvements in logging"
+  },
+  {
+   "bugid": 1931509,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Document IDTracker to make its expectations and workings clearer"
+  },
+  {
+   "bugid": 1931517,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Rename confusing IDTracker methods"
+  },
+  {
+   "bugid": 1931551,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Remove IDTracker's Reset methods' aWatch parameters"
+  },
+  {
+   "bugid": 1931419,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "prevent concurrent OSKeyStore access"
+  },
+  {
+   "bugid": 1930023,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "const _Tp &std::clamp(const _Tp &, const _Tp &, const _Tp &) [_Tp = mozilla::gfx::CoordTyped<mozilla::gfx::UnknownUnits, double>]: Assertion '!(__hi < __lo)' failed. [@ mozilla::nsDisplayTransform::UntransformRect]"
+  },
+  {
+   "bugid": 1931468,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Document nsDisplayListSet::mList to avoid confusion"
+  },
+  {
+   "bugid": 1930292,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Stop using non-zero chromemargin values."
+  },
+  {
+   "bugid": 1920972,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Allow CC traversal and Unlink on Watchable<T>"
+  },
+  {
+   "bugid": 1931530,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 134] Update MDN compat data"
+  },
+  {
+   "bugid": 1916608,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "event/scroll/flex/grid badges have low contrast border in High Contrast Mode"
+  },
+  {
+   "bugid": 1931525,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Upgrade to ruff 0.7.4"
+  },
+  {
+   "bugid": 1921738,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Investigate adding tab strip tab item background colors"
+  },
+  {
+   "bugid": 1931479,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 06a5d158b6968e40852089b2a48cc434ed386d5d from 2024-11-15 05:03:25"
+  },
+  {
+   "bugid": 1913870,
+   "status": "RESOLVED",
+   "component": "Fenix:Pocket",
+   "summary": "Topic Selection API Integration"
+  },
+  {
+   "bugid": 1930651,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "382.78 - 8.2% google-search-restaurants LastVisualChange / bing SpeedIndex + 16 more (Android) regression on Tue November 5 2024"
+  },
+  {
+   "bugid": 1931480,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing site permissions assertion in UI tests"
+  },
+  {
+   "bugid": 1931481,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add missing \"Edit\" assertion to the top sites menu"
+  },
+  {
+   "bugid": 1930492,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "TAB key does not navigate to the next toolbar element while in ‘Tabs’ searchmode"
+  },
+  {
+   "bugid": 1930640,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "“Not relevant” option from “Don’t show this” is not working for ML Yelp results"
+  },
+  {
+   "bugid": 1930647,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "“Not interested” option from “Don’t show this” is not working for ML Yelp results"
+  },
+  {
+   "bugid": 1931221,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Include the state/region in the weather suggestion title"
+  },
+  {
+   "bugid": 1931420,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update Staff Picks featureCallout to be limited to Early Day Users, and to respect the addons recommendation pref"
+  },
+  {
+   "bugid": 1919608,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add Nathan Barrett and Maxx Crawford as New Tab Page peers"
+  },
+  {
+   "bugid": 1920798,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Display issues with newtab weather widget change location \"X\" button"
+  },
+  {
+   "bugid": 1927870,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Create Section Layout UI"
+  },
+  {
+   "bugid": 1927915,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Ad placement in sections"
+  },
+  {
+   "bugid": 1929405,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Create Large Card Theme for DSCard Component"
+  },
+  {
+   "bugid": 1930150,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Remove telemetry from the screenshots extension"
+  },
+  {
+   "bugid": 1930771,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update sidebar microsurvey strings"
+  },
+  {
+   "bugid": 1930992,
+   "status": "NEW",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar cards look wrong with some themes."
+  },
+  {
+   "bugid": 655445,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add setting to control position of tabs opened from pinned tabs"
+  },
+  {
+   "bugid": 1926382,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Group label covers tab when dragging a tab"
+  },
+  {
+   "bugid": 1927903,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Re-enable the browser_fullscreen_tab_preview.js  test"
+  },
+  {
+   "bugid": 1931370,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Rename \"Add tab to group\" to \"New tab in group\""
+  },
+  {
+   "bugid": 1930840,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[win10] Toolbar buttons and App Menu options are not visible when hovered with High Contrast#1 Windows theme and Firefox System theme"
+  },
+  {
+   "bugid": 1929826,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add reversed(...) to the list of default sandboxed builtin"
+  },
+  {
+   "bugid": 1931230,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang trunk 1 out of 2 hunks FAILED -- saving rejects to file llvm/lib/Transforms/Vectorize/VectorCombine.cpp.rej"
+  },
+  {
+   "bugid": 1930473,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation: Other",
+   "summary": "periodic_file_updates.sh should download data directly into the cloned repo, rather than a separate directory (remote settings part)"
+  },
+  {
+   "bugid": 1931569,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Disable cookies tests dependent on \"network.cookie.CHIPS.enabled\" on beta and stable"
+  },
+  {
+   "bugid": 1900726,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "macOS and Linux need an update mutex"
+  },
+  {
+   "bugid": 1926974,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Relay: For first-time users, ONLY show Relay on websites where we know they WILL accept it"
+  },
+  {
+   "bugid": 1889914,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Explicitly show \"deleted\" rows in about:config (e.g. using strikethrough) instead of replacing them with an \"add new\" row that also remembers the previous value"
+  },
+  {
+   "bugid": 1927573,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove drop shadow around theme chips"
+  },
+  {
+   "bugid": 1927093,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate scalars to glean - part 2"
+  },
+  {
+   "bugid": 1929979,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement `labeled_quantity` metric type in FOG"
+  },
+  {
+   "bugid": 1931539,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Intermittent [tier 2] toolkit/components/glean/tests/xpcshell/test_GIFFT.js | single tracking bug"
+  },
+  {
+   "bugid": 1920145,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add automatic fluent support for the heading and message properties of moz-message-bar"
+  },
+  {
+   "bugid": 1923663,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Google/Gmail redirecting users to \"Clear cache & cookies\""
+  }
+ ],
+ "fixed": 77,
+ "total": 82,
+ "restricted": 2
+}
