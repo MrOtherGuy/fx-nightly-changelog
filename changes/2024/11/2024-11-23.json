@@ -1,0 +1,340 @@
+{
+ "date": "2024-11-23",
+ "buildid": "20241123090138",
+ "cset": "64d44f7a48178fe99f146a2ca06744c92c02900e",
+ "bugs": [
+  {
+   "bugid": 1916305,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "sample appended after truncation to zero-duration with appendWindowEnd"
+  },
+  {
+   "bugid": 1932872,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move !IsEditable() check sooner in IsEditingHost()."
+  },
+  {
+   "bugid": 1932730,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Active notifications don't prevent the worker from cycle collection"
+  },
+  {
+   "bugid": 1932390,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "WebCrypto: Empty algorithm should return TypeError"
+  },
+  {
+   "bugid": 1794360,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::dom::ImageBitmap::CreateFromCloneData]"
+  },
+  {
+   "bugid": 1932738,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: make required feature errors nicer"
+  },
+  {
+   "bugid": 1932305,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assorted improvements for Map/Set builtins"
+  },
+  {
+   "bugid": 1932605,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loongarch] Fix atomicPause implementation"
+  },
+  {
+   "bugid": 1932828,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "Perma Linux run build PROCESS-CRASH | None [@ mozilla::Maybe<mozilla::LogicalSize>::isNothing] | Profile initialization"
+  },
+  {
+   "bugid": 1932800,
+   "status": "NEW",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Caret on many text fields (E.g. address-bar, b.m.o search field, etc.) appears to be shifted upwards"
+  },
+  {
+   "bugid": 1917799,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Implement a WebExtension experimental API for Firefox AI Platform"
+  },
+  {
+   "bugid": 1932535,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Perma [Tier 2] toolkit/components/ml/tests/browser/browser_ml_engine_perf.js / browser_ml_engine_multi_perf.js | Test timed out -"
+  },
+  {
+   "bugid": 1932671,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "MLSuggest handle city/state in subjects correctly"
+  },
+  {
+   "bugid": 1932740,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "add git lfs in the doc"
+  },
+  {
+   "bugid": 1932316,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "update Rust shlex crate to v1.0.3"
+  },
+  {
+   "bugid": 1932319,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "update Rust zerovec-derive crate to v0.10.3"
+  },
+  {
+   "bugid": 1881985,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Drop the workaround for bug 1845646"
+  },
+  {
+   "bugid": 1932893,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Consider waiting for compositor:created instead of gfx-features-ready before firing data collection"
+  },
+  {
+   "bugid": 1932959,
+   "status": "RESOLVED",
+   "component": "Core:SQLite and Embedded Database Bindings",
+   "summary": "Drop the check for untrimmed keys"
+  },
+  {
+   "bugid": 1932381,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent TV dom/media/webrtc/tests/mochitests/test_peerConnection_simulcastOffer_screenshare.html | remote-inbound-rtp.fractionLost is a sane number for a short video test. value=0.87109375"
+  },
+  {
+   "bugid": 1932314,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Testing getDisplayMedia on macOS 15 blocks test on SCContentSharingPicker interaction"
+  },
+  {
+   "bugid": 1932931,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Make translucency prefs toggable without restart / reopening the window."
+  },
+  {
+   "bugid": 1932775,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Bookmark toolbar is using tablet density on a non-convertible laptop that has a touchscreen"
+  },
+  {
+   "bugid": 1930384,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "add missing BTI asm instruction to xpcom aarch64 stubs"
+  },
+  {
+   "bugid": 1929832,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Remove client/ping info from the dau-reporting ping (Desktop)"
+  },
+  {
+   "bugid": 1854033,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Almost perma devtools/client/aboutdebugging/test/browser/browser_aboutdebugging_addons_popup_picker.js | single tracking bug"
+  },
+  {
+   "bugid": 1932809,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version 7b65c4913428d495f3d2bad411dae1c6c147cd17 from 2024-11-22 05:02:53"
+  },
+  {
+   "bugid": 1932575,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Cannot acces Saved password - fingerprint unavailable even when is set"
+  },
+  {
+   "bugid": 1932668,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fix page content assertions in verifyCalendarFormInteractionsTest"
+  },
+  {
+   "bugid": 1932862,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma fenix-nightly org.mozilla.fenix.ui.CollectionTest#deleteCollectionTest | java.lang.AssertionError: Failed to inject touch input."
+  },
+  {
+   "bugid": 1931964,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use suggest geonames API to validate ML Yelp suggestions"
+  },
+  {
+   "bugid": 1932537,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Factor out urlbar geolocation utils into its own module"
+  },
+  {
+   "bugid": 1932807,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Stop using JSON.stringify() in urlbar logging"
+  },
+  {
+   "bugid": 1932865,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma browser/components/urlbar/tests/browser/browser_persist_searchMode.js | gURLBar.searchMode should exist as expected - false == true - when Gecko 134 switches to beta on 2024-12-06"
+  },
+  {
+   "bugid": 1903658,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Enable `identity.fxaccounts.oauth.enabled` pref by default"
+  },
+  {
+   "bugid": 1923868,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Support setting Firefox as default based on installer attribution campaign"
+  },
+  {
+   "bugid": 1928467,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove fxms_bmb button when experiment with that feature are unenrolled"
+  },
+  {
+   "bugid": 1931067,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Hide topic labels from cards when in single-topic section"
+  },
+  {
+   "bugid": 1931797,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab section cards have semantically incorrect element for card title"
+  },
+  {
+   "bugid": 1932499,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Seperate logic so cards UI can be enabled indepenetly of sections pref"
+  },
+  {
+   "bugid": 1932500,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Add thumbs up/down to new card UI"
+  },
+  {
+   "bugid": 1932548,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Save to Pocket Button is hidden from medium/large cards"
+  },
+  {
+   "bugid": 1932682,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Newtab spocs can appear in a small card"
+  },
+  {
+   "bugid": 1932728,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Adjust Section Headline typography"
+  },
+  {
+   "bugid": 1923652,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "tab group UI: enable \"save and close group\""
+  },
+  {
+   "bugid": 1932425,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When dragging tabs, move other tabs over when hitting 70% instead of 50% of their width"
+  },
+  {
+   "bugid": 1919083,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Create cron tasks that only run the 'os_integration' tag"
+  },
+  {
+   "bugid": 1922077,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Enable async event dispatching (remote.events.async.enabled) by default"
+  },
+  {
+   "bugid": 1931822,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Do not always wrap errors into WebDriverError for IPC messages returned by the MarionetteCommandsChild actor"
+  },
+  {
+   "bugid": 1904892,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for \"initiatorType\" and \"destination\" to network events"
+  },
+  {
+   "bugid": 1932971,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Form History autocomplete UI does not include image"
+  },
+  {
+   "bugid": 1923136,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add profiles themes to AMO"
+  },
+  {
+   "bugid": 1927567,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "When a new profile is first created, select and apply a random theme at first run"
+  },
+  {
+   "bugid": 1917000,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Implement opt-in to userScripts API"
+  },
+  {
+   "bugid": 1932911,
+   "status": "REOPENED",
+   "component": "WebExtensions:General",
+   "summary": "High frequency toolkit/components/extensions/test/browser/browser_ext_trial_ml.js | single tracking bug"
+  }
+ ],
+ "fixed": 48,
+ "total": 55,
+ "restricted": 1
+}
