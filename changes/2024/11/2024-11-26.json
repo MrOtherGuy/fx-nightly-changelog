@@ -1,0 +1,658 @@
+{
+ "date": "2024-11-26",
+ "buildid": "20241126093610",
+ "cset": "9358b6a02a04f62e0c9c7fcba4877700076a28f5",
+ "bugs": [
+  {
+   "bugid": 1928182,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Let DXVA2 manager support creating Image from a ID3D11Texture2D"
+  },
+  {
+   "bugid": 1933230,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove -moz-window-transform-origin"
+  },
+  {
+   "bugid": 1933288,
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add comprehensive WPT tests for 'stretch' keyword"
+  },
+  {
+   "bugid": 1921553,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Use (PseudoStyleType, nsAtom) as a parameter to look up the pseudo element for animations"
+  },
+  {
+   "bugid": 1928412,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement `HostDefined` object"
+  },
+  {
+   "bugid": 1931301,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Re-enable nsINode::IsRootElement assertion."
+  },
+  {
+   "bugid": 1924861,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "User Interaction Tracking should be considered for initial history entries"
+  },
+  {
+   "bugid": 1931058,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Firefox differs from other browsers on what sorts of return values result in navigation, when clicking `<a href=\"javascript:...\">` anchors/links"
+  },
+  {
+   "bugid": 1884466,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Implement getClientCapabilities"
+  },
+  {
+   "bugid": 1929952,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "WorkerPrivate should be able to create ThrottleEventQueue OMT"
+  },
+  {
+   "bugid": 1634785,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "De-duplicate SharedLibraries code - use BaseProfiler implementation in Gecko Profiler code"
+  },
+  {
+   "bugid": 1919148,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "[network-markers] Expose class of service for each request in the profiler network tab"
+  },
+  {
+   "bugid": 1932580,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Properly unmap the MemoryMappedFile contents on destructor on our baseprofiler copy"
+  },
+  {
+   "bugid": 1240005,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Users of do_CreateInstance or InitWithNativePath/InitWithPath not checking return value"
+  },
+  {
+   "bugid": 1930751,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2024-11-18)"
+  },
+  {
+   "bugid": 1932963,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS (week of 2024-11-18)"
+  },
+  {
+   "bugid": 1933324,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: Include Bugzilla URLs in unsupported feature errors"
+  },
+  {
+   "bugid": 1930763,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add basic support for compositing in to multiple swapchains"
+  },
+  {
+   "bugid": 1932736,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Optimize all non-elliptical corners, not only uniform border radii"
+  },
+  {
+   "bugid": 1925128,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "School Edsby website hangs"
+  },
+  {
+   "bugid": 1927336,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: eagerDelazificationStrategy_ != DelazificationOption::ParseEverythingEagerly || strategy == DelazificationOption::ParseEverythingEagerly, at js/CompileOptions.h:705"
+  },
+  {
+   "bugid": 1928852,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: this->value == JS::SafelyInitialized<T>::create(), at gc/Barrier.h:719"
+  },
+  {
+   "bugid": 1931853,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rewrite Stencil-related testing functions based on public API"
+  },
+  {
+   "bugid": 1932305,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assorted improvements for Map/Set builtins"
+  },
+  {
+   "bugid": 1932934,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at vm/Interpreter.cpp:440"
+  },
+  {
+   "bugid": 1932957,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Migrate legacy JS timing distribution metrics to glean"
+  },
+  {
+   "bugid": 1930281,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove JSContext usage from baseline compiler"
+  },
+  {
+   "bugid": 1932523,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Split Baseline compilation into phases"
+  },
+  {
+   "bugid": 1932939,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: hasAllocatedBuffer() (the hash code scrambler is allocated in the buffer), at builtin/OrderedHashTableObject.h:1015"
+  },
+  {
+   "bugid": 1932651,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: v.offs() <= framePushedExcludingArgs.value(),"
+  },
+  {
+   "bugid": 1933094,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Minor view related clean-ups."
+  },
+  {
+   "bugid": 1929178,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "<input> textfield as -webkit-box flex item doesn't shrink below intrinsic size in Firefox (but does shrink in other browsers)"
+  },
+  {
+   "bugid": 1887465,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Floats",
+   "summary": "Failing WPT css/css-logical/logical-values-float-clear-reftest.html"
+  },
+  {
+   "bugid": 1933101,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Minor refactor in nsGridContainerFrame"
+  },
+  {
+   "bugid": 1932814,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "The Arabic text with Cursive font will fallback to Traditional Arabic font"
+  },
+  {
+   "bugid": 1931883,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add credentials management model perftest"
+  },
+  {
+   "bugid": 1790690,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "large pass-by-value objects in Necko"
+  },
+  {
+   "bugid": 1932582,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsDataChannel should extend nsIIdentChannel"
+  },
+  {
+   "bugid": 1931225,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Bail out from AsyncPanZoomController::ZoomToRect if the target zoom scale is same as the current scale in the case of zoom-to-focused-input"
+  },
+  {
+   "bugid": 1928087,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove DNT control from about:preferences#privacy"
+  },
+  {
+   "bugid": 1929099,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CHIPS subframe navigation web-platform test breakage"
+  },
+  {
+   "bugid": 1932495,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make UserCharacteristics::PageReady use a Map instead of an Object"
+  },
+  {
+   "bugid": 1932660,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make populateWindowInfo() use map instead of an object"
+  },
+  {
+   "bugid": 1932661,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make CanvasRendering:Render use a map instead of an object"
+  },
+  {
+   "bugid": 1932662,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Use consts instead of let/var in user char data collection code"
+  },
+  {
+   "bugid": 1932663,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Run populateWindowInfo() in automation"
+  },
+  {
+   "bugid": 1927420,
+   "status": "RESOLVED",
+   "component": "Core:Sanitizers",
+   "summary": "Sanitizers should handle sigabrt, sigill and sigtrap by default"
+  },
+  {
+   "bugid": 1932446,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Self-signed certificate exception being flushed when clearing another websites data."
+  },
+  {
+   "bugid": 1933134,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "One time uplift of an NSS patch to mozilla central to fix Firefox try"
+  },
+  {
+   "bugid": 1805544,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent /webrtc/simulcast/basic.https.html | single tracking bug"
+  },
+  {
+   "bugid": 1930673,
+   "status": "VERIFIED",
+   "component": "Core:WebRTC",
+   "summary": "Assertion '!(__hi < __lo)' failed in MediaEngineRemoteVideoSource::ChooseCapability()"
+  },
+  {
+   "bugid": 1932382,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Intermittent TVw TEST-UNEXPECTED-TIMEOUT | /webrtc/simulcast/screenshare.https.html | Basic simulcast setup with two spatial layers - Test timed out"
+  },
+  {
+   "bugid": 1932512,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Pass BrowsingContext to nsIColorPicker::Init"
+  },
+  {
+   "bugid": 1776893,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Replace do_CreateInstance for nsIFile with NS_NewLocalFile"
+  },
+  {
+   "bugid": 1921369,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Write example MozPromise code that compile and run, to illustrate the new documentation"
+  },
+  {
+   "bugid": 1810481,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Stop using UNSAFE_componentWillMount in devtools/client/accessibility/components/AuditController.js"
+  },
+  {
+   "bugid": 1916350,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Style of Pressed/active buttons in toolbox toolbar isnt' distinct from regular style in High Contrast Mode"
+  },
+  {
+   "bugid": 1932642,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Enable devtools.high-contrast-mode-support on Nightly"
+  },
+  {
+   "bugid": 1932625,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Filter toggle buttons (console, netmonitor) don't adapt to High Contrast Mode"
+  },
+  {
+   "bugid": 1810438,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Stop using UNSAFE_componentWillReceiveProps in devtools/client/responsive/components/ViewportDimension.js"
+  },
+  {
+   "bugid": 1810439,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Stop using UNSAFE_componentWillReceiveProps in devtools/client/responsive/components/UserAgentInput.js"
+  },
+  {
+   "bugid": 1933198,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Update mots version for mach docs"
+  },
+  {
+   "bugid": 1910764,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update Google Play Services Ads Identifier to version 18.1.0"
+  },
+  {
+   "bugid": 1933232,
+   "status": "NEW",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Delay glean initialization until the onboarding is finished"
+  },
+  {
+   "bugid": 1933275,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version 449ae15f791daf5cdae94881f6176f1f3c34ee8b from 2024-11-25 16:26:28"
+  },
+  {
+   "bugid": 1932119,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Clean up READ/WRITE_EXTERNAL_STORAGE permissions annotations"
+  },
+  {
+   "bugid": 1933175,
+   "status": "NEW",
+   "component": "Fenix:Onboarding",
+   "summary": "Manage preferences during onboarding"
+  },
+  {
+   "bugid": 1926833,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.fenix.components.menu.MenuDialogFragment.getBrowsingModeManager$1(MenuDialogFragment.kt:7)]"
+  },
+  {
+   "bugid": 1932237,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Fix kDoc for BrowserToolbarInteractor.onMenuButtonClick"
+  },
+  {
+   "bugid": 1916161,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < HistoryTest. openHistoryItemTest >"
+  },
+  {
+   "bugid": 1933168,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Run voice search related UI tests only on API 34"
+  },
+  {
+   "bugid": 1933190,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Add new UI test to android-startup-test-fenix-x86-nightly"
+  },
+  {
+   "bugid": 1930190,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dedicated search dropdown doesn't follow Alpenglow theme"
+  },
+  {
+   "bugid": 1932652,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar in titlebar no longer appears grayed for inactive windows with vertical tabs"
+  },
+  {
+   "bugid": 1933300,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Firefox Account is showing up as unverified when the primary password is locked."
+  },
+  {
+   "bugid": 1930841,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from browser-menubar.inc"
+  },
+  {
+   "bugid": 1932640,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove further inline eventhandlers from browser-sets.inc"
+  },
+  {
+   "bugid": 1923868,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support setting Firefox as default based on installer attribution campaign"
+  },
+  {
+   "bugid": 1927373,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[FxMS Docs] Update Using ASRouter Devtools in source doc"
+  },
+  {
+   "bugid": 1927917,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Create test suite for sections"
+  },
+  {
+   "bugid": 1932739,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Section Expt] Adjust card UI"
+  },
+  {
+   "bugid": 1933314,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable UAPI endpoint integration, held to Nightly"
+  },
+  {
+   "bugid": 1907327,
+   "status": "ASSIGNED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Download all changesets in one request on first sync"
+  },
+  {
+   "bugid": 1655070,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "`getIconURL` should do a best-fit icon comparison and always return an icon"
+  },
+  {
+   "bugid": 1655076,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Drop the separate _iconURL for search engines, store everything in the icon map."
+  },
+  {
+   "bugid": 1876178,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add more specificity on when to record telemetry on reloaded due to a config change (search engine changed, engine-update)"
+  },
+  {
+   "bugid": 1928410,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Refactor search settings file migration into separate functions"
+  },
+  {
+   "bugid": 1930488,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove support for IconUpdateUrl definition in OpenSearch engines (no longer necessary)"
+  },
+  {
+   "bugid": 1927774,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Add closed tab groups to \"History > Recently Closed Tabs\" app menu popup"
+  },
+  {
+   "bugid": 1921471,
+   "status": "NEW",
+   "component": "Firefox:Sidebar",
+   "summary": "Allow non-parent process sidebar panes in the sidebar"
+  },
+  {
+   "bugid": 1931939,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "\"Manage extension\" right click context menu shown for new sidebar"
+  },
+  {
+   "bugid": 1451132,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Provide an option to close the current tab when closing the window"
+  },
+  {
+   "bugid": 1932943,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add border to tab group icon SVG"
+  },
+  {
+   "bugid": 1932949,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Hairline for tab groups should have rounded corners"
+  },
+  {
+   "bugid": 1926979,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Decrease window minimum width when vertical tabs are enabled."
+  },
+  {
+   "bugid": 1932207,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "mach bootstrap fails on Windows with FileNotFoundError: [WinError 2] The system cannot find the file specified"
+  },
+  {
+   "bugid": 1918864,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update mingw to upstream revision c0313ec3381521db6c5e3aca746ff1e3e29208d7"
+  },
+  {
+   "bugid": 1932297,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Compile C code as C17"
+  },
+  {
+   "bugid": 1932506,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Remove the Ubuntu 23.04 and 23.10 bootstrap jobs"
+  },
+  {
+   "bugid": 1932656,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add afl-fuzz to AFL++ instrumentation build"
+  },
+  {
+   "bugid": 1928602,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Intermittent UI test failure - < ThreeDotMainMenuTest. findInPageTest >"
+  },
+  {
+   "bugid": 1932464,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Update Android bundletool and commandlinetools to the latest releases"
+  },
+  {
+   "bugid": 1710599,
+   "status": "ASSIGNED",
+   "component": "Release Engineering:General",
+   "summary": "Linux: Switch from bz2 to xz for Firefox releases on https://ftp.mozilla.org/"
+  },
+  {
+   "bugid": 1890182,
+   "status": "REOPENED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Intermittent browser/extensions/formautofill/test/browser/address/browser_address_doorhanger_confirmation_popup.js | single tracking bug"
+  },
+  {
+   "bugid": 1918512,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Async Rust calls"
+  },
+  {
+   "bugid": 1932911,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "High frequency toolkit/components/extensions/test/browser/browser_ext_trial_ml.js | single tracking bug"
+  },
+  {
+   "bugid": 1453506,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "[templates] Search for references to nsDisplayOwnLayer constructor does not find calls through MakeDisplayItem, similar issue for MakeRefPtr"
+  },
+  {
+   "bugid": 1835692,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Use AutoTemplateContext machinery to produce concrete results for DependentScopeDeclRefExpr"
+  }
+ ],
+ "fixed": 91,
+ "total": 108,
+ "restricted": 2
+}
