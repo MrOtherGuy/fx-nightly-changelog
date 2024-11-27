@@ -1,0 +1,556 @@
+{
+ "date": "2024-11-27",
+ "buildid": "20241127095617",
+ "cset": "c6fee9276fa2d9f298e9a081b5bcf4a8e3797316",
+ "bugs": [
+  {
+   "bugid": 1928182,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Let DXVA2 manager support creating Image from a ID3D11Texture2D"
+  },
+  {
+   "bugid": 1928856,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "dom/media/webcodecs/AudioData.cpp:43:20: error: call to consteval function 'fmt::basic_fstring<>::basic_fstring<>' is not a constant expression"
+  },
+  {
+   "bugid": 1931432,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": ":has(:first-child) styles do not apply with dynamically added children"
+  },
+  {
+   "bugid": 1933010,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove (servo-only) webrender_api dependency from style_traits"
+  },
+  {
+   "bugid": 1933288,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add comprehensive WPT tests for 'stretch' keyword"
+  },
+  {
+   "bugid": 1931301,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Re-enable nsINode::IsRootElement assertion."
+  },
+  {
+   "bugid": 1933321,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Get rid of dom.block_multiple_popups"
+  },
+  {
+   "bugid": 1924861,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "User Interaction Tracking should be considered for initial history entries"
+  },
+  {
+   "bugid": 1928318,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Make TrustedTypeUtils accept TrustedScript and TrustedScriptURL"
+  },
+  {
+   "bugid": 1923369,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Use the response URL as the base URL when service worker does respondWith(fetch(responseUrl))"
+  },
+  {
+   "bugid": 1928968,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "[WebCrypto] PBKDF2 & HKDF derive bits should allow zero length"
+  },
+  {
+   "bugid": 1933119,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Parent process document doesn't get a11y focus correctly"
+  },
+  {
+   "bugid": 1933156,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Changes in focused XUL button label not announced by screen readers"
+  },
+  {
+   "bugid": 1932327,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add support for MOZ_GECKO_PROFILER to mozinfo.py"
+  },
+  {
+   "bugid": 1933492,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update closure handling code with new changes from upstream"
+  },
+  {
+   "bugid": 1917139,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ship Redeclarable global eval-introduced vars proposal"
+  },
+  {
+   "bugid": 1933124,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rewrite SelfHosting XDR code with public API"
+  },
+  {
+   "bugid": 1933368,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[MIPS] atomicPause and AtomicOperations::pause are undefined"
+  },
+  {
+   "bugid": 1930464,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Only use currency minor digits for standard notation"
+  },
+  {
+   "bugid": 1930465,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Sort plural categories in Intl.PluralRules.prototype.resolvedOptions"
+  },
+  {
+   "bugid": 1930466,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use zone.tab to guide time zone canonicalisation"
+  },
+  {
+   "bugid": 1932060,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm: Measure and print complete-tier compilation times"
+  },
+  {
+   "bugid": 1931874,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Add a string description to all instances of MOZ_DIAGNOSTIC_ASSERT(false)"
+  },
+  {
+   "bugid": 1932693,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Fix INTENT perftest metrics"
+  },
+  {
+   "bugid": 1909436,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add telemetry on Network Settings UI interaction"
+  },
+  {
+   "bugid": 1826476,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Need a performance test to measure async scrolling with  apz.paint_skipping.enabled=true"
+  },
+  {
+   "bugid": 1847147,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Do not crash on mismatched pref types due to sanitization"
+  },
+  {
+   "bugid": 1930618,
+   "status": "ASSIGNED",
+   "component": "Core:Printing: Output",
+   "summary": "@scope on an inline node doesn't work when printing"
+  },
+  {
+   "bugid": 1919551,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Deduplicate \"Copy Without Site Tracking\" CanStrip/Strip code"
+  },
+  {
+   "bugid": 1926321,
+   "status": "RESOLVED",
+   "component": "Core:SQLite and Embedded Database Bindings",
+   "summary": "Upgrade to SQLite 3.47.1"
+  },
+  {
+   "bugid": 1927982,
+   "status": "RESOLVED",
+   "component": "Core:Sanitizers",
+   "summary": "Adjust sanitizer docs mozconfigs"
+  },
+  {
+   "bugid": 1923701,
+   "status": "NEW",
+   "component": "Core:Security: RLBox",
+   "summary": "Update wasm2c to latest version that supports Segue"
+  },
+  {
+   "bugid": 1923757,
+   "status": "NEW",
+   "component": "Core:Security: RLBox",
+   "summary": "Enable Segue optimization for rlbox-wasm2c sandboxed libraries"
+  },
+  {
+   "bugid": 1921154,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Add initial AV1 support to webrtc"
+  },
+  {
+   "bugid": 1928110,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libwebrtc to 131"
+  },
+  {
+   "bugid": 1931916,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "add some better expository text in build_no_op_commits.sh"
+  },
+  {
+   "bugid": 1931991,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "New try push to Lando doesn't work for elm"
+  },
+  {
+   "bugid": 1932488,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update trampoline headers to use the proper modeline"
+  },
+  {
+   "bugid": 1932928,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Re-enable building some abseil-cpp/absl/strings files for libwebrtc commit cf796a2d2c"
+  },
+  {
+   "bugid": 1932975,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Cherry-pick abseil-cpp sha 69195d5bd to avoid unnecessary patches to v131 libwebrtc update"
+  },
+  {
+   "bugid": 1783255,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Move webrtc ChromeOnly webidl to dom/chrome-webidl"
+  },
+  {
+   "bugid": 1810436,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Stop using UNSAFE_componentWillReceiveProps in devtools/client/shared/components/SearchBoxAutocompletePopup.js"
+  },
+  {
+   "bugid": 1810460,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Stop using UNSAFE_componentWillReceiveProps in devtools/client/inspector/fonts/components/Font.js"
+  },
+  {
+   "bugid": 1916672,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Select container element button hover color doesn't adapt to High Contrast Mode"
+  },
+  {
+   "bugid": 1916677,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Rules view flex toggle color doesn't adapt to High Contrast Mode"
+  },
+  {
+   "bugid": 1932608,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Highlighted shorthand declaration expand arrow doesn't have the right color in High Contrast Mode"
+  },
+  {
+   "bugid": 972821,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Data URI's not listed anywhere in network monitor"
+  },
+  {
+   "bugid": 1933401,
+   "status": "RESOLVED",
+   "component": "DevTools:Object Inspector",
+   "summary": "Getter/setter/prototype items arrows have a different color than regular items"
+  },
+  {
+   "bugid": 1933232,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Delay glean initialization until the onboarding is finished"
+  },
+  {
+   "bugid": 1932665,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Description is provided with app name's res ID instead of its string"
+  },
+  {
+   "bugid": 1933515,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Versioning of Android Releases documentation is outdated"
+  },
+  {
+   "bugid": 1929866,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add the Nimbus to UI mapping logic for the onboarding toolbar card"
+  },
+  {
+   "bugid": 1933175,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Manage preferences during onboarding"
+  },
+  {
+   "bugid": 1825910,
+   "status": "RESOLVED",
+   "component": "Fenix:Push",
+   "summary": "Tapping on push notifications opens a new about:blank page"
+  },
+  {
+   "bugid": 1921220,
+   "status": "REOPENED",
+   "component": "Fenix:Settings",
+   "summary": "Add settings toggle for Fenix DAU ping"
+  },
+  {
+   "bugid": 1932362,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar Redesign] \"Swipe the toolbar to switch tabs\" CFR is displayed on tablets where swipe to switch tabs is not possible"
+  },
+  {
+   "bugid": 1932410,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Remove tools menu unused strings."
+  },
+  {
+   "bugid": 1932553,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Implement telemetry for showing and dismissing the menu CFR in the menu redesign"
+  },
+  {
+   "bugid": 1929525,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "[Menu redesign] There are no ellipses once the email address/display name reached the max width of the label"
+  },
+  {
+   "bugid": 1931888,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Lots of StrictMode violations caused by AMOAddonsProvider when Menu redesign is enabled"
+  },
+  {
+   "bugid": 1916074,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Query user whether they want to install engine when using contextual search"
+  },
+  {
+   "bugid": 1928189,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Tabs in a collapsed groups don't show up in Firefox View"
+  },
+  {
+   "bugid": 1932640,
+   "status": "REOPENED",
+   "component": "Firefox:General",
+   "summary": "Remove further inline eventhandlers from browser-sets.inc"
+  },
+  {
+   "bugid": 1933314,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable UAPI endpoint integration, held to Nightly"
+  },
+  {
+   "bugid": 1933565,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "recommended story titles have extra margins"
+  },
+  {
+   "bugid": 1907327,
+   "status": "ASSIGNED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Download all changesets in one request on first sync"
+  },
+  {
+   "bugid": 1927951,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Built in engines installed via contextual search should persist restart"
+  },
+  {
+   "bugid": 1892953,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add ability to resize the sidebar with responsive layout"
+  },
+  {
+   "bugid": 1933152,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group line color is off under the selected tab when the selected tab has a different color scheme than the tabs toolbar"
+  },
+  {
+   "bugid": 1933258,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add pref for when to move other tabs out of the way during drag and drop"
+  },
+  {
+   "bugid": 1933279,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tabs should be deselected once in tab group creation state"
+  },
+  {
+   "bugid": 1933418,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Merge browser/locales-preview/tabGroups.ftl into tabbrowser.ftl"
+  },
+  {
+   "bugid": 1933436,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "First layout adjustments for vertical tab groups"
+  },
+  {
+   "bugid": 1745734,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Insecure connection icon is barely visible on http website login form with dark theme"
+  },
+  {
+   "bugid": 1933491,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Display only first letter of tab group label in non-expanded vertical tabs"
+  },
+  {
+   "bugid": 1926979,
+   "status": "REOPENED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Decrease window minimum width when vertical tabs are enabled."
+  },
+  {
+   "bugid": 1926100,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "MozIntGemm is not working for larger translation models"
+  },
+  {
+   "bugid": 1902288,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add 16 KB Page Size support to Android"
+  },
+  {
+   "bugid": 1928742,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "update to latest libdmg-hfsplus"
+  },
+  {
+   "bugid": 1933474,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build docs: iterate on conditional optimization example"
+  },
+  {
+   "bugid": 1923902,
+   "status": "ASSIGNED",
+   "component": "Focus:General",
+   "summary": "Add settings toggle for Focus DAU ping"
+  },
+  {
+   "bugid": 1922245,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:General",
+   "summary": "Use moz.l10n build for l10n-merge"
+  },
+  {
+   "bugid": 1922671,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:General",
+   "summary": "Remove cross-channel"
+  },
+  {
+   "bugid": 1710599,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Linux: Switch from bz2 to xz for Firefox releases on https://ftp.mozilla.org/"
+  },
+  {
+   "bugid": 1933469,
+   "status": "VERIFIED",
+   "component": "Release Engineering:General",
+   "summary": "merge automation notifications go to the wrong matrix channel"
+  },
+  {
+   "bugid": 1932818,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Network event should not be emitted for data-uri triggered by layout/res/html.css"
+  },
+  {
+   "bugid": 1922727,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Firefox no longer displays username in some input fields"
+  },
+  {
+   "bugid": 1932845,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Relay entry does not show its title and sub-title correctly when it is displayed along with the address autofill dropdown"
+  },
+  {
+   "bugid": 1932051,
+   "status": "NEW",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Edit an existing password record"
+  },
+  {
+   "bugid": 1931982,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "The checked profile selector dialog checkbox prevents launching any profile"
+  },
+  {
+   "bugid": 1927217,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-page-nav buttons should have a :hover:active state"
+  }
+ ],
+ "fixed": 76,
+ "total": 91,
+ "restricted": 1
+}
