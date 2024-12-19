@@ -1,0 +1,592 @@
+{
+ "date": "2024-12-19",
+ "buildid": "20241219095656",
+ "cset": "5080b0f286aae70c65e185ad5063102804ce9ecd",
+ "bugs": [
+  {
+   "bugid": 1936275,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "GMP process deadlock between main joining the GMP thread, and GMP thread running a sync runnable on main thread"
+  },
+  {
+   "bugid": 1938242,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Turn off the task-scheduling API pref (which was nightly-only)"
+  },
+  {
+   "bugid": 1937549,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Remove some dead error reporting code from view-source"
+  },
+  {
+   "bugid": 1893983,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Remove mozbehavior"
+  },
+  {
+   "bugid": 1894240,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Reduce string conversion for notification events?"
+  },
+  {
+   "bugid": 1924505,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Drop aesgcm128Decoder"
+  },
+  {
+   "bugid": 1907849,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "(trusted types) Audit test coverage, making sure that the remaining annotations are timeouts, but not failures"
+  },
+  {
+   "bugid": 1938069,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Correct sink string for Document's `parseHTMLUnsafe`"
+  },
+  {
+   "bugid": 1774918,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Browser stops responding during animation."
+  },
+  {
+   "bugid": 1794780,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Consider removing group pos attributes from Accessible::Attributes()"
+  },
+  {
+   "bugid": 1934489,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[A11y] Touch exploration with TalkBack stops working after zooming the page on Android"
+  },
+  {
+   "bugid": 1930756,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Enable indirect dispatch in WebGPU"
+  },
+  {
+   "bugid": 1936917,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Sync IPC message sent to dying actor can cause unavoidable crashes"
+  },
+  {
+   "bugid": 1936209,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Opening a large GDoc is 50% slower in Nightly and spends a lot of time in js::jit::CodePosition::operator>=(js::jit::CodePosition)"
+  },
+  {
+   "bugid": 1937654,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: site.bytecodeOffset.isValid(), at js/src/wasm/WasmCodegenTypes.h:354"
+  },
+  {
+   "bugid": 1937430,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "segment fault in spidermonkey InlineCache"
+  },
+  {
+   "bugid": 1928818,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Clean up code to remove functions from JSProto_Function in JSObject.cpp"
+  },
+  {
+   "bugid": 1935506,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Implement steps 1 - 17 of CreateNumericRangeIterator for NUMBER-RANGE"
+  },
+  {
+   "bugid": 1937551,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Re-enable non262 Temporal tests"
+  },
+  {
+   "bugid": 1937635,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Improve error message for missing self-hosted intrinsics"
+  },
+  {
+   "bugid": 1937643,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: nWords <= StackMapHeader::maxFrameOffsetFromTop, at wasm/WasmGC.h:197"
+  },
+  {
+   "bugid": 1937624,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add some tests for 'stretch' size keyword in scenarios with abspos content and orthogonal writing-modes"
+  },
+  {
+   "bugid": 1936259,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "yandex.com - Images are not loaded when accessed from image search"
+  },
+  {
+   "bugid": 1932837,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "add a call to the permission API in the example extension"
+  },
+  {
+   "bugid": 1325876,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Show internal error page for HTTP responses with error codes (4xx, 5xx) and \"Content-Length: 0\" instead of blank page and introduce response status code and text in the error page"
+  },
+  {
+   "bugid": 1870091,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove HTTP throttling v2 prefs (network.http.throttle.version 2)"
+  },
+  {
+   "bugid": 1936898,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "RaceCacheWithNetwork (RCWN) stats are incorrectly reported"
+  },
+  {
+   "bugid": 1938063,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "update Rust quinn-udp crate to v0.5.9"
+  },
+  {
+   "bugid": 1935948,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Consider using original response headers for cookie parsing"
+  },
+  {
+   "bugid": 1937758,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent TV Assertion failure: mBuffer.empty() || mBuffer.back().mTimeStamp <= event.mTimeStamp, at /builds/worker/checkouts/gecko/gfx/layers/apz/src/RecentEventsBuffer.h:69"
+  },
+  {
+   "bugid": 1913421,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Track the amount of Captchas caused by fingerprinting protections"
+  },
+  {
+   "bugid": 1936875,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add nimbus support for smartblock embed pref"
+  },
+  {
+   "bugid": 1665056,
+   "status": "ASSIGNED",
+   "component": "Core:Security: CAPS",
+   "summary": "The \"security.fileuri.strict_origin_policy\" pref should be latched at startup and not updated because it causes cross-process principal inconsistencies"
+  },
+  {
+   "bugid": 1933864,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove or update metrics expiring in Firefox 136: cert_compression.* before Gecko version gets increased to 136 on 2025-01-06"
+  },
+  {
+   "bugid": 1938163,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "SecurityState db may not be open when BackgroundReadStashTask is run"
+  },
+  {
+   "bugid": 1933053,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Optimize clearing of private identity origins by skipping repository traversals when possible"
+  },
+  {
+   "bugid": 1936434,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsWindowDbg logging improvements"
+  },
+  {
+   "bugid": 1555815,
+   "status": "ASSIGNED",
+   "component": "Core:Window Management",
+   "summary": "Do not apply letterboxing to moz-extension:// pages"
+  },
+  {
+   "bugid": 1935714,
+   "status": "VERIFIED",
+   "component": "Core:XPCOM",
+   "summary": "Assertion failure: aLength <= kMax (string is too large), at /builds/worker/checkouts/gecko/xpcom/string/nsTStringRepr.h:89"
+  },
+  {
+   "bugid": 1919488,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Update splashscreen background color to match application's set theme"
+  },
+  {
+   "bugid": 1937621,
+   "status": "REOPENED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Implement fallback behavior when data collection is disabled"
+  },
+  {
+   "bugid": 1938024,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version bf4dff0a7c128f162882bc1fc23d3c0709b97c7f from 2024-12-18 05:02:55"
+  },
+  {
+   "bugid": 1931251,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < TextSelectionTest. verifyCopyTextOptionTest >"
+  },
+  {
+   "bugid": 1936733,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < RedesignedMenuTest. verifyRedesignedMenuAfterDisablingAnExtensionTest >"
+  },
+  {
+   "bugid": 1936783,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Fenix: Add new microsurvey smoke tests"
+  },
+  {
+   "bugid": 1934362,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_urlbar_telemetry_persisted.js | single tracking bug"
+  },
+  {
+   "bugid": 1936673,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Telemetry should be able to differentiate between search modes from the one-off row vs those from the unified search button"
+  },
+  {
+   "bugid": 1936831,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Allow searching for closed and saved tab groups in the address bar and display matching tab groups as actions"
+  },
+  {
+   "bugid": 1937074,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unified Search Button shows icon of normal default engine instead of private default engine in private browsing mode"
+  },
+  {
+   "bugid": 1937311,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma [tier 2] browser/components/urlbar/tests/browser/browser_searchModeSwitcher_appProvidedEngines.js | single tracking bug"
+  },
+  {
+   "bugid": 1936523,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from PopupNotifications"
+  },
+  {
+   "bugid": 1936952,
+   "status": "RESOLVED",
+   "component": "Firefox:Headless",
+   "summary": "[Headless] nsColorPicker::Open crash under automation"
+  },
+  {
+   "bugid": 1822664,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "update npm dependencies for Fx 135 nightly and refile this bug for Fx 136 nightly"
+  },
+  {
+   "bugid": 1933293,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Rework aboutWelcome modal behavior to still show about:welcome page and make requiring action to proceed configurable"
+  },
+  {
+   "bugid": 1934661,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Top off FxMS placeholder buffer for 135"
+  },
+  {
+   "bugid": 1935481,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add a Nimbus feature to the manifest for Profile 0.5% Rollout"
+  },
+  {
+   "bugid": 1931806,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab section cards anchor tag improperly positioned"
+  },
+  {
+   "bugid": 1932202,
+   "status": "REOPENED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[IAB Banners] Telemetry"
+  },
+  {
+   "bugid": 1937864,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[IAB Banners] When AdBanner is enabled, no other spocs are added to CardGrid"
+  },
+  {
+   "bugid": 1938215,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add is_secton_followed attribute to Sections impression telemetry event"
+  },
+  {
+   "bugid": 1937207,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add region and locale to Nimbus targeting context telemetry"
+  },
+  {
+   "bugid": 1921576,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Fix close / X button for integrated Review Checker"
+  },
+  {
+   "bugid": 1902032,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Ensure applicable tabbrowser tests also run with vertical -tabs enabled"
+  },
+  {
+   "bugid": 1933592,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hide the sidebar if its button is removed from the toolbar"
+  },
+  {
+   "bugid": 1937112,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add additional strings for sidebar onboarding modal"
+  },
+  {
+   "bugid": 1935503,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Add a dot to FxA avatar icon indicating that sync is disabled"
+  },
+  {
+   "bugid": 1937234,
+   "status": "NEW",
+   "component": "Firefox:Sync",
+   "summary": "Make it possible to experiment with different signed-out avatar variants"
+  },
+  {
+   "bugid": 1908431,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable finding and restoring tab groups in Tab Overflow Menu"
+  },
+  {
+   "bugid": 1921802,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Automatically save groups when closing the window they're open in"
+  },
+  {
+   "bugid": 1938054,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Vertical tabs, expanded: Tab group chicklets aren't tall enough when the group is unnamed"
+  },
+  {
+   "bugid": 1938187,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable tab groups in nightly"
+  },
+  {
+   "bugid": 1499329,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "./mach bootstrap on aarch64 crashes out when trying to install rust"
+  },
+  {
+   "bugid": 1938004,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Allow to bootstrap aarch64 linux toolchains"
+  },
+  {
+   "bugid": 1928490,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Cannot run artifact builds on Ubuntu 24.10 ARM"
+  },
+  {
+   "bugid": 1937687,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Remove osx-cross-linker"
+  },
+  {
+   "bugid": 1937688,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add uv toolchain tasks"
+  },
+  {
+   "bugid": 1937690,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Explicitly use lld when compiling rust-based toolchains"
+  },
+  {
+   "bugid": 1938019,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade rust toolchain used to build toolchains to 1.78"
+  },
+  {
+   "bugid": 1938022,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade clang 19 toolchain to 19.1.6"
+  },
+  {
+   "bugid": 1938023,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Be more consistent when cross compiling clang"
+  },
+  {
+   "bugid": 1938025,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add a cbindgen toolchain for aarch64 windows"
+  },
+  {
+   "bugid": 1938026,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add a cbindgen toolchain for aarch64 linux"
+  },
+  {
+   "bugid": 1938027,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add clang toolchain for aarch64 linux"
+  },
+  {
+   "bugid": 1938028,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add pkgconf toolchain for aarch64 linux"
+  },
+  {
+   "bugid": 1938090,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Stop pinning the Android SDK platform-tools"
+  },
+  {
+   "bugid": 1937822,
+   "status": "RESOLVED",
+   "component": "Focus:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.focus.activity.DownloadFileTest#downloadNotificationTest | single tracking bug"
+  },
+  {
+   "bugid": 1883321,
+   "status": "RESOLVED",
+   "component": "NSS:Libraries",
+   "summary": "[meta] E2ES - Messaging Layer Security - Implement and integrate an MLS module through an FFI"
+  },
+  {
+   "bugid": 1900537,
+   "status": "RESOLVED",
+   "component": "NSS:Libraries",
+   "summary": "[meta] E2ES - Messaging Layer Security - Implement a prototype Web API"
+  },
+  {
+   "bugid": 1935627,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "update update-verify bug component"
+  },
+  {
+   "bugid": 1937580,
+   "status": "NEW",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Establish login alerts for passwords"
+  },
+  {
+   "bugid": 1918813,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Record an event when we update the default profile in a group"
+  },
+  {
+   "bugid": 1927575,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Correct bookmark count on profile delete page"
+  },
+  {
+   "bugid": 1931110,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update async flush behavior to flush the group profile, not the current profile"
+  },
+  {
+   "bugid": 1933911,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "When the user has more than 2 profiles, the \"Show this when Firefox opens\" is not enabled by default"
+  },
+  {
+   "bugid": 1912091,
+   "status": "NEW",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create base moz-input-text component"
+  },
+  {
+   "bugid": 1919313,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace --in-content-box-background-odd with new design token"
+  },
+  {
+   "bugid": 1931444,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Follow-up fixes for the patch in bug 1929298 to address extra review feedback"
+  }
+ ],
+ "fixed": 81,
+ "total": 97,
+ "restricted": 1
+}
