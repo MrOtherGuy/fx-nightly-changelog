@@ -1,0 +1,484 @@
+{
+ "date": "2024-12-20",
+ "buildid": "20241220094513",
+ "cset": "5a806c18e555726ba029cb616a34f3723e794105",
+ "bugs": [
+  {
+   "bugid": 1936275,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "GMP process deadlock between main joining the GMP thread, and GMP thread running a sync runnable on main thread"
+  },
+  {
+   "bugid": 1887866,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent Hit MOZ_CRASH(already mutably borrowed) at /builds/worker/checkouts/gecko/third_party/rust/atomic_refcell/src/lib.rs:122 | single tracking bug"
+  },
+  {
+   "bugid": 1938242,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Turn off the task-scheduling API pref (which was nightly-only)"
+  },
+  {
+   "bugid": 1935065,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor` consider whether using `<br>` or a preformatted linefeed in a method"
+  },
+  {
+   "bugid": 1938458,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Remove deprecated, unused Telemetry flag histogram GEOLOCATION_ERROR"
+  },
+  {
+   "bugid": 1938086,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Remove exclusion of dom/push in eslintrc/prettierignore"
+  },
+  {
+   "bugid": 1938082,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Test browser_test_visibility.js uses inline event handler in a browser context"
+  },
+  {
+   "bugid": 1924530,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add macro wrapper around `gecko_profiler::add_marker` to delay argument evaluation until after checking whether the profiler is accepting markers."
+  },
+  {
+   "bugid": 1935611,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Firefox for loongarch64 build failed in debian"
+  },
+  {
+   "bugid": 1937929,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Arc with setLineDash sometimes draws thick, solid line"
+  },
+  {
+   "bugid": 1936611,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS (week of 2024-12-09)"
+  },
+  {
+   "bugid": 1658072,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Rewrite the POSIX ProcessWatcher to not use libevent's signal handling"
+  },
+  {
+   "bugid": 1797039,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Separate the implementation of handle and mapping in SharedMemoryBasic"
+  },
+  {
+   "bugid": 1934425,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: propagatingIonExceptionForDebugMode() && !iter_.moreFrames(), at jit/BaselineBailouts.cpp:845"
+  },
+  {
+   "bugid": 1937570,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize JSOp::Lambda in Baseline"
+  },
+  {
+   "bugid": 1916849,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid] Firefox fails to grow grid area to fit content, when its track sizing function is minmax(min-content, 1fr)"
+  },
+  {
+   "bugid": 1933410,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Monospace Chinese gets resolved to the wrong fonts"
+  },
+  {
+   "bugid": 1937711,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Fix an inaccurate comment in mozjemalloc.cpp"
+  },
+  {
+   "bugid": 1933904,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.11.0"
+  },
+  {
+   "bugid": 1937522,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Introduce a mock network layer for testing"
+  },
+  {
+   "bugid": 1935948,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Consider using original response headers for cookie parsing"
+  },
+  {
+   "bugid": 1776967,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Intermittent gfx/layers/apz/test/mochitest/test_group_double_tap_zoom-2.html | single tracking bug"
+  },
+  {
+   "bugid": 1938266,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Disable APZ in popup window has no remote content behind a new pref"
+  },
+  {
+   "bugid": 1938302,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "re-enable gfx/layers/apz/test/mochitest/helper_doubletap_zoom_square.html on mac"
+  },
+  {
+   "bugid": 1919414,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Setup",
+   "summary": "Pages-per-sheet count is double-applied (squared), if you print via system print dialog"
+  },
+  {
+   "bugid": 1918648,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Enable SCContentSharingPicker by default on macOS 14"
+  },
+  {
+   "bugid": 1937740,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 135] Update MDN data for the Compatibility panel"
+  },
+  {
+   "bugid": 1936388,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update to ruff 0.8.2"
+  },
+  {
+   "bugid": 1925016,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "`./mach try fuzzy --full` results in many tasks that are not scheduled anywhere"
+  },
+  {
+   "bugid": 1938298,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Don't show \"learn more\" preference when the pref is not displayed"
+  },
+  {
+   "bugid": 1937140,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Add performance marker for navigation bar initialization"
+  },
+  {
+   "bugid": 1936278,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search mode is dismissed when blurring the urlbar"
+  },
+  {
+   "bugid": 1937513,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Persist Search Term is not shown for Wikipedia on localised builds"
+  },
+  {
+   "bugid": 1938331,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use MozTabbrowserTabGroup::select in ProviderTabGroups"
+  },
+  {
+   "bugid": 1938075,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove inline event handler from buildOtherBookmarksFolder"
+  },
+  {
+   "bugid": 1938364,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Ensure fxa interaction metrics include whether sync is currently configured or not."
+  },
+  {
+   "bugid": 1929400,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Minor BookmarksBarButton clean-ups."
+  },
+  {
+   "bugid": 1932187,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Sections Personalization] Block a section"
+  },
+  {
+   "bugid": 1932202,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[IAB Banners] Telemetry"
+  },
+  {
+   "bugid": 1933150,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Pinned shortcut edit dialog is too small with content sections enabled"
+  },
+  {
+   "bugid": 1938432,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Sections Personalization] Section followups"
+  },
+  {
+   "bugid": 1885953,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Once search-config-v2 is shipping, remove the old application provided WebExtensions from user's profiles"
+  },
+  {
+   "bugid": 1933857,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove or update probes expiring in Firefox 136: browser.searchinit.engine_invalid_webextension"
+  },
+  {
+   "bugid": 1927768,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Purging domain data should handle tabs in closed tab groups"
+  },
+  {
+   "bugid": 1937545,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Remove inline event handlers from RecentlyClosedTabsAndWindowsMenuUtils"
+  },
+  {
+   "bugid": 1916012,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shopping",
+   "summary": "Render opted-in (empty) state in new sidebar"
+  },
+  {
+   "bugid": 1920832,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add isProductSite to empty states in Review Checker sidebar"
+  },
+  {
+   "bugid": 1914432,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "History page titles are truncated too early"
+  },
+  {
+   "bugid": 1933761,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Extension sidebar always shows as checked in main menu"
+  },
+  {
+   "bugid": 1937234,
+   "status": "NEW",
+   "component": "Firefox:Sync",
+   "summary": "Make it possible to experiment with different signed-out avatar variants"
+  },
+  {
+   "bugid": 1908431,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable finding and restoring tab groups in Tab Overflow Menu"
+  },
+  {
+   "bugid": 1921857,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Close tabs to the left/right\" should save and close groups, including collpased groups"
+  },
+  {
+   "bugid": 1928146,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "High Freq browser/components/tabbrowser/test/browser/tabs/browser_tab_groups.js | single tracking bug"
+  },
+  {
+   "bugid": 1933813,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Close other tabs\" should save and close groups, including collpased groups"
+  },
+  {
+   "bugid": 1935956,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Collapsed Groups are not seen by the Scroll Back arrow"
+  },
+  {
+   "bugid": 1937203,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group panel should close when expanding/collapsing a group"
+  },
+  {
+   "bugid": 1938187,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable tab groups in nightly"
+  },
+  {
+   "bugid": 1938345,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tweak indentation of grouped tabs in the tab manager menu"
+  },
+  {
+   "bugid": 1932549,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[win10] App Menu options are not visible when hovered with High Contrast#1 Windows theme and Firefox System theme"
+  },
+  {
+   "bugid": 1932354,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Address visual styling nits in the sidebar panel"
+  },
+  {
+   "bugid": 1938342,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Update Windows `.\\mach vendor rust` bug link on Firefox Source Docs"
+  },
+  {
+   "bugid": 1938270,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Add a mozmake toolchain for aarch64 windows"
+  },
+  {
+   "bugid": 1893045,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Terrible experience inputting phone number on this page (keyboard keeps disappearing and reappearing)"
+  },
+  {
+   "bugid": 1865124,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[wdspec] Enable tests for \"browsingContext.traverseHistory\" for \"Session History in Parent\" (SHIP) variant"
+  },
+  {
+   "bugid": 1937627,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Optional permissions moz-toggle buttons are now positioned on the left of their label since Bug 1917305 changes landed in central"
+  },
+  {
+   "bugid": 1863288,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Improve the Windows graphics drivers' scraper"
+  },
+  {
+   "bugid": 1937333,
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "Invalid IOUtils.Error reference in downloads tests"
+  },
+  {
+   "bugid": 1929371,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Success message for exporting passwords is not available"
+  },
+  {
+   "bugid": 1937244,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Gray text inside autocomplete does not pass contrast"
+  },
+  {
+   "bugid": 1937580,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Establish login alerts for passwords"
+  },
+  {
+   "bugid": 1937767,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Relay CM Sign Up modal displays large spacing between head and body on all branches"
+  },
+  {
+   "bugid": 1937833,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[RTL] Firefox Relay offer prompt is displaying the brand as \"Relay Firefox\" and not \"Firefox Relay\""
+  },
+  {
+   "bugid": 1919600,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "screen readerability: include profile name in application window title to aid in switching between profiles"
+  },
+  {
+   "bugid": 1933454,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[macOS]Minimized profile window opens behind the active profile when switched"
+  },
+  {
+   "bugid": 1926310,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Clean up small issues in metric markers that were missed in the original commit"
+  },
+  {
+   "bugid": 1928691,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Test that we correctly record profiler markers while using firefox-on-glean APIs"
+  },
+  {
+   "bugid": 1937532,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Replace `if gecko_profiler::can_accept_markers() ...` with profiler macro for recording markers in FoG"
+  },
+  {
+   "bugid": 1938223,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Extend (quietly) GIFFT to support labeled_counter -> keyed count and -> categorical histogram mirroring"
+  },
+  {
+   "bugid": 1912091,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create base moz-input-text component"
+  }
+ ],
+ "fixed": 68,
+ "total": 79,
+ "restricted": 1
+}
