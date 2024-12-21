@@ -1,0 +1,364 @@
+{
+ "date": "2024-12-21",
+ "buildid": "20241221094256",
+ "cset": "e8452cb27c317626557cf1583a9c98ad4926bd60",
+ "bugs": [
+  {
+   "bugid": 1938574,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Fix android-components UnitTests after application-services#6524"
+  },
+  {
+   "bugid": 1888472,
+   "status": "NEW",
+   "component": "Application Services:Webext Storage",
+   "summary": "Replace webext-storage API calls with UNIFFI-ed webext-storage component calls"
+  },
+  {
+   "bugid": 1935253,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Ensure we do not present old frames in requestVideoFrameCallback"
+  },
+  {
+   "bugid": 1938137,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Frequent /css/css-values/vh-update-and-transition-in-subframe.html | single tracking bug"
+  },
+  {
+   "bugid": 1938607,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Ignore specificity of contextually invalid selectors when nesting."
+  },
+  {
+   "bugid": 1938601,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Replace (deprecated) flag histogram COMPONENTS_SHIM_ACCESSED_BY_CONTENT with a use counter"
+  },
+  {
+   "bugid": 1935923,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `<br>` elemnet inserters of `HTMLEditor` aware of preformatted line break too"
+  },
+  {
+   "bugid": 1935924,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make a new class to treat a `<br>` and a preformatted linefeed"
+  },
+  {
+   "bugid": 1938110,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Space character being deleted in Gmail composer"
+  },
+  {
+   "bugid": 1778923,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Firefox sends mouseout events with a null relatedTarget when a select control opens"
+  },
+  {
+   "bugid": 1935088,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Cross-origin cookies are not sent from iframe for fetch keepalive"
+  },
+  {
+   "bugid": 1915780,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP reports should bypass ServiceWorkers (Content-type header missing from CSP reports)"
+  },
+  {
+   "bugid": 1819938,
+   "status": "REOPENED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Enable `dom.forms.always_allow_key_and_focus_events` and `dom.forms.fieldset_disable_only_descendants.enabled` by default on all channels"
+  },
+  {
+   "bugid": 1781926,
+   "status": "REOPENED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent accessible/tests/browser/hittest/browser_test_general.js | single tracking bug"
+  },
+  {
+   "bugid": 1937636,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add a profiler feature for recording flow markers"
+  },
+  {
+   "bugid": 1938311,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Change ExternalTexture's requested size error handling"
+  },
+  {
+   "bugid": 1797039,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Separate the implementation of handle and mapping in SharedMemoryBasic"
+  },
+  {
+   "bugid": 1937366,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Firefox crashes whenever I navigate to a URL with a text fragment (with intl.icu4x.segmenter.enabled = False)"
+  },
+  {
+   "bugid": 1937285,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at vm/JSContext-inl.h:253"
+  },
+  {
+   "bugid": 1938117,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (December 18, 2024)"
+  },
+  {
+   "bugid": 1931445,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use 4-byte slots for irregexp backtrack stack"
+  },
+  {
+   "bugid": 1937552,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Support Temporal objects in Intl.DateTimeFormat"
+  },
+  {
+   "bugid": 1937553,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Implement Time zone canonicalization for Temporal"
+  },
+  {
+   "bugid": 1937554,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Re-run IWYU on Temporal"
+  },
+  {
+   "bugid": 1930681,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Use button-* css variables for select element on chat ui header"
+  },
+  {
+   "bugid": 1325876,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Show internal error page for HTTP responses with error codes (4xx, 5xx) and \"Content-Length: 0\" instead of blank page and introduce response status code and text in the error page"
+  },
+  {
+   "bugid": 1937298,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma netwerk/test/unit/test_bug1830022.js | xpcshell return code: 0 - when Gecko 135 merges to beta on 2025-01-06"
+  },
+  {
+   "bugid": 1937522,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Introduce a mock network layer for testing"
+  },
+  {
+   "bugid": 1936996,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "DNS code refactoring and cleanup"
+  },
+  {
+   "bugid": 1938266,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Disable APZ in popup window has no remote content behind a new pref"
+  },
+  {
+   "bugid": 1938478,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Crash in [@ mozilla::dom::BrowsingContext::Get] via ThirdPartyCookieBlockingExceptions::CheckExceptionForChannel"
+  },
+  {
+   "bugid": 1937502,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "undefined symbol g_unix_fd_list_get when set '--disable-webrtc'"
+  },
+  {
+   "bugid": 1938240,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Make VSync more reliable"
+  },
+  {
+   "bugid": 1937798,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ GetForegroundWindow]"
+  },
+  {
+   "bugid": 1938288,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Use bookmarks test tags constants in the composable"
+  },
+  {
+   "bugid": 1938647,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 176f82f69d93c9e19d92505d3695394ac4e48f01 from 2024-12-20 19:15:21"
+  },
+  {
+   "bugid": 1938130,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create separate robots for compose bookmarks related UI items"
+  },
+  {
+   "bugid": 1938310,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.DeepLinkTest#openSettingsNotifications | single tracking bug"
+  },
+  {
+   "bugid": 1938562,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create new redesigned main menu UI related smoke tests"
+  },
+  {
+   "bugid": 1938437,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Address bar autocompletion suggestions jiggle up and down when I hover/unhover suggestions that have a badge for being a sync'ed tab"
+  },
+  {
+   "bugid": 1937083,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Private default search engine set by enterprise policy is lost after restoring the default search engines"
+  },
+  {
+   "bugid": 1936336,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Disallow inline event handlers in browser.xhtml in debug builds (and test)"
+  },
+  {
+   "bugid": 1937599,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Address ASRouter console error on first startup due to this._storage being null"
+  },
+  {
+   "bugid": 1937296,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Regression: NTP Search Bar flickers/jumps when scrolling"
+  },
+  {
+   "bugid": 1916012,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Render opted-in (empty) state in new sidebar"
+  },
+  {
+   "bugid": 1923722,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Translate strings for Review Checker churn microsurvey and move into code"
+  },
+  {
+   "bugid": 1937234,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Make it possible to experiment with different signed-out avatar variants"
+  },
+  {
+   "bugid": 1938589,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab groups that are saved and closed don't reappear in the \"List all tabs\" menu after restart"
+  },
+  {
+   "bugid": 1932354,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Address visual styling nits in the sidebar panel"
+  },
+  {
+   "bugid": 1931526,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "[Experiment] The Desktop Credit Card Autofill option is not displayed if the browser is restarted"
+  },
+  {
+   "bugid": 1938593,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add `trust-domain` and `project` tags to all Gecko tasks"
+  },
+  {
+   "bugid": 1937887,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update AFL++ toolchain"
+  },
+  {
+   "bugid": 1930553,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove prototype content blocking API code"
+  },
+  {
+   "bugid": 1871346,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent /webdriver/tests/classic/perform_actions/pointer_mouse.py | test_drag_and_drop[<random>] - assert (<random>) == <random>"
+  },
+  {
+   "bugid": 1927829,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Create a helper to assert if a browsing context is a top-level browsing context"
+  },
+  {
+   "bugid": 1937533,
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Remove inline event handlers from the find toolbar"
+  },
+  {
+   "bugid": 1929371,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Success message for exporting passwords is not available"
+  },
+  {
+   "bugid": 1938337,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Fix tos and privacy notice link in the fxa-and-relay-integration-offer-notification modal"
+  },
+  {
+   "bugid": 1938580,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Augment \"New Metrics or Pings\" FOG docs to explain how new definitions files make it into the pipeline"
+  }
+ ],
+ "fixed": 47,
+ "total": 59,
+ "restricted": 1
+}
