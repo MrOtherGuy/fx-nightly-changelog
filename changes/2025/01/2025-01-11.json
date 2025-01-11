@@ -1,0 +1,430 @@
+{
+ "date": "2025-01-11",
+ "buildid": "20250111091648",
+ "cset": "dbf9beb835a23a0c30c19de13c77aa1c49c6c6ef",
+ "bugs": [
+  {
+   "bugid": 1940034,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Align video frame buffer allocation when using ffmpeg the same way upstream does"
+  },
+  {
+   "bugid": 1915045,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: !mMaster->OutOfDecodedVideo() || mMaster->IsRequestingVideoData() || mMaster->IsWaitingVideoData(), at /home/user/code/mozilla-unified/dom/media/MediaDecoderStateMachine.cpp:3323"
+  },
+  {
+   "bugid": 1940449,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update vendored ffmpeg to current tip"
+  },
+  {
+   "bugid": 1940883,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Media playback stalls when out of data without dispatching \"waiting\" (or transitioning to readyState < HAVE_FUTURE_DATA)"
+  },
+  {
+   "bugid": 1939790,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Possible thread unsafety due to Stylo unopaque method"
+  },
+  {
+   "bugid": 1926530,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "chat.mozilla.org process spends a lot of time tracing JS in the cycle collector"
+  },
+  {
+   "bugid": 1938613,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "Add a way to only log a CC when a window is leaked"
+  },
+  {
+   "bugid": 1775696,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/base/test/browser_bug1691214.js | single tracking bug"
+  },
+  {
+   "bugid": 1940653,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Pasting plaintext into the filed in discussions.apple.com gets lost the containg line breaks"
+  },
+  {
+   "bugid": 1890386,
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Intermittent dom/ipc/tests/browser_isactiveintab.js | single tracking bug"
+  },
+  {
+   "bugid": 1940941,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Detect more likely userChromeJS instances for telemetry"
+  },
+  {
+   "bugid": 1939880,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Tons of focus and blur events when tabbing through video controls."
+  },
+  {
+   "bugid": 1938620,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "[network-markers] Obtain the http protocol version from mResponseHead instead of mRequestHead"
+  },
+  {
+   "bugid": 1940346,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "WebGPU is not rendered with no readback using DMA buffers and with WebRender(Software)"
+  },
+  {
+   "bugid": 1938659,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Enable dedicated and shared worker contexts for WebGPU"
+  },
+  {
+   "bugid": 1939787,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-12-30)"
+  },
+  {
+   "bugid": 1884837,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !stencil.canLazilyParse"
+  },
+  {
+   "bugid": 1938802,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "JS/warp on aarch64: accessing memory below the (real) stack pointer, xsp"
+  },
+  {
+   "bugid": 1938524,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use counter for 5-to-8-character language subtags in Intl.Locale constructor"
+  },
+  {
+   "bugid": 1938317,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[WASM] Demo at https://stefan-oltmann.de/exif-viewer/ is 1.3x slower in Nightly. We also spend 800ms in taskcontroller."
+  },
+  {
+   "bugid": 1940236,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Missing UTF-8 Validation for Custom Section"
+  },
+  {
+   "bugid": 1940179,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Support providers that accept prompts via non-?q= query param"
+  },
+  {
+   "bugid": 1940472,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Enable external data in the ML Engine"
+  },
+  {
+   "bugid": 1922026,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "`File` scheme error check in fetch api"
+  },
+  {
+   "bugid": 1927594,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "CORP headers error is hard to understand and reuses a policy message"
+  },
+  {
+   "bugid": 1938293,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Use DNSServiceQueryRecord to resolve HTTPS records on Mac OS"
+  },
+  {
+   "bugid": 1936599,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Extend ORB_BLOCK_INITIATOR to include new JSON label for ExtContentPolicy::TYPE_JSON"
+  },
+  {
+   "bugid": 1915355,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implement the remote allowlisting mechanism for third-party cookie deprecation"
+  },
+  {
+   "bugid": 1940992,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable captcha detection regardless of data reporting pref"
+  },
+  {
+   "bugid": 1069931,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Implement 'discard' element from SVG Animations"
+  },
+  {
+   "bugid": 1934525,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Implement new path data API"
+  },
+  {
+   "bugid": 1940919,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Eliminate SMILSetAnimationFunction.cpp"
+  },
+  {
+   "bugid": 1935257,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Shift+Cmd+/ still doesn't work in macOS to open Help menu"
+  },
+  {
+   "bugid": 192940,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "style attribute of dynamically added xul element not applied"
+  },
+  {
+   "bugid": 1934302,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:General",
+   "summary": "schema error in `firefox_installer.install_v1` for windows_ubr"
+  },
+  {
+   "bugid": 1940751,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Compatibility",
+   "summary": "Update compatibility tests so they still pass with updated browser data (Safari 18.2)"
+  },
+  {
+   "bugid": 1940749,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Status code are not visible in High Contrast Mode"
+  },
+  {
+   "bugid": 1940268,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Add a linter to ensure that names are not specified in non-published package.json files"
+  },
+  {
+   "bugid": 1940754,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update to ruff 0.9.0"
+  },
+  {
+   "bugid": 1940891,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version 2665ba9ba002232aa3f43ff37609659378de76fd from 2025-01-10 05:03:30"
+  },
+  {
+   "bugid": 1927739,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "Investigate adding screen recording detection capabilities for private mode on devices with Android 15+"
+  },
+  {
+   "bugid": 1813525,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < LoginsTest.verifyEditedLoginsAreSavedTest >"
+  },
+  {
+   "bugid": 1880019,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < DownloadTest.systemNotificationCantBeDismissedWhileInProgressTest >"
+  },
+  {
+   "bugid": 1940638,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.SettingsHTTPSOnlyModeTest#httpsOnlyModeEnabledOnlyInPrivateBrowsingTest | java.lang.AssertionError"
+  },
+  {
+   "bugid": 1940708,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "New translations smoke tests"
+  },
+  {
+   "bugid": 1775779,
+   "status": "REOPENED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Intermittent browser/components/downloads/test/browser/browser_download_spam_protection.js | single tracking bug"
+  },
+  {
+   "bugid": 1940988,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Timestamp and a three dot menu are not displayed for items under \"Tabs from other devices\" in Firefox View Next tab"
+  },
+  {
+   "bugid": 1940698,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Full-screen notification doesn't show up anymore."
+  },
+  {
+   "bugid": 1919598,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Firefox View Discoverability treatment-b in m-c"
+  },
+  {
+   "bugid": 1938446,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Land static images & animations for Tab Groups onboarding messages"
+  },
+  {
+   "bugid": 1940509,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Expose current wallpaper to nimbus"
+  },
+  {
+   "bugid": 1940791,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "When opening a tab group from the tab overflow menu, it should become the active group"
+  },
+  {
+   "bugid": 1927964,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Improve responsive design of integrated RC"
+  },
+  {
+   "bugid": 1933479,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add close button on hover to vertical tabs in collapsed state"
+  },
+  {
+   "bugid": 1940737,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Remove inline event handlers from synced tabs sidebar"
+  },
+  {
+   "bugid": 1938707,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Firefox Nightly container tab coloring, vertical tabs don't show black"
+  },
+  {
+   "bugid": 1940545,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Unnamed tab groups have empty tooltip value on tab label hover"
+  },
+  {
+   "bugid": 1902338,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Add a doc for bulding Firefox on WSL"
+  },
+  {
+   "bugid": 1939823,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Replace constructors for java.util.Locale used by Focus deprecated in JDK 19"
+  },
+  {
+   "bugid": 1940817,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Open link to the origin if clicked inside the login form"
+  },
+  {
+   "bugid": 1927587,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Update copy in about:newprofile beforeunload alert"
+  },
+  {
+   "bugid": 1932451,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Profiles about pages need narrower max-widths"
+  },
+  {
+   "bugid": 1940958,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_mirrors.py should accept mirroring to enumerated histograms"
+  },
+  {
+   "bugid": 1934689,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Change moz-page-nav icons to be optional"
+  },
+  {
+   "bugid": 1938172,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace --in-content-box-background-odd with new design token in delete-profile-card"
+  },
+  {
+   "bugid": 1938173,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace --in-content-box-background-odd with new design token in protections.css"
+  },
+  {
+   "bugid": 1940330,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "The accordion variant of moz-card has no visible focus styles in HCM"
+  },
+  {
+   "bugid": 1940361,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace --in-content-box-background-odd with new design token in interactionsViewer.js"
+  },
+  {
+   "bugid": 1940921,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Remove unneeded empty inline event handler from ExtensionShortcuts"
+  },
+  {
+   "bugid": 1937699,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Index preprocessed JS files"
+  }
+ ],
+ "fixed": 62,
+ "total": 70,
+ "restricted": 4
+}
