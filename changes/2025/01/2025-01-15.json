@@ -1,0 +1,424 @@
+{
+ "date": "2025-01-15",
+ "buildid": "20250115042832",
+ "cset": "5904a2d552f20438e7ad97da0c18095bc3598190",
+ "bugs": [
+  {
+   "bugid": 1927156,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Make it easy to understand, in logs, from the MDSM thread, what decoding is being used / has been picked"
+  },
+  {
+   "bugid": 1940135,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "ffvpx hw video AV1 decode error when enalbing the zero copy"
+  },
+  {
+   "bugid": 1855144,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove global constructors from dom/html/MediaError.cpp"
+  },
+  {
+   "bugid": 1900888,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Frontend custom element changes can cause crashes in the custom element DOM"
+  },
+  {
+   "bugid": 1937488,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Crash in [@ nsNodeInfoManager::SetDocumentPrincipal]"
+  },
+  {
+   "bugid": 1938862,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `EditorBase::InsertBRElement` to stop duplicating same code"
+  },
+  {
+   "bugid": 1941210,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "`new Response(new ReadableStream()).text()` can be aborted too soon by cycle collection"
+  },
+  {
+   "bugid": 1891465,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP headers with invalid bytes should be rejected"
+  },
+  {
+   "bugid": 1904364,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: add test coverage for dedicated and shared workers via CTS"
+  },
+  {
+   "bugid": 1940671,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPUChild::SwapChainPresent() leaks CommandEncoder Id"
+  },
+  {
+   "bugid": 1940700,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Enable DXC in Nightly"
+  },
+  {
+   "bugid": 1941452,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Call ID3D11DeviceContext::Unmap() in ExternalTextureD3D11::GetSnapshot()"
+  },
+  {
+   "bugid": 1941466,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix selection of layer compositor when all native compositing is disabled"
+  },
+  {
+   "bugid": 1934236,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent [tier 2] /data/local/tmp/test_root/tests/wasm/spec/spec/harness/harness.js:337:13 Error: Assertion failed: got \"[i64:61]\", expected \"[i64:6867666564636261]\" | single tracking bug"
+  },
+  {
+   "bugid": 1940795,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Avoid tearing in AtomicMemcpy{Down,Up}Unsynchronized"
+  },
+  {
+   "bugid": 1941172,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Negative Heap-Unclassified on https://matrix.reshish.com/multiplication.php (and on other processes/pages too such as extension process)"
+  },
+  {
+   "bugid": 1656469,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CacheIRWriter::loadArgumentFixedSlot's flags argument should not be optional"
+  },
+  {
+   "bugid": 1940680,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Inline through bound inlinable natives"
+  },
+  {
+   "bugid": 1941541,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove ValueIsInt64Index check in HasPropIRGenerator::tryAttachTypedArray"
+  },
+  {
+   "bugid": 1940692,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Linux arm64 startup Crash in [@ js::gc::CheckDecommit]"
+  },
+  {
+   "bugid": 1940784,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Use a single lock for all buffer allocators"
+  },
+  {
+   "bugid": 1941001,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Move some TypedArray builtins from self-hosted code to C++"
+  },
+  {
+   "bugid": 1940217,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Set the default dtype to `q8`"
+  },
+  {
+   "bugid": 1941512,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "allow translation in the web ext"
+  },
+  {
+   "bugid": 1941041,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable mlkem768x25519 in h3 in release"
+  },
+  {
+   "bugid": 1937477,
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "Enable Cookie-Store API"
+  },
+  {
+   "bugid": 1941527,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Enable cookie store API in early beta"
+  },
+  {
+   "bugid": 1940723,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Make Http3ProxyServer handle multiple connections"
+  },
+  {
+   "bugid": 1941494,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Http3Session: Identical code for different branches"
+  },
+  {
+   "bugid": 1933428,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "ThirdPartyUtil doesn't properly determine thirdpartyness for channels initiated by a sandboxed context"
+  },
+  {
+   "bugid": 1922335,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Implement a fallback code-path for view-transitions based on SurfaceFromElement."
+  },
+  {
+   "bugid": 1940318,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libdrm to new version e7d4b1df2d3f675b478897ab454d635e9b4eb915 from 2023-07-26 8:26:05"
+  },
+  {
+   "bugid": 1940585,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update libyuv to cacaf42e97284107dc88502c8f0af9ac356d199b"
+  },
+  {
+   "bugid": 1941067,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Remove clone protocol choice on libwebrtc scripting since we no longer need to push the branch to github"
+  },
+  {
+   "bugid": 1555815,
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "Do not apply letterboxing to moz-extension:// pages"
+  },
+  {
+   "bugid": 1895985,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Ship Background Process QoS Adjustment"
+  },
+  {
+   "bugid": 1940995,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Rebuilding TypeScript definitions fails due to Unknown DOM type: CSSPositionTryDescriptors"
+  },
+  {
+   "bugid": 1940902,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Device's theme different from Fenix' theme messes up Settings"
+  },
+  {
+   "bugid": 1932758,
+   "status": "ASSIGNED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add onboarding card about install attribution"
+  },
+  {
+   "bugid": 1936575,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "set to default prompt should not be displayed until the ToS card has been accepted"
+  },
+  {
+   "bugid": 1939266,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "[Experiment] Themes should not be saved when choosing to skip the card"
+  },
+  {
+   "bugid": 1890717,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "The tab counter text is not displayed in the center of the tab counter square and is done by the font set in the phone"
+  },
+  {
+   "bugid": 1941519,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "App crashing in UI tests after trying to install an extension from the redesigned main menu"
+  },
+  {
+   "bugid": 1925235,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Searchmode defaults to Google after browser restart"
+  },
+  {
+   "bugid": 1941100,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move quick-suggest ping submission from UrlbarProviderQuickSuggest to AdmWikipedia"
+  },
+  {
+   "bugid": 1941464,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix double setting `item.id = item.id = getUniqueId()` in UrlbarView"
+  },
+  {
+   "bugid": 1940141,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Move resourceUriPlugin from browser/components/newtab into a common location"
+  },
+  {
+   "bugid": 1941249,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Follow/unfollow UI in cards sections are inaccessible with a dark background"
+  },
+  {
+   "bugid": 1939904,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Closed tab groups restored from history menus should always be restored in the top window"
+  },
+  {
+   "bugid": 1940621,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Intermittent browser/components/shopping/tests/browser/browser_shoppingsidebar_onboarding.js | single tracking bug"
+  },
+  {
+   "bugid": 1941307,
+   "status": "VERIFIED",
+   "component": "Firefox:Sidebar",
+   "summary": "The X Close button from the Collapsed Vertical Tabs does not change its state on Hover or when Clicked"
+  },
+  {
+   "bugid": 1941357,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update close-12.svg icon to have thicker weight"
+  },
+  {
+   "bugid": 1901666,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Move the handling of FxA notifications out of BrowserGlue.sys.mjs"
+  },
+  {
+   "bugid": 1927927,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Moving a tab to a group should activate the group's window"
+  },
+  {
+   "bugid": 1932347,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Adjust positioning of tab preview for vertical tabs"
+  },
+  {
+   "bugid": 1939535,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab overflow menu should show opened tab groups in collapsed and expanded states"
+  },
+  {
+   "bugid": 1941304,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use tabs.svg when List All Tabs button is not in the tabs toolbar"
+  },
+  {
+   "bugid": 1867845,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Parallelize the compilation of the output from wasm2c"
+  },
+  {
+   "bugid": 1940857,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma linting rust vendor - Errors occured; new rust crates were not vendored."
+  },
+  {
+   "bugid": 1933630,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Enable the partial state update collection on session store once it is implemented"
+  },
+  {
+   "bugid": 1941030,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "pdfjs.enableScripting does not exist on all Android browsers"
+  },
+  {
+   "bugid": 1928229,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "linux unable check updates internal error"
+  },
+  {
+   "bugid": 1919732,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[GB][argos.co.uk] The street address is autofilled in the wrong field"
+  },
+  {
+   "bugid": 1940871,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Latest Nightly does not start properly on macOS"
+  },
+  {
+   "bugid": 1941603,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove unused RuntimeAutoTimer, RuntimeAutoCounter and SetHistogramRecordingEnabled from Telemetry.h"
+  },
+  {
+   "bugid": 1938168,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace --in-content-box-background-odd with new design token in about:policies"
+  },
+  {
+   "bugid": 1941399,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Use design tokens in toggle-group.css"
+  },
+  {
+   "bugid": 1688743,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "menus.remove doesn't return an error when removing a non-existing menu item"
+  },
+  {
+   "bugid": 1941480,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "[clang-trunk] Perma /builds/worker/checkouts/gecko/build/clang-plugin/mozsearch-plugin/MozsearchIndexer.cpp:1413:53: error: too many arguments to function call, expected 0, have 1"
+  }
+ ],
+ "fixed": 60,
+ "total": 69,
+ "restricted": 4
+}
