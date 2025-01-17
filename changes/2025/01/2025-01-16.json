@@ -1,0 +1,856 @@
+{
+ "date": "2025-01-16",
+ "buildid": "20250116214017",
+ "cset": "261049524fa0acc65435a696e445d1afae7af521",
+ "bugs": [
+  {
+   "bugid": 1933055,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "YouTube videos flashing in red or green areas"
+  },
+  {
+   "bugid": 1936385,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make Error.isError work for DomException"
+  },
+  {
+   "bugid": 1940412,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Try to switch some DOM APIs to remove children from the back rather than the front"
+  },
+  {
+   "bugid": 1937696,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`HTMLEditor::InsertPaddingBRElementIfNeeded` should insert a padding `<br>` instead of a normal `<br>`"
+  },
+  {
+   "bugid": 1939065,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Optimize DOM mutation caused by `HTMLEditor::DoSplitNode` and `HTMLEditor::DoJoinNodes`"
+  },
+  {
+   "bugid": 1941520,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Bug 1940278 makes fastmail composer hang on paste"
+  },
+  {
+   "bugid": 1941827,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: editingHost, at /editor/libeditor/HTMLEditor.cpp:7886"
+  },
+  {
+   "bugid": 1931692,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "`MouseEvent.offsetX` and `MouseEvent.offsetY` should return `pageX` and `pageY` values after dispatching"
+  },
+  {
+   "bugid": 1915402,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "URIFixup should replace 0.0.0.0 with 127.0.0.1"
+  },
+  {
+   "bugid": 1941753,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Add UserNavigationInvolvement type."
+  },
+  {
+   "bugid": 1927109,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove `security.xfocsp.hideOpenInNewWindow` pref"
+  },
+  {
+   "bugid": 1938307,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Show more details for \"None of the sha512 hashes match the integrity...\" error"
+  },
+  {
+   "bugid": 1938565,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove the iframe XFO/CSP error reporting telemetry"
+  },
+  {
+   "bugid": 1941765,
+   "status": "REOPENED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/serviceworkers/test/test_serviceworker_interfaces.html | false: If this is failing: DANGER, are you sure you want to expose the new interface cookieStore when Gecko 136 merges to beta on 2025-02-03"
+  },
+  {
+   "bugid": 1925391,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Have a way to open JS sources in the devtools via webchannel in the profiler"
+  },
+  {
+   "bugid": 1940366,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "High frequency linux1804 debug Assertion failure: samples[i].mNumber >= previousNumber, at /builds/worker/checkouts/gecko/tools/profiler/core/ProfileBufferEntry.cpp:2107"
+  },
+  {
+   "bugid": 1935474,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Build all of abseil-cpp by default"
+  },
+  {
+   "bugid": 1940345,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libpng to new version v1.6.45 from 2025-01-07 18:31:22"
+  },
+  {
+   "bugid": 1941485,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Change VkImageHandle::destroy() as to use Global and id::DeviceId"
+  },
+  {
+   "bugid": 1918138,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ensure that shadows are correctly baked into VT snapshots"
+  },
+  {
+   "bugid": 1924152,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for rendering only the picture snapshots without presenting the frame to the window"
+  },
+  {
+   "bugid": 1940850,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Wait on swapchain layers before reftest screenshots"
+  },
+  {
+   "bugid": 1882218,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Embedder API for JS object with a non-GC pointer stashed in it"
+  },
+  {
+   "bugid": 1886820,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Consider adding support for Error.captureStackTrace"
+  },
+  {
+   "bugid": 1916348,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove the \"scriptLoaderPrefs\" feature configuration from the \"feature-manifest\" file"
+  },
+  {
+   "bugid": 1923196,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add initial implementation for Math.sumPrecise proposal"
+  },
+  {
+   "bugid": 1932864,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Modified codepen demo spends a lot of time in Map, GCMinor, and Int32ToCStringWithBase"
+  },
+  {
+   "bugid": 1933095,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Import the xsum library"
+  },
+  {
+   "bugid": 1933096,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 to run Math.sumPrecise tests conditionally"
+  },
+  {
+   "bugid": 1935062,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Frequent js/src/jit-test/tests/explicit-resource-management/bug1934365.js | Timeout (code -6, args \"--enable-explicit-resource-management --ion-eager --ion-offthread-compile=off --more-compartments\") [150.2 s]"
+  },
+  {
+   "bugid": 1941503,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending"
+  },
+  {
+   "bugid": 1941656,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add telemetry for stubs which are too large"
+  },
+  {
+   "bugid": 1937672,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add GetImport IC"
+  },
+  {
+   "bugid": 1938744,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips64] Hit MOZ_CRASH() at js/src/jit/mips64/Simulator-mips64.cpp:1673"
+  },
+  {
+   "bugid": 1939215,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[MIPS] Test warp fails on MIPS"
+  },
+  {
+   "bugid": 1940907,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add folding for MSameValue and MSameValueDouble"
+  },
+  {
+   "bugid": 1941607,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Improve codegen for LTruncateFToInt32 and LTruncateDToInt32 on x64 and arm64"
+  },
+  {
+   "bugid": 1941001,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Move some TypedArray builtins from self-hosted code to C++"
+  },
+  {
+   "bugid": 1728835,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Allow passing a wasm function to WebAssembly.Function constructor"
+  },
+  {
+   "bugid": 1938855,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[MIPS] Fix build failures on MIPS due to missing bytecodeOffset"
+  },
+  {
+   "bugid": 1939074,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[MIPS] Wasm jit tests fail at sub32FromMemAndBranchIfNegativeWithPatch"
+  },
+  {
+   "bugid": 1939075,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "[MIPS64] jit-test wasm/atomic fails"
+  },
+  {
+   "bugid": 1941028,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "GenPrint fails to compile ARM64"
+  },
+  {
+   "bugid": 1941179,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at vm/Interpreter.cpp:440"
+  },
+  {
+   "bugid": 1940688,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Add a preference to allow disabling the throttling of \"requestAnimationFrame\""
+  },
+  {
+   "bugid": 1941075,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Modal (dialog opened with .showModal()) doesn't apper on screen when it has the style: \"height: -moz-available\""
+  },
+  {
+   "bugid": 1941797,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "::before and ::after pseudo-elements break text-wrap: balance;"
+  },
+  {
+   "bugid": 1941406,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Let 'layout.details.force-block-layout:false' ride the trains to release"
+  },
+  {
+   "bugid": 1941643,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Simplify a lambda in SubgridComputeMarginBorderPadding"
+  },
+  {
+   "bugid": 1940938,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "displays double scrollbars"
+  },
+  {
+   "bugid": 1941703,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "The number of operations in an arena is likely to overflow if size_t is 32 bits."
+  },
+  {
+   "bugid": 1924340,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove network.url.strict_data_url_base64_placement pref"
+  },
+  {
+   "bugid": 1927594,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "CORP headers error is hard to understand and reuses a policy message"
+  },
+  {
+   "bugid": 1941769,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Cleanup CookieServiceChild"
+  },
+  {
+   "bugid": 1601871,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Proxy",
+   "summary": "REGRESSION: Websocket connection behind HTTP proxy does not work"
+  },
+  {
+   "bugid": 1941175,
+   "status": "VERIFIED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Rapidly scrolling with the touchpad in a dropdown list causes the list to get stuck, and list entries disappear"
+  },
+  {
+   "bugid": 1745056,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Check thread safety of PermissionManager initialization"
+  },
+  {
+   "bugid": 1448423,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "browser.startup.blankWindow causes window to be visibly resized on startup with privacy.resistFingerprinting (RoundWindowSize)"
+  },
+  {
+   "bugid": 1918124,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Implement the more strict redirect heuristic, as already imlemented in Chrome"
+  },
+  {
+   "bugid": 1918127,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update telemetry for storage access heuristics"
+  },
+  {
+   "bugid": 1937099,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove duplicate tests that allow unpartitioning storage"
+  },
+  {
+   "bugid": 1937102,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix protections UI tests that rely on unpartitioning storage"
+  },
+  {
+   "bugid": 1937104,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fix devtools tests that rely on unpartitioning storage"
+  },
+  {
+   "bugid": 1937123,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove traces of privacy.partition.always_partition_third_party_non_cookie_storage from testing/"
+  },
+  {
+   "bugid": 1940840,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Improve keyboard layout detection"
+  },
+  {
+   "bugid": 1941773,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove unused metrics in resistfingerprinting/metrics.yaml"
+  },
+  {
+   "bugid": 1941786,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove dead telemetry metric"
+  },
+  {
+   "bugid": 1937808,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Osclientcerts: building in xul instead of separate library"
+  },
+  {
+   "bugid": 1939558,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Add function parameter names and types to nrappkit function definitions"
+  },
+  {
+   "bugid": 1941828,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Update some webrtc-encoded-transform WPTs to not trip over unrelated failures"
+  },
+  {
+   "bugid": 1941798,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Stop using weak ref in PeerConnection.sys.mjs"
+  },
+  {
+   "bugid": 1864052,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Increase color contrast of focus outline colors for web content"
+  },
+  {
+   "bugid": 1941755,
+   "status": "ASSIGNED",
+   "component": "Core:Widget",
+   "summary": "Update default web content style of radio buttons and checkboxes"
+  },
+  {
+   "bugid": 1941016,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Enabling CPU model info on Android"
+  },
+  {
+   "bugid": 1932686,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Migrate legacy JS metrics to glean"
+  },
+  {
+   "bugid": 1932643,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Implement a usage-deletion-request ping"
+  },
+  {
+   "bugid": 1932023,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger pretty print can fail on files using windows line breaks"
+  },
+  {
+   "bugid": 1767697,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Intermittent devtools/client/inspector/animation/test/browser_animation_animation-target_highlight.js | single tracking bug"
+  },
+  {
+   "bugid": 1770932,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Show profile details in the network throttling menu items"
+  },
+  {
+   "bugid": 1845725,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Add eslint plugin to catch catch() without function"
+  },
+  {
+   "bugid": 1940264,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Update DropdownMenu to traverse and scroll to selected item by default"
+  },
+  {
+   "bugid": 1941992,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update android nightly application-services version bump to new version d7049d23dcd1c193f0bbe51d7cbcebb20963c197 from 2025-01-16 05:03:43"
+  },
+  {
+   "bugid": 1941710,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version fc22cdb51832969f89d22f135165404fd094e66f from 2025-01-15 05:03:29"
+  },
+  {
+   "bugid": 1934611,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "\"Add password\" page is still displayed after switching to another app and returning back"
+  },
+  {
+   "bugid": 1932758,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add onboarding card about install attribution"
+  },
+  {
+   "bugid": 1938347,
+   "status": "VERIFIED",
+   "component": "Fenix:Onboarding",
+   "summary": "Theme option in Onboarding is not saved after exiting and returning to the app"
+  },
+  {
+   "bugid": 1940856,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Update the privacy notice to be in title case"
+  },
+  {
+   "bugid": 1941362,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Remove skip_toolbar_placement from metrics.yaml"
+  },
+  {
+   "bugid": 1926620,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[Spike] Investigate memory leaks discoverability"
+  },
+  {
+   "bugid": 1941623,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Run `fenix-detect-leaks-arm-debug` task only on central and autoland"
+  },
+  {
+   "bugid": 1940589,
+   "status": "RESOLVED",
+   "component": "Fenix:Pocket",
+   "summary": "Update ContentRecommendation entities to include corpusItemId and recommendedAt"
+  },
+  {
+   "bugid": 1899365,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Remove Fenix Shopping Review Quality Checker code"
+  },
+  {
+   "bugid": 1941641,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[WebCompat Reporter] Expose reporter in legacy Menu"
+  },
+  {
+   "bugid": 1937467,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < RedesignedMenuTest. verifyTheReaderViewButtonTest >"
+  },
+  {
+   "bugid": 1941925,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update AndroidX DataStore to version 1.1.2"
+  },
+  {
+   "bugid": 1941926,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update AndroidX RecyclerView to version 1.4.0"
+  },
+  {
+   "bugid": 1648956,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URLs with a space and ending in a question mark are repointed to search"
+  },
+  {
+   "bugid": 1938142,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_searchMode_excludeResults.js | single tracking bug"
+  },
+  {
+   "bugid": 1940643,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove or update metrics expiring in Firefox 137: newtab.handoff_preference.enabled before Gecko version gets increase to 137 on 2025-02-03"
+  },
+  {
+   "bugid": 1941690,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Clean up Suggest telemetry tests related to the quick-suggest ping"
+  },
+  {
+   "bugid": 1941692,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Clean up the browser_telemetry_other.js Suggest test"
+  },
+  {
+   "bugid": 1941792,
+   "status": "RESOLVED",
+   "component": "Firefox:Downloads Panel",
+   "summary": "Stop using weak ref in DownloadsCommon.sys.mjs"
+  },
+  {
+   "bugid": 1936656,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add ability to show multiple content tiles on a single aboutwelcome screen with option to toggle visibility"
+  },
+  {
+   "bugid": 1938228,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "IAB Banner's dismiss button needs to be clicked twice to trigger BLOCK_URL"
+  },
+  {
+   "bugid": 1941923,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update hover color of unfollow button"
+  },
+  {
+   "bugid": 1939719,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "6.37% sessionrestore_no_auto_restore (Linux) regression on Mon December 30 2024"
+  },
+  {
+   "bugid": 1921218,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add settings checkbox for daily usage ping"
+  },
+  {
+   "bugid": 1941585,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove inline event handlers from the SitePermissionsDialog"
+  },
+  {
+   "bugid": 1941751,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove inline event handlers from the SiteDataSettingsDialog"
+  },
+  {
+   "bugid": 1941754,
+   "status": "VERIFIED",
+   "component": "Firefox:Shopping",
+   "summary": "The Top Icon from the \"Highlights from Recent Reviews\" card is truncated"
+  },
+  {
+   "bugid": 1921060,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Implement the full mute button spec"
+  },
+  {
+   "bugid": 1933539,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Split up ShoppingSidebarChild"
+  },
+  {
+   "bugid": 1903733,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Frequent linux1804 browser/components/tabbrowser/test/browser/tabs/browser_tab_manager_keyboard_access.js | single tracking bug"
+  },
+  {
+   "bugid": 1941830,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "In the all tabs menu, sort open groups by last accessed time"
+  },
+  {
+   "bugid": 1941832,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "In the all tabs menu, sort saved groups by when they were closed"
+  },
+  {
+   "bugid": 1939364,
+   "status": "REOPENED",
+   "component": "Firefox:Theme",
+   "summary": "almost invisible \"Switch to tab\" label for selected row in address bar popup on macOS"
+  },
+  {
+   "bugid": 1940142,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add a perftest for Full Page Translations"
+  },
+  {
+   "bugid": 1942037,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "AVX-VNNI is not used when AVX512 is enabled"
+  },
+  {
+   "bugid": 1941879,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Frequent reftest [taskcluster:error] task aborted - max run time exceeded"
+  },
+  {
+   "bugid": 1924319,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "wrong startupwmclass key in desktop file for snap package"
+  },
+  {
+   "bugid": 1940186,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma [tier 2] test_pdf_zoom | AssertionError('Mismatching screenshots for test_pdf_zoom_p1_75p_2204.png with extremas: ((0, 10), (0, 60), (0, 60))')"
+  },
+  {
+   "bugid": 1940229,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade sccache to 0.9.1"
+  },
+  {
+   "bugid": 1941070,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Remove the private browsing checkbox in the optional permissions dialog"
+  },
+  {
+   "bugid": 1940251,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "stop signing omni.ja"
+  },
+  {
+   "bugid": 1930975,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Linter warnings in Actions.sys.mjs for: \"warning  'action' is already declared in the upper scope on line 42 column 14\""
+  },
+  {
+   "bugid": 1940945,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Lots of garbage in browser log from \"console.error: services.settings: Message: TypeError: NetworkError: Network request failed\""
+  },
+  {
+   "bugid": 1938340,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Make crash reporter client always fall back to bundled locale"
+  },
+  {
+   "bugid": 1940494,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "nsICrashReporter::annotateCrashReport does not support typed annotations"
+  },
+  {
+   "bugid": 1940772,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[Win 11 24H2] The comment section in Crash Reporter is displayed incorrectly"
+  },
+  {
+   "bugid": 1926596,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Update QuotaCleaner to support clearing by site and OriginAttributesPattern"
+  },
+  {
+   "bugid": 1940741,
+   "status": "RESOLVED",
+   "component": "Toolkit:Downloads API",
+   "summary": "DownloadLastDir.sys.mjs should use a strong ref for the observer"
+  },
+  {
+   "bugid": 1915672,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add Telemetry for OSAuth for Formautofill and about:logins"
+  },
+  {
+   "bugid": 1936561,
+   "status": "REOPENED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Remove FormAutofillContent"
+  },
+  {
+   "bugid": 1940586,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Remove unused files in megalist content folder"
+  },
+  {
+   "bugid": 1928020,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Places",
+   "summary": "Create a Places component exposing an independent read-only connection"
+  },
+  {
+   "bugid": 1939853,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove inline event handlers from Library window (places.xhtml)"
+  },
+  {
+   "bugid": 1888170,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Hide reset button until user makes changes in color themes menu"
+  },
+  {
+   "bugid": 1941603,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove unused RuntimeAutoTimer, RuntimeAutoCounter and SetHistogramRecordingEnabled from Telemetry.h"
+  },
+  {
+   "bugid": 1941763,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "The mirroring of labeled counters to histograms does not work in at least some cases"
+  },
+  {
+   "bugid": 1941003,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Implement v1 of the moz-box-button element"
+  },
+  {
+   "bugid": 1694049,
+   "status": "VERIFIED",
+   "component": "WebExtensions:General",
+   "summary": "A mismatch occurs between Retry button and canResume property."
+  }
+ ],
+ "fixed": 123,
+ "total": 141,
+ "restricted": 4
+}
