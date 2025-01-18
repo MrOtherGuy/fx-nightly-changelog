@@ -1,0 +1,568 @@
+{
+ "date": "2025-01-18",
+ "buildid": "20250118091314",
+ "cset": "d716251198faebadc1aa0e3e87962b5469430a5e",
+ "bugs": [
+  {
+   "bugid": 1940883,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Media playback stalls when out of data without dispatching \"waiting\" (or transitioning to readyState < HAVE_FUTURE_DATA)"
+  },
+  {
+   "bugid": 1942376,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Improve video/audio info logging messages"
+  },
+  {
+   "bugid": 1936113,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement CSS :open pseudo-class"
+  },
+  {
+   "bugid": 1907153,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Enforce that JS window and process actors can't have the same name"
+  },
+  {
+   "bugid": 1927977,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Ship autocorrect attribute"
+  },
+  {
+   "bugid": 1901492,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add CSP support for Trusted Types for Workers"
+  },
+  {
+   "bugid": 1937109,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "drawImage should respect -moz-context-properties for a SVG image source"
+  },
+  {
+   "bugid": 1942335,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Disable force-GDI-classic-mode rendering of certain fonts on Windows for release channels"
+  },
+  {
+   "bugid": 1939731,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(Texture[Id(0,1)] does not exist) at /third_party/rust/wgpu-core/src/storage.rs:128"
+  },
+  {
+   "bugid": 1941731,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Windows 11 Crash in [@ wgpu_core::storage::Storage<T>::get<T>]"
+  },
+  {
+   "bugid": 1743631,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Implement wp_linux_dmabuf_feedback"
+  },
+  {
+   "bugid": 1941910,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Add a dummy ProcessWatcher for platforms where we don't manage child processes directly"
+  },
+  {
+   "bugid": 1939533,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Regex consol log text returns true (should return false or an error)"
+  },
+  {
+   "bugid": 1942183,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "IntElement types in testSinglyLinkedList and testLinkedList can get confused"
+  },
+  {
+   "bugid": 1942225,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update irregexp to new version bf0407e8492982d8059233b1047774160402ba4f from 2025-01-17 00:00:00"
+  },
+  {
+   "bugid": 1942276,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma js/src/jit-test/tests/errors/capture-stack-jit.js | executionHash is 0x1 with 0 inputs (code 3, args \"--setpref=experimental.error_capture_stack_trace --no-threads --fast-warmup --baseline-eager - when Gecko 136 merges to beta on 2025-02-03"
+  },
+  {
+   "bugid": 1941826,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Don't guard for number types in emitGuardIsNumber"
+  },
+  {
+   "bugid": 1941864,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Clean-up double-to-int32 MacroAssembler code"
+  },
+  {
+   "bugid": 1941599,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !chunk->markBits.ref().isMarkedBlack(alloc), at gc/BufferAllocator.cpp:1404"
+  },
+  {
+   "bugid": 1941602,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Inline functions to get good buffer allocation sizes"
+  },
+  {
+   "bugid": 1941728,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Crash [@ js::gc::MapAlignedPages] or Assertion failure: length % pageSize == 0, at gc/Memory.cpp:469"
+  },
+  {
+   "bugid": 1939733,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Support BigInt in Iterator.range"
+  },
+  {
+   "bugid": 1942158,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Minor extra XUL tree image cache clean-up"
+  },
+  {
+   "bugid": 1942190,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Toggle 'layout.details.force-block-layout' to 'false' in Nightly"
+  },
+  {
+   "bugid": 1942036,
+   "status": "NEW",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "scrollWidth / scrollHeight not properly calculated when content has negative margin"
+  },
+  {
+   "bugid": 1941704,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning",
+   "summary": "Align Performance and End-to-End Tests for the ML Engine with Production Behavior"
+  },
+  {
+   "bugid": 1903758,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Experiment with deferring and/or avoiding arena_t::Purge where possible"
+  },
+  {
+   "bugid": 1927594,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "CORP headers error is hard to understand and reuses a policy message"
+  },
+  {
+   "bugid": 1939493,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsStandardURL parsing for hostless urls leaves mHost.mLen as -1 (was: Hostless resource URLs make ContentPrincipal sad (ASSERTION: uninitialized: 'mHost.mLen >= 0 in nsStandardURL))"
+  },
+  {
+   "bugid": 1941935,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add telemetry to measure purge rate of cache entries"
+  },
+  {
+   "bugid": 1942030,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsStandarURL.setHost(\"\") is throws for URLTYPE_STANDARD"
+  },
+  {
+   "bugid": 1936363,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Include `STATE_ALLOWED_TRACKING_CONTENT` in `browser.getContentBlockingEvents`"
+  },
+  {
+   "bugid": 1941875,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Disable captcha detection and ping submission"
+  },
+  {
+   "bugid": 1941960,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent TV TEST-UNEXPECTED-TIMEOUT | toolkit/components/antitracking/test/browser/browser_contentBlockingTelemetry.js | application timed out after 740 seconds with no output"
+  },
+  {
+   "bugid": 1840427,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma macosx1100-aarch64-shippable-qr [tier 2] svg/pattern-transformed-02.svg == svg/pattern-transformed-02-ref.svg | image comparison, max difference: 27, number of differing pixels: 11173"
+  },
+  {
+   "bugid": 1918529,
+   "status": "NEW",
+   "component": "Core:SVG",
+   "summary": "Perma [Tier 2] svg/filters/filter-clipped-rect-01.svg == svg/filters/pass.svg | image comparison, max difference: 4, number of differing pixels: 119"
+  },
+  {
+   "bugid": 1939608,
+   "status": "ASSIGNED",
+   "component": "Core:Security",
+   "summary": "Depend on sha-asm to get aarch64 code."
+  },
+  {
+   "bugid": 1942216,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "mach cargo vet/mach vendor rust fail after bug 1937808"
+  },
+  {
+   "bugid": 1939993,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Ed25519 SubtleCrypto keys can't be persisted to IndexedDB"
+  },
+  {
+   "bugid": 1939558,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Add function parameter names and types to nrappkit function definitions"
+  },
+  {
+   "bugid": 1941755,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Update default web content style of radio buttons and checkboxes"
+  },
+  {
+   "bugid": 1832396,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Copy/paste images as png on Windows clipboard for broader compatibility with transparent images"
+  },
+  {
+   "bugid": 1862157,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Enable Service Worker debugging in DevTools by default"
+  },
+  {
+   "bugid": 1942227,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Closing buttton of sourcemap warning doesn't have the correct color in dark mode"
+  },
+  {
+   "bugid": 1184538,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "[Ruleview] values are being autocompleted wrong when I press Shift+Up/Down while the cursor is placed in the middle of the rule value"
+  },
+  {
+   "bugid": 1431808,
+   "status": "RESOLVED",
+   "component": "DevTools:JSON Viewer",
+   "summary": "long Integers rounding last two digits to '00' in JSON view"
+  },
+  {
+   "bugid": 1942278,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Remove unused netmonitor css"
+  },
+  {
+   "bugid": 1930846,
+   "status": "ASSIGNED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ mozilla::mscom::ProcessRuntime::InitInsideApartment] in the LPAC Utility process for PlayReady with Citrix"
+  },
+  {
+   "bugid": 1936070,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add \"onboarding-opt-out\" ping"
+  },
+  {
+   "bugid": 1941609,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[Fenix PDF] Revert behaviour to make PDFs from Fenix downloads open in Fenix"
+  },
+  {
+   "bugid": 1942226,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version f63adf866474ef8b56fa1ce3c1ef922bce00f9df from 2025-01-17 05:03:50"
+  },
+  {
+   "bugid": 1936575,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "set to default prompt should not be displayed until the ToS card has been accepted"
+  },
+  {
+   "bugid": 1940427,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Replace usages of createSandboxCustomTabIntent with launchSandboxCustomTab and make createSandboxCustomTabIntent private"
+  },
+  {
+   "bugid": 1942231,
+   "status": "RESOLVED",
+   "component": "Fenix:Pocket",
+   "summary": "Add nimbus flag for enabling MARS integration"
+  },
+  {
+   "bugid": 1883829,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "[a11y] Consider increasing the contrast ratio for the \"Learn more\" links from the Add search engine page"
+  },
+  {
+   "bugid": 1942145,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update Android experiment integration test for new disable studies flow"
+  },
+  {
+   "bugid": 1942179,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Use textAccent text color for links in addon_installation_failed_dialog.xml"
+  },
+  {
+   "bugid": 1908718,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Icons for local search appear in the chiclet are not dynamic to theming"
+  },
+  {
+   "bugid": 1940808,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Condition the quick-suggest ping on AMP suggestions being enabled"
+  },
+  {
+   "bugid": 1941161,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a `quick-suggest-deletion-request` ping"
+  },
+  {
+   "bugid": 1941694,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove the quick_suggest_ingest_time telemetry metric"
+  },
+  {
+   "bugid": 1941989,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Split AdmWikipedia into two modules"
+  },
+  {
+   "bugid": 1941990,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Allow SuggestProvider to manage at most one Rust suggestion type"
+  },
+  {
+   "bugid": 1942084,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "All context menu items are visible when search service fails to initialize"
+  },
+  {
+   "bugid": 1941297,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove inline event handlers from bookmarkProperties.xhtml"
+  },
+  {
+   "bugid": 1940476,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Add new “tab group created” and “tab group closed” triggers"
+  },
+  {
+   "bugid": 1899562,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Do not include the weather widget for about:home startup cache"
+  },
+  {
+   "bugid": 1940566,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add UI in Customize panel to manage follow/blocked topic sections"
+  },
+  {
+   "bugid": 1941522,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove \"Save to Pocket\" button"
+  },
+  {
+   "bugid": 1786310,
+   "status": "ASSIGNED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Remove the main/public-suffix-list collection"
+  },
+  {
+   "bugid": 1932940,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update the search configuration to add enterprise parameter to searches"
+  },
+  {
+   "bugid": 1942150,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove `SEARCH_SERVICE_INIT2_MS`"
+  },
+  {
+   "bugid": 1937856,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Error when restoring a tab group that contains only newtabs"
+  },
+  {
+   "bugid": 1941391,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab preview panel checks for open popups before initiating the timer, but not before actually opening, allowing other popups to open within this 500ms window"
+  },
+  {
+   "bugid": 1941645,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group with many tabs moves when expanding and collapsing"
+  },
+  {
+   "bugid": 1919640,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build hangs for a while before saying \" Error loading tasks for kind toolchain:\""
+  },
+  {
+   "bugid": 1942210,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "gecko_taskgraph.util.get_file_finder has two identical code paths"
+  },
+  {
+   "bugid": 1939210,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "TEST-UNEXPECTED-FAIL | toolkit/mozapps/extensions/test/browser/browser_html_detail_view.js | Interactive elements must be labeled: id: input, tagName: BUTTON, className: toggle-button -"
+  },
+  {
+   "bugid": 1940360,
+   "status": "RESOLVED",
+   "component": "Toolkit:Alerts Service",
+   "summary": "Desktop notifications display poorly due to HTML formatting injection"
+  },
+  {
+   "bugid": 1798750,
+   "status": "REOPENED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Intermittent browser/base/content/test/performance/browser_startup.js | single tracking bug"
+  },
+  {
+   "bugid": 1940710,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove inline event handlers from the history sidebar"
+  },
+  {
+   "bugid": 1941145,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Use URL.fromURI in toolkit/components/places/tests/history/test_fetch.js"
+  },
+  {
+   "bugid": 1933422,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "External links are not opening in the active Firefox profile (in focus)"
+  },
+  {
+   "bugid": 1933742,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Profile name field lacks red highlight error when creating/editing profiles"
+  },
+  {
+   "bugid": 1936671,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "New/edit profile page - Audit and fix HCM behavior"
+  },
+  {
+   "bugid": 1939555,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Mac: Don't initialize nsApplication when --*version or --help are passed"
+  },
+  {
+   "bugid": 1941791,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Cleanup the whitespace in the generated GleanMetrics.h file"
+  },
+  {
+   "bugid": 1885332,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a README with documentation for moz-button"
+  },
+  {
+   "bugid": 1936431,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create the basic moz-input-search component"
+  },
+  {
+   "bugid": 1942186,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Set automatic fluent support for accesskey in moz-button"
+  },
+  {
+   "bugid": 1935609,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "c.spotler.com - Clicking the highlighted button does not work"
+  },
+  {
+   "bugid": 1940079,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Reloading extension from DevTools Toolbox with a manifest error fails without doing nor showing anything"
+  },
+  {
+   "bugid": 1826867,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Reloading an extension page that was redirected causes \"Access to the file was denied\""
+  }
+ ],
+ "fixed": 79,
+ "total": 93,
+ "restricted": 7
+}
