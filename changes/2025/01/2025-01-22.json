@@ -1,0 +1,604 @@
+{
+ "date": "2025-01-22",
+ "buildid": "20250122090205",
+ "cset": "86456e2a4960ab06b8440463d70b202c4ea07cf1",
+ "bugs": [
+  {
+   "bugid": 1942834,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Fix android-components after Suggest breaking change"
+  },
+  {
+   "bugid": 1940889,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "build failure on OpenBSD/arm64, libvpx mozilla patches not applied to 135"
+  },
+  {
+   "bugid": 1937908,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Assertion failure: !mProcess in GMPParent::~GMPParent during shutdown"
+  },
+  {
+   "bugid": 1942376,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Improve video/audio info logging messages"
+  },
+  {
+   "bugid": 1923763,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Handle invalid `anchor()` values."
+  },
+  {
+   "bugid": 1940691,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable `:has-slotted` by default"
+  },
+  {
+   "bugid": 1942816,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Simplify specified / computed URL split."
+  },
+  {
+   "bugid": 1921116,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Make AnimationData store different kind of pseudo elements (especially for view transition pseudo elements)"
+  },
+  {
+   "bugid": 1921109,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Make Element.getAnimations({subtree: true}) return animations on view-transition pseudo elements"
+  },
+  {
+   "bugid": 1866732,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove support for loading JSMs in Actors"
+  },
+  {
+   "bugid": 1942666,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add a test for Element.textContent + MutationObserver"
+  },
+  {
+   "bugid": 1822179,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Intermittent dom/tests/unit/test_geolocation_reset_accuracy.js | single tracking bug"
+  },
+  {
+   "bugid": 1942630,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Implement User Navigation Involvement in `nsDocShellLoadState` and `nsILoadInfo`"
+  },
+  {
+   "bugid": 1877935,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Make sure we pass tests in WPT for https-upgrades"
+  },
+  {
+   "bugid": 1937386,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Schemeless HTTPS-First causes redirect error"
+  },
+  {
+   "bugid": 1942738,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "[armhf linux] <instantiation>:66:5: error: instruction requires: NEON"
+  },
+  {
+   "bugid": 1862245,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "PNG with cICP colorspace labeling display incorrectly"
+  },
+  {
+   "bugid": 1904364,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: add test coverage for dedicated and shared workers via CTS"
+  },
+  {
+   "bugid": 1938994,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add document and tests with subscript loader + framescript environment"
+  },
+  {
+   "bugid": 1942592,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "TypedArray.includes() doesn't work in Nightly"
+  },
+  {
+   "bugid": 1942052,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support FJCVTZS in the simulator"
+  },
+  {
+   "bugid": 1942059,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid emitting unused fallback paths when FJCVTZS is available"
+  },
+  {
+   "bugid": 1942255,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add ABI call fallback to CacheIRCompiler::emitGuardToInt32ModUint32"
+  },
+  {
+   "bugid": 1942415,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | mozilla::Array<T>::operator[]] via Statistics::sendSliceTelemetry"
+  },
+  {
+   "bugid": 1836206,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "justify-content: space-around and space-evenly incorrectly fall back to center (should be safe center)"
+  },
+  {
+   "bugid": 1927594,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "CORP headers error is hard to understand and reuses a policy message"
+  },
+  {
+   "bugid": 1942574,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add UseCounter for CookieStore API"
+  },
+  {
+   "bugid": 1942762,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Expose CookieStore.onchange to window globals only"
+  },
+  {
+   "bugid": 1937785,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Viewport resizes with `overlays-content` result in rendering issues on Android 10"
+  },
+  {
+   "bugid": 1930254,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Move smartblock embed placeholder replacing logic into a content script"
+  },
+  {
+   "bugid": 1942836,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable test_iframe_sandbox_popups_inheritance.html for HTTP3"
+  },
+  {
+   "bugid": 1927085,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Enforce Certificate Transparency in release on desktop"
+  },
+  {
+   "bugid": 900577,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Consider making IDBKeyRange not inherit from nsISupports"
+  },
+  {
+   "bugid": 1940640,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Remove or update metrics expiring in Firefox 137: quotamanager.initialize.repository.number_of_iterations before Gecko version gets increase to 137 on 2025-02-03"
+  },
+  {
+   "bugid": 1939812,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Don't pause compositor on scale changes"
+  },
+  {
+   "bugid": 1881887,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove support for component JSMs"
+  },
+  {
+   "bugid": 1942273,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Replace custom AssignRangeAlgorithm algorithm by standard std::uninitialized_copy call"
+  },
+  {
+   "bugid": 1936092,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Remove tests for JSM loader"
+  },
+  {
+   "bugid": 1941477,
+   "status": "RESOLVED",
+   "component": "Core:XSLT",
+   "summary": "[clang-trunk] Perma /builds/worker/checkouts/gecko/dom/xslt/xpath/txNodeSet.cpp:501:12: error: first argument in call to 'memset' is a pointer to non-trivially copyable type 'txXPathNode' [-Werror,-Wnontrivial-memcall]"
+  },
+  {
+   "bugid": 1886479,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Yaml loading in glean_parser is slow"
+  },
+  {
+   "bugid": 1942149,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Netmonitor extremely slow when switching panels with 1000+ request"
+  },
+  {
+   "bugid": 1934715,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Merge all `lint` `*_requirements.txt` file dependencies into the `lint.txt` site file"
+  },
+  {
+   "bugid": 1930846,
+   "status": "ASSIGNED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crash in [@ mozilla::mscom::ProcessRuntime::InitInsideApartment] in the LPAC Utility process for PlayReady with Citrix"
+  },
+  {
+   "bugid": 1919891,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Add always to the app links redirect prompt"
+  },
+  {
+   "bugid": 1933350,
+   "status": "RESOLVED",
+   "component": "Fenix:Autofill",
+   "summary": "Create debug drawer method to create and remove fake addresses"
+  },
+  {
+   "bugid": 1942766,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Update field naming in FeatureFlags to follow lints rules"
+  },
+  {
+   "bugid": 1938263,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Enable in Nightly"
+  },
+  {
+   "bugid": 1942787,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version cb41b0ac90b7a144438113883e24a13b3cba0913 from 2025-01-21 10:05:36"
+  },
+  {
+   "bugid": 1937827,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "Handle A-S migration moving encryption/decryption from app level to A-S level"
+  },
+  {
+   "bugid": 1942660,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Update the ToS Onboarding card strings to match the final copy"
+  },
+  {
+   "bugid": 1942780,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Update the onboarding manifest extra data to use consistent naming case"
+  },
+  {
+   "bugid": 1928975,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Send data deletion request when DAU ping is toggled off"
+  },
+  {
+   "bugid": 1918655,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Wrong tab focused with `window.open(); window.close()`"
+  },
+  {
+   "bugid": 1929084,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Menu Redesign] Preserve scrolled state on the main menu when entering back from the sub-menu."
+  },
+  {
+   "bugid": 1941258,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < SettingsSearchTest. verifyShowSearchSuggestionsToggleTest >"
+  },
+  {
+   "bugid": 1942222,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Hook up the AMP-suggestion-matching strategy and add a Nimbus variable for it"
+  },
+  {
+   "bugid": 1942435,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dismissals don't work for Merino suggestions without Suggest features"
+  },
+  {
+   "bugid": 1937166,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Decouple ASRouter from New Tab's TelemetryFeed"
+  },
+  {
+   "bugid": 1942323,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add carat icon to Content Tile headers and ensure proper border-radius on headers above non-toggleable tiles"
+  },
+  {
+   "bugid": 1936885,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Success toast overlaps thumbs after clicking thumbs up"
+  },
+  {
+   "bugid": 1937170,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Transfer ownership of ActivityStreamStorage to ASRouter"
+  },
+  {
+   "bugid": 1940783,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The IAB Banners are skipped when keyboard navigation is used to navigate through the Pocket cards"
+  },
+  {
+   "bugid": 1942274,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The \"SPONSORED\" string and the \"X\" button of the IAB Banners are hardly visible on dark wallpapers with a light theme applied or vice-versa"
+  },
+  {
+   "bugid": 1942893,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Title lines to 4 on small cards"
+  },
+  {
+   "bugid": 1941948,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Derive ExperimentAPI._store from ExperimentAPI._manager"
+  },
+  {
+   "bugid": 1941961,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Move Nimbus initialization code into ExperimentAPI"
+  },
+  {
+   "bugid": 1942637,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Skip test_nimbusTelemetry.js non-artifact-only tests in artifact builds"
+  },
+  {
+   "bugid": 1932941,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Session support for closed tab groups in closed windows"
+  },
+  {
+   "bugid": 1940752,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Attempting to reopen a closed tab group from the \"Reopen Closed Tab\" tab context menu item does not work"
+  },
+  {
+   "bugid": 1942809,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Consolidate tabs.length check by moving it into _recordSavedTabGroupState"
+  },
+  {
+   "bugid": 1942166,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Update \"data collection and use\" UI in \"Privacy & Security\" section of `about:preferences`"
+  },
+  {
+   "bugid": 1942409,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Missing list of supported sites in non PDP empty state"
+  },
+  {
+   "bugid": 1942768,
+   "status": "VERIFIED",
+   "component": "Firefox:Shopping",
+   "summary": "The Settings and How we determine review quality Collapsed cards hover States do not cover the entire area"
+  },
+  {
+   "bugid": 1906617,
+   "status": "VERIFIED",
+   "component": "Firefox:Sidebar",
+   "summary": "The X Close button is missing from theBookmarks sidebar"
+  },
+  {
+   "bugid": 1921034,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Rename TabsInTitlebar"
+  },
+  {
+   "bugid": 1942156,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Dialog is missing name and correct role"
+  },
+  {
+   "bugid": 1942219,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Stop using weak ref in NewTabUtils.sys.mjs"
+  },
+  {
+   "bugid": 1942846,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Increase browser.tabs.groups.dragOverDelayMS to 70"
+  },
+  {
+   "bugid": 1942425,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Perma [Tier 2] /builds/worker/checkouts/gecko/toolkit/components/translations/actors/TranslationsParent.sys.mjs:98:5 | Unknown property access Services.prefs.notifyObservers, Interfaces: nsIPrefBranch,nsIPrefService (mozilla/valid-services-property)"
+  },
+  {
+   "bugid": 1935015,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "enable lzma for macOS dmgs on beta and release"
+  },
+  {
+   "bugid": 1934094,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Use UV in Mach if it's available on the path"
+  },
+  {
+   "bugid": 1934711,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`pypi:` dependencies in `python/sites/<site>.txt` are installed by sequential invocations of `pip`"
+  },
+  {
+   "bugid": 1935303,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "warning: Requirements file D:\\mozilla-build\\msys2\\tmp\\tmpaiet5oh1\\site-constraints.txt does not contain any dependencies"
+  },
+  {
+   "bugid": 1892751,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Make sure GeckoSession lifecycle's final state update is working in SHIP-enabled Fenix"
+  },
+  {
+   "bugid": 1934281,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Sync vendored puppeteer to v24.0.0"
+  },
+  {
+   "bugid": 1942778,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Web-Platform-Tests for Clear-Cache-Data: cache: clarify and cleanup clear-cache.https.html"
+  },
+  {
+   "bugid": 1822511,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[BE][www2.hm.com/nl_be] Form autofill/preview/clear are not applied properly in the eligible fields"
+  },
+  {
+   "bugid": 1935969,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Only run ML autofill inference when the section is valid"
+  },
+  {
+   "bugid": 1942217,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Stop using weak ref in FormHistory.sys.mjs"
+  },
+  {
+   "bugid": 1937208,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Focus order when navigating with Tab and Tab+Shift is not consistent for the password list"
+  },
+  {
+   "bugid": 1941775,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Basic-info experiment has cut off text in the Relay Offer Mask"
+  },
+  {
+   "bugid": 1927607,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add telemetry to about:editprofile page"
+  },
+  {
+   "bugid": 1941698,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add telemetry to about:newprofile page"
+  },
+  {
+   "bugid": 1942198,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add telemetry to profiles beforeunload prompt"
+  },
+  {
+   "bugid": 1879329,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Changes to metrics change FOG's GleanMetrics.h which is included all over the place which requires broad rebuilds"
+  },
+  {
+   "bugid": 1942218,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Stop using weak ref in TelemetryControllerParent.sys.mjs"
+  },
+  {
+   "bugid": 1942221,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Stop using weak ref in TelemetryEnvironment.sys.mjs"
+  },
+  {
+   "bugid": 1942897,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Simplify the name of some metric header files"
+  },
+  {
+   "bugid": 1921325,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace new tab toast notification with moz-message-bar"
+  }
+ ],
+ "fixed": 92,
+ "total": 99,
+ "restricted": 1
+}
