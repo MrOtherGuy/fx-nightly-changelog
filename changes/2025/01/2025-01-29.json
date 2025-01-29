@@ -1,0 +1,550 @@
+{
+ "date": "2025-01-29",
+ "buildid": "20250129050021",
+ "cset": "77c7c62035edf235f884d9d321f23ae3d22fc1f7",
+ "bugs": [
+  {
+   "bugid": 1943719,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Crash in [@ mozilla::MediaTrackGraphImpl::AppendMessage]"
+  },
+  {
+   "bugid": 1939310,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "notifications from extensions cannot play ogg sounds"
+  },
+  {
+   "bugid": 1942404,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Failed to play HEVC video with inband config change on MacOS"
+  },
+  {
+   "bugid": 1914323,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-view-transitions] Import static UA style sheet."
+  },
+  {
+   "bugid": 1291467,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Implement contenteditable=\"plaintext-only\""
+  },
+  {
+   "bugid": 1943656,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Contenteditable with `display:inline-block\" loses space when typing after doing ctrl+backspace"
+  },
+  {
+   "bugid": 1944191,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "`mousemove` should not be fired on the `Document` node if preceding boundary event removed the target and there is the last deepest `mouseenter` event target"
+  },
+  {
+   "bugid": 1928291,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable network.http.referer.sendFromRefresh in all channels."
+  },
+  {
+   "bugid": 1921221,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "[meta] HTTPS-First by default in Release"
+  },
+  {
+   "bugid": 1934587,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Updated strings in HTTPS-Only Mode settings can be ambiguous for users with existing profiles"
+  },
+  {
+   "bugid": 1942622,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Considering adding telemetry for all CSP failures in the Firefox UI"
+  },
+  {
+   "bugid": 1944263,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Get rid of CandidateWindowPosition"
+  },
+  {
+   "bugid": 1944161,
+   "status": "VERIFIED",
+   "component": "Core:Disability Access APIs",
+   "summary": "crash near null in [@ mozilla::a11y::DocAccessible::DoARIAOwnsRelocation]"
+  },
+  {
+   "bugid": 1710884,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "Add IPC glue code for self-hosted XDR content [Android]"
+  },
+  {
+   "bugid": 1943963,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Fix bad copypaste in intl/icu_sources_data.py"
+  },
+  {
+   "bugid": 1943485,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove the need to quality mozilla::LogLevel::Debug when using JS_LOG"
+  },
+  {
+   "bugid": 1943710,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: hasBaseScript(), at js/src/vm/JSFunction.h:552"
+  },
+  {
+   "bugid": 1943823,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "LSan: Direct leak of 256 byte(s) possibly [@ js::ArenaAllocPolicyBase::maybe_pod_arena_malloc]"
+  },
+  {
+   "bugid": 1943966,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use constant allocations for LStoreUnboxedInt64 and StoreDataViewElement64"
+  },
+  {
+   "bugid": 1944011,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Generate boilerplate for more LIR instructions"
+  },
+  {
+   "bugid": 1932184,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Add initial implementation for Upsert proposal"
+  },
+  {
+   "bugid": 1944272,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma /css/css-contain/content-visibility/content-visibility-046.html | single tracking bug"
+  },
+  {
+   "bugid": 1944384,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "Add WPT to test for 'list-style-behavior:outside' on bare li elements"
+  },
+  {
+   "bugid": 1942327,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Images, Video, and HTML Frames",
+   "summary": "Remove image.exif-density-correction.enabled pref"
+  },
+  {
+   "bugid": 1937477,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Enable Cookie-Store API"
+  },
+  {
+   "bugid": 1943262,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Refactor instantiation of nsEffectiveTLDService"
+  },
+  {
+   "bugid": 1943079,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add storage access heuristics to Nimbus manifest for desktop"
+  },
+  {
+   "bugid": 1943833,
+   "status": "VERIFIED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Perma toolkit/components/antitracking/bouncetrackingprotection/test/browser/browser_bouncetracking_oa_isolation.js | Container cookie has been cleared. - when Gecko 136 merges to beta on 2025-02-03"
+  },
+  {
+   "bugid": 1942591,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Add a crashtest testing variant for incremental origin initialization"
+  },
+  {
+   "bugid": 1942819,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Add a mochitest-plain testing variant for incremental origin initialization"
+  },
+  {
+   "bugid": 1944071,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "QM_TRY error flood control return value is flipped in LSSnapshot"
+  },
+  {
+   "bugid": 1938047,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "VideoSinkWants should affect the source, not the sink itself"
+  },
+  {
+   "bugid": 1943583,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox Nightly is blurry"
+  },
+  {
+   "bugid": 1942414,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "nsWindowDbg logging: table of ASCII virtual-key codes is broken"
+  },
+  {
+   "bugid": 1944194,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove references to InitWithFuncCallback"
+  },
+  {
+   "bugid": 1943610,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Cross-Origin-* headers do not have a link to MDN"
+  },
+  {
+   "bugid": 1932002,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Selected state is not announced by TalkBack for a selected Bookmarks folder"
+  },
+  {
+   "bugid": 1932008,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "TalkBack does not announce list length and position Bookmarks folder"
+  },
+  {
+   "bugid": 1932014,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Main menu actions for Bookmarks - Add and Edit - are both marked up as unchecked checkboxes"
+  },
+  {
+   "bugid": 1932016,
+   "status": "RESOLVED",
+   "component": "Fenix:Bookmarks",
+   "summary": "Main menu controls for Bookmarks have a redundant control focusable by assistive technology"
+  },
+  {
+   "bugid": 1924157,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "Support 2 trailing icons to be displayed in `TextField`"
+  },
+  {
+   "bugid": 1931986,
+   "status": "RESOLVED",
+   "component": "Fenix:Design System and Theming",
+   "summary": "[Acorn Update] Implement space tokens 1.0"
+  },
+  {
+   "bugid": 1943608,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "When downloading a file, its name can get (1) appended even if no file exist with the same name in the Downloads folder"
+  },
+  {
+   "bugid": 1943990,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add comment to explicitly state it calls onDestroy"
+  },
+  {
+   "bugid": 1884916,
+   "status": "ASSIGNED",
+   "component": "Fenix:General",
+   "summary": "Remove mobile subfolders gitignore files and update the root gitignore accordingly"
+  },
+  {
+   "bugid": 1940541,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Enable the feature to ride the trains"
+  },
+  {
+   "bugid": 1943293,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] The URL field is not validated in Report Broken site form"
+  },
+  {
+   "bugid": 1943495,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Intermittent TV accessible/tests/browser/events/browser_menu_and_alerts.js | single tracking bug"
+  },
+  {
+   "bugid": 1912905,
+   "status": "RESOLVED",
+   "component": "Fenix:History",
+   "summary": "'Back' icon turns black and the title changes back to 'Recently Closed Tabs' while still displaying the selected websites after canceling a share action in 'Recently Closed Tabs' page"
+  },
+  {
+   "bugid": 1932300,
+   "status": "RESOLVED",
+   "component": "Fenix:History",
+   "summary": "History panel no longer shows when long-pressing system back button."
+  },
+  {
+   "bugid": 1943588,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add telemetry for privacy preferences modal"
+  },
+  {
+   "bugid": 1943064,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[NotifyDatasetChanged] Use DiffUtils in AndroidComponents: LoginsAdapter instead of NotifyDatasetChanged"
+  },
+  {
+   "bugid": 1944170,
+   "status": "REOPENED",
+   "component": "Fenix:Privacy",
+   "summary": "Add User Preference for Biometric Authentication"
+  },
+  {
+   "bugid": 1940134,
+   "status": "RESOLVED",
+   "component": "Fenix:Push",
+   "summary": "Crash in [@ mozilla.components.support.base.android.UnboundHandlerException: at mozilla.components.support.base.android.NotificationsDelegate.requestNotificationPermission(NotificationsDelegate.kt)]"
+  },
+  {
+   "bugid": 1937666,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Create feature callout for unified search button"
+  },
+  {
+   "bugid": 1942623,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add support for exponents in the urlbar calculator"
+  },
+  {
+   "bugid": 1943272,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update UrlbarUtils icon protocol list to match places"
+  },
+  {
+   "bugid": 1943078,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab shortcuts spacing and sizing changes"
+  },
+  {
+   "bugid": 1943748,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Long topsite titles containing CJK cause shift of contents of newtab on hover"
+  },
+  {
+   "bugid": 1941961,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Move Nimbus initialization code into ExperimentAPI"
+  },
+  {
+   "bugid": 1943717,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 38800715cd53e338b43d73082631fb64c8a4238c from 2025-01-23 22:54:37"
+  },
+  {
+   "bugid": 1941142,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Replace new URL usage with URL.fromURI in browser_openTabAndSendCertInfo.js"
+  },
+  {
+   "bugid": 1943850,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Trying to open a recently closed tab results in the wrong tab opening"
+  },
+  {
+   "bugid": 1942618,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Use a restrictive CSP for many settings dialogs"
+  },
+  {
+   "bugid": 1941344,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hide vertical tabs close button for pinned tabs and unpinned selected tab"
+  },
+  {
+   "bugid": 1943032,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Properly localize tab groups' aria-label and aria-description"
+  },
+  {
+   "bugid": 1944083,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Clicking outside the tab group create panel should keep the new group"
+  },
+  {
+   "bugid": 1942349,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add support for model variants"
+  },
+  {
+   "bugid": 1943132,
+   "status": "NEW",
+   "component": "Firefox:Translations",
+   "summary": "Add Translations Telemetry Performance Metrics"
+  },
+  {
+   "bugid": 1941209,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Add Ultramarine to FEDORA_DISTROS in Mach Bootstrap"
+  },
+  {
+   "bugid": 1943093,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Reduce sleep duration between lock attempt in mozbuild/lock.py"
+  },
+  {
+   "bugid": 1943879,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma wasi-crt-trunk make: *** [Makefile:104: build/wasi-libc.BUILT] Error 2"
+  },
+  {
+   "bugid": 1943670,
+   "status": "ASSIGNED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "Perma mozharness python-test failure"
+  },
+  {
+   "bugid": 1942830,
+   "status": "REOPENED",
+   "component": "Thunderbird:Account Manager",
+   "summary": "[EWS] Support saving and displaying attachments"
+  },
+  {
+   "bugid": 1940773,
+   "status": "NEW",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Perma [tier 2] toolkit/mozapps/extensions/test/browser/browser_permission_prompt_userScripts.js | uncaught exception - TypeError: can't access property \"todo\", SpecialPowers.SimpleTest is undefined at a11yWarn@chrome://mochikit/content/tests/SimpleTest/"
+  },
+  {
+   "bugid": 1944432,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Set background update reasons to not update correctly"
+  },
+  {
+   "bugid": 1944367,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Prevent exceptions in Android native stack trace code from stopping crash pings"
+  },
+  {
+   "bugid": 1943561,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Use a restrictive CSP for both SanitizeDialogs"
+  },
+  {
+   "bugid": 1831049,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add telemetry to record OSKeyStore decryption result in the use cases of credit card autofill"
+  },
+  {
+   "bugid": 1943277,
+   "status": "NEW",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Ignore focus events that are dispatched during field clearing process"
+  },
+  {
+   "bugid": 1840479,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Frequent toolkit/components/passwordmgr/test/browser/browser_preselect_login.js | single tracking bug"
+  },
+  {
+   "bugid": 1937199,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Add password\" \"+\" Button does not announce anything when activated"
+  },
+  {
+   "bugid": 1937202,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] More options \"...\" button is missing haspopup attribute and does not get a collapsed state on load"
+  },
+  {
+   "bugid": 1942366,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Update null search results string"
+  },
+  {
+   "bugid": 1934866,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Screen Readers provide generic descriptions for Avatars on Create/Edit pages"
+  },
+  {
+   "bugid": 1936669,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Profile selector window - Audit and fix a11y properties"
+  },
+  {
+   "bugid": 1936670,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Delete profile page - Audit and fix a11y properties"
+  },
+  {
+   "bugid": 1943108,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Only keep one copy of the webcompat extension in tree"
+  },
+  {
+   "bugid": 1931402,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Heuristic violation: 3.0 It is not clear how to undo a browser theme or appearance change, meaning that users are unable to leave an unwanted state easily."
+  },
+  {
+   "bugid": 1943304,
+   "status": "VERIFIED",
+   "component": "WebExtensions:General",
+   "summary": "Perma toolkit/components/extensions/test/browser/browser_ext_themes_autocomplete_popup.js | Urlbar popup action color should be set to #00000 - \"rgb(91, 91, 102)\" == \"rgb(0, 0, 0)\" - when Gecko 136 merges to beta on 2025-02-03"
+  }
+ ],
+ "fixed": 75,
+ "total": 90,
+ "restricted": 1
+}
