@@ -1,0 +1,778 @@
+{
+ "date": "2025-02-06",
+ "buildid": "20250206094455",
+ "cset": "07a0cb2f7e34ebb46ee90565c0953bcde60d7572",
+ "bugs": [
+  {
+   "bugid": 1861760,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable media-gpu on Android"
+  },
+  {
+   "bugid": 1868032,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Aspect ratio (DAR) of MP4 Videos are not respected"
+  },
+  {
+   "bugid": 1946245,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "update mp4parse to revision e64650a686e5c5732395cd059e17cfd3b1e5b63b."
+  },
+  {
+   "bugid": 1945910,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Use MOZ_DIAGNOSTIC_CRASH in CustomElementRegistry::RunCustomElementCreationCallback::Run()"
+  },
+  {
+   "bugid": 1811472,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Handle a not-corrupted and not-ready SQLite database in IdentityCredentialStorageService"
+  },
+  {
+   "bugid": 1945801,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Notification tags can collide between different containers"
+  },
+  {
+   "bugid": 1940273,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Assert that all windows/dialogs have a CSP"
+  },
+  {
+   "bugid": 1908583,
+   "status": "NEW",
+   "component": "Core:DOM: Selection",
+   "summary": "Intermittent selection/1478604.html == selection/1478604-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1945798,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Use mirror: once since the dom.workers.timeoutmanager pref required restart"
+  },
+  {
+   "bugid": 1901466,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "[UIA] Implement ITextRangeProvider::FindText"
+  },
+  {
+   "bugid": 1909142,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Expose CSS custom highlights to a11y APIs"
+  },
+  {
+   "bugid": 1933384,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Simplify GeckoTextMarkerRange::AttributedText now that TextLeafPoint::FindTextAttrsStart walks across containers"
+  },
+  {
+   "bugid": 1938958,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "15 - 5.27% a11yr / a11yr + 2 more (Linux, OSX) regression on Wed December 18 2024"
+  },
+  {
+   "bugid": 1942887,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Mouse tracking for screen readers on Windows: does not report the content in some in-line elements (such as <code> or <a>) within <em> or <strong> elements under certain circumstances."
+  },
+  {
+   "bugid": 1945036,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "<pre> <code> elements with multiple lines of code do not hit test correctly"
+  },
+  {
+   "bugid": 1940023,
+   "status": "VERIFIED",
+   "component": "Core:Graphics",
+   "summary": "Page/Video stutter on scrolling (https://uditmahajan.com/)"
+  },
+  {
+   "bugid": 1945694,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "Upgrade `cc` to 1.2.11"
+  },
+  {
+   "bugid": 1943241,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Add fast-path for uploading Canvas2D to WebGL textures"
+  },
+  {
+   "bugid": 1946127,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Lut init refactorings"
+  },
+  {
+   "bugid": 1943491,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libpng to new version v1.6.46 from 2025-01-23 19:02:04"
+  },
+  {
+   "bugid": 1943149,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-01-20)"
+  },
+  {
+   "bugid": 1945044,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Crash in [@ wgpu_core::storage::Storage<T>::get]"
+  },
+  {
+   "bugid": 1917985,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Apply scroll snapping without external offsets during scene building"
+  },
+  {
+   "bugid": 1945683,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable layer compositor on Windows"
+  },
+  {
+   "bugid": 1939971,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->realm()->creationOptions().getSharedMemoryAndAtomicsEnabled(), at src/js/src/shell/js.cpp:8047"
+  },
+  {
+   "bugid": 1945034,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Modify testcases that interacts with cache entries to clear the in-memory script cache as well"
+  },
+  {
+   "bugid": 1945419,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Integrate the script cache into the cdp events, or loosen the test expectation"
+  },
+  {
+   "bugid": 1946047,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma js/src/jit-test/tests/errors/bug1945318.js | executionHash is 0x1 with 0 inputs (code 3, args \"--setpref=experimental.error_capture_stack_trace --baseline-eager --write-protect-code=off\") [0.0 s] Gecko 137 merges to beta on 2025-03-03"
+  },
+  {
+   "bugid": 1926477,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Calling the getter in js::jit::GetPropertyCached is too slow in TodoMVC-jQuery on Android"
+  },
+  {
+   "bugid": 1946236,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Update a bug link in ContentContribution for implementing the grid sizing algorithm"
+  },
+  {
+   "bugid": 1945637,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "[css-fonts] `font-style: normal` is the same value as `font-style: oblique 0deg`, always serializes as `normal`"
+  },
+  {
+   "bugid": 1941380,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Crash in [@ nsTSubstring<T>::AppendPrintf | mozilla::dom::ProcessArguments] with console.log(\"%.200f\", 1)"
+  },
+  {
+   "bugid": 1945246,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "MOZ_CRASH is broken in Windows ASan builds"
+  },
+  {
+   "bugid": 1944984,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Don't show error page on view-source:// views of empty pages."
+  },
+  {
+   "bugid": 1654697,
+   "status": "NEW",
+   "component": "Core:Panning and Zooming",
+   "summary": "Use `max(screen width, 980px)` as the fallback value for the initial containing block width on Android devices, not just in RDM"
+  },
+  {
+   "bugid": 1941099,
+   "status": "VERIFIED",
+   "component": "Core:Performance",
+   "summary": "Perma gv-junit org.mozilla.geckoview.test.NavigationDelegateTest#mainProcessSwitching | org.mozilla.geckoview.test.util.UiThreadUtils$TimeoutException: Timed out after 30000ms - when Gecko 136 merges to beta on 2025-02-03"
+  },
+  {
+   "bugid": 1942810,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Remote Permission Service isn't being initialized on initial profile launch"
+  },
+  {
+   "bugid": 1945248,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "rsclientcerts rejects certificates without an explicit version"
+  },
+  {
+   "bugid": 1942171,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "MediaEngineWebRTCAudio.cpp is using deprecated AudioProcessingBuilder, should use BuiltinAudioProcessingBuilder"
+  },
+  {
+   "bugid": 1945261,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Support dependency descriptor RTP extension"
+  },
+  {
+   "bugid": 1946161,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Some appearance-related cleanups."
+  },
+  {
+   "bugid": 1942232,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Make WaylandBuffer release more robust"
+  },
+  {
+   "bugid": 1942668,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Make WaylandSurface HDR aware"
+  },
+  {
+   "bugid": 1943662,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ nsWindow::GdkCeiledScaleFactor]"
+  },
+  {
+   "bugid": 1944490,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "25.32% glterrain (Linux) regression on Mon January 20 2025"
+  },
+  {
+   "bugid": 1945834,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] The hamburger menu opens in the top left of the window instead of where it's supposed to"
+  },
+  {
+   "bugid": 1946016,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "The window of a detached tab is larger than the original"
+  },
+  {
+   "bugid": 1945849,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma [tier 2] devtools/client/debugger/test/mochitest/browser_dbg-preview-switch.js |  Node is not focusable via the accessibility API: id: , tagName: BUTTON, className: theme-twisty -"
+  },
+  {
+   "bugid": 1945901,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Store page messages in recorded tracing profiles"
+  },
+  {
+   "bugid": 1564329,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add previous/next buttons to search field"
+  },
+  {
+   "bugid": 1945809,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Size of preview of fonts with numbers in family name doesn't match other previews"
+  },
+  {
+   "bugid": 1945810,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use subgrid for list of fonts"
+  },
+  {
+   "bugid": 1945457,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Improve the definition for Components.Exceptions (Fix errors such as Type '2147500037' has no properties in common with type 'ErrorOptions')"
+  },
+  {
+   "bugid": 1945477,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Add TypeScript definitions for MozChannel and Components.ID"
+  },
+  {
+   "bugid": 1930868,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "[Nimbus] Studies should be toggled back on after re-enabling Telemetry"
+  },
+  {
+   "bugid": 1944084,
+   "status": "VERIFIED",
+   "component": "Fenix:General",
+   "summary": "[WebCompat Reporter] Only show menu item for reporter on valid URL links"
+  },
+  {
+   "bugid": 1945110,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Resolve FenixApplication lint warnings"
+  },
+  {
+   "bugid": 1945885,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Show the app-wide setting for desktop mode with default to mobile"
+  },
+  {
+   "bugid": 1944817,
+   "status": "RESOLVED",
+   "component": "Fenix:History",
+   "summary": "The history tab is not displayed when long-pressing on Android back button"
+  },
+  {
+   "bugid": 1944370,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "UserInteractionOnBackPressedCallback handler should break its loop when the event is handled true"
+  },
+  {
+   "bugid": 1929321,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "[Android Large Screen Optimized Tier 2] [P0] LS-C1/LS-C2 - App is letterboxed in unfolded portrait, landscape and multi window portrait mode"
+  },
+  {
+   "bugid": 1929332,
+   "status": "VERIFIED",
+   "component": "Fenix:Onboarding",
+   "summary": "[Android Large Screen Optimized Tier 2] [P0] LS-U2 -Buttons are full length"
+  },
+  {
+   "bugid": 1944956,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Refactor privacy preferences dialog store layer"
+  },
+  {
+   "bugid": 1943065,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[NotifyDatasetChanged] Use DiffUtils in AndroidComponents: CrashListAdapter instead of NotifyDatasetChanged"
+  },
+  {
+   "bugid": 1941470,
+   "status": "RESOLVED",
+   "component": "Fenix:Shopping",
+   "summary": "Deprecate GeckoView Shopping Review Quality Checker code"
+  },
+  {
+   "bugid": 1945880,
+   "status": "RESOLVED",
+   "component": "Fenix:Top Sites",
+   "summary": "Update refresh frequency for sponsored top sites"
+  },
+  {
+   "bugid": 1945846,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma [tier 2]  org.mozilla.fenix.ui.LoginsTest#verifyMultipleLoginsSelectionsTest | androidx.test.uiautomator.UiObjectNotFoundException: UiSelector[RESOURCE_ID=org.mozilla.fenix.debug:id/loginSelectBar]"
+  },
+  {
+   "bugid": 1946036,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create new downloaded PDF is opened in Firefox UI test"
+  },
+  {
+   "bugid": 1945451,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The address bar flickers when changing or hovering between normal and touch density modes in the Customize toolbar"
+  },
+  {
+   "bugid": 1945912,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add Frecency/Alt Frecency view to Interactions Viewer"
+  },
+  {
+   "bugid": 1944680,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Lock all Content Analysis related prefs even if they're not set by Enterprise Policies"
+  },
+  {
+   "bugid": 385559,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remembering zoom for specific data: URLs is kinda silly"
+  },
+  {
+   "bugid": 1945199,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline event handlers from profile dialogs"
+  },
+  {
+   "bugid": 1904441,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Write tests to cover about:messagepreview now that it's being used regularly"
+  },
+  {
+   "bugid": 1938457,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a build-time flag to register the newtab add-on as a built-in addon and install it"
+  },
+  {
+   "bugid": 1943462,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[inline topic selection] Create UI for Inline topic selection"
+  },
+  {
+   "bugid": 1943632,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Setup Nimbus pref to enable custom wallpaper"
+  },
+  {
+   "bugid": 1944447,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab shortcuts arrow key navigation"
+  },
+  {
+   "bugid": 1944636,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Decouple FaviconFeed dependency on newtab"
+  },
+  {
+   "bugid": 1944718,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "NTP body content shifts when scrolling up with browser.newtabpage.activity-stream.showSearch = false"
+  },
+  {
+   "bugid": 1945529,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Weather] Expanded version and a long name cities overlap with shortcuts"
+  },
+  {
+   "bugid": 1945598,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Rename april fools logo"
+  },
+  {
+   "bugid": 1945929,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab shortcuts refresh title hover break on word and not all"
+  },
+  {
+   "bugid": 1945965,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove new tab April Fools logo"
+  },
+  {
+   "bugid": 1945643,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update to mozilla-nimbus-schemas 2025.01.1"
+  },
+  {
+   "bugid": 1642310,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Mac OS: After restart, Firefox windows re-open in the same single virtual desktop instead of the virtual desktops they previously occupied."
+  },
+  {
+   "bugid": 1944328,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "\"Reopen All Tabs\" should support closed tab groups from closed windows"
+  },
+  {
+   "bugid": 1930201,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Animate expand/collapse sidebar launcher over content area on hover"
+  },
+  {
+   "bugid": 1944576,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Perma [tier 2] a11y browser/components/sidebar/tests/browser/browser_glean_sidebar.js | Interactive elements must be labeled: id: , tagName: button, className:  -"
+  },
+  {
+   "bugid": 1944931,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "When initally enabling Vertical tabs in about:preferences, the \"Show sidebar\" option is checked by default but the sidebar is hiding when toggled"
+  },
+  {
+   "bugid": 1945927,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Resizing the sidebar is broken after toggling sidebar on and off"
+  },
+  {
+   "bugid": 1945930,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hide the sidebar launcher splitter when vertical tabs is disabled."
+  },
+  {
+   "bugid": 1926973,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Consider graying out tabs that are unloaded"
+  },
+  {
+   "bugid": 1935022,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Ctrl+tab switches to the wrong tab (started taking the mouse position into account)"
+  },
+  {
+   "bugid": 1942393,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Context menu order is not consistent between opened/closed tab groups"
+  },
+  {
+   "bugid": 1943589,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Can't drag a tab from another window into a group"
+  },
+  {
+   "bugid": 1945223,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Browser Pref for Smart Tab Grouping"
+  },
+  {
+   "bugid": 1945264,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "pressing Ctrl+T while a tab in a tab group is active should create a new tab in the same tab group if browser.tabs.insertAfterCurrent is set to true (open tab next to current one)"
+  },
+  {
+   "bugid": 1945479,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Clicking the first tab group colour (Blue) selects the last one (Red)"
+  },
+  {
+   "bugid": 1946012,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Land core clustering code and perf tests for Smart Tab Grouping"
+  },
+  {
+   "bugid": 1946050,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Consolidate tab context menu code dealing with multiple context tabs"
+  },
+  {
+   "bugid": 1553850,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Consider enabling sandboxing on pgo profiling runs"
+  },
+  {
+   "bugid": 1945218,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "\"warning: trait `HasFloat` is never used\" within bindgen"
+  },
+  {
+   "bugid": 1946111,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Re-enable h264 Snap QA test on nightly and beta"
+  },
+  {
+   "bugid": 1945297,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk 1 out of 2 hunks FAILED -- saving rejects to file llvm/lib/Transforms/Vectorize/VectorCombine.cpp.rej"
+  },
+  {
+   "bugid": 1940974,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "update verify didn't fail when the update packages fails to download"
+  },
+  {
+   "bugid": 1946084,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "handle new updater command line argument in update verify"
+  },
+  {
+   "bugid": 1944348,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Test Verify jobs for web-platform-tests (TVw) never run any wdspec test"
+  },
+  {
+   "bugid": 1945733,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Enable the check for cached script event counts if the navigation cache is enabled"
+  },
+  {
+   "bugid": 1945370,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Skip eslint warning in remote/marionette/reftest.sys.mjs#370"
+  },
+  {
+   "bugid": 1936528,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Rename generated update.locale as default.locale"
+  },
+  {
+   "bugid": 1944833,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The Windows graphics drivers scraper doesn't handle all cabinet files correctly"
+  },
+  {
+   "bugid": 1945745,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Fallback code breaks compilation when we emit Assertions.h:260:8: warning: #warning \"Unsupported architecture, replace the code below with assembly suitable to crash the process\""
+  },
+  {
+   "bugid": 1945083,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Password remains visible after sidebar actions"
+  },
+  {
+   "bugid": 704027,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Frecency: Give bonuses based on interaction"
+  },
+  {
+   "bugid": 1925988,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Title in moz_places does not match title for bookmarks in moz_bookmarks even after user have explicitly cleared all history"
+  },
+  {
+   "bugid": 1945290,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Make `TelemetryReportingPolicy` more async"
+  },
+  {
+   "bugid": 1945662,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_profilerMarkers.js and test_UsageReporting.js are permafailing cross-platform for artifact builds"
+  },
+  {
+   "bugid": 1945672,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Allow Nimbus feature to control datareporting policy notification"
+  },
+  {
+   "bugid": 1927214,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-page-nav should support an optional search box"
+  },
+  {
+   "bugid": 1937639,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Convert the reader view color-input element a moz-color-input reusable component"
+  },
+  {
+   "bugid": 1937640,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Refactor moz-input-color component to use design tokens and functionality"
+  },
+  {
+   "bugid": 1938208,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a README with component specific documentation for moz-input-color"
+  },
+  {
+   "bugid": 1944917,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Typo in InstallTrigger intervention: \"shimed\""
+  },
+  {
+   "bugid": 1944925,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove *.webex.com from the InstallTrigger intervention"
+  },
+  {
+   "bugid": 1945258,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Simplify the webcompat addon by merging the UA override and injections libraries"
+  },
+  {
+   "bugid": 1945407,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Fix linting of smartblock_embed_test.html"
+  },
+  {
+   "bugid": 1925995,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Privacy: Site Reports",
+   "summary": "collinsdictionary.com - The video is not playing with ETP Strict/Standard"
+  }
+ ],
+ "fixed": 110,
+ "total": 128,
+ "restricted": 1
+}
