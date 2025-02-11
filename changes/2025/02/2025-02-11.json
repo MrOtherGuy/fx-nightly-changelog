@@ -1,0 +1,538 @@
+{
+ "date": "2025-02-11",
+ "buildid": "20250211090130",
+ "cset": "321052fb2ab50a954f9d31d198275891b5fed615",
+ "bugs": [
+  {
+   "bugid": 1946553,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "10bit hevc video can't be played on Android"
+  },
+  {
+   "bugid": 1946711,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update libaom to 2454213"
+  },
+  {
+   "bugid": 1946401,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "AnimationEventDispatcher::SortEvents triggers libc++'s strict ordering checks in browser/base/content/test/popups/browser_popup_frames.js (and others)"
+  },
+  {
+   "bugid": 1944345,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "(un)register(Window|Process)Actor methods should throw in wrong process"
+  },
+  {
+   "bugid": 1940382,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix WPT failures for JSON modules in /preload/"
+  },
+  {
+   "bugid": 1933239,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Set Accept header to `application/json,*/*;q=0.5` when fetching JSON modules"
+  },
+  {
+   "bugid": 1891465,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "CSP headers with invalid bytes should be rejected"
+  },
+  {
+   "bugid": 1901120,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Fenix doesn't set `schemelessInput` in load info correctly"
+  },
+  {
+   "bugid": 1947163,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "MOZ_CRASH(Document (chrome://mozapps/content/profile/profileSelection.xhtml) does not have a CSP!"
+  },
+  {
+   "bugid": 1940292,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Text-Fragments: Investigate speeding up finding a text directive"
+  },
+  {
+   "bugid": 1901809,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Add crossOrigin and topOrigin to CollectedClientData"
+  },
+  {
+   "bugid": 1945969,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Make PWebAuthnTransaction a PWindowGlobal managee"
+  },
+  {
+   "bugid": 1888298,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Intermittent [tier 2] application crashed [@ RefPtr<nsFrameSelection>::get] | single tracking bug"
+  },
+  {
+   "bugid": 1909142,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Expose CSS custom highlights to a11y APIs"
+  },
+  {
+   "bugid": 1946836,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Tweak mac test for ARIA 1.0 combo boxes"
+  },
+  {
+   "bugid": 1946902,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Infinite loop possible in UiaTextRange::FindAttribute"
+  },
+  {
+   "bugid": 1766133,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Intermittent leakcheck | tab 2992 bytes leaked (CondVar, GatherProfileThreadParameters, IPC::Message, IPDLResolverInner, Mutex, ...)"
+  },
+  {
+   "bugid": 1938962,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "IPC marker deadlock in SendDestroyReleasedChunksAtOrBefore"
+  },
+  {
+   "bugid": 1947197,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Flow markers have empty descriptions that are always visible"
+  },
+  {
+   "bugid": 1945894,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "When I try to reorder bookmark items in bookmarks menupopup  with Drag&Drop, the bookmarks menupopup flickers."
+  },
+  {
+   "bugid": 1946787,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Gradient cache is not behaving well on https://www.fxhash.xyz/generative/slug/color-study-3"
+  },
+  {
+   "bugid": 1946361,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render missing stacking context snapshots as a transparent image"
+  },
+  {
+   "bugid": 1927209,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Crash in [@ IPC::MessageReader::FatalError | IPC::MessageBufferReader::MessageBufferReader | IPC::ParamTraits<JSStructuredCloneData>::Read | IPC::ParamTraits<mozilla::SerializedStructuredCloneBuffer>::Read | IPC::ParamTraits<mozilla::dom::indexedDB::Se..."
+  },
+  {
+   "bugid": 1944081,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Experiment with preserving shape teleporting in the presence of reshape for mutation."
+  },
+  {
+   "bugid": 1926477,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Calling the getter in js::jit::GetPropertyCached is too slow in TodoMVC-jQuery on Android"
+  },
+  {
+   "bugid": 1943696,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add JitDump support for IR with Wasm Ion"
+  },
+  {
+   "bugid": 1947005,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Implement MOZ_CONSTINIT for gcc -std=c++17"
+  },
+  {
+   "bugid": 1946796,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Update ML Utils root directory"
+  },
+  {
+   "bugid": 1942380,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use nsMultiplexInputStream directly from C++."
+  },
+  {
+   "bugid": 1943056,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove flags from net_coalescePath"
+  },
+  {
+   "bugid": 1944365,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Consider using a single `mSpec` buffer in `nsSimpleURI`"
+  },
+  {
+   "bugid": 1945102,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "The variant `http2` expiration is on 2025-03-01"
+  },
+  {
+   "bugid": 1941666,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add XPCOM api for CORS preflight cache"
+  },
+  {
+   "bugid": 1946942,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Make viewport logic clearer"
+  },
+  {
+   "bugid": 1946184,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Toplevel window leftovers on X11, and wrong sizing on Wayland, after moving to tiled state"
+  },
+  {
+   "bugid": 1883857,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "object metric: Add JOG support"
+  },
+  {
+   "bugid": 1908327,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "Migrate finding in scope locations from Babel to lezer"
+  },
+  {
+   "bugid": 1947023,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Test-case reducer add-on is blank on Nightly"
+  },
+  {
+   "bugid": 1634662,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Search in Inspector doesn't find some elements (rel=\"icon\")"
+  },
+  {
+   "bugid": 1947119,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Fix comment in CSS for test browser_rules_css-compatibility-learn-more-link.js"
+  },
+  {
+   "bugid": 1767696,
+   "status": "RESOLVED",
+   "component": "DevTools:about:debugging",
+   "summary": "Intermittent devtools/client/aboutdebugging/test/browser/browser_aboutdebugging_serviceworker_start.js | single tracking bug"
+  },
+  {
+   "bugid": 1945458,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Add support for TypeScript definitions for pre-processed import AppConstants.sys.mjs"
+  },
+  {
+   "bugid": 1946865,
+   "status": "RESOLVED",
+   "component": "Fenix:App Links",
+   "summary": "Always open links in apps checkbox should not be shown in private tabs"
+  },
+  {
+   "bugid": 1945107,
+   "status": "RESOLVED",
+   "component": "Fenix:Downloads",
+   "summary": "Fenix crashes when downloading a file with a very long extension"
+  },
+  {
+   "bugid": 1943063,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[NotifyDatasetChanged] Use DiffUtils in SaveCollectionListAdapter instead of NotifyDatasetChanged"
+  },
+  {
+   "bugid": 1943067,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "[NotifyDatasetChanged] Use DiffUtils in AndroidComponents: DeviceFragment instead of NotifyDatasetChanged"
+  },
+  {
+   "bugid": 1935700,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Implement blocked tracker categories for Enhanced Tracking Protection"
+  },
+  {
+   "bugid": 1937955,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Implement clearing site data from the Unified Trust Panel"
+  },
+  {
+   "bugid": 1938217,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Implement connection security panel for the Unified Trust Panel"
+  },
+  {
+   "bugid": 1938500,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Implement navigation to privacy and security settings from the Unified Trust Panel"
+  },
+  {
+   "bugid": 1943086,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "[Toolbar redesign] Wrong toolbar values sent to APZ when exiting fullscreen"
+  },
+  {
+   "bugid": 1945065,
+   "status": "RESOLVED",
+   "component": "Fenix:Toolbar",
+   "summary": "Improve searching tabs performance when opening a lot of tabs."
+  },
+  {
+   "bugid": 1872229,
+   "status": "NEW",
+   "component": "Fenix:Tooling",
+   "summary": "Upstream remaining mozilla-lint-rules to Android Components"
+  },
+  {
+   "bugid": 1946773,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Add landscape form factor to the FlexibleWindowLightDarkPreview to assist with landscape mode previews"
+  },
+  {
+   "bugid": 1946939,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma [tier 2] ui-test-arm org.mozilla.fenix.ui.SitePermissionsTest#allowNotificationsPermissionTest | androidx.test.uiautomator.UiObjectNotFoundException: UiSelector[TEXT=Open notifications dialogue]"
+  },
+  {
+   "bugid": 1947101,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < TranslationsTest. verifyFirstTranslationBottomSheetTranslateFunctionalityTest >"
+  },
+  {
+   "bugid": 1934410,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dedicated search dropdown panel should probably be a `type=\"arrow\"` to remove the visible extra padding-block"
+  },
+  {
+   "bugid": 1945663,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "browser/components/urlbar/tests/quicksuggest/browser/browser_quicksuggest_ping_amp.js perma-fails for artifact builds"
+  },
+  {
+   "bugid": 1939658,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Replace new URL usage with URL.parse/URL.canParse where possible"
+  },
+  {
+   "bugid": 1946551,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Accessible name contains hyperlink or file name"
+  },
+  {
+   "bugid": 1947182,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update targeting for Desktop to Mobile Adoption message"
+  },
+  {
+   "bugid": 1940816,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Put newtab chrome and resource assets under chrome://newtab and resource://newtab"
+  },
+  {
+   "bugid": 1943469,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[inline topic selection] Keyboard navigation for checkboxes"
+  },
+  {
+   "bugid": 1947195,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab showWeather has Nimbus setup prefs mismatch"
+  },
+  {
+   "bugid": 1943998,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Enable the ability to track sponsored links in subframes"
+  },
+  {
+   "bugid": 1944002,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update search-telemetry-v2 schema with subframe related data"
+  },
+  {
+   "bugid": 1944910,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hide sidebar main element when \"hide-sidebar\" is selected in vertical tabs mode."
+  },
+  {
+   "bugid": 1945927,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Resizing the sidebar is broken after toggling sidebar on and off"
+  },
+  {
+   "bugid": 1946188,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add test for resizing the sidebar after toggling revamp on and off"
+  },
+  {
+   "bugid": 1945463,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "[tab groups d&d] Fix greatestOverlap to account for elements completely overlapping one another"
+  },
+  {
+   "bugid": 1946226,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "getRustVersionFor is called repeatedly during Android builds"
+  },
+  {
+   "bugid": 1946495,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "`./mach run --debug` on android should use jdb from mozbuild jdk"
+  },
+  {
+   "bugid": 1946244,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Update the mozconfig template for android builds to match current behaviour"
+  },
+  {
+   "bugid": 1937801,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Cache `uv` and `pip` caches across workers"
+  },
+  {
+   "bugid": 1945435,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Add core24 Snap variants"
+  },
+  {
+   "bugid": 1944615,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "ANR when calling ShortcutManagerCompat.isRequestPinShortcutSupported"
+  },
+  {
+   "bugid": 1946455,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Refactor fragments that only contain ComposeView to implement BaseComposeFragment"
+  },
+  {
+   "bugid": 1926079,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add documentation for how to reuse toolkit code in Android"
+  },
+  {
+   "bugid": 1862600,
+   "status": "REOPENED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent /webdriver/tests/bidi/network/add_intercept/url_patterns.py | single tracking bug"
+  },
+  {
+   "bugid": 1938604,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for \"userContexts\" argument to \"sessions.subscribe\" command"
+  },
+  {
+   "bugid": 1909498,
+   "status": "REOPENED",
+   "component": "Toolkit:Application Update",
+   "summary": "Frequent a11y toolkit/mozapps/update/tests/browser/browser_doorhanger_bc_multiUpdate.js (finished) | single tracking bug"
+  },
+  {
+   "bugid": 1620998,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Write a crash monitor program to handle annotations and minidump writing"
+  },
+  {
+   "bugid": 1945789,
+   "status": "NEW",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clear-site-data: \"cache\": Add more tests for iframes within iframes."
+  },
+  {
+   "bugid": 1945814,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clear-site-data: \"cache\": Make testCacheClear reuseable and use it in clear-cache.https.html"
+  },
+  {
+   "bugid": 1946801,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[AU][danmurphys.com.au] Support type=\"search\" in autofill"
+  },
+  {
+   "bugid": 1928020,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Create a Places component exposing an independent read-only connection"
+  },
+  {
+   "bugid": 1946837,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Allow sorting by column in Interactions Viewer"
+  },
+  {
+   "bugid": 1947157,
+   "status": "RESOLVED",
+   "component": "support.mozilla.org:Knowledge Base Content",
+   "summary": "Move linux security warning content into own page"
+  }
+ ],
+ "fixed": 72,
+ "total": 88,
+ "restricted": 2
+}
