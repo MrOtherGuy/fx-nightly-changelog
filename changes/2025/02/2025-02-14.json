@@ -1,0 +1,562 @@
+{
+ "date": "2025-02-14",
+ "buildid": "20250214095524",
+ "cset": "ffddf6c98dc7cfec5eb11ceb7d16e9160165dfee",
+ "bugs": [
+  {
+   "bugid": 1947743,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Flush frames before activating the view transition."
+  },
+  {
+   "bugid": 1947746,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement dynamic UA sheet style rules"
+  },
+  {
+   "bugid": 1947755,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add a test for view-transition global keyframe lookup."
+  },
+  {
+   "bugid": 1947107,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Rename `WhiteSpaceVisibilityKeeper::ReplaceText` because it does not replace text without `CompositionTransaction`"
+  },
+  {
+   "bugid": 1942744,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Implement NavigationDestination"
+  },
+  {
+   "bugid": 1947148,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Implement NavigationTransition"
+  },
+  {
+   "bugid": 1947672,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enabling Trusted Types causes issues with Picture-in-Picture on www.youtube.com"
+  },
+  {
+   "bugid": 1919688,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add PerfStats in more places in a11y code"
+  },
+  {
+   "bugid": 1946593,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Setting disabled on input should not dispatch EDITABLE state change"
+  },
+  {
+   "bugid": 1946545,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Crash in [@ mozilla::layers::CanvasTranslator::AddBuffer]"
+  },
+  {
+   "bugid": 1948175,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Failed to get snapshot of WebGL on macOS"
+  },
+  {
+   "bugid": 1927209,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Crash in [@ IPC::MessageReader::FatalError | IPC::MessageBufferReader::MessageBufferReader | IPC::ParamTraits<JSStructuredCloneData>::Read | IPC::ParamTraits<mozilla::SerializedStructuredCloneBuffer>::Read | IPC::ParamTraits<mozilla::dom::indexedDB::Se..."
+  },
+  {
+   "bugid": 1944669,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Warning \"failed to send SIGKILL to process\" appears in terminal"
+  },
+  {
+   "bugid": 1947418,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Shared Memory Leak after bug 1927209 (backed out)"
+  },
+  {
+   "bugid": 1947719,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move setImportAttributes call out of NIGHTLY_BUILD guard"
+  },
+  {
+   "bugid": 1947976,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove Record & Tuple jit-tests"
+  },
+  {
+   "bugid": 1943131,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Make Iterator.range implementation use internal objects rather than generator"
+  },
+  {
+   "bugid": 1942203,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add Metrics for Time to First Token, Decoding Time, and End-to-End Initialization"
+  },
+  {
+   "bugid": 1945904,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "GenAIChild spams the parent process with `HideShortcuts` messages and should manage event listeners more efficiently"
+  },
+  {
+   "bugid": 1947298,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Inference engine results that return features are in a dict rather than an array"
+  },
+  {
+   "bugid": 1947897,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Expose doh-rollout.provider-list to Nimbus Feature Manifest"
+  },
+  {
+   "bugid": 1943597,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Firefox debug builds abort if I right click on the data in the browser console (with \"Assertion failure: result.mScrollId == ScrollableLayerGuid::NULL_SCROLL_ID || !layersIdExists\")"
+  },
+  {
+   "bugid": 1945717,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Use `max(screen width, 980px)` as the initial containing block width on Android devices for sites in desktop mode"
+  },
+  {
+   "bugid": 1775698,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent browser/components/resistfingerprinting/test/browser/browser_dynamical_window_rounding.js | single tracking bug"
+  },
+  {
+   "bugid": 1936647,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Improve font fingerprinting detection"
+  },
+  {
+   "bugid": 1940904,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a telemetry for storage accesss heuristics triggered by trackers"
+  },
+  {
+   "bugid": 1556016,
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "Letterboxing can be bypassed in a pre-render state"
+  },
+  {
+   "bugid": 1945716,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "[Web Console] Pressing backspace does not correctly delete a non-BMP character"
+  },
+  {
+   "bugid": 1943605,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Add the font version in the font panel"
+  },
+  {
+   "bugid": 1946359,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "9.84 - 2.02% damp browser-toolbox.connect.DAMP / damp custom.jsdebugger.open.DAMP + 20 more (Linux, OSX, Windows) regression on Thu January 30 2025"
+  },
+  {
+   "bugid": 1947797,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn Fonts panel expander/twisty into proper buttons"
+  },
+  {
+   "bugid": 1942072,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "long Integers rounding last two digits to '00' in parsed Request/Response JSON in Netmonitor"
+  },
+  {
+   "bugid": 1945405,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Make typescript-dom-lib-generator node import scoped to @microsoft"
+  },
+  {
+   "bugid": 1945472,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "TypeScript errors in lib.gecko.dom.d.ts about Interface 'HTMLScriptElement' incorrectly extends interface 'HTMLElement'"
+  },
+  {
+   "bugid": 1947757,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Add argument to mach vendor to allow just new files in moz.yaml to be downloaded."
+  },
+  {
+   "bugid": 1947871,
+   "status": "RESOLVED",
+   "component": "Fenix:Crash Reporting",
+   "summary": "Update Sentry to version 8.2.0"
+  },
+  {
+   "bugid": 1942758,
+   "status": "ASSIGNED",
+   "component": "Fenix:General",
+   "summary": "`BrowserStoreBinding` doesn't appear to be used"
+  },
+  {
+   "bugid": 1947806,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Fix CSP error on Fenix low risk error page"
+  },
+  {
+   "bugid": 1947886,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Pick up 2025-02-12 minor AndroidX dependency bumps"
+  },
+  {
+   "bugid": 1948126,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update AGP to version 8.8.1"
+  },
+  {
+   "bugid": 1948023,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Ensure the opt-out ping is sent when telemetry is disabled"
+  },
+  {
+   "bugid": 1929224,
+   "status": "RESOLVED",
+   "component": "Fenix:Privacy",
+   "summary": "FPP set in Settings \"in all tabs\" pbmode \"false\" in about:config"
+  },
+  {
+   "bugid": 1945737,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Implement tracker category details panel in the Unified Trust Panel"
+  },
+  {
+   "bugid": 1947473,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create a new network connection status helper"
+  },
+  {
+   "bugid": 1947953,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Disable UI tests in which we enable/disable the network connection"
+  },
+  {
+   "bugid": 1945807,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "\"Downloading and verifying extension...\" prompt doesn't follow the Private mode theme"
+  },
+  {
+   "bugid": 1932711,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove urlbar.abandonment and urlbar.engagement scalars"
+  },
+  {
+   "bugid": 1946089,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Calculator: Scientific notation for large numbers"
+  },
+  {
+   "bugid": 1946467,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Calculator: Multiple commas/periods should be treated as separators not as decimal points"
+  },
+  {
+   "bugid": 1947055,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Simplify Suggest initialization and how it handles updates to Nimbus variables"
+  },
+  {
+   "bugid": 1947995,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Add browser/components/pagedata/ to the list of folders that the bookmarks & history team is responsible for"
+  },
+  {
+   "bugid": 1936020,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Make CA requests that are part of the same user action have the same user_action_id"
+  },
+  {
+   "bugid": 1779688,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Implement \"Copy Link to Highlight\" links"
+  },
+  {
+   "bugid": 1942154,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "fix npm package vulnerabilities for asrouter and aboutwelcome"
+  },
+  {
+   "bugid": 1943631,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add custom wallpapers Fluent strings"
+  },
+  {
+   "bugid": 1943666,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add custom wallpaper controls/UI"
+  },
+  {
+   "bugid": 1946670,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab shortcuts darkmode hover without background wrong color"
+  },
+  {
+   "bugid": 1947225,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Shortcut title overflowing in Edit/New Shortcut dialogs from about:home"
+  },
+  {
+   "bugid": 1948074,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update IAB Banner Impression event to pass shim.impression"
+  },
+  {
+   "bugid": 1948164,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab sections card for hero isn't quite working at a certain breakpoint"
+  },
+  {
+   "bugid": 1933112,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Do not restore saved tab groups in private windows"
+  },
+  {
+   "bugid": 1947503,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "SessionStore can NOT open closed windows that was saved before Firefox 135"
+  },
+  {
+   "bugid": 1898739,
+   "status": "REOPENED",
+   "component": "Firefox:Sidebar",
+   "summary": "Frequent browser/components/sidebar/tests/browser/browser_toolbar_sidebar_button.js | single tracking bug"
+  },
+  {
+   "bugid": 1946822,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Hiding close button for expand on hover hides it for all visibility settings"
+  },
+  {
+   "bugid": 1947526,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "sidebar.visibility pref gets reset after each browser restart"
+  },
+  {
+   "bugid": 1945169,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When a group is the only thing in a window, moving it via the TOM context menu creates a saved clone"
+  },
+  {
+   "bugid": 1948067,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Rename \"Show more\" to \"Show all\" in the List all tabs > Tab groups section"
+  },
+  {
+   "bugid": 1946868,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Remove \"Turn on/off Vertical Tabs\" in the tab context menu"
+  },
+  {
+   "bugid": 1917161,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "High frequency toolkit/components/translations/tests/browser/browser_about_translations_language_swap.js | single tracking bug"
+  },
+  {
+   "bugid": 1943516,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Intermittent browser/components/translations/tests/browser/browser_translations_full_page_panel_flip_lexical_shortlist.js | single tracking bug"
+  },
+  {
+   "bugid": 1946901,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Intermittent toolkit/components/translations/tests/browser/browser_about_translations_flip_lexical_shortlist.js | single tracking bug"
+  },
+  {
+   "bugid": 1946988,
+   "status": "REOPENED",
+   "component": "Firefox:Translations",
+   "summary": "Intermittent browser/components/translations/tests/browser/browser_translations_select_panel_flip_lexical_shortlist.js | single tracking bug"
+  },
+  {
+   "bugid": 1948008,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove unused and invalid import for \"chrome://browser/content/translations/TranslationsTelemetry.sys.mjs\""
+  },
+  {
+   "bugid": 1947505,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Merge the generate_sdk_bindings and generate_sdk_bindings gradle tasks"
+  },
+  {
+   "bugid": 1944513,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "avoid symbol visibility issues for getauxval()"
+  },
+  {
+   "bugid": 1947179,
+   "status": "ASSIGNED",
+   "component": "Focus:General",
+   "summary": "Refactor AppStore to use UIStore"
+  },
+  {
+   "bugid": 1948027,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Remove the Focus dependencies plugin"
+  },
+  {
+   "bugid": 1946522,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "update-verify: switch docker image from ubuntu 20.04 to debian 12"
+  },
+  {
+   "bugid": 1947112,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Performing actions can fail with async events enabled, throwing \"JavascriptException: Cyclic object value\""
+  },
+  {
+   "bugid": 1934551,
+   "status": "NEW",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"webExtenstion.install\" command"
+  },
+  {
+   "bugid": 1934553,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"webExtenstion.uninstall\" command"
+  },
+  {
+   "bugid": 1565033,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add memory checking to the out-of-process crash generator"
+  },
+  {
+   "bugid": 1946542,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Populate crash reporter client glean clientinfo with build id at runtime"
+  },
+  {
+   "bugid": 1946513,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Keyfox logo should be smaller in the Null state"
+  },
+  {
+   "bugid": 1946830,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Add new probe for when CPM is toggled in sidebar"
+  },
+  {
+   "bugid": 1947634,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Add Telemetry for CPM"
+  },
+  {
+   "bugid": 1947185,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Remove style-src-elem 'unsafe-inline' directive from the bookmarks sidebar CSP"
+  },
+  {
+   "bugid": 1932817,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "A \"+\" is missing from the \"New profile\" option in the menu bar"
+  },
+  {
+   "bugid": 1945207,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[macOS] External links are not opening in the active Firefox profile (in focus)"
+  },
+  {
+   "bugid": 1942336,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Document all the different metric ids in the FOG dev book"
+  },
+  {
+   "bugid": 1945493,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Remove inline stylesheet from MozMenuPopup"
+  },
+  {
+   "bugid": 1947151,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.admesy.com - 3-em dash not displayed"
+  }
+ ],
+ "fixed": 80,
+ "total": 92,
+ "restricted": 2
+}
