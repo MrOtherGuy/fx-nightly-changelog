@@ -1,0 +1,376 @@
+{
+ "date": "2025-02-18",
+ "buildid": "20250218093115",
+ "cset": "86f04c8644c25df559f4d2e525ad43666056ab5f",
+ "bugs": [
+  {
+   "bugid": 1948404,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Guard HEVC support on MacOS and Android by the preference `media.hevc.enabled`"
+  },
+  {
+   "bugid": 1946291,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Remove or update metrics expiring in Firefox 138: networking.fetch_keepalive_* before Gecko version gets increased to 138 on 2025-03-03"
+  },
+  {
+   "bugid": 1948637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Align fetch keepalive limits with Chrome"
+  },
+  {
+   "bugid": 1890560,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Replacing notification with tag fires events with different order on Windows; show happens before close"
+  },
+  {
+   "bugid": 1948577,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Revert undesired IDL changes for Attr.textContent and Attr.nodeValue"
+  },
+  {
+   "bugid": 1948189,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "extend expiration of `no-gpu-process` variant"
+  },
+  {
+   "bugid": 1948572,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update error handling of ImageBitmap::CreateFromOffscreenCanvas()"
+  },
+  {
+   "bugid": 1948768,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Keep grid_size range small"
+  },
+  {
+   "bugid": 1948798,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "Reduce bounds checks ModularTransforms"
+  },
+  {
+   "bugid": 1947707,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "GPUCanvasContext.configure crashes firefox"
+  },
+  {
+   "bugid": 1948578,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add premultiplied mode handling to CanvasContext::GetSurfaceSnapshot()"
+  },
+  {
+   "bugid": 1948496,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "`glsl-to-cxx`: include file path when panicking on `TranslationUnit::parse`"
+  },
+  {
+   "bugid": 1947875,
+   "status": "ASSIGNED",
+   "component": "Core:Internationalization",
+   "summary": "Fix wrong use of Some() in AppDateTimeFormat::Format"
+  },
+  {
+   "bugid": 1948584,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Replace MCompare::inputType()"
+  },
+  {
+   "bugid": 1942850,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Temporal.Duration.toLocaleString not working as expected."
+  },
+  {
+   "bugid": 421436,
+   "status": "REOPENED",
+   "component": "Core:Layout",
+   "summary": "Remove br 1-appunit width hack"
+  },
+  {
+   "bugid": 1937367,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "After resuming laptop from overnight sleep/standby/Lid Close, all pages intermittently stop loading for 1 minute(other browser on the same machine loads pages just fine)"
+  },
+  {
+   "bugid": 1948631,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Increase Browser.cache.disk.metadata_memory_limit to 1 MB for release users"
+  },
+  {
+   "bugid": 1940767,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Groundwork for supporting WebTransport over HTTP/2"
+  },
+  {
+   "bugid": 1942817,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add null-check to zstd allocator"
+  },
+  {
+   "bugid": 1948710,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "convert most Throw calls"
+  },
+  {
+   "bugid": 1944707,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Move pippki.js to .sys.mjs and use a new type for usages in CertVerifier::VerifyCert"
+  },
+  {
+   "bugid": 1945539,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Convert web-platform-tests-privatebrowsing from a WPT subsuite to a WPT variant (re-enable web platform tests for service-workers/cache-storage)"
+  },
+  {
+   "bugid": 1946676,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Toggling the titlebar checkbox on and off causes the window to grow."
+  },
+  {
+   "bugid": 1946707,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Replacing notification with tag fires events with different order on libnotify; show happens before close"
+  },
+  {
+   "bugid": 1946985,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ mozilla::widget::DMABufDevice::GetDRMFormat] (continued)"
+  },
+  {
+   "bugid": 1948283,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Recompute bounds a bit less often."
+  },
+  {
+   "bugid": 1948565,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Allow accelerating transparent windows popups"
+  },
+  {
+   "bugid": 1948734,
+   "status": "RESOLVED",
+   "component": "Core:Window Management",
+   "summary": "After Bug 71895, it is not possible to use --disable-backgroundtasks on macOS"
+  },
+  {
+   "bugid": 1948614,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Off-by-one error in fmt logging if formatted string is larger than buffer"
+  },
+  {
+   "bugid": 1948301,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Simplify nsXULElement::CreateFromPrototype"
+  },
+  {
+   "bugid": 1948581,
+   "status": "ASSIGNED",
+   "component": "DevTools:Console",
+   "summary": "Console Network log Response Raw toggle doesn't work anymore"
+  },
+  {
+   "bugid": 1948304,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Add documentation for network overrides in netmonitor"
+  },
+  {
+   "bugid": 1701557,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "DevTools Netmonitor - Search tab - add context menu with Refresh/Reload, Block/Unblock, Copy options"
+  },
+  {
+   "bugid": 1947245,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Add documentation for Early Hints headers"
+  },
+  {
+   "bugid": 1948029,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Replace View.IMPORTANT_FOR_ACCESSIBILITY_YES with View.IMPORTANT_FOR_AUTOFILL_YES when using setImportantForAutofill"
+  },
+  {
+   "bugid": 1948178,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add service to use install refererr resposne to determine if marketing onboarding should be shown"
+  },
+  {
+   "bugid": 1947497,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Accessing any usecase requires the entire dependency graph for all usecases to be initialized"
+  },
+  {
+   "bugid": 1942621,
+   "status": "RESOLVED",
+   "component": "Fenix:Tabs",
+   "summary": "Library title shadowed when searching with tabstrip enabled"
+  },
+  {
+   "bugid": 1948492,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Perma [tier 2] org.mozilla.fenix.ui.SettingsHTTPSOnlyModeTest#httpsOnlyModeEnabledOnlyInPrivateBrowsingTest | java.lang.AssertionError"
+  },
+  {
+   "bugid": 1948598,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.NavigationToolbarComposeTest#verifySecurePageSecuritySubMenuTest | java.lang.AssertionError: UiSelector[CONTAINS_TEXT=Connection is secure, RESOURCE_ID=org.mozilla.fenix.debug:id/securityInfo] does not exist"
+  },
+  {
+   "bugid": 1947741,
+   "status": "VERIFIED",
+   "component": "Fenix:WebExtensions",
+   "summary": "“Show all sites”/”Show fewer sites” buttons on install dialog are not very visible when “Dark” theme is enabled"
+  },
+  {
+   "bugid": 1903903,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_secondaryActions.js | single tracking bug"
+  },
+  {
+   "bugid": 1947742,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Unable to select a Tab group from the Address bar when a Search engine suggestion is displayed"
+  },
+  {
+   "bugid": 1947909,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Use WebsiteFilter.isAllowed more often"
+  },
+  {
+   "bugid": 1925823,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Stop disabling screenshots component in mochitest harness"
+  },
+  {
+   "bugid": 1948612,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Collapsing a group doesn't collapse tabs playing sounds or any tabs with touch UI density"
+  },
+  {
+   "bugid": 1945020,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update minimum Rust version to 1.82"
+  },
+  {
+   "bugid": 1894692,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Support stylus input and fire PointerEvent with pointerType=pen"
+  },
+  {
+   "bugid": 1901120,
+   "status": "VERIFIED",
+   "component": "GeckoView:General",
+   "summary": "Fenix doesn't set `schemelessInput` in load info correctly"
+  },
+  {
+   "bugid": 1948412,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Perma mda win-hw Could not install python package: failed all attempts | ERROR: Could not install packages due to an OSError: [Errno 13] Permission denied: | ModuleNotFoundError: No module named 'jsonschema'"
+  },
+  {
+   "bugid": 1946774,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Support fractional numbers for x and y positions for mouse and touch pointer actions"
+  },
+  {
+   "bugid": 1948682,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "wd1 debug tasks on desktop have logs with size >5MB compressed and therefore don't get parsed by Treeherder - reduze log size"
+  },
+  {
+   "bugid": 1865146,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "\"JavaScriptError\" as raised by script evaluation should contain line and column if available"
+  },
+  {
+   "bugid": 1948651,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Fix checkFn in marionette window manager."
+  },
+  {
+   "bugid": 1947927,
+   "status": "NEW",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent /webdriver/tests/bidi/browsing_context/navigate/navigate.py | single tracking bug"
+  },
+  {
+   "bugid": 1946812,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Ignore focusin and input events during filling and clearing process"
+  },
+  {
+   "bugid": 1927808,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Profiles should remain disabled if BlockAboutProfiles enterprise policy is active"
+  },
+  {
+   "bugid": 1944631,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate histograms to Glean - part 2 landing in Firefox 137"
+  },
+  {
+   "bugid": 1947885,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Check that all Glean.category[\"prefix\" + suffix] calls made in Firefox desktop's JavaScript code are free of typos"
+  },
+  {
+   "bugid": 1948083,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "https://developer.mozilla.org/en-US/docs/Mozilla/Tech/XPCOM/Reference/Interface/nsIEffectiveTLDService not found"
+  }
+ ],
+ "fixed": 49,
+ "total": 61,
+ "restricted": 1
+}
