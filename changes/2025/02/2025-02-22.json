@@ -1,0 +1,580 @@
+{
+ "date": "2025-02-22",
+ "buildid": "20250222091445",
+ "cset": "0af7a39fb3e13a48ef366fdb2532896cdf7a119f",
+ "bugs": [
+  {
+   "bugid": 1949283,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Add Rust example component section in the firefox-source-docs"
+  },
+  {
+   "bugid": 1949812,
+   "status": "RESOLVED",
+   "component": "Application Services:Remote Settings",
+   "summary": "Audit JEXL-related crates so we can vendor in remote-settings with JEXL functionality"
+  },
+  {
+   "bugid": 1948887,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Allow parsing sheets with SRI metadata off the main thread."
+  },
+  {
+   "bugid": 1930931,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Unloaded tabs cannot be dragged from icon until after they have been loaded"
+  },
+  {
+   "bugid": 1949373,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add deprecated warning message to console for afterscriptexecute and beforescriptexecute events"
+  },
+  {
+   "bugid": 1949394,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Messaging Layer Security - Upgrade mls-platform-api to 5d88241b and mls-rs to b747d7ef (based on mls-rs 0.45.0)"
+  },
+  {
+   "bugid": 1949617,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ mozilla::StaticPrefs::accessibility_uia_enable]"
+  },
+  {
+   "bugid": 1949641,
+   "status": "NEW",
+   "component": "Core:Disability Access APIs",
+   "summary": "Port mitigations for Windows 11 Suggested Actions to MsaaAccessible/ia2AccessibleText"
+  },
+  {
+   "bugid": 1910796,
+   "status": "NEW",
+   "component": "Core:General",
+   "summary": "Test libz-rs-sys as an alternative to zlib"
+  },
+  {
+   "bugid": 1949341,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Page/Video stutter with  Bug 1946657 fix"
+  },
+  {
+   "bugid": 1949096,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "[libz-rs] Perma image/test/unit/test_encoder_png.js | run_test_for - [run_test_for : 118] \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAG0lEQVQIW2P8z8Dwn4GBYTUIMzL8R+Yw/IdzAMoLCgDGywYPAAAAAElFTkSuQmCC\" == \"data:image/png;base64,iV"
+  },
+  {
+   "bugid": 1949492,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Decide what to do with the AVIF_* legacy telemetry histograms"
+  },
+  {
+   "bugid": 1949839,
+   "status": "NEW",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-02-24)"
+  },
+  {
+   "bugid": 1947767,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use fuses to simplify or replace the ForOfPIC code"
+  },
+  {
+   "bugid": 1949680,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove remaining WPT ini files for JSON modules"
+  },
+  {
+   "bugid": 1949273,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make it easier to emit out-of-line code from Ion"
+  },
+  {
+   "bugid": 1861078,
+   "status": "NEW",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Optimize stack map finding during tracing"
+  },
+  {
+   "bugid": 1946618,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm: SimdOp::{F32x4,F64x2}Relaxed{Min,Max} incorrectly marked as commutative"
+  },
+  {
+   "bugid": 1947614,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Improve code generation of struct accesses"
+  },
+  {
+   "bugid": 1949101,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "The length of parameters and results of WebAssembly.Function can exceed MaxParams and MaxResults"
+  },
+  {
+   "bugid": 1925671,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "[UX Follow] Add responsive design for provider choice modal"
+  },
+  {
+   "bugid": 1944906,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "add `last update` and `last used` timestamps"
+  },
+  {
+   "bugid": 1949668,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Race condition between clearning mIsDeferredPurgePending and removing from the purge request list"
+  },
+  {
+   "bugid": 1944310,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Network cache clears partitions even when clearing by principal providing concrete partition to clear"
+  },
+  {
+   "bugid": 1906590,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "HTTPS-Only/First shouldn't try to downgrade pages on 3s timer that have HTTPS RR enabled"
+  },
+  {
+   "bugid": 1949100,
+   "status": "RESOLVED",
+   "component": "Core:Networking: JAR",
+   "summary": "[libz-rs] Perma modules/libjar/zipwriter/test/unit/test_bug399727.js | xpcshell return code: 0"
+  },
+  {
+   "bugid": 1949339,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Use the proper nsIDOMWindowUtils for popup in collectSampledScrollOffsets"
+  },
+  {
+   "bugid": 1947480,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Navigation 3pc heuristic not showing up in telemetry"
+  },
+  {
+   "bugid": 1949625,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove AWS WAF Captcha Detection"
+  },
+  {
+   "bugid": 1949804,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "User activation on bounce tracking record should include the initial site if it was navigating with user interaction"
+  },
+  {
+   "bugid": 1949805,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Window opener heuristic with user interaction should not only work for trackers"
+  },
+  {
+   "bugid": 1942805,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Builtins: building in xul instead of separate library"
+  },
+  {
+   "bugid": 1949058,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger Source Tree settings icon badly positioned"
+  },
+  {
+   "bugid": 1812942,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/shared/network-observer/test/browser/browser_networkobserver.js | single tracking bug"
+  },
+  {
+   "bugid": 1949095,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "[libz-rs] Perma devtools/client/netmonitor/test/browser_net_content-type.js | The displayed transferred size is correct. - Got \"333 B\", expected \"324 B\""
+  },
+  {
+   "bugid": 1949052,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update top-level node-module packages"
+  },
+  {
+   "bugid": 1949573,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Prevent l10n linter setup from logging to stdout"
+  },
+  {
+   "bugid": 1948816,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "gcc-14: dangling references in mozilla/toolkit/components/telemetry/core/Telemetry.cpp"
+  },
+  {
+   "bugid": 1949244,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Add all onboarding cards to defaults for dev builds"
+  },
+  {
+   "bugid": 1945384,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Failed to install WebCompat webextension : mozilla.components.browser.engine.gecko.webextension.GeckoWebExtensionException"
+  },
+  {
+   "bugid": 1949659,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version a885953e9db2586e1c5663bc52e941b5ace5d52e from 2025-02-21 05:02:25"
+  },
+  {
+   "bugid": 1936084,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Remove \"VIEW\" button from \"Tab Saved!\" snackbar after adding a tab to a collection"
+  },
+  {
+   "bugid": 1942638,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "[homepage compose] Incorrect width for the \"Customize homepage\" button"
+  },
+  {
+   "bugid": 1943040,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "[homepage compose] Removing a tab from collection with swipe gestures removes all tabs below it or the entire collection"
+  },
+  {
+   "bugid": 1943298,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "[homepage compose] Incorrect UI for the Collections placeholder in RTL language"
+  },
+  {
+   "bugid": 1948373,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Fix homepage PocketSection preview"
+  },
+  {
+   "bugid": 1945634,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "[Trending Searches] Implement telemetry"
+  },
+  {
+   "bugid": 1949823,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Update Detekt to version 1.23.8"
+  },
+  {
+   "bugid": 1948595,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.NavigationToolbarTest#verifyInsecurePageSecuritySubMenuTest | single tracking bug"
+  },
+  {
+   "bugid": 1949483,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Remove Fenix and Focus instrumented screenshot tests and execution scheduling"
+  },
+  {
+   "bugid": 1932707,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove FX_URLBAR_SELECTED_RESULT_METHOD telemetry"
+  },
+  {
+   "bugid": 1949528,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "URL color formatting disappears when adjusting window"
+  },
+  {
+   "bugid": 1949742,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use will-change: transform in the urlbar to make sure to consistently contain fixed position descendants."
+  },
+  {
+   "bugid": 1948320,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Duplicate remaining legacy telemetry probes into Glean (browser/components/places)"
+  },
+  {
+   "bugid": 1949166,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Firefox crashes when uploading multiples files/folder with multiple files via file picker without the agent running"
+  },
+  {
+   "bugid": 1946400,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Move nsBrowserAccess (nsIBrowserDOMWindow implementation on desktop) to its own module"
+  },
+  {
+   "bugid": 1940280,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Create unit tests for stub installer"
+  },
+  {
+   "bugid": 1919598,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Firefox View Discoverability treatment-b in m-c"
+  },
+  {
+   "bugid": 1949261,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Positioning and string updates for Tab Groups callouts"
+  },
+  {
+   "bugid": 1940311,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove Wallpaper v1 `wallpaper-light` and `wallpaper-dark` prefs"
+  },
+  {
+   "bugid": 1944832,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Karma tests for newtab & asrouter appear to be running against Firefox 113"
+  },
+  {
+   "bugid": 1946435,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[IAB Medium rectangle] Variant A has hover state of cards and lack rounded corner at the bottom for default state"
+  },
+  {
+   "bugid": 1949747,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "valid JSDoc types for AboutNewtabService"
+  },
+  {
+   "bugid": 1949598,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 34ef74cf0eb47f665a333ef1d7a106718b207577 from 2025-02-20 22:11:43"
+  },
+  {
+   "bugid": 1915289,
+   "status": "ASSIGNED",
+   "component": "Firefox:Search",
+   "summary": "Add option for suggest URL in custom search engines dialog"
+  },
+  {
+   "bugid": 1948490,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Reference the correct browser element in subframe telemetry"
+  },
+  {
+   "bugid": 1775795,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent browser/modules/test/browser/browser_UsageTelemetry_interaction.js | single tracking bug"
+  },
+  {
+   "bugid": 1938413,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Implement \"callout 4A\" and \"callout 4B\" for RC in the sidebar, when a user disables auto-open"
+  },
+  {
+   "bugid": 1938417,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Implement \"callout 5\" for RC in the sidebar, when a user turns off RC"
+  },
+  {
+   "bugid": 1945688,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Add a setting to auto-close RC panel when leaving supported domains and PDPs"
+  },
+  {
+   "bugid": 1946869,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar toolbar button can appear checked when the sidebar launcher is hidden"
+  },
+  {
+   "bugid": 1949798,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical spacing for tab groups should be the same as tabs"
+  },
+  {
+   "bugid": 1942333,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Unloaded about:preferences tabs do not correctly handle \"action=\" params"
+  },
+  {
+   "bugid": 1938049,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab Group label has a jump animation when dropping tabs in the group"
+  },
+  {
+   "bugid": 1948943,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Moving two discontinued tabs from before and after a Collapsed Tab group will cause tabs to overlap"
+  },
+  {
+   "bugid": 1949010,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add Glean Metrics for Smart Tab Grouping"
+  },
+  {
+   "bugid": 1949419,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add to a Tab group menu should show recently created Tab groups at the top"
+  },
+  {
+   "bugid": 1949590,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "STG pref need to be watched to update UI not just on init"
+  },
+  {
+   "bugid": 1949759,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Recent tab groups\" header disappears when there are only 5 or fewer groups"
+  },
+  {
+   "bugid": 1949840,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Rename dropTab and dropTabs methods now that we use them not just for dropping"
+  },
+  {
+   "bugid": 1949866,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make _handleTabMove private"
+  },
+  {
+   "bugid": 1949637,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Avoid firing load events for each subframe of loading animation."
+  },
+  {
+   "bugid": 1948931,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Move CUI-related browser window initialization into CustomizableUI itself"
+  },
+  {
+   "bugid": 1726251,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Try builds for Flatpak are broken"
+  },
+  {
+   "bugid": 1949189,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run on-change `l10n` tasks against opt builds instead of shippable"
+  },
+  {
+   "bugid": 1949194,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "add build-signing and repackage jobs for linux64-aarch64/opt"
+  },
+  {
+   "bugid": 1949720,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "repackage-macosx64/opt missing on production branches"
+  },
+  {
+   "bugid": 1949785,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "allow repackage-deb task for linux64-aarch64/opt"
+  },
+  {
+   "bugid": 1949464,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "replace release-flatpak-repackage task with repackage-flatpak in release graphs"
+  },
+  {
+   "bugid": 1949453,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash reporter does not correctly convert the AsyncShutdownTimeout field when creating the Glean ping"
+  },
+  {
+   "bugid": 1786141,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "about:processes action-icon and profiler-icon image buttons are not accessible and cannot be activated with keyboard"
+  },
+  {
+   "bugid": 1949098,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "[libz-rs] Perma toolkit/components/places/tests/favicons/test_favicons_conversions.js | test_storing_a_big_16x16_icon - [test_storing_a_big_16x16_icon : 1] false == true"
+  },
+  {
+   "bugid": 1901009,
+   "status": "NEW",
+   "component": "Toolkit:PopupNotifications and Notification Bars",
+   "summary": "Intermittent browser/base/content/test/popupNotifications/browser_popupNotification_swapBrowser.js | single tracking bug"
+  },
+  {
+   "bugid": 1949481,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Drop unused return value from LookupCache::GetLookupFragments."
+  },
+  {
+   "bugid": 1949587,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Cannot use file pickers in extension background pages any more"
+  }
+ ],
+ "fixed": 82,
+ "total": 95,
+ "restricted": 2
+}
