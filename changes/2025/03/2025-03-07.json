@@ -1,0 +1,616 @@
+{
+ "date": "2025-03-07",
+ "buildid": "20250307090837",
+ "cset": "12336733d14329d73516e83afd9b6d690cd9cf16",
+ "bugs": [
+  {
+   "bugid": 1950616,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "WebVTT cues get oddly large on portrait videos, and cannot be styled properly"
+  },
+  {
+   "bugid": 1924070,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[macOS/linux] Threejs video does not play"
+  },
+  {
+   "bugid": 1942097,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "With media.ffvpx-hw.enabled rapidly scrolling on youtube shorts will lead to system OOM and crash"
+  },
+  {
+   "bugid": 1941479,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[clang-trunk] Perma error[E0412]: cannot find type `_Allocator` in this scope"
+  },
+  {
+   "bugid": 1950853,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Panic in the resource cache when using WebRender for view transtion live captures."
+  },
+  {
+   "bugid": 1951780,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`anchor-size()` in Math Functions Don't Work in Margin Properties"
+  },
+  {
+   "bugid": 1951999,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Turn bug 1922333 (view transition live capturing) on."
+  },
+  {
+   "bugid": 1952207,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-view-transitions] Fix live capture snapshot coordinate space"
+  },
+  {
+   "bugid": 1951614,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash [@ RefPtr<nsAtom>::get] through [@ ContentParent::RecvUnstoreAndBroadcastBlobURLUnregistration]"
+  },
+  {
+   "bugid": 1641171,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Find a better way to handle browser keyboard shortcut for user activation"
+  },
+  {
+   "bugid": 1944868,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Avoid USVString in XHR"
+  },
+  {
+   "bugid": 1945081,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Firefox exposes child frames that embeded in shadow dom to parent window"
+  },
+  {
+   "bugid": 1952267,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add H1 styling pref to the feature manifest, so it can be rolled out incrementally"
+  },
+  {
+   "bugid": 1897564,
+   "status": "REOPENED",
+   "component": "Core:DOM: File",
+   "summary": "Assertion failure: usage == removedUsage, at /builds/worker/checkouts/gecko/dom/fs/parent/datamodel/FileSystemDatabaseManagerVersion001.cpp:882"
+  },
+  {
+   "bugid": 1951956,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Crash in [@ mozilla::dom::NotificationsCallback::~NotificationsCallback]"
+  },
+  {
+   "bugid": 1950605,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Implement an unoptimized Sanitizer prototype"
+  },
+  {
+   "bugid": 1952406,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /service-workers/service-worker/fetch-request-resources.https.html | Module Script load (url:https://web-platform.test:8443/service-workers/service-worker/resources/sample?test_module) - expected FAIL"
+  },
+  {
+   "bugid": 1644983,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Register CacheIOThread thread with profiler"
+  },
+  {
+   "bugid": 1950879,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "../include/mozilla/BaseProfilerMarkersPrerequisites.h throws many errors while compiling:"
+  },
+  {
+   "bugid": 1912944,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "\"Failed to launch GPU process\" on Android, causing software webrender fallback"
+  },
+  {
+   "bugid": 1952150,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Clear more TextureHosts in WebRenderImageHost::OnReleased()"
+  },
+  {
+   "bugid": 1951428,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "error[E0412]: cannot find type `Vulkan` in module `wgc::api`"
+  },
+  {
+   "bugid": 1952126,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-03-03)"
+  },
+  {
+   "bugid": 1064621,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Allow passing a filename through to perf"
+  },
+  {
+   "bugid": 1945540,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Implement importmap integrity verification"
+  },
+  {
+   "bugid": 1948517,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:206"
+  },
+  {
+   "bugid": 1951870,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loongarch][mips64] Fail to build js (js/src/jit/loong64/MacroAssembler-loong64-inl.h:999:3: error: no matching member function for call to 'ma_cmp_set')"
+  },
+  {
+   "bugid": 1951998,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Optimise BigInt string literal parser"
+  },
+  {
+   "bugid": 1931407,
+   "status": "NEW",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "CompileStreaming constructs full module bytecode and then ModuleGenerator::finishModule breaks it apart"
+  },
+  {
+   "bugid": 1951861,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Tweak `grid-max-sizing-flex-006.html` and add a web-platform test"
+  },
+  {
+   "bugid": 1891685,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add telemetry in the ml component"
+  },
+  {
+   "bugid": 1942518,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add Wllama for performance testing"
+  },
+  {
+   "bugid": 1943391,
+   "status": "REOPENED",
+   "component": "Core:Machine Learning",
+   "summary": "Initial entrypoint to detect preview reqeust and fetch content"
+  },
+  {
+   "bugid": 1947687,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "MayPurgeStep takes the lock a second time after purging an arena."
+  },
+  {
+   "bugid": 1952240,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Cleanup RFP ChromePrincipalCheck leftover pieces"
+  },
+  {
+   "bugid": 1949349,
+   "status": "REOPENED",
+   "component": "Core:Storage: Bucket File System",
+   "summary": "Turn web compatibility test for FileSystemFileHandle moves back on"
+  },
+  {
+   "bugid": 1200768,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "WebrtcVideoConduit cannot cope with having more than one H264 recv codec"
+  },
+  {
+   "bugid": 1949914,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Context menus only open the first mouse click when using SW-WR"
+  },
+  {
+   "bugid": 1951847,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "With mica popups, the bookmark menu popup seems to blend into the page - maybe becuase there is no border/shadow (Followup to bug 1950828)"
+  },
+  {
+   "bugid": 1952284,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Double-click to make youtube videos full-screen still shows the Windows Taskbar"
+  },
+  {
+   "bugid": 1950575,
+   "status": "ASSIGNED",
+   "component": "Core:XML",
+   "summary": "Vendor expat"
+  },
+  {
+   "bugid": 1942797,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Generate server-knobs config to be applied in tests when otherwise a subset of metrics is used"
+  },
+  {
+   "bugid": 1767721,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-browser-toolbox-workers.js | single tracking bug"
+  },
+  {
+   "bugid": 1837480,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger automatically continues execution when moving mouse and hovering over source code"
+  },
+  {
+   "bugid": 1934873,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "dev tools go to line shortcut not workin"
+  },
+  {
+   "bugid": 1950654,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Selecting a pretty printed location from the source tree selects the non-pretty-printed version"
+  },
+  {
+   "bugid": 1951575,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "devtools debugger font error"
+  },
+  {
+   "bugid": 1952036,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Make waitFor condition safer in browser_dbg-javascript-tracer-sidebar-values-search.js"
+  },
+  {
+   "bugid": 1952054,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger Source Tree settings icon is off by 1 px"
+  },
+  {
+   "bugid": 1952029,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Enable dumping test variable for most devtools browser mochitests"
+  },
+  {
+   "bugid": 1952188,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Builds with --enable-debug-js-modules fails about missing react-dom-server-dev.js file"
+  },
+  {
+   "bugid": 1952190,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Devtools fails loading with  --enable-debug-js-modules build flag"
+  },
+  {
+   "bugid": 1952153,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "The tooltip showing font samples uses the wrong font"
+  },
+  {
+   "bugid": 1562082,
+   "status": "REOPENED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Always enable profiler popup icon in local builds"
+  },
+  {
+   "bugid": 1951059,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Show the feature value in addition to the name in about:profiling"
+  },
+  {
+   "bugid": 1951476,
+   "status": "ASSIGNED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Change about:profiling index.xhtml file to HTML"
+  },
+  {
+   "bugid": 1945831,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Enable Prettier for chrome tests in toolkit/content/tests/widgets"
+  },
+  {
+   "bugid": 1952135,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version d65594a18c138554409454e3b30727161ccf146e from 2025-03-06 05:03:45"
+  },
+  {
+   "bugid": 1942645,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "[homepage compose] The transition between Private Browsing and Normal Browsing is not smooth"
+  },
+  {
+   "bugid": 1951270,
+   "status": "RESOLVED",
+   "component": "Fenix:Homepage",
+   "summary": "Opening a New Tab from the Menu should create a new about:home tab"
+  },
+  {
+   "bugid": 1952137,
+   "status": "RESOLVED",
+   "component": "Fenix:Logins",
+   "summary": "[Logins] Add debug setting for entering new logins flow"
+  },
+  {
+   "bugid": 1950220,
+   "status": "RESOLVED",
+   "component": "Fenix:Media",
+   "summary": "Tab continues to play video after closing tab (YouTube)"
+  },
+  {
+   "bugid": 1951510,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Follow up cleanup for Onboarding strings that were marked for removal in v135"
+  },
+  {
+   "bugid": 1951966,
+   "status": "RESOLVED",
+   "component": "Fenix:Search",
+   "summary": "[Trending Searches] Add Nimbus flag for maximum suggestions for recent, trending and top sites"
+  },
+  {
+   "bugid": 1897958,
+   "status": "RESOLVED",
+   "component": "Fenix:Tooling",
+   "summary": "Update Kotlin to version 2.1.10"
+  },
+  {
+   "bugid": 1941498,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < BookmarksTestCompose. deleteBookmarkFoldersTest >"
+  },
+  {
+   "bugid": 1951105,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create new UI tests for about:compat"
+  },
+  {
+   "bugid": 1951837,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Frequent [tier 2] org.mozilla.fenix.ui.TranslationsTest#verifyTheTranslationIsDisplayedAutomaticallyTest | single tracking bug"
+  },
+  {
+   "bugid": 1950422,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Rename A-C `WebExtensionController` to `BuiltInWebExtensionController`"
+  },
+  {
+   "bugid": 1951946,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The opt-in message doesn't disappear if it has more than 20 exposures and 5 days have passed and"
+  },
+  {
+   "bugid": 1952113,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove or update metrics expiring in Firefox 139: suggest_relevance.*"
+  },
+  {
+   "bugid": 1895755,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Support different minHeight values for CTA buttons"
+  },
+  {
+   "bugid": 1948423,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Messages with skip_in_tests shouldn't evaluate targeting or set up trigger listeners"
+  },
+  {
+   "bugid": 1946569,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Wait for New Tab built-in addon to be enabled before allowing navigations to about:home and about:newtab to complete"
+  },
+  {
+   "bugid": 1947645,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Save custom wallpaper to user profile"
+  },
+  {
+   "bugid": 1952342,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Right align topics in interest picker"
+  },
+  {
+   "bugid": 1952199,
+   "status": "REOPENED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Perma toolkit/components/pdfjs/test/browser_pdfjs_check_alttext_en.js | true == false - when Gecko 138 merges to beta on 2025-03-31"
+  },
+  {
+   "bugid": 1948364,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Remove Screenshots system addon"
+  },
+  {
+   "bugid": 1929058,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove environment telemetry for defaultSearchEngineData.origin / defaultPrivateSearchEngine.origin"
+  },
+  {
+   "bugid": 1951767,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent browser/components/search/test/browser/browser_addSearchEngineFromForm.js (finished) | single tracking bug"
+  },
+  {
+   "bugid": 1951880,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Stop saving/maintaining the description field in search engine code"
+  },
+  {
+   "bugid": 1951919,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Move browser_aboutHome_search* tests into the search component code and de-duplicate"
+  },
+  {
+   "bugid": 1908439,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Drag and drop for moving a group within the window"
+  },
+  {
+   "bugid": 1949808,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Prevent smart tab topic output from replacing group label if user starts typing"
+  },
+  {
+   "bugid": 1950486,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add model revision to Smart Tab Grouping Telemetry"
+  },
+  {
+   "bugid": 1950973,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Unexpected behavior when closing a group with a `beforeUnload` handler"
+  },
+  {
+   "bugid": 1951939,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Save and close tab group when middle clicking the group label"
+  },
+  {
+   "bugid": 1952040,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Update Smart Tab Suggest to only use title for similarity comparison"
+  },
+  {
+   "bugid": 1947098,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Perma [tier 2] a11y browser/components/customizableui/test/browser_history_recently_closed.js | single tracking bug | Node is not accessible via accessibility API"
+  },
+  {
+   "bugid": 1952286,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Fix unknown property 'commandLine' in mozconfig.gradle"
+  },
+  {
+   "bugid": 1947415,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Detect and handle errors when downloading individual files in host_googlesource.py"
+  },
+  {
+   "bugid": 1950697,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "First patch for update tests"
+  },
+  {
+   "bugid": 1948908,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Adapt more of the system addons tests to the new system addons builtin location"
+  },
+  {
+   "bugid": 1950483,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Ensure that built_in_addons.json generated file is regenerated on further calls to mach build or mach build faster"
+  },
+  {
+   "bugid": 1949964,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "Incorrect language codes in Reader View reading time calculation"
+  },
+  {
+   "bugid": 1933222,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[Mac] The Firefox icon for the \"Original Profile\" is missing. Only the profile avatar is visible."
+  },
+  {
+   "bugid": 1935430,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "The profile name should be removed from the FxA account submenu located in the hamburger menu."
+  },
+  {
+   "bugid": 1937061,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Separate profiles of Firefox appear as separate instances in the dock that can persist after exit"
+  },
+  {
+   "bugid": 1943353,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Avatar icon does not stack on top at a 700 x 768 px resolution"
+  },
+  {
+   "bugid": 1940975,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_mirrors.py should consider ensuring enumerated histograms are mirroring to custom distributions with a compatible number of buckets"
+  },
+  {
+   "bugid": 1950391,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate Legacy Telemetry Environment `settings.default(Private)SearchEngineData` fields to Glean metrics"
+  }
+ ],
+ "fixed": 84,
+ "total": 101,
+ "restricted": 3
+}
