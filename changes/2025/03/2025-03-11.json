@@ -1,0 +1,472 @@
+{
+ "date": "2025-03-11",
+ "buildid": "20250311090547",
+ "cset": "1d513d30adbd2e89c826c9ce540ee2e83104ca73",
+ "bugs": [
+  {
+   "bugid": 1950392,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Firefox Android: Prepare Suggest to use the new remote settings API"
+  },
+  {
+   "bugid": 1952712,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor app-services f7947a60b3e9957b97229d6dd08b458532e79c1c"
+  },
+  {
+   "bugid": 1950590,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Audio Output Devices prompt is not automatically focused if there's only 1 speaker"
+  },
+  {
+   "bugid": 1940319,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Audio playback fails in Firefox when resampling 96 kHz to 44.1 kHz with media.resampling.enabled set to false."
+  },
+  {
+   "bugid": 1951999,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Turn bug 1922333 (view transition live capturing) on."
+  },
+  {
+   "bugid": 1952075,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Clean up a bit the selector matching code."
+  },
+  {
+   "bugid": 1951007,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`document.queryCommandEnabled` returns `true` for style editing commands when the editing host is `plaintext-only`"
+  },
+  {
+   "bugid": 1897564,
+   "status": "VERIFIED",
+   "component": "Core:DOM: File",
+   "summary": "Assertion failure: usage == removedUsage, at /builds/worker/checkouts/gecko/dom/fs/parent/datamodel/FileSystemDatabaseManagerVersion001.cpp:882"
+  },
+  {
+   "bugid": 721336,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Ban sync XMLHttpRequest with chrome privileges"
+  },
+  {
+   "bugid": 1948339,
+   "status": "NEW",
+   "component": "Core:DOM: Notifications",
+   "summary": "Add NotificationObserver to keep handlers alive for backends without persistence support"
+  },
+  {
+   "bugid": 1952270,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "EventHandler & CSP for permissionDialog.xhtml"
+  },
+  {
+   "bugid": 1951227,
+   "status": "REOPENED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Coalesced pointermove events for mouse get pressure 0 instead of 0.5"
+  },
+  {
+   "bugid": 1952461,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Get rid of `dom.events.mouse-pointer-boundary.keep-enter-targets-after-over-target-removed` pref"
+  },
+  {
+   "bugid": 1950235,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add medium priority perf stats markers and platform specific markers"
+  },
+  {
+   "bugid": 1952904,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Support flows in StreamPayload"
+  },
+  {
+   "bugid": 1924932,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Excessive Windows DWM usage when screen is locked and display enters standby"
+  },
+  {
+   "bugid": 1952863,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Ensure non-requested frames use the regular normal path"
+  },
+  {
+   "bugid": 1948811,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "[RFP] canvas permission/icon in urlbar missing if tab loaded in background"
+  },
+  {
+   "bugid": 1952126,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-03-03)"
+  },
+  {
+   "bugid": 1948958,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Classes should estimate their slot size and pass it to newinit"
+  },
+  {
+   "bugid": 1951212,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: operand.reg().size() == rd.size(), at jit/arm64/vixl/Assembler-vixl.cpp:4449"
+  },
+  {
+   "bugid": 1941866,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: header->isInList(), at /builds/worker/checkouts/gecko/js/src/gc/BufferAllocator.cpp:2363"
+  },
+  {
+   "bugid": 1950822,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Improve coverage of testBufferAllocator_stress"
+  },
+  {
+   "bugid": 1952952,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Fully ship Atomics.pause"
+  },
+  {
+   "bugid": 1943391,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Initial entrypoint to detect preview reqeust and fetch content"
+  },
+  {
+   "bugid": 1937905,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "A document should be added to DOM indicating network errors due to invalid header values"
+  },
+  {
+   "bugid": 1952244,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add a browser-agnostic blockedByCORP message in DOM's appstrings.properties"
+  },
+  {
+   "bugid": 1951536,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Assertion failure: false, at /builds/worker/checkouts/gecko/netwerk/cookie/CookieServiceChild.cpp:319"
+  },
+  {
+   "bugid": 1952926,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Enable MITIGATION_WIN32K_DISABLE and MITIGATION_DYNAMIC_CODE_DISABLE flags for compatible GMP processes for release."
+  },
+  {
+   "bugid": 1949349,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Bucket File System",
+   "summary": "Turn web compatibility test for FileSystemFileHandle moves back on"
+  },
+  {
+   "bugid": 1900310,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Add a new module for QuotaManager to reflect governance post of May 2024"
+  },
+  {
+   "bugid": 1952183,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Let Baseline H264 signaling ride the trains"
+  },
+  {
+   "bugid": 1404382,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Re-enable browser_webconsole_file_uri.js"
+  },
+  {
+   "bugid": 1950987,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Ordering of console log level buttons"
+  },
+  {
+   "bugid": 1952224,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Prevent loading all debugger selectors and actions when displaying a stack trace"
+  },
+  {
+   "bugid": 1952048,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Fix browser_toolbox_window_global_debugging.js in --repeat"
+  },
+  {
+   "bugid": 1952374,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "keyShortcuts destroy should clean internal eventEmitter listeners"
+  },
+  {
+   "bugid": 1952467,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "dump-scope doesn't capture variables from outer blocks"
+  },
+  {
+   "bugid": 1952836,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Attribute xpath search (e.g. `//div[text()=\"hello\"]` ) in markup view doesn't work anymore"
+  },
+  {
+   "bugid": 1950484,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Support ability to typecheck only files directly owned by a specific tsconfig.json"
+  },
+  {
+   "bugid": 1952482,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "prettier ignores devtools/shared/commands/target/"
+  },
+  {
+   "bugid": 1952752,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "ASAN Linux build download does not work (404) / ResourceNotFound error from firefox-ci-tc.services.mozilla.com"
+  },
+  {
+   "bugid": 1951975,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "DOH settings lost after device restart"
+  },
+  {
+   "bugid": 1952570,
+   "status": "RESOLVED",
+   "component": "Fenix:Browser Engine",
+   "summary": "Fix DohSettings license linter warnings"
+  },
+  {
+   "bugid": 1946391,
+   "status": "RESOLVED",
+   "component": "Fenix:Collections",
+   "summary": "Device back button does not close the collection screens"
+  },
+  {
+   "bugid": 1910948,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Migrate Adjust SDK from v4 to v5"
+  },
+  {
+   "bugid": 1951894,
+   "status": "RESOLVED",
+   "component": "Fenix:Onboarding",
+   "summary": "Add Nimbus feature to control the Setup Checklist feature"
+  },
+  {
+   "bugid": 1951840,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Use viewstub for LoginSelectBar and lazily initialize it when it is needed"
+  },
+  {
+   "bugid": 1952096,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Create an AutocompletePrompt that can wrap a ViewStub"
+  },
+  {
+   "bugid": 1952837,
+   "status": "RESOLVED",
+   "component": "Fenix:Settings",
+   "summary": "Add secret setting to allow manual enabling of Tab Strip feature on any device for Nightly and Beta"
+  },
+  {
+   "bugid": 1807290,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - SettingsGeneralTest#verifyFollowDeviceLanguageTest"
+  },
+  {
+   "bugid": 1951593,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < DeepLinkTest. openMakeDefaultBrowser >"
+  },
+  {
+   "bugid": 1953011,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "browser_quicksuggest_contextual_optin.js fails after a time change"
+  },
+  {
+   "bugid": 1951621,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline scripts from browser.xhtml"
+  },
+  {
+   "bugid": 1948139,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add fullscreen / split screen mode styling to AddonsPicker component"
+  },
+  {
+   "bugid": 1952199,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Perma toolkit/components/pdfjs/test/browser_pdfjs_check_alttext_en.js | true == false - when Gecko 138 merges to beta on 2025-03-31"
+  },
+  {
+   "bugid": 1951883,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Enable TypeScript checking for toolkit/components/search"
+  },
+  {
+   "bugid": 1952713,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Update rust search engine selector integration to handle the search configuration overrides collection"
+  },
+  {
+   "bugid": 1940621,
+   "status": "RESOLVED",
+   "component": "Firefox:Shopping",
+   "summary": "Intermittent browser/components/shopping/tests/browser/browser_shoppingsidebar_onboarding.js | single tracking bug"
+  },
+  {
+   "bugid": 1946263,
+   "status": "NEW",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_resize_sidebar.js | single tracking bug"
+  },
+  {
+   "bugid": 1951719,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "[Experiment] [Intermittent] The “Turn on Syncing…” option is displayed in the FxA panel even though Sync is already Turned ON in the preferences"
+  },
+  {
+   "bugid": 1952743,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Once #keepTabSizeLocked set to true it will never reset to false"
+  },
+  {
+   "bugid": 1952993,
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "test_top_sites.js should not import any modules from newtab"
+  },
+  {
+   "bugid": 1952891,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Remove MinGW Condition in password code"
+  },
+  {
+   "bugid": 1951578,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "remove `mach pastebin` command"
+  },
+  {
+   "bugid": 1952133,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Configure picks rustc from ~/.cargo on automation if there is one"
+  },
+  {
+   "bugid": 1952101,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade clang-20 toolchain to 20.1.0 final"
+  },
+  {
+   "bugid": 1951382,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "The variant `async-event-dispatching` expiration is on 2025-04-01"
+  },
+  {
+   "bugid": 1945934,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Test that compiler optimization don't remove gMozCrashReason"
+  },
+  {
+   "bugid": 1950364,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add \"soft error\" stream to minidumps on Linux"
+  },
+  {
+   "bugid": 1952326,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update memtest crate to v0.3.1 in crash reporter client"
+  },
+  {
+   "bugid": 1946727,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Unsaved changes warning – update 'Confirm' to 'Close'"
+  },
+  {
+   "bugid": 1939555,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Mac: Don't initialize nsApplication when --*version or --help are passed"
+  },
+  {
+   "bugid": 1952597,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Links from external apps don't load, clicking a link brings Firefox to the foreground but the URL doesn't open (\"SelectableProfileService.getExecutableProcess does not exist\")"
+  },
+  {
+   "bugid": 1952099,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Ensure Figma export script checks \"platform\" for light/dark values when \"brand\" is incomplete"
+  },
+  {
+   "bugid": 1942373,
+   "status": "NEW",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add support for badging to moz-button"
+  },
+  {
+   "bugid": 1945282,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Dim input label opacity when it is disabled"
+  }
+ ],
+ "fixed": 70,
+ "total": 77,
+ "restricted": 3
+}
