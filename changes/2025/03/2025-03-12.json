@@ -1,0 +1,616 @@
+{
+ "date": "2025-03-12",
+ "buildid": "20250312091925",
+ "cset": "99f5fa3c8fdf54db93c82e733d152479b7eb6e2f",
+ "bugs": [
+  {
+   "bugid": 1952783,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: int32_t(mRefCnt) > 0 (dup release), at ...dom/media/platforms/ffmpeg/VALibWrapper.cpp:128"
+  },
+  {
+   "bugid": 1953270,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] propagate the HRESULT in the message description"
+  },
+  {
+   "bugid": 1950791,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Frequent MOZ_ASSERT(mPhase == Phase::Done || UnderlyingValue(mPhase) < UnderlyingValue(Phase::UpdateCallbackCalled)) [@ mozilla::dom::ViewTransition::CallUpdateCallback] | single tracking bug"
+  },
+  {
+   "bugid": 1952516,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Don't validate variable fallback type"
+  },
+  {
+   "bugid": 1952776,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Upstream several Stylo changes from Servo (March 2025)"
+  },
+  {
+   "bugid": 1953016,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Incorrect z-index (or rendering order) when multiple :view-transition-group overlaps"
+  },
+  {
+   "bugid": 1953122,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "View transition pseudo tree doesn't show dynamically on DevTools."
+  },
+  {
+   "bugid": 1950783,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Fix the assertion failures while running `/input-events/input-events-get-target-ranges-joining-dl-elements.tentative.html`"
+  },
+  {
+   "bugid": 1951592,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Initial about:blank with fragment doesn't have events and entries disabled"
+  },
+  {
+   "bugid": 1940828,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Firing a non-asynchronous XMLHttpRequest in an asynchronous script causes parsing to hang"
+  },
+  {
+   "bugid": 1948339,
+   "status": "REOPENED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Add NotificationObserver to keep handlers alive for backends without persistence support"
+  },
+  {
+   "bugid": 1950605,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement an unoptimized Sanitizer prototype"
+  },
+  {
+   "bugid": 1951670,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add a report-only CSP for blocking inline event handlers in browser.xhtml (for Release)"
+  },
+  {
+   "bugid": 1951698,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "connect-src 'none' with WebSocket constructor shouldn't cause an exception"
+  },
+  {
+   "bugid": 1952833,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "EventHandler & CSP for changemp.xhtml"
+  },
+  {
+   "bugid": 1952973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "EventHandler & CSP for profileDowngrade.xhtml"
+  },
+  {
+   "bugid": 1951362,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Text-Fragments: Consider prefix context terms correctly for range-based text directive"
+  },
+  {
+   "bugid": 1951658,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Some Android 14+ devices don't have Credential Manager"
+  },
+  {
+   "bugid": 1887703,
+   "status": "NEW",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ gfxWindowsPlatform::RecordContentDeviceFailure]"
+  },
+  {
+   "bugid": 1943811,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Canvas demo creates a lot of garbage that leads to periodic slowdowns and large memory use compared to Chrome"
+  },
+  {
+   "bugid": 1952126,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-03-03)"
+  },
+  {
+   "bugid": 1948776,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "ipc: fix compilation of SharedMemory system for FreeBSD (MAP_NORESERVE)"
+  },
+  {
+   "bugid": 1951925,
+   "status": "ASSIGNED",
+   "component": "Core:IPC",
+   "summary": "7.27 - 3.55% Base Content Heap Unclassified / Base Content Resident Unique Memory + 1 more (Windows) regression on Wed March 5 2025"
+  },
+  {
+   "bugid": 1935193,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimize `new Map(map)` and `new Set(set)`"
+  },
+  {
+   "bugid": 1952699,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Firefox takes 1.4GB to run a testcase. On reloading and running again, it barely takes a 200MB"
+  },
+  {
+   "bugid": 1939962,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "MOZ_CRASH() at src/js/src/jit/arm64/vixl/MacroAssembler-vixl.cpp:2030"
+  },
+  {
+   "bugid": 1952022,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Reword JSMSG_TEMPORAL_PARSER_BRACKET_BEFORE_ANNOTATION error message."
+  },
+  {
+   "bugid": 1940320,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Too many FULL_WASM_ANYREF_BUFFER minor GC"
+  },
+  {
+   "bugid": 1952693,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "default link color has changed"
+  },
+  {
+   "bugid": 1953050,
+   "status": "VERIFIED",
+   "component": "Core:Layout",
+   "summary": "Crash [@ AppendStyleSheetSilently]"
+  },
+  {
+   "bugid": 1953145,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove unused MayHavePaintEventListener."
+  },
+  {
+   "bugid": 1952011,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "implement simple fetch"
+  },
+  {
+   "bugid": 1950254,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "Experiment not randomizing arena ids"
+  },
+  {
+   "bugid": 1951184,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Null deref crash in [@ mozilla::net::Http2Session::ServerSessionWindow] via AllowFlowControlledWrite()"
+  },
+  {
+   "bugid": 1951550,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Make scroll-initial-target-with-text-fragment-navigation.tentative.html pass with layout.scroll.disable-pixel-alignment=true"
+  },
+  {
+   "bugid": 1952104,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Assertion failure: false (Late preference writes should be avoided.), at /builds/worker/checkouts/gecko/modules/libpref/Preferences.cpp:1835"
+  },
+  {
+   "bugid": 1952714,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "JSPROCESSACTORS.CookieBanner._prefs should be held strongly"
+  },
+  {
+   "bugid": 1952895,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Handle the new Cloudflare Turnstile URL"
+  },
+  {
+   "bugid": 1953146,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove more obselete metrics from user-characteristics ping"
+  },
+  {
+   "bugid": 1953226,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Use UTC time when parsing buildId into buildDate"
+  },
+  {
+   "bugid": 1951895,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "discard element doesn't work in html documents"
+  },
+  {
+   "bugid": 1951659,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add QuotaUtils.startShutdown helper"
+  },
+  {
+   "bugid": 1952706,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "DTLS 1.3 SRTP derivation key computation uses the wrong length as an input to KDF"
+  },
+  {
+   "bugid": 1951930,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Firefox radio buttons unusable on dark backgrounds"
+  },
+  {
+   "bugid": 1699951,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Partially corrupted or missing heading of helper application chooser"
+  },
+  {
+   "bugid": 1951893,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove unneeded StaticAtom suffixes"
+  },
+  {
+   "bugid": 1952179,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add MOZ_DBG support for nsAtom"
+  },
+  {
+   "bugid": 1934321,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:General",
+   "summary": "missing namespaces and document types in `firefox-desktop-background-tasks` in usage-reporting"
+  },
+  {
+   "bugid": 1952901,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Filter out addon targets from browser_target_command_frames.js"
+  },
+  {
+   "bugid": 1953135,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "The tooltip showing font samples uses the wrong font on font-family with multiple values"
+  },
+  {
+   "bugid": 1894628,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Allow to select preset useragent strings in RDM"
+  },
+  {
+   "bugid": 1671400,
+   "status": "RESOLVED",
+   "component": "DevTools:Shared Components",
+   "summary": "[META] Replace handwritten reps stubs by generated ones"
+  },
+  {
+   "bugid": 1953119,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update to ruff 0.9.10"
+  },
+  {
+   "bugid": 1797822,
+   "status": "NEW",
+   "component": "Fenix:Browser Engine",
+   "summary": "Site permission prompts show the full origin like https://permission.site:443 instead of just the hostname like permission.site"
+  },
+  {
+   "bugid": 1949403,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Allow juno-onboarding feature to be disabled by default for developers"
+  },
+  {
+   "bugid": 1951125,
+   "status": "RESOLVED",
+   "component": "Fenix:Experimentation and Telemetry",
+   "summary": "Create a ping for Nimbus and record it after the RecordedNimbusContext is set"
+  },
+  {
+   "bugid": 1953063,
+   "status": "RESOLVED",
+   "component": "Fenix:General",
+   "summary": "Update android nightly application-services version bump to new version be846369d1ae56f801633a024b9d658bce534b44 from 2025-03-11 05:03:58"
+  },
+  {
+   "bugid": 1950830,
+   "status": "RESOLVED",
+   "component": "Fenix:Performance",
+   "summary": "Use viewstub to inflate FindInPageBar on-demand in BrowserFragment"
+  },
+  {
+   "bugid": 1952523,
+   "status": "REOPENED",
+   "component": "Fenix:Tooling",
+   "summary": "Update AGP to version 8.9.0"
+  },
+  {
+   "bugid": 1947433,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Intermittent UI test failure - < TranslationsTest. verifyTheAlwaysOfferToTranslateOptionTest >"
+  },
+  {
+   "bugid": 1953084,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Update verifyDataCollectionSettingsTest UI test in accordance with the manual test"
+  },
+  {
+   "bugid": 1953090,
+   "status": "RESOLVED",
+   "component": "Fenix:UI Tests",
+   "summary": "Create new image/video upload test while no permission is granted UI test"
+  },
+  {
+   "bugid": 1931556,
+   "status": "RESOLVED",
+   "component": "Fenix:WebExtensions",
+   "summary": "Implement userScripts permission prompt (mobile)"
+  },
+  {
+   "bugid": 1952887,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The opt-in message is displayed for a moment when re-focusing the addressbar after 20 exposure condition is met"
+  },
+  {
+   "bugid": 1953021,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Hide contextual opt-in message if 5 days passed since first impression AND seen more than 20 times"
+  },
+  {
+   "bugid": 1951621,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove inline scripts from browser.xhtml"
+  },
+  {
+   "bugid": 1952229,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Perma browser/base/content/test/performance/browser_appmenu.js | Uncaught exception in test bound - undefined - timed out after 50 tries. - when Gecko 137 merges to release on 2025-03-24"
+  },
+  {
+   "bugid": 1933461,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "“Save to Pocket” option is available in the context menu for both sponsored and non-sponsored Pocket cards from the New Tab page if the new content card UI is enabled"
+  },
+  {
+   "bugid": 1952929,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Multiple topics are wrongly marked as unfollowed in the \"Follow topics to personalize your feed\" section even if only one section is unfollowed"
+  },
+  {
+   "bugid": 1953005,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Fix more tests that fail when New Tab is packaged as a built-in addon"
+  },
+  {
+   "bugid": 1950531,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add a deny list for setPref prefs"
+  },
+  {
+   "bugid": 1938929,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement a replacement in Glean for SAP telemetry (SEARCH_COUNTS histogram)"
+  },
+  {
+   "bugid": 1953297,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Links to OpenSearch spec are broken"
+  },
+  {
+   "bugid": 1952902,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Only 25 Tabs are restored for Saved and Closed or Deleted groups"
+  },
+  {
+   "bugid": 1942694,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove FeatureGates"
+  },
+  {
+   "bugid": 1952057,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "Clean up Taskbar Tabs hamburger menu buttons"
+  },
+  {
+   "bugid": 1953273,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "add a head.js file with a function to open a TaskbarTab window in components/taskbartabs/test/browser"
+  },
+  {
+   "bugid": 1952176,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Pinned vertical tabs make the collapsed sidebar wider"
+  },
+  {
+   "bugid": 1953031,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "My services is sometimes enabled when signing out of FxA"
+  },
+  {
+   "bugid": 1908441,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Drag and drop to detach a tab group into a new window"
+  },
+  {
+   "bugid": 1946432,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When unloading all tabs, don't show Firefox View if it has been removed"
+  },
+  {
+   "bugid": 1950973,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Unexpected behavior when closing a group with a `beforeUnload` handler"
+  },
+  {
+   "bugid": 1952495,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab groups are not displayed underneath the mouse cursor when dragged and dropped"
+  },
+  {
+   "bugid": 1952962,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Hard to follow where tab group is dragged to"
+  },
+  {
+   "bugid": 1953193,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Don't change the selected tab when collapsing a group while dragging it"
+  },
+  {
+   "bugid": 1953249,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group line doesn't update while moving a single tab into a group"
+  },
+  {
+   "bugid": 1953042,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma [Tier 2] Snap FileNotFoundError: [Errno 2] No such file or directory: '/home/task_174165397783330/snap/firefox/common/.mozilla/firefox/snap-testshqpfq94m'"
+  },
+  {
+   "bugid": 1952878,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Use libs.versions.ktlint for ktlint version of geckoview"
+  },
+  {
+   "bugid": 1646462,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "Add Firefox ARM64/AArch64 option to Flathub (Flatpak)"
+  },
+  {
+   "bugid": 1940952,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add support for \"userContexts\" argument to \"browsingContext.setViewport\" command"
+  },
+  {
+   "bugid": 1948917,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Bundle pictureinpicture into Firefox Desktop omni jar"
+  },
+  {
+   "bugid": 1948429,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Make it easier to test macOS elevated updates with local builds"
+  },
+  {
+   "bugid": 1952326,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update memtest crate to v0.3.1 in crash reporter client"
+  },
+  {
+   "bugid": 1952564,
+   "status": "NEW",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "New update checked \"Cookies and site data\" automatically for some users"
+  },
+  {
+   "bugid": 1946121,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "The Primary Password prompt is displayed after reopening Firefox(profile without having Sync on)"
+  },
+  {
+   "bugid": 1946727,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Unsaved changes warning – update 'Confirm' to 'Close'"
+  },
+  {
+   "bugid": 1949947,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Perma [tier 2] toolkit/components/places/tests/favicons/test_multiple_frames.js | single tracking bug"
+  },
+  {
+   "bugid": 1953088,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Flip the pref to only run SafeBrowsing classification on top-level contexts"
+  },
+  {
+   "bugid": 1933998,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[Windows] Profile not fully deleted from local directory"
+  },
+  {
+   "bugid": 1950030,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Android",
+   "summary": "Re-enable toolkit/mozapps/extensions/test/xpcshell/test_addon_manager_telemetry_events.js on Android"
+  },
+  {
+   "bugid": 1949955,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Enable userScripts API by default on mobile"
+  }
+ ],
+ "fixed": 80,
+ "total": 101,
+ "restricted": 1
+}
