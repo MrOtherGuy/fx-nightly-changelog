@@ -1,0 +1,532 @@
+{
+ "date": "2025-04-12",
+ "buildid": "20250412090848",
+ "cset": "ab9a67e8cbbd1acf314a548984faf13303e5510c",
+ "bugs": [
+  {
+   "bugid": 1909826,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash on canalplus.com [@ mozilla::MediaDecoder::SetCDMProxy ]"
+  },
+  {
+   "bugid": 1958167,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove or update probes expiring in Firefox 140: mfcdm.e* before Gecko version gets increased to 140 on 2025-04-28"
+  },
+  {
+   "bugid": 1959644,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Turn painting into a regular RenderPhase."
+  },
+  {
+   "bugid": 1954597,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Expand ValidatePrincipal checks around process switching navigations"
+  },
+  {
+   "bugid": 1959323,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "`HTMLEditor::InsertElementAtSelectionAsAction` deletes preceding block's text when it's called after a block"
+  },
+  {
+   "bugid": 1948596,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Implement #can-have-its-url-rewritten"
+  },
+  {
+   "bugid": 1959379,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Implement #maybe-set-the-upcoming-non-traverse-api-method-tracker"
+  },
+  {
+   "bugid": 1959971,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Use JS::Handle<> for helper functions"
+  },
+  {
+   "bugid": 1958232,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Allow eval in browser.xhtml for users with userChromeJs with a special pref"
+  },
+  {
+   "bugid": 1959748,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Identity pane code does not unnest about: URIs correctly, breaking assertion"
+  },
+  {
+   "bugid": 1700362,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "DocAccessible::IsLoadEventTarget doesn't behave as intended"
+  },
+  {
+   "bugid": 1959850,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Make cloned FenceD3D117's mDevice holds valid ID3D11Device"
+  },
+  {
+   "bugid": 1959950,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add calling CompositeProcessD3D11FencesHolderMap::Unregister()"
+  },
+  {
+   "bugid": 1959815,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Last clearRect region is used when setting width and height"
+  },
+  {
+   "bugid": 1959560,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Tab crashes when I try to access Microsoft-related websites"
+  },
+  {
+   "bugid": 1956004,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Queue::WriteTexture copies the entire source buffer"
+  },
+  {
+   "bugid": 1944761,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Optimize comparisons with constants better"
+  },
+  {
+   "bugid": 1934692,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Improve codegen for wasm subtype checks"
+  },
+  {
+   "bugid": 1946903,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Refactor inlining budget and stats code to not live on CodeMetadata"
+  },
+  {
+   "bugid": 1950732,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Firefox fails WPT css/css-writing-modes/block-flow-direction-srl-057.xht [auto sizing within orthogonal table-cell]"
+  },
+  {
+   "bugid": 1956610,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Enable layout.css.grid-flex-spanning-items-intrinsic-sizing.enabled on all channels"
+  },
+  {
+   "bugid": 1954265,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Add Noto fonts to Windows lang-pack font list and SimSun-ExtG to base font list"
+  },
+  {
+   "bugid": 1957384,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Follow the spec more fully for ::first-letter range"
+  },
+  {
+   "bugid": 1954812,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "show animated skeleton of 3 points replaced by generated content"
+  },
+  {
+   "bugid": 1957471,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add missing labels for ML Engine Telemetry"
+  },
+  {
+   "bugid": 1959703,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "deactivate should alert in perf tests"
+  },
+  {
+   "bugid": 1930129,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Intermittent nsWeakReference not thread-safe [@ nsAutoOwningThread::AssertCurrentThreadOwnsMe] | single tracking bug, in ~nsHttpChannel"
+  },
+  {
+   "bugid": 1858919,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent LeakSanitizer leak at Alloc, nsTSubstring, nsTSubstring, mozilla::net::nsStandardURL::BuildNormalizedSpec | single tracking bug"
+  },
+  {
+   "bugid": 1957553,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "`privacy.spoof_english` broken with FPP (privacy.fingerprintingProtection)"
+  },
+  {
+   "bugid": 1958162,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring in Firefox 140: security.ui.protectionspopup.cl* before Gecko version gets increased to 140 on 2025-04-28"
+  },
+  {
+   "bugid": 1960005,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove stray comment from BounceTrackingState.cpp"
+  },
+  {
+   "bugid": 1957334,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Introduce ClientStorageScope class à la PersistenceScope"
+  },
+  {
+   "bugid": 1957367,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Introduce ClientDirectoryLockHandle and convert OpenClientDirectory to return it"
+  },
+  {
+   "bugid": 1953985,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "GetCapabilities does not return codecs with identical configuration to what is offered by default"
+  },
+  {
+   "bugid": 1959374,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Fix increased test failure after turning off browser.theme.native-theme"
+  },
+  {
+   "bugid": 1956103,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Generalize ChannelCapability for use by other components"
+  },
+  {
+   "bugid": 1947761,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Tracer display duplicated event entries in the DOM Events panel"
+  },
+  {
+   "bugid": 1959917,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Remove mention of (now) non-existent devtools.inspector.color-scheme-simulation.enabled pref in doc"
+  },
+  {
+   "bugid": 1957448,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "We should not be showing the toolbar context menu when right clicking on Address Bar results"
+  },
+  {
+   "bugid": 1959810,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Add JSDoc types to ContentAnalysis.sys.mjs"
+  },
+  {
+   "bugid": 1959966,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Firefox fails to relaunch immediately after being quit via App menu or Ctrl+Shift+Q with warning dialog active"
+  },
+  {
+   "bugid": 1958294,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The Dismiss dropdown button from the Review Checker Callout 3 has a vague accessible name"
+  },
+  {
+   "bugid": 1958510,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Wallpaper styles are not displayed in the Personalization Menu when enabling the “customWallpaper” feature configuration via Nimbus on the Stage server"
+  },
+  {
+   "bugid": 1958817,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The wallpaper styles from the Wallpaper section cannot be accessed using the keyboard navigation except the “Abstract” one"
+  },
+  {
+   "bugid": 1946738,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Enable signing in a PDF in Release"
+  },
+  {
+   "bugid": 1958836,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Include more context when reporting jexl filtering errors"
+  },
+  {
+   "bugid": 1959924,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "test_initialization_status_telemetry.js introduces (test only) browser dependency into toolkit"
+  },
+  {
+   "bugid": 1919475,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Update context menu for History entries"
+  },
+  {
+   "bugid": 1959902,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "The \"x\" (Close) button in the new sidebar cannot be reached when navigating with the keyboard in some panels"
+  },
+  {
+   "bugid": 1938424,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Record telemetry event when adding tabs to a tab group"
+  },
+  {
+   "bugid": 1953179,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Unable to select any options from the Manage Tab group panel with the Enter key"
+  },
+  {
+   "bugid": 1955333,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add tab to group context menu favicon should always be solid for opened groups regardlesss if it's collapsed"
+  },
+  {
+   "bugid": 1959730,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "TabMove event not dispatched for tabs when moving a group within the tab strip"
+  },
+  {
+   "bugid": 1959981,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Perma Late Beta TEST-UNEXPECTED-FAIL | browser/components/tabbrowser/test/browser/tabs/browser_tab_groups_telemetry.js | Reopen group action is present in results - false == true -  when Gecko 139 switches to Late Beta on 2025-05-09"
+  },
+  {
+   "bugid": 1956342,
+   "status": "ASSIGNED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Expand account icon to a wider toolbar button that reads \"Sign in\""
+  },
+  {
+   "bugid": 1815793,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "about:translations should handle Remote Settings issues more gracefully"
+  },
+  {
+   "bugid": 1855839,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Installed languages list for translations does not respect new display language"
+  },
+  {
+   "bugid": 1959872,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Use project.layout.buildDirectory instead of project.buildDir in apksize plugin"
+  },
+  {
+   "bugid": 1959998,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Add jna to the version catalog to help vendoring application-services"
+  },
+  {
+   "bugid": 1960055,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Make `mach bootstap` update out-of-date Android SDK directories"
+  },
+  {
+   "bugid": 1959653,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma /builds/worker/fetches/sysroot-x86_64-linux-gnu/usr/include/c++/8/bits/stl_algobase.h:368:30: error: 'void* __builtin_memcpy(void*, const void*, long unsigned int)' reading between 4 and 17179869180 bytes from a region of size 0 [-Werror=stri"
+  },
+  {
+   "bugid": 1959789,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "FileListFinder depends on its input being sorted. Its input is never (fully) sorted."
+  },
+  {
+   "bugid": 1956165,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "In m.youtube.com, PiP (Picture in picture) exits fullscreen (displays the browser toolbar) and doesn't play video"
+  },
+  {
+   "bugid": 1959885,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version e80c0de8c8889483851ba722696470ad0c8aa278 from 2025-04-11 05:03:43"
+  },
+  {
+   "bugid": 1947488,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "FenixApplication::setPreferenceMetrics requires a lot of dependencies to initialize"
+  },
+  {
+   "bugid": 1956439,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Provide deep link to the PBM lock setting in the app to Marketing"
+  },
+  {
+   "bugid": 1954785,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Search Consolidation] Implement a way to switch between old search configuration infra and the new one"
+  },
+  {
+   "bugid": 1959829,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Update string for address bar swipe CFR"
+  },
+  {
+   "bugid": 1872229,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Upstream remaining mozilla-lint-rules to Android Components"
+  },
+  {
+   "bugid": 1959185,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Add region settings to debug tray to support testing"
+  },
+  {
+   "bugid": 1959749,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Adjust shard count in arm-legacy-api-tests"
+  },
+  {
+   "bugid": 1958239,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Enable marAppApplyUpdateStageOldVersionFailure.js and marAppApplyUpdateSuccess.js on aarch64 once bug 1919455 is fixed"
+  },
+  {
+   "bugid": 1959492,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Disable the \"Bypassing Updates\" feature"
+  },
+  {
+   "bugid": 1958067,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Decide what to do with AutofillTelemetry code calling .clear on legacy telemetry histograms"
+  },
+  {
+   "bugid": 1958640,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Fix TypeScript and JSDoc issues raised in Bookmarks.sys.mjs"
+  },
+  {
+   "bugid": 1959141,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Increase in invalid_label metric errors for the `event.longtask` on Fenix"
+  },
+  {
+   "bugid": 1959768,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate BHR to Glean"
+  },
+  {
+   "bugid": 1959790,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Fix the schema of the glean Ping markers"
+  },
+  {
+   "bugid": 1959519,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "infobars have a subtle border color since introducing the new color palette"
+  },
+  {
+   "bugid": 1951241,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Refactor `ScaffoldingConverter.h`"
+  },
+  {
+   "bugid": 1951243,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Separate UniFFICall code"
+  },
+  {
+   "bugid": 1954522,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add support for data collection permissions in `browser.permissions.getAll()`"
+  },
+  {
+   "bugid": 1955942,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Show data collection permissions in the install prompt"
+  },
+  {
+   "bugid": 1959713,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Implement tabs.Tab.groupId"
+  },
+  {
+   "bugid": 1959714,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Implement tabs.group() and tabs.ungroup()"
+  },
+  {
+   "bugid": 1959715,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Support groupId in tabs.query"
+  },
+  {
+   "bugid": 1959716,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Implement groupId in tabs.onUpdated"
+  }
+ ],
+ "fixed": 78,
+ "total": 87,
+ "restricted": 3
+}
