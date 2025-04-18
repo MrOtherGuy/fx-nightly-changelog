@@ -1,0 +1,736 @@
+{
+ "date": "2025-04-18",
+ "buildid": "20250418091223",
+ "cset": "d2b2bd27992fb41846f44a0e69a0560ff77e93e6",
+ "bugs": [
+  {
+   "bugid": 1961039,
+   "status": "RESOLVED",
+   "component": "Application Services:Suggest",
+   "summary": "Vendor application-services 6a007c9"
+  },
+  {
+   "bugid": 1934014,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Remove codec benchmark machinery"
+  },
+  {
+   "bugid": 1960976,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Always append extradata to the first encrypted sample to ensure the decoder has all the necessary data."
+  },
+  {
+   "bugid": 1949915,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "crash near null in [@ mozilla::dom::ShadowIncludingTreeIterator::WalkOutOfShadowRootsIfNeeded]"
+  },
+  {
+   "bugid": 1658699,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "[meta] Ship Blink-compat white-space normalizer"
+  },
+  {
+   "bugid": 1960558,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Get rid of `dom.element.contenteditable.plaintext-only.enabled` pref"
+  },
+  {
+   "bugid": 1960602,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Consider making Document::BlockOnLoad be a no-op if the document is already complete."
+  },
+  {
+   "bugid": 1958801,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Add a CSP to geckoview.xhtml"
+  },
+  {
+   "bugid": 1958821,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "5.84 - 3.04% speedometer Inferno-TodoMVC/Adding100Items/Async / speedometer Inferno-TodoMVC/Adding100Items/Async (Windows) regression on Tue April 1 2025"
+  },
+  {
+   "bugid": 1961132,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Perma dom/workers/test/test_navigator_secureContext.html | Worker had an error: uncaught exception: Navigator has the 'gpu' property that isn't in the list! - when Gecko 139 merges to beta on 2025-04-28"
+  },
+  {
+   "bugid": 1961024,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade `ron` 0.9.0 → 0.10.1"
+  },
+  {
+   "bugid": 1961030,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Upgrade `strum` 0.26.3 → 0.27.1"
+  },
+  {
+   "bugid": 1341913,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics",
+   "summary": "Stop looking up GLContext symbols for every new window"
+  },
+  {
+   "bugid": 1961287,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Add \"printing:5\" to the graphics logging preset"
+  },
+  {
+   "bugid": 1961191,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Some WebGL-related code may cause the browser to crash.\""
+  },
+  {
+   "bugid": 1960856,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "i.ibb.co - PNG file is rendered broken.  And sometimes Crash in [@ mozilla::gfx::UnpackRowRGB24]"
+  },
+  {
+   "bugid": 1961055,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update harfbuzz to new version 11.1.0 from 2025-04-16 20:35:58"
+  },
+  {
+   "bugid": 1960958,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Split WebGPU CTS tests with many case parameters by their first argument"
+  },
+  {
+   "bugid": 1957880,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "/css/css-view-transitions/old-content-captures-clip-path.html Fails"
+  },
+  {
+   "bugid": 1959761,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Decide what to do about the unused shader cs_blur_a8"
+  },
+  {
+   "bugid": 1959843,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add support for rounded compositor clip to DirectComposition"
+  },
+  {
+   "bugid": 1960138,
+   "status": "VERIFIED",
+   "component": "Core:IPC",
+   "summary": "Assertion failure: !AppShutdown::IsInOrBeyond(ShutdownPhase::XPCOMShutdownThreads)"
+  },
+  {
+   "bugid": 1918978,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: isDouble(), at dist/include/js/Value.h:1070"
+  },
+  {
+   "bugid": 1959460,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Migrate SLOW_TASK and SLOW_PHASE metrics to glean"
+  },
+  {
+   "bugid": 1949849,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Add a dedicated cast MIR node"
+  },
+  {
+   "bugid": 1958228,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "orthogonal-flow available-size computation is wrong when containing block has a fixed size larger than the ICB"
+  },
+  {
+   "bugid": 1906644,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "DecodeQ in nsMIMEHeaderParamImpl.cpp doesn't check the return value of PR_sscanf"
+  },
+  {
+   "bugid": 1953856,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Expose HTTP/3 connection stats via nsIDashboard.idl"
+  },
+  {
+   "bugid": 1960490,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma [Tier 2] netwerk/test/unit/test_bug1948203.js | single tracking bug"
+  },
+  {
+   "bugid": 1845870,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Cookie per host quota enforcement is off by one"
+  },
+  {
+   "bugid": 1958875,
+   "status": "NEW",
+   "component": "Core:Networking: Cookies",
+   "summary": "Re-enable CookieStore API"
+  },
+  {
+   "bugid": 1955858,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Incorrect \"Failure\" Log in SSORequestDelegate::didCompleteWithAuthorization"
+  },
+  {
+   "bugid": 1957321,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "`FindFrameTargetedByInputEvent()` should always check clickable target even if looking for a touch target"
+  },
+  {
+   "bugid": 1959549,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Round the scroll offset in screen pixels in CompositorScrollUpdate::operator=="
+  },
+  {
+   "bugid": 1961018,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Add a profile marker to FirePrintingErrorEvent"
+  },
+  {
+   "bugid": 1957355,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "No referrer and cookie access for resources injected by content-scripts"
+  },
+  {
+   "bugid": 1960662,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "For BTP purge events include BTP stateful mode flag in details"
+  },
+  {
+   "bugid": 1961042,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "WARNING: NS_ENSURE_SUCCESS(rv, false) failed with result 0x80004005 (NS_ERROR_FAILURE): file toolkit/components/antitracking/PartitioningExceptionList.cpp:172"
+  },
+  {
+   "bugid": 1960779,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Fix WPT viewBox-synthesized-in-img-001.tentative.html to avoid setting empty attribute values"
+  },
+  {
+   "bugid": 1961245,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Change refrence case for viewBox-synthesized-in-img-001.tentative.html to not use `<embed>` elements"
+  },
+  {
+   "bugid": 1958140,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Firefox 137 cannot resolve any URL on MacOS 15.4 (with thousands of keys in the Mac keychain)"
+  },
+  {
+   "bugid": 1958977,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Firefox 137: libnssckbi.so not present (or used)"
+  },
+  {
+   "bugid": 1959812,
+   "status": "RESOLVED",
+   "component": "Core:Session Restore",
+   "summary": "Defer session restore when Firefox is launched via a taskbar tab window"
+  },
+  {
+   "bugid": 1957433,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add dedicated test for temporary storage eviction using SimpleDB"
+  },
+  {
+   "bugid": 1961140,
+   "status": "NEW",
+   "component": "Core:Web Painting",
+   "summary": "css/css-view-transitions/new-content-ancestor-clipped-2.html fails"
+  },
+  {
+   "bugid": 1960828,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Make DMABuf surface mapping code available for debug only"
+  },
+  {
+   "bugid": 1368520,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Background Hang Reporter (BHR) doesn't run on Android"
+  },
+  {
+   "bugid": 1787011,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Intermittent devtools/client/webconsole/test/browser/browser_webconsole_context_menu_copy_link_location.js | single tracking bug"
+  },
+  {
+   "bugid": 1953964,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Show the precise location and column where the debugger paused"
+  },
+  {
+   "bugid": 1767769,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Intermittent devtools/shared/commands/resource/tests/browser_resources_error_messages.js | single tracking bug"
+  },
+  {
+   "bugid": 1957543,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "`_draggingOnPointerDown@text-property-editor.js` caches `pointerdown.screenX` as a float value"
+  },
+  {
+   "bugid": 1767662,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Intermittent devtools/client/netmonitor/test/browser_net-ws-filter-freetext.js | single tracking bug"
+  },
+  {
+   "bugid": 1920146,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "In the Developer Tools Network pane, sorting by duration doesn't stay sorted when new requests arrive."
+  },
+  {
+   "bugid": 1959788,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Confusing \"Rust linting in mach does not support\" error message"
+  },
+  {
+   "bugid": 1961041,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable Higher Placement Strategy By Default for Firefox Suggest"
+  },
+  {
+   "bugid": 1961069,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable weather suggestions by default for all Suggest users"
+  },
+  {
+   "bugid": 1915430,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Check use of FxAccounts use of hard-coded webchannel context."
+  },
+  {
+   "bugid": 1959162,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Recommend Bookmarks Toolbar treatment-a strings in m-c"
+  },
+  {
+   "bugid": 1960323,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for Roll out - Accounts Advisory Callout Experiment"
+  },
+  {
+   "bugid": 1948999,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab inferred personalization UI and card"
+  },
+  {
+   "bugid": 1959189,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create mobile QR code modal message"
+  },
+  {
+   "bugid": 1959242,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add prefs to show mobile icon to top of page"
+  },
+  {
+   "bugid": 1959454,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update logic to show any OMC component if a message is available"
+  },
+  {
+   "bugid": 1960464,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add strings for QR code modal"
+  },
+  {
+   "bugid": 1854189,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Nimbus API checks pref-based cache after Nimbus is initialized"
+  },
+  {
+   "bugid": 1959822,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Remove support for isEarlyStartup in feature configs"
+  },
+  {
+   "bugid": 1960394,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Remove force argument to ExperimentManager._enroll"
+  },
+  {
+   "bugid": 1960398,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Remove getAllBranchFeatureIds from ExperimentStore"
+  },
+  {
+   "bugid": 1960459,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "We fail to submit legacy unenroll failed telemetry"
+  },
+  {
+   "bugid": 1960472,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "browser_experimentstore_load.js leaks files across tests"
+  },
+  {
+   "bugid": 1961038,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Consistently use `changeReason` rather than `changeSource` in code related to search.engine.default.changed Glean event telemetry"
+  },
+  {
+   "bugid": 1953900,
+   "status": "NEW",
+   "component": "Firefox:Sidebar",
+   "summary": "Update the Clear All Data for Website dialog (AKA \"Forget this website\")"
+  },
+  {
+   "bugid": 1960360,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Record tab interaction metrics for dragging tabs out of tab groups"
+  },
+  {
+   "bugid": 1961013,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make explicit tab unloading on by default in early Beta"
+  },
+  {
+   "bugid": 1961147,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Increase tab group editor width to deal with locales that may have longer button labels"
+  },
+  {
+   "bugid": 1961150,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add tooltips to tab group editor buttons to deal with locales that may have longer button labels"
+  },
+  {
+   "bugid": 1961224,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove bogus \"panel\" class from tab group panel"
+  },
+  {
+   "bugid": 1961226,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Enable tab groups by default on all channels"
+  },
+  {
+   "bugid": 1960383,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove vestigial logic related to `browser.translations.panelShown`"
+  },
+  {
+   "bugid": 1961311,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Make bootstrap.py --vcs=git graft with the new github repo"
+  },
+  {
+   "bugid": 1944245,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move MOZ_MACBUNDLE_NAME and MOZ_MACBUNDLE_ID from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1944289,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move Process Name for IPC from old-configure to moz.configure"
+  },
+  {
+   "bugid": 1957021,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove all old_configure_assignments"
+  },
+  {
+   "bugid": 1957023,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove invocation of old-configure"
+  },
+  {
+   "bugid": 1957496,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Deactivate orderfile on android"
+  },
+  {
+   "bugid": 1959188,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove usage of six in security/manager/ssl/ directory"
+  },
+  {
+   "bugid": 1959942,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Remove usage of six in security/manager/tools/ directory"
+  },
+  {
+   "bugid": 1960982,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Mach telemetry submissions greatly reduced over the last year"
+  },
+  {
+   "bugid": 1960939,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Fix yt workaround again"
+  },
+  {
+   "bugid": 1957610,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add useOhttp property to concept-fetch request class"
+  },
+  {
+   "bugid": 1959432,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Add etag and if none match header constants in fetch module"
+  },
+  {
+   "bugid": 1961061,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 6a007c98292fa72965d36389ce32d7609e399217 from 2025-04-17 00:37:37"
+  },
+  {
+   "bugid": 1961280,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 24064dcb7ba1094e85e0c49f627cc7dff31ee55a from 2025-04-17 20:19:25"
+  },
+  {
+   "bugid": 1913607,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Open recently visited item in the existing tab if Homepage as a New Tab is enabled"
+  },
+  {
+   "bugid": 1959430,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "HomeToolbarView leaks in HomeFragment"
+  },
+  {
+   "bugid": 1896897,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Having Firefox Nightly set as the default browser still displays the Set as default browser card on onboarding"
+  },
+  {
+   "bugid": 1959539,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Enable ToS by default in Firefox Android 138+"
+  },
+  {
+   "bugid": 1960280,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Updated setup checklist tasks to update based on the preference value instead of user press (prevents the system preferences from being marked as completed when they are not)"
+  },
+  {
+   "bugid": 1948968,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Opt-in to memory leak detection in various tests"
+  },
+  {
+   "bugid": 1950295,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "SplashScreen Memory leak in HomeActivity"
+  },
+  {
+   "bugid": 1956002,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Rework memory leak detection model to opt-out of tests, instead of opt-in"
+  },
+  {
+   "bugid": 1935182,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Memory leak: AwesomeBarWrapper is leaking in SearchDialogFragment"
+  },
+  {
+   "bugid": 1944964,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Search Consolidation] Modify the BundledSearchEnginesStorage class to call SearchEngineSelector API and utilize it's results."
+  },
+  {
+   "bugid": 1947538,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Search Consolidation] Sync with remote servers no less than 24 hours when the app is idle/in background"
+  },
+  {
+   "bugid": 1960283,
+   "status": "NEW",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Evaluating JavaScript code to retrieve the original geolocation for WebDriver tests in CI see a 2-3s delay due to WiFi scanning"
+  },
+  {
+   "bugid": 1959171,
+   "status": "VERIFIED",
+   "component": "Thunderbird:General",
+   "summary": "When printing a PDF attachment, only blank pages are being printed"
+  },
+  {
+   "bugid": 1958161,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Remove or update metrics expiring in Firefox 140: privacy.sanitize.* before Gecko version gets increased to 140 on 2025-04-28"
+  },
+  {
+   "bugid": 1960361,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Use the same logic to determine whether to autofill a field and to show the autocomplete popup for it."
+  },
+  {
+   "bugid": 1945420,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] \"Close Without Saving?\" warning loses focus when Tab is pressed"
+  },
+  {
+   "bugid": 1955429,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Instrument Firefox Desktop attribution and distribution in Glean"
+  },
+  {
+   "bugid": 1954490,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "more difficult to distinguish the current tab"
+  },
+  {
+   "bugid": 1954044,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "anseki.github.io - The LeaderLine Javascripts objects don't work anymore"
+  },
+  {
+   "bugid": 1960285,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Generic \"Extension is invalid\" error without details when an invalid extension is launched by \"web-ext run\""
+  },
+  {
+   "bugid": 1939488,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "\"InternalError: too much recursion\" when loading a large manifest.json file"
+  },
+  {
+   "bugid": 1950639,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Implement browser.test changes required for WPT"
+  },
+  {
+   "bugid": 1955990,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Show data collection permissions in `about:addons`"
+  },
+  {
+   "bugid": 1956472,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Enable data collection permissions in Nightly (desktop)"
+  },
+  {
+   "bugid": 1959534,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "T&I checkbox should be checked by default"
+  },
+  {
+   "bugid": 1960831,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add access key to the T&I checkbox in the prompt"
+  },
+  {
+   "bugid": 1960882,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Account for data collection permissions when requesting optional-only perms via `permissions.request()`"
+  },
+  {
+   "bugid": 1961136,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Add support for data collection permissions in `browser.permissions.contains()`"
+  }
+ ],
+ "fixed": 105,
+ "total": 121,
+ "restricted": 2
+}
