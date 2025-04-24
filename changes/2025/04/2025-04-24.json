@@ -1,0 +1,688 @@
+{
+ "date": "2025-04-24",
+ "buildid": "20250424092126",
+ "cset": "cdb7f526b187af6cb7913be04b06667814fa19cd",
+ "bugs": [
+  {
+   "bugid": 1934014,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Remove codec benchmark machinery"
+  },
+  {
+   "bugid": 1961610,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HDR video is forced on Youtube on non HDR display and settings"
+  },
+  {
+   "bugid": 1961737,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma [tier 2] win 11 ccov /webcodecs/temporal-svc-encoding.https.any.html | SVC L1T2 - expected FAIL | single tracking bug"
+  },
+  {
+   "bugid": 1960033,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement Maybe-Owned Pointer Type"
+  },
+  {
+   "bugid": 1960896,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[wpt-sync] Sync PR 51827 - HTML: tentative test for serializing <> in attribute values"
+  },
+  {
+   "bugid": 1958292,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "Crash in [@ nsObserverList::AppendStrongObservers]"
+  },
+  {
+   "bugid": 1961558,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Set endpoint-inclusive commitStyles pref by default in nightly"
+  },
+  {
+   "bugid": 1941347,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Escape \"<\" and \">\" in attributes when serializing HTML"
+  },
+  {
+   "bugid": 1955379,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable about:config pref 'dom.hidden_until_found.enabled'"
+  },
+  {
+   "bugid": 1960556,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement dialog `requestClose`"
+  },
+  {
+   "bugid": 1961770,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make marquee work in the presence of trusted types"
+  },
+  {
+   "bugid": 1960651,
+   "status": "NEW",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Investigate whether we can skip the timer when wifi scan is disabled"
+  },
+  {
+   "bugid": 1961872,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Fix the logic for icon encoding telemetry"
+  },
+  {
+   "bugid": 1962090,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Non-atomic static pref 'security.mixed_content.upgrade_display_content' being accessed on background thread by getter (in WorkerCSPContext)"
+  },
+  {
+   "bugid": 1961534,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Could not enable Japanese IME(Microsoft Japanese IME, ATOK2021,Google Japanese IME) on Google Search field if set to `Blank Page` to Home"
+  },
+  {
+   "bugid": 1961832,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Hang when putting large input into chatgpt.com text box: EventQueue::CoalesceEvents"
+  },
+  {
+   "bugid": 1961411,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WGPU to upstream (week of 2025-04-14)"
+  },
+  {
+   "bugid": 1962269,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to upstream 35f131ff (2025-04-23)"
+  },
+  {
+   "bugid": 1961780,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "We're missing checks for canceled compilations in CodeGenerator"
+  },
+  {
+   "bugid": 1954138,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Add ICU4X-based icu::Calendar implementations"
+  },
+  {
+   "bugid": 1950284,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Build an experimental loop unroller for wasm"
+  },
+  {
+   "bugid": 1957102,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "history search - EmbeddingGenerator"
+  },
+  {
+   "bugid": 1958328,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "history search - perf test"
+  },
+  {
+   "bugid": 1962086,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Remove unnecessary mlkem(false) in neqo_glue"
+  },
+  {
+   "bugid": 1962095,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.13.2"
+  },
+  {
+   "bugid": 1960824,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Revisit sameSite=none requires secure"
+  },
+  {
+   "bugid": 1946092,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add logs to investigate headers in HttpWinUtils.cpp"
+  },
+  {
+   "bugid": 1962140,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update the match rule of the Asana Zendesk shim"
+  },
+  {
+   "bugid": 1961975,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Content-process instantly crashes when opening Print Preview in a debug build, with a black-and-white print target"
+  },
+  {
+   "bugid": 1961884,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Add telemetry for origin metadata restoration attempts"
+  },
+  {
+   "bugid": 1961744,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Expose JS_IsIdentifier in JS via ChromeUtils"
+  },
+  {
+   "bugid": 1877997,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Add damp to cover some actions on large minified files. when wrapping lines is turned on."
+  },
+  {
+   "bugid": 1946026,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "CM6 performance issue when setting breakpoint on bundle"
+  },
+  {
+   "bugid": 1953454,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Extract shared helper to compute the title of File, Url and Path columns"
+  },
+  {
+   "bugid": 1961874,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use Intl.ListFormat for netmonitor waterfall tooltip"
+  },
+  {
+   "bugid": 1948069,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "pipelint does not work on Windows inside pwsh/cmd/bash (mozilla-build shell)"
+  },
+  {
+   "bugid": 1948141,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Run the stylelint-plugin-mozilla tests on automation"
+  },
+  {
+   "bugid": 1926118,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Reenable the browser_urlbar_keyed_search.js and browser_urlbar_search.js perf tests"
+  },
+  {
+   "bugid": 1953486,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add \"manage\" keyword for Manage Settings action"
+  },
+  {
+   "bugid": 1953492,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add keyword for save page as pdf action"
+  },
+  {
+   "bugid": 1959897,
+   "status": "ASSIGNED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Cancelling a big folder upload after the first file is scanned will continue to scan the folder files"
+  },
+  {
+   "bugid": 1960387,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Add tests for Content Analysis confirm quit dialog"
+  },
+  {
+   "bugid": 1961681,
+   "status": "ASSIGNED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "\"Firefox is already running, but is not responding\" after exiting and restarting with ongoing scan"
+  },
+  {
+   "bugid": 1895516,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "“x” button from “Import history..” banner from Firefox View is not aligned with the right edge of the card’s inner padding"
+  },
+  {
+   "bugid": 1958070,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "More BrowserGlue simplification/splitting"
+  },
+  {
+   "bugid": 1930250,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Finish up the new app menu messaging surface to prepare it for general use"
+  },
+  {
+   "bugid": 1956042,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Support multiple instances of SingleSelect on the same aboutwelcome screen"
+  },
+  {
+   "bugid": 1956091,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow for configuration of title and subtitle text in AboutWelcome secondary section"
+  },
+  {
+   "bugid": 1960078,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add \"universal\" type to InfoBar to show notification across all current and new windows"
+  },
+  {
+   "bugid": 1961859,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update TOS New User Treatment B Message Configuration to Match New Dropdown Text Styles"
+  },
+  {
+   "bugid": 1962166,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land alternative new user TOS dropdown string"
+  },
+  {
+   "bugid": 1958954,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add several placeholder newtab feature objects to FeatureManifest.yaml"
+  },
+  {
+   "bugid": 1961070,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Optimize wavy fox image on image in inferred personalization UI"
+  },
+  {
+   "bugid": 1961637,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add CSS class to help debug media query breakpoints"
+  },
+  {
+   "bugid": 1874939,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Update Nimbus to support co-enrollment"
+  },
+  {
+   "bugid": 1961890,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Emit at most one feature update event per feature ID when initializing ExperimentStore"
+  },
+  {
+   "bugid": 1956254,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Restoring a Session will show Tab groups twice in the List all tabs menu"
+  },
+  {
+   "bugid": 1959268,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Implement keyboard navigation for History while sorting by \"Date and site\" or \"Last visited\""
+  },
+  {
+   "bugid": 1959272,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Tweak styling for History while sorting by Date and site"
+  },
+  {
+   "bugid": 1938401,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Record tab group interaction metrics"
+  },
+  {
+   "bugid": 1951859,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Indicate when a tab is in a group via accessibility APIs"
+  },
+  {
+   "bugid": 1961085,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add Config for Testing Smart Tabs Suggest Other Tabs Methods"
+  },
+  {
+   "bugid": 1961086,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Use search term as Smart Tab Group topic"
+  },
+  {
+   "bugid": 1961159,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Unnamed tab groups is saved along with the labelled tab group when creating a tab group from the List All Tabs panel"
+  },
+  {
+   "bugid": 1961621,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fix preprocessing text on smart tabs suggest when group names are present"
+  },
+  {
+   "bugid": 1961654,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add Nimbus Recipe for Smart Tab Groups Clustering"
+  },
+  {
+   "bugid": 1815898,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove built-in colorways and inform their remaining users about colorways on AMO"
+  },
+  {
+   "bugid": 1961647,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Refactor mozboot/android.py"
+  },
+  {
+   "bugid": 1961725,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma mozbuild.configure.options.InvalidOptionError: Unknown option: MOZ_NO_PIE_COMPAT"
+  },
+  {
+   "bugid": 1959161,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "provide something like mach android-emulator --reset to re-inflate the avd"
+  },
+  {
+   "bugid": 1961269,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "JJ support fails in mach: Error: Failed to parse template: Method \"files\" doesn't exist for type \"TreeDiff\""
+  },
+  {
+   "bugid": 1961678,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Wrap `Glean.initialize` inside `GleanTelemetry`"
+  },
+  {
+   "bugid": 1962245,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Jujutsu: Internal error: Failed to access working copy state"
+  },
+  {
+   "bugid": 1961306,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "\"over\" in \"DNS over HTTPS\" should be uncapitalized"
+  },
+  {
+   "bugid": 1962007,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Fix YouTube picture-in-picture intervention on Android to not break exiting fullscreen mode"
+  },
+  {
+   "bugid": 1961853,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Update Sentry to version 8.9.0"
+  },
+  {
+   "bugid": 1956024,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads v2] Add Search UI in the compose TopAppBar for Downloads"
+  },
+  {
+   "bugid": 1962035,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version c6d1524b7cc0ae490ab511711734bffd8819776d from 2025-04-23 05:03:39"
+  },
+  {
+   "bugid": 1961149,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Mark theme and toolbar options as completed if the user has already set a non-default option"
+  },
+  {
+   "bugid": 1931363,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "[Baseline Profile] Add support for several baseline profile generator functions on CI"
+  },
+  {
+   "bugid": 1961583,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "DoH settings page is not scrollable"
+  },
+  {
+   "bugid": 1961823,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Strip Post Beta] Enable on release based on experimentation flag value"
+  },
+  {
+   "bugid": 1962163,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Strip Post Beta] Add custom targetting attribute for large screens"
+  },
+  {
+   "bugid": 1948628,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Display Toolbar - show browserActionsStart from DisplayState"
+  },
+  {
+   "bugid": 1948629,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Display Toolbar - show pageActionsStart from DisplayState"
+  },
+  {
+   "bugid": 1948633,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Display Toolbar - show pageOrigin from from DisplayState"
+  },
+  {
+   "bugid": 1948653,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Display Toolbar - show pageActionsEnd from DisplayState"
+  },
+  {
+   "bugid": 1948654,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Display Toolbar - show browserActionsEnd from DisplayState"
+  },
+  {
+   "bugid": 1962073,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Explicitly run Robolectric tests on SDK 35 for mozilla.components.compose.browser.toolbar module"
+  },
+  {
+   "bugid": 1962021,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Okio to version 3.11.0"
+  },
+  {
+   "bugid": 1936636,
+   "status": "REOPENED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Update Google Play Services Ads Identifier to version 18.2.0"
+  },
+  {
+   "bugid": 1961439,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.MainMenuTestCompose#homeMainMenuExtensionsButtonOpensManageExtensionsTest | java.lang.NullPointerException: findViewById(...) must not be null"
+  },
+  {
+   "bugid": 1961444,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.MainMenuTestCompose#verifyPasswordsMenuButtonTest | androidx.test.espresso.base.RootViewPicker$RootViewWithoutFocusException: Waited for the root of the view hierarchy to have window focus and not request layout for 10"
+  },
+  {
+   "bugid": 1959651,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "[Terms of service] The \"Agree and continue\" button is not reachable on the ToS onboarding card in landscape mode."
+  },
+  {
+   "bugid": 1961452,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Don't call SessionAccessibility.NativeProvider.setAttached until native handle is set"
+  },
+  {
+   "bugid": 1960329,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[wpt-sync] Sync PR 51968 - [wdspec] fix geolocation tests"
+  },
+  {
+   "bugid": 1875512,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Cleanup Colorways specific logic from XPIProvider and AOM internals"
+  },
+  {
+   "bugid": 1960981,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Back out Bug 1907124 (Bypassing Updates for Multiple Profiles feature)"
+  },
+  {
+   "bugid": 1952611,
+   "status": "RESOLVED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Alt+C no longer toggles the “Match Case” checkbox, only focuses it"
+  },
+  {
+   "bugid": 1955290,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Some countries in AddressMetaData.sys.mjs don't have sub_names which cause errors"
+  },
+  {
+   "bugid": 1961632,
+   "status": "NEW",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add Nimbus exposure for address autofill"
+  },
+  {
+   "bugid": 1960638,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Load PiP video-wrappers from jar:/file: instead of moz-extension:"
+  },
+  {
+   "bugid": 1953884,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Eagerly create the shared database"
+  },
+  {
+   "bugid": 1953886,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add simple forward migration support"
+  },
+  {
+   "bugid": 1953949,
+   "status": "NEW",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "second Firefox icons briefly appears in macOS dock when opening a link from external application"
+  },
+  {
+   "bugid": 1954538,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "[macOS] Extra Firefox icon briefly appears in the Dock when switching profiles"
+  },
+  {
+   "bugid": 1943642,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement JOG Dynamic Metric Registration (suitable for built-in addons)"
+  },
+  {
+   "bugid": 1950416,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate Legacy Telemetry Environment `addons` fields to Glean metrics"
+  },
+  {
+   "bugid": 1961080,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support 1-bit sumvec and histogram VDAFs in DAP"
+  },
+  {
+   "bugid": 1961002,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Fix number conversion issues in Figma token export"
+  },
+  {
+   "bugid": 1924764,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "JS bindings generate invalid enum variant discriminants"
+  },
+  {
+   "bugid": 1961048,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Add a test to make sure about:compat can toggle interventions on/off"
+  },
+  {
+   "bugid": 1961173,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Update DB when the data collection permission pref is enabled after extensions have been installed"
+  }
+ ],
+ "fixed": 96,
+ "total": 113,
+ "restricted": 3
+}
