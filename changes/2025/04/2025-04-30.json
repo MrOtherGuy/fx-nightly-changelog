@@ -1,0 +1,640 @@
+{
+ "date": "2025-04-30",
+ "buildid": "20250430092515",
+ "cset": "272b2cc681a93c88cfe833458f46750219793f3d",
+ "bugs": [
+  {
+   "bugid": 1962030,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[wmfme] Prevent CDM shutdown after MFMediaEngineParent is shut down in order to enable CDM reuse"
+  },
+  {
+   "bugid": 1962820,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version a38903521a79bd22d502125625f7701244e64aaa from 2025-04-25 16:04:01"
+  },
+  {
+   "bugid": 1960032,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Create implementation that decreases size of `AnchorResolved<T>`."
+  },
+  {
+   "bugid": 1957934,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Bindings (WebIDL)",
+   "summary": "Define alias for typedef classes using the IDL typedef name"
+  },
+  {
+   "bugid": 1955578,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Collect telemetry on which clobbered DOM properties are accessed"
+  },
+  {
+   "bugid": 1963343,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/tests/mochitest/general/test_interfaces.html | MutationEvent should  be defined on 'window' scope -  when Gecko 140 merges to beta on 2025-05-26"
+  },
+  {
+   "bugid": 1963059,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Correctly find the associated global's document"
+  },
+  {
+   "bugid": 1938866,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "High frequency MOZ_ASSERT(!CachedContentIsValid() || mRaceCacheWithNetwork) (We should not be hitting the network if we have valid cached content unless we are racing the network and [@ mozilla::net::nsHttpChannel::ProcessResponse] | single tracking bug"
+  },
+  {
+   "bugid": 1963263,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "maxActions is not behind the pref"
+  },
+  {
+   "bugid": 1961460,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Intermittent MOZ_ASSERT(sRemoteWorkerService) [@ mozilla::dom::RemoteWorkerService::Thread] | single tracking bug"
+  },
+  {
+   "bugid": 1467382,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support aria-keyshortcuts"
+  },
+  {
+   "bugid": 1962317,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Land initial framework for accessibility engine performance tests"
+  },
+  {
+   "bugid": 1963110,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update harfbuzz to new version 11.2.0 from 2025-04-28 15:56:32"
+  },
+  {
+   "bugid": 1954416,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Glitches when resizing browser window with layer compositor enabled"
+  },
+  {
+   "bugid": 1962966,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Firefox profiler UI flickers with layer compositor enabled"
+  },
+  {
+   "bugid": 1959310,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "String deduplication is complicated and slow"
+  },
+  {
+   "bugid": 1961348,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at js/src/vm/Interpreter.cpp:402"
+  },
+  {
+   "bugid": 1963431,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add JS_StringifyWithLengthHint"
+  },
+  {
+   "bugid": 1958280,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Add a very simple Ion register allocator"
+  },
+  {
+   "bugid": 1963159,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "perma failing bug1940716.js when running macosx aarch64 shippable tests on new os version 15.30 and m4 chipset"
+  },
+  {
+   "bugid": 1962979,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "StoreBuffer lock not held while calling realm destroy callback"
+  },
+  {
+   "bugid": 1957504,
+   "status": "NEW",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "wasm: enable lazy tiering for all content"
+  },
+  {
+   "bugid": 1961674,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Use the whole-cell store buffer for wasm"
+  },
+  {
+   "bugid": 1308929,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Percentage max-width/height on orthogonal writing-mode images isn't compatible with Chrome"
+  },
+  {
+   "bugid": 1962279,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Dump view transition pseudo-element tree in layout debugger"
+  },
+  {
+   "bugid": 1963204,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Remove unnecessary use of eContentBasedAutoMinSize in ResolveIntrinsicSizeForNonSpanningItems"
+  },
+  {
+   "bugid": 1961753,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "text-align on vertical table-cell with inline-size not set does not work"
+  },
+  {
+   "bugid": 1960813,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Allow web extension id characters"
+  },
+  {
+   "bugid": 1960943,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add telemetry to collect the size of page loads"
+  },
+  {
+   "bugid": 1961162,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Certificate Compression: Introduce preferences for zlib/brotli/zstd for QUIC"
+  },
+  {
+   "bugid": 1874102,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Implement Http2WebTransportStream"
+  },
+  {
+   "bugid": 1947869,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Implement WebTransport datagram send and receive support over HTTP/2"
+  },
+  {
+   "bugid": 1954532,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Implement SETTINGS_WEBTRANSPORT_MAX_SESSIONS"
+  },
+  {
+   "bugid": 1671719,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Improve the main thread's estimation of the visual scroll offset relative to which display port margins are painted"
+  },
+  {
+   "bugid": 1946610,
+   "status": "ASSIGNED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Enable `layout.scroll.disable-pixel-alignment` by default"
+  },
+  {
+   "bugid": 1962280,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "osclientcerts: avoid dispatching to the background thread when it's not necessary"
+  },
+  {
+   "bugid": 1963169,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "investigate and fix browser_devices_get_user_media.js and browser_devices_get_user_media_grace.js are almost perma failing on macosx 15.30 upgrade"
+  },
+  {
+   "bugid": 1958963,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Expose all speakers upon microphone access"
+  },
+  {
+   "bugid": 1962782,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "AV1 simulcast with DD doesn't have temporal scalability in 137 and newer versions"
+  },
+  {
+   "bugid": 1605255,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "RTP and RTCP Stats disappear on replaceTrack(null)"
+  },
+  {
+   "bugid": 1952950,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Re-enable DTLS 1.3"
+  },
+  {
+   "bugid": 1919165,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Consider not exposing nsChildView in the nsIWidget tree."
+  },
+  {
+   "bugid": 1963279,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "With titlebar on, entering native fullscreen on macOS keeps some blank space around"
+  },
+  {
+   "bugid": 1938101,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KDE][X11] Firefox will freeze and get unresponsive when dragging and marking text (video included)"
+  },
+  {
+   "bugid": 1959509,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Always create dmabuf with modifiers array and corresponting GBM flag."
+  },
+  {
+   "bugid": 1963354,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Fix the GTK version checked for decalring some constants in widget/gtk/nsWindow.cpp"
+  },
+  {
+   "bugid": 1780401,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Update to chrono 0.4.20 when released"
+  },
+  {
+   "bugid": 1963212,
+   "status": "REOPENED",
+   "component": "DevTools:Inspector",
+   "summary": "Frequent devtools/client/inspector/fonts/test/browser_fontinspector_all-fonts.js | single tracking bug"
+  },
+  {
+   "bugid": 1962993,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Use URLSearchParams to build URL in HTTPCustomRequestPanel#onUpdateQueryParams"
+  },
+  {
+   "bugid": 1963000,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Perma documentation ./mach doc | /builds/worker/checkouts/gecko/docs-out/html/_staging/tools/sanitizer/asan.rst:132: WARNING: undefined label: 'mercurial overview'"
+  },
+  {
+   "bugid": 1962537,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:General",
+   "summary": "quickref docs: remove hg references"
+  },
+  {
+   "bugid": 1960928,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "`./mach lint --linter clippy` lints the repo multiple times, skips \"excluded\" projects"
+  },
+  {
+   "bugid": 1962375,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Enable linting for .ts files"
+  },
+  {
+   "bugid": 1960791,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "`mach try --push-to-lando` requires cinnabar with git"
+  },
+  {
+   "bugid": 1935255,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Callout container and its secondary buttons on the Firefox View Discoverability panel are missing proper HCM treatments"
+  },
+  {
+   "bugid": 1959542,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Enable ToS by default in Firefox 138.x mid-cycle dot release (Windows, Mac, Linux)"
+  },
+  {
+   "bugid": 1963211,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "RTAMO onboarding flashes before about:welcome loads targeting"
+  },
+  {
+   "bugid": 1880518,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Home and newtab typography update to match design system"
+  },
+  {
+   "bugid": 1949001,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab inferred personalization control and pacing logic"
+  },
+  {
+   "bugid": 1958135,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Events emitted from context menu via DiscoveryStreamUserEvent() are not tracked in Glean"
+  },
+  {
+   "bugid": 1958521,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The IAB Billboards Ads and their context menus are read incorrectly using a Screen reader/Narrator"
+  },
+  {
+   "bugid": 1962186,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update StyleLint to enforce typography tokens"
+  },
+  {
+   "bugid": 1962772,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add a ./mach newtab watch utility that runs both ./mach watch and ./mach npm run watchmc for the newtab codebase"
+  },
+  {
+   "bugid": 1963372,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Submit private ping in addition with newtab ping if enabled"
+  },
+  {
+   "bugid": 1961629,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Improve the ergonomics of getExperimentMetaData / getRolloutMetaData"
+  },
+  {
+   "bugid": 1962757,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "For SERP telemetry, allow fields within cookies to be in any part of the field"
+  },
+  {
+   "bugid": 1961043,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "text in history sidebar invisible"
+  },
+  {
+   "bugid": 1951374,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "2.79% damp browser-toolbox.styleeditor-ready.DAMP (Windows) regression on Tue February 18 2025"
+  },
+  {
+   "bugid": 1955643,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "URL bar tab group matching only matches first word in tab group name"
+  },
+  {
+   "bugid": 1962434,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fire TabGroupCreate events during session restore"
+  },
+  {
+   "bugid": 1962696,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Collapsed vertical tabs can be dragged from the mute/close button without becoming active which confuses tab grouping"
+  },
+  {
+   "bugid": 1959127,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Translate \"placeholder\" attributes on <textarea> elements"
+  },
+  {
+   "bugid": 1963203,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Package name in about:buildconfig always shows org.mozilla.fennec_aurora"
+  },
+  {
+   "bugid": 1963361,
+   "status": "VERIFIED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma KeyError: 'NIGHTLY_BUILD' after Android warning: /builds/worker/checkouts/gecko/toolkit/mozapps/installer/js-compare-ast.js:21:24 SyntaxError: import declarations may only appear at top level of a module - when Gecko 140 merges to beta on 2025-05-26"
+  },
+  {
+   "bugid": 1963450,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "JJ Support: `mach try` broken when jj is based on native Firefox repo"
+  },
+  {
+   "bugid": 1962824,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma sel-nightly selenium.common.exceptions.TimeoutException: Message:"
+  },
+  {
+   "bugid": 1963232,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma Sel [Tier-2] test_pdf_navigation | AssertionError('Mismatching screenshots for test_pdf_navigation_down-beta_2204.png with extremas: ((0, 18), (0, 18), (0, 18))')"
+  },
+  {
+   "bugid": 1957787,
+   "status": "REOPENED",
+   "component": "Firefox for Android:General",
+   "summary": "Update AndroidX Compose to version 1.8.0 (BOM 2025.04.01)"
+  },
+  {
+   "bugid": 1957792,
+   "status": "REOPENED",
+   "component": "Firefox for Android:General",
+   "summary": "Resolve new ConfigurationScreenWidthHeight linter warnings with Compose 1.8"
+  },
+  {
+   "bugid": 1963255,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 4cae1b5f27229134defd43c78e8fdb66c275fecd from 2025-04-29 05:03:45"
+  },
+  {
+   "bugid": 1940052,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "PIP Mode video cut issue when on desktop mode (youtube.com)."
+  },
+  {
+   "bugid": 1963011,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Don't show the setup checklist on tablet devices"
+  },
+  {
+   "bugid": 1944172,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Trigger biometric prompt when switching to PBM from the tabs tray"
+  },
+  {
+   "bugid": 1962616,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Record telemetry for biometric auth"
+  },
+  {
+   "bugid": 1962779,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Trigger auth prompt before tapping the button"
+  },
+  {
+   "bugid": 1961078,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Fix gradle error when building from root folder"
+  },
+  {
+   "bugid": 1962708,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Clean and update android-components UI test Task transform"
+  },
+  {
+   "bugid": 1927595,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Isolated Process] Fix GeckoViewTest Priority Tests for Isolated Processes"
+  },
+  {
+   "bugid": 1930616,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement NavigationManager using parent process ProgressListener"
+  },
+  {
+   "bugid": 1960283,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Evaluating JavaScript code to retrieve the original geolocation for WebDriver tests in CI see a 2-3s delay due to WiFi scanning"
+  },
+  {
+   "bugid": 1944691,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Local model managment - Display local models"
+  },
+  {
+   "bugid": 1963014,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Fix JSDoc documentation & enable ESLint valid-jsdoc/require-jsdoc collections on various modules in toolkit/"
+  },
+  {
+   "bugid": 1961392,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "Firefox preferences \"Firefox Labs\" section appears for a moment on first load of about:preferences (and then disappears), with about:config setting `datareporting.healthreport.uploadEnabled:false` (e.g. when using mozregression)"
+  },
+  {
+   "bugid": 1960442,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "test_mirrors can't assert that all legacy events' extra keys are present in Glean, but it can keep the list of events for which that is untrue to a manageable size"
+  },
+  {
+   "bugid": 1962735,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Forbid unmirrored Scalars or Events in-tree"
+  },
+  {
+   "bugid": 1963373,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Migrate Legacy Telemetry Environment fields to Glean Metrics"
+  },
+  {
+   "bugid": 1958391,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add aria-describedby to the support link in MozBaseInput element"
+  },
+  {
+   "bugid": 1962261,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Fix mocking Services in Storybook preview.mjs"
+  },
+  {
+   "bugid": 1962273,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Enable prettier formatting of figma.ts Code Connect files"
+  },
+  {
+   "bugid": 1961980,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove some unused code left behind after bug 1960374"
+  },
+  {
+   "bugid": 1962919,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove the testUtils experimental APIs and have tests check the addon directly"
+  },
+  {
+   "bugid": 1963087,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Fix a bug with the header-removing feature in the webcompat addon"
+  },
+  {
+   "bugid": 1940287,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Developer Tools",
+   "summary": "Exception thrown from onMessage handlers aren't shown in DevTools"
+  },
+  {
+   "bugid": 1957990,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Consider adopting `moz-checkbox` in our add-on prompts"
+  },
+  {
+   "bugid": 1962683,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "tabGroups.onCreated not always fired, in browser_ext_tabs_group_ungroup.js"
+  }
+ ],
+ "fixed": 90,
+ "total": 105,
+ "restricted": 2
+}
