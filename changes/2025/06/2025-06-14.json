@@ -1,0 +1,436 @@
+{
+ "date": "2025-06-14",
+ "buildid": "20250614091208",
+ "cset": "430c65cd452dd465ffccd43e93a68ab256ed58f7",
+ "bugs": [
+  {
+   "bugid": 1971683,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Text-Fragments: Remove text fragment from address bar after clicking \"Remove all Highlights\""
+  },
+  {
+   "bugid": 1971805,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Rename SANDBOXED_ALLOW_DOWNLOADS to SANDBOXED_DOWNLOADS"
+  },
+  {
+   "bugid": 1972109,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make more of the AUTO_PROFILER markers make IsStackBased markers"
+  },
+  {
+   "bugid": 1848857,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`GPUCommandEncoder` commands generate validation error on call, instead of deferring to `GPUCommandEncoder.finish`"
+  },
+  {
+   "bugid": 1945683,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable layer compositor on Windows in Nightly"
+  },
+  {
+   "bugid": 1765346,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Consider removing alignas(8) from JS::Value"
+  },
+  {
+   "bugid": 1968356,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Could RootedField avoid aliasing clashes"
+  },
+  {
+   "bugid": 1970673,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove unnecessary rooting which showed up in JetStream3 rooting reports"
+  },
+  {
+   "bugid": 1971566,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Revert superfluous scope added to JSON.cpp"
+  },
+  {
+   "bugid": 1971896,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma  js/src/jit-test/tests/cacheir/non-function-getters-2.js | /builds/worker/checkouts/gecko/js/src/jit-test/tests/cacheir/non-function-getters-2.js:17:23 ReferenceError: scriptAddressForFunction when Gecko 141 merges to beta on 2025-06-23"
+  },
+  {
+   "bugid": 1971730,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips64]  The simulator fails to pass asm.js/testMathLib.js"
+  },
+  {
+   "bugid": 1969491,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !mEntered, at /builds/worker/workspace/obj-build/dist/include/mozilla/ReentrancyGuard.h:33"
+  },
+  {
+   "bugid": 1970161,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Implement Intl.Locale.prototype.variants"
+  },
+  {
+   "bugid": 1962010,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Temporal's getTimeZoneTransition method returns moment without offset transition"
+  },
+  {
+   "bugid": 1970324,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Iterator helpers don't handle return completions correctly when generator is in suspended-start state"
+  },
+  {
+   "bugid": 1971607,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "Make nsTableWrapperFrame::InnerTableFrame public"
+  },
+  {
+   "bugid": 1970244,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Frequent netwerk/test/browser/browser_about_cache.js | single tracking bug"
+  },
+  {
+   "bugid": 1957073,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "RFP Granular Overrides would apply both remote and local overrides for a given domain key"
+  },
+  {
+   "bugid": 1971906,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Update NSS to new version 8a4fe863efb1d1d50cfb9b0071b1b37ab0e2b385 from 2025-06-12 13:21:34"
+  },
+  {
+   "bugid": 1971699,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "skip DealWithWindowsAppearanceHacks in the content process because it is a no-op"
+  },
+  {
+   "bugid": 1972107,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Add a profiler marker for HandleMainThreadCATransaction. r=mstange"
+  },
+  {
+   "bugid": 1971549,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Ubuntu] Checkbox outlines are barely visible in prompts, sidebar and in Profile Manager"
+  },
+  {
+   "bugid": 1932143,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Color picker doesn't move on mousemove when RDM + touch simulation is enabled"
+  },
+  {
+   "bugid": 1968288,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Fix a ruff warning in browser/components/storybook/mach_commands.py"
+  },
+  {
+   "bugid": 1971469,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "`mach try` on cinnabar-repo fails to detect correct base"
+  },
+  {
+   "bugid": 1971879,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make AMP and Wikipedia suggestions independently toggleable from Suggest"
+  },
+  {
+   "bugid": 1971923,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Enable weather suggestions by default in DE, FR, and IT"
+  },
+  {
+   "bugid": 1971744,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Distribution ID isn't read when sending enterprise telemetry"
+  },
+  {
+   "bugid": 1971633,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Create preview fluent file for IP Protection"
+  },
+  {
+   "bugid": 1968834,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Improve Customization Panel icon & placement"
+  },
+  {
+   "bugid": 1970515,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add in trending search result icon for variant B"
+  },
+  {
+   "bugid": 1971999,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Bump version of New Tab XPI addon now that we've built 140.0.0 for train-hopping"
+  },
+  {
+   "bugid": 1971518,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Perma xpcshell.toml:toolkit/components/search/tests/xpcshell/searchconfigs/test_google.js | xpcshell return code: 0 - when release merges to esr140 on 2025-06-16"
+  },
+  {
+   "bugid": 1915741,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add logic to create Taskbar Tab"
+  },
+  {
+   "bugid": 1915742,
+   "status": "NEW",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add Taskbar Tabs launch handling"
+  },
+  {
+   "bugid": 1958031,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add scope handling for Taskbar Tabs"
+  },
+  {
+   "bugid": 1966477,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Implement pinning for Taskbar Tabs."
+  },
+  {
+   "bugid": 1966829,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Create Taskbar Tabs window manager for managing window creation and lifecycle."
+  },
+  {
+   "bugid": 1968600,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add telemetry for Windows Backup"
+  },
+  {
+   "bugid": 1944907,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Drag a tab to pin it [for users with at least one pinned tab]"
+  },
+  {
+   "bugid": 1972060,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Too many vertical tabs causes tools in sidebar to get pushed off screen"
+  },
+  {
+   "bugid": 1966312,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use weak android symbol instead of dlopen/dlsym for PlatformDNSAndroid.cpp"
+  },
+  {
+   "bugid": 1971085,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Automate generation of android system header list"
+  },
+  {
+   "bugid": 1971706,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove VolatileBuffer code"
+  },
+  {
+   "bugid": 1963843,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Outdated third_party/python/aiohttp/requirements/constraints.txt"
+  },
+  {
+   "bugid": 1966763,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Bump Mach's minimum required Python version to 3.9"
+  },
+  {
+   "bugid": 1967974,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run-task in containers should reap zombie processes"
+  },
+  {
+   "bugid": 1971921,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Update Sentry to version 8.13.3"
+  },
+  {
+   "bugid": 1971665,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Perma beta org.mozilla.fenix.trackingprotection.TrackingProtectionPanelInteractorTest.WHEN onBackPressed is called THEN call popBackStack and navigate | java.lang.InstantiationError: kotlin.jvm.functions.Function1"
+  },
+  {
+   "bugid": 1971934,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 5358a191c92d8a4a320f28e3d7e5d899d213332c from 2025-06-13 05:03:46"
+  },
+  {
+   "bugid": 1966712,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Enable biometric authentication in release and remove feature flag entirely"
+  },
+  {
+   "bugid": 1969109,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu Redesign 2025] Add compose test selectors for MainMenu"
+  },
+  {
+   "bugid": 1971601,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025 follow up] Remove CFR for browser menu"
+  },
+  {
+   "bugid": 1971297,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Re-enable extensions related composable main menu UI tests"
+  },
+  {
+   "bugid": 1972084,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.CollectionTest#removeTabFromCollectionUsingSwipeLeftActionTest | java.lang.AssertionError: Assert failed: The component is displayed!"
+  },
+  {
+   "bugid": 1964994,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "Add support for data collection permissions in A-C"
+  },
+  {
+   "bugid": 1964995,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "Add support for data collection permissions in the install prompt"
+  },
+  {
+   "bugid": 1971980,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "Handle technical and interaction data collection permission"
+  },
+  {
+   "bugid": 1958863,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Cleanup traces of the legacy telemetry histogram API in geckoview"
+  },
+  {
+   "bugid": 1971952,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "geckoview-no-fission-no-ship description opposite to ship enable state"
+  },
+  {
+   "bugid": 1963656,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "Add Region, Source Version, and OS Version variants to testing"
+  },
+  {
+   "bugid": 1971964,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "Perma Exception: In task.run 'merge-main-to-beta': extra keys not allowed @ data['push']"
+  },
+  {
+   "bugid": 1971643,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Application Update",
+   "summary": "badge for downloaded update added to hamburger menu but menu item to restart to apply update missing"
+  },
+  {
+   "bugid": 1930501,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Implement bfcache clearing for `Clear-Site-Data: cache`-header"
+  },
+  {
+   "bugid": 1965895,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Add Peacock, SkyShowtime, Showmax, and Now TV to Picture-In-Picture video wrappers"
+  },
+  {
+   "bugid": 1971189,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Picture-in-Picture pause control does not work for www.apple.com/apple-events/"
+  },
+  {
+   "bugid": 1890366,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Simplify Places expiration heuristic"
+  },
+  {
+   "bugid": 1968228,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Wrongly named indices removed in migration v80 (no such table: moz_newtab_story_click_idx_newtab_click_timestamp)"
+  },
+  {
+   "bugid": 1717672,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Avoid UUID leak via webcompat add-on"
+  },
+  {
+   "bugid": 1888486,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser.i18n.getPreferredSystemLanguages()"
+  },
+  {
+   "bugid": 1970075,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "browser.notifications.create() no longer displays icons when using data: URLs (base64-encoded images)"
+  }
+ ],
+ "fixed": 62,
+ "total": 71,
+ "restricted": 0
+}
