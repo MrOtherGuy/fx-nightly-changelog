@@ -1,0 +1,826 @@
+{
+ "date": "2025-06-19",
+ "buildid": "20250619214031",
+ "cset": "ab83261e5da968c9e678dc0cee45741888ec1c45",
+ "bugs": [
+  {
+   "bugid": 1969841,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Remove blocking ability to disable utility audio decoder on nightly"
+  },
+  {
+   "bugid": 1972608,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Intermittent TV toolkit/modules/tests/browser/browser_Troubleshoot.js | Schema mismatch, Error: Validation error: Object is not of the expected type: object=[\"[GFX1-]: Calling WaitFlushedEvent::Run: is delayed: 3106\"], schema={\"type\":\"object\",\"pr"
+  },
+  {
+   "bugid": 1973001,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Improve mica toolbar looks."
+  },
+  {
+   "bugid": 1960671,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[HDR] Add support for HLG"
+  },
+  {
+   "bugid": 1959597,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Tab crash in debug mode on page with CSS selector has trailing comma inside :is() when layout.css.details-content.enabled is enabled (Hit MOZ_CRASH(assertion `left == right` failed   left: 3  right: 2) at servo/components/style/sharing/mod.rs:159)"
+  },
+  {
+   "bugid": 1972835,
+   "status": "VERIFIED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma dom/view-transitions/test/browser/browser_tab_detach_vt.js | Uncaught exception in test bound test_tab_detach_active_vt - TypeError: content.document.startViewTransition is not a function - when Gecko 141 merges to beta on 2025-06-23"
+  },
+  {
+   "bugid": 1890929,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Inline module scripts with no dependencies should be executed after a full task"
+  },
+  {
+   "bugid": 1966091,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] /dom/events/scrolling/overscroll-event-fired-to-document.tentative.html | single tracking bug"
+  },
+  {
+   "bugid": 1972478,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] /html/semantics/interactive-elements/the-summary-element/interactive-content.html | Clicking in an <iframe> doesn't open <details> - expected TIMEOUT | single tracking bug"
+  },
+  {
+   "bugid": 1972151,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance APIs",
+   "summary": "Image-upscaling test #4 on LCP Web Platform Tests is failing"
+  },
+  {
+   "bugid": 1968220,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Test security of system modules in regards to unexpected script execution"
+  },
+  {
+   "bugid": 1969821,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Narrator doesn't report the content of non-header table cells"
+  },
+  {
+   "bugid": 1966793,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Typo in GetInternalformatParameter warning"
+  },
+  {
+   "bugid": 1972870,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update OTS to latest upstream commit (ee75ff5)"
+  },
+  {
+   "bugid": 1972749,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to upstream 3a5d0f27 (2025-06-17)"
+  },
+  {
+   "bugid": 1970784,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "With Layer Compositor, css animation in an iframe behave normally, unless you click inside the iframe. Then, it redraws the whole browser."
+  },
+  {
+   "bugid": 1971968,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Linux/HDR] Use only one lock for Layers/Surfaces"
+  },
+  {
+   "bugid": 1960300,
+   "status": "NEW",
+   "component": "Core:Internationalization",
+   "summary": "Upgrade ICU4X to 2.0 (or 2.0-beta3 or git main)"
+  },
+  {
+   "bugid": 1970788,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "ICU constant data is placed in a writable section of xul.dll on Windows targets"
+  },
+  {
+   "bugid": 1908253,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Static LifoAlloc Misuse Analysis"
+  },
+  {
+   "bugid": 1972669,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: mLength + aIncr > mTail.mCapacity, at Vector.h"
+  },
+  {
+   "bugid": 1968329,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Remove branch in EmitInitDependentStringBase"
+  },
+  {
+   "bugid": 1972625,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Perma [tier 2] tests/jit-test/jit-test/tests/self-test/maybe-fjcvtzs.js | /opt/worker/tasks/task_175017270048519/build/tests/jit-test/jit-test/tests/self-test/maybe-fjcvtzs. (code 3, args \"--no-blinterp --no-baseline --no-ion --more-compartments\") [0.0 s]"
+  },
+  {
+   "bugid": 1972794,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Tidy up JS engine linked list classes a little"
+  },
+  {
+   "bugid": 1970505,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Wasm-PI: Assertion failure: !cx->isExceptionPending(), at /home/matthew/unified-git/js/src/vm/Interpreter.cpp:497 after Clang 19 update."
+  },
+  {
+   "bugid": 1972235,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Crash [@ JSObject::getClass] involving [@ JSObject::is<js::FixedLengthSharedArrayBufferObject>]"
+  },
+  {
+   "bugid": 1972566,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Perma SM and jit tests on esr140 /builds/worker/checkouts/gecko/js/src/jit-test/tests/wasm/unroll7.js:48:11 Error: Assertion failed: got false, expected true"
+  },
+  {
+   "bugid": 1972621,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Change WPT test to specify maximum limit"
+  },
+  {
+   "bugid": 1968678,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "perma fail ubuntu 24.04  layout/generic/test/ test_page_scroll_overlap.html | test_selection_expanding.html"
+  },
+  {
+   "bugid": 1957317,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Update CJKT default fonts to Noto Sans CJK"
+  },
+  {
+   "bugid": 1972513,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add telemetry to count how many invalid cookies we have in the database"
+  },
+  {
+   "bugid": 1840532,
+   "status": "ASSIGNED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Add support for an additional static preferences list in comm-central"
+  },
+  {
+   "bugid": 1852489,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update or remove Nimbus feature 'fontvisibility'"
+  },
+  {
+   "bugid": 1970646,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update `UrlClassifierExceptionList` matching logic to check for entry list category"
+  },
+  {
+   "bugid": 1968764,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 141 to NSS 3.113"
+  },
+  {
+   "bugid": 1964024,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Move minimum sandbox level for windows content process to 6."
+  },
+  {
+   "bugid": 1972758,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "c-c perma dom/indexedDB/test/unit/test_keys.js | Hit MOZ_CRASH(Blocking eval() with System Principal with script function anonymous"
+  },
+  {
+   "bugid": 1968628,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Mitigate indexeddb-open perf regression by caching client initialization status on PBackground"
+  },
+  {
+   "bugid": 1927886,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Allow dcsctp to be used for DataChannel"
+  },
+  {
+   "bugid": 1968812,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Make it possible to use Canonicals on CallWorkerThread"
+  },
+  {
+   "bugid": 1972147,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Crash in [@ mozilla::safebrowsing::LookupCacheV4::ApplyUpdate]"
+  },
+  {
+   "bugid": 1727116,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Replace MediaTransportHandler sigslot stuff with MediaEventProducer"
+  },
+  {
+   "bugid": 1926449,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Minimize the number of copies MediaEventSource is making"
+  },
+  {
+   "bugid": 1947783,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "DataChannel will assemble DATA chunks from different messages into the same message"
+  },
+  {
+   "bugid": 1964149,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Window border ignores gtk.rounded-bottom-corners"
+  },
+  {
+   "bugid": 1967366,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[KDE] Firefox crashes during playback of HDR video with gfx.wayland.hdr enabled - invalid dmabuf modifiers"
+  },
+  {
+   "bugid": 1972884,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Add a profiler marker for calls to nsDirectoryService::Get"
+  },
+  {
+   "bugid": 1957885,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Inline previews and preview popup not working"
+  },
+  {
+   "bugid": 1972497,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Conditional panel text shouldn't be monospace"
+  },
+  {
+   "bugid": 1972641,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 141] Update MDN compat data"
+  },
+  {
+   "bugid": 1972515,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Expose out of band declarations like pres hints and view transition UA rules in InspectorUtils.getMatchingCSSRules"
+  },
+  {
+   "bugid": 1972883,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Update comments relating to throttling parent process resources"
+  },
+  {
+   "bugid": 1972414,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Re-enable prettier for styleeditor js files"
+  },
+  {
+   "bugid": 1579458,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Setting keyword.enabled to false should remove the URL bar placeholder (or the search with part of it)"
+  },
+  {
+   "bugid": 1970997,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "sometimes the search term persists in the url bar"
+  },
+  {
+   "bugid": 1971534,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Distinguish semantic and serp history in engagement/abandonment telemetry events"
+  },
+  {
+   "bugid": 1963385,
+   "status": "ASSIGNED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Record use of the content analysis SDK in telemetry"
+  },
+  {
+   "bugid": 1972764,
+   "status": "VERIFIED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Using the Save Link context menu option will result in a failed download"
+  },
+  {
+   "bugid": 1972773,
+   "status": "VERIFIED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "\"Quit Nightly\" dialog incorrectly appears after canceling exit during active download"
+  },
+  {
+   "bugid": 1972664,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update finish setup button messages for localization"
+  },
+  {
+   "bugid": 1969593,
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create Trending Search \"Variant C\" Widget"
+  },
+  {
+   "bugid": 1972257,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Smart shortcuts Places DB setup"
+  },
+  {
+   "bugid": 1972651,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Skip builtin-newtab initialization when XPI-installed in safe mode, deferring to the built-in version"
+  },
+  {
+   "bugid": 1972750,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Fix spacing between DevTools and Customize icons on New Tab"
+  },
+  {
+   "bugid": 1956082,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Read from the shared SQL database for enrollments"
+  },
+  {
+   "bugid": 1964496,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Make desktop Heartbeat feature fully compatible with multi-profile group id based Nimbus enrollments"
+  },
+  {
+   "bugid": 1971425,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Nimbus can fail to write all enrollments to the db during an update"
+  },
+  {
+   "bugid": 1972412,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Enable Nimbus logs in all nimbus tests"
+  },
+  {
+   "bugid": 1972415,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Move updateRecipes logging to the start of #updateImpl"
+  },
+  {
+   "bugid": 1972427,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Submit database consistency telemetry during the import-enrollments-to-sql migration"
+  },
+  {
+   "bugid": 1972461,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Ensure NimbusEnrollments recipe field is never null."
+  },
+  {
+   "bugid": 1972606,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "_deleteForTests doesn't delete the from the NimbusEnrollments table"
+  },
+  {
+   "bugid": 1971989,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Enable Add Search Engine feature for post forms with role=search"
+  },
+  {
+   "bugid": 1925772,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "When downloading a file using Private Browsing window, the Taskbar Button Progress Bar is displayed on Main window instead of Private Browsing window"
+  },
+  {
+   "bugid": 1966473,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add Nimbus pref to allow remote enabling Taskbar Tabs."
+  },
+  {
+   "bugid": 1965719,
+   "status": "VERIFIED",
+   "component": "Firefox:Sidebar",
+   "summary": "Vertical pinned tabs area does not auto expand when new tab is pinned"
+  },
+  {
+   "bugid": 1966761,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add telemetry for new pinned tabs interactions"
+  },
+  {
+   "bugid": 1968175,
+   "status": "VERIFIED",
+   "component": "Firefox:Sidebar",
+   "summary": "Using context menu options will collapse and expand the sidebar"
+  },
+  {
+   "bugid": 1972066,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Add strings for new right-click menu item and link for managing extensions"
+  },
+  {
+   "bugid": 1961161,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add additional metrics for closing tabs within tab groups"
+  },
+  {
+   "bugid": 1970664,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Fix dragging a tab/tabs to the last index"
+  },
+  {
+   "bugid": 1972512,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "A tab group can be created by moving a single tab into itself"
+  },
+  {
+   "bugid": 1966311,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use weak android symbol instead of dlopen/dlsym for android/Ashmem.cpp"
+  },
+  {
+   "bugid": 1971687,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove dependency from mozglue on ashmem"
+  },
+  {
+   "bugid": 1961286,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Bookmarks",
+   "summary": "[Bookmarks Evolution] New Folder buttons have inconsistent labels across Bookmark views"
+  },
+  {
+   "bugid": 1967423,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads v2] Fix UI tests that are falling from adding download snackbar notifications."
+  },
+  {
+   "bugid": 1970739,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "[Nimbus Messaging] New messages never received to be scheduled until Fenix is visually opened"
+  },
+  {
+   "bugid": 1972866,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version dbbb9a0c0038ad0a461c82d4ba54d194ce2df61e from 2025-06-18 13:47:11"
+  },
+  {
+   "bugid": 1972903,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Pick up 2025-06-18 minor AndroidX dependency bumps"
+  },
+  {
+   "bugid": 1970965,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Ship the felt privacy description card in PBM homepage"
+  },
+  {
+   "bugid": 1968196,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "The search bar is not in focus and the keyboard is not displayed after confirming the authentication for a session opened via a PB shortcut"
+  },
+  {
+   "bugid": 1971023,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Clean up Felt Privacy settings"
+  },
+  {
+   "bugid": 1969001,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add Nimbus flag for toolbar redesign experiments"
+  },
+  {
+   "bugid": 1969016,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Preferences to toggle toolbar redesign"
+  },
+  {
+   "bugid": 1969018,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Secret menu settings for redesign toggle"
+  },
+  {
+   "bugid": 1970494,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] Add hyphen in the word if it spills over to next line for top navigation bar menu items"
+  },
+  {
+   "bugid": 1971886,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[regression] New menu has multiple three-dot entrypoints and duplicates Custom Tab menu intents"
+  },
+  {
+   "bugid": 1972550,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] The 'Customize Homepage' icon differs from the one in the figma"
+  },
+  {
+   "bugid": 1972559,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] The description of the \"Sign in\" menu item don't align with the design"
+  },
+  {
+   "bugid": 1972603,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] The 'Desktop site - Off' icon differs from the one in the figma"
+  },
+  {
+   "bugid": 1972845,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Mockito to version 5.18.0"
+  },
+  {
+   "bugid": 1971476,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disabled UI tests due to Tools, Extensions and Save menu routes removal"
+  },
+  {
+   "bugid": 1972977,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < BookmarksTest. deleteBookmarkFoldersTest >"
+  },
+  {
+   "bugid": 1973013,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disable verifyFollowDeviceLanguageTest UI test"
+  },
+  {
+   "bugid": 1964997,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "Show data collection permissions in the add-ons manager in Fenix"
+  },
+  {
+   "bugid": 1972983,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "addons_permissions_required_data_collection_description/mozac_feature_addons_permissions_required_data_collection_description strings shouldn't end with a period"
+  },
+  {
+   "bugid": 1969832,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "navigator.geolocation.watchPosition will throws an error when Android's permission dialog is shown"
+  },
+  {
+   "bugid": 1969901,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ java.lang.IllegalStateException: at android.view.View.startDragAndDrop(View.java)]"
+  },
+  {
+   "bugid": 1972323,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "set `fetch-version-from` for `early-to-late-beta` merge-automation action"
+  },
+  {
+   "bugid": 1972650,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "update-verify-next should run for win64-aarch64"
+  },
+  {
+   "bugid": 1972948,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "remove maxRunTime from scriptworker job payloads"
+  },
+  {
+   "bugid": 1891616,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add \"Versioned Installation Directories In Use\" constant loaded via DLL"
+  },
+  {
+   "bugid": 1946968,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Update check fails on Linux in some circumstances"
+  },
+  {
+   "bugid": 1972337,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Arch/Debian/Ubuntu Linux symbol scrapers have been silently failing since bug 1967545"
+  },
+  {
+   "bugid": 1972837,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Update dump_syms to version 2.3.5"
+  },
+  {
+   "bugid": 1936521,
+   "status": "ASSIGNED",
+   "component": "Toolkit:General",
+   "summary": "High frequency toolkit/components/contentanalysis/tests/browser/browser_content_analysis_dnd_diff_origin.js | single tracking bug"
+  },
+  {
+   "bugid": 1953896,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Screen Reader announces incorrect content name when exiting Passwords sidebar"
+  },
+  {
+   "bugid": 1959704,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Empty state not displayed in Passwords sidebar after passwords removal and sync"
+  },
+  {
+   "bugid": 1971380,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Massive performance regression when importing logins"
+  },
+  {
+   "bugid": 1967196,
+   "status": "NEW",
+   "component": "Toolkit:PopupNotifications and Notification Bars",
+   "summary": "Implement a policy to prevent multiple popups from appearing simultaneously"
+  },
+  {
+   "bugid": 1972806,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Autocomplete richlistbox has a border on Linux."
+  },
+  {
+   "bugid": 1970870,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a title to the opens in new tab icon in moz-box-link"
+  },
+  {
+   "bugid": 1972468,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Library toolbar search field appears disabled on macOS 10.15 after bug 1968916"
+  },
+  {
+   "bugid": 1969457,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Document UniFFI internals"
+  },
+  {
+   "bugid": 1969650,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v141 cycle"
+  },
+  {
+   "bugid": 1287715,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "loadedmetadata is fired even before the script has a chance to run to register event handlers"
+  },
+  {
+   "bugid": 1681934,
+   "status": "VERIFIED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Certain typefaces not being rendered on New York Times"
+  },
+  {
+   "bugid": 1800880,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Clipchamp not supported in Firefox"
+  },
+  {
+   "bugid": 1909448,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "honeywell.com - The page does not load"
+  },
+  {
+   "bugid": 1931538,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "buzzfeed.com - Cards within game cannot be selected"
+  },
+  {
+   "bugid": 1937776,
+   "status": "VERIFIED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "XBox Cloud gaming disconnects after exactly 5 minutes"
+  },
+  {
+   "bugid": 1948723,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "babel.com - Firefox is not supported"
+  },
+  {
+   "bugid": 1954533,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "copaair.com - Unable to create an account, stuck loading after accepting Terms and Conditions"
+  },
+  {
+   "bugid": 1967510,
+   "status": "NEW",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "gemini.google.com - Copy does not work from prompt editing area to prompt input area"
+  },
+  {
+   "bugid": 1971486,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "bandcamp.com - The page hangs when accessing the \"discover\" section (genre/ subgenre)"
+  },
+  {
+   "bugid": 1971504,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "wallapop.com - \"Precio\" filter slider does not work"
+  }
+ ],
+ "fixed": 107,
+ "total": 136,
+ "restricted": 5
+}
