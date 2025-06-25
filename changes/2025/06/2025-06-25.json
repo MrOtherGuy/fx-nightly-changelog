@@ -1,0 +1,532 @@
+{
+ "date": "2025-06-25",
+ "buildid": "20250625034313",
+ "cset": "f768d263e516157e9460bb9ecc3743d48175cea5",
+ "bugs": [
+  {
+   "bugid": 1972248,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add more debugging logs and check HW encoder limitations in MFTEncoder"
+  },
+  {
+   "bugid": 1972902,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "Rework gfxPlatform and FFmpegDe/EncoderModule blocklist logic"
+  },
+  {
+   "bugid": 1971539,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ nsTArray_Impl<T>::ElementAt | nsTArray_Impl<T>::operator[] | mozilla::ThreadSharedFloatArrayBufferList::GetData]"
+  },
+  {
+   "bugid": 1973567,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update aom to new version 0ddc6630b3723b14b164752d46c27752f078ddd3 from 2025-06-25 00:00:00"
+  },
+  {
+   "bugid": 1973723,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma [tier 2] Wr /css/css-view-transitions/nested/group-children-sizing-with-border.html | single tracking bug"
+  },
+  {
+   "bugid": 1972990,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add testcase for promise and detached iframe"
+  },
+  {
+   "bugid": 1973494,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Command & CommandFor only allows custom values starting with `--`"
+  },
+  {
+   "bugid": 1973496,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Command & Commandfor: Built-ins should use dashes"
+  },
+  {
+   "bugid": 1973015,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "#navigation-api-early-error-result should reject with the same value"
+  },
+  {
+   "bugid": 1895935,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Enable eval security telemetry on mobile"
+  },
+  {
+   "bugid": 1939697,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Passkey is not supported in PayPal"
+  },
+  {
+   "bugid": 1971493,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "enable dom.workers.throttling.enabled for Nightly"
+  },
+  {
+   "bugid": 1973206,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Prevent accessing ModuleLoadRequest's mImports to do PrepareBytecodeEncoding"
+  },
+  {
+   "bugid": 1973430,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Replace StringEqualsAscii with StringEqualsLiteral where applicable"
+  },
+  {
+   "bugid": 1972805,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use RecompileInfoVector for DependentScriptSet"
+  },
+  {
+   "bugid": 1973446,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[mips64] wasm/memory.js segfaults in the simulator"
+  },
+  {
+   "bugid": 1972274,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Extend the buffer allocator to allow arbitrarily sized medium buffers"
+  },
+  {
+   "bugid": 1973431,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Use char for TemporalParser::{hasOne,one}Of()"
+  },
+  {
+   "bugid": 1967383,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Implement check for whether anchor is laid out before positioned element"
+  },
+  {
+   "bugid": 1967384,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Implement check for whether positioned element is skipped whenever anchor is skipped"
+  },
+  {
+   "bugid": 1973664,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Avoid different scrollbar colors in inactive windows on GTK."
+  },
+  {
+   "bugid": 1972867,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "New wpt failures in /css/css-fonts/matching/font-unicode-presented-as-emoji-outline.html"
+  },
+  {
+   "bugid": 1973393,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "If there is text in another language (for example, English) next to Korean characters, it is also selected after double-clicking LMB on it (in macOS)"
+  },
+  {
+   "bugid": 1968741,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Add profiler preset, logging preset for ML, harmonize logging module name"
+  },
+  {
+   "bugid": 1973631,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Proxied requests treated as local, breaking sites"
+  },
+  {
+   "bugid": 1972757,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Store cookie expiry value as msec"
+  },
+  {
+   "bugid": 1973024,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Implement nsICookieManager::maybeCapExpiry to adjust the expiry cookie attribute value"
+  },
+  {
+   "bugid": 1948639,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add telemetry for how soon the TRR server closes an idle connection"
+  },
+  {
+   "bugid": 1971375,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "\"secureConnectionStart\" for HTTP/3 connections is not accurate"
+  },
+  {
+   "bugid": 1962816,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Print output layout is broken, when printing \"writing-mode: vertical-rl\" content to an actual printer (i.e. not the built-in Save-to-PDF print target)"
+  },
+  {
+   "bugid": 1963445,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable BTP for Fenix in ETP \"strict\""
+  },
+  {
+   "bugid": 1973042,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Fetch requests from workers don't honor the tracking protection settings"
+  },
+  {
+   "bugid": 1967531,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Unify SVG image and HTML image loading"
+  },
+  {
+   "bugid": 1973709,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Some WPT reftests almost match - so closely that we should just mark them as fuzzy"
+  },
+  {
+   "bugid": 1963271,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Expand origin metadata file format with additional fields"
+  },
+  {
+   "bugid": 1946586,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Opaque region not set with SW-WR"
+  },
+  {
+   "bugid": 1972853,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Minor GTK drawing clean-ups"
+  },
+  {
+   "bugid": 1973666,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "devtools try preset is no longer running linux mochitests"
+  },
+  {
+   "bugid": 1747536,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "mozlint: Investigate and add cargo audit support"
+  },
+  {
+   "bugid": 1955492,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Figure out the combination of valid-lazy rule and using declareLazy/defineLazy"
+  },
+  {
+   "bugid": 1973722,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Match ESLint version used for eslint-plugin-mozilla tests to be the same as the top-level ESLint version"
+  },
+  {
+   "bugid": 1971322,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Port searchfox search query documentation in tree"
+  },
+  {
+   "bugid": 1972786,
+   "status": "ASSIGNED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "No OS notification is displayed when downloading files with no DLP Agent connected"
+  },
+  {
+   "bugid": 1971507,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "Replace yaml-rust with yaml-rust2"
+  },
+  {
+   "bugid": 1956058,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Make padding for AboutWelcome main content configurable"
+  },
+  {
+   "bugid": 1972658,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update Trending searches title"
+  },
+  {
+   "bugid": 1972127,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use 'mozfile.json' throughout 'build' directory"
+  },
+  {
+   "bugid": 1972765,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "libgkrust build is not cached by sccache on taskcluster"
+  },
+  {
+   "bugid": 1973130,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Configure gives bad advice to change host"
+  },
+  {
+   "bugid": 1956364,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Build toolchains required by tests for aarch64 linux"
+  },
+  {
+   "bugid": 1971590,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "Android CWTS telemetry"
+  },
+  {
+   "bugid": 1971848,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads v2] If download fails on browser fragment, it is not shown on downloads screen"
+  },
+  {
+   "bugid": 1973640,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version a4443d387835b94695f9ee92e7eb13162d9e92ca from 2025-06-24 05:03:36"
+  },
+  {
+   "bugid": 1950459,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Selecting \"about:home\" in the tabs tray should show the Homepage"
+  },
+  {
+   "bugid": 1970511,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Fix spacing above and below top sites dots"
+  },
+  {
+   "bugid": 1973775,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Remove check for `firstFrameDrawn` for `showPocketStories` in building the Homepage State"
+  },
+  {
+   "bugid": 1970409,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "Always run key recovery when generating a key"
+  },
+  {
+   "bugid": 1973751,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Fix `GeckoBundle` capacity values in the `WebExtensionController`"
+  },
+  {
+   "bugid": 1973617,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "update verify config creator broken by python-hglib upgrade"
+  },
+  {
+   "bugid": 1955007,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Remove temporary \"remote.system-access-check.enabled\" preference in Firefox 141"
+  },
+  {
+   "bugid": 1972108,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Intermittent remoteAsyncEvents Wd | test_scroll_shadow_tree[<random>] - assert 0 == 1"
+  },
+  {
+   "bugid": 1972532,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[wdspec] Update Poll and AsyncPoll helpers to raise better error messages"
+  },
+  {
+   "bugid": 1967705,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "sync-about-blank: Avoid parser blocking about:blank in _ConfigurationModule"
+  },
+  {
+   "bugid": 1968586,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Crash reporter fails to build with --disable-backgroundtasks"
+  },
+  {
+   "bugid": 1971501,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Upgrade tokio to 1.45.1"
+  },
+  {
+   "bugid": 1967474,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "clear-cache: rename secondOrigin to crossSite"
+  },
+  {
+   "bugid": 1972881,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Clear-Site-Data: \"cache\": Add wpt for JS/Image/CSS cache being flushed"
+  },
+  {
+   "bugid": 1953342,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[contextual-password-manager] Incorrect notification displayed after Adding a Missing Username to a saved password"
+  },
+  {
+   "bugid": 1896137,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Modify ./mach addwidget command so that it registers newly added elements in toolkit/content/customElements.js"
+  },
+  {
+   "bugid": 1942395,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Support labeling moz-visual-picker items"
+  },
+  {
+   "bugid": 1962151,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Implement the listbox type of moz-visual-picker"
+  },
+  {
+   "bugid": 1973615,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v142 cycle"
+  },
+  {
+   "bugid": 1902464,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "workhub.transcribeme.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1904952,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "idp5.civis.bz.it - Firefox is unsupported browser"
+  },
+  {
+   "bugid": 1907062,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "jianshu.com - Images do not get displayed"
+  },
+  {
+   "bugid": 1927467,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "exploretock.com - Map is not displayed"
+  },
+  {
+   "bugid": 1933910,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "tiktok.com - Unsupported banner when trying to upload videos"
+  },
+  {
+   "bugid": 1939466,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "vodafone.it -  The page fails to load"
+  },
+  {
+   "bugid": 1951675,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Air India onboard entertainment doesn't work with Firefox"
+  },
+  {
+   "bugid": 1956045,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "m.daum.net - Navigation bar gets scrolled to the last item when selecting a category and scrolling down the page"
+  },
+  {
+   "bugid": 1966377,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.nvidia.com - Header content overflows"
+  },
+  {
+   "bugid": 1967510,
+   "status": "NEW",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "gemini.google.com - Copy does not work from prompt editing area to prompt input area"
+  },
+  {
+   "bugid": 1969245,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.wills-vegan-store.com - The images are not displayed"
+  },
+  {
+   "bugid": 1971690,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "bapenda.jabarprov.go.id - Firefox is not a recommended browser"
+  },
+  {
+   "bugid": 1972511,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cmyportal.tkc.co.jp - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1972859,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "login.primericaonline.com - Blank page when accessed"
+  },
+  {
+   "bugid": 1972814,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Schemas.sys.mjs throws deprecation warning on a choice which is not deprecated"
+  }
+ ],
+ "fixed": 61,
+ "total": 87,
+ "restricted": 2
+}
