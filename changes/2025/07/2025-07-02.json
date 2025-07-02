@@ -1,0 +1,424 @@
+{
+ "date": "2025-07-02",
+ "buildid": "20250702091546",
+ "cset": "a266ec3b2692bd0649d0c02fa4cce4a570a485dd",
+ "bugs": [
+  {
+   "bugid": 1974558,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Perma [tier 2] dom/media/test/test_eme_mfcdm_generate_request.html | failed to create media key"
+  },
+  {
+   "bugid": 1974672,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Testcase calling sheet.insertRule N times is 2.5x slower in Firefox, and uses a lot more RAM. We also take 40s in cleanup, Chrome takes 0 times."
+  },
+  {
+   "bugid": 1974513,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "TextDirectiveFinder and TextDirectiveCreator should use ref pointers for mDocument"
+  },
+  {
+   "bugid": 1847096,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Clicking notification without an awake service worker always opens a new window with the root path of the origin (on Windows) or does nothing (on Android)"
+  },
+  {
+   "bugid": 1915629,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement Trusted Types support for the \"pre-navigation check\""
+  },
+  {
+   "bugid": 1974894,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma /permissions/permissions-query-feature-policy-attribute.https.sub.html | Permissions.state is \"prompt\" with allow=\"geolocation\" in same-origin iframes. - assert_equals: navigator.permissions.query(\"geolocation\") expected \"prompt\" but got \"granted\""
+  },
+  {
+   "bugid": 1961092,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Re-enable libyuv SIMD build on LoongArch"
+  },
+  {
+   "bugid": 1840926,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Move classification of `wgpu-core` errors upstream"
+  },
+  {
+   "bugid": 1947159,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "majority of our WebGPU examples error with: GPUQueue.copyExternalImageToTexture: Cannot get origin from source"
+  },
+  {
+   "bugid": 1974906,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add plumbing for blur edgeMode"
+  },
+  {
+   "bugid": 1974907,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Change backdrop-filter to use edgeMode=Mirror"
+  },
+  {
+   "bugid": 1974946,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Compilation failure for riscv64 JIT: no member named 'pushFrameDescriptor' in 'js::jit::MacroAssembler' at jit/riscv64/SharedICHelpers-riscv64-inl.h"
+  },
+  {
+   "bugid": 1974099,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Firefox's fixed-point CSS `zoom` representation isn't as robust/accurate as Chromium/WebKit, which leads to sizes being unexpectedly wrong in some cases"
+  },
+  {
+   "bugid": 1974891,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma async-scrolling/transformed-1.html == async-scrolling/transformed-1-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 1974911,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma [tier 2] /css/css-layout-api/child-constraints/fixed-block-size-vrl.https.html | single tracking bug"
+  },
+  {
+   "bugid": 1974397,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "onnx-runtime libs are not packaged by the installer"
+  },
+  {
+   "bugid": 1974799,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "The Ask AI chatbot option remains available after the user removes the AI chatbot from the Sidebar panel"
+  },
+  {
+   "bugid": 1974947,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Do not embed manifest file when building onnx runtime"
+  },
+  {
+   "bugid": 1974029,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Third-Party Libraries' Same-Origin XHR Requests Fail with NS_ERROR_LOCAL_NETWORK_ACCESS_DENIED on Locally Hosted Pages Containing Public Cross-Origin iframe [ETP Strict]"
+  },
+  {
+   "bugid": 1973714,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Compute max-age attribute using the date server header"
+  },
+  {
+   "bugid": 1974155,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Refactor HTTP/2 stream queue logic"
+  },
+  {
+   "bugid": 1972600,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Spoof network status for media element"
+  },
+  {
+   "bugid": 1974449,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Existing ETP \"strict\" users should not be opted into baseline or convenience allow-list category"
+  },
+  {
+   "bugid": 734920,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Add a comment to anim-use-length-02.svg explaining what it's testing"
+  },
+  {
+   "bugid": 1974334,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: aCmp(*(aBegin + a), *(aBegin + b)) (Your comparator is not a valid strict-weak ordering), at /builds/worker/workspace/obj-build/dist/include/nsTArray.h:319"
+  },
+  {
+   "bugid": 1781277,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Do not base storage estimate on user's disk when RFP is enabled"
+  },
+  {
+   "bugid": 1560936,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Support getSettings({width, height}) for all types of video MediaStreamTracks"
+  },
+  {
+   "bugid": 1974444,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Move RTCDataChannel's const attributes to the DOM representation, and associated cleanup"
+  },
+  {
+   "bugid": 1952364,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Intermittent Assertion failure: !aOther.IsNull() (Cannot compute with aOther null value), at /builds/worker/workspace/obj-build/dist/include/mozilla/TimeStamp.h:496"
+  },
+  {
+   "bugid": 1974254,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Window controls in titlebar no longer recognize clicks with small drag movements due to lack of drag threshold"
+  },
+  {
+   "bugid": 1948976,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "desktop.ini will be created in %UserProfile%\\Documents\\desktop.ini"
+  },
+  {
+   "bugid": 1974356,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Modernize `SpecialSystemDirectory` lookups for Windows to use `SHGetKnownFolderPath`."
+  },
+  {
+   "bugid": 1974357,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Add telemetry to determine if SpecialSystemDirectory's %AppData% and %LocalAppData% fallback is still necessary for supported versions of Windows"
+  },
+  {
+   "bugid": 1974700,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Reset all devtools preferences on test end"
+  },
+  {
+   "bugid": 1259390,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Searching inline text inside a node may cause confusion (no way to distinguish text node from parent node) - Highlight search result"
+  },
+  {
+   "bugid": 1973684,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Make InspectorUtils.colorToRGBA find a document to resolve system colors against automatically."
+  },
+  {
+   "bugid": 1974685,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Hitting ESC in markup view search input closes the autocomplete popup AND clears the input"
+  },
+  {
+   "bugid": 1781471,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Intermittent devtools/client/inspector/rules/test/browser_rules_authored_color.js | single tracking bug"
+  },
+  {
+   "bugid": 1557795,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Request headers/cookies/params is not visible until request is finished"
+  },
+  {
+   "bugid": 1974395,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "Pretty print button should be disabled / hidden for read only stylesheets"
+  },
+  {
+   "bugid": 1974450,
+   "status": "RESOLVED",
+   "component": "DevTools:Style Editor",
+   "summary": "StyleEditor pretty keeps adding blank lines if the last declaration misses a semi colon"
+  },
+  {
+   "bugid": 1968300,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Fix a ruff warning in build/vs/generate_yaml.py"
+  },
+  {
+   "bugid": 1974503,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update TypeScript definitions for latest changes"
+  },
+  {
+   "bugid": 1973043,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Downloads Panel shows warn file as failed if no action was taken before restart"
+  },
+  {
+   "bugid": 1973149,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Browser form validation tooltip message does not update if the error state changes on the same element (without the popup having been hidden in the interim)"
+  },
+  {
+   "bugid": 1972409,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Make activeNotification targeting aware of chrome Feature Callout"
+  },
+  {
+   "bugid": 1972392,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[HNT-736] newtab shortcuts, thompson sampling"
+  },
+  {
+   "bugid": 1972900,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab smart shortcuts feed integration"
+  },
+  {
+   "bugid": 1974762,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "All inferred interests in OHTTP merino request should be randomized"
+  },
+  {
+   "bugid": 1974699,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Improve RemoteSettingsClient.db/.attachments lazy handling to work better with TypeScript"
+  },
+  {
+   "bugid": 1878420,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Use `AbortSignal.any` and `AbortSignal.timeout` in bookmark sync"
+  },
+  {
+   "bugid": 1974477,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add sclements as a peer for Tabbed Browser, remove mconley"
+  },
+  {
+   "bugid": 1974463,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Add tgiles as Desktop Theme peer"
+  },
+  {
+   "bugid": 1922586,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Stylo bindgen handles UniquePtr poorly"
+  },
+  {
+   "bugid": 1974569,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "Deep Links stopped working on 140.0"
+  },
+  {
+   "bugid": 1964522,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[M3 migration] Migrate the Fenix/Firefox code to M3"
+  },
+  {
+   "bugid": 1964524,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[M3 migration] Remove the M2 libraries from AC and Fenix/Firefox"
+  },
+  {
+   "bugid": 1966873,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add state, actions and middleware for showing review prompt to the AppStore"
+  },
+  {
+   "bugid": 1974937,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 13c4c7301d6a896173a0d192d99c9ecc842d06b3 from 2025-07-01 05:02:49"
+  },
+  {
+   "bugid": 1971239,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] Enable by default in nightly and beta"
+  },
+  {
+   "bugid": 1974939,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disbale data collection settings related UI tests"
+  },
+  {
+   "bugid": 1965002,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:WebExtensions",
+   "summary": "Show data collection permissions in the update prompt"
+  },
+  {
+   "bugid": 1974162,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Expose update prompt handler on `AddonManager`"
+  },
+  {
+   "bugid": 1974163,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Rename \"webextension-update-permissions\" topic to \"webextension-update-permission-prompt\" for consistency"
+  },
+  {
+   "bugid": 1963025,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Do not skip tests in debug builds"
+  },
+  {
+   "bugid": 1974932,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "UrlClassifierTestUtils is not cleaning up 2 preferences correctly"
+  },
+  {
+   "bugid": 1966951,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add rest of icons for new profile avatar selector"
+  },
+  {
+   "bugid": 1974977,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "allow badging non-native menu items with \"New\""
+  },
+  {
+   "bugid": 1973529,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Clarify interface vs implementation class names"
+  }
+ ],
+ "fixed": 58,
+ "total": 69,
+ "restricted": 1
+}
