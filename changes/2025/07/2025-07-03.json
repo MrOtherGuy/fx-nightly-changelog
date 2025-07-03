@@ -1,0 +1,694 @@
+{
+ "date": "2025-07-03",
+ "buildid": "20250703092821",
+ "cset": "588b002c5e6c93b6a1a561996949ab74eee2fd9d",
+ "bugs": [
+  {
+   "bugid": 1974117,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Prevent running SW decoder in the GPU process"
+  },
+  {
+   "bugid": 1975069,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Change wmfme related test tasks to tier1"
+  },
+  {
+   "bugid": 1974022,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`:has(.item + .item + .item)` does not invalidate when the first element in the chain is mutated"
+  },
+  {
+   "bugid": 1974667,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "High frequency /css/css-view-transitions/nested/rounded-border-clipper.html | single tracking bug"
+  },
+  {
+   "bugid": 1975167,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Perma  /css/cssom-view/scrollTo-zoom.html | single tracking bug"
+  },
+  {
+   "bugid": 1975177,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "ShowSlowScriptDialog apparently can spin forever in case of shutdown"
+  },
+  {
+   "bugid": 1974827,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: !mRawPtr, at /builds/worker/workspace/obj-build/dist/include/mozilla/AlreadyAddRefed.h:136"
+  },
+  {
+   "bugid": 1975001,
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/serviceworkers/test/test_serviceworker_interfaces.html | false: If this is failing: DANGER, are you sure you want to expose the new interface Scheduler to all webpages  when Gecko 142 merges to beta on 2025-07-21"
+  },
+  {
+   "bugid": 1975029,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove dom::ImageTracker."
+  },
+  {
+   "bugid": 1975158,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma linux asan wpt LeakSanitizer | leak at ProtoAndIfaceCache, AllocateProtoAndIfaceCache, mozilla::dom::CreateGlobal, mozilla::dom::Window_Binding::Wrap | single tracking bug"
+  },
+  {
+   "bugid": 1975095,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Crash in [@ OOM | large | NS_ABORT_OOM | mozilla::HTMLEditor::GenerateWhiteSpaceSequence]"
+  },
+  {
+   "bugid": 1974795,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Perma Linux shippable W-nofis /pointerevents/pointerevent_hit_test_scroll_visible_descendant.html | Wheel-scroll over pointer-events: auto descendant scrolls pointer-events: none scroller. - Test timed out"
+  },
+  {
+   "bugid": 1970339,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Creating Text-Fragment on a try page does not respect the 5-second rule (takes 9 seconds)"
+  },
+  {
+   "bugid": 1974676,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Update WPT expectations for Navigation API"
+  },
+  {
+   "bugid": 1974981,
+   "status": "NEW",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Don't move promises in `CreateResultFromAPIMethodTracker()`"
+  },
+  {
+   "bugid": 1915629,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Implement Trusted Types support for the \"pre-navigation check\""
+  },
+  {
+   "bugid": 1971043,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Text-Fragments: Expand start and end terms correctly when creating range-based text directive"
+  },
+  {
+   "bugid": 1972004,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Text-Fragments: Suspiciously long text directive created on www.lipsum.com"
+  },
+  {
+   "bugid": 1969298,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "www2.panasonic.biz - Unresponsive to actions or highly delayed"
+  },
+  {
+   "bugid": 1971401,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Assertion failure: mContent == mFrame->GetContent(), at /builds/worker/checkouts/gecko/layout/base/PresShell.cpp:12767"
+  },
+  {
+   "bugid": 1951776,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Windows Voice Access does not number browser tabs"
+  },
+  {
+   "bugid": 1974927,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Improve task naming in browser tests"
+  },
+  {
+   "bugid": 1974928,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Don't force disable UIA due to NVDA when running UIA tests"
+  },
+  {
+   "bugid": 1975096,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libpng to new version v1.6.50 from 2025-07-01 23:50:00"
+  },
+  {
+   "bugid": 1975118,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "use refptr in VectorImage::SizeOfSourceWithComputedFallback"
+  },
+  {
+   "bugid": 1947159,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "majority of our WebGPU examples error with: GPUQueue.copyExternalImageToTexture: Cannot get origin from source"
+  },
+  {
+   "bugid": 1972485,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Bring `GPUDeviceLostInfo.reason` and `GPUDeviceLogReason` up to spec."
+  },
+  {
+   "bugid": 1972921,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU does not display textures rendered by a compute pass"
+  },
+  {
+   "bugid": 1974058,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to upstream df272d3c (2025-06-25)"
+  },
+  {
+   "bugid": 1974284,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add Andy Leiserson to WebGPU reviewers"
+  },
+  {
+   "bugid": 1974907,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Change backdrop-filter to use edgeMode=Mirror"
+  },
+  {
+   "bugid": 1974916,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Dithering is not enabled in linear gradient with pref gfx.webrender.dithering = true"
+  },
+  {
+   "bugid": 1975059,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "MFCDM DRM playback is broken, only black frames will be painted"
+  },
+  {
+   "bugid": 1975352,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Fix some fuzziness accuracy issues with resolve targets that are also blur targets"
+  },
+  {
+   "bugid": 1975201,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Simulator-riscv64: breakpoint() traps do not abort the simulation"
+  },
+  {
+   "bugid": 560067,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "animated images inside visibility:hidden still eat CPU"
+  },
+  {
+   "bugid": 1971573,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: canvasBg.mCSSSpecified || ((uint8_t)(((canvasBg.mColor) >> 24) & 0xff)) == 255 (Default canvas background should either be transparent or opaque), at /builds/worker/checkouts/gecko/layout/generic/nsCanvasFrame.cpp:354"
+  },
+  {
+   "bugid": 1974529,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Use std::min/std::max in nsLayoutUtils::IntrinsicForAxis"
+  },
+  {
+   "bugid": 1974838,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Dump retained display list in layout debugger"
+  },
+  {
+   "bugid": 1947413,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid] Items should join the correct baseline sharing group based on their writing mode."
+  },
+  {
+   "bugid": 1974240,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid] Use the correct track for baseline alignment from the baseline sharing group"
+  },
+  {
+   "bugid": 1974384,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Anchor resolution fails when inset property equals 100 percent"
+  },
+  {
+   "bugid": 1975262,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "remove hugging chat from chatbot"
+  },
+  {
+   "bugid": 1845655,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Fix the TestPHCExhaustion test"
+  },
+  {
+   "bugid": 1974979,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Add `__Http-` and `__HostHttp-` cookie prefixes"
+  },
+  {
+   "bugid": 1974230,
+   "status": "ASSIGNED",
+   "component": "Core:Printing: Output",
+   "summary": "When deleting nodes for printing selection, preserve element subtrees outside of selection and suppress frame generation instead"
+  },
+  {
+   "bugid": 1970647,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add allow-list checkboxes to ETP \"strict\" and \"custom\" sections in about:preferences#privacy"
+  },
+  {
+   "bugid": 1970921,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add an end-to-end test for TP allow-list categories"
+  },
+  {
+   "bugid": 1972607,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Telemetry for Tracking Exceptions UX"
+  },
+  {
+   "bugid": 1974449,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Existing ETP \"strict\" users should not be opted into baseline or convenience allow-list category"
+  },
+  {
+   "bugid": 1975031,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "regen_root_ca_metadata.py does not handle multiple new lines between objects"
+  },
+  {
+   "bugid": 1781277,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Do not base storage estimate on user's disk when RFP is enabled"
+  },
+  {
+   "bugid": 1975103,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Typo in quota/ClientUsageArray.h"
+  },
+  {
+   "bugid": 1961386,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Improve TimerThread's use of nsTArray for mTimers by enabling binary search"
+  },
+  {
+   "bugid": 1975188,
+   "status": "RESOLVED",
+   "component": "Core:mozglue",
+   "summary": "Add MOZ_CRASH_UNSAFE_FMT"
+  },
+  {
+   "bugid": 1970388,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger variable is outdated when hitting same breakpoint several times"
+  },
+  {
+   "bugid": 1259390,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Searching inline text inside a node may cause confusion (no way to distinguish text node from parent node) - Highlight search result"
+  },
+  {
+   "bugid": 1974576,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Middle click CSS data:image url in devtools creates space but does not create tab"
+  },
+  {
+   "bugid": 1974264,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "--preset=webextensions no longer schedules Linux or Windows jobs"
+  },
+  {
+   "bugid": 1975026,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "`mach try fuzzy --chemspill=prio` fails with \"KeyError: 'priority'\""
+  },
+  {
+   "bugid": 1974712,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "TypeScript issue in UnitConverterSimple.sys.mjs - Argument of type 'number' is not assignable to parameter of type 'string'"
+  },
+  {
+   "bugid": 1974217,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | browser/components/tests/unit/test_browserGlue_migration_osauth.js | test_pref_migration_old_pref_os_auth_disabled - [test_pref_migration_old_pref_os_auth_disabled : 54] | when Gecko 142 merges to beta on 2025-07-21"
+  },
+  {
+   "bugid": 1961670,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[HCM] Feature callout dismiss button background styles need adjustments"
+  },
+  {
+   "bugid": 1960768,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Make sure New Tab is using design system colors / color design tokens"
+  },
+  {
+   "bugid": 1974763,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Coarse inferred interests is not sent in telemetry when model is CTR mode"
+  },
+  {
+   "bugid": 1974490,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Disable enrollment status metric"
+  },
+  {
+   "bugid": 1966623,
+   "status": "VERIFIED",
+   "component": "Firefox:Shell Integration",
+   "summary": "pageAction is displayed on moz-extension:// and file:/// pages"
+  },
+  {
+   "bugid": 1973222,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "High frequency services/sync/tests/unit/test_telemetry.js | single tracking bug"
+  },
+  {
+   "bugid": 1949401,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Active Tabs should remain active for collapsed Tab groups"
+  },
+  {
+   "bugid": 1973519,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "when a tab group with the active tab is collapsed, clicking the overflow counter should expand the group"
+  },
+  {
+   "bugid": 1975155,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add sclements to Tabbed Browser triage rotation"
+  },
+  {
+   "bugid": 1971143,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use a single manifest for both our light and dark themes."
+  },
+  {
+   "bugid": 1975170,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Consider removing light-dark-overrides.css"
+  },
+  {
+   "bugid": 1972782,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make MOZ_WINCONSOLE a first class citizen of moz.build"
+  },
+  {
+   "bugid": 1975156,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Tracking the update to NSPR 4.37"
+  },
+  {
+   "bugid": 1972909,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads v2] Add illustration for downloads screen empty state"
+  },
+  {
+   "bugid": 1957787,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update AndroidX Compose to version 1.8.3 (BOM 2025.06.01)"
+  },
+  {
+   "bugid": 1957792,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Resolve new ConfigurationScreenWidthHeight linter warnings with Compose 1.8"
+  },
+  {
+   "bugid": 1973275,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "[WebCompat Reporter] The fallback that uses the legacy reporter should send WebCompat data to webcompat.com"
+  },
+  {
+   "bugid": 1975330,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 926a9537a194392cf929b7c393558a1531ce3139 from 2025-07-02 21:43:48"
+  },
+  {
+   "bugid": 1974315,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Create nimbus flag to override user specified homepage sections"
+  },
+  {
+   "bugid": 1952033,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "[Logins] Composify EditLogin screen"
+  },
+  {
+   "bugid": 1972390,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "[Baseline Profiles] Fix BaselineProfileGenerator KDoc"
+  },
+  {
+   "bugid": 1807556,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Make private browsing mode clear to TalkBack users"
+  },
+  {
+   "bugid": 1975236,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "SearchEngineReaderTest.kt:346:13: error: No value passed for parameter 'isNewUntil'"
+  },
+  {
+   "bugid": 1835123,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tabs Tray interactor Refactor] Remove `TabsTrayController.handleTabUnselected`"
+  },
+  {
+   "bugid": 1944682,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Remove the old swipe gesture code"
+  },
+  {
+   "bugid": 1971398,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Add experimentation flag"
+  },
+  {
+   "bugid": 1971402,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Implement the logic branching between the old and new implementations"
+  },
+  {
+   "bugid": 1971868,
+   "status": "NEW",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Add a setting to enable tab strip"
+  },
+  {
+   "bugid": 1968702,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Ensure support searching from the bookmarks screen"
+  },
+  {
+   "bugid": 1968703,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Ensure support searching from the history screen"
+  },
+  {
+   "bugid": 1970158,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] Implement telemetry for all the menu items"
+  },
+  {
+   "bugid": 1971365,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Add display toolbar telemetry"
+  },
+  {
+   "bugid": 1973007,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Evaluate and update order of actions dispatched by middlewares"
+  },
+  {
+   "bugid": 1973532,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Menu redesign 2025] Make banner configurable through nimbus"
+  },
+  {
+   "bugid": 1974302,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Crash loop on specially crafted domain"
+  },
+  {
+   "bugid": 1947881,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent [tier 2] org.mozilla.fenix.ui.BookmarksTestCompose#editBookmarksNameAndUrlTest | java.lang.AssertionError: UiSelector[CONTAINS_TEXT=example.com, RESOURCE_ID=org.mozilla.fenix.debug:id/mozac_browser_toolbar_url_view] does not exist"
+  },
+  {
+   "bugid": 1971675,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix switchDesktopSiteModeOnOffTest UI test"
+  },
+  {
+   "bugid": 1975173,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Re-enable searchHistoryNotRememberedInPrivateBrowsingTest and verifySearchShortcutChangesAreReflectedInSearchSelectorMenuTest UI test"
+  },
+  {
+   "bugid": 1971864,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "[GeckoView] Test @RequiresOptIn as an option in Preferences API Proof-of-Concept"
+  },
+  {
+   "bugid": 1973132,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add a variable of isolated process for unit tests such as reftest.toml / mochitest.toml"
+  },
+  {
+   "bugid": 1975028,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Add Metadata for xpcshell Isolated Process Tests"
+  },
+  {
+   "bugid": 1921087,
+   "status": "RESOLVED",
+   "component": "NSPR:NSPR",
+   "summary": "Remove prwin.h (formerly known as prwin16.h)"
+  },
+  {
+   "bugid": 1974830,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Switch Linux builds to AMD pools"
+  },
+  {
+   "bugid": 1974831,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Switch Windows builds to AMD pools"
+  },
+  {
+   "bugid": 1974834,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Switch Mac builds to AMD pools"
+  },
+  {
+   "bugid": 1974394,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "When setting cookies the expiry value is now limited to 400 days"
+  },
+  {
+   "bugid": 1639163,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Temporary .xpis are not deleted from the temp folder if canceling the add-on AMO install"
+  },
+  {
+   "bugid": 1974701,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Manager",
+   "summary": "Improve type information for FormHistory and FormHistory.getAutoCompleteResults"
+  },
+  {
+   "bugid": 1961402,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "OS Profiles menu - replace checkbox with avatar and indicate current profile with \"(current)\" at end of menuitem"
+  },
+  {
+   "bugid": 1966430,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Support adding images to moz-promo"
+  },
+  {
+   "bugid": 1975210,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Privacy: Site Reports",
+   "summary": "wcti12.com - 500 error message when accessing the link with ETP Standard using Private Browsing Mode"
+  },
+  {
+   "bugid": 1974419,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "extensions.webextensions.uuids populated by ExtensionData via loadManifestFromWebManifest (without installing extension)"
+  }
+ ],
+ "fixed": 100,
+ "total": 114,
+ "restricted": 0
+}
