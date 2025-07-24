@@ -1,0 +1,886 @@
+{
+ "date": "2025-07-24",
+ "buildid": "20250724093417",
+ "cset": "b2a061d1d75adbd5d6347c2583d9841c1e04b25a",
+ "bugs": [
+  {
+   "bugid": 1972249,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Implement async callback mechanism for MFTEncoder"
+  },
+  {
+   "bugid": 1977399,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Minor logging improvements in media code"
+  },
+  {
+   "bugid": 1978428,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Implement the enum MediaKeySessionClosedReason"
+  },
+  {
+   "bugid": 1978826,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "[HDR] Allow to force HDR rendering without HDR monitor"
+  },
+  {
+   "bugid": 1967793,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Unable to determine hardware acceleration with WebCodecs"
+  },
+  {
+   "bugid": 1977702,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Allow direct property declarations in @scope"
+  },
+  {
+   "bugid": 1978751,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "Full (all-zones) GCs are triggered for allocation triggers"
+  },
+  {
+   "bugid": 1978315,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Stop using the type attribute of HTML anchors as a content type hint"
+  },
+  {
+   "bugid": 1978704,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Frequent Linux asan SUMMARY: AddressSanitizer: SEGV /builds/worker/workspace/obj-build/dist/include/mozilla/Assertions.h:248:3 in MOZ_CrashSequence"
+  },
+  {
+   "bugid": 1978798,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable moveBefore pref in some .ini files"
+  },
+  {
+   "bugid": 1977289,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Improve `HTMLEditUtils::GetDeepestEditable(Start|End)PointOf`"
+  },
+  {
+   "bugid": 1978481,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Hit MOZ_CRASH(ElementAt(aIndex = 0, aLength = 0)) at /builds/worker/checkouts/gecko/mfbt/Assertions.cpp:51"
+  },
+  {
+   "bugid": 1974208,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "High frequency Assertion failure: leaf, at /builds/worker/checkouts/gecko/dom/events/EventStateManager.cpp:6670"
+  },
+  {
+   "bugid": 1974293,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: false (How did this happen?), at /docshell/base/BrowsingContext.cpp:4021"
+  },
+  {
+   "bugid": 1978255,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Main document's ipaddressSpace is overrideen by sub document's ipAddressSpace"
+  },
+  {
+   "bugid": 1978642,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Text-Fragments: Refactor returning result types with brace initialization"
+  },
+  {
+   "bugid": 1976574,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "CSS content alt text not always exposed in a11y tree"
+  },
+  {
+   "bugid": 1977507,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Support getting character bounds for end of line insertion point with UIA"
+  },
+  {
+   "bugid": 1978132,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perma (almost) MOZ_ASSERT(NS_IsMainThread()) [@ mozilla::ClearOnShutdown<mozilla::StaticAutoPtr<nsBaseHashtable<nsPtrHashKey<mozilla::a11y::Accessible>, mozilla::a11y::CachedTableAccessible, mozilla::a11y::CachedTableAccessible, nsD] | single tracking bug"
+  },
+  {
+   "bugid": 1978250,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add tests for simple payload markers"
+  },
+  {
+   "bugid": 1978529,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[HDR/Linux] Add more debugging info to layered code"
+  },
+  {
+   "bugid": 1978540,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Enable compositing without HDR"
+  },
+  {
+   "bugid": 901050,
+   "status": "NEW",
+   "component": "Core:IPC",
+   "summary": "Consider writing a mach_port_t IPC backend for OSX"
+  },
+  {
+   "bugid": 1761993,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle broken promises in AsyncGenerator.prototype.return"
+  },
+  {
+   "bugid": 1977364,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove support for ducktyped errors"
+  },
+  {
+   "bugid": 1978510,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update async generator implementation to the latest spec"
+  },
+  {
+   "bugid": 998485,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Replace EdgeCaseAnalysis (Forward & Backward), by equivalent RangeAnalysis collectRangeInfoPreTrunc(ate)"
+  },
+  {
+   "bugid": 1978364,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Allow pushing negative IntWord as immediate"
+  },
+  {
+   "bugid": 1876632,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "arm64 freebsd ASLR TryToALignChunk and MapAlignedPagesRandom"
+  },
+  {
+   "bugid": 1978820,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "GCREASONS values don't match GC reasons in metrics.yaml"
+  },
+  {
+   "bugid": 1977692,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "ToWebAssemblyValue for i31ref should permit -0"
+  },
+  {
+   "bugid": 1978681,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Report modified layout.css.* preferences in about:support"
+  },
+  {
+   "bugid": 1978906,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Convert LogicalSize arguments to use const reference"
+  },
+  {
+   "bugid": 1978475,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Grid",
+   "summary": "Assertion failure: isAuto || s == NS_UNCONSTRAINEDSIZE, at /builds/worker/checkouts/gecko/layout/generic/nsGridContainerFrame.cpp:6177"
+  },
+  {
+   "bugid": 1978638,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Ensure that we call `PresShell::RemoveAnchorPosPositioned` for `nsIFrame::Destroy` with anchor positioned frames."
+  },
+  {
+   "bugid": 1974029,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Third-Party Libraries' Same-Origin XHR Requests Fail with NS_ERROR_LOCAL_NETWORK_ACCESS_DENIED on Locally Hosted Pages Containing Public Cross-Origin iframe [ETP Strict]"
+  },
+  {
+   "bugid": 1977997,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Remove `network.proxy.testing_localhost_is_secure_when_hijacked` to simplify testing"
+  },
+  {
+   "bugid": 1978672,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add profiler flow marker for nsHttpChannel::BeginConnect"
+  },
+  {
+   "bugid": 1976964,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: DNS",
+   "summary": "Fenix: DoH performance degrades under high concurrent request load"
+  },
+  {
+   "bugid": 1978052,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "trr_request_count_per_conn incorrectly reports http protocol version of 1.1"
+  },
+  {
+   "bugid": 1973116,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Include the cache disposition (e.g., hit, miss, etc.) of the root HTML document in the pageload event"
+  },
+  {
+   "bugid": 1978466,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove SmartBlock Vidible shim"
+  },
+  {
+   "bugid": 1978830,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "UrlClassifierExceptionListEntry should only look at convenience category when baseline is enabled"
+  },
+  {
+   "bugid": 1978725,
+   "status": "VERIFIED",
+   "component": "Core:SVG",
+   "summary": "Assertion failure: 0.0f <= intervalProgress && intervalProgress < 1.0f (Interval progress should be in the range [0, 1)), at /builds/worker/checkouts/gecko/dom/smil/SMILAnimationFunction.cpp:395"
+  },
+  {
+   "bugid": 1977347,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Microsoft SSO authentication hanging on 140.0x (Mac)"
+  },
+  {
+   "bugid": 1975358,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Block access to huge pages in sandboxed processes"
+  },
+  {
+   "bugid": 1978609,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Enable origin metadata updates and use of L2 quota info cache on all Nightly platforms"
+  },
+  {
+   "bugid": 1847329,
+   "status": "VERIFIED",
+   "component": "Core:Web Painting",
+   "summary": "Assertion failure: false (Duplicate display item!), at /builds/worker/checkouts/gecko/layout/painting/nsDisplayList.cpp:139"
+  },
+  {
+   "bugid": 1978620,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "firefox-141.0 doesn't start if gtk+ doesn't have wayland support"
+  },
+  {
+   "bugid": 1977868,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Tweak about:logging preset/settings to help record JavaScript traces"
+  },
+  {
+   "bugid": 1974793,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Release and vendor next Glean version (probably v64.5.2)"
+  },
+  {
+   "bugid": 1933787,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Implement object previews/grips in C++"
+  },
+  {
+   "bugid": 1976570,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger hangs in sources tree reducer when processing many sources"
+  },
+  {
+   "bugid": 1978802,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Add stacktrace option to documentation of logpoints"
+  },
+  {
+   "bugid": 1976716,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Allow DevTools NetworkResponseListener to stop decoding responses"
+  },
+  {
+   "bugid": 1978853,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Typo in documentation: `--patch -mode` should be `--patch-mode`"
+  },
+  {
+   "bugid": 1961688,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Compute the values needed for the urlbar breakout perf test rather than relying on hard-coded values"
+  },
+  {
+   "bugid": 1978299,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Upgrade time crate to 0.3.41"
+  },
+  {
+   "bugid": 1978464,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "VPN header text is slightly off center"
+  },
+  {
+   "bugid": 1974263,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Pinned status is exposed to userd when reached with keyboard navigation"
+  },
+  {
+   "bugid": 1974269,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Pinned icon is not displayed on the selected state when opening the Shortcut menu with Space or Enter keys"
+  },
+  {
+   "bugid": 1977998,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The fox icon from the \"Follow Topic Button\" message is read as \"QR code to download Firefox for mobile\" by screen readers"
+  },
+  {
+   "bugid": 1974253,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Tie Nimbus logging to use of Nimbus or NimbusTestUtils instead of enabling everywhere"
+  },
+  {
+   "bugid": 1924693,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Rakuten search provider shows 404 error"
+  },
+  {
+   "bugid": 1965520,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Support arbitrary attributes/properties for config-based settings"
+  },
+  {
+   "bugid": 1944719,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar extensions should be unpinnable from the launcher"
+  },
+  {
+   "bugid": 799415,
+   "status": "ASSIGNED",
+   "component": "Firefox:Site Permissions",
+   "summary": "UI for handling WebRTC camera access requests should show previews"
+  },
+  {
+   "bugid": 1961033,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Frequent browser/components/tabbrowser/test/browser/tabs/browser_tab_groups_telemetry.js | single tracking bug"
+  },
+  {
+   "bugid": 1968439,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make Ctrl+Tab panel work fine when constrained."
+  },
+  {
+   "bugid": 1971233,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Basic panel to preview collapsed tab group contents"
+  },
+  {
+   "bugid": 1975232,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Adjust positioning for a collapsed tab group's overflow counter when in vertical tabs mode"
+  },
+  {
+   "bugid": 1976283,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Create a pref for showing or hiding the tab group hover preview panel"
+  },
+  {
+   "bugid": 1978837,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make sure the ctrl+tab panel ignores synthetic mousemove events even before the popupshown event"
+  },
+  {
+   "bugid": 1978897,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab groups should not be allowed to drop-to-pin"
+  },
+  {
+   "bugid": 1887090,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Rename about:translations translations.mjs to aboutTranslations.mjs"
+  },
+  {
+   "bugid": 1950584,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Windows build creates flag_check.exe and flag_check.ilk in mozglue/static/rust/ and gfx/wr/swgl/ - should be in $objdir/$rust_target/{release,debug}/build/*/out"
+  },
+  {
+   "bugid": 1872421,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Crash reports should include experimentation state"
+  },
+  {
+   "bugid": 1978806,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "custom_review_prompt.open_mozilla_connect_clicked is a misnomer"
+  },
+  {
+   "bugid": 1978808,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Key 'lifetime' is duplicated in customize_home.contile in metrics.yaml"
+  },
+  {
+   "bugid": 1867280,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Stop using the legacy packaging for the native libraries once we don't have a blocker"
+  },
+  {
+   "bugid": 1977695,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Enable Homepage as a New Tab for Nightly 143"
+  },
+  {
+   "bugid": 1978899,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "Display the website URL as the title if a title is not available in the protection header"
+  },
+  {
+   "bugid": 1971406,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Update the appearance of Tab List Items"
+  },
+  {
+   "bugid": 1976462,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Remove bottom sheet handler"
+  },
+  {
+   "bugid": 1978549,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Normal tabs are displayed under the Private Section and vice versa in Tabs Tray"
+  },
+  {
+   "bugid": 1948761,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Configure the QR scan button"
+  },
+  {
+   "bugid": 1948845,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Configure exiting edit mode when the user presses back"
+  },
+  {
+   "bugid": 1969046,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Rounded corners on toolbar and search icon"
+  },
+  {
+   "bugid": 1972846,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Configure showing the private mode suggestions banner"
+  },
+  {
+   "bugid": 1973988,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Update simple and expanded toolbar settings icon"
+  },
+  {
+   "bugid": 1975913,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Sometimes when starting search from browser the url is not preselected"
+  },
+  {
+   "bugid": 1975914,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] When returning to the history screen in search mode two toolbars are shown"
+  },
+  {
+   "bugid": 1975915,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] History search is not closed when the user taps on empty space in the awesoembar"
+  },
+  {
+   "bugid": 1976079,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Have the composable toolbar have 64dp in height"
+  },
+  {
+   "bugid": 1976446,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Autofill banners hide the bottom toolbar"
+  },
+  {
+   "bugid": 1976448,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Excessive progress bar recompositions"
+  },
+  {
+   "bugid": 1976467,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Two toolbars in bookmarks search"
+  },
+  {
+   "bugid": 1976535,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Using the navbar breaks searching mode"
+  },
+  {
+   "bugid": 1976737,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Always show a divider"
+  },
+  {
+   "bugid": 1978330,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Ensure the translation and share buttons are shown on tablets"
+  },
+  {
+   "bugid": 1978505,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Don't show navigation buttons in landscape"
+  },
+  {
+   "bugid": 1976487,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Update Isolated Process Metadata on WPT"
+  },
+  {
+   "bugid": 1977304,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Don't use local path file on Android 11+"
+  },
+  {
+   "bugid": 1964660,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Text selected with input.setSelectionRange() is not replaced when the next character is entered"
+  },
+  {
+   "bugid": 1978700,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Switch snap-upstream-build to AMD pools"
+  },
+  {
+   "bugid": 1978702,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Switch partials generation to AMD pools"
+  },
+  {
+   "bugid": 1959339,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "FATAL ERROR: AsyncShutdown timeout in quit-application Conditions"
+  },
+  {
+   "bugid": 1978032,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Provide a README file for our zucchini vendoring"
+  },
+  {
+   "bugid": 1564483,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Add GeckoView's crash-time annotations to the machine-readable list of annotations"
+  },
+  {
+   "bugid": 1936811,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Generate crash annotation types for use in Java/Kotlin on Android"
+  },
+  {
+   "bugid": 1958791,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Add telemetry to OSKeyStore decryption failures"
+  },
+  {
+   "bugid": 1969013,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Add a global tracing-subscriber registry in a new gecko-tracing crate."
+  },
+  {
+   "bugid": 1896170,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "`CheckArg` doesn't support the `--flag=value` form"
+  },
+  {
+   "bugid": 1977798,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Screen readers fail to announce all elements in avatar picker’s Custom tab"
+  },
+  {
+   "bugid": 1978468,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "[HCM] The moz-input-color colors are not all as expected on Win High Contrast Mode"
+  },
+  {
+   "bugid": 1793475,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "United airline's in-flight entertainment videos don't play"
+  },
+  {
+   "bugid": 1898917,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "sekowf.wns.com - The application is supported only on Chrome"
+  },
+  {
+   "bugid": 1898949,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "my.murj.com - Firefox is not a recommended browser"
+  },
+  {
+   "bugid": 1902378,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "acesso.processo.rio - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902383,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "wpartner.wemakeprice.com - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902388,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "clinic.platomedical.com - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902390,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.rnova.org - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902395,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.bancoentrerios.com.ar - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902396,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.clinicaonline.co.il - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902398,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cloud-login.sigmacare.com - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902400,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "sales-crowd.jp - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902402,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.flypeach.com - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902408,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "mgr.knowbe.jp - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902412,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "esampark.wondercement.com - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902415,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "kaigetsu.staysee.jp - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902416,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.acionafacil.com.br - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902501,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "ads.tiktok.com - TikTok video editor is not usable"
+  },
+  {
+   "bugid": 1902596,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "kuzefukuandsons.com - The page is not supported by browser"
+  },
+  {
+   "bugid": 1905885,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "playlist-manager.com - Firefox is not supported"
+  },
+  {
+   "bugid": 1908636,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "ccccltd.cn - Firefox is not supported"
+  },
+  {
+   "bugid": 1913744,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "confetti.buzz - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1922498,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "ilgeniodellapizza.com - Scroll does not work correctly"
+  },
+  {
+   "bugid": 1924718,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "invideo.io - Playback is not supported on Firefox"
+  },
+  {
+   "bugid": 1925276,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "xtralife.com - Search bar is no longer visible when starting to type"
+  },
+  {
+   "bugid": 1934518,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.fullcodemedical.com - Unsupported browser"
+  },
+  {
+   "bugid": 1952788,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "m.youtube.com - Redirects to homepage when going back after accessing a video from search results"
+  },
+  {
+   "bugid": 1962654,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "go.idnow.de - Firefox is not supported using Linux"
+  },
+  {
+   "bugid": 1947300,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/mochitest/test_ext_idle.html | single tracking bug"
+  },
+  {
+   "bugid": 1974419,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "extensions.webextensions.uuids populated by ExtensionData via loadManifestFromWebManifest (without installing extension)"
+  },
+  {
+   "bugid": 1977694,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Crash in IOUtils.profileBeforeChange when console.log is passed an extension context in an experiment_apis script"
+  },
+  {
+   "bugid": 1978635,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Button visibility does not change when ignore_attention pref is flipped"
+  }
+ ],
+ "fixed": 101,
+ "total": 146,
+ "restricted": 1
+}
