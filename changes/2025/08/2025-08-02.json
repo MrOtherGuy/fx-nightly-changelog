@@ -1,0 +1,496 @@
+{
+ "date": "2025-08-02",
+ "buildid": "20250802092837",
+ "cset": "66eb1bb3ac0a3b188eae58341c230d51b1ffe2a0",
+ "bugs": [
+  {
+   "bugid": 1980537,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor application-services 09ad5d6 for search component changes"
+  },
+  {
+   "bugid": 1954142,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "StyleResolver resolve_style should account for element-backed pseudo elements"
+  },
+  {
+   "bugid": 1980234,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Cache NormalDependencyInvalidationKind for invalidation Dependencies"
+  },
+  {
+   "bugid": 1980539,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Stylo fixes for Servo (June 2025)"
+  },
+  {
+   "bugid": 1919582,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Implement CSSStyleProperties and other recent CSSOM changes"
+  },
+  {
+   "bugid": 1975768,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Commandfor with command=show/toggle-popover needs accessible relation to popover"
+  },
+  {
+   "bugid": 1979637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Put LNA UI elements behind network.lna.blocking"
+  },
+  {
+   "bugid": 1948752,
+   "status": "NEW",
+   "component": "Core:DOM: Notifications",
+   "summary": "Implement alertshow for Android and remove hack in NotificationParent"
+  },
+  {
+   "bugid": 1980282,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Consolidate gfxVar updates for hardware video and fallback config changes"
+  },
+  {
+   "bugid": 1969281,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Assertion failure: [GFX1]: SnapshotInto: srcByteCount:7077600 > dstByteCount:47184, at /builds/worker/workspace/obj-build/dist/include/mozilla/gfx/Logging.h:832"
+  },
+  {
+   "bugid": 1980552,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Testcase writing from canvas to webgl and back to canvas in a loop continuously uses RAM and GPU memory (till OOM if not checked). Chrome uses constant memory"
+  },
+  {
+   "bugid": 1979421,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 44dac855ba07b23c49d2cbc2c9d87bf8e6f38c47 from 2025-07-22 16:57:39"
+  },
+  {
+   "bugid": 1979815,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU CTS: promote `webgpu:api,validation,resource_usages,texture,in_render_common:subresources,depth_stencil_texture_in_bind_groups:*` out of backlog"
+  },
+  {
+   "bugid": 1979298,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[HDR] Delay publishing new layers untill we have all surfaces painted after LayerSet"
+  },
+  {
+   "bugid": 1980378,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[HDR] Disable dmabuf feedback"
+  },
+  {
+   "bugid": 1941406,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Let 'layout.details.force-block-layout:false' ride the trains to release"
+  },
+  {
+   "bugid": 1604327,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "text-combine-upright breaks up between counter() function and text in pseudo-element"
+  },
+  {
+   "bugid": 1979921,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "Add WPT testcases involving text-combine-upright with multiple generated-content items"
+  },
+  {
+   "bugid": 1980215,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Generated Content, Lists, and Counters",
+   "summary": "Support `::before::marker` and `::after::marker`"
+  },
+  {
+   "bugid": 1964417,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "[css-grid] Synthesize a center baseline for orthogonal items where appropriate"
+  },
+  {
+   "bugid": 1980462,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Land crash test from bug 552216"
+  },
+  {
+   "bugid": 1978414,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Ship Available Screen Resolution, Processor Count, and Touch Points fingerprinting resistance"
+  },
+  {
+   "bugid": 1970638,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "KnownDlls access is blocked by USER_LOCKDOWN and USER_RESTRICTED."
+  },
+  {
+   "bugid": 1980681,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Cache API",
+   "summary": "Build error - \"dom/cache/Manager.cpp:2195:26: error: Refcounted variable 'this' of type 'mozilla::dom::cache::Manager' cannot be captured by a lambda\" with NDK r29-beta3"
+  },
+  {
+   "bugid": 1913563,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "widget.use-xdg-desktop-portal.file-picker=1 leaks native file choosers"
+  },
+  {
+   "bugid": 1980358,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Turn portal picker by default on early beta and earlier."
+  },
+  {
+   "bugid": 1966443,
+   "status": "REOPENED",
+   "component": "Core:Widget: Win32",
+   "summary": "Pasting NULL bytes into textarea fails on Windows"
+  },
+  {
+   "bugid": 1978294,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Use Fluent for devtools color picker widget"
+  },
+  {
+   "bugid": 1979603,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Avoid calling OutputParser#cssPropertySupportsValue for CSS variables"
+  },
+  {
+   "bugid": 1980013,
+   "status": "ASSIGNED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "High frequency devtools/client/responsive/test/browser/browser_touch_all_events.js | single tracking bug"
+  },
+  {
+   "bugid": 1979582,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move Online Suggest fluent variables to browser.ftl"
+  },
+  {
+   "bugid": 1980225,
+   "status": "RESOLVED",
+   "component": "Firefox:Data Loss Prevention",
+   "summary": "Agent dialog may preempt print-to-file file dialog"
+  },
+  {
+   "bugid": 1979440,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "MIME Service removes extensions when it sanitizes reserved file names on Windows"
+  },
+  {
+   "bugid": 1973813,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "IP Protection panel subview following user upgrade"
+  },
+  {
+   "bugid": 1975317,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add upgrade IP protection action to CTA button inside main panel view"
+  },
+  {
+   "bugid": 1975474,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add correct SUMO link for Mozilla VPN integration to upgrade paragraph on main panel"
+  },
+  {
+   "bugid": 1978602,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Handle download button in post-upgrade view on IP protection panel"
+  },
+  {
+   "bugid": 1978925,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add correct sign-in link with tracking params to Next button in the signed out subview of the IP protection panel"
+  },
+  {
+   "bugid": 1980312,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Perma [tier 2] mingw /builds/worker/checkouts/gecko/browser/app/desktop-launcher/download_firefox.cpp:227:30: error: use of undeclared identifier 'WINHTTP_FLAG_SECURE_DEFAULTS'"
+  },
+  {
+   "bugid": 1969518,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update ASRouter MessageBlockList state and blockMessageByID() to handle impression data from profile group SQLite DB"
+  },
+  {
+   "bugid": 1979096,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for Global Roll out - Accounts Credit Card + Address Callout Experiment"
+  },
+  {
+   "bugid": 1979703,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create 'completed' dropdown for task widget"
+  },
+  {
+   "bugid": 1979825,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Timer widget - Create interactive text element"
+  },
+  {
+   "bugid": 1980239,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "moz-cached-ohttp channel should set contentType on itself when pulling resources from the cache"
+  },
+  {
+   "bugid": 1980459,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "If Trending Stories are turned off, Widgets are also hidden"
+  },
+  {
+   "bugid": 1980417,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Be more clear in terminology for tens vs. tenths"
+  },
+  {
+   "bugid": 1974710,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Fix remaining TypeScript issues in toolkit/components/search"
+  },
+  {
+   "bugid": 1979211,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement telemetry for clicks on visual search context menu item"
+  },
+  {
+   "bugid": 1979224,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement telemetry for impressions of the visual search context menu item"
+  },
+  {
+   "bugid": 1979477,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Implement \"New\" badge logic for the visual search/Google Lens context menu item"
+  },
+  {
+   "bugid": 1980556,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Replace nsISearchEngine.displayNameForURL and isNewEngineOrURL with a method that returns EngineURL"
+  },
+  {
+   "bugid": 1972538,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Remove from taskbar button (pageAction) has the same tooltip as the add to taskbar button (pageAction)"
+  },
+  {
+   "bugid": 1980292,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Update Web Apps Firefox Labs stings to those provided by UX"
+  },
+  {
+   "bugid": 1980673,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Can't pin Taskbar Tab to taskbar on Windows 10"
+  },
+  {
+   "bugid": 1922718,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Intermittent browser/components/sidebar/tests/browser/browser_vertical_tabs.js | single tracking bug"
+  },
+  {
+   "bugid": 1959618,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Move switchToTabHavingURI to URILoadingHelper"
+  },
+  {
+   "bugid": 1971382,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Allow drag-drop of tabs into collapsed tab groups"
+  },
+  {
+   "bugid": 1979647,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Slight upwards movement when dragging a tab (vertical tabs)"
+  },
+  {
+   "bugid": 1978988,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Remove or update probes expiring at the end of Firefox 143: PWMGR_IMPORT_LOGINS_FROM_FILE_CATEGORICAL before Gecko version gets increase to 144 on 2025-08-18"
+  },
+  {
+   "bugid": 1980053,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [tier 2] clang-trunk /builds/worker/checkouts/gecko/security/sandbox/chromium/base/containers/vector_buffer.h:140:9: error: first argument in call to 'memcpy' is a pointer to non-trivially copyable type 'base::OnceCallback<void ()>' [-Werror,-Wnontr"
+  },
+  {
+   "bugid": 1974727,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Implement stores logic for crash report settings"
+  },
+  {
+   "bugid": 1979964,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Add `Primary Fixed` and `On Primary Fixed` color tokens"
+  },
+  {
+   "bugid": 1970165,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add Android support for Nimbus advanced targeting for ToS baseline experiment"
+  },
+  {
+   "bugid": 1980518,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Fix some ModifierParameter warnings"
+  },
+  {
+   "bugid": 1980564,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 09ad5d683b4b09c745011e5b75d76368b1008221 from 2025-08-01 05:04:13"
+  },
+  {
+   "bugid": 1948756,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Configure search terms"
+  },
+  {
+   "bugid": 1980476,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Pasting text on home starts the SearchDialogFragment"
+  },
+  {
+   "bugid": 1980455,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Merge HomeFragmentTest with InstrumentedHomeFragmentTest."
+  },
+  {
+   "bugid": 1980520,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update AGP to version 8.12.0"
+  },
+  {
+   "bugid": 1980592,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove static mocking from PerformanceInflaterTest"
+  },
+  {
+   "bugid": 1980615,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove static mocking from SnackbarKtTest"
+  },
+  {
+   "bugid": 1895643,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Cannot type phone number with ATOK as the order you type in the web casher form of Paypay"
+  },
+  {
+   "bugid": 1929600,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Broken extension can prevent XPIDatabase.verifySignatures from enforcing signatures"
+  },
+  {
+   "bugid": 1976490,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "`addon-install-error-file-access` string doesn't (always?) have an add-on name"
+  },
+  {
+   "bugid": 1979517,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Password Manager",
+   "summary": "When IOUtils.readJSON fails, error is missing from telemetry jsonfile.load* (jsonfile.loadLogins and jsonfile.loadAutofillprofiles)"
+  },
+  {
+   "bugid": 1974069,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Add profile markers for dual_labeled_counter submetric operations"
+  },
+  {
+   "bugid": 1977614,
+   "status": "REOPENED",
+   "component": "Toolkit:Telemetry",
+   "summary": "69.21 - 6.95% addMab1 time_duration / idb-open-few-par time_duration + 2 more (Linux, OSX) regression on Tue July 8 2025"
+  },
+  {
+   "bugid": 1861505,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Replace --in-content-button variables with button Design Tokens"
+  },
+  {
+   "bugid": 1959502,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Convert moz-card's icon attribute to iconsrc"
+  },
+  {
+   "bugid": 1979380,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Add a README with documentation for moz-box-group"
+  },
+  {
+   "bugid": 1980557,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "The icon in the Profiles popup in the menu bar was missing in Firefox 143.0a1 (2025-07-30)"
+  }
+ ],
+ "fixed": 74,
+ "total": 81,
+ "restricted": 3
+}
