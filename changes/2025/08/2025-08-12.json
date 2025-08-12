@@ -1,0 +1,550 @@
+{
+ "date": "2025-08-12",
+ "buildid": "20250812094605",
+ "cset": "68d37f9acbd49fbe5b7ad759935475128bcf26e1",
+ "bugs": [
+  {
+   "bugid": 1976998,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Assertion failure: !mPresContext->RestyleManager()->IsInStyleRefresh(), at /builds/worker/checkouts/gecko/dom/animation/EffectCompositor.cpp:279"
+  },
+  {
+   "bugid": 1961712,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[dom.text_fragments.enabled] disabling text fragments causes right click context menu to stop working"
+  },
+  {
+   "bugid": 1982165,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "`PresShell::SynthesizeMouseMove` does wrong check to skip unnecessary synthesizing"
+  },
+  {
+   "bugid": 1980967,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Handle iframes going away when firing navigate event"
+  },
+  {
+   "bugid": 1981468,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Contiguous entries needs to be set earlier"
+  },
+  {
+   "bugid": 1981993,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Before unload with navigation api doesn't consider traversable for history navigation"
+  },
+  {
+   "bugid": 1982009,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "MaybeFireTraverseHistory should bail if browsing context is top"
+  },
+  {
+   "bugid": 1947025,
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "Cookies Not Sent with same-host XHR and fetch() requests that were upgraded due to upgrade-insecure-requests or HTTPS-only"
+  },
+  {
+   "bugid": 1982307,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove dom.disable_tab_focus_to_root_element and canvas focus painting code."
+  },
+  {
+   "bugid": 1982410,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "testcase accessible/tests/browser/hittest/browser_test_general.js fails, when `layout.css.details-content.enabled` is set to true"
+  },
+  {
+   "bugid": 1981495,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Hit MOZ_CRASH(Content-process DrawTargetRecording can't create requested clipped drawtarget) at /gfx/2d/DrawTargetRecording.cpp:868"
+  },
+  {
+   "bugid": 1982067,
+   "status": "VERIFIED",
+   "component": "Core:Graphics",
+   "summary": "Hit MOZ_CRASH(Content-process DrawTargetRecording can't create requested similar drawtarget) at /builds/worker/checkouts/gecko/gfx/2d/DrawTargetRecording.cpp:829"
+  },
+  {
+   "bugid": 1979100,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Implement importing of WebGPU external textures"
+  },
+  {
+   "bugid": 1982156,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 07f4412e935c988d60fad2e373287d6450bcd231 from 2025-08-04 05:53:27"
+  },
+  {
+   "bugid": 1978356,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[HDR/Linux] Try to avoid texture creation for fullscreen video - optimize playback"
+  },
+  {
+   "bugid": 1980585,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[HDR] WaylandSurfacePool frames are not recycled during scrolling"
+  },
+  {
+   "bugid": 1981896,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "6.8% regression on Kraken-imaging-darkroom  (Windows) and 8.5% on gaussian-blur (Linux) on 7Aug2025"
+  },
+  {
+   "bugid": 1982243,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve error messages for import attributes"
+  },
+  {
+   "bugid": 1980613,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Scalar replace subarray instructions"
+  },
+  {
+   "bugid": 1982241,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "CodeGenerator: Missing symbols visit{Add, Sub, Mul, Shift}IntPtr on riscv64, mips64 and loong64"
+  },
+  {
+   "bugid": 1982266,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "riscv64: Enable JIT by default"
+  },
+  {
+   "bugid": 1979403,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Stop using nsLayoutUtils::CompareTreePosition in AccessibleCaretManager"
+  },
+  {
+   "bugid": 1980787,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "aspect-ratio breaks size containment"
+  },
+  {
+   "bugid": 1982380,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Consider replacing nsStyleStructList.h with a higher-order macro"
+  },
+  {
+   "bugid": 1941406,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Let 'layout.details.force-block-layout:false' ride the trains to release"
+  },
+  {
+   "bugid": 1974382,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Anchor resolution visits siblings in incorrect order"
+  },
+  {
+   "bugid": 1982305,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Remove some sticky scroll container indirection."
+  },
+  {
+   "bugid": 1980562,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "[css-text-decor-3] Clarify expected computed value for `text-decoration` and similar shorthands (can we omit resolved `currentColor`?)"
+  },
+  {
+   "bugid": 1978589,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Assertion failure: mRawPtr, at /builds/worker/workspace/obj-build/dist/include/mozilla/StaticPtr.h:50"
+  },
+  {
+   "bugid": 1981870,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add pref to easily disable classifier"
+  },
+  {
+   "bugid": 1982047,
+   "status": "VERIFIED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash [@ IsClosing]"
+  },
+  {
+   "bugid": 343600,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "deleteBranch won't notify observers"
+  },
+  {
+   "bugid": 1981332,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Tabs sharing devices menu bar option no longer displays the sharing tabs"
+  },
+  {
+   "bugid": 1982248,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "GTK Titlebar Buttons / Window Controls Don't Show background with adw-family themes"
+  },
+  {
+   "bugid": 1966443,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Pasting NULL bytes into textarea fails on Windows"
+  },
+  {
+   "bugid": 1982188,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Simplify scrollbar CSS rules."
+  },
+  {
+   "bugid": 1982303,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Simplify scrollbar mediator set up."
+  },
+  {
+   "bugid": 1979006,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Debugger footer mapped-source button tooltip is wrong"
+  },
+  {
+   "bugid": 1981356,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Update AppErrorBoundary for Toolbox/Panel crashes to include STRs"
+  },
+  {
+   "bugid": 1979109,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Generate data from design-tokens.json that can be used for custom Stylelint rules"
+  },
+  {
+   "bugid": 1981352,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Generated TypeScript types raise error \"Identifier expected. 'in' is a reserved word that cannot be used here\""
+  },
+  {
+   "bugid": 1981523,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Clean up [searchmode] and #urlbar-label-box rules"
+  },
+  {
+   "bugid": 1981761,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The confirmation tip of blocking the market suggestions doesn’t display any text"
+  },
+  {
+   "bugid": 1981792,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "White-on-white places toolbar icons on macOS after bug 1980856"
+  },
+  {
+   "bugid": 1558149,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use `loadFlags` instead of `flags` for flags eventually passed to `loadURI` or `fixupAndLoadURIString`"
+  },
+  {
+   "bugid": 1972460,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add connection duration time"
+  },
+  {
+   "bugid": 1979149,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add telemetry probe to track IP Protection feature adoption (VPN is turned on at least once)"
+  },
+  {
+   "bugid": 1981032,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Change IP Protection toolbar icon based on IPProtectionService events"
+  },
+  {
+   "bugid": 1982138,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add a variant variable under ipProtection in Nimbus"
+  },
+  {
+   "bugid": 1981606,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Show desktop launcher use in Firefox startup telemetry"
+  },
+  {
+   "bugid": 1981537,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Record pref when a user clicks the \"Terms of Use\" or \"Privacy Notice\" links on the ToU infobar"
+  },
+  {
+   "bugid": 1982068,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add \"sign in\" copy for Account Adoption Rollout message"
+  },
+  {
+   "bugid": 1900702,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "The \"Close\" button on new-tab cog sidebar should perhaps be an \"X\" button"
+  },
+  {
+   "bugid": 1981800,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add promo card illustration"
+  },
+  {
+   "bugid": 1981851,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Default to rotating the context ID every 30 days"
+  },
+  {
+   "bugid": 1981881,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Timer widget - make sure context menu is only visible on hover"
+  },
+  {
+   "bugid": 1981987,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Countdown timer is displayed on top of the Customize menu"
+  },
+  {
+   "bugid": 1979381,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add an entry in the context menu in order to highlight and comment the text selection in a pdf"
+  },
+  {
+   "bugid": 1981367,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Only ignore older server changeset if local signature is valid"
+  },
+  {
+   "bugid": 1981787,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Google Lens searches return invalid results"
+  },
+  {
+   "bugid": 1980487,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "dialog-button custom element does not support passing params to SubDialogManager"
+  },
+  {
+   "bugid": 1982129,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Expand on hover intermittently stops working"
+  },
+  {
+   "bugid": 1980782,
+   "status": "VERIFIED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Perma browser/modules/test/unit/test_SitePermissions.js | testPermissionsListing - [testPermissionsListing : 54] Correct list of all permissions - [\"3rdPartyFrameStorage\",\"3rdPartyStorage\" - when Gecko 143 merges to beta on 2025-08-18"
+  },
+  {
+   "bugid": 1981916,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use the same version of clang as the build for wrench build that uses gallium"
+  },
+  {
+   "bugid": 1920227,
+   "status": "NEW",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`mach xpcshell` does not find libxul.so"
+  },
+  {
+   "bugid": 1980045,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma Sel [tier 2] test_pdf_navigation | AssertionError('Mismatching screenshots for test_pdf_navigation_select_text_with_highlight-core24_2204.png')"
+  },
+  {
+   "bugid": 1981848,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "cache manifestparser expression parsing"
+  },
+  {
+   "bugid": 1982422,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Update Sentry to version 8.19.0"
+  },
+  {
+   "bugid": 1981499,
+   "status": "REOPENED",
+   "component": "Firefox for Android:General",
+   "summary": "Raise minSdkVersion to 26 (Android 8) for Fenix and Focus"
+  },
+  {
+   "bugid": 1982277,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 99864a13049ff605671e4d84b292c93f4322ce9a from 2025-08-11 05:02:53"
+  },
+  {
+   "bugid": 1982425,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "`WebCompatReporterSubmissionMiddlewareTest.kt` test for `GIVEN the URL is not changed WHEN WebCompatInfo is retrieved successfully THEN all report broken site pings are submitted`()  does not verify the glean ping values after submitting the glean ping"
+  },
+  {
+   "bugid": 1955106,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[AC] Implement Preferences Observer Delegate"
+  },
+  {
+   "bugid": 1979697,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Add preview for long truncated title of Tab List item"
+  },
+  {
+   "bugid": 1978399,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Only hide navigation bar if the device height is smaller than 480dp."
+  },
+  {
+   "bugid": 1981160,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] No add tab and tab counter button when using tabstrip with navbar hidden in landscape"
+  },
+  {
+   "bugid": 1981327,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add a secret settings in Nightly if the composable toolbar is enabled to allow enabling toolbar redesign"
+  },
+  {
+   "bugid": 1981453,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Microphone button appears but is unactionable in bookmarks or history searches"
+  },
+  {
+   "bugid": 1981457,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] QRScanner button appears but is unactionable in bookmarks or history searches"
+  },
+  {
+   "bugid": 1981668,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Sometimes search results are shown in bookmarks and history with no input"
+  },
+  {
+   "bugid": 1982099,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.MainMenuTestCompose#verifyTheManageExtensionsItemTest | java.lang.AssertionError: Failed to inject touch input."
+  },
+  {
+   "bugid": 1945252,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "[Gecko iOS] Land remaining changes from Cedar on mozilla-central"
+  },
+  {
+   "bugid": 1976380,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Fix java.lang.NoSuchMethodException: android.view.DragEvent.obtain error"
+  },
+  {
+   "bugid": 1927797,
+   "status": "RESOLVED",
+   "component": "NSS:Libraries",
+   "summary": "Certificate Compression for QUIC"
+  },
+  {
+   "bugid": 1976717,
+   "status": "REOPENED",
+   "component": "Release Engineering:General",
+   "summary": "[iscript] Use upstream artifacts instead of downloading files from github"
+  },
+  {
+   "bugid": 1979546,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "Subprocess call can deadlock on Windows when WaitForMultipleObjects receives 64+ events (=16+ concurrent programs)"
+  },
+  {
+   "bugid": 1979086,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Relay",
+   "summary": "Implement improved Relay mask offer UX for ongoing usage"
+  },
+  {
+   "bugid": 1982100,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "new profile and manage profile menus use the wrong casing"
+  },
+  {
+   "bugid": 1982185,
+   "status": "VERIFIED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Perma toolkit/components/glean/tests/xpcshell/test_FOGInit.js | xpcshell return code: 0 when Gecko 143 merges to beta on 2025-08-18"
+  },
+  {
+   "bugid": 1981925,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "The searched string is not cleared after using Show in folder context menu option inside the Library"
+  },
+  {
+   "bugid": 1982517,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Perma widget/tests/test_bug485118.xhtml | scrollbar has wrong minimum height - got 15, expected 26"
+  }
+ ],
+ "fixed": 78,
+ "total": 90,
+ "restricted": 2
+}
