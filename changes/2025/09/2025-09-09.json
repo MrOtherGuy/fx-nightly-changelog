@@ -1,0 +1,616 @@
+{
+ "date": "2025-09-09",
+ "buildid": "20250909092217",
+ "cset": "de92d4b82dd1ad8f466c8b38b01af66cf85c14a5",
+ "bugs": [
+  {
+   "bugid": 1987198,
+   "status": "RESOLVED",
+   "component": "Application Services:Relevancy",
+   "summary": "Replace fixed Places frecency thresholds with new API in Relevancy"
+  },
+  {
+   "bugid": 1931328,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video with createMediaElementSource becomes permanently sluggish / freezes after switching playbackRate a few times with zero video frame copy"
+  },
+  {
+   "bugid": 1986058,
+   "status": "NEW",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Support parsing matroska with limited codecs support (AAC & AVC)"
+  },
+  {
+   "bugid": 1958394,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make sure we can capture offscreen view transition targets"
+  },
+  {
+   "bugid": 1986737,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Initial plumbing work for @scope"
+  },
+  {
+   "bugid": 1720570,
+   "status": "NEW",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Implement CSS module scripts"
+  },
+  {
+   "bugid": 1987372,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "link disabled seems to get speculatively loaded"
+  },
+  {
+   "bugid": 1987126,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] dom/base/test/test_omt_eager_baseline.html | Failed to eagerly compile functions | single tracking bug"
+  },
+  {
+   "bugid": 1987389,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "nsContentUtils::ExtractExceptionValues doesn't get `columnNumber`"
+  },
+  {
+   "bugid": 1959960,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Implement traverse methods"
+  },
+  {
+   "bugid": 1987339,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Small code simplification followup from Bug 1940493"
+  },
+  {
+   "bugid": 1964901,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Swipe up/down doesn't work in macOS until text is selected (because commands like cmd_scrollBottom are not registered for the top level page until something triggers a command update)."
+  },
+  {
+   "bugid": 1981341,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add referenceTarget and shadowRootReferenceTarget attributes"
+  },
+  {
+   "bugid": 1986940,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Don't capture stack when locked"
+  },
+  {
+   "bugid": 1987128,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update the syn and proc-macro2 dependencies."
+  },
+  {
+   "bugid": 1987247,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 42c0504c66193d231d31f1b64c1213c639281bc9 from 2025-09-04 02:31:30"
+  },
+  {
+   "bugid": 1943901,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "With OMT Baseline compilation enabled, testcase from bug 1826078 takes 1000ms on load, and intermittently on reloading many times. Else the testcase takes 50ms."
+  },
+  {
+   "bugid": 1982158,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: !cx->isExceptionPending(), at vm/Interpreter.cpp:504"
+  },
+  {
+   "bugid": 1986462,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rework iongraph tool subcommands"
+  },
+  {
+   "bugid": 1987428,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "CallArgs::operator[] should release assert"
+  },
+  {
+   "bugid": 1984782,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Optimize riscv64 InsertBits function for pos=0"
+  },
+  {
+   "bugid": 1986255,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "riscv64: Assertion failure: cx_->hadResourceExhaustion(), at js/src/jit/WarpOracle.cpp:212 when running some small loops"
+  },
+  {
+   "bugid": 1987227,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Emitting incorrect x64 instruction for cmpb in some cases"
+  },
+  {
+   "bugid": 1987265,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "riscv64: Eliminate warnings from string format specifiers"
+  },
+  {
+   "bugid": 1987333,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "MacroAssembler-riscv64: ma_branch fails to fall back to long jumps when offset overflows"
+  },
+  {
+   "bugid": 1987384,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Wrong logic in CommonRegSet::addUnchecked(Register64)"
+  },
+  {
+   "bugid": 1986862,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Refactor FinalizationRegistry implementation by removing global record set"
+  },
+  {
+   "bugid": 1986582,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Avoid hit-testing for nsDisplayViewTransitionCapture"
+  },
+  {
+   "bugid": 1924206,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Implement scoping structure for anchors, for elements specifying `anchor-scope`"
+  },
+  {
+   "bugid": 1973511,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Invalidate Anchor Positioned elements during scroll"
+  },
+  {
+   "bugid": 1987313,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Remove nsIFrame::FindAnchorPosAnchor"
+  },
+  {
+   "bugid": 1795460,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "font visibility = 1: auto include preferred language from kLangPackFonts"
+  },
+  {
+   "bugid": 1984066,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Create a llama.cpp e2e test that can run in-tree"
+  },
+  {
+   "bugid": 1985576,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "about:inference when used with external model hub needs model to be deleted after every change in config while testing"
+  },
+  {
+   "bugid": 1976725,
+   "status": "VERIFIED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Add a confirmation dialog for unchecking the \"baseline\" checkbox in about:preferences#privacy"
+  },
+  {
+   "bugid": 1983652,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "UI updates for ETP Strict Exceptions Options"
+  },
+  {
+   "bugid": 1972393,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "EV-enable TrustAsia Dedicated TLS Roots"
+  },
+  {
+   "bugid": 1985660,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "CRLite should use SCTs from the TLS handshake in coverage checks"
+  },
+  {
+   "bugid": 1986717,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "CertVerifier should check SCT signatures before using SCT timestamps for CRLite coverage checks"
+  },
+  {
+   "bugid": 1987340,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "add test for bug 1764863"
+  },
+  {
+   "bugid": 1884458,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "Failing WPT webrtc/RTCDataChannel-binaryType.window.js"
+  },
+  {
+   "bugid": 1980316,
+   "status": "REOPENED",
+   "component": "Core:WebRTC",
+   "summary": "Perma linux asan SUMMARY: AddressSanitizer: SEGV /builds/worker/workspace/obj-build/dist/include/mozilla/Assertions.h:248:3 in MOZ_CrashSequence"
+  },
+  {
+   "bugid": 1987029,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "gUM/gDM allows frameRate exceeding track.getCapabilities().frameRate.max"
+  },
+  {
+   "bugid": 1209163,
+   "status": "NEW",
+   "component": "Core:WebRTC: Networking",
+   "summary": "[Meta] Make RTCDataChannels transferable (to workers)"
+  },
+  {
+   "bugid": 1983831,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "RTCDataChannel message events delivered out of order"
+  },
+  {
+   "bugid": 1611953,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Implement RTCDataChannel.onclosing"
+  },
+  {
+   "bugid": 1981202,
+   "status": "NEW",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "RTCDataChannelStats.bytes/messagesSent isn't updated in most cases"
+  },
+  {
+   "bugid": 1979106,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[HDR] Crash in [@ mozilla::widget::WaylandSurface::GetNextTransactionLocked]"
+  },
+  {
+   "bugid": 1987124,
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Perma [tier 2] /builds/worker/checkouts/gecko/widget/gtk/ScreenHelperGTK.cpp:95:22: error: no member named 'widget_wayland_fractional_scale_enabled' in namespace 'mozilla::StaticPrefs' | single tracking bug"
+  },
+  {
+   "bugid": 1987248,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Update skipif for test_extension_storage_actor.js for linux tsan to 2404"
+  },
+  {
+   "bugid": 1985306,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Split devtools inspector browser mochitests in feature suites"
+  },
+  {
+   "bugid": 1830230,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Server sent events not displayed in the Network panel"
+  },
+  {
+   "bugid": 1987457,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Perma mozilla-release py3 tools/tryselect/test/test_fuzzy.py::test_query_paths_variants[] TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1984336,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Show more / show less items sometimes persist when searching through open tabs in multiple windows even when there are no results"
+  },
+  {
+   "bugid": 1984459,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Remove or update probes expiring at the end of Firefox 144: aboutprivatebrowsing.click#click before Gecko version gets increase to 145 on 2025-09-15"
+  },
+  {
+   "bugid": 1986421,
+   "status": "NEW",
+   "component": "Firefox:IP Protection",
+   "summary": "Timer is stuck when the toolbar icon is moved to the Overflow menu"
+  },
+  {
+   "bugid": 1986749,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "IPProtection panel does not update when an already signed in user is enrolled in the experiment"
+  },
+  {
+   "bugid": 1980482,
+   "status": "REOPENED",
+   "component": "Firefox:Messaging System",
+   "summary": "Rollout Win10 EoS Sync messsages globally"
+  },
+  {
+   "bugid": 1983351,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Write a bunch of train-hop documentation for source docs"
+  },
+  {
+   "bugid": 1984743,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add isPinned on click and impression events for shortcuts"
+  },
+  {
+   "bugid": 1986446,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[GENAI-1782] Add features for smart shorcuts"
+  },
+  {
+   "bugid": 1987381,
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "The Recommended Stories and Manage Topics text from the New Tab settings panel overlap the Shortcuts text when disabled"
+  },
+  {
+   "bugid": 1987411,
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Allow placement to be configured through nimbus"
+  },
+  {
+   "bugid": 1987017,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Unskip test_NimbusTestUtils"
+  },
+  {
+   "bugid": 1987156,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Missing \"ESR\" in uninstall key"
+  },
+  {
+   "bugid": 1983650,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar pins promo is not readable on HCM"
+  },
+  {
+   "bugid": 1987416,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "New search bar doesn't use inactive titlebar opacity in inactive windows with vertical tabs"
+  },
+  {
+   "bugid": 1987429,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Use reduced urlbar min-width for vertical tabs, and reduce window min-width accordingly"
+  },
+  {
+   "bugid": 1831648,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Mozbuild requires packaging module but is not listed as dependency"
+  },
+  {
+   "bugid": 1986669,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "use from-deps transforms in repackage-rpm"
+  },
+  {
+   "bugid": 1987131,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma [tier 2] Snap /builds/worker/firefox-snap/parts/firefox/build/obj-x86_64-pc-linux-gnu/instrumented/dist/include/nsCycleCollectionNoteChild.h:50:43: error: no member named 'is_base_of' in namespace 'std' | single tracking bug"
+  },
+  {
+   "bugid": 1985182,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Add telemetry to composified edit address screens"
+  },
+  {
+   "bugid": 1957636,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Bookmarks",
+   "summary": "Add description to folder item that shows the number of children"
+  },
+  {
+   "bugid": 1977552,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Bookmarks",
+   "summary": "Bookmarks can't be saved after saving a bookmark in a new folder and then deleting it"
+  },
+  {
+   "bugid": 1987151,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Bookmarks",
+   "summary": "Bookmark folder toolbar shows long titles in multiple lines"
+  },
+  {
+   "bugid": 1809306,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "\"Copy Link\" context menu copies title instead of URL for HTML5 Video"
+  },
+  {
+   "bugid": 1986963,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Create new lint rule to encourage displaySnackbar usage"
+  },
+  {
+   "bugid": 1986708,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add Nimbus control over isolated content processes"
+  },
+  {
+   "bugid": 1987009,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add show sponsor and non sponsor suggestion probes"
+  },
+  {
+   "bugid": 1986766,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Vivo europe pre-install detection"
+  },
+  {
+   "bugid": 1983075,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Baseline profile generation task should only be triggered on android related code changes"
+  },
+  {
+   "bugid": 1898535,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Incorrect background color for \"Manage alternative search engines\" screen in private mode"
+  },
+  {
+   "bugid": 1918516,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Firefox truncates long search suggestions instead of adding line breaks"
+  },
+  {
+   "bugid": 1985572,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Unified Trust Panel] The \"Trackers aren't blocked\" button is not grayed out when ETP is OFF"
+  },
+  {
+   "bugid": 1979145,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Composable Toolbar] Keyboard does not reappear after QR Scanner is dismissed"
+  },
+  {
+   "bugid": 1985026,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "\"Find in page\" displays the previous result numbers when opening a new search session"
+  },
+  {
+   "bugid": 1985832,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Tab thumbnails never update to the latest painted version of the site"
+  },
+  {
+   "bugid": 1986926,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Menu navigation is on top when the toolbar layout is expanded mode"
+  },
+  {
+   "bugid": 1987117,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Show the minimal toolbar for when using a middle search bar on home as transparent"
+  },
+  {
+   "bugid": 1987018,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Make \"magic number\" detekt rule more suitable for our usecase"
+  },
+  {
+   "bugid": 1987135,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor FenixSnackbarDelegate to remove object mocking from FenixSnackbarDelegateTest"
+  },
+  {
+   "bugid": 1987414,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove static mocking of SelectorsKt."
+  },
+  {
+   "bugid": 1984605,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < MainMenuTestCompose.verifyTheExtensionsMainMenuListTest>"
+  },
+  {
+   "bugid": 1983057,
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Android 14 DragAndDropTest Failures"
+  },
+  {
+   "bugid": 1986760,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "If ThreadUtils.sGeckoHandler isn't intialized, then onResume will crash"
+  },
+  {
+   "bugid": 1987316,
+   "status": "RESOLVED",
+   "component": "GeckoView:Media",
+   "summary": "Re-enable HLS tests on Android Nightly"
+  },
+  {
+   "bugid": 1914407,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Investigate navigation errors when navigation gets redirected or interrupted"
+  },
+  {
+   "bugid": 1983869,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Clicking \"extension settings\" in post-install popup breaks Customize tab and keyboard shortcuts"
+  },
+  {
+   "bugid": 1930954,
+   "status": "REOPENED",
+   "component": "Toolkit:Gecko Trace",
+   "summary": "Implement Collection and Processing Mechanism for Traces Captured by Gecko Trace"
+  },
+  {
+   "bugid": 1986851,
+   "status": "RESOLVED",
+   "component": "Toolkit:Safe Browsing",
+   "summary": "Use google4 safebrowsing folder for google5 provider"
+  },
+  {
+   "bugid": 1873283,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Storybook doc pages do not respect dark mode"
+  }
+ ],
+ "fixed": 81,
+ "total": 101,
+ "restricted": 2
+}
