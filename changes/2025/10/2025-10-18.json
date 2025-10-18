@@ -1,0 +1,640 @@
+{
+ "date": "2025-10-18",
+ "buildid": "20251018091819",
+ "cset": "80c73ea6c2f452268aac47363d61f8633beb69fe",
+ "bugs": [
+  {
+   "bugid": 1967475,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video decoder error when seeking repeatidly on some H264 videos when using AppleVT decoder"
+  },
+  {
+   "bugid": 1993216,
+   "status": "VERIFIED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Perma TEST-UNEXPECTED-PRECONDITION_FAILED | /webcodecs/videoDecoder-codec-specific-orientation.https.any.worker.html?h265_annexb | Test that isConfigSupported() with orientation - hev1.1.6.L60.90 unsupported when Gecko 145 merges to beta on 2025-10-13"
+  },
+  {
+   "bugid": 1286822,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove disabled beforescriptexecute/afterscriptexecute implementation"
+  },
+  {
+   "bugid": 1991135,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add support for <meta name=\"rating\"> behind a pref"
+  },
+  {
+   "bugid": 1994024,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix malfunctioning WPT fullscreen cross origin tests"
+  },
+  {
+   "bugid": 1994425,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "CI for Navigation API (before enabling it by default on nightly)"
+  },
+  {
+   "bugid": 1994668,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Change iframe initialization order in some cases to prepare for sync about:blank"
+  },
+  {
+   "bugid": 1994977,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Always clean up `mOngoingNavigateEvent`"
+  },
+  {
+   "bugid": 1993938,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "Make LNA checks for Websockets, Local -> Loopback, configurable"
+  },
+  {
+   "bugid": 1994144,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Performance APIs",
+   "summary": "Improve the atom usage in PerformanceEntry"
+  },
+  {
+   "bugid": 1994973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Actually detect privileged eval usage on Android"
+  },
+  {
+   "bugid": 1994999,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Refactor WPT compression tests to reduce duplication per format"
+  },
+  {
+   "bugid": 1994029,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Implement aria-actions in ATK"
+  },
+  {
+   "bugid": 1994030,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Implement aria-actions in MacOS"
+  },
+  {
+   "bugid": 1994835,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Returned strings in atk tests make leakcheck fail"
+  },
+  {
+   "bugid": 1994935,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "remove random unintentional but harmless unary + in Matrix code"
+  },
+  {
+   "bugid": 1994937,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Change argument of WebRenderAPI::UpdateDebugFlags() to 64 bit"
+  },
+  {
+   "bugid": 1994982,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Apply Xclipse vertex buffer workaround on Android 15 onwards"
+  },
+  {
+   "bugid": 1994913,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add :jnicol to `#webgpu-reviewers`"
+  },
+  {
+   "bugid": 1978773,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render gradients from gradient stops directly"
+  },
+  {
+   "bugid": 1991164,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Support LogMicroTaskQueueEntry::Run for JS Micro Tasks"
+  },
+  {
+   "bugid": 1992107,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "MOZ_CRASH([unhandlable oom] RegExpCompiler) after recovering from stack overflow"
+  },
+  {
+   "bugid": 1992208,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Wrong evaluation order for modules sharing a top-level await dependency"
+  },
+  {
+   "bugid": 1992993,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add try-server configurations for tier-3 simulators"
+  },
+  {
+   "bugid": 1994189,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Emit fewer instructions for floating point comparison on riscv64"
+  },
+  {
+   "bugid": 1994190,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Simplify rounding instructions for riscv64"
+  },
+  {
+   "bugid": 1994191,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Clean-up riscv64 branching code"
+  },
+  {
+   "bugid": 1995018,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Update upstream location for VIXL"
+  },
+  {
+   "bugid": 1994192,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Simplify wasm truncating instructions for riscv64"
+  },
+  {
+   "bugid": 1994893,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Clean up widget / view / nsDocumentViewer initialization."
+  },
+  {
+   "bugid": 1994934,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "allow rects to be transformed to the full nscoord range"
+  },
+  {
+   "bugid": 1994964,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Remove some more nsView dependencies."
+  },
+  {
+   "bugid": 1924233,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Plumb in evaluation for `position-visibility: no-overflow`"
+  },
+  {
+   "bugid": 1994197,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Use nscoord variables rather than double-precision gfxFloats for text measurements that are actually integer appunits"
+  },
+  {
+   "bugid": 1993127,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mozilla/Attributes.h"
+  },
+  {
+   "bugid": 1993886,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Cleanup includes of mozilla/RefPtr.h"
+  },
+  {
+   "bugid": 1994183,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning",
+   "summary": "Page Extractor misses content in Reader Mode"
+  },
+  {
+   "bugid": 1994901,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "arena_bin_t::mNonFullRuns is never initialised"
+  },
+  {
+   "bugid": 1994728,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "High frequency netwerk/test/unit/test_dns_service.js / test_dns_service_wrap.js | xpcshell return code: 0 | single tracking bug"
+  },
+  {
+   "bugid": 1994472,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Fix saving content-type when saving compression dictionaries"
+  },
+  {
+   "bugid": 1994314,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: DNS",
+   "summary": "Fenix: DoH performance shows high latency when resolving multiple hostnames in parallel"
+  },
+  {
+   "bugid": 1994648,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add more HTTP CONNECT over HTTP/3 tests"
+  },
+  {
+   "bugid": 1994092,
+   "status": "RESOLVED",
+   "component": "Core:Performance: Memory",
+   "summary": "Annotate PSI information withiout considering memory pressure"
+  },
+  {
+   "bugid": 1991983,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Suggested improvements for Wikipedia (Wikimedia) strip-on-share list"
+  },
+  {
+   "bugid": 1993726,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Trunk nightly crashes with \"Failed to detect any GPUs\" on VMware macOS guest VM"
+  },
+  {
+   "bugid": 1995049,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Simplify widget move / resize APIs."
+  },
+  {
+   "bugid": 1993543,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "Simplify XPCOMUtils.defineLazyServiceGetter to require the interface parameter as only an nsIID, rather than being an optional string or nsIID"
+  },
+  {
+   "bugid": 1994730,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Migrate data-standalone attribute to a class"
+  },
+  {
+   "bugid": 1994963,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "standalone devtools button doesn't look great in dark mode"
+  },
+  {
+   "bugid": 1994970,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Migrate ` content.document.defaultView` to `content`"
+  },
+  {
+   "bugid": 1994705,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Remove devtools.inspector.inactive.css.enabled"
+  },
+  {
+   "bugid": 1994925,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add DAMP test for the Rules view with many unused CSS variables"
+  },
+  {
+   "bugid": 1994939,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add test for editing shadow dom constructed rule"
+  },
+  {
+   "bugid": 1992398,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Add moz-src matching to terminal links config"
+  },
+  {
+   "bugid": 1957641,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "XULBrowserElement is missing the properties defined in browser-custom-element.js in TypeScript"
+  },
+  {
+   "bugid": 1988864,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Add a Stylelint rule to enforce using box-shadow tokens"
+  },
+  {
+   "bugid": 1994217,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Enable ESLint rule jsdoc/no-bad-blocks"
+  },
+  {
+   "bugid": 1994676,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Exclude security/ct/CTKnownLogs.h from clang-format"
+  },
+  {
+   "bugid": 1993031,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Create section for Firefox VPN in about:settings"
+  },
+  {
+   "bugid": 1992115,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Launcher is not added on Desktop if Nightly full installer is updated to latest"
+  },
+  {
+   "bugid": 1994252,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Fx Backup Messaging] Update about:welcome backup restore screen temp gating pref and add AW screen test coverage"
+  },
+  {
+   "bugid": 1992153,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Drop down for number of shortcut rows appears despite shortcuts being disabled."
+  },
+  {
+   "bugid": 1994502,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 3eca60735ba27d0c6ec16b60b88dd6f1f5297e1c from 2025-10-14 18:25:40"
+  },
+  {
+   "bugid": 1988616,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Frequent browser/components/backup/tests/browser/browser_settings_turn_on_scheduled_backups.js | single tracking bug"
+  },
+  {
+   "bugid": 1991951,
+   "status": "REOPENED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Implement enterprise policy prefs for fxbackup"
+  },
+  {
+   "bugid": 1994559,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add metadata to archive file format to show whether the profile has opted into telemetry"
+  },
+  {
+   "bugid": 1994584,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove or update metrics expiring at the end of Firefox 146: browser.searchinit.engine_invalid_webextension"
+  },
+  {
+   "bugid": 1994312,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Localize security.certerrors.felt-privacy-v1 user pref to browser_webauthn_cert_override.js test"
+  },
+  {
+   "bugid": 1992624,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Config-based setting-groups immediately below a heading tag don't have enough whitespace"
+  },
+  {
+   "bugid": 1994212,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "browser_sidebar_context_menu.js test depends on browser_customize_sidebar.js or something"
+  },
+  {
+   "bugid": 1983124,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Allow tab stacking while dragging multiple tabs"
+  },
+  {
+   "bugid": 1984732,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab opening and closing animations should be skipped when switching tabs in tab group hover preview"
+  },
+  {
+   "bugid": 1967758,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve language detection text sampling strategy"
+  },
+  {
+   "bugid": 1994794,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve Translated Bidi Page Layout for Lists"
+  },
+  {
+   "bugid": 1991644,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Make NDK use the same Android minSdkVersion as everywhere else"
+  },
+  {
+   "bugid": 1978563,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Expose address metadata in toolkit for consumption on Android"
+  },
+  {
+   "bugid": 1978570,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Use address metadata from toolkit in address editor"
+  },
+  {
+   "bugid": 1993387,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Land strings for autofill internationalization"
+  },
+  {
+   "bugid": 1993390,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Add AddressStructure APIs to GeckoView"
+  },
+  {
+   "bugid": 1985834,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[Acorn Component Update] Update ListItem to the latest M3 + Acorn specs"
+  },
+  {
+   "bugid": 1993655,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Migrate MenuDialogBottomSheet the updated M3 + Acorn specs"
+  },
+  {
+   "bugid": 1945254,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Rename ReviewQualityCheckFooterPreview to MicrosurveyFooterPreview"
+  },
+  {
+   "bugid": 1994929,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 20d0eca203b4530bc30a4cfcc64def1a14310540 from 2025-10-17 05:03:31"
+  },
+  {
+   "bugid": 1986398,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Add fallback behaviour when the custom review prompt is not shown, but no error is returned"
+  },
+  {
+   "bugid": 1994744,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Remove all assets and code related to the \"Challenge the default\" onboarding experiment"
+  },
+  {
+   "bugid": 1994745,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Clean up unused completed onboarding experiment strings"
+  },
+  {
+   "bugid": 1926063,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Translations",
+   "summary": "`TranslationsDialogBottomSheetPreview` is not provided a background colour"
+  },
+  {
+   "bugid": 1994421,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create high priority app icon selection UI tests"
+  },
+  {
+   "bugid": 1994480,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Remove unused and duplicated resources from android-components icons"
+  },
+  {
+   "bugid": 1994199,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "Wire Update Tests to esr release flow"
+  },
+  {
+   "bugid": 1995081,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Perma [tier 2] /webdriver/tests/classic/minimize_window/minimize.py | test_restore_from_fullscreen - assert False"
+  },
+  {
+   "bugid": 1992348,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Duplicated request ids for data URLs or cached images resources"
+  },
+  {
+   "bugid": 1729546,
+   "status": "RESOLVED",
+   "component": "Toolkit:Async Tooling",
+   "summary": "test failure in toolkit/modules/subprocess/test/xpcshell/test_subprocess.js on apple silicon"
+  },
+  {
+   "bugid": 1990145,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Can't donate to internet archive (archive.org)"
+  },
+  {
+   "bugid": 1994098,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "PiP subtitles do not work for sites using Vimeo OTT (e.g. Criterion Channel)"
+  },
+  {
+   "bugid": 1994849,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Intermittent Hit MOZ_CRASH([Parent 6854, BackgroundThreadPool #1] ###!!! ASSERTION: Failed to open lock file.: 'Error', file /builds/worker/checkouts/gecko/toolkit/profile/nsProfileLock.cpp:X) at /builds/worker/checkouts/gecko/xpcom/base/nsDebugImpl.cpp:X"
+  },
+  {
+   "bugid": 1994847,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Add selected accent color tokens"
+  },
+  {
+   "bugid": 1902520,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.keisan.nta.go.jp - Firefox is an unsupported browser"
+  },
+  {
+   "bugid": 1927121,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.southerndevilhd.com - Product images are not displayed"
+  },
+  {
+   "bugid": 1959598,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.signal-tech.com - Does not load more items while scrolling down the page"
+  },
+  {
+   "bugid": 1981995,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.mygeha.com - Unable to enter location, the section is broken"
+  },
+  {
+   "bugid": 1986438,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "gamma.app - Firefox is not a recommended browser failing to create an account"
+  },
+  {
+   "bugid": 1991941,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "brawlstats.com - Desktop site instead of mobile site"
+  },
+  {
+   "bugid": 1988419,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "`import()` halts forever in content script in `iframe[sandbox]:not([sandbox~=\"allow-script\"])`"
+  },
+  {
+   "bugid": 1994180,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Invalid fluent ID referenced in extensions panel"
+  }
+ ],
+ "fixed": 89,
+ "total": 105,
+ "restricted": 3
+}
