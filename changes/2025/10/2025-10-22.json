@@ -1,0 +1,634 @@
+{
+ "date": "2025-10-22",
+ "buildid": "20251022092305",
+ "cset": "28553dbd41b69719386bc09fe09d84c3de72daa4",
+ "bugs": [
+  {
+   "bugid": 1990159,
+   "status": "NEW",
+   "component": "Core:Audio/Video",
+   "summary": "MediaCapabilities.decodingInfo() returns wrong persistentState value"
+  },
+  {
+   "bugid": 1994050,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update libvpx to new version f32182fc9455d7979236dffca35c8baf232a74ec from 2025-10-13 00:00:00"
+  },
+  {
+   "bugid": 1994196,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma /html/semantics/the-button-element/command-and-commandfor/on-popover-behavior.html | invoking (as show-popover) should create an implicit anchor reference for anchor positioning. - assert_not_equals:  - when Gecko 146 merges to beta on 2025-11-10"
+  },
+  {
+   "bugid": 1995282,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Clean up UrlExtraData storage."
+  },
+  {
+   "bugid": 1995284,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`position-try-fallbacks` code should distinguish between not having fallbacks to try vs. running out"
+  },
+  {
+   "bugid": 1995525,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Tweak stylo APIs to make it easier for servo to replace the StylesheetContents without needing a whole new stylesheet."
+  },
+  {
+   "bugid": 1995438,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "`dom_fragmentdirectives` crate tests not exercised"
+  },
+  {
+   "bugid": 1995298,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Hold strong reference to `mDOMPort` in `MIDIPortChild::RecvUpdateStatus`"
+  },
+  {
+   "bugid": 1992939,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "reddit.com is broken with Navigation API enabled"
+  },
+  {
+   "bugid": 1995286,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Perma [tier2] Assertion failure: false (FIXME), at /builds/worker/checkouts/gecko/dom/navigation/Navigation.cpp:X"
+  },
+  {
+   "bugid": 1995397,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Consider documents which have been document.open'd as still being initial about:blank for navigation has entries and events disabled checks"
+  },
+  {
+   "bugid": 1994288,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Modify LNA Prompt Text from “Allow X to access apps and services…” to “X wants access apps and services..”"
+  },
+  {
+   "bugid": 1995068,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Assertion failure: mRawPtr != nullptr (You can't dereference a NULL RefPtr with operator->().), at /builds/worker/workspace/obj-build/dist/include/mozilla/RefPtr.h:343"
+  },
+  {
+   "bugid": 1995299,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Improve the Sanitizer API tests"
+  },
+  {
+   "bugid": 1995301,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Hold strong reference to `mOwner` in `ServiceWorkerRegistrationChild::RecvFireUpdateFound`"
+  },
+  {
+   "bugid": 1995303,
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Hold strong referece to `mBC` in `BroadcastChannelChild::Recv*`"
+  },
+  {
+   "bugid": 1942799,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Firefox should always expose contentEditable body or other containers as multiline editable textboxes to VoiceOver"
+  },
+  {
+   "bugid": 1994622,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "[clang-20] GNUmakefile.llvm:81: *** llvm_mode only supports llvm from version 3.8 onwards.  Stop."
+  },
+  {
+   "bugid": 1959977,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Add `scriptId` for JS frames so we can use it for fetching sources later"
+  },
+  {
+   "bugid": 1979114,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Implement fetching JS sources from the JS engine at the profile gathering phase and use webchannel to return them to the frontend"
+  },
+  {
+   "bugid": 1995445,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add capability to show external composite rects in debug overlay for layer compositor"
+  },
+  {
+   "bugid": 1991370,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add and use FrontendContext-based EncodeStencil"
+  },
+  {
+   "bugid": 1992878,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix Scheduler WPT with JS microtask queue"
+  },
+  {
+   "bugid": 1994205,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Pasting small text on https://opentype.js.org/ is 3x slower in Firefox and spends time in things like IonInstanceOfIC::update, map, and js::BaseShape::clasp"
+  },
+  {
+   "bugid": 1995409,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash in [@ mozilla::Vector<T>::empty | JS::GCVector<T>::empty] with JS Microtask Queue enabled"
+  },
+  {
+   "bugid": 1991402,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Move inlinable native getter inline support to InlinableNativeIRGenerator"
+  },
+  {
+   "bugid": 1995387,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Change flexible div/mod MacroAssembler methods to use three operands"
+  },
+  {
+   "bugid": 1995542,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use storePtr in storeValue for non-GC things"
+  },
+  {
+   "bugid": 1994058,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at vm/Interpreter.cpp:391"
+  },
+  {
+   "bugid": 1995531,
+   "status": "REOPENED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Perma /wasm/core/relaxed-simd/i16x8_relaxed_q15mulr_s.wast.js.html | #2 Test that WebAssembly compilation succeeds (i16x8_relaxed_q15mulr_s.wast:3) - assert_equals: expected false but got true - when Gecko 146 merges to beta on 2025-11-10"
+  },
+  {
+   "bugid": 1995123,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Simplify nsContentUtils::WidgetForDocument."
+  },
+  {
+   "bugid": 1993199,
+   "status": "ASSIGNED",
+   "component": "Core:MFBT",
+   "summary": "Cleanup mozilla/PodOperations.h implementation"
+  },
+  {
+   "bugid": 1994397,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove deprecated header Unused.h"
+  },
+  {
+   "bugid": 400264,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove nsIDNKitInterface"
+  },
+  {
+   "bugid": 1988355,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "nsIHttpChannel.isPrivateResponse unused and can be removed"
+  },
+  {
+   "bugid": 1994955,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.17.0"
+  },
+  {
+   "bugid": 1995212,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Don't allow SVGViewportFrame to have negative size"
+  },
+  {
+   "bugid": 1993621,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Display CT log names in certviewer"
+  },
+  {
+   "bugid": 1994034,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "rename failedCertChain to something like handshakeCertificates and make it always available"
+  },
+  {
+   "bugid": 1995429,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "QM: Fix repeated std::forward in CallWithDelayedRetriesIfAccessDenied loop"
+  },
+  {
+   "bugid": 1883535,
+   "status": "REOPENED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Intermittent dom/media/webrtc/tests/mochitests/test_peerConnection_remoteRollback.html | single tracking bug"
+  },
+  {
+   "bugid": 1993997,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "More WPT tests for bug 1975032"
+  },
+  {
+   "bugid": 1995621,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Enforce a maximum depth for native menu nesting on macOS"
+  },
+  {
+   "bugid": 1995120,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Fix coordinate confusions on windows exposed by bug 1995049"
+  },
+  {
+   "bugid": 1995498,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Win32",
+   "summary": "Can we assume per-monitor DPI awareness?"
+  },
+  {
+   "bugid": 1995516,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Fix repeated std::forward in Queue::Iterate loop"
+  },
+  {
+   "bugid": 1995638,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Experiment with changing the default thread quality-of-service on macOS"
+  },
+  {
+   "bugid": 1995459,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Firefox DevTools does not jump to the linked element if an attribute pointing to an ID does not begin with an ASCII letter"
+  },
+  {
+   "bugid": 1995483,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Animations name are barely visible in animation panel"
+  },
+  {
+   "bugid": 1994758,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Cannot edit a CSS property in Rules view on stylesheet with more than 10000 characters"
+  },
+  {
+   "bugid": 1916785,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Return requested JS source code and source maps via webchannel"
+  },
+  {
+   "bugid": 1995557,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Mach try with jujutsu VCS backend doesn't push try_task_config.json if snapshot.auto-track = \"none()\""
+  },
+  {
+   "bugid": 1979713,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The \"not secure\" label is not shown anymore on http"
+  },
+  {
+   "bugid": 1992940,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Long urls are not truncated in unified trust panel"
+  },
+  {
+   "bugid": 1995338,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Hide the \"improve\" preference for all users"
+  },
+  {
+   "bugid": 1994791,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Chatbot policy doesn't turn off context menu"
+  },
+  {
+   "bugid": 1993322,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add \"Where to use VPN\" controls to IP Protection settings section"
+  },
+  {
+   "bugid": 1981063,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Artifact exe search fix (Clone of Perma [Tier2] Diffoscope firefox differs. See the diff.html or diff.txt artifact | single tracking bug)"
+  },
+  {
+   "bugid": 1990965,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Desktop launcher: can we pass a command-line arg to the stub installer to enable some kind of attribution?"
+  },
+  {
+   "bugid": 694856,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "\"Open link in ...\" context menus are missing for url with /"
+  },
+  {
+   "bugid": 1991693,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "[Windows] The images from the Story Cards disappear on hover on Sections layout with the Refined Cards Layout option disabled on High Contrast Mode"
+  },
+  {
+   "bugid": 1993753,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Update SUMO links for Backup"
+  },
+  {
+   "bugid": 1981577,
+   "status": "RESOLVED",
+   "component": "Firefox:Protections UI",
+   "summary": "The forward arrow (\">\") in the ETP panel displays a grey effect on hover"
+  },
+  {
+   "bugid": 1994756,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Update net-error-card to visually support errors that are not certificate errors"
+  },
+  {
+   "bugid": 1986805,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Support the common config properties for the setting-group element"
+  },
+  {
+   "bugid": 1995051,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Doing Ctrl+N on a brand new Windows Firefox install is broken"
+  },
+  {
+   "bugid": 1995511,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Sidebar settings cog is now displayed alongside the tools in horizontal tabs instead of being anchored at the bottom"
+  },
+  {
+   "bugid": 1983124,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Allow tab stacking while dragging multiple tabs"
+  },
+  {
+   "bugid": 1995403,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve Translated Reverse-Script-Direction Page Layout for Tables"
+  },
+  {
+   "bugid": 1994784,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Enable STL hardening on MacOS"
+  },
+  {
+   "bugid": 1995342,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Update supported-configurations to match the current state"
+  },
+  {
+   "bugid": 1995455,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Builds on automation must use a version of rust for which we know how to hook OOM: want < 1.90.0-alpha, have 1.90.0"
+  },
+  {
+   "bugid": 1995549,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused local make target for js tests"
+  },
+  {
+   "bugid": 1993797,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`mach` fails to create any child site on python3.14, resulting in various import errors depending on the invoked command"
+  },
+  {
+   "bugid": 1990567,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use taskcluster package instead of REST API in taskgraph"
+  },
+  {
+   "bugid": 1994695,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Intermittent Symbols [taskcluster:error] Task timeout after 1800 seconds. Force killing container. | single tracking bug"
+  },
+  {
+   "bugid": 1988387,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma Snap builds Beta Core24 - nodejs.1.gz (of link group js) doesn't exist"
+  },
+  {
+   "bugid": 1941482,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang-trunk] Perma lld-link: error: undefined symbol: __declspec(dllimport) public: static bool __cdecl clang::AnnotateAttr::classof(class clang::Attr const *)"
+  },
+  {
+   "bugid": 1994627,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang-20] ERROR: Could not use bfd as linker"
+  },
+  {
+   "bugid": 1995619,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Extension list shows icons as dark silhouettes with unconstrained size"
+  },
+  {
+   "bugid": 1993034,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Implement client-side support for Nimbus advanced targeting based on installed extensions"
+  },
+  {
+   "bugid": 1993323,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Update set to default prompt conditions"
+  },
+  {
+   "bugid": 1994708,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Onboarding redesign UX updates based on demo feedback"
+  },
+  {
+   "bugid": 1987633,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Investigate possibility of narrowing keep rule for appservices"
+  },
+  {
+   "bugid": 1994995,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Firefox for Android profiler won't start if you use \"Debug\" preset"
+  },
+  {
+   "bugid": 1989459,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Create SettingsSearchFragment"
+  },
+  {
+   "bugid": 1927676,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < DownloadTest. verifyDownloadCompleteNotificationTest >"
+  },
+  {
+   "bugid": 1995010,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Use pressImeActionButton for more reliable IME interactions"
+  },
+  {
+   "bugid": 1994504,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:Fluent Migration",
+   "summary": "Update documentation for how to force updates and do advanced testing of Fluent migration recipes"
+  },
+  {
+   "bugid": 1995211,
+   "status": "REOPENED",
+   "component": "Toolkit:Find Toolbar",
+   "summary": "Intermittent toolkit/content/tests/browser/browser_findbar_hidden_beforematch.js | single tracking bug"
+  },
+  {
+   "bugid": 1935980,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[JP][muji] Autofill doesn't work on most address form fields"
+  },
+  {
+   "bugid": 1995471,
+   "status": "RESOLVED",
+   "component": "Toolkit:Gecko Trace",
+   "summary": "[rustc-1.89] error: struct `TracesData` is never constructed"
+  },
+  {
+   "bugid": 1993218,
+   "status": "REOPENED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Perma toolkit/components/passwordmgr/test/browser/browser_rust_mirror.js | only valid login migrated - 0 == 1 - when Gecko 145 merges to beta on 2025-10-13"
+  },
+  {
+   "bugid": 1995460,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "[rustc-1.90] error: unnecessary parentheses around closure body"
+  },
+  {
+   "bugid": 1729435,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "milkbarstore.com - Quantity selection shows 2 buttons."
+  },
+  {
+   "bugid": 1898898,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.libry.jp - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1902450,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.hilokal.com - Website not supported"
+  },
+  {
+   "bugid": 1902454,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "onvideo.kuaishou.com - Browser not suported"
+  },
+  {
+   "bugid": 1902457,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.vpropel.in - The browser is not supported"
+  },
+  {
+   "bugid": 1949152,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.gatufotogruppen.se - Incorrect content display of galleries inside tabs"
+  },
+  {
+   "bugid": 1970810,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.camper-van-week-end.fr - The page is stuck in a loading state"
+  },
+  {
+   "bugid": 1994165,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "High Freq Android 14.0 [Tier-2] toolkit/components/extensions/test/xpcshell/test_ext_proxy_http3.js | single tracking bug"
+  },
+  {
+   "bugid": 1995530,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Allow unrecognized props in `bss.gecko.data_collection_permissions`"
+  },
+  {
+   "bugid": 1697626,
+   "status": "REOPENED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Frequent browser/components/extensions/test/browser/browser_ext_devtools_network.js | single tracking bug"
+  }
+ ],
+ "fixed": 82,
+ "total": 104,
+ "restricted": 2
+}
