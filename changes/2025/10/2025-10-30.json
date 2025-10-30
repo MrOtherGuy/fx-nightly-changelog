@@ -1,0 +1,664 @@
+{
+ "date": "2025-10-30",
+ "buildid": "20251030094725",
+ "cset": "16e503f4b888d7d0bc063ec86439d2d7b1c5efd4",
+ "bugs": [
+  {
+   "bugid": 1994674,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Make position-try-fallbacks swap and adjust percentages and anchor lookups."
+  },
+  {
+   "bugid": 1995063,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Check if scope dependencies are at the subject with Selector::is_rightmost"
+  },
+  {
+   "bugid": 1995774,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Change rule change handling for NestedDeclaration whose parent is ScopeRule to be a mutation of ScopeRule"
+  },
+  {
+   "bugid": 1996868,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "After hammering a simple datepicker with artificial mouseclicks (50000 times),  opening the datepicker manually takes 6s each time, persisting till the browser closes."
+  },
+  {
+   "bugid": 1997028,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] /reporting/same-origin-same-site-credentials.https.sub.html | Reporting endpoints received credentials. - expected FAIL | single tracking bug"
+  },
+  {
+   "bugid": 1994604,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 146: networking.set_cookie_* before Gecko Version gets increased to 147 on 2025-11-10"
+  },
+  {
+   "bugid": 1995573,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Block privileged eval on Android in Nightly"
+  },
+  {
+   "bugid": 1997085,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Sanitizer: Remove rel attribute from a element"
+  },
+  {
+   "bugid": 1360870,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Implement \"module\" service workers"
+  },
+  {
+   "bugid": 1995558,
+   "status": "NEW",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Module Service workers should reject registration in case there's script eval failures."
+  },
+  {
+   "bugid": 1989386,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Workers",
+   "summary": "Ensure ServiceWorkerRegistration can be updated to change worker type between Module vs Classic"
+  },
+  {
+   "bugid": 1968065,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Expose Flow Marker API to Rust"
+  },
+  {
+   "bugid": 1990905,
+   "status": "ASSIGNED",
+   "component": "Core:General",
+   "summary": "Upgrade `windows` crate dependency to 0.62"
+  },
+  {
+   "bugid": 1996880,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::gfx::GPUProcessManager::EnsureGPUReady]"
+  },
+  {
+   "bugid": 1996438,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version eefe6f33964beec1bd1534b1d9065ad027b71740 from 2025-10-24 22:42:24"
+  },
+  {
+   "bugid": 1996893,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Add use counters for WebGPU"
+  },
+  {
+   "bugid": 1958604,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Add a capability to use IDCompositionTexture with layer compositor"
+  },
+  {
+   "bugid": 1754009,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Re-merge IPDLParamTraits and ParamTraits"
+  },
+  {
+   "bugid": 1880453,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add bytecode cache testcase with default preferences"
+  },
+  {
+   "bugid": 1994617,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Check GetCacheBehavior before calling JS::StartCollectingDelazifications"
+  },
+  {
+   "bugid": 1995983,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Put bytecode response to in-memory cache"
+  },
+  {
+   "bugid": 1995985,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add an assertion to avoid using ScriptLoadRequest::mExpirationTime for cached stencils"
+  },
+  {
+   "bugid": 1995991,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: numDelayed_ == 0,  vm/OffThreadPromiseRuntimeState.cpp:257"
+  },
+  {
+   "bugid": 1995994,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix memory vs disk cache handling in InstantiateClassicScriptFromCachedStencil"
+  },
+  {
+   "bugid": 1996160,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use observer notifications for the ScriptLoader tests"
+  },
+  {
+   "bugid": 1996194,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent tests\\jit-test\\jit-test\\tests\\regexp\\over-recursion-with-leaf-nodes.js | Hit MOZ_CRASH([unhandlable oom] RegExpCompiler) at D:/task_176128048362639/build/src/js/src/vm/JSContext.cpp:X (code 2147483651, args \"--ion-eager"
+  },
+  {
+   "bugid": 1996230,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Reflect the necko cache's fetch count to the in-memory cache fetch count"
+  },
+  {
+   "bugid": 1996770,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: asValue() % sizeof(std::conditional_t<std::is_void_v<std::remove_pointer_t<U>>, char, std::remove_pointer_t<U>>) == 0, at vm/SharedMem.h:84"
+  },
+  {
+   "bugid": 1996963,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "damp-other hangs when run with JS Microtask Queue Enabled"
+  },
+  {
+   "bugid": 1996412,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "UndefinedBehaviorSanitizer: SEGV on WarpCacheIRTranspiler::emitSpecializedBindFunctionResult"
+  },
+  {
+   "bugid": 1996522,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid loading floating point constants in registers for abs, neg, and copysign"
+  },
+  {
+   "bugid": 1996636,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Simplify incremental barrier update logic in Zone::changeGCState"
+  },
+  {
+   "bugid": 1997040,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "4.4 second spent in DepthOrderedFrameList on pasting 5MB of js on the SpiderMonkey blog"
+  },
+  {
+   "bugid": 1996641,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in widget/*"
+  },
+  {
+   "bugid": 1996908,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in security/*"
+  },
+  {
+   "bugid": 1996909,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in netwerk/*"
+  },
+  {
+   "bugid": 1996911,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in mobile/*"
+  },
+  {
+   "bugid": 1996912,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in extensions/*"
+  },
+  {
+   "bugid": 1996913,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in intl/*"
+  },
+  {
+   "bugid": 1996920,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in devtools/*"
+  },
+  {
+   "bugid": 1996939,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in js/*"
+  },
+  {
+   "bugid": 1997162,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in memory/*"
+  },
+  {
+   "bugid": 1997165,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove unused inclusion of mfbt headers in layout/*"
+  },
+  {
+   "bugid": 1996777,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Add Nimbus features for new PHC prefs"
+  },
+  {
+   "bugid": 1996290,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.18.0"
+  },
+  {
+   "bugid": 1971797,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Make `about:url-classifier` more comfortable to use"
+  },
+  {
+   "bugid": 1992207,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Reconsider whether wc->SetUsingStorageAccess is necessary, or if only setting StorageAccessState in loadinfo is sufficient"
+  },
+  {
+   "bugid": 1996756,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Update NSS to new version 415413a2f83f1652586df85083d2219172eec15c from 2025-10-15 00:41:30"
+  },
+  {
+   "bugid": 1988096,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Sending data over an RTCDataChannel sometimes fails for an operation-specific reason"
+  },
+  {
+   "bugid": 1996201,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Reference DBus connection to make it live"
+  },
+  {
+   "bugid": 1997086,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "clean up comments in macOS and unix file code"
+  },
+  {
+   "bugid": 1997179,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "assert unreachability in Unix nsLocalFile::LocateNativeLeafName if no root found"
+  },
+  {
+   "bugid": 1997045,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Ignore promise rejections for REDUX_MIDDLEWARE_IGNORED_REDUX_ACTION in devtools allocations tests"
+  },
+  {
+   "bugid": 1997041,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Truncated error message in redux ignore middleware"
+  },
+  {
+   "bugid": 1996774,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Display color swatch for the parameter of `contrast-color()`"
+  },
+  {
+   "bugid": 1996006,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "Element.getAnimations({subtree: true}) does not return View Transitions on VT pseudo element (i.e. `<div  type=\":-moz-snapshot-containing-block\">` and its children)"
+  },
+  {
+   "bugid": 1996508,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add rules view test for CSS variables from shared stylesheet used in nested shadow dom element"
+  },
+  {
+   "bugid": 1996775,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Do not show contrast ratio information for color in contrast-color"
+  },
+  {
+   "bugid": 1996350,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Enable ESLint rule jsdoc/no-multi-asterisks everywhere"
+  },
+  {
+   "bugid": 1996199,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make Merino timeout period for fetching geolocation longer"
+  },
+  {
+   "bugid": 1990490,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Allow enrollment into other experiment types"
+  },
+  {
+   "bugid": 1996972,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "IP Protection: AutoStart in private-browsing mode only"
+  },
+  {
+   "bugid": 1996057,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Backup Onboarding] There are several strings inconsistencies on the implemented spotlight compared to the Figma designs"
+  },
+  {
+   "bugid": 1997164,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add targeting on the number of profiles in a profile group"
+  },
+  {
+   "bugid": 1990634,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Disable backup/restore if selectable profiles are on"
+  },
+  {
+   "bugid": 1992808,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Augment telemetry to be sent during Firefox Profile Backup"
+  },
+  {
+   "bugid": 1995539,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "No error message is displayed when restore file is not added."
+  },
+  {
+   "bugid": 1997053,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add a warning, and set a preference if a search engine matches the ignore lists"
+  },
+  {
+   "bugid": 1990925,
+   "status": "NEW",
+   "component": "Firefox:Security",
+   "summary": "Fix browser_openTabAndSendCertInfo.js test for updated network error page designs"
+  },
+  {
+   "bugid": 1973318,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "History sidebar opens links in new tabs"
+  },
+  {
+   "bugid": 1983325,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Green up the browser/base/content/test/general tests when enabling sidebar.revamp by default"
+  },
+  {
+   "bugid": 1983329,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Green up the browser/components/privatebrowsing tests when enabling sidebar.revamp by default"
+  },
+  {
+   "bugid": 1996295,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Dragged tab group labels not always positioned under cursor."
+  },
+  {
+   "bugid": 1986587,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Layout disorder when moving active tab in collapsed group with other tabs"
+  },
+  {
+   "bugid": 1986950,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Implement footer for inactive tab/content area"
+  },
+  {
+   "bugid": 1996307,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "When \"gReduceMotion = true\" and tab stacking is configured, background tabs shift incorrectly."
+  },
+  {
+   "bugid": 1996678,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Translation not automatically offered for NB (Norwegian Bokmål)"
+  },
+  {
+   "bugid": 1995970,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Tracking the update to NSPR 4.38"
+  },
+  {
+   "bugid": 1980436,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Move verifications out of the Decision task"
+  },
+  {
+   "bugid": 1996807,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "`packages` task definitions hardcode the decision task's proxy url"
+  },
+  {
+   "bugid": 1996906,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma libxml2 fetch Exception: Download failed, no more retries!"
+  },
+  {
+   "bugid": 1996997,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch to new bugbug deployment"
+  },
+  {
+   "bugid": 1997178,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Error in rendering logic for SwitchListItem"
+  },
+  {
+   "bugid": 1997019,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Use standard initial_experiments.json file in dev builds"
+  },
+  {
+   "bugid": 1997037,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 76082779b8b31c9ffb280eeb64ba3895292cb7ce from 2025-10-29 05:03:40"
+  },
+  {
+   "bugid": 1997097,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "\"Cannot infer type for type parameter 'V'\" errors surfaced by Kotlin 2.3 update"
+  },
+  {
+   "bugid": 1997101,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Address various new compiler warnings introduced in Kotlin 2.3"
+  },
+  {
+   "bugid": 1997144,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Update tippy top 200 icon list to include Perplexity icon"
+  },
+  {
+   "bugid": 1990238,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Firefox Android: Keyboard incognito mode is not activated when using Private Browsing shortcut"
+  },
+  {
+   "bugid": 1983768,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[app icon picker] Customizing app icon is allowed without warning on older Android versions despite deleting home screen shortcuts"
+  },
+  {
+   "bugid": 1991818,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Bold text decoration for text that matches search query in result item"
+  },
+  {
+   "bugid": 1996956,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[app icon picker] Place 'fun' icons first"
+  },
+  {
+   "bugid": 1997021,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[app icon picker] Add deeplink to app icon selection"
+  },
+  {
+   "bugid": 1986376,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Enable in Nightly"
+  },
+  {
+   "bugid": 1969071,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add 'Translate' to simple shortcuts"
+  },
+  {
+   "bugid": 1969072,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add 'Homepage' to simple shortcuts"
+  },
+  {
+   "bugid": 1969075,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add 'Back' to simple shortcuts"
+  },
+  {
+   "bugid": 1997076,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Support a progressive layout through Nimbus on 145+"
+  },
+  {
+   "bugid": 1997082,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Fix NoStaticOrObjectMockingDetectorTest.kt lint error: unused property"
+  },
+  {
+   "bugid": 1877633,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < AddressAutofillTest.verifyEditAddressViewTest >"
+  },
+  {
+   "bugid": 1997089,
+   "status": "RESOLVED",
+   "component": "GeckoView:Extensions",
+   "summary": "Update Android bundletool to the latest release"
+  },
+  {
+   "bugid": 1996275,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Remove FEATURE_STAGEFRIGHT that is unused"
+  },
+  {
+   "bugid": 1997088,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Update JDK to October 2025 security releases"
+  },
+  {
+   "bugid": 1996540,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "JSON deserialization of WebFrame for an invalid frame throws \"no such window\" instead of \"no such frame\" error"
+  },
+  {
+   "bugid": 1942939,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Intermittent browser/components/profiles/tests/browser/browser_empty_name_beforeunload_test.js | single tracking bug"
+  },
+  {
+   "bugid": 1990551,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Add send tab to profile to tab context menu"
+  },
+  {
+   "bugid": 1992203,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Refactor BackupService so SelectableProfileService can copy a profile"
+  },
+  {
+   "bugid": 1997128,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Move toolkit/components/telemetry/dap code into its own component under toolkit/components/dap"
+  },
+  {
+   "bugid": 1948415,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create a page header component"
+  }
+ ],
+ "fixed": 98,
+ "total": 109,
+ "restricted": 2
+}
