@@ -1,0 +1,532 @@
+{
+ "date": "2025-11-18",
+ "buildid": "20251118090705",
+ "cset": "940dee4c5a1e87f4ffe12f0bb2c4db07ccf51735",
+ "bugs": [
+  {
+   "bugid": 2000076,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Take graph control messages from main thread before processing control messages, to improve MediaTrackGraph latency by one iteration"
+  },
+  {
+   "bugid": 1692913,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Intermittent dom/media/test/test_mediarecorder_record_canvas_captureStream.html | Should be able to play the recording. Got error. code=4"
+  },
+  {
+   "bugid": 1996123,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Assertion failure: status == RStatus::ePENDING || status == RStatus::eUNKNOWN, at /builds/worker/checkouts/gecko/dom/media/autoplay/GVAutoplayPermissionRequest.cpp:141"
+  },
+  {
+   "bugid": 1999338,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update dav1d to new version 6deac59d1ea499c0f486ab823588f53a2c742aa4 from 2025-11-07 00:51:38"
+  },
+  {
+   "bugid": 1990419,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement initial support for CSSNumericValue reification of <length> values"
+  },
+  {
+   "bugid": 2000621,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Update cssparser to 0.36.0"
+  },
+  {
+   "bugid": 1999383,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Typed serialization for JS actor messages"
+  },
+  {
+   "bugid": 1998950,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "[wpt] Make some manual dnd wpt under html/editing/dnd/interactiveelements to use WebDriver"
+  },
+  {
+   "bugid": 2000127,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: styleDisplay->IsBlockOutsideStyle(), at /builds/worker/checkouts/gecko/editor/libeditor/HTMLEditUtils.cpp:409"
+  },
+  {
+   "bugid": 1997049,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Accelerate more HTML tokenizer states with SIMD"
+  },
+  {
+   "bugid": 1999668,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Missing NavigationHistoryEntry for initial about:blank"
+  },
+  {
+   "bugid": 1921583,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Implement brotli for Compression/DecompressionStream"
+  },
+  {
+   "bugid": 2000479,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "`ContentCacheInParent::HandleQueryContentEvent` should not return error when there is a selection and queried with relative offset from current selection"
+  },
+  {
+   "bugid": 1985987,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Initial RemoteImageProtocolHandler work"
+  },
+  {
+   "bugid": 1998839,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Let zero copy video of hardware decoded video with AMD GPUs ride the trains"
+  },
+  {
+   "bugid": 2000149,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let WebRender layer compositor ride the trains to release on Windows"
+  },
+  {
+   "bugid": 1960753,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Consider removing JS::EnqueueJob (and enqueueJob shell helper)"
+  },
+  {
+   "bugid": 1999684,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "The nursery ephemeron edge tables are not exercised by any tests"
+  },
+  {
+   "bugid": 1985448,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Remove layout.css.grid-multi-pass-track-sizing.enabled preference"
+  },
+  {
+   "bugid": 1982094,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[GenAI Chat Sidebar] \"...\" menu in the Chatbot panel header lacks informative accessible name"
+  },
+  {
+   "bugid": 1981897,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[GenAI Chat Sidebar] Sub-heading \"Choose an AI chatbot...\" is a link that includes a nested \"Learn More\" link"
+  },
+  {
+   "bugid": 1998270,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "hook up mozilla account + token passing api key flow"
+  },
+  {
+   "bugid": 2000702,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "update bug components to reflect new machine learning components"
+  },
+  {
+   "bugid": 1987055,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Add a 'logical' page size for mozjemalloc"
+  },
+  {
+   "bugid": 1993227,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "8.72% cpstartup content-process-startup (Windows) regression on Tue September 30 2025"
+  },
+  {
+   "bugid": 1897424,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Add capability to send NotifyNetworkMonitorAlternateStack for requests via PFetch originating from the main thread."
+  },
+  {
+   "bugid": 1999873,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Remove or update metrics expiring at the end of Firefox 147: networking.dns_native_count before Gecko version gets increased to 147 on 2025-12-08"
+  },
+  {
+   "bugid": 1999128,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "HTTP/3 request fails on non 7bit ASCII in header value"
+  },
+  {
+   "bugid": 2000189,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Make Http3Session::TryActivating return error code instead of NS_OK"
+  },
+  {
+   "bugid": 2000271,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Elements which are `position:sticky` and also transformed are rendered at an incorrect position"
+  },
+  {
+   "bugid": 1999640,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Crash in [@ mozilla::camera::AggregateCapturer::Create::<T>::operator()]"
+  },
+  {
+   "bugid": 2000153,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Clean up widget event dispatch a little bit."
+  },
+  {
+   "bugid": 1993814,
+   "status": "VERIFIED",
+   "component": "Core:Widget: Win32",
+   "summary": "High-Contrast Scrollbars Should Have Outlines"
+  },
+  {
+   "bugid": 1996746,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "about:logging should use \"Networking\" profiler settings when any Networking preset is selected"
+  },
+  {
+   "bugid": 1999958,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "CSSScopeRule#selectorMatchesElement returns false on html element for rule using ::view-transition* pseudo element with a wildcard"
+  },
+  {
+   "bugid": 1992736,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update usage of font-weight to use design token values"
+  },
+  {
+   "bugid": 1997189,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Unified Trust Panel] permission-changed icons are missing from address bar"
+  },
+  {
+   "bugid": 2000362,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make L10nCache.setElementL10n() cache all l10n strings and implement a cache eviction mechanism"
+  },
+  {
+   "bugid": 2000590,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Tweak Unified Search Button arrow animation based on UX feedback"
+  },
+  {
+   "bugid": 1997406,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Implement new status card designs"
+  },
+  {
+   "bugid": 1997411,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add a new site settings button in status card"
+  },
+  {
+   "bugid": 1998454,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Prep Masque rollout."
+  },
+  {
+   "bugid": 2000298,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Clicking update duplicates the IPP panel"
+  },
+  {
+   "bugid": 2000411,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Opening Firefox from the desktop shortcut no longer works"
+  },
+  {
+   "bugid": 1997212,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[TOS]Remove unused locales-preview/termsOfUse.ftl file"
+  },
+  {
+   "bugid": 1999497,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The AI Chat onboarding panel spills over the Continue button"
+  },
+  {
+   "bugid": 1992502,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update install command / documentation to account for Windows users"
+  },
+  {
+   "bugid": 1997459,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Tab Weather-widget 3-dot-menu renders clipped-to-the-weather-card in some cases (if window-focus changes, and sometimes briefly as the menu closes)"
+  },
+  {
+   "bugid": 1999325,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove custom --font-size-xsmall variables from theme"
+  },
+  {
+   "bugid": 2000622,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Default to rotating the context ID every 3 days"
+  },
+  {
+   "bugid": 2000630,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update list of peers for New Tab Page module"
+  },
+  {
+   "bugid": 1990924,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Fix browser_checkNonRepeatedCertTabs.js test for updated network error page designs"
+  },
+  {
+   "bugid": 1990925,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Fix browser_openTabAndSendCertInfo.js test for updated network error page designs"
+  },
+  {
+   "bugid": 1975762,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Generate a settings sub-page from a group of config-based settings"
+  },
+  {
+   "bugid": 1996849,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Fix type errors in config-based Settings UI code"
+  },
+  {
+   "bugid": 1998831,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add the \"Support Firefox\" section to Firefox Home settings"
+  },
+  {
+   "bugid": 1999368,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Adjust Send Tab position and add visual dividers in menus"
+  },
+  {
+   "bugid": 1998358,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab group hover preview is too wide for long page titles, extending to screen edges and covering most of desktop"
+  },
+  {
+   "bugid": 2000361,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "build with gcc fails with error: no member named 'size' in namespace 'std'; did you mean 'std::ranges::size'?"
+  },
+  {
+   "bugid": 2000516,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix invalid pragma guard for -Wdangling-pointer in js/public/RootingAPI.h"
+  },
+  {
+   "bugid": 1975550,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.90"
+  },
+  {
+   "bugid": 1979571,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "Area where download snackbar was when swiped away is unresponsive"
+  },
+  {
+   "bugid": 1837538,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Remove \"mr2022\" Nimbus sections and feature flags"
+  },
+  {
+   "bugid": 1999009,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Refactor distribution ID manager context parameter"
+  },
+  {
+   "bugid": 2000337,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Improve SplashScreenManager tests"
+  },
+  {
+   "bugid": 1999853,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Memory leaks in SplashScreenManager.onSplashScreenFinished"
+  },
+  {
+   "bugid": 1998028,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Section Headers in results"
+  },
+  {
+   "bugid": 1998355,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Format specifiers are shown unresolved"
+  },
+  {
+   "bugid": 2000031,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Update existing SnackbarHost to use reusable Snackbar"
+  },
+  {
+   "bugid": 1996643,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Move `StoreProvider` to `a-c` `lib-state`"
+  },
+  {
+   "bugid": 1996676,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "StoreProvider should hold a reference to State instead of the entire reducer chain"
+  },
+  {
+   "bugid": 1996692,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Optimize bookmark check logic in toolbar customization"
+  },
+  {
+   "bugid": 1999400,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Optimize observe bookmark in BrowserToolbarMiddleware"
+  },
+  {
+   "bugid": 1999401,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Optimize observe page navigation status in BrowserToolbarMiddleware"
+  },
+  {
+   "bugid": 2000089,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Refactor ShortcutType to use enums"
+  },
+  {
+   "bugid": 1980348,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove thread marshalling from stores"
+  },
+  {
+   "bugid": 1980350,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Get rid of UIStore"
+  },
+  {
+   "bugid": 1996626,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove static mocking from ViewTest"
+  },
+  {
+   "bugid": 2000690,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Temporarily disable API 26/28 on legacy-arm"
+  },
+  {
+   "bugid": 1999202,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "Ensure test_data_collection_not_in_db.js also tests with extensions.dataCollectionPermissions.enabled disabled"
+  },
+  {
+   "bugid": 2000605,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Switch the GitHub URLs in the symbol files to use the canonical `mozilla-firefox/firefox` path instead of `mozilla/firefox`"
+  },
+  {
+   "bugid": 1900391,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "[megalist] Support varying row heights in VirtualizedList"
+  },
+  {
+   "bugid": 2000263,
+   "status": "RESOLVED",
+   "component": "Toolkit:Reader Mode",
+   "summary": "User-customized font weight in Reader View isn't working anymore"
+  },
+  {
+   "bugid": 1998248,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Implement TestGetValue on LabeledMetrics in JS"
+  },
+  {
+   "bugid": 1988865,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Fill in our scale of border-color tokens"
+  },
+  {
+   "bugid": 1999523,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Privacy: Site Reports",
+   "summary": "foxbaltimore.com - Login is not working with Standard ETP in Private Browsing Mode"
+  },
+  {
+   "bugid": 1697626,
+   "status": "REOPENED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Frequent browser/components/extensions/test/browser/browser_ext_devtools_network.js | single tracking bug"
+  }
+ ],
+ "fixed": 75,
+ "total": 87,
+ "restricted": 1
+}
