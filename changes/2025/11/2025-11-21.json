@@ -1,0 +1,610 @@
+{
+ "date": "2025-11-21",
+ "buildid": "20251121093802",
+ "cset": "c0888152b7e22dfa3b8526cef1d363cefb7ab546",
+ "bugs": [
+  {
+   "bugid": 2000076,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Take graph control messages from main thread before processing control messages, to improve MediaTrackGraph latency by one iteration"
+  },
+  {
+   "bugid": 2000958,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Minor style fix in HTMLMediaElement.cpp"
+  },
+  {
+   "bugid": 2001202,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Two small style mako.rs code improvements"
+  },
+  {
+   "bugid": 1997530,
+   "status": "VERIFIED",
+   "component": "Core:DLL Services",
+   "summary": "Failed to hook TrackPopupMenu from kernel32.dll in Windows ARM devices"
+  },
+  {
+   "bugid": 1986681,
+   "status": "NEW",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Ship CSS Module Scripts"
+  },
+  {
+   "bugid": 1999126,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Protect whether PDF.js is enabled/disabled to improve fingerprinting protection"
+  },
+  {
+   "bugid": 2000443,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma dom/base/test/browser_script_loader_js_cache_serviceworker.js | Test timed out when Gecko 147 merges to beta on 2025-12-08"
+  },
+  {
+   "bugid": 2001105,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove unused content.maxtextrun pref"
+  },
+  {
+   "bugid": 2001129,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add new helper for IPCImage"
+  },
+  {
+   "bugid": 1891287,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Remove dom.keyboardevent.dispatch_during_composition pref"
+  },
+  {
+   "bugid": 1999092,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Perma docshell/test/navigation/test_bug1706090.html | Shouldn't have persisted same origin load. - got true, expected false when Gecko 146 merges to beta on 2025-11-10"
+  },
+  {
+   "bugid": 2001119,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Performance inefficiency in FireTraversalNavigatEvent"
+  },
+  {
+   "bugid": 2001338,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "NavigateEvent::ProcessScrollBehavior scrolls to the wrong fragment."
+  },
+  {
+   "bugid": 2000862,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Remove the dom.webnotifications.icon_encoding_utf8.enabled pref"
+  },
+  {
+   "bugid": 1998858,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "A single selection over unselectable elements produces multiple ranges."
+  },
+  {
+   "bugid": 2001197,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Track runnables that are put in mPreStartRunnables."
+  },
+  {
+   "bugid": 1996506,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Crash in [@ NS_CycleCollectorSuspect3 | nsCycleCollectingAutoRefCnt::incr] via nsCoreUtils::GetDocShellFor"
+  },
+  {
+   "bugid": 1998242,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perform subtree name calculation in parent process"
+  },
+  {
+   "bugid": 1998255,
+   "status": "ASSIGNED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Perform subtree label calculation in parent process"
+  },
+  {
+   "bugid": 2001088,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused D3D11TextureData::Create()"
+  },
+  {
+   "bugid": 2000393,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make it easier to match the gpu buffer data representation on CPU and GPU"
+  },
+  {
+   "bugid": 2000466,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove unused svg filter implementation from WebRender"
+  },
+  {
+   "bugid": 1997192,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable JS MicroTaskQueue by default"
+  },
+  {
+   "bugid": 1998880,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add an SMDOC comment for OrderedHashTableObject implementation"
+  },
+  {
+   "bugid": 2001062,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix \"std::is_pod is deprecated\" warnings after update to c++20"
+  },
+  {
+   "bugid": 2001269,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js/src/jit-test/tests/js_microtask/microtask-dead.js only works if microtask queue is enabled."
+  },
+  {
+   "bugid": 1989365,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Resolve 'stretch' and '-webkit-fill-available' against the viewport height in quirks mode (as we do with percentages)"
+  },
+  {
+   "bugid": 2001247,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Preparation for AbsoluteContainingBlock work in Bug 1994083"
+  },
+  {
+   "bugid": 1998504,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add Fuzz Target for URLPattern"
+  },
+  {
+   "bugid": 2000994,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Introduce a common dummy nsIParentChannel type"
+  },
+  {
+   "bugid": 2001172,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add function in TMimeType to return the number of parsed parameters"
+  },
+  {
+   "bugid": 2001262,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Update Nightly tests for CompressionDictionary to turn on the feature"
+  },
+  {
+   "bugid": 1995803,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Assertion failure: sf && sf->PresShell() && !sf->PresShell()->IsResolutionUpdated(), at /builds/worker/checkouts/gecko/layout/base/nsLayoutUtils.cpp:783"
+  },
+  {
+   "bugid": 2001035,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Expose apz.windows.* prefs to only Windows"
+  },
+  {
+   "bugid": 2001252,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Expose apz.mac.enable_double_tap_zoom_touchpad_gesture pref to only macOS"
+  },
+  {
+   "bugid": 2001253,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Expose apz.android.* prefs to only Android"
+  },
+  {
+   "bugid": 1967071,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ webrender_bindings::moz2d_renderer::impl$7::prepare_request::process_native_font_handle]"
+  },
+  {
+   "bugid": 1995035,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Crash in [@ __fcntl64_nocancel_adjusted] (F_DUPFD_QUERY)"
+  },
+  {
+   "bugid": 2001270,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "clean up ASR a bit"
+  },
+  {
+   "bugid": 2001033,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Rename window transforms pref, only expose it on macOS"
+  },
+  {
+   "bugid": 1998657,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Allow to paint to offscreen surface before map"
+  },
+  {
+   "bugid": 1995762,
+   "status": "ASSIGNED",
+   "component": "DevTools:Framework",
+   "summary": "Intermittent devtools/client/framework/test/browser_destroying_iframes.js | single tracking bug"
+  },
+  {
+   "bugid": 1995296,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Animations",
+   "summary": "View Transition are not displayed in the animation panel"
+  },
+  {
+   "bugid": 2001050,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Check for unmatched selectors in checkRuleViewContent"
+  },
+  {
+   "bugid": 1854614,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "\"reload\" button in the netmonitor panel seems to have no effect on WebExtension targets"
+  },
+  {
+   "bugid": 1999044,
+   "status": "RESOLVED",
+   "component": "Developer Services:General",
+   "summary": "Add .#* (emacs lock files) to .gitignore"
+  },
+  {
+   "bugid": 1996171,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove the `browser.urlbar.quicksuggest.dataCollection.enabled` pref from firefox.js and UrlbarPrefs"
+  },
+  {
+   "bugid": 1997176,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Unified Trust Panel] http: sites not shown as insecure in address bar if tracking protection is turned off for that site"
+  },
+  {
+   "bugid": 2001486,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use short month names for flight status suggestions"
+  },
+  {
+   "bugid": 2000929,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Setting just ImportEnterpriseRoots via the registry shows as enterprise in telemetry"
+  },
+  {
+   "bugid": 2001431,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Signing in to sync may not set verified state correctly"
+  },
+  {
+   "bugid": 2001400,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add new pref for dap ohttp_hpke and update attribution service to use that value"
+  },
+  {
+   "bugid": 1775609,
+   "status": "NEW",
+   "component": "Firefox:Session Restore",
+   "summary": "Intermittent browser/components/sessionstore/test/browser_sessionStorage.js | single tracking bug"
+  },
+  {
+   "bugid": 1972074,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Tab management & navigation to config-based prefs"
+  },
+  {
+   "bugid": 1996749,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Create a subpage for managing payment methods"
+  },
+  {
+   "bugid": 2000010,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Support creating moz-support-link elements in config-based prefs"
+  },
+  {
+   "bugid": 2000303,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "SettingGroup with visible items gets shown on incorrect pane when its pane loads in the background"
+  },
+  {
+   "bugid": 2000535,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Use moz-remote-image: for _getIconURLForWebApp"
+  },
+  {
+   "bugid": 1395908,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "chrome://browser/skin/tabbrowser/loading-burst.svg consume much memory than other UI images"
+  },
+  {
+   "bugid": 2000060,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Make tabs aware of tab notes"
+  },
+  {
+   "bugid": 2000196,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Perma bc favicon related failures when Gecko 147 switches to Late Beta on 2025-12-19"
+  },
+  {
+   "bugid": 2000959,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add a Translations QuickAction"
+  },
+  {
+   "bugid": 1999312,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "error from retrigger action is logged as info and drowned in unrelated messages"
+  },
+  {
+   "bugid": 2000742,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "[toolchains project branch] Perma requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: http://172.17.0.1:80/api/queue/v1/task/E2yS_9idQ0CYM6_08YKhqg"
+  },
+  {
+   "bugid": 1795970,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "engine-gecko: Integrate certificate information"
+  },
+  {
+   "bugid": 1983833,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Migrate the composable toolbar color tokens to the new M3 + Acorn specs"
+  },
+  {
+   "bugid": 1993368,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Migrate to using the Material3 color tokens"
+  },
+  {
+   "bugid": 2000709,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add Nimbus flag to control turning on or off the ToU bottom sheet's swipe to dismiss gesture (and showing the drag handle)"
+  },
+  {
+   "bugid": 2001271,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 1c41558d89465d8c0aec43101ed1c077dbc3fdd2 from 2025-11-20 05:03:31"
+  },
+  {
+   "bugid": 1993856,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Migrate Homepage to the M3 Acorn specs"
+  },
+  {
+   "bugid": 1999268,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Remove (activity as HomeActivity) casts in UnlockPrivateTabsFragment"
+  },
+  {
+   "bugid": 1999784,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "Crash in [@ java.lang.IllegalStateException: at androidx.lifecycle.LifecycleRegistry.enforceMainThreadIfNeeded(LifecycleRegistry.jvm.kt:32)]"
+  },
+  {
+   "bugid": 1991921,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Refactor TermsOfUseManager to use the preferences from TermsOfUsePromptRepository instead of Settings"
+  },
+  {
+   "bugid": 2001323,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Update the nightly redesigned onboarding cards to use the redesigned content"
+  },
+  {
+   "bugid": 1998092,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Settings",
+   "summary": "Migrate Settings UI to use M3 Acorn color tokens"
+  },
+  {
+   "bugid": 1969082,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Show customization menu in landscape and tall devices"
+  },
+  {
+   "bugid": 1996643,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Move `StoreProvider` to `a-c` `lib-state`"
+  },
+  {
+   "bugid": 1996676,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "StoreProvider should hold a reference to State instead of the entire reducer chain"
+  },
+  {
+   "bugid": 1997127,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Hide new tab and tab counter in tab strip when toolbar redesign is enabled"
+  },
+  {
+   "bugid": 1998722,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add shortcut icon to toolbar customization shortcut preview"
+  },
+  {
+   "bugid": 1999634,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Very often, when I type something to search, a wrong page to the latest autocompleted website from my history opens instead"
+  },
+  {
+   "bugid": 2000490,
+   "status": "NEW",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Add toolbar redesign CFR"
+  },
+  {
+   "bugid": 2000589,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[composable toolbar] Tab counter menu has wrong items order for bottom toolbar"
+  },
+  {
+   "bugid": 2000867,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor LinkingMiddlewareTest to remove main coroutine rule."
+  },
+  {
+   "bugid": 2001234,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Pick up 2025-11-19 AndroidX minor dependency bumps"
+  },
+  {
+   "bugid": 2001298,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor AMOAddonsProviderTest to remove main coroutine rule."
+  },
+  {
+   "bugid": 2001303,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor TopSitesRefresherTest to remove main coroutine rule."
+  },
+  {
+   "bugid": 2001329,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor ExceptionHandlerTest to remove main coroutine rule."
+  },
+  {
+   "bugid": 2001376,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Make ModifierParameter warnings errors"
+  },
+  {
+   "bugid": 1998021,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Translations",
+   "summary": "Migrate Translation UI to M3 Acorn colors"
+  },
+  {
+   "bugid": 1934786,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < SearchTest.defaultSearchCodeBingUS >"
+  },
+  {
+   "bugid": 2000491,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Don't call toggleSoftInput twice during icRestartInput"
+  },
+  {
+   "bugid": 1994228,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "Release-Flow tests should run on the proper channel for push_firefox"
+  },
+  {
+   "bugid": 2001371,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "Update test locale not being honored"
+  },
+  {
+   "bugid": 2000112,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "Update 206 check in test-mar-url.sh to support HTTP/2"
+  },
+  {
+   "bugid": 2001305,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Common Sync MS 4: Set poisoned to true in migration if it had errors"
+  },
+  {
+   "bugid": 2000924,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Youtube menu clicks go through to PiP control"
+  },
+  {
+   "bugid": 2000321,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support Microsoft Ads attribution"
+  },
+  {
+   "bugid": 1981571,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Remove references to layout.css.light-dark.enabled in Storybook"
+  },
+  {
+   "bugid": 1950282,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "f1tv.formula1.com - Firefox is not a supported browser"
+  }
+ ],
+ "fixed": 83,
+ "total": 100,
+ "restricted": 4
+}
