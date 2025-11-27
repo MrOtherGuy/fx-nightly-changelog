@@ -1,0 +1,580 @@
+{
+ "date": "2025-11-27",
+ "buildid": "20251127092353",
+ "cset": "f398b25a814df19b02c2222960b5634096fd835a",
+ "bugs": [
+  {
+   "bugid": 1987965,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Trigger layout in ResizeObserver loop on scroll-based overflow"
+  },
+  {
+   "bugid": 1988030,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add a way to determine if all scroll frames containing the anchor are active or not at the time of the BuildDisplayList call for the anchored element"
+  },
+  {
+   "bugid": 1988032,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Assign the ASR (active scrolled root) of the anchor to the anchored element"
+  },
+  {
+   "bugid": 1990419,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement initial support for CSSNumericValue reification of <length> values"
+  },
+  {
+   "bugid": 2001878,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement view-transition types."
+  },
+  {
+   "bugid": 2002497,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "When committing a fallback style, make sure to keep track of potential margins."
+  },
+  {
+   "bugid": 2002652,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma backlog [tier 2] /css/css-view-transitions/active-view-transition-type-on-non-root.html | single tracking bug"
+  },
+  {
+   "bugid": 2002128,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: aOpenWindowInfo (Must have openwindowinfo if not already initialized.), at /builds/worker/checkouts/gecko/docshell/base/nsDocShell.cpp:465"
+  },
+  {
+   "bugid": 2001985,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Promises passed to wait for all aren't marked as handled"
+  },
+  {
+   "bugid": 2002159,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: aDestinationSHE->NavigationKey() == oldCurrentEntry->SessionHistoryInfo()->NavigationKey(), at /builds/worker/checkouts/gecko/dom/navigation/Navigation.cpp:384"
+  },
+  {
+   "bugid": 2002521,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Remove Navigation API CI"
+  },
+  {
+   "bugid": 2002556,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fire dispose events on NHEs in the correct order"
+  },
+  {
+   "bugid": 2002559,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "navigation.entries() should return an empty list when entries and events are disabled"
+  },
+  {
+   "bugid": 1889956,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Add WPT test to check whether icon fetch happens"
+  },
+  {
+   "bugid": 2002073,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma [tier 2] /content-security-policy/inheritance/document-write-iframe.html | document.open() keeps inherited CSPs on empty iframe. - expected TIMEOUT"
+  },
+  {
+   "bugid": 2002024,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "FlushAndCheckIfFocusable should not need to create the about:blank content-viewer after bug 543435."
+  },
+  {
+   "bugid": 2002682,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose gfx.canvas.remote.use-draw-image-fast-path-d3d pref to Windows only"
+  },
+  {
+   "bugid": 2002683,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose layers.d3d11.* prefs to Windows only"
+  },
+  {
+   "bugid": 2002684,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose webgl.dxgl.* prefs to Windows only"
+  },
+  {
+   "bugid": 2002693,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove unused webgl.prefer-16bpp pref"
+  },
+  {
+   "bugid": 2002342,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Reduce CanvasTranslator data shmem copies"
+  },
+  {
+   "bugid": 1978773,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render gradients from gradient stops directly"
+  },
+  {
+   "bugid": 1907011,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Rename \"bytecode\" to \"encoded\" in script cache"
+  },
+  {
+   "bugid": 2002191,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Align `import * as ns; export { ns }` with `export * as ns`"
+  },
+  {
+   "bugid": 2001279,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: cx_->hadResourceExhaustion(), at jit/WarpOracle.cpp:213"
+  },
+  {
+   "bugid": 2001383,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Allow using another object's iterator for indices optimizations if possible"
+  },
+  {
+   "bugid": 2002397,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Have a proper JitcodeGlobalEntry::callStackAtAddr return struct and improve the inline depth handling in the profiler code"
+  },
+  {
+   "bugid": 1306461,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Normalise and partially disable RegExp legacy features"
+  },
+  {
+   "bugid": 1998710,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent webkit-gradient/webkit-gradient-radial-1b.html == webkit-gradient/webkit-gradient-radial-1-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 2000626,
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "Move delayed resize handling to PresShell."
+  },
+  {
+   "bugid": 2001789,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "reduce link preview font size"
+  },
+  {
+   "bugid": 2002372,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "history data preparation for insights"
+  },
+  {
+   "bugid": 1969856,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "[unhandlable oom] Failed to mmap, likely no more mappings available /builds/worker/checkouts/gecko/memory/build/Chunk.cpp"
+  },
+  {
+   "bugid": 2002034,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Accept-Encoding should include 'dcb' and 'dcz'"
+  },
+  {
+   "bugid": 2001617,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "HTTPS websockets fail with MASQUE"
+  },
+  {
+   "bugid": 2001618,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Investigate why fallback from HTTP/3 to HTTP/2 didn't work"
+  },
+  {
+   "bugid": 2001675,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "https://wpt.live/tools/runner/index.html fails to load scripts with MASQUE enabled"
+  },
+  {
+   "bugid": 2001721,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Loading https://speed.cloudflare.com/ via MASQUE on Windows prevents Firefox from making new network requests"
+  },
+  {
+   "bugid": 1999869,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Remove or update metrics expiring at the end of Firefox 147: cert_storage.memory before Gecko version gets increased to 147 on 2025-12-08"
+  },
+  {
+   "bugid": 2000871,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 147 to NSS 3.119"
+  },
+  {
+   "bugid": 2002232,
+   "status": "ASSIGNED",
+   "component": "Core:Web Painting",
+   "summary": "Investigate why WillPaintWindow paints sync even if there's no need to do invalidation."
+  },
+  {
+   "bugid": 1972888,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS 26 Beta] Command-backtick does not work reliably to switch between windows"
+  },
+  {
+   "bugid": 1706066,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Calling setRDMPaneMaxTouchPoints does not set the orientation on iframes"
+  },
+  {
+   "bugid": 2002464,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Add an AGENTS.md file to the Firefox repository"
+  },
+  {
+   "bugid": 2002465,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Add a CLAUDE.md file to the Firefox repository"
+  },
+  {
+   "bugid": 2002572,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Add a `.mcp.json` file to the Firefox repository"
+  },
+  {
+   "bugid": 2002278,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make _maybeSelectAll properly private"
+  },
+  {
+   "bugid": 2002383,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Online AMP suggestions should be dismissable by full keyword, not URL"
+  },
+  {
+   "bugid": 1959738,
+   "status": "ASSIGNED",
+   "component": "Firefox:File Handling",
+   "summary": "Firefox can miscalculate allowed filename length for \"save page as\" complete due to the localized _files folder suffix replacing the extension, leading to broken file saves"
+  },
+  {
+   "bugid": 2000595,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Downloaded file permission for other local users (windows)"
+  },
+  {
+   "bugid": 2002410,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "\"Finish Account Setup\" status after login with a new account"
+  },
+  {
+   "bugid": 1999785,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Backup Onboarding] The “Continue” button from the Password screen remains greyed out even though the password is valid in both fields if previously choosing a custom location due to no OneDrive and Documents detection"
+  },
+  {
+   "bugid": 2002078,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab frecency based tile sorting SOV"
+  },
+  {
+   "bugid": 2001395,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Enable fxbackup for windows user's by default"
+  },
+  {
+   "bugid": 2002527,
+   "status": "ASSIGNED",
+   "component": "Firefox:Profile Backup",
+   "summary": "BackupUIParent.sys.mjs adds \"backup-service-status-updated\" observer more than once."
+  },
+  {
+   "bugid": 1905323,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Fully remove confirm auth prompts"
+  },
+  {
+   "bugid": 1932997,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Implement vertical tabs closing animation (was: browser_tabCloseProbes.js fails when run with sidebar.verticalTabs=true)"
+  },
+  {
+   "bugid": 2002156,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "[toolchains] Perma error: failed to run custom build command for `mozglue-static v0.1.0 (/builds/worker/checkouts/gecko/mozglue/static/rust)`"
+  },
+  {
+   "bugid": 2002477,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add component mapping for AGENTS.md and CLAUDE.md"
+  },
+  {
+   "bugid": 2002642,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Add component mapping for the `.mcp.json` file"
+  },
+  {
+   "bugid": 1996997,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch to new bugbug deployment"
+  },
+  {
+   "bugid": 2000944,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Vendor taskcluster-taskgraph v18.0.0"
+  },
+  {
+   "bugid": 2002016,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "add Debian 13 (trixie) based docker images"
+  },
+  {
+   "bugid": 1975550,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.90"
+  },
+  {
+   "bugid": 2002363,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Intermittent Exception: Download failed, no more retries! | Download failed: size mismatch on https://src.fedoraproject.org/repo/pkgs/hfsplus-tools/diskdev_cmds-540.1.linux3.tar.gz/0435afc389b919027b69616ad1b05709/diskdev_cmds-540.1.linux3.tar.gz"
+  },
+  {
+   "bugid": 2002364,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Intermittent ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)"
+  },
+  {
+   "bugid": 1998194,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Create credit card editor screen in compose"
+  },
+  {
+   "bugid": 1998196,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Manage state and business logic for the credit card editor screen"
+  },
+  {
+   "bugid": 1998200,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Replace old XML based screen with the new Compose screen"
+  },
+  {
+   "bugid": 2002434,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Update Sentry to version 8.27.1"
+  },
+  {
+   "bugid": 2002433,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Update Adjust SDK to version 5.4.6"
+  },
+  {
+   "bugid": 1996806,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Refactor deleteAndQuit and remove casts to HomeActivity when calling the method."
+  },
+  {
+   "bugid": 2002449,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version ddaf9f964901b115fe0a2fe29afe6379c0f859a6 from 2025-11-26 05:03:44"
+  },
+  {
+   "bugid": 1994669,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "Localized version of the string \"Unlock to view your saved passwords\" is not wrapped, but the last part of the string are cut off."
+  },
+  {
+   "bugid": 2001968,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Add the existing notification and widget cards to the redesign configuration"
+  },
+  {
+   "bugid": 1955888,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[app icon picker] Add app icon selection telemetry middleware"
+  },
+  {
+   "bugid": 2002067,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Update the Tab Menu button to have smaller height than New Tab Button"
+  },
+  {
+   "bugid": 2001233,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update AndroidX Lifecycle to version 2.10.0"
+  },
+  {
+   "bugid": 2002243,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Perma [tier 2] AttributeError: 'NoneType' object has no attribute 'linecol'"
+  },
+  {
+   "bugid": 2002573,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Temporarily disable verifyTheExtensionMenuListWhileExtensionsAreDisabledTest for investigation"
+  },
+  {
+   "bugid": 2001934,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Perma TEST-UNEXPECTED-TIMEOUT | navigation Page.goto should fail when server returns 204 (navigation.spec.js) | expected PASS | single tracking bug"
+  },
+  {
+   "bugid": 2002415,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "[rustc-1.90] unsafe precondition(s) violated: Vec::set_len requires that new_len <= capacity()"
+  },
+  {
+   "bugid": 2002384,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Nested inputs are missing margin between parent and first visible child if the first child is hidden"
+  },
+  {
+   "bugid": 2000623,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v147 cycle"
+  },
+  {
+   "bugid": 1886566,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Site content is not visible on qceservices.quezoncity.gov.ph"
+  },
+  {
+   "bugid": 1895997,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "e.seb.lt - Unsupported browser"
+  },
+  {
+   "bugid": 1898937,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.goodyearfiaetrc.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1902475,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cdk.fairgoau.com:3572 - Firefox is an unsupported browser"
+  },
+  {
+   "bugid": 1928954,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "publix.com - Blank page is displayed when clicking on the \"Delivery and curbside\" button"
+  },
+  {
+   "bugid": 1953730,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "jobs.jobvite.com - Drop-down for \"Location of Residence\" does not work"
+  },
+  {
+   "bugid": 1991941,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "brawlstats.com - Desktop site instead of mobile site"
+  },
+  {
+   "bugid": 1994571,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "chick-fil-a.com - careers page \"core values\" section has distorted images"
+  },
+  {
+   "bugid": 1997687,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "sakti.kemenkeu.go.id - can't access the site"
+  },
+  {
+   "bugid": 2000906,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Sharing the entire screen on Teams fails when done from macOS"
+  },
+  {
+   "bugid": 2001826,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Add more user guide"
+  }
+ ],
+ "fixed": 79,
+ "total": 95,
+ "restricted": 4
+}
