@@ -1,0 +1,436 @@
+{
+ "date": "2025-11-28",
+ "buildid": "20251128042312",
+ "cset": "1ee69c5b61db9d6df2b1a09f313736e5336ec52e",
+ "bugs": [
+  {
+   "bugid": 1987757,
+   "status": "NEW",
+   "component": "Application Services:General",
+   "summary": "Work out how to use `application-services` toolchain artifacts when `MOZ_APPSERVICES_IN_TREE` is set"
+  },
+  {
+   "bugid": 2002697,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Crash in [@ mozilla::gmp::GMPProcessParent::Delete]"
+  },
+  {
+   "bugid": 2001034,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "High freq gtest TEST-UNEXPECTED-FAIL | gtest | timed out after 300 seconds without output in TestAudioTrackGraph.NotifyDeviceStarted"
+  },
+  {
+   "bugid": 1990419,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement initial support for CSSNumericValue reification of <length> values"
+  },
+  {
+   "bugid": 2002148,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Firefox doesn't support color-mix() expressions that lack a \"in ...\" explicit colorspace (causing failure in parts of WPTs css/css-color/parsing/color-computed-color-mix-function.html and css/css-color/parsing/color-valid-color-mix-function.html )"
+  },
+  {
+   "bugid": 2002020,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Make document.queryCommandSupported() and queryCommandEnabled() for clipboard command returns proper result for Web Extension"
+  },
+  {
+   "bugid": 2002726,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "NavigationHistoryEntry url must return null"
+  },
+  {
+   "bugid": 2002750,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API - receiving the wrong sourceDocument when doing navigation.navigate"
+  },
+  {
+   "bugid": 1989916,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "[LNA]  Telemetry using OHTTP to collect sites that make LNA for safe-listing"
+  },
+  {
+   "bugid": 2002648,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Capture cross-site request telemetry for LNA prompts"
+  },
+  {
+   "bugid": 2002346,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Notifications",
+   "summary": "Add telemetries for missing dictionary members"
+  },
+  {
+   "bugid": 2002766,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Expose accessibility.windows.* prefs to Windows only"
+  },
+  {
+   "bugid": 2002686,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose gl.ignore-dx-interop2-blacklist pref to Windows only"
+  },
+  {
+   "bugid": 2002688,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Expose gl.allow-high-power pref to macOS only"
+  },
+  {
+   "bugid": 1978773,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render gradients from gradient stops directly"
+  },
+  {
+   "bugid": 1996818,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Switch the TextureCache to using GpuBufferF instead of GpuCache"
+  },
+  {
+   "bugid": 2001524,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Disable ShouldSnapToGrid in more cases"
+  },
+  {
+   "bugid": 1971346,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: largestUnit <= TemporalUnit::Day, at builtin/temporal/Duration.cpp:2555"
+  },
+  {
+   "bugid": 2000201,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Temporal Test262 failures from update on 14th Nov 2025"
+  },
+  {
+   "bugid": 2000328,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add macroassembler support for WeakMap lookup"
+  },
+  {
+   "bugid": 2002770,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Reduce JS::loader::ScriptFetchOptions size"
+  },
+  {
+   "bugid": 2002776,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "JS::loader::LoadedScript::mIsDirty is not packed with JS::loader::LoadedScript::mCacheEntryId on windows"
+  },
+  {
+   "bugid": 998485,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Replace EdgeCaseAnalysis (Forward & Backward), by equivalent RangeAnalysis collectRangeInfoPreTrunc(ate)"
+  },
+  {
+   "bugid": 2001665,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Perform stub folding if a second stub is added after trial inlining"
+  },
+  {
+   "bugid": 2002748,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: stubFields_.empty(), at jit/CacheIRWriter.h:390"
+  },
+  {
+   "bugid": 1955545,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use \"islamic-tbla\" calendar when either \"islamic\" or \"islamic-rgsa\" was requested"
+  },
+  {
+   "bugid": 1978239,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Temporal's \"constrain\" behavior in \"chinese\" and \"dangi\" calendars is not spec-compliant"
+  },
+  {
+   "bugid": 1998672,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Temporal: Validate unit-valued options after all options are read"
+  },
+  {
+   "bugid": 1999315,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Update Temporal implementation to draft Nov 6, 2025"
+  },
+  {
+   "bugid": 1999316,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Implement Intl era and monthCode proposal, draft Nov 7, 2025"
+  },
+  {
+   "bugid": 1992074,
+   "status": "ASSIGNED",
+   "component": "Core:Layout",
+   "summary": "High freq [tier 2] bugs/1624118.html == bugs/1624118-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 2002505,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent /intersection-observer/scroll-margin-propagation.html | single tracking bug"
+  },
+  {
+   "bugid": 2002687,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Assertion failure: !foundInPendingQ, at /builds/worker/checkouts/gecko/netwerk/protocol/http/nsHttpConnectionMgr.cpp:3964"
+  },
+  {
+   "bugid": 2000613,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "CookieJarSettings::SetParitionKey always passes aForeignByAncestorContext = false, can remove parameter"
+  },
+  {
+   "bugid": 2001760,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "Crash in [@ mozilla::dom::indexedDB::(anonymous namespace)::ConnectionPool::TransactionInfo::SetRunning]"
+  },
+  {
+   "bugid": 1999877,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Remove or update metrics expiring at the end of Firefox 147: quotamanager.initialize.temporarystorage.non_persisted_zero_usage_origins before Gecko version gets increased to 147 on 2025-12-08"
+  },
+  {
+   "bugid": 2002232,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Investigate why WillPaintWindow paints sync even if there's no need to do invalidation."
+  },
+  {
+   "bugid": 1993474,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "On an external monitor in a maximized Firefox window, can't select a tab with the cursor at the top of the screen"
+  },
+  {
+   "bugid": 2002268,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Update MDN Web/CSS links through the codebase"
+  },
+  {
+   "bugid": 2002769,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 147] Update MDN compat data"
+  },
+  {
+   "bugid": 2002805,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Add CLAUDE.local.md to .gitignore"
+  },
+  {
+   "bugid": 2002885,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Remove references to verify the repo from the AGENTS.md file"
+  },
+  {
+   "bugid": 2002886,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Drop refrences to `gh` from AGENTS.md"
+  },
+  {
+   "bugid": 1922114,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Ensure Unified Search Button UI makes sense when keyword.enabled is false"
+  },
+  {
+   "bugid": 1961688,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Compute the values needed for the urlbar breakout perf test rather than relying on hard-coded values"
+  },
+  {
+   "bugid": 2001284,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Autocompletion isn't happening anymore for some URLs"
+  },
+  {
+   "bugid": 2002377,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Trending suggestions are available for the new search bar widget"
+  },
+  {
+   "bugid": 2002077,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab frecency based tile sorting trainhopConfig"
+  },
+  {
+   "bugid": 1932997,
+   "status": "NEW",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Implement vertical tabs closing animation (was: browser_tabCloseProbes.js fails when run with sidebar.verticalTabs=true)"
+  },
+  {
+   "bugid": 1974090,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Frequent Linux browser/components/tabbrowser/test/browser/tabs/browser_tabContextMenu_keyboard.js | tab2 should still be active - Got [object XULElement], expected [object XULElement]"
+  },
+  {
+   "bugid": 1861626,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Use rtoml instead of toml to read test manifests"
+  },
+  {
+   "bugid": 2001536,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Force show the dynamic toolbar after virtual keyboard is dismissed"
+  },
+  {
+   "bugid": 2002706,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Crash in mozilla.components.lib.crash.CrashReporter.hasUnsentCrashReportsSince$default"
+  },
+  {
+   "bugid": 2002679,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Perma /builds/worker/checkouts/gecko/mobile/android/android-components/components/feature/addons/src/main/res/<random> | For locale \"en\" (English) the following quantity should also be defined: one (e.g. \"1 day\") (MissingQuantity)"
+  },
+  {
+   "bugid": 2002709,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version d18a74ce57fa17f501bda96062f85db8f87b41e6 from 2025-11-27 05:03:25"
+  },
+  {
+   "bugid": 1992720,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Remove (activity as HomeActivity) casts in PlayStoreReviewPromptController"
+  },
+  {
+   "bugid": 2002581,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Fenix Settings initialization generates UUIDs for default values even if preference already has a value"
+  },
+  {
+   "bugid": 2002727,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "Add a preference name for enabling compose autofill settings"
+  },
+  {
+   "bugid": 1991767,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Update \"Close all tabs\" to have a confirmation dialog"
+  },
+  {
+   "bugid": 2001148,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Remove share in simple toolbar when tabstrip is enabled"
+  },
+  {
+   "bugid": 2002828,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Reading toolbar shortcuts with toolbar customization disabled"
+  },
+  {
+   "bugid": 2002838,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[toolbar redesign] Remove hardcoded values for toolbar shortcuts in Settings"
+  },
+  {
+   "bugid": 2002762,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor BookmarksFeatureTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 1824956,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < AddressAutofillTest.verifyAddressAutofillToggleTest >"
+  },
+  {
+   "bugid": 1995706,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < AddressAutofillTest.verifyStateFieldUpdatesInAccordanceWithCountryFieldTest >"
+  },
+  {
+   "bugid": 2002724,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Refactor CfrMiddleware to remove use of full real store in CfrMiddlewareTest"
+  },
+  {
+   "bugid": 2002681,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Applications: MozharnessCore",
+   "summary": "emit step timings as perfherder metrics"
+  },
+  {
+   "bugid": 1989686,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "crashhelper.exe execessive handle usage"
+  },
+  {
+   "bugid": 1999882,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove or update probes expiring at the end of Firefox 147: pwmgr.doorhanger_submitted#doorhanger_submitted before Gecko version gets increased to 147 on 2025-12-08"
+  },
+  {
+   "bugid": 1998209,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Disabling desktop shortcut toggle in Copied Profile deletes Original Profile shortcut"
+  },
+  {
+   "bugid": 2001746,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-box-group throws an error after clicking on whitespace inside of it then pressing a key"
+  }
+ ],
+ "fixed": 57,
+ "total": 71,
+ "restricted": 1
+}
