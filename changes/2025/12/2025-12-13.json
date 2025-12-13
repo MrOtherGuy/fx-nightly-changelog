@@ -1,0 +1,592 @@
+{
+ "date": "2025-12-13",
+ "buildid": "20251213091241",
+ "cset": "5da9551e15f3545ca0a892e4d5b87e5b35dff338",
+ "bugs": [
+  {
+   "bugid": 1987757,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Work out how to use `application-services` toolchain artifacts when `MOZ_APPSERVICES_IN_TREE` is set"
+  },
+  {
+   "bugid": 2005461,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "An element can anchor to its own pseudo-element"
+  },
+  {
+   "bugid": 2005744,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add a comment for DevTools follow-up when adding to `ToWebIDLSelectorWarningKind`"
+  },
+  {
+   "bugid": 1817051,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Animations with a scroll progress timeline should be sampled once during an event loop"
+  },
+  {
+   "bugid": 1998195,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Expose execCommand(\"paste\") with a pop-up menu to web content."
+  },
+  {
+   "bugid": 1999245,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add ReportingHeader::GetEndpointForReportIncludeSubdomains"
+  },
+  {
+   "bugid": 2003973,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `HTMLEditor` handle `Selection` in replaced element and void element stricter"
+  },
+  {
+   "bugid": 2004500,
+   "status": "VERIFIED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Assertion failure: ((bool)(__builtin_expect(!!(NS_FAILED_impl(mBroken)), 0))) || mOpQueue.IsEmpty() (Somehow there's stuff in the op queue.), at /builds/worker/checkouts/gecko/parser/html/nsHtml5TreeOpExecutor.cpp:151"
+  },
+  {
+   "bugid": 2003449,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ mozilla::dom::WindowGlobalParent::CreateDisconnected]"
+  },
+  {
+   "bugid": 2005094,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: false (MOZ_ASSERT_UNREACHABLE: The content viewer should've been created eagerly.), at /builds/worker/checkouts/gecko/docshell/base/nsDocShell.cpp:6618"
+  },
+  {
+   "bugid": 2005771,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API: Always reset `mOngoingNavigation`"
+  },
+  {
+   "bugid": 2005793,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: false (FIXME), at /builds/worker/checkouts/gecko/dom/navigation/Navigation.cpp:382"
+  },
+  {
+   "bugid": 2004710,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "SRI interprets certain invalid integrity attributes as having incorrect hash"
+  },
+  {
+   "bugid": 2004498,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Update libpng to new version v1.6.53 from 2025-12-05 23:46:38"
+  },
+  {
+   "bugid": 840878,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "The strikeout/linethrough text decoration is sometimes too fine on hidpi/Retina displays"
+  },
+  {
+   "bugid": 2005383,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU 'low-power' 'high-performance' GPU choices are backward on AMD Mac"
+  },
+  {
+   "bugid": 1998913,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Break picture.rs into manageable pieces"
+  },
+  {
+   "bugid": 1994828,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "ESM: Add initial support for fetching wasm modules"
+  },
+  {
+   "bugid": 2005449,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Crash [@ JS::GetExecutionGlobalFromJSMicroTask] or Assertion failure: job, at shell/js.cpp:1494"
+  },
+  {
+   "bugid": 2004879,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "riscv64: New branches are not linked if list head is out of reach"
+  },
+  {
+   "bugid": 2005479,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use generate_lir: true for more instructions"
+  },
+  {
+   "bugid": 2005551,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Crash at weird address involving getOrInsertComputed"
+  },
+  {
+   "bugid": 2005174,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Tweak the wording about \"islamic\" in DateTimeFormat"
+  },
+  {
+   "bugid": 2005531,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move supportedLocalesOf of Intl constructors to C++"
+  },
+  {
+   "bugid": 2005482,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Constrain day before calling CreateDateFromCodes with overflow=reject for Hebrew calendar"
+  },
+  {
+   "bugid": 1992240,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Disallow -0 in ToWebAssemblyValue for i31ref"
+  },
+  {
+   "bugid": 1999365,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Optimize anyref to JS string value conversion"
+  },
+  {
+   "bugid": 2005569,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Simplify LazyAncestorHolder."
+  },
+  {
+   "bugid": 2005756,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "anchor-center should not clear manually-set margin."
+  },
+  {
+   "bugid": 2000937,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "load full page assistant for ai window new tabs"
+  },
+  {
+   "bugid": 2000961,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add ChatStore.sys.mjs for AIW persistence"
+  },
+  {
+   "bugid": 2000992,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "vendor multi-line rich input box editor"
+  },
+  {
+   "bugid": 2001725,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The links related to using AI chatbots (for instance \"Terms of Service\") in the browser sidebar are not working"
+  },
+  {
+   "bugid": 2005590,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Handle AI Window Opening From Within BrowserWindowTracker"
+  },
+  {
+   "bugid": 2000987,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Extract user messages from Chat history"
+  },
+  {
+   "bugid": 2005303,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[AI Window] [Insights] Fix Insights Prompts File Name"
+  },
+  {
+   "bugid": 2005346,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Implement addition of identity/personality/capability/response instruction to system prompt"
+  },
+  {
+   "bugid": 2005631,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[AI Window] [Semantic Search] [Quality] Prompt engineering improvements to fix semantic search toolcalling"
+  },
+  {
+   "bugid": 2005831,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "chatsource findMessagesByDate function changes to match chatsource API"
+  },
+  {
+   "bugid": 2000033,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Integrate Glean MLTelemetry into the inference pipeline"
+  },
+  {
+   "bugid": 2000682,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "onnx native pipeline adding new metrics"
+  },
+  {
+   "bugid": 1976061,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Ensure the V0 and V1 reporting headers work for NEL"
+  },
+  {
+   "bugid": 1999247,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Make NEL implementation use ReportDeliver::Fetch to enqueue report"
+  },
+  {
+   "bugid": 1995907,
+   "status": "RESOLVED",
+   "component": "Core:Performance: Memory",
+   "summary": "Send PSI values when a content process is killed by OOM killer"
+  },
+  {
+   "bugid": 2005738,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Add more logging to nsWindow::RecomputeBoundsX11()"
+  },
+  {
+   "bugid": 2004268,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Turn devtools/client/netmonitor/src/app.js into an ES class"
+  },
+  {
+   "bugid": 2004278,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/text-editor.js into an ES class"
+  },
+  {
+   "bugid": 2004280,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/slotted-node-editor.js into an ES class"
+  },
+  {
+   "bugid": 2004281,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/slotted-node-container.js into an ES class"
+  },
+  {
+   "bugid": 2004282,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/root-container.js into an ES class"
+  },
+  {
+   "bugid": 2004283,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/read-only-editor.js into an ES class"
+  },
+  {
+   "bugid": 2004284,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/read-only-container.js into an ES class"
+  },
+  {
+   "bugid": 2004285,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/markup-container.js into an ES class"
+  },
+  {
+   "bugid": 2004287,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Turn devtools/client/inspector/markup/views/element-container.js into an ES class"
+  },
+  {
+   "bugid": 2004324,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Error in network-events-content"
+  },
+  {
+   "bugid": 1959738,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Firefox can miscalculate allowed filename length for \"save page as\" complete due to the localized _files folder suffix replacing the extension, leading to broken file saves"
+  },
+  {
+   "bugid": 2000739,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Update macOS installer window brand assets"
+  },
+  {
+   "bugid": 2004328,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Don't explicitly use the Firefox icon for notifications"
+  },
+  {
+   "bugid": 2004765,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Pass attribution object from response through to redux"
+  },
+  {
+   "bugid": 2005622,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Fetch trainhopConfig values during startup in PrefsFeed"
+  },
+  {
+   "bugid": 2005640,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Do not interpret an empty value for nimbusTelemetry.nimbusTargetingEnvironment.recordAttrs as \"record all metrics\""
+  },
+  {
+   "bugid": 2003079,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Add tests to ensure that the lastBackupFileName state and pref don't go out of sync (or remove the state entirely)"
+  },
+  {
+   "bugid": 2004791,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "'Real' backup state can sometimes leak to UI code during tests even though it's stubbed out"
+  },
+  {
+   "bugid": 2005794,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Switch archiveKillswitch handling to enable backup functionality by default on Windows 10"
+  },
+  {
+   "bugid": 2002978,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "The new search box performs the search with the wrong engine"
+  },
+  {
+   "bugid": 2005316,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Refactor search page loading functions in SearchUIUtils"
+  },
+  {
+   "bugid": 2005550,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove browser_google_behavior.js and browser_searchEngine_behaviors.js"
+  },
+  {
+   "bugid": 1971841,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Sync section to config-based prefs"
+  },
+  {
+   "bugid": 1972069,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Search Suggestions to config-based prefs"
+  },
+  {
+   "bugid": 1972360,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Website Contrast to config-based prefs"
+  },
+  {
+   "bugid": 1972367,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Zoom settings to config-based prefs"
+  },
+  {
+   "bugid": 1983318,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Green up the browser/base/content/test/performance tests when enabling sidebar.revamp by default"
+  },
+  {
+   "bugid": 1997878,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "If a PiP window is open from a Split View, switching to another tab will close the PiP window"
+  },
+  {
+   "bugid": 1998666,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Right split view shows blank space after resizing, separating and recreating the split view"
+  },
+  {
+   "bugid": 1999468,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Safely display SVG favicons by using the remote-image protocol"
+  },
+  {
+   "bugid": 2005382,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Refactor tab notes wiring to use events instead of observable topics"
+  },
+  {
+   "bugid": 1988289,
+   "status": "ASSIGNED",
+   "component": "Firefox:Translations",
+   "summary": "Investigate an intermittent WASM instantiation hang in Translations test code"
+  },
+  {
+   "bugid": 2000947,
+   "status": "ASSIGNED",
+   "component": "Firefox:Web Apps",
+   "summary": "Move away from using EventEmitter within TaskbarTabsRegistry"
+  },
+  {
+   "bugid": 2005662,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Spotless formatter in Android Gradle build uses platform native line endings"
+  },
+  {
+   "bugid": 2005456,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Avoid sscache cache miss on gfx/webrender_bindings/WebRenderAPI.cpp"
+  },
+  {
+   "bugid": 2005707,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix include linter's --fix"
+  },
+  {
+   "bugid": 2005460,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "The BottomSheetHandle seems to have extra padding which increases the empty space around it."
+  },
+  {
+   "bugid": 2005385,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add a secret settings for enabling the Firefox Labs settings"
+  },
+  {
+   "bugid": 2005539,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Update homepage stories card so that the title is truncated to two lines, and show the publisher below non-sponsored stories."
+  },
+  {
+   "bugid": 2005540,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Update stories \"all stories\" screen horizontal padding to match figma"
+  },
+  {
+   "bugid": 2005555,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Fix dark mode wallpaper card text"
+  },
+  {
+   "bugid": 1997339,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Update the size and position of the dot highlight indicator of the menu button shown in the toolbar"
+  },
+  {
+   "bugid": 2005537,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Avoid showing application requested share button in custom tabs toolbar"
+  },
+  {
+   "bugid": 1998292,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Drop `product` dimension and `fenix` product flavor in Fenix Gradle configuration"
+  },
+  {
+   "bugid": 2002504,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor GeckoCreditCardsAddressesStorageDelegateTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2005500,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "startup Crash in [@ libc.so | art::Runtime::Abort]"
+  },
+  {
+   "bugid": 2005673,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "\"save file as\" dialog does not open anymore in Firefox frontend tests"
+  },
+  {
+   "bugid": 1950866,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Enable crash reports on demand"
+  },
+  {
+   "bugid": 1846334,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Replace usage of nsILoginManager::searchLogins with searchLoginsAsync"
+  },
+  {
+   "bugid": 1997152,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Update \"High contrast mode\" section in the Design Tokens storybook doc"
+  },
+  {
+   "bugid": 1978347,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Fix leftover space when there are no slotted elements in moz-promo"
+  },
+  {
+   "bugid": 2000343,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-radio-group reacts to keypress when focus is not on a child moz-radio"
+  }
+ ],
+ "fixed": 77,
+ "total": 97,
+ "restricted": 2
+}
