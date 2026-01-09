@@ -1,0 +1,820 @@
+{
+ "date": "2026-01-08",
+ "buildid": "20260108165448",
+ "cset": "9af669f3df03dc5a7705771033460066ea358aa1",
+ "bugs": [
+  {
+   "bugid": 1976929,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "WebCodecs VideoDecoder frequent reset & close causes tab crash"
+  },
+  {
+   "bugid": 1995187,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support #[css(keyword = \"...\")] overrides in ToTyped derive"
+  },
+  {
+   "bugid": 2008590,
+   "status": "VERIFIED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Assertion failure: isSingleInsert (root node insertion should be a single insertion), at /builds/worker/checkouts/gecko/layout/base/nsCSSFrameConstructor.cpp:6241"
+  },
+  {
+   "bugid": 2001749,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Perma Linux a11y-checks dom/events/test/clipboard/browser_navigator_clipboard_readText_ext.js | Node is not accessible via accessibility API: id: , tagName: browser, className:  -"
+  },
+  {
+   "bugid": 1992109,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "musicmoment.jp - Repeatedly clicking on the page logo causes the tab to crash"
+  },
+  {
+   "bugid": 2003729,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Reporting API: Global buffer does not buffer reports per type"
+  },
+  {
+   "bugid": 2008949,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make nsINode::GetShadowRoot faster."
+  },
+  {
+   "bugid": 2006468,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Assertion failure: false (FIXME), at /builds/worker/checkouts/gecko/dom/navigation/Navigation.cpp:382"
+  },
+  {
+   "bugid": 2008951,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Fix null global getter when serializing during reload"
+  },
+  {
+   "bugid": 2008859,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "[LNA] Update LNA prompt telemetry"
+  },
+  {
+   "bugid": 2006340,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Performance APIs",
+   "summary": "Implement Resource Timing Level 3 interim response timestamps"
+  },
+  {
+   "bugid": 1953174,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Serializers",
+   "summary": "Copying selected data generates outer HTML into the clipboard"
+  },
+  {
+   "bugid": 1783838,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Setting aria-live to polite or assertive causes VoiceOver to read out changes to aria-label twice"
+  },
+  {
+   "bugid": 2007348,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Add linter that removes unused C standard includes"
+  },
+  {
+   "bugid": 2008691,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove unused <stdarg.h> inclusion and make sure we don't regress on those"
+  },
+  {
+   "bugid": 2008693,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove unused <stddef.h> inclusion and make sure we don't regress on those"
+  },
+  {
+   "bugid": 2008694,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Remove unused <stdint.h> inclusion and make sure we don't regress on those"
+  },
+  {
+   "bugid": 1977746,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Color Management",
+   "summary": "[HDR/Windows] Play HDR video using an RGB10A2 swapchain with appropriate colorspace"
+  },
+  {
+   "bugid": 2006848,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Cached quad primitives with transforms are transformed incorrectly"
+  },
+  {
+   "bugid": 2008892,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Clean up use_layer_compositor handling in wr_window_new()"
+  },
+  {
+   "bugid": 2007231,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending() || cx->isPropagatingForcedReturn() || cx->hadUncatchableException(), at vm/Interpreter.cpp:391"
+  },
+  {
+   "bugid": 2007291,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Perma Assertion failure: false, at /builds/worker/checkouts/gecko/js/src/vm/SelfHosting.cpp:X - when Gecko 148 merges to beta on 2026-01-12"
+  },
+  {
+   "bugid": 2007770,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: cx->isExceptionPending(), at jit/Ion.cpp:2010"
+  },
+  {
+   "bugid": 2008675,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Assertion failure: numDebuggeeRealms_ <= numRealms, at vm/Runtime.cpp:796"
+  },
+  {
+   "bugid": 2008866,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Handle /v flag in slow path of RegExp.prototype.matchAll"
+  },
+  {
+   "bugid": 2006476,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Bake in JitZone pointer into IC code when calling regexp and concat stubs"
+  },
+  {
+   "bugid": 1714701,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: !aPrevFrame || ... (aPrevFrame must be the last continuation in its chain!), at src/layout/base/nsFrameManager.cpp:82"
+  },
+  {
+   "bugid": 2008711,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Intermittent layout/base/crashtests/1489149.html | single tracking bug"
+  },
+  {
+   "bugid": 2009082,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Convert testcases in Bug 1645714 into WPT reftest"
+  },
+  {
+   "bugid": 2008625,
+   "status": "VERIFIED",
+   "component": "Core:Layout: Columns",
+   "summary": "Assertion failure: !mFinishedBuildingColumns (Should only call once!), at /builds/worker/checkouts/gecko/layout/generic/ColumnSetWrapperFrame.cpp:107"
+  },
+  {
+   "bugid": 2008862,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Incorrect text decoration drawn for text-combine-upright decorating frames and text frames inside block line containers with orthogonal writing modes"
+  },
+  {
+   "bugid": 1975437,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Users can select an Ai chat provider with keyboard navigation without going through the Onboarding process"
+  },
+  {
+   "bugid": 2001504,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Chat Assistant markdown rendering"
+  },
+  {
+   "bugid": 2006469,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Create AI Window switcher button"
+  },
+  {
+   "bugid": 2008969,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[AI Window] Fix SearchBrowsingHistoryDomainBoost export mismatch in lazy getters"
+  },
+  {
+   "bugid": 1993425,
+   "status": "ASSIGNED",
+   "component": "Core:MathML",
+   "summary": "Random pick second (or third, forth, ...) fallback font for font-family: math if set font.name.serif.x-math = \"math\""
+  },
+  {
+   "bugid": 1928537,
+   "status": "REOPENED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/browser/browser_necko_l10n.js | single tracking bug"
+  },
+  {
+   "bugid": 1992512,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Crash in [@ nsXPCWrappedJS::AddRef] - nsDocumentOpenInfo::OnDataFinished(nsresult) calling QI on js listener off-main-thread"
+  },
+  {
+   "bugid": 2007840,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "networking.http_3_ecn_ce_ect0_ratio_sent metric broken since neqo v0.13.0"
+  },
+  {
+   "bugid": 1944213,
+   "status": "ASSIGNED",
+   "component": "Core:Networking: Proxy",
+   "summary": "https_proxy not recognized on windows"
+  },
+  {
+   "bugid": 2005390,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 148: aboutprivatebrowsing.click_* before Gecko version gets increased to 149 on 2026-01-12"
+  },
+  {
+   "bugid": 2008957,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Convert ISVGDisplayFrame::SVGChangedFlags to an enum class"
+  },
+  {
+   "bugid": 2009041,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Convert FLAG_SYNC_DECODE_IMAGES to an enum class"
+  },
+  {
+   "bugid": 2004184,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 148 to NSS 3.120"
+  },
+  {
+   "bugid": 2008288,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "audio MediaStreamTracks muted when created are not unmuted after window or global unmute"
+  },
+  {
+   "bugid": 2007838,
+   "status": "REOPENED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Crash in [@ mozilla::widget::WlLogHandler_MarshallingError]"
+  },
+  {
+   "bugid": 2008913,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox became incredibly slow"
+  },
+  {
+   "bugid": 2008883,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Check state menuitem type `checkbox` and `radio`  are not shown"
+  },
+  {
+   "bugid": 2009098,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "The ‘Open link’ button in the Application chooser dialog is disabled"
+  },
+  {
+   "bugid": 2006135,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Add .claude/settings.local.json to .gitignore"
+  },
+  {
+   "bugid": 2008989,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Remove searchfox -q from CLAUDE.md"
+  },
+  {
+   "bugid": 2006716,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Replace `black` linter with `ruff format`"
+  },
+  {
+   "bugid": 2008739,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "startup crash in content processes with Trellix"
+  },
+  {
+   "bugid": 1998930,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Contextual search is shown for default search engine"
+  },
+  {
+   "bugid": 2007267,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Alt+up/down should open the unified search button even if the result view is closed"
+  },
+  {
+   "bugid": 2008932,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Switch trustpanel to use etld+1"
+  },
+  {
+   "bugid": 2008967,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "searchmode-switcher-chicklet has inconsistent border radius on right corners"
+  },
+  {
+   "bugid": 1997959,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Please add policies.is_enterprise to baseline ping"
+  },
+  {
+   "bugid": 2000711,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Implement progress bar component for bandwidth"
+  },
+  {
+   "bugid": 2002677,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Remove unncessary \"IPProtection:Init\" event dispatch in ipprotection-status-card component"
+  },
+  {
+   "bugid": 2005086,
+   "status": "NEW",
+   "component": "Firefox:IP Protection",
+   "summary": "Update IPPAutoStartSingleton to start if the cached state is active"
+  },
+  {
+   "bugid": 2007184,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "Convert VPN on/off toggle to moz-button"
+  },
+  {
+   "bugid": 2007365,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "Excluded websites are still protected in Private window"
+  },
+  {
+   "bugid": 2009037,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[TOS] Land In-Product Notification Omnibus Privacy Notice update"
+  },
+  {
+   "bugid": 1989609,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New tabs in a container can't use uploaded wallpapers"
+  },
+  {
+   "bugid": 2002129,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add unit tests for MozNewTabWallpaper protocol handler"
+  },
+  {
+   "bugid": 2002144,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Replace New Tab Wallpaper blob URLs with MozNewTabWallpaper protocol handler"
+  },
+  {
+   "bugid": 2008802,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update npypchenko to nina-py in MOTS"
+  },
+  {
+   "bugid": 2009047,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add new strings for  \"Manage Widgets\" panel in Customize panel"
+  },
+  {
+   "bugid": 2006752,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Move enrollment status metrics onto the targeting context ping"
+  },
+  {
+   "bugid": 2006971,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 3532ac39d860a16f6b9dc7c44e2565cbb29335ed from 2026-01-06 21:37:46"
+  },
+  {
+   "bugid": 2002027,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make handoff searchbar a self-contained reusable component"
+  },
+  {
+   "bugid": 2007381,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "\"This time search with\" description doesn't match behavior in the new search bar"
+  },
+  {
+   "bugid": 2007383,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Dragging text to the new search bar is loaded immediately, rather than allowing selection of a different search engine"
+  },
+  {
+   "bugid": 2007902,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "When the menu bar is hidden while the search bar is positioned on the menu bar, the search bar extends beyond the tab bar's boundary."
+  },
+  {
+   "bugid": 2008905,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Make browser_searchModeSwitcher_keyNavigation.js not depend on the actual search config"
+  },
+  {
+   "bugid": 2003439,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Missing error handling for invalid certificates"
+  },
+  {
+   "bugid": 1990552,
+   "status": "REOPENED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add extension controlled annotation to the redesigned proxy settings section"
+  },
+  {
+   "bugid": 1994888,
+   "status": "REOPENED",
+   "component": "Firefox:Settings UI",
+   "summary": "Always use setting-group for group headings"
+  },
+  {
+   "bugid": 1997198,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Add moz-card to setting-group"
+  },
+  {
+   "bugid": 2001254,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Create a subpage for managing addresses"
+  },
+  {
+   "bugid": 1978102,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Flip sidebar.revamp to true"
+  },
+  {
+   "bugid": 2007284,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Camera indicator light remains on after stopping getUserMedia video track when permission is granted before preview finishes (macOS, Firefox)"
+  },
+  {
+   "bugid": 2003703,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Telemetry event when tab note is edited"
+  },
+  {
+   "bugid": 2003705,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Telemetry event when tab note is deleted"
+  },
+  {
+   "bugid": 2007198,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Tab hover preview panel flashes a horizontal line (border around thumbnail)"
+  },
+  {
+   "bugid": 2009012,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "DOMException: WindowGlobalParent.getActor: Window protocol 'CanonicalURL' doesn't match uri about:addons"
+  },
+  {
+   "bugid": 1997132,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "[linux/ mac] Screen reader does not say Split view tab 1 of 2 or 2 of 2 when the Split View tabs are selected"
+  },
+  {
+   "bugid": 2008919,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Add new triage rotation for this component and update sidebar triage file"
+  },
+  {
+   "bugid": 2009021,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Tab Groups",
+   "summary": "Create triage rotation for Tabbed Browser: Tab Groups"
+  },
+  {
+   "bugid": 2008716,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "The drop indicator in the bookmark sidebar and bookmarks menupopup lacks contrast in dark theme."
+  },
+  {
+   "bugid": 2008213,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Allow about:translations sections to grow individually in vertical orientation"
+  },
+  {
+   "bugid": 2008257,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Improve about:translations textarea padding for LTR/RTL contexts"
+  },
+  {
+   "bugid": 2008870,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix deprecated warning on configure.py"
+  },
+  {
+   "bugid": 2008915,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [Tier 2] /builds/worker/checkouts/gecko/dom/base/Element.cpp:X: error: loop variable 'element' creates a copy from type 'const RefPtr<mozilla::dom::Element>' [-Werror=range-loop-construct]"
+  },
+  {
+   "bugid": 2009000,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove unused check for strerror"
+  },
+  {
+   "bugid": 2005532,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Support github identifiers in taskgraph for code-review bot"
+  },
+  {
+   "bugid": 2008684,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "ERROR: The libclang located at /root/.mozbuild/clang/lib/libclang.so is too old (need at least 5.0)."
+  },
+  {
+   "bugid": 1999448,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Empty strip remains between the keyboard and the address list in the add/edit address screen"
+  },
+  {
+   "bugid": 2005839,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Stop initializing android-components CrashReporter in child processes"
+  },
+  {
+   "bugid": 2008833,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Create a reusable theme preview parameter provider"
+  },
+  {
+   "bugid": 2002280,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "Add a Settings icon to the Downloads screen toolbar"
+  },
+  {
+   "bugid": 2004986,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads path] Add Settings section to let user select a custom download location"
+  },
+  {
+   "bugid": 2008712,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Implement the experimental ToU strings to be used in the ToU prompt"
+  },
+  {
+   "bugid": 2008946,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 788039b874400702916cb4c3b73e655a42426355 from 2026-01-07 05:01:41"
+  },
+  {
+   "bugid": 2008901,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "Adapt AS Logins API change (breach alerts)"
+  },
+  {
+   "bugid": 2008748,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[android] Firefox for Nightly has insufficient contrast in accessibility settings, in dark mode"
+  },
+  {
+   "bugid": 2008816,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Search] Tapping the search button in the keyboard should dismiss the keyboard"
+  },
+  {
+   "bugid": 2008749,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Search bar placeholder text should not wrap"
+  },
+  {
+   "bugid": 1988984,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Introduce StateFlow to Stores"
+  },
+  {
+   "bugid": 2008004,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor ProfilerServiceTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2008014,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor ThumbnailStorageTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2009110,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disable verifyTheExtensionMenuListWhileExtensionsAreDisabledTest UI test"
+  },
+  {
+   "bugid": 1998732,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Update \"emulation.setGeolocationOverride\" command reset behavior"
+  },
+  {
+   "bugid": 1998734,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Update \"emulation.setScreenOrientationOverride\" command reset behavior"
+  },
+  {
+   "bugid": 2004973,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "WebDriver BiDi network.getData command returns RangeError for specific network response body"
+  },
+  {
+   "bugid": 2008797,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Reset the crashreporter client settings if they fail to be deserialized"
+  },
+  {
+   "bugid": 1856418,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Remove all old clear data dialog boxes"
+  },
+  {
+   "bugid": 1932823,
+   "status": "VERIFIED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[MX][shopee.com.mx] Multiple autofill issues on Address form"
+  },
+  {
+   "bugid": 2007608,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "\"Manage addresses\" autocomplete item navigates user to Payment Methods section in setting"
+  },
+  {
+   "bugid": 1997244,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update devtools/shared/qrcode/encoder/index.js"
+  },
+  {
+   "bugid": 1950247,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "'Theme' and 'Avatar' should be level 2 headings"
+  },
+  {
+   "bugid": 2005559,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Set the directionality for input types tel, url, email, number to \"ltr\" even in rtl documents"
+  },
+  {
+   "bugid": 2006354,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Make it possible to override the type for <moz-input-text>"
+  },
+  {
+   "bugid": 2006477,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v148 cycle"
+  },
+  {
+   "bugid": 1898928,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cleanfeed.net - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1898994,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "eportal.uestc.edu.cn - site is not usable"
+  },
+  {
+   "bugid": 1902378,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "acesso.processo.rio - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902520,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.keisan.nta.go.jp - Firefox is an unsupported browser"
+  },
+  {
+   "bugid": 1913720,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "citruslab.me - Not found error when loading the page"
+  },
+  {
+   "bugid": 1974686,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.hermes.admin.ch - Table elements overlap each other"
+  },
+  {
+   "bugid": 1987351,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "mirage.decart.ai - Firefox is not supported"
+  },
+  {
+   "bugid": 1992923,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "godotfest.com - backdrop-filter: blur` disabled"
+  },
+  {
+   "bugid": 2003110,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Generated files are not covered by the diagram"
+  },
+  {
+   "bugid": 2003113,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "MOZSEARCH_PLATFORM environment variable should be different between debug vs opt"
+  }
+ ],
+ "fixed": 111,
+ "total": 135,
+ "restricted": 2
+}
