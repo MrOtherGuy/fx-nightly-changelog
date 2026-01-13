@@ -1,0 +1,598 @@
+{
+ "date": "2026-01-13",
+ "buildid": "20260113093356",
+ "cset": "caa037c3068b676922535eb88d2608015aed6653",
+ "bugs": [
+  {
+   "bugid": 2006642,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Document PiP sometimes doesn't remember position"
+  },
+  {
+   "bugid": 2006645,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove `dom.hidden_until_found.enabled` pref"
+  },
+  {
+   "bugid": 2006849,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent dom/documentpip/tests/browser/browser_pip_closes_once.js | single tracking bug"
+  },
+  {
+   "bugid": 2009499,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Add onpagereveal attribute"
+  },
+  {
+   "bugid": 2009660,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move Document PiP window to default position when entering fullscreen"
+  },
+  {
+   "bugid": 1998077,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `WSRunScanner` handle empty inline container element better"
+  },
+  {
+   "bugid": 2009587,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Remove dom.w3c_pointer_events.getcoalescedevents_only_in_securecontext pref"
+  },
+  {
+   "bugid": 2006963,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: RangeUtils::IsValidPoints(aStart, aEnd), at /builds/worker/checkouts/gecko/dom/base/ContentIterator.cpp:255"
+  },
+  {
+   "bugid": 1956971,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Enable native UIA when later versions of NVDA are detected"
+  },
+  {
+   "bugid": 1965402,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Expose aria-current via UIA"
+  },
+  {
+   "bugid": 1925116,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Avoid initializing the GL driver in the parent process"
+  },
+  {
+   "bugid": 2004736,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Handle SVG theming in moz-remote-image"
+  },
+  {
+   "bugid": 2009107,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove gfx::Feature::OMTP"
+  },
+  {
+   "bugid": 1980057,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Crashes in `wgpu_hal::dx12::D3D12Lib::create_device` from `navigator.gpu.requestAdapter`"
+  },
+  {
+   "bugid": 2008593,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 77591d8c07c92538eddd14b66ffccbdace874980 from 2026-01-02 19:57:04"
+  },
+  {
+   "bugid": 2009237,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Disable spectre mitigations by default"
+  },
+  {
+   "bugid": 2009320,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Move more js/src/js*.{h,cpp} files into subdirectories"
+  },
+  {
+   "bugid": 2009450,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Require calling a specific method to change a string's type"
+  },
+  {
+   "bugid": 2008971,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Consider functions to do barriered writes to replace casting to wrapper types"
+  },
+  {
+   "bugid": 2009554,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Crash [@ js::Scope::traceChildren]"
+  },
+  {
+   "bugid": 1957751,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[css-backgrounds] Always serialize 'background-size' and `mask-size` as two values"
+  },
+  {
+   "bugid": 2009384,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "Implement Document reveal algorithm"
+  },
+  {
+   "bugid": 2009549,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Assertion failure: !wm.IsOrthogonalTo(lineContainer->GetWritingMode()) || aFrame->Style()->IsTextCombined() (Decorating frame and line container must have writing modes in the same axis), at /builds/worker/checkouts/gecko/layout/generic/nsTextFrame.cpp:58"
+  },
+  {
+   "bugid": 2001504,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Chat Assistant markdown rendering"
+  },
+  {
+   "bugid": 1998228,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Add a tsconfig.json to toolkit/components/ml and begin some type checking"
+  },
+  {
+   "bugid": 2007428,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Add tests and docs for the block processing on the DOMExtractor"
+  },
+  {
+   "bugid": 2008581,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "PlacesSemanticHistoryManager should log errors directly instead of inlining as strings into the error message, so that we get stacks"
+  },
+  {
+   "bugid": 2005048,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Speculative connection without a notification callback is blocked when proxy filter is registered"
+  },
+  {
+   "bugid": 2007582,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Expand Fenix DoH performance tests to cover more scenarios"
+  },
+  {
+   "bugid": 2008018,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Firefox loses storage of Element Web on [::1] since FF 145 every 10 min to 4h"
+  },
+  {
+   "bugid": 2008805,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Frequent linux asan Wd LeakSanitizer | leak at mozilla::BounceTrackingProtection::OnModeChange, mozilla::BounceTrackingProtection::Init, mozilla::BounceTrackingProtection::GetSingleton, mozilla::BounceTrackingState::BounceTrackingState"
+  },
+  {
+   "bugid": 2009173,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Modernise SVGObserverUtils"
+  },
+  {
+   "bugid": 2008906,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Use MITIGATION_EXTENSION_POINT_DISABLE for the Windows GPU process sandbox."
+  },
+  {
+   "bugid": 2009599,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Remove obsolete C++11 version check in dom/media"
+  },
+  {
+   "bugid": 2001628,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Remove compositor pause/resume and use async rendering"
+  },
+  {
+   "bugid": 2008777,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] firefox should not bind server version of globals"
+  },
+  {
+   "bugid": 2009634,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "\"Don’t show this message when pop-ups or third-party redirects are blocked\" shows checked when it shouldn't be"
+  },
+  {
+   "bugid": 2009640,
+   "status": "RESOLVED",
+   "component": "Core:XUL",
+   "summary": "Unable to show more columns in the Library window"
+  },
+  {
+   "bugid": 2009806,
+   "status": "ASSIGNED",
+   "component": "Core:XUL",
+   "summary": "Move checkbox attribute handling to XULButtonElement"
+  },
+  {
+   "bugid": 1991895,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Add FOG platform microbenchmarks"
+  },
+  {
+   "bugid": 2009400,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Initial (verified) docs to control a Firefox instance using an agent"
+  },
+  {
+   "bugid": 2005235,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Stylelint no-non-semantic-token-usage does not allow using --focus-outline-offset for outline-offset"
+  },
+  {
+   "bugid": 2007341,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The new search bar size is larger with the unsupported compact density"
+  },
+  {
+   "bugid": 1880480,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "ESC key should not save modified data in `Edit bookmark` from Star Icon"
+  },
+  {
+   "bugid": 2009646,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "In the sort dropdown menu of the new history sidebar, all checkmarks are visually enabled."
+  },
+  {
+   "bugid": 2009230,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Import the custom elements/modules from firefoxview.mjs instead of using script tags."
+  },
+  {
+   "bugid": 2005086,
+   "status": "NEW",
+   "component": "Firefox:IP Protection",
+   "summary": "Update IPPAutoStartSingleton to start if the cached state is active"
+  },
+  {
+   "bugid": 2008660,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update firefox-vpn-brand-name to \"VPN\""
+  },
+  {
+   "bugid": 2008978,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update Firefox VPN header to new design"
+  },
+  {
+   "bugid": 2002511,
+   "status": "VERIFIED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "The Backspace key is treated as a custom shortcut instead of deleting custom key prefixes on the about:keyboard page"
+  },
+  {
+   "bugid": 845363,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "clean up gatherTextUnder"
+  },
+  {
+   "bugid": 2009286,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update runtime-metrics for Firefox 147 train-hop"
+  },
+  {
+   "bugid": 2009288,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update locales for Firefox 147 train-hop"
+  },
+  {
+   "bugid": 2003349,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Hide rollouts from about:studies"
+  },
+  {
+   "bugid": 2003350,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Use a separate opt-out pref for rollouts"
+  },
+  {
+   "bugid": 2005386,
+   "status": "ASSIGNED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Remove or update probes expiring at the end of Firefox 148: aboutprivatebrowsing.click#click before Gecko version gets increased to 149 on 2026-01-12"
+  },
+  {
+   "bugid": 1900125,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Confirming settings in \"Turn on backup\" dialog should immediately run the first backup"
+  },
+  {
+   "bugid": 2007208,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Make the remote-settings client fully compatible with v2 remote-settings reader endpoints"
+  },
+  {
+   "bugid": 2003294,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Clean up messages in ContentSearchParent following content search UI changes"
+  },
+  {
+   "bugid": 2007209,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Search history items of new search bar differ from the old search bar."
+  },
+  {
+   "bugid": 2007588,
+   "status": "RESOLVED",
+   "component": "Firefox:Security",
+   "summary": "Let JS Load Restrictions Ride the trains"
+  },
+  {
+   "bugid": 1972071,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Search Shortcuts to config-based prefs"
+  },
+  {
+   "bugid": 2009106,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Create a skeleton subpage for Custom URL"
+  },
+  {
+   "bugid": 2008998,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "The sidebar defaultLauncherVisible marionette test fails when sidebar.revamp defaults to true"
+  },
+  {
+   "bugid": 2005840,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Expand telemetry for Send Tab"
+  },
+  {
+   "bugid": 2000066,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Allow user to expand a long tab note in the tab hover preview"
+  },
+  {
+   "bugid": 2009836,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "\"Read more\" tab note button sometimes appears in hover preview for tabs without notes, if a note exists on another tab"
+  },
+  {
+   "bugid": 1994947,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "The customized menu tab is blank in a Split View"
+  },
+  {
+   "bugid": 2004383,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Make changes to moveTabTo and handleTabMove callbacks to account for tabs in a splitview"
+  },
+  {
+   "bugid": 2008974,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Unable to click the three-dot menu in the footer"
+  },
+  {
+   "bugid": 2009621,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Improve build logging"
+  },
+  {
+   "bugid": 2008557,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Start the nightly 149 development cycle"
+  },
+  {
+   "bugid": 2008383,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Add and test Relay authentication logic in the Relay sample browser"
+  },
+  {
+   "bugid": 2008643,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Replace usages of Relay with Email Mask"
+  },
+  {
+   "bugid": 2005595,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Search] Handle search result clicks"
+  },
+  {
+   "bugid": 2005792,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Performance bug in redesigned synced tabs list composable"
+  },
+  {
+   "bugid": 1995221,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Consolidate how the badge background color is set"
+  },
+  {
+   "bugid": 1994746,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor SyncedTabsStorageTest to remove main coroutine rule."
+  },
+  {
+   "bugid": 2007888,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor PwaOnboardingObserverTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2008017,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor ThumbnailLoader to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2008022,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor BrowserThumbnailsTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2008089,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor LocaleMiddlewareTest to remove MainCoroutineRule"
+  },
+  {
+   "bugid": 2008555,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Refactor ShareResourceFeatureTest to remove MainCoroutineRule and runTestOnMain"
+  },
+  {
+   "bugid": 2007667,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Translations",
+   "summary": "Languages from the automatic translations screen are not shown in alphabetical order"
+  },
+  {
+   "bugid": 1977952,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.EnhancedTrackingProtectionTest#clearWebsitesFromTPExceptionListTest | java.lang.AssertionError"
+  },
+  {
+   "bugid": 2009687,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Remove running conditions from navigation toolbar UI tests"
+  },
+  {
+   "bugid": 2009692,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Remove redundant retry from extension install complete prompt"
+  },
+  {
+   "bugid": 1988163,
+   "status": "RESOLVED",
+   "component": "Firefox for iOS:General",
+   "summary": "Use latest Nimbus SDK rolloutParticiaption and experimentParticipation"
+  },
+  {
+   "bugid": 2006390,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Document API levels needed for Isolated Process and App Zygote support"
+  },
+  {
+   "bugid": 2005681,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Remove S3 references on beetmover manifests"
+  },
+  {
+   "bugid": 2009750,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "Perma flatpak-repackage `TypeError: subprocess.run() got multiple values for keyword argument 'check'`"
+  },
+  {
+   "bugid": 2008945,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Agent",
+   "summary": "\"#toBrowserWindowCoordinates()\" incorrectly uses the content window’s device pixel ratio instead of the chrome window’s."
+  },
+  {
+   "bugid": 2005546,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Move the logic of applying user agent, locale, timezone, screen orientation, and screen settings configurations to the parent process"
+  },
+  {
+   "bugid": 1819901,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "[CA][calvinklein] Autofill dropdown and Clear Autofill Form not available for Email, no value previewed for Email, wrong value previewed and autofilled in Address Line 1"
+  },
+  {
+   "bugid": 2009136,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Update the getMozRemoteImageURL helper"
+  },
+  {
+   "bugid": 2001276,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Exclude ignoredSharedPrefs when creating a new profile"
+  },
+  {
+   "bugid": 1994166,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Support DSAR requirements in about:glean"
+  },
+  {
+   "bugid": 1985429,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Introduce more table design tokens and replace existing `--in-content-table-*` variables"
+  }
+ ],
+ "fixed": 83,
+ "total": 98,
+ "restricted": 2
+}
