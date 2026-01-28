@@ -1,0 +1,676 @@
+{
+ "date": "2026-01-28",
+ "buildid": "20260128094816",
+ "cset": "08a9de1f821f7bc1616855224f28bd5a0415eac7",
+ "bugs": [
+  {
+   "bugid": 2007772,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Support color-mix() with multiple color arguments"
+  },
+  {
+   "bugid": 2012781,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove unused nsAutoPtr-related entries from ServoBindings.toml"
+  },
+  {
+   "bugid": 2011407,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Refine Document PiP initial positioning logic"
+  },
+  {
+   "bugid": 1995636,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Firefox throws from history APIS (e.g. pushState, replaceState) if it's been called rapidly enough to trigger the rate-limit"
+  },
+  {
+   "bugid": 2008613,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Networking",
+   "summary": "New wpt failures in /beacon/beacon-basic.https.window.html"
+  },
+  {
+   "bugid": 2012568,
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "Fix WPT failure: \"sendBeacon() with a stream does not work due to the keepalive flag being set\""
+  },
+  {
+   "bugid": 2010470,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Remove or update metrics expiring at the end of Firefox 149: parsing.svg_unusual_pcdata before Gecko version gets increased to 150 on 2026-02-23"
+  },
+  {
+   "bugid": 1910011,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Service Workers",
+   "summary": "Crash in [@ mozilla::dom::ClientHandle::Control]"
+  },
+  {
+   "bugid": 2008277,
+   "status": "NEW",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Pointerout and Mouseout behave differently over 3rd-party iframes (Pointerout is unreliable)"
+  },
+  {
+   "bugid": 1723864,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Consider changing mSleep (and values AWAKE, SLEEPING_NOT_OBSERVED, and SLEEPING_OBSERVED), to an enum type"
+  },
+  {
+   "bugid": 1736469,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Replace Rust can_accept_markers with thread_is_being_profiled, to match C++"
+  },
+  {
+   "bugid": 2012660,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Replace copy assignment by move assignment in chrome/RegistryMessageUtils.h"
+  },
+  {
+   "bugid": 2011390,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Abort map request in `Buffer::unmap()`"
+  },
+  {
+   "bugid": 2011391,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Check the buffer is not mapped in `Buffer::mapAsync()`"
+  },
+  {
+   "bugid": 2012111,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`Buffer::unmap()` should not generate any validation errors"
+  },
+  {
+   "bugid": 2012117,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "`Buffer::mapAsync` should generate a validation error if the buffer is mapped or pending"
+  },
+  {
+   "bugid": 2011344,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Cull tile cache that have exactly the same compositor clip as a previous one with opaque backdrop"
+  },
+  {
+   "bugid": 2011700,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ webrender::render_task::render_task_sanity_check]"
+  },
+  {
+   "bugid": 2010784,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Parallel marking random stack distribution is almost completely not random"
+  },
+  {
+   "bugid": 1999917,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "No formatted output for large dates when using Chinese/Dangi calendars"
+  },
+  {
+   "bugid": 2011504,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Remove code no longer needed after the ICU4X 2.1.1 update"
+  },
+  {
+   "bugid": 2011505,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Enable islamic-umalqura calendar by default"
+  },
+  {
+   "bugid": 2011506,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use CLDR era rules for the Ethiopian calendar"
+  },
+  {
+   "bugid": 2006701,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Implement IteratorChunksGenerator"
+  },
+  {
+   "bugid": 2011582,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Perma MinGW 32bit  /builds/worker/checkouts/gecko/js/src/wasm/WasmGcObject.h:527:15: error: static assertion failed due to requirement '(__builtin_offsetof(js::WasmArrayObject, data_) + sizeof (WasmArrayObject::data_)) == sizeof(js::WasmArrayObject)'"
+  },
+  {
+   "bugid": 2011834,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: (header->word & 1) == 1, at js/src/wasm/WasmGcObject.h:463"
+  },
+  {
+   "bugid": 2011072,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Centralize the algorithm for adjusting border-radius inwards/outwards in a single place"
+  },
+  {
+   "bugid": 2001526,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Chat Assistant @mentioned rendering"
+  },
+  {
+   "bugid": 2005412,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Discuss implications of multiple instances of ChatStore and effects on migrations"
+  },
+  {
+   "bugid": 2011501,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Use preview l10n for chat content title"
+  },
+  {
+   "bugid": 2012806,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[FirstRun] Remove pref requireSignIn"
+  },
+  {
+   "bugid": 1995618,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Pass the links present on the page as a list in the PageExtractor"
+  },
+  {
+   "bugid": 2009163,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Do not set x-math lang on MathML elements by default"
+  },
+  {
+   "bugid": 1996427,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "SSL error in Firefox, but Chromium and CURL are OK"
+  },
+  {
+   "bugid": 2012409,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "networking.connection_address_type may record incorrect protocol during TLS handshake"
+  },
+  {
+   "bugid": 2012693,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Number and Integer pairs always initialise to the same value"
+  },
+  {
+   "bugid": 2011916,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Disable high-incidence flacky partitioning test for opt builds on mac"
+  },
+  {
+   "bugid": 2012591,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "nr_reg_alloc_node_data should nor return a string literal as char*"
+  },
+  {
+   "bugid": 2012006,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Firefox 147 crashes more than 50% of the times with online meetings (Google Meet, Teams) on Fedora"
+  },
+  {
+   "bugid": 1769549,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Can't send drag and drop images from firefox to SMS in Apple messages"
+  },
+  {
+   "bugid": 1932976,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Investigate using App Group Containers for profile data"
+  },
+  {
+   "bugid": 1977042,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Latest mail client doesn't apply Apple text replacement feature correctly - If I type \"im\" and then ANY character, it will replace with \"I'm\""
+  },
+  {
+   "bugid": 2009891,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Frequent Linux Talos None [@ libglib-2.0.so.0 + 0x0000000000051fc1] | <test> | single tracking bug"
+  },
+  {
+   "bugid": 1602942,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Removing tasks and frequent from the taskbar menu makes recent appear even if it is false"
+  },
+  {
+   "bugid": 2010949,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "White flash across titlebar when launching Firefox in dark mode"
+  },
+  {
+   "bugid": 2011541,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Intermittent Assertion failure: WinWindowOcclusionTracker::IsInWinWindowOcclusionThread(), at /builds/worker/checkouts/gecko/widget/windows/WinWindowOcclusionTracker.cpp:X"
+  },
+  {
+   "bugid": 2012467,
+   "status": "RESOLVED",
+   "component": "DevTools:Console",
+   "summary": "Add a new webconsole pref for the codemirror 6 migration"
+  },
+  {
+   "bugid": 2006092,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "\"show stacktrace\" on log points doesn't show the async stack"
+  },
+  {
+   "bugid": 2012681,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 149] Remove and update backward compatibility code"
+  },
+  {
+   "bugid": 2010208,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Text in badges gets highlighted when it matches the markup search"
+  },
+  {
+   "bugid": 2012091,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Render only attribute name in Reps when the attribute value is empty"
+  },
+  {
+   "bugid": 2012236,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "\"Edit and Resend\" doesn't make use of available verticle space"
+  },
+  {
+   "bugid": 2011833,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Add mozglue/baseprofiler/core/vtune/ to ThirdPatryPaths.txt"
+  },
+  {
+   "bugid": 2010045,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "trust panel: \"Connection secure\" displayed for self-signed certificate with added exception"
+  },
+  {
+   "bugid": 2010941,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Autofill suggests urls that aren't relevant to the user"
+  },
+  {
+   "bugid": 2005052,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add pref to track when VPN use meets bandwidth thresholds"
+  },
+  {
+   "bugid": 2009076,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Implement an initial state for VPN settings"
+  },
+  {
+   "bugid": 2009815,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Updated signed out state to not yet opted in state"
+  },
+  {
+   "bugid": 2009818,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Make upgrade section dependent on hasUpgraded in paused state"
+  },
+  {
+   "bugid": 2010355,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update the toolbar button icons for IP Protection"
+  },
+  {
+   "bugid": 1980570,
+   "status": "ASSIGNED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove hack to fetch fluent files in ASRouter"
+  },
+  {
+   "bugid": 1999019,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create \"In the know\" component"
+  },
+  {
+   "bugid": 1999020,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add topic labels to cards within Daily Briefing section"
+  },
+  {
+   "bugid": 1999023,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update layout configuration for DB section"
+  },
+  {
+   "bugid": 1999026,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add \"Updated x ago\" to In the know"
+  },
+  {
+   "bugid": 1999027,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add prefs / experiment values for Daily Briefing 2.0"
+  },
+  {
+   "bugid": 2005836,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add context menu button to In the know"
+  },
+  {
+   "bugid": 2011703,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Implement dismiss behaviour for New Tab briefing card"
+  },
+  {
+   "bugid": 2012009,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Crash in [@ firefox_on_glean::factory::create_and_register_metric]"
+  },
+  {
+   "bugid": 1997929,
+   "status": "RESOLVED",
+   "component": "Firefox:Screenshots",
+   "summary": "Save full page and Save visible buttons are displayed on the right view when the screenshot option is used on the left view"
+  },
+  {
+   "bugid": 2003300,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove the nsI* interfaces relating to the search service"
+  },
+  {
+   "bugid": 2005805,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Ensure enterprise policy and locale/region restrictions are respected for AI Controls settings"
+  },
+  {
+   "bugid": 2006781,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add Web Extensions AI API prefs to Disable AI subsection"
+  },
+  {
+   "bugid": 2009446,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add confirmation dialog and show message bar when disabling AI"
+  },
+  {
+   "bugid": 2010521,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Custom Homepage Settings: display custom homepage domains as description in \"Choose a specific site\" box"
+  },
+  {
+   "bugid": 2011931,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Search engines default dropdown is not closed when clicked"
+  },
+  {
+   "bugid": 2012151,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Set the height of the new additional search engines list box in preferences"
+  },
+  {
+   "bugid": 2012344,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Hide main AI settings when the feature is blocked"
+  },
+  {
+   "bugid": 2012686,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "The \"Available\" dropdown for each AI Feature from the AI control settings page drops on a second row"
+  },
+  {
+   "bugid": 2012822,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Fix typo for payment methods description text in Settings UI"
+  },
+  {
+   "bugid": 2009875,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Perma [tier 2] browser/base/content/test/sync/browser_sendtab_telemetry.js | test_sendtab_tab_context_menu - Test timed out"
+  },
+  {
+   "bugid": 2010993,
+   "status": "NEW",
+   "component": "Firefox:Translations",
+   "summary": "Make Translations UI States Reactive to Changes in Feature Enabledness"
+  },
+  {
+   "bugid": 2012139,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Undef some macro definition at the end of a CU to prevent unified build failures"
+  },
+  {
+   "bugid": 2012556,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Unneeded dependency on python3-pip"
+  },
+  {
+   "bugid": 2009742,
+   "status": "NEW",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma beta gradle toolchain gmake[4]: *** [/builds/worker/workspace/build/src/toolkit/mozapps/installer/packager.mk:25: stage-package] Error 1"
+  },
+  {
+   "bugid": 2011499,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Create feature flag for S2S"
+  },
+  {
+   "bugid": 2007156,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Update wordmark for Android brand refresh mvp"
+  },
+  {
+   "bugid": 2008736,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "Move Downloads navigation logic to a middleware"
+  },
+  {
+   "bugid": 1962611,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Outdated package in gecko-dev/mobile/android/fenix/plugins/apksize/build.gradle"
+  },
+  {
+   "bugid": 1999990,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Remove (activity as HomeActivity) casts in SavedLoginsFragment"
+  },
+  {
+   "bugid": 1987214,
+   "status": "NEW",
+   "component": "Firefox for Android:Logins",
+   "summary": "Remove old Logins UI code"
+  },
+  {
+   "bugid": 2011327,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "apksize plugin not reporting since Dec 12, 2025"
+  },
+  {
+   "bugid": 2012245,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Remove AppServicesRelayStatusFetcher and its dependencies"
+  },
+  {
+   "bugid": 1975314,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Management Phase 1] Remove the old Tabs Tray code"
+  },
+  {
+   "bugid": 2012463,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from ContainerMiddlewareTest"
+  },
+  {
+   "bugid": 2012470,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule  and runTestOnMain from feature.addons"
+  },
+  {
+   "bugid": 2012728,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update MockK to version 1.14.9"
+  },
+  {
+   "bugid": 2012672,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disable testETPSettingsItemsAndSubMenus UI test"
+  },
+  {
+   "bugid": 2012684,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix UI tests affected by compose snapshot state being observed from multiple threads when verifying the collection tabs"
+  },
+  {
+   "bugid": 2012717,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix UI tests affected by compose snapshot state being observed from multiple threads when expanding a collection"
+  },
+  {
+   "bugid": 2012490,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Barely visible options on date picker from https://mozilla-mobile.github.io/testapp/"
+  },
+  {
+   "bugid": 2012169,
+   "status": "RESOLVED",
+   "component": "Mozilla QA:Update Testing",
+   "summary": "Update-tests fail on staging releases"
+  },
+  {
+   "bugid": 2011437,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "treat decision tasks on Try higher as higher priority than action tasks"
+  },
+  {
+   "bugid": 1992943,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Write dummy values to OS key store to test retention"
+  },
+  {
+   "bugid": 2012486,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fix inspectFields API doesn't include fields in a nested iframe"
+  },
+  {
+   "bugid": 2004881,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Password update dialog reveals password"
+  },
+  {
+   "bugid": 2008703,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Replace usage of nsILoginManager::removeAllUserFacingLogins with removeAllUserFacingLoginsAsync"
+  },
+  {
+   "bugid": 2010455,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "Remove or update probes expiring at the end of Firefox 149: startup.profile_* before Gecko version gets increased to 150 on 2026-02-23"
+  },
+  {
+   "bugid": 2007607,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Use one webRequest listener for all of our UA overrides/blocks in interventions.js, so we do just one IPC on startup for each."
+  },
+  {
+   "bugid": 2007934,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Minor logging API cleanup for shims.js and interventions.js"
+  },
+  {
+   "bugid": 2012543,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Experiments",
+   "summary": "Make sure trialML API methods rejects with an explicit extension error if called after the API has been disabled globally through prefs"
+  }
+ ],
+ "fixed": 97,
+ "total": 111,
+ "restricted": 4
+}
