@@ -1,0 +1,682 @@
+{
+ "date": "2026-01-30",
+ "buildid": "20260130092147",
+ "cset": "20b1a1e6c530f3506d5378bf5f4da504b6f03661",
+ "bugs": [
+  {
+   "bugid": 2013378,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add checks for nothing durations in MediaDecoderStateMachine::LoopingDecodingState prints"
+  },
+  {
+   "bugid": 2013382,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Properly cleanup outstanding output buffers and HW device context with MediaCodec"
+  },
+  {
+   "bugid": 2012849,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Move out of mako for longhand properties metadata."
+  },
+  {
+   "bugid": 1802904,
+   "status": "REOPENED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "Frequent dom/events/test/test_drag_image_file.html | single tracking bug"
+  },
+  {
+   "bugid": 2013184,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Credential Management",
+   "summary": "Storage connection not closed: memory[pid] Hit MOZ_CRASH() at /home/morbo/git/firefox/storage/mozStorageService.cpp:736"
+  },
+  {
+   "bugid": 2010958,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Add telemetry and logging for GLS location fallback observability"
+  },
+  {
+   "bugid": 2013361,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Do not fall back to NetworkLocationProvider when MacOS gets LocationUnknown"
+  },
+  {
+   "bugid": 1995636,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Firefox throws from history APIS (e.g. pushState, replaceState) if it's been called rapidly enough to trigger the rate-limit"
+  },
+  {
+   "bugid": 2009931,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Improve error handling for nsDocShell::InitWindow"
+  },
+  {
+   "bugid": 1978714,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: (aChild2 ? *aChild2->ComputeIndexInParentNode() : aParent.GetChildCount()) < (aChild1 ? *aChild1->ComputeIndexInParentNode() : aParent.GetChildCount()), at /builds/worker/checkouts/gecko/dom/base/nsContentUtils.cpp:3401"
+  },
+  {
+   "bugid": 2011818,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Highlights.add with lots of ranges is non-linear on the number of ranges."
+  },
+  {
+   "bugid": 1994763,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Serializers",
+   "summary": "Copying multiple lines from `<details>` causes everything in it to be copied"
+  },
+  {
+   "bugid": 2012638,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Serializers",
+   "summary": "Make `UpdateSelectionCacheOnRepaintSelection()` run in all platforms in debug builds"
+  },
+  {
+   "bugid": 2012854,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Android support for the WebAuthn largeBlob extension"
+  },
+  {
+   "bugid": 2011966,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Emails are not readable with JAWS in Thunderbird Daily"
+  },
+  {
+   "bugid": 2013142,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Enable SIMD for jxl-rs"
+  },
+  {
+   "bugid": 2013145,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Remove unused C++ libjxl"
+  },
+  {
+   "bugid": 2013185,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "normalize basic decoder gtests for avif"
+  },
+  {
+   "bugid": 2011700,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ webrender::render_task::render_task_sanity_check]"
+  },
+  {
+   "bugid": 2013278,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update test262 (January 29, 2026)"
+  },
+  {
+   "bugid": 2013330,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove dissrc"
+  },
+  {
+   "bugid": 2010219,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move Intl.Segmenter initialisation to C++"
+  },
+  {
+   "bugid": 2010220,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move Intl.Collator to C++"
+  },
+  {
+   "bugid": 2010221,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move Intl.DurationFormat initialisation to C++"
+  },
+  {
+   "bugid": 2010286,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Firefox 147 reports \"Europe/Berlin\" instead of \"Europe/Zurich\" as timezone"
+  },
+  {
+   "bugid": 2007672,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "ESM: Don't attempt to decode wasm bytecode as text"
+  },
+  {
+   "bugid": 2011462,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Investigate assertions in crashtests after bug 1994346 with layout.abspos.fragmentainer-aware-positioning.enabled=true"
+  },
+  {
+   "bugid": 2001496,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Chat History View/Search"
+  },
+  {
+   "bugid": 2003064,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Connect @Mentions"
+  },
+  {
+   "bugid": 2005414,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Revisit implementation and requirements for message ordinals and summaries"
+  },
+  {
+   "bugid": 2007022,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Update Ask Button design"
+  },
+  {
+   "bugid": 2008973,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Adapt dark mode styling for Smartbar"
+  },
+  {
+   "bugid": 2009866,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Update reopen chat convo from app menu bar"
+  },
+  {
+   "bugid": 2010493,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "add AI Window theme priority logic in LightweightThemeConsumer"
+  },
+  {
+   "bugid": 2010679,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Create Testing for Smart Window Chip Components"
+  },
+  {
+   "bugid": 2011554,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[FirstRun] Update chrome when firstrun is on vertical tabs"
+  },
+  {
+   "bugid": 2013418,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "user messages are not displaying in chat area"
+  },
+  {
+   "bugid": 2009458,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Load Memories prompts from remote settings"
+  },
+  {
+   "bugid": 2012215,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Fix regex on remote-settings=prompts version"
+  },
+  {
+   "bugid": 1984171,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Use spidermonkey regex in URLPattern"
+  },
+  {
+   "bugid": 2011767,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "urlpattern crate version bump 0.5.2"
+  },
+  {
+   "bugid": 1986300,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Consider revoking permissions for sites blocked by Google Safe Browsing"
+  },
+  {
+   "bugid": 1299611,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Adding policy rules to the Windows sandbox can cause a buffer overrun"
+  },
+  {
+   "bugid": 2011376,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Use AddFutureDir rather than prefix matches in some places."
+  },
+  {
+   "bugid": 2012950,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Firefox 147.0.2 UI displays garbled characters instead of proper text in settings and menus"
+  },
+  {
+   "bugid": 2013249,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Add more logging to dmabuf export code"
+  },
+  {
+   "bugid": 2011090,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Use a StaticString as name parameter for SharedThreadPool creation"
+  },
+  {
+   "bugid": 2010018,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Release and merge back Glean v67.0.0"
+  },
+  {
+   "bugid": 2010821,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "Document/clarify how \"bugs\" and \"data_reviews\" should be used in metrics.yaml and pings.yaml (especially with data renewals)"
+  },
+  {
+   "bugid": 2012028,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Intermittent devtools/client/responsive/test/browser/browser_touch_all_events_long_tap.js | single tracking bug"
+  },
+  {
+   "bugid": 1987123,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "The generate task should run for JavaScript changes where docs might be generated from the JavaScript"
+  },
+  {
+   "bugid": 2010178,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the AMP suggestions row UI"
+  },
+  {
+   "bugid": 2010181,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the MDN suggestions row UI"
+  },
+  {
+   "bugid": 2010185,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Update the Yelp suggestions row UI"
+  },
+  {
+   "bugid": 2009534,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update \"connected\" and \"disconnected\" states when turning off/on the VPN"
+  },
+  {
+   "bugid": 2009535,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add a \"connected\" + \"excluded\" state when the VPN is on, but the current site is excluded"
+  },
+  {
+   "bugid": 2011977,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update IPPNimbusHelper to only check for the control branch"
+  },
+  {
+   "bugid": 2013341,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Simplify ipprotection-button icon rules"
+  },
+  {
+   "bugid": 2012562,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update In-product messaging governance table"
+  },
+  {
+   "bugid": 1956068,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/extensions/newtab/test/browser/browser_as_render.js | single tracking bug"
+  },
+  {
+   "bugid": 1996707,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Intermittent browser/extensions/newtab/test/browser/browser_newtab_ping.js | single tracking bug"
+  },
+  {
+   "bugid": 2008160,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Decorative image not programmatically identified (Settings dialog > Manage topics button)"
+  },
+  {
+   "bugid": 2012765,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Panel list reusable component has extra inline padding"
+  },
+  {
+   "bugid": 2013369,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "\"multi-payload\" type for newtabTrainhop feature configuration needs documentation"
+  },
+  {
+   "bugid": 2012986,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 550520193085788c1dbb1dac0d4565109fbbb49f from 2026-01-26 18:25:50"
+  },
+  {
+   "bugid": 1987201,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent TV browser/components/preferences/tests/browser_privacy_allowListPreference_reload.js | Test timed out -"
+  },
+  {
+   "bugid": 2011626,
+   "status": "REOPENED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent browser/components/preferences/tests/browser_aiFeatures.js | single tracking bug"
+  },
+  {
+   "bugid": 2012694,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Selecting an AI model from the \"Chatbot in Sidebar\" dropdown after being blocked will still show the Blocked status"
+  },
+  {
+   "bugid": 2012818,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Hide translations settings when blocked by AI Controls"
+  },
+  {
+   "bugid": 2013061,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "link preview control is hidden resulting in empty row"
+  },
+  {
+   "bugid": 2013077,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Telemetry to record the \"Block AI enhancements\" preference as a metric"
+  },
+  {
+   "bugid": 2013274,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Selecting an AI model in the Firefox Sidebar will not show the selected Model on the AI controls page"
+  },
+  {
+   "bugid": 2007449,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "New messaging system triggers for Split View"
+  },
+  {
+   "bugid": 2009661,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Using the Add a Split View option on an unloaded tab will only display the about:opentabs page and a blank space"
+  },
+  {
+   "bugid": 2005854,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Paint the toolbox background-color to the body element."
+  },
+  {
+   "bugid": 1889753,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Remove all quality estimation model code"
+  },
+  {
+   "bugid": 1968038,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Make it more clear that bergamot-translator.js is generated code"
+  },
+  {
+   "bugid": 2010993,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Make Translations UI States Reactive to Changes in Feature Enabledness"
+  },
+  {
+   "bugid": 2002002,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Stop relying on Taskgraph vendor"
+  },
+  {
+   "bugid": 2012160,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "add standard tags to decision tasks and tasks created by morph"
+  },
+  {
+   "bugid": 2009742,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma beta gradle toolchain gmake[4]: *** [/builds/worker/workspace/build/src/toolkit/mozapps/installer/packager.mk:25: stage-package] Error 1"
+  },
+  {
+   "bugid": 2013149,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Remove the VS2022 toolchains"
+  },
+  {
+   "bugid": 2010700,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Create public Compose root, Preview,  and Store primitives"
+  },
+  {
+   "bugid": 2000101,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Refactor FirefoxTheme.getTheme to remove its dependency on Settings"
+  },
+  {
+   "bugid": 2004990,
+   "status": "NEW",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads path] Fix the name guessing for new Download location"
+  },
+  {
+   "bugid": 1968585,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Fenix makes three location services calls before the applink startup url request"
+  },
+  {
+   "bugid": 2013150,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update AndroidX Paging to version 3.4.0"
+  },
+  {
+   "bugid": 2013174,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 57f37cd43031e44518f0e240f2e0409ba72eae91 from 2026-01-29 05:03:19"
+  },
+  {
+   "bugid": 2012103,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Configure brand refresh onboarding"
+  },
+  {
+   "bugid": 1997131,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Record telemetry for Relay (using middleware or controller, etc)"
+  },
+  {
+   "bugid": 2011477,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Private tab unlock prompt shows up on Android Lock screen"
+  },
+  {
+   "bugid": 2012251,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Make FxRelay internal"
+  },
+  {
+   "bugid": 2012803,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Remove unused members in FxRelay"
+  },
+  {
+   "bugid": 2012808,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Add logging for null account in Eligibility Feature and remove getOrNull() from checkRelayStatus call"
+  },
+  {
+   "bugid": 2013066,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Stories",
+   "summary": "Add a Nimbus flag and secret setting for enabling Merino Rust client for fetching stories"
+  },
+  {
+   "bugid": 2013099,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Google Play Services Ads Identifier to version 18.3.0"
+  },
+  {
+   "bugid": 2013100,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update KSP to version 2.3.5"
+  },
+  {
+   "bugid": 2013268,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from feature.media tests"
+  },
+  {
+   "bugid": 2013286,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix UI tests affected by compose snapshot state being observed from multiple threads when opening the main menu"
+  },
+  {
+   "bugid": 1958716,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:WebAuthn",
+   "summary": "Android support for WebAuthn PRF extension"
+  },
+  {
+   "bugid": 2009019,
+   "status": "REOPENED",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "Support actions in Github based Gecko Decision tasks"
+  },
+  {
+   "bugid": 2010334,
+   "status": "REOPENED",
+   "component": "Release Engineering:Firefox-CI Administration",
+   "summary": "Enable cron in enterprise-firefox"
+  },
+  {
+   "bugid": 2012735,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "[deb13] Perma ModuleNotFoundError: No module named 'boto.vendored.six.moves' in generate-checksums script"
+  },
+  {
+   "bugid": 2012405,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Intermittent Windows Debug Mn [taskcluster:error] Aborting task... due to invalid maxRunTime"
+  },
+  {
+   "bugid": 2011113,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent Page Page.waitForNetworkIdle should work with delayed response (page.spec.js) | expected PASS"
+  },
+  {
+   "bugid": 2013170,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Prevent remnant files from persisting after running test_removeDownloadsMetadataFromDb.js"
+  },
+  {
+   "bugid": 1988296,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Convert panel variables into design tokens"
+  },
+  {
+   "bugid": 1995556,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Component status JSON timestamp updates every time you run storybook locally"
+  },
+  {
+   "bugid": 2012153,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Always add transparent-gray border on picker color preview"
+  },
+  {
+   "bugid": 2007857,
+   "status": "RESOLVED",
+   "component": "Toolkit:UniFFI Bindings",
+   "summary": "Update UniFFI to 0.31"
+  },
+  {
+   "bugid": 2001125,
+   "status": "RESOLVED",
+   "component": "Tree Management:Perfherder",
+   "summary": "Set up Monitoring for Decision task"
+  },
+  {
+   "bugid": 2009780,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Persist our webcompat intervention and SmartBlock content scripts across sessions."
+  }
+ ],
+ "fixed": 94,
+ "total": 112,
+ "restricted": 4
+}
