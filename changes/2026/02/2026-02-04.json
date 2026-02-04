@@ -1,0 +1,562 @@
+{
+ "date": "2026-02-04",
+ "buildid": "20260204094524",
+ "cset": "ab79c347a7844435bf155b6ff78757fdd6a605d1",
+ "bugs": [
+  {
+   "bugid": 2008471,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Ensure media.ffvpx-hw.enabled is honoured for video decoders"
+  },
+  {
+   "bugid": 2014176,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Add checks for nothing durations in MediaDecoder::CallSeek prints"
+  },
+  {
+   "bugid": 2013458,
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-inline-3] Implement style system support for 'text-box' property"
+  },
+  {
+   "bugid": 1867743,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[popover]  support popover=hint"
+  },
+  {
+   "bugid": 1996055,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: array && (*array)->Length() == 1, at /builds/worker/checkouts/gecko/dom/base/ShadowRoot.cpp:766"
+  },
+  {
+   "bugid": 2013396,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Do not include geo.provider.network.* prefs in Android"
+  },
+  {
+   "bugid": 2013467,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Don't ship the gls key in the android binary"
+  },
+  {
+   "bugid": 2013521,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Turn copy assignment into move assignment in parser/"
+  },
+  {
+   "bugid": 1977890,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "crash near null in [@ GetRangeBehaviour]"
+  },
+  {
+   "bugid": 1979463,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Hit MOZ_CRASH(isNodeContainedInRange) at /builds/worker/checkouts/gecko/dom/base/ContentIterator.cpp:1245"
+  },
+  {
+   "bugid": 1981151,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: lastCandidate == (endRef.GetTreeKind() == TreeKind::Flat ? endContainer->GetChildAtInFlatTree(offset - 1) : endContainer->GetChildAt_Deprecated(offset - 1)), at /dom/base/ContentIterator.cpp:1159"
+  },
+  {
+   "bugid": 1996077,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: isSome(), at /builds/worker/workspace/obj-build/dist/include/mozilla/Maybe.h:998"
+  },
+  {
+   "bugid": 2008277,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Pointerout and Mouseout behave differently over 3rd-party iframes (Pointerout is unreliable)"
+  },
+  {
+   "bugid": 2006571,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Avoid synchronous dispatch to Renderer thread to create WebRenderAPI"
+  },
+  {
+   "bugid": 2014294,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "TexUnpackSurface::TexOrSubImage crashes with SurfaceDescriptorGPUVideo + SurfaceTextureHost"
+  },
+  {
+   "bugid": 1980986,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "imgLoader should follow Cache-Control when calling PutIntoCache"
+  },
+  {
+   "bugid": 2005428,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Document WebGPU cycle collection macros"
+  },
+  {
+   "bugid": 2013143,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Let overlay of WebGL/WebGPU by using IDCompositionTexture ride the trains to release on Windows"
+  },
+  {
+   "bugid": 2009158,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[riscv64] Use Zba and Zbb extensions more in [Macro]Assembler-riscv64"
+  },
+  {
+   "bugid": 2012565,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid O(n^2) bytecode iteration for PerfSpewer source locations in BaseCompiler::emitBody()"
+  },
+  {
+   "bugid": 1966773,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Pretenure thisObject allocations for scripted JSOp::New"
+  },
+  {
+   "bugid": 2010224,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move Intl.NumberFormat to C++"
+  },
+  {
+   "bugid": 2010225,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move Intl.PluralRules to C++"
+  },
+  {
+   "bugid": 2013335,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: dst != src, at /builds/worker/checkouts/gecko/js/src/gc/Barrier.h:1178"
+  },
+  {
+   "bugid": 2013427,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Assertion failure: aScale >= 0.0f (negative scaling factors must be handled manually), at /builds/worker/workspace/obj-build/dist/include/nsCoord.h:140"
+  },
+  {
+   "bugid": 2010353,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Assertion failure: !mFinishedBuildingColumns (Should only call once!), at /builds/worker/checkouts/gecko/layout/generic/ColumnSetWrapperFrame.cpp:107"
+  },
+  {
+   "bugid": 2011709,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Switch to a shadow root to render the nsComboboxControl selected content and arrow."
+  },
+  {
+   "bugid": 2014012,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "MOZ_CRASH_UNSAFE_FMT cannot be used"
+  },
+  {
+   "bugid": 2005290,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Update FXA scope for chat authentication"
+  },
+  {
+   "bugid": 2006251,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "display ai window conversation starters"
+  },
+  {
+   "bugid": 2013894,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The \"InvalidStateError JSWindowActorChild.document getter\" console error is triggered when enabling the Block all AI enhancements from the AI controls page"
+  },
+  {
+   "bugid": 2013393,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Implement search handoff Option 1 - automatic run_search tool with SERP content retrieval, reworked"
+  },
+  {
+   "bugid": 2006901,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "100% browser_ml_summarizer_perf regression on Thu December 18 2025"
+  },
+  {
+   "bugid": 2013273,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Modernize C enum used in MathML layout"
+  },
+  {
+   "bugid": 2005867,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect raw canvas images"
+  },
+  {
+   "bugid": 2010671,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CSS System Colors"
+  },
+  {
+   "bugid": 2011018,
+   "status": "REOPENED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Do not wait excessively during collection"
+  },
+  {
+   "bugid": 2013757,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "migrate UniquePtr to std::unique_ptr in SVG code"
+  },
+  {
+   "bugid": 2014019,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "RTL Arabic text on SVG <textPath> is broken since Firefox 146"
+  },
+  {
+   "bugid": 2013640,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Keep Windows GPU sandbox at USER_INTERACTIVE, if there is not enough room for font rules."
+  },
+  {
+   "bugid": 2013891,
+   "status": "RESOLVED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Remove useless const qualifier in LocalStorageCache and StorageIPC"
+  },
+  {
+   "bugid": 2012866,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "improve casting hygiene in nrappkit and nICEr"
+  },
+  {
+   "bugid": 2013339,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "improve the ergonomics on nrappkit's RCALLOC"
+  },
+  {
+   "bugid": 2013368,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "add c-compatible fixes to nrappkit/nICEr that will make migration to c++ easier"
+  },
+  {
+   "bugid": 2012350,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[wayland] Toggling the titlebar checkbox sometimes stops drawing the window"
+  },
+  {
+   "bugid": 1984095,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Overridden properties checkbox gets unchecked when reloading the page"
+  },
+  {
+   "bugid": 2011853,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Make the \"Show less frequently\" option of addon suggestions consistent with other suggestions"
+  },
+  {
+   "bugid": 2013639,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Suggest UI standardization fixes and cleanup"
+  },
+  {
+   "bugid": 2013358,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "manifestparser requires Python <3.13"
+  },
+  {
+   "bugid": 2013390,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "mozinstall may attempt to install .dmg file as a tarfile"
+  },
+  {
+   "bugid": 2012195,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Do not hardcode bandwidth limit in Fluent string for paused state UI"
+  },
+  {
+   "bugid": 2013315,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "Right arrow is missing for VPN button in toolbar overflow menu"
+  },
+  {
+   "bugid": 2012741,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[AIWindow] Land strings for Firefox ToS Modal on Accounts Sign In"
+  },
+  {
+   "bugid": 2013436,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "[Feature] Land new user TOU onboarding modal for Windows & Mac"
+  },
+  {
+   "bugid": 1894013,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "After restart, the names and icons of the reordered top sites are mismatched (if placed after the 'Add Shortcut)"
+  },
+  {
+   "bugid": 2013023,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add telemetry for Briefing Card"
+  },
+  {
+   "bugid": 2011508,
+   "status": "RESOLVED",
+   "component": "Firefox:Page Info Window",
+   "summary": "Page Info auto-plays media"
+  },
+  {
+   "bugid": 1920926,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent browser/components/search/test/browser/browser_426329.js | single tracking bug"
+  },
+  {
+   "bugid": 2011673,
+   "status": "VERIFIED",
+   "component": "Firefox:Security",
+   "summary": "Perma browser/base/content/test/about/browser_aboutNetError.js | onlyAllow3DESWithDeprecatedTLS - netErrorCard is rendered. - \"undefined\" == true - got (void 0), expected true (operator ==) when Gecko 149 merges to beta on 2026-02-23"
+  },
+  {
+   "bugid": 1972071,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Search Shortcuts to config-based prefs"
+  },
+  {
+   "bugid": 1995062,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Backup settings to config-based prefs"
+  },
+  {
+   "bugid": 2011726,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Resolve partial URLs and validate canonical URLs before using"
+  },
+  {
+   "bugid": 2003764,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Handle drag and drop of splitview containers when part of a multiselection"
+  },
+  {
+   "bugid": 2007061,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Dragging a group that contains a Split View will not hide the Split View if the Split View is selected"
+  },
+  {
+   "bugid": 2009945,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "The about:opentabs page is moved in the left view if a tab is selected while the left view is active"
+  },
+  {
+   "bugid": 2012633,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Splitter component is not accessible"
+  },
+  {
+   "bugid": 2012847,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Land strings for Split View onboarding"
+  },
+  {
+   "bugid": 2013097,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Add splitview.uri_count telemetry metric"
+  },
+  {
+   "bugid": 2001025,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Perma [tier 2] Windows MinGW ld.lld: error: duplicate symbol: __declspec(dllimport) | clang: error: linker command failed with exit code 1 (use -v to see invocation)"
+  },
+  {
+   "bugid": 2010200,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Add default `distribution.ini` for official Linux builds"
+  },
+  {
+   "bugid": 2011880,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Build rust libraries before rust binaries"
+  },
+  {
+   "bugid": 2012528,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Claude code invoked subprocesses fail to respect mozconfig settings"
+  },
+  {
+   "bugid": 2014166,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "non-debug build fails on Solaris i386 while trying to download terser"
+  },
+  {
+   "bugid": 2013889,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add 'head_ref' to standard V2 index routes for projects using Git"
+  },
+  {
+   "bugid": 2014159,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Unable to build on enterprise CI"
+  },
+  {
+   "bugid": 1977924,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Update Gecko prompt API to provide relay logins"
+  },
+  {
+   "bugid": 2004990,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads path] Fix the name guessing for new Download location"
+  },
+  {
+   "bugid": 2014040,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 50fa3cb0d77ff645bff220d61321f74676af4ebf from 2026-02-03 05:02:25"
+  },
+  {
+   "bugid": 2013972,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Add a Nimbus flag to control homepage opening screen default"
+  },
+  {
+   "bugid": 2013839,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Refactor: Clean up unused fields and formatting for the onboarding screen redesign"
+  },
+  {
+   "bugid": 2013405,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Stories",
+   "summary": "Clean up Pocket sponsored stories use cases"
+  },
+  {
+   "bugid": 2012464,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from storage.sync tests"
+  },
+  {
+   "bugid": 2014150,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix UI tests affected by compose snapshot state being observed from multiple threads when opening the main menu"
+  },
+  {
+   "bugid": 2014049,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Puppeteer package-lock.json should not be ignored by git"
+  },
+  {
+   "bugid": 2011471,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Simplify logic for commands manipulating the window states, size and position"
+  },
+  {
+   "bugid": 2013822,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Wait for navigation-committed event for navigation to error page"
+  },
+  {
+   "bugid": 2013291,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Firefox can't start without a reboot after a zucchini-based macOS update"
+  },
+  {
+   "bugid": 2011705,
+   "status": "VERIFIED",
+   "component": "Toolkit:Places",
+   "summary": "Perma toolkit/components/places/tests/browser/browser_bug680727.js | Test timed out when Gecko 149 merges to beta on 2026-02-23"
+  },
+  {
+   "bugid": 1882452,
+   "status": "REOPENED",
+   "component": "Toolkit:PopupNotifications and Notification Bars",
+   "summary": "Intermittent browser/base/content/test/popupNotifications/browser_popupNotification_security_delay.js | single tracking bug"
+  },
+  {
+   "bugid": 1665637,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove the 'saved-session' ping"
+  },
+  {
+   "bugid": 2011372,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "FOG always initializes Glean on short sessions on shutdown with firefox.desktop app ID"
+  },
+  {
+   "bugid": 2012613,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Intermittent toolkit/components/extensions/test/xpcshell/test_ext_urlclassifier.js | single tracking bug"
+  }
+ ],
+ "fixed": 68,
+ "total": 92,
+ "restricted": 3
+}
