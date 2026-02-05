@@ -1,0 +1,736 @@
+{
+ "date": "2026-02-05",
+ "buildid": "20260205090734",
+ "cset": "57fbf639ea5bd2e56dd9e1bef16497372385229d",
+ "bugs": [
+  {
+   "bugid": 2014630,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Update application-services to 149.20260204050206"
+  },
+  {
+   "bugid": 2013957,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "VideoFrame::Format::ByteCount might overflow on 32-bit machines"
+  },
+  {
+   "bugid": 2013458,
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-inline-3] Implement style system support for 'text-box' property"
+  },
+  {
+   "bugid": 2014120,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove some noise from generated code."
+  },
+  {
+   "bugid": 2014278,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Do not allocate unused hash-sets when collecting attribute rules"
+  },
+  {
+   "bugid": 2014404,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable the `layout.css.style-queries.enabled` pref on Nightly"
+  },
+  {
+   "bugid": 1847089,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Detect UA transitions on same-document navigations"
+  },
+  {
+   "bugid": 1844439,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Assertion failure: aValue >= 0 && aValue < kMsPerDay (aValue must be milliseconds within a day!), at /dom/html/input/DateTimeInputTypes.cpp:137"
+  },
+  {
+   "bugid": 2013289,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ nsDocShell::ShouldDoInitialAboutBlankSyncLoad]"
+  },
+  {
+   "bugid": 2008613,
+   "status": "REOPENED",
+   "component": "Core:DOM: Networking",
+   "summary": "New wpt failures in /beacon/beacon-basic.https.window.html"
+  },
+  {
+   "bugid": 2012568,
+   "status": "NEW",
+   "component": "Core:DOM: Networking",
+   "summary": "Fix WPT failure: \"sendBeacon() with a stream does not work due to the keepalive flag being set\""
+  },
+  {
+   "bugid": 1651843,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Investigate using SetWaitableTimer instead of Sleep in Windows sampler loop"
+  },
+  {
+   "bugid": 1681411,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove the old AutoProfilerLabel that was added to mozglue before the baseprofiler"
+  },
+  {
+   "bugid": 1661106,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GeckoDisplay.capture() introduces stuttering while scrolling"
+  },
+  {
+   "bugid": 2014329,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "make animated avif related prefs only mirrored on startup"
+  },
+  {
+   "bugid": 2014043,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 5cfc580345c90401bfe6d2ac4133d28051b3e0f6 from 2026-02-03 00:41:16"
+  },
+  {
+   "bugid": 1441689,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "When collecting stacks for the profiler, include line + column information for JIT frames"
+  },
+  {
+   "bugid": 1686272,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Error 'assert test.selfhosted_xdr_mode == \"encode\"' when running jit-tests with --repeat option"
+  },
+  {
+   "bugid": 1983157,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Require the JS engine to own the task queue."
+  },
+  {
+   "bugid": 2014395,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "There's no gcparam to control incremental weak map marking"
+  },
+  {
+   "bugid": 1970162,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Support \"notation\" in Intl.PluralRules"
+  },
+  {
+   "bugid": 2013841,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Disallow adding weeks, days, and time units to PlainYearMonth"
+  },
+  {
+   "bugid": 2013842,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Indicate ISO date 1868-10-23 as start of Meiji era"
+  },
+  {
+   "bugid": 2013843,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Use hardcoded table of reference years for Chinese and Dangi leap months"
+  },
+  {
+   "bugid": 2013844,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Pass overflow to AddYearMonthDuration"
+  },
+  {
+   "bugid": 2013845,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Update NonISODateUntil to match current spec"
+  },
+  {
+   "bugid": 2002490,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Intermittent /builds/worker/checkouts/gecko/js/src/jit-test/tests/wasm/excessive-inlining.js:58:9 Error: Assertion failed: got \"baseline\", expected \"optimized\""
+  },
+  {
+   "bugid": 2014221,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Use StyleSizeOverrides::SizeFrom() to simplify code"
+  },
+  {
+   "bugid": 2014156,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Block and Inline",
+   "summary": "Use HarfBuzz to retrieve font baselines and synthesize fallbacks"
+  },
+  {
+   "bugid": 2014314,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Columns",
+   "summary": "Perma /css/css-multicol/multicol-span-all-dynamic-add-014.html | css/css-multicol/multicol-span-all-dynamic-add-014.html | Testing http://web-platform.test:8000/css/css-multicol/multicol-span-all-dynamic-add-014.html == http://web-pl | single tracking bug"
+  },
+  {
+   "bugid": 2013887,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Remove nsISelectControlFrame."
+  },
+  {
+   "bugid": 2006251,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "display ai window conversation starters"
+  },
+  {
+   "bugid": 2012216,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "update firstrun welcome screens styles in darkmode and three model picker placeholder icons"
+  },
+  {
+   "bugid": 2012372,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Sign out from Accounts should take user back to classic mode window"
+  },
+  {
+   "bugid": 2013398,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Smart Window] Update service name to smartwindow in FxA auth URL"
+  },
+  {
+   "bugid": 2013944,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Tab detach switches out of smart window mode"
+  },
+  {
+   "bugid": 2013979,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Search handoff / search blurb button does not reappear when reopening chat"
+  },
+  {
+   "bugid": 2011763,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Use MLPA token on mlpa endpoint only"
+  },
+  {
+   "bugid": 2013393,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Implement search handoff Option 1 - automatic run_search tool with SERP content retrieval, reworked"
+  },
+  {
+   "bugid": 2013528,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Replace MathML C macros for constants with constexpr"
+  },
+  {
+   "bugid": 2013154,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Tear out remaining MD2 code"
+  },
+  {
+   "bugid": 2014219,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Allow non-local traffic exception for DRM provisioning for Android media mochitests"
+  },
+  {
+   "bugid": 2014343,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add longer timeout for WPT webtransport/echo-large-bidirectional-streams.https.any.js"
+  },
+  {
+   "bugid": 2013964,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Avoid including nsHttpResponseHead.h in other headers"
+  },
+  {
+   "bugid": 2005867,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect raw canvas images"
+  },
+  {
+   "bugid": 2010671,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect CSS System Colors"
+  },
+  {
+   "bugid": 2011018,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Do not wait excessively during collection"
+  },
+  {
+   "bugid": 2014019,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "RTL Arabic text on SVG <textPath> is broken since Firefox 146"
+  },
+  {
+   "bugid": 2014536,
+   "status": "ASSIGNED",
+   "component": "Core:SVG",
+   "summary": "Use VoidString rather than std::unique_ptr<nsString>"
+  },
+  {
+   "bugid": 2014612,
+   "status": "NEW",
+   "component": "Core:Security: PSM",
+   "summary": "Permanent failures on browser_trust_panel_security_view.js, browser_identityPopup_qwacs.js and test_qwacs.js | single tracking bug"
+  },
+  {
+   "bugid": 2011906,
+   "status": "REOPENED",
+   "component": "Core:Web Painting",
+   "summary": "Crash in [@ mozilla::ActiveScrolledRoot::LowestCommonAncestor]"
+  },
+  {
+   "bugid": 2014218,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Remove kAOLMailMime type"
+  },
+  {
+   "bugid": 2010733,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox 147-149 freezes on Wayland with opaque-region disabled and vsync enabled (regression from Bug 2004002)"
+  },
+  {
+   "bugid": 2014128,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Add more logging to GIO Service"
+  },
+  {
+   "bugid": 2007306,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Win32",
+   "summary": "Tab bar turns blue in High Contrast Black after update and cannot be changed"
+  },
+  {
+   "bugid": 1767707,
+   "status": "REOPENED",
+   "component": "DevTools:Debugger",
+   "summary": "Intermittent devtools/client/debugger/test/mochitest/browser_dbg-backgroundtask-debugging.js | single tracking bug"
+  },
+  {
+   "bugid": 2003232,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add InspectorUtils function to get default anchor element of a given node"
+  },
+  {
+   "bugid": 2010870,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "TypeScript paths aren't correctly picking up all module imports"
+  },
+  {
+   "bugid": 2014249,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Add try.no_artifact setting do disable automatic insertion of '--artifact' for mach try"
+  },
+  {
+   "bugid": 2003798,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Improve name matching for contextual search"
+  },
+  {
+   "bugid": 2011494,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "trust panel: Number of trackers blocked resets to 0 and stays at 0 when reloading"
+  },
+  {
+   "bugid": 2014296,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "The `quicksuggest.online.available` pref is recorded incorrectly in telemetry"
+  },
+  {
+   "bugid": 2014318,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Record pref telemetry in the metrics ping in addition to the events ping"
+  },
+  {
+   "bugid": 2013938,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Update GenerativeAI policy for the new stuff (PDF Alt Text, translations)"
+  },
+  {
+   "bugid": 1942925,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Updating identity.fxaccounts.autoconfig.uri only applies the fetched configuration after starting a sign-in flow"
+  },
+  {
+   "bugid": 1990334,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Accounts",
+   "summary": "Web channel should support being able to know if an oauth flow is in progress and start one if not."
+  },
+  {
+   "bugid": 2005029,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Handle actions from the IPProtectionAlertManager"
+  },
+  {
+   "bugid": 2009466,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Update IP Protection discovery CFR"
+  },
+  {
+   "bugid": 2011514,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "Only enroll users to use IP Protection on opt-in (Get Started)"
+  },
+  {
+   "bugid": 2012195,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Do not hardcode bandwidth limit in Fluent string for paused state UI"
+  },
+  {
+   "bugid": 2014577,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Update owners/peers for installer and updater"
+  },
+  {
+   "bugid": 2010984,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Build write-in textarea component and telemetry for micro-surveys"
+  },
+  {
+   "bugid": 2013355,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land strings for Global Roll out - Set to default guidance notification"
+  },
+  {
+   "bugid": 2004996,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Optimize newtab private ping"
+  },
+  {
+   "bugid": 2011449,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add newtab activation window experiment messaging variants"
+  },
+  {
+   "bugid": 2014510,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab wallpapers local RS data"
+  },
+  {
+   "bugid": 2014524,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Regression: width of large story card title is off in daily briefing 3 column layout"
+  },
+  {
+   "bugid": 2014546,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab wallpapers customize menu setState optimization/fix"
+  },
+  {
+   "bugid": 2014429,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 222a24c623d0c4c7023f2c6f0c1b3ff0fcaad7d9 from 2026-02-04 13:13:05"
+  },
+  {
+   "bugid": 2004499,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Remove placeholder sub-pane data"
+  },
+  {
+   "bugid": 2005325,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Keep keyboard focus on back button when accessing a settings subpage"
+  },
+  {
+   "bugid": 2009117,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Custom Homepage Settings: Wire up a form to add a custom URL"
+  },
+  {
+   "bugid": 2009118,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Custom Homepage Settings: show a reorderable, deletable list of user-added custom URLs"
+  },
+  {
+   "bugid": 2011626,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent browser/components/preferences/tests/browser_aiFeatures.js | single tracking bug"
+  },
+  {
+   "bugid": 2013457,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add icons to \"Homepage\" and \"Firefox Home\" headings on `about:settings#home`"
+  },
+  {
+   "bugid": 2014132,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Swap order of \"Tracking Protection\" and \"Reset Customizations\" card in new ETP custom settings page"
+  },
+  {
+   "bugid": 1632015,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Consider not forever retrying items which fail to upload"
+  },
+  {
+   "bugid": 2006386,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Splitview wrapper/tabs should be preserved when added to a tab group in another window via context menu"
+  },
+  {
+   "bugid": 2007069,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Dragging a Split View to another window in the pinned tabs area will pin the Split View tabs"
+  },
+  {
+   "bugid": 2007447,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "New messaging system actions for Split View"
+  },
+  {
+   "bugid": 2012019,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "splitview tabs cannot be moved together to a new window when using keyboard only"
+  },
+  {
+   "bugid": 1996967,
+   "status": "RESOLVED",
+   "component": "Firefox:Translations",
+   "summary": "Add capability for loadTestPage to take inline HTML"
+  },
+  {
+   "bugid": 2010200,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Add default `distribution.ini` for official Linux builds"
+  },
+  {
+   "bugid": 2008671,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "os.path.join,dirpath,relpath are slowly down run in TestResolver.add_wpt_manifest_data"
+  },
+  {
+   "bugid": 2010823,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Switch fetch tasks to a Debian 13 docker image"
+  },
+  {
+   "bugid": 2013889,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add 'head_ref' to standard V2 index routes for projects using Git"
+  },
+  {
+   "bugid": 2008580,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "oauth callbacks into the native Android app with firefox for Android always fail"
+  },
+  {
+   "bugid": 1977924,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Update Gecko prompt API to provide relay logins"
+  },
+  {
+   "bugid": 2010704,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Implement PageExtractor in GeckoView based on the accepted proposal"
+  },
+  {
+   "bugid": 2010708,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Create SummarizationFragment in Fenix for integration with existing navgraph"
+  },
+  {
+   "bugid": 2014356,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 42c175c2ecb5aa39346dcd9c7b45ff02325562d8 from 2026-02-04 05:02:06"
+  },
+  {
+   "bugid": 2008379,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Add a suspend wrapper for getAttachedClients in FirefoxAccount"
+  },
+  {
+   "bugid": 2008647,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Update the conditions to only show the email masks settings option to eligible users"
+  },
+  {
+   "bugid": 2012393,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[fx-relay] Add the relay feature into the BaseBrowserFragment"
+  },
+  {
+   "bugid": 2014028,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[fx-relay] persist last entitlement check between recreation of the feature"
+  },
+  {
+   "bugid": 2013405,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Stories",
+   "summary": "Clean up Pocket sponsored stories use cases"
+  },
+  {
+   "bugid": 2004982,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Seeing 2 stacking CFRs on Toolbar Redesign"
+  },
+  {
+   "bugid": 2014037,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Trending search suggestions does not show up consistently"
+  },
+  {
+   "bugid": 2014042,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "\"Allow search suggestions in private sessions?\" card should only be displayed when the search query is not empty"
+  },
+  {
+   "bugid": 2014353,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove deprecated usage of String.capitalize() in ApkSizePlugin.kt"
+  },
+  {
+   "bugid": 1937464,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < SearchTest. searchEnginesCanBeChangedTemporarilyFromSearchSelectorMenuTest >"
+  },
+  {
+   "bugid": 2014177,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Update the TestRail links to manual test cases for BrokenSite related UI tests"
+  },
+  {
+   "bugid": 1889915,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Env var PUBLIC_STORAGE is not set in GPU process"
+  },
+  {
+   "bugid": 1962355,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Synthesizing wheel (and maybe touch) scroll limits values for deltaX and deltaY to the scollable element's viewport"
+  },
+  {
+   "bugid": 1994148,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "browsingContext.captureScreenshot should return an error instead of a screenshot with a reduced size"
+  },
+  {
+   "bugid": 2003344,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Add Application Update Documentation"
+  },
+  {
+   "bugid": 2002791,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Switch the crash helper to use Mach IPC instead of Unix sockets on macOS"
+  },
+  {
+   "bugid": 2014178,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "`crash.app_build` metric is taken from the wrong crash annotation"
+  },
+  {
+   "bugid": 2014195,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Main crash process type not set in crash ping metrics"
+  },
+  {
+   "bugid": 2013670,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "High frequency browser/base/content/test/performance/browser_startup_flicker.js | unexpected changed rect: ({x1:0, x2:1279, y1:0, y2:43, w:1280, h:44}), window width: 1280"
+  },
+  {
+   "bugid": 1991910,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "toolkit/components/extensions/test/xpcshell/test_MatchPattern.js fails frequently in parallel"
+  }
+ ],
+ "fixed": 109,
+ "total": 121,
+ "restricted": 4
+}
