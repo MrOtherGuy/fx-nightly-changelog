@@ -1,0 +1,598 @@
+{
+ "date": "2026-02-06",
+ "buildid": "20260206084530",
+ "cset": "edf80f39888560817c32781317ce95de65470d62",
+ "bugs": [
+  {
+   "bugid": 1707584,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement new pseudo-classes for media element states `:playing`, `:paused`, `:seeking`, `:buffering`, `:stalled`, `:muted` and `:volume-locked`"
+  },
+  {
+   "bugid": 2013458,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-inline-3] Implement style system support for 'text-box' property"
+  },
+  {
+   "bugid": 2014086,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": ":nth-of-type selector doesn't work correctly inside @scope"
+  },
+  {
+   "bugid": 2014922,
+   "status": "NEW",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Untangle pseudo-element and anon box definitions."
+  },
+  {
+   "bugid": 2013389,
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Eliminate the ClonedMessageData intermediate type for Structured Clone IPC"
+  },
+  {
+   "bugid": 1867743,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[popover]  support popover=hint"
+  },
+  {
+   "bugid": 2004606,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma macOS /preload/preload-referrer-policy-subresource-header.tentative.html | single tracking bug"
+  },
+  {
+   "bugid": 1973737,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "Allow self to be passed as validation anchor"
+  },
+  {
+   "bugid": 2014615,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Assertion failure: mPreCharacterDataChangeLength < 0 (CharacterDataChanged() should've reset mPreCharacterDataChangeLength), at /builds/worker/checkouts/gecko/dom/events/IMEContentObserver.cpp:920"
+  },
+  {
+   "bugid": 1387528,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "implement non-interval markers for console.timeStamp console.time, and console.timeEnd"
+  },
+  {
+   "bugid": 1651843,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Investigate using SetWaitableTimer instead of Sleep in Windows sampler loop"
+  },
+  {
+   "bugid": 2014723,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Crash in [@ mozilla::layers::WebRenderBridgeParent::ScreenPixelsRequest::~ScreenPixelsRequest]"
+  },
+  {
+   "bugid": 2014363,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Tile corruption/disappearance on NVIDIA proprietary driver + X11 when many DrawTargetWebgl instances share one SharedContextWebgl"
+  },
+  {
+   "bugid": 1709818,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Support animated JXL files"
+  },
+  {
+   "bugid": 2014043,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 5cfc580345c90401bfe6d2ac4133d28051b3e0f6 from 2026-02-03 00:41:16"
+  },
+  {
+   "bugid": 2013343,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Clean up the quad primitive prep code"
+  },
+  {
+   "bugid": 2013687,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Build clip chains a bit more lazily."
+  },
+  {
+   "bugid": 1780686,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Explore supporting Glean metrics within SpiderMonkey"
+  },
+  {
+   "bugid": 1993212,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Investigate allocating WeakMap memory with the buffer allocator"
+  },
+  {
+   "bugid": 2014146,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move all Intl objects into a separate js::intl namespace"
+  },
+  {
+   "bugid": 2014147,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Move OldStyleLanguageTagMapping into LocaleNegotiation"
+  },
+  {
+   "bugid": 2014148,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use string views in SharedIntlData"
+  },
+  {
+   "bugid": 2014149,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Replace Handle/Rooted typedefs in js/src/builtin/intl"
+  },
+  {
+   "bugid": 2013864,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Format plain Temporal objects without regard to DST"
+  },
+  {
+   "bugid": 2002490,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Intermittent /builds/worker/checkouts/gecko/js/src/jit-test/tests/wasm/excessive-inlining.js:58:9 Error: Assertion failed: got \"baseline\", expected \"optimized\""
+  },
+  {
+   "bugid": 2014331,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "crash near null in [@ nsIFrame::CorrectStyleParentFrame]"
+  },
+  {
+   "bugid": 2014613,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "crash near null in [@ mozilla::ComboboxLabelFrame::Reflow]"
+  },
+  {
+   "bugid": 2006248,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "add about:preferences ai window model section with subview"
+  },
+  {
+   "bugid": 2014311,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Smart Window] Update First Run Onboarding Strings"
+  },
+  {
+   "bugid": 2012580,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Integrate modelChoice into smart/ai window model selection logic"
+  },
+  {
+   "bugid": 2013552,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Fix SecurityLogger log prefix tag for MLSecurity"
+  },
+  {
+   "bugid": 2014822,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Bump chat prompt to v2 for run_search tool support"
+  },
+  {
+   "bugid": 2007206,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Minor webidl interface updates for WebTransport update"
+  },
+  {
+   "bugid": 1996306,
+   "status": "ASSIGNED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent /storage-access-api/storage-access-headers.tentative.https.sub.window.html | single tracking bug"
+  },
+  {
+   "bugid": 2010669,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect additional MathML data"
+  },
+  {
+   "bugid": 2010672,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect WGPU Adapter information"
+  },
+  {
+   "bugid": 2010673,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Collect ClientRect information"
+  },
+  {
+   "bugid": 2014536,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Use VoidString rather than std::unique_ptr<nsString>"
+  },
+  {
+   "bugid": 2014807,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "remove unused nr_ice_peer_ctx_dump_state"
+  },
+  {
+   "bugid": 2010475,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Networking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 149: webrtcdtls.key_exchange_algorithm before Gecko version gets increased to 150 on 2026-02-23"
+  },
+  {
+   "bugid": 2014531,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Script overrides no longer visible in the debugger"
+  },
+  {
+   "bugid": 2014538,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "DebuggerImage classnames derived from name are not all prefixed with \"dbg-img-\""
+  },
+  {
+   "bugid": 2013007,
+   "status": "REOPENED",
+   "component": "DevTools:General",
+   "summary": "Add panel for Jake Diagrams"
+  },
+  {
+   "bugid": 2013357,
+   "status": "VERIFIED",
+   "component": "DevTools:Inspector",
+   "summary": "Perma devtools/client/webconsole/test/browser/browser_webconsole_object_inspector_entries.js | Got expected output for \" when Gecko 149 merges to beta on 2026-02-23"
+  },
+  {
+   "bugid": 2014094,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Refactor CssLogic#processMatchedSelectors"
+  },
+  {
+   "bugid": 2014480,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add test for InspectorUtils.getAnchorFor"
+  },
+  {
+   "bugid": 2006822,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "[Regression] Since version 135.0 DevTools Network tab doesn't log requests if URL prefixed with view-source:"
+  },
+  {
+   "bugid": 2006453,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma [tier 2] browser/components/urlbar/tests/browser/searchbar/browser_searchmode.js | single tracking bug"
+  },
+  {
+   "bugid": 2011514,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Only enroll users to use IP Protection on opt-in (Get Started)"
+  },
+  {
+   "bugid": 2012593,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "Put the visibility of the VPN egress location in the status panel behind a pref"
+  },
+  {
+   "bugid": 1999510,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "The \"Firefox speaks your language\" string is no longer displayed on the \"Language Switcher\" Onboarding screen"
+  },
+  {
+   "bugid": 2010649,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update about:welcome restore flow screens with targeting for selectable profiles"
+  },
+  {
+   "bugid": 2014515,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land onboarding refresh strings"
+  },
+  {
+   "bugid": 2010597,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update widget telemetry to pass widget name as a param"
+  },
+  {
+   "bugid": 2011112,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Weather forecast widget - Add telemetry"
+  },
+  {
+   "bugid": 2012821,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Create new telemetry events for widget maximize/minimize and hiding the widget container"
+  },
+  {
+   "bugid": 2012824,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Widget telemetry events pass wrong value to newtab_visit_id"
+  },
+  {
+   "bugid": 2012838,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Customize panel data-eventSource attributes use incorrect camelCase format"
+  },
+  {
+   "bugid": 2013133,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update List widget telemetry to use new unified widget telemetry events"
+  },
+  {
+   "bugid": 2013134,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update Focus Timer widget telemetry to use new unified widget telemetry events"
+  },
+  {
+   "bugid": 2013136,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Replace context menu in Weather widget with panel-list"
+  },
+  {
+   "bugid": 2013138,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update Weather widget telemetry to use new unified widget telemetry events"
+  },
+  {
+   "bugid": 2014197,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove logic that controls weather placement"
+  },
+  {
+   "bugid": 1972365,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Fonts to config-based prefs"
+  },
+  {
+   "bugid": 1995062,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Convert Backup settings to config-based prefs"
+  },
+  {
+   "bugid": 2013459,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "`Move Tab to Split View` in URL bar causes the tab in another window to merge as a third tab in split view"
+  },
+  {
+   "bugid": 2013491,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Moving a Split View from one window to another window while a Split View is selected will make the Split View button invisible and also working for the unselected Split View"
+  },
+  {
+   "bugid": 2014476,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Move source-package rule from js/ to a dedicated mach subcommand"
+  },
+  {
+   "bugid": 2011162,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Failure when running \"./mach wpt --product safari\": virtualenv 20.36.1 has requirement filelock<4,>=3.20.1; python_version >= \"3.10\", but you have filelock 3.18.0."
+  },
+  {
+   "bugid": 1978601,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Figure out how to call runMaintenance for autofill and logins"
+  },
+  {
+   "bugid": 1989603,
+   "status": "NEW",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Firefox no longer shows websites properly when using Samsung Dex"
+  },
+  {
+   "bugid": 1992666,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Crash in [@ java.io.IOException: at com.jakewharton.disklrucache.DiskLruCache.renameTo(DiskLruCache.java)]"
+  },
+  {
+   "bugid": 2011498,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Add shake gesture detection"
+  },
+  {
+   "bugid": 1985031,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "[Experiment] The Setup Checklist cannot be completed/dismissed if the user checks the “Don’t ask again” checkbox on the “Set as default\" prompt and another browser is set as default"
+  },
+  {
+   "bugid": 2014650,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 3df8da496e8e035205cf58061fb1eb884d18d413 from 2026-02-05 05:02:48"
+  },
+  {
+   "bugid": 2014405,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Change the Nova ToU onboarding card title from \"Get ready to run free\" to use the \"Welcome to Firefox\" string resource."
+  },
+  {
+   "bugid": 2007671,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Investigate possible uses of Macrobenchmark to measure performance issues in redesigned synced tabs list composable"
+  },
+  {
+   "bugid": 2012962,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Search configuration is refreshed 2 times when the app is cold started"
+  },
+  {
+   "bugid": 2011989,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Fix coroutine scope in SettingsSearchMiddleware"
+  },
+  {
+   "bugid": 2011990,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Improve logging in DefaultFenixSettingsIndexer"
+  },
+  {
+   "bugid": 2011997,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "[Settings Search] Lazy load Settings Search results"
+  },
+  {
+   "bugid": 2003701,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Improve TabsTray transition animation"
+  },
+  {
+   "bugid": 2004982,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Seeing 2 stacking CFRs on Toolbar Redesign"
+  },
+  {
+   "bugid": 2012993,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from feature.syncedtabs tests"
+  },
+  {
+   "bugid": 2013469,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove BrowserStore mocks from tests"
+  },
+  {
+   "bugid": 2014805,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Kotlin to version 2.3.10"
+  },
+  {
+   "bugid": 1930244,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.SearchTest#searchResultsOpenedInNewTabsGenerateSearchGroupsTest"
+  },
+  {
+   "bugid": 1947395,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - < SettingsSearchTest. verifyShowSearchSuggestionsToggleTest >"
+  },
+  {
+   "bugid": 2012459,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "verifyTheSiteDeletionFromTheNeverTranslateListTest fails using the SwitchListItem"
+  },
+  {
+   "bugid": 2014533,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Perma [tier 2] mozilla.components.lib.crash.service.GleanCrashReporterServiceTest#gleanCrashReporterServiceSendsExceptionCrashPings | java.lang.AssertionError: expected:<1337> but was:<null>"
+  },
+  {
+   "bugid": 2014561,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.NavigationToolbarTest#searchResultsOpenedInNewTabsGenerateSearchGroupsTest | java.lang.AssertionError"
+  },
+  {
+   "bugid": 2014724,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Temporarily remove Pixel 9 from robo-arm config"
+  },
+  {
+   "bugid": 2014412,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Update Focus to dispatch RefreshSearchEnginesAction during application initialization"
+  },
+  {
+   "bugid": 2012793,
+   "status": "ASSIGNED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent Android /webdriver/tests/bidi/input/perform_actions/key.py | test_key_down_closes_browsing_context - Failed: DID NOT RAISE <class 'webdriver.bidi.error.NoSuchFrameException'> | single tracking bug"
+  },
+  {
+   "bugid": 2011401,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Replace usage of nsILoginManager::removeLogin with removeLoginAsync"
+  },
+  {
+   "bugid": 2012133,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Consider removing the tests under toolkit/components/telemetry/tests/integration/tests"
+  },
+  {
+   "bugid": 2007140,
+   "status": "ASSIGNED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Preference value is undefined after clearing by setting to undefined / clearUserPref"
+  },
+  {
+   "bugid": 2013772,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "147.0.0 onwards breaks 1Password Mini form filling (1Password 4.x aka 1Password Classic broken due to initKeyEvent error)"
+  }
+ ],
+ "fixed": 68,
+ "total": 98,
+ "restricted": 5
+}
