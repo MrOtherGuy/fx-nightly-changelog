@@ -1,0 +1,730 @@
+{
+ "date": "2026-02-14",
+ "buildid": "20260214173316",
+ "cset": "844fb16c6ad5b79392ba216d09a4d336cd3528f3",
+ "bugs": [
+  {
+   "bugid": 2013251,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement initial support for CSSNumericValue.to()"
+  },
+  {
+   "bugid": 2016474,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-conditional-5] \"query-less\" container query support"
+  },
+  {
+   "bugid": 2016851,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Remove pass/fail-allowance annotations in css/css-color/animation/color-interpolation.html.ini"
+  },
+  {
+   "bugid": 2016523,
+   "status": "REOPENED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Remove more failure-allowing annotations for View Transitions WPTs"
+  },
+  {
+   "bugid": 2011353,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Use animationsPlayBackRateMultiplier browsing context flag to control animation speed"
+  },
+  {
+   "bugid": 2016670,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Improve some DevTools context menu checks."
+  },
+  {
+   "bugid": 2016673,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[bidi] Don't serialize UA widgets."
+  },
+  {
+   "bugid": 2016651,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "High frequency /navigation-api/navigate-event/defer/restore-after-bfcache.html | entries() must contain the forward-history page after navigating back to a bfcached page - Test timed out | single tracking bug"
+  },
+  {
+   "bugid": 2010125,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "createImageBitmap() ignores sx,sy,sw,sh parameters when using resize option"
+  },
+  {
+   "bugid": 1978773,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render gradients from gradient stops directly"
+  },
+  {
+   "bugid": 1998432,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Express quad shader coordinates in a consistent coordinate space"
+  },
+  {
+   "bugid": 2013505,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove Promise Thenable Telemetry"
+  },
+  {
+   "bugid": 2016513,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Invalid debugger assertion around observability in light of multiple debuggers."
+  },
+  {
+   "bugid": 2014368,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Assertion failure: Input shouldn't be negative zero., at jit/VMFunctions.cpp:3344"
+  },
+  {
+   "bugid": 2016308,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[riscv64][loong64] debugAssertCanonicalInt32 is hit in `jit-test --ion wasm/multi-value/call-js.js`"
+  },
+  {
+   "bugid": 2016466,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Tidy the buffer allocator a little"
+  },
+  {
+   "bugid": 2016795,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Update Promise.all/allSettled/any step numbering to match ES2026 spec changes"
+  },
+  {
+   "bugid": 2016272,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: !JS_IsExceptionPending(cx_), at vm/JSContext.h:1200"
+  },
+  {
+   "bugid": 2008925,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Handle explicit Smartbar actions in SmartbarInput"
+  },
+  {
+   "bugid": 2008977,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Adapt position of Smartbar search suggestions list for the AI Window sidebar"
+  },
+  {
+   "bugid": 2013627,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "PageData actor is not available during page description collection"
+  },
+  {
+   "bugid": 2014931,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "fix suggestion dropdown visual issues from browser-shared.css removal exposed by 2008977"
+  },
+  {
+   "bugid": 2015549,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The \"Ask\" sidebar button is displayed on the Newtab/Homepage with Vertical Tabs enabled"
+  },
+  {
+   "bugid": 2015921,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "default assistant sidebar to open with new conversation if no previous conversation"
+  },
+  {
+   "bugid": 2016597,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Smart window leaks aiWindow.html if the window in which it is opened as a tab is not closed prior to the end of the test (suite)"
+  },
+  {
+   "bugid": 2012830,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Move real time context prompts to remote settings"
+  },
+  {
+   "bugid": 2014890,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "assistant tries to call search_browsing_history {}"
+  },
+  {
+   "bugid": 2015436,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Crash in [@ arena_t::Purge | arena_t::PurgeLoop | ArenaCollection::MayPurgeSteps]"
+  },
+  {
+   "bugid": 1998062,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "Frequent netwerk/test/unit/test_http2_with_http3_proxy.js | single tracking bug"
+  },
+  {
+   "bugid": 2011746,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Speculative connection without notification is blocked when proxy filter is registered (follow up)"
+  },
+  {
+   "bugid": 2014282,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove excessive copies from urlpattern parse and match"
+  },
+  {
+   "bugid": 2016459,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Vendor in urlpattern 0.6.0"
+  },
+  {
+   "bugid": 2014565,
+   "status": "NEW",
+   "component": "Core:Networking: Cache",
+   "summary": "Assertion failure: false (Dictionary should be ready before decompression), at /builds/worker/checkouts/gecko/netwerk/streamconv/converters/nsHTTPCompressConv.cpp:70"
+  },
+  {
+   "bugid": 2015473,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Expose additional network timings to TRR performance tests"
+  },
+  {
+   "bugid": 2003187,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove unused cookiebanners.ui.desktop.cfrVariant pref"
+  },
+  {
+   "bugid": 2010457,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 149: contentblocking.* before Gecko version gets increased to 150 on 2026-02-23"
+  },
+  {
+   "bugid": 2013500,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Strip \"wt_mc\" parameter on \"copy clean link\""
+  },
+  {
+   "bugid": 2015055,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Crash in nsUserCharacteristics::ShouldSubmit() with copied profile"
+  },
+  {
+   "bugid": 2016508,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Clean up Storage Access API console error logging"
+  },
+  {
+   "bugid": 2016653,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Improve packing of SVGSVGElement"
+  },
+  {
+   "bugid": 1933187,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "MANIFEST testing/web-platform/meta/webrtc/simulcast/screenshare.https.html.ini"
+  },
+  {
+   "bugid": 2015180,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "remove unused nr_ice_media_stream_finalize"
+  },
+  {
+   "bugid": 1931209,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "MANIFEST testing/web-platform/meta/screen-capture/getdisplaymedia-framerate.https.html.ini"
+  },
+  {
+   "bugid": 1931211,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "MANIFEST testing/web-platform/meta/screen-capture/permissions-policy-audio+video.https.sub.html.ini"
+  },
+  {
+   "bugid": 1931212,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "MANIFEST testing/web-platform/meta/screen-capture/permissions-policy-audio.https.sub.html.ini"
+  },
+  {
+   "bugid": 1931213,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "MANIFEST testing/web-platform/meta/screen-capture/permissions-policy-video.https.sub.html.ini"
+  },
+  {
+   "bugid": 2009411,
+   "status": "VERIFIED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Crash [@ __pthread_kill_implementation]"
+  },
+  {
+   "bugid": 2016307,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "incorrect event mask in Cocoa widget mouse event monitoring"
+  },
+  {
+   "bugid": 2016533,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Split IOSurfacePort.h into a cpp definition"
+  },
+  {
+   "bugid": 2016596,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "four issues, including leaks, in macOS media hardware key handling"
+  },
+  {
+   "bugid": 2016630,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "various issues, including leaks, related to nsCocoaUtils"
+  },
+  {
+   "bugid": 2016699,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "memory leaks and unnecessary retains in Cocoa menu opening coordinator"
+  },
+  {
+   "bugid": 2016718,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "fix several soundness issues in nsClipboard.mm"
+  },
+  {
+   "bugid": 2016729,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "corrections and cleanup for macOS version information code"
+  },
+  {
+   "bugid": 2016172,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Perma Linux [tier 2] Bx /builds/worker/checkouts/gecko/widget/gtk/nsWindow.cpp:X:25: error: no member named 'widget_wayland_force_move_to_rect' in namespace 'mozilla::StaticPrefs' | single tracking bug"
+  },
+  {
+   "bugid": 2016303,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "nsLocalFileUnix.cpp: Replace usage of LSCopyItemInfoForURL with CFURLCopyResourcePropertyForKey"
+  },
+  {
+   "bugid": 2016615,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Annotate CDATA sections in the XPIDL generated headers"
+  },
+  {
+   "bugid": 2016406,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "Perma [tier2] devtools/client/framework/test/browser_toolbox_content_modal_overlap.js | single tracking bug"
+  },
+  {
+   "bugid": 2016431,
+   "status": "VERIFIED",
+   "component": "DevTools:General",
+   "summary": "Perma browser/base/content/test/static/browser_parsable_css.js | checkAllTheCSS - Got error message for chrome://browser/skin/toolbarbuttons.css: Found invalid value for media feature. when Gecko 149 merges to beta on 2026-02-23"
+  },
+  {
+   "bugid": 2006394,
+   "status": "ASSIGNED",
+   "component": "DevTools:Netmonitor",
+   "summary": "30x redirects contain a copy of the new location's body response"
+  },
+  {
+   "bugid": 2016109,
+   "status": "RESOLVED",
+   "component": "DevTools:Responsive Design Mode",
+   "summary": "Browser Screenshot popup is displayed below RDM UI"
+  },
+  {
+   "bugid": 2015713,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "fix doc warnings"
+  },
+  {
+   "bugid": 2016715,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Update the code review faq"
+  },
+  {
+   "bugid": 2010337,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Consolidate no-non-semantic-token-usage stylelint rule into use-design-tokens"
+  },
+  {
+   "bugid": 2010932,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "mach lint --linter clippy may need --allow-no-vcs"
+  },
+  {
+   "bugid": 2015841,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update to ruff 0.15.0"
+  },
+  {
+   "bugid": 2016235,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "mach lint --linter clippy: cleanup/extend to more directories"
+  },
+  {
+   "bugid": 1994981,
+   "status": "ASSIGNED",
+   "component": "Firefox:IP Protection",
+   "summary": "IP-Protection should exclude local network requests and the captive portal URL"
+  },
+  {
+   "bugid": 2012500,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Set bandwidth usage pref based on bandwidth thresholds"
+  },
+  {
+   "bugid": 2014396,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "The divider under “Use VPN for this site” does not match Figma design (shorter width)"
+  },
+  {
+   "bugid": 2016808,
+   "status": "RESOLVED",
+   "component": "Firefox:Installer",
+   "summary": "Update installer string for the rebrand"
+  },
+  {
+   "bugid": 1991327,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "firefox background gif maxing out ram while idle in the background"
+  },
+  {
+   "bugid": 2004773,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable image proxy for newtab"
+  },
+  {
+   "bugid": 2015154,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Widget bar remains visible when Weather Forecat is enabled but Weather in turned off"
+  },
+  {
+   "bugid": 2015159,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "WidgetsFeatureHighlight is too low on the page and is not fully visible"
+  },
+  {
+   "bugid": 2015600,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "In new-tab small tiles, the publisher name potentially overlaps the 3-dot-menu when hovered"
+  },
+  {
+   "bugid": 2016512,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab remove dsmessage"
+  },
+  {
+   "bugid": 2016536,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add logic to conditionally add text, images to WidgetsFeatureHighlight OMC message"
+  },
+  {
+   "bugid": 2015935,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Adding Adaptive Performance Prefs to Nimbus Manifest"
+  },
+  {
+   "bugid": 2013056,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "In the new search UI, indicate when an add-on based search engine is installed"
+  },
+  {
+   "bugid": 2016872,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Pinning Firefox to taskbar nonfunctional in Windows 11 Build 7840"
+  },
+  {
+   "bugid": 2008036,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Create Nimbus feature for tab notes"
+  },
+  {
+   "bugid": 2013421,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "`_updateMultiselectedTabCloseButtonTooltip()` is unnecessarily invoked multiple times during multi-selection changes"
+  },
+  {
+   "bugid": 2014741,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Creating a group from a pinned tab while a Split View is placed after will make the tab bar show on two rows"
+  },
+  {
+   "bugid": 2014761,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Splitter can't be moved to the left side using keyboard arrows if it was moved to the maximum on the right side"
+  },
+  {
+   "bugid": 2016746,
+   "status": "RESOLVED",
+   "component": "Firefox:Web Apps",
+   "summary": "Taskbar Tabs files aren't associated with the Web Apps bug component"
+  },
+  {
+   "bugid": 2016573,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Gradle Configuration Cache is invalidated on any change within `topobjdir`"
+  },
+  {
+   "bugid": 2016613,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Perma Linux opt taskcluster/gecko_taskgraph/test/test_taskcluster_yml.py::TestTaskclusterYml::test_cron TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 2016709,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Permanent Rpk-flatpak FileExistsError: [Errno 17] File exists: '/tmp/tmpxd4czkiz/build/files/lib/firefox/distribution'"
+  },
+  {
+   "bugid": 2009873,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Third Party Packaging",
+   "summary": "Perma Snap [tier 2] test_pdf_navigation | AssertionError('Mismatching screenshots for test_pdf_navigation_<random>') | single tracking bug"
+  },
+  {
+   "bugid": 2015690,
+   "status": "ASSIGNED",
+   "component": "Firefox Enterprise:General",
+   "summary": "GitHub checks for enterprise-firefox-release links to treeherder enterprise-firefox jobs"
+  },
+  {
+   "bugid": 2015987,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Add Downloadable LLM abstraction to concept-llm"
+  },
+  {
+   "bugid": 2016143,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Implement rich text rendering"
+  },
+  {
+   "bugid": 2016757,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Enable Adjust for growth data"
+  },
+  {
+   "bugid": 2015009,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "ANR in minikin::getNextWordBreakForCache / minikin::getPrevWordBreakForCache"
+  },
+  {
+   "bugid": 2016634,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 9b581f945815ae6959101c3192ccf31965db861d from 2026-02-13 05:02:55"
+  },
+  {
+   "bugid": 2016494,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Update xiaomi distribution logic to skip the adjust onboarding screen"
+  },
+  {
+   "bugid": 2016363,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Move app exit info recording into visual completeness queue"
+  },
+  {
+   "bugid": 1996722,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Implement snackbars for offline user and request timeout and no free masks available"
+  },
+  {
+   "bugid": 2016542,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Manage email masks should not open in the Custom Tab UI"
+  },
+  {
+   "bugid": 2016629,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Update Eligible.Free#remaining to Eligible.Free#totalMasksUsed"
+  },
+  {
+   "bugid": 2014385,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Search Optimization] Secret menu settings for search optimization stocks card toggle"
+  },
+  {
+   "bugid": 2016565,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Re-enable the tab opening animation in nightly"
+  },
+  {
+   "bugid": 2014829,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove all usages of flowScoped with hardcoded coroutineScope in AC code"
+  },
+  {
+   "bugid": 2016625,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "SkipLeaks in verifyAboutFirefoxMenuSupportItemTest UI test"
+  },
+  {
+   "bugid": 1619755,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "(Maybe) remove nsWindow::DispatchHitTest"
+  },
+  {
+   "bugid": 1936770,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Implement \"script.realmCreated\" and \"script.realmDestroyed\" events for worker realms"
+  },
+  {
+   "bugid": 2015206,
+   "status": "RESOLVED",
+   "component": "Toolkit:Startup and Profile System",
+   "summary": "20,200 instances of \"Existing entry in StartupCache.\" emitted from startupcache/StartupCache.cpp"
+  },
+  {
+   "bugid": 1988871,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Fill in our scale of size tokens"
+  },
+  {
+   "bugid": 2005767,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Investigate supporting absolute and relative units for space and size token scales"
+  },
+  {
+   "bugid": 1991235,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "about:compat content is too smooshed together on Android tablets (and Android phones with \"Desktop site\" enabled)"
+  },
+  {
+   "bugid": 2016752,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Remove two no-longer used \"testbed\" files from our webcompat addon."
+  },
+  {
+   "bugid": 1892073,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Snapchat for web is not supported on Firefox"
+  },
+  {
+   "bugid": 1988133,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "apps.facebook.com - \"Bejeweled Blitz\" game not loading caused by Flash"
+  },
+  {
+   "bugid": 2010794,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "ipn2.paymentus.com - Times out when trying to continue with the form"
+  },
+  {
+   "bugid": 1993037,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "Expose splitViewId in tabs extension API"
+  },
+  {
+   "bugid": 2016221,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Change the pref names for the URL-Classifier Harmfull add-on feature to break back-compatibility"
+  },
+  {
+   "bugid": 2016705,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "i18n.json schema contains \"true\" where true should be used"
+  },
+  {
+   "bugid": 1994355,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Storage",
+   "summary": "After opening the Storage tab in Developer Tools, browser.storage.onChanged does not fire for object writes."
+  },
+  {
+   "bugid": 2013415,
+   "status": "RESOLVED",
+   "component": "Webtools:Searchfox",
+   "summary": "Switch searchfox taskcluster job workers from b-linux to b-linux-large-amd to improve job durations"
+  }
+ ],
+ "fixed": 100,
+ "total": 120,
+ "restricted": 21
+}
