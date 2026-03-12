@@ -1,0 +1,760 @@
+{
+ "date": "2026-03-12",
+ "buildid": "20260312094748",
+ "cset": "c1e6c91577a899befa2539ce49c33221a4593cf5",
+ "bugs": [
+  {
+   "bugid": 1996120,
+   "status": "RESOLVED",
+   "component": "Application Services:Nimbus SDK",
+   "summary": "Rework Nimbus enrollment status metric into a separate ping in Nimbus SDK"
+  },
+  {
+   "bugid": 2008888,
+   "status": "RESOLVED",
+   "component": "Conduit:Lando",
+   "summary": "Automatic reviewer selection doesn't work"
+  },
+  {
+   "bugid": 2022721,
+   "status": "RESOLVED",
+   "component": "Conduit:Lando",
+   "summary": "add gradle subdir to pr pilot allowlist"
+  },
+  {
+   "bugid": 2004057,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Factor out CSSStyleValue creation into a factory and eventually split tag handling logic"
+  },
+  {
+   "bugid": 2014403,
+   "status": "REOPENED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Handle invalidation for @container style() queries"
+  },
+  {
+   "bugid": 2019904,
+   "status": "RESOLVED",
+   "component": "Core:DOM: CSS Object Model",
+   "summary": "Implement CSSFontFaceDescriptors (was: CSSFontFaceRule.style.fontFamily is undefined)"
+  },
+  {
+   "bugid": 2014344,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "`nsINode::IsSelected()` and `IsItemInRangeComparetor` should use `nsContentUtils::ComparePoints` and convert the points to the flattened tree if comparing within the flattened tree"
+  },
+  {
+   "bugid": 2021558,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement «Stop using “strictly split” in “validate and extract”» change to DOM spec"
+  },
+  {
+   "bugid": 2021892,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make `navigator.permissions.query` aware of platform permission when appropriate"
+  },
+  {
+   "bugid": 2019187,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Make `AutoBlockElementsJoiner::HandleDeleteNonCollapsedRange` delete unnecessary nodes by itself"
+  },
+  {
+   "bugid": 2022176,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Sanitizer: Reject config with <html> in replaceWithChildrenElements as invalid"
+  },
+  {
+   "bugid": 2012637,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Make `nsContentUtils::ComparePoints` do the right thing for flattened tree with adding `TreeKind`"
+  },
+  {
+   "bugid": 2012797,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Assertion failure: mRef || aOffset == 0, at /builds/worker/workspace/obj-build/dist/include/mozilla/RangeBoundary.h:272"
+  },
+  {
+   "bugid": 2003504,
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Clear event source in proper if possible"
+  },
+  {
+   "bugid": 2022378,
+   "status": "RESOLVED",
+   "component": "Core:DOM: postMessage",
+   "summary": "Messages queued during port entaglement are never sent if main thread blocks"
+  },
+  {
+   "bugid": 1967026,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "VoiceOver does not expose aria-brailleroledescription"
+  },
+  {
+   "bugid": 1635350,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove MOZ_GECKO_PROFILER"
+  },
+  {
+   "bugid": 2018816,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move prim_origin from interning keys to prim instances"
+  },
+  {
+   "bugid": 2019934,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Render images using quad shaders in simple cases"
+  },
+  {
+   "bugid": 2020923,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove remaining usage of non-quad gradients"
+  },
+  {
+   "bugid": 2022105,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Remove origin parameter and remap helpers from DisplayListBuilder"
+  },
+  {
+   "bugid": 2022062,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "AsyncGeneratorResume doesn't handle exceptions from post-resume operations"
+  },
+  {
+   "bugid": 2022417,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve structured clone back reference logic (refactoring)"
+  },
+  {
+   "bugid": 2015214,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "[hazards] Clean up the global state management"
+  },
+  {
+   "bugid": 2016262,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Partial assignment isn't detected as a hazard"
+  },
+  {
+   "bugid": 2022017,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Use concurrent marking for gray marking"
+  },
+  {
+   "bugid": 2021937,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Remove Range and Enum iterator APIs from hash tables"
+  },
+  {
+   "bugid": 2007583,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add test for Recent Chat menuitem in History menu"
+  },
+  {
+   "bugid": 2013657,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Smart window updates starter prompts when the adjacent tab changes pages"
+  },
+  {
+   "bugid": 2015090,
+   "status": "VERIFIED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Hitting the Left / Right arrows in the AI Chat input field will scroll the Sidebar horizontally instead of moving the cursors between characters"
+  },
+  {
+   "bugid": 2015576,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Handle tab switches during long running conversation responses from LLM"
+  },
+  {
+   "bugid": 2015720,
+   "status": "VERIFIED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Disconnected users are not exited from the Smart Window"
+  },
+  {
+   "bugid": 2017667,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add “Beta” badge to Smart Window in New Tab, app menu, and window switcher"
+  },
+  {
+   "bugid": 2018962,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "open up sidebar when switching back to smart window"
+  },
+  {
+   "bugid": 2019048,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Smart Window switch doesn't override custom URL homepage settings"
+  },
+  {
+   "bugid": 2019627,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Visual Glitch during search - Address bar input area scrolls up and awesomebar results obscure during search"
+  },
+  {
+   "bugid": 2020827,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Enforce a limit on memory length, e.g. 100 characters"
+  },
+  {
+   "bugid": 2021923,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[Models] Change the run_search tool to directly use the last user message as the search query for the first turn"
+  },
+  {
+   "bugid": 2022251,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Move use RS dump for default prompts"
+  },
+  {
+   "bugid": 2021381,
+   "status": "REOPENED",
+   "component": "Core:Memory Allocator",
+   "summary": "Perma [tier 2] PHC.TestPHCAllocations | Expected equality of these values: | single tracking bug"
+  },
+  {
+   "bugid": 2020969,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.23.0"
+  },
+  {
+   "bugid": 2021563,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Add profiiler markers to happy eyeballs glue"
+  },
+  {
+   "bugid": 1801658,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Implement VisualViewport.onscrollend"
+  },
+  {
+   "bugid": 1990718,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Consider disabling automatic EmojiCompatInitializer thread in AndroidX"
+  },
+  {
+   "bugid": 2022221,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "\"Fix major site issues\" setting under Strict Tracking Protection does not persist after restart"
+  },
+  {
+   "bugid": 2021456,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "collect telemetry on how often PSM initializes NSS in some kind of fallback mode"
+  },
+  {
+   "bugid": 2019841,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Some wpt 2pass subtests incorrectly excluded from and some less2pass included in interop-2026"
+  },
+  {
+   "bugid": 2021362,
+   "status": "VERIFIED",
+   "component": "Core:WebRTC",
+   "summary": "build failure due to missing include since bug 2013730"
+  },
+  {
+   "bugid": 2018866,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] After wl_output destroy/recreate (monitor power-cycle), HW compositing is permanently disabled and Display0 reports 0x0 @ 0.000 scale — new tabs render blank until restart"
+  },
+  {
+   "bugid": 2021715,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "RFP: Return five touch points on Wayland when touch device is present"
+  },
+  {
+   "bugid": 2022181,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[HDR][Wayland] Deadlock between SurfacePoolWayland::ReturnBufferToPool() and CollectPendingSurfaces() via WaylandSurfaceLock / SurfacePoolWayland::mMutex"
+  },
+  {
+   "bugid": 1990407,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Evaluate refactoring of nsXREDirProvider for AppendFromAppData vs AppendProfilePath"
+  },
+  {
+   "bugid": 2003137,
+   "status": "NEW",
+   "component": "Core:XPCOM",
+   "summary": "Running an old version of Firefox can break xdg-basedir support"
+  },
+  {
+   "bugid": 2008784,
+   "status": "ASSIGNED",
+   "component": "Core:XPCOM",
+   "summary": "Fix xpcshell tests relies on a bug of nsXREDirProvider"
+  },
+  {
+   "bugid": 2007548,
+   "status": "RESOLVED",
+   "component": "Core:XPConnect",
+   "summary": "mozJSModuleLoader::GetScriptForLocation stores stencil on disk twice, in both StartupCache and ScriptPreloader"
+  },
+  {
+   "bugid": 1578023,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Selecting a variable font Instance then clicking anywhere in Weight results the Weight to previous value"
+  },
+  {
+   "bugid": 2013904,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Variable font axes reset when focusing after changing node"
+  },
+  {
+   "bugid": 2013910,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Styles edited with font panel open are reset when inputs are focused"
+  },
+  {
+   "bugid": 2013940,
+   "status": "NEW",
+   "component": "DevTools:Inspector",
+   "summary": "Font editor values are rounded unexpectedly"
+  },
+  {
+   "bugid": 2014442,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add UI for :open state"
+  },
+  {
+   "bugid": 2020911,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Avoid using hard-coded list of CSS wide keywords"
+  },
+  {
+   "bugid": 1744624,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Make ContentTask.spawn a lint warning and/or error out in browser mochitests"
+  },
+  {
+   "bugid": 2022076,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "mach static-analysis check --outgoing --output clang-tidy.json does not create an output file if no files are changed"
+  },
+  {
+   "bugid": 2022628,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "firefox-source-docs: footnote markdown not supported in tables"
+  },
+  {
+   "bugid": 2009065,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Dont show close button when in search mode"
+  },
+  {
+   "bugid": 2022713,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Replace the not_relevant Firefox Suggest command with dismiss"
+  },
+  {
+   "bugid": 2022728,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use apz.popups_without_remote.enabled pref to disable APZ in urlbar browser test"
+  },
+  {
+   "bugid": 2007843,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmark gets favicon from different port"
+  },
+  {
+   "bugid": 2018078,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "CheckForBrokenChromeURL behaves inconsistently in CI and in local runs"
+  },
+  {
+   "bugid": 2020859,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add an entrypoint option for IPP enroll"
+  },
+  {
+   "bugid": 2020928,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "IP Protection: Add documentation about the error constants"
+  },
+  {
+   "bugid": 2020961,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "About:preferences has UI inconsistencies compared to Figma"
+  },
+  {
+   "bugid": 2022322,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Remove rechecking the bandwidth usage on IPP panel open"
+  },
+  {
+   "bugid": 1981206,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Add menu to finish setup checklist"
+  },
+  {
+   "bugid": 2014420,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Unable to Navigate from the TOU Manage Diagnostic button to the Continue button using the Tab key"
+  },
+  {
+   "bugid": 2019400,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Let the pref to communicate with MARS over OHTTP by default ride the trains"
+  },
+  {
+   "bugid": 2019952,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "AboutNewtabResourceMapping should not return a null addonVersion when using the built-in instance of newtab"
+  },
+  {
+   "bugid": 2022577,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Inferred personalization debug override controls are not hooked up and have no effect"
+  },
+  {
+   "bugid": 1538431,
+   "status": "RESOLVED",
+   "component": "Firefox:Normandy Client",
+   "summary": "Add proper page title to about:studies"
+  },
+  {
+   "bugid": 2022467,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 98f7e859acb5d499cde095a88a7b0864ebbc35ae from 2026-03-11 08:13:25"
+  },
+  {
+   "bugid": 2021011,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Wrong location and error message for file error."
+  },
+  {
+   "bugid": 2021394,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Backup for copied selectable profiles are created by default with password."
+  },
+  {
+   "bugid": 2022552,
+   "status": "RESOLVED",
+   "component": "Firefox:Profile Backup",
+   "summary": "Backup files of selectable profiles are deleted from the Restore Firefox folder after creation"
+  },
+  {
+   "bugid": 2018477,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Inconsistent punctuation at the end of descriptions for DoH settings"
+  },
+  {
+   "bugid": 2020730,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Add setting \"Drag tabs together to create tab groups\""
+  },
+  {
+   "bugid": 2021760,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Focus about:config's search field on Ctrl+F"
+  },
+  {
+   "bugid": 2022273,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Browser layout preferences: icons for horizontal tabs and vertical tabs have double shadows and borders"
+  },
+  {
+   "bugid": 2020110,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Toolbar becomes unresponsive to mouse events"
+  },
+  {
+   "bugid": 2012799,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Option + left-click to create a split view"
+  },
+  {
+   "bugid": 2017216,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "When resizing the views to the maximum right using the mouse, dragging the splitter back sometimes does not follow the mouse position and appears as stuck"
+  },
+  {
+   "bugid": 2021566,
+   "status": "VERIFIED",
+   "component": "Firefox:Tabbed Browser: Split View",
+   "summary": "Right clicking an item from the Firefox View history page and Opening it in Split View will show a blank page and a missing tab in the tabstrip"
+  },
+  {
+   "bugid": 2022233,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Fix broken rules for adding space between subviewbutton navigational arrows and their labels"
+  },
+  {
+   "bugid": 2022330,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Python Assertion Error during mach bootstrap"
+  },
+  {
+   "bugid": 2022334,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "clang-format not working in Linux VM on Macbook"
+  },
+  {
+   "bugid": 2022131,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "rust build errors are being hidden at build time"
+  },
+  {
+   "bugid": 1988569,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Automate Fenix \"release checklist\" steps"
+  },
+  {
+   "bugid": 2022472,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Backfilled tasks should preserve the original chunk number in treeherder"
+  },
+  {
+   "bugid": 2022535,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "prioritize mozilla-central startup-test jobs on mac"
+  },
+  {
+   "bugid": 2008272,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Display CFR the first time summarizable content is reached"
+  },
+  {
+   "bugid": 2020340,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Add a fully composable CFR that is based on material tooltip"
+  },
+  {
+   "bugid": 2022566,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "uplift s2s gesture flag default to nightly"
+  },
+  {
+   "bugid": 2021207,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Consider switching to sentry-android-core for Fenix"
+  },
+  {
+   "bugid": 2021521,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Refactor reportRustError() so it always makes the appropriate reports and keeps original stack trace"
+  },
+  {
+   "bugid": 2022445,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 0af5b6fe6d39d761c9216fc4884ad6a3dfb30a63 from 2026-03-11 05:01:54"
+  },
+  {
+   "bugid": 2005825,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Consider disabling the \"app image\" for child processes (\"_disable_art_image_\")"
+  },
+  {
+   "bugid": 2007579,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Add unit tests for FxRelay"
+  },
+  {
+   "bugid": 2022355,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Remove mocks from RelayFeatureTest"
+  },
+  {
+   "bugid": 2022534,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Wrap UI tracker protection card with a secret setting"
+  },
+  {
+   "bugid": 2022496,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Search Optimization] Implement Stock Card design feedback"
+  },
+  {
+   "bugid": 2022662,
+   "status": "NEW",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Remove some unused Material Components usage"
+  },
+  {
+   "bugid": 1988790,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Create a linter to make sure expired strings are not used"
+  },
+  {
+   "bugid": 2020397,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from BrowserFragmentTest"
+  },
+  {
+   "bugid": 2020411,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from ToolbarPresenterTest"
+  },
+  {
+   "bugid": 2020415,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from TabsToolbarFeature"
+  },
+  {
+   "bugid": 2020443,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove MainCoroutineRule from SearchSelectorToolbarActionTest"
+  },
+  {
+   "bugid": 1960752,
+   "status": "REOPENED",
+   "component": "GeckoView:General",
+   "summary": "Preallocate GPU and WebExtension processes in addition to tab process when FLAG_PRELOAD_CHILD is set"
+  },
+  {
+   "bugid": 2003858,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Don't fire composition events when inputting number on SwiftKey (Setting HTMLInputElement.value on input events behaves differently from Chrome with Swiftkey keyboard)"
+  },
+  {
+   "bugid": 2015407,
+   "status": "RESOLVED",
+   "component": "GeckoView:IME",
+   "summary": "Unable to input using the Xiaomi secure keyboard"
+  },
+  {
+   "bugid": 1929144,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Marionette",
+   "summary": "Make it possible to test additional accessibility properties in WPT"
+  },
+  {
+   "bugid": 1818215,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "[wdspec] Update tests for pytest asyncio markers"
+  },
+  {
+   "bugid": 1866749,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Only send \"log.entryAdded\" events for console API calls that use the printer"
+  },
+  {
+   "bugid": 2019511,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "browsingContext.setViewport can timeout if several contexts are created in parallel"
+  },
+  {
+   "bugid": 1996321,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Add QR code entry to File > Share menu on macOS"
+  },
+  {
+   "bugid": 2013342,
+   "status": "REOPENED",
+   "component": "Toolkit:Themes",
+   "summary": "Rename design tokens to improve consistency"
+  },
+  {
+   "bugid": 2017668,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "[macOS] Multiple popover panel-list elements can appear and overlap each other"
+  }
+ ],
+ "fixed": 100,
+ "total": 125,
+ "restricted": 6
+}
