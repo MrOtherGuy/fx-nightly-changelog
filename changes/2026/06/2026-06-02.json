@@ -1,0 +1,784 @@
+{
+ "date": "2026-06-02",
+ "buildid": "20260602093330",
+ "cset": "253b8523586577438a3ddf86d67436719feaf6d8",
+ "bugs": [
+  {
+   "bugid": 2040798,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Implement parent-side AudioSession state machinery"
+  },
+  {
+   "bugid": 2043451,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Plumb AudioSession state changes from parent to content and dispatch statechange"
+  },
+  {
+   "bugid": 2024049,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Invalidate from changing relative properties in style container queries"
+  },
+  {
+   "bugid": 2041086,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Address remaining \"yellow\" Typed OM reification properties"
+  },
+  {
+   "bugid": 2044033,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Check for line-height changes by checking the properties it may depend on, rather than calculating the resolved value"
+  },
+  {
+   "bugid": 2014918,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Fix the timeline name scope when using shadow DOM"
+  },
+  {
+   "bugid": 2043543,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "CSS opacity throttling is too conservative when fill-forwards animation is in effect."
+  },
+  {
+   "bugid": 2017466,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Animation",
+   "summary": "Use CSSNumberish and CSSNumericValue for ComputedEffectTiming"
+  },
+  {
+   "bugid": 1974784,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make <select> look through all descendants for <option> elements"
+  },
+  {
+   "bugid": 1974792,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "[css-forms-1] Implement `::checkmark` pseudo element"
+  },
+  {
+   "bugid": 2038588,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Selectedcontent: implement updating based on selection"
+  },
+  {
+   "bugid": 2044024,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Cleanup messy FINAL/virtual warnings in CustomStateSet"
+  },
+  {
+   "bugid": 2039903,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Use proper types for PBrowser::SynthesizeNativeMouseEvent"
+  },
+  {
+   "bugid": 2042943,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Forms",
+   "summary": "NavigateEvent.sourceElement is not set for form submission with method=GET"
+  },
+  {
+   "bugid": 2038124,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Move attribute values from nsHtml5String into nsAttrValue"
+  },
+  {
+   "bugid": 2043800,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Intermittent Hit MOZ_CRASH(WebAuthnService should reset the platform service before dispatching GetAssertion) at dom/webauthn/authrs_bridge/src/lib.rs:1172"
+  },
+  {
+   "bugid": 2041613,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Workers",
+   "summary": "Stop using system blob for stream Worker test"
+  },
+  {
+   "bugid": 2040259,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Add technical documentation for tagged PDF generation"
+  },
+  {
+   "bugid": 2041681,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Stop using blob for system Worker in profiler test"
+  },
+  {
+   "bugid": 2043877,
+   "status": "RESOLVED",
+   "component": "Core:General",
+   "summary": "Update hashbrown to 0.16.1"
+  },
+  {
+   "bugid": 2044161,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Use MakeRefPtr to replace \"RefPtr<T> foo = new T()\", in gfx/layers"
+  },
+  {
+   "bugid": 2042547,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Perma [tier 2] image/test/reftest/downscaling/downscale-moz-icon-1.html == image/test/reftest/downscaling/downscale-moz-icon-1-ref.html | single tracking bug"
+  },
+  {
+   "bugid": 2043966,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Prevent to disable video underlay in TileCacheInstance::post_update() if video is HDR"
+  },
+  {
+   "bugid": 1986386,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Intermittent tests/jit-test/jit-test/tests/1659595.js | dyld[1280]: Library not loaded: @rpath/libnss3.dylib (code -6, args \"\") [0.0 s]"
+  },
+  {
+   "bugid": 2043982,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "BigInt::parseLiteralDigits takes the power-of-two fast path for non-power-of-two radixes"
+  },
+  {
+   "bugid": 2042355,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Fix some minor issues discovered by code analysis"
+  },
+  {
+   "bugid": 2042765,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Missing ensureBallast() OOM guard in [@ jit::TryOptimizeWasmTest] crashes the wasm Ion compiler"
+  },
+  {
+   "bugid": 2041977,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Null deref in debug only code in js::gc::HeaderWord::getAtomic"
+  },
+  {
+   "bugid": 2043032,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Differential behavior: array.init_data skips destination bounds check on dropped data segment"
+  },
+  {
+   "bugid": 2041288,
+   "status": "NEW",
+   "component": "Core:Layout",
+   "summary": "High freq /css/css-sizing/responsive-iframe/responsive-iframe-navigation.html | single tracking bug"
+  },
+  {
+   "bugid": 2043712,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "view-timeline on a non-scrolling scroller should produce the animation effect"
+  },
+  {
+   "bugid": 2044022,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Almost Perma [tier 2] TEST-UNEXPECTED-PASS | /css/css-page/tentative/safe-printable-inset-large-crash-print.html | Testing http://web-platform.test:8000/css/css-page/tentative/safe-printable-inset-large-crash-print.html != http://web-platf"
+  },
+  {
+   "bugid": 2044051,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Input field with resize: vertical should not be resizable"
+  },
+  {
+   "bugid": 2044221,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "save 24 bytes on ScrollContainerFrame"
+  },
+  {
+   "bugid": 2043898,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Optimize nsTextFrame intrinsic-width computations"
+  },
+  {
+   "bugid": 2044030,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Add Noto Color Emoji Flags to emoji list of Android"
+  },
+  {
+   "bugid": 2027035,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add “Copy Table” action to Assistant responses"
+  },
+  {
+   "bugid": 2033109,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "New Tab Smartbar - Action callout carousel"
+  },
+  {
+   "bugid": 2037203,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add telemetry for natural language browser actions"
+  },
+  {
+   "bugid": 2037171,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: General",
+   "summary": "[Models] Re-architect Prompts"
+  },
+  {
+   "bugid": 2041607,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Stop using blob based Workers for ML tests"
+  },
+  {
+   "bugid": 2035872,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add IsolationKey to HTTP and Socket tab in about:networking"
+  },
+  {
+   "bugid": 2043809,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "trigger DNS lookup on Enter key in about:networking#dnslookuptool"
+  },
+  {
+   "bugid": 2043832,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "happy-eyeballs glean metrics for https rr"
+  },
+  {
+   "bugid": 2043675,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Request hangs until cancellation because cache entry callback is never fired"
+  },
+  {
+   "bugid": 2044016,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-PASS | /websockets/basic-auth.any.html?wpt_flags=h2 | HTTP basic authentication should work with WebSockets - expected FAIL"
+  },
+  {
+   "bugid": 2043955,
+   "status": "RESOLVED",
+   "component": "Core:Performance: Navigation",
+   "summary": "Crash in [@ mozilla::dom::ScriptLoadContext::~ScriptLoadContext] with MOZ_DIAGNOSTIC_ASSERT(!mCompileOrDecodeTask)"
+  },
+  {
+   "bugid": 1760085,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Intermittent toolkit/components/antitracking/test/xpcshell/test_purge_trackers.js | single tracking bug"
+  },
+  {
+   "bugid": 2039932,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove network.cookie.cookieBehavior.trackerCookieBlocking pref"
+  },
+  {
+   "bugid": 2043202,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "TrackingDBService._flushLiveLogs early-returns concurrent callers, causing stale reads"
+  },
+  {
+   "bugid": 2044014,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Perma [tier 2] TEST-UNEXPECTED-PASS | /storage-access-api/requestStorageAccess-ABA.sub.https.window.html | [ABA] document.requestStorageAccess() should resolve in top-level frame or same-site iframe, otherwise reject with a NotAllowedError with n"
+  },
+  {
+   "bugid": 2043884,
+   "status": "RESOLVED",
+   "component": "Core:SQLite and Embedded Database Bindings",
+   "summary": "High frequency win perftest [taskcluster:error] Aborting task... | single tracking bug"
+  },
+  {
+   "bugid": 2043970,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Simplify fallback sizing calculation"
+  },
+  {
+   "bugid": 1892964,
+   "status": "REOPENED",
+   "component": "Core:Security",
+   "summary": "Lockstore - Initial implementation"
+  },
+  {
+   "bugid": 1225723,
+   "status": "REOPENED",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCTransportStats"
+  },
+  {
+   "bugid": 2019389,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Implement RTCTransportStats.tlsVersion/dtlsCipher"
+  },
+  {
+   "bugid": 2040478,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update to libwebrtc 149"
+  },
+  {
+   "bugid": 2042479,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "add script(s) to check for missing upstream libwebrtc branch-head commits"
+  },
+  {
+   "bugid": 2043972,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /webrtc/simulcast/screenshare.https.html | Basic simulcast setup with two spatial layers - expected FAIL"
+  },
+  {
+   "bugid": 2044085,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Migrate from 'new' to MakeUnique/std::make_unique, in various webrtc chunks"
+  },
+  {
+   "bugid": 2044089,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Use MakeRefPtr to replace \"RefPtr<T> foo = new T()\", in dom/media/webrtc/"
+  },
+  {
+   "bugid": 2044118,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Use MakeRefPtr to replace \"new T()\" for refcounted types, in dom/media/webrtc/"
+  },
+  {
+   "bugid": 2043860,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Signaling",
+   "summary": "Migrate to UniquePtr (away from raw pointer with new/delete) in `SdpAttribute* mAttributes` array and related code"
+  },
+  {
+   "bugid": 2043924,
+   "status": "ASSIGNED",
+   "component": "DevTools:General",
+   "summary": "Add Actor test for methods expecting a bulk response which returns a value."
+  },
+  {
+   "bugid": 2042894,
+   "status": "ASSIGNED",
+   "component": "DevTools:Inspector",
+   "summary": "Show AppErrorBoundary when inspector fails rendering the markup view"
+  },
+  {
+   "bugid": 2043637,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Use proper private fields in devtools/client/inspector/markup/markup-context-menu.js"
+  },
+  {
+   "bugid": 2036404,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Incomplete Connection information in DevTools Netmonitor Security tab"
+  },
+  {
+   "bugid": 2043910,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Don't throw away the clangd index when clobbering"
+  },
+  {
+   "bugid": 2043912,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Developer Environment Integration",
+   "summary": "Generate .clangd in both the source and object directory"
+  },
+  {
+   "bugid": 2018245,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Firefox MCP",
+   "summary": "Devise better defaults for firefox-devtools-mcp"
+  },
+  {
+   "bugid": 2042688,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "documentation: improve the contribute pages"
+  },
+  {
+   "bugid": 2043313,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "mach vendor and cargo-vet fails: \"Some non-crates.io-fetched packages match published crates.io versions: zlib-rs\""
+  },
+  {
+   "bugid": 1888477,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "PopupBlocking policy - locking is not working completely correct"
+  },
+  {
+   "bugid": 2040437,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Follow-ups to bug 2028605 to tweak the Report Broken Site redesign"
+  },
+  {
+   "bugid": 2042447,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Decouple floating chrome and sidebar from transparency"
+  },
+  {
+   "bugid": 2034698,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "VPN toolbar icon briefly disapears when you turn it on the first time in a browsing session"
+  },
+  {
+   "bugid": 2042498,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Disable cfr message templates and associated files"
+  },
+  {
+   "bugid": 2042933,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Make Web Notifications Consent UI configurable via Nimbus (copy and logo)"
+  },
+  {
+   "bugid": 2043317,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Infobar embedded links do not inherit global styles"
+  },
+  {
+   "bugid": 2038816,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Widget telemetry sends incorrect size data"
+  },
+  {
+   "bugid": 2039703,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "widgets_enabled_list string_list telemetery event does not count trainhopConfig enabled widgets"
+  },
+  {
+   "bugid": 2043495,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Sports widget: emit widgets_error on endpoint failures, align widget_source on click telemetry"
+  },
+  {
+   "bugid": 2044093,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab sports widget watch live button is missing"
+  },
+  {
+   "bugid": 2044100,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Sort matches chronologically when sports widget followed-only toggle is off"
+  },
+  {
+   "bugid": 2043752,
+   "status": "ASSIGNED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add metrics around ExperimentAPI initialization for first startup"
+  },
+  {
+   "bugid": 2044129,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Incorrect nimbus team email address on several metrics"
+  },
+  {
+   "bugid": 2043956,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 5fbab91f7104dce05cf4db2105219f4dafcde4d6 from 2026-05-31 12:35:18"
+  },
+  {
+   "bugid": 2038148,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Inconsistent behavior when dragging and dropping to change positions for custom homepage urls"
+  },
+  {
+   "bugid": 2041672,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "23.26 - 22.07% about_preferences_basic + 2 more (Linux, OSX) regression on Wed May 20 2026"
+  },
+  {
+   "bugid": 2043551,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Settings-redesign: DNS over HTTPS setting for 2 vs 3 inversed"
+  },
+  {
+   "bugid": 2040287,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "\"Recently Bookmarked\" and \"Recent Tags\" items are not displayed as folders in the updated bookmarks panel"
+  },
+  {
+   "bugid": 2040356,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "If the “Add Folder” command is executed via a right-click, the folder will always be created at the end of the Bookmarks toolbar, regardless of where you right-clicked."
+  },
+  {
+   "bugid": 2040357,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "If the “Add Bookmark” command is executed via a right-click, the Bookmarks default is at the end of the Bookmarks toolbar, regardless of where you right-clicked."
+  },
+  {
+   "bugid": 1994826,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sync",
+   "summary": "Accounts Toolbar button UI update"
+  },
+  {
+   "bugid": 2033520,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Moving mouse cursor while holding tabs arrow button grabs a tab"
+  },
+  {
+   "bugid": 2043404,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Tab Groups",
+   "summary": "Land strings for new tab groups onboarding"
+  },
+  {
+   "bugid": 2043958,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Status panel text obscured by macOS Tahoe window corner radius"
+  },
+  {
+   "bugid": 1902854,
+   "status": "REOPENED",
+   "component": "Firefox:Translations",
+   "summary": "Perma browser/components/translations/tests/browser/browser_translations_select_telemetry_keypresses_try_again_button_translation_failure.js | single tracking bug"
+  },
+  {
+   "bugid": 2038789,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Move build system logic out of make"
+  },
+  {
+   "bugid": 2034604,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "run macOS mochitests on   AArch64"
+  },
+  {
+   "bugid": 2042682,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma [tier 2 ] /builds/worker/checkouts/gecko/build/clang-plugin/mozsearch-plugin/from-clangd/HeuristicResolver.cpp:X:46: error: no member named 'getQualifier' in 'clang::DependentTemplateSpecializationType'"
+  },
+  {
+   "bugid": 2042386,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "[LNA] add nimbus flags for LNA rollout for Android"
+  },
+  {
+   "bugid": 2040784,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "ensure S2S CFR is not displayed when AI Controls is enabled"
+  },
+  {
+   "bugid": 2043075,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "stop swallowing coroutine exceptions with runCatching"
+  },
+  {
+   "bugid": 2043076,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Improve error telemetry handling for S2S"
+  },
+  {
+   "bugid": 2044083,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 01ce11e1cb019fc5903627e8aa3f7525f53b5076 from 2026-06-01 14:45:55"
+  },
+  {
+   "bugid": 2042934,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "When \"Last Tab\" is the \"Opening Screen\" setting, go back to the homepage if the homepage was the last screen the user was on"
+  },
+  {
+   "bugid": 2043350,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Unified search button menu no longer renders before address bar has been focused"
+  },
+  {
+   "bugid": 2043780,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Missing URL search bar with Homepage Search Bar and HNT enabled"
+  },
+  {
+   "bugid": 2044091,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Sports widget: reorder pager cards to lead with celebrations and bracket finishers"
+  },
+  {
+   "bugid": 2040608,
+   "status": "NEW",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Ensure onboarding is shown before user can access the app"
+  },
+  {
+   "bugid": 2030354,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Update how we show number of blocked trackers in the tracking panel"
+  },
+  {
+   "bugid": 2041133,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Add telemetry to lib-integrity-googleplay for a holistic view of it's usage"
+  },
+  {
+   "bugid": 2041966,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Debug Fenix app throws StrictMode ThreadPolicy violation in SyncEnginesStorage.getStatus via SyncStoreSupport"
+  },
+  {
+   "bugid": 2043994,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Enable relay by default on all builds"
+  },
+  {
+   "bugid": 2032541,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Google Lens] Combine QR Scanning functionality in LensCameraFragment"
+  },
+  {
+   "bugid": 2043377,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Share",
+   "summary": "fenix share: QR code isn't visible"
+  },
+  {
+   "bugid": 2043671,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "swipe-to-element stops before the view is 90% visible, causing Espresso click failures on bottom of list rows"
+  },
+  {
+   "bugid": 2044133,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fenix UI addon-install tests fail after PermissionsDialogFragment \"Add\" button enable-delay"
+  },
+  {
+   "bugid": 2043796,
+   "status": "RESOLVED",
+   "component": "Localization Infrastructure and Tools:compare-locales",
+   "summary": "Update compare-locales to version 9.0.5"
+  },
+  {
+   "bugid": 1972065,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Add missing session data types for viewport and geolocation overrides"
+  },
+  {
+   "bugid": 2043803,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "pref_SetPref: Attempt to write pref media.gmp-manager.buildID after XPCOMShutdownThreads started."
+  },
+  {
+   "bugid": 2042450,
+   "status": "REOPENED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Polish up ML address autofill"
+  },
+  {
+   "bugid": 2043417,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Localization for the warning about \"autofill on HTTP page\" is broken"
+  },
+  {
+   "bugid": 2042404,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "Add pref to turn off embedding of Firefox logo in QR code (no associated UI)"
+  },
+  {
+   "bugid": 2043325,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "When foregrounding a tab to generate a QR code, create and show its dialog while the page loads"
+  },
+  {
+   "bugid": 2027889,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "moz-checkbox style updates"
+  },
+  {
+   "bugid": 2006121,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Details section in disclosure is not accessible by screenreader"
+  },
+  {
+   "bugid": 2006157,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Details section HCM adjustment"
+  }
+ ],
+ "fixed": 109,
+ "total": 129,
+ "restricted": 11
+}
