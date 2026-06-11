@@ -1,0 +1,1372 @@
+{
+ "date": "2026-06-11",
+ "buildid": "20260611082734",
+ "cset": "ec6617b1adf071fc8fba0a0416e152b7da24ac86",
+ "bugs": [
+  {
+   "bugid": 2045104,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Allow get/set_mempolicy in RDD on Linux for libnuma for remote encoding"
+  },
+  {
+   "bugid": 2045105,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Allow file-read-metadata for RDD on OSX for remote encoding"
+  },
+  {
+   "bugid": 2046550,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Only allow H264 for non-HW encoders with WMF"
+  },
+  {
+   "bugid": 2046551,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Prevent using WMF HW encoders when the frame size is less than 128x128"
+  },
+  {
+   "bugid": 2039853,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "HEVC DASH-LL playback via MSE resulting in video stuttering"
+  },
+  {
+   "bugid": 1927699,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Overriding line-height doesn't reset the value properly."
+  },
+  {
+   "bugid": 2044316,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement additional CSSMathValue reification support"
+  },
+  {
+   "bugid": 2044746,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Hit MOZ_CRASH(assertion `left == right` failed left: 8 right: 0) at servo/components/style/sharing/mod.rs:158"
+  },
+  {
+   "bugid": 2045138,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add NthIndexOf-style caching for sibling-index() and sibling-count()"
+  },
+  {
+   "bugid": 2045140,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Avoid unnecessary TreeCountingInfo allocations for elements that don't use sibling-count() or sibling-index()"
+  },
+  {
+   "bugid": 2045230,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add initial background-clip: border-area support (for solid borders etc)"
+  },
+  {
+   "bugid": 2045907,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Replace upgradable_read with separate read() + write() for child node lookup in ensure_child(),"
+  },
+  {
+   "bugid": 2046153,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Enable link-parameters on Nightly"
+  },
+  {
+   "bugid": 2046167,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Bump cbindgen to 0.29.4"
+  },
+  {
+   "bugid": 2046279,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Color rendering issues with CSS Raytrace GMA"
+  },
+  {
+   "bugid": 2046423,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Perma [tier2] /css/css-backgrounds/background-clip/clip-border-area-corner-shape.html | single tracking bug"
+  },
+  {
+   "bugid": 2046665,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Assertion failure: IsAtomic<bool>::value || NS_IsMainThread() (Non-atomic static pref 'layout.css.background-clip.border-area.enabled' being accessed on background thread by getter), at StaticPrefList_layout.h:309"
+  },
+  {
+   "bugid": 2045044,
+   "status": "RESOLVED",
+   "component": "Core:Cycle Collector",
+   "summary": "Add a clang plugin to prevent non-final cycle collecting isupports macro in final classes"
+  },
+  {
+   "bugid": 2040092,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Crash in [@ mozilla::dom::syncedcontext::Transaction<T>::Commit | mozilla::dom::BrowsingContext::SetAnimationsPlayBackRateMultiplier]"
+  },
+  {
+   "bugid": 2044492,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Clean up two actor registration locations"
+  },
+  {
+   "bugid": 2040930,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Picture In Picture API requestPictureInPicture use counter"
+  },
+  {
+   "bugid": 2041004,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Base appearance select::picker-icon"
+  },
+  {
+   "bugid": 2043435,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Make pointerup for touch input generate user activation if it does not cause scrolling"
+  },
+  {
+   "bugid": 2038644,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Add helpful dev console message if Firefox doesn't have permission to access serial ports"
+  },
+  {
+   "bugid": 2045748,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "Disable execCommand for EditContext"
+  },
+  {
+   "bugid": 2044714,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Sanitizer: Implement non-operational process instructions support"
+  },
+  {
+   "bugid": 2046539,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Convert WebCryptoTask factory functions to return already_AddRefed instead of raw pointers"
+  },
+  {
+   "bugid": 1996693,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Streams",
+   "summary": "Remove JS::PersistentRooted from PullWithDefaultReaderChunkStepMicrotask::mChunk"
+  },
+  {
+   "bugid": 1935842,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Wrong AAGUID on macos with cross-platform attachment when using Android phone (Google password manager) to create a passkey"
+  },
+  {
+   "bugid": 2045898,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Upgrade authenticator to v0.6.0"
+  },
+  {
+   "bugid": 2042925,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Window and Location",
+   "summary": "window.open with popup features opens as a full browser window when invoked from a Shift+click   (breaks Gmail Compose popout)"
+  },
+  {
+   "bugid": 2046084,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Use ProfilerTestUtils.assertProfilerInactive() instead of raw !IsActive() preconditions in profiler browser-chrome tests"
+  },
+  {
+   "bugid": 2046383,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Make ProfilerTestUtils.assertProfilerInactive() auto-stop the startup profiler only once, so later leaked profiler sessions fail loudly"
+  },
+  {
+   "bugid": 2030848,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix up `update-angle.py` and Bugbot config. for ANGLE bugs"
+  },
+  {
+   "bugid": 2045982,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Make AImageReader AImage linkable on Android"
+  },
+  {
+   "bugid": 2046081,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Make GLLibraryEGL attempt to load libEGL.dylib and libGLESv2.dylib on macOS"
+  },
+  {
+   "bugid": 2046162,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Remove some unnecessary pub qualifiers."
+  },
+  {
+   "bugid": 2046403,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "On macOS gl::SymbolLoader can load symbols from system libGL instead of ANGLE's libGLESv2"
+  },
+  {
+   "bugid": 2046062,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Wrong GL_HALF_FLOAT enum value used for readpixels on ES 2 contexts"
+  },
+  {
+   "bugid": 2046127,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "GLLibraryEGL asserts ANGLE_platform_angle_d3d extension is supported regardless of OS"
+  },
+  {
+   "bugid": 2046617,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Migrate various WebGL factory functions to use MakeRefPtr to produce their returned RefPtr."
+  },
+  {
+   "bugid": 2045128,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update wgpu to upstream 6e8d0bd14 (2026-6-3)"
+  },
+  {
+   "bugid": 2023574,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Port line decorations from brushes to quads"
+  },
+  {
+   "bugid": 2025264,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Port image borders from brushes to quads"
+  },
+  {
+   "bugid": 2045177,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Allow more underlays if forced in TileCacheInstance::can_promote_to_surface()"
+  },
+  {
+   "bugid": 2045926,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Change device-pixel snapping into a per-surface frame-time pass"
+  },
+  {
+   "bugid": 1835810,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Intermittent comm/calendar/test/unit/test_datetimeformatter.js |  formatDate_test - [formatDate_test : 56] (test #1: result 'Saturday, April 1, 2017 AD', expected 'Saturday, April 01, 2017,Saturday, April 1, 2017') - false == true"
+  },
+  {
+   "bugid": 2045733,
+   "status": "RESOLVED",
+   "component": "Core:Internationalization",
+   "summary": "Use the Capital Es-zett for text-transform & font-variant only if supported by the font"
+  },
+  {
+   "bugid": 2029916,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Remove legacy_tosource_lookup pref in Firefox 153 or 154"
+  },
+  {
+   "bugid": 2041357,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Write a summary of the current optimization architecture in SpiderMonkey"
+  },
+  {
+   "bugid": 2042283,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "arguments.length optimization stays eligible in destructuring and optional-chain positions, causing ReferenceError or wrong value"
+  },
+  {
+   "bugid": 2043242,
+   "status": "NEW",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ship Source Phase Imports"
+  },
+  {
+   "bugid": 2043264,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Differential behavior: Error.captureStackTrace with constructorOpt produces empty stack when stackTraceLimit is small"
+  },
+  {
+   "bugid": 2043266,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Differential behavior: Error.stackTraceLimit = undefined captures stack instead of disabling"
+  },
+  {
+   "bugid": 2046178,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Avoid helper thread locks by not cancelling impossible off-thread compilations."
+  },
+  {
+   "bugid": 2042769,
+   "status": "VERIFIED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Cross-instance Code confusion in [@ js::jit::JitActivation::startWasmTrap] via JSPI continuation (ContBaseFrame)"
+  },
+  {
+   "bugid": 2044809,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Release WebAssembly JS-Promise-Integration"
+  },
+  {
+   "bugid": 2045430,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Hit MOZ_CRASH(ran out of imports) at js/src/wasm/WasmModule.cpp:397 with WebAssembly.promising on non-final / rec-group function types"
+  },
+  {
+   "bugid": 2045432,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Differential behavior: ToRefType (WasmValType.cpp) accepts \"contref\"/\"nullcontref\" without a StackSwitchingAvailable runtime gate, letting content JS mint disabled stack-switching types"
+  },
+  {
+   "bugid": 2046190,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Menulists sometimes initially don't anchor correctly"
+  },
+  {
+   "bugid": 1802205,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Selection indication is removed from spinbuttons of the timepicker when arrow keys are used"
+  },
+  {
+   "bugid": 1694016,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "New wpt failures in /css/css-scroll-snap/snap-at-user-scroll-end.html"
+  },
+  {
+   "bugid": 2045994,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "Some minor cleanup for scroll snap stuff"
+  },
+  {
+   "bugid": 2046000,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "minor cleanups of scroll snap wpts"
+  },
+  {
+   "bugid": 2008450,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Firefox ignore format 13 cmap table and think the font supports no characters on non-macOS platforms"
+  },
+  {
+   "bugid": 2044239,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Improve Nth implementation using __type_pack_element"
+  },
+  {
+   "bugid": 2018052,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Handle error code 406 from the LLM backend"
+  },
+  {
+   "bugid": 2021887,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Smart bar suggestions scrollbar spills out of the frame in the Ask assistant sidebar"
+  },
+  {
+   "bugid": 2028306,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Nova] Implement Smartbar gradient motion (exploratory)"
+  },
+  {
+   "bugid": 2030313,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Ask Assistant Sidebar is still displayed when playing videos in Full screen"
+  },
+  {
+   "bugid": 2035893,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Handle new prompts while disambiguation/confirmation UI is active"
+  },
+  {
+   "bugid": 2037648,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[a11y] Smart window - Screen reader loses focus when Smart Window assistant triggers web search"
+  },
+  {
+   "bugid": 2038069,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Render History Grid in Smart Window Responses"
+  },
+  {
+   "bugid": 2038071,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Display Metadata-Based Thumbnails with Fallbacks"
+  },
+  {
+   "bugid": 2038073,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add History Grid Interaction Telemetry"
+  },
+  {
+   "bugid": 2038130,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Keep Closed? callout is displayed when closing a Sidebar with a started conversation"
+  },
+  {
+   "bugid": 2038242,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Replace hardcoded strings with L10n strings"
+  },
+  {
+   "bugid": 2039365,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Adjust Default Smart Window startup screen"
+  },
+  {
+   "bugid": 2042865,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add test coverage for history grid thumbnails"
+  },
+  {
+   "bugid": 2044363,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Smartbar “Search with” actions defaults to “Ask” when intent is chat"
+  },
+  {
+   "bugid": 2046151,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "modelId not being persisted in messages db"
+  },
+  {
+   "bugid": 2005369,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Add inference performance metrics collection to StaticEmbeddingsPipeline"
+  },
+  {
+   "bugid": 1898647,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "Seperate the cache of unallocated memory into: dirty, clean, unmapped."
+  },
+  {
+   "bugid": 2044303,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.29.0"
+  },
+  {
+   "bugid": 2045810,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "<link rel=prefetch> document load sends Accept: */* instead of the navigation document Accept header (preload/prefetch-document.html)"
+  },
+  {
+   "bugid": 2046043,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "happy-eyeballs ech metric should not count empty ECH configs"
+  },
+  {
+   "bugid": 2046074,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Only count still-valid token evictions in network.ssl_token_cache_evictions"
+  },
+  {
+   "bugid": 2046532,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Migrate some permissionmanager APIs to return already_AddRefed, with MakeAndAddRef for allocation"
+  },
+  {
+   "bugid": 2043734,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "ETP blocks Disqus images"
+  },
+  {
+   "bugid": 2046528,
+   "status": "RESOLVED",
+   "component": "Core:SQLite and Embedded Database Bindings",
+   "summary": "Change some mozStoragePrivateHelpers APIs to return already_AddRefed and to stop using 'new', to enforce use of refcounted smart pointers"
+  },
+  {
+   "bugid": 2045999,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Simplify transform parsing"
+  },
+  {
+   "bugid": 2046046,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Replace SVGPoint by gfx::Point"
+  },
+  {
+   "bugid": 2046569,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Migrate several DOMSVG Clone()/Copy() methods to return already_AddRefed"
+  },
+  {
+   "bugid": 2039919,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Upgrade Firefox 153 to NSS 3.125"
+  },
+  {
+   "bugid": 2046218,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Update URL for vendoring NSS"
+  },
+  {
+   "bugid": 1849842,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "IndexedDB UnknownErr: ActorsParent.cpp:5432"
+  },
+  {
+   "bugid": 2045423,
+   "status": "RESOLVED",
+   "component": "Core:String",
+   "summary": "Firefox is 8x slower than Chrome on reapplying the same feature list."
+  },
+  {
+   "bugid": 2035317,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Add initial CSS corner-shape rendering support"
+  },
+  {
+   "bugid": 2046140,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Perma snap /builds/worker/firefox-snap/parts/firefox/build/layout/generic/nsIFrame.cpp:X:7: error: use of undeclared identifier 'isinf' | single tracking bug"
+  },
+  {
+   "bugid": 2046319,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Perma wpt /webrtc/RTCRtpTransceiver.https.html | single tracking bug"
+  },
+  {
+   "bugid": 2046535,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "format dom/media/webrtc/libwebrtcglue/"
+  },
+  {
+   "bugid": 1784772,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "Intermittent widget/tests/browser/browser_test_swipe_gesture.js | single tracking bug"
+  },
+  {
+   "bugid": 1983068,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "When saving an image in Firefox on KDE Plasma via xdg-desktop-portal-kde on snap or flatpak, filenames containing a colon (:) are saved with a random .xdp-… temporary name instead of the chosen name."
+  },
+  {
+   "bugid": 2029632,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[X11] Video Flickering in Full Screen Mode"
+  },
+  {
+   "bugid": 2041951,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "WaylandProxy thread is not registered with the profiler"
+  },
+  {
+   "bugid": 2045015,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Remove inaccurate note about <concepts> from docs"
+  },
+  {
+   "bugid": 2046426,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "`nsTHashtable` treats trivially destructible entries as non-trivially destructible"
+  },
+  {
+   "bugid": 2046098,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Use targetFront instead of its actorID in debugger frontend"
+  },
+  {
+   "bugid": 2031714,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Implement headless minimum backend implementation for DevTools \"local mode\""
+  },
+  {
+   "bugid": 2044945,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Add new <select> pseudos to devtools"
+  },
+  {
+   "bugid": 2045645,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "Cannot change styles of an element due to an emoji on the same line of CSS"
+  },
+  {
+   "bugid": 2045047,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Avoid unnecessary updates from TextProperty.setValue"
+  },
+  {
+   "bugid": 2044941,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Replace generic icon with MDN icon for links in network panel"
+  },
+  {
+   "bugid": 2042437,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Fix ruff warnings in js/src/jit/GenerateCacheIRFiles.py"
+  },
+  {
+   "bugid": 2041298,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Activate clang-tidy's modernize-use-nullptr check"
+  },
+  {
+   "bugid": 2038819,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "doc: only markdown (instead of a md & rst mix)"
+  },
+  {
+   "bugid": 2038882,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Keep urlbar results open when opening a result in a background tab"
+  },
+  {
+   "bugid": 2044551,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Height of the search mode chiclet is smaller when disabling scotch bonnet"
+  },
+  {
+   "bugid": 2045921,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Context menu on blank space above address bar and on trust panel / search picker icon does not appear"
+  },
+  {
+   "bugid": 2046263,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Fix incorrect description for the quickSuggestAmpTopPickCharThreshold Nimbus variable"
+  },
+  {
+   "bugid": 2046635,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Nova's legacy search bar's switcher menu has an extra separator"
+  },
+  {
+   "bugid": 2043735,
+   "status": "ASSIGNED",
+   "component": "Firefox:Containers",
+   "summary": "Update the Container panel"
+  },
+  {
+   "bugid": 2045007,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Update the Container pill in the URLBar"
+  },
+  {
+   "bugid": 2045008,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Containers: update the color ordering"
+  },
+  {
+   "bugid": 2045829,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Containers: gray color should use 30% in context menus"
+  },
+  {
+   "bugid": 2045832,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Containers: Update the context menus"
+  },
+  {
+   "bugid": 2043762,
+   "status": "RESOLVED",
+   "component": "Firefox:Disability Access",
+   "summary": "Screen reader users not notified when browser action panels open"
+  },
+  {
+   "bugid": 2041232,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "\"PasswordManagerEnabled\" policy does not block the \"Passwords\" sidebar panel"
+  },
+  {
+   "bugid": 2044851,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "DNSOverHTTPS enterprise policy no longer enforced"
+  },
+  {
+   "bugid": 2046227,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "PoliciesPrefTracker.start() without matching PoliciesPrefTracker.stop()"
+  },
+  {
+   "bugid": 2029609,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox View",
+   "summary": "Duplicate tab opened when clicking hyperlinks in \"Tabs from other devices\" in FF view"
+  },
+  {
+   "bugid": 2040887,
+   "status": "NEW",
+   "component": "Firefox:General",
+   "summary": "PreXULSkeletonUI might be shown incorrectly based on argument count"
+  },
+  {
+   "bugid": 2039551,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "With VPN on across macOS suspend, networking breaks"
+  },
+  {
+   "bugid": 2041394,
+   "status": "VERIFIED",
+   "component": "Firefox:IP Protection",
+   "summary": "VPN buttons move slightly downward when you click \"Turn on VPN\""
+  },
+  {
+   "bugid": 2042852,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "(Android) - FxA Active auth provider handles updateEntitlement diffrent"
+  },
+  {
+   "bugid": 2044274,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Domains opened from excluded domain bypass Firefox VPN"
+  },
+  {
+   "bugid": 2008199,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Disclosure button expanded/collapsed state not programmatically defined (Weather card > ••• button)"
+  },
+  {
+   "bugid": 2034869,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add \"Learn more\" link to New Tab sections context menu"
+  },
+  {
+   "bugid": 2035296,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "prefers-reduced-motion ignored for tile hover/focus transition effect in about:newtab"
+  },
+  {
+   "bugid": 2039925,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Move New Tab preference strings to a trainhoppable FTL file"
+  },
+  {
+   "bugid": 2045817,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab devtools toggle allizom for ads no longer works"
+  },
+  {
+   "bugid": 2046085,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Widgets callout is rendered underneath the search bar in NTP"
+  },
+  {
+   "bugid": 2046125,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update locales for Firefox 151.0.4 train-hop"
+  },
+  {
+   "bugid": 2046157,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version c541d24ac3bd22b37015ad9130e32d655c07e5bf from 2026-06-09 18:03:20"
+  },
+  {
+   "bugid": 2046386,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version ce08a803c4672886e50ebb7d83ce41566104f115 from 2026-06-09 21:16:38"
+  },
+  {
+   "bugid": 2023768,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Nova theme for private windows"
+  },
+  {
+   "bugid": 2033037,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Update PBM newtab for Nova"
+  },
+  {
+   "bugid": 2012038,
+   "status": "NEW",
+   "component": "Firefox:Protections UI",
+   "summary": "Incorrect margin of `.urlbar-input-box` in RTL"
+  },
+  {
+   "bugid": 2045173,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Intermittent TV browser/components/preferences/tests/browser_sub_pane_navigation_selection.js | This test exceeded the timeout threshold. It should be rewritten or split up. If that's not possible, use requestLongerTimeout(N), but only as a last resort. T"
+  },
+  {
+   "bugid": 1904860,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Rename ID for the box container of sidebar-main"
+  },
+  {
+   "bugid": 2041801,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Multiple windows support in the new sidear open tabs panel"
+  },
+  {
+   "bugid": 2041924,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Middle-clicking a bookmark folder in updated bookmarks panel opens bookmarks in subfolders."
+  },
+  {
+   "bugid": 2044082,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "Apply auto/dynamic compact mode based on threshold ratio of sidebar and toolbar to the rest of window height/width"
+  },
+  {
+   "bugid": 2043602,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Run automated browser-chrome and mochitest-chrome and talos tests with Nova enabled"
+  },
+  {
+   "bugid": 2046264,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Multiple mochitest nova failures"
+  },
+  {
+   "bugid": 2038789,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Move build system logic out of make"
+  },
+  {
+   "bugid": 2046273,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "replace resolve_keyed_by with task-context where possible/sensible"
+  },
+  {
+   "bugid": 2006222,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Bookmarks",
+   "summary": "Swap bookmarks init actions for view appeared actions"
+  },
+  {
+   "bugid": 2042222,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Wire up passwords import flow"
+  },
+  {
+   "bugid": 2037736,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "AI Controls toggles jump when navigating between \"AI Controls\" and individual feature screens (e.g. Page Summary setting)"
+  },
+  {
+   "bugid": 2046653,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Crash Reporting",
+   "summary": "Update Sentry to version 8.43.2"
+  },
+  {
+   "bugid": 2038672,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[WebCompat Reporter v3] Update the URL text field to have an un-editable url"
+  },
+  {
+   "bugid": 2038680,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[WebCompat Reporter v3] Add url text field edit icon and UI dialog for editing the URL"
+  },
+  {
+   "bugid": 2038684,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[WebCompat Reporter v3] Add logic to edit website URL dialog and validate the URL"
+  },
+  {
+   "bugid": 2032172,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "[Telemetry] Add telemetry into the Firefox Labs menu entry point"
+  },
+  {
+   "bugid": 2045919,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Growth event 6 has a consistent race condition"
+  },
+  {
+   "bugid": 2046567,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add X as a new marketing partner in Adjust"
+  },
+  {
+   "bugid": 2045678,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update Fenix peers"
+  },
+  {
+   "bugid": 2045967,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version c577a4673569cc01130d7bf5a92e90cdebb85108 from 2026-06-09 05:02:25"
+  },
+  {
+   "bugid": 2046161,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Register webcompat's generated assets via the variant Sources API"
+  },
+  {
+   "bugid": 2046391,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version e4cca14a495e5a47621e2c57adfddf254c524adb from 2026-06-10 05:01:53"
+  },
+  {
+   "bugid": 2043610,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "[Homepage Sports Widget] [phase3] The fox mascot appears too small on the \"Keep tabs on the World Cup\" card"
+  },
+  {
+   "bugid": 2045922,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Sports widget: show the next round's decided fixtures while the current round is still active"
+  },
+  {
+   "bugid": 2046131,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Enable Edge2Edge background by default on Release"
+  },
+  {
+   "bugid": 2046148,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Sports widget: show an \"Extra time\" label beside the clock for live matches in extra time"
+  },
+  {
+   "bugid": 2040006,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Logins",
+   "summary": "Add support to add multiple logins to android components"
+  },
+  {
+   "bugid": 2040608,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Ensure onboarding is shown before user can access the app"
+  },
+  {
+   "bugid": 2042814,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "The experiments enrollment behavior differs due to misalignment between the browser Onboarding and Settings"
+  },
+  {
+   "bugid": 2030354,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Update how we show number of blocked trackers in the tracking panel"
+  },
+  {
+   "bugid": 2044820,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[IPProtection] When the app is stuck in a catastrophic state, we don't have clear directions for the user"
+  },
+  {
+   "bugid": 2036806,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Add nimbus flag for expanded toolbar feature"
+  },
+  {
+   "bugid": 2042953,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Google Lens] Add QR code scan from image upload to Google Lens flow"
+  },
+  {
+   "bugid": 2035053,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Settings",
+   "summary": "Translations setting description is truncated"
+  },
+  {
+   "bugid": 2045094,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Groups] Tab groups aren't always displayed when first created"
+  },
+  {
+   "bugid": 2033713,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Keyboard remains stuck on screen after typing new URL to load"
+  },
+  {
+   "bugid": 2036586,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "[Composable Toolbar] Cannot move cursor over suggested text using keyboard"
+  },
+  {
+   "bugid": 2042361,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Toolbar elements change their position when turning the device from landscape to portrait mode"
+  },
+  {
+   "bugid": 2044581,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Toolbar's text contextual menu doesn't include the autocomplete suggestion"
+  },
+  {
+   "bugid": 2044584,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Toolbar's text contextual menu remains shown after text is edited"
+  },
+  {
+   "bugid": 2044610,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Previous suggestion shown for new searches if suggestion was selected and then search aborted"
+  },
+  {
+   "bugid": 2045734,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Switching Search Engine After a Query Has Already Been Searched Creates a New Tab"
+  },
+  {
+   "bugid": 2040352,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "[a11y] Accessibility support of complex IME physical keyboard typing"
+  },
+  {
+   "bugid": 2045062,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Fix swipe controls for same direction swipe"
+  },
+  {
+   "bugid": 2046159,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Use proguard-android-optimize.txt for the default ProGuard rules"
+  },
+  {
+   "bugid": 2046160,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Declare the Compose BOM explicitly where Compose dependencies are used"
+  },
+  {
+   "bugid": 2046286,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Declare directly-used dependencies in feature-addons and samples-browser instead of relying on transitive ones"
+  },
+  {
+   "bugid": 2046317,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove metrics accessors: context extension"
+  },
+  {
+   "bugid": 2023646,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Implement popular sites section in Add to homepage bottom sheet"
+  },
+  {
+   "bugid": 2045524,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Remove unused AccessibilityGridLayoutManager"
+  },
+  {
+   "bugid": 2045952,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Enable Add Shortcuts improvement in Nightly"
+  },
+  {
+   "bugid": 2046519,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "TestRail add_run now requires the include_all parameter, causing intermittent HTTP 500 (\"Undefined array key 'include_all'\") when creating test runs"
+  },
+  {
+   "bugid": 2036785,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "\"mach puppteer-test\" fails with \"npm error error TS5055: Cannot write file 'toolkit/content/widgets/browser-custom-element.mjs' because it would overwrite input file.\""
+  },
+  {
+   "bugid": 2045643,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Using AnimationFramePromise in #finalizeAction will timeout if renderer is blocked on purpose"
+  },
+  {
+   "bugid": 2046067,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Suppress consent prompt for WebAuthn Related Origin Request"
+  },
+  {
+   "bugid": 2046370,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Intermittent mozilla/tests/webdriver/bidi/web_extension/content_script.py | test_install_temporary_web_extension_with_content_script - AssertionError: assert None == 'content script executed'"
+  },
+  {
+   "bugid": 2005200,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "[deb] Thunderbird debian package lacks a \"1:\" Epoch specifier to not be overridden by Debian repos package"
+  },
+  {
+   "bugid": 2045814,
+   "status": "RESOLVED",
+   "component": "Thunderbird:Build Config",
+   "summary": "macOS AArch64 opt always builds from scratch, even in artifact try runs"
+  },
+  {
+   "bugid": 2024954,
+   "status": "RESOLVED",
+   "component": "Toolkit:Application Update",
+   "summary": "Zucchini monitoring on Nightly reveals an increase in SERVICE_STILL_APPLYING_ON_FAILURE, READ_ERROR, WRITE_ERROR"
+  },
+  {
+   "bugid": 2042383,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "WARNING: Could not setup crash reporting: file [...]/toolkit/xre/nsEmbedFunctions.cpp:359"
+  },
+  {
+   "bugid": 2034256,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Update styles for password doorhanger"
+  },
+  {
+   "bugid": 2022270,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Remove  JSON Storage Sync API Methods"
+  },
+  {
+   "bugid": 2044645,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Move LoginHelper.checkLoginValues() to LoginManager._checkLogin() to validate logins for all storage backends"
+  },
+  {
+   "bugid": 2046055,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Rust login storage throws a non-Error object on bulk operation failure"
+  },
+  {
+   "bugid": 2044765,
+   "status": "RESOLVED",
+   "component": "Toolkit:Relay",
+   "summary": "Nova Relay Doorhanger & Popup"
+  },
+  {
+   "bugid": 2045881,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Import panel-menuitem tokens from Figma"
+  },
+  {
+   "bugid": 2046097,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Automatically pull in Nova tokens for UI Widgets"
+  },
+  {
+   "bugid": 2043881,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Time picker opened with invalid value changes to another potentially invalid value"
+  },
+  {
+   "bugid": 2041828,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v153 cycle"
+  },
+  {
+   "bugid": 2045178,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Fix bug ids mismatches for interventions"
+  },
+  {
+   "bugid": 1896349,
+   "status": "VERIFIED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "vivaldi.com - Text selection not functional"
+  },
+  {
+   "bugid": 1978572,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "store.renishaw.com - Filter range slider does not work"
+  },
+  {
+   "bugid": 2000906,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Sharing the entire screen on Teams fails"
+  },
+  {
+   "bugid": 2007641,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.papajohns.com - Error displayed when trying to checkout"
+  },
+  {
+   "bugid": 2025249,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "infyspringboard.onwingspan.com - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 2038076,
+   "status": "REOPENED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "Can't connect to in-flight WiFi on Alaska Airlines from Android device, unless I change UA string to have \"Android 10\" (instead of \"Android 16\") to match Chrome's frozen mobile UA string"
+  },
+  {
+   "bugid": 1904061,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Allow fine grained control of permissions via ExtensionSettings policy"
+  },
+  {
+   "bugid": 1968449,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Some internal pages use New Tab containers"
+  }
+ ],
+ "fixed": 199,
+ "total": 227,
+ "restricted": 22
+}
