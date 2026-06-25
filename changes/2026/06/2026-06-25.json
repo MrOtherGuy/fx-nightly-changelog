@@ -1,0 +1,790 @@
+{
+ "date": "2026-06-25",
+ "buildid": "20260625094708",
+ "cset": "e3ade567c5856015183569f9161a9381c43b3834",
+ "bugs": [
+  {
+   "bugid": 2005072,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Implement HTML video and audio element lazy-loading via the loading attribute"
+  },
+  {
+   "bugid": 2047684,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update aom to new version 32059d384c261a9719bf78e5ffd7d86c63841de5 from 2026-06-15 00:00:00"
+  },
+  {
+   "bugid": 2049064,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "GeckoView play() can reject before async autoplay permission resolves"
+  },
+  {
+   "bugid": 2049301,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Higher video seek-to-first-frame latency than Chrome on MacOS hardware decoding"
+  },
+  {
+   "bugid": 2021155,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Investigate reworking property dependency tracking"
+  },
+  {
+   "bugid": 2045706,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Set layout.css.tree-counting-functions.enabled for all users"
+  },
+  {
+   "bugid": 2048425,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[text-box-trim] Implement block container trimming"
+  },
+  {
+   "bugid": 2048426,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[text-box-trim] Implement inline box trimming"
+  },
+  {
+   "bugid": 2050001,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Simplify logic for computed font-style descriptor of @font-face"
+  },
+  {
+   "bugid": 2050047,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Follow-up clean-ups to bug 2021155."
+  },
+  {
+   "bugid": 2049046,
+   "status": "NEW",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add a unified mechanism for determining when a content process becomes untrusted"
+  },
+  {
+   "bugid": 2044275,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Show ::picker element instead of SelectParent when `appearance:base`"
+  },
+  {
+   "bugid": 2047603,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move listbox select state to HTMLSelectElement."
+  },
+  {
+   "bugid": 1998887,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[wpt] Navigations caused by HTMLFormElement.requestSubmit is called sync in Gecko"
+  },
+  {
+   "bugid": 2043462,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Crash in [@ mozilla::dom::ContentParent::StorePendingLoadState]"
+  },
+  {
+   "bugid": 2049044,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Selection",
+   "summary": "Hit MOZ_CRASH(Invalid ContentCache data) at checkouts/gecko/widget/ContentCache.cpp:106"
+  },
+  {
+   "bugid": 2049993,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Deadlock between the Gecko Profiler buffer lock and Glean's labeled-metric map lock hangs content-process shutdown when the profiler is enabled"
+  },
+  {
+   "bugid": 2049895,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Move more types and functions to webrender_api, in prep for content process interning"
+  },
+  {
+   "bugid": 2050057,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Profiler screenshot readback crashes the GPU process with GL_INVALID_ENUM on GLES drivers lacking GL_EXT_read_format_bgra"
+  },
+  {
+   "bugid": 2039990,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Validate principals more on PBackground actors"
+  },
+  {
+   "bugid": 2027803,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable Stencil navigation cache pref on nightly"
+  },
+  {
+   "bugid": 2043993,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "discord not working after refresh"
+  },
+  {
+   "bugid": 2046890,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Skip test262/intl402/FallbackSymbol/per-realm.js"
+  },
+  {
+   "bugid": 932767,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Flag code paths tainted by unexpected NaNs to help eliminate canonicalizing floats loaded from typed arrays."
+  },
+  {
+   "bugid": 2049626,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid extra jump in CacheIRCompiler::emitInt32MulResult"
+  },
+  {
+   "bugid": 2049631,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Pass LabelDoc by-value for ARM64"
+  },
+  {
+   "bugid": 2049637,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Avoid emitting zero-shifts for int64 division on arm64"
+  },
+  {
+   "bugid": 2049639,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use at-start allocations for LModPowTwoI/I64 on arm64"
+  },
+  {
+   "bugid": 2049678,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use at-start allocation for LCompare and LCompareI64"
+  },
+  {
+   "bugid": 2034104,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Ship Iterator Includes proposal"
+  },
+  {
+   "bugid": 2050204,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Return early for more frame types in WalkInlineDescendantsToReflowAbsoluteFrames()."
+  },
+  {
+   "bugid": 2048827,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "FreeType2 ex-height and cap-height fallbacks are inadequate"
+  },
+  {
+   "bugid": 2034210,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Move context chips outside Smartbar and support grouped expansion"
+  },
+  {
+   "bugid": 2050195,
+   "status": "VERIFIED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Fix glean.error.invalid_value for microsurvey.smart_window.chat metric"
+  },
+  {
+   "bugid": 2044529,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Memories v2: Generate from sessions and establish lineage"
+  },
+  {
+   "bugid": 2040450,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Enable QUIC version negotiation"
+  },
+  {
+   "bugid": 2046524,
+   "status": "NEW",
+   "component": "Core:Networking",
+   "summary": "WPT: <link rel=prefetch> should fire the error event for network errors"
+  },
+  {
+   "bugid": 2049613,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Refactor HappyEyeballsConnectionAttempt to make it testable with gtest."
+  },
+  {
+   "bugid": 2049961,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "capture SSLKEYLOGFILE use in about:support"
+  },
+  {
+   "bugid": 2049983,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "netwerk/test/unit/test_trr_with_proxy.js times out intermittently; raise requesttimeoutfactor"
+  },
+  {
+   "bugid": 2050067,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update happy-eyeballs crate to v0.9.0"
+  },
+  {
+   "bugid": 2047587,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Add telemetry for HTTPS RR lookup success rate, split by DoH vs native resolver"
+  },
+  {
+   "bugid": 1896460,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Improve sniffing compat (with Blink) for `text/plain` responses (without nosniff) that contain binary data"
+  },
+  {
+   "bugid": 2048169,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Reuse mDNSPrefetch for the HTTPS RR prefetch in nsHttpChannel::MaybeStartDNSPrefetch"
+  },
+  {
+   "bugid": 2049124,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove stale IP hint TODO in HappyEyeballsConnectionAttempt::SetupDnsFlags"
+  },
+  {
+   "bugid": 2047517,
+   "status": "RESOLVED",
+   "component": "Core:Networking: WebSockets",
+   "summary": "Re-enanble disabled h2 websocket WPTs"
+  },
+  {
+   "bugid": 2038639,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "GPU process leaks 1408 bytes in APZCTreeManager::CheckerboardFlushObservers on headless macOS workers"
+  },
+  {
+   "bugid": 2048146,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Enable `layout.disable-pixel-alignment` on nightlies"
+  },
+  {
+   "bugid": 2048464,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Remove or update metrics expiring at the end of Firefox 154: web_notification.show_safe_browsing_block before Gecko switches to version 155 on 2026-07-20"
+  },
+  {
+   "bugid": 2050224,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "[skpdf] Emojis print blank."
+  },
+  {
+   "bugid": 2030652,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Screen reader does not capture the reduce protection infobar only the buttons"
+  },
+  {
+   "bugid": 2050015,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Fix test prefs following bug 2045595"
+  },
+  {
+   "bugid": 1585978,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: localStorage & sessionStorage",
+   "summary": "Used storage space for saved cookies and site data is abnormal in some circumstances."
+  },
+  {
+   "bugid": 2049132,
+   "status": "RESOLVED",
+   "component": "Core:js-ctypes",
+   "summary": "Update libffi to version 3.6.0"
+  },
+  {
+   "bugid": 2049634,
+   "status": "RESOLVED",
+   "component": "DevTools:Framework",
+   "summary": "More devtools tests fail with the Gecko profiler enabled by default"
+  },
+  {
+   "bugid": 2044464,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Notify the user about Local Mode when loading files via file:// URL"
+  },
+  {
+   "bugid": 2045987,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Document Local Mode feature"
+  },
+  {
+   "bugid": 2049699,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "RDP events are not logged to MOZ_LOG"
+  },
+  {
+   "bugid": 2042101,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "[devtools-toolbox-crash] Error: Protocol error (TypeError): can't access dead object from: server0.conn3.watcher2.process53801//domwalker700 (resource://devtools/server/actors/inspector/event-collector.js:278:21)"
+  },
+  {
+   "bugid": 2047352,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Stacktrace is not available for in-memory cached scripts"
+  },
+  {
+   "bugid": 2044003,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Profile capture fails to load when a page has a URL that can't be parsed into a URI due to `getPageFavicons`"
+  },
+  {
+   "bugid": 2050031,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Update webspec-index skill to reflect v0.10.0"
+  },
+  {
+   "bugid": 1967090,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "mach use-moz-src should fix up ts paths files"
+  },
+  {
+   "bugid": 2049316,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Clarify moz-phab re-apply instructions in contribution quickref"
+  },
+  {
+   "bugid": 2044479,
+   "status": "RESOLVED",
+   "component": "Enterprise Products:Firefox",
+   "summary": "Extract interface for ContentAnalysis \"backend\""
+  },
+  {
+   "bugid": 2048931,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add Mandy Cheang to the list of address bar reviewers"
+  },
+  {
+   "bugid": 2049086,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[IPC Urlbar] Remove the test-only listener API from UrlbarParentController and update its unit tests"
+  },
+  {
+   "bugid": 2049087,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[IPC Urlbar] Phase 1: Route UrlbarView's provider lookups through the controller instead of UrlbarParentController.manager"
+  },
+  {
+   "bugid": 2033102,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Support allowed_permissions in ExtensionSettings enterprise policy"
+  },
+  {
+   "bugid": 2049868,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use moz-src for dom/ipc"
+  },
+  {
+   "bugid": 2042896,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Initial Nova style updates for Spotlight surface"
+  },
+  {
+   "bugid": 2045593,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Nova: Feature callout refresh"
+  },
+  {
+   "bugid": 2039423,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update default prefs for widgets"
+  },
+  {
+   "bugid": 2046594,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Include Small size widgets in the \"Maximize\" action when in the widget row"
+  },
+  {
+   "bugid": 2048386,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Set up boilerplate Privacy widget (prefs/UI) for the New Tab page"
+  },
+  {
+   "bugid": 2049488,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Scaffold the Daily Crossword widget"
+  },
+  {
+   "bugid": 2049528,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add topsites.pinned_count metric to newtab ping"
+  },
+  {
+   "bugid": 2049535,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "render-activity-stream-html.js fails with \"Cannot find package 'meow'\" after fresh npm install"
+  },
+  {
+   "bugid": 2049798,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "World Cup Wallpapers: Semi-finals Message"
+  },
+  {
+   "bugid": 2049845,
+   "status": "VERIFIED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Firefox 152.0.2 extreme memory usage and complete freeze on startup (regression from 152.0.1)"
+  },
+  {
+   "bugid": 2049886,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Sports widget - Remove Watch LIve button and modal from countries not included in the /watch-links endpoint"
+  },
+  {
+   "bugid": 2049914,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Hard-code in 11px as the font-size for the Sponsored text in Topsites"
+  },
+  {
+   "bugid": 2050299,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "FocusTimer: Fix progress circle on transition"
+  },
+  {
+   "bugid": 2047633,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add the possibility to set Firefox as the default pdf handler on Mac OS"
+  },
+  {
+   "bugid": 2049910,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version e6539f6516e18764656357074d57902094e5493e from 2026-06-23 19:34:30"
+  },
+  {
+   "bugid": 2047232,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Update PBM newtab promo for Nova"
+  },
+  {
+   "bugid": 2031838,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Clear the private default search engine setting when the user unchecks the checkbox for using a different search in private windows"
+  },
+  {
+   "bugid": 2040000,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "No way to keyboard navigate back to the about:preferences page nav from the findInPage pane"
+  },
+  {
+   "bugid": 2042206,
+   "status": "NEW",
+   "component": "Firefox:Settings UI",
+   "summary": "Update styles for payments and addresses edit dialogs"
+  },
+  {
+   "bugid": 2048048,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Policies interactions with the new settings UI for Firefox Home"
+  },
+  {
+   "bugid": 2048383,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "\"Manage payment methods\" list empty when a saved card has no expiration date"
+  },
+  {
+   "bugid": 2039847,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add events for tab interactions"
+  },
+  {
+   "bugid": 2038859,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Tab Groups",
+   "summary": "Improve accessibility of the new tab groups list"
+  },
+  {
+   "bugid": 2045567,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Investigate parametrizing ThinLTO to achieve same performance as Full LTO for Linux"
+  },
+  {
+   "bugid": 2048969,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use std::remove_cvref_t when applicable"
+  },
+  {
+   "bugid": 2049854,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "macOS is dropping Rosetta so we need an Apple Silicon version of gn"
+  },
+  {
+   "bugid": 2050201,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update mozilla-taskgraph to v4.2.0"
+  },
+  {
+   "bugid": 2050242,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add release-branches to gecko_taskgraph's GraphConfigSchema"
+  },
+  {
+   "bugid": 2050307,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Stop minifying the Focus instrumented-test APKs"
+  },
+  {
+   "bugid": 2032111,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Deserialize Nimbus information into LabsItem"
+  },
+  {
+   "bugid": 2032178,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Update LabsMiddleware to link to Nimbus"
+  },
+  {
+   "bugid": 2046346,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Allow 2 lines per answer in microsurveys to avoid cutting off longer text"
+  },
+  {
+   "bugid": 1812063,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Animations Accessibility/Reduce Motion settings in Android not respected in Fenix"
+  },
+  {
+   "bugid": 2050149,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 466d15abf2d341addc507adbfa3c497ad2de2391 from 2026-06-24"
+  },
+  {
+   "bugid": 2022968,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Survey for uninstall users"
+  },
+  {
+   "bugid": 2008785,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Performance",
+   "summary": "Crash in [@ java.lang.RuntimeException: at android.app.usage.StorageStatsManager.queryStatsForUid(StorageStatsManager.java)]"
+  },
+  {
+   "bugid": 2048858,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Crash in [@ java.lang.ClassCastException: at org.mozilla.gecko.util.GeckoBundle.getString(GeckoBundle.java)]"
+  },
+  {
+   "bugid": 2049948,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "\"Built-in VPN\" menu item is shifted too far right when the device is rotated horizontally"
+  },
+  {
+   "bugid": 2049785,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "[Google Lens] Replace google Lens toolbar icon"
+  },
+  {
+   "bugid": 2038246,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Groups Onboarding] Hide onboarding card after 3 impressions"
+  },
+  {
+   "bugid": 2047626,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Add \"Summarize pages\" to Toolbar shortcut list in Settings > Customize"
+  },
+  {
+   "bugid": 2049750,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "\"Swipe toolbar vertically to see open tabs\" interferes with tab bar scrolling"
+  },
+  {
+   "bugid": 2049144,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Long VCS version numbers squash the label in Debug Info"
+  },
+  {
+   "bugid": 2050024,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Investigate new NPU feature flag for targeting Android 17"
+  },
+  {
+   "bugid": 2048865,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Fix verifyCopyPDFTextOptionTest UI test failure"
+  },
+  {
+   "bugid": 2049865,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Disable MOZ_LINKER on GeckoView"
+  },
+  {
+   "bugid": 2049898,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Perma win Wd application crashed [@ DbgBreakPoint] | /webdriver/tests/bidi/input/file_dialog_opened/user_context_tentative.py | single tracking bug"
+  },
+  {
+   "bugid": 2040673,
+   "status": "NEW",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "crashhelper - does not honor MOZ_CRASHREPORTER_DISABLE=1 / application.ini"
+  },
+  {
+   "bugid": 2049937,
+   "status": "RESOLVED",
+   "component": "Toolkit:Data Sanitization",
+   "summary": "Cookies are now cleared even when they are exempted from being cleared"
+  },
+  {
+   "bugid": 2023223,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Replace loginOrigin, addresses, payments, and form history richlist items with autocomplete-row-item"
+  },
+  {
+   "bugid": 2047394,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Fallback to heuristics if the ML fails or takes too long"
+  },
+  {
+   "bugid": 2042088,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate removeFoldersContents DELETE to array binding"
+  },
+  {
+   "bugid": 2042090,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate History.remove lookups to array binding"
+  },
+  {
+   "bugid": 2042091,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate removeByFilter to array binding"
+  },
+  {
+   "bugid": 2042093,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate insertTombstones to array binding"
+  },
+  {
+   "bugid": 2042095,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate removeBookmarks DELETE to array binding"
+  },
+  {
+   "bugid": 2042096,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate insertBookmarkTree tombstone cleanup to array binding"
+  },
+  {
+   "bugid": 2043708,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Create a segmented control reusable component"
+  },
+  {
+   "bugid": 2049847,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Nova button border is missing when browser.theme.native-theme=false"
+  },
+  {
+   "bugid": 2044518,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Request Handling",
+   "summary": "Remove delay before calling registerTraceableChannel from blocking webRequest listeners"
+  }
+ ],
+ "fixed": 116,
+ "total": 130,
+ "restricted": 12
+}
