@@ -1,0 +1,556 @@
+{
+ "date": "2026-06-26",
+ "buildid": "20260626040954",
+ "cset": "020c1f7a2159eb83f4fcb7dc1ddfcd9f1d0f46b7",
+ "bugs": [
+  {
+   "bugid": 2038896,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor latest application-services"
+  },
+  {
+   "bugid": 2049615,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Seeking in video fails"
+  },
+  {
+   "bugid": 2050296,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Use MOZ_LOG_FMT for remaining files on dom/media"
+  },
+  {
+   "bugid": 2050171,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Sibling counting functions should return (1, 1) when there's nothing to count"
+  },
+  {
+   "bugid": 1800120,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Remove CreateWindowInDifferentProcess"
+  },
+  {
+   "bugid": 2049046,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Add a unified mechanism for determining when a content process becomes untrusted"
+  },
+  {
+   "bugid": 1255338,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Change the way pointerlock works on e10s"
+  },
+  {
+   "bugid": 2018910,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Lookup scoped registry for elements & shadowroots"
+  },
+  {
+   "bugid": 2048755,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Refactor Speculation Rules handling out of Document into it's own class"
+  },
+  {
+   "bugid": 2049049,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "crash at null in [@ AutoJSAPI]"
+  },
+  {
+   "bugid": 2050063,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "setTimeout on detached iframes throws \"Component not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\""
+  },
+  {
+   "bugid": 1293741,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Events",
+   "summary": "Clicked element matches(':active') returns incorrect results within 'mousedown' / 'mouseup' handler"
+  },
+  {
+   "bugid": 2031098,
+   "status": "RESOLVED",
+   "component": "Core:DOM: File",
+   "summary": "Remove nsISupportsWeakReference support from Blob"
+  },
+  {
+   "bugid": 1998887,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[wpt] Navigations caused by HTMLFormElement.requestSubmit is called sync in Gecko"
+  },
+  {
+   "bugid": 2047362,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "navigation.updateCurrentEntry state storega bug"
+  },
+  {
+   "bugid": 2050582,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Move Push XPIDL interfaces to dom/push"
+  },
+  {
+   "bugid": 2032957,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Enable the Gecko profiler by default with low-overhead features when running xpcshell tests"
+  },
+  {
+   "bugid": 2044305,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update harfbuzz to new version 14.2.1 from 2026-06-02 14:30:59"
+  },
+  {
+   "bugid": 2050173,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Textures may be queued for presentation even if they are not successfully submitted"
+  },
+  {
+   "bugid": 2049363,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Port picture composite modes to quad shaders"
+  },
+  {
+   "bugid": 2047995,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Ship Iterator Join proposal"
+  },
+  {
+   "bugid": 2047496,
+   "status": "ASSIGNED",
+   "component": "Core:MFBT",
+   "summary": "Make `mozilla::Maybe` formattable"
+  },
+  {
+   "bugid": 2003073,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Disable Certain Suggest Results"
+  },
+  {
+   "bugid": 2047002,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Mock and wire NL tab grouping tool-call flows"
+  },
+  {
+   "bugid": 2048338,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add a single row of Shortcuts on Smart Window New Tab"
+  },
+  {
+   "bugid": 2049738,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Align Ask dropdown hover states with Smart Window menu patterns"
+  },
+  {
+   "bugid": 2045809,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "<link rel=prefetch> reuses a same-site cross-origin document on navigation that should be ORB-blocked from caching (preload/prefetch-document.html)"
+  },
+  {
+   "bugid": 1941968,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Intermittent /cookies/partitioned-cookies/partitioned-cookies-a-b-a-embed.tentative.https.html | single tracking bug"
+  },
+  {
+   "bugid": 2049178,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "[discuss] don't asynchronously re-resolve negative A/AAAA DNS cache entries"
+  },
+  {
+   "bugid": 2049334,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Happy Eyeballs v3 adds ~250ms to cold connections on HTTP/3-capable sites when QUIC can't connect quickly"
+  },
+  {
+   "bugid": 2048151,
+   "status": "RESOLVED",
+   "component": "Core:Preferences: Backend",
+   "summary": "Amend prefix observer documentation about what prefix actually means"
+  },
+  {
+   "bugid": 2020017,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Turn on SkPdf on Nightly."
+  },
+  {
+   "bugid": 2050471,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Print reftests fail on macOS with an obscure error message"
+  },
+  {
+   "bugid": 2050413,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "privacy.wallet_schemes is wrongly set in browser/ but used in toolkit"
+  },
+  {
+   "bugid": 2050276,
+   "status": "RESOLVED",
+   "component": "Core:Storage: IndexedDB",
+   "summary": "ActorsParents.cpp use of \"LIMIT\" SQL is inconsistent"
+  },
+  {
+   "bugid": 2047923,
+   "status": "RESOLVED",
+   "component": "Core:Widget",
+   "summary": "LocalesChangedObserver never observes intl:app-locales-changed -- weak observer silently never registered"
+  },
+  {
+   "bugid": 2049359,
+   "status": "RESOLVED",
+   "component": "DevTools:Netmonitor",
+   "summary": "Perma [tier 2] devtools/client/netmonitor/test/browser_net_prefs-reload.js | Node is not accessible via accessibility API: id: , tagName: DIV, className: splitter | single tracking bug"
+  },
+  {
+   "bugid": 2049662,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Make it clear that tests are to be run, in AGENTS.md"
+  },
+  {
+   "bugid": 2049899,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Perma [tier 2] Sa TypeError: cannot unpack non-iterable NoneType object | single tracking bug"
+  },
+  {
+   "bugid": 2038819,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "doc: only markdown (instead of a md & rst mix)"
+  },
+  {
+   "bugid": 2050403,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Clarify git commit --fixup / git rebase --autosquash example in stack_quickref.rst"
+  },
+  {
+   "bugid": 1979722,
+   "status": "ASSIGNED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove browser.urlbar.deduplication.thresholdDays pref"
+  },
+  {
+   "bugid": 2035788,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[IPC Urlbar] Move TelemetryEvent::typeFromElement to UrlbarView"
+  },
+  {
+   "bugid": 2046625,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[IPC Urlbar] Remove UrlbarController type alias"
+  },
+  {
+   "bugid": 2044429,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Switch enterprise policies to the vendored cfworker schema in the tree"
+  },
+  {
+   "bugid": 2044651,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Generate QR code… option is available when multiple tabs are selected if accessed from File > Share or url bar context menu"
+  },
+  {
+   "bugid": 2048389,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add strings for the Privacy New Tab widget"
+  },
+  {
+   "bugid": 2049545,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Newtab clean shortcuts list and shortcuts drag n drop"
+  },
+  {
+   "bugid": 2050190,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Use border-radius-medium for New Tab topsite tiles"
+  },
+  {
+   "bugid": 2050235,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "WCW: sportsWidget.interaction pref not set by Results, Upcoming navigations"
+  },
+  {
+   "bugid": 2048365,
+   "status": "NEW",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add some safeaguards around the Nimbus C++ API"
+  },
+  {
+   "bugid": 2047915,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Add a menu item for opening about:pdf in the hamburger menu"
+  },
+  {
+   "bugid": 2032719,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Scrolling the Applications table using the mouse wheel with a dropdown menu open from the Applications > Action will also move the dropdown menu"
+  },
+  {
+   "bugid": 2037121,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "More from Mozilla QR code lacks contrast when running a dark theme"
+  },
+  {
+   "bugid": 1979688,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Use # private fields for tabbrowser's internal state instead of underscore prefixes"
+  },
+  {
+   "bugid": 2037517,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "List all tabs menu in Nova: overflow behaviour"
+  },
+  {
+   "bugid": 2039847,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Add events for tab interactions"
+  },
+  {
+   "bugid": 2049498,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove shadow from selected tab"
+  },
+  {
+   "bugid": 2050419,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Tweak and improve manifest token interpolation syntax"
+  },
+  {
+   "bugid": 1957165,
+   "status": "RESOLVED",
+   "component": "Firefox:Top Sites",
+   "summary": "Making Amazon your default search makes Wikipedia the first tile"
+  },
+  {
+   "bugid": 1754698,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "\"Create Interactive Task\" on Treeherder for docker workers fails to set certain environment variables"
+  },
+  {
+   "bugid": 2050048,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "remove custom android_taskgraph loaders"
+  },
+  {
+   "bugid": 2050562,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "macOS 10.15 tests being scheduled on every push to Beta"
+  },
+  {
+   "bugid": 2050342,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Bump the minimum supported version of clang to 19"
+  },
+  {
+   "bugid": 2045912,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "Remove public oauth APIs, go through the FxA state manager"
+  },
+  {
+   "bugid": 1819001,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "[Downloads v2] download can not resume"
+  },
+  {
+   "bugid": 2049602,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Downloads",
+   "summary": "Crash [@ android.os.FileUriExposedException: at android.os.StrictMode.onFileUriExposed(StrictMode.java) ]"
+  },
+  {
+   "bugid": 2030383,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Collect Remote Settings uptake telemetry"
+  },
+  {
+   "bugid": 2049515,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add UTM source detection for Reddit attribution"
+  },
+  {
+   "bugid": 1812063,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Animations Accessibility/Reduce Motion settings in Android not respected in Fenix"
+  },
+  {
+   "bugid": 2050543,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 8797f3e3e4eaf5fea9852311eff8a671dcced1b5 from 2026-06-25 05:02:14"
+  },
+  {
+   "bugid": 2048113,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Android `MessageNotificationWorker` not unregistered when user does not have notifications enabled"
+  },
+  {
+   "bugid": 2050463,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Correctly dispatch \"onboarding_not_now_tapped\" when user taps on Not now in onboarding sheet"
+  },
+  {
+   "bugid": 2050095,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Stock ticker $ search not working on Android"
+  },
+  {
+   "bugid": 2050103,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Flight suggestion card shows arrival/departure time in device timezone instead of airport's local timezone"
+  },
+  {
+   "bugid": 2050146,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Search",
+   "summary": "Expose Search Optimization Feature secret settings on Beta"
+  },
+  {
+   "bugid": 2043252,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Dedicated telemetry for new tab and site"
+  },
+  {
+   "bugid": 2050272,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Use the nova color tokens for the toolbar shortcut"
+  },
+  {
+   "bugid": 2050528,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Change the icon of the \"Summarize pages\" toolbar shortcut to match the same from the menu"
+  },
+  {
+   "bugid": 2050306,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "AssertIs and JUnitAssertNotNull lint detector tests fail to resolve their kotlin.test stubs under lint 32"
+  },
+  {
+   "bugid": 2050292,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Change the \"Show all\" shortcut entry to appear when there are 8 shortcuts"
+  },
+  {
+   "bugid": 2050382,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Remove selector imports from all pages"
+  },
+  {
+   "bugid": 2050387,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Disable the verifyTheDeleteBookmarkMenuItemInACustomTabTest UI test"
+  },
+  {
+   "bugid": 1869522,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:WebDriver BiDi",
+   "summary": "Add a basic \"moz:profiler\" module for starting and stopping the profiler"
+  },
+  {
+   "bugid": 1760099,
+   "status": "REOPENED",
+   "component": "Toolkit:Application Update",
+   "summary": "Frequent toolkit/mozapps/update/tests/unit_background_update/test_backgroundupdate_exitcodes.js | single tracking bug"
+  },
+  {
+   "bugid": 2048362,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Perform all field ML inference at once rather than each field separately"
+  },
+  {
+   "bugid": 2042085,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate getBookmarkDetailMap to array binding"
+  },
+  {
+   "bugid": 2042089,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Migrate cleanupPages DELETE statements to array binding"
+  },
+  {
+   "bugid": 1901872,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Establish heading font sizes/tokens/classes for the browser chrome"
+  },
+  {
+   "bugid": 2050420,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Error: can't access property \"focus\", defaultButton is undefined - for dialogs without default"
+  },
+  {
+   "bugid": 2048085,
+   "status": "RESOLVED",
+   "component": "Tree Management:Perfherder",
+   "summary": "Resolve openCV numpy dependancy issue"
+  }
+ ],
+ "fixed": 80,
+ "total": 91,
+ "restricted": 11
+}
