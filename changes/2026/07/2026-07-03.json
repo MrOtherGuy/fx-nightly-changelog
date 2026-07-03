@@ -1,0 +1,628 @@
+{
+ "date": "2026-07-03",
+ "buildid": "20260703092309",
+ "cset": "841554ad3dc3140da3d2d52c70548dbc67db0c92",
+ "bugs": [
+  {
+   "bugid": 2051204,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Null deref in OggDemuxer::SetupMediaTracksInfo when an OggCodecState allocation fails (Coverity CID 1364678)"
+  },
+  {
+   "bugid": 2051207,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Undefined shift in AudioConfig::ChannelLayout::Map for out-of-range channel index (Coverity CID 1512893)"
+  },
+  {
+   "bugid": 2052093,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Enable the disabled fetch-canvas-tainting-video WPT tests"
+  },
+  {
+   "bugid": 2028142,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Container style queries that use `attr(...)` don't handle invalidation when the attribute is updated"
+  },
+  {
+   "bugid": 2051216,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Extend CSSNumericValue.type() support to CSSMathProduct"
+  },
+  {
+   "bugid": 1515780,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Device Interfaces",
+   "summary": "Consider more aggressively throttling deviceorientation events"
+  },
+  {
+   "bugid": 2040962,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Editor",
+   "summary": "EditContext text input UI positioning"
+  },
+  {
+   "bugid": 1293741,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Clicked element matches(':active') returns incorrect results within 'mousedown' / 'mouseup' handler"
+  },
+  {
+   "bugid": 1973014,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Clicking on a link, etc. and loading a new page or menu is displayed as a click and that new page or menu opens (Example: YouTube video quality menu)"
+  },
+  {
+   "bugid": 2042339,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "[LNA] Enable LNA Restrictions for Websockets"
+  },
+  {
+   "bugid": 2045935,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "blockquote reporting as AXSubrole \"AXUnknown\" not \"Nil\" in Mac Accessibility Inspector app"
+  },
+  {
+   "bugid": 2033816,
+   "status": "ASSIGNED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Always gather thread CPU information (remove / ignore the \"cpu\" feature)"
+  },
+  {
+   "bugid": 2038577,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "tools/profiler/tests/xpcshell/test_feature_nativeallocations.js - Intermittent Hit MOZ_CRASH(Mutex ordering violation) at checkouts/gecko/js/src/threading/Mutex.cpp:X"
+  },
+  {
+   "bugid": 2051443,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Hit MOZ_CRASH(called `Result::unwrap()` on an `Err` value: TryFromSliceError(())) at gfx/wgpu_bindings/src/server.rs:2747"
+  },
+  {
+   "bugid": 2049363,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Port picture composite modes to quad shaders"
+  },
+  {
+   "bugid": 2052391,
+   "status": "REOPENED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Align tile-invalidation quantize with the rasterizer's pixel rounding"
+  },
+  {
+   "bugid": 1848634,
+   "status": "RESOLVED",
+   "component": "Core:IPC",
+   "summary": "Remove ipc/pull-chromium.py"
+  },
+  {
+   "bugid": 2052112,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[clang-22] Perma Assertion failure: contents.isAligned(byteLength), at /builds/worker/checkouts/gecko/js/src/vm/ArrayBufferObject.h:669"
+  },
+  {
+   "bugid": 2052201,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "jit-test harness expected-error check is broken"
+  },
+  {
+   "bugid": 2052215,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix some test issues for Linux32 ASan builds"
+  },
+  {
+   "bugid": 2044588,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "debug/ExecutionTracer-traced-values.js JIT test can fail with GC zeal enabled"
+  },
+  {
+   "bugid": 2048473,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: obj->asTenured().arena()->onDelayedMarkingList(), at gc/GC.cpp:3751"
+  },
+  {
+   "bugid": 2049401,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: !chunk->stolenFromSweepList in [@ BufferAllocator::checkChunkGCStateNotInUse] after aborted GC"
+  },
+  {
+   "bugid": 2051930,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Try using non-atomic accesses to the cell header during tenuring"
+  },
+  {
+   "bugid": 2036397,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Fully validate canon lift/lower"
+  },
+  {
+   "bugid": 2014220,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Flexbox",
+   "summary": "flex item ends up the wrong size, in situation with several nested flex containers (related to layout.flexbox.item-final-reflow-optimization.enabled)"
+  },
+  {
+   "bugid": 2038072,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Positioned",
+   "summary": "Support absolutely positioned children of inline containing block across multi-columns"
+  },
+  {
+   "bugid": 2052139,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Fix binary search algorithm misidentification in gfxFont"
+  },
+  {
+   "bugid": 2023923,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "We should show the Paste and Go option for the Smart bar"
+  },
+  {
+   "bugid": 2047114,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Blur effect from the bottom of the AI Manage tabs tool call panel is missing"
+  },
+  {
+   "bugid": 2052049,
+   "status": "RESOLVED",
+   "component": "Core:MathML",
+   "summary": "Only disable MathML preferences mathspace_names/legacy_mathvariant_attribute on Nightly (not early-beta)"
+  },
+  {
+   "bugid": 1992709,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "open.spotify.com - Album and playlist covers missing in search results when logged in on desktop site using a tablet device"
+  },
+  {
+   "bugid": 2035411,
+   "status": "ASSIGNED",
+   "component": "Core:Networking",
+   "summary": "Add a warning to about:neterror when SSLKEYLOGFILE is in use"
+  },
+  {
+   "bugid": 2051776,
+   "status": "NEW",
+   "component": "Core:Networking: HTTP",
+   "summary": "MOZ_ASSERT(mState == State::Open) on late loser Finish0RTT after Cleanup"
+  },
+  {
+   "bugid": 2052138,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Set network.http.speculative-parallel-limit=20 for test_http3_alt_svc.js and test_http3.js"
+  },
+  {
+   "bugid": 2039379,
+   "status": "RESOLVED",
+   "component": "Core:Performance Engineering",
+   "summary": "Update perfetto to new version v55.0 from 2026-05-13 15:01:05"
+  },
+  {
+   "bugid": 2035516,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Support WebCompat Excpetion for ContentClassifier Engine"
+  },
+  {
+   "bugid": 1291494,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Get rid of SimpleTextContextPaint"
+  },
+  {
+   "bugid": 1425832,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Using Services.prompt from pippki.js breaks browser_loadPKCS11Module_ui - should use PromptTestUtils"
+  },
+  {
+   "bugid": 2051206,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "unlink/unlinkat sandbox syscall traps crash on a null path argument (Coverity CID 1678881, 1679420)"
+  },
+  {
+   "bugid": 2007074,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Thunderbird creates an empty \"thunderbird\" folder in the home directory"
+  },
+  {
+   "bugid": 2052106,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Add test for `progress()` support in `InspectorUtils.getComputationSteps`"
+  },
+  {
+   "bugid": 2051557,
+   "status": "RESOLVED",
+   "component": "DevTools:Performance Tools (Profiler/Timeline)",
+   "summary": "Improve UI of the profiler recording popup after Nova"
+  },
+  {
+   "bugid": 2038819,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "doc: only markdown (instead of a md & rst mix)"
+  },
+  {
+   "bugid": 2051591,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Match output of document upload tasks to format that reviewbot requires"
+  },
+  {
+   "bugid": 2050399,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[IPC Urlbar] Phase 4: Make the Urlbar actor pair carry real messages"
+  },
+  {
+   "bugid": 2051493,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "missing spaces between bookmark tags when bookmark has more than 2 tags"
+  },
+  {
+   "bugid": 2032467,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "Cleanup onDownloadEnded when installing addons"
+  },
+  {
+   "bugid": 2047962,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "`browser.startup.homepage` with `data:text/plain,browser.startup.homepage=…\")` incompatible since 152.0"
+  },
+  {
+   "bugid": 2051089,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "ExtensionSettings no longer work"
+  },
+  {
+   "bugid": 2049713,
+   "status": "RESOLVED",
+   "component": "Firefox:Firefox Monitor",
+   "summary": "Remove \"0 trackers blocked\" state from the Privacy Panel"
+  },
+  {
+   "bugid": 2036103,
+   "status": "ASSIGNED",
+   "component": "Firefox:Firefox View",
+   "summary": "Remove Firefox View button for new users and non-users"
+  },
+  {
+   "bugid": 2051429,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use moz-src for dom/manifest"
+  },
+  {
+   "bugid": 2051753,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use moz-src for dom/privateattribution"
+  },
+  {
+   "bugid": 2039487,
+   "status": "REOPENED",
+   "component": "Firefox:IP Protection",
+   "summary": "Site exclusion description alignment is slightly offset in the VPN main panel"
+  },
+  {
+   "bugid": 2049901,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Retry transient failures when getting a proxy pass"
+  },
+  {
+   "bugid": 2051721,
+   "status": "RESOLVED",
+   "component": "Firefox:Keyboard Navigation",
+   "summary": "Align new key input field and its label on about:keyboard"
+  },
+  {
+   "bugid": 1251981,
+   "status": "REOPENED",
+   "component": "Firefox:Menus",
+   "summary": "Firefox menus and panels overlap Windows Taskbar"
+  },
+  {
+   "bugid": 2046787,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Update profiles section of account menu with Nova changes"
+  },
+  {
+   "bugid": 2046792,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Update tools section of account menu with Nova changes"
+  },
+  {
+   "bugid": 2051703,
+   "status": "RESOLVED",
+   "component": "Firefox:Menus",
+   "summary": "Use --button-background-color-menu variables for the app menu instead of --button-background-color-ghost variables."
+  },
+  {
+   "bugid": 2045820,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Allow support for customizable height for asrouter-newtab-multistage"
+  },
+  {
+   "bugid": 2035622,
+   "status": "REOPENED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Always show an add shortcut button for New Tab shortcuts"
+  },
+  {
+   "bugid": 2048082,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "WorldCW - Celebration animation phase 2"
+  },
+  {
+   "bugid": 2052128,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "sports widget: soccer/football world championship widget displays wrong if goals scored in extra time (counted twice)"
+  },
+  {
+   "bugid": 2052371,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "World Cup Widget: Two varieties for Survey Message STRINGS"
+  },
+  {
+   "bugid": 2052165,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 43c29379de6bc5c875e0ae589f7eca8e9ae43f5c from 2026-07-02 10:30:10"
+  },
+  {
+   "bugid": 1931009,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Intermittent TV toolkit/components/search/tests/xpcshell/test_searchSuggest.js | fetch_twice_in_a_row - [fetch_twice_in_a_row : 342] 0 == 1"
+  },
+  {
+   "bugid": 2049138,
+   "status": "RESOLVED",
+   "component": "Firefox:Site Permissions",
+   "summary": "Add \"Keep history\" permission to Page Info window"
+  },
+  {
+   "bugid": 2044589,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "[macOS] Exclude non-notarized geckodriver builds from the Taskcluster index"
+  },
+  {
+   "bugid": 2052283,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Update mozilla-taskgraph to v4.3.0"
+  },
+  {
+   "bugid": 2051288,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "Applinks crash when handling a very large URL"
+  },
+  {
+   "bugid": 2051295,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "Compose autofill crash when editing a very large URL"
+  },
+  {
+   "bugid": 2044344,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Allow summarization to happen while page is still loading. Display loading screen until page loads then populate summary"
+  },
+  {
+   "bugid": 2050875,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Reducer and middleware for shake to summarize should use exhaustive whens"
+  },
+  {
+   "bugid": 2050849,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "[WebCompat Reporter v3] The 'What’s not working?' list options don't match the order in Figma"
+  },
+  {
+   "bugid": 2051369,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add deeplink to privacy report"
+  },
+  {
+   "bugid": 2046932,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:History",
+   "summary": "history search feature becomes inaccessible or invisible after user goes into a history group and back"
+  },
+  {
+   "bugid": 2051431,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "[Homepage Sports Widget]  Disable WorldCup Widget after a particular date"
+  },
+  {
+   "bugid": 2051941,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "Blue dot indicator is shown in the browser menu even though the associated set-to-default banner is only shown from the homepage."
+  },
+  {
+   "bugid": 2042108,
+   "status": "NEW",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Private tabs screen lock setting disappeared on older android versions"
+  },
+  {
+   "bugid": 2050250,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[A11Y] Consider making a tracker blocking dashboard item larger, also it may not have a label readable by screen readers"
+  },
+  {
+   "bugid": 2050258,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[A11Y] Talkback announces only \"button\" for the one that dismisses (hides) the tracker blocking dashboard"
+  },
+  {
+   "bugid": 2050986,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "FxA goes into a bad state if user with a previously authorized Relay account tries to authorize VPN"
+  },
+  {
+   "bugid": 2051746,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[IPProtection] Onboarding card is immediately shown for debug builds"
+  },
+  {
+   "bugid": 2052020,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Groups Onboarding] Grid view card on different screen sizes"
+  },
+  {
+   "bugid": 2019946,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Top bar lacks \"open new tab\" button"
+  },
+  {
+   "bugid": 2025163,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Crash when pasting really long URLs"
+  },
+  {
+   "bugid": 2051304,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Add support for integrators specifying labels for toolbar buttons - useful in UI tests"
+  },
+  {
+   "bugid": 2052212,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Toolbar",
+   "summary": "Don't show the summarize toolbar shortcut as an option when no shortcut is currently selected"
+  },
+  {
+   "bugid": 2049305,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Try to be consistent with `allowMissingSdk()` in lint tests"
+  },
+  {
+   "bugid": 2052303,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update some miscellaneous Gradle dependencies"
+  },
+  {
+   "bugid": 1975878,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Translations",
+   "summary": "In the settings, the menu to translate the site on load is set to appear, but the menu is not displayed"
+  },
+  {
+   "bugid": 1999922,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - <TextSelectionTest. verifySelectAllPDFTextOptionTest>"
+  },
+  {
+   "bugid": 2052230,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent org.mozilla.fenix.ui.efficiency.tests.SettingsDeleteBrowsingDataOnQuitTest#deleteDownloadsOnQuitTest | java.lang.AssertionError: Failed to click UiObject for selector: Page content 'smallZip.zip'"
+  },
+  {
+   "bugid": 2051336,
+   "status": "RESOLVED",
+   "component": "Release Engineering:Release Automation",
+   "summary": "run update integrity tests on devedition"
+  },
+  {
+   "bugid": 2050357,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[wdspec] Use a dedicated geckodriver instance for Mozilla-specific tests"
+  },
+  {
+   "bugid": 2052196,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[wdspec] Ignore leakcheck failures (take two)"
+  },
+  {
+   "bugid": 2030275,
+   "status": "RESOLVED",
+   "component": "Toolkit:Alerts Service",
+   "summary": "Intermittent toolkit/components/alerts/test/chrome/test_principal.html | single tracking bug - permafails under a combination of test groups"
+  },
+  {
+   "bugid": 2040673,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "crashhelper - does not honor MOZ_CRASHREPORTER_DISABLE=1 / application.ini"
+  },
+  {
+   "bugid": 2050523,
+   "status": "RESOLVED",
+   "component": "Toolkit:Relay",
+   "summary": "Firefox Relay Mask/Label Name Display Fixes"
+  },
+  {
+   "bugid": 2029183,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Support neutral variant of moz-button"
+  },
+  {
+   "bugid": 2050524,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Create a basic UI-only theme picker for use on various surfaces"
+  }
+ ],
+ "fixed": 90,
+ "total": 103,
+ "restricted": 30
+}
