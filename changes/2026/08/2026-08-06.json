@@ -1,0 +1,490 @@
+{
+ "date": "2026-08-06",
+ "buildid": "20260806041615",
+ "cset": "a930bda5ad38c96fd4ea9646945a5b090b6bd4f8",
+ "bugs": [
+  {
+   "bugid": 2060244,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vet crates needed for the UniFFI 0.32 upgrade"
+  },
+  {
+   "bugid": 2044501,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Make MediaCapabilities playback decodingInfo use PDMFactory::Supports to make responses cached for remote decoders, and gate on pref"
+  },
+  {
+   "bugid": 2044636,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video",
+   "summary": "Make webrtc codec queries for MediaCapabilities async"
+  },
+  {
+   "bugid": 2057724,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Vulkan decoding won't work"
+  },
+  {
+   "bugid": 2060653,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Remove unused RemoteMediaDataEncoderParent::mManagerThread member"
+  },
+  {
+   "bugid": 2042994,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Alias `-webkit-line-clamp` to the new `line-clamp` property"
+  },
+  {
+   "bugid": 2060558,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[css-link-params] Custom property references don't work inside param()."
+  },
+  {
+   "bugid": 2060754,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement @support at-rule() behind pref"
+  },
+  {
+   "bugid": 1958702,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Testcase generating N Document() objects is 15x slower in Firefox (N=1500000). The cleanup takes infinite time"
+  },
+  {
+   "bugid": 1982627,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Assertion failure: isSome(), at /builds/worker/workspace/obj-build/dist/include/mozilla/Maybe.h:966"
+  },
+  {
+   "bugid": 2020715,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement #inner-consider-speculative-loads-steps"
+  },
+  {
+   "bugid": 2051002,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Testcase sending JS URI N times across an iframe is quadratic in N"
+  },
+  {
+   "bugid": 2054295,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Script-injected import map makes Firefox fetch every module twice and the page never fires `load` — tab spinner and \"Transferring data from…\" forever"
+  },
+  {
+   "bugid": 2052664,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Back button doesn't work after dragging link from another tab"
+  },
+  {
+   "bugid": 2054403,
+   "status": "VERIFIED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Ctrl+Shift+3 and Ctrl+Shift+6 cannot be assigned as WebExtension command shortcuts on macOS (blocked by internal wrCaptureCmd/wrToggleCaptureSequenceCmd)"
+  },
+  {
+   "bugid": 2060286,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Migrate from local rect + local clip rect to bounds + pattern rect representation (part 2)"
+  },
+  {
+   "bugid": 2060612,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender's backend pool shutdown is too asynchronous"
+  },
+  {
+   "bugid": 2060131,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Support JSOp::Resume in Warp"
+  },
+  {
+   "bugid": 2057458,
+   "status": "REOPENED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: obj->asTenured().arena()->onDelayedMarkingList() @ gc/GC.cpp:3756"
+  },
+  {
+   "bugid": 2058944,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "riscv64 wasm baseline: Assertion failure: isPoolEmptyFor(InstSize) || inhibitPools_ > 0"
+  },
+  {
+   "bugid": 2048635,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "[css-link-params] What's the point of ommitting the value?"
+  },
+  {
+   "bugid": 2058329,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Monitor Agent][FE] Add about link to monitor create success"
+  },
+  {
+   "bugid": 2056993,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "[speculation-rules] Prefetch requests don't show up in DevTools Network panel -- channel's LoadInfo has no BrowsingContext"
+  },
+  {
+   "bugid": 2056195,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Follow HTTPS AliasMode and connect to the target name even when the target does not have a HTTPS record."
+  },
+  {
+   "bugid": 2052970,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Change the return type of AsyncPanZoomController::GetCompositorScrollUpdates from std::vector to nsTArray"
+  },
+  {
+   "bugid": 2057885,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "browser_blockingIndexedDb.js fails on Linux 24.04 and Windows with code coverage when browser.nova.enabled is true"
+  },
+  {
+   "bugid": 2058143,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove cookie banner handling implementation"
+  },
+  {
+   "bugid": 2060649,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove unused BounceTrackingState::ShouldCreateBounceTrackingStateForBC declaration"
+  },
+  {
+   "bugid": 2060130,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Lazily build the bbox-space path copy in SVGGeometryFrame::GetBBoxContribution"
+  },
+  {
+   "bugid": 2060873,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Let svg.new-getBBox.enabled and svg.Moz2D.strokeBounds.enabled ride the trains"
+  },
+  {
+   "bugid": 2048566,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Block creating Webrtc GMP H264 codecs if no H264 plugin is available"
+  },
+  {
+   "bugid": 2046323,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Use more wayland interfaces as smart pointers"
+  },
+  {
+   "bugid": 2042839,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Display ::picker rules in pseudo element section"
+  },
+  {
+   "bugid": 2059845,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Suggest agents remind forgetful users to update their AI tooling."
+  },
+  {
+   "bugid": 2051007,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Firefox Source Docs: Content",
+   "summary": "Toolkit/Nimbus \"Experimenter Docs\" link is not found"
+  },
+  {
+   "bugid": 2060289,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Use ignoreUsingDeclarations: true for no-unused-vars eslint rule"
+  },
+  {
+   "bugid": 2045980,
+   "status": "RESOLVED",
+   "component": "Enterprise Products:Firefox",
+   "summary": "Expand SitePolicies to cover forced HTTPS connections"
+  },
+  {
+   "bugid": 2033089,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "There is a delay in showing and hiding the \"tab-to-search\" suggestions, so the suggestion dropdown appears to flicker"
+  },
+  {
+   "bugid": 2042945,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add telemetry to measure how often users search a query in search mode that looks like a URL"
+  },
+  {
+   "bugid": 2059474,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Search mode Enter loads the SERP in the wrong tab on the urlbar actor message path"
+  },
+  {
+   "bugid": 2060639,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Send urlbar engine icons over the actor as data URLs"
+  },
+  {
+   "bugid": 1882241,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmark star fails to update when bookmark added in Library"
+  },
+  {
+   "bugid": 1731313,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Add support for reordering containers"
+  },
+  {
+   "bugid": 2058736,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Add docs for profile data upgrades / migration"
+  },
+  {
+   "bugid": 2057317,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Provide the New Tab `context_id` to Mozilla Ads Client"
+  },
+  {
+   "bugid": 2060710,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 5f181fd8b0db777e18566bf1972848d700f0b44d from 2026-08-04 19:30:19"
+  },
+  {
+   "bugid": 2053220,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Remove testing XPI base url pref from ThemesList.sys.mjs"
+  },
+  {
+   "bugid": 2028648,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "browser_customization_context_menus.js fails standalone on Windows"
+  },
+  {
+   "bugid": 2057935,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "browser_help_panel_cloning.js fails on Linux 24.04 and Windows when browser.nova.enabled is true"
+  },
+  {
+   "bugid": 2058043,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Perma when browser.nova.enabled is true browser/components/customizableui/test/browser_customization_context_menus.js | single tracking bug"
+  },
+  {
+   "bugid": 1977771,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to clang 22"
+  },
+  {
+   "bugid": 2039416,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update builders to rustc 1.95"
+  },
+  {
+   "bugid": 2060781,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang 22] Perma make: *** [Basic.mk:116: WinRel/src/arscan.obj] Error 1"
+  },
+  {
+   "bugid": 2041557,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "WorkManagerSyncManager's retry strategy leads to long periods without sync working"
+  },
+  {
+   "bugid": 2060759,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version e15eae17ef0a4ccc5f3584ff7a9c6b57677a4058 from 2026-08-05 05:02:36"
+  },
+  {
+   "bugid": 2060530,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:L10N",
+   "summary": "Remove `mozac_feature_relay_chip_text` expired string from localized strings"
+  },
+  {
+   "bugid": 2059786,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Update IP protection locations title to match Figma"
+  },
+  {
+   "bugid": 2060267,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Convert three MainMenuTest smoke tests to ui/efficiency"
+  },
+  {
+   "bugid": 2060280,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060280 - [efficiency] Refresh harness docs: drop stale files, document the tracking meta bug, normalize with prettier"
+  },
+  {
+   "bugid": 2060288,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Convert MainMenuTest.verifyRecommendedExtensionsListWhileNoExtensionIsInstalledTest to ui/efficiency"
+  },
+  {
+   "bugid": 2060297,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060297 - [efficiency] Fix ShareOverlayPage navigation: empty nav edge and missing page-presence anchor"
+  },
+  {
+   "bugid": 2060299,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Convert DownloadTest.saveAsPdfFunctionalityTest to ui/efficiency"
+  },
+  {
+   "bugid": 2060305,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060305 - [efficiency] Add notification-shade capability to the harness"
+  },
+  {
+   "bugid": 2060317,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060317 - [efficiency] Dismiss the tab-history sheet at the end of the custom-tab long-press test"
+  },
+  {
+   "bugid": 2060324,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060324 - [efficiency] Drop the never-invoked lambda from NavigationStep.OpenNotificationsTray"
+  },
+  {
+   "bugid": 2060336,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060336 - [efficiency] Remove dormant no-op navigation edges from seven page objects"
+  },
+  {
+   "bugid": 2060339,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060339 - [efficiency] Remove CollectionsPage's no-op nav edge and add a missing page-presence anchor"
+  },
+  {
+   "bugid": 2060345,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Anchor NotificationPage on the shade itself and close it on the failure path"
+  },
+  {
+   "bugid": 2060346,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Convert CustomTabsTest.verifyDownloadInACustomTabTest to ui/efficiency"
+  },
+  {
+   "bugid": 2060347,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] A failed attempt's HomeActivity outlives it, so the retry's launch times out instead of running the test"
+  },
+  {
+   "bugid": 2060406,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "[efficiency] Convert CreditCardAutofillTest.deleteSavedCreditCardUsingMenuButtonTest to ui/efficiency"
+  },
+  {
+   "bugid": 2060429,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Bug 2060429 - [efficiency] Root ShareOverlayPage and WebCompatReporterPage at BrowserPage so reachability can route to them"
+  },
+  {
+   "bugid": 2060474,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Migrate verifyUpdatedLoginIsSavedTest and verifyMultipleLoginsSelectionsTest UI tests to the efficiency framework"
+  },
+  {
+   "bugid": 2050344,
+   "status": "RESOLVED",
+   "component": "NSPR:NSPR",
+   "summary": "[clang-22] Perma /builds/worker/checkouts/gecko/nsprpub/pr/src/md/windows/ntmisc.c(736,46): error: incompatible pointer types passing 'PRInt32 *' (aka 'int *') to parameter of type 'LPDWORD' (aka 'unsigned long *') [-Wincompatible-pointer-types]"
+  },
+  {
+   "bugid": 2059365,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Frequent M(remote) macOS VM TEST-UNEXPECTED-TIMEOUT | automation.py | application timed out after 370.0 seconds with no output"
+  },
+  {
+   "bugid": 2058991,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "The InstallTime crash annotation is still not stable over Windows machines"
+  },
+  {
+   "bugid": 2060518,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Update login-line styles in contextual password manager"
+  },
+  {
+   "bugid": 1999420,
+   "status": "RESOLVED",
+   "component": "Toolkit:Performance Monitoring",
+   "summary": "Perma macOS with nova enabled browser/base/content/test/performance/browser_startup_flicker.js | unexpected changed rect: ({x1:348, x2:359, y1:21, y2:32, w:12, h:12}), window width: 1280"
+  },
+  {
+   "bugid": 2054381,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Bookmarks/history locked error at startup despite no external process holding places.sqlite — appears to be an internal ConcurrentConnection race in Database::EnsureConnection()"
+  },
+  {
+   "bugid": 2060504,
+   "status": "RESOLVED",
+   "component": "Toolkit:Preferences",
+   "summary": "ContentPrefService2 leaks a connection opened just before shutdown, crashing with \"Storage connection not closed\""
+  }
+ ],
+ "fixed": 72,
+ "total": 80,
+ "restricted": 7
+}
