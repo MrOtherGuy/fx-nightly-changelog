@@ -1,0 +1,550 @@
+{
+ "date": "2026-09-05",
+ "buildid": "20260905085945",
+ "cset": "0742d09fdc84b275a12b82fadf2b2a5afd5ec512",
+ "bugs": [
+  {
+   "bugid": 2067923,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Video doesn't play on twitch on DGX Spark because of vulkan video decode"
+  },
+  {
+   "bugid": 2068764,
+   "status": "REOPENED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "mozilla::FFmpegVideoDecoder::InitVulkanDecoder takes 2.5s on DGX Spark"
+  },
+  {
+   "bugid": 2043002,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Implement the automatic, container size based line clamping for `line-clamp` longhand"
+  },
+  {
+   "bugid": 2069393,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Collect stylesheet invalidations more lazily"
+  },
+  {
+   "bugid": 2068538,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Remove legecy telemetry probes for webkit/blink directory usage"
+  },
+  {
+   "bugid": 2069242,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Navigation",
+   "summary": "[Text Fragments] A Text Fragment generated on BMO comment on Firefox does not work on Firefox, but works on Chrome"
+  },
+  {
+   "bugid": 1380146,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Assertion failure: question > 0 [@/home/worker/workspace/build/src/dom/security/SRIMetadata.cpp:54]"
+  },
+  {
+   "bugid": 2066103,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Stop mirroring telemetry securityuicerterror_load_aboutcerterror"
+  },
+  {
+   "bugid": 2064545,
+   "status": "RESOLVED",
+   "component": "Core:Fuzzing",
+   "summary": "Permanent fuzzing tools/fuzzing/smoke/test_fuzzing_interface.py::test_fuzzing_interface_smoke[NetworkHttp2ProxyPlain] TEST-UNEXPECTED-FAIL"
+  },
+  {
+   "bugid": 1995443,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | mozilla::Vector<T>::operator[] | ProfileBuffer::MaybeStreamExecutionTraceToJSON<T>]"
+  },
+  {
+   "bugid": 2067267,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Update libyuv to new version bcb7507cb4c965132228f6bb4d4eaf1dfa39153f from 2026-08-27 00:00:00"
+  },
+  {
+   "bugid": 2069205,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix wait sync in SharedSurface_AndroidHardwareBuffer::WaitForBufferOwnership()"
+  },
+  {
+   "bugid": 2064917,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Implement AVX2 version of AccumRemainder()"
+  },
+  {
+   "bugid": 2068715,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: ImageLib",
+   "summary": "Avoid per-output-pixel mozilla::Vector bounds checks in SkConvolutionFilter1D::FilterForValue"
+  },
+  {
+   "bugid": 2066780,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "wgpu update 2026-08-26"
+  },
+  {
+   "bugid": 2068160,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Do clipping and culling in raster space (part 2)"
+  },
+  {
+   "bugid": 2069139,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Vulkan HW decode on Intel with WebRender on non-Intel GPUs (NVIDIA) corruption at certain resolutions"
+  },
+  {
+   "bugid": 2068540,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Abort off-thread script compilation when the request is cancelled"
+  },
+  {
+   "bugid": 2069095,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use isMagicNoReleaseCheck in HashableValueHasher::isEmpty"
+  },
+  {
+   "bugid": 2068418,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Assertion failure: cx->isThrowingOutOfMemory() || cx->isThrowingOverRecursed() in [@ CheckPatternSyntax] after toggling regexp.buffer-boundaries"
+  },
+  {
+   "bugid": 2067391,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Perma TEST-UNEXPECTED-FAIL | dom/base/test/test_wasm_offthread_compile.html | A large source phase wasm module is compiled off the main thread - A large source phase wasm module is compiled off the main threa\" - when Gecko 157 merges to Beta on 2026-09-10"
+  },
+  {
+   "bugid": 2067674,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "lazyExports binary searches use an unsigned comparator, so the lower half is never searched (Coverity CID 1700568)"
+  },
+  {
+   "bugid": 2067675,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Hold mMutex while reading mCompileResult in WasmCompileTask::StealResult (Coverity CID 1700566)"
+  },
+  {
+   "bugid": 2068386,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "Assertion failure: fallibleScope_ ([OOM] Cannot allocate a new chunk in an infallible scope.) in [@ js::jit::AddClosingPhisForLoop] via wasm Ion loop unrolling"
+  },
+  {
+   "bugid": 1995348,
+   "status": "ASSIGNED",
+   "component": "Core:Layout: Grid",
+   "summary": "Implement parsing for masonry using new keywords `display:grid-lanes` / `inline-grid-lanes`"
+  },
+  {
+   "bugid": 2066814,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "chat.qwen.ai - Selected text in AI responses is not highlighted"
+  },
+  {
+   "bugid": 2061059,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Smart Form Fill - style SFF UI trigger autocomplete row item"
+  },
+  {
+   "bugid": 2068218,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "browser_aiwindow_*.js leak windows until shutdown, tripping the shutdown hang watchdog"
+  },
+  {
+   "bugid": 2066194,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Create reproducible smoke test for testing smart window intent model outputs in Fx CI"
+  },
+  {
+   "bugid": 2049666,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "PROCESS-CRASH | MozPromise::ThenValue created from 'PullCallbackImpl' (dispatchRv: not dispatched) [@ mozilla::MozPromise<bool, nsresult, false>::ThenValueBase::AssertIsDead] | toolkit/components/ml/tests/browser/browser.toml"
+  },
+  {
+   "bugid": 2064737,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "onnxruntime toolchain task should use the sysroot"
+  },
+  {
+   "bugid": 2067308,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Developer Tools Network Timings often incorrect"
+  },
+  {
+   "bugid": 2068658,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update happy-eyeballs to v1.0.0"
+  },
+  {
+   "bugid": 2068114,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "First Twitch visit stalls for over 60 seconds on Linux when HTTPS RR is used as Alt-Svc with local recursive Unbound DNS"
+  },
+  {
+   "bugid": 2068870,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "Happy Eyeballs v3 gets stuck with NS_ERROR_UNKNOWN_HOST for single-address host after address is reported unusable"
+  },
+  {
+   "bugid": 2062172,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Proxy",
+   "summary": "Cannot \"proceed\" to a site with TLS error when browsing via proxy"
+  },
+  {
+   "bugid": 1960853,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "\"Copy Clean Link\": Adds \"=\" after empty parameters when stripping"
+  },
+  {
+   "bugid": 2037905,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove the legacy telemetry probe for email_tracker_embedded_per_tab"
+  },
+  {
+   "bugid": 2061376,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove legacy email_tracker_count probe"
+  },
+  {
+   "bugid": 2062077,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Reduce duplicated promise boilerplate in the Storage Access API entry points in Document.cpp"
+  },
+  {
+   "bugid": 2051654,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Wrong DOMRange getBoundlingClientRect when using SVG text scaled *up* horizontally through CSS transform"
+  },
+  {
+   "bugid": 2063892,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Crash in [@ shutdownhang | RtlpWaitOnAddressWithTimeout | RtlpWaitOnAddress | RtlWaitOnAddress | kernelbase.dll | DispatchMessageWorker]"
+  },
+  {
+   "bugid": 2066923,
+   "status": "RESOLVED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Quota manager: switch usage counters from unsigned integers to signed integers"
+  },
+  {
+   "bugid": 2069362,
+   "status": "ASSIGNED",
+   "component": "Core:Storage: Quota Manager",
+   "summary": "Quota manager: possible drift in case of failing IDB large object write"
+  },
+  {
+   "bugid": 2069005,
+   "status": "RESOLVED",
+   "component": "Core:Web Speech",
+   "summary": "Ask to install speech recognition models on `start(...)` if available but not present"
+  },
+  {
+   "bugid": 2069062,
+   "status": "RESOLVED",
+   "component": "Core:Web Speech",
+   "summary": "Fix position of Speech Recognition entry in about:preferences AI Controls"
+  },
+  {
+   "bugid": 2049215,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Null-pointer dereference in RTCEncodedVideoFrameData::Clone and RTCEncodedAudioFrameData::Clone"
+  },
+  {
+   "bugid": 2054947,
+   "status": "ASSIGNED",
+   "component": "DevTools:Debugger",
+   "summary": "No source is displayed for html files with inline styles (without inline scripts)"
+  },
+  {
+   "bugid": 2000150,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector",
+   "summary": "\"Add class\" button (.cls) should be disabled when a class can't be added to the selected node"
+  },
+  {
+   "bugid": 2067722,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Coverity: the ots::Buffer model leaves read destinations uninitialized, producing ~135 UNINIT false positives in gfx/ots"
+  },
+  {
+   "bugid": 2068128,
+   "status": "NEW",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Improve generation of white-listed files for clang-tidy"
+  },
+  {
+   "bugid": 2067123,
+   "status": "RESOLVED",
+   "component": "Enterprise Products:Firefox",
+   "summary": "getActivePolicies() reports a policy as active even when its callback failed"
+  },
+  {
+   "bugid": 2069269,
+   "status": "RESOLVED",
+   "component": "External Software Affecting Firefox:Other",
+   "summary": "Crashes with TubeDigger"
+  },
+  {
+   "bugid": 2065901,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use CSS anchor positioning for the address bar's breakout width instead of a ResizeObserver"
+  },
+  {
+   "bugid": 2068864,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "No dismissal pop-up message appears after disabling trending searches from the new tab search bar"
+  },
+  {
+   "bugid": 1970802,
+   "status": "RESOLVED",
+   "component": "Firefox:File Handling",
+   "summary": "Frequent uriloader/exthandler/tests/mochitest/browser_pdf_save_as.js | single tracking bug"
+  },
+  {
+   "bugid": 2060284,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "FRO Template Updates to Support New Import Screen Layout"
+  },
+  {
+   "bugid": 2065240,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Menu message card can stretch the account panel wider; cap the card width"
+  },
+  {
+   "bugid": 2063662,
+   "status": "ASSIGNED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add number of columns to Glean telemetry"
+  },
+  {
+   "bugid": 2069287,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Show the PDF.js version and viewer prefs in about:support"
+  },
+  {
+   "bugid": 2068813,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Remove or update metrics expiring at the end of Firefox 157: search.counts.*"
+  },
+  {
+   "bugid": 2069054,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "SERP ad clicks before component categorization are misreported as abandonments"
+  },
+  {
+   "bugid": 2067439,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Hover state of tab content buttons hard to recognize"
+  },
+  {
+   "bugid": 2068635,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "[Nova][HCM] \"Sign in to sync\" promo card is not visible when switching between Light/Dark mode with HCM themes"
+  },
+  {
+   "bugid": 2066675,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "`customizing‑movingItem` attribute is unused"
+  },
+  {
+   "bugid": 2069398,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Open the app menu notification panel before clicking inside it in browser_panelUINotifications.js"
+  },
+  {
+   "bugid": 2069366,
+   "status": "RESOLVED",
+   "component": "Firefox:Tours",
+   "summary": "UITour: Add ability to set newtab wallpaper"
+  },
+  {
+   "bugid": 2035575,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Wire in-tree application-services through the fat AAR and artifact-build pipelines"
+  },
+  {
+   "bugid": 2069174,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "High freq puppeteer TypeError: '>' not supported between instances of 'NoneType' and 'int'"
+  },
+  {
+   "bugid": 2014269,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Bump Mach's minimum required Python version to 3.10"
+  },
+  {
+   "bugid": 1677741,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "action tasks like backfills. retriggers and reruns tasks should have priority 'very low', else they can prevent tasks for recent pushes from running"
+  },
+  {
+   "bugid": 2069237,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 2ae4b8d90802b1d987900224461fec2ed7c35341 from 2026-09-04 05:02:15"
+  },
+  {
+   "bugid": 2023540,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "The expanded toolbar doesn't match edge to edge wallpaper"
+  },
+  {
+   "bugid": 2069088,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "Stop greying out country list when UI is diabled"
+  },
+  {
+   "bugid": 2065176,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Retire detect-leaks-arm and enable leak detection on tae-arm"
+  },
+  {
+   "bugid": 2061832,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "[Toolkit] Turn on pdfjs.annotationEditorMode for Nightly"
+  },
+  {
+   "bugid": 2019992,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "repo-update job outputs reversed effective-tld-names diff"
+  },
+  {
+   "bugid": 1852529,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "[wdspec] Improve \"scroll\" tests for \"wheel\" input type for both WebDriver classic and BiDi"
+  },
+  {
+   "bugid": 1958852,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Merge or remove duplication between remote/shared/Sync.sys.mjs and remote/marionette/sync.sys.mjs"
+  },
+  {
+   "bugid": 1982990,
+   "status": "RESOLVED",
+   "component": "Remote Protocol:Agent",
+   "summary": "Trying to resize the browser window on Linux 24.04 CI workers cause a 500ms delay"
+  },
+  {
+   "bugid": 2068497,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Support per-field-type fallback from the ML model to the regexp heuristic"
+  },
+  {
+   "bugid": 2065925,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "glean_parser Rust codegen emits ~32k clippy warnings in the generated metrics.rs, pings.rs and factory.rs"
+  },
+  {
+   "bugid": 2067398,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "[Nova] Tab hover color is gray instead of purple"
+  },
+  {
+   "bugid": 2069042,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Toolbar button hover and active state background color has become orange on Ubuntu, including for third-party webextension themes"
+  },
+  {
+   "bugid": 2067761,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.dirtyleather.ca - Transparent option text makes dropdown lists unreadable"
+  },
+  {
+   "bugid": 2039637,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "WebExtensions commands API shortcut keys may trigger pageAction popup to open while the extension is already shutting down"
+  },
+  {
+   "bugid": 1307759,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "WindowManager.setState should be asynchronous, window.restore() is not immediate"
+  },
+  {
+   "bugid": 1955255,
+   "status": "NEW",
+   "component": "WebExtensions:General",
+   "summary": "[flatpak] [snap] Implement xdg-native-messaging-proxy frontend"
+  },
+  {
+   "bugid": 2062229,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "action.openPopup() rejects when a tab hover preview is showing"
+  },
+  {
+   "bugid": 1378104,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Untriaged",
+   "summary": "Intermittent browser/components/extensions/test/browser/test-oop-extensions/browser_ext_commands_execute_page_action.js | Test timed out -"
+  }
+ ],
+ "fixed": 78,
+ "total": 90,
+ "restricted": 13
+}
