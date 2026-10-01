@@ -1,0 +1,676 @@
+{
+ "date": "2026-10-01",
+ "buildid": "20261001090632",
+ "cset": "2d4bbdcdd7a0b276f32c9dbfa959cbfec37206d4",
+ "bugs": [
+  {
+   "bugid": 2054532,
+   "status": "RESOLVED",
+   "component": "Application Services:Nimbus SDK",
+   "summary": "nimbus fml build times"
+  },
+  {
+   "bugid": 2027247,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Heap buffer over-read in [@ MediaCacheStream::ReadPartialBlock] via int32 truncation of server-controlled Content-Range offset"
+  },
+  {
+   "bugid": 2030747,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Heap-Buffer-Overflow in AudioConverter::FramesOutToSamples via Integer Overflow on 32-bit platforms"
+  },
+  {
+   "bugid": 2075494,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Update libvpx to new version 5e680f30801d03c21078f8c4b772464752516211 from 2026-09-30 00:00:00"
+  },
+  {
+   "bugid": 2050477,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "WebM PixelCrop integer wrap exposes decoded-frame stride padding to web content"
+  },
+  {
+   "bugid": 2067742,
+   "status": "ASSIGNED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Cherry pick Vulkan specific fixes to ffvpx"
+  },
+  {
+   "bugid": 2075497,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update dav1d to new version bf5a8792744ee78c977dfb16503f9156dde6401d from 2026-09-24 17:13:25"
+  },
+  {
+   "bugid": 2075696,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add support to ffvpx to use MediaCodec FLAC/Opus/Vorbis for EME playback"
+  },
+  {
+   "bugid": 2074630,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Web Codecs",
+   "summary": "Crash in [@ java.lang.NullPointerException: at org.mozilla.gecko.media.CodecProxy.create(CodecProxy.java)]"
+  },
+  {
+   "bugid": 2073614,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Add a `StyleZoom` field into `TransformReferenceBox` to clean up the callsites that include a field of both types"
+  },
+  {
+   "bugid": 2076755,
+   "status": "ASSIGNED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Upstream Stylo changes from Servo (Sep 2026)"
+  },
+  {
+   "bugid": 1842111,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Rename CPOW things in ProcessHangMonitor"
+  },
+  {
+   "bugid": 2075839,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma /domparsing/tentative/stream-html-custom-element-sanitizer.html | expected ERROR | single tracking bug when Gecko 159 merges to beta on 2026-10-08"
+  },
+  {
+   "bugid": 2075579,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Navigation",
+   "summary": "#process-scroll-behavior should not restore scroll for \"reload\""
+  },
+  {
+   "bugid": 2071839,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Handle streaming upload bodies in service worker fetch events"
+  },
+  {
+   "bugid": 2072830,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): networking.local_network_access_connection"
+  },
+  {
+   "bugid": 2071417,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Change DWP telemetry to use new parser"
+  },
+  {
+   "bugid": 2073106,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Update mls-platform-api to nss-rs 0.16.1"
+  },
+  {
+   "bugid": 2074416,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "Update authenticator-rs for nss-rs 0.16.1"
+  },
+  {
+   "bugid": 2072270,
+   "status": "RESOLVED",
+   "component": "Core:Gecko Profiler",
+   "summary": "Remove the old marker API and force new marker to use the new API"
+  },
+  {
+   "bugid": 2076727,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Perma dom/canvas/test/webgl-conf/generated/test_2_conformance2__glsl3__vector-dynamic-indexing.html | should be green - when Gecko 159 merges to beta on 2026-10-08"
+  },
+  {
+   "bugid": 2076600,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Reduce invalidation of non-promoted ExternalSurface in Renderer::composite_simple()"
+  },
+  {
+   "bugid": 2076703,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use promise overload of LoadRequestedModules in the js shell"
+  },
+  {
+   "bugid": 2075633,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64] Implement LSX-based 128-bit SIMD"
+  },
+  {
+   "bugid": 2075805,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Load wasm SIMD constants from the constant pool on arm64"
+  },
+  {
+   "bugid": 2075863,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Use compare-against-zero instructions for wasm SIMD compares on arm64"
+  },
+  {
+   "bugid": 1970969,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Find tick marks appear on the wrong position in scrollbar for some websites"
+  },
+  {
+   "bugid": 2076619,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "grid-lanes has the wrong fallback when both grid-template-rows and grid-template-columns are set"
+  },
+  {
+   "bugid": 2075197,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Scrolling and Overflow",
+   "summary": "GetCandidateInLastTargets(...) should return targets instead of coordinates"
+  },
+  {
+   "bugid": 2014499,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add a Groups section to the Smart Window mentions panel"
+  },
+  {
+   "bugid": 2059729,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add getTabGroups() to TabManagementService"
+  },
+  {
+   "bugid": 2059730,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Add a tabGroup mention type to the Smart Window mention data model"
+  },
+  {
+   "bugid": 2059755,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Expand tab group mentions to members at submit time"
+  },
+  {
+   "bugid": 2059782,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Render tab group reference chips as single item"
+  },
+  {
+   "bugid": 2059783,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Include tab group info in the browser context prompt"
+  },
+  {
+   "bugid": 2059787,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Wire tab group selection through with mention entry points"
+  },
+  {
+   "bugid": 2075335,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Selection shortcuts popup opens in the wrong place when the Firefox UI is right-to-left"
+  },
+  {
+   "bugid": 2069436,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Models",
+   "summary": "[models] add use /answers endpoint for search_the_web"
+  },
+  {
+   "bugid": 2073102,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Update neqo to v0.32.0"
+  },
+  {
+   "bugid": 2076510,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma [tier 2] netwerk/test/unit/test_protocolproxyservice.js | single tracking bug"
+  },
+  {
+   "bugid": 2075317,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Stop exposing expired cookies via any of the cookie XPCOM interface"
+  },
+  {
+   "bugid": 1648889,
+   "status": "RESOLVED",
+   "component": "Core:Networking: DNS",
+   "summary": "isLabelSafe (punycode heuristic) should allow Limited_Use scripts"
+  },
+  {
+   "bugid": 2072828,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): networking.local_network_access"
+  },
+  {
+   "bugid": 2072832,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): networking.local_network_access_prompts_shown"
+  },
+  {
+   "bugid": 2072834,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): networking.local_network_blocked_tracker"
+  },
+  {
+   "bugid": 2076450,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Large HTTP uploads from content processes are slower than in Chromium"
+  },
+  {
+   "bugid": 2063413,
+   "status": "RESOLVED",
+   "component": "Core:Performance: General",
+   "summary": "Update xsimd to new version e3cdb6aee0fe0676d2eea50016d4b340acb56709 from 2026-08-13 14:31:34"
+  },
+  {
+   "bugid": 2062037,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "[meta] Make the privacy capabilities matrix readable for non-engineering audiences"
+  },
+  {
+   "bugid": 2072811,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): bounce.tracking.protection.purge_*"
+  },
+  {
+   "bugid": 2072984,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Update nss-rs to 0.16.1"
+  },
+  {
+   "bugid": 2076590,
+   "status": "ASSIGNED",
+   "component": "Core:Security: PSM",
+   "summary": "Update NSS to new version 824793aca473a0bb4a9dc3d4a88a6d0f2786bd7b from 2026-03-12 20:38:53"
+  },
+  {
+   "bugid": 1797270,
+   "status": "UNCONFIRMED",
+   "component": "Core:WebRTC",
+   "summary": "webRTC-calls dropping in FIPS-mode"
+  },
+  {
+   "bugid": 1922759,
+   "status": "ASSIGNED",
+   "component": "Core:WebRTC",
+   "summary": "Make nricectx FIPS compliant"
+  },
+  {
+   "bugid": 2066774,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "macOS: Apple Writing Tools “Replace” pastes the clipboard instead of the rewritten text"
+  },
+  {
+   "bugid": 2069267,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "[macOS] Sometimes the authentication window is not focused when launching Firefox from apps prompt"
+  },
+  {
+   "bugid": 500911,
+   "status": "ASSIGNED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Firefox windows pop up and steal focus against window manager's focus stealing setting in session restore"
+  },
+  {
+   "bugid": 2073336,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Dragging a tab upward doesn't detach the tab"
+  },
+  {
+   "bugid": 2075738,
+   "status": "RESOLVED",
+   "component": "Core:XML",
+   "summary": "Consider to change how XMLContentSink notifies DOM during parsing"
+  },
+  {
+   "bugid": 2075690,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "file-bug.py opens File Explorer instead of the browser for WSL2"
+  },
+  {
+   "bugid": 2076509,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Improve upstream checking to retry with backoff"
+  },
+  {
+   "bugid": 2034831,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Code Analysis",
+   "summary": "Handle headers in mach static-analysis"
+  },
+  {
+   "bugid": 2064708,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add skip menu using tab key option in the address bar"
+  },
+  {
+   "bugid": 2068504,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "[Nova] Search switcher button active color much stronger than other buttons in urlbar/toolbar and text has low contrast"
+  },
+  {
+   "bugid": 2075003,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Document why the in-page search bar's engagement survives a same-tab load"
+  },
+  {
+   "bugid": 2075359,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser_enter.js | typeCharWhileProcessingEnter - The value of urlbar is correct, with chrome message passing enabled"
+  },
+  {
+   "bugid": 2076571,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma beta v158 bc TEST-UNEXPECTED-FAIL | browser/components/urlbar/tests/<test-name>>"
+  },
+  {
+   "bugid": 2076824,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Document the address bar's in-process and cross-process paths to the parent controller"
+  },
+  {
+   "bugid": 2076807,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use moz-src for dom/base"
+  },
+  {
+   "bugid": 2055094,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "vpn integration should not create/destroy very short lived fxa access tokens."
+  },
+  {
+   "bugid": 2063656,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove the sports widget"
+  },
+  {
+   "bugid": 2070272,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Standardize context menu button UI across all widgets"
+  },
+  {
+   "bugid": 2075383,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add section_position telemetry for newtab_content impression and click events"
+  },
+  {
+   "bugid": 2076867,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Can we delete tjhe pref for discoverystream.optIn-region-weather-config"
+  },
+  {
+   "bugid": 2076877,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Remove telemetry.structuredIngestion.endpoint pref from activityStream"
+  },
+  {
+   "bugid": 2059778,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Add a Nimbus migration to remove Normandy databases from profiles"
+  },
+  {
+   "bugid": 2076887,
+   "status": "RESOLVED",
+   "component": "Firefox:Nimbus Desktop Client",
+   "summary": "Fix doc comment in NimbusTestUtils.sys.mjs"
+  },
+  {
+   "bugid": 2074009,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add isDefaultBrowserAsync() to nsIShellService and migrate callers"
+  },
+  {
+   "bugid": 2074722,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Perma TV browser/components/sidebar/tests/browser/browser_bookmarks_sidebar.js | This test exceeded the timeout threshold."
+  },
+  {
+   "bugid": 2076296,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Dropdown panel selection in new sidebar: cannot navigate away from bookmarks tab (and AI chatbot tab)"
+  },
+  {
+   "bugid": 2074671,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Integrate new messaging and UI for mini window selection"
+  },
+  {
+   "bugid": 2075016,
+   "status": "REOPENED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Remove / relocate MozTabbrowserTab's semi-private, externally-set members"
+  },
+  {
+   "bugid": 2075266,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Mini window toolbar doesnt go away unless the window is focussed"
+  },
+  {
+   "bugid": 2075453,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "File menu has no Close Window item when vertical tabs are enabled"
+  },
+  {
+   "bugid": 2076596,
+   "status": "ASSIGNED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "Type-check the tab strip's element modules and the files excluded from the tabbrowser tsconfig"
+  },
+  {
+   "bugid": 2076181,
+   "status": "RESOLVED",
+   "component": "Firefox:Toolbars and Customization",
+   "summary": "Update the list all tabs icon in horizontal tab mode on macOS"
+  },
+  {
+   "bugid": 2035575,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Android Studio and Gradle Integration",
+   "summary": "Wire in-tree application-services through the fat AAR and artifact-build pipelines"
+  },
+  {
+   "bugid": 2076772,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Adjust bootstrap tasks after bug 2012556"
+  },
+  {
+   "bugid": 2076778,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Add bootstrap task for Ubuntu 26.04"
+  },
+  {
+   "bugid": 1561797,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "mingw error linking Rust program --enable-long-section-names"
+  },
+  {
+   "bugid": 2038789,
+   "status": "REOPENED",
+   "component": "Firefox Build System:General",
+   "summary": "Move build system logic out of make"
+  },
+  {
+   "bugid": 2057979,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Replace NSIS Installer make recipes with Python actions"
+  },
+  {
+   "bugid": 2075881,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Remove obsolete workarounds from the mingw-clang toolchain and build configuration"
+  },
+  {
+   "bugid": 2076531,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Make `mach artifact install` faster"
+  },
+  {
+   "bugid": 2076533,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Faster make steps are missing from the build resource usage profile"
+  },
+  {
+   "bugid": 2076537,
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Ship pyyaml with the libyaml bindings in the python toolchains"
+  },
+  {
+   "bugid": 2076539,
+   "status": "NEW",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Don't fetch compile toolchains or use sccache in try artifact builds"
+  },
+  {
+   "bugid": 2076848,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Adjust rust policy docs to reflect the expected MSRV and Use versions"
+  },
+  {
+   "bugid": 2076876,
+   "status": "RESOLVED",
+   "component": "Firefox Profiler:Untriaged",
+   "summary": "Fix yaml in gecko profiler skill."
+  },
+  {
+   "bugid": 2060659,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Disable Autofil for AAOS"
+  },
+  {
+   "bugid": 2072667,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add telemetry for pre-continuous-onboarding timestamp backfill"
+  },
+  {
+   "bugid": 2076250,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Update top sites header to show when the number of top sites is greater than the dynamically calculated value of collapsedTopSitesCount"
+  },
+  {
+   "bugid": 2071254,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "The review prompt is not displayed to users who already completed onboarding pre-continuous onboarding being enabled"
+  },
+  {
+   "bugid": 2074411,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Day-7 continuous onboarding can be marked complete before the user's region is known, so eligible users never see the IP Protection onboarding prompt"
+  },
+  {
+   "bugid": 2076210,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Onboarding",
+   "summary": "Review prompt is dismissed before it is visible when an about:home tab is selected at startup"
+  },
+  {
+   "bugid": 2075581,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create new verifyTheBookmarksSortingTest regression UI test"
+  },
+  {
+   "bugid": 2075243,
+   "status": "RESOLVED",
+   "component": "Toolkit:General",
+   "summary": "about:license no longer links to the Other Required Notices and Optional Notices sections"
+  },
+  {
+   "bugid": 2069438,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Login searches read every saved login, making password import quadratic"
+  },
+  {
+   "bugid": 2067888,
+   "status": "RESOLVED",
+   "component": "Toolkit:Printing",
+   "summary": "Leftover bare popPrefEnvs in PrintHelper.withTestPage"
+  },
+  {
+   "bugid": 2075556,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Move Firefox off the dimmed background tokens"
+  },
+  {
+   "bugid": 2076534,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Tooling & Investigations",
+   "summary": "Generate the webcompat intervention files in a single `codegen.py` run"
+  },
+  {
+   "bugid": 2076684,
+   "status": "RESOLVED",
+   "component": "WebExtensions:Frontend",
+   "summary": "`sessions.forgetClosedTab()` forgets the wrong tab when the window has a closed tab group"
+  }
+ ],
+ "fixed": 96,
+ "total": 111,
+ "restricted": 5
+}
