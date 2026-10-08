@@ -1,0 +1,1078 @@
+{
+ "date": "2026-10-08",
+ "buildid": "20261008094336",
+ "cset": "9080a547a12c2a0f67be47bf51e8d2bcf4a375c2",
+ "bugs": [
+  {
+   "bugid": 2042672,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Intermittent dom/media/mediacontrol/tests/browser/browser_uncontrollable_audio_focus.js | single tracking bug"
+  },
+  {
+   "bugid": 2071536,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "../third_party/rust/audio_thread_priority/src/rt_linux.rs fails to compile on musl"
+  },
+  {
+   "bugid": 2078393,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "Stop copying the media configuration into the final continuation of `MediaCapabilities::CreateWebRTCEncodingInfo` (Coverity CID 1701833)"
+  },
+  {
+   "bugid": 2075835,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: GMP",
+   "summary": "Add new WPT EME variant for signed Windows/OSX builds to test Widevine plugin"
+  },
+  {
+   "bugid": 2034236,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "ffvpx currently lacks Vulkan hardware video decode support,  requiring a workaround in PDMFactory to prioritize system FFmpeg over ffvpx when Vulkan decode is enabled."
+  },
+  {
+   "bugid": 2068764,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "mozilla::FFmpegVideoDecoder::InitVulkanDecoder takes 2.5s on DGX Spark"
+  },
+  {
+   "bugid": 2070034,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Crash in [@ vk_optimusGetDeviceProcAddr]"
+  },
+  {
+   "bugid": 2035307,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "The :has() css pseudoselector sometimes is not correctly evaluated, if a dom modification occurred after page load"
+  },
+  {
+   "bugid": 2043007,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Ensure that we don’t skip painting of abspos elements whose placeholder got line-clamped out"
+  },
+  {
+   "bugid": 2057345,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "`text-overflow` ignored when `line-clamp` is set"
+  },
+  {
+   "bugid": 2065482,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Style attribute parsing seems to discard a curly bracket before a property name."
+  },
+  {
+   "bugid": 2079188,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Expose the CSS namespace in workers and worklets behind a preference"
+  },
+  {
+   "bugid": 2079407,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Update cssparser."
+  },
+  {
+   "bugid": 2079461,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Problematic code example in rustdoc for ToCss"
+  },
+  {
+   "bugid": 2078555,
+   "status": "RESOLVED",
+   "component": "Core:DLL Services",
+   "summary": "Various startup crash signatures involving mozilla::nt::RtlAllocPolicy::free_ with mismatched firefox.exe and mozglue.dll versions"
+  },
+  {
+   "bugid": 2078420,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Content Processes",
+   "summary": "Consider to increase mainthread priority on Windows"
+  },
+  {
+   "bugid": 2078954,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "macOS screenshot drag into Slack hangs"
+  },
+  {
+   "bugid": 1983514,
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Intermittent /html/semantics/interactive-elements/the-summary-element/interactive-content.html | single tracking bug"
+  },
+  {
+   "bugid": 2070879,
+   "status": "NEW",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Document-rule speculation-rules links never match because they lack a primary frame when candidates are evaluated"
+  },
+  {
+   "bugid": 2078614,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Move the nsIContent XPCOM boilerplate out of FragmentOrElement.cpp, to a new dedicated nsIContent.cpp file"
+  },
+  {
+   "bugid": 2078673,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement LoongArch SIMD Extension (LSX)-accelerated FirstNon8Bit() for CharacterDataBuffer"
+  },
+  {
+   "bugid": 2078977,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up PContentPermissionRequest"
+  },
+  {
+   "bugid": 2077556,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Pointer lock unlock warps the real cursor to a synthesized event position on macOS"
+  },
+  {
+   "bugid": 2078221,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Geolocation",
+   "summary": "Add telemetry for user activation for each geolocation requests"
+  },
+  {
+   "bugid": 2077522,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Deduplicate code for sending push messages in tests"
+  },
+  {
+   "bugid": 1981768,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Security",
+   "summary": "HSTS upgrades need to be logged to the Web Console."
+  },
+  {
+   "bugid": 2074555,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Clean up dead branch in sanitization steps"
+  },
+  {
+   "bugid": 2079179,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "High freq [tier 2] /content-security-policy/inside-worker/dedicatedworker-connect-src.html | single tracking bug"
+  },
+  {
+   "bugid": 1991477,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Remove existing TOUCH_ENABLE_DEVICE"
+  },
+  {
+   "bugid": 2072793,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "[GTK][Wayland][XIM] The input field to filter the Github issues clears the dead key composition"
+  },
+  {
+   "bugid": 2057377,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Web Authentication",
+   "summary": "WebAuthn/caBLE: QR-initiated transaction crypto"
+  },
+  {
+   "bugid": 1982833,
+   "status": "ASSIGNED",
+   "component": "Core:DOM: Web Crypto",
+   "summary": "[WebCryptoAPI] Missing crv check for OKP JWK keys"
+  },
+  {
+   "bugid": 2027309,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Stack-buffer-overflow OOB read in [@ TextLeafPoint::FindPrevWordStartSameAcc] via stale HyperText offset cache vs live list-marker text"
+  },
+  {
+   "bugid": 2029511,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Windows MSAA IAccessible::get_accSelection() multi-selection enumerator due to raw `Accessible*` lifetime lead to UAF"
+  },
+  {
+   "bugid": 2053587,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Heap use-after-free in [@ mozilla::a11y::CachedTableCellAccessible::ColExtent] via stale CachedTableAccessible cell entry for hybrid IsTableCell/IsTable accessibles (<td role=\"table\">)"
+  },
+  {
+   "bugid": 2053637,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Heap buffer overflow read in [@ mozilla::a11y::TextLeafPoint::FindPrevWordStartSameAcc] — stale hypertext offset cache in parent via forged AccType from compromised content process"
+  },
+  {
+   "bugid": 2074310,
+   "status": "RESOLVED",
+   "component": "Core:Disability Access APIs",
+   "summary": "Mutating `contentEditable` to `true` doesn't force create accs, but specifying it pre-parse does"
+  },
+  {
+   "bugid": 2079183,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix pending frame handling in AndroidImageReader::DoUpdateTexImage()"
+  },
+  {
+   "bugid": 1613369,
+   "status": "ASSIGNED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Premultiplied alpha rounding error with canvas 2D"
+  },
+  {
+   "bugid": 1908749,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Implement EXT_texture_mirror_clamp_to_edge"
+  },
+  {
+   "bugid": 2078878,
+   "status": "REOPENED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Perma dom/canvas/test/webgl-mochitest/ensure-exts/test_EXT_texture_norm16.html | single tracking bug"
+  },
+  {
+   "bugid": 2079056,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update freetype2 to new version d5d4bef0c6d5363931d346a6b2380317a32b8601 from 2026-10-06 10:11:29"
+  },
+  {
+   "bugid": 2079434,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "FontFace created from a buffer on two threads at once fails with \"Invalid source buffer\" on Windows"
+  },
+  {
+   "bugid": 2006720,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: `GPUSupportedLimits.maxStorage{Buffers,Textures}In{Vertex,Fragment}Stage` are unrecognized"
+  },
+  {
+   "bugid": 2078292,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hit MOZ_CRASH(assertion failed: task_sorter.is_empty()) at gfx/wr/webrender/src/render_task_graph.rs:476"
+  },
+  {
+   "bugid": 2079080,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Make small adjustments to WebRender shaders and build to allow prototyping SPIR-V based shader pipelines"
+  },
+  {
+   "bugid": 2079131,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Sort the render task graph into passes without the topological-sort crate."
+  },
+  {
+   "bugid": 1977691,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Update comments about when you have a promise in a reaction record"
+  },
+  {
+   "bugid": 2073811,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Error constructors throw when the options argument is a Symbol"
+  },
+  {
+   "bugid": 2076003,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Large function with a trailing empty switch crashes debug SpiderMonkey"
+  },
+  {
+   "bugid": 2077967,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Firefox crashes at launch when .sys.mjs modules are loaded in a specific order"
+  },
+  {
+   "bugid": 2078234,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "[[LoadedModules]] grows by one entry per import() call from a function inside a module"
+  },
+  {
+   "bugid": 2076007,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Give JSVAL_TYPE_UNDEFINED a type code whose ARM64 tag loads in one instruction"
+  },
+  {
+   "bugid": 2077571,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[arm64] Fold shifts and rotates into the second operand of add, orr and eor in MacroAssembler hash and string code"
+  },
+  {
+   "bugid": 2078558,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[loong64] Micro-optimize a few instruction selections with SIMD"
+  },
+  {
+   "bugid": 2078909,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Skip the jump to the next instruction after the last Ion bailout path and the last Baseline return"
+  },
+  {
+   "bugid": 1740752,
+   "status": "ASSIGNED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Experiment with allocating the nursery in a contiguous region of address space"
+  },
+  {
+   "bugid": 2077075,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Gray wrapper transplantation violates a SpiderMonkey GC invariant"
+  },
+  {
+   "bugid": 2078859,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Assertion failure: key->zoneFromAnyThread()->needsMarkingBarrier() && !key->isMarkedAny() in [@ js::StableCellHasher<JSScript*>::match] via MissingAllocSites::scriptMap lookup during incremental sweep"
+  },
+  {
+   "bugid": 2079003,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Internationalization API",
+   "summary": "Use Intl.Locale.prototype.getTextInfo() in mozIntl.getScriptDirection()"
+  },
+  {
+   "bugid": 2079026,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Firefox doesn't honor 'contain-intrinsic-size' for hidden content-visibility:auto elements, if they have inline-axis size-containment"
+  },
+  {
+   "bugid": 2079154,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /css/css-page/page-name-002-print.html | Testing http://web-platform.test:8000/css/css-page/page-name-002-print.html == http://web-platform.test:8000/css/css-page/page-name-002-print-ref.html"
+  },
+  {
+   "bugid": 2072310,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Tables",
+   "summary": "[new in release] Crash in [@ mozilla::detail::InvalidArrayIndex_CRASH | nsTArray_Impl<T>::ElementAt | nsTArray_Impl<T>::operator[] | nsTableRowGroupFrame::CalculateRowBSizes]"
+  },
+  {
+   "bugid": 2064048,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Tab groups are read as buttons in the View Tab groups submenu from the Organize tabs panel"
+  },
+  {
+   "bugid": 2067087,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Bottom Blur effect from Chat content is missing inside the Smart window"
+  },
+  {
+   "bugid": 2073307,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "update aitab tool to handle modification flow"
+  },
+  {
+   "bugid": 2078326,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Expose ATG Strings for Localization (for FR Expansion)"
+  },
+  {
+   "bugid": 2075320,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: General",
+   "summary": "AITab [models] - In-chat followups to trigger AITab Creation"
+  },
+  {
+   "bugid": 2012843,
+   "status": "NEW",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "In OPFS select a non-private browsing window for loading modals, rather than the most recent one"
+  },
+  {
+   "bugid": 2066416,
+   "status": "ASSIGNED",
+   "component": "Core:Memory Allocator",
+   "summary": "IdleMemoryCleanupWantsLaterCheck runs forever"
+  },
+  {
+   "bugid": 2078598,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove run-sequentially from netwerk/ tests that don't need it"
+  },
+  {
+   "bugid": 2071998,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Duplicate Redirect1Begin on a single HttpChannelChild creates a second redirect-target channel that is never completed (\"NO CALLBACKS!\" on Redirect2Verify), so the document load event never fires"
+  },
+  {
+   "bugid": 2070702,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Rename PAPZInputBridge to PAPZBridge"
+  },
+  {
+   "bugid": 2072785,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Investigate why APZ sometimes reaches the content response timeout even when it's very long"
+  },
+  {
+   "bugid": 2074312,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Add a gtest to test the effect of a non-default widget scale on autoscroll speed"
+  },
+  {
+   "bugid": 2079242,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Add a sanity-check to DrawTargetSkia that SkImages don't outlive their snapshot if borrowed."
+  },
+  {
+   "bugid": 2079244,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Don't assert in PdfStructTreeBuilder if we haven't built the tree."
+  },
+  {
+   "bugid": 1713711,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Update the ETP shim for Facebook SDK"
+  },
+  {
+   "bugid": 2062591,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Remove legacy securityuiprotectionspopup_click probes"
+  },
+  {
+   "bugid": 2079517,
+   "status": "RESOLVED",
+   "component": "Core:Security: PSM",
+   "summary": "Avoid constructing a CERTCertificate in mozilla::psm::AuthCertificateHook"
+  },
+  {
+   "bugid": 2073381,
+   "status": "RESOLVED",
+   "component": "Core:Security: Process Sandboxing",
+   "summary": "Use run-if for the manifest-wide conditions in security/sandbox/test"
+  },
+  {
+   "bugid": 2048634,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC: Audio/Video",
+   "summary": "Perma TEST-UNEXPECTED-PASS | /screen-capture/getdisplaymedia-framerate.https.html | getDisplayMedia() must adhere to frameRate if set - expected FAIL"
+  },
+  {
+   "bugid": 2069039,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Let ASWebAuthenticationSession support ride the trains"
+  },
+  {
+   "bugid": 2078628,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Maximized windows restore on the wrong display after a restart if maximized with a title bar double-click or \"Fill\" on macOS"
+  },
+  {
+   "bugid": 2077257,
+   "status": "RESOLVED",
+   "component": "Core:XPCOM",
+   "summary": "Improve ThreadSafeWeakPtrHashKey behaviour during an object's destructor"
+  },
+  {
+   "bugid": 2078978,
+   "status": "RESOLVED",
+   "component": "DevTools:Documentation",
+   "summary": "Update devtools backward compatibility documentation to add a link to monitoring website"
+  },
+  {
+   "bugid": 2078414,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[DevTools Release Tasks - Cycle 159] Update MDN compat data"
+  },
+  {
+   "bugid": 2078417,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Add mach command to update MDN data"
+  },
+  {
+   "bugid": 2078976,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "[Devtools Release Tasks - Cycle 159] Update webidl-pure-allowlist.js and webidl-deprecated-list.js"
+  },
+  {
+   "bugid": 2075528,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Remove dashed text-decoration on hover for property name/value"
+  },
+  {
+   "bugid": 2077906,
+   "status": "RESOLVED",
+   "component": "DevTools:Inspector: Rules",
+   "summary": "Rules hides declarations after a custom property with a balanced curly block value"
+  },
+  {
+   "bugid": 2078298,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Bump claude version in Updatebot"
+  },
+  {
+   "bugid": 1668766,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "mach try auto didn't schedule hazard builds"
+  },
+  {
+   "bugid": 2076694,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Try",
+   "summary": "Use dynamic bugbug thresholds"
+  },
+  {
+   "bugid": 2076831,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remove the unused tooltip attribute from the urlbar view markup"
+  },
+  {
+   "bugid": 2077432,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Keep the urlbar-ipc test variant running indefinitely"
+  },
+  {
+   "bugid": 2078113,
+   "status": "VERIFIED",
+   "component": "Firefox:Address Bar",
+   "summary": "Show \"Search tabs\" keyboard shortcuts in the search mode switcher menu"
+  },
+  {
+   "bugid": 2078231,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use the global document and window in UrlbarView"
+  },
+  {
+   "bugid": 2078658,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Use the global document and window in SearchModeSwitcher"
+  },
+  {
+   "bugid": 2079208,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Revise wording of the message for people who used Ctrl+Shift+A for the Add-ons Manager"
+  },
+  {
+   "bugid": 1877510,
+   "status": "ASSIGNED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmark creation / editing panel does not have a keyboard shortcut mnemonic for the Save button"
+  },
+  {
+   "bugid": 2076608,
+   "status": "RESOLVED",
+   "component": "Firefox:General",
+   "summary": "Use moz-src for devtools/startup"
+  },
+  {
+   "bugid": 2030810,
+   "status": "NEW",
+   "component": "Firefox:Messaging System",
+   "summary": "Targeting getters for previousSessionEnd et al. are not available to advanced targeting configs"
+  },
+  {
+   "bugid": 2077391,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Update the Windows set-default guidance toast for auto-triggered Settings and ship it on all channels"
+  },
+  {
+   "bugid": 2079372,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Set messaging-system-action.hasOpenedExtensions when about:welcome opens AMO"
+  },
+  {
+   "bugid": 2079393,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Land Welcome Back Onboarding strings and assets in-tree"
+  },
+  {
+   "bugid": 2057021,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "New Tab message should use intersection observer to avoid evaluating activeNotifications true when message is below the fold"
+  },
+  {
+   "bugid": 2057030,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Navigating away from `about:newtab` with a newtab message keeps activeNotification targeting as true"
+  },
+  {
+   "bugid": 2060322,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Fix `pocket.click` and `topsite.click` missing context menu triggers"
+  },
+  {
+   "bugid": 2062393,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add pocket.dwell_time labeled quantity to newtab ping"
+  },
+  {
+   "bugid": 2078497,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Clocks widget menu button overlaps the clocks on hover"
+  },
+  {
+   "bugid": 2078816,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable a widget in the first content position of New Tab sections"
+  },
+  {
+   "bugid": 2078895,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Enable type checking for newtab/lib with exception for failing files"
+  },
+  {
+   "bugid": 2078974,
+   "status": "NEW",
+   "component": "Firefox:New Tab Page",
+   "summary": "Set default enabled value to false for all existing widgets"
+  },
+  {
+   "bugid": 2077566,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Private Browsing Window - Relay promo is displayed for users with Relay"
+  },
+  {
+   "bugid": 1975750,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add more tests for UserInstalledConfigEngines"
+  },
+  {
+   "bugid": 2074916,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Add prescan and scan to the SERP impression event, and report ad_uncategorized in ad_impression"
+  },
+  {
+   "bugid": 2071466,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Update Session Restore metric descriptions to fix inaccuracies and note known data discontinuities"
+  },
+  {
+   "bugid": 2076862,
+   "status": "ASSIGNED",
+   "component": "Firefox:Settings UI",
+   "summary": "Lock the SRD pref"
+  },
+  {
+   "bugid": 2074009,
+   "status": "ASSIGNED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Add isDefaultBrowserAsync() to nsIShellService and migrate callers"
+  },
+  {
+   "bugid": 2076972,
+   "status": "RESOLVED",
+   "component": "Firefox:Shell Integration",
+   "summary": "Remove or update metrics expiring at the end of Firefox 160 (2026-10-22): protocolhandler.mailto.*"
+  },
+  {
+   "bugid": 2076834,
+   "status": "ASSIGNED",
+   "component": "Firefox:Sidebar",
+   "summary": "High frequency [tier2] browser/components/places/tests/browser/browser_sidebar_bookmarks_telemetry.js | single tracking bug"
+  },
+  {
+   "bugid": 2075668,
+   "status": "RESOLVED",
+   "component": "Firefox:Sync",
+   "summary": "Update about:settings#sync selected data heading for per-device syncing  (Settings -> Sync: Selected-data heading)"
+  },
+  {
+   "bugid": 2076782,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "With Firefox (default theme) set to dark mode, while websites are set to light mode, a white line appears in the website view."
+  },
+  {
+   "bugid": 2078226,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser",
+   "summary": "tab sizing not respecting prefers-reduced-motion on closing tabs"
+  },
+  {
+   "bugid": 2078758,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "The close button on the private browsing search banner is nearly invisible"
+  },
+  {
+   "bugid": 2077656,
+   "status": "RESOLVED",
+   "component": "Firefox:Untriaged",
+   "summary": "Last upload folder paths not being remembered in specific websites (all sharing the same upload folder path), then defaulting to the downloads folder after saving a file in there, in Firefox 157.0"
+  },
+  {
+   "bugid": 2072837,
+   "status": "RESOLVED",
+   "component": "Firefox:about:logins",
+   "summary": "Remove or update metrics expiring at the end of Firefox 159 (2026-10-08): pwmgr.import_logins_from_file_categorical"
+  },
+  {
+   "bugid": 2068205,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "configure fails with \"Don't know how to translate aarch64-pld-linux-gnu for rustc\""
+  },
+  {
+   "bugid": 2077651,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Fix C++23 RefPtr conversion in __wrap_dlopen"
+  },
+  {
+   "bugid": 2079166,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Setting WASM_CFLAGS or WASM_CXXFLAGS makes configure fail with a TypeError"
+  },
+  {
+   "bugid": 2079215,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Shippable builds fail to build in artifact mode with Error: \"/builds/worker/workspace/obj-build/.cargo/: No such file or directory.  Stop.\""
+  },
+  {
+   "bugid": 1425785,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Collect system resource metrics from run-task"
+  },
+  {
+   "bugid": 2066119,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "`run-task-git` does not set up MOZ_PYTHON_HOME, so tasks cloning with Git run on the system Python instead of the fetched toolchain"
+  },
+  {
+   "bugid": 2074885,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Speed up generating the test kinds in the decision task"
+  },
+  {
+   "bugid": 2078961,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Group the geckoview-junit chunks and variants under one Treeherder group"
+  },
+  {
+   "bugid": 1846946,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "Do not update lastSyncTime when the we are not doing a full sync"
+  },
+  {
+   "bugid": 2026691,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "Enable library prefetch on Android for cold applink starts"
+  },
+  {
+   "bugid": 2073500,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Enable doh autoselect-enabled by default on nightly"
+  },
+  {
+   "bugid": 2067127,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Add the playback speed popup"
+  },
+  {
+   "bugid": 2067131,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Collapse the Listen player when the article is scrolled"
+  },
+  {
+   "bugid": 2075346,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "The play button flashes whenever a skip occurs"
+  },
+  {
+   "bugid": 2077158,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Fix ListenSheet crash"
+  },
+  {
+   "bugid": 2061899,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Align compose-base Dropdown with the Material3 Specs"
+  },
+  {
+   "bugid": 2065488,
+   "status": "REOPENED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Add telemetry for the weekly privacy report notification worker"
+  },
+  {
+   "bugid": 2063082,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Remove ServoEngine from samples-browser"
+  },
+  {
+   "bugid": 2073095,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Make sure the ui tests can run on the nightly build"
+  },
+  {
+   "bugid": 2079264,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version afd9e477f3ccb108c618360132cdd4e2c91b35ae from 2026-10-07 05:02:25"
+  },
+  {
+   "bugid": 2074483,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Edge 2 edge wallpaper flicker when home screen is opened"
+  },
+  {
+   "bugid": 2069022,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Show the default browser banner needed by the home menu"
+  },
+  {
+   "bugid": 2078743,
+   "status": "VERIFIED",
+   "component": "Firefox for Android:Privacy",
+   "summary": "[IPProtection] Review prompt doesn't re-trigger on Day 8 after tapping \"Browse with extra protection\" on the Day 7 VPN Onboarding sheet"
+  },
+  {
+   "bugid": 2078419,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Share",
+   "summary": "Remove native-share-sheet nimbus flag"
+  },
+  {
+   "bugid": 2074898,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "Divider line appears between the bottom address bar and the tab strip or tab group strip above it"
+  },
+  {
+   "bugid": 2079515,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Gradle to version 9.8.1"
+  },
+  {
+   "bugid": 2074227,
+   "status": "ASSIGNED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Use the default shortcuts seed list to backfill the top sites"
+  },
+  {
+   "bugid": 2078401,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Top Sites",
+   "summary": "Remove add-shortcuts-improvement nimbus flag"
+  },
+  {
+   "bugid": 2067124,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure - efficiency.tests Intermittent UI test failure - < SettingsGeneralTest.verifyFontSizingChangeTest >"
+  },
+  {
+   "bugid": 2076438,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Convert httpsOnlyModeMenuItemsTest and httpsOnlyModeExceptionPersistsForCurrentSessionTest regression UI test to the efficiency framework"
+  },
+  {
+   "bugid": 2076686,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create new verifyThePreviewReportBottomSheetTest regression UI test"
+  },
+  {
+   "bugid": 2078554,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create new verifyNavigationToOtherWebsitesWithinSameTabTest regression UI test"
+  },
+  {
+   "bugid": 2078576,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Convert defaultSearchCodeDuckDuckGoUSTest regression UI test to the efficiency framework"
+  },
+  {
+   "bugid": 2079237,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Convert verifyOpenLinkNewTabContextMenuOptionTest regression UI test to the efficiency framework"
+  },
+  {
+   "bugid": 2079190,
+   "status": "RESOLVED",
+   "component": "Focus:General",
+   "summary": "Update menu colors in dark theme"
+  },
+  {
+   "bugid": 2079024,
+   "status": "NEW",
+   "component": "GeckoView:General",
+   "summary": "Re-enable geckoview-junit tests that no longer need their fission skip"
+  },
+  {
+   "bugid": 2075888,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Make the repo-update tasks use git instead of hg.mozilla.org"
+  },
+  {
+   "bugid": 2078929,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Run the repo-update tasks on b-linux-medium workers with shorter max run times"
+  },
+  {
+   "bugid": 2079260,
+   "status": "RESOLVED",
+   "component": "Release Engineering:General",
+   "summary": "Run the android-gradle-build jobs on t-linux-docker-amd workers"
+  },
+  {
+   "bugid": 2079141,
+   "status": "RESOLVED",
+   "component": "Toolkit:Default Browser Agent",
+   "summary": "Default browser agent background task fails to activate on Microsoft Store (MSIX) installs (0x8007007E)"
+  },
+  {
+   "bugid": 1912002,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Auto-open PiP on app switch"
+  },
+  {
+   "bugid": 2055065,
+   "status": "RESOLVED",
+   "component": "Toolkit:Picture-in-Picture",
+   "summary": "Update pip player control styles for Nova"
+  },
+  {
+   "bugid": 2076957,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove or update metrics expiring at the end of Firefox 160 (2026-10-22): browser.engagement.*"
+  },
+  {
+   "bugid": 1997653,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Use named exports for UI Widgets component classes"
+  },
+  {
+   "bugid": 2031006,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Use moz-card instead of .card classes in remaining places"
+  },
+  {
+   "bugid": 2053735,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Duplicate accesskeys in panel-list always activate the first item"
+  },
+  {
+   "bugid": 2067363,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "SelectControlBaseElement and MozPageNav should ignore arrow keys with modifiers"
+  },
+  {
+   "bugid": 2078801,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Extend HTMLElementTagNameMap with custom element definitions"
+  },
+  {
+   "bugid": 2078840,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "MozBoxItem overrides focus() with a new signature"
+  },
+  {
+   "bugid": 2079271,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Perma | xpcshell-remote.toml:toolkit/components/extensions/test/xpcshell/test_ext_web_accessible_workers.js | test_worker_redirected_to_ext_webaccessible |  when Gecko 159 merges to beta on 2026-10-08"
+  }
+ ],
+ "fixed": 154,
+ "total": 178,
+ "restricted": 18
+}
