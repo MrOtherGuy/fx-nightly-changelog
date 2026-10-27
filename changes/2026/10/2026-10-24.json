@@ -1,0 +1,334 @@
+{
+ "date": "2026-10-24",
+ "buildid": "20261024215018",
+ "cset": "19272f1f7a2c1a4bc07452f957d48d0b9a980197",
+ "bugs": [
+  {
+   "bugid": 2084847,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "If HW encoding is disabled, WebRTC cannot create an H264 encoder on Android"
+  },
+  {
+   "bugid": 2085026,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video",
+   "summary": "MediaCodec encoders used through FFmpeg on Android ignore bitrate changes and scalability modes"
+  },
+  {
+   "bugid": 2067925,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "macOS: RDD process reaches 34.6 GB physical footprint after ~80 h while about:memory accounts for only 8.5 MiB heap"
+  },
+  {
+   "bugid": 2084102,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Avoid parsing non-static attributes."
+  },
+  {
+   "bugid": 2084340,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Enable cross document view transitions on Nightly"
+  },
+  {
+   "bugid": 2084709,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Cross document view transition may cause a flash of background on slower Android devices"
+  },
+  {
+   "bugid": 2084794,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "ContentSink can be destroyed too early while render blocking is still enabled"
+  },
+  {
+   "bugid": 2083701,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Use moz-src for dom/push"
+  },
+  {
+   "bugid": 2085095,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GPUVideoImage should reuse readback surface whenever possible"
+  },
+  {
+   "bugid": 2085189,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Make TextureFactoryIdentifier universal for all windows"
+  },
+  {
+   "bugid": 2074827,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Cairo",
+   "summary": "Update Cairo to new version 1.18.6 from 2026-09-20 17:42:13"
+  },
+  {
+   "bugid": 2084640,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Canvas2D",
+   "summary": "Repeated radial gradients don't draw in pdf.js with accelerated canvas"
+  },
+  {
+   "bugid": 2081416,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "WebGPU: Avoid redundant texture import code"
+  },
+  {
+   "bugid": 2085188,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Hardware decoded video may not be displayed with software WebRender when creating a D3D11 compositor fails"
+  },
+  {
+   "bugid": 2085382,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "WebRender errors are ignored and do not trigger a fallback after video overlay support fails to initialize"
+  },
+  {
+   "bugid": 2084986,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Add realm fuses for indexed properties on Array.prototype and String.prototype"
+  },
+  {
+   "bugid": 2084964,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Form Controls",
+   "summary": "Use logical directions for meter / progress orientation"
+  },
+  {
+   "bugid": 2084929,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Wrong hyphenation of the German word \"Smartphones\""
+  },
+  {
+   "bugid": 2084961,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Make gfx.font_rendering.fontations.enabled into a live pref"
+  },
+  {
+   "bugid": 2085351,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "Let legacy Type 1 font removal ride the trains"
+  },
+  {
+   "bugid": 2082844,
+   "status": "ASSIGNED",
+   "component": "Core:Machine Learning: General",
+   "summary": "Implement the Guest-Mode for SmartWindow"
+  },
+  {
+   "bugid": 1876483,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Remove nsIURIMutator.setSpec in favor of NS_NewURI or Services.io.newURI"
+  },
+  {
+   "bugid": 2084807,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent TV netwerk/test/browser/browser_akamai_waf_telemetry.js | single tracking bug"
+  },
+  {
+   "bugid": 2039320,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "enable compression dictionaries to release"
+  },
+  {
+   "bugid": 2066036,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "PDF printing on Windows: line cap style dropped (2 J -> 0 J) and dash arrays mangled — dotted lines print as long dashes or disappear, dash-dot patterns lose their dots"
+  },
+  {
+   "bugid": 2081281,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Firefox for Android ignores @page { size: landscape } when printing / saving to PDF (print.save_as_pdf.use_page_rule_size_as_paper_size.enabled is off on Android)"
+  },
+  {
+   "bugid": 2084963,
+   "status": "VERIFIED",
+   "component": "Core:Printing: Output",
+   "summary": "PrintTargetSkPDF ignores the per-page size, so @page { size } no longer sets the PDF page size (system print dialog, per-page orientation) - regression from enabling SkPDF in 158"
+  },
+  {
+   "bugid": 2085249,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "Follow-up PrintTarget clean-ups after bug 2084963."
+  },
+  {
+   "bugid": 2081841,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Flashing at the end of the view transition when opening a sidebar panel with expand on hover enabled"
+  },
+  {
+   "bugid": 2085243,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "clean up wpt metadata for 3d transform tests that actually"
+  },
+  {
+   "bugid": 2069587,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser-search/browser_shortcuts_add_search_engine.js | single tracking bug"
+  },
+  {
+   "bugid": 2073849,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_dragdropURL.js | single tracking bug"
+  },
+  {
+   "bugid": 2080532,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Show the temporal group title as the row label above temporal search suggestions"
+  },
+  {
+   "bugid": 2080535,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a \"Don't show\" result menu command to temporal search suggestions"
+  },
+  {
+   "bugid": 2080540,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Add a zero prefix result layout with temporal suggestions below recent searches"
+  },
+  {
+   "bugid": 2081032,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Intermittent browser/components/urlbar/tests/browser/browser_canonizeURL.js | single tracking bug"
+  },
+  {
+   "bugid": 2083653,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Ensure tests are passing  when `unifiedSearchButton.always` is enabled"
+  },
+  {
+   "bugid": 2085056,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Update the New Tab build docs now that the build generates the bundles in the objdir"
+  },
+  {
+   "bugid": 2085146,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Let framed widgets load from *.merino.nonprod.webservices.mozgcp.net and *.merino.prod.webservices.mozgcp.net"
+  },
+  {
+   "bugid": 2085437,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 67667f1e449378a2675f4095cded012b7ce5f37b from 2026-10-23 18:29:49"
+  },
+  {
+   "bugid": 2083168,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "LightweightThemeConsumer throws when theme prefs change after its window was closed"
+  },
+  {
+   "bugid": 2085358,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Build Documentation",
+   "summary": "Clangd back-end doesn't properly detect windows sysroot includes"
+  },
+  {
+   "bugid": 1928469,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "Make it easy/possible to run `rusttests` against a single crate (or subset of crates)"
+  },
+  {
+   "bugid": 2084795,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Pine nightlies with partials fail in the decision task: no last-watershed for release type nightly-pine"
+  },
+  {
+   "bugid": 2080021,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Perma clang-trunk /builds/worker/fetches/llvm-project/llvm/lib/Passes/PassBuilderPipelines.cpp:X:7: error: use of undeclared identifier 'EnableMatrix' | single tracking bug"
+  },
+  {
+   "bugid": 2084813,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Upgrade rust toolchain used to build toolchains to 1.95"
+  },
+  {
+   "bugid": 2084870,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "[clang-23] Perma ../../Common/../../Windows/Synchronization.h:180:48: fatal error: parameter in intra-TU constructor should be marked [[clang::lifetimebound]] [-Wlifetime-safety-intra-tu-constructor-suggestions]"
+  },
+  {
+   "bugid": 2084721,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "[Listen to Page] Player enters permanent loading state at 00:00 when reopening Firefox after swipe-killing the app while paused"
+  },
+  {
+   "bugid": 2085260,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version e1f3ac925e24386bf6223dc5db2171169cad295a from 2026-10-23 05:01:52 UTC"
+  },
+  {
+   "bugid": 2083162,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Form autofill doesn't detect new fields when all previously detected fields are removed"
+  },
+  {
+   "bugid": 2083668,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Form autofill stops working on a page after a form whose fields became invisible is submitted"
+  },
+  {
+   "bugid": 2083670,
+   "status": "RESOLVED",
+   "component": "Toolkit:Form Autofill",
+   "summary": "Form autofill misses form changes made by replacing several nodes at once"
+  },
+  {
+   "bugid": 2084614,
+   "status": "RESOLVED",
+   "component": "Toolkit:Themes",
+   "summary": "Use the ghost button disabled text color for toolbar buttons outside forced-colors media queries"
+  },
+  {
+   "bugid": 2084656,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Themes",
+   "summary": "Make toolbar button icons and high contrast menu and disabled text follow the surrounding text color"
+  }
+ ],
+ "fixed": 51,
+ "total": 54,
+ "restricted": 0
+}
