@@ -1,0 +1,526 @@
+{
+ "date": "2026-11-12",
+ "buildid": "20261112010410",
+ "cset": "3b0e7a18530e47dba0c56e2440d8f1fc4d5847fa",
+ "bugs": [
+  {
+   "bugid": 2066381,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: MediaStreamGraph",
+   "summary": "Move some manual MediaTrackGraphImpl main thread state shuffling to state mirroring"
+  },
+  {
+   "bugid": 2090436,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Update opus to new version 0145a6248c2171bb6c4e03fb54fe016b5123e37e from 2026-11-06 21:29:26 UTC"
+  },
+  {
+   "bugid": 2087045,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "[wpt-sync] Sync PR 64150 - [css-color-5] add tests for implicit alpha in relative color where origin alpha is `none`"
+  },
+  {
+   "bugid": 2091347,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Upstream Stylo changes from Servo (Oct 2026)"
+  },
+  {
+   "bugid": 2019782,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Re-think a bit the animation traversal / animation-only restyle set-up."
+  },
+  {
+   "bugid": 2087496,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Copy & Paste and Drag & Drop",
+   "summary": "The pending clipboard read request can never be resolved or rejected when browser window is closed"
+  },
+  {
+   "bugid": 2044348,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Enable `dom.headingoffset.enabled` by default"
+  },
+  {
+   "bugid": 2087206,
+   "status": "REOPENED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Retain focus on elements if they gain disabled="
+  },
+  {
+   "bugid": 2090595,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Fix outdated links in UseOfCaptureEventsWarning, UseOfReleaseEventsWarning"
+  },
+  {
+   "bugid": 2091266,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Perma [tier 2] /html/browsers/history/the-history-interface/joint_session_history/001.html | Traversing history back (2) - expected NOTRUN | single tracking bug"
+  },
+  {
+   "bugid": 2091511,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Implement document.parsed/contentLoaded/loaded"
+  },
+  {
+   "bugid": 2091697,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Stop the heading offset walk at any shadow root with no host"
+  },
+  {
+   "bugid": 2090351,
+   "status": "VERIFIED",
+   "component": "Core:DOM: Editor",
+   "summary": "Assertion failure: nextThing.CreateEditorLineBreak<EditorRawLineBreak>().IsSignificant( aTreatAsUnnecessaryLineBreaks), at checkouts/gecko/editor/libeditor/HTMLEditUtils.cpp:1515"
+  },
+  {
+   "bugid": 2082302,
+   "status": "RESOLVED",
+   "component": "Core:DOM: HTML Parser",
+   "summary": "Parse processing instructions in HTML"
+  },
+  {
+   "bugid": 1996221,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "Navigation API isn't supported in javascript: uri:s"
+  },
+  {
+   "bugid": 2091547,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "TCPSocket::OnInputStreamReady masks certificate errors"
+  },
+  {
+   "bugid": 2091664,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Fix fence FD ownership transfer in AndroidImageReader::AcquirePendingImage()"
+  },
+  {
+   "bugid": 2080094,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Debug crashtests on macOS 10.15 report leaked FontData in content processes"
+  },
+  {
+   "bugid": 2084900,
+   "status": "NEW",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Linux] Merge RenderWaylandTextureHost / AsRenderDMABUFTextureHost to RenderLinuxTextureHost"
+  },
+  {
+   "bugid": 2090867,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Refactor schoolbook BigInt multiplication to work on Digits spans"
+  },
+  {
+   "bugid": 2087950,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Make rbx the x64 JIT scratch register to shrink JIT code"
+  },
+  {
+   "bugid": 2091045,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[riscv64] 16-bit atomic operations give wrong results on CPUs without Zbb"
+  },
+  {
+   "bugid": 2091633,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "[riscv64] Emit the code word after ebreak only in simulator builds"
+  },
+  {
+   "bugid": 2091431,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Improve pretenuring reset heuristics by calculating them per trace kind"
+  },
+  {
+   "bugid": 2035730,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Localhost llama maxLength should not be ~1458 tokens"
+  },
+  {
+   "bugid": 2089036,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "allow experimenting with smart bar defaulting to search"
+  },
+  {
+   "bugid": 2074521,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "A fetch() upload from a ReadableStream is buffered in memory in its entirety"
+  },
+  {
+   "bugid": 2087664,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Navigation timing shows no time to first byte when a navigation waits for an in-flight speculation-rules prefetch"
+  },
+  {
+   "bugid": 2088370,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Closing an EventSource in a worker leaves its HTTP channel stalled without OnStopRequest"
+  },
+  {
+   "bugid": 2089602,
+   "status": "RESOLVED",
+   "component": "Core:Permission Manager",
+   "summary": "Clearing a site's permissions removes its default permissions"
+  },
+  {
+   "bugid": 2062028,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Privacy capabilities matrix omits allow-list prefs that ETP Strict changes"
+  },
+  {
+   "bugid": 2086196,
+   "status": "RESOLVED",
+   "component": "Core:Privacy: Anti-Tracking",
+   "summary": "Enable TouchPoints, ScreenAvail, and Efficient Canvas Randomization in bFPP on Android"
+  },
+  {
+   "bugid": 2091173,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Extreme SVG arcs cause large memory growth and failed headless capture (suspected OOM)"
+  },
+  {
+   "bugid": 2088971,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Support background-clip: border-area clipping in software painting"
+  },
+  {
+   "bugid": 2088992,
+   "status": "RESOLVED",
+   "component": "Core:Web Painting",
+   "summary": "Address background-clip: border-area performance concern"
+  },
+  {
+   "bugid": 2086269,
+   "status": "RESOLVED",
+   "component": "Core:WebRTC",
+   "summary": "Update to libwebrtc 158"
+  },
+  {
+   "bugid": 2091327,
+   "status": "RESOLVED",
+   "component": "Data Platform and Tools:Glean: SDK",
+   "summary": "mach glean dev doesn't correctly handle the `workspace.dependencies` entry"
+  },
+  {
+   "bugid": 2090260,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Fill guidance gaps in the desktop-theme skills"
+  },
+  {
+   "bugid": 2090042,
+   "status": "ASSIGNED",
+   "component": "Developer Infrastructure:General",
+   "summary": "Add mach commands for the desktop-theme skills' token, contrast and pixel-diff scripts"
+  },
+  {
+   "bugid": 2090203,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Source Documentation",
+   "summary": "Move the rest of the desktop-theme skills' product knowledge into the in-tree docs"
+  },
+  {
+   "bugid": 1570474,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Stop skipping urlbar/tests/browser/browser_urlbar_selection.js on macOS"
+  },
+  {
+   "bugid": 1920110,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Move reusable Persist Search checks to UrlbarTestUtils"
+  },
+  {
+   "bugid": 2003029,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Remote tabs matching in the address bar does exact string matching instead of tokenized matching"
+  },
+  {
+   "bugid": 2032010,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Investigate removing flakyWaitForManyIdles from browser/components/urlbar/tests/browser/head-common.js"
+  },
+  {
+   "bugid": 2058919,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Sync should transfer Firefox Suggest settings"
+  },
+  {
+   "bugid": 1891314,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Bookmarks Toolbar Drag Tab to Folder Only Works From Right"
+  },
+  {
+   "bugid": 2090014,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "macOS: menubar \"Other Bookmarks\" Places view leaks orphaned menu items when it contains a live history place: query (_domNodes grows unbounded,   multi-GB, multi-second GC/CC pauses)"
+  },
+  {
+   "bugid": 2090063,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Remove the unused aDelay argument of _cleanPopup in browserPlacesViews.js"
+  },
+  {
+   "bugid": 1906916,
+   "status": "RESOLVED",
+   "component": "Firefox:Enterprise Policies",
+   "summary": "PasswordManager policy should disable or remove Manage Passwords from context menu entry field"
+  },
+  {
+   "bugid": 2089991,
+   "status": "RESOLVED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Intermittent toolkit/components/pdfjs/test/browser_pdfjs_js.js | TypeError: can't access property \"dispatchEvent\", button is null"
+  },
+  {
+   "bugid": 2088662,
+   "status": "RESOLVED",
+   "component": "Firefox:Private Browsing",
+   "summary": "Capitalize \"Private Windows\" and add serial comma in about:privatebrowsing info body"
+  },
+  {
+   "bugid": 1457069,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Title and favicon of OpenSearch engines offered by pages do not necessarily match title and favicon they're installed with (add search engine re-appears)"
+  },
+  {
+   "bugid": 1857369,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "See if preferences set in browser/components/search/test/browser/telemetry/ tests can be consolidated into the head.js file"
+  },
+  {
+   "bugid": 2091308,
+   "status": "RESOLVED",
+   "component": "Firefox:Search",
+   "summary": "Don't record serp.engagement events when the SERP has no impression ID"
+  },
+  {
+   "bugid": 1991409,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "session.schema.json lacks properties Firefox writes and doesn't reject undeclared ones"
+  },
+  {
+   "bugid": 2012815,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Add splitViews to browser/components/sessionstore/session.schema.json and tests"
+  },
+  {
+   "bugid": 2088825,
+   "status": "RESOLVED",
+   "component": "Firefox:Session Restore",
+   "summary": "Validate session state against `session.schema.json` on each write when a debug pref is set"
+  },
+  {
+   "bugid": 2090682,
+   "status": "RESOLVED",
+   "component": "Firefox:Theme",
+   "summary": "Drop the desktop-theme-tokens skill's advice to delete a needless stylelint disable"
+  },
+  {
+   "bugid": 2081015,
+   "status": "RESOLVED",
+   "component": "Firefox:Widgets",
+   "summary": "Add an AI control for widget generation"
+  },
+  {
+   "bugid": 2089908,
+   "status": "RESOLVED",
+   "component": "Firefox:Widgets",
+   "summary": "Add a Nimbus feature that turns on custom widgets from Nightly Labs"
+  },
+  {
+   "bugid": 2091310,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use moz-src for toolkit/components/backgroundhangmonitor"
+  },
+  {
+   "bugid": 2091321,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Use moz-src for toolkit/components/cleardata"
+  },
+  {
+   "bugid": 2086055,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Allow running test-verify on try for every test in a directory"
+  },
+  {
+   "bugid": 2091721,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Wrong Rust version release date in docs"
+  },
+  {
+   "bugid": 2091192,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Collections",
+   "summary": "Enable Collections to Tab Groups migration"
+  },
+  {
+   "bugid": 2082394,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable menu] Support using the default or custom menu strucutre when building the browser menu"
+  },
+  {
+   "bugid": 2086543,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Support previewing the menu customization changes"
+  },
+  {
+   "bugid": 2086544,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Support reverting the menu customization changes"
+  },
+  {
+   "bugid": 2086545,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Whenever the navigation menu items section is moved break the toolbar position dependency"
+  },
+  {
+   "bugid": 2086548,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] \"Customize menu\" telemetry"
+  },
+  {
+   "bugid": 2086549,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Support reordering menu sections"
+  },
+  {
+   "bugid": 2086550,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Support hiding and showing back menu sections"
+  },
+  {
+   "bugid": 2086551,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Support menu sections which cannot be removed"
+  },
+  {
+   "bugid": 2086552,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable menu] Support visual and haptic feedback for when moving sections"
+  },
+  {
+   "bugid": 2088468,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable menu] Show a new tabs menu section initally as hidden"
+  },
+  {
+   "bugid": 2088564,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable menu] Allow dragging sections by their handle without having to long press"
+  },
+  {
+   "bugid": 2089543,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable menu] Allow the secret setting for \"Customizable menu\" in Nightly also"
+  },
+  {
+   "bugid": 2090877,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Menu",
+   "summary": "[customizable-menu] Let the draggable list decide where dragged menu sections are dropped"
+  },
+  {
+   "bugid": 2091691,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Update Gradle to version 9.9.1"
+  },
+  {
+   "bugid": 2091784,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Remove `@OptIn` annotations that no longer guard an experimental API"
+  },
+  {
+   "bugid": 2091300,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Intermittent UI test failure -efficiency - < MainMenuTest.verifyTheExtensionInstallationTest>"
+  },
+  {
+   "bugid": 2089593,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Crash in [@ java.lang.RuntimeException: at android.app.ActivityThread.performResumeActivity(ActivityThread.java)]"
+  },
+  {
+   "bugid": 2091233,
+   "status": "RESOLVED",
+   "component": "GeckoView:General",
+   "summary": "Optimize requestUiThreadCallback"
+  },
+  {
+   "bugid": 2087413,
+   "status": "RESOLVED",
+   "component": "Toolkit:Places",
+   "summary": "Crash in [@ AsyncShutdownTimeout | profile-change-teardown | PlacesConcurrentConnection]"
+  },
+  {
+   "bugid": 2005078,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Replace button.footer-button with moz-buttons"
+  },
+  {
+   "bugid": 2084130,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Check that the items an intended-duplicate-accesskey lists share its accesskey"
+  }
+ ],
+ "fixed": 81,
+ "total": 86,
+ "restricted": 8
+}
