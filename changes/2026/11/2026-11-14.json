@@ -1,0 +1,1168 @@
+{
+ "date": "2026-11-14",
+ "buildid": "20261114100603",
+ "cset": "ba1611bc9aa69edd4d01123391c6552fedb3565d",
+ "bugs": [
+  {
+   "bugid": 2092257,
+   "status": "RESOLVED",
+   "component": "Application Services:Fxa Client",
+   "summary": "Remove other RustAuthState code from Fenix"
+  },
+  {
+   "bugid": 2082524,
+   "status": "RESOLVED",
+   "component": "Application Services:General",
+   "summary": "Vendor application-services for pref-key removal in Nimbus"
+  },
+  {
+   "bugid": 1281115,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Add SetSeekThreshold for FFmpeg"
+  },
+  {
+   "bugid": 1731727,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Using cbcs protection scheme and key rotation the playback fails at certain point"
+  },
+  {
+   "bugid": 2054640,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Stale HTMLMediaElement::mCORSMode allows CORS-taint bypass on srcObject playback, leaking pixels of NullPrincipal-isolated and cross-origin MediaStreams via VideoFrame.copyTo and canvas getImageData"
+  },
+  {
+   "bugid": 2091101,
+   "status": "RESOLVED",
+   "component": "Core:Audio/Video: Playback",
+   "summary": "Fragmented MP4 seek and skip problems after the keyframe map change"
+  },
+  {
+   "bugid": 2069118,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Intermittent failure of `css/css-overflow/line-clamp/line-clamp-auto-041.html`"
+  },
+  {
+   "bugid": 2086787,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Correctly handle collapsing margins in non-auto line-clamp containers"
+  },
+  {
+   "bugid": 2092665,
+   "status": "RESOLVED",
+   "component": "Core:CSS Parsing and Computation",
+   "summary": "Minor stylo code hygiene improvements"
+  },
+  {
+   "bugid": 2091211,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "::view-transition-old/new positioned with `left: auto; right: 0` is painted scaled to the image-pair width"
+  },
+  {
+   "bugid": 2091537,
+   "status": "RESOLVED",
+   "component": "Core:CSS Transitions and Animations",
+   "summary": "Remove or clean-up the concept of animation-only restyles."
+  },
+  {
+   "bugid": 2092025,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up dom.element.dialog.request_close.enabled flag"
+  },
+  {
+   "bugid": 2092028,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up dom.dialog.light-dismiss.enabled flag"
+  },
+  {
+   "bugid": 2092029,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Clean up dom.element.popoverhint.enabled flag"
+  },
+  {
+   "bugid": 2092283,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "browser_Manifest_install.js fails when run twice in the same browser: \"We haven't installed this manifest yet - Got true, expected false\""
+  },
+  {
+   "bugid": 2092492,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Only clear union data in `ErrorResult` when there's an error"
+  },
+  {
+   "bugid": 2092493,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "Don't match removed nodes against an empty ContentList."
+  },
+  {
+   "bugid": 2092559,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Core & HTML",
+   "summary": "test_MozDomFullscreen_event.xhtml fails on macOS when run twice in a row"
+  },
+  {
+   "bugid": 2073171,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Events",
+   "summary": "Pages don't receive Mouse 4"
+  },
+  {
+   "bugid": 2091545,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "window.open(\"about:blank\").history.length isn't updated synchronously with initial synchronous about:blank"
+  },
+  {
+   "bugid": 2092068,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "browser_bug1716290-{1,2,3,4}.js fail when run twice in the same browser"
+  },
+  {
+   "bugid": 2092071,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "browser_bug420605.js and browser_bug503832.js fail when run twice in the same profile"
+  },
+  {
+   "bugid": 2092131,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "navigation-methods/traverseTo-with-cross-origin-in-history.html is racy"
+  },
+  {
+   "bugid": 2092365,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Navigation",
+   "summary": "skip-outbound-vt-before-reveal.html fails intermittently"
+  },
+  {
+   "bugid": 2091390,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Networking",
+   "summary": "Perma android TEST-UNEXPECTED-PASS | /speculation-rules/prefetch/client-hints/redirect.https.sub.html | Client Hints headers should be updated on redirects (drop) - expected FAIL - when Gecko 162 merges to beta on 2026-11-19"
+  },
+  {
+   "bugid": 2092093,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Push Subscriptions",
+   "summary": "Move the IPCNotification instead of copying it in the DWPNotificationCallbacks constructor"
+  },
+  {
+   "bugid": 2086032,
+   "status": "NEW",
+   "component": "Core:DOM: Security",
+   "summary": "Implement initial CSP url hashes and ‘strict-dynamic-url’"
+  },
+  {
+   "bugid": 2090613,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Security",
+   "summary": "Perma TEST-UNEXPECTED-ERROR | /referrer-policy/gen/top.meta/always/mathml-a-tag.http.html | Document unloaded; maybe test navigated the top-level-browsing context? when Gecko 162 merges to beta on 2026-11-19"
+  },
+  {
+   "bugid": 2092098,
+   "status": "RESOLVED",
+   "component": "Core:DOM: Selection",
+   "summary": "Add some tentative WPTs to test how anchorNode and focusNode work then the nodes are in shadow DOM"
+  },
+  {
+   "bugid": 1988232,
+   "status": "RESOLVED",
+   "component": "Core:DOM: UI Events & Focus Handling",
+   "summary": "Calling .focus() on a Custom Element with delegatesFocus fails when host is display:contents"
+  },
+  {
+   "bugid": 2088584,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Decide where to apply the Intel and AMD WebRender compositor blocklist entries now that EARLY_BETA_OR_EARLIER is going away"
+  },
+  {
+   "bugid": 2091692,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Build fixes required for vendoring and building ANGLE's Vulkan backend"
+  },
+  {
+   "bugid": 2091900,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "Break the AndroidImageReader reference cycle on decoder shutdown"
+  },
+  {
+   "bugid": 2092691,
+   "status": "RESOLVED",
+   "component": "Core:Graphics",
+   "summary": "GPU blit of a fenced MacIOSurface is skipped whenever waiting on its write fence succeeds"
+  },
+  {
+   "bugid": 2092355,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: CanvasWebGL",
+   "summary": "Firefox 160 regression: WebGL 1/2 context creation fails on NVIDIA Kepler GPU with OCLP (macOS Sonoma)"
+  },
+  {
+   "bugid": 2092215,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: Text",
+   "summary": "Update freetype2 to new version dbb00e529e69a2be629a9ef98498e4f9b188aab1 from 2026-11-11 22:13:54 UTC"
+  },
+  {
+   "bugid": 2091500,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebGPU",
+   "summary": "Update WebGPU CTS to new version 3cc5b73f1c3f1c568bcebd3cbf069cc1aa90a931 from 2026-11-10 18:16:14 UTC"
+  },
+  {
+   "bugid": 2084900,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "[Linux] Merge RenderWaylandTextureHost / AsRenderDMABUFTextureHost to RenderLinuxTextureHost"
+  },
+  {
+   "bugid": 2091358,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Firefox 157 regression: Fullscreen video severely washed out with hardware acceleration on Windows 11"
+  },
+  {
+   "bugid": 2092225,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "GPU process crashes at quit on X11/EGL: BadWindow from PresentPixmap, because the window is destroyed on the parent’s X connection before the X server has processed the GPU process’s last frame"
+  },
+  {
+   "bugid": 2092792,
+   "status": "RESOLVED",
+   "component": "Core:Graphics: WebRender",
+   "summary": "Crash in [@ mozilla::widget::WaylandBuffer::GetSurface]"
+  },
+  {
+   "bugid": 2021012,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Enable dom.multiple_import_maps.enabled (multiple import maps) in Nightly by default"
+  },
+  {
+   "bugid": 2087617,
+   "status": "REOPENED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Improve the eval cache"
+  },
+  {
+   "bugid": 2091678,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Use stack/malloc scratch space for BigInt division, bis"
+  },
+  {
+   "bugid": 2092485,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "Fix the timeout of test_dynamic_importMap_with_external_script.html when multiple import maps is enabled"
+  },
+  {
+   "bugid": 2092596,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine",
+   "summary": "js/src/jit-test/tests/regexp/bug2072420.js fails in a --without-intl-api shell (Firefox 160.0)"
+  },
+  {
+   "bugid": 2091780,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Bake in immutable bindings for environments known at compile time"
+  },
+  {
+   "bugid": 2091798,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript Engine: JIT",
+   "summary": "Emit a move or nothing for computeEffectiveAddress with a zero offset on x86"
+  },
+  {
+   "bugid": 2019836,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: GC",
+   "summary": "Intermittent Assertion failure: aOther.mValue != 0 (Division by zero), at /builds/worker/workspace/obj-build/dist/include/mozilla/TimeStamp.h:188"
+  },
+  {
+   "bugid": 2059792,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: Standard Library",
+   "summary": "Ship regular expression buffer boundary"
+  },
+  {
+   "bugid": 2091790,
+   "status": "RESOLVED",
+   "component": "Core:JavaScript: WebAssembly",
+   "summary": "WasmStructObject::getField uses <= rather than < in its field-index assertion"
+  },
+  {
+   "bugid": 2092546,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Reduce the size of nsIFrame by moving some bit flags"
+  },
+  {
+   "bugid": 2092636,
+   "status": "RESOLVED",
+   "component": "Core:Layout",
+   "summary": "Skip frame destruction bookkeeping when there is nothing to remove"
+  },
+  {
+   "bugid": 2025870,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Grid",
+   "summary": "Grid track position accumulation overflows nscoord (int32_t) — flex hardened with AuCoord64 but grid not"
+  },
+  {
+   "bugid": 1558431,
+   "status": "RESOLVED",
+   "component": "Core:Layout: Text and Fonts",
+   "summary": "unicode-bidi:plaintext behavior is unreliable on initial reflow"
+  },
+  {
+   "bugid": 2090829,
+   "status": "RESOLVED",
+   "component": "Core:MFBT",
+   "summary": "Use quadratic probing instead of double hashing in mozilla::HashTable"
+  },
+  {
+   "bugid": 1975092,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "High frequency browser/components/genai/tests/browser/browser_chat_page.js | single tracking bug"
+  },
+  {
+   "bugid": 2004437,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Intermittent browser/components/genai/tests/browser/browser_chat_request.js | single tracking bug"
+  },
+  {
+   "bugid": 2060609,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Monitor Agent][FE] Add a comment that watch and Monitor refer to the same agent task command"
+  },
+  {
+   "bugid": 2075722,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Move the application (hamburger) menu from the tab strip back to the toolbar"
+  },
+  {
+   "bugid": 2081135,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "The Ask Smartbar button is not properly displayed with High contrast enabled"
+  },
+  {
+   "bugid": 2083829,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Build the Smart Window single page onboarding UI"
+  },
+  {
+   "bugid": 2083830,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Show the single page onboarding in Smart Window first run behind a pref"
+  },
+  {
+   "bugid": 2085208,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "AITab [FE] - Layout issue with highlight component"
+  },
+  {
+   "bugid": 2085414,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Split browser_chat_shortcuts.js into smaller test files"
+  },
+  {
+   "bugid": 2087829,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Exa /answers disclosure: reuse existing action-log entry (Option 1 wording)"
+  },
+  {
+   "bugid": 2088206,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "AITab [FE] - UX QA styling issues"
+  },
+  {
+   "bugid": 2091023,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "[Monitor Agent][FE] Support UK Region Feature callout"
+  },
+  {
+   "bugid": 2092222,
+   "status": "NEW",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "Intermittent TV browser/components/aiwindow/ui/test/browser/browser_smart_actions_toolbar.js | Smart actions toolbar / starts a new sidebar chat about the page - Uncaught exception in test - Couldn't find the engine \"chat\" - timed out after 200 tries."
+  },
+  {
+   "bugid": 2092259,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: Frontend",
+   "summary": "`browser_chat_shortcuts.js` leaves the native cursor over the copy button, failing a later hover check when repeated"
+  },
+  {
+   "bugid": 2074080,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Contextual and static embeddings share an engine cache slot"
+  },
+  {
+   "bugid": 2090291,
+   "status": "RESOLVED",
+   "component": "Core:Machine Learning: On Device",
+   "summary": "Several ML features keep their models loaded for the whole session instead of unloading when idle"
+  },
+  {
+   "bugid": 2070617,
+   "status": "RESOLVED",
+   "component": "Core:Memory Allocator",
+   "summary": "17.71 - 3.52% browser_translations_perf_tiny.js post-gc-inference-process-memory-usage + 57 more (Linux, OSX, Windows) regression on Tue September 1 2026"
+  },
+  {
+   "bugid": 1991278,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_bug1940663.js | single tracking bug"
+  },
+  {
+   "bugid": 2080349,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Intermittent netwerk/test/unit/test_websocket_fails.js | single tracking bug"
+  },
+  {
+   "bugid": 2091707,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Add the proxy type to the pageload event"
+  },
+  {
+   "bugid": 2092176,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "Perma TV netwerk/test/unit/test_plaintext_sniff.js | test_onStartR - [test_onStartR : 110] 2152398861 == 0"
+  },
+  {
+   "bugid": 2092319,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "browser_test_favicon.js times out when run twice in the same browser"
+  },
+  {
+   "bugid": 2092321,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "browser_103_assets.js module variant never loads a valid module, intermittently fails 'unexpected amount of normal request made'"
+  },
+  {
+   "bugid": 2092322,
+   "status": "RESOLVED",
+   "component": "Core:Networking",
+   "summary": "browser_necko_l10n.js reads the status panel before it shows the load's status"
+  },
+  {
+   "bugid": 1994039,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cache",
+   "summary": "Intermittent Hit MOZ_CRASH([Parent X, Y Thread] ###!!! ASSERTION: Network cache reported memory consumption is not at 0, probably leaking?: 'Error', file /builds/worker/checkouts/gecko/netwerk/cache2/CacheStorageService.cpp:X)"
+  },
+  {
+   "bugid": 2045720,
+   "status": "RESOLVED",
+   "component": "Core:Networking: Cookies",
+   "summary": "Testcase generating/storing N cookies is 6x slower for N=50K (followup to bug 1950812)"
+  },
+  {
+   "bugid": 2084553,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Crash in WebTransportSessionProxy::OnDataAvailable: WebTransport sent as GET over HTTP/1.1 after HTTP/3 to IPv6 fails with no IPv4 retry (regression of bug 1895535)"
+  },
+  {
+   "bugid": 2092174,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "Closed HTTP/3 streams can stay in the slow-consumer read queue and be read again"
+  },
+  {
+   "bugid": 2092532,
+   "status": "RESOLVED",
+   "component": "Core:Networking: HTTP",
+   "summary": "WebTransport datagram write() promises never settle once neqo queues a datagram above its high water mark, stalling datagrams.writable"
+  },
+  {
+   "bugid": 2085128,
+   "status": "RESOLVED",
+   "component": "Core:Panning and Zooming",
+   "summary": "Support swipe-to-nav on touchscreen with the main thread (Windows)"
+  },
+  {
+   "bugid": 2091728,
+   "status": "RESOLVED",
+   "component": "Core:Printing: Output",
+   "summary": "PDF Viewer prints thin lines with way too much thickness, with Skia GDI (Brother MFC-L8390CDW series)"
+  },
+  {
+   "bugid": 2092331,
+   "status": "RESOLVED",
+   "component": "Core:SVG",
+   "summary": "Perma [tier 2] REFTEST TEST-UNEXPECTED-FAIL | layout/reftests/svg/text/text-shadow.svg == layout/reftests/svg/text/text-shadow-ref.svg | image comparison, max difference: 8, number of differing pixels: 199"
+  },
+  {
+   "bugid": 2092373,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Cocoa",
+   "summary": "Hardware WebRender fails on dual-GPU Intel Macs since bug 2088620 (GL context creation fails, fallback to software WebRender)"
+  },
+  {
+   "bugid": 2053470,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "Switching to Firefox on GNOME/X11 raises the window but keystrokes sometimes go to the wrong application"
+  },
+  {
+   "bugid": 2073932,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "limit dbus probing of upower by dom.battery.enabled"
+  },
+  {
+   "bugid": 2088349,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland] Memleak when WebGL/Canvas is used"
+  },
+  {
+   "bugid": 2089552,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Wayland][HDR] Harden parameter validation for HDR metadata to prevent protocol errors"
+  },
+  {
+   "bugid": 2090791,
+   "status": "RESOLVED",
+   "component": "Core:Widget: Gtk",
+   "summary": "[Linux] Launch local handler applications through GIO, like handlers from desktop entries"
+  },
+  {
+   "bugid": 2092096,
+   "status": "RESOLVED",
+   "component": "DevTools:Debugger",
+   "summary": "Perma devtools/client/debugger/test/mochitest/browser_dbg-reloading.js | Test timed out - when Gecko 162 merges to beta on 2026-11-19"
+  },
+  {
+   "bugid": 2081824,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Port \"Themes\" section to the new devtools setting panel"
+  },
+  {
+   "bugid": 2081846,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Port \"Network Monitor\" section to the new devtools setting panel"
+  },
+  {
+   "bugid": 2081863,
+   "status": "RESOLVED",
+   "component": "DevTools:General",
+   "summary": "Port \"Developer Tools installed by add-ons\" section to the new devtools setting panel"
+  },
+  {
+   "bugid": 2090260,
+   "status": "REOPENED",
+   "component": "Developer Infrastructure:AI for Development",
+   "summary": "Fill guidance gaps in the desktop-theme skills"
+  },
+  {
+   "bugid": 2090042,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:General",
+   "summary": "Add mach commands for the desktop-theme skills' token, contrast and pixel-diff scripts"
+  },
+  {
+   "bugid": 2076488,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update migration wizard theme CSS so it passes use-design-tokens"
+  },
+  {
+   "bugid": 2076489,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Lint and Formatting",
+   "summary": "Update the Private Browsing about page theme so it passes use-design-tokens"
+  },
+  {
+   "bugid": 2092579,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Linting and Formatting: C/C++",
+   "summary": "clang-tidy segfaults in modernize-loop-convert on CI but not locally"
+  },
+  {
+   "bugid": 2087449,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Linting and Formatting: JavaScript",
+   "summary": "Add a TypeScript declaration for Iterator.concat"
+  },
+  {
+   "bugid": 2091622,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Improve ./mach vendor's upstream_tag code to be more efficient"
+  },
+  {
+   "bugid": 2092399,
+   "status": "RESOLVED",
+   "component": "Developer Infrastructure:Mach Vendor & Updatebot",
+   "summary": "Handle binary attachments with arc"
+  },
+  {
+   "bugid": 2090808,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "Perma browser/components/urlbar/tests/browser-results/browser_result_menu.js | single tracking bug"
+  },
+  {
+   "bugid": 2092326,
+   "status": "RESOLVED",
+   "component": "Firefox:Address Bar",
+   "summary": "New Tab search bar keeps a placeholder without the engine name if keyword.enabled changes while its engine store initializes"
+  },
+  {
+   "bugid": 1935530,
+   "status": "RESOLVED",
+   "component": "Firefox:Bookmarks & History",
+   "summary": "Intermittent [TV] browser/components/places/tests/browser/browser_bookmarks_toolbar_telemetry.js | Uncaught exception in test bound test_bookmarks_toolbar_telemetry - Waiting for bookmarks-bar_move_never_newtab_toolbar-context-menu to appear"
+  },
+  {
+   "bugid": 2069243,
+   "status": "RESOLVED",
+   "component": "Firefox:Containers",
+   "summary": "Move the storage layer into application-services"
+  },
+  {
+   "bugid": 2088234,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add Set to Default promo to locations subview"
+  },
+  {
+   "bugid": 2088236,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Add Set to Default promo to built-in VPN settings"
+  },
+  {
+   "bugid": 2091150,
+   "status": "RESOLVED",
+   "component": "Firefox:IP Protection",
+   "summary": "Refactor handleEvent to reduce complexity"
+  },
+  {
+   "bugid": 2087668,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Refresh Smart Window screen"
+  },
+  {
+   "bugid": 2091058,
+   "status": "RESOLVED",
+   "component": "Firefox:Messaging System",
+   "summary": "Remove in-tree notice Infobar for TOS"
+  },
+  {
+   "bugid": 2078939,
+   "status": "RESOLVED",
+   "component": "Firefox:Mini Window",
+   "summary": "Update icons and strings in the Mini Window overlay type selection"
+  },
+  {
+   "bugid": 2010048,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Record error metrics when communicating with Merino fails"
+  },
+  {
+   "bugid": 2083876,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add the context menu for the solitaire widget"
+  },
+  {
+   "bugid": 2087594,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Move widget user action values into one shared list in WidgetsRegistry.mjs"
+  },
+  {
+   "bugid": 2087660,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Move widget source values into one shared list in WidgetsRegistry.mjs"
+  },
+  {
+   "bugid": 2087930,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Add an expanded view to the Solitaire widget"
+  },
+  {
+   "bugid": 2087948,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Global CSS changes to Large Privacy Widget"
+  },
+  {
+   "bugid": 2089587,
+   "status": "RESOLVED",
+   "component": "Firefox:New Tab Page",
+   "summary": "Sponsored story report dialog is missing its heading"
+  },
+  {
+   "bugid": 2092533,
+   "status": "ASSIGNED",
+   "component": "Firefox:PDF Viewer",
+   "summary": "Update PDF.js to new version 5430213a11db643b2645ba3ae02ed761d1b46623 from 2026-11-13 13:03:40 UTC"
+  },
+  {
+   "bugid": 2075504,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Distinguish chain-fetch failures from signature errors in telemetry"
+  },
+  {
+   "bugid": 2091343,
+   "status": "RESOLVED",
+   "component": "Firefox:Remote Settings Client",
+   "summary": "Telemetry errors events strings should end with `_error`"
+  },
+  {
+   "bugid": 1971657,
+   "status": "NEW",
+   "component": "Firefox:Session Restore",
+   "summary": "Avoid aborting the flushAllWindowsAsync if a content process crashes during shutdown"
+  },
+  {
+   "bugid": 2060699,
+   "status": "RESOLVED",
+   "component": "Firefox:Settings UI",
+   "summary": "Firefox preferences borders/outlines look thinner on rounded corners"
+  },
+  {
+   "bugid": 2078235,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "[Fitts's law] When the mouse pointer is at the left edge of the screen, the Bookmark/History Sidebar can no longer be scrolled using the mouse wheel."
+  },
+  {
+   "bugid": 2084201,
+   "status": "RESOLVED",
+   "component": "Firefox:Sidebar",
+   "summary": "Open link behavior should be consistent in sidebar panels"
+  },
+  {
+   "bugid": 2088051,
+   "status": "NEW",
+   "component": "Firefox:Site Permissions",
+   "summary": "Test permission delegation prompts for a framed document that sends its own Permissions-Policy header"
+  },
+  {
+   "bugid": 2058167,
+   "status": "RESOLVED",
+   "component": "Firefox:Tabbed Browser: Tab Groups",
+   "summary": "[Nova][Vertical Tab Groups] Hidden tab count indicator is not centered for two-digit values"
+  },
+  {
+   "bugid": 2092168,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Bootstrap Configuration",
+   "summary": "Point new contributors to the guide to contributing code at the end of `mach bootstrap`"
+  },
+  {
+   "bugid": 2052054,
+   "status": "NEW",
+   "component": "Firefox Build System:General",
+   "summary": "Remove EARLY_BETA_OR_EARLIER, replacing with NIGHTLY_BUILD where appropriate"
+  },
+  {
+   "bugid": 2091603,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "Upgrade vendored pip to 26.3 by replacing --no-use-pep517 with --no-build-isolation in mozharness"
+  },
+  {
+   "bugid": 2092407,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:General",
+   "summary": "std::atomic operations are not inlined in x86_64 Windows builds with clang 23"
+  },
+  {
+   "bugid": 2092293,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "`./mach help` rewraps a custom parser's description into one paragraph"
+  },
+  {
+   "bugid": 2092611,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Mach Core",
+   "summary": "|mach try| with jj skips the current bookmarked change and submits its parent instead"
+  },
+  {
+   "bugid": 2029980,
+   "status": "ASSIGNED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Add mochitest-repeat jobs to identify tests that don't clean up properly"
+  },
+  {
+   "bugid": 2074022,
+   "status": "REOPENED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "Run android, android-asan, fenix and ios build tasks on git-backed pushes"
+  },
+  {
+   "bugid": 2092214,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "ignore try_task_config.json when computing `files_changed`"
+  },
+  {
+   "bugid": 2092252,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Task Configuration",
+   "summary": "build times no longer available in perfherder"
+  },
+  {
+   "bugid": 2092334,
+   "status": "RESOLVED",
+   "component": "Firefox Build System:Toolchains",
+   "summary": "Update node toolchains again"
+  },
+  {
+   "bugid": 2091399,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "[Account Decoupling] Update Sync toggle description in Account Settings screen"
+  },
+  {
+   "bugid": 2092124,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Accounts and Sync",
+   "summary": "Enable the pairing sign-in prompt by default on Nightly and Beta"
+  },
+  {
+   "bugid": 2083208,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:App Links",
+   "summary": "[Browser-first for YouTube] Wire the YouTube host rule into app links handling"
+  },
+  {
+   "bugid": 2081839,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Autofill",
+   "summary": "Require profile authentication to manage credit cards on Android Automotive OS"
+  },
+  {
+   "bugid": 2088132,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Browser Engine",
+   "summary": "Crash in [@ java.lang.RuntimeException: at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java)]"
+  },
+  {
+   "bugid": 2092509,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Contextual AI",
+   "summary": "Add Listen to Page to Secret Settings in Beta"
+  },
+  {
+   "bugid": 2092422,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Design System and Theming",
+   "summary": "Enable the Darkest (OLED) theme option in Nightly builds"
+  },
+  {
+   "bugid": 2076526,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Remove shared preferences from Nimbus Builder et al."
+  },
+  {
+   "bugid": 2084316,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Experimentation and Telemetry",
+   "summary": "Crash tapping \"Go to settings\" on the experiment branches snackbar after leaving the screen"
+  },
+  {
+   "bugid": 2091869,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Fix more code that Kotlin 2.5 warns about"
+  },
+  {
+   "bugid": 2092371,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:General",
+   "summary": "Update android nightly application-services version bump to new version 19246dbfd34691148bb04e0eb3716a1b1fc749ab from 2026-11-12 21:57:57 UTC"
+  },
+  {
+   "bugid": 2075596,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Homepage",
+   "summary": "Remove divider in private HNT"
+  },
+  {
+   "bugid": 2060527,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "When a video is playing display a PiP icon shortcut in the toolbar"
+  },
+  {
+   "bugid": 2075323,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "Implement picture-in-picture in android-components"
+  },
+  {
+   "bugid": 2075324,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "Implement picture-in-picture in Fenix by rendering the cloned video in its own activity"
+  },
+  {
+   "bugid": 2090245,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "Return to the tab a video came from on expanding its picture-in-picture window"
+  },
+  {
+   "bugid": 2090246,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Media",
+   "summary": "Add a secret setting for the picture-in-picture window feature"
+  },
+  {
+   "bugid": 2063470,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tabs",
+   "summary": "[Tab Groups] [Page Level Add to Group] Add the \"Add to Group\"/\"Move to Group\" item to the Menu"
+  },
+  {
+   "bugid": 2092157,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "Add a detekt rule to forbid string casing in displayed text in composables"
+  },
+  {
+   "bugid": 2092234,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:Tooling",
+   "summary": "AssertTrueInsteadOfAssertIs, JUnitAssertNotNull and NoSystemCurrentTimeMillis lint findings in android-components do not fail CI"
+  },
+  {
+   "bugid": 2091363,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create new deleteHistoryItemViaSearchXButtonTest regression UI test for the efficiency framework"
+  },
+  {
+   "bugid": 2092099,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Create a new search downloads related regression UI tests"
+  },
+  {
+   "bugid": 2092149,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Extend Fenix release promotion sign-off to include both TAE and legacy UI tests"
+  },
+  {
+   "bugid": 2092511,
+   "status": "RESOLVED",
+   "component": "Firefox for Android:UI Tests",
+   "summary": "Convert verifyShowVoiceSearchToggleTest regression UI test to the efficiency framework"
+  },
+  {
+   "bugid": 2090947,
+   "status": "RESOLVED",
+   "component": "GeckoView:PDF Viewer",
+   "summary": "[Fenix][A11y] Request focus be placed in the browser after adding signature to pick up browser events"
+  },
+  {
+   "bugid": 2092632,
+   "status": "RESOLVED",
+   "component": "Infrastructure & Operations:RelOps: Windows OS",
+   "summary": "Update Windows worker images to 2026.11.12 (ronin_puppet 0a82cf0) and Ubuntu 24.04 images to 2026-11-12"
+  },
+  {
+   "bugid": 2091987,
+   "status": "RESOLVED",
+   "component": "Toolkit:Add-ons Manager",
+   "summary": "browser_installssl.js fails when run twice in the same browser"
+  },
+  {
+   "bugid": 1937351,
+   "status": "ASSIGNED",
+   "component": "Toolkit:Background Tasks",
+   "summary": "Frequent toolkit/components/backgroundtasks/tests/xpcshell/test_backgroundtask_shouldprocessupdates.js | single tracking bug"
+  },
+  {
+   "bugid": 2077465,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "High freq [tier 2] test_start for toolkit/crashreporter/test/unit/test_crashreporter_crash.js logged while in progress. | single tracking bug"
+  },
+  {
+   "bugid": 2082922,
+   "status": "RESOLVED",
+   "component": "Toolkit:Crash Reporting",
+   "summary": "Collect annotations for Android Isolated Processes"
+  },
+  {
+   "bugid": 1883561,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Intermittent TV toolkit/components/passwordmgr/test/browser/browser_proxyAuth_prompt.js | single tracking bug"
+  },
+  {
+   "bugid": 2088428,
+   "status": "RESOLVED",
+   "component": "Toolkit:Password Manager",
+   "summary": "Reject logins containing lone surrogate parts"
+  },
+  {
+   "bugid": 2064404,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Validate that early event acceleration works as expected"
+  },
+  {
+   "bugid": 2089195,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Remove Legacy Telemetry instrumentation from Toolkit :: Telemetry"
+  },
+  {
+   "bugid": 2092324,
+   "status": "RESOLVED",
+   "component": "Toolkit:Telemetry",
+   "summary": "Unhandled NS_ERROR_NOT_AVAILABLE rejection from submitAndGetUntrustedModulePayload in UntrustedModulesPing fails Windows browser-chrome tests"
+  },
+  {
+   "bugid": 1953508,
+   "status": "RESOLVED",
+   "component": "Toolkit:UI Widgets",
+   "summary": "Upgrade Storybook and related dependecies to version 8+"
+  },
+  {
+   "bugid": 1947979,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "www.shazam.com - Unnecessary scrollbar under the album name"
+  },
+  {
+   "bugid": 2091604,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Automated test fixes for webcompat interventions during the v162 cycle"
+  },
+  {
+   "bugid": 2092374,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Replace asyncio.sleep usage with client.stall in our automated webcompat intervention tests"
+  },
+  {
+   "bugid": 2092417,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Interventions",
+   "summary": "Bump the Chrome version out webcompat intervention UA overrides present to sites to 157"
+  },
+  {
+   "bugid": 1898936,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "app.stormx.io - Firefox is not a supported browser"
+  },
+  {
+   "bugid": 1902415,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "kaigetsu.staysee.jp - Firefox is unsupported browser warning"
+  },
+  {
+   "bugid": 1902475,
+   "status": "ASSIGNED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cdk.fairgoau.com:3572 - Firefox is an unsupported browser"
+  },
+  {
+   "bugid": 1959117,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "cesupils.lv - Error message is displayed when accessing the page"
+  },
+  {
+   "bugid": 2004610,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "character.ai - italics doesn't appear when using markdown in chat"
+  },
+  {
+   "bugid": 2010102,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.osmosis.org - page layout is broken"
+  },
+  {
+   "bugid": 2055536,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.bateaux.com - \"Access denied\" error displayed"
+  },
+  {
+   "bugid": 2060224,
+   "status": "RESOLVED",
+   "component": "Web Compatibility:Site Reports",
+   "summary": "www.alreadyordered.no - Firefox is not supported pop-up warning"
+  },
+  {
+   "bugid": 2090081,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "omnibox.setDefaultSuggestion rejects with string instead of object"
+  },
+  {
+   "bugid": 2092510,
+   "status": "RESOLVED",
+   "component": "WebExtensions:General",
+   "summary": "Some extensions do not intialise properly after install (and browser restart in some cases)"
+  }
+ ],
+ "fixed": 177,
+ "total": 193,
+ "restricted": 23
+}
